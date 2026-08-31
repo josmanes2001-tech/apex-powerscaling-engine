@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Swords, Users, Crown, Plus, Trash2, Shield, Flame, Sparkles, UserPlus, Zap, Sliders, Info, ShieldAlert, Award } from 'lucide-react';
+import { Swords, Users, Crown, Plus, Trash2, Shield, Flame, Sparkles, UserPlus, Zap, Sliders, Info, ShieldAlert, Award, RotateCcw } from 'lucide-react';
 import { getTranslation } from '../services/i18n';
 import CharacterCard from './CharacterCard';
 import { RAID_BOSS_TIERS, calculateSquadSynergy } from '../services/synergyEngine';
@@ -264,6 +264,42 @@ export default function MultiFighterPanel({
     setBattleRoyale(updated);
   };
 
+  // Clear / Reset handlers to restore default clean setups
+  const handleResetBossRaid = () => {
+    if (setBossMinions) setBossMinions([]);
+    if (setTeamB && allCharacters.length >= 3) {
+      setTeamB([allCharacters[1], allCharacters[2]]);
+    }
+    if (setModifiers) {
+      setModifiers(prev => ({ ...prev, bossMultiplier: 1.35 }));
+    }
+  };
+
+  const handleResetMultiTeams = () => {
+    const tA = [allCharacters[0] || charA, allCharacters[1] || charB];
+    const tB = [allCharacters[2] || allCharacters[0], allCharacters[3] || allCharacters[1]];
+    if (setTeamA) setTeamA(tA);
+    if (setTeamB) setTeamB(tB);
+    if (setMultiTeams) {
+      setMultiTeams([
+        { id: 'alfa', name: 'Equipo Alfa', color: 'red', members: tA },
+        { id: 'beta', name: 'Equipo Beta', color: 'blue', members: tB }
+      ]);
+    }
+  };
+
+  const handleResetBattleRoyale = () => {
+    if (setBattleRoyale && allCharacters.length >= 4) {
+      setBattleRoyale(allCharacters.slice(0, 4));
+    }
+  };
+
+  const handleResetCurrentMode = () => {
+    if (matchMode === '1vN') handleResetBossRaid();
+    else if (matchMode === 'teams') handleResetMultiTeams();
+    else if (matchMode === 'battle_royale') handleResetBattleRoyale();
+  };
+
   return (
     <div className="space-y-6">
       
@@ -284,6 +320,19 @@ export default function MultiFighterPanel({
         </div>
 
         <div className="flex items-center gap-2 flex-wrap">
+          {/* Quick Clear / Reset Formation Button for Multi-Fighter Modes */}
+          {matchMode !== '1v1' && (
+            <button
+              type="button"
+              onClick={handleResetCurrentMode}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-rose-950/40 hover:bg-rose-900/60 text-rose-300 border border-rose-500/50 font-bold transition cursor-pointer shadow-md text-xs font-mono"
+              title="Limpiar esbirros/acumulación y restablecer la formación a los valores por defecto limpios"
+            >
+              <RotateCcw className="w-3.5 h-3.5 text-rose-400 animate-spin-reverse" />
+              <span>🧹 Limpiar Formación</span>
+            </button>
+          )}
+
           {/* AI Matchmaker Prompt Button */}
           {onOpenAiMatchmaker && (
             <button
@@ -399,6 +448,17 @@ export default function MultiFighterPanel({
                     <span className={`px-2.5 py-0.5 rounded text-white font-mono text-[10px] font-black uppercase bg-gradient-to-r ${currentBossTier.color} shadow-md`}>
                       {currentBossTier.badge}
                     </span>
+                    {bossMinions && bossMinions.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setBossMinions && setBossMinions([])}
+                        className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-rose-950/80 hover:bg-rose-900 border border-rose-500/50 text-rose-300 font-mono font-bold text-[10px] shadow transition cursor-pointer"
+                        title="Eliminar todos los esbirros/aliados del Boss"
+                      >
+                        <RotateCcw className="w-3 h-3" />
+                        <span>🧹 Limpiar Esbirros ({bossMinions.length})</span>
+                      </button>
+                    )}
                     <button
                       type="button"
                       onClick={addBossMinion}
@@ -504,14 +564,27 @@ export default function MultiFighterPanel({
                   <Users className="w-4 h-4 text-cyan-400" />
                   <span>ESCUADRA ASALTANTE ({teamB.length} Luchadores)</span>
                 </div>
-                <button
-                  type="button"
-                  onClick={addRaidSquadMember}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-black font-mono font-bold text-xs shadow-md transition cursor-pointer"
-                >
-                  <UserPlus className="w-3.5 h-3.5" />
-                  <span>+ Añadir Asaltante</span>
-                </button>
+                <div className="flex items-center gap-2">
+                  {teamB && teamB.length > 2 && (
+                    <button
+                      type="button"
+                      onClick={() => setTeamB && setTeamB(teamB.slice(0, 2))}
+                      className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-900/90 hover:bg-slate-800 border border-cyan-500/30 text-cyan-300 font-mono font-bold text-[10px] shadow transition cursor-pointer"
+                      title="Reducir escuadra a 2 asaltantes"
+                    >
+                      <RotateCcw className="w-3 h-3 text-cyan-400" />
+                      <span>🧹 Reset Asaltantes (2)</span>
+                    </button>
+                  )}
+                  <button
+                    type="button"
+                    onClick={addRaidSquadMember}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-black font-mono font-bold text-xs shadow-md transition cursor-pointer"
+                  >
+                    <UserPlus className="w-3.5 h-3.5" />
+                    <span>+ Añadir Asaltante</span>
+                  </button>
+                </div>
               </div>
 
               {/* Panel Dinámico de Sinergias de la Escuadra */}
@@ -568,16 +641,28 @@ export default function MultiFighterPanel({
               </div>
             </div>
 
-            {effectiveMultiTeams.length < 5 && (
+            <div className="flex items-center gap-2">
               <button
                 type="button"
-                onClick={addMultiTeamFaction}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-bold text-xs shadow-md transition cursor-pointer"
+                onClick={handleResetMultiTeams}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-rose-950/40 hover:bg-rose-900/60 border border-rose-500/40 text-rose-300 font-bold text-xs shadow-md transition cursor-pointer"
+                title="Restablecer a 2 equipos limpios (2 vs 2)"
               >
-                <Plus className="w-3.5 h-3.5" />
-                <span>+ Crear Equipo {effectiveMultiTeams.length + 1} ({TEAM_PALETTES[effectiveMultiTeams.length]?.colorName || 'Facción'})</span>
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>🧹 Restablecer a 2 vs 2</span>
               </button>
-            )}
+
+              {effectiveMultiTeams.length < 5 && (
+                <button
+                  type="button"
+                  onClick={addMultiTeamFaction}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-bold text-xs shadow-md transition cursor-pointer"
+                >
+                  <Plus className="w-3.5 h-3.5" />
+                  <span>+ Crear Equipo {effectiveMultiTeams.length + 1} ({TEAM_PALETTES[effectiveMultiTeams.length]?.colorName || 'Facción'})</span>
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Grid de Equipos Dinámico */}
@@ -674,14 +759,27 @@ export default function MultiFighterPanel({
                 </p>
               </div>
             </div>
-            <button
-              type="button"
-              onClick={addRoyaleMember}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 text-white font-mono text-xs font-bold shadow-lg shadow-purple-950/50 transition cursor-pointer"
-            >
-              <UserPlus className="w-4 h-4" />
-              <span>+ Añadir Gladiador</span>
-            </button>
+            <div className="flex items-center gap-2">
+              {battleRoyale && battleRoyale.length > 4 && (
+                <button
+                  type="button"
+                  onClick={handleResetBattleRoyale}
+                  className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-purple-500/40 text-purple-300 font-mono text-xs font-bold shadow transition cursor-pointer"
+                  title="Restablecer a 4 gladiadores por defecto"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  <span>🧹 Restablecer a 4</span>
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={addRoyaleMember}
+                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 text-white font-mono text-xs font-bold shadow-lg shadow-purple-950/50 transition cursor-pointer"
+              >
+                <UserPlus className="w-4 h-4" />
+                <span>+ Añadir Gladiador</span>
+              </button>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 max-h-[900px] overflow-y-auto pr-1">
