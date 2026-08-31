@@ -50,7 +50,7 @@ const DEFAULT_AI_CONFIG = {
   }
 };
 
-const ROSTER_VERSION = 'v7.0_819_fighters';
+const ROSTER_VERSION = 'v7.1_820_fighters';
 
 export default function App() {
   // Load characters from localStorage with automatic version-based cache migration

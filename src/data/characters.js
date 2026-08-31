@@ -75285,5 +75285,120 @@ export const INITIAL_CHARACTERS = [
     "weaknesses": "Nunca puesto a prueba por una derrota real previa.",
     "avatar": "https://static.wikia.nocookie.net/dragonball/images/6/63/Cooler_Final_Form_Dokkan.png/revision/latest?cb=20200301142010",
     "image": "https://static.wikia.nocookie.net/dragonball/images/6/63/Cooler_Final_Form_Dokkan.png/revision/latest?cb=20200301142010"
+  },
+  {
+    "id": "piccolo-saga-saiyan",
+    "name": "Piccolo (Saga Saiyan / Invasión Saiyan)",
+    "alias": "El Guerrero Namekiano & Maestro de Gohan",
+    "universe": "Dragon Ball Z (Canon Toriyama)",
+    "saga": "Saga Saiyan (Raditz y Nappa)",
+    "dbTag": "z",
+    "version": "Era del inicio de DBZ: desarrollo del Makankosappo, destrucción de la Luna, entrenamiento de Gohan y sacrificio frente a Nappa.",
+    "tier": "Tier 5-B | Nivel Planeta / Luna",
+    "ap": "Con ropa pesada (322 unidades) suprime su ki; sin peso (408 unidades) destruyó la Luna en segundos con un Chōmakōhō. Cargando el Makankosappo eleva su ki concentrado a 1,330 - 1,480 unidades, perforando armaduras Saiyan.",
+    "range": "Planetario / Interestelar en ataques de Ki directo (destrucción de la Luna desde la Tierra).",
+    "speed": {
+      "combat": "Sub-Relativista a Relativista bajo.",
+      "reaction": "Relativista bajo (reflejos marciales Namekianos).",
+      "attack": "Relativista a FTL bajo (velocidad del Makankosappo).",
+      "travel": "Hipersónico alto a Sub-Relativista en vuelo prolongado."
+    },
+    "strength": "Class Multi-Continental a Moon Level.",
+    "durability": "Nivel Lunar a Planeta Pequeño (capaz de resistir castigo físico masivo de Raditz y Nappa).",
+    "stamina": "Muy Alta (fisiología Namekiana de tipo guerrero que solo requiere agua para subsistir).",
+    "battleIQ": "Genio Táctico / Estratega Maestro (creador del Makankosappo, análisis implacable de puntos débiles y combate coordinado).",
+    "haxTags": [
+      "Regeneración Namekiana (núcleo intacto)",
+      "Elasticidad & Estiramiento de Extremidades (Mystic Attack)",
+      "Manipulación y Concentración Extrema de Ki (Makankosappo)",
+      "Audición Namekiana Aguda",
+      "Fisiología Namekiana de Tipo Guerrero",
+      "Destrucción Lunar Instantánea (Chōmakōhō)",
+      "Telepatía y Materialización Mágica"
+    ],
+    "forms": [
+      {
+        "id": "base-pesada",
+        "name": "Forma Base (Ropa Pesada / 322 Unidades)",
+        "multiplier": "1.0x",
+        "tier": "Tier 5-B | Nivel Planeta Pequeño - Luna",
+        "stats": "Ki contenido en 322 unidades por ropa de entrenamiento de alto peso. Velocidad y agilidad contenidas deliberadamente."
+      },
+      {
+        "id": "sin-peso",
+        "name": "Sin Ropa Pesada (408 Unidades / Plena Movilidad)",
+        "multiplier": "1.27x",
+        "tier": "Tier 5-B | Nivel Planeta / Luna",
+        "stats": "Liberación de 408 unidades de combate. Aumento drástico de velocidad de desplazamiento, reflejos y capacidad destructiva lunar."
+      },
+      {
+        "id": "makankosappo-carga",
+        "name": "Makankosappo a Plena Carga (1,330 - 1,480 Unidades)",
+        "multiplier": "3.6x",
+        "tier": "Tier 5-A | Nivel Planeta Grande",
+        "stats": "Concentración de todo el ki del cuerpo en dos dedos. Potencia de penetración mortal capaz de atravesar defensas que triplican su poder base."
+      },
+      {
+        "id": "sacrificio-gohan",
+        "name": "Escudo Sacrificial por Gohan (Defensa Límite)",
+        "multiplier": "1.5x en Durabilidad",
+        "tier": "Tier 5-B | Nivel Planeta",
+        "stats": "Concentración total de ki en la espalda y torso para absorber ataques letales y proteger a un aliado."
+      }
+    ],
+    "arsenal": {
+      "basicAttacks": "Ráfagas de ki veloces, golpes contundentes de artes marciales demoníacas y estiramiento elástico de brazos (Mystic Attack) para atrapar al rival a distancia.",
+      "superAttacks": [
+        {
+          "name": "Makankosappo (Cañón de Haz Especial)",
+          "desc": "Haz de energía perforante en espiral que concentra el ki en dos dedos, atravesando armaduras Saiyan y barreras.",
+          "cost": "40% de ki acumulado"
+        },
+        {
+          "name": "Chōmakōhō (Rayo Destructor Bucal / Destructor Lunar)",
+          "desc": "Potente descarga de energía expulsada por la boca o la palma, con potencia suficiente para vaporizar la Luna.",
+          "cost": "25% de ki"
+        },
+        {
+          "name": "Bakurikimaha (Onda Explosiva Demoníaca)",
+          "desc": "Onda de choque y ki de gran radio de impacto heredada del Rey Demonio Piccolo para repeler asaltantes múltiples.",
+          "cost": "20% de ki"
+        },
+        {
+          "name": "Kousengan (Rayos Ópticos Láser)",
+          "desc": "Disparos láser de precisión milimétrica desde los ojos para neutralizar proyectiles enemigos o cegar al oponente.",
+          "cost": "10% de ki"
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Makankosappo Doble Perforación Mortal",
+          "desc": "La técnica definitiva desarrollada durante 5 años de soledad, que taladra el cuerpo del enemigo e ignora la resistencia convencional.",
+          "cost": "60% de ki"
+        }
+      ],
+      "passives": [
+        {
+          "name": "Regeneración Celular Namekiana",
+          "desc": "Puede regenerar brazos o tejidos amputados en segundos mientras la cabeza permanezca intacta, a costa de stamina.",
+          "cost": "Gasto de 15-30% STM"
+        },
+        {
+          "name": "Maestro Protector & Vínculo Paternal",
+          "desc": "Si Gohan o un aliado novato está en peligro mortal, sus defensas y velocidad de reacción se disparan instintivamente.",
+          "cost": "Pasivo continuo"
+        }
+      ]
+    },
+    "feats": [
+      "Destruyó la Luna con un solo ataque de ki para detener la transformación en Oozaru de Gohan.",
+      "Derrotó y asesinó a Raditz perforando su cuerpo junto con el de Goku mediante el Makankosappo.",
+      "Entrenó en solitario a Son Gohan convirtiéndolo en un guerrero de supervivencia en el desierto salvaje.",
+      "Destruyó varios Saibamen y combatió cuerpo a cuerpo contra Nappa antes de su heroico sacrificio."
+    ],
+    "psychology": "Serio, analítico, severo y calculador. Inicialmente distante y marcado por su origen demoníaco, desarrolla una profunda nobleza y lealtad paternal al entrenar a Gohan.",
+    "weaknesses": "La regeneración de extremidades agota significativamente su resistencia. Los ruidos de alta frecuencia o silbidos agudos atacan directamente sus oídos Namekianos hipersensibles.",
+    "avatar": "https://static.wikia.nocookie.net/dragonball/images/e/e0/Piccolo_Artwork_Z.png/revision/latest?cb=20180905183420",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/e/e0/Piccolo_Artwork_Z.png/revision/latest?cb=20180905183420"
   }
 ];

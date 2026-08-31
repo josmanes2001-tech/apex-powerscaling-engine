@@ -325,7 +325,7 @@ export default function Navbar({
               title="Organizar Roster"
             >
               <span className="text-xs">🔀</span>
-              <span className="whitespace-nowrap font-bold">Roster ({allCharacters?.length || 819})</span>
+              <span className="whitespace-nowrap font-bold">Roster ({allCharacters?.length || 820})</span>
             </button>
 
             {/* Azar */}
