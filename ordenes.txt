@@ -1,0 +1,9 @@
+Hola OpenCode. Estamos desarrollando el proyecto "APEX Engine 2.0". 
+Ya estás ejecutándote en la raíz del repositorio local (Z:\apex-powerscaling-engine).
+
+Por favor, confirma que puedes leer los archivos del proyecto (como package.json y la carpeta src/) y dime con cuál de estas 4 tareas de monetización empezamos:
+
+A) MerchBanner.jsx: Configurar variables para tags de afiliados (Amazon, AliExpress, Crunchyroll).
+B) Publicidad Discreta: Contenedores para banners que se oculten automáticamente si isVip === true.
+C) Fichas VIP: Generación/exportación de tarjetas de combate holográficas para redes sociales.
+D) Pasarela de Suscripción: Diseñar flujo con Stripe/LemonSqueezy.

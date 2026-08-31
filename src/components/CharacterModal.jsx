@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { 
   X, Shield, Zap, Activity, Brain, AlertTriangle, ListPlus, Battery, 
-  Dumbbell, Move, Swords, Book, Target, Sparkles, Users, Wrench, Flame, ShieldAlert, Cpu 
+  Dumbbell, Move, Swords, Book, Target, Sparkles, Users, Wrench, Flame, ShieldAlert, Cpu,
+  RefreshCw, Image as ImageIcon, Palette, Globe, Languages, Check, ArrowRightLeft,
+  ChevronLeft, ChevronRight, Plus, Trash2, Edit3, Eye, FolderPlus, Tag, Layers, Star
 } from 'lucide-react';
+import { SimulationEngine } from '../services/simulationEngine';
+import { translateCharacterSheet } from '../services/translatorService';
+import { UNIVERSE_PRESETS } from '../services/franchiseHelper';
 
 const COMMON_HAX_TAGS = [
   'Negación de Durabilidad',
@@ -14,45 +19,112 @@ const COMMON_HAX_TAGS = [
   'Adaptación Reactiva',
   'Acausalidad',
   'Ataques Conceptuales',
-  'Inducción de Muerte'
+  'Inducción de Muerte',
+  'Intangibilidad',
+  'Manipulación del Alma',
+  'Absorción de Energía',
+  'Inmunidad a Venenos/Miasmas',
+  'Regeneración Acelerada',
+  'Evolución en Combate',
+  'Manipulación de Realidad',
+  'Haki / Fuerza Espiritual',
+  'Invulnerabilidad Condicional',
+  'Ataques Dimensionales'
 ];
 
-export default function CharacterModal({ character, onClose, onSave, isEditing = false, aiConfig }) {
+export default function CharacterModal({ character, onClose, onSave, isEditing = false, aiConfig, allCharacters = [], lang = 'es' }) {
+  const [isEditingMode, setIsEditingMode] = useState(isEditing);
   const [activeTab, setActiveTab] = useState('basico');
-  const [formData, setFormData] = useState(character || {
-    id: `custom-${Date.now()}`,
-    name: '',
-    universe: '',
-    version: '',
-    tier: 'Tier 7-B',
-    ap: '',
-    range: 'Cuerpo a cuerpo estándar',
-    speed: { combat: '', reaction: '', travel: '', attack: '' },
-    strength: { striking: '', lifting: '' },
-    durability: '',
-    stamina: '',
-    battleIQ: '',
-    haxTags: [],
-    subEntity: { name: '', type: '', stats: '' },
-    arsenal: {
-      basicAttacks: '',
-      superAttacks: [],
-      ultimateAttacks: [],
-      passives: [],
-      actives: []
-    },
-    abilities: [],
-    forms: [],
-    feats: [],
-    psychology: '',
-    weaknesses: '',
-    equipment: ''
+  const [isGeneratingImage, setIsGeneratingImage] = useState(false);
+  const [imageEngine, setImageEngine] = useState('pollinations'); // 'pollinations' | 'reforge'
+  const [imageStyle, setImageStyle] = useState('shonen'); // 'shonen' | 'cinematic' | 'grimdark' | 'wiki'
+  const [sdUrl, setSdUrl] = useState('http://127.0.0.1:7860');
+
+  const [selectedReferenceCharId, setSelectedReferenceCharId] = useState('auto');
+
+  const [originalFormData, setOriginalFormData] = useState(character ? JSON.parse(JSON.stringify(character)) : null);
+  const [currentSheetLang, setCurrentSheetLang] = useState('es');
+  const [isTranslatingSheet, setIsTranslatingSheet] = useState(false);
+  const [translationStatus, setTranslationStatus] = useState('');
+  const [isCustomUniverseInput, setIsCustomUniverseInput] = useState(false);
+
+  const [formData, setFormData] = useState(() => {
+    if (character) {
+      const img = character.avatar || character.image || '';
+      return {
+        ...character,
+        avatar: img,
+        image: img
+      };
+    }
+    return {
+      id: `custom-${Date.now()}`,
+      name: '',
+      universe: '🐉 Dragon Ball Super',
+      version: '',
+      tier: 'Tier 7-B',
+      ap: '',
+      range: 'Cuerpo a cuerpo estándar',
+      speed: { combat: '', reaction: '', travel: '', attack: '' },
+      strength: { striking: '', lifting: '' },
+      durability: '',
+      stamina: 'Media',
+      intelligence: 'Promedio',
+      experience: 'Media',
+      tactics: 'Estándar',
+      weaknesses: 'Ninguna conocida',
+      avatar: '',
+      image: '',
+      haxTags: [],
+      subEntity: { name: '', type: '', stats: '' },
+      arsenal: {
+        basicAttacks: '',
+        superAttacks: [],
+        ultimateAttacks: [],
+        passives: [],
+        actives: []
+      },
+      abilities: [],
+      forms: [],
+      feats: [],
+      psychology: '',
+      equipment: ''
+    };
   });
 
   const [isLoading, setIsLoading] = useState(false);
+  const [showRefineModal, setShowRefineModal] = useState(false);
+  const [refineSection, setRefineSection] = useState('arsenal');
+  const [refineInstruction, setRefineInstruction] = useState('');
+  const [isRefining, setIsRefining] = useState(false);
+
+  const handleRefineSection = async (sectionToRefine = refineSection, instruction = refineInstruction) => {
+    if (!formData.name) return alert('Escribe primero el nombre del personaje.');
+    setIsRefining(true);
+    try {
+      const refined = await SimulationEngine.refineCharacterSectionWithAi(
+        formData,
+        sectionToRefine,
+        instruction,
+        aiConfig
+      );
+      setFormData(refined);
+      setShowRefineModal(false);
+      setRefineInstruction('');
+    } catch (e) {
+      alert('Error en refinamiento selectivo IA: ' + e.message);
+    } finally {
+      setIsRefining(false);
+    }
+  };
 
   const handleChange = (field, value) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData(prev => {
+      const updated = { ...prev, [field]: value };
+      if (field === 'avatar') updated.image = value;
+      if (field === 'image') updated.avatar = value;
+      return updated;
+    });
   };
 
   const handleNestedChange = (parent, field, value) => {
@@ -106,23 +178,22 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
     });
   };
 
+  const detectedReferences = SimulationEngine.findReferenceCharacters(formData.name, formData.universe, allCharacters);
+  const activeReference = selectedReferenceCharId === 'auto'
+    ? detectedReferences[0]
+    : (selectedReferenceCharId === 'none' ? null : allCharacters.find(c => c.id === selectedReferenceCharId));
+
   const handleAutoFill = async () => {
     if (!formData.name) return alert('Pon un nombre primero para buscar.');
     setIsLoading(true);
     try {
-      const res = await fetch(`http://${window.location.hostname}:3001/api/character/generate`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: formData.name,
-          engine: aiConfig?.engine || 'ollama',
-          model: aiConfig?.model || '',
-          apiKey: aiConfig?.apiKey || '',
-          customBaseUrl: aiConfig?.customBaseUrl || ''
-        })
-      });
-      const data = await res.json();
-      if (data.error) throw new Error(data.error);
+      const data = await SimulationEngine.generateCharacterStatsWithAi(
+        formData.name,
+        formData.universe,
+        aiConfig,
+        allCharacters,
+        activeReference
+      );
       setFormData(prev => ({
         ...prev,
         ...data,
@@ -135,170 +206,860 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
     }
   };
 
+  const handleGenerateImage = async () => {
+    if (!formData.name) return alert('Escribe primero el nombre del personaje.');
+    setIsGeneratingImage(true);
+    try {
+      const prompt = `${formData.name} from ${formData.universe || 'anime'}, ${formData.version || ''}, badass fighting stance, dynamic anime character portrait, glowing aura`;
+      
+      if (imageEngine === 'pollinations') {
+        const directUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt + ', masterpiece, best quality, detailed background')}?width=512&height=512&nologo=true&seed=${Date.now()}`;
+        setFormData(prev => ({ ...prev, avatar: directUrl }));
+        return;
+      }
+
+      const res = await fetch(`http://${window.location.hostname}:3001/api/image/generate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          prompt,
+          style: imageStyle,
+          engine: imageEngine,
+          sdUrl
+        })
+      });
+      const data = await res.json();
+      if (data.error) throw new Error(data.error);
+      if (data.imageUrl) {
+        setFormData(prev => ({ ...prev, avatar: data.imageUrl }));
+      }
+    } catch (err) {
+      alert('Error generando imagen: ' + err.message);
+    } finally {
+      setIsGeneratingImage(false);
+    }
+  };
+
+  const handleTranslateSheet = async (targetLang) => {
+    if (targetLang === currentSheetLang) return;
+    if (targetLang === 'es' && originalFormData) {
+      setFormData(JSON.parse(JSON.stringify(originalFormData)));
+      setCurrentSheetLang('es');
+      return;
+    }
+    
+    setIsTranslatingSheet(true);
+    setTranslationStatus('Iniciando traducción instantánea con Google Translate...');
+    try {
+      if (!originalFormData) {
+        setOriginalFormData(JSON.parse(JSON.stringify(formData)));
+      }
+      const source = originalFormData || formData;
+      const translated = await translateCharacterSheet(source, targetLang, (pct, msg) => {
+        setTranslationStatus(`${msg} (${pct}%)`);
+      });
+      setFormData(translated);
+      setCurrentSheetLang(targetLang);
+    } catch (err) {
+      alert('Error al traducir ficha: ' + (err.message || err));
+    } finally {
+      setIsTranslatingSheet(false);
+      setTranslationStatus('');
+    }
+  };
+
   const addForm = () => {
     setFormData(prev => ({
       ...prev,
-      forms: [...(prev.forms || []), { id: `form-${Date.now()}`, name: '', stats: '' }]
+      forms: [...(prev.forms || []), { id: `form-${Date.now()}`, name: '', stats: '', multiplier: '', aura: '', cost: '' }]
     }));
   };
 
   const updateForm = (index, field, value) => {
-    const newForms = [...formData.forms];
+    const newForms = [...(formData.forms || [])];
     newForms[index][field] = value;
     setFormData(prev => ({ ...prev, forms: newForms }));
   };
 
   const removeForm = (index) => {
-    setFormData(prev => ({ ...prev, forms: prev.forms.filter((_, i) => i !== index) }));
+    setFormData(prev => ({ ...prev, forms: (prev.forms || []).filter((_, i) => i !== index) }));
   };
 
+  // Tabs structure with live counters
+  const totalAttacksCount = (formData.arsenal?.superAttacks?.length || 0) + 
+                            (formData.arsenal?.ultimateAttacks?.length || 0) + 
+                            (formData.arsenal?.passives?.length || 0) + 
+                            (formData.arsenal?.actives?.length || 0);
+
   const TABS = [
-    { id: 'basico', label: 'Básico', icon: <Book className="w-3.5 h-3.5" /> },
-    { id: 'arsenal', label: 'Ataques & Habilidades', icon: <Flame className="w-3.5 h-3.5 text-orange-400" /> },
-    { id: 'cinetica', label: 'Cinética', icon: <Move className="w-3.5 h-3.5" /> },
-    { id: 'biomecanica', label: 'Biomecánica', icon: <Activity className="w-3.5 h-3.5" /> },
-    { id: 'hax', label: 'Hax & Tags', icon: <Sparkles className="w-3.5 h-3.5" /> },
-    { id: 'formas', label: 'Formas', icon: <ListPlus className="w-3.5 h-3.5" /> },
-    { id: 'invocaciones', label: 'Stands/Armas', icon: <Users className="w-3.5 h-3.5" /> },
-    { id: 'psicologia', label: 'Psicología', icon: <Brain className="w-3.5 h-3.5" /> }
+    { id: 'basico', label: 'Básico', shortLabel: 'Básico', count: null, icon: <Book className="w-4 h-4 text-cyan-400" /> },
+    { id: 'formas', label: 'Transformaciones', shortLabel: 'Formas', count: formData.forms?.length || 0, icon: <ListPlus className="w-4 h-4 text-amber-400" /> },
+    { id: 'arsenal', label: 'Ataques & Habilidades', shortLabel: 'Ataques', count: totalAttacksCount || null, icon: <Flame className="w-4 h-4 text-orange-400" /> },
+    { id: 'hax', label: 'Hax & Tags', shortLabel: 'Hax', count: formData.haxTags?.length || null, icon: <Sparkles className="w-4 h-4 text-fuchsia-400" /> },
+    { id: 'cinetica', label: 'Cinética & Velocidad', shortLabel: 'Cinética', count: null, icon: <Move className="w-4 h-4 text-cyan-400" /> },
+    { id: 'biomecanica', label: 'Biomecánica & Salud', shortLabel: 'Salud', count: null, icon: <Activity className="w-4 h-4 text-emerald-400" /> },
+    { id: 'invocaciones', label: 'Stands / Armas', shortLabel: 'Stands', count: formData.subEntity?.name ? 1 : null, icon: <Users className="w-4 h-4 text-purple-400" /> },
+    { id: 'psicologia', label: 'Psicología & IQ', shortLabel: 'IQ', count: null, icon: <Brain className="w-4 h-4 text-indigo-400" /> }
   ];
 
+  const currentTabIdx = TABS.findIndex(t => t.id === activeTab);
+  const prevTab = currentTabIdx > 0 ? TABS[currentTabIdx - 1] : null;
+  const nextTab = currentTabIdx < TABS.length - 1 ? TABS[currentTabIdx + 1] : null;
+
+  // Selected Universe Preset Helper
+  const currentUniversePreset = UNIVERSE_PRESETS.find(u => 
+    (formData.universe || '').toLowerCase().includes(u.name.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
+    u.name.toLowerCase().includes((formData.universe || '').toLowerCase().replace(/[^a-z0-9]/g, ''))
+  );
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-4xl rounded-2xl glass-panel border border-slate-700 shadow-2xl p-0 my-8 max-h-[90vh] flex flex-col">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
+      <div className="relative w-full max-w-4xl rounded-2xl glass-panel border border-slate-700 shadow-2xl p-0 my-4 sm:my-8 max-h-[94vh] flex flex-col overflow-hidden">
+        
         {/* Header */}
-        <div className="p-5 border-b border-slate-800 flex items-center justify-between bg-slate-900/50 rounded-t-2xl">
-          <div>
-            <h2 className="text-xl font-bold text-white flex items-center gap-2">
-              <Shield className="w-5 h-5 text-red-500" />
-              {isEditing ? 'Crear / Editar Ficha Técnica (Arsenal Completo)' : formData.name}
-            </h2>
-            <p className="text-xs text-slate-400 font-mono mt-1">
-              {formData.universe} — {formData.version || 'Sistema Oficial VS Battles & OMNI-TITÁN'}
-            </p>
+        <div className="p-4 sm:p-5 border-b border-slate-800 flex items-center justify-between bg-slate-950/80 rounded-t-2xl gap-3">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="p-2 rounded-xl bg-red-950/60 border border-red-500/40 text-red-400 shrink-0">
+              <Shield className="w-5 h-5" />
+            </div>
+            <div className="min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h2 className="text-base sm:text-lg font-bold text-white truncate font-cinzel">
+                  {formData.name || 'Luchador Sin Nombre'}
+                </h2>
+                <span className="px-2 py-0.5 rounded bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold text-[10px] font-mono shrink-0">
+                  {formData.tier || 'Tier ?'}
+                </span>
+              </div>
+              <p className="text-[11px] text-cyan-400 font-mono truncate">
+                {formData.universe || 'Universo No Asignado'} {formData.version ? `— ${formData.version}` : ''}
+              </p>
+            </div>
           </div>
-          <button onClick={onClose} className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition cursor-pointer">
-            <X className="w-5 h-5" />
-          </button>
+
+          <div className="flex items-center gap-2 shrink-0">
+            {/* Quick Toggle: View Mode vs Edit Mode */}
+            <button
+              type="button"
+              onClick={() => setIsEditingMode(!isEditingMode)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold font-mono transition cursor-pointer flex items-center gap-1.5 border shadow-sm ${
+                isEditingMode
+                  ? 'bg-amber-600 hover:bg-amber-500 text-black border-amber-400 shadow-amber-950/60'
+                  : 'bg-slate-800 hover:bg-slate-700 text-slate-200 border-slate-700'
+              }`}
+              title={isEditingMode ? "Cambiar a Modo Lectura Cómoda" : "Activar Modo Edición de Ficha"}
+            >
+              {isEditingMode ? (
+                <>
+                  <Edit3 className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">Modo:</span> <strong>Edición</strong>
+                </>
+              ) : (
+                <>
+                  <Eye className="w-3.5 h-3.5 text-cyan-400" />
+                  <span className="hidden sm:inline">Modo:</span> <strong>Lectura</strong>
+                </>
+              )}
+            </button>
+
+            <button 
+              onClick={onClose} 
+              className="p-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition cursor-pointer"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
-        {/* AI Autocomplete */}
-        {isEditing && (
-          <div className="px-5 pt-4">
-            <div className="flex items-center gap-3 p-3 bg-indigo-900/20 border border-indigo-500/30 rounded-xl">
-              <div className="flex-1 text-xs font-mono">
-                <label className="block text-indigo-300 font-bold mb-1">Buscar Nombre con IA (Genera Arsenal, Pasivas y Ultimates)</label>
-                <input 
-                  type="text" 
-                  value={formData.name} 
-                  onChange={e => handleChange('name', e.target.value)} 
-                  placeholder="Ej: Goku, Broly, Rocky Zeppeli, Sukuna, Thor..." 
-                  className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white" 
-                />
-              </div>
-              <button 
-                onClick={handleAutoFill} 
-                disabled={isLoading}
-                className="px-4 py-2.5 mt-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition disabled:opacity-50 flex items-center gap-2 cursor-pointer text-xs"
+        {/* Translation Toolbar (Google Translate & Instant Multilingual) */}
+        <div className="px-4 sm:px-5 py-2 bg-slate-950/95 border-b border-slate-800/80 flex items-center justify-between flex-wrap gap-2 text-xs font-mono">
+          <div className="flex items-center gap-2 flex-wrap">
+            <Languages className="w-3.5 h-3.5 text-cyan-400" />
+            <span className="text-slate-300 font-bold text-[11px]">Traductor:</span>
+            <div className="flex items-center gap-1 bg-slate-900 border border-slate-800 rounded-lg p-0.5">
+              <button
+                type="button"
+                disabled={isTranslatingSheet}
+                onClick={() => handleTranslateSheet('es')}
+                className={`px-2 py-0.5 rounded text-[10px] font-bold transition cursor-pointer flex items-center gap-1 ${
+                  currentSheetLang === 'es' ? 'bg-amber-500 text-black shadow' : 'text-slate-400 hover:text-white'
+                }`}
               >
-                <Zap className="w-4 h-4" />
-                {isLoading ? 'Analizando Arsenal...' : '✨ Autocompletar'}
+                <span>🇪🇸 ES</span>
               </button>
+              <button
+                type="button"
+                disabled={isTranslatingSheet}
+                onClick={() => handleTranslateSheet('en')}
+                className={`px-2 py-0.5 rounded text-[10px] font-bold transition cursor-pointer flex items-center gap-1 ${
+                  currentSheetLang === 'en' ? 'bg-cyan-500 text-black shadow' : 'text-slate-400 hover:text-cyan-300'
+                }`}
+              >
+                <span>🇬🇧 EN</span>
+              </button>
+              <button
+                type="button"
+                disabled={isTranslatingSheet}
+                onClick={() => handleTranslateSheet('ja')}
+                className={`px-2 py-0.5 rounded text-[10px] font-bold transition cursor-pointer flex items-center gap-1 ${
+                  currentSheetLang === 'ja' ? 'bg-red-500 text-white shadow' : 'text-slate-400 hover:text-red-300'
+                }`}
+              >
+                <span>🇯🇵 JA</span>
+              </button>
+            </div>
+          </div>
+
+          {isTranslatingSheet ? (
+            <div className="flex items-center gap-1.5 text-cyan-400 text-[10px] animate-pulse">
+              <RefreshCw className="w-3 h-3 animate-spin" />
+              <span>{translationStatus}</span>
+            </div>
+          ) : currentSheetLang !== 'es' ? (
+            <span className="text-[10px] text-emerald-400 flex items-center gap-1 font-bold">
+              <Check className="w-3 h-3" /> Ficha traducida ({currentSheetLang.toUpperCase()})
+            </span>
+          ) : (
+            <span className="text-[10px] text-slate-500 hidden md:inline">
+              OMNI-TITÁN Engine · Ficha Técnica Oficial
+            </span>
+          )}
+        </div>
+
+        {/* AI Autocomplete & Selective Refinement Bar (Only in Edit Mode) */}
+        {isEditingMode && (
+          <div className="px-4 sm:px-5 pt-3">
+            <div className="p-3 bg-gradient-to-r from-indigo-950/40 via-purple-950/30 to-slate-900 border border-indigo-500/40 rounded-xl space-y-2.5">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+                <div className="flex-1 text-xs font-mono">
+                  <label className="block text-indigo-300 font-bold mb-1">Nombre del Personaje / Búsqueda IA:</label>
+                  <input 
+                    type="text" 
+                    value={formData.name} 
+                    onChange={e => handleChange('name', e.target.value)} 
+                    placeholder="Ej: Goku SSJ2 (Saga Buu), Toji Fushiguro, Sukuna (Heian)..." 
+                    className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white text-xs focus:border-indigo-400 outline-none" 
+                  />
+                </div>
+
+                <div className="flex items-center gap-2 mt-1 sm:mt-4">
+                  <button 
+                    onClick={handleAutoFill} 
+                    disabled={isLoading || isRefining}
+                    className="flex-1 sm:flex-initial px-3.5 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition disabled:opacity-50 flex items-center justify-center gap-1.5 cursor-pointer text-xs shadow"
+                    title="Generar toda la ficha con IA calibrada con las fichas existentes del roster"
+                  >
+                    <Zap className="w-3.5 h-3.5 text-yellow-300" />
+                    <span>{isLoading ? 'Generando...' : '✨ Autocompletar con IA'}</span>
+                  </button>
+
+                  <button 
+                    onClick={() => setShowRefineModal(true)} 
+                    disabled={isLoading || isRefining}
+                    className="flex-1 sm:flex-initial px-3.5 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold transition disabled:opacity-50 flex items-center justify-center gap-1.5 cursor-pointer text-xs shadow-lg shadow-purple-950/50"
+                    title="Modificar o añadir solo una sección específica sin alterar el resto de la ficha"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-pink-200" />
+                    <span>🪄 Cirujano IA</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Barra de Calibración con Fichas Existentes del Roster */}
+              <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-indigo-900/40 text-[11px] font-mono">
+                <div className="flex items-center gap-1.5 text-slate-300 flex-wrap">
+                  <span className="text-amber-400 font-bold flex items-center gap-1">
+                    <span>🎯</span>
+                    <span>Calibración de Roster:</span>
+                  </span>
+                  {activeReference ? (
+                    <span className="px-2 py-0.5 rounded bg-indigo-950 border border-indigo-500/60 text-indigo-200 font-bold flex items-center gap-1">
+                      <span>✨ Usando base:</span>
+                      <span className="text-white">{activeReference.name}</span>
+                      <span className="text-[10px] text-slate-400">({activeReference.universe})</span>
+                    </span>
+                  ) : (
+                    <span className="text-slate-500 italic">Creación pura sin referencia previa</span>
+                  )}
+                </div>
+
+                <div className="flex items-center gap-1.5">
+                  <label className="text-slate-400 text-[10px]">Plantilla / Base:</label>
+                  <select
+                    value={selectedReferenceCharId}
+                    onChange={(e) => setSelectedReferenceCharId(e.target.value)}
+                    className="bg-slate-950 border border-slate-700 text-slate-200 text-[10px] rounded-lg p-1 max-w-[220px] outline-none"
+                  >
+                    <option value="auto">🪄 Auto-detectar ({detectedReferences[0]?.name || 'Ninguno'})</option>
+                    <option value="none">🚫 Sin Referencia (Creación limpia)</option>
+                    {allCharacters && allCharacters.length > 0 && (
+                      <optgroup label="📋 Roster Existente">
+                        {allCharacters.slice(0, 50).map((c, idx) => (
+                          <option key={c.id || idx} value={c.id}>{c.name} ({c.universe})</option>
+                        ))}
+                      </optgroup>
+                    )}
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
         )}
 
-        {/* Tabs */}
-        <div className="flex border-b border-slate-800 px-5 pt-4 gap-2 overflow-x-auto">
-          {TABS.map(t => (
-            <button
-              key={t.id}
-              onClick={() => setActiveTab(t.id)}
-              className={`flex items-center gap-1.5 px-3 py-2 text-xs font-mono font-bold border-b-2 transition-colors cursor-pointer whitespace-nowrap ${
-                activeTab === t.id ? 'border-red-500 text-red-400' : 'border-transparent text-slate-400 hover:text-slate-300'
-              }`}
-            >
-              {t.icon} {t.label}
-            </button>
-          ))}
+        {/* TOP TAB NAVIGATION BAR (Super optimized for PC & Mobile) */}
+        <div className="border-b border-slate-800 bg-slate-950/90 px-3 sm:px-5 pt-3">
+          
+          {/* Mobile Quick Dropdown Selector for instant switching (< 768px) */}
+          <div className="block md:hidden mb-2.5">
+            <div className="flex items-center gap-2">
+              <label className="text-[10px] text-slate-400 font-mono font-bold uppercase shrink-0">
+                📑 Sección:
+              </label>
+              <select
+                value={activeTab}
+                onChange={(e) => setActiveTab(e.target.value)}
+                className="w-full bg-slate-900 border border-slate-700 text-amber-300 text-xs font-bold rounded-xl p-2 font-mono outline-none focus:border-amber-500"
+              >
+                {TABS.map(t => (
+                  <option key={t.id} value={t.id}>
+                    {t.label} {t.count !== null ? `(${t.count})` : ''}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {/* Responsive Pill Tabs List */}
+          <div className="flex gap-1.5 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
+            {TABS.map(t => {
+              const isActive = activeTab === t.id;
+              return (
+                <button
+                  key={t.id}
+                  onClick={() => setActiveTab(t.id)}
+                  className={`flex items-center gap-1.5 px-3 py-2 text-xs font-mono font-bold rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0 border ${
+                    isActive 
+                      ? 'bg-gradient-to-r from-red-950/90 to-amber-950/80 border-amber-500/60 text-amber-300 shadow-md shadow-amber-950/40' 
+                      : 'bg-slate-900/60 border-slate-800/80 text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                  }`}
+                >
+                  {t.icon}
+                  <span>{t.label}</span>
+                  {t.count !== null && (
+                    <span className={`px-1.5 py-0.2 rounded-full text-[9px] font-black ${
+                      isActive ? 'bg-amber-500 text-black' : 'bg-slate-800 text-slate-400'
+                    }`}>
+                      {t.count}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Content Body */}
-        <div className="p-5 overflow-y-auto flex-1 font-mono text-xs">
+        {/* Modal Main Content Area */}
+        <div className="p-4 sm:p-5 overflow-y-auto flex-1 font-mono text-xs space-y-4">
           
-          {/* TAB 1: BÁSICO */}
+          {/* TAB 1: BÁSICO & UNIVERSO */}
           {activeTab === 'basico' && (
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-slate-400 mb-1">Universo / Franquicia</label>
-                  {isEditing ? <input type="text" value={formData.universe} onChange={e => handleChange('universe', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" /> : <p className="text-slate-200">{formData.universe}</p>}
-                </div>
-                <div>
-                  <label className="block text-slate-400 mb-1">Versión / Lore</label>
-                  {isEditing ? <input type="text" value={formData.version} onChange={e => handleChange('version', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" /> : <p className="text-slate-200">{formData.version}</p>}
+              
+              {/* Image & Avatar Card */}
+              <div className="p-4 bg-gradient-to-r from-purple-950/30 via-slate-900 to-slate-900 border border-purple-900/50 rounded-2xl flex flex-col sm:flex-row items-center gap-4">
+                {formData.avatar ? (
+                  <div className="w-24 h-24 rounded-2xl p-1 bg-slate-950 border-2 border-purple-500/50 shadow-lg shadow-purple-950/60 flex items-center justify-center overflow-hidden shrink-0">
+                    <img
+                      src={formData.avatar}
+                      alt={formData.name || 'Avatar'}
+                      className="w-full h-full object-contain object-center drop-shadow-md"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-24 h-24 rounded-2xl bg-slate-950 border border-slate-800 flex flex-col items-center justify-center text-slate-500 text-[10px]">
+                    <ImageIcon className="w-6 h-6 mb-1 text-slate-600" />
+                    <span>Sin Imagen</span>
+                  </div>
+                )}
+
+                <div className="flex-1 space-y-2 w-full">
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <label className="text-purple-300 font-bold flex items-center gap-1.5">
+                      <Palette className="w-4 h-4 text-purple-400" />
+                      <span>Retrato / Ilustración del Personaje:</span>
+                    </label>
+
+                    {isEditingMode && (
+                      <div className="flex items-center gap-1.5">
+                        <select
+                          value={imageEngine}
+                          onChange={(e) => setImageEngine(e.target.value)}
+                          className="bg-slate-950 border border-slate-800 text-[10px] text-slate-300 rounded-lg p-1"
+                        >
+                          <option value="pollinations">🌐 Pollinations Flux (Nube Gratis)</option>
+                          <option value="reforge">🖥️ Reforge / SD Local</option>
+                        </select>
+
+                        <select
+                          value={imageStyle}
+                          onChange={(e) => setImageStyle(e.target.value)}
+                          className="bg-slate-950 border border-purple-800/60 text-[10px] text-purple-300 rounded-lg p-1 font-bold"
+                        >
+                          <option value="shonen">💥 Shōnen Épico</option>
+                          <option value="cinematic">🌌 Cinemático</option>
+                          <option value="grimdark">🌑 Grimdark</option>
+                          <option value="wiki">⚔️ Wiki Oficial</option>
+                        </select>
+                      </div>
+                    )}
+                  </div>
+
+                  {isEditingMode && (
+                    <div className="space-y-2 pt-1">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <button
+                          type="button"
+                          disabled={isGeneratingImage}
+                          onClick={handleGenerateImage}
+                          className="flex-1 min-w-[140px] py-1.5 px-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50"
+                        >
+                          {isGeneratingImage ? (
+                            <>
+                              <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                              <span>Generando Arte...</span>
+                            </>
+                          ) : (
+                            <>
+                              <Sparkles className="w-3.5 h-3.5" />
+                              <span>🎨 Generar con IA</span>
+                            </>
+                          )}
+                        </button>
+
+                        <label className="py-1.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs border border-slate-700 cursor-pointer flex items-center gap-1.5">
+                          <ImageIcon className="w-3.5 h-3.5 text-purple-400" />
+                          <span>Subir Foto</span>
+                          <input
+                            type="file"
+                            accept="image/*"
+                            className="hidden"
+                            onChange={(e) => {
+                              const file = e.target.files?.[0];
+                              if (file) {
+                                const reader = new FileReader();
+                                reader.onload = (ev) => {
+                                  if (ev.target?.result) {
+                                    setFormData(prev => ({ ...prev, avatar: ev.target.result }));
+                                  }
+                                };
+                                reader.readAsDataURL(file);
+                              }
+                            }}
+                          />
+                        </label>
+
+                        {formData.avatar && (
+                          <button
+                            type="button"
+                            onClick={() => setFormData(prev => ({ ...prev, avatar: '' }))}
+                            className="px-2.5 py-1.5 rounded-xl bg-red-950/40 hover:bg-red-900 text-red-300 text-xs border border-red-900/50 cursor-pointer"
+                          >
+                            Quitar
+                          </button>
+                        )}
+                      </div>
+
+                      <input
+                        type="text"
+                        value={formData.avatar || ''}
+                        onChange={(e) => setFormData(prev => ({ ...prev, avatar: e.target.value }))}
+                        placeholder="O pega directamente una URL de imagen (https://...)..."
+                        className="w-full bg-slate-950 border border-slate-800 focus:border-purple-500 text-[11px] text-slate-200 rounded-lg p-2 font-mono"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              {/* SECCIÓN / UNIVERSO DEL ROSTER (Dedicated Category Assigner) */}
+              <div className="p-4 bg-slate-900/70 border border-cyan-500/40 rounded-2xl space-y-3">
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <label className="text-cyan-400 font-bold flex items-center gap-2 text-xs">
+                    <Layers className="w-4 h-4 text-cyan-400" />
+                    <span>📁 Sección / Universo del Roster:</span>
+                  </label>
+
+                  {isEditingMode && (
+                    <button
+                      type="button"
+                      onClick={() => setIsCustomUniverseInput(!isCustomUniverseInput)}
+                      className="text-[10px] text-amber-400 hover:text-amber-300 font-bold flex items-center gap-1 cursor-pointer bg-slate-950 px-2.5 py-1 rounded-lg border border-amber-500/30"
+                    >
+                      <Plus className="w-3 h-3" />
+                      <span>{isCustomUniverseInput ? 'Ver Categorías Existentes' : 'Añadir Nueva Categoría'}</span>
+                    </button>
+                  )}
+                </div>
+
+                {/* Display / Edit Category */}
+                {isEditingMode ? (
+                  <div className="space-y-3">
+                    {/* Custom Text Input or Select */}
+                    {isCustomUniverseInput ? (
+                      <div className="space-y-1">
+                        <input
+                          type="text"
+                          value={formData.universe}
+                          onChange={(e) => handleChange('universe', e.target.value)}
+                          placeholder="Escribe el nombre exacto de la nueva categoría (ej: Solo Leveling, Bleach Hell Arc)..."
+                          className="w-full bg-slate-950 border-2 border-amber-500/60 focus:border-amber-400 rounded-xl p-2.5 text-white font-bold text-xs outline-none"
+                        />
+                        <span className="text-[10px] text-slate-400 block">
+                          💡 Esta nueva categoría se creará automáticamente en tu Roster y agrupará a este personaje.
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="space-y-2">
+                        {/* Quick Universe Chips Selector */}
+                        <div className="flex flex-wrap gap-1.5 max-h-36 overflow-y-auto p-1.5 bg-slate-950/60 rounded-xl border border-slate-800">
+                          {UNIVERSE_PRESETS.map((u) => {
+                            const isSelected = formData.universe === u.name;
+                            return (
+                              <button
+                                key={u.name}
+                                type="button"
+                                onClick={() => {
+                                  setFormData(prev => ({ 
+                                    ...prev, 
+                                    universe: u.name,
+                                    dbTag: u.dbTag || prev.dbTag 
+                                  }));
+                                }}
+                                className={`px-2.5 py-1 rounded-lg text-[10.5px] font-bold transition-all cursor-pointer flex items-center gap-1 border ${
+                                  isSelected
+                                    ? 'bg-cyan-600 text-white border-cyan-400 shadow-md shadow-cyan-950'
+                                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800'
+                                }`}
+                              >
+                                <span>{u.name}</span>
+                                {isSelected && <Check className="w-3 h-3" />}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Quick Saga Suggestions based on Selected Universe */}
+                    {currentUniversePreset?.sagas?.length > 0 && (
+                      <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800 space-y-1.5">
+                        <span className="text-[10px] text-slate-400 font-bold block">
+                          ⚡ Sagas / Épocas sugeridas para {formData.universe}:
+                        </span>
+                        <div className="flex flex-wrap gap-1">
+                          {currentUniversePreset.sagas.map(saga => (
+                            <button
+                              key={saga}
+                              type="button"
+                              onClick={() => handleChange('version', saga)}
+                              className={`px-2 py-0.5 rounded text-[9.5px] font-bold transition cursor-pointer border ${
+                                formData.version === saga
+                                  ? 'bg-amber-500 text-black border-amber-400'
+                                  : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-amber-400/40'
+                              }`}
+                            >
+                              + {saga}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-2">
+                    <span className="px-3 py-1 rounded-xl bg-cyan-950/80 border border-cyan-500/50 text-cyan-300 font-bold text-xs">
+                      {formData.universe || 'Sin Universo'}
+                    </span>
+                    {formData.version && (
+                      <span className="px-2.5 py-1 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 text-xs">
+                        {formData.version}
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {/* Versión, Tier & Rango */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div>
+                  <label className="block text-slate-400 mb-1 font-bold">Versión / Lore / Saga</label>
+                  {isEditingMode ? (
+                    <input 
+                      type="text" 
+                      value={formData.version || ''} 
+                      onChange={e => handleChange('version', e.target.value)} 
+                      placeholder="Ej: Saga Granola, Post-RoSaT..."
+                      className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-xs" 
+                    />
+                  ) : (
+                    <p className="text-slate-200 p-2 bg-slate-900/50 rounded-lg">{formData.version || 'Estándar'}</p>
+                  )}
+                </div>
+
                 <div>
                   <label className="block text-amber-400 mb-1 font-bold">Tier / Power Level</label>
-                  {isEditing ? <input type="text" value={formData.tier} onChange={e => handleChange('tier', e.target.value)} className="w-full bg-slate-900 border border-amber-900/50 rounded-lg p-2 text-white" /> : <p className="text-amber-200">{formData.tier}</p>}
+                  {isEditingMode ? (
+                    <input 
+                      type="text" 
+                      value={formData.tier || ''} 
+                      onChange={e => handleChange('tier', e.target.value)} 
+                      placeholder="Ej: Tier 2-C (Multiversal Bajo)"
+                      className="w-full bg-slate-900 border border-amber-900/50 rounded-lg p-2 text-white text-xs" 
+                    />
+                  ) : (
+                    <p className="text-amber-300 font-bold p-2 bg-amber-950/30 rounded-lg">{formData.tier || 'No asignado'}</p>
+                  )}
                 </div>
+
                 <div>
-                  <label className="block text-cyan-400 mb-1 font-bold flex items-center gap-1"><Target className="w-3.5 h-3.5"/> Rango / Alcance</label>
-                  {isEditing ? <input type="text" placeholder="Ej: Cuerpo a cuerpo, Planetario, Multiversal" value={formData.range || ''} onChange={e => handleChange('range', e.target.value)} className="w-full bg-slate-900 border border-cyan-900/50 rounded-lg p-2 text-white" /> : <p className="text-cyan-200">{formData.range || 'Cuerpo a cuerpo estándar'}</p>}
+                  <label className="block text-cyan-400 mb-1 font-bold flex items-center gap-1">
+                    <Target className="w-3.5 h-3.5"/> Rango / Alcance
+                  </label>
+                  {isEditingMode ? (
+                    <input 
+                      type="text" 
+                      placeholder="Ej: Cuerpo a cuerpo, Planetario, Multiversal" 
+                      value={formData.range || ''} 
+                      onChange={e => handleChange('range', e.target.value)} 
+                      className="w-full bg-slate-900 border border-cyan-900/50 rounded-lg p-2 text-white text-xs" 
+                    />
+                  ) : (
+                    <p className="text-cyan-200 p-2 bg-cyan-950/30 rounded-lg">{formData.range || 'Cuerpo a cuerpo estándar'}</p>
+                  )}
                 </div>
               </div>
 
+              {/* Attack Potency */}
               <div>
-                <label className="block text-red-400 mb-1 font-bold flex items-center gap-1"><Zap className="w-3.5 h-3.5"/> Attack Potency (DC)</label>
-                {isEditing ? <textarea rows={2} value={formData.ap} onChange={e => handleChange('ap', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" /> : <p className="text-slate-200">{formData.ap}</p>}
+                <label className="block text-red-400 mb-1 font-bold flex items-center gap-1">
+                  <Zap className="w-3.5 h-3.5"/> Attack Potency (AP / Destrucción)
+                </label>
+                {isEditingMode ? (
+                  <textarea 
+                    rows={2} 
+                    value={formData.ap || ''} 
+                    onChange={e => handleChange('ap', e.target.value)} 
+                    placeholder="Descripción de escala destructiva y feats de potencia..."
+                    className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-xs" 
+                  />
+                ) : (
+                  <p className="text-slate-200 p-2.5 bg-slate-900/50 rounded-xl leading-relaxed">{formData.ap || 'Sin datos de AP.'}</p>
+                )}
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              {/* Fuerza de Impacto y Levantamiento */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="p-3 bg-slate-900/50 rounded-xl border border-slate-800">
-                  <label className="block text-slate-400 mb-1 font-bold flex items-center gap-1"><Dumbbell className="w-3.5 h-3.5"/> Fuerza de Impacto</label>
-                  {isEditing ? <input type="text" value={formData.strength?.striking || ''} onChange={e => handleNestedChange('strength', 'striking', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" /> : <p className="text-slate-200">{formData.strength?.striking}</p>}
+                  <label className="block text-slate-400 mb-1 font-bold flex items-center gap-1">
+                    <Dumbbell className="w-3.5 h-3.5 text-amber-400"/> Fuerza de Impacto (Striking Strength)
+                  </label>
+                  {isEditingMode ? (
+                    <input 
+                      type="text" 
+                      value={formData.strength?.striking || ''} 
+                      onChange={e => handleNestedChange('strength', 'striking', e.target.value)} 
+                      className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white text-xs" 
+                    />
+                  ) : (
+                    <p className="text-slate-200">{formData.strength?.striking || 'No especificada'}</p>
+                  )}
                 </div>
+
                 <div className="p-3 bg-slate-900/50 rounded-xl border border-slate-800">
-                  <label className="block text-slate-400 mb-1 font-bold flex items-center gap-1"><Dumbbell className="w-3.5 h-3.5"/> Levantamiento (Lifting)</label>
-                  {isEditing ? <input type="text" value={formData.strength?.lifting || ''} onChange={e => handleNestedChange('strength', 'lifting', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" /> : <p className="text-slate-200">{formData.strength?.lifting}</p>}
+                  <label className="block text-slate-400 mb-1 font-bold flex items-center gap-1">
+                    <Dumbbell className="w-3.5 h-3.5 text-cyan-400"/> Levantamiento (Lifting Strength)
+                  </label>
+                  {isEditingMode ? (
+                    <input 
+                      type="text" 
+                      value={formData.strength?.lifting || ''} 
+                      onChange={e => handleNestedChange('strength', 'lifting', e.target.value)} 
+                      className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white text-xs" 
+                    />
+                  ) : (
+                    <p className="text-slate-200">{formData.strength?.lifting || 'No especificada'}</p>
+                  )}
                 </div>
               </div>
             </div>
           )}
 
-          {/* TAB 2: ARSENAL, ATAQUES Y HABILIDADES (NUEVO) */}
+          {/* TAB 2: FORMAS & TRANSFORMACIONES */}
+          {activeTab === 'formas' && (
+            <div className="space-y-4">
+              <div className="flex items-center justify-between border-b border-slate-800 pb-2 flex-wrap gap-2">
+                <div>
+                  <h3 className="text-amber-400 font-bold flex items-center gap-2 text-sm font-cinzel">
+                    <ListPlus className="w-4 h-4 text-amber-400" />
+                    Gestor Exhaustivo de Transformaciones ({formData.forms?.length || 0})
+                  </h3>
+                  <p className="text-[10px] text-slate-400">
+                    Fases de combate, multiplicadores de poder y coste energético.
+                  </p>
+                </div>
+
+                {isEditingMode && (
+                  <button 
+                    type="button" 
+                    onClick={addForm} 
+                    className="px-3 py-1.5 bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white rounded-xl text-xs font-bold cursor-pointer flex items-center gap-1 shadow-md"
+                  >
+                    <Plus className="w-3.5 h-3.5" />
+                    <span>Añadir Forma</span>
+                  </button>
+                )}
+              </div>
+              
+              {(!formData.forms || formData.forms.length === 0) ? (
+                <div className="py-10 text-center text-slate-500 bg-slate-900/30 rounded-2xl border border-slate-800">
+                  <p>Este personaje no tiene transformaciones adicionales registradas (Lucha en su Forma Base).</p>
+                  {isEditingMode && (
+                    <button 
+                      type="button" 
+                      onClick={addForm} 
+                      className="mt-3 px-4 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs"
+                    >
+                      + Registrar Primera Forma
+                    </button>
+                  )}
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  {formData.forms.map((f, i) => (
+                    <div 
+                      key={i} 
+                      className="p-4 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 border border-amber-500/30 shadow-lg space-y-2 relative group hover:border-amber-400/60 transition"
+                    >
+                      {isEditingMode ? (
+                        <div className="space-y-2">
+                          <div className="flex items-center justify-between">
+                            <span className="px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 font-bold text-[10px]">
+                              FASE #{i + 1} {i === 0 ? '(Forma Base / Inicial)' : ''}
+                            </span>
+                            <button 
+                              type="button" 
+                              onClick={() => removeForm(i)} 
+                              className="p-1 rounded text-red-400 hover:bg-red-950/60 hover:text-red-300 text-xs font-bold cursor-pointer"
+                              title="Eliminar esta forma"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            <input 
+                              type="text" 
+                              placeholder="Nombre de la Forma (Ej: Super Saiyan Blue, Bankai, Gear 5)" 
+                              value={f.name || ''} 
+                              onChange={e => updateForm(i, 'name', e.target.value)} 
+                              className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-amber-300 font-bold text-xs outline-none focus:border-amber-400" 
+                            />
+                            <input 
+                              type="text" 
+                              placeholder="Multiplicador / Multiplier (Ej: x50, x400, Nivel Divino)" 
+                              value={f.multiplier || ''} 
+                              onChange={e => updateForm(i, 'multiplier', e.target.value)} 
+                              className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-slate-300 text-xs" 
+                            />
+                          </div>
+
+                          <textarea 
+                            rows={2} 
+                            placeholder="Aumento de stats, buffs, características del aura y descripción..." 
+                            value={f.stats || ''} 
+                            onChange={e => updateForm(i, 'stats', e.target.value)} 
+                            className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-slate-300 text-xs" 
+                          />
+
+                          <input 
+                            type="text" 
+                            placeholder="Desgaste / Coste (Ej: 10% Stamina por minuto, Daño de rebote cardiaco)" 
+                            value={f.cost || ''} 
+                            onChange={e => updateForm(i, 'cost', e.target.value)} 
+                            className="w-full bg-slate-950 border border-slate-700 rounded-lg p-1.5 text-red-300 text-[10px]" 
+                          />
+                        </div>
+                      ) : (
+                        <div>
+                          <div className="flex items-center justify-between mb-1">
+                            <div className="flex items-center gap-2">
+                              <span className="px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 font-bold text-[10px]">
+                                FASE #{i + 1}
+                              </span>
+                              <h4 className="font-bold text-amber-300 text-sm font-cinzel">{f.name}</h4>
+                            </div>
+                            {f.multiplier && (
+                              <span className="px-2 py-0.5 rounded bg-purple-950/80 border border-purple-500/40 text-purple-300 text-[10px] font-bold">
+                                {f.multiplier}
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-slate-300 text-xs leading-relaxed mt-1">{f.stats}</p>
+                          {f.cost && (
+                            <div className="mt-2 text-[10px] text-red-400 font-mono">
+                              ⚠️ Desgaste: {f.cost}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* TAB 3: ARSENAL, ATAQUES Y HABILIDADES */}
           {activeTab === 'arsenal' && (
             <div className="space-y-5">
-              {/* Ataques Básicos */}
-              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-xl">
+              
+              {/* 1. Ataques Básicos */}
+              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-2xl">
                 <label className="block text-amber-400 font-bold mb-1 flex items-center gap-2">
                   <Swords className="w-4 h-4 text-amber-400" /> Ataques Básicos / Normales
                 </label>
                 <p className="text-[10px] text-slate-500 mb-2">Golpes cuerpo a cuerpo estándar, ráfagas de ki menores, combinaciones sin gasto crítico.</p>
-                {isEditing ? (
+                {isEditingMode ? (
                   <textarea 
                     rows={2} 
                     placeholder="Ej: Golpes de plasma a 5,000°C, Ráfagas de Ki consecutivas, Barrido de piernas imbuido en fuego." 
                     value={formData.arsenal?.basicAttacks || ''} 
                     onChange={e => handleNestedChange('arsenal', 'basicAttacks', e.target.value)} 
-                    className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white" 
+                    className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white text-xs" 
                   />
                 ) : (
-                  <p className="text-slate-300">{formData.arsenal?.basicAttacks || 'Sin ataques básicos registrados.'}</p>
+                  <p className="text-slate-300 p-2.5 bg-slate-950/60 rounded-xl leading-relaxed">
+                    {formData.arsenal?.basicAttacks || 'Sin ataques básicos registrados.'}
+                  </p>
                 )}
               </div>
 
-              {/* Súper Ataques */}
-              <div className="p-4 bg-orange-950/20 border border-orange-500/30 rounded-xl space-y-3">
-                <div className="flex items-center justify-between">
-                  <label className="text-orange-400 font-bold flex items-center gap-2">
-                    <Flame className="w-4 h-4 text-orange-400" /> Súper Ataques (Técnicas Especiales)
-                  </label>
-                  {isEditing && (
-                    <button type="button" onClick={() => addArsenalItem('superAttacks')} className="px-2.5 py-1 bg-orange-600 hover:bg-orange-500 text-white rounded text-[10px] font-bold cursor-pointer">
+              {/* 2. Súper Ataques */}
+              <div className="p-4 bg-orange-950/20 border border-orange-500/30 rounded-2xl space-y-3">
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <div>
+                    <label className="text-orange-400 font-bold flex items-center gap-2">
+                      <Flame className="w-4 h-4 text-orange-400" /> Súper Ataques (Técnicas Especiales)
+                    </label>
+                    <p className="text-[10px] text-orange-400/70">Kamehameha, Rasengan, Getsuga Tensho, Final Flash.</p>
+                  </div>
+
+                  {isEditingMode && (
+                    <button 
+                      type="button" 
+                      onClick={() => addArsenalItem('superAttacks')} 
+                      className="px-2.5 py-1 bg-orange-600 hover:bg-orange-500 text-white rounded-lg text-xs font-bold cursor-pointer"
+                    >
                       + Añadir Súper Ataque
                     </button>
                   )}
@@ -309,21 +1070,41 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                 ) : (
                   <div className="space-y-2">
                     {formData.arsenal.superAttacks.map((item, idx) => (
-                      <div key={idx} className="p-3 bg-slate-900 border border-slate-700 rounded-lg space-y-1.5 relative">
-                        {isEditing ? (
+                      <div key={idx} className="p-3 bg-slate-900 border border-slate-700 rounded-xl space-y-1.5">
+                        {isEditingMode ? (
                           <>
                             <div className="flex items-center justify-between gap-2">
-                              <input type="text" placeholder="Nombre (Ej: Kamehameha, Raikiri, Getsuga Tensho)" value={item.name} onChange={e => updateArsenalItem('superAttacks', idx, 'name', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1 text-orange-300 font-bold" />
-                              <button type="button" onClick={() => removeArsenalItem('superAttacks', idx)} className="text-red-400 hover:text-red-300 text-xs font-bold">✕</button>
+                              <input 
+                                type="text" 
+                                placeholder="Nombre canónico (Ej: Kamehameha x10, Getsuga Jūjishō)" 
+                                value={item.name} 
+                                onChange={e => updateArsenalItem('superAttacks', idx, 'name', e.target.value)} 
+                                className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-orange-300 font-bold text-xs" 
+                              />
+                              <button type="button" onClick={() => removeArsenalItem('superAttacks', idx)} className="text-red-400 hover:text-red-300 text-xs font-bold p-1">✕</button>
                             </div>
-                            <textarea rows={1} placeholder="Descripción del efecto, velocidad y rango..." value={item.desc} onChange={e => updateArsenalItem('superAttacks', idx, 'desc', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1 text-slate-300 text-[11px]" />
-                            <input type="text" placeholder="Coste (Ej: 15% Ki, 2 seg de carga)" value={item.cost} onChange={e => updateArsenalItem('superAttacks', idx, 'cost', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1 text-slate-400 text-[10px]" />
+                            <textarea 
+                              rows={1} 
+                              placeholder="Descripción del efecto, velocidad y rango..." 
+                              value={item.desc} 
+                              onChange={e => updateArsenalItem('superAttacks', idx, 'desc', e.target.value)} 
+                              className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-slate-300 text-xs" 
+                            />
+                            <input 
+                              type="text" 
+                              placeholder="Coste (Ej: 15% Ki, 2 seg de carga)" 
+                              value={item.cost} 
+                              onChange={e => updateArsenalItem('superAttacks', idx, 'cost', e.target.value)} 
+                              className="w-full bg-slate-950 border border-slate-700 rounded p-1 text-slate-400 text-[10px]" 
+                            />
                           </>
                         ) : (
                           <div>
-                            <span className="font-bold text-orange-300">{item.name}</span>
+                            <div className="flex items-center justify-between">
+                              <span className="font-bold text-orange-300 text-xs">{item.name}</span>
+                              {item.cost && <span className="text-[10px] text-amber-500/80 font-mono">Coste: {item.cost}</span>}
+                            </div>
                             <p className="text-slate-300 text-[11px] mt-0.5">{item.desc}</p>
-                            {item.cost && <span className="text-[10px] text-amber-500/80 font-mono">Coste: {item.cost}</span>}
                           </div>
                         )}
                       </div>
@@ -332,40 +1113,67 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                 )}
               </div>
 
-              {/* Ataques Definitivos (Ultimates) */}
-              <div className="p-4 bg-red-950/30 border border-red-500/40 rounded-xl space-y-3">
-                <div className="flex items-center justify-between">
-                  <label className="text-red-400 font-bold flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-red-500" /> Ataques Definitivos (Ultimates / Finisher)
-                  </label>
-                  {isEditing && (
-                    <button type="button" onClick={() => addArsenalItem('ultimateAttacks')} className="px-2.5 py-1 bg-red-600 hover:bg-red-500 text-white rounded text-[10px] font-bold cursor-pointer">
+              {/* 3. Ataques Definitivos (Ultimates) */}
+              <div className="p-4 bg-red-950/30 border border-red-500/40 rounded-2xl space-y-3">
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <div>
+                    <label className="text-red-400 font-bold flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-red-500" /> Ataques Definitivos (Ultimates / Finisher)
+                    </label>
+                    <p className="text-[10px] text-red-400/70">Ryūken, Super Genkidama Universal, Hollow Purple 200%, Expansión de Dominio.</p>
+                  </div>
+
+                  {isEditingMode && (
+                    <button 
+                      type="button" 
+                      onClick={() => addArsenalItem('ultimateAttacks')} 
+                      className="px-2.5 py-1 bg-red-600 hover:bg-red-500 text-white rounded-lg text-xs font-bold cursor-pointer"
+                    >
                       + Añadir Ultimate
                     </button>
                   )}
                 </div>
-                <p className="text-[10px] text-red-400/70">La técnica final que se ejecuta en el Clímax de la simulación (Genkidama, Hollow Purple 200%, Final Flash, Expansión de Dominio).</p>
 
                 {(!formData.arsenal?.ultimateAttacks || formData.arsenal.ultimateAttacks.length === 0) ? (
                   <p className="text-slate-500 italic text-[11px]">No hay ataques definitivos registrados.</p>
                 ) : (
                   <div className="space-y-2">
                     {formData.arsenal.ultimateAttacks.map((item, idx) => (
-                      <div key={idx} className="p-3 bg-slate-900 border border-red-900/50 rounded-lg space-y-1.5">
-                        {isEditing ? (
+                      <div key={idx} className="p-3 bg-slate-900 border border-red-900/50 rounded-xl space-y-1.5">
+                        {isEditingMode ? (
                           <>
                             <div className="flex items-center justify-between gap-2">
-                              <input type="text" placeholder="Nombre (Ej: Omega Blaster Gigante, Vacío Inconmensurable)" value={item.name} onChange={e => updateArsenalItem('ultimateAttacks', idx, 'name', e.target.value)} className="w-full bg-slate-950 border border-red-900/60 rounded p-1 text-red-300 font-bold" />
-                              <button type="button" onClick={() => removeArsenalItem('ultimateAttacks', idx)} className="text-red-400 hover:text-red-300 text-xs font-bold">✕</button>
+                              <input 
+                                type="text" 
+                                placeholder="Nombre (Ej: Ryūken Sobrecarga, Borrado Hakai)" 
+                                value={item.name} 
+                                onChange={e => updateArsenalItem('ultimateAttacks', idx, 'name', e.target.value)} 
+                                className="w-full bg-slate-950 border border-red-900/60 rounded p-1.5 text-red-300 font-bold text-xs" 
+                              />
+                              <button type="button" onClick={() => removeArsenalItem('ultimateAttacks', idx)} className="text-red-400 hover:text-red-300 text-xs font-bold p-1">✕</button>
                             </div>
-                            <textarea rows={1} placeholder="Efecto destructivo a escala masiva / Borrado atómico..." value={item.desc} onChange={e => updateArsenalItem('ultimateAttacks', idx, 'desc', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1 text-slate-300 text-[11px]" />
-                            <input type="text" placeholder="Desgaste terminal (Ej: Agota el 90% de energía, fractura de brazos)" value={item.cost} onChange={e => updateArsenalItem('ultimateAttacks', idx, 'cost', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1 text-red-400 text-[10px]" />
+                            <textarea 
+                              rows={1} 
+                              placeholder="Efecto destructivo a escala masiva / Borrado atómico..." 
+                              value={item.desc} 
+                              onChange={e => updateArsenalItem('ultimateAttacks', idx, 'desc', e.target.value)} 
+                              className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-slate-300 text-xs" 
+                            />
+                            <input 
+                              type="text" 
+                              placeholder="Desgaste terminal (Ej: Agota el 90% de energía, fractura ósea)" 
+                              value={item.cost} 
+                              onChange={e => updateArsenalItem('ultimateAttacks', idx, 'cost', e.target.value)} 
+                              className="w-full bg-slate-950 border border-slate-700 rounded p-1 text-red-400 text-[10px]" 
+                            />
                           </>
                         ) : (
                           <div>
-                            <span className="font-bold text-red-400">{item.name}</span>
+                            <div className="flex items-center justify-between">
+                              <span className="font-bold text-red-400 text-xs">{item.name}</span>
+                              {item.cost && <span className="text-[10px] text-red-400/90 font-mono">⚠️ Coste: {item.cost}</span>}
+                            </div>
                             <p className="text-slate-200 text-[11px] mt-0.5">{item.desc}</p>
-                            {item.cost && <span className="text-[10px] text-red-400/90 font-mono">⚠️ Coste: {item.cost}</span>}
                           </div>
                         )}
                       </div>
@@ -374,21 +1182,21 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                 )}
               </div>
 
-              {/* Habilidades Pasivas y Activas */}
+              {/* 4. Habilidades Pasivas y Activas */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Pasivas */}
-                <div className="p-3 bg-emerald-950/20 border border-emerald-500/30 rounded-xl space-y-2">
+                <div className="p-3.5 bg-emerald-950/20 border border-emerald-500/30 rounded-2xl space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-emerald-400 font-bold flex items-center gap-1.5"><ShieldAlert className="w-3.5 h-3.5"/> Habilidades Pasivas</span>
-                    {isEditing && (
+                    {isEditingMode && (
                       <button type="button" onClick={() => addArsenalItem('passives')} className="px-2 py-0.5 bg-emerald-700 hover:bg-emerald-600 text-white rounded text-[9px] font-bold cursor-pointer">+ Pasiva</button>
                     )}
                   </div>
-                  <p className="text-[9px] text-emerald-500/70">Zenkai, Regeneración pasiva, Adaptación biológica continua, Intangibilidad.</p>
+                  <p className="text-[9px] text-emerald-500/70">Zenkai, Regeneración, Adaptación Biológica, Manto Primigenio.</p>
                   <div className="space-y-1.5">
                     {formData.arsenal?.passives?.map((item, idx) => (
-                      <div key={idx} className="p-2 bg-slate-900 border border-emerald-900/40 rounded">
-                        {isEditing ? (
+                      <div key={idx} className="p-2 bg-slate-900 border border-emerald-900/40 rounded-lg">
+                        {isEditingMode ? (
                           <div className="space-y-1">
                             <div className="flex justify-between">
                               <input type="text" placeholder="Nombre Pasiva" value={item.name} onChange={e => updateArsenalItem('passives', idx, 'name', e.target.value)} className="w-full bg-slate-950 border border-slate-800 rounded p-1 text-emerald-300 text-xs font-bold" />
@@ -408,18 +1216,18 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                 </div>
 
                 {/* Activas */}
-                <div className="p-3 bg-cyan-950/20 border border-cyan-500/30 rounded-xl space-y-2">
+                <div className="p-3.5 bg-cyan-950/20 border border-cyan-500/30 rounded-2xl space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-cyan-400 font-bold flex items-center gap-1.5"><Cpu className="w-3.5 h-3.5"/> Habilidades Activas / Buffs</span>
-                    {isEditing && (
+                    {isEditingMode && (
                       <button type="button" onClick={() => addArsenalItem('actives')} className="px-2 py-0.5 bg-cyan-700 hover:bg-cyan-600 text-white rounded text-[9px] font-bold cursor-pointer">+ Activa</button>
                     )}
                   </div>
-                  <p className="text-[9px] text-cyan-500/70">Teletransportación, Kaio-ken, Ilusiones, Campo de Fuerza manual.</p>
+                  <p className="text-[9px] text-cyan-500/70">Teletransportación, Kaiō-ken, Ilusiones, Barrera de Ki.</p>
                   <div className="space-y-1.5">
                     {formData.arsenal?.actives?.map((item, idx) => (
-                      <div key={idx} className="p-2 bg-slate-900 border border-cyan-900/40 rounded">
-                        {isEditing ? (
+                      <div key={idx} className="p-2 bg-slate-900 border border-cyan-900/40 rounded-lg">
+                        {isEditingMode ? (
                           <div className="space-y-1">
                             <div className="flex justify-between">
                               <input type="text" placeholder="Nombre Activa" value={item.name} onChange={e => updateArsenalItem('actives', idx, 'name', e.target.value)} className="w-full bg-slate-950 border border-slate-800 rounded p-1 text-cyan-300 text-xs font-bold" />
@@ -441,75 +1249,36 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
             </div>
           )}
 
-          {/* TAB 3: CINÉTICA */}
-          {activeTab === 'cinetica' && (
-            <div className="space-y-4">
-              <h3 className="text-cyan-400 font-bold mb-2 flex items-center gap-2"><Move className="w-4 h-4" /> Desglose Cinético de Velocidades</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="p-3 bg-slate-900 border border-slate-800 rounded-lg">
-                  <label className="block text-slate-400 mb-1">Combate (Cuerpo a Cuerpo)</label>
-                  {isEditing ? <input type="text" value={formData.speed?.combat || ''} onChange={e => handleNestedChange('speed', 'combat', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" /> : <p className="text-slate-200">{formData.speed?.combat}</p>}
-                </div>
-                <div className="p-3 bg-slate-900 border border-slate-800 rounded-lg">
-                  <label className="block text-slate-400 mb-1">Reacción (Esquiva/Reflejos)</label>
-                  {isEditing ? <input type="text" value={formData.speed?.reaction || ''} onChange={e => handleNestedChange('speed', 'reaction', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" /> : <p className="text-slate-200">{formData.speed?.reaction}</p>}
-                </div>
-                <div className="p-3 bg-slate-900 border border-slate-800 rounded-lg">
-                  <label className="block text-slate-400 mb-1">Desplazamiento (Viaje/Vuelo)</label>
-                  {isEditing ? <input type="text" value={formData.speed?.travel || ''} onChange={e => handleNestedChange('speed', 'travel', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" /> : <p className="text-slate-200">{formData.speed?.travel}</p>}
-                </div>
-                <div className="p-3 bg-slate-900 border border-slate-800 rounded-lg">
-                  <label className="block text-slate-400 mb-1">Ataque (Habilidades/Proyectiles)</label>
-                  {isEditing ? <input type="text" value={formData.speed?.attack || ''} onChange={e => handleNestedChange('speed', 'attack', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" /> : <p className="text-slate-200">{formData.speed?.attack}</p>}
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* TAB 4: BIOMECÁNICA */}
-          {activeTab === 'biomecanica' && (
-            <div className="space-y-4">
-              <div className="p-4 bg-emerald-900/20 border border-emerald-500/30 rounded-xl">
-                <label className="block text-emerald-400 font-bold mb-1 flex items-center gap-2"><Battery className="w-4 h-4"/> Stamina / Límite Térmico & Calórico</label>
-                <p className="text-[10px] text-emerald-500/70 mb-2">Desgaste antes de fatiga terminal, colapso de órganos o daño autoinfligido.</p>
-                {isEditing ? <textarea rows={2} value={formData.stamina || ''} onChange={e => handleChange('stamina', e.target.value)} className="w-full bg-slate-900 border border-emerald-900/50 rounded-lg p-2 text-white" /> : <p className="text-emerald-100">{formData.stamina}</p>}
-              </div>
-
-              <div>
-                <label className="block text-cyan-400 mb-1 font-bold flex items-center gap-1"><Shield className="w-3.5 h-3.5"/> Durabilidad y Barreras</label>
-                {isEditing ? <textarea rows={2} value={formData.durability} onChange={e => handleChange('durability', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" /> : <p className="text-slate-200">{formData.durability}</p>}
-              </div>
-
-              <div>
-                <label className="block text-red-400 mb-1 font-bold flex items-center gap-1"><AlertTriangle className="w-3.5 h-3.5"/> Debilidades (Condición de Derrota)</label>
-                {isEditing ? <textarea rows={2} value={formData.weaknesses} onChange={e => handleChange('weaknesses', e.target.value)} className="w-full bg-slate-900 border border-red-900/50 rounded-lg p-2 text-white" /> : <p className="text-slate-200">{formData.weaknesses}</p>}
-              </div>
-            </div>
-          )}
-
-          {/* TAB 5: HAX */}
+          {/* TAB 4: HAX & TAGS */}
           {activeTab === 'hax' && (
             <div className="space-y-4">
-              <h3 className="text-fuchsia-400 font-bold mb-1 flex items-center gap-2"><Sparkles className="w-4 h-4" /> Matriz de Hax & Resistencias Especiales</h3>
-              <p className="text-[10px] text-slate-400 mb-3">Activa los tags de combate que la IA debe respetar con máxima prioridad de anulación.</p>
+              <div className="border-b border-slate-800 pb-2">
+                <h3 className="text-fuchsia-400 font-bold mb-1 flex items-center gap-2 text-sm font-cinzel">
+                  <Sparkles className="w-4 h-4 text-fuchsia-400" />
+                  Matriz de Hax & Resistencias Especiales ({formData.haxTags?.length || 0} activos)
+                </h3>
+                <p className="text-[10px] text-slate-400">
+                  Tags de combate que el motor OMNI-TITÁN evalúa con máxima prioridad de anulación e interacción.
+                </p>
+              </div>
               
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {COMMON_HAX_TAGS.map(tag => {
                   const isChecked = (formData.haxTags || []).includes(tag);
                   return (
                     <button
                       key={tag}
                       type="button"
-                      disabled={!isEditing}
+                      disabled={!isEditingMode}
                       onClick={() => toggleHaxTag(tag)}
                       className={`p-2.5 rounded-xl border text-left transition flex items-center justify-between text-xs cursor-pointer ${
                         isChecked 
-                          ? 'bg-fuchsia-950/80 border-fuchsia-500 text-fuchsia-200 shadow-[0_0_10px_rgba(217,70,239,0.2)]' 
+                          ? 'bg-fuchsia-950/80 border-fuchsia-500 text-fuchsia-200 shadow-[0_0_10px_rgba(217,70,239,0.2)] font-bold' 
                           : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:border-slate-700'
-                      }`}
+                      } ${!isEditingMode && !isChecked ? 'opacity-40' : ''}`}
                     >
                       <span>{tag}</span>
-                      <span className={`w-2 h-2 rounded-full ${isChecked ? 'bg-fuchsia-400' : 'bg-slate-700'}`} />
+                      <span className={`w-2.5 h-2.5 rounded-full ${isChecked ? 'bg-fuchsia-400 shadow-[0_0_8px_#d946ef]' : 'bg-slate-700'}`} />
                     </button>
                   );
                 })}
@@ -517,102 +1286,362 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
             </div>
           )}
 
-          {/* TAB 6: FORMAS */}
-          {activeTab === 'formas' && (
+          {/* TAB 5: CINÉTICA & VELOCIDAD */}
+          {activeTab === 'cinetica' && (
             <div className="space-y-4">
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-amber-400 font-bold flex items-center gap-2"><ListPlus className="w-4 h-4" /> Gestor Exhaustivo de Transformaciones</h3>
-                {isEditing && (
-                  <button onClick={addForm} className="px-3 py-1 bg-amber-600 hover:bg-amber-500 text-white rounded text-[10px] font-bold cursor-pointer">
-                    + Añadir Forma
-                  </button>
-                )}
+              <div className="border-b border-slate-800 pb-2">
+                <h3 className="text-cyan-400 font-bold flex items-center gap-2 text-sm font-cinzel">
+                  <Move className="w-4 h-4 text-cyan-400" />
+                  Desglose Cinético de Velocidades (VS Battles Codex)
+                </h3>
+                <p className="text-[10px] text-slate-400">
+                  Diferenciación entre combate cuerpo a cuerpo, esquiva reactiva, viaje y proyectiles.
+                </p>
               </div>
-              
-              {(!formData.forms || formData.forms.length === 0) ? (
-                <p className="text-slate-500 italic">No hay transformaciones registradas.</p>
-              ) : (
-                <div className="space-y-3">
-                  {formData.forms.map((f, i) => (
-                    <div key={i} className="p-3 bg-slate-900 border border-slate-700 rounded-xl relative">
-                      {isEditing ? (
-                        <div className="space-y-2">
-                          <div className="flex items-center justify-between">
-                            <span className="text-[10px] text-amber-500 font-mono">Fase #{i + 1}</span>
-                            <button type="button" onClick={() => removeForm(i)} className="text-red-400 hover:text-red-300 text-xs font-bold">Eliminar</button>
-                          </div>
-                          <input type="text" placeholder="Nombre (Ej: Gear 4, SSJ2, Bankai)" value={f.name} onChange={e => updateForm(i, 'name', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white font-bold text-sm" />
-                          <textarea rows={2} placeholder="Stats, multiplicadores y desgaste..." value={f.stats} onChange={e => updateForm(i, 'stats', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-slate-300 text-xs" />
-                        </div>
-                      ) : (
-                        <div>
-                          <h4 className="font-bold text-amber-300">{f.name}</h4>
-                          <p className="text-slate-300 mt-1">{f.stats}</p>
-                        </div>
-                      )}
-                    </div>
-                  ))}
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-3.5 bg-slate-900 border border-slate-800 rounded-xl space-y-1">
+                  <label className="block text-cyan-400 font-bold text-xs">Combate (Cuerpo a Cuerpo)</label>
+                  <p className="text-[10px] text-slate-500">Velocidad en intercambios físicos continuos.</p>
+                  {isEditingMode ? (
+                    <input type="text" placeholder="Ej: MFTL+, Inconmensurable, Relativista" value={formData.speed?.combat || ''} onChange={e => handleNestedChange('speed', 'combat', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" />
+                  ) : (
+                    <p className="text-slate-200 font-bold">{formData.speed?.combat || 'No especificada'}</p>
+                  )}
                 </div>
-              )}
+
+                <div className="p-3.5 bg-slate-900 border border-slate-800 rounded-xl space-y-1">
+                  <label className="block text-cyan-400 font-bold text-xs">Reacción (Esquiva / Reflejos)</label>
+                  <p className="text-[10px] text-slate-500">Tiempo de procesamiento ante ataques a quemarropa.</p>
+                  {isEditingMode ? (
+                    <input type="text" placeholder="Ej: Inconmensurable, Nanosegundos, FTL" value={formData.speed?.reaction || ''} onChange={e => handleNestedChange('speed', 'reaction', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" />
+                  ) : (
+                    <p className="text-slate-200 font-bold">{formData.speed?.reaction || 'No especificada'}</p>
+                  )}
+                </div>
+
+                <div className="p-3.5 bg-slate-900 border border-slate-800 rounded-xl space-y-1">
+                  <label className="block text-cyan-400 font-bold text-xs">Desplazamiento (Viaje / Vuelo)</label>
+                  <p className="text-[10px] text-slate-500">Velocidad en línea recta de punto A a punto B.</p>
+                  {isEditingMode ? (
+                    <input type="text" placeholder="Ej: MFTL+ (Intergaláctico), Supersónico" value={formData.speed?.travel || ''} onChange={e => handleNestedChange('speed', 'travel', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" />
+                  ) : (
+                    <p className="text-slate-200 font-bold">{formData.speed?.travel || 'No especificada'}</p>
+                  )}
+                </div>
+
+                <div className="p-3.5 bg-slate-900 border border-slate-800 rounded-xl space-y-1">
+                  <label className="block text-cyan-400 font-bold text-xs">Ataque (Proyectiles / Rayos)</label>
+                  <p className="text-[10px] text-slate-500">Velocidad de salida de haces de energía y armas.</p>
+                  {isEditingMode ? (
+                    <input type="text" placeholder="Ej: Velocidad de la Luz, Instantánea" value={formData.speed?.attack || ''} onChange={e => handleNestedChange('speed', 'attack', e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-1.5 text-white" />
+                  ) : (
+                    <p className="text-slate-200 font-bold">{formData.speed?.attack || 'No especificada'}</p>
+                  )}
+                </div>
+              </div>
             </div>
           )}
 
-          {/* TAB 7: STANDS & ARMAS */}
+          {/* TAB 6: BIOMECÁNICA & SALUD */}
+          {activeTab === 'biomecanica' && (
+            <div className="space-y-4">
+              <div className="p-4 bg-emerald-900/20 border border-emerald-500/30 rounded-2xl space-y-1">
+                <label className="block text-emerald-400 font-bold mb-1 flex items-center gap-2">
+                  <Battery className="w-4 h-4 text-emerald-400"/> Stamina / Límite Térmico & Reservas de Ki
+                </label>
+                <p className="text-[10px] text-emerald-500/70 mb-2">Desgaste antes de fatiga terminal, colapso de órganos o daño autoinfligido.</p>
+                {isEditingMode ? (
+                  <textarea rows={2} value={formData.stamina || ''} onChange={e => handleChange('stamina', e.target.value)} className="w-full bg-slate-900 border border-emerald-900/50 rounded-lg p-2 text-white text-xs" />
+                ) : (
+                  <p className="text-emerald-100 leading-relaxed">{formData.stamina || 'Media / Estándar'}</p>
+                )}
+              </div>
+
+              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-1">
+                <label className="block text-cyan-400 mb-1 font-bold flex items-center gap-1">
+                  <Shield className="w-3.5 h-3.5"/> Durabilidad y Barreras
+                </label>
+                {isEditingMode ? (
+                  <textarea rows={2} value={formData.durability || ''} onChange={e => handleChange('durability', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-xs" />
+                ) : (
+                  <p className="text-slate-200 leading-relaxed">{formData.durability || 'Sin durabilidad especial registrada.'}</p>
+                )}
+              </div>
+
+              <div className="p-4 bg-red-950/20 border border-red-500/40 rounded-2xl space-y-1">
+                <label className="block text-red-400 mb-1 font-bold flex items-center gap-1">
+                  <AlertTriangle className="w-3.5 h-3.5"/> Debilidades Anatómicas & Condición de Derrota
+                </label>
+                {isEditingMode ? (
+                  <textarea rows={2} value={formData.weaknesses || ''} onChange={e => handleChange('weaknesses', e.target.value)} className="w-full bg-slate-900 border border-red-900/50 rounded-lg p-2 text-white text-xs" />
+                ) : (
+                  <p className="text-red-200 leading-relaxed">{formData.weaknesses || 'Ninguna conocida.'}</p>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* TAB 7: STANDS / ARMAS */}
           {activeTab === 'invocaciones' && (
             <div className="space-y-4">
-              <div className="p-4 bg-purple-900/20 border border-purple-500/30 rounded-xl">
-                <label className="block text-purple-400 font-bold mb-1 flex items-center gap-2"><Users className="w-4 h-4"/> Sub-Entidad / Stand / Invocación / Simbionte</label>
-                <p className="text-[10px] text-purple-400/70 mb-2">Para personajes con entidades ligadas (Stands de Jojo, Mahoraga, Venom, Kurama).</p>
+              <div className="p-4 bg-purple-900/20 border border-purple-500/30 rounded-2xl space-y-2">
+                <label className="block text-purple-400 font-bold mb-1 flex items-center gap-2">
+                  <Users className="w-4 h-4"/> Sub-Entidad / Stand / Invocación / Simbionte
+                </label>
+                <p className="text-[10px] text-purple-400/70 mb-2">Para personajes con entidades ligadas (Stands de Jojo, Mahoraga, Venom, Kurama, Sombras de Sung Jin-woo).</p>
                 <div className="space-y-2">
-                  {isEditing ? (
+                  {isEditingMode ? (
                     <>
-                      <input type="text" placeholder="Nombre de la Entidad (Ej: Star Platinum, Mahoraga)" value={formData.subEntity?.name || ''} onChange={e => handleNestedChange('subEntity', 'name', e.target.value)} className="w-full bg-slate-900 border border-purple-900/50 rounded p-2 text-white" />
-                      <textarea rows={2} placeholder="Stats de la entidad, rango y reglas de daño compartido..." value={formData.subEntity?.stats || ''} onChange={e => handleNestedChange('subEntity', 'stats', e.target.value)} className="w-full bg-slate-900 border border-purple-900/50 rounded p-2 text-white" />
+                      <input type="text" placeholder="Nombre de la Entidad (Ej: Star Platinum, Mahoraga)" value={formData.subEntity?.name || ''} onChange={e => handleNestedChange('subEntity', 'name', e.target.value)} className="w-full bg-slate-900 border border-purple-900/50 rounded p-2 text-white text-xs" />
+                      <textarea rows={2} placeholder="Stats de la entidad, rango y reglas de daño compartido..." value={formData.subEntity?.stats || ''} onChange={e => handleNestedChange('subEntity', 'stats', e.target.value)} className="w-full bg-slate-900 border border-purple-900/50 rounded p-2 text-white text-xs" />
                     </>
                   ) : (
                     <div>
-                      <p className="font-bold text-purple-300">{formData.subEntity?.name || 'Ninguna entidad ligada.'}</p>
-                      {formData.subEntity?.stats && <p className="text-slate-300 mt-1">{formData.subEntity.stats}</p>}
+                      <p className="font-bold text-purple-300 text-sm">{formData.subEntity?.name || 'Ninguna entidad ligada.'}</p>
+                      {formData.subEntity?.stats && <p className="text-slate-300 mt-1 leading-relaxed">{formData.subEntity.stats}</p>}
                     </div>
                   )}
                 </div>
               </div>
 
-              <div>
-                <label className="block text-amber-400 mb-1 font-bold flex items-center gap-1"><Wrench className="w-3.5 h-3.5"/> Armamento y Reliquias Clave</label>
-                {isEditing ? <textarea rows={2} placeholder="Armas, armaduras y condiciones de rotura física..." value={formData.equipment || ''} onChange={e => handleChange('equipment', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" /> : <p className="text-slate-200">{formData.equipment || 'Sin equipamiento especial.'}</p>}
+              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-1">
+                <label className="block text-amber-400 mb-1 font-bold flex items-center gap-1">
+                  <Wrench className="w-3.5 h-3.5"/> Armamento, Reliquias & Objetos Clave
+                </label>
+                {isEditingMode ? (
+                  <textarea rows={2} placeholder="Espada Z, Anillo del Tiempo, Mjolnir, armaduras..." value={formData.equipment || ''} onChange={e => handleChange('equipment', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-xs" />
+                ) : (
+                  <p className="text-slate-200 leading-relaxed">{formData.equipment || 'Sin equipamiento especial.'}</p>
+                )}
               </div>
             </div>
           )}
 
-          {/* TAB 8: PSICOLOGÍA */}
+          {/* TAB 8: PSICOLOGÍA & IQ */}
           {activeTab === 'psicologia' && (
             <div className="space-y-4">
-              <div className="p-4 bg-indigo-900/20 border border-indigo-500/30 rounded-xl">
-                <label className="block text-indigo-400 font-bold mb-1 flex items-center gap-2"><Brain className="w-4 h-4"/> Battle IQ (Inteligencia Táctica)</label>
-                {isEditing ? <input type="text" value={formData.battleIQ || ''} onChange={e => handleChange('battleIQ', e.target.value)} className="w-full bg-slate-900 border border-indigo-900/50 rounded-lg p-2 text-white" /> : <p className="text-indigo-100">{formData.battleIQ}</p>}
+              <div className="p-4 bg-indigo-900/20 border border-indigo-500/30 rounded-2xl space-y-1">
+                <label className="block text-indigo-400 font-bold mb-1 flex items-center gap-2">
+                  <Brain className="w-4 h-4"/> Battle IQ (Inteligencia Táctica en Combate)
+                </label>
+                {isEditingMode ? (
+                  <input type="text" placeholder="Ej: Genio Táctico, Adaptación Instantánea, Estratega Maestro" value={formData.battleIQ || ''} onChange={e => handleChange('battleIQ', e.target.value)} className="w-full bg-slate-900 border border-indigo-900/50 rounded-lg p-2 text-white text-xs" />
+                ) : (
+                  <p className="text-indigo-100 font-bold">{formData.battleIQ || 'Estándar'}</p>
+                )}
               </div>
 
-              <div>
+              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-1">
                 <label className="block text-fuchsia-400 mb-1 font-bold">Psicología Tripartita y Microgestos</label>
                 <p className="text-[10px] text-slate-500 mb-2">Lo que busca, lo que teme y qué gestos físicos le delatan cuando miente, sufre o enfurece (ADN OMNI-TITÁN).</p>
-                {isEditing ? <textarea rows={3} value={formData.psychology} onChange={e => handleChange('psychology', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" /> : <p className="text-slate-200">{formData.psychology}</p>}
+                {isEditingMode ? (
+                  <textarea rows={3} value={formData.psychology || ''} onChange={e => handleChange('psychology', e.target.value)} className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-xs" />
+                ) : (
+                  <p className="text-slate-200 leading-relaxed">{formData.psychology || 'Psicología estándar de combate.'}</p>
+                )}
               </div>
             </div>
           )}
+
+          {/* BOTTOM TAB STEPPER NAVIGATION BAR (Effortless switching on Mobile & PC) */}
+          <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2 flex-wrap text-xs">
+            {prevTab ? (
+              <button
+                type="button"
+                onClick={() => setActiveTab(prevTab.id)}
+                className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 font-bold transition flex items-center gap-1.5 border border-slate-800 cursor-pointer"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                <span>Anterior: {prevTab.shortLabel}</span>
+              </button>
+            ) : <div />}
+
+            {nextTab ? (
+              <button
+                type="button"
+                onClick={() => setActiveTab(nextTab.id)}
+                className="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-bold transition flex items-center gap-1.5 shadow-md shadow-amber-950 cursor-pointer ml-auto"
+              >
+                <span>Siguiente: {nextTab.shortLabel}</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            ) : <div />}
+          </div>
+
         </div>
 
-        {/* Footer Actions */}
-        <div className="p-4 border-t border-slate-800 bg-slate-900/80 rounded-b-2xl flex justify-end gap-3">
-          <button onClick={onClose} className="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition cursor-pointer">
-            {isEditing ? 'Cancelar' : 'Cerrar'}
-          </button>
-          {isEditing && (
-            <button onClick={() => { onSave(formData); onClose(); }} className="px-6 py-2 rounded-lg bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition cursor-pointer">
-              Guardar Ficha
+        {/* Modal Footer Actions */}
+        <div className="p-3 sm:p-4 border-t border-slate-800 bg-slate-950/90 rounded-b-2xl flex items-center justify-between gap-3">
+          <span className="text-[11px] text-slate-500 hidden sm:inline font-mono">
+            {isEditingMode ? '✏️ Modo Edición Activo' : '👁️ Modo Lectura / Inspección'}
+          </span>
+
+          <div className="flex items-center gap-2 ml-auto">
+            <button 
+              onClick={onClose} 
+              className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-bold transition cursor-pointer border border-slate-800"
+            >
+              {isEditingMode ? 'Cerrar' : 'Entendido'}
             </button>
-          )}
+
+            {isEditingMode && (
+              <button 
+                onClick={() => { 
+                  if (onSave) {
+                    const img = formData.avatar || formData.image || '';
+                    onSave({
+                      ...formData,
+                      avatar: img,
+                      image: img
+                    });
+                  } 
+                  onClose(); 
+                }} 
+                className="px-6 py-2 rounded-xl bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white text-xs font-bold transition cursor-pointer shadow-lg shadow-red-950/50 flex items-center gap-1.5"
+              >
+                <Check className="w-4 h-4" />
+                <span>Guardar Ficha</span>
+              </button>
+            )}
+          </div>
         </div>
+
+        {/* Modal Cirujano IA - Refinamiento Selectivo de Campos */}
+        {showRefineModal && (
+          <div 
+            onClick={() => setShowRefineModal(false)}
+            className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4"
+          >
+            <div 
+              onClick={(e) => e.stopPropagation()}
+              className="bg-slate-950 border border-purple-500/50 rounded-2xl p-6 max-w-xl w-full flex flex-col space-y-4 shadow-[0_0_50px_rgba(168,85,247,0.3)] font-mono text-xs animate-in fade-in zoom-in-95 duration-200"
+            >
+              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+                <div className="flex items-center gap-2.5">
+                  <div className="p-2 rounded-xl bg-purple-950/80 border border-purple-500/40 text-purple-300">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-white font-cinzel">
+                      Cirujano IA: Edición Quirúrgica de Ficha
+                    </h3>
+                    <p className="text-[10px] text-slate-400">
+                      Modifica o añade partes concretas sin tocar el resto de la ficha
+                    </p>
+                  </div>
+                </div>
+
+                <button 
+                  onClick={() => setShowRefineModal(false)} 
+                  className="p-1 rounded-lg text-slate-400 hover:text-white cursor-pointer"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Selector de Sección a Refinar */}
+              <div className="space-y-2">
+                <label className="block text-purple-300 font-bold text-[11px]">
+                  1. Elige qué sección deseas modificar:
+                </label>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[10px]">
+                  {[
+                    { id: 'arsenal', label: '⚔️ Arsenal & Técnicas' },
+                    { id: 'stats', label: '⚡ Stats & Tiers' },
+                    { id: 'haxTags', label: '🏷️ Habilidades & Hax' },
+                    { id: 'forms', label: '🌀 Transformaciones' },
+                    { id: 'psychology', label: '🧠 Psicología & IQ' },
+                    { id: 'all', label: '✨ Ficha Completa' }
+                  ].map(sec => (
+                    <button
+                      key={sec.id}
+                      type="button"
+                      onClick={() => setRefineSection(sec.id)}
+                      className={`p-2 rounded-xl border text-left font-bold transition cursor-pointer ${
+                        refineSection === sec.id
+                          ? 'bg-purple-600/30 border-purple-400 text-purple-200 shadow-md shadow-purple-950/50'
+                          : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200'
+                      }`}
+                    >
+                      {sec.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Instrucción personalizada */}
+              <div className="space-y-1.5">
+                <label className="block text-slate-300 font-bold text-[11px]">
+                  2. ¿Qué cambio exacto quieres que haga la IA?:
+                </label>
+                <textarea
+                  rows={3}
+                  value={refineInstruction}
+                  onChange={(e) => setRefineInstruction(e.target.value)}
+                  placeholder="Ej: Añade la técnica Ryūken con su descripción y nombres oficiales en Japonés, o ajusta la velocidad a MFTL+ sin tocar su AP..."
+                  className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white text-xs placeholder-slate-500 focus:border-purple-500 outline-none resize-none"
+                />
+              </div>
+
+              {/* Presets de 1-Clic */}
+              <div className="space-y-1">
+                <span className="text-[10px] text-slate-500 block">Sugerencias rápidas de 1-clic:</span>
+                <div className="flex flex-wrap gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => setRefineInstruction('Traduce y añade los nombres canónicos de todas sus técnicas en Japonés (Rōmaji) e Inglés oficial.')}
+                    className="px-2 py-1 rounded bg-slate-900 border border-slate-800 hover:border-purple-500 text-[9px] text-slate-300 transition cursor-pointer"
+                  >
+                    🇯🇵 Nombres canónicos en Japonés
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setRefineInstruction('Calibra y ajusta rigurosamente su Tier y AP según sus hazañas más destructivas en el canon.')}
+                    className="px-2 py-1 rounded bg-slate-900 border border-slate-800 hover:border-purple-500 text-[9px] text-slate-300 transition cursor-pointer"
+                  >
+                    📊 Calibrar Tier de Poder
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setRefineInstruction('Añade sus transformaciones y multiplicadores de poder oficiales.')}
+                    className="px-2 py-1 rounded bg-slate-900 border border-slate-800 hover:border-purple-500 text-[9px] text-slate-300 transition cursor-pointer"
+                  >
+                    🌀 Añadir Transformaciones
+                  </button>
+                </div>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800 flex items-center justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => setShowRefineModal(false)}
+                  className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 font-bold cursor-pointer"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleRefineSection()}
+                  disabled={isRefining}
+                  className="px-5 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold transition flex items-center gap-2 shadow-lg shadow-purple-950/60 disabled:opacity-50 cursor-pointer"
+                >
+                  {isRefining ? (
+                    <>
+                      <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                      <span>Operando Ficha...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>⚡ Aplicar Cirugía IA</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,5 +1,95 @@
-import React from 'react';
-import { Swords, Users, Crown, Plus, Trash2, Shield, Flame, Sparkles, UserPlus } from 'lucide-react';
+import React, { useState } from 'react';
+import { Swords, Users, Crown, Plus, Trash2, Shield, Flame, Sparkles, UserPlus, Zap, Sliders, Info, ShieldAlert, Award } from 'lucide-react';
+import { getTranslation } from '../services/i18n';
+import CharacterCard from './CharacterCard';
+import { RAID_BOSS_TIERS, calculateSquadSynergy } from '../services/synergyEngine';
+
+// Subcomponente Visual de Sinergia y Ataques Combinados de Escuadra
+function SquadSynergyCard({ team, title, accentColor = 'cyan' }) {
+  const synergy = calculateSquadSynergy(team);
+  const [expanded, setExpanded] = useState(false);
+
+  if (!team || team.length <= 1) return null;
+
+  return (
+    <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2.5 font-mono text-xs">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <Sparkles className={`w-4 h-4 ${accentColor === 'red' ? 'text-red-400' : 'text-cyan-400'} animate-pulse`} />
+          <span className="font-bold text-white uppercase tracking-wider text-[11px]">
+            {title || 'Sinergia & Tácticas de Alianza'}
+          </span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <span className={`text-[10px] px-2 py-0.5 rounded font-bold ${
+            synergy.cohesion >= 85 ? 'bg-emerald-950/80 border border-emerald-500/50 text-emerald-300' : 'bg-slate-800 text-slate-300'
+          }`}>
+            Cohesión: {synergy.cohesion}%
+          </span>
+          <button
+            type="button"
+            onClick={() => setExpanded(!expanded)}
+            className="text-[10px] text-slate-400 hover:text-white underline cursor-pointer"
+          >
+            {expanded ? 'Ocultar' : 'Ver Combos'}
+          </button>
+        </div>
+      </div>
+
+      {/* Barra de Sincronía */}
+      <div className="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden border border-slate-800">
+        <div 
+          className={`h-full bg-gradient-to-r ${accentColor === 'red' ? 'from-red-600 to-amber-500' : 'from-cyan-500 to-blue-500'} transition-all duration-500`}
+          style={{ width: `${synergy.cohesion}%` }}
+        />
+      </div>
+
+      {/* Buffs Activos */}
+      {synergy.buffs.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+          {synergy.buffs.map((b, i) => (
+            <div key={i} className="p-1.5 rounded-lg bg-slate-900/90 border border-slate-800 flex items-start gap-1.5">
+              <span className="text-sm">{b.icon}</span>
+              <div className="leading-tight">
+                <span className="font-bold text-amber-300 text-[10px] block">{b.name}</span>
+                <span className="text-[9px] text-slate-400">{b.desc}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Ataques Combinados Expandibles */}
+      {expanded && synergy.combos.length > 0 && (
+        <div className="p-2.5 rounded-lg bg-gradient-to-r from-purple-950/40 via-slate-900 to-indigo-950/40 border border-purple-500/40 space-y-2 mt-1">
+          <span className="font-bold text-purple-300 text-[10px] flex items-center gap-1.5">
+            <Swords className="w-3.5 h-3.5 text-purple-400" />
+            <span>Ataques Combinados Disponibles (Dual Finishers):</span>
+          </span>
+          <div className="space-y-1.5">
+            {synergy.combos.map((c, i) => (
+              <div key={i} className="p-1.5 rounded bg-black/40 border border-white/5 space-y-0.5">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-amber-300 text-[11px]">{c.name}</span>
+                  <span className="text-[9px] text-slate-400">{c.pair}</span>
+                </div>
+                <p className="text-[10px] text-slate-300">{c.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+const TEAM_PALETTES = [
+  { id: 'alfa', defaultName: 'Equipo Alfa', colorName: 'Rojo', bgGradient: 'from-red-950/80 to-slate-900', border: 'border-red-500/50', text: 'text-red-400', badgeBg: 'bg-red-600 hover:bg-red-500', accent: 'red', dot: 'bg-red-500', dotShadow: 'shadow-[0_0_8px_red]' },
+  { id: 'beta', defaultName: 'Equipo Beta', colorName: 'Azul', bgGradient: 'from-blue-950/80 to-slate-900', border: 'border-blue-500/50', text: 'text-blue-400', badgeBg: 'bg-blue-600 hover:bg-blue-500', accent: 'cyan', dot: 'bg-blue-500', dotShadow: 'shadow-[0_0_8px_cyan]' },
+  { id: 'gamma', defaultName: 'Equipo Gamma', colorName: 'Esmeralda', bgGradient: 'from-emerald-950/80 to-slate-900', border: 'border-emerald-500/50', text: 'text-emerald-400', badgeBg: 'bg-emerald-600 hover:bg-emerald-500', accent: 'emerald', dot: 'bg-emerald-500', dotShadow: 'shadow-[0_0_8px_emerald]' },
+  { id: 'delta', defaultName: 'Equipo Delta', colorName: 'Dorado', bgGradient: 'from-amber-950/80 to-slate-900', border: 'border-amber-500/50', text: 'text-amber-400', badgeBg: 'bg-amber-600 hover:bg-amber-500', accent: 'amber', dot: 'bg-amber-500', dotShadow: 'shadow-[0_0_8px_amber]' },
+  { id: 'epsilon', defaultName: 'Equipo Épsilon', colorName: 'Púrpura', bgGradient: 'from-purple-950/80 to-slate-900', border: 'border-purple-500/50', text: 'text-purple-400', badgeBg: 'bg-purple-600 hover:bg-purple-500', accent: 'purple', dot: 'bg-purple-500', dotShadow: 'shadow-[0_0_8px_purple]' }
+];
 
 export default function MultiFighterPanel({ 
   matchMode, 
@@ -12,217 +102,445 @@ export default function MultiFighterPanel({
   setTeamA, 
   teamB, 
   setTeamB, 
+  bossMinions = [],
+  setBossMinions,
+  multiTeams = [],
+  setMultiTeams,
   battleRoyale, 
   setBattleRoyale, 
   allCharacters,
+  modifiers = {},
+  setModifiers,
   onInspect,
-  onEdit
+  onEdit,
+  onDelete,
+  onExportCard,
+  onOpenAiMatchmaker,
+  lang = 'es'
 }) {
+  const t = (k) => getTranslation(lang, k);
 
-  // Add fighter to Team A
-  const addTeamAMember = () => {
-    const available = allCharacters.find(c => !teamA.some(t => t.id === c.id)) || allCharacters[0];
-    setTeamA([...teamA, available]);
+  const currentBossMult = modifiers.bossMultiplier || 1.35;
+  const currentBossTier = RAID_BOSS_TIERS.find(b => b.multiplier === currentBossMult) || RAID_BOSS_TIERS[1];
+
+  const handleSetBossMultiplier = (mult) => {
+    if (setModifiers) {
+      setModifiers(prev => ({ ...prev, bossMultiplier: mult }));
+    }
   };
 
-  // Remove fighter from Team A
-  const removeTeamAMember = (index) => {
-    if (teamA.length <= 1) return alert('El equipo debe tener al menos 1 luchador.');
-    setTeamA(teamA.filter((_, i) => i !== index));
+  // Boss Minions handlers
+  const addBossMinion = () => {
+    if (!setBossMinions) return;
+    if (bossMinions.length >= 6) return alert('Máximo 6 esbirros/sub-jefes para el Boss.');
+    const available = allCharacters.find(c => c.id !== charA?.id && !bossMinions.some(m => m.id === c.id)) || allCharacters[0];
+    setBossMinions([...bossMinions, available]);
   };
 
-  // Add fighter to Team B
-  const addTeamBMember = () => {
+  const removeBossMinion = (index) => {
+    if (!setBossMinions) return;
+    setBossMinions(bossMinions.filter((_, i) => i !== index));
+  };
+
+  const updateBossMinion = (index, updatedChar) => {
+    if (!setBossMinions) return;
+    const updated = [...bossMinions];
+    updated[index] = updatedChar;
+    setBossMinions(updated);
+  };
+
+  // Multi-Team dynamic handlers
+  const effectiveMultiTeams = (multiTeams && multiTeams.length >= 2) ? multiTeams : [
+    { id: 'alfa', name: 'Equipo Alfa', color: 'red', members: teamA || [] },
+    { id: 'beta', name: 'Equipo Beta', color: 'blue', members: teamB || [] }
+  ];
+
+  const addMultiTeamFaction = () => {
+    if (!setMultiTeams) return;
+    if (effectiveMultiTeams.length >= 5) return alert('Máximo 5 equipos/facciones simultáneos.');
+    const nextIdx = effectiveMultiTeams.length;
+    const palette = TEAM_PALETTES[nextIdx] || TEAM_PALETTES[0];
+    const available = allCharacters.find(c => !effectiveMultiTeams.some(t => t.members.some(m => m.id === c.id))) || allCharacters[0];
+    
+    const newTeam = {
+      id: palette.id,
+      name: palette.defaultName,
+      color: palette.accent,
+      members: [available]
+    };
+    setMultiTeams([...effectiveMultiTeams, newTeam]);
+  };
+
+  const removeMultiTeamFaction = (teamIndex) => {
+    if (!setMultiTeams) return;
+    if (effectiveMultiTeams.length <= 2) return alert('Debes mantener al menos 2 equipos para el modo equipos.');
+    setMultiTeams(effectiveMultiTeams.filter((_, i) => i !== teamIndex));
+  };
+
+  const addMemberToMultiTeam = (teamIndex) => {
+    if (!setMultiTeams) return;
+    const team = effectiveMultiTeams[teamIndex];
+    if (team.members.length >= 8) return alert('Máximo 8 luchadores por equipo.');
+    const available = allCharacters.find(c => !team.members.some(m => m.id === c.id)) || allCharacters[0];
+    
+    const updatedTeams = [...effectiveMultiTeams];
+    updatedTeams[teamIndex] = {
+      ...team,
+      members: [...team.members, available]
+    };
+    setMultiTeams(updatedTeams);
+
+    // Keep legacy teamA / teamB in sync
+    if (teamIndex === 0 && setTeamA) setTeamA(updatedTeams[0].members);
+    if (teamIndex === 1 && setTeamB) setTeamB(updatedTeams[1].members);
+  };
+
+  const removeMemberFromMultiTeam = (teamIndex, memberIndex) => {
+    if (!setMultiTeams) return;
+    const team = effectiveMultiTeams[teamIndex];
+    if (team.members.length <= 1) return alert('Cada equipo debe tener al menos 1 luchador.');
+    
+    const updatedTeams = [...effectiveMultiTeams];
+    updatedTeams[teamIndex] = {
+      ...team,
+      members: team.members.filter((_, i) => i !== memberIndex)
+    };
+    setMultiTeams(updatedTeams);
+
+    if (teamIndex === 0 && setTeamA) setTeamA(updatedTeams[0].members);
+    if (teamIndex === 1 && setTeamB) setTeamB(updatedTeams[1].members);
+  };
+
+  const updateMemberInMultiTeam = (teamIndex, memberIndex, updatedChar) => {
+    if (!setMultiTeams) return;
+    const team = effectiveMultiTeams[teamIndex];
+    const updatedMembers = [...team.members];
+    updatedMembers[memberIndex] = updatedChar;
+
+    const updatedTeams = [...effectiveMultiTeams];
+    updatedTeams[teamIndex] = {
+      ...team,
+      members: updatedMembers
+    };
+    setMultiTeams(updatedTeams);
+
+    if (teamIndex === 0 && setTeamA) setTeamA(updatedMembers);
+    if (teamIndex === 1 && setTeamB) setTeamB(updatedMembers);
+  };
+
+  // Add fighter to Team B (Raid Squad)
+  const addRaidSquadMember = () => {
+    if (teamB.length >= 8) return alert('Máximo 8 combatientes en la escuadra asaltante.');
     const available = allCharacters.find(c => !teamB.some(t => t.id === c.id)) || allCharacters[1] || allCharacters[0];
     setTeamB([...teamB, available]);
   };
 
-  // Remove fighter from Team B
-  const removeTeamBMember = (index) => {
-    if (teamB.length <= 1) return alert('El equipo debe tener al menos 1 luchador.');
+  const removeRaidSquadMember = (index) => {
+    if (teamB.length <= 1) return alert('La escuadra asaltante debe tener al menos 1 luchador.');
     setTeamB(teamB.filter((_, i) => i !== index));
   };
 
-  // Add fighter to Battle Royale
+  const updateRaidSquadMember = (index, updatedChar) => {
+    const updated = [...teamB];
+    updated[index] = updatedChar;
+    setTeamB(updated);
+  };
+
+  // Battle Royale handlers
   const addRoyaleMember = () => {
     if (battleRoyale.length >= 10) return alert('Máximo 10 luchadores en el Battle Royale.');
     const available = allCharacters.find(c => !battleRoyale.some(t => t.id === c.id)) || allCharacters[0];
     setBattleRoyale([...battleRoyale, available]);
   };
 
-  // Remove fighter from Battle Royale
   const removeRoyaleMember = (index) => {
-    if (battleRoyale.length <= 2) return alert('El Battle Royale necesita al menos 2 participantes.');
+    if (battleRoyale.length <= 2) return alert('El Battle Royale debe tener al menos 2 luchadores.');
     setBattleRoyale(battleRoyale.filter((_, i) => i !== index));
   };
 
+  const updateRoyaleMember = (index, updatedChar) => {
+    const updated = [...battleRoyale];
+    updated[index] = updatedChar;
+    setBattleRoyale(updated);
+  };
+
   return (
-    <div className="rounded-2xl glass-panel p-5 border border-amber-500/30 shadow-2xl space-y-5 font-mono relative overflow-hidden bg-[#090d16]/90">
-      {/* Top Header & Mode Tabs */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
-        <div className="flex items-center gap-3">
-          <div className="p-3 rounded-2xl bg-gradient-to-br from-amber-600/30 to-red-600/20 border border-amber-500/40 text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
-            {matchMode === '1v1' && <Swords className="w-5 h-5" />}
-            {matchMode === 'teams' && <Users className="w-5 h-5" />}
-            {matchMode === 'battle_royale' && <Crown className="w-5 h-5 text-yellow-300" />}
+    <div className="space-y-6">
+      
+      {/* Mode Selector Header Bar */}
+      <div className="p-4 rounded-2xl glass-panel border border-slate-800 flex items-center justify-between flex-wrap gap-3">
+        <div className="flex items-center gap-2.5">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-red-600 to-amber-600 flex items-center justify-center text-white shadow-md">
+            <Swords className="w-4 h-4" />
           </div>
           <div>
-            <h3 className="text-lg font-bold text-white font-cinzel tracking-wider flex items-center gap-2">
-              Modalidad de Combate & Alineación
+            <h3 className="text-sm font-bold text-white uppercase font-mono tracking-wider">
+              {t('combatModeTitle')}
             </h3>
-            <p className="text-xs text-slate-400">
-              Selecciona entre Duelo 1v1, Guerra de Equipos Múltiples o Caos de Battle Royale.
+            <p className="text-[11px] text-slate-400 font-mono">
+              {t('combatModeDesc')}
             </p>
           </div>
         </div>
 
-        {/* Match Mode Tabs */}
-        <div className="flex items-center gap-2 bg-slate-950/80 p-1.5 rounded-2xl border border-slate-800 flex-wrap">
-          <button
-            type="button"
-            onClick={() => setMatchMode('1v1')}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
-              matchMode === '1v1'
-                ? 'bg-amber-500 text-black shadow-[0_0_12px_rgba(245,158,11,0.6)]'
-                : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            <Swords className="w-3.5 h-3.5" />
-            <span>1 vs 1</span>
-          </button>
+        <div className="flex items-center gap-2 flex-wrap">
+          {/* AI Matchmaker Prompt Button */}
+          {onOpenAiMatchmaker && (
+            <button
+              type="button"
+              onClick={onOpenAiMatchmaker}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-purple-600/30 via-pink-600/30 to-purple-600/30 hover:from-purple-600/50 hover:to-pink-600/50 text-purple-300 border border-purple-500/50 font-bold transition cursor-pointer shadow-md shadow-purple-950/40 text-xs font-mono"
+              title="Pedir a la IA que configure cualquier combate con lenguaje natural"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-pink-400 animate-pulse" />
+              <span>🪄 Match por Prompt IA</span>
+            </button>
+          )}
 
-          <button
-            type="button"
-            onClick={() => setMatchMode('1vN')}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
-              matchMode === '1vN'
-                ? 'bg-gradient-to-r from-red-600 to-orange-600 text-white shadow-[0_0_12px_rgba(220,38,38,0.6)]'
-                : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            <Flame className="w-3.5 h-3.5 text-amber-300" />
-            <span>1 vs Varios (Boss Raid)</span>
-          </button>
+          {/* Segmented Mode Control */}
+          <div className="flex items-center gap-1 p-1 bg-slate-950/80 border border-slate-800 rounded-xl font-mono text-xs font-bold">
+            <button
+              type="button"
+              onClick={() => setMatchMode('1v1')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition cursor-pointer ${
+                matchMode === '1v1'
+                  ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white shadow-md shadow-red-950/50'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Swords className="w-3.5 h-3.5" />
+              <span>{t('mode1v1')}</span>
+            </button>
 
-          <button
-            type="button"
-            onClick={() => setMatchMode('teams')}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
-              matchMode === 'teams'
-                ? 'bg-blue-600 text-white shadow-[0_0_12px_rgba(37,99,235,0.6)]'
-                : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            <Users className="w-3.5 h-3.5" />
-            <span>Equipos (Team VS)</span>
-          </button>
+            <button
+              type="button"
+              onClick={() => setMatchMode('1vN')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition cursor-pointer ${
+                matchMode === '1vN'
+                  ? 'bg-gradient-to-r from-amber-600 to-orange-600 text-white shadow-md shadow-amber-950/50'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Flame className="w-3.5 h-3.5 text-amber-300" />
+              <span>Boss Raid (+ Aliados)</span>
+            </button>
 
-          <button
-            type="button"
-            onClick={() => setMatchMode('battle_royale')}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
-              matchMode === 'battle_royale'
-                ? 'bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white shadow-[0_0_15px_rgba(168,85,247,0.6)]'
-                : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            <Crown className="w-3.5 h-3.5 text-yellow-300" />
-            <span>Battle Royale</span>
-          </button>
+            <button
+              type="button"
+              onClick={() => setMatchMode('teams')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition cursor-pointer ${
+                matchMode === 'teams'
+                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-950/50'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Users className="w-3.5 h-3.5 text-blue-300" />
+              <span>Multi-Equipos ({effectiveMultiTeams.length})</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setMatchMode('battle_royale')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition cursor-pointer ${
+                matchMode === 'battle_royale'
+                  ? 'bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white shadow-md shadow-purple-950/50'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Crown className="w-3.5 h-3.5 text-yellow-300" />
+              <span>{t('modeRoyale')}</span>
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* MODO 1 VS VARIOS (BOSS RAID) */}
+      {/* ─── MODO 1 VS 1 CLÁSICO ─────────────────────────────────────────── */}
+      {matchMode === '1v1' && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <CharacterCard
+            character={charA}
+            role="Contendiente A (Rojo)"
+            onInspect={onInspect}
+            onEdit={onEdit}
+            onDelete={onDelete}
+            onSelectChange={setCharA}
+            onExportCard={onExportCard}
+            allCharacters={allCharacters}
+            lang={lang}
+          />
+          <CharacterCard
+            character={charB}
+            role="Contendiente B (Azul)"
+            onInspect={onInspect}
+            onEdit={onEdit}
+            onDelete={onDelete}
+            onSelectChange={setCharB}
+            onExportCard={onExportCard}
+            allCharacters={allCharacters}
+            lang={lang}
+          />
+        </div>
+      )}
+
+      {/* ─── MODO 1 VS VARIOS (BOSS RAID ASIMÉTRICO + ALIADOS DEL BOSS) ──── */}
       {matchMode === '1vN' && (
-        <div className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
             
-            {/* El Jefe / Boss (1 Solitario) */}
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-red-950/40 via-slate-900/70 to-orange-950/40 border border-red-500/60 shadow-xl space-y-3">
-              <div className="flex items-center gap-2 border-b border-red-900/50 pb-2">
-                <Flame className="w-4 h-4 text-red-400 animate-pulse" />
-                <span className="text-sm font-bold text-red-300 font-cinzel">JEFE / TITÁN SOLITARIO (1)</span>
+            {/* Columna Izquierda: El Jefe Supremo + Aliados / Esbirros del Boss (6 cols) */}
+            <div className="lg:col-span-6 space-y-4">
+              <div className="p-3.5 rounded-xl bg-gradient-to-r from-red-950/90 via-slate-900 to-amber-950/80 border border-red-500/60 space-y-3 shadow-xl">
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <div className="flex items-center gap-2 font-cinzel font-bold text-red-400 text-sm">
+                    <Flame className="w-4 h-4 text-red-400 animate-pulse" />
+                    <span>FACCIÓN DEL JEFE SUPREMO</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className={`px-2.5 py-0.5 rounded text-white font-mono text-[10px] font-black uppercase bg-gradient-to-r ${currentBossTier.color} shadow-md`}>
+                      {currentBossTier.badge}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={addBossMinion}
+                      className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-red-600 hover:bg-red-500 text-white font-mono font-bold text-[10px] shadow transition cursor-pointer"
+                      title="Añadir un esbirro o sub-jefe como aliado al equipo del Boss"
+                    >
+                      <UserPlus className="w-3 h-3" />
+                      <span>+ Aliado / Esbirro Boss</span>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Selector de Nivel de Amenaza del Boss */}
+                <div className="pt-2 border-t border-slate-800 space-y-1.5 font-mono text-xs">
+                  <div className="flex items-center justify-between text-[11px]">
+                    <span className="text-slate-400 font-bold flex items-center gap-1">
+                      <Sliders className="w-3 h-3 text-amber-400" />
+                      <span>Nivel de Amenaza & Multiplicador del Boss:</span>
+                    </span>
+                    <span className="text-amber-300 font-bold">{currentBossTier.label} ({currentBossTier.multiplier}x)</span>
+                  </div>
+
+                  {/* Botones Rápidos de Nivel */}
+                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-1">
+                    {RAID_BOSS_TIERS.map(tier => (
+                      <button
+                        key={tier.level}
+                        type="button"
+                        onClick={() => handleSetBossMultiplier(tier.multiplier)}
+                        className={`p-1.5 rounded-lg border text-center transition cursor-pointer text-[10px] font-bold ${
+                          currentBossMult === tier.multiplier
+                            ? 'bg-red-950/90 border-red-500 text-red-200 shadow-md shadow-red-950/60 scale-[1.02]'
+                            : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:text-slate-200'
+                        }`}
+                      >
+                        Lv.{tier.level} ({tier.multiplier}x)
+                      </button>
+                    ))}
+                  </div>
+
+                  <p className="text-[10px] text-slate-400 italic pt-0.5">
+                    ⚡ {currentBossTier.desc} · <span className="text-amber-300">{currentBossTier.aura}</span>
+                  </p>
+                </div>
               </div>
 
-              <label className="block text-[11px] text-slate-400">Selecciona al Boss:</label>
-              <select
-                value={charA.id}
-                onChange={(e) => {
-                  const selected = allCharacters.find(c => c.id === e.target.value);
-                  if (selected) setCharA(selected);
-                }}
-                className="w-full bg-slate-950 border border-red-900/60 text-white text-xs p-2.5 rounded-xl font-bold focus:border-red-500 focus:outline-none"
-              >
-                {allCharacters.map(c => (
-                  <option key={c.id} value={c.id}>
-                    🐉 {c.name} ({c.universe})
-                  </option>
+              {/* Sinergia de la Facción del Boss (si tiene aliados) */}
+              {bossMinions && bossMinions.length > 0 && (
+                <SquadSynergyCard 
+                  team={[charA, ...bossMinions]} 
+                  title={`Sinergia del Dominio del Boss (1 Titán + ${bossMinions.length} Aliados)`} 
+                  accentColor="red" 
+                />
+              )}
+
+              {/* Carta del Boss Principal */}
+              <div className="space-y-3">
+                <CharacterCard
+                  character={charA}
+                  role={`Jefe Supremo Titán (${currentBossMult}x Buff)`}
+                  onInspect={onInspect}
+                  onEdit={onEdit}
+                  onDelete={onDelete}
+                  onSelectChange={setCharA}
+                  onExportCard={onExportCard}
+                  allCharacters={allCharacters}
+                  lang={lang}
+                />
+
+                {/* Cartas de los Esbirros / Sub-Jefes del Boss */}
+                {bossMinions && bossMinions.map((minion, mIdx) => (
+                  <div key={`boss-minion-${mIdx}-${minion.id}`} className="relative pl-3 border-l-2 border-red-500/40">
+                    <div className="absolute top-3 right-3 z-10">
+                      <button
+                        type="button"
+                        onClick={() => removeBossMinion(mIdx)}
+                        className="p-1.5 rounded-lg bg-red-950/80 hover:bg-red-900 border border-red-500/40 text-red-300 cursor-pointer shadow transition"
+                        title="Eliminar aliado del Boss"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                    <CharacterCard
+                      character={minion}
+                      role={`Aliado / Sub-Jefe del Boss #${mIdx + 1}`}
+                      onInspect={onInspect}
+                      onEdit={onEdit}
+                      onDelete={() => removeBossMinion(mIdx)}
+                      onSelectChange={(updatedChar) => updateBossMinion(mIdx, updatedChar)}
+                      onExportCard={onExportCard}
+                      allCharacters={allCharacters}
+                      lang={lang}
+                    />
+                  </div>
                 ))}
-              </select>
-
-              <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800 text-[11px] space-y-1">
-                <div className="text-red-400 font-bold">{charA.name}</div>
-                <div className="text-slate-400">Tier: {charA.tier || 'Desconocido'}</div>
-                <div className="text-amber-400 text-[10px]">AP: {charA.ap}</div>
               </div>
             </div>
 
-            {/* VS Symbol */}
-            <div className="flex flex-col items-center justify-center p-2 text-center">
-              <span className="text-2xl font-black font-cinzel text-amber-400 drop-shadow-[0_0_10px_rgba(245,158,11,0.8)] animate-pulse">
-                VS
-              </span>
-              <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest mt-1">
-                Duelo Asimétrico Raid
-              </span>
-            </div>
-
-            {/* La Escuadra / Equipo Asaltante */}
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-950/30 via-slate-900/70 to-slate-900/50 border border-blue-800/50 space-y-3">
-              <div className="flex items-center justify-between border-b border-blue-900/40 pb-2">
-                <div className="flex items-center gap-2 text-blue-400 font-bold text-sm font-cinzel">
+            {/* Columna Derecha: Escuadra Asaltante (6 cols) */}
+            <div className="lg:col-span-6 space-y-4">
+              <div className="p-3.5 rounded-xl bg-gradient-to-r from-cyan-950/80 to-blue-950/80 border border-cyan-500/50 flex items-center justify-between flex-wrap gap-2 shadow-xl">
+                <div className="flex items-center gap-2 font-cinzel font-bold text-cyan-300 text-sm">
                   <Users className="w-4 h-4 text-cyan-400" />
-                  <span>ESCUADRA ASALTANTE ({teamB.length})</span>
+                  <span>ESCUADRA ASALTANTE ({teamB.length} Luchadores)</span>
                 </div>
                 <button
                   type="button"
-                  onClick={addTeamBMember}
-                  className="flex items-center gap-1 px-3 py-1 rounded-xl bg-blue-600/30 hover:bg-blue-600 text-blue-200 text-xs font-bold border border-blue-500/50 transition cursor-pointer"
+                  onClick={addRaidSquadMember}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-black font-mono font-bold text-xs shadow-md transition cursor-pointer"
                 >
                   <UserPlus className="w-3.5 h-3.5" />
-                  <span>Añadir</span>
+                  <span>+ Añadir Asaltante</span>
                 </button>
               </div>
 
-              <div className="space-y-2 max-h-[260px] overflow-y-auto pr-1">
+              {/* Panel Dinámico de Sinergias de la Escuadra */}
+              <SquadSynergyCard team={teamB} title={`Sinergia de la Escuadra (${teamB.length} Luchadores)`} accentColor="cyan" />
+
+              <div className="space-y-4 max-h-[900px] overflow-y-auto pr-1">
                 {teamB.map((member, idx) => (
-                  <div key={idx} className="p-2.5 rounded-xl bg-slate-950/80 border border-blue-900/30 flex items-center justify-between gap-2">
-                    <span className="text-cyan-400 font-bold text-xs">#{idx + 1}</span>
-                    <select
-                      value={member.id}
-                      onChange={(e) => {
-                        const selected = allCharacters.find(c => c.id === e.target.value);
-                        if (selected) {
-                          const updated = [...teamB];
-                          updated[idx] = selected;
-                          setTeamB(updated);
-                        }
-                      }}
-                      className="flex-1 bg-slate-900 border border-slate-800 text-white text-xs p-2 rounded-lg focus:border-cyan-500 focus:outline-none"
-                    >
-                      {allCharacters.map(c => (
-                        <option key={c.id} value={c.id}>
-                          {c.name} ({c.universe})
-                        </option>
-                      ))}
-                    </select>
-                    <button
-                      type="button"
-                      onClick={() => removeTeamBMember(idx)}
-                      className="p-1.5 rounded-lg bg-red-950/40 hover:bg-red-900 text-red-400 cursor-pointer"
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                    </button>
+                  <div key={`raid-${idx}-${member.id}`} className="relative">
+                    <div className="absolute top-3 right-3 z-10">
+                      <button
+                        type="button"
+                        onClick={() => removeRaidSquadMember(idx)}
+                        className="p-1.5 rounded-lg bg-red-950/80 hover:bg-red-900 border border-red-500/40 text-red-300 cursor-pointer shadow transition"
+                        title="Eliminar asaltante de la escuadra"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                    <CharacterCard
+                      character={member}
+                      role={`Asaltante #${idx + 1} (Escuadra)`}
+                      onInspect={onInspect}
+                      onEdit={onEdit}
+                      onDelete={() => removeRaidSquadMember(idx)}
+                      onSelectChange={(updatedChar) => updateRaidSquadMember(idx, updatedChar)}
+                      onExportCard={onExportCard}
+                      allCharacters={allCharacters}
+                      lang={lang}
+                    />
                   </div>
                 ))}
               </div>
@@ -232,190 +550,170 @@ export default function MultiFighterPanel({
         </div>
       )}
 
-      {/* MODO EQUIPOS (TEAMS) */}
+      {/* ─── MODO GUERRA MULTI-EQUIPOS (HASTA 5 EQUIPOS / FACCIONES) ─────── */}
       {matchMode === 'teams' && (
-        <div className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            {/* Equipo Alfa (Red) */}
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-red-950/30 to-slate-900/60 border border-red-800/50 space-y-3">
-              <div className="flex items-center justify-between border-b border-red-900/40 pb-2">
-                <div className="flex items-center gap-2 text-red-400 font-bold text-sm font-cinzel">
-                  <span className="w-3 h-3 rounded-full bg-red-500 animate-pulse shadow-[0_0_8px_red]" />
-                  <span>EQUIPO ALFA ({teamA.length} Luchadores)</span>
-                </div>
-                <button
-                  type="button"
-                  onClick={addTeamAMember}
-                  className="flex items-center gap-1 px-3 py-1 rounded-xl bg-red-600/30 hover:bg-red-600 text-red-200 text-xs font-bold border border-red-500/50 transition cursor-pointer"
-                >
-                  <UserPlus className="w-3.5 h-3.5" />
-                  <span>Añadir</span>
-                </button>
-              </div>
-
-              <div className="space-y-2 max-h-[320px] overflow-y-auto pr-1">
-                {teamA.map((member, idx) => (
-                  <div key={idx} className="p-3 rounded-xl bg-slate-950/80 border border-red-900/30 flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-2 flex-1">
-                      <span className="text-red-400 font-bold text-xs">#{idx + 1}</span>
-                      <select
-                        value={member.id}
-                        onChange={(e) => {
-                          const selected = allCharacters.find(c => c.id === e.target.value);
-                          if (selected) {
-                            const updated = [...teamA];
-                            updated[idx] = selected;
-                            setTeamA(updated);
-                          }
-                        }}
-                        className="flex-1 bg-slate-900 border border-slate-800 text-white text-xs p-2 rounded-lg focus:border-red-500 focus:outline-none"
-                      >
-                        {allCharacters.map(c => (
-                          <option key={c.id} value={c.id}>
-                            {c.name} ({c.universe})
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <button
-                      type="button"
-                      onClick={() => removeTeamAMember(idx)}
-                      className="p-2 rounded-lg bg-red-950/50 hover:bg-red-900 text-red-400 cursor-pointer"
-                      title="Eliminar del equipo"
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                ))}
+        <div className="space-y-6">
+          
+          {/* Header de Gestión Multi-Equipos */}
+          <div className="p-3.5 rounded-xl bg-gradient-to-r from-blue-950/60 via-slate-900 to-indigo-950/60 border border-blue-500/40 flex items-center justify-between flex-wrap gap-2 font-mono">
+            <div className="flex items-center gap-2">
+              <Users className="w-4 h-4 text-cyan-400" />
+              <div>
+                <h4 className="text-xs font-bold text-white uppercase tracking-wider">
+                  Guerra Multi-Equipos ({effectiveMultiTeams.length} Facciones Simultáneas)
+                </h4>
+                <p className="text-[10px] text-slate-400">
+                  Combate de múltiples bandos con fuego cruzado, alianzas tácticas y sinergias por facción.
+                </p>
               </div>
             </div>
 
-            {/* Equipo Beta (Blue) */}
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-950/30 to-slate-900/60 border border-blue-800/50 space-y-3">
-              <div className="flex items-center justify-between border-b border-blue-900/40 pb-2">
-                <div className="flex items-center gap-2 text-blue-400 font-bold text-sm font-cinzel">
-                  <span className="w-3 h-3 rounded-full bg-blue-500 animate-pulse shadow-[0_0_8px_cyan]" />
-                  <span>EQUIPO BETA ({teamB.length} Luchadores)</span>
-                </div>
-                <button
-                  type="button"
-                  onClick={addTeamBMember}
-                  className="flex items-center gap-1 px-3 py-1 rounded-xl bg-blue-600/30 hover:bg-blue-600 text-blue-200 text-xs font-bold border border-blue-500/50 transition cursor-pointer"
-                >
-                  <UserPlus className="w-3.5 h-3.5" />
-                  <span>Añadir</span>
-                </button>
-              </div>
+            {effectiveMultiTeams.length < 5 && (
+              <button
+                type="button"
+                onClick={addMultiTeamFaction}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-bold text-xs shadow-md transition cursor-pointer"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>+ Crear Equipo {effectiveMultiTeams.length + 1} ({TEAM_PALETTES[effectiveMultiTeams.length]?.colorName || 'Facción'})</span>
+              </button>
+            )}
+          </div>
 
-              <div className="space-y-2 max-h-[320px] overflow-y-auto pr-1">
-                {teamB.map((member, idx) => (
-                  <div key={idx} className="p-3 rounded-xl bg-slate-950/80 border border-blue-900/30 flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-2 flex-1">
-                      <span className="text-blue-400 font-bold text-xs">#{idx + 1}</span>
-                      <select
-                        value={member.id}
-                        onChange={(e) => {
-                          const selected = allCharacters.find(c => c.id === e.target.value);
-                          if (selected) {
-                            const updated = [...teamB];
-                            updated[idx] = selected;
-                            setTeamB(updated);
-                          }
-                        }}
-                        className="flex-1 bg-slate-900 border border-slate-800 text-white text-xs p-2 rounded-lg focus:border-blue-500 focus:outline-none"
-                      >
-                        {allCharacters.map(c => (
-                          <option key={c.id} value={c.id}>
-                            {c.name} ({c.universe})
-                          </option>
-                        ))}
-                      </select>
+          {/* Grid de Equipos Dinámico */}
+          <div className={`grid grid-cols-1 ${effectiveMultiTeams.length === 2 ? 'lg:grid-cols-2' : effectiveMultiTeams.length === 3 ? 'lg:grid-cols-3' : 'md:grid-cols-2 xl:grid-cols-2'} gap-6 items-start`}>
+            {effectiveMultiTeams.map((team, tIdx) => {
+              const palette = TEAM_PALETTES[tIdx] || TEAM_PALETTES[0];
+
+              return (
+                <div key={team.id || `team-${tIdx}`} className="space-y-4">
+                  {/* Encabezado del Equipo */}
+                  <div className={`p-3.5 rounded-xl bg-gradient-to-r ${palette.bgGradient} border ${palette.border} flex items-center justify-between flex-wrap gap-2 shadow-lg`}>
+                    <div className="flex items-center gap-2 font-cinzel font-bold text-sm">
+                      <span className={`w-3 h-3 rounded-full ${palette.dot} animate-pulse ${palette.dotShadow}`} />
+                      <span className={palette.text}>{team.name.toUpperCase()} ({team.members.length})</span>
                     </div>
 
-                    <button
-                      type="button"
-                      onClick={() => removeTeamBMember(idx)}
-                      className="p-2 rounded-lg bg-red-950/50 hover:bg-red-900 text-red-400 cursor-pointer"
-                      title="Eliminar del equipo"
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </div>
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        type="button"
+                        onClick={() => addMemberToMultiTeam(tIdx)}
+                        className={`flex items-center gap-1 px-2.5 py-1 rounded-lg ${palette.badgeBg} text-white font-mono font-bold text-[10px] shadow transition cursor-pointer`}
+                      >
+                        <UserPlus className="w-3 h-3" />
+                        <span>+ Añadir</span>
+                      </button>
 
+                      {effectiveMultiTeams.length > 2 && (
+                        <button
+                          type="button"
+                          onClick={() => removeMultiTeamFaction(tIdx)}
+                          className="p-1 rounded-lg bg-red-950/80 hover:bg-red-900 border border-red-500/40 text-red-300 transition cursor-pointer"
+                          title="Eliminar este equipo de la guerra"
+                        >
+                          <Trash2 className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Sinergia del Equipo */}
+                  <SquadSynergyCard 
+                    team={team.members} 
+                    title={`Sinergia ${team.name} (${team.members.length} Luchadores)`} 
+                    accentColor={palette.accent} 
+                  />
+
+                  {/* Lista de Personajes del Equipo */}
+                  <div className="space-y-4 max-h-[850px] overflow-y-auto pr-1">
+                    {team.members.map((member, mIdx) => (
+                      <div key={`multiTeam-${tIdx}-${mIdx}-${member.id}`} className="relative">
+                        <div className="absolute top-3 right-3 z-10">
+                          <button
+                            type="button"
+                            onClick={() => removeMemberFromMultiTeam(tIdx, mIdx)}
+                            className="p-1.5 rounded-lg bg-red-950/80 hover:bg-red-900 border border-red-500/40 text-red-300 cursor-pointer shadow transition"
+                            title={`Eliminar del ${team.name}`}
+                          >
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                        <CharacterCard
+                          character={member}
+                          role={`${team.name} #${mIdx + 1}`}
+                          onInspect={onInspect}
+                          onEdit={onEdit}
+                          onDelete={() => removeMemberFromMultiTeam(tIdx, mIdx)}
+                          onSelectChange={(updatedChar) => updateMemberInMultiTeam(tIdx, mIdx, updatedChar)}
+                          onExportCard={onExportCard}
+                          allCharacters={allCharacters}
+                          lang={lang}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
 
-      {/* MODO BATTLE ROYALE */}
+      {/* ─── MODO BATTLE ROYALE (TODOS CONTRA TODOS) ────────────────────── */}
       {matchMode === 'battle_royale' && (
-        <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-950/30 via-slate-900/60 to-fuchsia-950/30 border border-purple-600/40 space-y-4">
-          <div className="flex items-center justify-between border-b border-purple-900/50 pb-3">
-            <div className="flex items-center gap-2">
+        <div className="space-y-4">
+          <div className="p-4 rounded-2xl bg-gradient-to-r from-purple-950/80 via-slate-900 to-fuchsia-950/80 border border-purple-500/50 flex items-center justify-between flex-wrap gap-2">
+            <div className="flex items-center gap-2.5">
               <Crown className="w-5 h-5 text-yellow-300 animate-pulse" />
-              <h4 className="text-sm font-bold text-purple-200 uppercase tracking-wider font-cinzel">
-                Arena de Battle Royale ({battleRoyale.length} Competidores en Caos Total)
-              </h4>
+              <div>
+                <h4 className="text-sm font-bold text-white uppercase tracking-wider font-cinzel">
+                  Coliseo Battle Royale ({battleRoyale.length} Gladiadores en Caos Total)
+                </h4>
+                <p className="text-[11px] text-purple-300 font-mono">
+                  Todos contra todos simultáneamente. Cada luchador opera con su forma y arsenal seleccionados.
+                </p>
+              </div>
             </div>
             <button
               type="button"
               onClick={addRoyaleMember}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 text-white text-xs font-bold shadow-md shadow-purple-950/50 transition cursor-pointer"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 text-white font-mono text-xs font-bold shadow-lg shadow-purple-950/50 transition cursor-pointer"
             >
               <UserPlus className="w-4 h-4" />
-              <span>Añadir Gladiador</span>
+              <span>+ Añadir Gladiador</span>
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-[360px] overflow-y-auto pr-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 max-h-[900px] overflow-y-auto pr-1">
             {battleRoyale.map((gladiator, idx) => (
-              <div key={idx} className="p-3.5 rounded-xl bg-slate-950/90 border border-purple-900/40 space-y-2 relative group hover:border-purple-500 transition">
-                <div className="flex items-center justify-between">
-                  <span className="px-2 py-0.5 rounded bg-purple-950 text-purple-300 font-bold text-[10px] border border-purple-800">
-                    Gladiador #{idx + 1}
-                  </span>
+              <div key={`royale-${idx}-${gladiator.id}`} className="relative">
+                <div className="absolute top-3 right-3 z-10">
                   <button
                     type="button"
                     onClick={() => removeRoyaleMember(idx)}
-                    className="text-slate-500 hover:text-red-400 p-1 transition cursor-pointer"
-                    title="Eliminar del royale"
+                    className="p-1.5 rounded-lg bg-red-950/80 hover:bg-red-900 border border-red-500/40 text-red-300 cursor-pointer shadow transition"
+                    title="Eliminar gladiador del Battle Royale"
                   >
                     <Trash2 className="w-3.5 h-3.5" />
                   </button>
                 </div>
-
-                <select
-                  value={gladiator.id}
-                  onChange={(e) => {
-                    const selected = allCharacters.find(c => c.id === e.target.value);
-                    if (selected) {
-                      const updated = [...battleRoyale];
-                      updated[idx] = selected;
-                      setBattleRoyale(updated);
-                    }
-                  }}
-                  className="w-full bg-slate-900 border border-slate-800 text-white text-xs p-2 rounded-lg focus:border-purple-500 focus:outline-none"
-                >
-                  {allCharacters.map(c => (
-                    <option key={c.id} value={c.id}>
-                      {c.name} ({c.universe})
-                    </option>
-                  ))}
-                </select>
-
-                <div className="text-[10px] text-slate-400 flex items-center justify-between">
-                  <span>Tier: {gladiator.tier || 'Desconocido'}</span>
-                  <span className="text-amber-400 font-bold">{gladiator.ap?.slice(0, 15)}...</span>
-                </div>
+                <CharacterCard
+                  character={gladiator}
+                  role={`Gladiador #${idx + 1}`}
+                  onInspect={onInspect}
+                  onEdit={onEdit}
+                  onDelete={() => removeRoyaleMember(idx)}
+                  onSelectChange={(updatedChar) => updateRoyaleMember(idx, updatedChar)}
+                  onExportCard={onExportCard}
+                  allCharacters={allCharacters}
+                  lang={lang}
+                />
               </div>
             ))}
           </div>
         </div>
       )}
+
     </div>
   );
 }

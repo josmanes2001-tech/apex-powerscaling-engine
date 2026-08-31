@@ -6,6 +6,8 @@ export const SCENARIOS = [
     desc: "Plataforma colosal de 500 kilómetros de roca infernal flotando sobre el vacío dimensional del Infierno.",
     sensory: "El horizonte es un abismo escarlata sin fondo. Vientos ardientes cargados de ceniza volcánica y almas en pena aúllan a velocidades huracanadas. La gravedad oscila violentamente.",
     terrainEffect: "Plataforma de 500km indestructible por ataques convencionales pero que se funde en magma ante ráfagas divinas. Caer de la plataforma significa el destierro al vacío dimensional.",
+    gravity: "1G variable (oscila entre 0.5G y 3G)",
+    temperature: "Incandescente (900°C en el suelo)",
     civilians: false
   },
   {
@@ -15,6 +17,8 @@ export const SCENARIOS = [
     desc: "Coliseo romano colosal de 300 metros de diámetro con paredes de mármol dorado de 50m y arena magnética conductora.",
     sensory: "El aire zumba con una carga estática de 10,000 voltios. Olor a ozono y sangre de depredador. Gradas para 100,000 almas espectrales que rugen ante cada impacto.",
     terrainEffect: "Arena conductora que electrifica a los rivales en tierra. Paredes impenetrables. El terreno genera fosos, pilares y armas electromagnéticas a voluntad del señor del dominio.",
+    gravity: "1G (Tierra Estándar)",
+    temperature: "Cargada eléctricamente (40°C)",
     civilians: false
   },
   {
@@ -24,6 +28,8 @@ export const SCENARIOS = [
     desc: "Metrópolis reducida a un laberinto de asfalto calcinado, vigas de acero retorcidas y cráteres de 50 metros.",
     sensory: "El aire huele a hormigón pulverizado y ozono quemado. Cada paso levanta una nube de polvo grisáceo que reseca la garganta. El sonido lejano de cascotes desplomándose rompe el silencio sepulcral.",
     terrainEffect: "Líneas de visión interrumpidas por rascacielos a medio colapsar. Cobertura densa pero estructuralmente inestable.",
+    gravity: "1G (Tierra Estándar)",
+    temperature: "Calurosa (38°C, residuo térmico de explosiones)",
     civilians: false
   },
   {
@@ -33,6 +39,8 @@ export const SCENARIOS = [
     desc: "Llanuras místicas de hierba dorada bajo un cielo violáceo con dos lunas esmeralda.",
     sensory: "Atmósfera cristalina y densa, impregnada de una calma divina que zumba en los tímpanos. La tierra de katchin bajo las botas es más dura que cualquier mineral terrestre, reflejando el fulgor de la energía.",
     terrainEffect: "Visibilidad infinita sin obstáculos. Terreno irrompible ante ataques menores, pero maleable ante explosiones divinas.",
+    gravity: "1G (Divina)",
+    temperature: "Templada eterna (22°C)",
     civilians: false
   },
   {
@@ -42,6 +50,8 @@ export const SCENARIOS = [
     desc: "Espacio abierto sobre un planeta anillado cubierto de escombros de batallas espaciales pasadas.",
     sensory: "Vacío gélido donde el silencio es absoluto. La radiación de la estrella cercana quema la piel expuesta mientras fragmentos de naves y rocas flotan a la deriva en ingravidez.",
     terrainEffect: "Gravedad cero. Combate 100% tridimensional. Sin atmósfera para propagar ondas de sonido convencionales.",
+    gravity: "0G (Vacío Espacial)",
+    temperature: "Criogénica (-270°C en sombra / +150°C en luz solar)",
     civilians: false
   },
   {
@@ -51,6 +61,8 @@ export const SCENARIOS = [
     desc: "Cráter colosal dejado por impactos titánicos con tuberías subterráneas fracturadas.",
     sensory: "El hedor a gas metano y azufre brota de las grietas del subsuelo. El calor residual del asfalto hace oscilar el horizonte visual con un temblor térmico constante.",
     terrainEffect: "Suelo inestable con fallas tectónicas abiertas. Posibilidad de hundimientos repentinos al aplicar presión concentrada.",
+    gravity: "1G (Tierra Estándar)",
+    temperature: "Calurosa y húmeda (35°C)",
     civilians: false
   },
   {
@@ -60,6 +72,8 @@ export const SCENARIOS = [
     desc: "Dimensión infinita de blanco absoluto con gravedad aumentada x10 y atmósfera opresiva.",
     sensory: "Ausencia total de puntos de referencia visuales salvo el reloj central. El aire es denso como plomo y quema los pulmones con cambios bruscos de 50°C a -40°C en segundos.",
     terrainEffect: "Gravedad x10 constante. Sin cobertura natural alguna.",
+    gravity: "10G (Hipergravedad)",
+    temperature: "Variable extrema (+50°C a -40°C)",
     civilians: false
   },
   {
@@ -69,6 +83,296 @@ export const SCENARIOS = [
     desc: "Calzadas húmedas flanqueadas por gárgolas góticas y callejones estrechos bajo un aguacero torrencial.",
     sensory: "Lluvia ácida que azota los rostros con olor a óxido y aceite de motor. El graznido de cuervos y el zumbido de transformadores eléctricos sobrecargados dominan el ambiente.",
     terrainEffect: "Oscuridad profunda, reflejos de neón y multitud de puntos ciegos tácticos.",
+    gravity: "1G (Tierra Estándar)",
+    temperature: "Fría y húmeda (8°C, lluvia ácida)",
     civilians: true
+  },
+  {
+    id: "namek-explosion",
+    name: "Namek en Cuenta Regresiva (5 Minutos para el Fin)",
+    universe: "Dragon Ball Z",
+    desc: "El planeta Namek se destruye desde adentro: cráteres de magma de 200km brotan del suelo, los océanos se evaporan en segundos y el cielo es una cortina de roca incandescente.",
+    sensory: "El suelo tiembla de forma permanente con una intensidad Richter 12. El aire huele a azufre, mineral fundido y plasma ionizado. Las explosiones subterráneas sacuden el horizonte cada 3 segundos con destellos naranja que ciegan la vista.",
+    terrainEffect: "El terreno se fragmenta y desaparece progresivamente. A cada fase del combate, la plataforma de lucha se reduce un 30%. Chorros de magma surgen sin previo aviso desde el suelo. Zona de Exclusión Temporal: el planeta explota al finalizar la Fase 4.",
+    gravity: "1G Namek (0.9G) inestable por explosiones",
+    temperature: "Infernal y creciente (200°C a 1500°C en zonas de magma)",
+    civilians: false
+  },
+  {
+    id: "hyperspace-rift",
+    name: "Rift Hiperdimensional del Torneo del Poder",
+    universe: "Dragon Ball Super",
+    desc: "Plataforma colosal de mármol flotando en el vacío entre universos: el Rift del Torneo del Poder ampliado a dimensiones infinitas, sin barreras entre los 12 universos.",
+    sensory: "Un silencio antinatural interrumpido solo por el rugido del ki de los contendientes. La plataforma emite un resplandor blanco óptico que aplana las sombras. A los bordes, el vacío multiversal absorbe materia como un agujero negro silencioso.",
+    terrainEffect: "Ring-Out equivale a aniquilación dimensional. Plataforma de mármol divino que resiste hasta ataques de Tier 4-B. Las brechas en el borde emiten energía caótica que daña a quien se aproxime demasiado.",
+    gravity: "1G (Neutral Divino)",
+    temperature: "Neutral absoluta (0°C sin sensación térmica)",
+    civilians: false
+  },
+  {
+    id: "jjk-unlimited-void",
+    name: "Infinito: Vacío Ilimitado de Gojo Satoru",
+    universe: "Jujutsu Kaisen",
+    desc: "El interior del Dominio Expandido de Gojo Satoru: un espacio donde la información del universo entero se transmite simultáneamente al cerebro del oponente, paralizándolo con sobreestimulación cognitiva absoluta.",
+    sensory: "Luz blanca infinita que lo abarca todo. No hay arriba ni abajo, no hay distancia, no hay temperatura. El único sonido es un zumbido constante de frecuencia imposible que resuena directamente en el lóbulo temporal. La mente humana colapsa en segundos.",
+    terrainEffect: "Dentro del Vacío Ilimitado: cualquier ser sin capacidad cognitiva sobrehumana queda paralizado en 0.2 segundos (efecto narrativo obligatorio). El combate ocurre en los planos donde el Infinito de Gojo puede o no operar.",
+    gravity: "Sin gravedad aplicable (espacio conceptual)",
+    temperature: "Sin temperatura definida (plano mental)",
+    civilians: false
+  },
+  {
+    id: "jjk-tokyo-colony",
+    name: "Colonia de Tokio — Juegos del Sacrificio",
+    universe: "Jujutsu Kaisen",
+    desc: "Tokio convertida en una Colonia de Culling Game: rascacielos vaciados de civiles, cementerios de hormigón, calles tapiadas con barreras de maldición y el cielo cubierto por un sello de energía maldita que bloquea la huida.",
+    sensory: "El aire está saturado de energía maldita que eriza la piel como electricidad estática. Olor a plástico quemado y concreto recalentado. Cada esquina puede esconder a otro jugador de las Reglas del Juego. El silencio de la ciudad vaciada es más aterrador que cualquier rugido.",
+    terrainEffect: "Energía maldita ambiental que potencia los Dominios. El sello superior impide el escape y aumenta la densidad de Jujutsu en un 40%. Los edificios actúan como amplificadores de Dominio cuando se usan como base de expansión.",
+    gravity: "1G (Tierra Estándar)",
+    temperature: "Templada (20°C, agosto en Tokio)",
+    civilians: false
+  },
+  {
+    id: "gt-dragon-realm",
+    name: "Reino de los Dragones Oscuros — Fin de la Era",
+    universe: "Dragon Ball GT",
+    desc: "El espacio dimensional donde habitan los Dragones Oscuros de las Estrellas del Dragon: un plano fracturado de roca negra y energía negativa condensada.",
+    sensory: "El aire vibra con energía negativa tangible que envenena lentamente a los seres de ki puro. El cielo es un torbellino permanente de nubes negras rayadas de relámpagos carmesí.",
+    terrainEffect: "Campo de energía negativa: penaliza a usuarios de ki positivo (Goku, Vegeta) con -15% AP base. Potencia a los Dragones Oscuros con +20% AP. Las Esferas del Dragon diseminadas por el mapa pueden ser usadas como proyectiles o fuente de poder.",
+    gravity: "Variable (el Dragon la altera a voluntad)",
+    temperature: "Gélida y corrosiva (-10°C, veneno energético)",
+    civilians: false
+  },
+  {
+    id: "planet-vegeta-last",
+    name: "Planeta Vegeta — El Último Amanecer",
+    universe: "Dragon Ball Z",
+    desc: "La capital del Imperio Saiyan en sus últimas horas: el cielo naranja se tiñe de rojo mientras Freezer acumula su bola de energía en el espacio.",
+    sensory: "La gravedad es 10 veces la terrestre, aplastante desde el primer segundo. El aire huele a combustible de nave espacial y hierro. En el horizonte, una luz blanca crece lentamente en el espacio: la bola de destrucción de Freezer.",
+    terrainEffect: "Gravedad x10 constante. Cuenta atrás narrativa: si el combate dura más de 5 fases, Freezer lanza su ataque y ambos contendientes sufren daño ambiental masivo.",
+    gravity: "10G (Saiyan)",
+    temperature: "Cálida y densa (28°C, atmósfera pesada)",
+    civilians: true
+  },
+  {
+    id: "bleach-seireitei",
+    name: "Seireitei — Soul Society en Estado de Guerra",
+    universe: "Bleach",
+    desc: "El corazón espiritual de Soul Society durante una invasión: muros de seki-seki que absorben el reiatsu, callejones blancos impregnados de reishi y el cielo cortado por bankai desplegados en todas direcciones.",
+    sensory: "El ambiente está saturado de reishi flotante que los shinigami perciben como una niebla luminosa azulada. El sonido metálico de zanpakuto chocando reverbera en los pasillos de piedra.",
+    terrainEffect: "Muros de seki-seki anulan el reiatsu de quien los toca. La densidad de reishi potencia poderes de shinigami y arrancar en un 25%. Los espacios cerrados amplifican los bankai de área.",
+    gravity: "0.8G (Soul Society)",
+    temperature: "Templada y espiritual (18°C)",
+    civilians: false
+  },
+  {
+    id: "dc-new-apokolips",
+    name: "Apokolips en Llamas",
+    universe: "DC Comics",
+    desc: "El planeta-infierno de Darkseid: pozos de fuego eterno de 100km de profundidad, torres de procesamiento que escupen llamas verdes de Anti-Vida y un cielo permanentemente oscurecido por ceniza y parademonios.",
+    sensory: "El calor es insoportable desde el primer momento, radiante como estar dentro de un motor de cohete. El suelo de roca negra vibra con la maquinaria de Apokolips.",
+    terrainEffect: "Pozos de fuego actúan como trampas letales. La ecuación Anti-Vida debilita la voluntad de combatientes con virtud en -10% por fase. Los parademonios pueden intervenir como obstáculos de entorno.",
+    gravity: "2G (Apokolips)",
+    temperature: "Infernal constante (500°C ambiental)",
+    civilians: false
+  },
+  {
+    id: "aot-rumble",
+    name: "El Gran Estruendo — Camino de Eren",
+    universe: "Attack on Titan",
+    desc: "Los Titanes Colosos marchan en una oleada interminable: miles de titanes de 50 metros atraviesan continentes mientras el suelo tiembla con cada paso.",
+    sensory: "El ruido es ensordecedor: miles de pasos sísmicos que hacen temblar los dientes, el siseo del vapor hirviente desprendido de la piel de los titanes y el rugido continuo de millones de voces mezcladas en el Camino.",
+    terrainEffect: "Titanes Colosos como obstáculos/plataformas de combate. El vapor de sus cuerpos reduce visibilidad a 5 metros. Los terremotos sísmicos permanentes hacen inestable cualquier posición estática.",
+    gravity: "1G (Tierra Estándar)",
+    temperature: "Caliente y húmeda por el vapor (60°C)",
+    civilians: true
+  },
+  {
+    id: "berserk-eclipse",
+    name: "El Eclipse — Altar de los Cinco Apóstoles",
+    universe: "Berserk",
+    desc: "El plano dimensional del Eclipse: un mundo rojo como sangre donde la Mano de Dios desciende y el sacrificio de los portadores de Beherit convoca a demonios de todas las pesadillas.",
+    sensory: "El cielo es un vórtice de carne y sombra. El suelo está hecho de cuerpos fundidos en roca. El aire huele a sangre fresca, cobre y la putrefacción de algo que murió hace milenios pero aún sangra.",
+    terrainEffect: "Debuff permanente de voluntad/sanidad para combatientes sin protección espiritual. Los demonios del Eclipse interfieren como peligros ambientales cada fase. La Marca del Sacrificio amplifica el dolor recibido.",
+    gravity: "Variable (distorsionada por los Godhand)",
+    temperature: "Variable y perturbadora (alterna entre -30°C y +200°C)",
+    civilians: false
+  },
+  {
+    id: "marvel-destroyed-ny",
+    name: "Nueva York Destruida — Día del Juicio",
+    universe: "Marvel Comics",
+    desc: "Manhattan durante el Día del Juicio: el Puente de Brooklyn partido en dos, el Chrysler Building derrumbado sobre la 5ª Avenida y el East River evaporado parcialmente por explosiones de energía cósmica.",
+    sensory: "El aire está cargado de polvo de hormigón, cables eléctricos expuestos crepitando en charcos de agua y el olor a plástico quemado de decenas de vehículos destruidos.",
+    terrainEffect: "Cobertura masiva con estructuras colapsadas. Líneas eléctricas expuestas actúan como trampas de daño. Civiles atrapados que limitan el uso de poderes de área (o no, según Bloodlust).",
+    gravity: "1G (Tierra Estándar)",
+    temperature: "Caliente por incendios (45°C en zonas de fuego)",
+    civilians: true
+  },
+  {
+    id: "hueco-mundo-desierto",
+    name: "Hueco Mundo — Desierto de Almas",
+    universe: "Bleach",
+    desc: "El reino de los Hollows. Un desierto blanco infinito bajo un cielo negro permanente con una luna de cuarzo que nunca se mueve.",
+    sensory: "El aire es denso, silente y frío como una tumba. El suelo de arena blanca cruje bajo cada paso como hueso pulverizado. No hay viento, no hay ecos: el sonido muere en el acto.",
+    terrainEffect: "Terrain destructible hasta 100km de radio. El cielo negro absorbe las ondas de energía espiritual haciendo que los blasts de largo alcance pierden un 15% de su potencia. Las Gillian pueden emerger del suelo.",
+    gravity: "1G (Plano Espiritual)",
+    temperature: "Fría perpetua (-10°C bajo tierra, 0°C en superficie)",
+    civilians: false
+  },
+  {
+    id: "valle-del-fin",
+    name: "Valle del Fin — Cascada de los Shinobi",
+    universe: "Naruto / Boruto",
+    desc: "La cascada dividida por las estatuas gigantes de Hashirama y Madara donde los shinobis se enfrentaron por última vez.",
+    sensory: "El rugido ensordecedor de la cascada hace imposible la comunicación a más de 10 metros. El terreno está permanentemente mojado y cubierto de musgo. Aura de chakra denso impregna cada roca.",
+    terrainEffect: "La cascada actúa como pantalla visual. Las estatuas de piedra son obstáculos de cobertura masiva. El suelo mojado propaga el Raiton con doble radio de efecto.",
+    gravity: "1G (Tierra Estándar)",
+    temperature: "Fresca (15°C, viento de la cascada)",
+    civilians: false
+  },
+  {
+    id: "eclipse-berserk",
+    name: "El Eclipse — Dimensión del Dios Mano",
+    universe: "Berserk",
+    desc: "El plano dimensional donde el God Hand convoca el sacrificio del Falcon of Darkness. Un abismo de penumbra roja con fragmentos de mundo flotando.",
+    sensory: "Un olor a hierro y carne quemada impregna el aire. El suelo está formado por cuerpos de apóstoles apiñados. Un eclipse solar permanente tiñe todo de rojo sangre profundo.",
+    terrainEffect: "El plano potencia a los demonios y apóstoles. Los guerreros sin marca de sacrificio pierden un 10% de resistencia por el ambiente demoníaco. El territorio es infinito: no hay borde.",
+    gravity: "0.8G (Dimensional)",
+    temperature: "Sofocante (55°C, calor demoníaco)",
+    civilians: false
+  },
+  {
+    id: "marineford-batalla-suprema",
+    name: "Marineford — La Gran Guerra del Siglo",
+    universe: "One Piece",
+    desc: "La plaza de ejecución de la Marina durante la batalla más grande del mundo. Muros de hielo, lava en el suelo y la cúpula de la mejor fortaleza del mundo.",
+    sensory: "El ambiente es caótico: el ruido de cañones, el crujido de hielo, el calor del magma del almirante Akainu y el olor a sal y pólvora del mar. El suelo mezcla agua de mar y lava.",
+    terrainEffect: "Magma y hielo pueden activarse como peligros del terreno. La cúpula limita el escape vertical. La Marina pone 100,000 soldados como impedimento de área.",
+    gravity: "1G (Tierra Estándar / Isla Marina)",
+    temperature: "Extrema variable: -40°C (zona Aokiji) a +1200°C (zona Akainu)",
+    civilians: false
+  },
+  {
+    id: "mugen-train",
+    name: "Tren Mugen — Pesadilla Kimetsu",
+    universe: "Demon Slayer (Kimetsu no Yaiba)",
+    desc: "El legendario tren poseído por Enmu durante la misión de la Llama. Un convoy de 200 toneladas a 130km/h que traversa un barranco nocturno.",
+    sensory: "El traqueteo del tren impide mantener el equilibrio. El viento cortante a alta velocidad reduce la visibilidad. El aroma de azufre y sangre llena los vagones en penumbra.",
+    terrainEffect: "El tren se mueve, modificando las distancias cada segundo. Los vagones se destruyen en cadena. Caer del tren implica caer 80 metros al barranco rocoso.",
+    gravity: "1G (Terreno en movimiento)",
+    temperature: "Fría nocturna (5°C exterior, 18°C interior vagones)",
+    civilians: true
+  },
+  {
+    id: "daima-mundo-demoniaco",
+    name: "Mundo Demoniaco — Daima",
+    universe: "Dragon Ball Daima",
+    desc: "El reino del Gran Rey Demonio. Llanuras de cristal oscuro bajo un cielo perpetuamente rojo con estructuras de roca negra y ríos de energía demoníaca.",
+    sensory: "La energía demoníaca es palpable, como una presión constante sobre el pecho. El suelo de cristal negro refleja cualquier aura de Ki amplificándola visualmente. Un silencio inquietante interrumpido por rugidos distantes.",
+    terrainEffect: "El Ki de los Saiyajin y Namekianos queda levemente suprimido (-5% AP). Los demonios nativos ganan +10% de poder en este plano. El terreno de cristal negro se astilla en proyectiles ante explosiones.",
+    gravity: "1.2G (Dimensional Demoniaca)",
+    temperature: "Caliente y sulfurosa (50°C, olor a azufre mineral)",
+    civilians: false
+  },
+  {
+    id: "jojo-colosseum-rome",
+    name: "Coliseo de Roma — Batalla de los Stands",
+    universe: "JoJo's Bizarre Adventure",
+    desc: "El antiguo Coliseo Romano durante un combate de Stands al amanecer. Las gradas vacías están cubiertas de cornamentas y símbolos de las familias DIO y Joestar.",
+    sensory: "El silencio del amanecer es perturbado por el ulular del viento entre las ruinas. El aire huele a piedra milenaria y polvo de arena. Cada paso resuena en el anfiteatro vacío con un eco perturbador.",
+    terrainEffect: "La arena absorbe la sangre. Los pilares de piedra dan cobertura táctica. El combate de Stands hace que solo los usuarios puedan ver y participar de los intercambios de habilidades.",
+    gravity: "1G (Tierra Estándar — Italia)",
+    temperature: "Fresca al amanecer (12°C)",
+    civilians: false
+  },
+  {
+    id: "chainsaw-man-hq",
+    name: "Cuartel General de Cazadores de Demonios — Tokyo",
+    universe: "Chainsaw Man",
+    desc: "El bunker subterráneo de hormigón blindado de la Organización Pública de Seguridad en Tokyo. Corredores estrechos, salas de interrogatorio y un hangar de equipamiento.",
+    sensory: "La luz fluorescente fría parpadea. El olor a sangre, aceite de motor y humo de cigarro impregna cada pasillo. El sonido apagado de combate en superficie llega como golpes sordos en el techo.",
+    terrainEffect: "Espacio confinado. Las explosiones rebotan y afectan a todos los combatientes. El bunker tiene múltiples plantas: los combates verticales son posibles rompiendo suelos.",
+    gravity: "1G (Interior Subterráneo)",
+    temperature: "Templada artificial (20°C, ventilación forzada)",
+    civilians: false
+  },
+  {
+    id: "valhalla-arena",
+    name: "Arena del Valhalla (El Coliseo de los Dioses)",
+    universe: "Shuumatsu no Valkyrie (Record of Ragnarok)",
+    desc: "La mítica arena celestial ovalada de 200 metros de diámetro rodeada por graderíos para millones de deidades y almas humanas.",
+    sensory: "El rugido de dioses y humanos hace vibrar la piedra sagrada. El aire está impregnado de presencia divina primordial, chispas de rayos y tensión cósmica.",
+    terrainEffect: "Piedra divina irrompible por armas humanas normales (requiere Volundr o poder divino). Visibilidad total sin obstáculos.",
+    gravity: "1G (Gravedad Divina Estable)",
+    temperature: "Templada Celestial (21°C)",
+    civilians: false
+  },
+  {
+    id: "infinity-castle",
+    name: "Castillo Infinito Dimensional",
+    universe: "Demon Slayer (Kimetsu no Yaiba)",
+    desc: "Espacio extradimensional no euclidiano con pasillos, tatamis y habitaciones de madera suspendidas en gravedad alterada.",
+    sensory: "El sonido del biwa de Nakime resuena periódicamente haciendo rotar habitaciones 90 o 180 grados. Olor a madera de cedro antigua y sangre de demonio.",
+    terrainEffect: "Gravedad multidireccional cambiante. Paredes y techos se desplazan. Combate acrobático 3D con plataformas móviles.",
+    gravity: "Variable por cuadrante (de 0.8G a 1.5G)",
+    temperature: "Fría y sombría (15°C)",
+    civilians: false
+  },
+  {
+    id: "jupiter-moon-io",
+    name: "Cráter de la Luna Io (Frente a Júpiter)",
+    universe: "One Punch Man",
+    desc: "Superficie rocosa y volcánica del satélite Io, con el gigantesco planeta gaseoso Júpiter cubriendo todo el firmamento.",
+    sensory: "Vacío gélido absoluto interrumpido por géiseres de azufre y tormentas de radiación cósmica. La gravedad débil permite saltos colosales.",
+    terrainEffect: "Baja gravedad que amplifica el rango de saltos. El suelo es fragmentable; grandes impactos pueden levantar continentes enteros en el vacío.",
+    gravity: "0.18G (Lunar)",
+    temperature: "Gélida extrema (-140°C en roca / +120°C cerca de géiseres)",
+    civilians: false
+  },
+  {
+    id: "ua-floating-fortress",
+    name: "Fortaleza Flotante de la U.A. (Campo Electrificado)",
+    universe: "My Hero Academia",
+    desc: "Plataforma suspendida en el aire por motores de levitación de alta potencia, rodeada por una barrera electromagnética de millones de voltios.",
+    sensory: "El zumbido de las turbinas de propulsión y el chisporroteo eléctrico de la barrera perimetral. Viento a gran altitud que azota la pista metálica.",
+    terrainEffect: "Límites delimitados por una cúpula de alto voltaje. Si un contendiente cae de la plataforma, caerá miles de metros hacia tierra firme.",
+    gravity: "1G (Flotante a 3,000m de altitud)",
+    temperature: "Fría y ventosa (8°C)",
+    civilians: false
+  },
+  {
+    id: "underground-kourakuen",
+    name: "Domo del Torneo Subterráneo Kourakuen",
+    universe: "Baki the Grappler",
+    desc: "La arena de arena y sangre más secreta del mundo bajo el Tokyo Dome. Rodeada por una valla de alambre de espino de 3 metros sin reglas de combate.",
+    sensory: "El hedor a sudor, sangre seca y tierra removida. La multitud de millonarios y políticos grita enfervorecida a pocos metros de los peleadores.",
+    terrainEffect: "Suelo de arena compacta que dificulta tracción a calzado inadecuado. La verja electrificada de alambre causa cortes ante derribos violentos.",
+    gravity: "1G (Suelo de Tokyo)",
+    temperature: "Calurosa y asfixiante (32°C)",
+    civilians: false
+  },
+  {
+    id: "padokea-royal-palace",
+    name: "Palacio Real de Padokea (Nido de la Hormiga Reina)",
+    universe: "Hunter x Hunter",
+    desc: "Estructura colosal de piedra y bio-arquitectura de hormigas quimera con escalinatas monumentales, patios de armas y salas del trono subterráneas.",
+    sensory: "Presión de aura Nen casi sólida que sofoca a los débiles. Columnas de mármol destrozadas por explosiones y cráteres de magma.",
+    terrainEffect: "Múltiples niveles verticales, escaleras amplias y fosos. Terreno con densa cobertura de pilares y bóvedas reforzadas.",
+    gravity: "1G (Tierra de Padokea)",
+    temperature: "Húmeda y tropical (28°C)",
+    civilians: false
+  },
+  {
+    id: "dbm-tournament-ring",
+    name: "Ring del Torneo del Multiverso (Estadio del Espacio 0 — DBM)",
+    universe: "Dragon Ball Multiverse",
+    desc: "Plataforma esférica gigante de mineral ultradenso flotando en el vacío del Espacio 0, rodeada por 20 gradas dimensionales protegidas por campos de fuerza de los Vargas y Namekianos.",
+    sensory: "El vacío infinito del cosmos sin estrellas tradicionales. La atmósfera artificial creada por tecnología Varga zumba con la presión de los Ki de 20 universos alternativos.",
+    terrainEffect: "Gravedad 10G estándar en el ring. La superficie del ring se regenera con magia namekiana tras destrucciones masivas. Caer fuera del ring o tocar el suelo más de 30 segundos activa el conteo de descalificación.",
+    gravity: "10G (Gravedad Pesada de los Vargas)",
+    temperature: "Templada artificial (20°C, control ambiental de gravedad y oxígeno)",
+    civilians: false
   }
 ];
+
+

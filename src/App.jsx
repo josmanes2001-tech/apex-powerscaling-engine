@@ -10,36 +10,76 @@ import VaultBrowserModal from './components/VaultBrowserModal';
 import AiConfigModal from './components/AiConfigModal';
 import MultiFighterPanel from './components/MultiFighterPanel';
 import TournamentModal from './components/TournamentModal';
+import TierListModal from './components/TierListModal';
+import CardExporterModal from './components/CardExporterModal';
+import StatComparatorModal from './components/StatComparatorModal';
+import CommunityVaultModal from './components/CommunityVaultModal';
+import BatchAiImporterModal from './components/BatchAiImporterModal';
+import VipModal from './components/VipModal';
+import MerchBanner from './components/MerchBanner';
+import AdBanner from './components/AdBanner';
+import RosterManagerModal from './components/RosterManagerModal';
+import RandomMatchmakerModal from './components/RandomMatchmakerModal';
+import ModesGuideModal from './components/ModesGuideModal';
+import PowerscalingGuideModal from './components/PowerscalingGuideModal';
+import AiSmartMatchmakerModal from './components/AiSmartMatchmakerModal';
+import AuthModal from './components/AuthModal';
+import { CloudSync } from './services/cloudSyncService';
 import { INITIAL_CHARACTERS } from './data/characters';
 import { SCENARIOS } from './data/scenarios';
 import { SimulationEngine } from './services/simulationEngine';
-import { Sparkles, Key, Settings, BookOpen, Swords } from 'lucide-react';
+import { createInitialCombatState } from './data/combatState';
+import { SoundFX } from './services/soundFx';
+import { getTranslation } from './services/i18n';
+import { Sparkles, Key, Settings, BookOpen, Swords, X, GitBranch, Scale, Globe, Shuffle, Wand2 } from 'lucide-react';
 
 const STORAGE_KEY_CHARACTERS = 'apex_custom_characters';
 
 const DEFAULT_AI_CONFIG = {
   characterEngine: {
-    engine: 'totalgpt',
-    model: 'Qwen-Qwen3.6-35B-A3B',
+    engine: 'gemini',
+    model: 'gemini-flash-lite-latest',
     apiKey: '',
     customBaseUrl: ''
   },
   simulationEngine: {
-    engine: 'totalgpt',
-    model: 'Doctor-Shotgun-L3.3-70B-Magnum-v4-SE',
+    engine: 'gemini',
+    model: 'gemini-flash-lite-latest',
     apiKey: '',
     customBaseUrl: ''
   }
 };
 
+const ROSTER_VERSION = 'v7.0_819_fighters';
+
 export default function App() {
-  // Load characters from localStorage if available, or fall back to INITIAL_CHARACTERS
+  // Load characters from localStorage with automatic version-based cache migration
   const [characters, setCharacters] = useState(() => {
     try {
+      const currentVersion = localStorage.getItem('apex_roster_version');
       const saved = localStorage.getItem(STORAGE_KEY_CHARACTERS);
+      
+      // If version changed, always ensure all 819 initial characters are present
+      if (currentVersion !== ROSTER_VERSION || !saved) {
+        localStorage.setItem('apex_roster_version', ROSTER_VERSION);
+        let customOnly = [];
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved);
+            if (Array.isArray(parsed)) {
+              const builtinIds = new Set(INITIAL_CHARACTERS.map(c => c.id));
+              customOnly = parsed.filter(c => !builtinIds.has(c.id) && c.id?.startsWith('custom-'));
+            }
+          } catch (e) {}
+        }
+        const fresh = [...INITIAL_CHARACTERS, ...customOnly];
+        localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(fresh));
+        return fresh;
+      }
+
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
+        if (Array.isArray(parsed) && parsed.length >= INITIAL_CHARACTERS.length) {
           return parsed;
         }
       }
@@ -49,36 +89,319 @@ export default function App() {
     return INITIAL_CHARACTERS;
   });
 
-  const [charA, setCharA] = useState(characters[0] || INITIAL_CHARACTERS[0]);
-  const [charB, setCharB] = useState(characters[1] || INITIAL_CHARACTERS[1]);
-  const [matchMode, setMatchMode] = useState('1v1'); // '1v1' | 'teams' | 'battle_royale'
-  const [teamA, setTeamA] = useState([characters[0] || INITIAL_CHARACTERS[0], characters[1] || INITIAL_CHARACTERS[1]]);
-  const [teamB, setTeamB] = useState([characters[2] || INITIAL_CHARACTERS[0], characters[3] || INITIAL_CHARACTERS[1]]);
-  const [battleRoyale, setBattleRoyale] = useState(characters.slice(0, 4));
+  // Auto-upgrade if INITIAL_CHARACTERS has been expanded (e.g. from 462 to 819)
+  useEffect(() => {
+    if (characters.length < INITIAL_CHARACTERS.length) {
+      console.log(`[Roster Auto-Upgrade] Actualizando roster en memoria de ${characters.length} a ${INITIAL_CHARACTERS.length} personajes...`);
+      const builtinIds = new Set(INITIAL_CHARACTERS.map(c => c.id));
+      const customOnly = characters.filter(c => !builtinIds.has(c.id) && c.id?.startsWith('custom-'));
+      const merged = [...INITIAL_CHARACTERS, ...customOnly];
+      setCharacters(merged);
+      try {
+        localStorage.setItem('apex_roster_version', ROSTER_VERSION);
+        localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(merged));
+      } catch (e) {}
+    }
+  }, [characters.length]);
 
-  const [scenario, setScenario] = useState(SCENARIOS[0]);
-  const [mode, setMode] = useState('MODO VS');
+  const handleResetMasterRoster = () => {
+    const builtinIds = new Set(INITIAL_CHARACTERS.map(c => c.id));
+    const customOnly = characters.filter(c => !builtinIds.has(c.id) && c.id?.startsWith('custom-'));
+    const merged = [...INITIAL_CHARACTERS, ...customOnly];
+    setCharacters(merged);
+    try {
+      localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(merged));
+    } catch (e) {}
+    return merged.length;
+  };
 
-  const [modifiers, setModifiers] = useState({
-    bloodlust: false,
-    speedEqualized: false,
-    statsEqualized: false,
-    verseEqualization: false,
-    prepTime: 'Sin Preparación (Encuentro Espontáneo)',
-    healthState: '100% Óptimo (Sin Heridas / Energía Plena)',
-    winCondition: 'Muerte o Incapacitación Total',
-    narrativePreset: 'Equilibrado',
-    blackSwan: false,
-    butterflyEffect: true,
-    simulationMode: 'fases',
-    customContext: ''
+  const [charA, setCharA] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_selected_charA');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed && parsed.id) return parsed;
+      }
+    } catch {}
+    return characters[0] || INITIAL_CHARACTERS[0];
   });
 
+  const [charB, setCharB] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_selected_charB');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed && parsed.id) return parsed;
+      }
+    } catch {}
+    return characters[1] || INITIAL_CHARACTERS[1] || INITIAL_CHARACTERS[0];
+  });
+
+  const [matchMode, setMatchMode] = useState(() => {
+    try {
+      return localStorage.getItem('apex_selected_matchMode') || '1v1';
+    } catch {
+      return '1v1';
+    }
+  });
+
+  const [teamA, setTeamA] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_selected_teamA');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch {}
+    return [characters[0] || INITIAL_CHARACTERS[0], characters[1] || INITIAL_CHARACTERS[1] || INITIAL_CHARACTERS[0]];
+  });
+
+  const [teamB, setTeamB] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_selected_teamB');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch {}
+    return [characters[2] || INITIAL_CHARACTERS[1] || INITIAL_CHARACTERS[0], characters[3] || INITIAL_CHARACTERS[0]];
+  });
+
+  const [battleRoyale, setBattleRoyale] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_selected_battleRoyale');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch {}
+    return characters.slice(0, 4);
+  });
+
+  const [bossMinions, setBossMinions] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_selected_bossMinions');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed;
+      }
+    } catch {}
+    return [];
+  });
+
+  const [multiTeams, setMultiTeams] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_selected_multiTeams');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length >= 2) return parsed;
+      }
+    } catch {}
+    return [
+      { id: 'alfa', name: 'Equipo Alfa', color: 'red', members: [characters[0] || INITIAL_CHARACTERS[0], characters[1] || INITIAL_CHARACTERS[1] || INITIAL_CHARACTERS[0]] },
+      { id: 'beta', name: 'Equipo Beta', color: 'blue', members: [characters[2] || INITIAL_CHARACTERS[1] || INITIAL_CHARACTERS[0], characters[3] || INITIAL_CHARACTERS[0]] }
+    ];
+  });
+
+  const [scenario, setScenario] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_selected_scenario');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed && parsed.id) return parsed;
+      }
+    } catch {}
+    return SCENARIOS[0];
+  });
+
+  const [mode, setMode] = useState(() => {
+    try {
+      return localStorage.getItem('apex_selected_mode') || 'MODO VS';
+    } catch {
+      return 'MODO VS';
+    }
+  });
+
+  const [modifiers, setModifiers] = useState(() => {
+    const defaultMods = {
+      bloodlust: false,
+      speedEqualized: false,
+      statsEqualized: false,
+      verseEqualization: false,
+      prepTime: 'Sin Preparación (Encuentro Espontáneo)',
+      healthState: '100% Óptimo (Sin Heridas / Energía Plena)',
+      winCondition: 'Muerte o Incapacitación Total',
+      narrativePreset: 'Equilibrado',
+      blackSwan: false,
+      butterflyEffect: true,
+      simulationMode: 'fases',
+      customContext: ''
+    };
+    try {
+      const saved = localStorage.getItem('apex_selected_modifiers');
+      if (saved) {
+        return { ...defaultMods, ...JSON.parse(saved) };
+      }
+    } catch {}
+    return defaultMods;
+  });
+
+  const [activeTab, setActiveTab] = useState(() => {
+    try {
+      return localStorage.getItem('apex_selected_activeTab') || 'arena';
+    } catch {
+      return 'arena';
+    }
+  });
+
+  const handleApplyAiMatchup = (parsed) => {
+    if (!parsed) return;
+    
+    // Set match mode
+    if (parsed.mode === 'boss' || parsed.mode === '1vN') {
+      setMatchMode('1vN');
+      if (parsed.boss?.id) {
+        const found = characters.find(c => c.id === parsed.boss.id);
+        if (found) setCharA(found);
+      }
+      if (parsed.squad && Array.isArray(parsed.squad) && parsed.squad.length > 0) {
+        const squadChars = parsed.squad.map(s => characters.find(c => c.id === s.id)).filter(Boolean);
+        if (squadChars.length > 0) setTeamB(squadChars);
+      }
+    } else if (parsed.mode === 'team' || parsed.mode === 'teams') {
+      setMatchMode('teams');
+      if (parsed.teamA && Array.isArray(parsed.teamA) && parsed.teamA.length > 0) {
+        const aChars = parsed.teamA.map(s => characters.find(c => c.id === s.id)).filter(Boolean);
+        if (aChars.length > 0) setTeamA(aChars);
+      }
+      if (parsed.teamB && Array.isArray(parsed.teamB) && parsed.teamB.length > 0) {
+        const bChars = parsed.teamB.map(s => characters.find(c => c.id === s.id)).filter(Boolean);
+        if (bChars.length > 0) setTeamB(bChars);
+      }
+    } else if (parsed.mode === 'battleRoyale' || parsed.mode === 'battle_royale' || parsed.mode === 'royale') {
+      setMatchMode('battle_royale');
+      if (parsed.battleRoyale && Array.isArray(parsed.battleRoyale) && parsed.battleRoyale.length > 0) {
+        const rChars = parsed.battleRoyale.map(s => characters.find(c => c.id === s.id)).filter(Boolean);
+        if (rChars.length > 0) setBattleRoyale(rChars);
+      }
+    } else {
+      setMatchMode('1v1');
+      if (parsed.charA?.id) {
+        const found = characters.find(c => c.id === parsed.charA.id);
+        if (found) setCharA(found);
+      }
+      if (parsed.charB?.id) {
+        const found = characters.find(c => c.id === parsed.charB.id);
+        if (found) setCharB(found);
+      }
+    }
+
+    // Set scenario if mentioned
+    if (parsed.scenarioName) {
+      const q = parsed.scenarioName.toLowerCase();
+      const scen = SCENARIOS.find(s => s.name.toLowerCase().includes(q) || s.universe.toLowerCase().includes(q));
+      if (scen) setScenario(scen);
+    }
+  };
+
   const [inspectModal, setInspectModal] = useState({ isOpen: false, character: null, isEditing: false });
+  const [cardExportChar, setCardExportChar] = useState(null);
+  const [showComparator, setShowComparator] = useState(false);
+  const [showCommunityVault, setShowCommunityVault] = useState(false);
+  const [batchImporterOpen, setBatchImporterOpen] = useState(false);
   const [vaultModalOpen, setVaultModalOpen] = useState(false);
   const [aiModalOpen, setAiModalOpen] = useState(false);
+  const [aiModalInitialTab, setAiModalInitialTab] = useState(null);
   const [isTournamentOpen, setIsTournamentOpen] = useState(false);
+  const [tierListOpen, setTierListOpen] = useState(false);
+  const [isAiMatchmakerOpen, setIsAiMatchmakerOpen] = useState(false);
   const [vaultStatus, setVaultStatus] = useState({ connected: false });
+
+  const [lang, setLang] = useState(() => {
+    try {
+      return localStorage.getItem('apex_user_lang') || 'es';
+    } catch {
+      return 'es';
+    }
+  });
+
+  const [isVip, setIsVip] = useState(() => {
+    try {
+      return localStorage.getItem('apex_vip_unlocked') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  const [vipModalOpen, setVipModalOpen] = useState(false);
+  const [authModalOpen, setAuthModalOpen] = useState(false);
+  const [currentUser, setCurrentUser] = useState(CloudSync.getCurrentUser());
+  const [rosterManagerOpen, setRosterManagerOpen] = useState(false);
+  const [modesGuideOpen, setModesGuideOpen] = useState(false);
+  const [powerscalingGuideOpen, setPowerscalingGuideOpen] = useState(false);
+
+  useEffect(() => {
+    const unsub = CloudSync.subscribe((u) => setCurrentUser(u));
+    return unsub;
+  }, []);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('apex_user_lang', lang);
+    } catch {}
+  }, [lang]);
+
+  const handleActivateVip = (code) => {
+    setIsVip(true);
+    try {
+      localStorage.setItem('apex_vip_unlocked', 'true');
+    } catch {}
+    const bonusCoins = 10000;
+    const newTotal = oracleCoins + bonusCoins;
+    setOracleCoins(newTotal);
+    try {
+      localStorage.setItem('apex_oracle_coins', newTotal.toString());
+    } catch {}
+    SoundFX.playBetWin?.();
+  };
+
+  const handleUpdateRoster = (newRoster) => {
+    setCharacters(newRoster);
+    try {
+      localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(newRoster));
+    } catch (e) {
+      console.error('Error guardando roster reordenado:', e);
+    }
+  };
+
+  // Monedas del Oráculo & Recompensa de Inicio / Entrada (+50 Monedas)
+  const [oracleCoins, setOracleCoins] = useState(() => {
+    try {
+      const saved = localStorage.getItem('apex_oracle_coins');
+      return saved ? parseInt(saved, 10) : 1000;
+    } catch {
+      return 1000;
+    }
+  });
+  const [rewardToast, setRewardToast] = useState(null);
+
+  useEffect(() => {
+    const sessionKey = 'apex_entry_reward_claimed_' + new Date().toDateString();
+    const alreadyClaimed = sessionStorage.getItem(sessionKey);
+    if (!alreadyClaimed) {
+      sessionStorage.setItem(sessionKey, 'true');
+      const bonus = 50;
+      const newTotal = oracleCoins + bonus;
+      setOracleCoins(newTotal);
+      try {
+        localStorage.setItem('apex_oracle_coins', newTotal.toString());
+      } catch (e) {}
+      setRewardToast({ amount: bonus, balance: newTotal });
+      SoundFX.playBetWin?.();
+      const timer = setTimeout(() => setRewardToast(null), 7000);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   const [isSimulating, setIsSimulating] = useState(false);
   const [progress, setProgress] = useState({ percent: 0, step: '' });
@@ -92,6 +415,79 @@ export default function App() {
     }
   }, [characters]);
 
+  // Persist selections across page reloads
+  useEffect(() => {
+    try {
+      if (charA) localStorage.setItem('apex_selected_charA', JSON.stringify(charA));
+    } catch {}
+  }, [charA]);
+
+  useEffect(() => {
+    try {
+      if (charB) localStorage.setItem('apex_selected_charB', JSON.stringify(charB));
+    } catch {}
+  }, [charB]);
+
+  useEffect(() => {
+    try {
+      if (matchMode) localStorage.setItem('apex_selected_matchMode', matchMode);
+    } catch {}
+  }, [matchMode]);
+
+  useEffect(() => {
+    try {
+      if (teamA) localStorage.setItem('apex_selected_teamA', JSON.stringify(teamA));
+    } catch {}
+  }, [teamA]);
+
+  useEffect(() => {
+    try {
+      if (teamB) localStorage.setItem('apex_selected_teamB', JSON.stringify(teamB));
+    } catch {}
+  }, [teamB]);
+
+  useEffect(() => {
+    try {
+      if (battleRoyale) localStorage.setItem('apex_selected_battleRoyale', JSON.stringify(battleRoyale));
+    } catch {}
+  }, [battleRoyale]);
+
+  useEffect(() => {
+    try {
+      if (bossMinions) localStorage.setItem('apex_selected_bossMinions', JSON.stringify(bossMinions));
+    } catch {}
+  }, [bossMinions]);
+
+  useEffect(() => {
+    try {
+      if (multiTeams) localStorage.setItem('apex_selected_multiTeams', JSON.stringify(multiTeams));
+    } catch {}
+  }, [multiTeams]);
+
+  useEffect(() => {
+    try {
+      if (scenario) localStorage.setItem('apex_selected_scenario', JSON.stringify(scenario));
+    } catch {}
+  }, [scenario]);
+
+  useEffect(() => {
+    try {
+      if (mode) localStorage.setItem('apex_selected_mode', mode);
+    } catch {}
+  }, [mode]);
+
+  useEffect(() => {
+    try {
+      if (modifiers) localStorage.setItem('apex_selected_modifiers', JSON.stringify(modifiers));
+    } catch {}
+  }, [modifiers]);
+
+  useEffect(() => {
+    try {
+      if (activeTab) localStorage.setItem('apex_selected_activeTab', activeTab);
+    } catch {}
+  }, [activeTab]);
+
   // Persist AI Config in localStorage
   const [aiConfig, setAiConfig] = useState(() => {
     try {
@@ -102,21 +498,58 @@ export default function App() {
         return parsed;
       }
       return {
-        characterEngine: { ...parsed, model: 'Qwen-Qwen3.6-35B-A3B' },
-        simulationEngine: { ...parsed }
+        characterEngine: { ...parsed, engine: 'gemini', model: 'gemini-flash-lite-latest' },
+        simulationEngine: { ...parsed, engine: 'gemini', model: 'gemini-flash-lite-latest' }
       };
     } catch (e) {
       return DEFAULT_AI_CONFIG;
     }
   });
 
-  const [simulationResult, setSimulationResult] = useState(null);
+  const [simulationResult, setSimulationResult] = useState(() => {
+    try {
+      const draft = localStorage.getItem('apex_current_simulation_draft');
+      if (draft) {
+        const parsed = JSON.parse(draft);
+        if (parsed?.narrative) return { fullOutput: parsed.narrative };
+      }
+    } catch {}
+    return null;
+  });
+  const [isRandomizerOpen, setRandomizerOpen] = useState(false);
+
+  const handleRandomMatchReady = (setup) => {
+    setMatchMode(setup.matchMode);
+    setCharA(setup.charA);
+    setCharB(setup.charB);
+    if (setup.teamA) setTeamA(setup.teamA);
+    if (setup.teamB) setTeamB(setup.teamB);
+    if (setup.battleRoyale) setBattleRoyale(setup.battleRoyale);
+    
+    // Find and set the scenario object based on the ID passed
+    const sc = SCENARIOS.find(s => s.id === setup.scenarioId) || SCENARIOS[0];
+    setScenario(sc);
+    
+    setRandomizerOpen(false);
+    setActiveTab('arena');
+    // Scroll to the simulation viewer to emphasize it's ready
+    setTimeout(() => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }, 300);
+  };
 
   useEffect(() => {
-    fetch('/api/vault/status')
-      .then(res => res.json())
-      .then(data => setVaultStatus(data))
-      .catch(() => setVaultStatus({ connected: false }));
+    try {
+      fetch('/api/vault/status')
+        .then(res => {
+          if (!res.ok) throw new Error('Vault offline');
+          return res.json();
+        })
+        .then(data => setVaultStatus(data || { connected: false }))
+        .catch(() => setVaultStatus({ connected: false }));
+    } catch {
+      setVaultStatus({ connected: false });
+    }
   }, []);
 
   const handleSaveAiConfig = (newConfig) => {
@@ -129,7 +562,7 @@ export default function App() {
   const charEngine = aiConfig.characterEngine || aiConfig;
   const simEngine = aiConfig.simulationEngine || aiConfig;
 
-  const handleStartSimulation = async () => {
+  const handleStartSimulation = async (opts = {}) => {
     setIsSimulating(true);
     setSimulationResult({ fullOutput: '' });
     setProgress({ percent: 10, step: 'Generando Prompt Maestro OMNI-TITÁN...' });
@@ -139,10 +572,12 @@ export default function App() {
         charA, 
         charB, 
         scenario, 
-        { ...modifiers, matchMode },
+        { ...modifiers, matchMode, language: lang },
         teamA,
         teamB,
-        battleRoyale
+        battleRoyale,
+        multiTeams,
+        bossMinions
       );
       setProgress({ percent: 25, step: `Conectando con ${simEngine.engine.toUpperCase()} (${simEngine.model})...` });
       
@@ -184,7 +619,7 @@ export default function App() {
         charA,
         charB,
         scenario,
-        modifiers
+        { ...modifiers, language: lang }
       );
 
       let currentText = simulationResult.fullOutput + '\n\n';
@@ -208,29 +643,94 @@ export default function App() {
         }
       );
     } catch (err) {
-      console.error('Continuation error:', err);
+      console.error('Error starting continuation:', err);
       setIsSimulating(false);
     }
   };
 
-  const handleSaveCustomCharacter = (newChar) => {
+  const handleLoadHistoryBattle = (arg1, arg2, arg3, arg4) => {
+    if (!arg1) return;
+    let narrative = '', charAName = '', charBName = '', scenarioName = '';
+    
+    if (typeof arg1 === 'object') {
+      narrative = arg1.output || arg1.narrative || arg1.fullOutput || '';
+      charAName = typeof arg1.charA === 'string' ? arg1.charA : (arg1.charA?.name || '');
+      charBName = typeof arg1.charB === 'string' ? arg1.charB : (arg1.charB?.name || '');
+      scenarioName = typeof arg1.scenario === 'string' ? arg1.scenario : (arg1.scenario?.name || '');
+      if (arg1.matchMode) setMatchMode(arg1.matchMode);
+    } else {
+      narrative = arg1;
+      charAName = typeof arg2 === 'string' ? arg2 : (arg2?.name || '');
+      charBName = typeof arg3 === 'string' ? arg3 : (arg3?.name || '');
+      scenarioName = typeof arg4 === 'string' ? arg4 : (arg4?.name || '');
+    }
+
+    if (narrative) {
+      setSimulationResult({ fullOutput: narrative });
+      try {
+        localStorage.setItem('apex_current_simulation_draft', JSON.stringify({
+          narrative,
+          charAName,
+          charBName,
+          scenarioName,
+          timestamp: Date.now()
+        }));
+      } catch (e) {}
+    }
+
+    if (charAName) {
+      const matchA = characters.find(c => c.name.toLowerCase() === charAName.toLowerCase()) ||
+                     characters.find(c => charAName.toLowerCase().includes(c.name.toLowerCase()));
+      if (matchA) setCharA(matchA);
+      else if (typeof arg2 === 'object' && arg2?.id) setCharA(arg2);
+      else setCharA(prev => ({ ...prev, name: charAName }));
+    }
+
+    if (charBName) {
+      const matchB = characters.find(c => c.name.toLowerCase() === charBName.toLowerCase()) ||
+                     characters.find(c => charBName.toLowerCase().includes(c.name.toLowerCase()));
+      if (matchB) setCharB(matchB);
+      else if (typeof arg3 === 'object' && arg3?.id) setCharB(arg3);
+      else setCharB(prev => ({ ...prev, name: charBName }));
+    }
+
+    if (scenarioName) {
+      const matchSc = SCENARIOS.find(s => s.name.toLowerCase() === scenarioName.toLowerCase()) ||
+                      SCENARIOS.find(s => scenarioName.toLowerCase().includes(s.name.toLowerCase()));
+      if (matchSc) setScenario(matchSc);
+      else if (typeof arg4 === 'object' && arg4?.id) setScenario(arg4);
+      else setScenario(prev => ({ ...prev, name: scenarioName }));
+    }
+
+    setActiveTab('arena');
+  };
+
+  const handleSaveCustomCharacter = (characterData) => {
     setCharacters(prev => {
-      const existsIndex = prev.findIndex(c => c.id === newChar.id);
+      const existsIndex = prev.findIndex(c => c.id === characterData.id);
       let updated;
-      if (existsIndex !== -1) {
+      if (existsIndex >= 0) {
         updated = [...prev];
-        updated[existsIndex] = newChar;
+        updated[existsIndex] = characterData;
       } else {
-        updated = [newChar, ...prev];
+        updated = [characterData, ...prev];
       }
       try {
         localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(updated));
-      } catch (e) {}
+        // Auto-sync in background to Cloud if logged in
+        CloudSync.triggerAutoSync(() => ({
+          characters: updated,
+          oracleCoins,
+          aiConfig: charEngine
+        }));
+      } catch (e) {
+        console.error('Error guardando en localStorage:', e);
+      }
       return updated;
     });
 
-    if (charA.id === newChar.id || !charA.id) setCharA(newChar);
-    if (charB.id === newChar.id) setCharB(newChar);
+    if (charA?.id === characterData.id) setCharA(characterData);
+    if (charB?.id === characterData.id) setCharB(characterData);
   };
 
   const handleDeleteCharacter = (charId) => {
@@ -252,12 +752,32 @@ export default function App() {
         vaultStatus={vaultStatus}
         onOpenVault={() => setVaultModalOpen(true)}
         onOpenNewCharacter={() => setInspectModal({ isOpen: true, character: null, isEditing: true })}
-        onOpenAiConfig={() => setAiModalOpen(true)}
+        onOpenAiConfig={(tab) => {
+          setAiModalInitialTab(typeof tab === 'string' ? tab : null);
+          setAiModalOpen(true);
+        }}
         onOpenTournament={() => setIsTournamentOpen(true)}
+        onOpenTierList={() => setTierListOpen(true)}
+        onOpenComparator={() => setShowComparator(true)}
+        onOpenCommunityVault={() => setShowCommunityVault(true)}
+        onOpenBatchAiImporter={() => setBatchImporterOpen(true)}
+        onOpenRosterManager={() => setRosterManagerOpen(true)}
+        onOpenRandomMatchmaker={() => setRandomizerOpen(true)}
+        onOpenModesGuide={() => setModesGuideOpen(true)}
+        onOpenPowerscalingGuide={() => setPowerscalingGuideOpen(true)}
         aiConfig={simEngine}
+        allCharacters={characters}
+        onImportCharacters={(newChars) => setCharacters(newChars)}
+        oracleCoins={oracleCoins}
+        lang={lang}
+        setLang={setLang}
+        isVip={isVip}
+        onOpenVipModal={() => setVipModalOpen(true)}
+        onOpenAuthModal={() => setAuthModalOpen(true)}
+        currentUser={currentUser}
       />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-6">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-6 space-y-6 pb-32 lg:pb-8">
         
         {/* Banner de Estado Dual de los Motores de IA */}
         <div className="p-3.5 px-4 rounded-xl glass-panel border border-slate-800/80 bg-slate-950/40 flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
@@ -298,82 +818,222 @@ export default function App() {
           </button>
         </div>
 
-        <MultiFighterPanel
-          matchMode={matchMode}
-          setMatchMode={setMatchMode}
-          charA={charA}
-          setCharA={setCharA}
-          charB={charB}
-          setCharB={setCharB}
-          teamA={teamA}
-          setTeamA={setTeamA}
-          teamB={teamB}
-          setTeamB={setTeamB}
-          battleRoyale={battleRoyale}
-          setBattleRoyale={setBattleRoyale}
-          allCharacters={characters}
-          onInspect={(char) => setInspectModal({ isOpen: true, character: char, isEditing: false })}
-          onEdit={(char) => setInspectModal({ isOpen: true, character: char, isEditing: true })}
+        {/* Navigation Workspace Suite */}
+        <div className="flex items-center justify-between border-b border-slate-800 pb-2 overflow-x-auto gap-2">
+          <div className="flex items-center gap-1.5 p-1 rounded-xl bg-slate-950/80 border border-slate-800">
+            <button
+              onClick={() => setActiveTab('arena')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-mono font-bold transition cursor-pointer ${
+                activeTab === 'arena'
+                  ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white shadow-md shadow-red-950/50'
+                  : 'text-slate-400 hover:text-white hover:bg-slate-900'
+              }`}
+            >
+              <Swords className="w-3.5 h-3.5" />
+              <span>{getTranslation(lang, 'arenaSim')}</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('whatif')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-mono font-bold transition cursor-pointer ${
+                activeTab === 'whatif'
+                  ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md shadow-purple-950/50'
+                  : 'text-slate-400 hover:text-white hover:bg-slate-900'
+              }`}
+            >
+              <GitBranch className="w-3.5 h-3.5 text-purple-400" />
+              <span>{getTranslation(lang, 'multiverseWhatIf')}</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('matrix')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-mono font-bold transition cursor-pointer ${
+                activeTab === 'matrix'
+                  ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md shadow-cyan-950/50'
+                  : 'text-slate-400 hover:text-white hover:bg-slate-900'
+              }`}
+            >
+              <Scale className="w-3.5 h-3.5 text-cyan-400" />
+              <span>{getTranslation(lang, 'matrixStats')}</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('all')}
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-mono font-bold transition cursor-pointer ${
+                activeTab === 'all'
+                  ? 'bg-slate-800 text-amber-300 border border-amber-500/40'
+                  : 'text-slate-500 hover:text-slate-300'
+              }`}
+            >
+              <span>{getTranslation(lang, 'fullView')}</span>
+            </button>
+          </div>
+
+          <div className="flex items-center gap-2 text-xs font-mono">
+            <button
+              onClick={() => setIsAiMatchmakerOpen(true)}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-gradient-to-r from-purple-600/30 via-pink-600/30 to-purple-600/30 hover:from-purple-600/50 hover:to-pink-600/50 text-purple-300 border border-purple-500/50 font-bold transition cursor-pointer shadow-md shadow-purple-950/40"
+              title="Pedir a la IA que configure cualquier combate con lenguaje natural"
+            >
+              <Wand2 className="w-3.5 h-3.5 text-pink-400 animate-pulse" />
+              <span>🪄 Match por Prompt IA</span>
+            </button>
+            <button
+              onClick={() => setRandomizerOpen(true)}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-gradient-to-r from-amber-600/30 to-orange-600/30 hover:from-amber-600/50 hover:to-orange-600/50 text-amber-300 border border-amber-500/50 font-bold transition cursor-pointer shadow-md shadow-amber-950/40"
+              title="Generar Matchup Aleatorio Cuántico (1v1, Boss Raid, Equipos o Battle Royale)"
+            >
+              <Shuffle className="w-3.5 h-3.5 text-amber-400 animate-spin" />
+              <span>{getTranslation(lang, 'randomMatch')}</span>
+            </button>
+            <button
+              onClick={() => setShowComparator(true)}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 transition cursor-pointer border border-slate-800"
+            >
+              <Scale className="w-3.5 h-3.5 text-cyan-400" />
+              <span>{getTranslation(lang, 'compare')}</span>
+            </button>
+            <button
+              onClick={() => setShowCommunityVault(true)}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 transition cursor-pointer border border-slate-800"
+            >
+              <Globe className="w-3.5 h-3.5 text-emerald-400" />
+              <span>{getTranslation(lang, 'community')}</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Random Matchmaker Modal */}
+        <RandomMatchmakerModal
+          isOpen={isRandomizerOpen}
+          onClose={() => setRandomizerOpen(false)}
+          onMatchReady={handleRandomMatchReady}
+          onAIGenerate={() => {
+            setRandomizerOpen(false);
+            setInspectModal({ isOpen: true, character: null, isEditing: true });
+          }}
+          lang={lang}
         />
 
-        {matchMode === '1v1' && (
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <CharacterCard
-              role="Contendiente A"
-              character={charA}
+        {/* Tab 1: Arena & Simulación */}
+        {(activeTab === 'arena' || activeTab === 'all') && (
+          <div className="space-y-6 animate-in fade-in duration-200">
+            <MultiFighterPanel
+              matchMode={matchMode}
+              setMatchMode={setMatchMode}
+              charA={charA}
+              setCharA={setCharA}
+              charB={charB}
+              setCharB={setCharB}
+              teamA={teamA}
+              setTeamA={setTeamA}
+              teamB={teamB}
+              setTeamB={setTeamB}
+              bossMinions={bossMinions}
+              setBossMinions={setBossMinions}
+              multiTeams={multiTeams}
+              setMultiTeams={setMultiTeams}
+              battleRoyale={battleRoyale}
+              setBattleRoyale={setBattleRoyale}
               allCharacters={characters}
-              onSelectChange={setCharA}
+              modifiers={modifiers}
+              setModifiers={setModifiers}
               onInspect={(char) => setInspectModal({ isOpen: true, character: char, isEditing: false })}
               onEdit={(char) => setInspectModal({ isOpen: true, character: char, isEditing: true })}
               onDelete={handleDeleteCharacter}
+              onExportCard={(char) => setCardExportChar(char)}
+              onOpenAiMatchmaker={() => setIsAiMatchmakerOpen(true)}
+              lang={lang}
             />
 
-            <CharacterCard
-              role="Contendiente B"
-              character={charB}
-              allCharacters={characters}
-              onSelectChange={setCharB}
-              onInspect={(char) => setInspectModal({ isOpen: true, character: char, isEditing: false })}
-              onEdit={(char) => setInspectModal({ isOpen: true, character: char, isEditing: true })}
-              onDelete={handleDeleteCharacter}
+            <ScenarioPanel
+              scenario={scenario}
+              setScenario={setScenario}
+              modifiers={modifiers}
+              setModifiers={setModifiers}
+              charA={charA}
+              charB={charB}
+              matchMode={matchMode}
+              teamA={teamA}
+              teamB={teamB}
+              battleRoyale={battleRoyale}
+              aiConfig={charEngine}
+              lang={lang}
             />
-          </section>
+
+            {/* Banner de Merchandising / Figuras Oficiales de los Luchadores */}
+            <MerchBanner
+              charA={charA}
+              charB={charB}
+              isVip={isVip}
+              lang={lang}
+            />
+
+            <SimulationViewer
+              simulationResult={simulationResult}
+              isSimulating={isSimulating}
+              progress={progress}
+              onStartSimulation={handleStartSimulation}
+              onContinueSimulation={handleContinueSimulation}
+              onLoadHistoryBattle={handleLoadHistoryBattle}
+              oracleCoins={oracleCoins}
+              setOracleCoins={setOracleCoins}
+              lang={lang}
+              isVip={isVip}
+              simulationData={{
+                charA,
+                charB,
+                matchMode,
+                teamA,
+                teamB,
+                bossMinions,
+                multiTeams,
+                battleRoyale,
+                scenario,
+                modifiers
+              }}
+            />
+          </div>
         )}
 
-        <ScenarioPanel
-          scenario={scenario}
-          setScenario={setScenario}
-          modifiers={modifiers}
-          setModifiers={setModifiers}
-          charA={charA}
-          charB={charB}
-          aiConfig={simEngine}
-        />
+        {/* Tab 2: Multiverso & What-If */}
+        {(activeTab === 'whatif' || activeTab === 'all') && (
+          <div className="space-y-6 animate-in fade-in duration-200">
+            <WhatIfTree
+              modifiers={modifiers}
+              setModifiers={setModifiers}
+              charA={charA}
+              charB={charB}
+              scenario={scenario}
+              matchMode={matchMode}
+              teamA={teamA}
+              teamB={teamB}
+              battleRoyale={battleRoyale}
+              aiConfig={simEngine}
+              lang={lang}
+            />
+          </div>
+        )}
 
-        <MatchupMatrix
-          charA={charA}
-          charB={charB}
-          modifiers={modifiers}
-        />
+        {/* Tab 3: Matriz Táctica & Radar */}
+        {(activeTab === 'matrix' || activeTab === 'all') && (
+          <div className="space-y-6 animate-in fade-in duration-200">
+            <MatchupMatrix
+              charA={charA}
+              charB={charB}
+              matchMode={matchMode}
+              teamA={teamA}
+              teamB={teamB}
+              battleRoyale={battleRoyale}
+              modifiers={modifiers}
+              characters={characters}
+              lang={lang}
+            />
+          </div>
+        )}
 
-        <SimulationViewer
-          simulationResult={simulationResult}
-          isSimulating={isSimulating}
-          progress={progress}
-          onStartSimulation={handleStartSimulation}
-          onContinueSimulation={handleContinueSimulation}
-          simulationData={{
-            charA,
-            charB,
-            scenario,
-            modifiers
-          }}
-        />
-
-        <WhatIfTree
-          modifiers={modifiers}
-          setModifiers={setModifiers}
-        />
+        {/* Non-intrusive Ad Banner (Suppressed for VIPs) */}
+        <AdBanner isVip={isVip} slot="footer" onOpenVip={() => setVipModalOpen(true)} />
 
       </main>
 
@@ -384,13 +1044,27 @@ export default function App() {
           isEditing={inspectModal.isEditing}
           onClose={() => setInspectModal({ isOpen: false, character: null, isEditing: false })}
           onSave={handleSaveCustomCharacter}
+          allCharacters={characters}
           aiConfig={charEngine}
+          lang={lang}
         />
       )}
 
       <VaultBrowserModal
         isOpen={vaultModalOpen}
         onClose={() => setVaultModalOpen(false)}
+        allCharacters={characters}
+        onImportCharacters={(newChars) => {
+          setCharacters(prev => {
+            const existingIds = new Set(prev.map(c => c.id));
+            const toAdd = newChars.filter(c => !existingIds.has(c.id));
+            const merged = [...toAdd, ...prev];
+            try {
+              localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(merged));
+            } catch (e) {}
+            return merged;
+          });
+        }}
       />
 
       <AiConfigModal
@@ -398,6 +1072,7 @@ export default function App() {
         onClose={() => setAiModalOpen(false)}
         config={aiConfig}
         onSaveConfig={handleSaveAiConfig}
+        initialTab={aiModalInitialTab}
       />
 
       <TournamentModal
@@ -407,12 +1082,224 @@ export default function App() {
         scenario={scenario}
         modifiers={modifiers}
         aiConfig={simEngine}
+        oracleCoins={oracleCoins}
+        onUpdateCoins={(newCoins) => {
+          setOracleCoins(newCoins);
+          try { localStorage.setItem('apex_oracle_coins', newCoins.toString()); } catch {}
+        }}
         onOpenSimulationResult={(narrative, winnerA, winnerB) => {
           setCharA(winnerA);
           setCharB(winnerB);
           setSimulationResult({ fullOutput: narrative });
         }}
       />
+
+      <TierListModal
+        isOpen={tierListOpen}
+        onClose={() => setTierListOpen(false)}
+        characters={characters}
+      />
+
+      {/* Card Exporter Modal */}
+      {cardExportChar && (
+        <CardExporterModal
+          isOpen={!!cardExportChar}
+          character={cardExportChar}
+          onClose={() => setCardExportChar(null)}
+        />
+      )}
+
+      {/* Stat Comparator Modal */}
+      {showComparator && (
+        <StatComparatorModal
+          isOpen={showComparator}
+          onClose={() => setShowComparator(false)}
+          characters={characters}
+          initialCharA={charA}
+          initialCharB={charB}
+          initialMatchMode={matchMode}
+          teamA={teamA}
+          teamB={teamB}
+          battleRoyale={battleRoyale}
+          scenario={scenario}
+          lang={lang}
+        />
+      )}
+
+      {/* Community Vault Modal */}
+      <CommunityVaultModal
+        isOpen={showCommunityVault}
+        onClose={() => setShowCommunityVault(false)}
+        onImportCharacter={(newChar) => handleSaveCustomCharacter(newChar)}
+      />
+
+      {/* Batch AI Character Importer Modal */}
+      <BatchAiImporterModal
+        isOpen={batchImporterOpen}
+        onClose={() => setBatchImporterOpen(false)}
+        aiConfig={charEngine}
+        allCharacters={characters}
+        onImportCharacters={(newChars) => {
+          setCharacters(prev => {
+            const existingIds = new Set(prev.map(c => c.id));
+            const toAdd = newChars.filter(c => !existingIds.has(c.id));
+            const merged = [...toAdd, ...prev];
+            try {
+              localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(merged));
+            } catch (e) {}
+            return merged;
+          });
+        }}
+      />
+
+      {/* Roster & Grid Order Manager Modal */}
+      <RosterManagerModal
+        isOpen={rosterManagerOpen}
+        onClose={() => setRosterManagerOpen(false)}
+        characters={characters}
+        onUpdateRoster={handleUpdateRoster}
+        onResetMasterRoster={handleResetMasterRoster}
+        onEditCharacter={(char) => setInspectModal({ isOpen: true, character: char, isEditing: true })}
+        onInspectCharacter={(char) => setInspectModal({ isOpen: true, character: char, isEditing: false })}
+      />
+
+      {/* VIP & Monetization / Sponsor Modal */}
+      <VipModal
+        isOpen={vipModalOpen}
+        onClose={() => setVipModalOpen(false)}
+        isVip={isVip}
+        onActivateVip={handleActivateVip}
+        lang={lang}
+      />
+
+      {/* APEX Modes Philosophy & Breakdown Guide Modal */}
+      <ModesGuideModal
+        isOpen={modesGuideOpen}
+        onClose={() => setModesGuideOpen(false)}
+        currentMode={mode}
+        setMode={setMode}
+        lang={lang}
+      />
+
+      {/* APEX Power Scaling & VS Battles Wiki Codex Modal */}
+      <PowerscalingGuideModal
+        isOpen={powerscalingGuideOpen}
+        onClose={() => setPowerscalingGuideOpen(false)}
+        lang={lang}
+      />
+
+      {/* AI Prompt Matchmaker Modal */}
+      <AiSmartMatchmakerModal
+        isOpen={isAiMatchmakerOpen}
+        onClose={() => setIsAiMatchmakerOpen(false)}
+        characters={characters}
+        aiConfig={charEngine}
+        onApplyMatchup={handleApplyAiMatchup}
+        onSaveNewCharacter={(newChar) => handleSaveCustomCharacter(newChar)}
+        lang={lang}
+      />
+
+      {/* Cloud Authentication & Sync Profile Modal */}
+      <AuthModal
+        isOpen={authModalOpen}
+        onClose={() => setAuthModalOpen(false)}
+        allCharacters={characters}
+        onUpdateCharacters={(newChars) => {
+          setCharacters(newChars);
+          try {
+            localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(newChars));
+          } catch (e) {}
+        }}
+        oracleCoins={oracleCoins}
+        onUpdateCoins={(newCoins) => {
+          setOracleCoins(newCoins);
+          try {
+            localStorage.setItem('apex_oracle_coins', newCoins.toString());
+          } catch (e) {}
+        }}
+        aiConfig={charEngine}
+      />
+      {rewardToast && (
+        <div className="fixed bottom-6 right-6 z-50 p-4 rounded-2xl bg-gradient-to-r from-amber-950/90 via-slate-900/95 to-purple-950/90 backdrop-blur-md border border-amber-500/70 shadow-[0_0_35px_rgba(245,158,11,0.45)] flex items-center gap-3.5 animate-in slide-in-from-bottom-5 duration-300 font-mono text-xs max-w-sm">
+          <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/50 flex items-center justify-center text-xl shrink-0 shadow-inner">
+            🪙
+          </div>
+          <div className="flex-1">
+            <div className="flex items-center gap-2">
+              <span className="font-bold text-amber-300 font-cinzel text-xs uppercase tracking-wider">¡Bonus de Entrada!</span>
+              <span className="px-1.5 py-0.5 rounded bg-amber-500 text-black font-black text-[10px]">+{rewardToast.amount} Monedas</span>
+            </div>
+            <p className="text-[11px] text-slate-300 font-mono mt-0.5 leading-snug">
+              Has recibido tus monedas por entrar a la arena. Saldo actual: <strong className="text-yellow-400 font-bold">{rewardToast.balance} 🪙</strong>
+            </p>
+          </div>
+          <button
+            onClick={() => setRewardToast(null)}
+            className="p-1 rounded-lg text-slate-400 hover:text-white cursor-pointer ml-1"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </div>
+      )}
+
+      {/* Mobile Sticky Quick Action Dock (< 1024px) */}
+      <div className="lg:hidden fixed bottom-3 left-3 right-3 z-40 p-2 rounded-2xl glass-panel border border-slate-700/80 bg-slate-950/90 shadow-[0_10px_35px_rgba(0,0,0,0.8)] backdrop-blur-xl flex items-center justify-between gap-1.5 font-mono text-[11px]">
+        <button
+          onClick={handleStartSimulation}
+          disabled={isSimulating}
+          className={`flex-1 py-2.5 px-2 rounded-xl font-bold flex items-center justify-center gap-1.5 transition cursor-pointer ${
+            isSimulating
+              ? 'bg-amber-600/50 text-amber-200 animate-pulse'
+              : 'bg-gradient-to-r from-red-600 via-amber-600 to-orange-600 text-white shadow-lg shadow-red-950/60 active:scale-95'
+          }`}
+        >
+          <Swords className={`w-4 h-4 ${isSimulating ? 'animate-spin' : ''}`} />
+          <span className="truncate">{isSimulating ? 'Simulando...' : '⚔️ Simular'}</span>
+        </button>
+
+        <button
+          onClick={() => setIsAiMatchmakerOpen(true)}
+          className="p-2.5 rounded-xl bg-purple-950/80 border border-purple-500/40 text-purple-300 hover:bg-purple-900/60 active:scale-95 transition cursor-pointer flex items-center justify-center shrink-0"
+          title="Match por Prompt IA"
+        >
+          <Wand2 className="w-4 h-4 text-pink-400" />
+        </button>
+
+        <button
+          onClick={() => setRandomizerOpen(true)}
+          className="p-2.5 rounded-xl bg-amber-950/80 border border-amber-500/40 text-amber-300 hover:bg-amber-900/60 active:scale-95 transition cursor-pointer flex items-center justify-center shrink-0"
+          title="Aleatorio"
+        >
+          <Shuffle className="w-4 h-4 text-amber-400" />
+        </button>
+
+        <button
+          onClick={() => {
+            const el = document.getElementById('oracle-destiny-section');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+            else {
+              setActiveTab('arena');
+              setTimeout(() => {
+                const e = document.getElementById('oracle-destiny-section');
+                if (e) e.scrollIntoView({ behavior: 'smooth' });
+              }, 200);
+            }
+          }}
+          className="p-2 px-2.5 rounded-xl bg-slate-900 border border-slate-700 text-yellow-400 hover:bg-slate-800 active:scale-95 transition cursor-pointer flex items-center gap-1 shrink-0 font-bold"
+          title="Saldo de Monedas del Oráculo"
+        >
+          <span>🪙</span>
+          <span className="text-[10px] text-yellow-300">{oracleCoins}</span>
+        </button>
+
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white active:scale-95 transition cursor-pointer flex items-center justify-center shrink-0"
+          title="Volver Arriba"
+        >
+          <span className="text-xs">▲</span>
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,15 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { 
   MapPin, Skull, Clock, Heart, Sliders, Zap, Shield, Globe, 
-  Swords, AlertTriangle, Plus, Trash2, Flame, Thermometer, Compass, Sparkles, RefreshCw, FastForward
+  Swords, AlertTriangle, Plus, Trash2, Flame, Thermometer, Compass, Sparkles, RefreshCw, FastForward,
+  Wand2, Check, Copy
 } from 'lucide-react';
 import { SCENARIOS } from '../data/scenarios';
 import { SimulationEngine } from '../services/simulationEngine';
+import { getTranslation } from '../services/i18n';
 
 const STORAGE_KEY_CUSTOM_SCENARIOS = 'apex_custom_scenarios';
 
-export default function ScenarioPanel({ scenario, setScenario, modifiers, setModifiers, charA, charB, aiConfig }) {
+export default function ScenarioPanel({ 
+  scenario, 
+  setScenario, 
+  modifiers, 
+  setModifiers, 
+  charA, 
+  charB, 
+  aiConfig, 
+  matchMode = '1v1', 
+  teamA = [], 
+  teamB = [], 
+  battleRoyale = [],
+  lang = 'es'
+}) {
+  const t = (k) => getTranslation(lang, k);
   const [isGeneratingPremise, setIsGeneratingPremise] = useState(false);
+  const [isRefiningPremise, setIsRefiningPremise] = useState(false);
+  const [isGeneratingArena, setIsGeneratingArena] = useState(false);
+  const [arenaSearch, setArenaSearch] = useState('');
+  const [universeFilter, setUniverseFilter] = useState('Todos');
   const [customScenarios, setCustomScenarios] = useState(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY_CUSTOM_SCENARIOS);
@@ -76,6 +96,32 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
     }
   };
 
+  const handleRefinePremise = async () => {
+    if (!modifiers.customContext || !modifiers.customContext.trim()) {
+      alert('Escribe primero una idea, borrador o condición en el recuadro para que la IA pueda pulirla, corregir faltas y detallarla sin alterar tu intención.');
+      return;
+    }
+    setIsRefiningPremise(true);
+    try {
+      const refined = await SimulationEngine.refinePremiseWithAi(
+        modifiers.customContext,
+        charA || { name: 'Contendiente A' },
+        charB || { name: 'Contendiente B' },
+        scenario || { name: 'Arena Estándar' },
+        aiConfig,
+        matchMode,
+        teamA,
+        teamB,
+        battleRoyale
+      );
+      setModifiers(prev => ({ ...prev, customContext: refined }));
+    } catch (err) {
+      alert(`Error al mejorar la premisa: ${err.message || err}`);
+    } finally {
+      setIsRefiningPremise(false);
+    }
+  };
+
   return (
     <div className="rounded-2xl glass-panel p-5 border border-slate-800/80 shadow-xl space-y-5">
       {/* Header */}
@@ -83,7 +129,7 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
         <div className="flex items-center gap-2">
           <Sliders className="w-4 h-4 text-red-500" />
           <h3 className="text-sm font-bold text-white uppercase font-mono tracking-wider">
-            Presets & Modificadores de Escenario
+            {t('scenarioTitle')}
           </h3>
         </div>
         <button
@@ -91,7 +137,7 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
           className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-red-600/20 hover:bg-red-600/30 text-red-400 border border-red-500/30 text-xs font-mono transition cursor-pointer"
         >
           <Plus className="w-3.5 h-3.5" />
-          <span>Crear Arena</span>
+          <span>{t('customArena')}</span>
         </button>
       </div>
 
@@ -100,15 +146,69 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
         <label className="block text-xs font-mono text-slate-300 mb-2 flex items-center justify-between">
           <span className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5 text-red-400" />
-            <span>Campo de Batalla / Terreno:</span>
+            <span>{lang === 'en' ? 'Battlefield / Terrain:' : lang === 'ja' ? '戦場・地形ステージ:' : 'Campo de Batalla / Terreno:'}</span>
           </span>
           <span className="text-[10px] text-slate-500">
-            {allScenarios.length} arenas disponibles
+            {allScenarios.length} {lang === 'en' ? 'arenas available' : lang === 'ja' ? 'ステージ利用可能' : 'arenas disponibles'}
           </span>
         </label>
 
+        {/* Universe Filter + Search */}
+        <div className="flex gap-2 mb-2 flex-wrap">
+          <input
+            type="text"
+            placeholder={t('searchArenaPlaceholder')}
+            onChange={(e) => {
+              const q = e.target.value.toLowerCase();
+              setArenaSearch(q);
+            }}
+            className="flex-1 min-w-[120px] bg-slate-900/80 border border-slate-700 rounded-lg px-2 py-1 text-white text-[10px] placeholder-slate-500 focus:outline-none focus:border-red-500/60"
+          />
+          <select
+            value={universeFilter}
+            onChange={(e) => setUniverseFilter(e.target.value)}
+            className="bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-white text-[10px] font-mono"
+          >
+            <option value="Todos">{t('allUniverses')}</option>
+            <option value="Dragon Ball">🐉 Dragon Ball</option>
+            <option value="Jujutsu">👁️ Jujutsu Kaisen</option>
+            <option value="DC">🦇 DC Comics</option>
+            <option value="Marvel">⚡ Marvel</option>
+            <option value="Bleach">🌑 Bleach</option>
+            <option value="Naruto">🍃 Naruto / Boruto</option>
+            <option value="One Piece">☠️ One Piece</option>
+            <option value="JoJo">🌀 JoJo's Bizarre Adventure</option>
+            <option value="CSM">⛓️ Chainsaw Man</option>
+            <option value="Invincible">🔴 Invincible</option>
+            <option value="Berserk">⚔️ Berserk</option>
+            <option value="AoT">🧱 Attack on Titan</option>
+            <option value="Custom">⚙️ Personalizadas</option>
+            <option value="Otros">🌀 Otros</option>
+          </select>
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 max-h-48 overflow-y-auto pr-1">
-          {allScenarios.map((s) => {
+          {allScenarios.filter(s => {
+            const matchSearch = !arenaSearch || s.name.toLowerCase().includes(arenaSearch) || (s.universe || '').toLowerCase().includes(arenaSearch);
+            const u = (s.universe || '').toLowerCase();
+            const knownUniverses = ['dragon ball', 'jujutsu', 'dc', 'marvel', 'bleach', 'naruto', 'boruto', 'one piece', 'jojo', 'chainsaw', 'invincible', 'berserk', 'attack on titan', 'shingeki'];
+            const matchUniverse = universeFilter === 'Todos' ||
+              (universeFilter === 'Dragon Ball' && u.includes('dragon ball')) ||
+              (universeFilter === 'Jujutsu' && u.includes('jujutsu')) ||
+              (universeFilter === 'DC' && u.includes('dc')) ||
+              (universeFilter === 'Marvel' && u.includes('marvel')) ||
+              (universeFilter === 'Bleach' && u.includes('bleach')) ||
+              (universeFilter === 'Naruto' && (u.includes('naruto') || u.includes('boruto') || u.includes('konoha'))) ||
+              (universeFilter === 'One Piece' && (u.includes('one piece') || u.includes('pirata') || u.includes('marineford'))) ||
+              (universeFilter === 'JoJo' && (u.includes('jojo') || u.includes('bizarre'))) ||
+              (universeFilter === 'CSM' && (u.includes('chainsaw') || u.includes('motosierras'))) ||
+              (universeFilter === 'Invincible' && u.includes('invincible')) ||
+              (universeFilter === 'Berserk' && u.includes('berserk')) ||
+              (universeFilter === 'AoT' && (u.includes('attack on titan') || u.includes('shingeki') || u.includes('marley'))) ||
+              (universeFilter === 'Custom' && s.isCustom) ||
+              (universeFilter === 'Otros' && !knownUniverses.some(k => u.includes(k)) && !s.isCustom);
+            return matchSearch && matchUniverse;
+          }).map((s) => {
             const active = scenario.id === s.id;
             return (
               <div
@@ -136,132 +236,291 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
             );
           })}
         </div>
+      </div>
 
-        {/* Selected Arena Sensory Details & Physics */}
-        <div className="mt-2 text-[11px] text-slate-300 font-mono bg-slate-950/80 p-3 rounded-xl border border-slate-800/80 space-y-1.5">
-          <p className="italic text-slate-400">"{scenario.sensory}"</p>
-          <div className="flex flex-wrap gap-3 pt-1 text-[10px] text-slate-400 border-t border-slate-900">
-            {scenario.gravity && (
-              <span className="flex items-center gap-1 text-amber-400">
-                <Compass className="w-3 h-3" /> Gravedad: {scenario.gravity}
+      {/* Selected Scenario Live Details Card */}
+      <div className="p-3.5 rounded-xl bg-slate-900/40 border border-slate-800/80 space-y-2">
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <div className="flex items-center gap-2">
+            <span className="text-amber-400 font-bold text-xs font-mono">{scenario?.name}</span>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">
+              {scenario?.universe}
+            </span>
+          </div>
+          
+          <button
+            onClick={() => setIsGeneratingArena(true)}
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 text-[10px] font-mono transition cursor-pointer"
+          >
+            <Sparkles className="w-3 h-3 text-indigo-400" />
+            <span>{lang === 'en' ? 'AI Auto-Generate Arena' : lang === 'ja' ? 'AIで新ステージ自動生成' : 'Generar Nueva con IA'}</span>
+          </button>
+        </div>
+
+        <p className="text-xs text-slate-300 italic leading-relaxed font-serif">
+          "{scenario?.description}"
+        </p>
+
+        {/* Environmental Hazards Breakdown & Interactive Quick Customizer */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 pt-2 border-t border-slate-800/60 text-[11px] font-mono">
+          {/* Gravedad */}
+          <div className="p-2 rounded-lg bg-slate-950/60 border border-slate-800 space-y-1">
+            <div className="flex items-center justify-between text-slate-300">
+              <span className="flex items-center gap-1.5 font-bold text-cyan-400">
+                <Compass className="w-3.5 h-3.5 shrink-0" />
+                <span>{t('gravityLabel')}:</span>
               </span>
-            )}
-            {scenario.temperature && (
-              <span className="flex items-center gap-1 text-cyan-400">
-                <Thermometer className="w-3 h-3" /> Clima: {scenario.temperature}
+              <span className="text-[10px] text-cyan-300 font-bold">{scenario?.gravity || '1G'}</span>
+            </div>
+            <select
+              value={scenario?.gravity || '1G (Tierra Estándar)'}
+              onChange={(e) => setScenario(prev => ({ ...prev, gravity: e.target.value }))}
+              className="w-full bg-slate-900 border border-slate-700 rounded px-1.5 py-1 text-slate-200 text-[10px] font-mono cursor-pointer"
+            >
+              <option value="1G (Tierra Estándar)">1G (Tierra Estándar)</option>
+              <option value="0G (Microgravedad / Espacio)">0G (Gravedad Cero / Espacio)</option>
+              <option value="10G (Planeta Kaio)">10G (Planeta Kaio)</option>
+              <option value="100G (Cámara de Gravedad)">100G (Cámara de Gravedad Saiyan)</option>
+              <option value="500G (Gravedad Extrema)">500G (Gravedad Titánica)</option>
+              <option value="1,000G+ (Núcleo de Agujero Negro)">1,000G+ (Hipergravitación Singular)</option>
+            </select>
+          </div>
+
+          {/* Clima */}
+          <div className="p-2 rounded-lg bg-slate-950/60 border border-slate-800 space-y-1">
+            <div className="flex items-center justify-between text-slate-300">
+              <span className="flex items-center gap-1.5 font-bold text-orange-400">
+                <Thermometer className="w-3.5 h-3.5 shrink-0" />
+                <span>{t('climateLabel')}:</span>
               </span>
-            )}
-            {scenario.terrainEffect && (
-              <span className="flex items-center gap-1 text-red-400">
-                <Flame className="w-3 h-3" /> Peligro: {scenario.terrainEffect}
+              <span className="text-[10px] text-orange-300 font-bold">{scenario?.climate || 'Templado'}</span>
+            </div>
+            <select
+              value={scenario?.climate || 'Templada (22°C)'}
+              onChange={(e) => setScenario(prev => ({ ...prev, climate: e.target.value, temperature: e.target.value }))}
+              className="w-full bg-slate-900 border border-slate-700 rounded px-1.5 py-1 text-slate-200 text-[10px] font-mono cursor-pointer"
+            >
+              <option value="Templada (22°C)">Templado (22°C - Neutro)</option>
+              <option value="Tormenta Eléctrica / Iónica">Tormenta Eléctrica / Iónica</option>
+              <option value="Frío Glacial Subcero (-150°C)">Frío Glacial Subcero (-150°C)</option>
+              <option value="Infierno Volcánico (1,200°C)">Infierno Volcánico (1,200°C)</option>
+              <option value="Vacío Espacial (Sin Oxígeno)">Vacío Espacial (Sin Oxígeno)</option>
+              <option value="Atmósfera Venenosa / Miasma Tóxico">Miasma Tóxico / Gas Corrosivo</option>
+            </select>
+          </div>
+
+          {/* Peligro */}
+          <div className="p-2 rounded-lg bg-slate-950/60 border border-slate-800 space-y-1">
+            <div className="flex items-center justify-between text-slate-300">
+              <span className="flex items-center gap-1.5 font-bold text-red-400">
+                <Flame className="w-3.5 h-3.5 shrink-0" />
+                <span>{t('dangerLabel')}:</span>
               </span>
-            )}
+              <span className="text-[10px] text-red-300 font-bold truncate max-w-[100px]">{scenario?.hazard || 'Ninguno'}</span>
+            </div>
+            <select
+              value={scenario?.hazard || 'Sin peligros adicionales.'}
+              onChange={(e) => setScenario(prev => ({ ...prev, hazard: e.target.value, terrainEffect: e.target.value }))}
+              className="w-full bg-slate-900 border border-slate-700 rounded px-1.5 py-1 text-slate-200 text-[10px] font-mono cursor-pointer"
+            >
+              <option value="Sin peligros adicionales.">Ninguno (Terreno Limpio)</option>
+              <option value="Magma Ascendente y Grietas Tectónicas">Magma Ascendente & Fuego</option>
+              <option value="Radiación Cósmica Destructiva">Radiación Cósmica Destructiva</option>
+              <option value="Drenaje Pasivo Continuo de Ki / Energía">Drenaje de Ki / Energía</option>
+              <option value="Colapso Periódico del Suelo">Colapso Tectónico Periódico</option>
+              <option value="Niebla de Ilusiones y Distorsión Óptica">Niebla de Ilusiones Sensoriales</option>
+            </select>
           </div>
         </div>
       </div>
 
-      {/* VS Battles Wiki Toggles */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs font-mono">
-        {/* Bloodlust */}
-        <div className="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
-          <div className="flex items-center justify-between mb-2">
-            <span className="flex items-center gap-1.5 text-slate-300 font-medium">
-              <Skull className="w-3.5 h-3.5 text-red-400" />
-              <span>Bloodlust</span>
+      {/* VS Battles Wiki Toggles & Rich Modifiers */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs font-mono">
+        {/* Bloodlust & Psique */}
+        <div className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2">
+          <div className="flex items-center justify-between">
+            <span className="flex items-center gap-1.5 text-slate-200 font-bold">
+              <Skull className="w-4 h-4 text-red-400" />
+              <span>Psique / Moral</span>
             </span>
-            <button
-              onClick={() => setModifiers(prev => ({ ...prev, bloodlust: !prev.bloodlust }))}
-              className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase transition cursor-pointer ${
-                modifiers.bloodlust ? 'bg-red-600 text-white shadow-[0_0_8px_rgba(220,38,38,0.5)]' : 'bg-slate-800 text-slate-400'
-              }`}
-            >
-              {modifiers.bloodlust ? 'ON' : 'OFF'}
-            </button>
+            <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase ${
+              modifiers.bloodlustMode === 'bloodlust' || modifiers.bloodlust ? 'bg-red-600 text-white shadow-md' :
+              modifiers.bloodlustMode === 'honor' ? 'bg-amber-600 text-white shadow-md' :
+              modifiers.bloodlustMode === 'berserker' ? 'bg-purple-600 text-white shadow-md' :
+              'bg-slate-800 text-slate-400'
+            }`}>
+              {modifiers.bloodlustMode === 'bloodlust' || modifiers.bloodlust ? 'BLOODLUST' :
+               modifiers.bloodlustMode === 'honor' ? 'HONOR' :
+               modifiers.bloodlustMode === 'berserker' ? 'BERSERKER' : 'CANON'}
+            </span>
           </div>
+
+          <select
+            value={modifiers.bloodlustMode || (modifiers.bloodlust ? 'bloodlust' : 'canon')}
+            onChange={(e) => {
+              const val = e.target.value;
+              setModifiers(prev => ({
+                ...prev,
+                bloodlustMode: val,
+                bloodlust: val === 'bloodlust'
+              }));
+            }}
+            className="w-full bg-slate-950 border border-slate-700 rounded-lg p-1.5 text-slate-200 text-[10px] font-mono cursor-pointer"
+          >
+            <option value="canon">Fiel a su Psicología (Moral Canon)</option>
+            <option value="bloodlust">Bloodlust Total (Sin Piedad · 100% Letal)</option>
+            <option value="honor">Código de Honor Marcial (Duelo Limpio)</option>
+            <option value="berserker">Furia Berserker (Ataque Ciego sin Defensa)</option>
+          </select>
+
           <p className="text-[10px] text-slate-400 leading-tight">
-            {modifiers.bloodlust ? 'Sin contención moral.' : 'Fiel a su psicología.'}
+            {modifiers.bloodlustMode === 'bloodlust' || modifiers.bloodlust ? 'Sin contención moral ni piedad; máxima letalidad desde el ms 0.' :
+             modifiers.bloodlustMode === 'honor' ? 'No atacará a traición ni por la espalda; duelo con código de guerrero.' :
+             modifiers.bloodlustMode === 'berserker' ? 'Ira desbocada sacrificando toda guardia para infligir daño crítico.' :
+             'Opera con su personalidad, moral y diálogos canónicos.'}
           </p>
         </div>
 
         {/* Speed Equalized */}
-        <div className="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
-          <div className="flex items-center justify-between mb-2">
-            <span className="flex items-center gap-1.5 text-slate-300 font-medium">
-              <Zap className="w-3.5 h-3.5 text-yellow-400" />
-              <span>Vel. Igualada</span>
+        <div className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2">
+          <div className="flex items-center justify-between">
+            <span className="flex items-center gap-1.5 text-slate-200 font-bold">
+              <Zap className="w-4 h-4 text-yellow-400" />
+              <span>Velocidad</span>
             </span>
-            <button
-              onClick={() => setModifiers(prev => ({ ...prev, speedEqualized: !prev.speedEqualized }))}
-              className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase transition cursor-pointer ${
-                modifiers.speedEqualized ? 'bg-yellow-600 text-white shadow-[0_0_8px_rgba(202,138,4,0.5)]' : 'bg-slate-800 text-slate-400'
-              }`}
-            >
-              {modifiers.speedEqualized ? 'ON' : 'OFF'}
-            </button>
+            <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase ${
+              modifiers.speedMode === 'equalized' || modifiers.speedEqualized ? 'bg-yellow-600 text-white shadow-md' :
+              modifiers.speedMode === 'semi' ? 'bg-amber-600 text-white shadow-md' :
+              'bg-slate-800 text-slate-400'
+            }`}>
+              {modifiers.speedMode === 'equalized' || modifiers.speedEqualized ? 'IGUALADA' :
+               modifiers.speedMode === 'semi' ? 'SEMI-IGUAL' : 'CANON'}
+            </span>
           </div>
+
+          <select
+            value={modifiers.speedMode || (modifiers.speedEqualized ? 'equalized' : 'canon')}
+            onChange={(e) => {
+              const val = e.target.value;
+              setModifiers(prev => ({
+                ...prev,
+                speedMode: val,
+                speedEqualized: val === 'equalized'
+              }));
+            }}
+            className="w-full bg-slate-950 border border-slate-700 rounded-lg p-1.5 text-slate-200 text-[10px] font-mono cursor-pointer"
+          >
+            <option value="canon">Velocidad Canon (Tiers Reales)</option>
+            <option value="equalized">Velocidad Igualada 100% (Misma Velocidad)</option>
+            <option value="semi">Semi-Igualada (Margen de Reflejos 10%)</option>
+          </select>
+
           <p className="text-[10px] text-slate-400 leading-tight">
-            {modifiers.speedEqualized ? 'Velocidad idéntica.' : 'Velocidad canon.'}
+            {modifiers.speedMode === 'equalized' || modifiers.speedEqualized ? 'Velocidad de combate, desplazamiento y ataque idénticas.' :
+             modifiers.speedMode === 'semi' ? 'Brecha de velocidad reducida; premia la anticipación y Battle IQ.' :
+             'Velocidades originales por feats e historial canónico.'}
           </p>
         </div>
 
         {/* Stats Equalized */}
-        <div className="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
-          <div className="flex items-center justify-between mb-2">
-            <span className="flex items-center gap-1.5 text-slate-300 font-medium">
-              <Shield className="w-3.5 h-3.5 text-blue-400" />
-              <span>Stats Igualados</span>
+        <div className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2">
+          <div className="flex items-center justify-between">
+            <span className="flex items-center gap-1.5 text-slate-200 font-bold">
+              <Shield className="w-4 h-4 text-blue-400" />
+              <span>Stats Físicos</span>
             </span>
-            <button
-              onClick={() => setModifiers(prev => ({ ...prev, statsEqualized: !prev.statsEqualized }))}
-              className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase transition cursor-pointer ${
-                modifiers.statsEqualized ? 'bg-blue-600 text-white shadow-[0_0_8px_rgba(37,99,235,0.5)]' : 'bg-slate-800 text-slate-400'
-              }`}
-            >
-              {modifiers.statsEqualized ? 'ON' : 'OFF'}
-            </button>
+            <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase ${
+              modifiers.statsMode === 'equalized' || modifiers.statsEqualized ? 'bg-blue-600 text-white shadow-md' :
+              modifiers.statsMode === 'handicap' ? 'bg-indigo-600 text-white shadow-md' :
+              'bg-slate-800 text-slate-400'
+            }`}>
+              {modifiers.statsMode === 'equalized' || modifiers.statsEqualized ? 'IGUALADOS' :
+               modifiers.statsMode === 'handicap' ? 'HANDICAP' : 'CANON'}
+            </span>
           </div>
+
+          <select
+            value={modifiers.statsMode || (modifiers.statsEqualized ? 'equalized' : 'canon')}
+            onChange={(e) => {
+              const val = e.target.value;
+              setModifiers(prev => ({
+                ...prev,
+                statsMode: val,
+                statsEqualized: val === 'equalized'
+              }));
+            }}
+            className="w-full bg-slate-950 border border-slate-700 rounded-lg p-1.5 text-slate-200 text-[10px] font-mono cursor-pointer"
+          >
+            <option value="canon">Stats de Tier Canon (Fuerza Real)</option>
+            <option value="equalized">Stats Igualados (Puro Hax & IQ)</option>
+            <option value="handicap">Handicap Progresivo (Desgaste Continuo)</option>
+          </select>
+
           <p className="text-[10px] text-slate-400 leading-tight">
-            {modifiers.statsEqualized ? 'AP y Durabilidad igual.' : 'Stats de tier canon.'}
+            {modifiers.statsMode === 'equalized' || modifiers.statsEqualized ? 'Fuerza y durabilidad idénticas; gana la técnica y estrategia.' :
+             modifiers.statsMode === 'handicap' ? 'El contendiente de mayor tier sufre desgaste progresivo de potencia.' :
+             'Potencia de ataque (AP) y resistencia física sin alteraciones.'}
           </p>
         </div>
 
         {/* Verse Equalization */}
-        <div className="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
-          <div className="flex items-center justify-between mb-2">
-            <span className="flex items-center gap-1.5 text-slate-300 font-medium">
-              <Globe className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Igualar Versos</span>
+        <div className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2">
+          <div className="flex items-center justify-between">
+            <span className="flex items-center gap-1.5 text-slate-200 font-bold">
+              <Globe className="w-4 h-4 text-emerald-400" />
+              <span>Ecualización Energía</span>
             </span>
-            <button
-              onClick={() => setModifiers(prev => ({ ...prev, verseEqualization: !prev.verseEqualization }))}
-              className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase transition cursor-pointer ${
-                modifiers.verseEqualization ? 'bg-emerald-600 text-white shadow-[0_0_8px_rgba(5,150,105,0.5)]' : 'bg-slate-800 text-slate-400'
-              }`}
-            >
-              {modifiers.verseEqualization ? 'ON' : 'OFF'}
-            </button>
+            <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase ${
+              modifiers.verseMode === 'equalized' || modifiers.verseEqualization ? 'bg-emerald-600 text-white shadow-md' :
+              modifiers.verseMode === 'asymmetric' ? 'bg-teal-600 text-white shadow-md' :
+              'bg-slate-800 text-slate-400'
+            }`}>
+              {modifiers.verseMode === 'equalized' || modifiers.verseEqualization ? 'TOTAL' :
+               modifiers.verseMode === 'asymmetric' ? 'ASIMÉTRICA' : 'AISLADA'}
+            </span>
           </div>
+
+          <select
+            value={modifiers.verseMode || (modifiers.verseEqualization ? 'equalized' : 'isolated')}
+            onChange={(e) => {
+              const val = e.target.value;
+              setModifiers(prev => ({
+                ...prev,
+                verseMode: val,
+                verseEqualization: val === 'equalized'
+              }));
+            }}
+            className="w-full bg-slate-950 border border-slate-700 rounded-lg p-1.5 text-slate-200 text-[10px] font-mono cursor-pointer"
+          >
+            <option value="isolated">Sistemas Aislados (Sin Interacción)</option>
+            <option value="equalized">Ecualización Total (Ki = Chakra = Magia = Haki)</option>
+            <option value="asymmetric">Interacción Asimétrica (Haki vs Hax / Magia vs Ki)</option>
+          </select>
+
           <p className="text-[10px] text-slate-400 leading-tight">
-            {modifiers.verseEqualization ? 'Ki = Magia = Quirks.' : 'Sistemas aislados.'}
+            {modifiers.verseMode === 'equalized' || modifiers.verseEqualization ? 'Ki = Magia = Chakra = Haki interactúan sin inmunidades absolutas.' :
+             modifiers.verseMode === 'asymmetric' ? 'Haki/Ki puro resiste Hax intangible; Magia corrompe energía física.' :
+             'Sistemas de energía independientes; no se interfieren mutuamente.'}
           </p>
         </div>
       </div>
 
-      {/* Narrative Presets Selector & Black Swan */}
+      {/* Narrative Presets Selector & Oracle Destinies */}
       <div className="pt-3 border-t border-slate-800/80 space-y-3 font-mono">
         <div className="flex items-center justify-between">
           <h4 className="text-xs font-bold text-fuchsia-400 uppercase tracking-wider flex items-center gap-2">
-            <Globe className="w-3.5 h-3.5" /> Selector de Filtro Narrativo & Oráculo
+            <Globe className="w-3.5 h-3.5" /> Selector de Filtro Narrativo & Estilo Literario (8 Estilos)
           </h4>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
           {/* Preset Grimdark */}
           <button
+            type="button"
             onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Grimdark / Brutal' }))}
             className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
               modifiers.narrativePreset === 'Grimdark / Brutal'
-                ? 'bg-red-950/50 border-red-500 text-white shadow-lg shadow-red-950/40'
+                ? 'bg-red-950/60 border-red-500 text-white shadow-lg shadow-red-950/50 scale-[1.01]'
                 : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
             }`}
           >
@@ -270,16 +529,17 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
               <span>Grimdark / Brutal</span>
             </div>
             <p className="text-[10px] text-slate-400 mt-1 leading-tight">
-              Coste anatómico real, fracturas, sangre y degradación biomecánica explícita.
+              Coste anatómico real, fracturas óseas, sangre, dolor biológico y degradación biomecánica explícita.
             </p>
           </button>
 
           {/* Preset Shonen */}
           <button
+            type="button"
             onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Shōnen Cinematográfico' }))}
             className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
-              modifiers.narrativePreset === 'Shōnen Cinematográfico' || modifiers.narrativePreset === 'Equilibrado'
-                ? 'bg-amber-950/50 border-amber-500 text-white shadow-lg shadow-amber-950/40'
+              (modifiers.narrativePreset === 'Shōnen Cinematográfico' || !modifiers.narrativePreset)
+                ? 'bg-amber-950/60 border-amber-500 text-white shadow-lg shadow-amber-950/50 scale-[1.01]'
                 : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
             }`}
           >
@@ -288,16 +548,17 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
               <span>Shōnen Cinematográfico</span>
             </div>
             <p className="text-[10px] text-slate-400 mt-1 leading-tight">
-              Coreografía épica, choques de energía y superación dramática de límites.
+              Coreografía épica, choques de energía, diálogos de convicción y superación dramática de límites.
             </p>
           </button>
 
           {/* Preset VS Battles */}
           <button
+            type="button"
             onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Análisis Técnico (VS Battles)' }))}
             className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
               modifiers.narrativePreset === 'Análisis Técnico (VS Battles)'
-                ? 'bg-cyan-950/50 border-cyan-500 text-white shadow-lg shadow-cyan-950/40'
+                ? 'bg-cyan-950/60 border-cyan-500 text-white shadow-lg shadow-cyan-950/50 scale-[1.01]'
                 : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
             }`}
           >
@@ -306,28 +567,228 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
               <span>Análisis VS Battles</span>
             </div>
             <p className="text-[10px] text-slate-400 mt-1 leading-tight">
-              Resolución matemática estricta: Joules, Mach y jerarquía de Hax basada en feats.
+              Resolución matemática estricta: Joules, Mach, cálculo de Tiers y jerarquía de Hax basada en feats.
+            </p>
+          </button>
+
+          {/* Preset Torneo Épico */}
+          <button
+            type="button"
+            onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Torneo Épico' }))}
+            className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
+              modifiers.narrativePreset === 'Torneo Épico'
+                ? 'bg-yellow-950/60 border-yellow-500 text-white shadow-lg shadow-yellow-950/50 scale-[1.01]'
+                : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <div className="flex items-center gap-2 font-bold text-xs text-yellow-400">
+              <span>🏆</span>
+              <span>Torneo Épico / Budokai</span>
+            </div>
+            <p className="text-[10px] text-slate-400 mt-1 leading-tight">
+              Estilo arco de torneo shōnen con comentarista, marcador de ventaja, análisis de gradas y público.
+            </p>
+          </button>
+
+          {/* Preset Cosmic Horror */}
+          <button
+            type="button"
+            onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Cosmic Horror / Lovecraftiano' }))}
+            className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
+              modifiers.narrativePreset === 'Cosmic Horror / Lovecraftiano'
+                ? 'bg-purple-950/60 border-purple-500 text-white shadow-lg shadow-purple-950/50 scale-[1.01]'
+                : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <div className="flex items-center gap-2 font-bold text-xs text-purple-400">
+              <span>🌌</span>
+              <span>Cosmic Horror</span>
+            </div>
+            <p className="text-[10px] text-slate-400 mt-1 leading-tight">
+              Atmósfera asfixiante de locura, distorsión dimensional, pérdida de cordura y entes cósmicos.
+            </p>
+          </button>
+
+          {/* Preset Cerebral & Táctico */}
+          <button
+            type="button"
+            onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Cerebral & Táctico (Hunter x Hunter)' }))}
+            className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
+              modifiers.narrativePreset === 'Cerebral & Táctico (Hunter x Hunter)'
+                ? 'bg-indigo-950/60 border-indigo-500 text-white shadow-lg shadow-indigo-950/50 scale-[1.01]'
+                : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <div className="flex items-center gap-2 font-bold text-xs text-indigo-400">
+              <span>🧠</span>
+              <span>Cerebral & Táctico (HxH)</span>
+            </div>
+            <p className="text-[10px] text-slate-400 mt-1 leading-tight">
+              Monólogos internos de alta velocidad, cálculo de probabilidades por segundo y contraestrategias.
+            </p>
+          </button>
+
+          {/* Preset Narrador Clasico DB 90s */}
+          <button
+            type="button"
+            onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Narrador Clásico DB 90s (Voz Solemne)' }))}
+            className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
+              modifiers.narrativePreset === 'Narrador Clásico DB 90s (Voz Solemne)'
+                ? 'bg-rose-950/60 border-rose-500 text-white shadow-lg shadow-rose-950/50 scale-[1.01]'
+                : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <div className="flex items-center gap-2 font-bold text-xs text-rose-400">
+              <span>🎙️</span>
+              <span>Narrador Clásico 90s</span>
+            </div>
+            <p className="text-[10px] text-slate-400 mt-1 leading-tight">
+              Tono solemne y épico de documental cósmico: ¡El destino de la Tierra y el universo pende de un hilo!
+            </p>
+          </button>
+
+          {/* Preset Blockbuster IMAX */}
+          <button
+            type="button"
+            onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Blockbuster Cinemático IMAX' }))}
+            className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
+              modifiers.narrativePreset === 'Blockbuster Cinemático IMAX'
+                ? 'bg-emerald-950/60 border-emerald-500 text-white shadow-lg shadow-emerald-950/50 scale-[1.01]'
+                : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <div className="flex items-center gap-2 font-bold text-xs text-emerald-400">
+              <span>🎭</span>
+              <span>Blockbuster Cinemático</span>
+            </div>
+            <p className="text-[10px] text-slate-400 mt-1 leading-tight">
+              Planos de cámara dinámicos, slow-motion en puntos de impacto y atmósfera sonora inmersiva.
+            </p>
+          </button>
+
+          {/* Preset Cantar Épico */}
+          <button
+            type="button"
+            onClick={() => setModifiers(prev => ({ ...prev, narrativePreset: 'Cantar Épico / Crónica Homérica' }))}
+            className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
+              modifiers.narrativePreset === 'Cantar Épico / Crónica Homérica'
+                ? 'bg-rose-950/60 border-rose-500 text-white shadow-lg shadow-rose-950/50 scale-[1.01]'
+                : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <div className="flex items-center gap-2 font-bold text-xs text-rose-400">
+              <span>📜</span>
+              <span>Crónica Mitológica</span>
+            </div>
+            <p className="text-[10px] text-slate-400 mt-1 leading-tight">
+              Prosa arcaica y solemne de epopeya heroica relatando el choque como una leyenda para la eternidad.
             </p>
           </button>
         </div>
 
-        {/* Oraculo Cisne Negro Toggle */}
-        <div className="p-3 rounded-xl bg-slate-900/50 border border-fuchsia-900/30 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <AlertTriangle className="w-4 h-4 text-fuchsia-400" />
-            <div>
-              <span className="text-xs font-bold text-slate-200 block">Oráculo: Evento Cisne Negro</span>
-              <span className="text-[10px] text-slate-400">Introduce un giro inesperado en la Fase 3 (colapso del mapa o 3er contendiente).</span>
+        {/* Oráculo: Eventos del Destino & Cisne Negro (Multi-Selección & Giros Expandidos) */}
+        <div id="oracle-destiny-section" className="p-4 rounded-xl bg-slate-900/70 border border-fuchsia-900/50 space-y-3">
+          <div className="flex items-center justify-between flex-wrap gap-2">
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="w-4 h-4 text-fuchsia-400 animate-pulse" />
+              <div>
+                <span className="text-xs font-bold text-slate-200 flex items-center gap-2">
+                  <span>Oráculo: Evento Cisne Negro & Giros del Destino (Fase 3)</span>
+                  {(() => {
+                    const activeTwists = Array.isArray(modifiers.blackSwan) 
+                      ? modifiers.blackSwan 
+                      : (modifiers.blackSwan ? [modifiers.blackSwan === true ? 'map_collapse' : modifiers.blackSwan] : []);
+                    const count = activeTwists.length + (modifiers.customOracleTwist?.trim() ? 1 : 0);
+                    return count > 0 ? (
+                      <span className="px-2 py-0.5 rounded-full bg-fuchsia-600/30 border border-fuchsia-500 text-fuchsia-300 text-[10px] font-bold">
+                        {count} {count === 1 ? 'Giro Activo' : 'Giros Activos Simultáneos'}
+                      </span>
+                    ) : null;
+                  })()}
+                </span>
+                <span className="text-[10px] text-slate-400">
+                  ¡Puedes activar múltiples giros a la vez! La IA integrará todos los eventos seleccionados durante el clímax de la Fase 3.
+                </span>
+              </div>
             </div>
+
+            <button
+              type="button"
+              onClick={() => setModifiers(prev => ({ ...prev, blackSwan: [] }))}
+              className="text-[10px] text-slate-400 hover:text-red-400 underline cursor-pointer"
+            >
+              Desactivar Todos (Duelo Puro)
+            </button>
           </div>
-          <button
-            onClick={() => setModifiers(prev => ({ ...prev, blackSwan: !prev.blackSwan }))}
-            className={`px-3 py-1 rounded text-xs font-bold uppercase transition cursor-pointer ${
-              modifiers.blackSwan ? 'bg-fuchsia-600 text-white shadow-[0_0_10px_rgba(192,38,211,0.6)]' : 'bg-slate-800 text-slate-400'
-            }`}
-          >
-            {modifiers.blackSwan ? 'ACTIVADO' : 'APAGADO'}
-          </button>
+
+          {/* Chips de Giros Multi-Seleccionables */}
+          <div className="flex items-center gap-1.5 flex-wrap">
+            {[
+              { id: 'map_collapse', label: '🌑 Colapso de Arena & Gravedad Cero', desc: 'El mapa se destruye y luchan en caída libre' },
+              { id: 'same_verse_reinforcement', label: '⚔️ Invasor del Mismo Verso (Canon)', desc: 'Aparece un peleador de los mismos universos y decide bando o ataca a todos' },
+              { id: 'multiverse_random_fighter', label: '🌌 Guerrero Multiversal Sorpresa', desc: 'Irrumpe un peleador legendario aleatorio de cualquier otro verso' },
+              { id: 'fusion_protocol_canon', label: '👥 Fusión Canónica en Batalla (Metamoru / Potara)', desc: 'Si los combatientes conocen la danza o tienen pendientes Potara según su saga/era, se fusionan en combate (Gotenks, Gogeta, Vegetto)' },
+              { id: 'fusion_protocol_whatif', label: '🌌 Fusión What-If Híbrida (Gokuhan, Tiencha, etc.)', desc: 'Fusión hipotética entre aliados sumando estadísticas, arsenales y multiplicadores' },
+              { id: 'cell_bio_absorption', label: '🧬 Absorción Anatómica de Cell (Aguijón / Androides / Cell Max)', desc: 'Drenaje de Ki con cola o absorción de Androides para evolucionar a Forma Perfecta Consciente' },
+              { id: 'buu_viscous_absorption', label: '🍬 Absorción de Majin Buu (Depredadora / Permisiva)', desc: 'Absorción envolvente de rivales (Buutenks/Buuhan) o asimilación voluntaria como Mr. Buu' },
+              { id: 'baby_tsufur_parasitism', label: '🦠 Parasitación & Subditos Tsufur de Baby', desc: 'Infestación por heridas, puesta de huevos de control mental y salto de huésped' },
+              { id: 'miracle_form_canon', label: '✨ Despertar Canónico (+1 Forma Lógica de Saga)', desc: 'Asciende solo a la siguiente forma inmediata coherente con su era (ej. Goku Cell Games a SSJ2)' },
+              { id: 'miracle_form_transcendent', label: '🌌 Despertar Trascendente (Forma Máxima / What-If)', desc: 'Rompe barreras de era y salta a su forma más divina o suprema (ej. SSJ God/UI)' },
+              { id: 'miracle_technique_awakening', label: '⚡ Despertar de Super Técnica / Finisher Prohibido', desc: 'Desata un ataque definitivo supremo, juramento de sacrificio o técnica prohibida' },
+              { id: 'third_party', label: '👾 Invasor 3ra Facción / Titán Cósmico', desc: 'Irrumpe un monstruo dimensional o kaiju' },
+              { id: 'hax_failure', label: '🛡️ Anulación Catastrófica de Hax (30s)', desc: 'Se apagan poderes mágicos y dominios (puro físico)' },
+              { id: 'dimensional_shift', label: '🌪️ Falla Espacio-Temporal', desc: 'Salto a otra dimensión/época histórica' },
+              { id: 'miasma_corruption', label: '🩸 Miasma de Corrupción / Berserk', desc: 'Furia oscura con letalidad extrema' },
+              { id: 'divine_blessing', label: '🛡️ Bendición Divina (Escudo 1 Uso)', desc: 'Intervención de una entidad superior' },
+              { id: 'shadow_clone', label: '👁️ Paradoja del Espejo (Doppelgänger)', desc: 'Se manifiesta un clon oscuro' },
+              { id: 'time_dilation', label: '⏳ Dilatación Temporal Localizada', desc: 'Zona de tiempo acelerado/lento' },
+              { id: 'energy_supernova', label: '💥 Supernova de Ki Desbocado', desc: 'Detonación de energía masiva en el mapa' }
+            ].map(opt => {
+              const activeTwists = Array.isArray(modifiers.blackSwan) 
+                ? modifiers.blackSwan 
+                : (modifiers.blackSwan ? [modifiers.blackSwan === true ? 'map_collapse' : modifiers.blackSwan] : []);
+              const isActive = activeTwists.includes(opt.id) || (opt.id === 'miracle_form_canon' && (activeTwists.includes('miracle_awakening') || activeTwists.includes('miracle_form_awakening')));
+
+              return (
+                <button
+                  key={opt.id}
+                  type="button"
+                  onClick={() => {
+                    let updated;
+                    if (isActive) {
+                      updated = activeTwists.filter(x => x !== opt.id);
+                    } else {
+                      updated = [...activeTwists, opt.id];
+                    }
+                    setModifiers(prev => ({ ...prev, blackSwan: updated }));
+                  }}
+                  title={opt.desc}
+                  className={`px-2.5 py-1.5 rounded-lg text-[10px] font-bold transition flex items-center gap-1.5 cursor-pointer ${
+                    isActive
+                      ? 'bg-gradient-to-r from-fuchsia-600 to-purple-600 text-white shadow-lg shadow-fuchsia-950/60 scale-[1.02] border border-fuchsia-400'
+                      : 'bg-slate-950/80 border border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                  }`}
+                >
+                  <span>{opt.label}</span>
+                  {isActive && <span className="text-[10px] font-black text-fuchsia-200">✓</span>}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Input de Giro Personalizado del Usuario */}
+          <div className="pt-2 border-t border-fuchsia-900/30 space-y-1">
+            <label className="text-[10px] text-fuchsia-300 font-bold block">
+              ✍️ O escribe tu propio giro o condición impredecible adicional:
+            </label>
+            <input
+              type="text"
+              placeholder="Ej. Aparece Shenlong y concede un deseo, la gravedad aumenta x10.000, o una barrera mágica atrapa a ambos..."
+              value={modifiers.customOracleTwist || ''}
+              onChange={(e) => setModifiers(prev => ({ ...prev, customOracleTwist: e.target.value }))}
+              className="w-full bg-slate-950 border border-fuchsia-900/50 rounded-lg p-2 text-fuchsia-200 text-xs font-mono placeholder:text-slate-600 focus:border-fuchsia-500 focus:outline-none"
+            />
+          </div>
         </div>
       </div>
 
@@ -339,29 +800,31 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
           </h4>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
           <button
+            type="button"
             onClick={() => setModifiers(prev => ({ ...prev, simulationMode: 'fases' }))}
             className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
               (modifiers.simulationMode || 'fases') === 'fases'
-                ? 'bg-amber-950/40 border-amber-500 text-white shadow-md'
+                ? 'bg-amber-950/50 border-amber-500 text-white shadow-md'
                 : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
             }`}
           >
             <div className="font-bold text-xs text-amber-400 flex items-center gap-1.5">
               <span>⚡</span>
-              <span>5 Fases + Veredicto</span>
+              <span>5 Fases + Veredicto APEX</span>
             </div>
             <p className="text-[10px] text-slate-400 mt-1 leading-tight">
-              Estructura canónica APEX con barras biométricas de HP/Stamina en cada fase.
+              Estructura canónica APEX con barras biométricas de HP y Stamina en cada fase.
             </p>
           </button>
 
           <button
+            type="button"
             onClick={() => setModifiers(prev => ({ ...prev, simulationMode: 'cronica' }))}
             className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
               modifiers.simulationMode === 'cronica'
-                ? 'bg-blue-950/40 border-blue-500 text-white shadow-md'
+                ? 'bg-blue-950/50 border-blue-500 text-white shadow-md'
                 : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
             }`}
           >
@@ -370,15 +833,16 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
               <span>Crónica Continua (Novela)</span>
             </div>
             <p className="text-[10px] text-slate-400 mt-1 leading-tight">
-              Relato fluido y cinematográfico sin divisiones de fases rígidas.
+              Relato fluido y cinematográfico con checkpoints biométricos por minutos de combate.
             </p>
           </button>
 
           <button
+            type="button"
             onClick={() => setModifiers(prev => ({ ...prev, simulationMode: 'episodico' }))}
             className={`p-3 rounded-xl text-left border transition-all cursor-pointer ${
               modifiers.simulationMode === 'episodico'
-                ? 'bg-purple-950/40 border-purple-500 text-white shadow-md'
+                ? 'bg-purple-950/50 border-purple-500 text-white shadow-md'
                 : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:text-slate-200'
             }`}
           >
@@ -387,35 +851,417 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
               <span>Modo Episódico / Por Actos</span>
             </div>
             <p className="text-[10px] text-slate-400 mt-1 leading-tight">
-              Genera por partes con final abierto (Cliffhanger) para continuar la historia a tu ritmo.
+              Genera por partes con final abierto (Cliffhanger) para continuar a tu ritmo.
             </p>
           </button>
         </div>
       </div>
 
+      {/* ⚔️ Mecánicas Especiales de Combate — Senzu Beans & Peligro Ambiental */}
+      <div className="pt-3 border-t border-slate-800/80 space-y-3 font-mono">
+        <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-2">
+          <Flame className="w-3.5 h-3.5" /> Mecánicas de Combate Especiales
+        </h4>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {/* Semillas Senzu / Curación Táctica */}
+          <div className="p-3.5 rounded-xl bg-slate-900/70 border border-emerald-900/50 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="flex items-center gap-1.5 text-slate-200 font-bold">
+                <span className="text-lg">🫘</span>
+                <span>Semillas del Ermitaño</span>
+              </span>
+              <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase ${
+                modifiers.senzuMode === 'critical' ? 'bg-emerald-600 text-white shadow-md' :
+                modifiers.senzuMode === 'bag' ? 'bg-green-600 text-white shadow-md' :
+                'bg-slate-800 text-slate-400'
+              }`}>
+                {modifiers.senzuMode === 'critical' ? '1 SENZU' :
+                 modifiers.senzuMode === 'bag' ? 'BOLSA (x3)' : 'SIN SENZU'}
+              </span>
+            </div>
+
+            <select
+              value={modifiers.senzuMode || 'none'}
+              onChange={(e) => setModifiers(prev => ({ ...prev, senzuMode: e.target.value }))}
+              className="w-full bg-slate-950 border border-slate-700 rounded-lg p-1.5 text-slate-200 text-[10px] font-mono cursor-pointer"
+            >
+              <option value="none">Sin Senzus (Escasez / Supervivencia)</option>
+              <option value="critical">1 Semilla Crítica (Momento Único & Dramático)</option>
+              <option value="bag">Bolsa Completa (3 Senzus — Gestión Táctica)</option>
+            </select>
+
+            <p className="text-[10px] text-slate-400 leading-tight">
+              {modifiers.senzuMode === 'critical' ? 'Hay una sola semilla disponible. Krilin o un aliado debe decidir cuándo y a quién usarla — puede cambiar el curso de la batalla.' :
+               modifiers.senzuMode === 'bag' ? 'Hasta 3 curaciones tácticas. La IA narrará la gestión, el momento de usarlas y las consecuencias de desperdiciarlas o reservarlas.' :
+               'Sin curación disponible. El daño acumulado es permanente y progresivo fase a fase.'}
+            </p>
+          </div>
+
+          {/* Peligro Ambiental Activo */}
+          <div className="p-3.5 rounded-xl bg-slate-900/70 border border-orange-900/50 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="flex items-center gap-1.5 text-slate-200 font-bold">
+                <span className="text-lg">🌋</span>
+                <span>Peligro Ambiental Activo</span>
+              </span>
+              <button
+                type="button"
+                onClick={() => setModifiers(prev => ({ ...prev, activeEnvironmentalHazard: !prev.activeEnvironmentalHazard }))}
+                className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors cursor-pointer ${modifiers.activeEnvironmentalHazard ? 'bg-orange-500' : 'bg-slate-700'}`}
+              >
+                <span className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white transition-transform ${modifiers.activeEnvironmentalHazard ? 'translate-x-[18px]' : 'translate-x-[3px]'}`} />
+              </button>
+            </div>
+
+            <select
+              value={modifiers.environmentalHazardType || 'magma'}
+              onChange={(e) => setModifiers(prev => ({ ...prev, environmentalHazardType: e.target.value, activeEnvironmentalHazard: true }))}
+              className="w-full bg-slate-950 border border-slate-700 rounded-lg p-1.5 text-slate-200 text-[10px] font-mono cursor-pointer"
+            >
+              <option value="magma">🌋 Magma Ascendente (Quemaduras continuas sin escudo Ki)</option>
+              <option value="radiation">☢️ Radiación de Ki Residual (Humanos sin Ki pierden HP/turno)</option>
+              <option value="seismic">🪨 Colapso Tectónico Periódico (El suelo falla cada X turnos)</option>
+              <option value="vacuum">🌌 Vacío Espacial (Sin oxígeno — solo sobreviven con escudo Ki)</option>
+              <option value="miasma">🩸 Miasma Oscuro (Incrementa la furia y anula la piedad moral)</option>
+            </select>
+
+            <p className="text-[10px] text-slate-400 leading-tight">
+              {modifiers.activeEnvironmentalHazard
+                ? 'Peligro activo. La IA narrará sus efectos sobre combatientes sin escudo de energía (ej. humanos en cráteres de magma).'
+                : 'Desactivado. El terreno es neutro aunque el escenario sea volcánico.'}
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Custom Context / Premisa Inicial Personalizada */}
       <div className="pt-3 border-t border-slate-800/80 space-y-2 font-mono">
-        <div className="flex items-center justify-between flex-wrap gap-2">
-          <label className="text-xs font-bold text-slate-200 flex items-center gap-1.5">
-            <span className="text-emerald-400">✍️</span>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-1">
+          <label className="text-xs font-bold text-slate-200 flex items-center gap-1.5 shrink-0">
+            <span className="text-emerald-400 text-sm">✍️</span>
             <span>Premisa, Contexto Previo o Reglas Especiales:</span>
           </label>
 
+          <div className="flex flex-col sm:flex-row items-center gap-2 w-full sm:w-auto">
+            <button
+              type="button"
+              disabled={isGeneratingPremise || isRefiningPremise}
+              onClick={handleRefinePremise}
+              className="flex items-center justify-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 active:scale-95 text-white text-[11px] font-bold shadow-lg shadow-purple-950/60 transition cursor-pointer disabled:opacity-50 border border-purple-400/50"
+              title="Mejora tu texto: corrige faltas de ortografía, añade detalle cinematográfico y expande la escena respetando 100% lo que quieres interpretar"
+            >
+              {isRefiningPremise ? (
+                <>
+                  <RefreshCw className="w-3.5 h-3.5 animate-spin text-pink-200 shrink-0" />
+                  <span>Puliendo...</span>
+                </>
+              ) : (
+                <>
+                  <Wand2 className="w-3.5 h-3.5 text-pink-200 shrink-0 animate-pulse" />
+                  <span>🪄 Pulir Premisa con IA</span>
+                </>
+              )}
+            </button>
+
+            <button
+              type="button"
+              disabled={isGeneratingPremise || isRefiningPremise}
+              onClick={async () => {
+                setIsGeneratingPremise(true);
+                try {
+                  const generated = await SimulationEngine.generateQuickPremise(
+                    charA || { name: 'Contendiente A' },
+                    charB || { name: 'Contendiente B' },
+                    scenario || { name: 'Arena Estándar' },
+                    aiConfig,
+                    matchMode,
+                    teamA,
+                    teamB,
+                    battleRoyale
+                  );
+                  setModifiers(prev => ({ ...prev, customContext: generated }));
+                } catch (err) {
+                  alert(`Error al generar premisa: ${err.message || err}`);
+                } finally {
+                  setIsGeneratingPremise(false);
+                }
+              }}
+              className="flex items-center justify-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-[11px] font-bold shadow-md shadow-emerald-950/50 transition cursor-pointer disabled:opacity-50"
+              title="Genera una premisa aleatoria desde cero adaptada a los personajes y el mapa actual"
+            >
+              {isGeneratingPremise ? (
+                <>
+                  <RefreshCw className="w-3.5 h-3.5 animate-spin shrink-0" />
+                  <span>Generando...</span>
+                </>
+              ) : (
+                <>
+                  <Sparkles className="w-3.5 h-3.5 text-emerald-200 shrink-0" />
+                  <span>🎲 Generar Premisa con IA</span>
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Quick Premise Chips */}
+        <div className="space-y-1.5 pt-1">
+          <div className="flex items-center justify-between text-[11px] flex-wrap gap-1">
+            <span className="text-slate-300 font-bold flex items-center gap-1.5">
+              <span className="text-amber-400">⚡</span>
+              <span>Plantillas Rápidas del Modo ({matchMode === '1v1' ? '1v1 Duelo' : matchMode === '1vN' ? '1vN Raid Boss' : matchMode === 'teams' ? 'Equipos' : 'Battle Royale'}):</span>
+            </span>
+            <span className="text-[10px] text-slate-500">Pulsa una plantilla para cargarla al instante</span>
+          </div>
+          
+          <div className="flex items-center gap-1.5 flex-wrap text-[10px]">
+            {matchMode === '1vN' ? (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Raid Boss Implacable en ${scenario?.name || 'la arena'}: El Titán ${charA?.name || 'Boss'} entra en combate con su multiplicador de Raid activo. La alianza de ${teamB.map(c => c.name).join(' & ') || 'los asaltantes'} debe coordinar sus pasivas y hax combinados para quebrar su barrera colosal antes de que la arena colapse.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer font-medium"
+                >
+                  👹 Asalto al Titán Supremo
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Emboscada Táctica & Flanqueo: ${teamB.map(c => c.name).join(' & ') || 'El escuadrón'} ataca de forma escalonada usando distracciones y señuelos para aislar y penetrar la durabilidad de ${charA?.name || 'Boss'}.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  ⚔️ Emboscada Coordinada
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Furia Desatada (Fase 2 de Raid): ${charA?.name || 'Boss'} entra en cólera al recibir daño, multiplicando su velocidad de ataque e infligiendo daño continuo por presión de aura a toda la escuadra.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🛡️ Furia Berserker (Fase 2)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Sacrificio Heroico: Uno de los miembros de la escuadra retiene físicamente a ${charA?.name || 'Boss'} sufriendo daño crítico para permitir que sus aliados disparen su técnica combinada a quemarropa.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  ⏳ Sacrificio Táctico
+                </button>
+              </>
+            ) : matchMode === 'teams' ? (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Guerra de Facciones en ${scenario?.name || 'el campo de batalla'}: El Equipo Alfa (${teamA.map(c => c.name).join(' & ') || 'Alfa'}) y el Equipo Beta (${teamB.map(c => c.name).join(' & ') || 'Beta'}) colisionan en un choque total donde los supervivientes de cada bando se reagrupan en ataques combinados.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🛡️ Guerra de Facciones (Alfa vs Beta)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Duelo de Capitanes & Cobertura: Los líderes de cada equipo se baten en duelo singular mientras sus respectivos compañeros libran escaramuzas tácticas de cobertura para brindar ventajas de flanqueo.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  ⚔️ Duelo de Capitanes
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Fusión o Técnica Combinada de Emergencia: Ante el poder abrumador del rival, ambos integrantes del equipo en desventaja ejecutan una sincronización energética al 100% para un asalto final unificado.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🌀 Sincronía Combinada
+                </button>
+              </>
+            ) : matchMode === 'battle_royale' ? (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Torneo de Supervivencia Máxima en ${scenario?.name || 'el Coliseo'}: Todos contra todos simultáneamente. El perímetro del mapa se reduce con radiación mortal cada 2 minutos obligando a los gladiadores a luchar en el centro.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  👑 Coliseo de Supervivencia (Zona Reducida)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Alianza Traicionera: Dos gladiadores forjan un pacto tácito para eliminar al rival de mayor Tier, esperando el momento exacto para traicionarse a traición.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🗡️ Alianza & Traición
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Cacería del Más Fuerte: Todos los combatientes fijan su objetivo inicial en el luchador con mayor nivel de poder para neutralizar su amenaza antes del combate individual.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🎯 Cacería del Más Fuerte
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Torneo Épico de Artes Marciales en ${scenario?.name || 'la Arena'}: ${charA?.name || 'Contendiente A'} y ${charB?.name || 'Contendiente B'} miden sus poderes bajo el clamor de las gradas con árbitro oficial y marcador de impactos.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🏆 Torneo Oficial (${charA?.name} vs ${charB?.name})
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Handicap por Fatiga Crítica: ${charA?.name || 'Contendiente A'} inicia el combate al 50% de su capacidad tras una batalla previa; ${charB?.name || 'Contendiente B'} debe aprovechar la ventaja sin confiarse.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🩸 Handicap por Fatiga (-50% HP)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Duelo a Contrareloj: La arena colapsará en 3 minutos debido a una supernova inminente; ambos contendientes deben desplegar sus ataques definitivos de forma inmediata sin fase de tanteo.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  ⏳ Duelo a Contrareloj (3 Min)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Reglas de Budokai: Victoria por salida de ring (Ring-Out), noqueo de 10 segundos o sumisión técnica. Prohibido matar deliberadamente.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  ⚔️ Reglas de Budokai (Ring-Out)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Guerra Multiversal sin Piedad: Moral completamente desactivada (Bloodlust Total). ${charA?.name} y ${charB?.name} desatan todas sus técnicas letales desde el microsegundo inicial sin contenerse.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🌌 Guerra Multiversal (Bloodlust)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Colisión de Universos: Ambas realidades están al borde del borrado cósmico. Solo la victoria total de uno de los contendientes restaurará la membrana dimensional.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🔮 Colisión de Universos
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Restricción de Transformaciones: Ambos combatientes tienen prohibido usar sus formas divinas o multiplicadores superiores, midiendo pura técnica marcial y Battle IQ en Estado Base.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
+                >
+                  🥋 Duelo en Estado Base
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between text-[11px] text-slate-400 pt-1">
+          <span className="flex items-center gap-1.5">
+            <span className="text-purple-400 font-bold">💡 Consejo:</span>
+            <span>Escribe tu idea con tus palabras (o borrador con faltas) y pulsa <strong className="text-purple-300">"🪄 Pulir & Detallar"</strong>.</span>
+          </span>
+          {modifiers.customContext && (
+            <button
+              type="button"
+              onClick={() => setModifiers(prev => ({ ...prev, customContext: '' }))}
+              className="text-slate-500 hover:text-red-400 transition underline cursor-pointer text-[10px]"
+            >
+              Borrar texto
+            </button>
+          )}
+        </div>
+
+        <textarea
+          rows={3}
+          value={modifiers.customContext || ''}
+          onChange={(e) => setModifiers(prev => ({ ...prev, customContext: e.target.value }))}
+          placeholder="Ej: 'Torneo del Infierno organizado por Janemba. Goku Super llega con el brazo herido tras enfrentar a Beerus, mientras Goku GT tiene prohibido usar la Genkidama...'"
+          className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs focus:border-purple-500 focus:outline-none transition resize-y font-sans leading-relaxed placeholder:text-slate-600"
+        />
+
+        {/* Barra de Acciones Destacada para Móvil y Desktop */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 pt-1">
           <button
             type="button"
-            disabled={isGeneratingPremise}
+            disabled={isGeneratingPremise || isRefiningPremise}
+            onClick={handleRefinePremise}
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 active:scale-95 text-white text-xs font-bold shadow-lg shadow-purple-950/60 transition cursor-pointer disabled:opacity-50 border border-purple-400/40"
+          >
+            {isRefiningPremise ? (
+              <>
+                <RefreshCw className="w-3.5 h-3.5 animate-spin text-pink-300" />
+                <span>Puliendo & Detallando...</span>
+              </>
+            ) : (
+              <>
+                <Wand2 className="w-4 h-4 text-pink-200 animate-pulse" />
+                <span>🪄 Pulir & Detallar con IA (Mejorar Texto)</span>
+              </>
+            )}
+          </button>
+
+          <button
+            type="button"
+            disabled={isGeneratingPremise || isRefiningPremise}
             onClick={async () => {
-              if (!aiConfig) {
-                alert('Configura primero un motor de IA en Ajustes de IA.');
-                return;
-              }
               setIsGeneratingPremise(true);
               try {
                 const generated = await SimulationEngine.generateQuickPremise(
                   charA || { name: 'Contendiente A' },
                   charB || { name: 'Contendiente B' },
                   scenario || { name: 'Arena Estándar' },
-                  aiConfig
+                  aiConfig,
+                  matchMode,
+                  teamA,
+                  teamB,
+                  battleRoyale
                 );
                 setModifiers(prev => ({ ...prev, customContext: generated }));
               } catch (err) {
@@ -424,62 +1270,21 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
                 setIsGeneratingPremise(false);
               }
             }}
-            className="flex items-center gap-1.5 px-3 py-1 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-[11px] font-bold shadow-md shadow-emerald-950/50 transition cursor-pointer disabled:opacity-50"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700 text-xs font-mono transition cursor-pointer disabled:opacity-50"
           >
             {isGeneratingPremise ? (
               <>
-                <RefreshCw className="w-3 h-3 animate-spin" />
+                <RefreshCw className="w-3.5 h-3.5 animate-spin" />
                 <span>Generando...</span>
               </>
             ) : (
               <>
-                <Sparkles className="w-3 h-3" />
-                <span>🎲 Generar Premisa con IA</span>
+                <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+                <span>🎲 Generar Aleatoria</span>
               </>
             )}
           </button>
         </div>
-
-        {/* Quick Premise Chips */}
-        <div className="flex items-center gap-1.5 flex-wrap text-[10px]">
-          <span className="text-slate-400">Plantillas rápidas:</span>
-          <button
-            type="button"
-            onClick={() => setModifiers(prev => ({ ...prev, customContext: `Torneo del Infierno organizado por Janemba en la dimensión de los caídos. ${charA?.name || 'Contendiente A'} llega con el brazo herido tras enfrentar a Beerus en semifinales. Prohibido usar ataques de borrado universal por reglas del torneo.` }))}
-            className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
-          >
-            🏆 Torneo del Infierno
-          </button>
-          <button
-            type="button"
-            onClick={() => setModifiers(prev => ({ ...prev, customContext: `${charA?.name || 'Contendiente A'} entra al combate con un 15% de Stamina restante y el brazo derecho inutilizado por la batalla anterior. ${charB?.name || 'Contendiente B'} busca terminar el duelo rápidamente pero respeta el código de honor.` }))}
-            className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
-          >
-            🩸 Handicap por Lesión
-          </button>
-          <button
-            type="button"
-            onClick={() => setModifiers(prev => ({ ...prev, customContext: "Una estrella supernova colapsará en exactamente 180 segundos. El campo de batalla se desintegra segundo a segundo y quien no gane antes del tiempo límite morirá en la explosión." }))}
-            className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
-          >
-            ⏳ Duelo a Contrareloj (Supernova)
-          </button>
-          <button
-            type="button"
-            onClick={() => setModifiers(prev => ({ ...prev, customContext: "Combate a Primera Sangre: El choque termina inmediatamente cuando uno de los luchadores sufra un corte o herida visible. No se permiten transformaciones definitivas hasta el minuto 2." }))}
-            className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
-          >
-            ⚔️ Primera Sangre (Reglas de Torneo)
-          </button>
-        </div>
-
-        <textarea
-          rows={2}
-          value={modifiers.customContext || ''}
-          onChange={(e) => setModifiers(prev => ({ ...prev, customContext: e.target.value }))}
-          placeholder="Ej: 'Torneo del Infierno organizado por Janemba. Goku Super llega con el brazo herido tras enfrentar a Beerus, mientras Goku GT tiene prohibido usar la Genkidama...'"
-          className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs focus:border-emerald-500 focus:outline-none transition resize-y font-sans leading-relaxed placeholder:text-slate-600"
-        />
       </div>
 
       {/* Modal Creación de Arena */}
@@ -495,7 +1300,48 @@ export default function ScenarioPanel({ scenario, setScenario, modifiers, setMod
 
             <form onSubmit={handleAddArena} className="space-y-3">
               <div>
-                <label className="block text-slate-300 mb-1">Nombre de la Arena:</label>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-slate-300">Nombre de la Arena:</label>
+                  <button
+                    type="button"
+                    disabled={isGeneratingArena}
+                    onClick={async () => {
+                      if (!newArena.name.trim()) {
+                        alert('Escribe un nombre de arena primero (ej: "Valle del Fin", "Dimensión del Espejo", "Núcleo de Namek").');
+                        return;
+                      }
+                      setIsGeneratingArena(true);
+                      try {
+                        const data = await SimulationEngine.generateScenarioWithAi(
+                          newArena.name,
+                          newArena.universe,
+                          aiConfig
+                        );
+                        setNewArena(prev => ({
+                          ...prev,
+                          ...data
+                        }));
+                      } catch (err) {
+                        alert('Error al autocompletar arena con IA: ' + err.message);
+                      } finally {
+                        setIsGeneratingArena(false);
+                      }
+                    }}
+                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white text-[11px] font-bold shadow transition cursor-pointer disabled:opacity-50"
+                  >
+                    {isGeneratingArena ? (
+                      <>
+                        <RefreshCw className="w-3 h-3 animate-spin" />
+                        <span>Generando...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Sparkles className="w-3 h-3" />
+                        <span>✨ Autocompletar con IA</span>
+                      </>
+                    )}
+                  </button>
+                </div>
                 <input
                   type="text"
                   required

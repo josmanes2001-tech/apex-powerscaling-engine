@@ -9,7 +9,27 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json({ limit: '20mb' }));
 
-const VAULT_PATH = 'Z:\\Obsidian Vault';
+const distPath = path.join(__dirname, 'dist');
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+}
+
+function getVaultPath() {
+  const candidates = [
+    'D:\\Vault Obsidian',
+    'D:\\Vault Obsidian\\Obsidian Vault',
+    'D:\\Obsidian Vault',
+    'Z:\\Obsidian Vault',
+    'Z:\\',
+    path.join(__dirname, '..')
+  ];
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return c;
+  }
+  return 'D:\\Vault Obsidian';
+}
+
+const VAULT_PATH = getVaultPath();
 
 // ==========================================
 // 1. OBSIDIAN VAULT ENDPOINTS
@@ -17,11 +37,12 @@ const VAULT_PATH = 'Z:\\Obsidian Vault';
 
 app.get('/api/vault/status', (req, res) => {
   try {
-    const exists = fs.existsSync(VAULT_PATH);
+    const currentPath = getVaultPath();
+    const exists = fs.existsSync(currentPath);
     res.json({
       connected: exists,
-      path: VAULT_PATH,
-      message: exists ? 'Bóveda de Obsidian conectada correctamente en Z:\\Obsidian Vault' : 'No se pudo encontrar Z:\\Obsidian Vault'
+      path: currentPath,
+      message: exists ? `Bóveda de Obsidian conectada correctamente en ${currentPath}` : `No se pudo encontrar ${currentPath}`
     });
   } catch (err) {
     res.status(500).json({ connected: false, error: err.message });
@@ -85,6 +106,193 @@ app.post('/api/vault/save', (req, res) => {
     });
   } catch (err) {
     console.error('Error guardando en Obsidian:', err);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+function characterToMarkdown(c) {
+  const frontmatter = `---
+id: ${c.id || ''}
+nombre: "${c.name || 'Sin Nombre'}"
+alias: "${c.alias || ''}"
+universo: "${c.universe || 'Desconocido'}"
+saga: "${c.saga || ''}"
+tier: "${c.tier || ''}"
+ap: "${c.ap || ''}"
+velocidad: "${typeof c.speed === 'object' ? (c.speed.combat || c.speed.reaction || 'Desconocida') : (c.speed || '')}"
+fuerza: "${typeof c.strength === 'object' ? (c.strength.striking || '') : (c.strength || '')}"
+durabilidad: "${c.durability || ''}"
+estamina: "${c.stamina || ''}"
+tags: [${(c.haxTags || []).map(t => `"${t}"`).join(', ')}]
+---
+
+# ${c.name}
+> *${c.alias || 'Luchador del Multiverso'}*
+
+## 📊 Atributos de Combate
+- **Tier:** ${c.tier || 'Desconocido'}
+- **Attack Potency (AP):** ${c.ap || 'Desconocido'}
+- **Rango:** ${c.range || 'Cuerpo a cuerpo'}
+- **Velocidad de Combate:** ${c.speed?.combat || 'Desconocida'}
+- **Velocidad de Reacción:** ${c.speed?.reaction || 'Desconocida'}
+- **Velocidad de Desplazamiento:** ${c.speed?.travel || 'Desconocida'}
+- **Fuerza de Impacto:** ${c.strength?.striking || 'Desconocida'}
+- **Fuerza de Levantamiento:** ${c.strength?.lifting || 'Desconocida'}
+- **Durabilidad:** ${c.durability || 'Desconocida'}
+- **Estamina:** ${c.stamina || 'Media'}
+- **Battle IQ:** ${c.battleIQ || 'Promedio'}
+
+## 🧬 Transformaciones & Formas
+${(c.forms || []).map(f => `- **${f.name}:** ${f.stats || ''}`).join('\n') || '- Forma Base única.'}
+
+## ⚔️ Arsenal & Habilidades
+- **Ataques Básicos:** ${c.arsenal?.basicAttacks || 'Combos marciales estándar.'}
+${(c.arsenal?.superAttacks || []).map(a => `- **${a.name}** (${a.cost || ''}): ${a.desc}`).join('\n')}
+${(c.arsenal?.ultimateAttacks || []).map(a => `- 💥 **${a.name} [ULTIMATE]** (${a.cost || ''}): ${a.desc}`).join('\n')}
+${(c.arsenal?.passives || []).map(p => `- 🛡️ **${p.name} [PASIVA]**: ${p.desc}`).join('\n')}
+
+## 🏆 Hazañas Canónicas (Feats)
+${(c.feats || []).map(f => `- ${f}`).join('\n') || '- Participó en batallas multiversales.'}
+
+## ⚠️ Psicología & Debilidades
+- **Psicología:** ${c.psychology || 'Luchador estándar.'}
+- **Debilidades:** ${c.weaknesses || 'Las convencionales de su especie.'}
+`;
+  return frontmatter;
+}
+
+function markdownToCharacter(content, filename) {
+  const char = {
+    id: `obsidian-${filename.replace(/\.md$/, '').toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+    name: filename.replace(/\.md$/, ''),
+    alias: 'Ficha importada de Obsidian',
+    universe: 'Obsidian Vault',
+    saga: 'Personalizado',
+    version: 'Obsidian Version',
+    tier: 'Tier 7-B',
+    ap: 'Nivel Desconocido',
+    range: 'Cuerpo a cuerpo',
+    speed: { combat: 'Hipersónico', reaction: 'Hipersónico', travel: 'Hipersónico', attack: 'Hipersónico' },
+    strength: { striking: 'Acorde a su Tier', lifting: 'Acorde a su Tier' },
+    durability: 'Media',
+    stamina: 'Media',
+    battleIQ: 'Promedio',
+    haxTags: [],
+    arsenal: { basicAttacks: '', superAttacks: [], ultimateAttacks: [], passives: [] },
+    forms: [{ id: 'base', name: 'Forma Base', stats: 'Estándar' }],
+    feats: [],
+    psychology: '',
+    weaknesses: ''
+  };
+
+  // Parse YAML Frontmatter
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (match) {
+    const yaml = match[1];
+    yaml.split('\n').forEach(line => {
+      const parts = line.split(':');
+      if (parts.length >= 2) {
+        const key = parts[0].trim().toLowerCase();
+        const val = parts.slice(1).join(':').trim().replace(/^["']|["']$/g, '');
+        if (key === 'id') char.id = val;
+        if (key === 'nombre' || key === 'name') char.name = val;
+        if (key === 'alias') char.alias = val;
+        if (key === 'universo' || key === 'universe') char.universe = val;
+        if (key === 'saga') char.saga = val;
+        if (key === 'tier') char.tier = val;
+        if (key === 'ap') char.ap = val;
+        if (key === 'durabilidad' || key === 'durability') char.durability = val;
+        if (key === 'estamina' || key === 'stamina') char.stamina = val;
+        if (key === 'tags' || key === 'haxtags') {
+          try {
+            const raw = val.replace(/^\[|\]$/g, '');
+            char.haxTags = raw.split(',').map(t => t.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
+          } catch (e) {}
+        }
+      }
+    });
+  }
+
+  return char;
+}
+
+app.post('/api/vault/export-characters', (req, res) => {
+  try {
+    const { characters = [], folder = '06 - Proyectos/Obsidian + IA/Fichas APEX' } = req.body;
+    if (!characters.length) {
+      return res.status(400).json({ error: 'No se enviaron personajes para exportar.' });
+    }
+
+    const currentVault = getVaultPath();
+    const targetDir = path.join(currentVault, folder);
+    if (!fs.existsSync(targetDir)) {
+      fs.mkdirSync(targetDir, { recursive: true });
+    }
+
+    let exportedCount = 0;
+    characters.forEach(c => {
+      const cleanName = (c.name || 'Sin Nombre').replace(/[/\\?%*:|"<>]/g, '_');
+      const filename = `${cleanName}.md`;
+      const filePath = path.join(targetDir, filename);
+      const mdContent = characterToMarkdown(c);
+      fs.writeFileSync(filePath, mdContent, 'utf-8');
+      exportedCount++;
+    });
+
+    res.json({
+      success: true,
+      message: `¡${exportedCount} fichas exportadas exitosamente a ${folder}!`,
+      exportedCount,
+      targetDir
+    });
+  } catch (err) {
+    console.error('Error exportando fichas a Obsidian:', err);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/vault/import-characters', (req, res) => {
+  try {
+    const currentVault = getVaultPath();
+    if (!fs.existsSync(currentVault)) {
+      return res.status(404).json({ error: 'No se encuentra la ruta de la bóveda.' });
+    }
+
+    const getAllMdFiles = (dirPath, list = []) => {
+      const files = fs.readdirSync(dirPath);
+      files.forEach(file => {
+        const fullPath = path.join(dirPath, file);
+        if (fs.statSync(fullPath).isDirectory()) {
+          if (!file.startsWith('.') && file !== 'node_modules') {
+            getAllMdFiles(fullPath, list);
+          }
+        } else if (file.endsWith('.md')) {
+          list.push({ file, fullPath });
+        }
+      });
+      return list;
+    };
+
+    const allMd = getAllMdFiles(currentVault);
+    const parsedChars = [];
+
+    allMd.forEach(({ file, fullPath }) => {
+      try {
+        const content = fs.readFileSync(fullPath, 'utf-8');
+        if (content.includes('tier:') || content.includes('AP:') || content.includes('Atributos de Combate') || fullPath.includes('Fichas')) {
+          const char = markdownToCharacter(content, file);
+          parsedChars.push(char);
+        }
+      } catch (e) {}
+    });
+
+    res.json({
+      success: true,
+      characters: parsedChars,
+      count: parsedChars.length
+    });
+  } catch (err) {
+    console.error('Error importando fichas de Obsidian:', err);
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -607,6 +815,157 @@ DEBES responder únicamente con un JSON estrictamente válido (sin explicaciones
     console.error('Character generate error:', err);
     res.status(500).json({ error: 'Error al generar la ficha de personaje: ' + err.message });
   }
+});
+
+// ==========================================
+// 5. SCENARIO AUTO-FILL AI GENERATOR
+// ==========================================
+app.post('/api/scenario/generate', async (req, res) => {
+  try {
+    const { name, universe, engine = 'totalgpt', model, apiKey, customBaseUrl } = req.body;
+    const prompt = `Genera los detalles físicos y sensoriales completos para un escenario/arena de combate de VS Battles llamado "${name || 'Arena Cósmica'}" (${universe || 'Universo Ficción'}).
+DEBES responder únicamente con un JSON estrictamente válido (sin etiquetas markdown adicionales) con este formato exacto:
+{
+  "name": "${name || 'Nombre Épico de la Arena'}",
+  "universe": "${universe || 'Universo de Origen'}",
+  "gravity": "10G (Diez veces la gravedad terrestre)",
+  "temperature": "1500°C (Atmósfera de plasma y calor sofocante)",
+  "terrainEffect": "Magma subterráneo en erupción y colapso de la plataforma cada 3 minutos",
+  "sensory": "El aire apesta a azufre y ozono ionizado. Relámpagos de energía pura rasgan un cielo púrpura mientras el suelo de basalto retumba con vibraciones tectónicas continuas."
+}`;
+
+    const cfg = getEndpointConfig(engine, model, apiKey, customBaseUrl);
+    let fullText = '';
+    if (cfg.type === 'gemini') {
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${cfg.model}:generateContent?key=${cfg.apiKey}`;
+      const response = await fetch(geminiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+      });
+      const data = await response.json();
+      fullText = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    } else {
+      const response = await fetch(cfg.url, {
+        method: 'POST',
+        headers: cfg.headers,
+        body: JSON.stringify({
+          model: cfg.model,
+          messages: [{ role: 'user', content: prompt }],
+          temperature: 0.5
+        })
+      });
+      const data = await response.json();
+      fullText = data.choices?.[0]?.message?.content || data.choices?.[0]?.text || '';
+    }
+
+    const cleanJson = fullText.replace(/```json\s*/g, '').replace(/```\s*/g, '').trim();
+    const parsed = JSON.parse(cleanJson);
+    res.json(parsed);
+  } catch (err) {
+    console.error('Scenario generate error:', err);
+    res.status(500).json({ error: 'Error al generar la arena: ' + err.message });
+  }
+});
+
+// ==========================================
+// 6. IMAGE GENERATOR (Reforge / SD WebUI / Pollinations)
+// ==========================================
+app.post('/api/image/generate', async (req, res) => {
+  try {
+    const { prompt, style = 'shonen', engine = 'pollinations', sdUrl = 'http://127.0.0.1:7860', width = 768, height = 768, negativePrompt } = req.body;
+    if (!prompt) return res.status(400).json({ error: 'Se requiere un prompt para generar la imagen.' });
+
+    let styleSuffix = 'masterpiece, best quality, ultra-detailed anime fighting wallpaper, vibrant colors, sharp focus';
+    if (style === 'shonen') {
+      styleSuffix = 'masterpiece, ultra-detailed anime action shot, glowing ki aura, energetic sparks, dramatic lighting, intense eyes, trending on pixiv';
+    } else if (style === 'cinematic') {
+      styleSuffix = 'photorealistic 8k, cinematic lighting, volumetric atmosphere, octane render, Unreal Engine 5, realistic textures';
+    } else if (style === 'grimdark') {
+      styleSuffix = 'dark fantasy art, ink splatter, gritty textures, heavy battle scars, dark dramatic shadows, Berserk manga style';
+    } else if (style === 'wiki') {
+      styleSuffix = 'official character render, full body illustration, crisp clean lineart, concept art, high definition';
+    }
+
+    const fullPrompt = `${prompt}, ${styleSuffix}`;
+
+    if (engine === 'sd_local' || engine === 'reforge') {
+      const targetUrl = `${sdUrl.replace(/\/$/, '')}/sdapi/v1/txt2img`;
+      const response = await fetch(targetUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          prompt: fullPrompt,
+          negative_prompt: negativePrompt || 'worst quality, low quality, blurry, mutated hands, distorted, bad anatomy, watermark, text, signature',
+          steps: 25,
+          cfg_scale: 7,
+          width: width || 768,
+          height: height || 768
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`SD/Reforge no respondió en ${targetUrl}. Asegúrate de tener Stable Diffusion / Forge abierto con el parámetro --api activado.`);
+      }
+
+      const data = await response.json();
+      const base64Img = data.images?.[0];
+      if (!base64Img) throw new Error('No se recibió imagen desde SD/Reforge.');
+      return res.json({ imageUrl: `data:image/png;base64,${base64Img}` });
+    }
+
+    // Default: Pollinations.ai (100% Free Cloud Image Generation)
+    const seed = Math.floor(Math.random() * 1000000);
+    const cleanPrompt = encodeURIComponent(fullPrompt);
+    const imageUrl = `https://image.pollinations.ai/prompt/${cleanPrompt}?width=${width || 768}&height=${height || 768}&seed=${seed}&nologo=true&enhance=true`;
+    return res.json({ imageUrl });
+  } catch (err) {
+    console.error('Image generate error:', err);
+    res.status(500).json({ error: 'Error al generar imagen: ' + err.message });
+  }
+});
+
+// Generador de Cartel de Combate / Clash Wallpaper
+app.post('/api/image/battle', async (req, res) => {
+  try {
+    const { charAName, charBName, scenarioName, style = 'shonen', engine = 'pollinations', sdUrl } = req.body;
+    const battlePrompt = `epic confrontation between ${charAName} and ${charBName} clashing in ${scenarioName || 'a destroyed cosmic arena'}, energy beam clash, shockwaves, shattered earth, high stakes battle`;
+    
+    // Delegate to image generator
+    const subRes = await fetch(`http://localhost:${PORT}/api/image/generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt: battlePrompt, style, engine, sdUrl, width: 1024, height: 576 })
+    });
+    const data = await subRes.json();
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: 'Error al generar cartel de combate: ' + err.message });
+  }
+});
+
+// Test de Conexión con Reforge / SD Local
+app.post('/api/image/test-reforge', async (req, res) => {
+  try {
+    const { sdUrl = 'http://127.0.0.1:7860' } = req.body;
+    const testUrl = `${sdUrl.replace(/\/$/, '')}/sdapi/v1/sd-models`;
+    const response = await fetch(testUrl);
+    if (!response.ok) throw new Error(`Status ${response.status}`);
+    const models = await response.json();
+    res.json({ success: true, modelsCount: models.length || 0, message: `¡Conexión exitosa con Reforge/SD! (${models.length || 0} modelos detectados)` });
+  } catch (err) {
+    res.json({ success: false, message: `No se pudo conectar a ${req.body.sdUrl || 'http://127.0.0.1:7860'}. Asegúrate de tener Reforge abierto con el parámetro --api activado.` });
+  }
+});
+
+// SPA Fallback for production dist
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api')) return next();
+  const indexPath = path.join(__dirname, 'dist', 'index.html');
+  if (fs.existsSync(indexPath)) {
+    return res.sendFile(indexPath);
+  }
+  next();
 });
 
 app.listen(PORT, '0.0.0.0', () => {
