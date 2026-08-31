@@ -615,27 +615,48 @@ export default function App() {
     } catch (e) {}
   };
 
-  const handleContinueTimeline = (survivors) => {
-    // Escuadronizar sobrevivientes
-    const survivorIds = survivors.map(c => c.id || c.name);
-    // Filtrar matches por ID o Nombre
-    const nextTeamA = characters.filter(c => survivorIds.includes(c.id) || survivorIds.includes(c.name));
+  const handleContinueTimeline = (chosenFighters = [], targetMode = 'team', targetSquad = 'A') => {
+    const chosenIds = chosenFighters.map(c => c.id || c.name);
+    const resolvedFighters = characters.filter(c => chosenIds.includes(c.id) || chosenIds.includes(c.name));
     
-    // Asignar al teamA, dejar al usuario escoger nuevos enemigos para teamB
-    setTeamA(nextTeamA);
-    setTeamB([]);
+    if (targetMode === '1v1') {
+      setMatchMode('1v1');
+      if (targetSquad === 'A') {
+        setCharA(resolvedFighters[0] || null);
+        setCharB(null);
+      } else {
+        setCharB(resolvedFighters[0] || null);
+        setCharA(null);
+      }
+    } else if (targetMode === 'raid' || targetMode === '1vN') {
+      setMatchMode('raid');
+      if (targetSquad === 'boss') {
+        setRaidBoss(resolvedFighters[0] || null);
+        setRaidSquad([]);
+      } else {
+        setRaidSquad(resolvedFighters);
+        setRaidBoss(null);
+      }
+    } else if (targetMode === 'battle_royale' || targetMode === 'ffa') {
+      setMatchMode('battle_royale');
+      setBattleRoyaleFighters(resolvedFighters);
+    } else {
+      // Por defecto modo equipos
+      setMatchMode('team');
+      if (targetSquad === 'A') {
+        setTeamA(resolvedFighters);
+        setTeamB([]);
+      } else {
+        setTeamB(resolvedFighters);
+        setTeamA([]);
+      }
+    }
     
     setSimulationResult(null);
     try {
       localStorage.removeItem('apex_current_simulation_draft');
     } catch(e) {}
     
-    // Cambiar el modo si hay más de 1 superviviente
-    if (nextTeamA.length > 1) {
-      setMatchMode('team');
-    } else {
-      setMatchMode('1v1');
-    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

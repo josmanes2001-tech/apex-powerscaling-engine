@@ -5,6 +5,8 @@ import {
 } from 'lucide-react';
 import { getFranchiseCategoriesList } from '../services/franchiseHelper';
 import { calculateFormScaledStats, POWERSCALING_TIERING_SYSTEM, SPEED_SCALE_SYSTEM } from '../data/powerscalingCodex';
+import { SoundFX } from '../services/soundFx';
+import { calculateScouterReading } from '../services/scouterEngine';
 
 // Full VS Battles tier scoring with sub-tiers A/B/C
 const TIER_SCORE_MAP = [
@@ -426,6 +428,131 @@ function FighterCardConfig({
   );
 }
 
+function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
+  const [isScanning, setIsScanning] = useState(false);
+
+  const scouterA = useMemo(() => calculateScouterReading(characterA, formAId), [characterA, formAId]);
+  const scouterB = useMemo(() => calculateScouterReading(characterB, formBId), [characterB, formBId]);
+
+  const handleScan = () => {
+    setIsScanning(true);
+
+    if (scouterA.isOverload || scouterB.isOverload) {
+      SoundFX.playScouterExplosion();
+    } else {
+      SoundFX.playScouterBeep(8);
+    }
+
+    setTimeout(() => {
+      setIsScanning(false);
+    }, 450);
+  };
+
+  const ratio = useMemo(() => {
+    if (scouterA.rawValue === Infinity || scouterB.rawValue === Infinity) return 'INCONMENSURABLE';
+    if (scouterA.rawValue <= 0 || scouterB.rawValue <= 0) return '1.0x';
+    const r = scouterA.rawValue >= scouterB.rawValue
+      ? (scouterA.rawValue / Math.max(1, scouterB.rawValue)).toFixed(1)
+      : (scouterB.rawValue / Math.max(1, scouterA.rawValue)).toFixed(1);
+    return `${r}x`;
+  }, [scouterA, scouterB]);
+
+  const leaderName = scouterA.rawValue >= scouterB.rawValue ? characterA?.name : characterB?.name;
+  const isAOverload = scouterA.isOverload;
+  const isBOverload = scouterB.isOverload;
+
+  return (
+    <div className="p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-950 to-emerald-950/40 border border-emerald-500/50 shadow-[0_0_25px_rgba(16,185,129,0.15)] space-y-3 font-mono text-xs">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-emerald-900/50 pb-2">
+        <div className="flex items-center gap-2">
+          <span className="text-base animate-pulse">📟</span>
+          <div>
+            <h4 className="font-bold text-emerald-300 uppercase tracking-wider font-cinzel text-xs flex items-center gap-2">
+              Rastreador Scouter / Nivel de Poder Canónico (Ki)
+              {isScanning && <span className="text-red-400 text-[10px] animate-ping font-mono">ESCANEO ACTIVO...</span>}
+            </h4>
+            <p className="text-[10px] text-slate-400">
+              Calibración matemática según Guías Daizenshuu, Saga DAIMA y Escala Energética VS Battles
+            </p>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          onClick={handleScan}
+          className="px-3 py-1.5 rounded-xl bg-emerald-600/30 hover:bg-emerald-500/40 border border-emerald-400 text-emerald-200 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-[0_0_12px_rgba(16,185,129,0.3)] self-start sm:self-auto"
+        >
+          <Zap className="w-3.5 h-3.5 text-emerald-300 animate-pulse" />
+          <span>Escanear Ki (Sonido Scouter)</span>
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {/* Contendiente A */}
+        <div className={`p-3 rounded-xl border space-y-1.5 transition-all ${
+          isAOverload 
+            ? 'bg-red-950/40 border-red-500 text-red-200 shadow-[0_0_15px_rgba(239,68,68,0.3)]' 
+            : 'bg-slate-900/80 border-slate-800 text-slate-200'
+        }`}>
+          <div className="flex justify-between items-center text-[11px]">
+            <span className="font-bold text-red-400 truncate">{characterA?.name}</span>
+            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400">{scouterA.rank}</span>
+          </div>
+          <div className="flex items-baseline gap-2">
+            <span className={`text-base sm:text-lg font-black tracking-tight font-cinzel ${scouterA.color}`}>
+              {isScanning ? '888,888...' : scouterA.formatted}
+            </span>
+          </div>
+          {isAOverload && (
+            <span className="text-[9px] text-red-400 font-bold block animate-pulse">
+              ⚠️ ¡EXPLOSIÓN DE SCOUTER POR SOBRECARGA DE KI!
+            </span>
+          )}
+        </div>
+
+        {/* Contendiente B */}
+        <div className={`p-3 rounded-xl border space-y-1.5 transition-all ${
+          isBOverload 
+            ? 'bg-red-950/40 border-red-500 text-red-200 shadow-[0_0_15px_rgba(239,68,68,0.3)]' 
+            : 'bg-slate-900/80 border-slate-800 text-slate-200'
+        }`}>
+          <div className="flex justify-between items-center text-[11px]">
+            <span className="font-bold text-blue-400 truncate">{characterB?.name}</span>
+            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400">{scouterB.rank}</span>
+          </div>
+          <div className="flex items-baseline gap-2">
+            <span className={`text-base sm:text-lg font-black tracking-tight font-cinzel ${scouterB.color}`}>
+              {isScanning ? '888,888...' : scouterB.formatted}
+            </span>
+          </div>
+          {isBOverload && (
+            <span className="text-[9px] text-red-400 font-bold block animate-pulse">
+              ⚠️ ¡EXPLOSIÓN DE SCOUTER POR SOBRECARGA DE KI!
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* Relación de Poder y Diagnóstico Táctico */}
+      <div className="p-2.5 rounded-xl bg-slate-950 border border-emerald-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[10px]">
+        <div>
+          <span className="text-emerald-400 font-bold">⚡ Disparidad de Ki: </span>
+          <span className="text-white font-bold">{leaderName}</span> lidera con un multiplicador de <span className="text-emerald-300 font-bold">{ratio}</span>.
+        </div>
+        <div className="text-slate-400 text-[9px] italic">
+          {ratio === '1.0x' || (ratio !== 'INCONMENSURABLE' && parseFloat(ratio) < 1.2)
+            ? '⚔️ Pelea simétrica. El Battle IQ y Hax deciden el resultado.'
+            : (ratio !== 'INCONMENSURABLE' && parseFloat(ratio) < 2.5)
+            ? '⚠️ Ventaja cinética notable. Quiebre de guardia probable.'
+            : (ratio !== 'INCONMENSURABLE' && parseFloat(ratio) < 10.0)
+            ? '🔥 Riesgo inminente de "Speed Blitz" y daño crítico.'
+            : '💀 Disparidad absoluta. Ataques ordinarios rebotan (Tanqueo puro).'}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function StatComparatorModal({ 
   isOpen, 
   onClose, 
@@ -645,6 +772,14 @@ export default function StatComparatorModal({
                 title="🔵 Contendiente B (Azul)"
               />
             </div>
+
+            {/* Scouter Ki Measurement HUD */}
+            <ScouterBattleHUD
+              characterA={selectedA}
+              formAId={selectedFormAId}
+              characterB={selectedB}
+              formBId={selectedFormBId}
+            />
 
             {/* Tier Gap Banner */}
             <div className={`p-2.5 rounded-xl border flex items-center justify-between text-xs font-bold ${
@@ -919,6 +1054,22 @@ export default function StatComparatorModal({
               </div>
             </div>
 
+            {/* Scouter Raid Summary */}
+            <div className="p-3 bg-emerald-950/30 border border-emerald-800/50 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-mono text-xs">
+              <div className="flex items-center gap-2">
+                <span className="text-emerald-400 font-bold">📟 Ki del Boss ({raidBoss.name}):</span>
+                <span className="font-bold text-red-400 font-cinzel">
+                  {calculateScouterReading(raidBoss, selectedFormAId).formatted}
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-emerald-400 font-bold">⚡ Asaltantes ({raidSquad.length}):</span>
+                <span className="font-bold text-blue-300 truncate max-w-[280px]">
+                  {raidSquad.map(s => `${s.name.split(' ')[0]} (${calculateScouterReading(s, teamBForms[s.id] || s.forms?.[0]?.id || 'base').formatted})`).join(', ')}
+                </span>
+              </div>
+            </div>
+
             {/* Boss Raid Odds Banner */}
             <div className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2 text-center">
               <span className="text-[11px] font-bold text-amber-400 uppercase block">⚖️ Probabilidad de Éxito de la Incursión (Raid Viability)</span>
@@ -1096,7 +1247,9 @@ export default function StatComparatorModal({
                             </button>
                           )}
                         </h4>
-                        <p className="text-[10px] text-slate-400">{c.universe} · {c.effTier}</p>
+                        <p className="text-[10px] text-slate-400">
+                          {c.universe} · {c.effTier} · <span className="text-emerald-400 font-bold">📟 {calculateScouterReading(c, fId).formatted}</span>
+                        </p>
                       </div>
                     </div>
 

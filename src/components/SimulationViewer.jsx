@@ -871,8 +871,11 @@ export default function SimulationViewer({
   const [showScriptExporter, setShowScriptExporter] = useState(false);
   const [showAnatomyMatrix, setShowAnatomyMatrix] = useState(false);
   const [isGeneratingAltEnding, setIsGeneratingAltEnding] = useState(false);
-  const [altEndingResult, setAltEndingResult] = useState('');
   const [showAltEndingModal, setShowAltEndingModal] = useState(false);
+  const [showTimelineModal, setShowTimelineModal] = useState(false);
+  const [selectedTimelineFighterIds, setSelectedTimelineFighterIds] = useState([]);
+  const [targetTimelineMode, setTargetTimelineMode] = useState('team'); // 'team' | '1v1' | 'raid' | 'battle_royale'
+  const [targetTimelineSquad, setTargetTimelineSquad] = useState('A'); // 'A' | 'B' | 'boss'
   const [selectedArtStyle, setSelectedArtStyle] = useState('anime');
   const [customImageUrlInput, setCustomImageUrlInput] = useState('');
   const [galleryArtworks, setGalleryArtworksRaw] = useState(() => {
@@ -1568,6 +1571,179 @@ export default function SimulationViewer({
           )}
 
 
+          {/* Modal de Continuidad Multiversal & Resurrección (What-If Sagas) */}
+          {showTimelineModal && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+              <div className="bg-slate-950 border border-indigo-500/60 rounded-2xl w-full max-w-2xl overflow-hidden shadow-[0_0_60px_rgba(99,102,241,0.25)] flex flex-col max-h-[90vh]">
+                <div className="p-4 border-b border-slate-800 flex justify-between items-center bg-gradient-to-r from-indigo-950/60 to-purple-950/40">
+                  <div className="flex items-center gap-2.5">
+                    <GitBranch className="w-5 h-5 text-indigo-400 animate-pulse" />
+                    <div>
+                      <h3 className="text-base font-bold font-cinzel text-indigo-200">
+                        🔮 Continuar Línea Temporal — Próxima Saga
+                      </h3>
+                      <p className="text-[10px] text-slate-400 font-mono">
+                        Elige qué supervivientes avanzan, resucita caídos con Dragon Balls y asígnalos a cualquier escuadrón.
+                      </p>
+                    </div>
+                  </div>
+                  <button onClick={() => setShowTimelineModal(false)} className="text-slate-400 hover:text-white transition">
+                    <X className="w-5 h-5" />
+                  </button>
+                </div>
+
+                <div className="p-5 space-y-4 font-mono text-xs overflow-y-auto custom-scrollbar flex-1">
+                  {/* Selector Rápido */}
+                  <div className="flex items-center justify-between bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+                    <span className="text-slate-300 font-bold text-[11px]">⚡ Selección Rápida:</span>
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const survivorsOnly = allActiveFighters.filter(f => f.hp > 0).map(f => f.id || f.name);
+                          setSelectedTimelineFighterIds(survivorsOnly);
+                        }}
+                        className="px-2.5 py-1 rounded-lg bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-[10px] font-bold hover:bg-emerald-900 transition"
+                      >
+                        🟢 Solo Supervivientes ({allActiveFighters.filter(f => f.hp > 0).length})
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const allIds = allActiveFighters.map(f => f.id || f.name);
+                          setSelectedTimelineFighterIds(allIds);
+                        }}
+                        className="px-2.5 py-1 rounded-lg bg-indigo-950 border border-indigo-500/50 text-indigo-300 text-[10px] font-bold hover:bg-indigo-900 transition"
+                      >
+                        ✨ Revivir a Todos ({allActiveFighters.length})
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Lista de Combatientes y su Estado */}
+                  <div className="space-y-2">
+                    <label className="text-[11px] font-bold text-slate-300 block">
+                      🛡️ Combatientes del Veredicto ({selectedTimelineFighterIds.length} Seleccionados):
+                    </label>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-56 overflow-y-auto p-1 custom-scrollbar">
+                      {allActiveFighters.map((f, idx) => {
+                        const isDead = f.hp <= 0;
+                        const fighterKey = f.id || f.name;
+                        const isSelected = selectedTimelineFighterIds.includes(fighterKey);
+
+                        return (
+                          <div
+                            key={fighterKey || idx}
+                            onClick={() => {
+                              setSelectedTimelineFighterIds(prev =>
+                                prev.includes(fighterKey) ? prev.filter(k => k !== fighterKey) : [...prev, fighterKey]
+                              );
+                            }}
+                            className={`p-2.5 rounded-xl border flex items-center justify-between cursor-pointer transition ${
+                              isSelected
+                                ? 'bg-indigo-950/60 border-indigo-500/80 text-white shadow-sm'
+                                : 'bg-slate-900/40 border-slate-800 text-slate-400 opacity-60 hover:opacity-100'
+                            }`}
+                          >
+                            <div className="flex items-center gap-2 truncate">
+                              {f.avatar ? (
+                                <img src={f.avatar} alt="" className="w-7 h-7 rounded-full object-cover border border-slate-700" />
+                              ) : (
+                                <span className="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-xs">🥋</span>
+                              )}
+                              <div className="truncate">
+                                <span className="font-bold block truncate text-xs">{f.name}</span>
+                                <span className="text-[9px] block">
+                                  {isDead ? (
+                                    <span className="text-red-400 font-bold">💀 Muerto (0% HP)</span>
+                                  ) : (
+                                    <span className="text-emerald-400 font-bold">🟢 Vivo ({f.hp}% HP)</span>
+                                  )}
+                                </span>
+                              </div>
+                            </div>
+
+                            <div className="flex-shrink-0 ml-2">
+                              {isDead ? (
+                                <span className={`text-[9px] font-bold px-2 py-0.5 rounded border ${
+                                  isSelected
+                                    ? 'bg-purple-900 border-purple-400 text-purple-200'
+                                    : 'bg-slate-800 border-slate-700 text-slate-400'
+                                }`}>
+                                  {isSelected ? '🔮 Revivido' : '💀 Caído'}
+                                </span>
+                              ) : (
+                                <span className={`text-[9px] font-bold px-2 py-0.5 rounded border ${
+                                  isSelected
+                                    ? 'bg-emerald-950 border-emerald-500 text-emerald-300'
+                                    : 'bg-slate-800 border-slate-700 text-slate-500'
+                                }`}>
+                                  {isSelected ? '✓ Activo' : 'Omitir'}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Destino y Modo */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-slate-800">
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-bold text-slate-400 uppercase">1. Modo de Juego Próxima Saga:</label>
+                      <select
+                        value={targetTimelineMode}
+                        onChange={(e) => setTargetTimelineMode(e.target.value)}
+                        className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-bold text-xs focus:border-indigo-500"
+                      >
+                        <option value="team">⚔️ Modo Equipos (Recomendado)</option>
+                        <option value="1v1">🥋 Duelo 1v1 (Toma al 1º)</option>
+                        <option value="raid">👑 Boss Raid (Como Boss o Asaltantes)</option>
+                        <option value="battle_royale">🌪️ Battle Royale (Todos vs Todos)</option>
+                      </select>
+                    </div>
+
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-bold text-slate-400 uppercase">2. Bando a Ocupar:</label>
+                      <select
+                        value={targetTimelineSquad}
+                        onChange={(e) => setTargetTimelineSquad(e.target.value)}
+                        className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-bold text-xs focus:border-indigo-500"
+                      >
+                        <option value="A">🛡️ Escuadrón A (Defensores / Aliados)</option>
+                        <option value="B">⚔️ Escuadrón B (Invasores / Nuevos Enemigos)</option>
+                        <option value="boss">👑 Boss Principal (Solo en Boss Raid)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 border-t border-slate-800 flex justify-end gap-3 bg-slate-900/60">
+                  <button
+                    onClick={() => setShowTimelineModal(false)}
+                    className="px-4 py-2 rounded-lg font-mono text-xs font-bold text-slate-400 hover:text-white transition"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (onContinueTimeline) {
+                        const chosen = allActiveFighters.filter(f => selectedTimelineFighterIds.includes(f.id || f.name));
+                        onContinueTimeline(chosen, targetTimelineMode, targetTimelineSquad);
+                        setShowTimelineModal(false);
+                      }
+                    }}
+                    disabled={selectedTimelineFighterIds.length === 0}
+                    className="px-5 py-2 rounded-xl font-mono text-xs font-bold bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-500 hover:to-purple-500 transition disabled:opacity-50 shadow-[0_0_20px_rgba(99,102,241,0.4)]"
+                  >
+                    🚀 Transferir al Simulador ({selectedTimelineFighterIds.length})
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
           {hasOutput && !isSimulating && (
             <>
               <button
@@ -1583,15 +1759,15 @@ export default function SimulationViewer({
               
               <button
                 onClick={() => {
-                  if (onContinueTimeline) {
-                    const survivors = allActiveFighters.filter(f => f.hp > 0);
-                    onContinueTimeline(survivors);
-                  }
+                  // Inicializar con los que tienen vida > 0 por defecto
+                  const defaultSurvivors = allActiveFighters.filter(f => f.hp > 0).map(f => f.id || f.name);
+                  setSelectedTimelineFighterIds(defaultSurvivors.length > 0 ? defaultSurvivors : allActiveFighters.map(f => f.id || f.name));
+                  setShowTimelineModal(true);
                 }}
-                title="Continuar esta línea temporal llevando a los supervivientes a una nueva batalla"
-                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-indigo-900/60 hover:bg-indigo-800/80 text-indigo-200 text-xs font-mono font-bold transition cursor-pointer border border-indigo-500/50 hover:border-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.2)]"
+                title="Abrir panel de Continuidad de Línea Temporal (Resurrección, Supervivientes y Asignación de Escuadrones)"
+                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-900/70 to-purple-900/70 hover:from-indigo-800 hover:to-purple-800 text-indigo-200 text-xs font-mono font-bold transition cursor-pointer border border-indigo-500/50 hover:border-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.3)]"
               >
-                <GitBranch className="w-3.5 h-3.5 text-indigo-400" />
+                <GitBranch className="w-3.5 h-3.5 text-indigo-400 animate-pulse" />
                 <span className="hidden sm:inline">Continuar Línea Temporal</span>
                 <span className="sm:hidden">Continuar</span>
               </button>
