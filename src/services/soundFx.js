@@ -21,32 +21,34 @@ class SoundEffectService {
   }
 
   initContext() {
-    if (!this.ctx && typeof window !== 'undefined') {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      if (AudioContext) {
-        this.ctx = new AudioContext();
+    if (typeof window === 'undefined') return null;
+    if (!this.ctx) {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtx) {
+        this.ctx = new AudioCtx();
       }
     }
     if (this.ctx && this.ctx.state === 'suspended') {
       this.ctx.resume().catch(() => {});
     }
+    return this.ctx;
   }
 
   playClick() {
     if (!this.enabled) return;
     try {
-      this.initContext();
-      if (!this.ctx) return;
-      const now = this.ctx.currentTime;
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
+      const ctx = this.initContext();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
       osc.type = 'sine';
       osc.frequency.setValueAtTime(600, now);
       osc.frequency.exponentialRampToValueAtTime(300, now + 0.05);
-      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.setValueAtTime(0.25, now);
       gain.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
       osc.connect(gain);
-      gain.connect(this.ctx.destination);
+      gain.connect(ctx.destination);
       osc.start(now);
       osc.stop(now + 0.05);
     } catch (e) {}
@@ -55,11 +57,11 @@ class SoundEffectService {
   playImpactBoom() {
     if (!this.enabled) return;
     try {
-      this.initContext();
-      if (!this.ctx) return;
-      const now = this.ctx.currentTime;
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
+      const ctx = this.initContext();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
 
       osc.type = 'triangle';
       osc.frequency.setValueAtTime(140, now);
@@ -69,7 +71,7 @@ class SoundEffectService {
       gain.gain.exponentialRampToValueAtTime(0.01, now + 0.6);
 
       osc.connect(gain);
-      gain.connect(this.ctx.destination);
+      gain.connect(ctx.destination);
 
       osc.start(now);
       osc.stop(now + 0.6);
@@ -79,11 +81,11 @@ class SoundEffectService {
   playEnergyBeam() {
     if (!this.enabled) return;
     try {
-      this.initContext();
-      if (!this.ctx) return;
-      const now = this.ctx.currentTime;
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
+      const ctx = this.initContext();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
 
       osc.type = 'sawtooth';
       osc.frequency.setValueAtTime(300, now);
@@ -94,7 +96,7 @@ class SoundEffectService {
       gain.gain.exponentialRampToValueAtTime(0.01, now + 0.5);
 
       osc.connect(gain);
-      gain.connect(this.ctx.destination);
+      gain.connect(ctx.destination);
 
       osc.start(now);
       osc.stop(now + 0.5);
@@ -104,33 +106,33 @@ class SoundEffectService {
   playCriticalHit() {
     if (!this.enabled) return;
     try {
-      this.initContext();
-      if (!this.ctx) return;
-      const now = this.ctx.currentTime;
+      const ctx = this.initContext();
+      if (!ctx) return;
+      const now = ctx.currentTime;
       
       // Sub-bass thump
-      const sub = this.ctx.createOscillator();
-      const subGain = this.ctx.createGain();
+      const sub = ctx.createOscillator();
+      const subGain = ctx.createGain();
       sub.type = 'sine';
       sub.frequency.setValueAtTime(90, now);
       sub.frequency.exponentialRampToValueAtTime(20, now + 0.7);
       subGain.gain.setValueAtTime(0.8, now);
       subGain.gain.exponentialRampToValueAtTime(0.001, now + 0.7);
       sub.connect(subGain);
-      subGain.connect(this.ctx.destination);
+      subGain.connect(ctx.destination);
       sub.start(now);
       sub.stop(now + 0.7);
 
       // High impact crack
-      const noise = this.ctx.createOscillator();
-      const noiseGain = this.ctx.createGain();
+      const noise = ctx.createOscillator();
+      const noiseGain = ctx.createGain();
       noise.type = 'square';
       noise.frequency.setValueAtTime(800, now);
       noise.frequency.exponentialRampToValueAtTime(80, now + 0.2);
       noiseGain.gain.setValueAtTime(0.4, now);
       noiseGain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
       noise.connect(noiseGain);
-      noiseGain.connect(this.ctx.destination);
+      noiseGain.connect(ctx.destination);
       noise.start(now);
       noise.stop(now + 0.2);
     } catch (e) {}
@@ -139,11 +141,11 @@ class SoundEffectService {
   playSwordClash() {
     if (!this.enabled) return;
     try {
-      this.initContext();
-      if (!this.ctx) return;
-      const now = this.ctx.currentTime;
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
+      const ctx = this.initContext();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
 
       osc.type = 'sine';
       osc.frequency.setValueAtTime(2200, now);
@@ -153,7 +155,7 @@ class SoundEffectService {
       gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
 
       osc.connect(gain);
-      gain.connect(this.ctx.destination);
+      gain.connect(ctx.destination);
 
       osc.start(now);
       osc.stop(now + 0.25);
@@ -163,85 +165,141 @@ class SoundEffectService {
   playBetWin() {
     if (!this.enabled) return;
     try {
-      this.initContext();
-      if (!this.ctx) return;
+      const ctx = this.initContext();
+      if (!ctx) return;
       const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
       notes.forEach((freq, i) => {
-        const now = this.ctx.currentTime + i * 0.08;
-        const osc = this.ctx.createOscillator();
-        const gain = this.ctx.createGain();
+        const now = ctx.currentTime + i * 0.08;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
         osc.type = 'triangle';
         osc.frequency.setValueAtTime(freq, now);
         gain.gain.setValueAtTime(0.3, now);
         gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
         osc.connect(gain);
-        gain.connect(this.ctx.destination);
+        gain.connect(ctx.destination);
         osc.start(now);
         osc.stop(now + 0.3);
       });
     } catch (e) {}
   }
 
-  // Clásico sonido de Scouter / Rastreador de Ki (Beep electrónico rápido)
-  playScouterBeep(beeps = 7) {
-    if (!this.enabled) return;
+  /**
+   * Clásico y auténtico sonido de Scouter / Rastreador de Dragon Ball Z
+   * Genera la ráfaga electrónica de frecuencias chirp cuadradas con modulación ascendente
+   */
+  playScouterBeep(beeps = 9) {
     try {
-      this.initContext();
-      if (!this.ctx) return;
-      const freqs = [2100, 2450, 2300, 2600, 2400, 2750, 2900, 3100];
+      const ctx = this.initContext();
+      if (!ctx) return;
+      
+      const freqs = [2200, 2600, 2400, 2900, 2700, 3200, 3000, 3500, 3300, 3800];
+      const startBase = ctx.currentTime + 0.01;
+
       for (let i = 0; i < beeps; i++) {
-        const now = this.ctx.currentTime + i * 0.045;
-        const osc = this.ctx.createOscillator();
-        const gain = this.ctx.createGain();
-        osc.type = 'square';
+        const chirpStart = startBase + i * 0.05;
+        const chirpDuration = 0.038;
         const f = freqs[i % freqs.length];
-        osc.frequency.setValueAtTime(f, now);
-        osc.frequency.exponentialRampToValueAtTime(f + 150, now + 0.035);
-        gain.gain.setValueAtTime(0.18, now);
-        gain.gain.exponentialRampToValueAtTime(0.005, now + 0.035);
-        osc.connect(gain);
-        gain.connect(this.ctx.destination);
-        osc.start(now);
-        osc.stop(now + 0.035);
+
+        // Oscilador 1: Onda Cuadrada brillante (chirp principal)
+        const osc1 = ctx.createOscillator();
+        const gain1 = ctx.createGain();
+        osc1.type = 'square';
+        osc1.frequency.setValueAtTime(f, chirpStart);
+        osc1.frequency.exponentialRampToValueAtTime(f + 250, chirpStart + chirpDuration);
+
+        gain1.gain.setValueAtTime(0.35, chirpStart);
+        gain1.gain.exponentialRampToValueAtTime(0.01, chirpStart + chirpDuration);
+
+        // Oscilador 2: Armónico agudo complementario
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.type = 'sawtooth';
+        osc2.frequency.setValueAtTime(f * 0.75, chirpStart);
+        osc2.frequency.exponentialRampToValueAtTime((f * 0.75) + 180, chirpStart + chirpDuration);
+
+        gain2.gain.setValueAtTime(0.2, chirpStart);
+        gain2.gain.exponentialRampToValueAtTime(0.01, chirpStart + chirpDuration);
+
+        // Conectar a la salida
+        osc1.connect(gain1);
+        gain1.connect(ctx.destination);
+        osc2.connect(gain2);
+        gain2.connect(ctx.destination);
+
+        osc1.start(chirpStart);
+        osc1.stop(chirpStart + chirpDuration);
+        osc2.start(chirpStart);
+        osc2.stop(chirpStart + chirpDuration);
       }
-    } catch (e) {}
+
+      // Beep de Bloqueo Final (Lock-on confirmatorio)
+      const lockStart = startBase + (beeps * 0.05) + 0.02;
+      const lockOsc = ctx.createOscillator();
+      const lockGain = ctx.createGain();
+      lockOsc.type = 'square';
+      lockOsc.frequency.setValueAtTime(3200, lockStart);
+      lockOsc.frequency.exponentialRampToValueAtTime(3600, lockStart + 0.08);
+
+      lockGain.gain.setValueAtTime(0.4, lockStart);
+      lockGain.gain.exponentialRampToValueAtTime(0.01, lockStart + 0.08);
+
+      lockOsc.connect(lockGain);
+      lockGain.connect(ctx.destination);
+      lockOsc.start(lockStart);
+      lockOsc.stop(lockStart + 0.08);
+    } catch (e) {
+      console.warn('Scouter beep sound error:', e);
+    }
   }
 
-  // Sobrecarga y Explosión del Scouter cuando el Ki supera la escala
+  /**
+   * Sobrecarga y Explosión del Scouter cuando el Ki supera la escala
+   */
   playScouterExplosion() {
-    if (!this.enabled) return;
     try {
-      this.initContext();
-      if (!this.ctx) return;
-      // 1. Ráfaga ultra-rápida de beeps
-      for (let i = 0; i < 9; i++) {
-        const now = this.ctx.currentTime + i * 0.025;
-        const osc = this.ctx.createOscillator();
-        const gain = this.ctx.createGain();
+      const ctx = this.initContext();
+      if (!ctx) return;
+
+      const startBase = ctx.currentTime + 0.01;
+
+      // 1. Ráfaga ultra-acelerada de beeps crecientes
+      for (let i = 0; i < 10; i++) {
+        const chirpStart = startBase + i * 0.022;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
         osc.type = 'square';
-        osc.frequency.setValueAtTime(2800 + i * 200, now);
-        gain.gain.setValueAtTime(0.25, now);
-        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.022);
+        osc.frequency.setValueAtTime(2600 + i * 220, chirpStart);
+
+        gain.gain.setValueAtTime(0.35, chirpStart);
+        gain.gain.exponentialRampToValueAtTime(0.01, chirpStart + 0.02);
+
         osc.connect(gain);
-        gain.connect(this.ctx.destination);
-        osc.start(now);
-        osc.stop(now + 0.022);
+        gain.connect(ctx.destination);
+
+        osc.start(chirpStart);
+        osc.stop(chirpStart + 0.02);
       }
 
-      // 2. Ruido de estallido / rotura de cristal (0.23s después)
-      const burstTime = this.ctx.currentTime + 0.24;
-      const noise = this.ctx.createOscillator();
-      const noiseGain = this.ctx.createGain();
+      // 2. Estallido eléctrico y rotura de lente
+      const burstTime = startBase + 0.24;
+      const noise = ctx.createOscillator();
+      const noiseGain = ctx.createGain();
       noise.type = 'sawtooth';
-      noise.frequency.setValueAtTime(3600, burstTime);
-      noise.frequency.exponentialRampToValueAtTime(80, burstTime + 0.45);
-      noiseGain.gain.setValueAtTime(0.6, burstTime);
-      noiseGain.gain.exponentialRampToValueAtTime(0.01, burstTime + 0.45);
+      noise.frequency.setValueAtTime(4200, burstTime);
+      noise.frequency.exponentialRampToValueAtTime(60, burstTime + 0.5);
+
+      noiseGain.gain.setValueAtTime(0.8, burstTime);
+      noiseGain.gain.exponentialRampToValueAtTime(0.001, burstTime + 0.5);
+
       noise.connect(noiseGain);
-      noiseGain.connect(this.ctx.destination);
+      noiseGain.connect(ctx.destination);
+
       noise.start(burstTime);
-      noise.stop(burstTime + 0.45);
-    } catch (e) {}
+      noise.stop(burstTime + 0.5);
+    } catch (e) {
+      console.warn('Scouter explosion sound error:', e);
+    }
   }
 }
 

@@ -30,15 +30,18 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
     return otherBase === baseName || (baseName.includes(otherBase) && otherBase.length >= 4) || (otherBase.includes(baseName) && baseName.length >= 4);
   });
 
+  const [isScanningKi, setIsScanningKi] = useState(false);
   const scouterReading = calculateScouterReading(character, selectedFormId);
 
   const handleScouterBeep = (e) => {
     e.stopPropagation();
+    setIsScanningKi(true);
     if (scouterReading.isOverload) {
       SoundFX.playScouterExplosion();
     } else {
-      SoundFX.playScouterBeep(7);
+      SoundFX.playScouterBeep(9);
     }
+    setTimeout(() => setIsScanningKi(false), 600);
   };
 
   return (
@@ -186,14 +189,16 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
               type="button"
               onClick={handleScouterBeep}
               title="Medir Ki con Scouter (Sonido Clásico DBZ)"
-              className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold flex items-center gap-1 cursor-pointer transition shadow-sm ${
-                scouterReading.isOverload
+              className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold flex items-center gap-1 cursor-pointer transition select-none shadow-sm ${
+                isScanningKi
+                  ? 'bg-emerald-400 text-black shadow-[0_0_15px_rgba(52,211,153,0.9)] scale-105 ring-2 ring-emerald-300 animate-pulse'
+                  : scouterReading.isOverload
                   ? 'bg-red-950/90 border border-red-500 text-red-300 animate-pulse'
                   : 'bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/50 text-emerald-300'
               }`}
             >
               <span className="text-[10px]">📟</span>
-              <span>{scouterReading.formatted}</span>
+              <span>{isScanningKi ? 'ESCANEO...' : scouterReading.formatted}</span>
             </button>
             {character.range && (
               <span className="px-2 py-0.5 rounded bg-slate-900 border border-cyan-500/30 text-[10px] font-mono text-cyan-300 flex items-center gap-1">

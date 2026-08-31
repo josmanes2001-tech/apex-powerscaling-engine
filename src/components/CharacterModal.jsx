@@ -49,6 +49,7 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
   const [isTranslatingSheet, setIsTranslatingSheet] = useState(false);
   const [translationStatus, setTranslationStatus] = useState('');
   const [isCustomUniverseInput, setIsCustomUniverseInput] = useState(false);
+  const [isScanningKi, setIsScanningKi] = useState(false);
 
   const [formData, setFormData] = useState(() => {
     if (character) {
@@ -846,11 +847,13 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                 const scouter = calculateScouterReading(formData);
                 const breakdown = getPowerLevelFormulaBreakdown(formData);
                 const handleScouterBeep = () => {
+                  setIsScanningKi(true);
                   if (scouter.isOverload) {
                     SoundFX.playScouterExplosion();
                   } else {
-                    SoundFX.playScouterBeep(8);
+                    SoundFX.playScouterBeep(9);
                   }
+                  setTimeout(() => setIsScanningKi(false), 600);
                 };
                 return (
                   <div className="p-3.5 bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-950 border border-emerald-500/40 rounded-xl space-y-3 shadow-sm font-mono">
@@ -863,7 +866,7 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                           </span>
                           <div className="flex items-center gap-2 flex-wrap">
                             <span className={`text-base sm:text-lg font-black font-cinzel ${scouter.color}`}>
-                              {scouter.formatted}
+                              {isScanningKi ? 'ESCANEO...' : scouter.formatted}
                             </span>
                             <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400 font-mono font-bold">
                               {scouter.rank}
@@ -875,11 +878,15 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                       <button
                         type="button"
                         onClick={handleScouterBeep}
-                        className="px-3 py-1.5 rounded-xl bg-emerald-600/30 hover:bg-emerald-500/40 border border-emerald-400 text-emerald-200 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-sm shrink-0 self-start sm:self-auto"
+                        className={`px-3.5 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition cursor-pointer shadow-sm shrink-0 self-start sm:self-auto select-none ${
+                          isScanningKi
+                            ? 'bg-emerald-400 text-black border-emerald-300 ring-2 ring-emerald-300 scale-105 shadow-[0_0_15px_rgba(52,211,153,0.8)] animate-pulse'
+                            : 'bg-emerald-600/30 hover:bg-emerald-500/40 border-emerald-400 text-emerald-200'
+                        }`}
                         title="Medir Ki con Scouter y reproducir pitido electrónico"
                       >
                         <Zap className="w-3.5 h-3.5 text-emerald-300 animate-pulse" />
-                        <span>Escanear Ki (Sonido)</span>
+                        <span>{isScanningKi ? 'Escaneando Ki...' : 'Escanear Ki (Sonido)'}</span>
                       </button>
                     </div>
 
