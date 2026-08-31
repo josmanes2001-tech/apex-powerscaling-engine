@@ -414,7 +414,7 @@ function parseInlineMarkdown(text) {
 }
 
 // Motor Semántico de Biometría, Fases Inteligentes y Registro Crítico en Tiempo Real
-const parseSimulation = (text, simulationData, activeTab = 'all') => {
+const parseSimulation = (text, simulationData, activeTab = 'all', manualOverrides = {}) => {
   if (!text) return { phases: [], hpA: 100, stmA: 100, hpB: 100, stmB: 100, squadStats: [], squadStatsA: [], verdictInfo: null, criticalEvents: [] };
 
   // Helper: Name Tokenizer para evitar colisiones entre "Son Goku" y "Goku Black"
@@ -433,10 +433,23 @@ const parseSimulation = (text, simulationData, activeTab = 'all') => {
   const tokensA = getNameTokens(simulationData?.charA, 'contendiente a');
   const tokensB = getNameTokens(simulationData?.charB, 'contendiente b');
 
-  const hasFatality = (tokens, targetText = text) => {
+  const hasSurvival = (tokens, targetText = text) => {
     if (!tokens || !Array.isArray(tokens)) return false;
     for (const token of tokens) {
-      const regex = new RegExp(`(?:muerte\\s+(?:biol[oó]gica\\s+)?de\\s+${token}|${token}[^\\n]{0,40}?\\b(?:es\\s+asesinado|es\\s+desintegrado|es\\s+aniquilado|es\\s+eliminado|es\\s+borrado|cae\\s+muerto|fallece|muere\\b|\\bMUERTO\\b|0%\\s*HP))`, 'i');
+      if (!token || token.length < 3) continue;
+      const regex = new RegExp(`(?:${token}[^\\n\\r]{0,80}?\\b(?:SOBREVIVE|ESCAPA|HUYE|VIVO|SALVADO|CURADO|RECIBE SENZU|RESISTE|AGUANTA|VENCEDOR|GANADOR|VICTORIOSO|RETIRADA|SUPERVIVIENTE)\\b|\\b(?:SOBREVIVE|ESCAPA|HUYE|SUPERVIVIENTE|VIVO)\\b[^\\n\\r]{0,80}?${token})`, 'i');
+      if (regex.test(targetText)) return true;
+    }
+    return false;
+  };
+
+  const hasFatality = (tokens, targetText = text) => {
+    if (!tokens || !Array.isArray(tokens)) return false;
+    if (hasSurvival(tokens, targetText)) return false; // Si explícitamente sobrevivió/escapó, NO es fatalidad
+
+    for (const token of tokens) {
+      if (!token || token.length < 3) continue;
+      const regex = new RegExp(`(?:\\b${token}\\s+(?:es\\s+asesinad[oa]|es\\s+desintegrad[oa]|es\\s+aniquilad[oa]|es\\s+eliminad[oa]|cae\\s+muert[oa]|fallece|muere\\b|\\bMUERTO\\b|0%\\s*HP)|\\b(?:muerte\\s+de|fallecimiento\\s+de|asesinato\\s+de)\\s+${token}\\b)`, 'i');
       if (regex.test(targetText)) return true;
     }
     return false;
@@ -729,6 +742,15 @@ const parseSimulation = (text, simulationData, activeTab = 'all') => {
     let memStm = fallbackStm;
     let found = false;
 
+    // 0. Comprobación prioritaria de Anulación Manual (Clics de usuario)
+    if (manualOverrides && (manualOverrides[member?.id] !== undefined || manualOverrides[member?.name] !== undefined)) {
+      const val = manualOverrides[member?.id] !== undefined ? manualOverrides[member?.id] : manualOverrides[member?.name];
+      return {
+        hp: val,
+        stm: val === 0 ? 0 : 25
+      };
+    }
+
     // 1. Búsqueda prioritaria de formato de lista estructurada: - **Son Gohan**: 12% HP | 5% STM | Vivo-Crítico
     for (const token of memTokens) {
       if (token.length < 3) continue;
@@ -775,16 +797,24 @@ const parseSimulation = (text, simulationData, activeTab = 'all') => {
 
     // 2. Si no hay número explícito en el texto, estimar con seguridad
     if (!found) {
-      if (hasFatality(memTokens, chunkSource) || (activeTab === 'all' && hasFatality(memTokens, fullSource))) {
+      const isAlive = hasSurvival(memTokens, chunkSource) || (activeTab === 'all' && hasSurvival(memTokens, fullSource));
+      const isDead = !isAlive && (hasFatality(memTokens, chunkSource) || (activeTab === 'all' && hasFatality(memTokens, fullSource)));
+
+      if (isDead) {
         memHp = 0;
         memStm = 0;
+      } else if (isAlive) {
+        memHp = Math.max(18, Math.min(90, Math.max(fallbackHp, 25) + (idx % 8)));
+        memStm = Math.max(10, Math.min(70, Math.max(fallbackStm, 15)));
       } else if (hasExtremeIncapacity(memTokens, chunkSource) || hasExtremeIncapacity(memTokens, fullSource)) {
-        memHp = Math.max(4, Math.min(22, Math.round(fallbackHp * 0.35) + (idx % 6)));
-        memStm = Math.max(0, Math.min(12, Math.round(fallbackStm * 0.2)));
+        memHp = Math.max(6, Math.min(22, Math.round((fallbackHp || 30) * 0.35) + (idx % 6)));
+        memStm = Math.max(0, Math.min(12, Math.round((fallbackStm || 20) * 0.2)));
       } else {
+        const baseHp = fallbackHp > 0 ? fallbackHp : 25;
+        const baseStm = fallbackStm > 0 ? fallbackStm : 15;
         const variation = ((member?.name?.charCodeAt(0) || 10) + idx * 7) % 15 - 7;
-        memHp = Math.max(5, Math.min(100, fallbackHp + variation));
-        memStm = Math.max(0, Math.min(100, fallbackStm + variation));
+        memHp = Math.max(8, Math.min(100, baseHp + variation));
+        memStm = Math.max(4, Math.min(100, baseStm + variation));
       }
     }
 
@@ -857,6 +887,14 @@ export default function SimulationViewer({
   const [autoScroll, setAutoScroll] = useState(false); // Default to false so user can read freely without being dragged
   const [nextActionPrompt, setNextActionPrompt] = useState('');
   const [rpgDecisionsEnabled, setRpgDecisionsEnabled] = useState(true);
+  const [manualHpOverrides, setManualHpOverrides] = useState({});
+
+  const toggleFighterHpStatus = (idOrName, currentHp) => {
+    setManualHpOverrides(prev => ({
+      ...prev,
+      [idOrName]: currentHp === 0 ? 35 : 0
+    }));
+  };
   const [comicMode, setComicMode] = useState(false);
   const [isPlayingAutoplay, setIsPlayingAutoplay] = useState(false);
   const [showAnalytics, setShowAnalytics] = useState(false);
@@ -1024,7 +1062,7 @@ export default function SimulationViewer({
   const fullOutput = translateCombatChronicle(rawOutput, lang);
   const hasOutput = fullOutput.trim().length > 0;
   
-  const { phases, hpA, stmA, hpB, stmB, squadStats, squadStatsA, verdictInfo, criticalEvents } = parseSimulation(fullOutput, simulationData, activePhaseTab);
+  const { phases, hpA, stmA, hpB, stmB, squadStats, squadStatsA, verdictInfo, criticalEvents } = parseSimulation(fullOutput, simulationData, activePhaseTab, manualHpOverrides);
 
   // Evaluate Oracle Bets when battle completes
   useEffect(() => {
@@ -1984,14 +2022,19 @@ export default function SimulationViewer({
                       }`}>
                         <div className="flex justify-between items-center text-[10px] font-mono mb-1">
                           <span className="text-slate-200 font-bold truncate max-w-[110px]" title={member.name}>{member.name}</span>
-                          <span className={`px-1.5 py-0.2 rounded text-[9px] font-bold ${
-                            isDead ? 'bg-red-950 text-red-400 border border-red-900' :
-                            isCrit ? 'bg-rose-950 text-rose-300 border border-rose-800 animate-pulse' :
-                            isWounded ? 'bg-amber-950 text-amber-300 border border-amber-800' :
-                            'bg-emerald-950 text-emerald-300 border border-emerald-800'
-                          }`}>
+                          <button
+                            type="button"
+                            onClick={() => toggleFighterHpStatus(member.id || member.name, member.hp)}
+                            title="Clic para alternar estado de supervivencia (Vivo / Caído)"
+                            className={`px-1.5 py-0.2 rounded text-[9px] font-bold cursor-pointer transition select-none ${
+                              isDead ? 'bg-red-950 text-red-400 border border-red-900 hover:bg-emerald-950 hover:text-emerald-300' :
+                              isCrit ? 'bg-rose-950 text-rose-300 border border-rose-800 animate-pulse hover:opacity-80' :
+                              isWounded ? 'bg-amber-950 text-amber-300 border border-amber-800 hover:opacity-80' :
+                              'bg-emerald-950 text-emerald-300 border border-emerald-800 hover:opacity-80'
+                            }`}
+                          >
                             {isDead ? '💀 0%' : `${member.hp}%`}
-                          </span>
+                          </button>
                         </div>
                         <div className="h-1.5 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
                           <div 
@@ -2076,14 +2119,19 @@ export default function SimulationViewer({
                       }`}>
                         <div className="flex justify-between items-center text-[10px] font-mono mb-1">
                           <span className="text-slate-200 font-bold truncate max-w-[110px]" title={member.name}>{member.name}</span>
-                          <span className={`px-1.5 py-0.2 rounded text-[9px] font-bold ${
-                            isDead ? 'bg-red-950 text-red-400 border border-red-900' :
-                            isCrit ? 'bg-rose-950 text-rose-300 border border-rose-800 animate-pulse' :
-                            isWounded ? 'bg-amber-950 text-amber-300 border border-amber-800' :
-                            'bg-teal-950 text-teal-300 border border-teal-800'
-                          }`}>
+                          <button
+                            type="button"
+                            onClick={() => toggleFighterHpStatus(member.id || member.name, member.hp)}
+                            title="Clic para alternar estado de supervivencia (Vivo / Caído)"
+                            className={`px-1.5 py-0.2 rounded text-[9px] font-bold cursor-pointer transition select-none ${
+                              isDead ? 'bg-red-950 text-red-400 border border-red-900 hover:bg-emerald-950 hover:text-emerald-300' :
+                              isCrit ? 'bg-rose-950 text-rose-300 border border-rose-800 animate-pulse hover:opacity-80' :
+                              isWounded ? 'bg-amber-950 text-amber-300 border border-amber-800 hover:opacity-80' :
+                              'bg-teal-950 text-teal-300 border border-teal-800 hover:opacity-80'
+                            }`}
+                          >
                             {isDead ? '💀 0%' : `${member.hp}%`}
-                          </span>
+                          </button>
                         </div>
                         <div className="h-1.5 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
                           <div 
