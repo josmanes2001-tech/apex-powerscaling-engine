@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "server": "node server.cjs",
-    "start": "node server.cjs"
+    "start": "node server.cjs",
+    "apex:build-index": "node src/scripts/buildApexRosterIndex.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",

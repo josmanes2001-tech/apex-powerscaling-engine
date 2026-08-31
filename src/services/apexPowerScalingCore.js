@@ -113,22 +113,36 @@ export function assertMonotonic(a, b) {
   return true;
 }
 
+const TIER_KI_BASE = {
+  '10-C': 2, '10-B': 5, '10-A': 10,
+  '9-C': 20, '9-B': 40, '9-A': 80,
+  '8-C': 120, 'High 8-C': 160, '8-B': 220, '8-A': 300,
+  'Low 7-C': 350, '7-C': 420, 'High 7-C': 500, 'Low 7-B': 600, '7-B': 750, '7-A': 1200, 'High 7-A': 1500,
+  '6-C': 2500, 'High 6-C': 3500, 'Low 6-B': 5000, '6-B': 7500, 'High 6-B': 10000, '6-A': 14000, 'High 6-A': 16000,
+  '5-C': 18000, 'Low 5-B': 100000, '5-B': 530000, '5-A': 18000000, 'High 5-A': 60000000,
+  'Low 4-C': 150000000, '4-C': 450000000, 'High 4-C': 1200000000,
+  '4-B': 5500000000, '4-A': 80000000000,
+  '3-C': 1000000000000, '3-B': 5000000000000, '3-A': 25000000000000, 'High 3-A': 100000000000000,
+  'Low 2-C': 1000000000000000, '2-C': 10000000000000000, '2-B': 50000000000000000, '2-A': 500000000000000000,
+  'Low 1-C': 1e20, '1-C': 1e21, 'High 1-C': 1e22, '1-B': 1e24, 'High 1-B': 1e25,
+  'Low 1-A': 1e27, '1-A': Infinity, 'High 1-A': Infinity, '0': Infinity
+};
+
 /**
  * Mapeo de Visualización APEX-Ki (Escala de Ordenación y UI)
- * K_APEX = 18,000 * 6^(R(T) - R(5-A)) * 2^(q - 0.5)
  */
 export function calculateApexKiEquivalent(profile) {
   if (!profile) return { raw: 0, formatted: '0 Unidades', rank: 'Desconocido' };
   const tierKey = profile.tierExact || profile.tier || '10-B';
   const rank = tierIndex(tierKey);
-  const anchorRank = tierIndex('5-A'); // 5-A = 27
+  const canonicalTier = TIER_ORDER[rank] || '10-B';
   const q = withinTierQuality(profile);
   
-  const rankDiff = rank - anchorRank;
-  let kiValue = 18000 * Math.pow(6, rankDiff) * Math.pow(2, q - 0.5);
+  const baseVal = TIER_KI_BASE[canonicalTier] || 100;
+  let kiValue = baseVal === Infinity ? Infinity : baseVal * Math.pow(2, q - 0.5);
 
   // Formato UI amigable
-  return formatApexKiDisplay(kiValue, tierKey);
+  return formatApexKiDisplay(kiValue, canonicalTier);
 }
 
 export function formatApexKiDisplay(num, tierStr = '') {

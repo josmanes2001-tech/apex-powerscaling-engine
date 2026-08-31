@@ -1,4 +1,4 @@
-import { calculateApexPL, calculateApexKiEquivalent, tierIndex, withinTierQuality, comparePL } from './apexPowerScalingCore';
+import { calculateApexPL, calculateApexKiEquivalent, tierIndex, withinTierQuality, comparePL } from './apexPowerScalingCore.js';
 /**
  * APEX UNIVERSAL SCOUTER & POWER LEVEL ESTIMATION ENGINE
  * Basado en la Escala Canónica de Niveles de Poder de Dragon Ball (Daizenshuu, Guías Oficiales, DAIMA & VS Battles Wiki)
@@ -11,12 +11,44 @@ export const KNOWN_CANON_DB_LEVELS = [
   { pattern: /rey demonio piccolo|piccolo daimaoh|piccolo daimaho/i, base: 260, max: 330, name: 'Rey Demonio Piccolo' },
   { pattern: /piccolo jr|23.*torneo|23.*tenkaichi/i, base: 366, max: 1050, name: 'Piccolo Jr. (23º Torneo)' },
   { pattern: /^granjero|granjero con escopeta/i, base: 5, name: 'Granjero con escopeta' },
-  { pattern: /tortuga|umigame/i, base: 0.1, name: 'Umigame (Tortuga)' },
-  { pattern: /goku.*(niño|21.*tenkaichi)/i, base: 80, multiplier: { ssj: 1, oozaru: 10 }, name: 'Goku Niño (21º Torneo)' },
-  { pattern: /roshi|jackie/i, base: 180, max: 270, name: 'Maestro Roshi' },
+  { pattern: /^tortuga\b|^la tortuga\b|\bumigame\b/i, base: 0.1, name: 'Umigame (Tortuga)' },
+  { pattern: /goku.*(23.*tenkaichi|23.*torneo)/i, base: 370, max: 480, name: 'Goku (23º Tenkaichi Budokai)' },
+  { pattern: /goku.*(22.*tenkaichi|22.*torneo)/i, base: 180, max: 233, name: 'Goku (22º Tenkaichi Budokai)' },
+  { pattern: /goku.*(red ribbon|tao pai|agua)/i, base: 260, max: 290, name: 'Goku (Saga Red Ribbon / Daimaoh)' },
+  { pattern: /goku.*(niño|21.*tenkaichi|21.*torneo)/i, base: 80, oozaru: 800, name: 'Goku Niño (21º Torneo)' },
+  { pattern: /roshi|jackie chun/i, base: 180, max: 270, name: 'Maestro Roshi' },
+  { pattern: /krilin.*(22|23|tenkaichi|clásico|clasico|niño)/i, base: 200, name: 'Krilin (DB Clásico)' },
+  { pattern: /yamcha.*(22|23|tenkaichi|clásico|clasico|desierto)/i, base: 172, name: 'Yamcha (DB Clásico)' },
+  { pattern: /ten.*shin.*han.*(22|23|tenkaichi|clásico|clasico)/i, base: 240, max: 340, name: 'Tenshinhan (DB Clásico)' },
+  { pattern: /chaos.*(clásico|clasico|niño)/i, base: 144, name: 'Chaos (DB Clásico)' },
+  { pattern: /yajirobe.*(clásico|clasico|torneo|daimaoh)/i, base: 138, name: 'Yajirobe (DB Clásico)' },
   { pattern: /taopaipai|tao pai/i, base: 117, max: 201, name: 'Tao Pai Pai' },
+  { pattern: /general blue/i, base: 115, name: 'General Blue' },
+  { pattern: /mayor metallitron|metallitron/i, base: 94, name: 'Mayor Metallitron' },
+  { pattern: /androide 8|eighter/i, base: 91, name: 'Androide 8' },
+  { pattern: /comandante red/i, base: 88, name: 'Comandante Red' },
+  { pattern: /coronel silver/i, base: 82, name: 'Coronel Silver' },
+  { pattern: /coronel murasaki|murasaki/i, base: 67, name: 'Coronel Murasaki' },
+  { pattern: /tambourine/i, base: 154, name: 'Tambourine' },
+  { pattern: /cymbal/i, base: 148, name: 'Cymbal' },
+  { pattern: /drum/i, base: 182, name: 'Drum' },
+  { pattern: /piano/i, base: 3, name: 'Piano' },
   { pattern: /kami-sama|kamisama/i, base: 310, name: 'Kami-sama' },
   { pattern: /mr\. popo|popo/i, base: 1070, name: 'Mr. Popo' },
+  { pattern: /gyumao|ox-king/i, base: 73, name: 'Gyumao (Ox-King)' },
+  { pattern: /bora\b/i, base: 23, name: 'Bora' },
+  { pattern: /upa\b/i, base: 6, name: 'Upa' },
+  { pattern: /nam\b/i, base: 26, name: 'Nam' },
+  { pattern: /giran/i, base: 29, name: 'Giran' },
+  { pattern: /bacterian/i, base: 14, name: 'Bacterian' },
+  { pattern: /ranfan/i, base: 8, name: 'Ranfan' },
+  { pattern: /bulma\b/i, base: 4, name: 'Bulma' },
+  { pattern: /launch.*mala/i, base: 7, name: 'Launch (Mala)' },
+  { pattern: /launch/i, base: 3.5, name: 'Launch (Buena)' },
+  { pattern: /oolong/i, base: 2, name: 'Oolong' },
+  { pattern: /puar/i, base: 2, name: 'Puar' },
+  { pattern: /abuelo gohan|son gohan.*abuelo/i, base: 150, name: 'Abuelo Gohan' },
+  { pattern: /chichi.*(23|torneo|adolescente)/i, base: 130, name: 'Chi-Chi (23º Torneo)' },
 
   // 2. Variantes de Piccolo en DBZ, DBS, DAIMA y DBM
   { pattern: /piccolo.*(inicio.*saiyan|raditz|322|408)/i, base: 408, weighted: 322, max: 1480, name: 'Piccolo (Inicio Saga Saiyan / vs Raditz)' },
@@ -315,9 +347,15 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   let formMult = 1.0;
   let formLabel = 'Forma Base (x1.0)';
 
-  if (formName.includes('oozaru') || formName.includes('mono')) {
+  if (formName.includes('oozaru') || formName.includes('ohzaru') || formName.includes('mono') || formName.includes('simio')) {
     formMult = 10;
-    formLabel = 'Oozaru (x10)';
+    formLabel = 'Gran Simio / Oozaru (x10)';
+  } else if (formName.includes('kaioken x20') || formName.includes('kaio-ken x20')) {
+    formMult = 20;
+    formLabel = 'Kaiō-ken x20 (x20)';
+  } else if (formName.includes('kaioken x10') || formName.includes('kaio-ken x10')) {
+    formMult = 10;
+    formLabel = 'Kaiō-ken x10 (x10)';
   } else if (formName.includes('kaioken x4') || formName.includes('kaio-ken x4')) {
     formMult = 4;
     formLabel = 'Kaiō-ken x4 (x4)';
@@ -327,12 +365,18 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   } else if (formName.includes('kaioken x2') || formName.includes('kaio-ken x2')) {
     formMult = 2;
     formLabel = 'Kaiō-ken x2 (x2)';
+  } else if (formName.includes('ssj4') || formName.includes('super saiyan 4')) {
+    formMult = 4000;
+    formLabel = 'Super Saiyan 4 (x4000)';
   } else if (formName.includes('ssj3') || formName.includes('super saiyan 3')) {
     formMult = 400;
     formLabel = 'Super Saiyan 3 (x400)';
   } else if (formName.includes('ssj2') || formName.includes('super saiyan 2')) {
     formMult = 100;
     formLabel = 'Super Saiyan 2 (x100)';
+  } else if (formName.includes('fssj') || formName.includes('false super saiyan') || formName.includes('pseudo')) {
+    formMult = 25;
+    formLabel = 'False Super Saiyan (x25)';
   } else if (formName.includes('ssj') || formName.includes('super saiyan')) {
     formMult = 50;
     formLabel = 'Super Saiyan (x50)';

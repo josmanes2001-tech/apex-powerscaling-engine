@@ -1,0 +1,20 @@
+{
+  "totalRecords": 821,
+  "recordsWithValidTier": 821,
+  "recordsWithoutTier": 0,
+  "nonDragonBallWithNullSourceKi": 458,
+  "dragonBallWithExistingSourceKi": 44,
+  "temporaryGameplayReady": 821,
+  "needsManualIdentityReview": 32,
+  "genericMechanicsRemoved": 821,
+  "temporaryProfilesUsed": {
+    "martialArtist": 43,
+    "brute": 13,
+    "speedster": 8,
+    "strategist": 6,
+    "energyFighter": 339,
+    "haxSpecialist": 16,
+    "tank": 1,
+    "balanced": 395
+  }
+}
