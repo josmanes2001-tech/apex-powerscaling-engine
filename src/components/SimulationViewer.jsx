@@ -336,7 +336,7 @@ function RichCombatText({ content, isStreamingLast }) {
           const cleanItem = trimmed.replace(/^\d+\.\s*/, '');
           return (
             <div key={lIdx} className="flex items-start gap-3 text-slate-300 pl-2 group my-2 bg-slate-900/40 p-3 rounded-xl border border-slate-800/50">
-              <span className="text-cyan-400 font-black text-sm mt-0.5">{match[0]}</span>
+              <span className="text-cyan-400 font-black text-sm mt-0.5">{match?.[0] || '•'}</span>
               <div className="flex-1 leading-relaxed text-[13px]">{parseInlineMarkdown(cleanItem)}</div>
             </div>
           );
@@ -415,7 +415,7 @@ function parseInlineMarkdown(text) {
 
 // Motor Semántico de Biometría, Fases Inteligentes y Registro Crítico en Tiempo Real
 const parseSimulation = (text, simulationData, activeTab = 'all') => {
-  if (!text) return { phases: [], hpA: 100, stmA: 100, hpB: 100, stmB: 100, squadStats: [], verdictInfo: null, criticalEvents: [] };
+  if (!text) return { phases: [], hpA: 100, stmA: 100, hpB: 100, stmB: 100, squadStats: [], squadStatsA: [], verdictInfo: null, criticalEvents: [] };
 
   // Helper: Name Tokenizer para evitar colisiones entre "Son Goku" y "Goku Black"
   const getNameTokens = (charObj, fallback) => {
@@ -1237,23 +1237,23 @@ export default function SimulationViewer({
     if (simulationData?.charA) allActiveFighters.push({ ...simulationData.charA, side: 'A', hp: hpA, stm: stmA });
     if (simulationData?.charB) allActiveFighters.push({ ...simulationData.charB, side: 'B', hp: hpB, stm: stmB });
   } else if (matchMode === '1vN') {
-    if (simulationData?.charA) allActiveFighters.push({ ...simulationData.charA, side: 'Boss', hp: squadStatsA[0]?.hp ?? hpA, stm: squadStatsA[0]?.stm ?? stmA });
+    if (simulationData?.charA) allActiveFighters.push({ ...simulationData.charA, side: 'Boss', hp: squadStatsA?.[0]?.hp ?? hpA, stm: squadStatsA?.[0]?.stm ?? stmA });
     (simulationData?.bossMinions || []).forEach((m, idx) => {
-      allActiveFighters.push({ ...m, side: 'Aliado Boss', hp: squadStatsA[idx + 1]?.hp ?? hpA, stm: squadStatsA[idx + 1]?.stm ?? stmA });
+      allActiveFighters.push({ ...m, side: 'Aliado Boss', hp: squadStatsA?.[idx + 1]?.hp ?? hpA, stm: squadStatsA?.[idx + 1]?.stm ?? stmA });
     });
     (simulationData?.teamB || []).forEach((m, idx) => {
-      allActiveFighters.push({ ...m, side: 'Asaltante', hp: squadStats[idx]?.hp ?? hpB, stm: squadStats[idx]?.stm ?? stmB });
+      allActiveFighters.push({ ...m, side: 'Asaltante', hp: squadStats?.[idx]?.hp ?? hpB, stm: squadStats?.[idx]?.stm ?? stmB });
     });
   } else if (matchMode === 'teams') {
     (simulationData?.teamA || []).forEach((m, idx) => {
-      allActiveFighters.push({ ...m, side: 'Equipo Alfa', hp: squadStatsA[idx]?.hp ?? hpA, stm: squadStatsA[idx]?.stm ?? stmA });
+      allActiveFighters.push({ ...m, side: 'Equipo Alfa', hp: squadStatsA?.[idx]?.hp ?? hpA, stm: squadStatsA?.[idx]?.stm ?? stmA });
     });
     (simulationData?.teamB || []).forEach((m, idx) => {
-      allActiveFighters.push({ ...m, side: 'Equipo Beta', hp: squadStats[idx]?.hp ?? hpB, stm: squadStats[idx]?.stm ?? stmB });
+      allActiveFighters.push({ ...m, side: 'Equipo Beta', hp: squadStats?.[idx]?.hp ?? hpB, stm: squadStats?.[idx]?.stm ?? stmB });
     });
   } else if (matchMode === 'battle_royale') {
     (simulationData?.battleRoyale || []).forEach((m, idx) => {
-      allActiveFighters.push({ ...m, side: 'Battle Royale', hp: squadStats[idx]?.hp ?? hpB, stm: squadStats[idx]?.stm ?? stmB });
+      allActiveFighters.push({ ...m, side: 'Battle Royale', hp: squadStats?.[idx]?.hp ?? hpB, stm: squadStats?.[idx]?.stm ?? stmB });
     });
   }
 
