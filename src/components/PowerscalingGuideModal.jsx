@@ -7,7 +7,7 @@ import { POWERSCALING_TIERING_SYSTEM, SPEED_SCALE_SYSTEM, DURABILITY_RULES, UNIV
 import { getTranslation } from '../services/i18n';
 
 export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' }) {
-  const [activeTab, setActiveTab] = useState('tiers');
+  const [activeTab, setActiveTab] = useState('powerlevels');
   const [searchQuery, setSearchQuery] = useState('');
 
   if (!isOpen) return null;
@@ -15,6 +15,7 @@ export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' })
   const t = (k) => getTranslation(lang, k);
 
   const TABS = [
+    { id: 'powerlevels', label: lang === 'en' ? 'Power Levels & Scouter (DB vs APEX)' : lang === 'ja' ? '戦闘力＆スカウター（DB vs APEX）' : '🥋 Niveles de Poder & Scouter (DB vs APEX)', icon: Flame },
     { id: 'tiers', label: lang === 'en' ? 'Tiering System (11-C to 0)' : lang === 'ja' ? '階級システム（11-C〜Tier 0）' : 'Sistema de Tiers (11-C a 0)', icon: Scale },
     { id: 'joules', label: lang === 'en' ? 'AP & Joules Energy Table' : lang === 'ja' ? '攻撃力＆ジュール変換表' : 'Tabla de AP & Julios', icon: Zap },
     { id: 'speed', label: lang === 'en' ? 'Speed & Speed Blitz Math' : lang === 'ja' ? '速度階級＆電光石火' : 'Velocidad & Speed Blitz', icon: Crosshair },
@@ -77,6 +78,209 @@ export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' })
             );
           })}
         </div>
+
+        {/* Tab 0: Power Levels & Scouter (DB Canon vs APEX Universal) */}
+        {activeTab === 'powerlevels' && (
+          <div className="space-y-6 font-sans text-slate-200">
+            {/* Header Banner */}
+            <div className="p-4 rounded-2xl bg-gradient-to-r from-red-950/60 via-amber-950/40 to-slate-900 border border-amber-500/40 shadow-lg space-y-2">
+              <div className="flex items-center gap-2 text-amber-400 font-bold font-mono text-sm">
+                <Flame className="w-4 h-4 text-orange-400 animate-pulse" />
+                <span>Arquitectura Dual de Niveles de Poder: Ki Canónico DB vs APEX-Ki Universal</span>
+              </div>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                El motor APEX resuelve la contradicción clásica del power scaling mediante <strong>dos métricas complementarias</strong>: 
+                el <strong>Ki Canónico (Scouter)</strong> oficial de Dragon Ball (Daizenshuu, Guías Oficiales y DAIMA) para fidelidad de lore, y el <strong>APEX-Ki</strong>, una métrica universal y estrictamente monotónica que garantiza que un personaje de tier superior siempre supere a uno inferior en cualquier enfrentamiento cross-verse.
+              </p>
+            </div>
+
+            {/* Principles Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                <div className="flex items-center gap-2 text-amber-300 font-bold text-xs font-mono">
+                  <span>📟 1. Scouter Ki Canónico (Dragon Ball)</span>
+                </div>
+                <p className="text-[11px] text-slate-300 leading-relaxed">
+                  Lecturas cuantitativas directas según los manuales oficiales de Akira Toriyama y Toei Animation. Solo se aplica a sagas y personajes de Dragon Ball.
+                </p>
+                <div className="p-2.5 rounded-lg bg-black/50 border border-slate-800 text-[10px] space-y-1 font-mono text-slate-400">
+                  <div>• <strong>Goku Niño (21º Torneo):</strong> 80 Unidades (Oozaru: 800)</div>
+                  <div>• <strong>Goku vs Piccolo Daimaoh:</strong> 260 – 290 Unidades</div>
+                  <div>• <strong>Goku 23º Torneo:</strong> 370 Unidades (Super Kamehameha: 480)</div>
+                  <div>• <strong>Goku Saga Saiyan:</strong> 8.618 Unidades (Kaio-ken x4: 36.700)</div>
+                  <div>• <strong>Vegeta Saiyan:</strong> 18.000 Unidades (Oozaru: 180.000)</div>
+                  <div>• <strong>Freezer Forma Final (100%):</strong> 128.000.000 Unidades</div>
+                  <div>• <strong>Goku Super Saiyan (Namek):</strong> 150.000.000 Unidades</div>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs font-mono">
+                  <span>⚡ 2. APEX-Ki & Escala Universal (Cross-Verse)</span>
+                </div>
+                <p className="text-[11px] text-slate-300 leading-relaxed">
+                  Escala de combate calibrada que traduce el <strong>Tier Destructivo (AP)</strong> y las 6 estadísticas a un valor comparable universalmente, evitando colapsos numéricos.
+                </p>
+                <div className="p-2.5 rounded-lg bg-black/50 border border-slate-800 text-[10px] space-y-1 font-mono text-slate-400">
+                  <div>• <strong>Tier 7-B (Ciudad - Yujiro / Baki / Homelander):</strong> ~650 – 750 APEX-Ki</div>
+                  <div>• <strong>Tier 7-A (Montaña - Gojo / Sukuna):</strong> ~1.000 – 1.200 APEX-Ki</div>
+                  <div>• <strong>Tier 5-A (Planeta Grande - Vegeta Saiyan):</strong> 18.000.000 APEX-Ki</div>
+                  <div>• <strong>Tier 4-A (Multi-Solar - Saitama / Garou Cósmico):</strong> ~80 – 97 Mil Millones</div>
+                  <div>• <strong>Tier 2-C (Multiversal - Goku DBS / Superman):</strong> 10.000 Billones APEX-Ki</div>
+                  <div>• <strong>Tier 1-C a 1-A (Trascendente):</strong> Escala dimensional infinita</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Official Multipliers Table */}
+            <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3">
+              <div className="flex items-center justify-between">
+                <h4 className="font-bold text-xs font-mono text-amber-300 flex items-center gap-2">
+                  <span>📈 Tabla Maestra de Multiplicadores Canónicos</span>
+                  <span className="px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-[9px] border border-amber-500/30">Oficial Daizenshuu & Super</span>
+                </h4>
+              </div>
+              <div className="overflow-x-auto border border-slate-800 rounded-xl">
+                <table className="w-full text-left border-collapse text-[11px]">
+                  <thead>
+                    <tr className="bg-slate-950 border-b border-slate-800 text-slate-400 font-mono">
+                      <th className="p-2.5 font-bold">Transformación / Técnica</th>
+                      <th className="p-2.5 font-bold">Multiplicador</th>
+                      <th className="p-2.5 font-bold">Efecto / Condiciones</th>
+                      <th className="p-2.5 font-bold">Ejemplo Canónico</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800/60 font-mono text-[10px]">
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-amber-400 font-bold">Oozaru / Gran Simio</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×10</td>
+                      <td className="p-2.5 text-slate-300">Luna llena o Blutz Waves artificiales</td>
+                      <td className="p-2.5 text-slate-400">Goku Niño (80 → 800), Vegeta (18k → 180k)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-red-400 font-bold">Kaio-ken (x1 a x20)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×1.5 a ×20</td>
+                      <td className="p-2.5 text-slate-300">Multiplicación de Ki con estrés físico severo</td>
+                      <td className="p-2.5 text-slate-400">Goku vs Vegeta (KKx3: 27.525, KKx4: 36.700)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-amber-300 font-bold">Super Saiyan (SSJ1)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×50</td>
+                      <td className="p-2.5 text-slate-300">Despertar por furia legendaria</td>
+                      <td className="p-2.5 text-slate-400">Goku Namek (Base 3M → SSJ 150M)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-amber-300 font-bold">Super Saiyan Grade 2 (Ultra)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×62.5</td>
+                      <td className="p-2.5 text-slate-300">×1.25 sobre SSJ con hipertrofia controlada</td>
+                      <td className="p-2.5 text-slate-400">Vegeta vs Cell Semiperfecto (1.28B)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-amber-300 font-bold">Super Saiyan Grade 3</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×100 (-75% Vel)</td>
+                      <td className="p-2.5 text-slate-300">Fuerza bruta extrema con pérdida crítica de agilidad</td>
+                      <td className="p-2.5 text-slate-400">Trunks del Futuro vs Cell Perfecto (2.04B)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-yellow-400 font-bold">Super Saiyan 2 (SSJ2)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×100 (×2 SSJ)</td>
+                      <td className="p-2.5 text-slate-300">Rayo eléctrico, velocidad y AP duplicados sin penalización</td>
+                      <td className="p-2.5 text-slate-400">Gohan vs Cell Games (Base 56M → SSJ2 5.6B)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-yellow-300 font-bold">Super Saiyan 3 (SSJ3)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×400 (×4 SSJ2)</td>
+                      <td className="p-2.5 text-slate-300">Extracción de potencial oculto con drenaje masivo</td>
+                      <td className="p-2.5 text-slate-400">Goku vs Buu Gordo (31.200.000.000)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-red-500 font-bold">Super Saiyan 4 (GT)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×4.000</td>
+                      <td className="p-2.5 text-slate-300">Control del Gran Simio Dorado</td>
+                      <td className="p-2.5 text-slate-400">Goku SSJ4 (2,24 Billones), Gogeta SSJ4 (440 Billones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-red-400 font-bold">Super Saiyan God (SSG)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×6.400</td>
+                      <td className="p-2.5 text-slate-300">Ritual divino o entrenamiento angelical</td>
+                      <td className="p-2.5 text-slate-400">Goku vs Bills (524 Mil Millones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-cyan-400 font-bold">Super Saiyan Blue (SSB)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×7.700</td>
+                      <td className="p-2.5 text-slate-300">SSJ superpuesto al Ki Divino</td>
+                      <td className="p-2.5 text-slate-400">Goku SSB (631 Mil Millones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-blue-400 font-bold">SSB Evolution (SSBE)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×77.000</td>
+                      <td className="p-2.5 text-slate-300">×10 sobre SSB estándar logrado por Vegeta</td>
+                      <td className="p-2.5 text-slate-400">Vegeta vs Jiren / Toppo Hakaishin (6,2 Billones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-slate-300 font-bold">Ultra Instinto Signo (UI)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×150.000</td>
+                      <td className="p-2.5 text-slate-300">Separación mente-cuerpo incompleta</td>
+                      <td className="p-2.5 text-slate-400">Goku UI Signo (12,3 Billones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-white font-bold">Ultra Instinto Dominado (MUI)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×300.000</td>
+                      <td className="p-2.5 text-slate-300">Maestría divina autónoma absoluta</td>
+                      <td className="p-2.5 text-slate-400">Goku MUI (24,6 Billones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-rose-300 font-bold">Gohan Beast (Bestia)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×1.000.000</td>
+                      <td className="p-2.5 text-slate-300">Evolución genética única desatada por furia</td>
+                      <td className="p-2.5 text-slate-400">Gohan Beast vs Cell Max (77 Billones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-orange-400 font-bold">Orange Piccolo</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">×10.000</td>
+                      <td className="p-2.5 text-slate-300">Regalo de Shenron sobre Namekiano Desbloqueado</td>
+                      <td className="p-2.5 text-slate-400">Piccolo Super Hero (14 Billones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-purple-400 font-bold">Fusión Potara (Vegetto)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">(A + B) × 1.120</td>
+                      <td className="p-2.5 text-slate-300">Multiplicación simbiótica con pendientes Kaio-shin</td>
+                      <td className="p-2.5 text-slate-400">Super Vegetto SSJ (5 Trillones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-orange-300 font-bold">Danza Fusión (Gogeta)</td>
+                      <td className="p-2.5 text-emerald-400 font-bold">(A + B) × 1.000</td>
+                      <td className="p-2.5 text-slate-300">Sincronización perfecta Metamoru durante 30 min</td>
+                      <td className="p-2.5 text-slate-400">Gogeta SSJ (7,6 Billones), Gogeta Blue (1,25 Trillones)</td>
+                    </tr>
+                    <tr className="hover:bg-slate-800/40">
+                      <td className="p-2.5 text-pink-400 font-bold">Compresión DAIMA Mini</td>
+                      <td className="p-2.5 text-amber-400 font-bold">÷10 (×0.1)</td>
+                      <td className="p-2.5 text-slate-300">Reducción corporal y compresión de masa mágica</td>
+                      <td className="p-2.5 text-slate-400">Goku Adulto (100M) → Goku Mini (10M)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Hax & Tier Separation Explanation */}
+            <div className="p-4 rounded-xl bg-purple-950/30 border border-purple-800/50 space-y-2">
+              <h4 className="font-bold text-xs font-mono text-purple-300 flex items-center gap-2">
+                <span>🔮 Desacople Esencial: Hax Conceptual vs Tier de Daño Físico</span>
+              </h4>
+              <p className="text-[11px] text-slate-300 leading-relaxed">
+                Tener habilidades intangibles o conceptuales (como el <em>Infinity</em> de Satoru Gojo, el <em>Return to Zero</em> de Giorno GER o el control mental de Makima) <strong>NO incrementa su Potencia de Ataque Físico ni su Tier Destructivo</strong>. 
+                En el motor APEX:
+              </p>
+              <ul className="list-disc list-inside text-[10px] space-y-1 text-slate-400 font-mono">
+                <li>El <strong>Tier Destructivo</strong> mide cuántos Julios de energía física o de área puede generar el cuerpo (ej. Gojo = Tier 7-A Montaña).</li>
+                <li>Las habilidades conceptuales se ejecutan a través de <strong>specialMechanics</strong> y <strong>haxReliability</strong>, resolviéndose durante el combate táctico sin distorsionar la ordenación global.</li>
+                <li><strong>Garantía Monotónica:</strong> Ningún personaje de Tier inferior superará a uno de Tier superior en <code>powerKey</code>, impidiendo por diseño anomalías matemáticas.</li>
+              </ul>
+            </div>
+          </div>
+        )}
 
         {/* Tab 1: Tiering System */}
         {activeTab === 'tiers' && (
