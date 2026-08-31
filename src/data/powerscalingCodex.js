@@ -120,10 +120,13 @@ export function calculateFormScaledStats(character, formIndex = 0) {
   let powerMultiplier = 1.0;
 
   if (activeForm && activeForm.stats) {
-    const statsText = activeForm.stats.toLowerCase();
+    const rawStats = typeof activeForm.stats === 'string'
+      ? activeForm.stats
+      : (typeof activeForm.stats === 'object' ? (activeForm.stats.ap || activeForm.stats.tier || JSON.stringify(activeForm.stats)) : String(activeForm.stats));
+    const statsText = rawStats.toLowerCase();
     
     // 1. Detect Tier inside form stats
-    const tierMatch = activeForm.stats.match(/(Tier\s*[\w\-\+]+|High\s*[\w\-\+]+|Low\s*[\w\-\+]+)/i);
+    const tierMatch = rawStats.match(/(Tier\s*[\w\-\+]+|High\s*[\w\-\+]+|Low\s*[\w\-\+]+)/i);
     if (tierMatch) {
       scaledTier = tierMatch[1];
     } else {
@@ -141,8 +144,9 @@ export function calculateFormScaledStats(character, formIndex = 0) {
     }
 
     // 2. Derive AP & Durability
-    scaledAP = `${activeForm.name}: ${activeForm.stats}`;
-    scaledDurability = `Escalado a ${activeForm.name} (${activeForm.stats.split('.')[0]})`;
+    scaledAP = `${activeForm.name || 'Forma'}: ${rawStats}`;
+    const splitPart = rawStats.includes('.') ? rawStats.split('.')[0] : rawStats;
+    scaledDurability = `Escalado a ${activeForm.name || 'Forma'} (${splitPart})`;
 
     // 3. Multiplier heuristics
     if (statsText.includes('ssj3') || statsText.includes('x400') || statsText.includes('400')) powerMultiplier = 400;
@@ -157,7 +161,7 @@ export function calculateFormScaledStats(character, formIndex = 0) {
     if (powerMultiplier >= 100) {
       scaledSpeed = `MFTL+ (Multiplicador ${powerMultiplier}x sobre base)`;
     } else if (powerMultiplier >= 10) {
-      scaledSpeed = `MFTL (Potenciado por ${activeForm.name})`;
+      scaledSpeed = `MFTL (Potenciado por ${activeForm.name || 'Forma'})`;
     }
   }
 

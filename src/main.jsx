@@ -51,26 +51,46 @@ class ErrorBoundary extends Component {
               ⚠️ RECUPERACIÓN DE ESTADO APEX
             </h2>
             <p style={{ color: '#cbd5e1', fontSize: '13px', lineHeight: '1.6' }}>
-              Se detectó un conflicto con los datos almacenados en tu navegador.
+              Se detectó un conflicto con los datos en ejecución o almacenados en tu navegador.
             </p>
-            <p style={{ color: '#f87171', fontSize: '11px', margin: '12px 0', wordBreak: 'break-all' }}>
-              {this.state.error?.message || 'Error desconocido'}
-            </p>
-            <button
-              onClick={this.handleReset}
-              style={{
-                backgroundColor: '#dc2626',
-                color: '#ffffff',
-                border: 'none',
-                padding: '10px 20px',
-                borderRadius: '8px',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                marginTop: '12px'
-              }}
-            >
-              🔄 Restablecer Bóveda & Recargar
-            </button>
+            <div style={{ color: '#f87171', fontSize: '11px', margin: '12px 0', wordBreak: 'break-all', textAlign: 'left', background: '#00000088', padding: '10px', borderRadius: '8px', maxHeight: '160px', overflowY: 'auto' }}>
+              <strong>Error:</strong> {this.state.error?.message || 'Error desconocido'}
+              {this.state.error?.stack && (
+                <pre style={{ marginTop: '6px', fontSize: '10px', color: '#94a3b8', whiteSpace: 'pre-wrap' }}>
+                  {this.state.error.stack}
+                </pre>
+              )}
+            </div>
+            <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '12px' }}>
+              <button
+                onClick={() => this.setState({ hasError: false, error: null })}
+                style={{
+                  backgroundColor: '#334155',
+                  color: '#ffffff',
+                  border: 'none',
+                  padding: '10px 16px',
+                  borderRadius: '8px',
+                  fontWeight: 'bold',
+                  cursor: 'pointer'
+                }}
+              >
+                Ignorar & Continuar
+              </button>
+              <button
+                onClick={this.handleReset}
+                style={{
+                  backgroundColor: '#dc2626',
+                  color: '#ffffff',
+                  border: 'none',
+                  padding: '10px 16px',
+                  borderRadius: '8px',
+                  fontWeight: 'bold',
+                  cursor: 'pointer'
+                }}
+              >
+                🔄 Restablecer Bóveda & Recargar
+              </button>
+            </div>
           </div>
         </div>
       );
