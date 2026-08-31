@@ -6,49 +6,59 @@
 
 // Mapeo Canónico exacto de personajes conocidos de DB para máxima fidelidad
 export const KNOWN_CANON_DB_LEVELS = [
-  // Clásico
-  { pattern: /granjero/i, base: 5, name: 'Granjero con escopeta' },
-  { pattern: /tortuga/i, base: 0.1, name: 'Umigame (Tortuga)' },
+  // 1. Dragon Ball Clásico & Daimaoh
+  { pattern: /rey demonio piccolo|piccolo daimaoh|piccolo daimaho/i, base: 260, max: 330, name: 'Rey Demonio Piccolo' },
+  { pattern: /piccolo jr|23.*torneo|23.*tenkaichi/i, base: 366, max: 1050, name: 'Piccolo Jr. (23º Torneo)' },
+  { pattern: /^granjero|granjero con escopeta/i, base: 5, name: 'Granjero con escopeta' },
+  { pattern: /tortuga|umigame/i, base: 0.1, name: 'Umigame (Tortuga)' },
   { pattern: /goku.*(niño|21.*tenkaichi)/i, base: 80, multiplier: { ssj: 1, oozaru: 10 }, name: 'Goku Niño (21º Torneo)' },
   { pattern: /roshi|jackie/i, base: 180, max: 270, name: 'Maestro Roshi' },
   { pattern: /taopaipai|tao pai/i, base: 117, max: 201, name: 'Tao Pai Pai' },
-  { pattern: /piccolo daima|rey demonio piccolo/i, base: 260, max: 330, name: 'Rey Demonio Piccolo' },
   { pattern: /kami-sama|kamisama/i, base: 310, name: 'Kami-sama' },
   { pattern: /mr\. popo|popo/i, base: 1070, name: 'Mr. Popo' },
-  { pattern: /piccolo jr|23.*tenkaichi/i, base: 366, max: 1050, name: 'Piccolo Jr. (23º Torneo)' },
 
-  // Saga Saiyan
-  { pattern: /raditz/i, base: 1300, max: 1500, oozaru: 13000, name: 'Raditz' },
+  // 2. Variantes de Piccolo en DBZ, DBS, DAIMA y DBM
+  { pattern: /piccolo.*(inicio.*saiyan|raditz|322|408)/i, base: 408, weighted: 322, max: 1480, name: 'Piccolo (Inicio Saga Saiyan / vs Raditz)' },
+  { pattern: /piccolo.*(final.*saiyan|nappa|invasi[oó]n saiyan|3500|3\.5k|4k)/i, base: 3500, weighted: 1220, max: 4200, name: 'Piccolo (Final Saga Saiyan / vs Nappa)' },
+  { pattern: /piccolo.*(saga saiyan)/i, base: 3500, weighted: 1220, max: 4200, name: 'Piccolo (Saga Saiyan)' },
+  { pattern: /piccolo.*(saga namek|nail)/i, base: 1300000, name: 'Piccolo (Fusión con Nail)' },
+  { pattern: /piccolo.*(kami|androide|cell)/i, base: 360000000, name: 'Super Namekian Piccolo (Saga Cell)' },
+  { pattern: /piccolo.*(buu|finales.*z)/i, base: 800000000, name: 'Piccolo (Saga Buu / Finales Z)' },
+  { pattern: /piccolo.*(new hope)/i, base: 158400000000, name: 'Piccolo (New Hope)' },
+  { pattern: /orange piccolo|piccolo.*(orange|naranja|superhero|super hero)/i, base: 14000000000000, name: 'Orange Piccolo (DBS Super Hero)' },
+  { pattern: /piccolo.*(daima mini|mini)/i, base: 110000000, name: 'Piccolo Mini (DAIMA)' },
+  { pattern: /piccolo.*(saga super|dbs)/i, base: 12000000000, name: 'Piccolo (Saga Super)' },
+
+  // 3. Saga Saiyan
+  { pattern: /^raditz|\braditz\b(?!.*piccolo)(?!.*goku)/i, base: 1500, max: 1500, oozaru: 15000, name: 'Raditz' },
   { pattern: /saibaman|saibaimen/i, base: 1200, max: 2600, name: 'Saibaman' },
   { pattern: /yamcha.*(saiyan|kaio)/i, base: 1480, name: 'Yamcha (Saga Saiyan)' },
   { pattern: /chaos|chiaotzu/i, base: 660, max: 1980, name: 'Chaos' },
   { pattern: /ten.*shin.*han.*(saiyan|kaio)/i, base: 1830, max: 3450, name: 'Tenshinhan (Saga Saiyan)' },
   { pattern: /krilin.*(saiyan)/i, base: 1770, name: 'Krilin (Saga Saiyan)' },
-  { pattern: /piccolo.*(saiyan|raditz|nappa)/i, base: 408, weighted: 322, max: 1480, trained: 3000, name: 'Piccolo (Saga Saiyan)' },
   { pattern: /gohan.*(niño)/i, base: 1100, rage: 2800, oozaru: 11000, name: 'Gohan Niño' },
-  { pattern: /nappa/i, base: 4600, max: 7200, name: 'Nappa' },
+  { pattern: /^nappa|\bnappa\b(?!.*piccolo)/i, base: 4600, max: 7200, name: 'Nappa' },
   { pattern: /vegeta.*(llegada|tierra)/i, base: 18000, max: 24000, oozaru: 180000, name: 'Vegeta (Llegada a la Tierra)' },
   { pattern: /goku.*(llegada dbz|saiyan)/i, base: 8618, kaioken1: 13762, kaioken2: 18350, kaioken3: 27525, kaioken4: 36700, name: 'Goku (Saga Saiyan)' },
 
-  // Saga Namek
-  { pattern: /cui/i, base: 18000, name: 'Cui' },
-  { pattern: /dodoria/i, base: 21000, name: 'Dodoria' },
-  { pattern: /zarbon/i, base: 22000, monster: 33000, name: 'Zarbon' },
-  { pattern: /nail/i, base: 42000, name: 'Nail' },
-  { pattern: /guldo/i, base: 11500, name: 'Guldo' },
-  { pattern: /burter/i, base: 43000, name: 'Burter' },
-  { pattern: /jeice/i, base: 44000, name: 'Jeice' },
-  { pattern: /recoome/i, base: 45000, name: 'Recoome' },
+  // 4. Saga Namek
+  { pattern: /^cui|\bcui\b/i, base: 18000, name: 'Cui' },
+  { pattern: /^dodoria|\bdodoria\b/i, base: 21000, name: 'Dodoria' },
+  { pattern: /^zarbon|\bzarbon\b/i, base: 22000, monster: 33000, name: 'Zarbon' },
+  { pattern: /^nail|\bnail\b(?!.*piccolo)/i, base: 42000, name: 'Nail' },
+  { pattern: /^guldo|\bguldo\b/i, base: 11500, name: 'Guldo' },
+  { pattern: /^burter|\bburter\b/i, base: 43000, name: 'Burter' },
+  { pattern: /^jeice|\bjeice\b/i, base: 44000, name: 'Jeice' },
+  { pattern: /^recoome|\brecoome\b/i, base: 45000, name: 'Recoome' },
   { pattern: /ginyu/i, base: 120000, name: 'Capitán Ginyu' },
   { pattern: /vegeta.*(namek)/i, base: 385000, max: 490000, name: 'Vegeta (Namek Zenkai)' },
-  { pattern: /piccolo.*(namek|nail)/i, base: 1300000, name: 'Piccolo (Fusión con Nail)' },
   { pattern: /freezer.*(1.*forma|primera)/i, base: 530000, name: 'Freezer (1ª Forma)' },
   { pattern: /freezer.*(2.*forma|segunda)/i, base: 1100000, name: 'Freezer (2ª Forma)' },
   { pattern: /freezer.*(3.*forma|tercera)/i, base: 2000000, name: 'Freezer (3ª Forma)' },
   { pattern: /freezer.*(final|100%)/i, base: 128000000, name: 'Freezer (Forma Final 100%)' },
   { pattern: /goku.*(namek|super saiyan)/i, base: 3000000, ssj: 150000000, name: 'Goku Super Saiyan (Namek)' },
 
-  // Saga Androides / Cell
+  // 5. Saga Androides / Cell
   { pattern: /mecha freezer/i, base: 156000000, name: 'Mecha Freezer' },
   { pattern: /trunks.*(futuro.*17|ssj)/i, base: 240000000, ssjGrade3: 2040000000, name: 'Trunks del Futuro SSJ' },
   { pattern: /androide 19/i, base: 100000000, name: 'Androide 19' },
@@ -56,7 +66,6 @@ export const KNOWN_CANON_DB_LEVELS = [
   { pattern: /androide 17/i, base: 360000000, name: 'Androide 17' },
   { pattern: /androide 18/i, base: 350000000, name: 'Androide 18' },
   { pattern: /androide 16/i, base: 470000000, name: 'Androide 16' },
-  { pattern: /piccolo.*(kami|androides)/i, base: 360000000, postRosat: 720000000, name: 'Super Namekian Piccolo' },
   { pattern: /cell.*(imperfecto|larva)/i, base: 390000000, max: 470000000, name: 'Cell Imperfecto' },
   { pattern: /cell.*(semi)/i, base: 940000000, name: 'Cell Semiperfecto' },
   { pattern: /cell.*(perfecto)/i, base: 3400000000, name: 'Cell Perfecto' },
@@ -64,7 +73,7 @@ export const KNOWN_CANON_DB_LEVELS = [
   { pattern: /goku.*(cell games|fpssj)/i, base: 2700000000, name: 'Goku Full Power SSJ' },
   { pattern: /gohan.*(cell games|ssj2)/i, base: 2800000000, ssj2: 5600000000, max: 6200000000, name: 'Gohan SSJ2 (Cell Games)' },
 
-  // Saga Buu
+  // 6. Saga Buu
   { pattern: /dabura/i, base: 3000000000, name: 'Dabura' },
   { pattern: /majin vegeta/i, base: 7500000000, finalExplosion: 23000000000, name: 'Majin Vegeta SSJ2' },
   { pattern: /goku.*(ssj3|buu)/i, base: 75000000, ssj3: 31200000000, name: 'Goku SSJ3' },
@@ -76,7 +85,7 @@ export const KNOWN_CANON_DB_LEVELS = [
   { pattern: /vegetto.*(z|super)/i, base: 100000000000, ssj: 5000000000000, name: 'Super Vegetto (Z)' },
   { pattern: /kid buu/i, base: 32000000000, name: 'Kid Buu' },
 
-  // Super & Películas
+  // 7. Super & Películas
   { pattern: /beerus|bills/i, base: 820000000000, max: 8200000000000, name: 'Bills Dios de la Destrucción' },
   { pattern: /whis/i, base: 50000000000000, name: 'Whis' },
   { pattern: /golden freezer/i, base: 639000000000, name: 'Golden Freezer' },
@@ -89,19 +98,17 @@ export const KNOWN_CANON_DB_LEVELS = [
   { pattern: /broly.*(lssj|super)/i, base: 18000000000, wrathful: 630000000000, lssj: 36000000000000, name: 'Broly LSSJ (Super)' },
   { pattern: /gogeta.*(blue)/i, base: 1247000000000000, name: 'Gogeta Blue' },
   { pattern: /gohan beast|gohan bestia/i, base: 77000000000000, name: 'Gohan Beast' },
-  { pattern: /orange piccolo|piccolo naranja/i, base: 14000000000000, name: 'Orange Piccolo' },
   { pattern: /cell max/i, base: 22000000000000, name: 'Cell Max' },
 
-  // DAIMA (Compresión Mini ÷10)
-  { pattern: /goku.*(daima|mini)/i, base: 10000000, ssj: 500000000, ssj3: 3000000000, name: 'Goku Mini (DAIMA)' },
-  { pattern: /vegeta.*(daima|mini)/i, base: 9000000, ssj: 450000000, ssj3: 2700000000, name: 'Vegeta Mini (DAIMA)' },
-  { pattern: /piccolo.*(daima|mini)/i, base: 110000000, full: 1100000000, name: 'Piccolo Mini (DAIMA)' },
+  // 8. DAIMA (Compresión Mini ÷10)
+  { pattern: /goku.*(daima.*mini|mini)/i, base: 10000000, ssj: 500000000, ssj3: 3000000000, name: 'Goku Mini (DAIMA)' },
+  { pattern: /vegeta.*(daima.*mini|mini)/i, base: 9000000, ssj: 450000000, ssj3: 2700000000, name: 'Vegeta Mini (DAIMA)' },
   { pattern: /glorio/i, base: 2500000, name: 'Glorio' },
   { pattern: /gomah/i, base: 232, ojo: 11600000000, gigante: 116000000000, name: 'Rey Gomah' },
   { pattern: /majin duu/i, base: 550000000, full: 1100000000, ssj3: 3300000000, name: 'Majin Duu' },
   { pattern: /tamagami 1/i, base: 1060000000, name: 'Tamagami 1' },
 
-  // GT
+  // 9. GT
   { pattern: /goku.*(ssj4|gt)/i, base: 560000000, ssj4: 2240000000000, name: 'Goku SSJ4 (GT)' },
   { pattern: /vegeta.*(ssj4|gt)/i, base: 550000000, ssj4: 2200000000000, name: 'Vegeta SSJ4 (GT)' },
   { pattern: /gogeta.*(ssj4)/i, base: 440000000000000, name: 'Gogeta SSJ4 (GT)' }
@@ -331,7 +338,7 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   } else if (formName.includes('beast') || formName.includes('bestia')) {
     formMult = 1000000;
     formLabel = 'Gohan Beast (x1,000,000)';
-  } else if (formName.includes('daima') || formName.includes('mini')) {
+  } else if (formName.includes('daima mini') || formName.includes('mini') || /\bdaima\b/i.test(formName)) {
     formMult = 0.1;
     formLabel = 'Compresión DAIMA (÷10)';
   } else if (/([0-9\.]+)\s*x/i.test(formMultiplierStr)) {
@@ -343,7 +350,7 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   }
 
   // Comprobar si hay override estático canónico
-  const fullName = ((character.name || '') + ' ' + (character.alias || '')).toLowerCase();
+  const fullName = ((character.name || '') + ' ' + (character.saga || '')).toLowerCase();
   let canonOverride = null;
   for (const item of KNOWN_CANON_DB_LEVELS) {
     if (item.pattern.test(fullName)) {
