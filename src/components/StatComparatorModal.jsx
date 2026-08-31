@@ -6,7 +6,7 @@ import {
 import { getFranchiseCategoriesList } from '../services/franchiseHelper';
 import { calculateFormScaledStats, POWERSCALING_TIERING_SYSTEM, SPEED_SCALE_SYSTEM } from '../data/powerscalingCodex';
 import { SoundFX } from '../services/soundFx';
-import { calculateScouterReading } from '../services/scouterEngine';
+import { calculateScouterReading, getPowerLevelFormulaBreakdown } from '../services/scouterEngine';
 
 // Full VS Battles tier scoring with sub-tiers A/B/C
 const TIER_SCORE_MAP = [
@@ -548,6 +548,59 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
             ? '🔥 Riesgo inminente de "Speed Blitz" y daño crítico.'
             : '💀 Disparidad absoluta. Ataques ordinarios rebotan (Tanqueo puro).'}
         </div>
+      </div>
+
+      {/* Botón y Panel Desplegable: Fórmula Matemática Universal */}
+      <div className="pt-1">
+        <details className="group border border-emerald-900/40 rounded-xl bg-slate-950/60 overflow-hidden">
+          <summary className="px-3 py-2 text-[10px] font-bold text-emerald-400 hover:text-emerald-300 cursor-pointer flex items-center justify-between transition select-none">
+            <span className="flex items-center gap-1.5">
+              <span>📐</span>
+              <span>Ver Ecuación y Desglose Matemático de Power Scaling (Fórmula Universal)</span>
+            </span>
+            <span className="text-slate-500 group-open:rotate-90 transition-transform">▶</span>
+          </summary>
+          
+          <div className="p-3 border-t border-emerald-950 space-y-2 text-[10px] text-slate-300 bg-slate-950">
+            <div className="p-2 rounded-lg bg-emerald-950/30 border border-emerald-500/30 text-emerald-300 font-mono">
+              <span className="font-bold block text-[11px] text-emerald-200">Fórmula Universal de Calibración de Ki:</span>
+              <code>Nivel de Poder (PL) = Energía Base(Tier en Joules) × M_Velocidad × M_Defensa × M_Hax/IQ × M_Forma</code>
+            </div>
+
+            {/* Desglose Luchador A */}
+            {(() => {
+              const bA = getPowerLevelFormulaBreakdown(characterA, formAId);
+              const bB = getPowerLevelFormulaBreakdown(characterB, formBId);
+              return (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 font-mono">
+                  {bA && (
+                    <div className="p-2 rounded-lg bg-slate-900 border border-red-900/40 space-y-1">
+                      <span className="text-red-400 font-bold block">{characterA?.name} ({bA.activeFormName})</span>
+                      <p className="text-[9px] text-slate-400">• Base Tier: {bA.tier} ({bA.baseEnergyValue === Infinity ? 'Infinito' : bA.baseEnergyValue.toLocaleString()} Ki)</p>
+                      <p className="text-[9px] text-slate-400">• Modificador Velocidad: {bA.speedLabel}</p>
+                      <p className="text-[9px] text-slate-400">• Modificador Durabilidad: {bA.durabilityLabel}</p>
+                      <p className="text-[9px] text-slate-400">• Modificador Hax/IQ: {bA.haxBiqLabel}</p>
+                      <p className="text-[9px] text-slate-400">• Multiplicador Forma: {bA.formLabel}</p>
+                      <p className="text-[9.5px] text-amber-300 font-bold pt-0.5">📟 Similar Canónico: {bA.closestDbComparison}</p>
+                    </div>
+                  )}
+
+                  {bB && (
+                    <div className="p-2 rounded-lg bg-slate-900 border border-blue-900/40 space-y-1">
+                      <span className="text-blue-400 font-bold block">{characterB?.name} ({bB.activeFormName})</span>
+                      <p className="text-[9px] text-slate-400">• Base Tier: {bB.tier} ({bB.baseEnergyValue === Infinity ? 'Infinito' : bB.baseEnergyValue.toLocaleString()} Ki)</p>
+                      <p className="text-[9px] text-slate-400">• Modificador Velocidad: {bB.speedLabel}</p>
+                      <p className="text-[9px] text-slate-400">• Modificador Durabilidad: {bB.durabilityLabel}</p>
+                      <p className="text-[9px] text-slate-400">• Modificador Hax/IQ: {bB.haxBiqLabel}</p>
+                      <p className="text-[9px] text-slate-400">• Multiplicador Forma: {bB.formLabel}</p>
+                      <p className="text-[9.5px] text-amber-300 font-bold pt-0.5">📟 Similar Canónico: {bB.closestDbComparison}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
+          </div>
+        </details>
       </div>
     </div>
   );

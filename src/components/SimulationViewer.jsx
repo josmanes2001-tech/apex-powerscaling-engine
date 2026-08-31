@@ -890,9 +890,10 @@ export default function SimulationViewer({
     });
   };
   const [rpgChoices, setRpgChoices] = useState([
-    { letter: '🅰️', label: 'Sobrecarga de Ataque / Forzar Límite', prompt: 'El personaje arriesga su integridad física canalizando toda su energía en un asalto frontal implacable para quebrar la guardia rival.' },
-    { letter: '🅱️', label: 'Replegarse al Entorno / Maniobra Táctica', prompt: 'Se repliega hacia los puntos ciegos y escombros del escenario, usando el magma/gravedad del mapa para ganar tiempo y recomponer su postura.' },
-    { letter: '🅲', label: 'Contramedida Hax / Técnica Secreta', prompt: 'Prepara en secreto su habilidad pasiva o técnica definitiva más peligrosa a distancia cero como contraataque definitivo.' }
+    { letter: '🅰️', color: 'red', label: 'Sobrecarga de Ataque / Forzar Límite', prompt: 'El personaje arriesga su integridad física canalizando toda su energía en un asalto frontal implacable para quebrar la guardia rival a costa de retroceso.' },
+    { letter: '🅱️', color: 'blue', label: 'Replegarse al Entorno / Maniobra Táctica', prompt: 'Se repliega hacia los puntos ciegos y escombros del escenario, usando el magma/gravedad del mapa para ganar tiempo y recomponer su postura.' },
+    { letter: '🅲', color: 'purple', label: 'Contramedida Hax / Técnica Secreta', prompt: 'Prepara en secreto su habilidad pasiva o técnica definitiva más peligrosa a distancia cero como contraataque definitivo.' },
+    { letter: '🅳', color: 'amber', label: 'Despertar de Emergencia / Transformación de Crisis', prompt: 'Al borde de la derrota, libera una nueva forma latente, Zenkai o evolución reactiva que re-escala el combate.' }
   ]);
 
   const generateUniversalCombatArt = async (promptSubject, style = 'anime') => {
@@ -1433,6 +1434,22 @@ export default function SimulationViewer({
                 <Eye className="w-3.5 h-3.5 text-orange-400" />
                 <span>{getTranslation(lang, 'comicMode')}</span>
               </button>
+
+              {/* Botón Acceso Rápido Decisiones RPG / Libro-Juego */}
+              {hasOutput && (
+                <button
+                  onClick={() => {
+                    setRpgDecisionsEnabled(true);
+                    const el = document.getElementById('rpg-decision-board');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600/30 via-indigo-600/30 to-purple-600/30 hover:from-cyan-600/50 text-cyan-200 text-xs font-mono font-bold transition cursor-pointer border border-cyan-500/50 shadow-md animate-pulse"
+                  title="Ir directamente al Modo Libro-Juego Interactivo (Decisiones Tácticas RPG)"
+                >
+                  <FastForward className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>🎲 Decisiones RPG</span>
+                </button>
+              )}
 
               {/* Botón Galería & Arte de Batalla */}
               <button
@@ -2515,21 +2532,33 @@ export default function SimulationViewer({
           })}
           {/* Continuation & RPG Decision Board */}
           {hasOutput && !isSimulating && onContinueSimulation && (
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-cyan-950/30 via-slate-900/70 to-purple-950/30 border border-cyan-500/40 shadow-xl space-y-4 font-mono relative z-10">
+            <div 
+              id="rpg-decision-board"
+              className="p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-cyan-950/50 via-slate-950 to-purple-950/50 border-2 border-cyan-500/60 shadow-[0_0_35px_rgba(6,182,212,0.25)] space-y-4 font-mono relative z-10 my-4"
+            >
               
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-3">
-                <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs">
-                  <FastForward className="w-4 h-4 text-cyan-400 animate-pulse" />
-                  <span>Modo Libro-Juego Interactivo (Decisiones Tácticas RPG):</span>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
+                <div className="flex items-center gap-2.5">
+                  <div className="p-2 rounded-xl bg-cyan-600/30 border border-cyan-400 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.4)] animate-pulse">
+                    <FastForward className="w-5 h-5 text-cyan-300" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm sm:text-base font-bold text-cyan-300 uppercase tracking-wider font-cinzel">
+                      🎲 Modo Libro-Juego Interactivo (Decisiones Tácticas RPG)
+                    </h3>
+                    <p className="text-[10px] text-slate-400 font-mono">
+                      Toma el control del combate: elige la táctica de supervivencia para el siguiente acto o introduce un giro argumental libre.
+                    </p>
+                  </div>
                 </div>
                 
                 <div className="flex items-center gap-2">
                   <button
                     type="button"
                     onClick={() => setRpgDecisionsEnabled(!rpgDecisionsEnabled)}
-                    className={`px-3 py-1 rounded-xl text-[10px] font-bold uppercase transition cursor-pointer border ${
+                    className={`px-3 py-1.5 rounded-xl text-[10px] font-bold uppercase transition cursor-pointer border ${
                       rpgDecisionsEnabled 
-                        ? 'bg-purple-600/30 border-purple-500/60 text-purple-200' 
+                        ? 'bg-cyan-600/30 border-cyan-400 text-cyan-200 shadow-[0_0_10px_rgba(6,182,212,0.3)]' 
                         : 'bg-slate-900 border-slate-800 text-slate-500'
                     }`}
                   >
@@ -2538,56 +2567,83 @@ export default function SimulationViewer({
                 </div>
               </div>
 
-              {/* 3 RPG Tactical Choice Cards */}
+              {/* 4 RPG Tactical Choice Cards */}
               {rpgDecisionsEnabled && (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-                  {(rpgChoices || []).map((choice, cIdx) => (
-                    <button
-                      key={cIdx}
-                      type="button"
-                      onClick={() => onContinueSimulation(choice.prompt)}
-                      className="relative p-4 rounded-xl text-left bg-gradient-to-br from-slate-900 to-slate-950 border-2 border-slate-700 hover:border-cyan-400 hover:from-cyan-950/40 hover:to-slate-900 transition-all cursor-pointer group shadow-lg transform hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(6,182,212,0.5)] overflow-hidden flex flex-col justify-between min-h-[110px]"
-                    >
-                      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                      
-                      <div className="flex items-start justify-between mb-2">
-                        <span className="text-sm font-black font-cinzel tracking-wide text-slate-300 group-hover:text-cyan-300 drop-shadow-md">
-                          {choice.letter} {choice.label}
-                        </span>
-                      </div>
-                      
-                      <p className="text-[11px] font-mono text-slate-400 leading-snug group-hover:text-cyan-100/90 transition-colors">
-                        {choice.prompt}
-                      </p>
-                      
-                      <div className="absolute bottom-2 right-3 opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0">
-                        <span className="text-[10px] font-bold font-mono text-cyan-400 bg-cyan-950 px-2 py-1 rounded border border-cyan-800">
-                          SELECCIONAR ▶
-                        </span>
-                      </div>
-                    </button>
-                  ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1">
+                  {(rpgChoices || []).map((choice, cIdx) => {
+                    const borderColors = [
+                      'hover:border-red-500/80 hover:from-red-950/40',
+                      'hover:border-blue-500/80 hover:from-blue-950/40',
+                      'hover:border-purple-500/80 hover:from-purple-950/40',
+                      'hover:border-amber-500/80 hover:from-amber-950/40'
+                    ];
+                    const glowColors = [
+                      'text-red-400 group-hover:text-red-300',
+                      'text-blue-400 group-hover:text-blue-300',
+                      'text-purple-400 group-hover:text-purple-300',
+                      'text-amber-400 group-hover:text-amber-300'
+                    ];
+
+                    return (
+                      <button
+                        key={cIdx}
+                        type="button"
+                        onClick={() => onContinueSimulation(choice.prompt)}
+                        className={`relative p-3.5 rounded-xl text-left bg-gradient-to-br from-slate-900 to-slate-950 border-2 border-slate-800 ${borderColors[cIdx % borderColors.length]} hover:to-slate-900 transition-all cursor-pointer group shadow-lg transform hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(6,182,212,0.4)] overflow-hidden flex flex-col justify-between min-h-[125px]`}
+                      >
+                        <div className="flex items-start justify-between mb-2">
+                          <span className={`text-xs font-black font-cinzel tracking-wide ${glowColors[cIdx % glowColors.length]} drop-shadow`}>
+                            {choice.letter} {choice.label}
+                          </span>
+                        </div>
+                        
+                        <p className="text-[10.5px] font-mono text-slate-400 leading-snug group-hover:text-slate-200 transition-colors mb-3">
+                          {choice.prompt}
+                        </p>
+                        
+                        <div className="flex justify-end">
+                          <span className="text-[9.5px] font-bold font-mono text-cyan-300 bg-cyan-950/80 px-2 py-1 rounded border border-cyan-700/80 group-hover:bg-cyan-600 group-hover:text-white transition">
+                            SELECCIONAR ▶
+                          </span>
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
               )}
 
               {/* Free Text Input & Custom Next Act */}
-              <div className="pt-2 border-t border-slate-800/60 space-y-2">
-                <div className="flex items-center justify-between text-[10px] text-slate-400">
-                  <span>O escribe tu propia acción / giro libre:</span>
-                  <div className="flex items-center gap-1">
+              <div className="pt-3 border-t border-slate-800 space-y-2.5">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[10px] text-slate-400">
+                  <span className="font-bold text-slate-300">⚡ O escribe tu propia acción / giro argumental:</span>
+                  <div className="flex items-center gap-1.5 flex-wrap">
                     <button
                       type="button"
-                      onClick={() => setNextActionPrompt("Aparece un tercer contendiente sorpresa para desafiar al superviviente.")}
-                      className="px-2 py-0.5 rounded bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800"
+                      onClick={() => setNextActionPrompt("Aparece un tercer contendiente sorpresa de otra dimensión para intervenir en el choque.")}
+                      className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:border-cyan-500 transition"
                     >
                       💥 3er Contendiente
                     </button>
                     <button
                       type="button"
-                      onClick={() => setNextActionPrompt("El escenario colapsa por completo y ambos son transportados al infierno.")}
-                      className="px-2 py-0.5 rounded bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800"
+                      onClick={() => setNextActionPrompt("El terreno colapsa en un vórtice cósmico y ambos luchadores son transportados a otra dimensión.")}
+                      className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:border-purple-500 transition"
                     >
                       🌌 Colapso Dimensional
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setNextActionPrompt("Uno de los luchadores realiza una técnica de fusión o invocación de emergencia para salvarse.")}
+                      className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:border-amber-500 transition"
+                    >
+                      ⚡ Fusión de Crisis
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setNextActionPrompt("El villano lanza una técnica de auto-destrucción total para llevarse consigo a su oponente.")}
+                      className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:border-red-500 transition"
+                    >
+                      🩸 Ataque Kamikaze
                     </button>
                   </div>
                 </div>
@@ -2604,17 +2660,17 @@ export default function SimulationViewer({
                         setNextActionPrompt('');
                       }
                     }}
-                    placeholder="¿Qué pasa ahora? (Escribe una acción personalizada o déjalo vacío para continuar)..."
-                    className="flex-1 p-2.5 px-3.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs focus:border-cyan-500 focus:outline-none transition placeholder:text-slate-600"
+                    placeholder="¿Qué pasa ahora? (Escribe una acción personalizada o déjalo vacío para continuar el siguiente acto)..."
+                    className="flex-1 p-2.5 px-3.5 rounded-xl bg-slate-950 border border-slate-700 text-slate-200 text-xs focus:border-cyan-400 focus:outline-none transition placeholder:text-slate-600 shadow-inner"
                   />
                   <button
                     onClick={() => {
                       onContinueSimulation(nextActionPrompt);
                       setNextActionPrompt('');
                     }}
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold text-xs shadow-lg shadow-cyan-950/60 transition cursor-pointer flex items-center justify-center gap-2 shrink-0"
+                    className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white font-bold text-xs shadow-lg shadow-cyan-950/80 transition cursor-pointer flex items-center justify-center gap-2 shrink-0 border border-cyan-400/50"
                   >
-                    <FastForward className="w-4 h-4" />
+                    <FastForward className="w-4 h-4 text-cyan-200" />
                     <span>Siguiente Acto ▶</span>
                   </button>
                 </div>

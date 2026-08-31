@@ -9,7 +9,7 @@ import { SimulationEngine } from '../services/simulationEngine';
 import { translateCharacterSheet } from '../services/translatorService';
 import { UNIVERSE_PRESETS } from '../services/franchiseHelper';
 import { SoundFX } from '../services/soundFx';
-import { calculateScouterReading } from '../services/scouterEngine';
+import { calculateScouterReading, getPowerLevelFormulaBreakdown } from '../services/scouterEngine';
 
 const COMMON_HAX_TAGS = [
   'Negación de Durabilidad',
@@ -844,6 +844,7 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
               {/* Scouter Ki Reading Module */}
               {(() => {
                 const scouter = calculateScouterReading(formData);
+                const breakdown = getPowerLevelFormulaBreakdown(formData);
                 const handleScouterBeep = () => {
                   if (scouter.isOverload) {
                     SoundFX.playScouterExplosion();
@@ -852,33 +853,51 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                   }
                 };
                 return (
-                  <div className="p-3 bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-950 border border-emerald-500/40 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-sm">
-                    <div className="flex items-center gap-2.5">
-                      <span className="text-xl animate-pulse">📟</span>
-                      <div>
-                        <span className="text-[10px] text-slate-400 font-bold block uppercase tracking-wider">
-                          Nivel de Poder Canónico (Ki / Scouter):
-                        </span>
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <span className={`text-base sm:text-lg font-black font-cinzel ${scouter.color}`}>
-                            {scouter.formatted}
+                  <div className="p-3.5 bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-950 border border-emerald-500/40 rounded-xl space-y-3 shadow-sm font-mono">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-xl animate-pulse">📟</span>
+                        <div>
+                          <span className="text-[10px] text-slate-400 font-bold block uppercase tracking-wider">
+                            Nivel de Poder Canónico (Ki / Scouter):
                           </span>
-                          <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400 font-mono font-bold">
-                            {scouter.rank}
-                          </span>
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className={`text-base sm:text-lg font-black font-cinzel ${scouter.color}`}>
+                              {scouter.formatted}
+                            </span>
+                            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400 font-mono font-bold">
+                              {scouter.rank}
+                            </span>
+                          </div>
                         </div>
                       </div>
+
+                      <button
+                        type="button"
+                        onClick={handleScouterBeep}
+                        className="px-3 py-1.5 rounded-xl bg-emerald-600/30 hover:bg-emerald-500/40 border border-emerald-400 text-emerald-200 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-sm shrink-0 self-start sm:self-auto"
+                        title="Medir Ki con Scouter y reproducir pitido electrónico"
+                      >
+                        <Zap className="w-3.5 h-3.5 text-emerald-300 animate-pulse" />
+                        <span>Escanear Ki (Sonido)</span>
+                      </button>
                     </div>
 
-                    <button
-                      type="button"
-                      onClick={handleScouterBeep}
-                      className="px-3 py-1.5 rounded-xl bg-emerald-600/30 hover:bg-emerald-500/40 border border-emerald-400 text-emerald-200 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-sm shrink-0 self-start sm:self-auto"
-                      title="Medir Ki con Scouter y reproducir pitido electrónico"
-                    >
-                      <Zap className="w-3.5 h-3.5 text-emerald-300 animate-pulse" />
-                      <span>Escanear Ki (Sonido)</span>
-                    </button>
+                    {breakdown && (
+                      <details className="group border-t border-emerald-900/40 pt-2">
+                        <summary className="text-[10px] text-emerald-400 hover:text-emerald-300 font-bold cursor-pointer flex items-center justify-between transition select-none">
+                          <span>📐 Desglose de la Fórmula: PL = E_Tier × M_Vel × M_Def × M_Hax/IQ</span>
+                          <span className="text-slate-500 group-open:rotate-90 transition-transform">▶</span>
+                        </summary>
+                        <div className="mt-2 p-2.5 rounded-lg bg-slate-950/80 border border-emerald-900/30 text-[9.5px] space-y-1 text-slate-300">
+                          <p><span className="text-slate-400">• Energía Base Tier:</span> <span className="text-amber-300 font-bold">{formData.tier || 'Tier 7-B'} ({breakdown.baseEnergyValue === Infinity ? 'Infinito' : breakdown.baseEnergyValue.toLocaleString()} Ki)</span></p>
+                          <p><span className="text-slate-400">• Modificador Velocidad:</span> <span className="text-cyan-300">{breakdown.speedLabel}</span></p>
+                          <p><span className="text-slate-400">• Modificador Durabilidad:</span> <span className="text-emerald-300">{breakdown.durabilityLabel}</span></p>
+                          <p><span className="text-slate-400">• Modificador Hax/Battle IQ:</span> <span className="text-purple-300">{breakdown.haxBiqLabel}</span></p>
+                          <p><span className="text-slate-400">• Rango DB Similar:</span> <span className="text-amber-400 font-bold">Similar a {breakdown.closestDbComparison}</span></p>
+                        </div>
+                      </details>
+                    )}
                   </div>
                 );
               })()}
