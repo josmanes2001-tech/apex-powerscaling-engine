@@ -1,3 +1,4 @@
+import { calculateApexPL, calculateApexKiEquivalent, tierIndex, withinTierQuality, comparePL } from './apexPowerScalingCore';
 /**
  * APEX UNIVERSAL SCOUTER & POWER LEVEL ESTIMATION ENGINE
  * Basado en la Escala Canónica de Niveles de Poder de Dragon Ball (Daizenshuu, Guías Oficiales, DAIMA & VS Battles Wiki)
@@ -383,12 +384,37 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
     }
   }
 
+    // 6. Cálculo Invariante APEX Core (BigInt y Escala Monotónica de Ki Universal)
+  const profile = {
+    id: character.id || 'char-id',
+    tierExact: character.tierExact || character.tier,
+    ap: (speed.factor / 5.0) * 0.8 + 0.2,
+    speed: speed.factor / 5.0,
+    durability: (durability.factor - 1.0) / 1.0,
+    form: Math.min(1.0, formMult / 50.0),
+    battleIQ: (haxBiq.factor - 1.0) / 1.2,
+    haxReliability: (character.haxTags?.length || 0) / 10.0
+  };
+
+  const apexPLBigInt = calculateApexPL(profile);
+  const apexKi = calculateApexKiEquivalent(profile);
+
+  // Determinar si hay sourceKi histórico oficial de Dragon Ball
+  let sourceKi = character.sourceKi || (canonOverride && !canonOverride.calculatedOnly ? canonOverride.base : null);
+  if (sourceKi && formMult > 1) sourceKi = Math.round(sourceKi * formMult);
+
   const scouter = formatScouterResult(finalVal, character.tier);
 
   return {
     characterName: character.name,
     activeFormName: activeForm.name || 'Forma Base',
     tier: character.tier,
+    tierExact: character.tierExact || character.tier,
+    apexPL: apexPLBigInt.toString(),
+    apexKi: apexKi.formatted,
+    apexKiRaw: apexKi.raw,
+    sourceKi: sourceKi,
+    sourceKiFormatted: sourceKi ? (sourceKi.toLocaleString('es-ES') + ' Unidades (Canon DB)') : null,
     baseEnergyValue: baseEnergy.value,
     speedFactor: speed.factor,
     speedLabel: speed.label,
@@ -398,11 +424,11 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
     haxBiqLabel: haxBiq.label,
     formMultiplier: formMult,
     formLabel: formLabel,
-    finalPowerLevel: finalVal,
-    formattedKi: scouter.formatted,
-    rank: scouter.rank,
-    isOverload: scouter.isOverload,
-    formulaExpression: 'PL = ' + baseEnergy.value.toLocaleString() + ' [Tier] × ' + speed.factor + ' [Vel.] × ' + durability.factor.toFixed(2) + ' [Def.] × ' + haxBiq.factor.toFixed(2) + ' [Hax/IQ] × ' + formMult + ' [Forma] = ' + scouter.formatted,
+    finalPowerLevel: apexKi.raw,
+    formattedKi: sourceKi ? (sourceKi.toLocaleString('es-ES') + ' Unidades') : apexKi.formatted,
+    rank: apexKi.rank,
+    isOverload: apexKi.isOverload,
+    formulaExpression: 'PL_APEX = B^R(T) × [Q_min + ΔQ·q] | APEX-Ki = ' + apexKi.formatted + (sourceKi ? (' | Scouter Canónico DB: ' + sourceKi.toLocaleString('es-ES') + ' Unidades') : ''),
     closestDbComparison: closestDb ? (closestDb.name + ' (' + closestDb.base.toLocaleString() + ' Ki)') : 'Desconocido'
   };
 }

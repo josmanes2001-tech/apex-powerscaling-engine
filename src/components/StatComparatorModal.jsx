@@ -431,13 +431,16 @@ function FighterCardConfig({
 function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
   const [isScanning, setIsScanning] = useState(false);
 
+  const breakdownA = useMemo(() => getPowerLevelFormulaBreakdown(characterA, formAId), [characterA, formAId]);
+  const breakdownB = useMemo(() => getPowerLevelFormulaBreakdown(characterB, formBId), [characterB, formBId]);
+
   const scouterA = useMemo(() => calculateScouterReading(characterA, formAId), [characterA, formAId]);
   const scouterB = useMemo(() => calculateScouterReading(characterB, formBId), [characterB, formBId]);
 
   const handleScan = () => {
     setIsScanning(true);
 
-    if (scouterA.isOverload || scouterB.isOverload) {
+    if (breakdownA?.isOverload || breakdownB?.isOverload) {
       SoundFX.playScouterExplosion();
     } else {
       SoundFX.playScouterBeep(8);
@@ -448,18 +451,24 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
     }, 450);
   };
 
-  const ratio = useMemo(() => {
-    if (scouterA.rawValue === Infinity || scouterB.rawValue === Infinity) return 'INCONMENSURABLE';
-    if (scouterA.rawValue <= 0 || scouterB.rawValue <= 0) return '1.0x';
-    const r = scouterA.rawValue >= scouterB.rawValue
-      ? (scouterA.rawValue / Math.max(1, scouterB.rawValue)).toFixed(1)
-      : (scouterB.rawValue / Math.max(1, scouterA.rawValue)).toFixed(1);
-    return `${r}x`;
-  }, [scouterA, scouterB]);
+  // Comparación Invariante y Monotónica APEX
+  const valA = breakdownA?.apexKiRaw || breakdownA?.finalPowerLevel || 1;
+  const valB = breakdownB?.apexKiRaw || breakdownB?.finalPowerLevel || 1;
+  const isAOverload = breakdownA?.isOverload;
+  const isBOverload = breakdownB?.isOverload;
 
-  const leaderName = scouterA.rawValue >= scouterB.rawValue ? characterA?.name : characterB?.name;
-  const isAOverload = scouterA.isOverload;
-  const isBOverload = scouterB.isOverload;
+  const ratio = useMemo(() => {
+    if (valA === Infinity || valB === Infinity) return 'INCONMENSURABLE (DIVINO)';
+    if (valA <= 0 || valB <= 0) return '1.0x';
+    const rawRatio = valA >= valB ? valA / Math.max(1, valB) : valB / Math.max(1, valA);
+    if (rawRatio >= 1e9) return '> 1.000.000.000x (Abismo Cósmico)';
+    if (rawRatio >= 1e6) return (rawRatio / 1e6).toFixed(1) + 'M x';
+    if (rawRatio >= 1e3) return (rawRatio / 1e3).toFixed(1) + 'k x';
+    return rawRatio.toFixed(1) + 'x';
+  }, [valA, valB]);
+
+  const isALeading = valA >= valB;
+  const leaderName = isALeading ? characterA?.name : characterB?.name;
 
   return (
     <div className="p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-950 to-emerald-950/40 border border-emerald-500/50 shadow-[0_0_25px_rgba(16,185,129,0.15)] space-y-3 font-mono text-xs">
@@ -472,7 +481,7 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
               {isScanning && <span className="text-red-400 text-[10px] animate-ping font-mono">ESCANEO ACTIVO...</span>}
             </h4>
             <p className="text-[10px] text-slate-400">
-              Calibración matemática según Guías Daizenshuu, Saga DAIMA y Escala Energética VS Battles
+              Sistema Invariante APEX: sourceKi (Canon DB) + APEX-Ki Monotónico (Universal)
             </p>
           </div>
         </div>
@@ -480,7 +489,7 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
         <button
           type="button"
           onClick={handleScan}
-          className="px-3 py-1.5 rounded-xl bg-emerald-600/30 hover:bg-emerald-500/40 border border-emerald-400 text-emerald-200 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-[0_0_12px_rgba(16,185,129,0.3)] self-start sm:self-auto"
+          className="px-3 py-1.5 rounded-xl bg-emerald-600/30 hover:bg-emerald-500/40 border border-emerald-400 text-emerald-200 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-[0_0_12px_rgba(16,185,129,0.3)] self-start sm:self-auto select-none"
         >
           <Zap className="w-3.5 h-3.5 text-emerald-300 animate-pulse" />
           <span>Escanear Ki (Sonido Scouter)</span>
@@ -496,13 +505,18 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
         }`}>
           <div className="flex justify-between items-center text-[11px]">
             <span className="font-bold text-red-400 truncate">{characterA?.name}</span>
-            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400">{scouterA.rank}</span>
+            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400">{breakdownA?.rank || scouterA.rank}</span>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className={`text-base sm:text-lg font-black tracking-tight font-cinzel ${scouterA.color}`}>
-              {isScanning ? '888,888...' : scouterA.formatted}
+            <span className={`text-base sm:text-lg font-black tracking-tight font-cinzel ${breakdownA?.isOverload ? 'text-fuchsia-400' : 'text-emerald-400'}`}>
+              {isScanning ? '888,888...' : (breakdownA?.apexKi || scouterA.formatted)}
             </span>
           </div>
+          {breakdownA?.sourceKi && (
+            <div className="text-[9px] text-amber-300 bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40 font-mono">
+              📜 Scouter Canónico: <span className="font-bold">{breakdownA.sourceKi.toLocaleString('es-ES')} Unidades</span>
+            </div>
+          )}
           {isAOverload && (
             <span className="text-[9px] text-red-400 font-bold block animate-pulse">
               ⚠️ ¡EXPLOSIÓN DE SCOUTER POR SOBRECARGA DE KI!
@@ -518,13 +532,18 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
         }`}>
           <div className="flex justify-between items-center text-[11px]">
             <span className="font-bold text-blue-400 truncate">{characterB?.name}</span>
-            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400">{scouterB.rank}</span>
+            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400">{breakdownB?.rank || scouterB.rank}</span>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className={`text-base sm:text-lg font-black tracking-tight font-cinzel ${scouterB.color}`}>
-              {isScanning ? '888,888...' : scouterB.formatted}
+            <span className={`text-base sm:text-lg font-black tracking-tight font-cinzel ${breakdownB?.isOverload ? 'text-fuchsia-400' : 'text-emerald-400'}`}>
+              {isScanning ? '888,888...' : (breakdownB?.apexKi || scouterB.formatted)}
             </span>
           </div>
+          {breakdownB?.sourceKi && (
+            <div className="text-[9px] text-amber-300 bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40 font-mono">
+              📜 Scouter Canónico: <span className="font-bold">{breakdownB.sourceKi.toLocaleString('es-ES')} Unidades</span>
+            </div>
+          )}
           {isBOverload && (
             <span className="text-[9px] text-red-400 font-bold block animate-pulse">
               ⚠️ ¡EXPLOSIÓN DE SCOUTER POR SOBRECARGA DE KI!
@@ -536,17 +555,15 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
       {/* Relación de Poder y Diagnóstico Táctico */}
       <div className="p-2.5 rounded-xl bg-slate-950 border border-emerald-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[10px]">
         <div>
-          <span className="text-emerald-400 font-bold">⚡ Disparidad de Ki: </span>
+          <span className="text-emerald-400 font-bold">⚡ Disparidad de Poder Universal: </span>
           <span className="text-white font-bold">{leaderName}</span> lidera con un multiplicador de <span className="text-emerald-300 font-bold">{ratio}</span>.
         </div>
         <div className="text-slate-400 text-[9px] italic">
-          {ratio === '1.0x' || (ratio !== 'INCONMENSURABLE' && parseFloat(ratio) < 1.2)
+          {ratio === '1.0x' || ratio.includes('1.')
             ? '⚔️ Pelea simétrica. El Battle IQ y Hax deciden el resultado.'
-            : (ratio !== 'INCONMENSURABLE' && parseFloat(ratio) < 2.5)
-            ? '⚠️ Ventaja cinética notable. Quiebre de guardia probable.'
-            : (ratio !== 'INCONMENSURABLE' && parseFloat(ratio) < 10.0)
-            ? '🔥 Riesgo inminente de "Speed Blitz" y daño crítico.'
-            : '💀 Disparidad absoluta. Ataques ordinarios rebotan (Tanqueo puro).'}
+            : ratio.includes('Abismo Cósmico') || ratio.includes('INCONMENSURABLE')
+            ? '💀 Disparidad dimensional absoluta. Ataques ordinarios rebotan (Tanqueo puro).'
+            : '🔥 Ventaja cinética masiva. Riesgo inminente de "Speed Blitz".'}
         </div>
       </div>
 
@@ -556,15 +573,18 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
           <summary className="px-3 py-2 text-[10px] font-bold text-emerald-400 hover:text-emerald-300 cursor-pointer flex items-center justify-between transition select-none">
             <span className="flex items-center gap-1.5">
               <span>📐</span>
-              <span>Ver Ecuación y Desglose Matemático de Power Scaling (Fórmula Universal)</span>
+              <span>Ver Ecuación y Desglose Matemático de Power Scaling (Fórmula Universal APEX)</span>
             </span>
             <span className="text-slate-500 group-open:rotate-90 transition-transform">▶</span>
           </summary>
           
           <div className="p-3 border-t border-emerald-950 space-y-2 text-[10px] text-slate-300 bg-slate-950">
-            <div className="p-2 rounded-lg bg-emerald-950/30 border border-emerald-500/30 text-emerald-300 font-mono">
-              <span className="font-bold block text-[11px] text-emerald-200">Fórmula Universal de Calibración de Ki:</span>
-              <code>Nivel de Poder (PL) = Energía Base(Tier en Joules) × M_Velocidad × M_Defensa × M_Hax/IQ × M_Forma</code>
+            <div className="p-2 rounded-lg bg-emerald-950/30 border border-emerald-500/30 text-emerald-300 font-mono space-y-1">
+              <span className="font-bold block text-[11px] text-emerald-200">Ecuación Maestra Invariante de Power Scaling:</span>
+              <code>PL_APEX = B^R(T) × [Q_min + (Q_max - Q_min) · q]</code>
+              <div className="text-[9px] text-slate-400">
+                Donde B=10⁶, R(T) es el índice exacto del sub-tier, y q es la calidad interna [0.62·AP + 0.12·Vel + 0.12·Def + 0.06·Forma + 0.05·IQ + 0.03·Hax].
+              </div>
             </div>
 
             {/* Desglose Luchador A */}
