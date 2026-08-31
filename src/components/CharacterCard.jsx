@@ -4,19 +4,27 @@ import { getTranslation } from '../services/i18n';
 import { calculateFormScaledStats } from '../data/powerscalingCodex';
 import SearchableCharacterSelector from './SearchableCharacterSelector';
 
-export default function CharacterCard({ character, role, onInspect, onEdit, onDelete, onSelectChange, onExportCard, allCharacters, lang = 'es' }) {
+export default function CharacterCard({ character = {}, role = '', onInspect, onEdit, onDelete, onSelectChange, onExportCard, allCharacters = [], lang = 'es' }) {
+  if (!character || !character.id) {
+    return (
+      <div className="p-5 rounded-2xl glass-panel border border-slate-800 text-slate-400 font-mono text-xs text-center flex items-center justify-center min-h-[180px]">
+        Selecciona un combatiente para este puesto...
+      </div>
+    );
+  }
+
   const isSideA = role.includes('A') || role.includes('Alfa') || role.includes('Jefe') || role.includes('Boss') || role.includes('Rojo');
   const [selectedFormId, setSelectedFormId] = useState(character.forms?.[character._activeFormIndex || 0]?.id || character.forms?.[0]?.id || 'base');
 
   const activeIdx = character.forms?.findIndex(f => f.id === selectedFormId) ?? 0;
-  const currentForm = character.forms?.[activeIdx > -1 ? activeIdx : 0] || character.forms?.[0];
+  const currentForm = character.forms?.[activeIdx > -1 ? activeIdx : 0] || character.forms?.[0] || {};
   const scaledStats = calculateFormScaledStats(character, activeIdx > -1 ? activeIdx : 0);
   const isTransformed = activeIdx > 0;
 
   // Find variants of the same character (matching root name)
-  const baseName = character.name.split('(')[0].split('—')[0].trim().toLowerCase();
+  const baseName = (character.name || '').split('(')[0].split('—')[0].trim().toLowerCase();
   const variants = (allCharacters || []).filter(c => {
-    const otherBase = c.name.split('(')[0].split('—')[0].trim().toLowerCase();
+    const otherBase = (c?.name || '').split('(')[0].split('—')[0].trim().toLowerCase();
     return otherBase === baseName || (baseName.includes(otherBase) && otherBase.length >= 4) || (otherBase.includes(baseName) && baseName.length >= 4);
   });
 
@@ -319,7 +327,7 @@ export default function CharacterCard({ character, role, onInspect, onEdit, onDe
       {character.feats && character.feats.length > 0 && (
         <div className="mt-2 px-2 py-1.5 rounded-lg bg-cyan-950/20 border-l-2 border-cyan-600/50">
           <p className="text-[10px] text-cyan-400/90 font-mono italic line-clamp-2">
-            ⭐ {character.feats[0]}
+            ⭐ {character.feats?.[0] || 'Hazañas de combate registradas'}
           </p>
         </div>
       )}

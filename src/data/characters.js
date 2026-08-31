@@ -1,6 +1,3 @@
-// APEX Powerscaling Engine — Official Consolidated Characters Lorebook
-// Total Verified Fighters: 819
-
 export const INITIAL_CHARACTERS = [
   {
     "id": "son-goku-ni-o-dragon-ball-cl-sico-987",
@@ -75130,7 +75127,20 @@ export const INITIAL_CHARACTERS = [
         }
       ]
     },
-    "forms": [],
+    "forms": [
+      {
+        "id": "base",
+        "name": "Forma Base / Estado Inicial",
+        "multiplier": "1.0x",
+        "tier": "Tier 3-B | Nivel Multi-Galáctico",
+        "stats": {
+          "ap": "Su forma Legendaria en el contexto de DBM escala con combatientes de tier superior al Broly clásico de las películas Toei, calibrado para el nivel general del torneo interuniversal.",
+          "speed": "MFTL, aunque con cierta penalización por la masa muscular extrema de su forma.",
+          "durability": "Extremadamente alta, resistente a intercambios de energía de escala multi-galáctica.",
+          "stamina": "Muy alta, aunque su forma Legendaria consume reservas a un ritmo acelerado."
+        }
+      }
+    ],
     "feats": [
       "Participó como combatiente representante en el Torneo Interuniversal de Dragon Ball Multiverse.",
       "Su forma Legendaria fue recalibrada narrativamente para representar una amenaza creíble contra combatientes de tier multi-galáctico del torneo.",
@@ -75184,7 +75194,20 @@ export const INITIAL_CHARACTERS = [
         }
       ]
     },
-    "forms": [],
+    "forms": [
+      {
+        "id": "base",
+        "name": "Forma Base / Estado Inicial",
+        "multiplier": "1.0x",
+        "tier": "Tier 4-B | Nivel Sistema Solar",
+        "stats": {
+          "ap": "Versión de una línea temporal alternativa donde el Imperio Saiyan sobrevivió y se desarrolló de forma completamente distinta al canon principal.",
+          "speed": "MFTL bajo, calibrado para el nivel temprano-medio del torneo de DBM.",
+          "durability": "Alta, estándar Saiyan de élite de su línea temporal alternativa.",
+          "stamina": "Alta, sostenida por su entrenamiento constante como monarca guerrero."
+        }
+      }
+    ],
     "feats": [
       "Gobierna como Rey Saiyan en una línea temporal donde el Planeta Vegeta nunca fue destruido por Freezer.",
       "Representó a su universo en las etapas del Torneo Interuniversal de Dragon Ball Multiverse.",
@@ -75239,7 +75262,20 @@ export const INITIAL_CHARACTERS = [
         }
       ]
     },
-    "forms": [],
+    "forms": [
+      {
+        "id": "base",
+        "name": "Forma Base / Estado Inicial",
+        "multiplier": "1.0x",
+        "tier": "Tier 4-B | Nivel Sistema Solar",
+        "stats": {
+          "ap": "Al mantener su imperio intacto sin Guerreros Z, Cooler refinó su poder junto a Freezer y King Cold durante décadas.",
+          "speed": "MFTL bajo.",
+          "durability": "Muy alta, potenciada por tecnología de preservación corporal imperial.",
+          "stamina": "Muy alta."
+        }
+      }
+    ],
     "feats": [
       "Conservó el control absoluto de su imperio junto a Freezer y King Cold.",
       "Representa al Universo 8 en el Torneo Interuniversal de DBM.",

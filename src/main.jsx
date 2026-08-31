@@ -1,4 +1,4 @@
-﻿import React, { Component } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
@@ -18,7 +18,9 @@ class ErrorBoundary extends Component {
   }
 
   handleReset = () => {
-    localStorage.removeItem('apex_custom_characters');
+    try {
+      localStorage.clear();
+    } catch (e) {}
     window.location.reload();
   };
 
