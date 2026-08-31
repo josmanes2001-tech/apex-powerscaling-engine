@@ -3,6 +3,8 @@ import {
   X, Move, ArrowUp, ArrowDown, ArrowUpDown, Pin, Sparkles, 
   FolderPlus, Grid, List, Check, Trash2, Edit3, Shield, Zap, Search, RefreshCw
 } from 'lucide-react';
+import { SoundFX } from '../services/soundFx';
+import { calculateScouterReading } from '../services/scouterEngine';
 
 export default function RosterManagerModal({ 
   isOpen, 
@@ -82,6 +84,16 @@ export default function RosterManagerModal({
       const wa = tierWeight(a.tier);
       const wb = tierWeight(b.tier);
       return descending ? wb - wa : wa - wb;
+    });
+    onUpdateRoster(sorted);
+  };
+
+  const sortByPowerLevel = (descending = true) => {
+    SoundFX.playScouterBeep(5);
+    const sorted = [...characters].sort((a, b) => {
+      const va = calculateScouterReading(a).rawValue;
+      const vb = calculateScouterReading(b).rawValue;
+      return descending ? vb - va : va - vb;
     });
     onUpdateRoster(sorted);
   };
@@ -188,9 +200,17 @@ export default function RosterManagerModal({
             <button
               onClick={() => sortByTier(true)}
               className="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-cyan-950/80 border border-slate-700 hover:border-cyan-500 text-slate-200 hover:text-cyan-300 text-[10px] font-bold transition cursor-pointer flex items-center gap-1"
-              title="Ordenar de mayor a menor nivel de poder"
+              title="Ordenar de mayor a menor según escala VS Battles (Tier)"
             >
-              👑 Por Tier (Poder ↓)
+              👑 Por Tier
+            </button>
+
+            <button
+              onClick={() => sortByPowerLevel(true)}
+              className="px-2.5 py-1.5 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-300 text-[10px] font-bold transition cursor-pointer flex items-center gap-1 shadow-sm"
+              title="Ordenar según Nivel de Poder / Ki a lo Dragon Ball (Scouter)"
+            >
+              📟 Por Nivel de Poder (Ki ↓)
             </button>
 
             <button
@@ -301,10 +321,12 @@ export default function RosterManagerModal({
                           <span className="font-bold text-white text-xs truncate">{char.name}</span>
                           {isPinned && <span className="text-amber-400 text-[10px]">📌 Fijado</span>}
                         </div>
-                        <div className="flex items-center gap-2 text-[10px] text-slate-400">
+                        <div className="flex items-center gap-2 text-[10px] text-slate-400 flex-wrap">
                           <span className="text-cyan-400 font-bold">{char.universe || 'Universo Canon'}</span>
                           <span>•</span>
                           <span className="text-amber-300 font-bold">{char.tier || 'Tier 7-B'}</span>
+                          <span>•</span>
+                          <span className="text-emerald-400 font-bold">📟 {calculateScouterReading(char).formatted}</span>
                         </div>
                       </div>
                     </div>
@@ -418,9 +440,15 @@ export default function RosterManagerModal({
                                 <span className="font-bold text-white text-[11px] block truncate">
                                   {char.name}
                                 </span>
-                                <span className="text-amber-300 text-[10px]">
-                                  {char.tier || 'Tier 7-B'}
-                                </span>
+                                <div className="flex items-center gap-1.5 text-[10px]">
+                                  <span className="text-amber-300 font-bold">
+                                    {char.tier || 'Tier 7-B'}
+                                  </span>
+                                  <span className="text-slate-500">•</span>
+                                  <span className="text-emerald-400 font-bold">
+                                    📟 {calculateScouterReading(char).formatted}
+                                  </span>
+                                </div>
                               </div>
                             </div>
 

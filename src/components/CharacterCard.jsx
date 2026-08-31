@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Shield, Zap, Eye, Crosshair, AlertTriangle, Target, Sparkles, Flame, ShieldAlert, Edit3, Trash2, ArrowUpRight } from 'lucide-react';
 import { getTranslation } from '../services/i18n';
 import { calculateFormScaledStats } from '../data/powerscalingCodex';
+import { SoundFX } from '../services/soundFx';
+import { calculateScouterReading } from '../services/scouterEngine';
 import SearchableCharacterSelector from './SearchableCharacterSelector';
 
 export default function CharacterCard({ character = {}, role = '', onInspect, onEdit, onDelete, onSelectChange, onExportCard, allCharacters = [], lang = 'es' }) {
@@ -27,6 +29,17 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
     const otherBase = (c?.name || '').split('(')[0].split('—')[0].trim().toLowerCase();
     return otherBase === baseName || (baseName.includes(otherBase) && otherBase.length >= 4) || (otherBase.includes(baseName) && baseName.length >= 4);
   });
+
+  const scouterReading = calculateScouterReading(character, selectedFormId);
+
+  const handleScouterBeep = (e) => {
+    e.stopPropagation();
+    if (scouterReading.isOverload) {
+      SoundFX.playScouterExplosion();
+    } else {
+      SoundFX.playScouterBeep(7);
+    }
+  };
 
   return (
     <div className={`relative flex flex-col rounded-2xl transition-all duration-300 ${
@@ -167,6 +180,21 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
               {isTransformed && <ArrowUpRight className="w-3 h-3 text-yellow-300" />}
               <span>{scaledStats?.activeTier || character.tier}</span>
             </span>
+
+            {/* Scouter Ki Badge with Sound */}
+            <button
+              type="button"
+              onClick={handleScouterBeep}
+              title="Medir Ki con Scouter (Sonido Clásico DBZ)"
+              className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold flex items-center gap-1 cursor-pointer transition shadow-sm ${
+                scouterReading.isOverload
+                  ? 'bg-red-950/90 border border-red-500 text-red-300 animate-pulse'
+                  : 'bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/50 text-emerald-300'
+              }`}
+            >
+              <span className="text-[10px]">📟</span>
+              <span>{scouterReading.formatted}</span>
+            </button>
             {character.range && (
               <span className="px-2 py-0.5 rounded bg-slate-900 border border-cyan-500/30 text-[10px] font-mono text-cyan-300 flex items-center gap-1">
                 <Target className="w-3 h-3" /> {character.range}
