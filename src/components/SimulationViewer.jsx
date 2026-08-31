@@ -842,6 +842,7 @@ export default function SimulationViewer({
   onContinueSimulation, 
   onLoadHistoryBattle,
   onClearSimulation,
+  onContinueTimeline,
   simulationData,
   oracleCoins: propOracleCoins,
   setOracleCoins: propSetOracleCoins,
@@ -1568,16 +1569,33 @@ export default function SimulationViewer({
 
 
           {hasOutput && !isSimulating && (
-            <button
-              onClick={() => {
-                if (onClearSimulation) onClearSimulation();
-              }}
-              title="Limpiar la simulación actual y preparar un nuevo combate"
-              className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-red-950/60 hover:text-red-300 text-slate-300 text-xs font-mono font-bold transition cursor-pointer border border-slate-700 hover:border-red-500/50 shadow"
-            >
-              <RotateCcw className="w-3.5 h-3.5" />
-              <span>Nueva Batalla</span>
-            </button>
+            <>
+              <button
+                onClick={() => {
+                  if (onClearSimulation) onClearSimulation();
+                }}
+                title="Limpiar la simulación actual y preparar un nuevo combate"
+                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-red-950/60 hover:text-red-300 text-slate-300 text-xs font-mono font-bold transition cursor-pointer border border-slate-700 hover:border-red-500/50 shadow"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Nueva Batalla</span>
+              </button>
+              
+              <button
+                onClick={() => {
+                  if (onContinueTimeline) {
+                    const survivors = allActiveFighters.filter(f => f.hp > 0);
+                    onContinueTimeline(survivors);
+                  }
+                }}
+                title="Continuar esta línea temporal llevando a los supervivientes a una nueva batalla"
+                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-indigo-900/60 hover:bg-indigo-800/80 text-indigo-200 text-xs font-mono font-bold transition cursor-pointer border border-indigo-500/50 hover:border-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.2)]"
+              >
+                <GitBranch className="w-3.5 h-3.5 text-indigo-400" />
+                <span className="hidden sm:inline">Continuar Línea Temporal</span>
+                <span className="sm:hidden">Continuar</span>
+              </button>
+            </>
           )}
 
           <button

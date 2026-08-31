@@ -615,6 +615,31 @@ export default function App() {
     } catch (e) {}
   };
 
+  const handleContinueTimeline = (survivors) => {
+    // Escuadronizar sobrevivientes
+    const survivorIds = survivors.map(c => c.id || c.name);
+    // Filtrar matches por ID o Nombre
+    const nextTeamA = characters.filter(c => survivorIds.includes(c.id) || survivorIds.includes(c.name));
+    
+    // Asignar al teamA, dejar al usuario escoger nuevos enemigos para teamB
+    setTeamA(nextTeamA);
+    setTeamB([]);
+    
+    setSimulationResult(null);
+    try {
+      localStorage.removeItem('apex_current_simulation_draft');
+    } catch(e) {}
+    
+    // Cambiar el modo si hay más de 1 superviviente
+    if (nextTeamA.length > 1) {
+      setMatchMode('team');
+    } else {
+      setMatchMode('1v1');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+
   const handleContinueSimulation = async (userPromptNext = '') => {
     if (isSimulating || !simulationResult?.fullOutput) return;
     setIsSimulating(true);
@@ -985,6 +1010,7 @@ export default function App() {
               onContinueSimulation={handleContinueSimulation}
               onLoadHistoryBattle={handleLoadHistoryBattle}
               onClearSimulation={handleClearSimulation}
+              onContinueTimeline={handleContinueTimeline}
               oracleCoins={oracleCoins}
               setOracleCoins={setOracleCoins}
               lang={lang}
