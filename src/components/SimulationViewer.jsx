@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  Play, Download, Copy, Check, Sparkles, FileText, Swords, RefreshCw, 
+  Play, Download, Copy, Check, Sparkles, FileText, Swords, RefreshCw, RotateCcw,
   Heart, Zap, History, Trash2, ShieldAlert, Award, Compass, AlertTriangle, 
   Flame, Crosshair, Trophy, Volume2, VolumeX, Eye, FastForward, GitBranch,
   Coins, Dices, HelpCircle, PlayCircle, PauseCircle, BarChart3, Camera,
@@ -841,6 +841,7 @@ export default function SimulationViewer({
   onStartSimulation, 
   onContinueSimulation, 
   onLoadHistoryBattle,
+  onClearSimulation,
   simulationData,
   oracleCoins: propOracleCoins,
   setOracleCoins: propSetOracleCoins,
@@ -1153,15 +1154,20 @@ export default function SimulationViewer({
       };
 
       setHistory(prev => {
-        if (prev[0] && prev[0].narrative === entry.narrative) return prev;
+        const list = Array.isArray(prev) ? prev : [];
+        if (list.length > 0 && list[0] && list[0].narrative === entry.narrative) return list;
         
-        const favorites = prev.filter(h => h.isFavorite);
-        const normal = prev.filter(h => !h.isFavorite);
+        const favorites = list.filter(h => h && h.isFavorite);
+        const normal = list.filter(h => h && !h.isFavorite);
         
         // Mantener infinitos favoritos, y hasta 40 normales
         const updatedNormal = [entry, ...normal].slice(0, 40);
         
-        const updated = [...favorites, ...updatedNormal].sort((a, b) => b.id.split('-')[1] - a.id.split('-')[1]);
+        const updated = [...favorites, ...updatedNormal].sort((a, b) => {
+          const idA = (a?.id || '').split('-')[1] || 0;
+          const idB = (b?.id || '').split('-')[1] || 0;
+          return idB - idA;
+        });
         
         try {
           localStorage.setItem(STORAGE_KEY_COMBAT_HISTORY, JSON.stringify(updated));
@@ -1560,6 +1566,19 @@ export default function SimulationViewer({
             </div>
           )}
 
+
+          {hasOutput && !isSimulating && (
+            <button
+              onClick={() => {
+                if (onClearSimulation) onClearSimulation();
+              }}
+              title="Limpiar la simulación actual y preparar un nuevo combate"
+              className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-red-950/60 hover:text-red-300 text-slate-300 text-xs font-mono font-bold transition cursor-pointer border border-slate-700 hover:border-red-500/50 shadow"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Nueva Batalla</span>
+            </button>
+          )}
 
           <button
             onClick={() => onStartSimulation({ fresh: true })}

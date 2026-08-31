@@ -607,6 +607,14 @@ export default function App() {
     }
   };
 
+  const handleClearSimulation = () => {
+    setSimulationResult(null);
+    setIsSimulating(false);
+    try {
+      localStorage.removeItem('apex_current_simulation_draft');
+    } catch (e) {}
+  };
+
   const handleContinueSimulation = async (userPromptNext = '') => {
     if (isSimulating || !simulationResult?.fullOutput) return;
     setIsSimulating(true);
@@ -976,6 +984,7 @@ export default function App() {
               onStartSimulation={handleStartSimulation}
               onContinueSimulation={handleContinueSimulation}
               onLoadHistoryBattle={handleLoadHistoryBattle}
+              onClearSimulation={handleClearSimulation}
               oracleCoins={oracleCoins}
               setOracleCoins={setOracleCoins}
               lang={lang}
