@@ -28,37 +28,13 @@ function getAllFiles(dir, exts = ['.jsx', '.js', '.tsx', '.ts'], res = []) {
 }
 
 async function main() {
-  const batFile = path.join(projectRoot, 'DESPLEGAR_A_VERCEL.bat');
-  const cleanBatContent = [
-    '@echo off',
-    'title Sincronizador Apex Engine Vercel',
-    'color 0B',
-    'cd /d "%~dp0"',
-    '',
-    'echo ========================================================',
-    'echo   SINCRONIZANDO APEX ENGINE (GITHUB + VERCEL)',
-    'echo ========================================================',
-    'echo.',
-    '',
-    'echo [1/2] Guardando cambios locales...',
-    'git add .',
-    'git commit -m "feat: sync y despliegue limpio" 2>nul',
-    '',
-    'echo [2/2] Subiendo a GitHub para despliegue automatico en Vercel...',
-    'git push origin main',
-    '',
-    'echo.',
-    'echo ========================================================',
-    'echo   EXITO: Cambios enviados a GitHub',
-    'echo   Vercel actualizara la web en: https://apex-engine-six.vercel.app/',
-    'echo ========================================================',
-    'echo.',
-    'pause',
-    ''
-  ].join('\r\n');
-
-  fs.writeFileSync(batFile, cleanBatContent, 'binary');
-  console.log('✓ DESPLEGAR_A_VERCEL.bat reescrito con codificación pura Windows CRLF.');
+  const appFile = path.join(projectRoot, 'src/App.jsx');
+  let appContent = fs.readFileSync(appFile, 'utf8');
+  
+  const newVer = `v9.0_FULL_DEPLOY_FORCE_REFRESH_${Date.now()}`;
+  appContent = appContent.replace(/const ROSTER_VERSION = '([^']+)';/, `const ROSTER_VERSION = '${newVer}';`);
+  fs.writeFileSync(appFile, appContent, 'utf8');
+  console.log(`✓ ROSTER_VERSION actualizado a ${newVer} para forzar refresco total en Vercel.`);
 }
 
 main().catch(console.error);
