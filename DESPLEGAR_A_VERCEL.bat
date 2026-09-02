@@ -13,5 +13,9 @@ git commit -m "feat: sync y despliegue limpio" 2>nul
 git push origin main
 
 echo.
-node src/scripts/autoDeployVercel.js
+echo ========================================================
+echo   ✅ ¡CAMBIOS ENVIADOS A GITHUB CON ÉXITO!
+echo   🌐 Vercel actualizará la web en https://apex-engine-six.vercel.app/
+echo ========================================================
+echo.
 pause
