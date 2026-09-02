@@ -1014,11 +1014,19 @@ app.get('*', (req, res, next) => {
   next();
 });
 
-app.listen(PORT, '0.0.0.0', () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`====================================================`);
   console.log(`⚡ APEX ENGINE MULTI-AI BACKEND RUNNING`);
   console.log(`🌐 Port: http://0.0.0.0:${PORT}`);
   console.log(`🧠 Providers: OpenRouter, Gemini, OpenAI, Ollama, Custom URL`);
   console.log(`📂 Vault Path: ${VAULT_PATH}`);
   console.log(`====================================================`);
+});
+
+server.on('error', (e) => {
+  if (e.code === 'EADDRINUSE') {
+    console.log(`ℹ️ El puerto ${PORT} ya está en uso por otra instancia activa de APEX. Continuando normalmente...`);
+  } else {
+    console.error('Error en el servidor backend:', e);
+  }
 });
