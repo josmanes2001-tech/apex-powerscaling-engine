@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Shield, Swords, Sparkles, GitBranch, FolderCheck, PlusCircle, Cpu, Trophy, Download, Upload, Scale, Globe, Crown, Coffee, Award, User, Cloud } from 'lucide-react';
+import { Shield, Swords, Sparkles, GitBranch, FolderCheck, PlusCircle, Cpu, Trophy, Download, Upload, Scale, Globe, Crown, Coffee, User, Cloud } from 'lucide-react';
 import { SUPPORTED_LANGUAGES, getTranslation } from '../services/i18n';
 
 export default function Navbar({ 
@@ -294,7 +294,7 @@ export default function Navbar({
               className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-red-950/40 hover:bg-red-900/50 border border-red-500/40 text-[10px] sm:text-xs text-red-300 font-bold transition cursor-pointer shadow-sm"
               title="Guía Powerscaling Tiering"
             >
-              <Award className="w-3 h-3 text-amber-400" />
+              <Trophy className="w-3 h-3 text-amber-400" />
               <span className="whitespace-nowrap hidden sm:inline">Tiering</span>
             </button>
 

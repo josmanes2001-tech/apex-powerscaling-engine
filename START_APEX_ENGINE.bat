@@ -8,17 +8,14 @@ echo.
 
 pushd "%~dp0"
 
-echo [0/2] Liberando puertos previos si estuvieran ocupados...
-for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3001 ^| findstr LISTENING') do taskkill /f /pid %%a >nul 2>&1
-for /f "tokens=5" %%a in ('netstat -aon ^| findstr :5173 ^| findstr LISTENING') do taskkill /f /pid %%a >nul 2>&1
+echo [0/2] Cerrando instancias previas y liberando puertos...
+taskkill /F /IM node.exe >nul 2>&1
 
-echo [1/2] Iniciando Servidor Backend (Puerto 3001)...
-start "APEX Backend (3001)" cmd /k "node server.cjs"
+echo [1/2] Iniciando Servidor Backend y Web unificada (Puerto 3001)...
+start "APEX Backend & Web (3001)" cmd /k "node server.cjs"
 
-timeout /t 2 /nobreak >nul
-
-echo [2/2] Iniciando Frontend Vite (Puerto 5173)...
-start "APEX Frontend (5173)" cmd /k "npm run dev"
+echo [2/2] Iniciando Servidor Frontend de Desarrollo (Puerto 5173)...
+start "APEX Frontend Dev (5173)" cmd /k "npx vite --host 0.0.0.0 --port 5173"
 
 timeout /t 3 /nobreak >nul
 
