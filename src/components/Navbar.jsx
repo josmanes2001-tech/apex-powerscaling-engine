@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Shield, Swords, Sparkles, GitBranch, FolderCheck, PlusCircle, Cpu, Trophy, Download, Upload, Scale, Globe, Crown, Coffee, User } from 'lucide-react';
+import { Shield, Swords, Sparkles, GitBranch, FolderCheck, PlusCircle, Cpu, Trophy, Download, Upload, Scale, Globe, Crown, Coffee, User, ChevronLeft, ChevronRight } from 'lucide-react';
 import { SUPPORTED_LANGUAGES, getTranslation } from '../services/i18n';
 
 export default function Navbar({ 
@@ -30,6 +30,13 @@ export default function Navbar({
   currentUser = null
 }) {
   const fileInputRef = useRef(null);
+  const suiteNavRef = useRef(null);
+
+  const scrollSuite = (dir) => {
+    if (suiteNavRef.current) {
+      suiteNavRef.current.scrollBy({ left: dir === 'left' ? -260 : 260, behavior: 'smooth' });
+    }
+  };
 
   const handleExport = () => {
     let customScenarios = [];
@@ -246,171 +253,201 @@ export default function Navbar({
           </div>
         </div>
 
-        {/* Second Row: Mode Selector + All Suite Tools (Scrollable on mobile) */}
-        <div className="flex items-center justify-between gap-2 overflow-x-auto no-scrollbar py-0.5">
-          {/* Modes Pills */}
-          <div className="flex items-center p-1 rounded-xl bg-slate-900/90 border border-slate-800 shadow-inner shrink-0">
-            {modes.map((m) => {
-              const Icon = m.icon;
-              const active = mode === m.id;
-              return (
-                <button
-                  key={m.id}
-                  onClick={() => setMode(m.id)}
-                  className={`flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold transition-all duration-200 cursor-pointer shrink-0 ${
-                    active ? `${m.color} shadow-sm border` : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
-                  }`}
-                >
-                  <Icon className="w-3.5 h-3.5" />
-                  <span className="whitespace-nowrap">{m.label}</span>
-                </button>
-              );
-            })}
-            <button
-              onClick={onOpenModesGuide}
-              className="p-1 px-1.5 sm:px-2 rounded-lg text-slate-400 hover:text-amber-300 hover:bg-slate-800/60 transition cursor-pointer text-xs font-bold flex items-center gap-1 shrink-0"
-              title={lang === 'en' ? 'Learn the differences between VS, What-If, and Hybrid modes' : lang === 'ja' ? '各モードの解説と違いを見る' : 'Conoce la diferencia entre el Modo VS, What-If e Híbrido'}
-            >
-              <span className="text-amber-400 text-sm">ℹ️</span>
-              <span className="hidden md:inline text-[10px] text-amber-300/80">Guía Modos</span>
-            </button>
-          </div>
+        {/* Second Row: Mode Selector + All Suite Tools with Carousel Arrows */}
+        <div className="relative flex items-center gap-1.5 w-full pt-1 pb-1">
+          {/* Scroll Left Button */}
+          <button
+            type="button"
+            onClick={() => scrollSuite('left')}
+            className="p-1 sm:p-1.5 rounded-lg bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-300 hover:text-white transition shadow shrink-0 z-10 cursor-pointer"
+            title="Desplazar menú a la izquierda"
+          >
+            <ChevronLeft className="w-3.5 h-3.5" />
+          </button>
 
-          {/* Quick Secondary Suite Tools (Scrollable pills) */}
-          <div className="flex items-center gap-1.5 shrink-0">
-            {/* Direct API Key Guide Button */}
-            <button
-              onClick={() => onOpenAiConfig && onOpenAiConfig('guide')}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-cyan-950/40 hover:bg-cyan-900/50 border border-cyan-500/40 text-[10px] sm:text-xs text-cyan-300 font-bold transition cursor-pointer shadow-sm"
-              title="Guía IAs Gratis"
-            >
-              <Sparkles className="w-3 h-3 text-cyan-400" />
-              <span className="whitespace-nowrap">Guía IAs</span>
-            </button>
-
-            {/* Powerscaling Guide Button */}
-            <button
-              onClick={onOpenPowerscalingGuide}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-red-950/40 hover:bg-red-900/50 border border-red-500/40 text-[10px] sm:text-xs text-red-300 font-bold transition cursor-pointer shadow-sm"
-              title="Guía Powerscaling Tiering"
-            >
-              <Trophy className="w-3 h-3 text-amber-400" />
-              <span className="whitespace-nowrap hidden sm:inline">Tiering</span>
-            </button>
-
-            {/* Comparar */}
-            <button
-              onClick={onOpenComparator}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-[10px] sm:text-xs text-cyan-300 font-bold transition cursor-pointer shadow-sm"
-              title="Comparador Directo de Estadísticas"
-            >
-              <Scale className="w-3 h-3 text-cyan-400" />
-              <span className="whitespace-nowrap hidden sm:inline">Comparar</span>
-            </button>
-
-            {/* Comunidad */}
-            <button
-              onClick={onOpenCommunityVault}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-[10px] sm:text-xs text-emerald-300 font-bold transition cursor-pointer shadow-sm"
-              title="Galería Comunitaria de Fichas"
-            >
-              <Globe className="w-3 h-3 text-emerald-400" />
-              <span className="whitespace-nowrap hidden sm:inline">Comunidad</span>
-            </button>
-
-            {/* Limpiar Caché / Purga Rápida */}
-            <button
-              onClick={() => {
-                if (window.confirm('¿Purgar caché y reiniciar la aplicación con la última versión oficial limpia?')) {
-                  localStorage.clear();
-                  sessionStorage.clear();
-                  window.location.reload();
-                }
-              }}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-rose-600/20 hover:bg-rose-600/40 border border-rose-500/50 text-[10px] sm:text-xs text-rose-300 font-bold transition cursor-pointer shadow-sm"
-              title="Purgar Caché Local y Forzar Recarga Limpia (Especial para Parsec o navegadores sin Ctrl+F5)"
-            >
-              <span>🧹</span>
-              <span className="whitespace-nowrap font-bold">Limpiar Caché</span>
-            </button>
-
-            {/* Roster */}
-            <button
-              onClick={onOpenRosterManager}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 border border-indigo-500/40 text-[10px] sm:text-xs text-indigo-300 font-bold transition cursor-pointer shadow-sm"
-              title="Organizar Roster"
-            >
-              <span className="text-xs">🔀</span>
-              <span className="whitespace-nowrap font-bold">Roster ({allCharacters?.length || 820})</span>
-            </button>
-
-            {/* Azar */}
-            <button
-              onClick={onOpenRandomMatchmaker}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-gradient-to-r from-amber-600/30 to-orange-600/30 hover:from-amber-600/50 border border-amber-500/50 text-[10px] sm:text-xs text-amber-300 font-bold transition cursor-pointer shadow-sm"
-              title="Matchmaking al Azar"
-            >
-              <span className="text-xs">🎲</span>
-              <span className="whitespace-nowrap">{lang === 'en' ? 'Random' : lang === 'ja' ? 'ランダム' : 'Azar'}</span>
-            </button>
-
-            {/* Torneo */}
-            <button
-              onClick={onOpenTournament}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-[10px] sm:text-xs text-amber-300 font-bold transition cursor-pointer shadow-sm"
-              title="Cuadro Eliminatorio de Torneo"
-            >
-              <Trophy className="w-3 h-3 text-amber-400" />
-              <span className="whitespace-nowrap">Torneo</span>
-            </button>
-
-            {/* Tier List Maker */}
-            <button
-              onClick={onOpenTierList}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-gradient-to-r from-yellow-600/30 to-amber-600/30 hover:from-yellow-600/50 border border-yellow-500/50 text-[10px] sm:text-xs text-yellow-300 font-bold transition cursor-pointer shadow-sm"
-              title="Creador Interactivo de Tier Lists"
-            >
-              <span className="text-xs">📊</span>
-              <span className="whitespace-nowrap">Tier List</span>
-            </button>
-
-            {/* Batch AI Importer */}
-            <button
-              onClick={onOpenBatchAiImporter}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/40 text-[10px] sm:text-xs text-purple-200 font-bold transition cursor-pointer shadow-sm"
-              title="Importador Inteligente con IA"
-            >
-              <Sparkles className="w-3 h-3 text-purple-400" />
-              <span className="whitespace-nowrap hidden sm:inline">IA Importer</span>
-            </button>
-
-            {/* Crear Ficha */}
-            <button
-              onClick={onOpenNewCharacter}
-              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-red-600/30 hover:bg-red-600/40 border border-red-500/50 text-[10px] sm:text-xs text-red-200 font-bold transition cursor-pointer shadow-sm"
-            >
-              <PlusCircle className="w-3 h-3 text-red-400" />
-              <span className="whitespace-nowrap">Crear</span>
-            </button>
-
-            {/* Export / Import Vault */}
-            <div className="flex items-center gap-0.5 bg-slate-900/80 border border-slate-800 rounded-lg p-0.5">
+          {/* Horizontal Scrollable Ribbon */}
+          <div
+            ref={suiteNavRef}
+            className="flex items-center gap-2.5 overflow-x-auto scrollbar-thin scrollbar-thumb-amber-500/30 hover:scrollbar-thumb-amber-500/60 scrollbar-track-slate-950/60 scroll-smooth flex-1 py-1 px-1"
+            style={{ scrollbarWidth: 'thin' }}
+          >
+            {/* Modes Pills */}
+            <div className="flex items-center p-1 rounded-xl bg-slate-900/90 border border-slate-800 shadow-inner shrink-0 gap-0.5">
+              {modes.map((m) => {
+                const Icon = m.icon;
+                const active = mode === m.id;
+                return (
+                  <button
+                    key={m.id}
+                    onClick={() => setMode(m.id)}
+                    className={`flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold transition-all duration-200 cursor-pointer shrink-0 ${
+                      active ? `${m.color} shadow-sm border` : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
+                    }`}
+                  >
+                    <Icon className="w-3.5 h-3.5" />
+                    <span className="whitespace-nowrap">{m.label}</span>
+                  </button>
+                );
+              })}
               <button
-                onClick={handleExport}
-                className="p-1 text-slate-300 hover:text-white hover:bg-slate-800 rounded text-xs transition cursor-pointer"
-                title="Guardar / Exportar JSON"
+                onClick={onOpenModesGuide}
+                className="p-1 px-1.5 sm:px-2 rounded-lg text-slate-400 hover:text-amber-300 hover:bg-slate-800/60 transition cursor-pointer text-xs font-bold flex items-center gap-1 shrink-0"
+                title={lang === 'en' ? 'Learn the differences between VS, What-If, and Hybrid modes' : lang === 'ja' ? '各モードの解説と違いを見る' : 'Conoce la diferencia entre el Modo VS, What-If e Híbrido'}
               >
-                <Download className="w-3.5 h-3.5 text-cyan-400" />
-              </button>
-              <button
-                onClick={() => fileInputRef.current?.click()}
-                className="p-1 text-slate-300 hover:text-white hover:bg-slate-800 rounded text-xs transition cursor-pointer"
-                title="Cargar / Importar JSON"
-              >
-                <Upload className="w-3.5 h-3.5 text-emerald-400" />
+                <span className="text-amber-400 text-sm">ℹ️</span>
+                <span className="hidden md:inline text-[10px] text-amber-300/80">Guía Modos</span>
               </button>
             </div>
+
+            {/* Visual Divider */}
+            <div className="w-px h-6 bg-slate-800 shrink-0" />
+
+            {/* Quick Secondary Suite Tools (Scrollable pills) */}
+            <div className="flex items-center gap-1.5 shrink-0">
+              {/* Direct API Key Guide Button */}
+              <button
+                onClick={() => onOpenAiConfig && onOpenAiConfig('guide')}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-cyan-950/40 hover:bg-cyan-900/50 border border-cyan-500/40 text-[10px] sm:text-xs text-cyan-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Guía IAs Gratis"
+              >
+                <Sparkles className="w-3 h-3 text-cyan-400" />
+                <span className="whitespace-nowrap">Guía IAs</span>
+              </button>
+
+              {/* Powerscaling Guide Button */}
+              <button
+                onClick={onOpenPowerscalingGuide}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-red-950/40 hover:bg-red-900/50 border border-red-500/40 text-[10px] sm:text-xs text-red-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Guía Powerscaling Tiering"
+              >
+                <Trophy className="w-3 h-3 text-amber-400" />
+                <span className="whitespace-nowrap">Tiering</span>
+              </button>
+
+              {/* Comparar */}
+              <button
+                onClick={onOpenComparator}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-[10px] sm:text-xs text-cyan-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Comparador Directo de Estadísticas"
+              >
+                <Scale className="w-3 h-3 text-cyan-400" />
+                <span className="whitespace-nowrap">Comparar</span>
+              </button>
+
+              {/* Comunidad */}
+              <button
+                onClick={onOpenCommunityVault}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-[10px] sm:text-xs text-emerald-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Galería Comunitaria de Fichas"
+              >
+                <Globe className="w-3 h-3 text-emerald-400" />
+                <span className="whitespace-nowrap">Comunidad</span>
+              </button>
+
+              {/* Limpiar Caché / Purga Rápida */}
+              <button
+                onClick={() => {
+                  if (window.confirm('¿Purgar caché y reiniciar la aplicación con la última versión oficial limpia?')) {
+                    localStorage.clear();
+                    sessionStorage.clear();
+                    window.location.reload();
+                  }
+                }}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-rose-600/20 hover:bg-rose-600/40 border border-rose-500/50 text-[10px] sm:text-xs text-rose-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Purgar Caché Local y Forzar Recarga Limpia (Especial para Parsec o navegadores sin Ctrl+F5)"
+              >
+                <span>🧹</span>
+                <span className="whitespace-nowrap font-bold">Limpiar Caché</span>
+              </button>
+
+              {/* Roster */}
+              <button
+                onClick={onOpenRosterManager}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 border border-indigo-500/40 text-[10px] sm:text-xs text-indigo-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Organizar Roster"
+              >
+                <span className="text-xs">🔀</span>
+                <span className="whitespace-nowrap font-bold">Roster ({allCharacters?.length || 820})</span>
+              </button>
+
+              {/* Azar */}
+              <button
+                onClick={onOpenRandomMatchmaker}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-gradient-to-r from-amber-600/30 to-orange-600/30 hover:from-amber-600/50 border border-amber-500/50 text-[10px] sm:text-xs text-amber-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Matchmaking al Azar"
+              >
+                <span className="text-xs">🎲</span>
+                <span className="whitespace-nowrap">{lang === 'en' ? 'Random' : lang === 'ja' ? 'ランダム' : 'Azar'}</span>
+              </button>
+
+              {/* Torneo */}
+              <button
+                onClick={onOpenTournament}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-[10px] sm:text-xs text-amber-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Cuadro Eliminatorio de Torneo"
+              >
+                <Trophy className="w-3 h-3 text-amber-400" />
+                <span className="whitespace-nowrap">Torneo</span>
+              </button>
+
+              {/* Tier List Maker */}
+              <button
+                onClick={onOpenTierList}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-gradient-to-r from-yellow-600/30 to-amber-600/30 hover:from-yellow-600/50 border border-yellow-500/50 text-[10px] sm:text-xs text-yellow-300 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Creador Interactivo de Tier Lists"
+              >
+                <span className="text-xs">📊</span>
+                <span className="whitespace-nowrap">Tier List</span>
+              </button>
+
+              {/* Batch AI Importer */}
+              <button
+                onClick={onOpenBatchAiImporter}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/40 text-[10px] sm:text-xs text-purple-200 font-bold transition cursor-pointer shadow-sm shrink-0"
+                title="Importador Inteligente con IA"
+              >
+                <Sparkles className="w-3 h-3 text-purple-400" />
+                <span className="whitespace-nowrap">IA Importer</span>
+              </button>
+
+              {/* Crear Ficha */}
+              <button
+                onClick={onOpenNewCharacter}
+                className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-red-600/30 hover:bg-red-600/40 border border-red-500/50 text-[10px] sm:text-xs text-red-200 font-bold transition cursor-pointer shadow-sm shrink-0"
+              >
+                <PlusCircle className="w-3 h-3 text-red-400" />
+                <span className="whitespace-nowrap">Crear</span>
+              </button>
+
+              {/* Export / Import Vault */}
+              <div className="flex items-center gap-0.5 bg-slate-900/80 border border-slate-800 rounded-lg p-0.5 shrink-0">
+                <button
+                  onClick={handleExport}
+                  className="p-1 text-slate-300 hover:text-white hover:bg-slate-800 rounded text-xs transition cursor-pointer"
+                  title="Guardar / Exportar JSON"
+                >
+                  <Download className="w-3.5 h-3.5 text-cyan-400" />
+                </button>
+                <button
+                  onClick={() => fileInputRef.current?.click()}
+                  className="p-1 text-slate-300 hover:text-white hover:bg-slate-800 rounded text-xs transition cursor-pointer"
+                  title="Cargar / Importar JSON"
+                >
+                  <Upload className="w-3.5 h-3.5 text-emerald-400" />
+                </button>
+              </div>
+            </div>
           </div>
+
+          {/* Scroll Right Button */}
+          <button
+            type="button"
+            onClick={() => scrollSuite('right')}
+            className="p-1 sm:p-1.5 rounded-lg bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-300 hover:text-white transition shadow shrink-0 z-10 cursor-pointer"
+            title="Desplazar menú a la derecha"
+          >
+            <ChevronRight className="w-3.5 h-3.5" />
+          </button>
         </div>
       </div>
     </header>
