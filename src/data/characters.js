@@ -1334,7 +1334,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "goku-cell-base",
         "name": "Son Goku (Estado Base Saga Cell)",
-        "stats": "Nivel Estrella Pequeña. Gran maestría de control de Ki post-Yadrat.",
+        "stats": "Nivel Planeta Grande a Estrella Pequeña. Gran maestría de control de Ki post-Yadrat.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -2934,7 +2934,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "vegeta-cell-base",
         "name": "Vegeta (Estado Base Saga Cell)",
-        "stats": "Nivel Sistema Solar Menor. Forma base tras la Habitación del Tiempo. Combate con fuerza bruta y ki explosivo, aunque aún no ha activado el Super Saiyajin.",
+        "stats": "Nivel Planeta Grande a Estrella Pequeña. Forma base tras la Habitación del Tiempo. Combate con fuerza bruta y ki explosivo, aunque aún no ha activado el Super Saiyajin.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
