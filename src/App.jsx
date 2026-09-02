@@ -53,7 +53,7 @@ const DEFAULT_AI_CONFIG = {
   }
 };
 
-const ROSTER_VERSION = 'v7.2_824_fighters_fixed_forms';
+const ROSTER_VERSION = 'v8.0_cell_and_dbs_tiers_verified_1788361375083';
 
 export default function App() {
   // Load characters from localStorage with automatic version-based cache migration

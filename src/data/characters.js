@@ -6828,12 +6828,12 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
-        "id": "cell-saga-androides-98-base-std",
-        "name": "Cell (Estado Base)",
-        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
+        "id": "cell-larval",
+        "name": "Cell (Forma Larval / Incubación)",
+        "stats": "Nivel Ciudad++ (Tier 7-B). Embrión en crisálida subterránea antes de emerger como bioandroide insectoide.",
         "apexKiMultiplier": 1,
-        "tier": "5-A",
-        "tierExact": "5-A",
+        "tier": "7-B",
+        "tierExact": "7-B",
         "multiplier": "1x"
       },
       {
@@ -60903,7 +60903,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Cell Perfecto (Estado Base DBM)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Nivel superior a los Juegos de Cell de DBZ.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "4-B",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -61125,7 +61125,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Estado Base (Kakarotto Salvaje)",
         "stats": "Tier 5-A | Nivel Planeta Grande. Inmortalidad activa y cola de mono intacta.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "4-B",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
