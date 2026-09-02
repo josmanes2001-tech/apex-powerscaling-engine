@@ -318,6 +318,22 @@ export default function Navbar({
               <span className="whitespace-nowrap hidden sm:inline">Comunidad</span>
             </button>
 
+            {/* Limpiar Caché / Purga Rápida */}
+            <button
+              onClick={() => {
+                if (window.confirm('¿Purgar caché y reiniciar la aplicación con la última versión oficial limpia?')) {
+                  localStorage.clear();
+                  sessionStorage.clear();
+                  window.location.reload();
+                }
+              }}
+              className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-rose-600/20 hover:bg-rose-600/40 border border-rose-500/50 text-[10px] sm:text-xs text-rose-300 font-bold transition cursor-pointer shadow-sm"
+              title="Purgar Caché Local y Forzar Recarga Limpia (Especial para Parsec o navegadores sin Ctrl+F5)"
+            >
+              <span>🧹</span>
+              <span className="whitespace-nowrap font-bold">Limpiar Caché</span>
+            </button>
+
             {/* Roster */}
             <button
               onClick={onOpenRosterManager}
