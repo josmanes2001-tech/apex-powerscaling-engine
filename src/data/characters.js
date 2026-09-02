@@ -204,7 +204,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-nino-base",
         "name": "Goku Niño (Estado Base)",
         "stats": "Nivel Muro a Edificio. Fuerza saiyan innata, Báculo Sagrado y Nube Kinton.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "goku-nino-oozaru",
@@ -776,7 +779,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-saiyan-base",
         "name": "Son Goku (Estado Base)",
         "stats": "Nivel Luna / 8.000+ Unidades. Gran dominio marcial entrenado con Kaio-sama.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "goku-saiyan-kk2-3",
@@ -1052,7 +1058,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-namek-base",
         "name": "Son Goku (Estado Base Namek)",
         "stats": "Nivel Planeta Grande. 3.000.000 Unidades tras múltiples Zenkai y gravedad 100G.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "goku-namek-kk20",
@@ -1326,7 +1335,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-cell-base",
         "name": "Son Goku (Estado Base Saga Cell)",
         "stats": "Nivel Estrella Pequeña. Gran maestría de control de Ki post-Yadrat.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goku-cell-ssj1",
@@ -1563,7 +1575,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-buu-base",
         "name": "Son Goku (Estado Base Saga Buu)",
         "stats": "Nivel Estrella Pequeña. 7 años de entrenamiento en el Otro Mundo.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goku-buu-ssj1",
@@ -1787,7 +1802,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-super-base",
         "name": "Son Goku (Estado Base DBS)",
         "stats": "Nivel Galáctico. Ki divino asimilado tras la batalla con Bills.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "goku-super-ssj1",
@@ -2013,7 +2031,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-gt-base",
         "name": "Goku GT (Estado Base)",
         "stats": "Nivel Galáctico. Poder base superior a Majin Buu de Z.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goku-gt-ssj1",
@@ -2261,7 +2282,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-mini-base",
         "name": "Goku Mini (Estado Base Daima)",
         "stats": "Nivel Galáctico Menor. Combate con el Nyoibo Báculo Sagrado adaptado al Reino Demoníaco.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goku-mini-ssj",
@@ -2699,7 +2723,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegeta-namek-base",
         "name": "Vegeta Base (Llegada a Namek)",
         "stats": "Nivel Planeta. Poder 24,000 (Supera a Dodoria y Zarbon base).",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-namek-zenkai",
@@ -2908,7 +2935,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegeta-cell-base",
         "name": "Vegeta (Estado Base Saga Cell)",
         "stats": "Nivel Sistema Solar Menor. Forma base tras la Habitación del Tiempo. Combate con fuerza bruta y ki explosivo, aunque aún no ha activado el Super Saiyajin.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-cell-ssj",
@@ -3142,7 +3172,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegeta-buu-base",
         "name": "Vegeta Base (Saga Buu)",
         "stats": "Nivel Estrella Pequeña. Gran maestría marcial y poder parejo a Goku base.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-buu-ssj1",
@@ -3401,7 +3434,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegeta-super-base",
         "name": "Vegeta (Estado Base DBS)",
         "stats": "Nivel Galáctico. Entrenamiento divino en el planeta de Bills.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-super-ssj1",
@@ -3649,7 +3685,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegeta-gt-base",
         "name": "Base GT",
         "stats": "Nivel Galaxia. Pelo corto, chaqueta de cuero, sin armadura.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-gt-ssj1",
@@ -3879,7 +3918,10 @@ export const INITIAL_CHARACTERS = [
         "id": "son-gohan-ni-o-saga-saiyan-namek-830-base-std",
         "name": "Son Gohan (Niño) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Son Gohan (Niño) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-nino-ira",
@@ -4105,7 +4147,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-joven-base",
         "name": "Son Gohan (Estado Base)",
         "stats": "Tier 4-C | Nivel Estrella Enana. Entrenamiento en la Sala del Espíritu y el Tiempo.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-joven-ssj1",
@@ -4333,7 +4378,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-adulto-base",
         "name": "Son Gohan Adulto (Estado Base)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Gohan en su época universitaria y Gran Saiyaman.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-adulto-ssj1",
@@ -4556,7 +4604,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-super-base",
         "name": "Son Gohan (Estado Base DBS)",
         "stats": "Nivel Galáctico. Reactivación marcial con Piccolo.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-super-ssj1",
@@ -4788,7 +4839,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-futuro-base",
         "name": "Gohan del Futuro (Estado Base)",
         "stats": "Nivel Planeta Grande. Superviviente solitario de la Tierra apocalíptica.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-futuro-ssj",
@@ -4995,7 +5049,10 @@ export const INITIAL_CHARACTERS = [
         "id": "piccolo-namek-base",
         "name": "Piccolo Base (Pre-Namek)",
         "stats": "Nivel Planeta. Con pesas (100kg), capa y turbante blancos. Poder limitado pero reserva táctica enorme.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-nail-fusion",
@@ -5209,7 +5266,10 @@ export const INITIAL_CHARACTERS = [
         "id": "piccolo-base",
         "name": "Piccolo (Guerrero Namekiano Base)",
         "stats": "Nivel Planeta Pequeño.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-fused-nail",
@@ -5436,7 +5496,10 @@ export const INITIAL_CHARACTERS = [
         "id": "piccolo-saga-super-dragon-ball-super-228-base-std",
         "name": "Piccolo (Saga Super) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Piccolo (Saga Super) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-dbs-base",
@@ -5654,7 +5717,10 @@ export const INITIAL_CHARACTERS = [
         "id": "trunks-nino-base",
         "name": "Trunks Niño (Estado Base)",
         "stats": "Nivel Planeta Grande. Heredero de Vegeta y Capsule Corp.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "trunks-nino-ssj",
@@ -6765,7 +6831,10 @@ export const INITIAL_CHARACTERS = [
         "id": "cell-saga-androides-98-base-std",
         "name": "Cell (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cell antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "cell-imperfecto",
@@ -6988,7 +7057,10 @@ export const INITIAL_CHARACTERS = [
         "id": "majin-buu-gordo-saga-buu-604-base-std",
         "name": "Majin Buu (Gordo) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Majin Buu (Gordo) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "buu-gordo",
@@ -7200,7 +7272,10 @@ export const INITIAL_CHARACTERS = [
         "id": "super-buu-base",
         "name": "Super Buu (Base)",
         "stats": "Nivel Galaxia. Supera a SSJ3 Goku pero inferior a Gohan. Musculoso, alto, sin chaleco.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "buutenks",
@@ -7419,7 +7494,10 @@ export const INITIAL_CHARACTERS = [
         "id": "kid-buu-saga-buu-907-base-std",
         "name": "Kid Buu (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Kid Buu antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "kid-buu-base",
@@ -7593,7 +7671,10 @@ export const INITIAL_CHARACTERS = [
         "id": "broly-z-base",
         "name": "Estado Base (Control Mental)",
         "stats": "Nivel Planeta Grande. Contenido por la tiara de Paragus.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "broly-z-ssj",
@@ -7807,7 +7888,10 @@ export const INITIAL_CHARACTERS = [
         "id": "broly-base-dbs",
         "name": "Broly Base",
         "stats": "Nivel Universal. Ropa alienígena, oreja de Bah. Aprende a pelear en minutos.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "broly-ikari",
@@ -8011,7 +8095,10 @@ export const INITIAL_CHARACTERS = [
         "id": "maestro-roshi-jackie-chun-dragon-ball-cl-sico-224-base-std",
         "name": "Maestro Roshi (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Maestro Roshi antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "roshi-base",
@@ -8209,7 +8296,10 @@ export const INITIAL_CHARACTERS = [
         "id": "krilin-db-base",
         "name": "Krilin Niño (Estado Base)",
         "stats": "Nivel Muro a Edificio. Monje novicio del Templo Orin, ágil y competitivo.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "krilin-db-21torneo",
@@ -8420,7 +8510,10 @@ export const INITIAL_CHARACTERS = [
         "id": "krilin-saiyan-base",
         "name": "Krilin (Estado Base / Post-Kami)",
         "stats": "Nivel Planeta Pequeño (1.770 PL). Con armadura de combate o dogi de la Escuela Tortuga.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "krilin-namek-desbloqueo",
@@ -8627,7 +8720,10 @@ export const INITIAL_CHARACTERS = [
         "id": "krilin-cell-base",
         "name": "Krilin (Estado Base / Saga Androides)",
         "stats": "Nivel Estrella Enana. Traje clásico sin mangas, cabello rapado con 6 puntos en la frente.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "krilin-cell-games",
@@ -8854,7 +8950,10 @@ export const INITIAL_CHARACTERS = [
         "id": "krilin-dbs-base",
         "name": "Krilin (Estado Base DBS)",
         "stats": "Nivel Estrella Enana. Dogi naranja renovado o uniforme policial.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "krilin-dbs-noego",
@@ -9069,7 +9168,10 @@ export const INITIAL_CHARACTERS = [
         "id": "yamcha-db-base",
         "name": "Yamcha Bandido (Estado Base)",
         "stats": "Nivel Muro a Bloque. Cabello largo, espada y traje verde del desierto.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "yamcha-db-21torneo",
@@ -9271,7 +9373,10 @@ export const INITIAL_CHARACTERS = [
         "id": "yamcha-saiyan-base",
         "name": "Yamcha (Estado Base Post-Kami)",
         "stats": "Nivel Planeta Pequeño (1.480 PL). Dogi de la Escuela Tortuga con el kanji de Kami.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "yamcha-saiyan-full",
@@ -9475,7 +9580,10 @@ export const INITIAL_CHARACTERS = [
         "id": "yamcha-cell-base",
         "name": "Yamcha (Estado Base Saga Androides)",
         "stats": "Nivel Planeta Grande. Dogi naranja, cabello corto y cicatrices icónicas.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "yamcha-cell-full",
@@ -9685,7 +9793,10 @@ export const INITIAL_CHARACTERS = [
         "id": "nam-dragon-ball-cl-sico-33-base-std",
         "name": "Nam (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Nam antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "nam-base",
@@ -9875,7 +9986,10 @@ export const INITIAL_CHARACTERS = [
         "id": "ranfan-dragon-ball-cl-sico-172-base-std",
         "name": "Ranfan (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Ranfan antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ranfan-base",
@@ -10039,7 +10153,10 @@ export const INITIAL_CHARACTERS = [
         "id": "giran-dragon-ball-cl-sico-697-base-std",
         "name": "Giran (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Giran antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "giran-base",
@@ -10226,7 +10343,10 @@ export const INITIAL_CHARACTERS = [
         "id": "bacterian-dragon-ball-cl-sico-986-base-std",
         "name": "Bacterian (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Bacterian antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "bacterian-base",
@@ -10402,7 +10522,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tenshinhan-db-base",
         "name": "Ten Shin Han (Estado Base / Escuela Grulla)",
         "stats": "Nivel Ciudad Pequeña. Túnica verde de la Grulla, disciplinado y letal.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "tenshinhan-db-cuatrobrazos",
@@ -10614,7 +10737,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tenshinhan-saiyan-base",
         "name": "Ten Shin Han (Estado Base Post-Kami)",
         "stats": "Nivel Planeta Pequeño (1.830 PL). Pantalones verdes, torso desnudo y faja roja.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "tenshinhan-saiyan-kikoho",
@@ -10820,7 +10946,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tenshinhan-cell-base",
         "name": "Ten Shin Han (Estado Base Saga Cell)",
         "stats": "Nivel Estrella Enana. Torso desnudo con cicatriz de Tao Pai Pai, músculos de roca.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "tenshinhan-cell-shinkikoho",
@@ -11017,7 +11146,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tenshinhan-dbs-base",
         "name": "Ten Shin Han (Estado Base DBS / Maestro del Dojo)",
         "stats": "Nivel Estrella Enana. Túnica ceremonial del dojo Tien-Shin con manto azul/blanco.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "tenshinhan-dbs-shishin",
@@ -11234,7 +11366,10 @@ export const INITIAL_CHARACTERS = [
         "id": "chaos-dragon-ball-cl-sico-318-base-std",
         "name": "Chaos (Chiaotzu) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Chaos (Chiaotzu) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "chaos-base",
@@ -11667,7 +11802,10 @@ export const INITIAL_CHARACTERS = [
         "id": "comandante-red-dragon-ball-cl-sico-526-base-std",
         "name": "Comandante Red (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Comandante Red antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "red-base",
@@ -11846,7 +11984,10 @@ export const INITIAL_CHARACTERS = [
         "id": "coronel-silver-dragon-ball-cl-sico-336-base-std",
         "name": "Coronel Silver (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Coronel Silver antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "silver-base",
@@ -12026,7 +12167,10 @@ export const INITIAL_CHARACTERS = [
         "id": "general-blue-dragon-ball-cl-sico-650-base-std",
         "name": "General Blue (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de General Blue antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "general-blue",
@@ -12198,7 +12342,10 @@ export const INITIAL_CHARACTERS = [
         "id": "mayor-metallitron-dragon-ball-cl-sico-265-base-std",
         "name": "Mayor Metallitron (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mayor Metallitron antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "metallitron-base",
@@ -12364,7 +12511,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-8-dragon-ball-cl-sico-704-base-std",
         "name": "Androide 8 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 8 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "eighter-base",
@@ -12539,7 +12689,10 @@ export const INITIAL_CHARACTERS = [
         "id": "coronel-murasaki-dragon-ball-cl-sico-136-base-std",
         "name": "Coronel Murasaki (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Coronel Murasaki antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "murasaki-base",
@@ -12683,7 +12836,10 @@ export const INITIAL_CHARACTERS = [
         "id": "rey-piccolo-dragon-ball-cl-sico-497-base-std",
         "name": "Rey Demonio Piccolo (Daimaoh) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Rey Demonio Piccolo (Daimaoh) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-anciano",
@@ -12872,7 +13028,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tambourine-dragon-ball-cl-sico-273-base-std",
         "name": "Tambourine (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tambourine antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "tambourine-base",
@@ -13037,7 +13196,10 @@ export const INITIAL_CHARACTERS = [
         "id": "cymbal-dragon-ball-cl-sico-617-base-std",
         "name": "Cymbal (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cymbal antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "cymbal-base",
@@ -13223,7 +13385,10 @@ export const INITIAL_CHARACTERS = [
         "id": "drum-dragon-ball-cl-sico-175-base-std",
         "name": "Drum (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Drum antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "drum-base",
@@ -13405,7 +13570,10 @@ export const INITIAL_CHARACTERS = [
         "id": "kami-sama-dragon-ball-cl-sico-772-base-std",
         "name": "Kami-sama (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Kami-sama antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "kami-base",
@@ -13575,7 +13743,10 @@ export const INITIAL_CHARACTERS = [
         "id": "mr-popo-dragon-ball-cl-sico-370-base-std",
         "name": "Mr. Popo (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mr. Popo antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
       },
       {
         "id": "mr-popo-base",
@@ -13776,7 +13947,10 @@ export const INITIAL_CHARACTERS = [
         "id": "yajirobe-dragon-ball-cl-sico-111-base-std",
         "name": "Yajirobe (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Yajirobe antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "yajirobe-base",
@@ -13980,7 +14154,10 @@ export const INITIAL_CHARACTERS = [
         "id": "granjero-con-escopeta-dragon-ball-cl-sico-331-base-std",
         "name": "Granjero con Escopeta (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Granjero con Escopeta antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "granjero-base",
@@ -14127,7 +14304,10 @@ export const INITIAL_CHARACTERS = [
         "id": "raditz-base",
         "name": "Raditz (Guerrero Z / Estado Base)",
         "stats": "Nivel Planeta Grande.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "raditz-ssj2",
@@ -14303,7 +14483,10 @@ export const INITIAL_CHARACTERS = [
         "id": "nappa-base-form",
         "name": "Comandante Saiyan Base",
         "stats": "Nivel País a Continente. Élite de la guardia de Vegeta. Power Level 4,000+. Sin pelo, fuerza bruta colosal, cuerpo musculoso de combate puro.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "nappa-ohzaru-form",
@@ -14504,7 +14687,10 @@ export const INITIAL_CHARACTERS = [
         "id": "saibaman-saga-saiyan-791-base-std",
         "name": "Saibaman (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Saibaman antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "saibaman-base",
@@ -14696,7 +14882,10 @@ export const INITIAL_CHARACTERS = [
         "id": "kaio-sama-del-norte-saga-saiyan-446-base-std",
         "name": "Kaio-sama del Norte (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Kaio-sama del Norte antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "kaio-vivo",
@@ -14883,7 +15072,10 @@ export const INITIAL_CHARACTERS = [
         "id": "enma-daioh-saga-saiyan-579-base-std",
         "name": "Enma Daioh (Rey Yemma) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Enma Daioh (Rey Yemma) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "yemma-base",
@@ -15060,7 +15252,10 @@ export const INITIAL_CHARACTERS = [
         "id": "cui-saga-namek-132-base-std",
         "name": "Cui (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cui antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "cui-base",
@@ -15263,7 +15458,10 @@ export const INITIAL_CHARACTERS = [
         "id": "dodoria-saga-namek-528-base-std",
         "name": "Dodoria (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dodoria antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "dodoria-base",
@@ -15476,7 +15674,10 @@ export const INITIAL_CHARACTERS = [
         "id": "zarbon-saga-namek-939-base-std",
         "name": "Zarbon (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Zarbon antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "zarbon-hermoso",
@@ -15661,7 +15862,10 @@ export const INITIAL_CHARACTERS = [
         "id": "guerreros-namek-saga-namek-520-base-std",
         "name": "Guerreros Namek (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Guerreros Namek antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "guerreros-namek-base",
@@ -16161,7 +16365,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gran-patriarca-guru-saga-namek-183-base-std",
         "name": "Gran Patriarca Guru (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gran Patriarca Guru antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "guru-base",
@@ -16337,7 +16544,10 @@ export const INITIAL_CHARACTERS = [
         "id": "nail-saga-namek-672-base-std",
         "name": "Nail (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Nail antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "nail-base",
@@ -16703,7 +16913,10 @@ export const INITIAL_CHARACTERS = [
         "id": "recoome-saga-namek-951-base-std",
         "name": "Recoome (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Recoome antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "recoome-base",
@@ -16875,7 +17088,10 @@ export const INITIAL_CHARACTERS = [
         "id": "jeice-saga-namek-726-base-std",
         "name": "Jeice (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Jeice antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "jeice-base",
@@ -17083,7 +17299,10 @@ export const INITIAL_CHARACTERS = [
         "id": "burter-saga-namek-641-base-std",
         "name": "Burter (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Burter antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "burter-base",
@@ -17283,7 +17502,10 @@ export const INITIAL_CHARACTERS = [
         "id": "guldo-saga-namek-583-base-std",
         "name": "Guldo (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Guldo antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "guldo-base",
@@ -17470,7 +17692,10 @@ export const INITIAL_CHARACTERS = [
         "id": "garlic-base",
         "name": "Forma Base",
         "stats": "Nivel Planeta Menor. Pequeño ser azul demoníaco.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "garlic-full",
@@ -17654,7 +17879,10 @@ export const INITIAL_CHARACTERS = [
         "id": "spice-saga-garlic-jr-70-base-std",
         "name": "Spice (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Spice antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "spice-base",
@@ -17852,7 +18080,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vinegar-saga-garlic-jr-502-base-std",
         "name": "Vinegar (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Vinegar antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "vinegar-base",
@@ -18026,7 +18257,10 @@ export const INITIAL_CHARACTERS = [
         "id": "mustard-saga-garlic-jr-331-base-std",
         "name": "Mustard (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mustard antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "mustard-base",
@@ -18199,7 +18433,10 @@ export const INITIAL_CHARACTERS = [
         "id": "salt-saga-garlic-jr-435-base-std",
         "name": "Salt (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Salt antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "salt-base",
@@ -18545,7 +18782,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-19-saga-androides-393-base-std",
         "name": "Androide 19 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 19 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "androide-19-base",
@@ -18727,7 +18967,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-20-saga-androides-799-base-std",
         "name": "Androide 20 (Dr. Gero) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 20 (Dr. Gero) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gero-base",
@@ -18916,7 +19159,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-17-saga-androides-489-base-std",
         "name": "Androide 17 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 17 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "17-z",
@@ -19324,7 +19570,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-16-saga-androides-313-base-std",
         "name": "Androide 16 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 16 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "androide-16-base",
@@ -19556,7 +19805,10 @@ export const INITIAL_CHARACTERS = [
         "id": "cell-jr-saga-androides-134-base-std",
         "name": "Cell Jr. (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cell Jr. antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "cell-jr-base",
@@ -20178,7 +20430,10 @@ export const INITIAL_CHARACTERS = [
         "id": "olibu-torneo-del-otro-mundo-109-base-std",
         "name": "Olibu (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Olibu antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "olibu-base",
@@ -20376,7 +20631,10 @@ export const INITIAL_CHARACTERS = [
         "id": "mijorin-torneo-del-otro-mundo-618-base-std",
         "name": "Mijorin (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mijorin antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "mijorin-base",
@@ -20526,7 +20784,10 @@ export const INITIAL_CHARACTERS = [
         "id": "caterpy-torneo-del-otro-mundo-838-base-std",
         "name": "Caterpy (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Caterpy antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "caterpy-base",
@@ -20649,7 +20910,10 @@ export const INITIAL_CHARACTERS = [
         "id": "arqua-torneo-del-otro-mundo-715-base-std",
         "name": "Arqua (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Arqua antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "arqua-base",
@@ -20794,7 +21058,10 @@ export const INITIAL_CHARACTERS = [
         "id": "maraikoh-torneo-del-otro-mundo-620-base-std",
         "name": "Maraikoh (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Maraikoh antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "maraikoh-base",
@@ -20946,7 +21213,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goten-base",
         "name": "Goten (Estado Base)",
         "stats": "Nivel Planeta Grande. Talento nato prodigioso.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goten-ssj",
@@ -21170,7 +21440,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gotenks-base",
         "name": "Gotenks (Estado Base)",
         "stats": "Nivel Sistema Solar. Fusión Metamoru de Goten y Trunks.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gotenks-ssj1",
@@ -21377,7 +21650,10 @@ export const INITIAL_CHARACTERS = [
         "id": "shin-kaio-shin-del-este-saga-buu-0-base-std",
         "name": "Shin (Kaio-shin del Este) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Shin (Kaio-shin del Este) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "shin-base",
@@ -21519,7 +21795,10 @@ export const INITIAL_CHARACTERS = [
         "id": "kibito-saga-buu-184-base-std",
         "name": "Kibito (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Kibito antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "kibito-base",
@@ -21681,7 +21960,10 @@ export const INITIAL_CHARACTERS = [
         "id": "videl-saga-buu-6-base-std",
         "name": "Videl (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Videl antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "videl-base",
@@ -21853,7 +22135,10 @@ export const INITIAL_CHARACTERS = [
         "id": "babidi-saga-buu-330-base-std",
         "name": "Babidi (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Babidi antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "babidi-base",
@@ -22024,7 +22309,10 @@ export const INITIAL_CHARACTERS = [
         "id": "dabura-saga-buu-107-base-std",
         "name": "Dabura (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dabura antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "dabura-base",
@@ -22376,7 +22664,10 @@ export const INITIAL_CHARACTERS = [
         "id": "pan-saga-buu-780-base-std",
         "name": "Pan (GT) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Pan (GT) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "pan-gt-base",
@@ -22574,7 +22865,10 @@ export const INITIAL_CHARACTERS = [
         "id": "spopovich-saga-buu-676-base-std",
         "name": "Spopovich (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Spopovich antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "spopovich-majin",
@@ -22752,7 +23046,10 @@ export const INITIAL_CHARACTERS = [
         "id": "yamu-saga-buu-59-base-std",
         "name": "Yamu (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Yamu antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "yamu-majin",
@@ -22921,7 +23218,10 @@ export const INITIAL_CHARACTERS = [
         "id": "anciano-kaio-shin-saga-buu-404-base-std",
         "name": "Anciano Kaio-shin (Ro Kaio-shin) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Anciano Kaio-shin (Ro Kaio-shin) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "anciano-kaioshin",
@@ -23100,7 +23400,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegetto-base-z",
         "name": "Vegetto Base",
         "stats": "Nivel Galaxia. Ya en estado base era superior a Buuhan.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "super-vegetto",
@@ -23293,7 +23596,10 @@ export const INITIAL_CHARACTERS = [
         "id": "dr-wheelo-pel-culas-dbz-toei-823-base-std",
         "name": "Dr. Wheelo (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dr. Wheelo antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "wheelo-robot",
@@ -23700,7 +24006,10 @@ export const INITIAL_CHARACTERS = [
         "id": "lord-cooler-pel-culas-dbz-toei-792-base-std",
         "name": "Cooler (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cooler antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "cooler-forma-final",
@@ -23904,7 +24213,10 @@ export const INITIAL_CHARACTERS = [
         "id": "meta-cooler-pel-culas-dbz-toei-714-base-std",
         "name": "Meta Cooler (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Meta Cooler antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "meta-cooler-clone",
@@ -24092,7 +24404,10 @@ export const INITIAL_CHARACTERS = [
         "id": "13-base",
         "name": "Cyborg Base",
         "stats": "Nivel Estrella Enana. Camionero con gorra Red Ribbon, actitud ruda sureña.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "super-13",
@@ -24302,7 +24617,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-14-pel-culas-dbz-toei-392-base-std",
         "name": "Androide 14 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 14 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "14-base",
@@ -24512,7 +24830,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-15-pel-culas-dbz-toei-547-base-std",
         "name": "Androide 15 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 15 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "15-base",
@@ -24720,7 +25041,10 @@ export const INITIAL_CHARACTERS = [
         "id": "paragus-pel-culas-dbz-toei-728-base-std",
         "name": "Paragus (Z) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Paragus (Z) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "paragus-base",
@@ -25097,7 +25421,10 @@ export const INITIAL_CHARACTERS = [
         "id": "zangya-pel-culas-dbz-toei-447-base-std",
         "name": "Zangya (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Zangya antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "zangya-base",
@@ -25300,7 +25627,10 @@ export const INITIAL_CHARACTERS = [
         "id": "bido-pel-culas-dbz-toei-296-base-std",
         "name": "Bido (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Bido antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "bido-base",
@@ -25497,7 +25827,10 @@ export const INITIAL_CHARACTERS = [
         "id": "bujin-pel-culas-dbz-toei-994-base-std",
         "name": "Bujin (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Bujin antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "bujin-base",
@@ -25712,7 +26045,10 @@ export const INITIAL_CHARACTERS = [
         "id": "kogu-base",
         "name": "Kogu Base",
         "stats": "Nivel Estrella Enana. Piel verde clara, cabello naranja largo, traje de pirata elegante.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "kogu-transformado",
@@ -25937,7 +26273,10 @@ export const INITIAL_CHARACTERS = [
         "id": "dr-lychee-pel-culas-dbz-toei-354-base-std",
         "name": "Dr. Lychee (Dr. Raichi) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dr. Lychee (Dr. Raichi) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "lychee-fantasma",
@@ -26130,7 +26469,10 @@ export const INITIAL_CHARACTERS = [
         "id": "hatchiyack-pel-culas-dbz-toei-383-base-std",
         "name": "Hatchiyack (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Hatchiyack antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-C",
+        "tierExact": "5-C",
+        "multiplier": "1x"
       },
       {
         "id": "hatchiyack-base",
@@ -26304,7 +26646,10 @@ export const INITIAL_CHARACTERS = [
         "id": "bio-broly-pel-culas-dbz-toei-858-base-std",
         "name": "Bio-Broly (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Bio-Broly antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "biobroly-base",
@@ -26476,7 +26821,10 @@ export const INITIAL_CHARACTERS = [
         "id": "janemba-gordo-pel-culas-dbz-toei-542-base-std",
         "name": "Super Janemba (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Super Janemba antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "super-janemba",
@@ -26629,7 +26977,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gogeta-z-base",
         "name": "Gogeta Base",
         "stats": "Nivel Galaxia. Danza Metamoran de Goku y Vegeta.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gogeta-z-ssj",
@@ -26829,7 +27180,10 @@ export const INITIAL_CHARACTERS = [
         "id": "hirudegarn-pel-culas-dbz-toei-805-base-std",
         "name": "Hirudegarn (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Hirudegarn antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "hirudegarn-mitad",
@@ -26987,7 +27341,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tapion-pel-culas-dbz-toei-767-base-std",
         "name": "Tapion (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tapion antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "tapion-base",
@@ -27192,7 +27549,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-17-futuro-l-nea-temporal-futura-398-base-std",
         "name": "Androide 17 (Futuro) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 17 (Futuro) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "17-futuro",
@@ -27411,7 +27771,10 @@ export const INITIAL_CHARACTERS = [
         "id": "androide-18-futuro-l-nea-temporal-futura-419-base-std",
         "name": "Androide 18 (Línea del Futuro) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 18 (Línea del Futuro) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "18-futuro",
@@ -27633,7 +27996,10 @@ export const INITIAL_CHARACTERS = [
         "id": "black-base",
         "name": "Estado Base",
         "stats": "Nivel Universal. Supera al SSJ3 y rivaliza temporalmente con el God en sus primeras fases.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "black-ssj",
@@ -27875,7 +28241,10 @@ export const INITIAL_CHARACTERS = [
         "id": "zamasu-base",
         "name": "Zamasu (Kaio del Norte U10 / Base)",
         "stats": "Nivel Galáctico. Prodigio del combate sagrado.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "zamasu-inmortal",
@@ -28078,7 +28447,10 @@ export const INITIAL_CHARACTERS = [
         "id": "mai-l-nea-temporal-futura-446-base-std",
         "name": "Mai (Línea del Futuro) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mai (Línea del Futuro) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "mai-futuro",
@@ -28293,7 +28665,10 @@ export const INITIAL_CHARACTERS = [
         "id": "beerus-base",
         "name": "Estado Base (Perezoso)",
         "stats": "Nivel Universal+. Invulnerable al daño físico convencional.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "beerus-hakaishin",
@@ -28676,7 +29051,10 @@ export const INITIAL_CHARACTERS = [
         "id": "champa-dragon-ball-super-179-base-std",
         "name": "Champa (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Champa antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "champa-base",
@@ -28859,7 +29237,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vados-dragon-ball-super-918-base-std",
         "name": "Vados (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Vados antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "vados-base",
@@ -29029,7 +29410,10 @@ export const INITIAL_CHARACTERS = [
         "id": "hit-torneo",
         "name": "Estado Base (Contenido)",
         "stats": "Nivel Universal. Lucha con reglas de torneo, sin dar golpes letales.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "hit-asesino",
@@ -29237,7 +29621,10 @@ export const INITIAL_CHARACTERS = [
         "id": "cabba-base",
         "name": "Saiyan Base",
         "stats": "Nivel Universal. Físico muy delgado, traje morado de Sadala.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "cabba-ssj",
@@ -29438,7 +29825,10 @@ export const INITIAL_CHARACTERS = [
         "id": "botamo-dragon-ball-super-999-base-std",
         "name": "Botamo (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Botamo antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "botamo-base",
@@ -29829,7 +30219,10 @@ export const INITIAL_CHARACTERS = [
         "id": "monaka-dragon-ball-super-955-base-std",
         "name": "Monaka (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Monaka antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "monaka-base",
@@ -30034,7 +30427,10 @@ export const INITIAL_CHARACTERS = [
         "id": "jiren-contenido",
         "name": "Base (Contenido)",
         "stats": "Nivel Universal+. Aura sutil, ni se mueve para pelear, medita.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "jiren-100",
@@ -30233,7 +30629,10 @@ export const INITIAL_CHARACTERS = [
         "id": "toppo-base",
         "name": "Toppo (Líder Tropas del Orgullo / Base)",
         "stats": "Nivel Galáctico a Universal Menor. Justicia implacable y Justice Flash.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "toppo-hakaishin",
@@ -30423,7 +30822,10 @@ export const INITIAL_CHARACTERS = [
         "id": "dyspo-dragon-ball-super-188-base-std",
         "name": "Dyspo (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dyspo antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "dyspo-super-speed",
@@ -30612,7 +31014,10 @@ export const INITIAL_CHARACTERS = [
         "id": "kefla-base",
         "name": "Kefla Base",
         "stats": "Nivel Galáctico. Fusión Pothala de Caulifla y Kale.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "kefla-ssj1",
@@ -30827,7 +31232,10 @@ export const INITIAL_CHARACTERS = [
         "id": "caulifla-base",
         "name": "Saiyan Base",
         "stats": "Nivel Estrella Enana a Universal. Cabello desordenado, top magenta, pantalones anchos.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "caulifla-ssj1",
@@ -31039,7 +31447,10 @@ export const INITIAL_CHARACTERS = [
         "id": "kale-base",
         "name": "Saiyan Base",
         "stats": "Nivel Ciudad a Universal (Oculto). Tímida, cabello atado, top rojo.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "kale-berserk",
@@ -31245,7 +31656,10 @@ export const INITIAL_CHARACTERS = [
         "id": "anilaza-dragon-ball-super-645-base-std",
         "name": "Anilaza (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Anilaza antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "anilaza-kaiju",
@@ -31441,7 +31855,10 @@ export const INITIAL_CHARACTERS = [
         "id": "bergamo-base",
         "name": "Base Humanoide Lobo",
         "stats": "Nivel Universal Bajo. Bufanda roja, cuerpo alto esbelto.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "bergamo-gigante",
@@ -31641,7 +32058,10 @@ export const INITIAL_CHARACTERS = [
         "id": "basil-dragon-ball-super-757-base-std",
         "name": "Basil (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Basil antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "basil-base",
@@ -31853,7 +32273,10 @@ export const INITIAL_CHARACTERS = [
         "id": "lavender-dragon-ball-super-460-base-std",
         "name": "Lavender (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Lavender antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "lavender-base",
@@ -32056,7 +32479,10 @@ export const INITIAL_CHARACTERS = [
         "id": "brianne-base",
         "name": "Brianne de Chateau (Forma Humana/Base)",
         "stats": "Nivel Planeta Pequeño.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ribrianne-form",
@@ -32444,7 +32870,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gas-dragon-ball-super-973-base-std",
         "name": "Gas (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gas antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gas-anciano",
@@ -32633,7 +33062,10 @@ export const INITIAL_CHARACTERS = [
         "id": "bardock-base",
         "name": "Bardock (Estado Base / Guerrero Élite)",
         "stats": "Nivel Luna a Planeta Pequeño.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "bardock-oozaru",
@@ -32852,7 +33284,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gamma-1-dragon-ball-super-885-base-std",
         "name": "Gamma 1 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gamma 1 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "gamma-1-base",
@@ -33050,7 +33485,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gamma-2-dragon-ball-super-446-base-std",
         "name": "Gamma 2 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gamma 2 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "gamma-2-base",
@@ -33234,7 +33672,10 @@ export const INITIAL_CHARACTERS = [
         "id": "cell-max-dragon-ball-super-993-base-std",
         "name": "Cell Max (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cell Max antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "cell-max-base",
@@ -33438,7 +33879,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegetto-base-dbs",
         "name": "Vegetto Base",
         "stats": "Nivel Universal+ (Manga). Suficiente para presionar a deidades menores.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "vegetto-ssj-dbs",
@@ -33646,7 +34090,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gogeta-base-dbs",
         "name": "Gogeta Base",
         "stats": "Nivel Universal+. Evadió todos los ataques de Broly SSJ sin sudar.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gogeta-ssj-dbs",
@@ -34060,7 +34507,10 @@ export const INITIAL_CHARACTERS = [
         "id": "baby-vegeta-base",
         "name": "Vegeta Poseído por Baby (Base)",
         "stats": "Nivel Sistema Solar a Galaxia.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "baby-vegeta-super1",
@@ -34305,7 +34755,10 @@ export const INITIAL_CHARACTERS = [
         "id": "super-17-dragon-ball-gt-73-base-std",
         "name": "Super 17 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Super 17 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "super-17",
@@ -34512,7 +34965,10 @@ export const INITIAL_CHARACTERS = [
         "id": "syn-base",
         "name": "Syn Shenron (1 Estrella / Base)",
         "stats": "Nivel Multi-Galáctico.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "omega-true",
@@ -34698,7 +35154,10 @@ export const INITIAL_CHARACTERS = [
         "id": "nuova-base",
         "name": "Nuova Shenron (Cáscara Roja / Base)",
         "stats": "Nivel Galáctico.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "nuova-true",
@@ -34877,7 +35336,10 @@ export const INITIAL_CHARACTERS = [
         "id": "eis-shenron-dragon-ball-gt-308-base-std",
         "name": "Eis Shenron (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Eis Shenron antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "eis-base",
@@ -35051,7 +35513,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gogeta-gt-base",
         "name": "Gogeta Base (GT)",
         "stats": "Nivel Multi-Galáctico.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gogeta-dragon-ball-gt-258-ssj3-std",
@@ -35256,7 +35721,10 @@ export const INITIAL_CHARACTERS = [
         "id": "majuub-dragon-ball-gt-859-base-std",
         "name": "Majuub (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Majuub antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "majuub-base",
@@ -35456,7 +35924,10 @@ export const INITIAL_CHARACTERS = [
         "id": "panzy-dragon-ball-daima-138-base-std",
         "name": "Panzy (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Panzy antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "panzy-base",
@@ -35652,7 +36123,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tamagami-n-mero-1-dragon-ball-daima-763-base-std",
         "name": "Tamagami Número 1 (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tamagami Número 1 antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "tamagami-1",
@@ -35839,7 +36313,10 @@ export const INITIAL_CHARACTERS = [
         "id": "piccolo-dragon-ball-daima-343-base-std",
         "name": "Piccolo (Daima Mini) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Piccolo (Daima Mini) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-mini",
@@ -36068,7 +36545,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegeta-mini-base",
         "name": "Vegeta Mini Base",
         "stats": "Nivel Sistema Solar. Traje azul ajustado, armadura blanca con tirantes, mirada ceñuda.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-mini-ssj",
@@ -36294,7 +36774,10 @@ export const INITIAL_CHARACTERS = [
         "id": "granolah-peak-dbs-manga-gr001-base-std",
         "name": "Granolah (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Granolah antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "granolah-ojos-rojos",
@@ -46283,7 +46766,10 @@ export const INITIAL_CHARACTERS = [
         "id": "krillin-nh-base",
         "name": "Krillin (Forma Base / Condensador Limitador)",
         "stats": "Nivel Sistema Solar Menor. Circuitos cibernéticos de limitación que evitan que su Ki humano desgarre sus músculos.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "krillin-nh-unleashed",
@@ -46491,7 +46977,10 @@ export const INITIAL_CHARACTERS = [
         "id": "cell-nh-base",
         "name": "Cell (Estado Base / Forma Perfecta Resucitada)",
         "stats": "Nivel Sistema Solar Superior. Vencedor de los Cell Games, aura dorada con relámpagos constantes.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "cell-nh-hyper",
@@ -46687,7 +47176,10 @@ export const INITIAL_CHARACTERS = [
         "id": "veg-kk-base",
         "name": "Estado Base (Vegeta Namek)",
         "stats": "Nivel Planeta Grande.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "veg-kk-10",
@@ -46919,7 +47411,10 @@ export const INITIAL_CHARACTERS = [
         "id": "bardock-brokoly-base",
         "name": "Bardock (Estado Base Superviviente)",
         "stats": "Nivel Planeta Grande. Cicatrices de combate y Ki base endurecido por cientos de batallas al borde de la muerte.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "bardock-brokoly-ssj1",
@@ -47150,7 +47645,10 @@ export const INITIAL_CHARACTERS = [
         "id": "saibaman-base",
         "name": "Saibaman (Estado Base Superviviente)",
         "stats": "Nivel Planeta Pequeño (1.200 Unidades). Fisiología vegetal inteligente que aprende tácticas de supervivencia.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "saibaman-mutado",
@@ -47451,7 +47949,10 @@ export const INITIAL_CHARACTERS = [
         "id": "kakarotto-base",
         "name": "Kakarotto (Estado Base Salvaje)",
         "stats": "Nivel Galáctico Menor. Poder saiyan desatado sin golpe en la cabeza.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "kakarotto-ssj1",
@@ -47547,7 +48048,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegeta-kakumei-base",
         "name": "Vegeta (Estado Base Kakumei)",
         "stats": "Nivel Galáctico. Capa y pendientes de Dios de la Destrucción.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-kakumei-ultra-ego",
@@ -47794,7 +48298,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-kakumei-base",
         "name": "Son Goku (Estado Base Kakumei)",
         "stats": "Nivel Galáctico a Universal. Traje rasgado y entrenamiento físico extremo en condiciones de gravedad infinita.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goku-kakumei-void",
@@ -48012,7 +48519,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-fw-base",
         "name": "Estado Base (Gohan del Futuro)",
         "stats": "Nivel Sistema Solar. Gohan con 1 solo brazo pero gran poder.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-fw-mistico",
@@ -48300,7 +48810,10 @@ export const INITIAL_CHARACTERS = [
         "id": "baby-vegeta-god-brokoly-base-std",
         "name": "Super Baby Vegeta (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Super Baby Vegeta antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "baby-vegeta-god",
@@ -48440,7 +48953,10 @@ export const INITIAL_CHARACTERS = [
         "id": "raditz-base-brokoly",
         "name": "Raditz Base (Guerrero Z)",
         "stats": "Nivel Planeta Grande. Disciplina marcial de la Escuela Tortuga y control de Ki refinado.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "raditz-kk10-brokoly",
@@ -48746,7 +49262,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-u11-base",
         "name": "Gohan del Universo 11 (Estado Base)",
         "stats": "Nivel Galáctico. Discípulo de Belmod y las Tropas del Orgullo.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-u11-beast-hakaishin",
@@ -48884,7 +49403,10 @@ export const INITIAL_CHARACTERS = [
         "id": "broly-kakumei-base",
         "name": "Broly (Estado Base Kakumei)",
         "stats": "Nivel Galáctico. Piel endurecida en Vampa y entrenamiento mental con Cheelai.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "broly-kakumei-lssj",
@@ -49103,7 +49625,10 @@ export const INITIAL_CHARACTERS = [
         "id": "amond-base",
         "name": "Amond (Estado Base / Forma Sellada)",
         "stats": "Nivel Universal. Túnica ceremonial y control de la gravedad cósmica.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "amond-true",
@@ -49285,7 +49810,10 @@ export const INITIAL_CHARACTERS = [
         "id": "vegeta-after-base",
         "name": "Vegeta (Estado Base DB After)",
         "stats": "Nivel Galáctico. Gran madurez marcial post-Buu y control de Ki perfeccionado.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-db-after-ssj1-std",
@@ -49509,7 +50037,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gotenks-adulto-base",
         "name": "Gotenks Adulto (Estado Base)",
         "stats": "Nivel Galáctico. Combinación madura de los talentos de Goten y Trunks.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gotenks-adulto-ssj1",
@@ -49737,7 +50268,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tenshinhan-nh-base",
         "name": "Tenshinhan (Veterano de la Muerte / Base)",
         "stats": "Nivel Planeta Grande. Cuerpo endurecido por décadas de entrenamiento solitario en las montañas.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "tenshinhan-nh-kikoho",
@@ -49958,7 +50492,10 @@ export const INITIAL_CHARACTERS = [
         "id": "piccolo-nh-base",
         "name": "Piccolo (Maestro Namekiano / Base)",
         "stats": "Nivel Sistema Solar Menor. Concentración mental absoluta y ropa pesada de entrenamiento.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-nh-fused",
@@ -50233,7 +50770,10 @@ export const INITIAL_CHARACTERS = [
         "id": "frost-1",
         "name": "Frost (Primera Forma / Estado Base)",
         "stats": "Nivel Universal Bajo. Idéntico a Freezer 1, pero colores azules, modales exquisitos.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "frost-3",
@@ -50329,7 +50869,10 @@ export const INITIAL_CHARACTERS = [
         "id": "baby-god-base",
         "name": "Super Baby Vegeta (Estado Base)",
         "stats": "Nivel Galáctico. Control parasitario de la mente y cuerpo de Vegeta.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "baby-god-super2",
@@ -50542,7 +51085,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-after-base",
         "name": "Son Gohan Base (DB After)",
         "stats": "Nivel Sistema Solar.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-after-mystic",
@@ -50752,7 +51298,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goku-janemba-base",
         "name": "Son Goku (Estado Base / Infierno)",
         "stats": "Nivel Planeta Grande a Estrella. Gran destreza marcial en el Más Allá.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goku-janemba-ssj1",
@@ -50964,7 +51513,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goten-nh-child-base",
         "name": "Goten Niño (Estado Base New Hope)",
         "stats": "Nivel Planeta Grande. Físico endurecido por el entrenamiento con Krilin.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goten-nh-child-ssj1",
@@ -51166,7 +51718,10 @@ export const INITIAL_CHARACTERS = [
         "id": "goten-nh-adult-base",
         "name": "Goten Adulto (Estado Base)",
         "stats": "Nivel Sistema Solar. Gran madurez de combate y porte similar a Goku.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "goten-nh-adult-ssj1",
@@ -51430,7 +51985,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Base Post-Tanque",
         "stats": "Poder de 3 millones",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 5-B",
+        "tierExact": "Low 5-B",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1",
@@ -52854,7 +53412,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Despreocupado / Modo Compra del Súper)",
         "stats": "Tier 5-B a 4-C | Nivel Planeta a Estrella. Destruye meteoritos gigantes con un golpe relajado.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "serious-mode",
@@ -53039,7 +53600,10 @@ export const INITIAL_CHARACTERS = [
         "id": "garou-cosmico-opm-base-std",
         "name": "Cosmic Garou (Modo Despertar Cósmico) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cosmic Garou (Modo Despertar Cósmico) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -59549,7 +60113,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (El Saiyan Supremo)",
         "stats": "Tier 4-A | Nivel Multi-Sistema Solar. Poder superior a Buu Gohan sin transformarse.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1",
@@ -59751,7 +60318,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Son Bra Adolescente)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Fuerza superior a Perfect Cell en estado base.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1",
@@ -59952,7 +60522,10 @@ export const INITIAL_CHARACTERS = [
         "id": "zen-buu-dbm-u4-base-std",
         "name": "Zen Buu (Multiverse — U4) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Zen Buu (Multiverse — U4) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -60329,7 +60902,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Cell Perfecto (Estado Base DBM)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Nivel superior a los Juegos de Cell de DBZ.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "super-perfect-dbm",
@@ -60548,7 +61124,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Kakarotto Salvaje)",
         "stats": "Tier 5-A | Nivel Planeta Grande. Inmortalidad activa y cola de mono intacta.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-immortal",
@@ -60739,7 +61318,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Raditz Guerrero U13)",
         "stats": "Tier 5-B | Nivel Planeta. Guerrero de élite Saiyan que nunca logró desbloquear el Super Saiyan.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "mystic-raditz",
@@ -60954,7 +61536,10 @@ export const INITIAL_CHARACTERS = [
         "id": "xxi-hechicero-dbm-u5-base-std",
         "name": "XXI (Multiverse — U5) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de XXI (Multiverse — U5) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -61119,7 +61704,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Bardock Veterano U3)",
         "stats": "Tier 5-A | Nivel Planeta Grande. Cicatriz en la mejilla y visiones activas.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-bardock-u3",
@@ -61316,7 +61904,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Pan U16 Adolescente)",
         "stats": "Tier 5-B | Nivel Planeta. Gi de artes marciales y gran agilidad.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-pan-u16",
@@ -61507,7 +62098,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Gotenks Adulto)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Chaleco metamor y gran soltura física.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-gotenks-adult",
@@ -61733,7 +62327,10 @@ export const INITIAL_CHARACTERS = [
         "id": "rey-cold-formas-dbm-u8-base-std",
         "name": "Rey Cold (Multiverse — U8) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Rey Cold (Multiverse — U8) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -61936,7 +62533,10 @@ export const INITIAL_CHARACTERS = [
         "id": "eleim-ultra-dbm-u19-base-std",
         "name": "Eleim (Multiverse — U19) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Eleim (Multiverse — U19) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -62117,7 +62717,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Goku Mini Estado Base (Con Báculo Sagrado)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Manejo magistral del Nyoibo y combate ágil.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-daima",
@@ -62349,7 +62952,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Vegeta Mini Estado Base",
         "stats": "Tier 4-B | Nivel Sistema Solar Menor. Armadura saiyan ajustada y gran agilidad.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-vegeta-daima",
@@ -62598,7 +63204,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Goku Adulto (Estado Base Daima)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Gi naranja clásico y gran plenitud marcial.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-adulto-daima",
@@ -62861,7 +63470,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Vegeta Adulto (Estado Base)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Armadura saiyan blanca y azul clásica.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-adulto-vegeta-daima",
@@ -63093,7 +63705,10 @@ export const INITIAL_CHARACTERS = [
         "id": "rey-gomah-daima-base-std",
         "name": "Rey Gomah (King Gomah) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Rey Gomah (King Gomah) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -63249,7 +63864,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tamagami-1-espada-daima-base-std",
         "name": "Tamagami #1 (Guardián de la Espada de Fuego) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tamagami #1 (Guardián de la Espada de Fuego) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -63426,7 +64044,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tamagami-2-escudo-daima-base-std",
         "name": "Tamagami #2 (Guardián del Escudo y Lanza) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tamagami #2 (Guardián del Escudo y Lanza) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -63599,7 +64220,10 @@ export const INITIAL_CHARACTERS = [
         "id": "tamagami-3-supremo-daima-base-std",
         "name": "Tamagami #3 (Guardián Supremo) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tamagami #3 (Guardián Supremo) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -63812,7 +64436,10 @@ export const INITIAL_CHARACTERS = [
         "id": "majin-kuu-daima-base-std",
         "name": "Majin Kuu (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Majin Kuu antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -64258,7 +64885,10 @@ export const INITIAL_CHARACTERS = [
         "id": "glorio-daima-reino-demonio-base-std",
         "name": "Glorio (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Glorio antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -64478,7 +65108,10 @@ export const INITIAL_CHARACTERS = [
         "id": "anciano-neva-daima-base-std",
         "name": "Neva (El Creador de las Esferas) (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Neva (El Creador de las Esferas) antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -64706,7 +65339,10 @@ export const INITIAL_CHARACTERS = [
         "id": "princesa-panzy-daima-base-std",
         "name": "Princesa Panzy (Estado Base)",
         "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Princesa Panzy antes de liberar transformaciones.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "base",
@@ -75109,7 +75745,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Base",
         "stats": "Tier 4-B; forma sin transformar, post-saga Buu",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj3",
@@ -75345,7 +75984,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Base",
         "stats": "Tier 4-B; forma sin transformar",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj2",
@@ -75906,7 +76548,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-u16-base",
         "name": "Son Gohan (Universo 16 - Base)",
         "stats": "Tier 4-B | Nivel Sistema Solar.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-u16-mystic",
@@ -76520,7 +77165,10 @@ export const INITIAL_CHARACTERS = [
         "id": "beerus-kak-base",
         "name": "Beerus (Estado Normal)",
         "stats": "Nivel Multiversal Bajo.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "beerus-kak-hakaishin",
@@ -77603,7 +78251,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Forma base (General Rilldo)",
         "stats": "Tier 4-B; forma de combate estándar",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "metal-maximo",
@@ -85685,7 +86336,10 @@ export const INITIAL_CHARACTERS = [
         "id": "turles-base",
         "name": "Turles (Base)",
         "stats": "Tier 4-C | Nivel Estrella Enana (19,000 unidades de Ki).",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "turles-fruto",
@@ -87559,7 +88213,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Vegeta U13)",
         "stats": "Tier 5-A | Nivel Planeta Grande. Comandante supremo y líder despiadado de los cuatro Super Saiyans.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-vegeta-u13",
@@ -87965,7 +88622,10 @@ export const INITIAL_CHARACTERS = [
         "id": "trunks-v1-base",
         "name": "Trunks del Futuro (Estado Base)",
         "stats": "Tier 5-A | Nivel Planeta Grande. Combate cuerpo a cuerpo con espada de acero y Ki sin transformar.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "trunks-v1-ssj-basico",
@@ -88149,7 +88809,10 @@ export const INITIAL_CHARACTERS = [
         "id": "trunks-v2-base",
         "name": "Trunks del Futuro (Estado Base - Post-RoSaT)",
         "stats": "Tier 4-C | Nivel Estrella Enana. Condición física óptima tras el entrenamiento con Vegeta en la Habitación del Tiempo.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "trunks-v2-ssj1",
@@ -88367,7 +89030,10 @@ export const INITIAL_CHARACTERS = [
         "id": "trunks-v3-base",
         "name": "Trunks del Futuro (Estado Base - Pacificador del Futuro)",
         "stats": "Tier 4-C a 4-B | Nivel Estrella Enana a Sistema Solar. Tras eliminar a los Androides y a Cell de su línea temporal.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "High 5-A",
+        "tierExact": "High 5-A",
+        "multiplier": "1x"
       },
       {
         "id": "trunks-v3-ssj1",
@@ -88602,7 +89268,10 @@ export const INITIAL_CHARACTERS = [
         "id": "trunks-v4-base",
         "name": "Trunks del Futuro (Estado Base - Manga DBS)",
         "stats": "Tier 4-B a 4-A | Nivel Sistema Solar a Multi-Sistema Solar. Forjado en la guerra contra Babidi, Dabura y Goku Black.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "trunks-v4-ssj1",
@@ -89084,7 +89753,10 @@ export const INITIAL_CHARACTERS = [
         "id": "trunks-anime-base",
         "name": "Trunks del Futuro (Estado Base - Anime DBS)",
         "stats": "Tier 4-B a 4-A | Nivel Sistema Solar a Multi-Sistema Solar.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "tierExact": "5-A",
+        "multiplier": "1x"
       },
       {
         "id": "trunks-anime-ssj1",
@@ -92262,7 +92934,10 @@ export const INITIAL_CHARACTERS = [
         "id": "black-freezer-forma-final",
         "name": "Forma Final Base (Manga Granolah)",
         "stats": "Tier 3-A | Nivel Universal. Estado base con poder multiplicado tras 10 años de entrenamiento.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "black-freezer-golden",
@@ -92466,7 +93141,10 @@ export const INITIAL_CHARACTERS = [
         "id": "freezer-broly-forma-final",
         "name": "Forma Final (Base DBS)",
         "stats": "Tier 3-A | Nivel Universal.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "Low 2-C",
+        "tierExact": "Low 2-C",
+        "multiplier": "1x"
       },
       {
         "id": "freezer-broly-golden",
@@ -92670,7 +93348,10 @@ export const INITIAL_CHARACTERS = [
         "id": "gohan-fnf-base-chandal",
         "name": "Estado Base (Chándal Verde / Falta de Entrenamiento)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Físico debilitado por dedicarse a los estudios académicos; combate básico contra Shisami y los soldados de Freezer.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "gohan-fnf-ssj1-forzado",
@@ -150227,7 +150908,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Dr. Raichi en Cápsula)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Escudo de odio e invocaciones de guerreros básicos.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ghost-broly-unleashed",
@@ -150427,7 +151111,10 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Estado Base (Rey Vegeta)",
         "stats": "Tier 5-A | Nivel Planeta Grande. Comandante supremo con capa y barba real.",
-        "apexKiMultiplier": 1
+        "apexKiMultiplier": 1,
+        "tier": "7-A",
+        "tierExact": "7-A",
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-king-vegeta",
