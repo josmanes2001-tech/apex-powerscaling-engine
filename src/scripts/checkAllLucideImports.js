@@ -28,34 +28,37 @@ function getAllFiles(dir, exts = ['.jsx', '.js', '.tsx', '.ts'], res = []) {
 }
 
 async function main() {
-  const viteConfigFile = path.join(projectRoot, 'vite.config.js');
-  const cleanViteConfig = `import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
+  const batFile = path.join(projectRoot, 'DESPLEGAR_A_VERCEL.bat');
+  const cleanBatContent = [
+    '@echo off',
+    'title Sincronizador Apex Engine Vercel',
+    'color 0B',
+    'cd /d "%~dp0"',
+    '',
+    'echo ========================================================',
+    'echo   SINCRONIZANDO APEX ENGINE (GITHUB + VERCEL)',
+    'echo ========================================================',
+    'echo.',
+    '',
+    'echo [1/2] Guardando cambios locales...',
+    'git add .',
+    'git commit -m "feat: sync y despliegue limpio" 2>nul',
+    '',
+    'echo [2/2] Subiendo a GitHub para despliegue automatico en Vercel...',
+    'git push origin main',
+    '',
+    'echo.',
+    'echo ========================================================',
+    'echo   EXITO: Cambios enviados a GitHub',
+    'echo   Vercel actualizara la web en: https://apex-engine-six.vercel.app/',
+    'echo ========================================================',
+    'echo.',
+    'pause',
+    ''
+  ].join('\r\n');
 
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  resolve: {
-    dedupe: ['react', 'react-dom']
-  },
-  server: {
-    host: '0.0.0.0',
-    port: 5173,
-    strictPort: true,
-    watch: {
-      usePolling: true,
-      interval: 1000,
-      ignored: ['**/node_modules/**', '**/.git/**', '**/dist/**']
-    },
-    proxy: {
-      '/api': 'http://127.0.0.1:3001'
-    }
-  }
-});
-`;
-
-  fs.writeFileSync(viteConfigFile, cleanViteConfig, 'utf8');
-  console.log('✓ vite.config.js configurado con dedupe de React y proxy.');
+  fs.writeFileSync(batFile, cleanBatContent, 'binary');
+  console.log('✓ DESPLEGAR_A_VERCEL.bat reescrito con codificación pura Windows CRLF.');
 }
 
 main().catch(console.error);
