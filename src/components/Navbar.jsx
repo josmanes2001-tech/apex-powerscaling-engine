@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Shield, Swords, Sparkles, GitBranch, FolderCheck, PlusCircle, Cpu, Trophy, Download, Upload, Scale, Globe, Crown, Coffee, User, Cloud } from 'lucide-react';
+import { Shield, Swords, Sparkles, GitBranch, FolderCheck, PlusCircle, Cpu, Trophy, Download, Upload, Scale, Globe, Crown, Coffee, User } from 'lucide-react';
 import { SUPPORTED_LANGUAGES, getTranslation } from '../services/i18n';
 
 export default function Navbar({ 
@@ -237,9 +237,9 @@ export default function Navbar({
                 </>
               ) : (
                 <>
-                  <Cloud className="w-3.5 h-3.5 text-cyan-400" />
-                  <span className="hidden sm:inline">☁️ Iniciar Sesión</span>
-                  <span className="sm:hidden">☁️ Perfil</span>
+                  <span className="text-xs">☁️</span>
+                  <span className="hidden sm:inline">Iniciar Sesión</span>
+                  <span className="sm:hidden">Perfil</span>
                 </>
               )}
             </button>
