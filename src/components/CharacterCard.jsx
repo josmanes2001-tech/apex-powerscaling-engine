@@ -4,7 +4,7 @@ import { getTranslation } from '../services/i18n';
 import { resolveCombatState } from '../lib/combatStateResolver';
 import { SoundFX } from '../services/soundFx';
 
-import SearchableCharacterSelector from './SearchableCharacterSelector';
+import SearchableCharacterSelector from './SearchableCharacterSelector.jsx';
 
 export default function CharacterCard({ character = {}, role = '', onInspect, onEdit, onDelete, onSelectChange, onExportCard, allCharacters = [], lang = 'es' }) {
   if (!character || !character.id) {

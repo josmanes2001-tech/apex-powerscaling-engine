@@ -5,7 +5,7 @@ import {
   Save, History, Download, Trash2, Filter, Shuffle, Layers, BookOpen, ExternalLink,
   Users, UserPlus, UserCheck, Edit3, Check
 } from 'lucide-react';
-import SearchableCharacterSelector from './SearchableCharacterSelector';
+import SearchableCharacterSelector from './SearchableCharacterSelector.jsx';
 import { FRANCHISE_GROUPS } from '../services/franchiseHelper';
 import { SoundFX } from '../services/soundFx';
 import { enrichMatchNarrative } from '../services/narrativeFormatter';
