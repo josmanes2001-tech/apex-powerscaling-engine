@@ -6196,7 +6196,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mecha-freezer-base",
         "name": "Mecha Freezer (Cuerpo Cibernético Reconstruido)",
-        "stats": "Tier 4-B | Nivel Estrella Enana Alta. Reconstruido con prótesis mecánicas de aleación espacial por los científicos de King Cold, superando su poder original de Namek.",
+        "stats": "Tier 4-C | Nivel Estrella Enana Alta. Reconstruido con prótesis mecánicas de aleación espacial por los científicos de King Cold, superando su poder original de Namek.",
         "apexKiMultiplier": 1
       },
       {
@@ -19343,7 +19343,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "a18-base",
         "name": "Humana Modificada Base",
-        "stats": "Nivel Galaxia. Vestimenta casual, mirada fría y confiada.",
+        "stats": "Nivel Estrella Enana a Sistema Solar Menor. Vestimenta casual, energía infinita, mirada fría y confiada.",
         "apexKiMultiplier": 1
       }
     ],
@@ -46765,7 +46765,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "krillin-nh-base",
         "name": "Krillin (Forma Base / Condensador Limitador)",
-        "stats": "Nivel Sistema Solar Menor. Circuitos cibernéticos de limitación que evitan que su Ki humano desgarre sus músculos.",
+        "stats": "Nivel Planeta Grande a Estrella Enana. Circuitos cibernéticos de limitación que evitan que su Ki humano desgarre sus músculos.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -48518,7 +48518,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gohan-fw-base",
         "name": "Estado Base (Gohan del Futuro)",
-        "stats": "Nivel Sistema Solar. Gohan con 1 solo brazo pero gran poder.",
+        "stats": "Nivel Planeta Grande a Estrella Pequeña. Gohan con 1 solo brazo en estado base antes de despertar el potencial místico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -50491,7 +50491,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "piccolo-nh-base",
         "name": "Piccolo (Maestro Namekiano / Base)",
-        "stats": "Nivel Sistema Solar Menor. Concentración mental absoluta y ropa pesada de entrenamiento.",
+        "stats": "Nivel Planeta Grande a Estrella Enana. Concentración mental absoluta y ropa pesada de entrenamiento.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -51084,7 +51084,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gohan-after-base",
         "name": "Son Gohan Base (DB After)",
-        "stats": "Nivel Sistema Solar.",
+        "stats": "Nivel Planeta Grande a Estrella Pequeña.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -51717,7 +51717,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "goten-nh-adult-base",
         "name": "Goten Adulto (Estado Base)",
-        "stats": "Nivel Sistema Solar. Gran madurez de combate y porte similar a Goku.",
+        "stats": "Nivel Planeta Grande a Estrella Pequeña. Gran madurez de combate y porte similar a Goku.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
