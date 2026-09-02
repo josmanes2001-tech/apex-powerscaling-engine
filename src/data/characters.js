@@ -6832,6 +6832,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Cell (Forma Larval / Incubación)",
         "stats": "Nivel Ciudad++ (Tier 7-B). Embrión en crisálida subterránea antes de emerger como bioandroide insectoide.",
         "apexKiMultiplier": 1,
+        "sourceKi": 800,
         "tier": "7-B",
         "tierExact": "7-B",
         "multiplier": "1x"
@@ -6839,22 +6840,34 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "cell-imperfecto",
         "name": "Cell Imperfecto",
-        "stats": "Nivel Estrella Enana. Aspecto de insecto reptiliano, usa su cola para beber humanos."
+        "tier": "4-C",
+        "tierExact": "4-C",
+        "sourceKi": 390000000,
+        "stats": "Nivel Estrella Enana (Tier 4-C). Aspecto de insecto reptiliano, usa su cola para absorber biomasa y rivalizar con Piccolo y A-17."
       },
       {
         "id": "cell-semi",
         "name": "Cell Semi-Perfecto",
-        "stats": "Nivel Estrella Enana Alta. Absorbió a 17. Muy musculoso, rostro más humanoide."
+        "tier": "High 4-C",
+        "tierExact": "High 4-C",
+        "sourceKi": 940000000,
+        "stats": "Nivel Estrella Enana Alta (Tier High 4-C). Tras absorber al Androide 17. Gran masa muscular y potencia superior a A-16."
       },
       {
         "id": "cell-perfecto",
         "name": "Cell Perfecto",
-        "stats": "Nivel Sistema Solar Menor. Absorbió a 18. Rostro pulido, elegante, intocable para Vegeta."
+        "tier": "4-B",
+        "tierExact": "4-B",
+        "sourceKi": 3400000000,
+        "stats": "Nivel Sistema Solar Menor (Tier 4-B). Tras absorber a 18. Cuerpo pulido e intocable para Vegeta y Trunks SSJ Dai Ni/San Dankai."
       },
       {
         "id": "cell-super-perfecto",
         "name": "Cell Super Perfecto",
-        "stats": "Nivel Sistema Solar. Zenkai tras su suicidio. Electricidad en el aura, poder máximo."
+        "tier": "4-B",
+        "tierExact": "4-B",
+        "sourceKi": 5500000000,
+        "stats": "Nivel Sistema Solar (Tier 4-B). Zenkai tras sobrevivir a su autodestrucción. Aura dorada con relámpagos y Kamehameha Solar."
       }
     ],
     "feats": [
@@ -61319,7 +61332,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Estado Base (Raditz Guerrero U13)",
         "stats": "Tier 5-B | Nivel Planeta. Guerrero de élite Saiyan que nunca logró desbloquear el Super Saiyan.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "4-B",
         "tierExact": "7-A",
         "multiplier": "1x"
       },

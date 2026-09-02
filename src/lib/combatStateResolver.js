@@ -253,6 +253,24 @@ export function resolveCombatState(character, activeStateId = 'base', scenario =
     ? { ...stateObj.statModifiers }
     : {};
 
+  // Si el estado activo (incluso la forma base seleccionada) tiene un tier explícito definido en su forma (ej: 5-A o 7-B), usarlo
+  const rawActiveTier = stateObj?.tierExact || stateObj?.tier;
+  if (rawActiveTier) {
+    const cleanActiveTier = String(rawActiveTier).replace(/^Tier\s+/i, '').split('|')[0].trim().replace(/\s+a\s+.*$/i, '');
+    const activeRank = getTierRank(cleanActiveTier);
+    if (activeRank !== null) {
+      activeTierExact = cleanActiveTier;
+      currentApexKiLog10 = getBaseApexKiLog10(cleanActiveTier, baseWithinTierScore);
+      if (isTrulyBase && isDB) {
+        const baseEnergyObj = getBaseEnergyFromTier(cleanActiveTier);
+        if (validPositive(baseEnergyObj?.value)) {
+          sourceKiBase = baseEnergyObj.value;
+          sourceKiCurrent = baseEnergyObj.value;
+        }
+      }
+    }
+  }
+
   if (!isTrulyBase && stateObj) {
     let resolved = false;
 

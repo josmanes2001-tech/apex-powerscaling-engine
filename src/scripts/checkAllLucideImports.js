@@ -35,18 +35,62 @@ async function main() {
 
   let fixed = 0;
 
-  // 1. Corregir Cell (Saga Androides) en characters.js
-  // La primera forma "cell-saga-androides-98-base-std" sobraba o estaba como 'Estado Base' genérico antes de Imperfecto.
-  // La forma base canónica inicial de Cell en la Saga de Androides es "Cell Imperfecto" (Tier 4-C / Estrella Enana).
-  const cellTarget = '\"id\": \"cell-saga-androides-98\",\n    \"name\": \"Cell\",\n    \"alias\": \"La Creación Definitiva del Dr. Gero\",\n    \"universe\": \"Dragon Ball Z\",\n    \"saga\": \"Saga Androides\",';
-  
-  // Reemplazamos la primera forma genérica de Cell por Cell Larval / Imperfecto detallado
-  const cellFormRegex = /\{\s*"id":\s*"cell-saga-androides-98-base-std",[\s\S]*?"name":\s*"Cell \(Estado Base\)",[\s\S]*?"stats":\s*"[^"]*",[\s\S]*?"apexKiMultiplier":\s*1,[\s\S]*?"tier":\s*"5-A",[\s\S]*?"multiplier":\s*"1x"\s*\}/;
+  // 1. Configurar las formas de Cell (Saga Androides) con sus Tiers y Scouter Ki exactos:
+  // - Larval: Tier 7-B (~800 unidades)
+  // - Imperfecto: Tier 4-C (~390 Millones)
+  // - Semi-Perfecto: Tier 4-C (~940 Millones)
+  // - Perfecto: Tier 4-B (~3.4 Mil Millones)
+  // - Super Perfecto: Tier 4-B (~5.5 Mil Millones)
+  const cellFormsDef = `"forms": [
+      {
+        "id": "cell-larval",
+        "name": "Cell (Forma Larval / Incubación)",
+        "stats": "Nivel Ciudad++ (Tier 7-B). Embrión en crisálida subterránea antes de emerger como bioandroide insectoide.",
+        "apexKiMultiplier": 1,
+        "sourceKi": 800,
+        "tier": "7-B",
+        "tierExact": "7-B",
+        "multiplier": "1x"
+      },
+      {
+        "id": "cell-imperfecto",
+        "name": "Cell Imperfecto",
+        "tier": "4-C",
+        "tierExact": "4-C",
+        "sourceKi": 390000000,
+        "stats": "Nivel Estrella Enana (Tier 4-C). Aspecto de insecto reptiliano, usa su cola para absorber biomasa y rivalizar con Piccolo y A-17."
+      },
+      {
+        "id": "cell-semi",
+        "name": "Cell Semi-Perfecto",
+        "tier": "High 4-C",
+        "tierExact": "High 4-C",
+        "sourceKi": 940000000,
+        "stats": "Nivel Estrella Enana Alta (Tier High 4-C). Tras absorber al Androide 17. Gran masa muscular y potencia superior a A-16."
+      },
+      {
+        "id": "cell-perfecto",
+        "name": "Cell Perfecto",
+        "tier": "4-B",
+        "tierExact": "4-B",
+        "sourceKi": 3400000000,
+        "stats": "Nivel Sistema Solar Menor (Tier 4-B). Tras absorber a 18. Cuerpo pulido e intocable para Vegeta y Trunks SSJ Dai Ni/San Dankai."
+      },
+      {
+        "id": "cell-super-perfecto",
+        "name": "Cell Super Perfecto",
+        "tier": "4-B",
+        "tierExact": "4-B",
+        "sourceKi": 5500000000,
+        "stats": "Nivel Sistema Solar (Tier 4-B). Zenkai tras sobrevivir a su autodestrucción. Aura dorada con relámpagos y Kamehameha Solar."
+      }
+    ]`;
 
-  if (cellFormRegex.test(charContent)) {
-    charContent = charContent.replace(cellFormRegex, '{\n        "id": "cell-larval",\n        "name": "Cell (Forma Larval / Incubación)",\n        "stats": "Nivel Ciudad++ (Tier 7-B). Embrión en crisálida subterránea antes de emerger como bioandroide insectoide.",\n        "apexKiMultiplier": 1,\n        "tier": "7-B",\n        "tierExact": "7-B",\n        "multiplier": "1x"\n      }');
+  const oldCellFormsRegex = /"forms":\s*\[\s*\{\s*"id":\s*"cell-larval"[\s\S]*?"id":\s*"cell-super-perfecto"[\s\S]*?\}\s*\]/;
+  if (oldCellFormsRegex.test(charContent)) {
+    charContent = charContent.replace(oldCellFormsRegex, cellFormsDef);
     fixed++;
-    console.log('✓ Corregida forma base inicial de Cell a Forma Larval / Incubación (Tier 7-B).');
+    console.log('✓ Formas de Cell actualizadas con Tiers y Scouter Ki canónicos individuales.');
   }
 
   // 2. Corregir Cell DBM (cell-dbm-u17) base tier de 7-A a 4-B
