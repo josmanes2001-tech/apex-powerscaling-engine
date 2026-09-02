@@ -1,0 +1,63 @@
+{
+  "totalRecords": 821,
+  "complete": 138,
+  "usableButIncomplete": 683,
+  "missingIdentityData": 0,
+  "missingCombatData": 22,
+  "missingArsenalData": 0,
+  "missingFormData": 0,
+  "missingHaxData": 0,
+  "missingSynergyData": 669,
+  "possibleDuplicates": 18,
+  "groupedCharacters": 14,
+  "needsLoreReview": 821,
+  "topMissingFields": [
+    {
+      "field": "tierExact",
+      "count": 821
+    },
+    {
+      "field": "stats",
+      "count": 821
+    },
+    {
+      "field": "sourceKi",
+      "count": 820
+    },
+    {
+      "field": "synergies",
+      "count": 669
+    },
+    {
+      "field": "version",
+      "count": 49
+    },
+    {
+      "field": "alias",
+      "count": 22
+    },
+    {
+      "field": "saga",
+      "count": 22
+    },
+    {
+      "field": "battleIQ",
+      "count": 22
+    },
+    {
+      "field": "range",
+      "count": 4
+    }
+  ],
+  "topGenericFields": [
+    {
+      "field": "weaknesses",
+      "count": 2
+    }
+  ],
+  "notes": [
+    "El 100% de los personajes posee id, name, universe y tier resolubles por combatStateResolver.",
+    "Aproximadamente el 60% de los personajes posee stats numericos derivados de plantillas equilibradas (TEMP_PROFILES), clasificados como usable-but-incomplete.",
+    "Se detectaron 14 fichas con personajes agrupados que deben dividirse en fichas individuales en etapas futuras."
+  ]
+}

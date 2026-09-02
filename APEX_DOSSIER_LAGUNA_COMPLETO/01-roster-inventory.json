@@ -1,0 +1,948 @@
+{
+  "generatedAt": "2026-09-01T18:20:05.273Z",
+  "rosterSource": "src/data/characters.js (INITIAL_CHARACTERS)",
+  "totalRecords": 821,
+  "universes": [
+    {
+      "name": "Dragon Ball Super",
+      "records": 89,
+      "sagas": [
+        "Torneo del Poder / Granolah",
+        "Granolah",
+        "Super Hero",
+        "Torneo del Poder / Saga de Moro",
+        "Saga de la Supervivencia Universal / Torneo del Poder (DBS)",
+        "Saga de la Resurrección de 'F' (DBS)",
+        "Película: Broly",
+        "Supervivencia Universal",
+        "Trunks del Futuro",
+        "Saga de Goku Black",
+        "La Batalla de los Dioses / Granolah",
+        "Todas",
+        "Torneo U6 vs U7",
+        "Torneo del Poder / U6",
+        "Torneo del Poder",
+        "Torneo del Universo 6",
+        "Torneo de Exhibición / Poder",
+        "Torneo de Exhibición / Torneo del Poder",
+        "El Prisionero de la Patrulla Galáctica",
+        "Trunks del Futuro / Torneo Poder (Concepto)",
+        "Torneo del Poder / Saga Moro / Saga Granolah",
+        "Saga Granolah",
+        "Batalla de los Dioses (estimación de poder real, nunca mostrado al 100%)",
+        "Torneo del Poder / Post-Torneo",
+        "Saga de Moro",
+        "Arco de Goku Black y Zamasu (Manga Canónico — Toyotaro)",
+        "Batalla de los Dioses / Resurrección de F (Principios de Super)",
+        "Saga de Goku Black y Zamasu del Futuro (Anime Toei)",
+        "Arco de Granolah el Superviviente (Manga Toyotaro)",
+        "Película Dragon Ball Super: Broly",
+        "Saga de la Resurrección de 'F' y Entrenamiento Pre-Torneo del Poder",
+        "Saga Moro",
+        "Torneo del Poder / Encuentro de Exhibición",
+        "Saga de Granolah",
+        "Torneo del Universo 6 / Torneo del Poder"
+      ],
+      "tiersPresent": [
+        "2-C",
+        "3-A",
+        "4-B",
+        "4-C",
+        "9-A",
+        "2-B",
+        "4-A",
+        "10-B",
+        "1-C",
+        "2-A",
+        "3-B",
+        "5-A",
+        "8-A",
+        "9-C",
+        "9-B"
+      ]
+    },
+    {
+      "name": "Dragon Ball Z",
+      "records": 75,
+      "sagas": [
+        "Saga Saiyan",
+        "Saga de Namek",
+        "Juegos de Cell",
+        "Saga de Buu",
+        "Saga Namek",
+        "Saga Androides / Cell",
+        "Torneo de las Artes Marciales / Pui Pui",
+        "Saga Saiyan / Namek",
+        "Saga de los Androides y Cell",
+        "Saga de Majin Buu",
+        "Un Futuro Diferente (Especial TV)",
+        "Saga de Freezer / Namek (DBZ)",
+        "Saga de los Androides / Llegada a la Tierra (DBZ)",
+        "Saga Androides",
+        "Saga de Buu / DBS",
+        "Saga Saiyan / Saga de Namek",
+        "Saga Androides / Juegos de Cell",
+        "Saga Saiyan / Planeta Kaio",
+        "Llegada de Raditz",
+        "Saga Saiyan / Buu / Janemba",
+        "Saga Androides / Mecha Freezer",
+        "Androides / Torneo del Poder",
+        "Trunks del Futuro / TV Special",
+        "Un Futuro Diferente: Gohan y Trunks",
+        "Saga de Freezer",
+        "Saga Majin Buu",
+        "Flashback previo a la destrucción del Planeta Vegeta",
+        "Saga de los Androides (Línea Temporal Alternativa, Año 785)",
+        "Saga de Cell (post-entrenamiento en la Habitación del Tiempo) / Película 9: Bojack",
+        "Equivalente narrativo a una 'Saga Buu' de la línea temporal del futuro (Material Expandido / Videojuegos)",
+        "Saga Buu"
+      ],
+      "tiersPresent": [
+        "5-A",
+        "4-B",
+        "4-C",
+        "5-B",
+        "3-A",
+        "3-C",
+        "4-A",
+        "5-C",
+        "10-A",
+        "8-B",
+        "7-B",
+        "8-A",
+        "3-B"
+      ]
+    },
+    {
+      "name": "Dragon Ball Multiverse (Fan-Manga)",
+      "records": 64,
+      "sagas": [
+        "Torneo del Multiverso / Universo 16",
+        "Torneo del Multiverso / Rebelión de Babidi",
+        "Torneo del Multiverso / Universo 4",
+        "Torneo del Multiverso / Universo 7",
+        "Torneo del Multiverso / Universo 17",
+        "Torneo del Multiverso / Universo 13",
+        "Torneo del Multiverso / Universo 5",
+        "Torneo del Multiverso / Universo 3",
+        "Torneo del Multiverso / Universos 16 y 18",
+        "Torneo del Multiverso / Universo 8",
+        "Torneo del Multiverso / Universo 19",
+        "Torneo Interuniversal DBM",
+        "Torneo Interuniversal DBM — Universo Organizador",
+        "Torneo Interuniversal DBM — Universo 2",
+        "Torneo Interuniversal DBM — Universo 3",
+        "Torneo Interuniversal DBM — Universo 6",
+        "Torneo Interuniversal DBM — Universo 9",
+        "Torneo Interuniversal DBM — Universo 10",
+        "Torneo Interuniversal DBM — Universo 11",
+        "Torneo Interuniversal DBM — Universo 12",
+        "Torneo Interuniversal DBM — Universo 14",
+        "Torneo Interuniversal DBM — Universo 15",
+        "Torneo Interuniversal DBM — Universo 17",
+        "Torneo Interuniversal DBM — Universo 19",
+        "Torneo Interuniversal DBM — Universo 20",
+        "Torneo Interuniversal DBM — Universo 8",
+        "Torneo Interuniversal DBM — Universo 18 (Universo Principal)",
+        "Torneo Interuniversal DBM — Universo 16 (rol de espectador/mentor)",
+        "Torneo Interuniversal DBM — Universo 16 (rol de espectador)",
+        "Torneo Interuniversal DBM — Universo 16 (componentes de fusión)",
+        "Torneo Interuniversal DBM — Universo 13"
+      ],
+      "tiersPresent": [
+        "3-A",
+        "3-C",
+        "4-A",
+        "4-B",
+        "4-C",
+        "2-C",
+        "5-A",
+        "3-B",
+        "5-B",
+        "5-C",
+        "6-A",
+        "6-B",
+        "6-C"
+      ]
+    },
+    {
+      "name": "Jujutsu Kaisen",
+      "records": 49,
+      "sagas": [
+        "Incidente de Shibuya / Batalla de Shinjuku",
+        "Era Heian / Batalla de Shinjuku",
+        "Jujutsu Kaisen 0 / Batalla de Shinjuku",
+        "Preparación Perfecta / Batalla de Shinjuku",
+        "Incidente de Shibuya / Culling Game",
+        "Jujutsu Kaisen 0 / Pasado de Gojo",
+        "Juego del Sacrificio (Culling Game)",
+        "Batalla Decisiva de Shinjuku",
+        "Arco del Recipiente de Plasma Estelar / Shibuya",
+        "Culling Game / Batalla contra Sukuna",
+        "Arco de la Ejecución Culpable / Guerra de Shibuya en adelante",
+        "Guerra de Shibuya",
+        "Arco de la Ejecución Culpable / Guerra de Shibuya",
+        "Shinjuku Showdown",
+        "Incidente de Tengen",
+        "Incidente de Shibuya",
+        "Culling Game / Shinjuku Showdown",
+        "Culling Game / Sendai Colony",
+        "Incidente de Shibuya / Shinjuku Showdown",
+        "Intercambio de Kioto / Preparación del Juego",
+        "Intercambio de Kioto / Shinjuku Showdown",
+        "Evento de Intercambio de Kioto / Shibuya",
+        "Culling Game",
+        "Culling Game / Sakurajima Colony",
+        "Arco de Preparación del Culling Game",
+        "Incidente de Shibuya / Kenjaku Showdown",
+        "Batalla Decisiva de Shinjuku / Culling Game"
+      ],
+      "tiersPresent": [
+        "7-A",
+        "8-A",
+        "7-B",
+        "8-B",
+        "9-A",
+        "8-C"
+      ]
+    },
+    {
+      "name": "Hunter x Hunter",
+      "records": 48,
+      "sagas": [
+        "Saga de las Hormigas Quimera",
+        "Saga de las Hormigas Quimera / Elecciones",
+        "Ciudad Yorkshin / Guerra de Sucesión",
+        "Arena del Cielo / Muerte y Resurrección Post-Chrollo",
+        "Arco de las Hormigas Quimera",
+        "Arco de Yorknew / Viaje al Continente Oscuro",
+        "Arco de la Hormiga Quimera",
+        "Arco de la Isla Ballena / Menciones a lo largo de la serie",
+        "Arco de la Familia Zoldyck / Arco de la Elección del Presidente",
+        "Arco de Yorknew / Chimera Ant",
+        "Examen de Cazador / Yorknew / Elección del Presidente",
+        "Greed Island / Arco de Hormigas Quimera",
+        "Yorknew City / Arco de las Hormigas Quimera",
+        "Yorknew City / Arco de Sucesión",
+        "Arco de Yorknew City",
+        "Arco de Yorknew City / Sucesión",
+        "Yorknew City / Sucesión",
+        "Arco de Yorknew City / Arco de Sucesión",
+        "Elección del Presidente de los Cazadores",
+        "Arco de la Elección / Arco del Continente Oscuro",
+        "Arco de Sucesión / Expedición al Continente Oscuro",
+        "Examen de Cazador / Arco de Elección",
+        "Arco de Yorknew / Hormigas Quimera",
+        "Yorknew City / Arco de Sucesión (Preludio)",
+        "Arco de las Hormigas Quimera / Elección del Presidente",
+        "Arco de la Elección del Presidente / Muerte en la Arena Celestial",
+        "Arco de la Ciudad de Yorknew / Batalla en la Arena Celestial"
+      ],
+      "tiersPresent": [
+        "7-B",
+        "8-A",
+        "7-A",
+        "8-B",
+        "8-C",
+        "7-C",
+        "9-B",
+        "10-C",
+        "9-A"
+      ]
+    },
+    {
+      "name": "JoJo's Bizarre Adventure",
+      "records": 42,
+      "sagas": [
+        "Vento Aureo",
+        "Stone Ocean",
+        "Stardust Crusaders / Diamond is Unbreakable / Stone Ocean",
+        "Stardust Crusaders",
+        "Steel Ball Run (Parte 7)",
+        "Steel Ball Run — arco final",
+        "Diamond is Unbreakable — arco final",
+        "Battle Tendency",
+        "Diamond is Unbreakable",
+        "Phantom Blood",
+        "Diamond is Unbreakable / Vento Aureo",
+        "JoJolion",
+        "Steel Ball Run"
+      ],
+      "tiersPresent": [
+        "Tier 8-C Físico | Tier 2-C Hax Causal / Trascendental",
+        "Tier 8-C Físico | Tier 2-C a 2-A Nivel Multiversal (Reinicio Cósmico)",
+        "8-C",
+        "Tier 8-C Físico | Tier 2-C Hax Temporal",
+        "Tier 8-C Físico | Tier 2-C a 2-A Hax del Giro Infinito",
+        "Tier 8-C Físico | Tier 2-C a 2-A Hax Multiversal (D4C - Love Train)",
+        "Tier 8-C Físico | Tier 2-C Hax Temporal (mediante Bites the Dust)",
+        "7-B",
+        "8-B",
+        "8-A",
+        "9-B",
+        "9-A"
+      ]
+    },
+    {
+      "name": "DC Comics",
+      "records": 40,
+      "sagas": [
+        "Post-Crisis / Rebirth",
+        "Liga de la Justicia / Batman Endgame",
+        "Flashpoint / Crisis en Tierras Infinitas",
+        "Crisis Final / Guerra de Darkseid",
+        "La Muerte de Superman / Hunter/Prey",
+        "Crisis en Tierras Infinitas / Crisis reescrituras posteriores",
+        "Continuidad clásica",
+        "Continuidad clásica / New 52 / Rebirth",
+        "Continuidad clásica / Cuerpo de Linternas Verdes",
+        "Continuidad clásica / Liga de la Justicia",
+        "Continuidad clásica / New 52",
+        "Watchmen / Doomsday Clock",
+        "Continuidad clásica / Cuerpo de Linternas Amarillas",
+        "Continuidad clásica / Man of Steel",
+        "Rebirth / Post-Crisis",
+        "Hellblazer / Vertigo Clásico",
+        "Rebirth / Flash Mythos",
+        "Flashpoint / Rebirth",
+        "Rebirth / Universo Oscuro",
+        "Rebirth / Outlaws",
+        "Rebirth / Clásico",
+        "Dark Nights: Metal / Death Metal",
+        "Post-Crisis / Rebirth / Vertigo"
+      ],
+      "tiersPresent": [
+        "2-C",
+        "Tier 9-A Físico | Tier 2-C con Hellbat y Tiempo de Preparación",
+        "1-C",
+        "9-A",
+        "7-A",
+        "8-A",
+        "9-B",
+        "5-A",
+        "8-C",
+        "8-B",
+        "4-B",
+        "5-B",
+        "2-B",
+        "3-B"
+      ]
+    },
+    {
+      "name": "Marvel Comics",
+      "records": 39,
+      "sagas": [
+        "Rune King Thor / All-Black Thor",
+        "Avengers / Model Prime / Godkiller",
+        "World War Hulk / Immortal Hulk",
+        "Classic Strange / Damnation",
+        "El Guantelete del Infinito / Infinity",
+        "Tierra-616",
+        "Continuidad clásica / Heraldo activo de Galactus",
+        "Continuidad clásica (varios eventos: Onslaught, House of M implícito)",
+        "Saga de la Fuerza Fénix / Dark Phoenix Saga",
+        "Continuidad clásica",
+        "Continuidad clásica / House of M / WandaVision",
+        "Continuidad clásica / Secret Wars",
+        "Tierra-616 Clásica"
+      ],
+      "tiersPresent": [
+        "2-C",
+        "Tier 7-A Físico | Tier 2-C con Armaduras Buster Cósmicas",
+        "Tier 2-C Físico | Tier 2-A con Guantelete del Infinito",
+        "8-A",
+        "1-C",
+        "7-A",
+        "2-B",
+        "5-A",
+        "8-B",
+        "9-B",
+        "5-B",
+        "6-A",
+        "8-C",
+        "9-A",
+        "4-B"
+      ]
+    },
+    {
+      "name": "One Punch Man",
+      "records": 36,
+      "sagas": [
+        "Saga de los Monstruos / Combate en la Luna de Júpiter",
+        "Saga de los Monstruos / Pelea Cósmica de Júpiter",
+        "Saga de la Invasión Alienígena",
+        "Saga de la Asociación de Monstruos",
+        "Guerra de la Asociación de Monstruos / Conflicto con Dios",
+        "Arco de la Asociación de Monstruos / Invasión Final",
+        "Continuidad general",
+        "Asociación de Monstruos",
+        "Asociación de Héroes",
+        "Super Fight / Asociación de Monstruos",
+        "Asociación de Monstruos / Super Fight"
+      ],
+      "tiersPresent": [
+        "4-A",
+        "5-A",
+        "Tier High 6-A a 5-C | Nivel Multicontinental a Lunar",
+        "7-A",
+        "10-B",
+        "7-C",
+        "8-A",
+        "7-B",
+        "6-C"
+      ]
+    },
+    {
+      "name": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+      "records": 34,
+      "sagas": [
+        "Película 8: El Poder Invencible",
+        "Película 1 / Saga Garlic",
+        "Saga de Garlic Jr. (Relleno)",
+        "Torneo del Otro Mundo / Película Fusión",
+        "Torneo del Otro Mundo",
+        "Película: El Hombre Más Fuerte del Mundo",
+        "Película: Lord Slug",
+        "La Venganza de Cooler",
+        "Película: Los Guerreros Más Poderosos",
+        "Película: Los 3 Grandes Super Saiyans",
+        "¡La Galaxia corre peligro!",
+        "Película: ¡Los Guerreros de Plata!",
+        "Película 9: ¡Los Guerreros de Plata!",
+        "El Plan para Erradicar a los Saiyans",
+        "Película 11: ¡El Combate Definitivo!",
+        "El Renacer de la Fusión",
+        "Película: El Ataque del Dragón",
+        "Película 3: La Superbatalla / El Árbol del Poder"
+      ],
+      "tiersPresent": [
+        "4-B",
+        "5-B",
+        "5-A",
+        "4-C",
+        "Tier 9-A Físico | Tier 4-C a 4-B con Biotecnología y Bio-Guerreros",
+        "3-B",
+        "3-A",
+        "7-B"
+      ]
+    },
+    {
+      "name": "My Hero Academia",
+      "records": 32,
+      "sagas": [
+        "Shie Hassaikai",
+        "Ejército de Liberación / Guerra de Liberación Paranormal",
+        "Arco de Pasantías / USJ",
+        "Arco del Héroe Oscuro / Fugas de Tartarus",
+        "Ejército de Liberación (MLA)",
+        "Arco de la Batalla Final",
+        "Liga de Villanos / Frente de Liberación",
+        "Guerra de Liberación Paranormal / Arco Final",
+        "Guerra de Liberación Paranormal",
+        "Shie Hassaikai / Arco de Pasantías",
+        "Arco del Asesino de Héroes Hosu",
+        "Festival Cultural de la UA",
+        "Examen de Licencia Provisional",
+        "Arco de Kamino / Guerra de Liberación",
+        "Campamento de Entrenamiento / Fugas de Tartarus",
+        "World Heroes' Mission (Película)",
+        "Heroes: Rising (Película Canónica)",
+        "Guerra de Liberación Paranormal / Danza de Dabi",
+        "Arco Final / Guerra de Liberación Paranormal"
+      ],
+      "tiersPresent": [
+        "8-A",
+        "8-C",
+        "8-B",
+        "7-B",
+        "High 6-A | Nivel Multicontinental",
+        "7-C",
+        "7-A",
+        "10-C"
+      ]
+    },
+    {
+      "name": "Shuumatsu no Valkyrie (Record of Ragnarok)",
+      "records": 30,
+      "sagas": [
+        "Ronda 2: El Padre de la Humanidad vs El Padre del Cosmos",
+        "Ronda 2: El Dios Supremo vs Adam",
+        "Ronda 3: El Mayor Perdedor vs El Tirano de los Mares",
+        "Ronda 3: El Tirano de los Mares vs El Mayor Perdedor",
+        "Ronda 6: El Iluminado vs Zerofuku / Hajun",
+        "Ronda 8: El Señor de las Moscas vs El Mago de la Humanidad",
+        "Ronda 8: El Mago de la Humanidad vs El Señor de las Moscas",
+        "Ronda 7: El Rey del Inframundo vs El Primer Emperador",
+        "Ronda 5: El Dios de la Destrucción vs El Luchador de Sumo Más Fuerte",
+        "Ragnarok — Combate contra Hércules",
+        "Ragnarok — Combate contra Zerofuku (dios de la fortuna)",
+        "Ronda 4",
+        "Ronda 6",
+        "Ronda 5",
+        "Ronda 9",
+        "Ronda 10",
+        "Ronda 7",
+        "Ragnarok",
+        "Ronda 8",
+        "Ragnarok (Lore / Incarcerado)",
+        "Ronda 3"
+      ],
+      "tiersPresent": [
+        "3-A",
+        "4-B",
+        "3-C",
+        "8-A"
+      ]
+    },
+    {
+      "name": "Dragon Ball (Clásico)",
+      "records": 29,
+      "sagas": [
+        "Búsqueda de las Esferas / Red Ribbon / Rey Piccolo",
+        "23º Torneo de las Artes Marciales / Final DB Clásico",
+        "21º - 23º Tenkaichi Budokai / Rey Piccolo",
+        "Búsqueda de las Esferas / 21º-23º Torneo",
+        "21° Torneo de las Artes Marciales",
+        "22º - 23º Tenkaichi Budokai / Rey Piccolo",
+        "Red Ribbon",
+        "Ejército Red Ribbon",
+        "Rey Demonio Piccolo",
+        "Saga de las Esferas del Dragón Originales / Saga Final Dragon Ball",
+        "Saga de las Esferas del Dragón Originales",
+        "Saga de Pilaf / Búsqueda de las Dragon Balls",
+        "Saga de Pilaf / Torneo Tenkaichi",
+        "21º Tenkaichi Budokai",
+        "Torneo de Uranai Baba (Flashback)",
+        "23º Tenkaichi Budokai"
+      ],
+      "tiersPresent": [
+        "7-B",
+        "7-A",
+        "8-A",
+        "8-B",
+        "9-A",
+        "9-C",
+        "8-C",
+        "Tier 9-C Físico | Tier 8-B con Ejército y Armas Bélicas",
+        "9-B",
+        "10-A",
+        "7-C"
+      ]
+    },
+    {
+      "name": "Invincible",
+      "records": 25,
+      "sagas": [
+        "Invasión Viltrumita / Guerra Viltrumita",
+        "Final de la Serie / 500 Años en el Futuro",
+        "Guerra Viltrumita / El Fin de Todo",
+        "Guerra Viltrumita",
+        "El Fin de Todo",
+        "Arco de la Guerra contra el Imperio Viltrumita",
+        "Arco de la Invasión Viltrumita Inicial",
+        "Arco del Multiverso / Regreso Final",
+        "Continuidad general / Traición y redención",
+        "Continuidad general",
+        "Cómic / Animación Clásica",
+        "Cómic Clásico / Animación",
+        "Cómic Clásico",
+        "Guerra Viltrumita / Fin del Imperio",
+        "Invasión de Máquinas / Guerra Viltrumita",
+        "Guerra Viltrumita / Fin del Cómic",
+        "Invasión Flaxan / Imperio Robot (Fin del Cómic)"
+      ],
+      "tiersPresent": [
+        "5-B",
+        "7-A",
+        "5-A",
+        "2-C",
+        "8-A",
+        "6-A",
+        "8-B",
+        "9-B",
+        "6-C",
+        "7-B"
+      ]
+    },
+    {
+      "name": "Chainsaw Man",
+      "records": 23,
+      "sagas": [
+        "Parte 1 / Parte 2",
+        "Parte 1 (Saga de Seguridad Pública)",
+        "Arco de la Chica Bomba",
+        "Arco de la Escuela / Post-Makima",
+        "Segunda Parte de Chainsaw Man (Arco de la Academia)",
+        "Parte 2",
+        "Arco de Control (Parte 1)",
+        "Parte 1",
+        "Parte 1 (Arco de los Asesinos Internacionales)"
+      ],
+      "tiersPresent": [
+        "7-B",
+        "8-A",
+        "7-A",
+        "6-C",
+        "8-B",
+        "8-C",
+        "7-C",
+        "9-A"
+      ]
+    },
+    {
+      "name": "Demon Slayer: Kimetsu no Yaiba",
+      "records": 23,
+      "sagas": [
+        "Arco del Distrito del Entretenimiento",
+        "Arco del Castillo Infinito",
+        "Arco de la Aldea de los Herreros",
+        "Arco de la Aldea de los Herreros / Castillo Infinito",
+        "Arco del Entrenamiento de Selección Final",
+        "Arco del Pasado (Flashbacks / Lore)",
+        "Arco del Castillo Infinito / Entrenamiento Pilar",
+        "Arco del Monte Natagumo",
+        "Arco del Tren Infinito",
+        "Arco del Entrenamiento de Recuperación",
+        "Arco del Entrenamiento (Lore)",
+        "Arco del Castillo Infinito / Cuenta Regresiva"
+      ],
+      "tiersPresent": [
+        "7-B",
+        "7-C",
+        "8-A",
+        "10-C",
+        "9-B",
+        "7-A"
+      ]
+    },
+    {
+      "name": "Baki the Grappler",
+      "records": 23,
+      "sagas": [
+        "Arco de la Prisión Estatal de Arizona",
+        "Torneo Máximo / Death Row Convicts",
+        "Arco de Musashi Miyamoto / Death Row Convicts",
+        "Torneo Raitai",
+        "Baki Dou (2018)",
+        "Death Row Convicts",
+        "Arco de Pickle",
+        "Torneo Subterráneo",
+        "Arco del Torneo Raitai / Ali Jr. Arc",
+        "Torneo Subterráneo / Arco Son of Ogre",
+        "Torneo Máximo / Dou / Arco Dou 2018",
+        "Baki el Luchador / Torneo Máximo / Dou",
+        "Torneo Chino / Prisión Estatal de Arizona (Son of Ogre)",
+        "Torneo Máximo / Baki The Grappler"
+      ],
+      "tiersPresent": [
+        "7-C",
+        "8-C",
+        "7-B",
+        "8-B",
+        "8-A"
+      ]
+    },
+    {
+      "name": "Dragon Ball Daima",
+      "records": 18,
+      "sagas": [
+        "Reino de los Demonios",
+        "Aventura en el Reino Demoníaco (Daima)",
+        "Prólogo y Clímax del Reino Demoníaco (Daima)"
+      ],
+      "tiersPresent": [
+        "4-B",
+        "8-A",
+        "4-A",
+        "5-A",
+        "Tier 7-B Base | Tier 4-B con Pistola Mágica y Nave Espacial",
+        "7-B"
+      ]
+    },
+    {
+      "name": "Dragon Ball GT",
+      "records": 16,
+      "sagas": [
+        "Baby / Dragones Oscuros",
+        "Búsqueda Galáctica / Dragones",
+        "Saga Baby",
+        "Super 17",
+        "Dragones Oscuros",
+        "Baby / Dragones",
+        "Saga de los Mutantes Mecánicos",
+        "Saga de los Dragones Malignos",
+        "Planeta Imecka (Black Star Dragon Balls)",
+        "El Culto de Lude",
+        "Saga de Baby"
+      ],
+      "tiersPresent": [
+        "3-A",
+        "4-C",
+        "3-C",
+        "3-B",
+        "2-C",
+        "4-B",
+        "8-C"
+      ]
+    },
+    {
+      "name": "Demon Slayer (Kimetsu no Yaiba)",
+      "records": 14,
+      "sagas": [
+        "Fortaleza Dimensional Infinita / Cuenta Regresiva",
+        "Era Sengoku (Flashbacks)",
+        "Fortaleza Dimensional Infinita",
+        "Castillo Infinito / Batalla contra los Pilares",
+        "Tren Infinito / Castillo Infinito",
+        "Castillo Infinito / Batalla contra Shinobu, Kanao e Inosuke",
+        "Arco del Tren Infinito",
+        "Arco del Distrito de Entretenimiento / Arco de la Fortaleza Infinita",
+        "Arco Final (Fortaleza Infinita)",
+        "Fortaleza Infinita — Combate contra Kaigaku",
+        "Fortaleza Infinita",
+        "Era Sengoku / Memorias de Muzan",
+        "Castillo Infinito / Cuenta Regresiva al Amanecer"
+      ],
+      "tiersPresent": [
+        "7-B",
+        "7-C"
+      ]
+    },
+    {
+      "name": "The Boys",
+      "records": 14,
+      "sagas": [
+        "Temporadas 1 a 4 / Cómics",
+        "Temporadas 3 y 4",
+        "Temporada 3",
+        "Temporadas 1 a 4",
+        "Temporadas 1 a 3",
+        "Continuidad general (serie y cómic)",
+        "Continuidad general",
+        "Serie de TV (Live Action)",
+        "Cómic Clásico / Live Action TV"
+      ],
+      "tiersPresent": [
+        "7-B",
+        "8-A",
+        "7-A",
+        "9-A",
+        "8-C",
+        "7-C"
+      ]
+    },
+    {
+      "name": "Dragon Ball (Apariciones Multi-Era)",
+      "records": 9,
+      "sagas": [
+        "Clásico / Torneo del Poder",
+        "Dragon Ball Clásico / Saga Saiyan",
+        "Rey Demonio Piccolo / Namek / Buu",
+        "Saga Saiyan",
+        "Namek / Resurrección de F",
+        "Saga Namek / Saga Cell / DBS",
+        "Juegos de Cell / Buu",
+        "Final de Z / Baby",
+        "El Último Combate / Granolah"
+      ],
+      "tiersPresent": [
+        "5-C",
+        "7-B",
+        "8-B",
+        "Tier 9-A Físico | Tier 2-C Hax de Creación de Esferas",
+        "9-B",
+        "4-B",
+        "5-B"
+      ]
+    },
+    {
+      "name": "My Hero Academia (Boku no Hero)",
+      "records": 9,
+      "sagas": [
+        "Guerra Final / Arco del Héroe Oscuro",
+        "Guerra Final / Despertar Apex",
+        "Era Dorada / Batalla Legendaria contra All For One",
+        "Guerra Final / Arco de Shigaraki All For One",
+        "Guerra Final / Arco de Dabi",
+        "Guerra de Liberación Paranormal / Guerra Final",
+        "Arco de la Guerra Final de Héroes vs Villanos",
+        "Arco de la Guerra de Paranormales / Arco Final",
+        "Guerra de Paranormales / Arco Final"
+      ],
+      "tiersPresent": [
+        "Tier High 6-A a 5-C | Nivel Multicontinental a Lunar Pequeño",
+        "6-A",
+        "7-A",
+        "Tier High 6-A | Nivel Multicontinental"
+      ]
+    },
+    {
+      "name": "Baki the Grappler / Baki Hanma",
+      "records": 8,
+      "sagas": [
+        "Son of Ogre / Torneo Máximo",
+        "Son of Ogre / Padre contra Hijo",
+        "Baki Dou (2018) / Guerra de Mordidas",
+        "Saga de Pickle / Son of Ogre",
+        "Torneo de Artes Marciales Máximas (Saga Original)",
+        "Saga de Musashi",
+        "Torneo de Artes Marciales Máximas",
+        "Torneo de Artes Marciales Máximas / Saga de la Cárcel"
+      ],
+      "tiersPresent": [
+        "7-B",
+        "7-C"
+      ]
+    },
+    {
+      "name": "Dragon Ball What-If (Brokoly350)",
+      "records": 7,
+      "sagas": [
+        "Ruta Alterna: Baby absorbe Ki Divino"
+      ],
+      "tiersPresent": [
+        "3-B",
+        "4-B",
+        "4-A",
+        "3-A"
+      ]
+    },
+    {
+      "name": "Dragon Ball Kakumei (Fan-Manga)",
+      "records": 7,
+      "sagas": [
+        "Entrenamiento de los Universos",
+        "Guerra del Universo Cero / Multiverso 0"
+      ],
+      "tiersPresent": [
+        "2-C",
+        "2-B",
+        "2-A"
+      ]
+    },
+    {
+      "name": "Dragon Ball New Hope (Fan-Manga)",
+      "records": 6,
+      "sagas": [],
+      "tiersPresent": [
+        "4-B",
+        "3-C",
+        "4-A"
+      ]
+    },
+    {
+      "name": "Dragon Ball After (Fan-Manga)",
+      "records": 4,
+      "sagas": [
+        "La Caída de la Tierra"
+      ],
+      "tiersPresent": [
+        "4-B",
+        "3-A"
+      ]
+    },
+    {
+      "name": "Spy x Family",
+      "records": 2,
+      "sagas": [
+        "Operación Strix"
+      ],
+      "tiersPresent": [
+        "8-A",
+        "7-C"
+      ]
+    },
+    {
+      "name": "Dragon Ball Multiverse",
+      "records": 2,
+      "sagas": [
+        "Torneo del Multiverso / Universo 3",
+        "Torneo del Multiverso / Universo 13"
+      ],
+      "tiersPresent": [
+        "4-B"
+      ]
+    },
+    {
+      "name": "Dragon Ball Z (Canon Toriyama)",
+      "records": 2,
+      "sagas": [
+        "Saga Saiyan (Llegada de Raditz)",
+        "Saga Saiyan (Invasión de Nappa y Vegeta)"
+      ],
+      "tiersPresent": [
+        "6-A",
+        "5-B"
+      ]
+    },
+    {
+      "name": "Universo Híbrido (APEX Original)",
+      "records": 1,
+      "sagas": [],
+      "tiersPresent": [
+        "9-B"
+      ]
+    },
+    {
+      "name": "Dragon Ball Multiverse (Fan-Manga, Canon DBM)",
+      "records": 1,
+      "sagas": [
+        "Torneo Interuniversal DBM — Universo 8"
+      ],
+      "tiersPresent": [
+        "4-B"
+      ]
+    }
+  ],
+  "tierDistribution": {
+    "7-B": 92,
+    "7-A": 48,
+    "5-A": 27,
+    "4-B": 93,
+    "2-C": 49,
+    "3-A": 67,
+    "4-C": 55,
+    "5-B": 39,
+    "3-C": 14,
+    "4-A": 14,
+    "5-C": 7,
+    "8-A": 94,
+    "8-B": 37,
+    "9-A": 14,
+    "9-C": 4,
+    "8-C": 46,
+    "Tier 9-C Físico | Tier 8-B con Ejército y Armas Bélicas": 1,
+    "10-A": 3,
+    "Tier 9-A Físico | Tier 2-C Hax de Creación de Esferas": 1,
+    "9-B": 21,
+    "3-B": 10,
+    "Tier 9-A Físico | Tier 4-C a 4-B con Biotecnología y Bio-Guerreros": 1,
+    "2-B": 8,
+    "10-B": 2,
+    "Tier 8-C Físico | Tier 2-C Hax Causal / Trascendental": 1,
+    "Tier 8-C Físico | Tier 2-C a 2-A Nivel Multiversal (Reinicio Cósmico)": 1,
+    "Tier 7-A Físico | Tier 2-C con Armaduras Buster Cósmicas": 1,
+    "Tier 9-A Físico | Tier 2-C con Hellbat y Tiempo de Preparación": 1,
+    "Tier 8-C Físico | Tier 2-C Hax Temporal": 2,
+    "Tier 8-C Físico | Tier 2-C a 2-A Hax del Giro Infinito": 1,
+    "Tier 2-C Físico | Tier 2-A con Guantelete del Infinito": 1,
+    "Tier High 6-A a 5-C | Nivel Multicontinental a Lunar Pequeño": 2,
+    "Tier High 6-A a 5-C | Nivel Multicontinental a Lunar": 1,
+    "6-A": 5,
+    "7-C": 30,
+    "Tier 7-B Base | Tier 4-B con Pistola Mágica y Nave Espacial": 1,
+    "1-C": 8,
+    "2-A": 2,
+    "Tier High 6-A | Nivel Multicontinental": 3,
+    "Tier 8-C Físico | Tier 2-C a 2-A Hax Multiversal (D4C - Love Train)": 1,
+    "Tier 8-C Físico | Tier 2-C Hax Temporal (mediante Bites the Dust)": 1,
+    "6-B": 2,
+    "6-C": 6,
+    "High 6-A | Nivel Multicontinental": 1,
+    "10-C": 3
+  },
+  "recordsWithForms": 821,
+  "totalStates": 1366,
+  "recordsWithSourceKi": 1,
+  "recordsWithApexRuntimeData": 821
+}

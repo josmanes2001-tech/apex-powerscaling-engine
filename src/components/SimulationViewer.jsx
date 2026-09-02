@@ -1364,7 +1364,7 @@ export default function SimulationViewer({
               SoundFX.setEnabled(newVal);
               if (newVal) SoundFX.playClick?.();
             }}
-            className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md ${
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md flex-shrink-0 ${
               soundEnabled 
                 ? 'bg-cyan-500/20 border-cyan-500/60 text-cyan-300 shadow-[0_0_12px_rgba(6,182,212,0.25)] font-bold' 
                 : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-500'
@@ -1378,7 +1378,7 @@ export default function SimulationViewer({
           {/* Oracle Predictions & Bets Toggle */}
           <button
             onClick={() => setShowOracleBet(!showOracleBet)}
-            className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md ${
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md flex-shrink-0 ${
               showOracleBet || currentBet.placed
                 ? 'bg-amber-500/20 border-amber-500/60 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.3)] font-bold'
                 : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300'
@@ -1393,7 +1393,7 @@ export default function SimulationViewer({
           {/* Auto-scroll Toggle Button */}
           <button
             onClick={() => setAutoScroll(!autoScroll)}
-            className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md ${
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md flex-shrink-0 ${
               autoScroll 
                 ? 'bg-amber-500/20 border-amber-500/60 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.25)] font-bold' 
                 : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-400 hover:text-slate-200'
@@ -1406,7 +1406,7 @@ export default function SimulationViewer({
 
           <button
             onClick={() => setShowHistory(true)}
-            className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono transition cursor-pointer border border-slate-700/80 shadow-md"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono transition cursor-pointer border border-slate-700/80 shadow-md flex-shrink-0"
             title="Ver combates anteriores"
           >
             <History className="w-3.5 h-3.5 text-amber-400" />
@@ -1414,430 +1414,27 @@ export default function SimulationViewer({
           </button>
 
           {hasOutput && !isSimulating && (
-            <>
-              {/* Modo Espectador (Autoplay Fases) */}
-              <button
-                onClick={() => {
-                  if (isPlayingAutoplay) {
-                    setIsPlayingAutoplay(false);
-                  } else {
-                    setActivePhaseTab(0);
-                    setIsPlayingAutoplay(true);
-                    if (soundEnabled) SoundFX.playCriticalHit?.();
-                  }
-                }}
-                className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md ${
-                  isPlayingAutoplay
-                    ? 'bg-red-600/30 border-red-500/80 text-red-200 shadow-[0_0_15px_rgba(239,68,68,0.5)] font-bold animate-pulse'
-                    : 'bg-gradient-to-r from-red-950/50 to-slate-900 hover:from-red-900/50 border-red-800/60 text-red-300'
-                }`}
-                title="Reproducir choque fase a fase como una película"
-              >
-                {isPlayingAutoplay ? (
-                  <>
-                    <PauseCircle className="w-3.5 h-3.5 text-red-400" />
-                    <span>{getTranslation(lang, 'pauseSpectator')}</span>
-                  </>
-                ) : (
-                  <>
-                    <PlayCircle className="w-3.5 h-3.5 text-red-400" />
-                    <span>{getTranslation(lang, 'spectatorMode')}</span>
-                  </>
-                )}
-              </button>
-
-              {/* Botón Métricas Tácticas / DPS */}
-              <button
-                onClick={() => setShowAnalytics(!showAnalytics)}
-                className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md ${
-                  showAnalytics
-                    ? 'bg-cyan-500/20 border-cyan-500/70 text-cyan-200 shadow-[0_0_12px_rgba(6,182,212,0.3)] font-bold'
-                    : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300'
-                }`}
-                title="Ver desglose táctico de DPS, Hax y Destrucción"
-              >
-                <BarChart3 className="w-3.5 h-3.5 text-cyan-400" />
-                <span>{getTranslation(lang, 'metrics')}</span>
-              </button>
-
-              <button
-                onClick={() => setComicMode(!comicMode)}
-                className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md ${
-                  comicMode
-                    ? 'bg-orange-500/20 border-orange-500/60 text-orange-300 shadow-[0_0_12px_rgba(249,115,22,0.3)] font-bold'
-                    : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300'
-                }`}
-                title="Activar Modo Cómic Visual"
-              >
-                <Eye className="w-3.5 h-3.5 text-orange-400" />
-                <span>{getTranslation(lang, 'comicMode')}</span>
-              </button>
-
-              {/* Botón Acceso Rápido Decisiones RPG / Libro-Juego */}
-              {hasOutput && (
-                <button
-                  onClick={() => {
-                    setRpgDecisionsEnabled(true);
-                    const el = document.getElementById('rpg-decision-board');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600/30 via-indigo-600/30 to-purple-600/30 hover:from-cyan-600/50 text-cyan-200 text-xs font-mono font-bold transition cursor-pointer border border-cyan-500/50 shadow-md animate-pulse"
-                  title="Ir directamente al Modo Libro-Juego Interactivo (Decisiones Tácticas RPG)"
-                >
-                  <FastForward className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>🎲 Decisiones RPG</span>
-                </button>
-              )}
-
-              {/* Botón Galería & Arte de Batalla */}
-              <button
-                onClick={() => setShowGallery(true)}
-                className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600/30 to-pink-600/30 hover:from-purple-600/50 hover:to-pink-600/50 text-purple-200 text-xs font-mono transition cursor-pointer border border-purple-500/50 shadow-md"
-                title="Abrir Galería de Imágenes, Subir Ilustraciones y Generar Arte IA"
-              >
-                <Camera className="w-3.5 h-3.5 text-pink-400" />
-                <span>{getTranslation(lang, 'gallery')}</span>
-                {galleryArtworks.length > 0 && (
-                  <span className="px-1.5 py-0.2 rounded-full bg-purple-900 text-[10px] font-bold text-purple-200">
-                    {galleryArtworks.length}
-                  </span>
-                )}
-              </button>
-
-              <button
-                onClick={handleGenerateBattleArt}
-                disabled={isGeneratingArtwork}
-                className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono transition cursor-pointer border border-slate-700/80 shadow-md disabled:opacity-50"
-                title="Generar cartel visual rápido con IA"
-              >
-                {isGeneratingArtwork ? (
-                  <>
-                    <RefreshCw className="w-3.5 h-3.5 animate-spin text-pink-400" />
-                    <span>Pintando...</span>
-                  </>
-                ) : (
-                  <>
-                    <Sparkles className="w-3.5 h-3.5 text-pink-400" />
-                    <span>{getTranslation(lang, 'quickPoster')}</span>
-                  </>
-                )}
-              </button>
-
-              {/* Botón Choque de Rayos / Beam Struggle */}
-              <button
-                onClick={() => setShowBeamStruggle(true)}
-                className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-amber-600/30 to-red-600/30 hover:from-amber-600/50 text-amber-200 text-xs font-mono transition cursor-pointer border border-amber-500/50 shadow-md"
-                title="Simulador de Choque de Rayos & Técnicas con Física de Joules"
-              >
-                <Zap className="w-3.5 h-3.5 text-yellow-400 animate-pulse" />
-                <span>⚡ Choque de Rayos</span>
-              </button>
-
-              {/* Botón Matriz Anatómica */}
-              <button
-                onClick={() => setShowAnatomyMatrix(!showAnatomyMatrix)}
-                className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-mono transition cursor-pointer border shadow-md ${
-                  showAnatomyMatrix
-                    ? 'bg-rose-500/20 border-rose-500/70 text-rose-200 shadow-[0_0_12px_rgba(244,63,94,0.3)] font-bold'
-                    : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300'
-                }`}
-                title="Ver Matriz de Daño Óseo, Pulmonar y Flujo de Ki"
-              >
-                <Activity className="w-3.5 h-3.5 text-rose-400" />
-                <span>🩻 Matriz Anatómica</span>
-              </button>
-
-              {/* Botón Exportador de Guión TikTok */}
-              <button
-                onClick={() => setShowScriptExporter(true)}
-                className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-pink-600/30 to-purple-600/30 hover:from-pink-600/50 text-pink-200 text-xs font-mono transition cursor-pointer border border-pink-500/50 shadow-md"
-                title="Exportar Guión para TikTok / YouTube Shorts / Reels"
-              >
-                <FileText className="w-3.5 h-3.5 text-pink-400" />
-                <span>🎬 Guión TikTok</span>
-              </button>
-
-              <button
-                onClick={() => setShowAltEndingModal(true)}
-                className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600/30 to-indigo-600/30 hover:from-purple-600/50 text-purple-200 text-xs font-mono transition cursor-pointer border border-purple-500/50 shadow-md"
-                title="Generar rama divergente / Final Alternativo"
-              >
-                <GitBranch className="w-3.5 h-3.5 text-purple-400" />
-                <span>🌿 What-If (Rama)</span>
-              </button>
-
-              <button
-                onClick={handleDownloadMd}
-                className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono transition cursor-pointer border border-slate-700/80 shadow-md"
-                title="Descargar combate como Markdown"
-              >
-                <Download className="w-3.5 h-3.5 text-slate-400" />
-                <span>{getTranslation(lang, 'exportMd')}</span>
-              </button>
-            </>
-          )}
-
-          {/* Modal de Final Alternativo / What-If */}
-          {showAltEndingModal && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-              <div className="bg-slate-950 border border-purple-500/50 rounded-2xl w-full max-w-lg overflow-hidden shadow-[0_0_50px_rgba(168,85,247,0.15)] flex flex-col">
-                <div className="p-4 border-b border-slate-800 flex justify-between items-center bg-purple-950/20">
-                  <h3 className="text-lg font-bold font-cinzel text-purple-300 flex items-center gap-2">
-                    <GitBranch className="w-5 h-5 text-purple-400" />
-                    Generar Final Alternativo (What-If)
-                  </h3>
-                  <button onClick={() => setShowAltEndingModal(false)} className="text-slate-400 hover:text-white transition">
-                    <X className="w-5 h-5" />
-                  </button>
-                </div>
-                <div className="p-5 space-y-4 font-mono text-xs">
-                  <p className="text-slate-300">
-                    Introduce el punto de divergencia exacto que alterará el curso de esta batalla para generar una línea temporal alternativa (Línea Beta).
-                  </p>
-                  <textarea
-                    value={customWhatIfText}
-                    onChange={(e) => setCustomWhatIfText(e.target.value)}
-                    placeholder="Ej. ¿Qué hubiera pasado si Vegeta no distraía a Cell? / ¿Qué si Goku acertaba el Ryūken en el núcleo? / ¿Qué si la Semilla Senzu era destruida?"
-                    className="w-full h-24 bg-slate-900 border border-purple-900/50 rounded-lg p-3 text-purple-200 placeholder:text-slate-600 focus:outline-none focus:border-purple-500"
-                  />
-                </div>
-                <div className="p-4 border-t border-slate-800 flex justify-end gap-3 bg-slate-900/50">
-                  <button
-                    onClick={() => setShowAltEndingModal(false)}
-                    className="px-4 py-2 rounded-lg font-mono text-xs font-bold text-slate-400 hover:text-white transition"
-                  >
-                    Cancelar
-                  </button>
-                  <button
-                    onClick={() => {
-                      if (!customWhatIfText.trim()) return;
-                      setShowAltEndingModal(false);
-                      onContinueSimulation(`[DIRECTIVA WHAT-IF / EFECTO MARIPOSA]: Olvida el Veredicto Final anterior. Genera un título tipo "### 🌿 LÍNEA BETA: WHAT-IF" y reescribe la culminación del combate partiendo EXCLUSIVAMENTE de este punto de divergencia radical: "${customWhatIfText.trim()}". Desarrolla esta rama hasta un nuevo desenlace definitivo.`);
-                      setCustomWhatIfText('');
-                    }}
-                    disabled={!customWhatIfText.trim()}
-                    className="px-4 py-2 rounded-lg font-mono text-xs font-bold bg-purple-600 text-white hover:bg-purple-500 transition disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_15px_rgba(168,85,247,0.4)]"
-                  >
-                    Generar Rama Temporal
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
-
-
-          {/* Modal de Continuidad Multiversal & Resurrección (What-If Sagas) */}
-          {showTimelineModal && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-              <div className="bg-slate-950 border border-indigo-500/60 rounded-2xl w-full max-w-2xl overflow-hidden shadow-[0_0_60px_rgba(99,102,241,0.25)] flex flex-col max-h-[90vh]">
-                <div className="p-4 border-b border-slate-800 flex justify-between items-center bg-gradient-to-r from-indigo-950/60 to-purple-950/40">
-                  <div className="flex items-center gap-2.5">
-                    <GitBranch className="w-5 h-5 text-indigo-400 animate-pulse" />
-                    <div>
-                      <h3 className="text-base font-bold font-cinzel text-indigo-200">
-                        🔮 Continuar Línea Temporal — Próxima Saga
-                      </h3>
-                      <p className="text-[10px] text-slate-400 font-mono">
-                        Elige qué supervivientes avanzan, resucita caídos con Dragon Balls y asígnalos a cualquier escuadrón.
-                      </p>
-                    </div>
-                  </div>
-                  <button onClick={() => setShowTimelineModal(false)} className="text-slate-400 hover:text-white transition">
-                    <X className="w-5 h-5" />
-                  </button>
-                </div>
-
-                <div className="p-5 space-y-4 font-mono text-xs overflow-y-auto custom-scrollbar flex-1">
-                  {/* Selector Rápido */}
-                  <div className="flex items-center justify-between bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
-                    <span className="text-slate-300 font-bold text-[11px]">⚡ Selección Rápida:</span>
-                    <div className="flex gap-2">
-                      <button
-                        type="button"
-                        onClick={() => {
-                          const survivorsOnly = allActiveFighters.filter(f => f.hp > 0).map(f => f.id || f.name);
-                          setSelectedTimelineFighterIds(survivorsOnly);
-                        }}
-                        className="px-2.5 py-1 rounded-lg bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-[10px] font-bold hover:bg-emerald-900 transition"
-                      >
-                        🟢 Solo Supervivientes ({allActiveFighters.filter(f => f.hp > 0).length})
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          const allIds = allActiveFighters.map(f => f.id || f.name);
-                          setSelectedTimelineFighterIds(allIds);
-                        }}
-                        className="px-2.5 py-1 rounded-lg bg-indigo-950 border border-indigo-500/50 text-indigo-300 text-[10px] font-bold hover:bg-indigo-900 transition"
-                      >
-                        ✨ Revivir a Todos ({allActiveFighters.length})
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Lista de Combatientes y su Estado */}
-                  <div className="space-y-2">
-                    <label className="text-[11px] font-bold text-slate-300 block">
-                      🛡️ Combatientes del Veredicto ({selectedTimelineFighterIds.length} Seleccionados):
-                    </label>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-56 overflow-y-auto p-1 custom-scrollbar">
-                      {allActiveFighters.map((f, idx) => {
-                        const isDead = f.hp <= 0;
-                        const fighterKey = f.id || f.name;
-                        const isSelected = selectedTimelineFighterIds.includes(fighterKey);
-
-                        return (
-                          <div
-                            key={fighterKey || idx}
-                            onClick={() => {
-                              setSelectedTimelineFighterIds(prev =>
-                                prev.includes(fighterKey) ? prev.filter(k => k !== fighterKey) : [...prev, fighterKey]
-                              );
-                            }}
-                            className={`p-2.5 rounded-xl border flex items-center justify-between cursor-pointer transition ${
-                              isSelected
-                                ? 'bg-indigo-950/60 border-indigo-500/80 text-white shadow-sm'
-                                : 'bg-slate-900/40 border-slate-800 text-slate-400 opacity-60 hover:opacity-100'
-                            }`}
-                          >
-                            <div className="flex items-center gap-2 truncate">
-                              {f.avatar ? (
-                                <img src={f.avatar} alt="" className="w-7 h-7 rounded-full object-cover border border-slate-700" />
-                              ) : (
-                                <span className="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-xs">🥋</span>
-                              )}
-                              <div className="truncate">
-                                <span className="font-bold block truncate text-xs">{f.name}</span>
-                                <span className="text-[9px] block">
-                                  {isDead ? (
-                                    <span className="text-red-400 font-bold">💀 Muerto (0% HP)</span>
-                                  ) : (
-                                    <span className="text-emerald-400 font-bold">🟢 Vivo ({f.hp}% HP)</span>
-                                  )}
-                                </span>
-                              </div>
-                            </div>
-
-                            <div className="flex-shrink-0 ml-2">
-                              {isDead ? (
-                                <span className={`text-[9px] font-bold px-2 py-0.5 rounded border ${
-                                  isSelected
-                                    ? 'bg-purple-900 border-purple-400 text-purple-200'
-                                    : 'bg-slate-800 border-slate-700 text-slate-400'
-                                }`}>
-                                  {isSelected ? '🔮 Revivido' : '💀 Caído'}
-                                </span>
-                              ) : (
-                                <span className={`text-[9px] font-bold px-2 py-0.5 rounded border ${
-                                  isSelected
-                                    ? 'bg-emerald-950 border-emerald-500 text-emerald-300'
-                                    : 'bg-slate-800 border-slate-700 text-slate-500'
-                                }`}>
-                                  {isSelected ? '✓ Activo' : 'Omitir'}
-                                </span>
-                              )}
-                            </div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Destino y Modo */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-slate-800">
-                    <div className="space-y-1">
-                      <label className="text-[10px] font-bold text-slate-400 uppercase">1. Modo de Juego Próxima Saga:</label>
-                      <select
-                        value={targetTimelineMode}
-                        onChange={(e) => setTargetTimelineMode(e.target.value)}
-                        className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-bold text-xs focus:border-indigo-500"
-                      >
-                        <option value="team">⚔️ Modo Equipos (Recomendado)</option>
-                        <option value="1v1">🥋 Duelo 1v1 (Toma al 1º)</option>
-                        <option value="raid">👑 Boss Raid (Como Boss o Asaltantes)</option>
-                        <option value="battle_royale">🌪️ Battle Royale (Todos vs Todos)</option>
-                      </select>
-                    </div>
-
-                    <div className="space-y-1">
-                      <label className="text-[10px] font-bold text-slate-400 uppercase">2. Bando a Ocupar:</label>
-                      <select
-                        value={targetTimelineSquad}
-                        onChange={(e) => setTargetTimelineSquad(e.target.value)}
-                        className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-bold text-xs focus:border-indigo-500"
-                      >
-                        <option value="A">🛡️ Escuadrón A (Defensores / Aliados)</option>
-                        <option value="B">⚔️ Escuadrón B (Invasores / Nuevos Enemigos)</option>
-                        <option value="boss">👑 Boss Principal (Solo en Boss Raid)</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-4 border-t border-slate-800 flex justify-end gap-3 bg-slate-900/60">
-                  <button
-                    onClick={() => setShowTimelineModal(false)}
-                    className="px-4 py-2 rounded-lg font-mono text-xs font-bold text-slate-400 hover:text-white transition"
-                  >
-                    Cancelar
-                  </button>
-                  <button
-                    onClick={() => {
-                      if (onContinueTimeline) {
-                        const chosen = allActiveFighters.filter(f => selectedTimelineFighterIds.includes(f.id || f.name));
-                        onContinueTimeline(chosen, targetTimelineMode, targetTimelineSquad);
-                        setShowTimelineModal(false);
-                      }
-                    }}
-                    disabled={selectedTimelineFighterIds.length === 0}
-                    className="px-5 py-2 rounded-xl font-mono text-xs font-bold bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-500 hover:to-purple-500 transition disabled:opacity-50 shadow-[0_0_20px_rgba(99,102,241,0.4)]"
-                  >
-                    🚀 Transferir al Simulador ({selectedTimelineFighterIds.length})
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {hasOutput && !isSimulating && (
-            <>
-              <button
-                onClick={() => {
-                  if (onClearSimulation) onClearSimulation();
-                }}
-                title="Limpiar la simulación actual y preparar un nuevo combate"
-                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-red-950/60 hover:text-red-300 text-slate-300 text-xs font-mono font-bold transition cursor-pointer border border-slate-700 hover:border-red-500/50 shadow"
-              >
-                <RotateCcw className="w-3.5 h-3.5" />
-                <span>Nueva Batalla</span>
-              </button>
-              
-              <button
-                onClick={() => {
-                  // Inicializar con los que tienen vida > 0 por defecto
-                  const defaultSurvivors = allActiveFighters.filter(f => f.hp > 0).map(f => f.id || f.name);
-                  setSelectedTimelineFighterIds(defaultSurvivors.length > 0 ? defaultSurvivors : allActiveFighters.map(f => f.id || f.name));
-                  setShowTimelineModal(true);
-                }}
-                title="Abrir panel de Continuidad de Línea Temporal (Resurrección, Supervivientes y Asignación de Escuadrones)"
-                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-900/70 to-purple-900/70 hover:from-indigo-800 hover:to-purple-800 text-indigo-200 text-xs font-mono font-bold transition cursor-pointer border border-indigo-500/50 hover:border-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.3)]"
-              >
-                <GitBranch className="w-3.5 h-3.5 text-indigo-400 animate-pulse" />
-                <span className="hidden sm:inline">Continuar Línea Temporal</span>
-                <span className="sm:hidden">Continuar</span>
-              </button>
-            </>
+            <button
+              onClick={() => {
+                if (onClearSimulation) onClearSimulation();
+              }}
+              title="Limpiar la simulación actual y preparar un nuevo combate"
+              className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-red-950/60 hover:text-red-300 text-slate-300 text-xs font-mono font-bold transition cursor-pointer border border-slate-700 hover:border-red-500/50 shadow flex-shrink-0"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Nueva Batalla</span>
+            </button>
           )}
 
           <button
             onClick={() => onStartSimulation({ fresh: true })}
             disabled={isSimulating}
-            className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-red-600 via-amber-600 to-red-600 hover:from-red-500 hover:to-amber-500 text-white font-mono font-bold text-xs shadow-lg shadow-red-950/80 transition cursor-pointer disabled:opacity-50"
+            className="flex items-center gap-2 px-5 py-2 rounded-xl bg-gradient-to-r from-red-600 via-amber-600 to-red-600 hover:from-red-500 hover:to-amber-500 text-white font-mono font-bold text-xs shadow-lg shadow-red-950/80 transition cursor-pointer disabled:opacity-50 flex-shrink-0"
           >
             {isSimulating ? (
               <>
                 <RefreshCw className="w-4 h-4 animate-spin text-white" />
-                <span>PROCESANDO BATALLA...</span>
+                <span>PROCESANDO...</span>
               </>
             ) : (
               <>
@@ -1849,11 +1446,11 @@ export default function SimulationViewer({
 
           {hasOutput && !isSimulating && (
             <>
-              <button onClick={handleCopy} className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-mono transition cursor-pointer border border-slate-700 shadow">
+              <button onClick={handleCopy} className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-mono transition cursor-pointer border border-slate-700 shadow flex-shrink-0">
                 {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
                 <span>{copied ? '✓' : getTranslation(lang, 'copy')}</span>
               </button>
-              <button onClick={handleSaveObsidian} className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-mono font-bold shadow-lg shadow-purple-950/60 transition cursor-pointer">
+              <button onClick={handleSaveObsidian} className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-mono font-bold shadow-lg shadow-purple-950/60 transition cursor-pointer flex-shrink-0">
                 {savedToVault ? <Check className="w-4 h-4 text-white" /> : <Download className="w-4 h-4" />}
                 <span>Guardar Obsidian</span>
               </button>
@@ -1861,6 +1458,197 @@ export default function SimulationViewer({
           )}
         </div>
       </div>
+
+      {/* Barra de Herramientas Tácticas, Multimedia & Continuidad (Organizada por Categorías) */}
+      {hasOutput && !isSimulating && (
+        <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 shadow-md space-y-2 font-mono text-xs animate-in fade-in duration-300">
+          <div className="flex items-center justify-between border-b border-slate-800/60 pb-1.5 px-1">
+            <span className="text-[11px] font-bold text-slate-400 flex items-center gap-1.5">
+              <Sliders className="w-3.5 h-3.5 text-amber-400" />
+              <span>MÓDULOS TÁCTICOS, MULTIMEDIA & WHAT-IF</span>
+            </span>
+            <span className="text-[10px] text-slate-500 font-mono">Herramientas Especiales APEX</span>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2 pt-1">
+            {/* Modo Espectador */}
+            <button
+              onClick={() => {
+                if (isPlayingAutoplay) {
+                  setIsPlayingAutoplay(false);
+                } else {
+                  setActivePhaseTab(0);
+                  setIsPlayingAutoplay(true);
+                  if (soundEnabled) SoundFX.playCriticalHit?.();
+                }
+              }}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono transition cursor-pointer border shadow-sm ${
+                isPlayingAutoplay
+                  ? 'bg-red-600/30 border-red-500/80 text-red-200 shadow-[0_0_15px_rgba(239,68,68,0.5)] font-bold animate-pulse'
+                  : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300'
+              }`}
+              title="Reproducir choque fase a fase como una película"
+            >
+              {isPlayingAutoplay ? (
+                <>
+                  <PauseCircle className="w-3.5 h-3.5 text-red-400" />
+                  <span>{getTranslation(lang, 'pauseSpectator')}</span>
+                </>
+              ) : (
+                <>
+                  <PlayCircle className="w-3.5 h-3.5 text-red-400" />
+                  <span>{getTranslation(lang, 'spectatorMode')}</span>
+                </>
+              )}
+            </button>
+
+            {/* Decisiones RPG */}
+            <button
+              onClick={() => {
+                setRpgDecisionsEnabled(true);
+                const el = document.getElementById('rpg-decision-board');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-950/40 hover:bg-cyan-900/50 text-cyan-300 text-xs font-mono font-bold transition cursor-pointer border border-cyan-700/50 shadow-sm"
+              title="Ir al panel interactivo de Decisiones Tácticas RPG"
+            >
+              <FastForward className="w-3.5 h-3.5 text-cyan-400" />
+              <span>🎲 Decisiones RPG</span>
+            </button>
+
+            {/* Métricas Tácticas */}
+            <button
+              onClick={() => setShowAnalytics(!showAnalytics)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono transition cursor-pointer border shadow-sm ${
+                showAnalytics
+                  ? 'bg-cyan-500/20 border-cyan-500/70 text-cyan-200 shadow-[0_0_12px_rgba(6,182,212,0.3)] font-bold'
+                  : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300'
+              }`}
+              title="Ver desglose táctico de DPS, Hax y Destrucción"
+            >
+              <BarChart3 className="w-3.5 h-3.5 text-cyan-400" />
+              <span>{getTranslation(lang, 'metrics')}</span>
+            </button>
+
+            {/* Modo Cómic */}
+            <button
+              onClick={() => setComicMode(!comicMode)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono transition cursor-pointer border shadow-sm ${
+                comicMode
+                  ? 'bg-orange-500/20 border-orange-500/60 text-orange-300 shadow-[0_0_12px_rgba(249,115,22,0.3)] font-bold'
+                  : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300'
+              }`}
+              title="Activar Modo Cómic Visual"
+            >
+              <Eye className="w-3.5 h-3.5 text-orange-400" />
+              <span>{getTranslation(lang, 'comicMode')}</span>
+            </button>
+
+            {/* Galería & Arte */}
+            <button
+              onClick={() => setShowGallery(true)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-purple-300 text-xs font-mono transition cursor-pointer border border-purple-800/60 shadow-sm"
+              title="Abrir Galería de Imágenes, Subir Ilustraciones y Generar Arte IA"
+            >
+              <Camera className="w-3.5 h-3.5 text-pink-400" />
+              <span>{getTranslation(lang, 'gallery')}</span>
+              {galleryArtworks.length > 0 && (
+                <span className="px-1.5 py-0.2 rounded-full bg-purple-900 text-[10px] font-bold text-purple-200">
+                  {galleryArtworks.length}
+                </span>
+              )}
+            </button>
+
+            {/* Poster Rápido */}
+            <button
+              onClick={handleGenerateBattleArt}
+              disabled={isGeneratingArtwork}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono transition cursor-pointer border border-slate-700/80 shadow-sm disabled:opacity-50"
+              title="Generar cartel visual rápido con IA"
+            >
+              {isGeneratingArtwork ? (
+                <>
+                  <RefreshCw className="w-3.5 h-3.5 animate-spin text-pink-400" />
+                  <span>Pintando...</span>
+                </>
+              ) : (
+                <>
+                  <Sparkles className="w-3.5 h-3.5 text-pink-400" />
+                  <span>{getTranslation(lang, 'quickPoster')}</span>
+                </>
+              )}
+            </button>
+
+            {/* Choque de Rayos */}
+            <button
+              onClick={() => setShowBeamStruggle(true)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-950/40 hover:bg-amber-900/50 text-amber-300 text-xs font-mono transition cursor-pointer border border-amber-700/50 shadow-sm"
+              title="Simulador de Choque de Rayos & Técnicas con Física de Joules"
+            >
+              <Zap className="w-3.5 h-3.5 text-yellow-400 animate-pulse" />
+              <span>⚡ Choque de Rayos</span>
+            </button>
+
+            {/* Matriz Anatómica */}
+            <button
+              onClick={() => setShowAnatomyMatrix(!showAnatomyMatrix)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono transition cursor-pointer border shadow-sm ${
+                showAnatomyMatrix
+                  ? 'bg-rose-500/20 border-rose-500/70 text-rose-200 shadow-[0_0_12px_rgba(244,63,94,0.3)] font-bold'
+                  : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300'
+              }`}
+              title="Ver Matriz de Daño Óseo, Pulmonar y Flujo de Ki"
+            >
+              <Activity className="w-3.5 h-3.5 text-rose-400" />
+              <span>🩻 Matriz Anatómica</span>
+            </button>
+
+            {/* Guión TikTok */}
+            <button
+              onClick={() => setShowScriptExporter(true)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-pink-300 text-xs font-mono transition cursor-pointer border border-pink-800/60 shadow-sm"
+              title="Exportar Guión para TikTok / YouTube Shorts / Reels"
+            >
+              <FileText className="w-3.5 h-3.5 text-pink-400" />
+              <span>🎬 Guión TikTok</span>
+            </button>
+
+            {/* Continuar Línea Temporal */}
+            <button
+              onClick={() => {
+                const defaultSurvivors = allActiveFighters.filter(f => f.hp > 0).map(f => f.id || f.name);
+                setSelectedTimelineFighterIds(defaultSurvivors.length > 0 ? defaultSurvivors : allActiveFighters.map(f => f.id || f.name));
+                setShowTimelineModal(true);
+              }}
+              title="Abrir panel de Continuidad de Línea Temporal (Resurrección, Supervivientes y Asignación de Escuadrones)"
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-indigo-950/60 hover:bg-indigo-900/60 text-indigo-200 text-xs font-mono font-bold transition cursor-pointer border border-indigo-500/60 shadow-[0_0_12px_rgba(99,102,241,0.25)]"
+            >
+              <GitBranch className="w-3.5 h-3.5 text-indigo-400 animate-pulse" />
+              <span>🔮 Continuar Línea Temporal</span>
+            </button>
+
+            {/* What-If (Rama) */}
+            <button
+              onClick={() => setShowAltEndingModal(true)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-950/40 hover:bg-purple-900/50 text-purple-300 text-xs font-mono transition cursor-pointer border border-purple-700/50 shadow-sm"
+              title="Generar rama divergente / Final Alternativo"
+            >
+              <GitBranch className="w-3.5 h-3.5 text-purple-400" />
+              <span>🌿 What-If (Rama)</span>
+            </button>
+
+            {/* Exportar MD */}
+            <button
+              onClick={handleDownloadMd}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono transition cursor-pointer border border-slate-700/80 shadow-sm"
+              title="Descargar combate como Markdown"
+            >
+              <Download className="w-3.5 h-3.5 text-slate-400" />
+              <span>{getTranslation(lang, 'exportMd')}</span>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Oracle Betting Widget (Collapsible) */}
       {showOracleBet && (
@@ -2661,38 +2449,85 @@ export default function SimulationViewer({
               )}
 
               {/* Free Text Input & Custom Next Act */}
-              <div className="pt-3 border-t border-slate-800 space-y-2.5">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[10px] text-slate-400">
-                  <span className="font-bold text-slate-300">⚡ O escribe tu propia acción / giro argumental:</span>
-                  <div className="flex items-center gap-1.5 flex-wrap">
-                    <button
-                      type="button"
-                      onClick={() => setNextActionPrompt("Aparece un tercer contendiente sorpresa de otra dimensión para intervenir en el choque.")}
-                      className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:border-cyan-500 transition"
+              <div className="pt-3 border-t border-slate-800 space-y-3">
+                
+                {/* Desplegable Interactivo de Giros Argumentales & 3er Contendiente */}
+                <div className="bg-slate-950/80 p-2.5 rounded-xl border border-cyan-900/40 shadow-inner space-y-2">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-[11px]">
+                    <span className="font-bold text-cyan-300 flex items-center gap-1.5">
+                      <Swords className="w-3.5 h-3.5 text-cyan-400" />
+                      <span>💥 Selector Táctico de Intervención / 3er Contendiente:</span>
+                    </span>
+                    <span className="text-[9px] font-mono text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-700/60 flex items-center gap-1">
+                      <Check className="w-3 h-3 text-emerald-400" />
+                      <span>LEY CANÓNICA APEX ACTIVA</span>
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-12 gap-2">
+                    <select
+                      className="sm:col-span-8 p-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs focus:border-cyan-400 focus:outline-none transition cursor-pointer"
+                      onChange={(e) => {
+                        if (e.target.value) {
+                          setNextActionPrompt(e.target.value);
+                        }
+                      }}
+                      defaultValue=""
                     >
-                      💥 3er Contendiente
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setNextActionPrompt("El terreno colapsa en un vórtice cósmico y ambos luchadores son transportados a otra dimensión.")}
-                      className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:border-purple-500 transition"
-                    >
-                      🌌 Colapso Dimensional
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setNextActionPrompt("Uno de los luchadores realiza una técnica de fusión o invocación de emergencia para salvarse.")}
-                      className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:border-amber-500 transition"
-                    >
-                      ⚡ Fusión de Crisis
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setNextActionPrompt("El villano lanza una técnica de auto-destrucción total para llevarse consigo a su oponente.")}
-                      className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:border-red-500 transition"
-                    >
-                      🩸 Ataque Kamikaze
-                    </button>
+                      <option value="" disabled>⚡ Selecciona una intervención táctica o 3er contendiente...</option>
+                      <option value="Irrumpe sorpresivamente un 3er contendiente canónico icónico y específico del universo del combate (con nombre oficial completo, ej. Metal Cooler, Broly, Cell Max, Bills, Hit, Freezer, Sukuna, Thor, Doomsday, Thanos) que interrumpe el duelo desatando un choque a tres bandas.">
+                        💥 [3er Contendiente] Villano Némesis / Rival Histórico del Universo
+                      </option>
+                      <option value="Irrumpe un villano némesis canónico legendario con sed de venganza (ej. Metal Cooler / Broly / Sukuna / Thanos / Darkseid) atacando a quemarropa a ambos contendientes.">
+                        😈 [Némesis Villano] Asalto Hostil de un Villano Supremo
+                      </option>
+                      <option value="Un aliado canónico de respaldo o mentor (ej. Vegeta / Piccolo / Gojo / Thor / Superman) interviene en el último milisegundo para rescatar a su compañero y coordinar un contraataque.">
+                        🛡️ [Aliado de Respaldo] Intervención Heroica en el Milisegundo Crítico
+                      </option>
+                      <option value="Aparece un dúo de asalto coordinado (ej. Androides 17 y 18 / Goku Black & Zamasu / Toji & Maki) ejecutando una emboscada 2v1 de alta presión.">
+                        👥 [Dúo / Emboscada] Asalto Coordinado de 2 Guerreros
+                      </option>
+                      <option value="Uno de los luchadores realiza una técnica de fusión de emergencia o metamorfosis prohibida para duplicar su poder a costa de un drenaje crítico de energía.">
+                        ⚡ [Fusión de Crisis] Metamorfosis / Unión de Emergencia
+                      </option>
+                      <option value="Al recibir un impacto letal, un catalizador fisiológico o divino latente despierta una nueva transformación que invierte la balanza de poder.">
+                        👑 [Despertar Oculto] Desbloqueo de Nueva Transformación / Forma Latente
+                      </option>
+                      <option value="El contendiente inferior en estadísticas descifra el patrón de combate y logra copiar, anular o absorber temporalmente el Hax principal de su oponente.">
+                        🧬 [Robo de Técnica] Copia o Neutralización Táctica del Hax Rival
+                      </option>
+                      <option value="El clima y la física del escenario colapsan desatando una lluvia de meteoros cósmicos y tormentas de plasma que golpean a ambos luchadores.">
+                        🌧️ [Cataclismo Ambiental] Tormenta de Plasma y Lluvia de Meteoros
+                      </option>
+                      <option value="Una entidad cósmica suprema o árbitro divino (ej. Whis / Gran Patriarca / Anti-Monitor / Tribunal Viviente) irrumpe imponiendo una alteración de la realidad.">
+                        🌌 [Deidad Cósmica] Juicio de una Entidad Multiversal
+                      </option>
+                      <option value="El terreno de combate colapsa por la densidad del choque y ambos contendientes caen arrastrados a otra dimensión paralela.">
+                        🌀 [Colapso Dimensional] Teletransportación a una Arena Hostil
+                      </option>
+                      <option value="Uno de los combatientes al borde de la derrota ejecuta una técnica kamikaze de auto-destrucción total para llevarse consigo a su rival.">
+                        🩸 [Ataque Kamikaze] Sacrificio Final de Auto-Destrucción
+                      </option>
+                    </select>
+
+                    <div className="sm:col-span-4 flex gap-1.5">
+                      <button
+                        type="button"
+                        onClick={() => setNextActionPrompt("Irrumpe sorpresivamente un 3er contendiente canónico icónico y específico del universo del combate (con nombre oficial completo, ej. Metal Cooler, Broly, Cell Max, Bills, Hit, Freezer, Sukuna, Thor, Doomsday, Thanos) que interrumpe el duelo desatando un choque a tres bandas.")}
+                        className="flex-1 py-1 px-2 rounded-lg bg-cyan-950/70 hover:bg-cyan-900 text-cyan-300 text-[10px] font-bold border border-cyan-700/60 transition flex items-center justify-center gap-1"
+                      >
+                        <Sparkles className="w-3 h-3 text-cyan-400" />
+                        <span>Autocargar</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setNextActionPrompt('')}
+                        className="py-1 px-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-slate-200 text-[10px] border border-slate-700 transition"
+                        title="Limpiar texto"
+                      >
+                        ✕
+                      </button>
+                    </div>
                   </div>
                 </div>
 
@@ -2708,7 +2543,7 @@ export default function SimulationViewer({
                         setNextActionPrompt('');
                       }
                     }}
-                    placeholder="¿Qué pasa ahora? (Escribe una acción personalizada o déjalo vacío para continuar el siguiente acto)..."
+                    placeholder="Escribe o personaliza la acción (o usa el desplegable de arriba)..."
                     className="flex-1 p-2.5 px-3.5 rounded-xl bg-slate-950 border border-slate-700 text-slate-200 text-xs focus:border-cyan-400 focus:outline-none transition placeholder:text-slate-600 shadow-inner"
                   />
                   <button
@@ -3170,6 +3005,227 @@ export default function SimulationViewer({
                 className="px-5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs cursor-pointer shadow-lg shadow-purple-950/60"
               >
                 Cerrar Galería
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal de Final Alternativo / What-If */}
+      {showAltEndingModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+          <div className="bg-slate-950 border border-purple-500/50 rounded-2xl w-full max-w-lg overflow-hidden shadow-[0_0_50px_rgba(168,85,247,0.15)] flex flex-col">
+            <div className="p-4 border-b border-slate-800 flex justify-between items-center bg-purple-950/20">
+              <h3 className="text-lg font-bold font-cinzel text-purple-300 flex items-center gap-2">
+                <GitBranch className="w-5 h-5 text-purple-400" />
+                Generar Final Alternativo (What-If)
+              </h3>
+              <button onClick={() => setShowAltEndingModal(false)} className="text-slate-400 hover:text-white transition cursor-pointer">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="p-5 space-y-4 font-mono text-xs">
+              <p className="text-slate-300">
+                Introduce el punto de divergencia exacto que alterará el curso de esta batalla para generar una línea temporal alternativa (Línea Beta).
+              </p>
+              <textarea
+                value={customWhatIfText}
+                onChange={(e) => setCustomWhatIfText(e.target.value)}
+                placeholder="Ej. ¿Qué hubiera pasado si Vegeta no distraía a Cell? / ¿Qué si Goku acertaba el Ryūken en el núcleo? / ¿Qué si la Semilla Senzu era destruida?"
+                className="w-full h-24 bg-slate-900 border border-purple-900/50 rounded-lg p-3 text-purple-200 placeholder:text-slate-600 focus:outline-none focus:border-purple-500"
+              />
+            </div>
+            <div className="p-4 border-t border-slate-800 flex justify-end gap-3 bg-slate-900/50">
+              <button
+                onClick={() => setShowAltEndingModal(false)}
+                className="px-4 py-2 rounded-lg font-mono text-xs font-bold text-slate-400 hover:text-white transition cursor-pointer"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={() => {
+                  if (!customWhatIfText.trim()) return;
+                  setShowAltEndingModal(false);
+                  onContinueSimulation(`[DIRECTIVA WHAT-IF / EFECTO MARIPOSA]: Olvida el Veredicto Final anterior. Genera un título tipo "### 🌿 LÍNEA BETA: WHAT-IF" y reescribe la culminación del combate partiendo EXCLUSIVAMENTE de este punto de divergencia radical: "${customWhatIfText.trim()}". Desarrolla esta rama hasta un nuevo desenlace definitivo.`);
+                  setCustomWhatIfText('');
+                }}
+                disabled={!customWhatIfText.trim()}
+                className="px-4 py-2 rounded-lg font-mono text-xs font-bold bg-purple-600 text-white hover:bg-purple-500 transition disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_15px_rgba(168,85,247,0.4)] cursor-pointer"
+              >
+                Generar Rama Temporal
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal de Continuidad Multiversal & Resurrección (What-If Sagas) */}
+      {showTimelineModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+          <div className="bg-slate-950 border border-indigo-500/60 rounded-2xl w-full max-w-2xl overflow-hidden shadow-[0_0_60px_rgba(99,102,241,0.25)] flex flex-col max-h-[90vh]">
+            <div className="p-4 border-b border-slate-800 flex justify-between items-center bg-gradient-to-r from-indigo-950/60 to-purple-950/40">
+              <div className="flex items-center gap-2.5">
+                <GitBranch className="w-5 h-5 text-indigo-400 animate-pulse" />
+                <div>
+                  <h3 className="text-base font-bold font-cinzel text-indigo-200">
+                    🔮 Continuar Línea Temporal — Próxima Saga
+                  </h3>
+                  <p className="text-[10px] text-slate-400 font-mono">
+                    Elige qué supervivientes avanzan, resucita caídos con Dragon Balls y asígnalos a cualquier escuadrón.
+                  </p>
+                </div>
+              </div>
+              <button onClick={() => setShowTimelineModal(false)} className="text-slate-400 hover:text-white transition cursor-pointer">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="p-5 space-y-4 font-mono text-xs overflow-y-auto custom-scrollbar flex-1">
+              {/* Selector Rápido */}
+              <div className="flex items-center justify-between bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+                <span className="text-slate-300 font-bold text-[11px]">⚡ Selección Rápida:</span>
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const survivorsOnly = allActiveFighters.filter(f => f.hp > 0).map(f => f.id || f.name);
+                      setSelectedTimelineFighterIds(survivorsOnly);
+                    }}
+                    className="px-2.5 py-1 rounded-lg bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-[10px] font-bold hover:bg-emerald-900 transition cursor-pointer"
+                  >
+                    🟢 Solo Supervivientes ({allActiveFighters.filter(f => f.hp > 0).length})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const allIds = allActiveFighters.map(f => f.id || f.name);
+                      setSelectedTimelineFighterIds(allIds);
+                    }}
+                    className="px-2.5 py-1 rounded-lg bg-indigo-950 border border-indigo-500/50 text-indigo-300 text-[10px] font-bold hover:bg-indigo-900 transition cursor-pointer"
+                  >
+                    ✨ Revivir a Todos ({allActiveFighters.length})
+                  </button>
+                </div>
+              </div>
+
+              {/* Lista de Combatientes y su Estado */}
+              <div className="space-y-2">
+                <label className="text-[11px] font-bold text-slate-300 block">
+                  🛡️ Combatientes del Veredicto ({selectedTimelineFighterIds.length} Seleccionados):
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-56 overflow-y-auto p-1 custom-scrollbar">
+                  {allActiveFighters.map((f, idx) => {
+                    const isDead = f.hp <= 0;
+                    const fighterKey = f.id || f.name;
+                    const isSelected = selectedTimelineFighterIds.includes(fighterKey);
+
+                    return (
+                      <div
+                        key={fighterKey || idx}
+                        onClick={() => {
+                          setSelectedTimelineFighterIds(prev =>
+                            prev.includes(fighterKey) ? prev.filter(k => k !== fighterKey) : [...prev, fighterKey]
+                          );
+                        }}
+                        className={`p-2.5 rounded-xl border flex items-center justify-between cursor-pointer transition ${
+                          isSelected
+                            ? 'bg-indigo-950/60 border-indigo-500/80 text-white shadow-sm'
+                            : 'bg-slate-900/40 border-slate-800 text-slate-400 opacity-60 hover:opacity-100'
+                        }`}
+                      >
+                        <div className="flex items-center gap-2 truncate">
+                          {f.avatar ? (
+                            <img src={f.avatar} alt="" className="w-7 h-7 rounded-full object-cover border border-slate-700" />
+                          ) : (
+                            <span className="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-xs">🥋</span>
+                          )}
+                          <div className="truncate">
+                            <span className="font-bold block truncate text-xs">{f.name}</span>
+                            <span className="text-[9px] block">
+                              {isDead ? (
+                                <span className="text-red-400 font-bold">💀 Muerto (0% HP)</span>
+                              ) : (
+                                <span className="text-emerald-400 font-bold">🟢 Vivo ({f.hp}% HP)</span>
+                              )}
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="flex-shrink-0 ml-2">
+                          {isDead ? (
+                            <span className={`text-[9px] font-bold px-2 py-0.5 rounded border ${
+                              isSelected
+                                ? 'bg-purple-900 border-purple-400 text-purple-200'
+                                : 'bg-slate-800 border-slate-700 text-slate-400'
+                            }`}>
+                              {isSelected ? '🔮 Revivido' : '💀 Caído'}
+                            </span>
+                          ) : (
+                            <span className={`text-[9px] font-bold px-2 py-0.5 rounded border ${
+                              isSelected
+                                ? 'bg-emerald-950 border-emerald-500 text-emerald-300'
+                                : 'bg-slate-800 border-slate-700 text-slate-500'
+                            }`}>
+                              {isSelected ? '✓ Activo' : 'Omitir'}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Destino y Modo */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-slate-800">
+                <div className="space-y-1">
+                  <label className="text-[10px] font-bold text-slate-400 uppercase">1. Modo de Juego Próxima Saga:</label>
+                  <select
+                    value={targetTimelineMode}
+                    onChange={(e) => setTargetTimelineMode(e.target.value)}
+                    className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-bold text-xs focus:border-indigo-500"
+                  >
+                    <option value="team">⚔️ Modo Equipos (Recomendado)</option>
+                    <option value="1v1">🥋 Duelo 1v1 (Toma al 1º)</option>
+                    <option value="raid">👑 Boss Raid (Como Boss o Asaltantes)</option>
+                    <option value="battle_royale">🌪️ Battle Royale (Todos vs Todos)</option>
+                  </select>
+                </div>
+
+                <div className="space-y-1">
+                  <label className="text-[10px] font-bold text-slate-400 uppercase">2. Bando a Ocupar:</label>
+                  <select
+                    value={targetTimelineSquad}
+                    onChange={(e) => setTargetTimelineSquad(e.target.value)}
+                    className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-bold text-xs focus:border-indigo-500"
+                  >
+                    <option value="A">🛡️ Escuadrón A (Defensores / Aliados)</option>
+                    <option value="B">⚔️ Escuadrón B (Invasores / Nuevos Enemigos)</option>
+                    <option value="boss">👑 Boss Principal (Solo en Boss Raid)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 border-t border-slate-800 flex justify-end gap-3 bg-slate-900/60">
+              <button
+                onClick={() => setShowTimelineModal(false)}
+                className="px-4 py-2 rounded-lg font-mono text-xs font-bold text-slate-400 hover:text-white transition cursor-pointer"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={() => {
+                  if (onContinueTimeline) {
+                    const chosen = allActiveFighters.filter(f => selectedTimelineFighterIds.includes(f.id || f.name));
+                    onContinueTimeline(chosen, targetTimelineMode, targetTimelineSquad);
+                    setShowTimelineModal(false);
+                  }
+                }}
+                disabled={selectedTimelineFighterIds.length === 0}
+                className="px-5 py-2 rounded-xl font-mono text-xs font-bold bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-500 hover:to-purple-500 transition disabled:opacity-50 shadow-[0_0_20px_rgba(99,102,241,0.4)] cursor-pointer"
+              >
+                🚀 Transferir al Simulador ({selectedTimelineFighterIds.length})
               </button>
             </div>
           </div>

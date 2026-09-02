@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Shield, Zap, Eye, Crosshair, AlertTriangle, Target, Sparkles, Flame, ShieldAlert, Edit3, Trash2, ArrowUpRight } from 'lucide-react';
 import { getTranslation } from '../services/i18n';
-import { calculateFormScaledStats } from '../data/powerscalingCodex';
+import { resolveCombatState } from '../lib/combatStateResolver';
 import { SoundFX } from '../services/soundFx';
-import { calculateScouterReading } from '../services/scouterEngine';
+
 import SearchableCharacterSelector from './SearchableCharacterSelector';
 
 export default function CharacterCard({ character = {}, role = '', onInspect, onEdit, onDelete, onSelectChange, onExportCard, allCharacters = [], lang = 'es' }) {
@@ -16,14 +16,31 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
   }
 
   const isSideA = role.includes('A') || role.includes('Alfa') || role.includes('Jefe') || role.includes('Boss') || role.includes('Rojo');
-  const [selectedFormId, setSelectedFormId] = useState(character.forms?.[character._activeFormIndex || 0]?.id || character.forms?.[0]?.id || 'base');
+  const [selectedFormId, setSelectedFormId] = useState(
+    character._activeFormId ||
+    character.forms?.[character._activeFormIndex || 0]?.id ||
+    character.forms?.[0]?.id ||
+    'base'
+  );
+
+  // Sync selector when character changes (Part D)
+  useEffect(() => {
+    const defaultState =
+      character._activeFormId ||
+      character.forms?.[character._activeFormIndex || 0]?.id ||
+      character.forms?.[0]?.id ||
+      'base';
+    setSelectedFormId(defaultState);
+  }, [character.id]);
 
   const activeIdx = character.forms?.findIndex(f => f.id === selectedFormId) ?? 0;
   const currentForm = character.forms?.[activeIdx > -1 ? activeIdx : 0] || character.forms?.[0] || {};
-  const scaledStats = calculateFormScaledStats(character, activeIdx > -1 ? activeIdx : 0);
-  const isTransformed = activeIdx > 0;
+  
+  // Single Source of Truth — all UI reads from combatState
+  const combatState = resolveCombatState(character, selectedFormId);
+  const isTransformed = combatState.formMultiplier !== 1 || (activeIdx > 0);
 
-  // Find variants of the same character (matching root name)
+  // Variants for the selector
   const baseName = (character.name || '').split('(')[0].split('—')[0].trim().toLowerCase();
   const variants = (allCharacters || []).filter(c => {
     const otherBase = (c?.name || '').split('(')[0].split('—')[0].trim().toLowerCase();
@@ -31,12 +48,15 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
   });
 
   const [isScanningKi, setIsScanningKi] = useState(false);
-  const scouterReading = calculateScouterReading(character, selectedFormId);
+
+  // Scouter: use combatState.sourceKiDisplay (DB only) — no raw character access
+  const scouterDisplay = combatState.sourceKiDisplay;
+  const scouterIsOverload = combatState.sourceKiCurrent != null && combatState.sourceKiCurrent >= 1e12;
 
   const handleScouterBeep = (e) => {
     e.stopPropagation();
     setIsScanningKi(true);
-    if (scouterReading.isOverload) {
+    if (scouterIsOverload) {
       SoundFX.playScouterExplosion();
     } else {
       SoundFX.playScouterBeep(9);
@@ -136,7 +156,7 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
                 onChange={(e) => {
                   setSelectedFormId(e.target.value);
                   const idx = character.forms.findIndex(f => f.id === e.target.value);
-                  onSelectChange({ ...character, _activeFormIndex: idx > -1 ? idx : 0 });
+                  onSelectChange({ ...character, _activeFormIndex: idx > -1 ? idx : 0, _activeFormId: e.target.value });
                 }}
                 className="bg-slate-950 border border-amber-500/40 text-amber-400 text-xs rounded-lg px-2 py-1 focus:outline-none cursor-pointer w-full font-bold shadow-[0_0_8px_rgba(245,158,11,0.15)]"
               >
@@ -146,7 +166,9 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
               </select>
               {currentForm?.stats && (
                 <p className="text-[10px] text-amber-300/80 font-mono mt-1 italic px-1 line-clamp-1">
-                  ⚡ {currentForm.stats}
+                  ⚡ {typeof currentForm.stats === 'object'
+                    ? (currentForm.stats.ap || currentForm.stats.tier || Object.values(currentForm.stats).join(' | '))
+                    : currentForm.stats}
                 </p>
               )}
 
@@ -175,39 +197,60 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
           )}
 
           <div className="flex items-center gap-2 mt-1 flex-wrap">
+            {/* Active Tier */}
             <span className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold flex items-center gap-1 ${
               isTransformed 
                 ? 'bg-gradient-to-r from-amber-600 to-orange-600 text-white shadow-[0_0_10px_rgba(245,158,11,0.5)] animate-pulse' 
                 : 'bg-slate-900 border border-amber-500/30 text-amber-300'
             }`}>
               {isTransformed && <ArrowUpRight className="w-3 h-3 text-yellow-300" />}
-              <span>{scaledStats?.activeTier || character.tier}</span>
+              <span>{combatState.tierExact || character.tier}</span>
             </span>
 
-            {/* Scouter Ki Badge with Sound */}
-            <button
-              type="button"
-              onClick={handleScouterBeep}
-              title="Medir Ki con Scouter (Sonido Clásico DBZ)"
-              className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold flex items-center gap-1 cursor-pointer transition select-none shadow-sm ${
-                isScanningKi
-                  ? 'bg-emerald-400 text-black shadow-[0_0_15px_rgba(52,211,153,0.9)] scale-105 ring-2 ring-emerald-300 animate-pulse'
-                  : scouterReading.isOverload
-                  ? 'bg-red-950/90 border border-red-500 text-red-300 animate-pulse'
-                  : 'bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/50 text-emerald-300'
-              }`}
+            {/* Universal APEX-Ki Badge */}
+            <span
+              className="px-2 py-0.5 rounded bg-indigo-950/80 border border-indigo-500/50 text-indigo-200 text-[11px] font-mono font-bold flex items-center gap-1 shadow-sm"
+              title="Lectura Scouter APEX"
             >
-              <span className="text-[10px]">📟</span>
-              <span>{isScanningKi ? 'ESCANEO...' : scouterReading.formatted}</span>
-            </button>
+              <Zap className="w-3 h-3 text-indigo-400" />
+              <span aria-label="Lectura Scouter APEX">{combatState.apexKiDisplay}</span>
+            </span>
+
+            {/* Scouter Ki Badge (Dragon Ball only) */}
+            {combatState.sourceKiDisplay && (
+              <button
+                type="button"
+                onClick={handleScouterBeep}
+                title="Ki Canónico Dragon Ball"
+                className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold flex items-center gap-1 cursor-pointer transition select-none shadow-sm ${
+                  isScanningKi
+                    ? 'bg-emerald-400 text-black shadow-[0_0_15px_rgba(52,211,153,0.9)] scale-105 ring-2 ring-emerald-300 animate-pulse'
+                    : 'bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/50 text-emerald-300'
+                }`}
+              >
+                <span className="text-[10px]">📖</span>
+                <span>{isScanningKi ? 'ESCANEO...' : combatState.sourceKiDisplay}</span>
+              </button>
+            )}
+
+            {/* Range */}
             {character.range && (
               <span className="px-2 py-0.5 rounded bg-slate-900 border border-cyan-500/30 text-[10px] font-mono text-cyan-300 flex items-center gap-1">
                 <Target className="w-3 h-3" /> {character.range}
               </span>
             )}
-            {isTransformed && scaledStats?.multiplier > 1 && (
+
+            {/* Form Multiplier */}
+            {combatState.formMultiplier > 1 && (
               <span className="px-1.5 py-0.5 rounded bg-red-950 text-red-300 border border-red-500/50 text-[9.5px] font-mono font-black">
-                x{scaledStats.multiplier} Boost
+                {combatState.multiplierDisplay} Boost
+              </span>
+            )}
+
+            {/* Warnings badge */}
+            {combatState.warnings?.length > 0 && (
+              <span className="px-1.5 py-0.5 rounded bg-amber-950/80 border border-amber-500/50 text-amber-300 text-[9px] font-mono flex items-center gap-0.5" title={(combatState.warnings || []).join('\n')}>
+                <AlertTriangle className="w-2.5 h-2.5" /> Aviso
               </span>
             )}
           </div>
@@ -264,7 +307,13 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
             <span className="text-[10px] uppercase font-bold">{isTransformed ? 'Attack Potency (Escalado)' : 'Attack Potency'}</span>
           </div>
           <p className={`line-clamp-2 text-[11px] font-bold ${isTransformed ? 'text-amber-200' : 'text-slate-200'}`}>
-            {isTransformed ? (currentForm?.stats || character.ap) : character.ap}
+            {isTransformed
+              ? (typeof currentForm?.stats === 'object'
+                  ? (currentForm.stats.ap || currentForm.stats.tier || Object.values(currentForm.stats).join(' | '))
+                  : (currentForm?.stats || character.ap))
+              : (typeof character.ap === 'object'
+                  ? (character.ap?.text || character.ap?.ap || Object.values(character.ap).join(' | '))
+                  : character.ap)}
           </p>
         </div>
 
@@ -276,7 +325,7 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
             <span className="text-[10px] uppercase font-bold">{isTransformed ? 'Durabilidad (Forma)' : 'Durabilidad'}</span>
           </div>
           <p className="text-slate-200 line-clamp-2 text-[11px]">
-            {isTransformed ? `Escalado a ${currentForm?.name || 'Forma'}` : character.durability}
+            {isTransformed ? `Escalado a ${currentForm?.name || 'Forma'}` : (typeof character.durability === 'object' ? (character.durability?.text || Object.values(character.durability).join(' | ')) : character.durability)}
           </p>
         </div>
       </div>
@@ -285,11 +334,11 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
       <div className="mt-2 grid grid-cols-2 gap-2 text-[10px] font-mono">
          <div className="p-2 rounded-lg bg-slate-900/40 border border-slate-800/40">
            <span className="text-slate-500 block mb-0.5">Stamina:</span>
-           <span className="text-slate-300 line-clamp-1">{character.stamina || 'Desconocida'}</span>
+           <span className="text-slate-300 line-clamp-1">{typeof character.stamina === 'object' ? (character.stamina?.text || Object.values(character.stamina).join(' | ')) : (character.stamina || 'Desconocida')}</span>
          </div>
          <div className="p-2 rounded-lg bg-slate-900/40 border border-slate-800/40">
            <span className="text-slate-500 block mb-0.5">Battle IQ:</span>
-           <span className="text-slate-300 line-clamp-1">{character.battleIQ || 'Desconocido'}</span>
+           <span className="text-slate-300 line-clamp-1">{typeof character.battleIQ === 'object' ? (character.battleIQ?.text || Object.values(character.battleIQ).join(' | ')) : (character.battleIQ || 'Desconocido')}</span>
          </div>
       </div>
 
@@ -298,7 +347,7 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
         <div className="flex items-center justify-between text-slate-400 pb-1.5 border-b border-slate-800/60 text-[11px]">
           <span className="flex items-center gap-1"><Crosshair className="w-3.5 h-3.5 text-red-400" /> Vel. Combate:</span>
           <span className={`font-mono font-bold ${isTransformed ? 'text-yellow-300' : 'text-slate-200'}`}>
-            {isTransformed && scaledStats?.activeSpeed ? scaledStats.activeSpeed : (typeof character.speed === 'object' ? character.speed.combat : (character.speedCombate || character.speed || 'Nivel Canon'))}
+            {typeof character.speed === 'object' ? character.speed.combat : (character.speedCombate || character.speed || 'Nivel Canon')}
           </span>
         </div>
 

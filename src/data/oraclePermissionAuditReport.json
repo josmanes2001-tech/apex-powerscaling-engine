@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-09-01T20:08:14.425Z",
+  "auditTarget": "Caso Anterior Problemático (Vegeta DB After vs Kakarotto DB After)",
+  "scenarioSettings": {
+    "oracleEventsSelected": [
+      "forbidden-finisher-awakening"
+    ],
+    "allowFusion": false,
+    "allowExternalItems": false,
+    "allowNonCanonical": false
+  },
+  "totalViolationsDetected": 8,
+  "allViolationsBlockedByNewEngine": true,
+  "violationsBreakdown": [
+    {
+      "type": "state-not-authorized",
+      "actionIndex": 0,
+      "combatantId": "vegeta-db-after-team-a",
+      "targetStateId": "ssb",
+      "reason": "El estado 'ssb' no está autorizado para 'Vegeta (DB After)' en esta simulación."
+    },
+    {
+      "type": "ability-not-authorized",
+      "actionIndex": 1,
+      "combatantId": "vegeta-db-after-team-a",
+      "abilityId": "kaioken-x20",
+      "reason": "La habilidad 'kaioken-x20' no está en la lista de habilidades permitidas para 'Vegeta (DB After)'."
+    },
+    {
+      "type": "external-item-not-authorized",
+      "actionIndex": 2,
+      "combatantId": "vegeta-db-after-team-a",
+      "itemId": "senzu-bean",
+      "reason": "Los objetos externos están deshabilitados en el escenario (allowExternalItems=false)."
+    },
+    {
+      "type": "oracle-finisher-created-state",
+      "actionIndex": 3,
+      "eventId": "forbidden-finisher-awakening",
+      "reason": "El evento 'forbidden-finisher-awakening' no tiene permiso para crear una forma o estado."
+    },
+    {
+      "type": "oracle-finisher-changed-tier",
+      "actionIndex": 3,
+      "eventId": "forbidden-finisher-awakening",
+      "reason": "El evento 'forbidden-finisher-awakening' no tiene permiso para alterar el Tier o powerKey."
+    },
+    {
+      "type": "too-many-oracle-finishers",
+      "actionIndex": 4,
+      "eventId": "forbidden-finisher-awakening",
+      "reason": "Se intentó crear más de 1 finisher(s) temporal(es) para el evento 'forbidden-finisher-awakening'."
+    },
+    {
+      "type": "narrative-invention",
+      "reason": "La narrativa mencionó Semilla del Ermitaño cuando allowExternalItems=false."
+    },
+    {
+      "type": "narrative-invention",
+      "reason": "La narrativa mencionó Super Saiyan Blue cuando dicha forma no está en allowedStateIdsByCombatant."
+    }
+  ],
+  "summary": [
+    "Se detectó y bloqueó la transformación no autorizada a Super Saiyan Blue (state-not-authorized).",
+    "Se detectó y bloqueó la combinación no autorizada de Kaio-ken x20 con estados incompatibles (invalid-state-combination).",
+    "Se detectó y bloqueó el uso de la Semilla del Ermitaño sin permiso (external-item-not-authorized).",
+    "Se detectó y bloqueó el intento de crear un segundo Finisher temporal con un solo evento de Oráculo (too-many-oracle-finishers).",
+    "Se detectó y bloqueó el intento de alterar Tier o crear formas mediante el evento de Super Técnica (oracle-finisher-created-state & oracle-finisher-changed-tier)."
+  ]
+}

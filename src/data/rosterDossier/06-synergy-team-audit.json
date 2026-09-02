@@ -1,0 +1,1024 @@
+{
+  "recordsWithSynergies": 152,
+  "recordsWithTeamCombos": 0,
+  "recordsWithFusionMethods": 0,
+  "emptySynergyRecords": [
+    {
+      "id": "piccolo-saga-saiyan-namek-saga-saiyan-967",
+      "name": "Piccolo (Saga Namek)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "piccolo-saga-cell-buu-saga-androides-946",
+      "name": "Piccolo (Saga Androides / Cell)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "piccolo-saga-super-dragon-ball-super-228",
+      "name": "Piccolo (Saga Super)",
+      "universe": "Dragon Ball Super"
+    },
+    {
+      "id": "freezer-saga-namek-saga-namek-167",
+      "name": "Freezer (Dragon Ball Z — Saga de Namek)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "mecha-freezer-saga-androides-514",
+      "name": "Mecha Freezer (Dragon Ball Z — Llegada de los Androides)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "freezer-torneo-del-poder-dbs",
+      "name": "Freezer (Dragon Ball Super — Torneo del Poder)",
+      "universe": "Dragon Ball Super"
+    },
+    {
+      "id": "freezer-resurreccion-f",
+      "name": "Freezer (Dragon Ball Super — Resurrección de 'F')",
+      "universe": "Dragon Ball Super"
+    },
+    {
+      "id": "maestro-roshi-jackie-chun-dragon-ball-cl-sico-224",
+      "name": "Maestro Roshi",
+      "universe": "Dragon Ball (Apariciones Multi-Era)"
+    },
+    {
+      "id": "krilin-db-clasico",
+      "name": "Krilin (Dragon Ball Clásico)",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "krilin-saga-saiyan-namek",
+      "name": "Krilin (Saga Saiyan / Namek)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "krilin-dragon-ball-cl-sico-802",
+      "name": "Krilin (Saga Super)",
+      "universe": "Dragon Ball Super"
+    },
+    {
+      "id": "yamcha-db-clasico",
+      "name": "Yamcha (Dragon Ball Clásico)",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "yamcha-saga-saiyan",
+      "name": "Yamcha (Saga Saiyan / Kaio-sama)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "nam-dragon-ball-cl-sico-33",
+      "name": "Nam",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "ranfan-dragon-ball-cl-sico-172",
+      "name": "Ranfan",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "giran-dragon-ball-cl-sico-697",
+      "name": "Giran",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "bacterian-dragon-ball-cl-sico-986",
+      "name": "Bacterian",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "tenshinhan-db-clasico",
+      "name": "Ten Shin Han (Dragon Ball Clásico)",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "tenshinhan-saga-saiyan",
+      "name": "Ten Shin Han (Saga Saiyan / Kaio-sama)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "ten-shin-han-dragon-ball-cl-sico-812",
+      "name": "Ten Shin Han (Saga Super)",
+      "universe": "Dragon Ball Super"
+    },
+    {
+      "id": "chaos-dragon-ball-cl-sico-318",
+      "name": "Chaos (Chiaotzu)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "tao-pai-pai-dragon-ball-cl-sico-369",
+      "name": "Tao Pai Pai",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "comandante-red-dragon-ball-cl-sico-526",
+      "name": "Comandante Red",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "coronel-silver-dragon-ball-cl-sico-336",
+      "name": "Coronel Silver",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "general-blue-dragon-ball-cl-sico-650",
+      "name": "General Blue",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "mayor-metallitron-dragon-ball-cl-sico-265",
+      "name": "Mayor Metallitron",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "androide-8-dragon-ball-cl-sico-704",
+      "name": "Androide 8",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "coronel-murasaki-dragon-ball-cl-sico-136",
+      "name": "Coronel Murasaki",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "rey-piccolo-dragon-ball-cl-sico-497",
+      "name": "Rey Demonio Piccolo (Daimaoh)",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "tambourine-dragon-ball-cl-sico-273",
+      "name": "Tambourine",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "cymbal-dragon-ball-cl-sico-617",
+      "name": "Cymbal",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "drum-dragon-ball-cl-sico-175",
+      "name": "Drum",
+      "universe": "Dragon Ball (Clásico)"
+    },
+    {
+      "id": "kami-sama-dragon-ball-cl-sico-772",
+      "name": "Kami-sama",
+      "universe": "Dragon Ball (Apariciones Multi-Era)"
+    },
+    {
+      "id": "mr-popo-dragon-ball-cl-sico-370",
+      "name": "Mr. Popo",
+      "universe": "Dragon Ball (Apariciones Multi-Era)"
+    },
+    {
+      "id": "yajirobe-dragon-ball-cl-sico-111",
+      "name": "Yajirobe",
+      "universe": "Dragon Ball (Apariciones Multi-Era)"
+    },
+    {
+      "id": "granjero-con-escopeta-dragon-ball-cl-sico-331",
+      "name": "Granjero con Escopeta",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "raditz-saga-saiyan-640",
+      "name": "Raditz",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "nappa-saga-saiyan-462",
+      "name": "Nappa",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "saibaman-saga-saiyan-791",
+      "name": "Saibaman",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "kaio-sama-del-norte-saga-saiyan-446",
+      "name": "Kaio-sama del Norte",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "enma-daioh-saga-saiyan-579",
+      "name": "Enma Daioh (Rey Yemma)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "cui-saga-namek-132",
+      "name": "Cui",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "dodoria-saga-namek-528",
+      "name": "Dodoria",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "zarbon-saga-namek-939",
+      "name": "Zarbon",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "guerreros-namek-saga-namek-520",
+      "name": "Guerreros Namek",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "soldados-de-freezer-saga-namek-793",
+      "name": "Soldados de Freezer",
+      "universe": "Dragon Ball (Apariciones Multi-Era)"
+    },
+    {
+      "id": "dende-saga-namek-100",
+      "name": "Dende",
+      "universe": "Dragon Ball (Apariciones Multi-Era)"
+    },
+    {
+      "id": "gran-patriarca-guru-saga-namek-183",
+      "name": "Gran Patriarca Guru",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "nail-saga-namek-672",
+      "name": "Nail",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "captain-ginyu-saga-namek-524",
+      "name": "Capitán Ginyu",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "recoome-saga-namek-951",
+      "name": "Recoome",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "jeice-saga-namek-726",
+      "name": "Jeice",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "burter-saga-namek-641",
+      "name": "Burter",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "guldo-saga-namek-583",
+      "name": "Guldo",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "garlic-jr-saga-garlic-jr-47",
+      "name": "Garlic Jr.",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "spice-saga-garlic-jr-70",
+      "name": "Spice",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "vinegar-saga-garlic-jr-502",
+      "name": "Vinegar",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "mustard-saga-garlic-jr-331",
+      "name": "Mustard",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "salt-saga-garlic-jr-435",
+      "name": "Salt",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "rey-cold-saga-androides-751",
+      "name": "Rey Cold",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "androide-19-saga-androides-393",
+      "name": "Androide 19",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "androide-20-saga-androides-799",
+      "name": "Androide 20 (Dr. Gero)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "androide-17-saga-androides-489",
+      "name": "Androide 17",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "androide-18-saga-androides-476",
+      "name": "Androide 18 (C-18)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "androide-16-saga-androides-313",
+      "name": "Androide 16",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "mr-satan-saga-androides-140",
+      "name": "Mr. Satán (Hercule)",
+      "universe": "Dragon Ball (Apariciones Multi-Era)"
+    },
+    {
+      "id": "pikkon-torneo-del-otro-mundo-912",
+      "name": "Pikkon (Paikuhan)",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "olibu-torneo-del-otro-mundo-109",
+      "name": "Olibu",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "mijorin-torneo-del-otro-mundo-618",
+      "name": "Mijorin",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "caterpy-torneo-del-otro-mundo-838",
+      "name": "Caterpy",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "arqua-torneo-del-otro-mundo-715",
+      "name": "Arqua",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "maraikoh-torneo-del-otro-mundo-620",
+      "name": "Maraikoh",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "shin-kaio-shin-del-este-saga-buu-0",
+      "name": "Shin (Kaio-shin del Este)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "kibito-saga-buu-184",
+      "name": "Kibito",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "videl-saga-buu-6",
+      "name": "Videl",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "babidi-saga-buu-330",
+      "name": "Babidi",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "dabura-saga-buu-107",
+      "name": "Dabra",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "uub-saga-buu-276",
+      "name": "Uub",
+      "universe": "Dragon Ball (Apariciones Multi-Era)"
+    },
+    {
+      "id": "pan-saga-buu-780",
+      "name": "Pan (GT)",
+      "universe": "Dragon Ball GT"
+    },
+    {
+      "id": "spopovich-saga-buu-676",
+      "name": "Spopovich",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "yamu-saga-buu-59",
+      "name": "Yamu",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "anciano-kaio-shin-saga-buu-404",
+      "name": "Anciano Kaio-shin (Ro Kaio-shin)",
+      "universe": "Dragon Ball Z"
+    },
+    {
+      "id": "dr-wheelo-pel-culas-dbz-toei-823",
+      "name": "Dr. Wheelo",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "lord-slug-pel-culas-dbz-toei-952",
+      "name": "Lord Slug",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "lord-cooler-pel-culas-dbz-toei-792",
+      "name": "Cooler",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "meta-cooler-pel-culas-dbz-toei-714",
+      "name": "Meta Cooler",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "androide-13-base-pel-culas-dbz-toei-646",
+      "name": "Androide 13",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "androide-14-pel-culas-dbz-toei-392",
+      "name": "Androide 14",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "androide-15-pel-culas-dbz-toei-547",
+      "name": "Androide 15",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "paragus-pel-culas-dbz-toei-728",
+      "name": "Paragus (Z)",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "bojack-pel-culas-dbz-toei-695",
+      "name": "Bojack",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "zangya-pel-culas-dbz-toei-447",
+      "name": "Zangya",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "bido-pel-culas-dbz-toei-296",
+      "name": "Bido",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "bujin-pel-culas-dbz-toei-994",
+      "name": "Bujin",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "dr-lychee-pel-culas-dbz-toei-354",
+      "name": "Dr. Lychee",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "hatchiyack-pel-culas-dbz-toei-383",
+      "name": "Hatchiyack",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "janemba-gordo-pel-culas-dbz-toei-542",
+      "name": "Super Janemba",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "gogeta-pel-culas-dbz-toei-800",
+      "name": "Gogeta (Z)",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "hirudegarn-pel-culas-dbz-toei-805",
+      "name": "Hirudegarn",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    },
+    {
+      "id": "tapion-pel-culas-dbz-toei-767",
+      "name": "Tapion",
+      "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei"
+    }
+  ],
+  "genericSynergyRecords": [],
+  "candidateTeams": [
+    {
+      "candidateTeam": [
+        "son-goku-saga-saiyan",
+        "vegeta-llegada-a-la-tierra"
+      ],
+      "reason": "Rivalidad eterna Saiyan y combate cooperativo canonico.",
+      "status": "candidate-only"
+    },
+    {
+      "candidateTeam": [
+        "son-goten-nino",
+        "trunks-nino"
+      ],
+      "reason": "Duo de fusion Gotenks y combate en equipo permanente.",
+      "status": "candidate-only"
+    },
+    {
+      "candidateTeam": [
+        "satoru-gojo",
+        "suguru-geto"
+      ],
+      "reason": "Duo de los mas fuertes de Jujutsu Kaisen (Arco Pasado).",
+      "status": "candidate-only"
+    },
+    {
+      "candidateTeam": [
+        "batman-dc-comics",
+        "superman-dc-comics"
+      ],
+      "reason": "Trinidad de DC Comics / World Finest.",
+      "status": "candidate-only"
+    },
+    {
+      "candidateTeam": [
+        "saitama-opm",
+        "genos-opm"
+      ],
+      "reason": "Maestro y discipulo de One-Punch Man.",
+      "status": "candidate-only"
+    },
+    {
+      "candidateTeam": [
+        "baki-hanma",
+        "yujiro-hanma"
+      ],
+      "reason": "Linaje de la Bestia / Sangre Hanma.",
+      "status": "candidate-only"
+    },
+    {
+      "candidateTeam": [
+        "denji-chainsaw-man",
+        "power-chainsaw-man"
+      ],
+      "reason": "Duo caotico Division Especial 4.",
+      "status": "candidate-only"
+    },
+    {
+      "candidateTeam": [
+        "jotaro-kujo",
+        "noriaki-kakyoin"
+      ],
+      "reason": "Stardust Crusaders / Hermanos de Armas Stand.",
+      "status": "candidate-only"
+    }
+  ],
+  "samples": [
+    {
+      "id": "son-goku-ni-o-dragon-ball-cl-sico-987",
+      "name": "Son Goku (Niño)",
+      "universe": "Dragon Ball (Clásico)",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-goku-23-tenkaichi",
+      "name": "Son Goku (23º Tenkaichi Budokai)",
+      "universe": "Dragon Ball (Clásico)",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-goku-llegada-dbz-saga-saiyan-169",
+      "name": "Son Goku (Llegada DBZ)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-goku-saga-namek-saga-namek-176",
+      "name": "Son Goku (Saga Namek)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-goku-saga-cell-saga-androides-459",
+      "name": "Son Goku (Saga Cell)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        },
+        {
+          "name": "Biomasa Compartida",
+          "partnerTags": [
+            "Androide",
+            "Cell"
+          ],
+          "effect": "Aumenta la eficiencia de absorción cuando hay androides o variantes en el equipo."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-goku-saga-buu-saga-buu-646",
+      "name": "Son Goku (Saga Buu, Base)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        },
+        {
+          "name": "Biomasa Compartida",
+          "partnerTags": [
+            "Androide",
+            "Cell"
+          ],
+          "effect": "Aumenta la eficiencia de absorción cuando hay androides o variantes en el equipo."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-goku-saga-super-dragon-ball-super-732",
+      "name": "Son Goku (Saga Super)",
+      "universe": "Dragon Ball Super",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-goku-saga-gt-dragon-ball-gt-281",
+      "name": "Son Goku (Saga GT)",
+      "universe": "Dragon Ball GT",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-goku-mini-dragon-ball-daima-751",
+      "name": "Son Goku (Mini)",
+      "universe": "Dragon Ball Daima",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "vegeta-llegada-a-la-tierra-saga-saiyan-504",
+      "name": "Vegeta (Llegada a la Tierra)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "vegeta-saga-namek-saga-namek-783",
+      "name": "Vegeta (Saga Namek)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "vegeta-saga-cell-saga-androides-856",
+      "name": "Vegeta (Saga Cell)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        },
+        {
+          "name": "Biomasa Compartida",
+          "partnerTags": [
+            "Androide",
+            "Cell"
+          ],
+          "effect": "Aumenta la eficiencia de absorción cuando hay androides o variantes en el equipo."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "vegeta-saga-buu-saga-buu-213",
+      "name": "Vegeta (Saga Buu Base)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        },
+        {
+          "name": "Biomasa Compartida",
+          "partnerTags": [
+            "Androide",
+            "Cell"
+          ],
+          "effect": "Aumenta la eficiencia de absorción cuando hay androides o variantes en el equipo."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "vegeta-saga-super-dragon-ball-super-454",
+      "name": "Vegeta (Saga Super)",
+      "universe": "Dragon Ball Super",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "vegeta-saga-gt-dragon-ball-gt-851",
+      "name": "Vegeta (Saga GT)",
+      "universe": "Dragon Ball GT",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-gohan-ni-o-saga-saiyan-namek-830",
+      "name": "Son Gohan (Niño)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-gohan-joven-saga-androides-cell-945",
+      "name": "Son Gohan (Joven / Cell Games)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Vínculo Padre e Hijo",
+          "partnerTags": [
+            "Goku",
+            "Son Goku"
+          ],
+          "effect": "Incrementa el daño del Kamehameha en un +25% si Goku está presente o como apoyo espiritual."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "gohan-ultimate-mystic-897",
+      "name": "Gohan Definitivo (Ultimate/Mystic)",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "son-gohan-saga-super-dragon-ball-super-39",
+      "name": "Son Gohan (Saga Super)",
+      "universe": "Dragon Ball Super",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    },
+    {
+      "id": "gohan-del-futuro-l-nea-temporal-futura-43",
+      "name": "Gohan del Futuro",
+      "universe": "Dragon Ball Z",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Compartido)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+        }
+      ],
+      "teamCombos": [],
+      "fusionMethods": []
+    }
+  ]
+}

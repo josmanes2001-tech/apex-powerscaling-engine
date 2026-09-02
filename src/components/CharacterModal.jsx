@@ -1074,7 +1074,11 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                               </span>
                             )}
                           </div>
-                          <p className="text-slate-300 text-xs leading-relaxed mt-1">{f.stats}</p>
+                          <p className="text-slate-300 text-xs leading-relaxed mt-1">
+                            {typeof f.stats === 'object'
+                              ? (f.stats.ap || f.stats.tier || Object.values(f.stats).join(' | '))
+                              : f.stats}
+                          </p>
                           {f.cost && (
                             <div className="mt-2 text-[10px] text-red-400 font-mono">
                               ⚠️ Desgaste: {f.cost}
@@ -1469,7 +1473,13 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                   ) : (
                     <div>
                       <p className="font-bold text-purple-300 text-sm">{formData.subEntity?.name || 'Ninguna entidad ligada.'}</p>
-                      {formData.subEntity?.stats && <p className="text-slate-300 mt-1 leading-relaxed">{formData.subEntity.stats}</p>}
+                      {formData.subEntity?.stats && (
+                        <p className="text-slate-300 mt-1 leading-relaxed">
+                          {typeof formData.subEntity.stats === 'object'
+                            ? (formData.subEntity.stats.ap || Object.values(formData.subEntity.stats).join(' | '))
+                            : formData.subEntity.stats}
+                        </p>
+                      )}
                     </div>
                   )}
                 </div>

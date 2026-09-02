@@ -438,9 +438,18 @@ Debes devolver ÚNICAMENTE un objeto JSON válido (sin markdown) con esta estruc
 {
   "id": "nombre-slug",
   "name": "${name}",
+  "entityType": "fighter | duo | squad | summon_group",
+  "memberIds": ["id1", "id2"],
+  "sharedMechanics": ["Mecánica compartida (ej: Decapitación simultánea, Fusión)"],
   "universe": "Franquicia de origen",
-  "version": "Versión canónica (ej: Prime, Adulto, Super)",
+  "continuity": "Continuidad específica (ej: Canon Manga, Dragon Ball Multiverse, Fan-Manga, Marvel 616, DC Post-Crisis)",
+  "sourceMedium": "manga | anime | comic | fan_manga | movie | game | novel",
+  "sagaOrArc": "Saga o arco argumental exacto",
+  "version": "Versión canónica (ej: Prime, Adulto, Super, U18)",
   "tier": "Tier oficial VS Battles y Nivel de Poder",
+  "physicalTier": "Tier de resistencia física y cuerpo a cuerpo (ej: Tier 8-C Físico)",
+  "haxTier": "Tier de habilidad hax / Stand / Magia / Artefacto (ej: Tier 2-C Causal)",
+  "canonicalKi": "Lectura oficial de Scouter si existe en el canon (número o null)",
   "ap": "Attack Potency / DC exacto anclado a feats",
   "range": "Rango de ataque efectivo (ej: Cuerpo a cuerpo estándar, Planetario)",
   "speed": {
@@ -484,11 +493,32 @@ Debes devolver ÚNICAMENTE un objeto JSON válido (sin markdown) con esta estruc
     { "id": "base", "name": "Estado Base", "stats": "Poder base" },
     { "id": "fase-1", "name": "Nombre Forma 1", "stats": "Stats y multiplicador" }
   ],
+  "synergies": [
+    {
+      "name": "Nombre temático canónico (ej: Rivalidad Eterna, Los Mejores del Mundo, Alianza de Maestros)",
+      "partnerTags": ["Nombre de aliados canónicos de su propio universo"],
+      "effect": "Efecto táctico mecánico coherente (ej: +20% velocidad de reacción / cobertura de aggro / impulso de furia)",
+      "canonStatus": "source_backed"
+    }
+  ],
+  "teamCombos": [
+    {
+      "partnerRequirements": ["Compañero específico del mismo universo"],
+      "comboName": "Nombre del Ataque Combinado",
+      "description": "Descripción del finisher o ataque dual"
+    }
+  ],
   "feats": ["Hazaña destacada 1", "Hazaña destacada 2"],
   "psychology": "Psicología Tripartita: Lo que busca, lo que teme. Microgestos al mentir/sufrir dolor.",
   "weaknesses": "Debilidades físicas y psíquicas, condiciones para ser derrotado.",
   "equipment": "Armamento y reliquias clave"
-}`;
+}
+
+REGLAS DE SINERGIAS & PASIVAS (ESTRICTAS):
+1. AISLAMIENTO DE LORE: Las sinergias y combos solo pueden relacionar personajes de su propio universo o facción aliada directa.
+2. PROHIBICIÓN BIOLÓGICA: Prohibido asignar Zenkai a no-saiyajins, Biomasa/absorción a no-Cell/bio-androides, Ki a personajes sin Ki, o Cursed Energy a no-hechiceros.
+3. EFECTOS REALISTAS: Los efectos deben describir ventajas tácticas de combate real (flanqueo, distracción, sincronización de energía, impulso de furia al caer un aliado).
+`;
 
     let jsonString = '';
 
@@ -756,29 +786,38 @@ DEBES responder únicamente con un JSON estrictamente válido (sin explicaciones
 {
   "name": "${name}",
   "universe": "${universe || 'Universo Canon'}",
-  "tier": "Tier 2-C | Multiversal Bajo",
-  "ap": "Destrucción de Universos / Multiversal",
-  "speed": { "combat": "MFTL+", "reaction": "Instantánea", "travel": "MFTL", "attack": "MFTL+" },
-  "strength": { "striking": "Nivel Estelar", "lifting": "Clase Yotta" },
-  "durability": "Resistencia Multiversal",
+  "tier": "Tier 7-B | Nivel Ciudad",
+  "ap": "Destrucción de Ciudad a Montaña con ataques directos",
+  "speed": { "combat": "Hipersónico Alto (Mach 25)", "reaction": "Hipersónico Masivo", "travel": "Supersónico+", "attack": "Mach 50+" },
+  "strength": { "striking": "Clase Ciudad", "lifting": "Clase 100" },
+  "durability": "Nivel Ciudad con regeneración acelerada",
+  "stamina": "Muy alta / Reservas sobrehumanas",
+  "battleIQ": "Genio Marcial / Maestro táctico con años de experiencia",
+  "psychology": "Combatiente analítico, no se confía y busca neutralizar amenazas con máxima eficiencia",
+  "haxTags": ["Regeneración", "Amplificación de Fuerza", "Percepción Extrasensorial"],
+  "feats": [
+    "Detuvo el impacto de un asteroide usando únicamente fuerza física",
+    "Esquivó ráfagas de energía que viajaban a velocidad hipersónica"
+  ],
+  "weaknesses": "Vulnerable a ataques que anulen su regeneración biológica",
   "arsenal": {
-    "basicAttacks": "Golpes de Ki y ráfagas a gran velocidad",
+    "basicAttacks": "Golpes de impacto concentrado y ráfagas a gran velocidad",
     "superAttacks": [
-      { "name": "Ataque Especial 1", "desc": "Descripción del ataque", "cost": "30% Ki" },
-      { "name": "Ataque Especial 2", "desc": "Descripción del ataque 2", "cost": "50% Ki" }
+      { "name": "Ataque Especial 1", "desc": "Descripción técnica del ataque", "cost": "30% Energía" },
+      { "name": "Ataque Especial 2", "desc": "Descripción del ataque secundario", "cost": "50% Energía" }
     ],
     "ultimateAttacks": [
-      { "name": "Finisher Definitivo", "desc": "Ataque de destrucción masiva", "cost": "100% Energía" }
+      { "name": "Finisher Definitivo", "desc": "Técnica suprema de destrucción masiva", "cost": "100% Energía" }
     ],
     "passives": [
-      { "name": "Pasiva de Combate", "desc": "Efecto continuo de batalla" }
+      { "name": "Pasiva de Combate", "desc": "Efecto continuo en batalla" }
     ],
     "actives": [
       { "name": "Habilidad Activa", "desc": "Potenciador temporal" }
     ]
   },
   "forms": [
-    { "id": "form-1", "name": "Forma Base", "stats": "Potencia Estándar x1" }
+    { "id": "form-base", "name": "Forma Base", "stats": "Potencia Estándar x1", "multiplier": "1.0x" }
   ]
 }`;
 
@@ -810,7 +849,14 @@ DEBES responder únicamente con un JSON estrictamente válido (sin explicaciones
 
     const cleanJson = fullText.replace(/```json\s*/g, '').replace(/```\s*/g, '').trim();
     const parsed = JSON.parse(cleanJson);
-    res.json(parsed);
+    try {
+      const { applyPowerHook } = await import('./src/scripts/applyPowerHook.js');
+      const enriched = applyPowerHook(parsed);
+      return res.json(enriched);
+    } catch (hookErr) {
+      console.warn('Could not run applyPowerHook on generated character:', hookErr.message);
+      return res.json(parsed);
+    }
   } catch (err) {
     console.error('Character generate error:', err);
     res.status(500).json({ error: 'Error al generar la ficha de personaje: ' + err.message });

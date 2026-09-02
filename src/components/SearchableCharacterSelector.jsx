@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { Search, Filter, X, Sparkles, Check, ChevronDown } from 'lucide-react';
+import { Search, Filter, X, Sparkles, Check, ChevronDown, Brain } from 'lucide-react';
 import { getFranchiseCategoriesList } from '../services/franchiseHelper';
+import { searchCharactersByConcept } from '../services/semanticSearch';
 
 export default function SearchableCharacterSelector({
   characters = [],
@@ -14,6 +15,7 @@ export default function SearchableCharacterSelector({
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState('');
   const [selectedFranchise, setSelectedFranchise] = useState('all');
+  const [isSemanticMode, setIsSemanticMode] = useState(false);
   const dropdownRef = useRef(null);
 
   const charList = Array.isArray(characters) ? characters : [];
@@ -26,6 +28,11 @@ export default function SearchableCharacterSelector({
       if (g && Array.isArray(g.characters)) pool = g.characters;
     }
     if (!search.trim()) return pool;
+
+    if (isSemanticMode) {
+      return searchCharactersByConcept(pool, search);
+    }
+
     const q = search.toLowerCase();
     return pool.filter(c => 
       c?.name?.toLowerCase().includes(q) ||
@@ -34,7 +41,7 @@ export default function SearchableCharacterSelector({
       (c?.saga || '').toLowerCase().includes(q) ||
       (c?.tier || '').toLowerCase().includes(q)
     );
-  }, [charList, franchiseList, selectedFranchise, search]);
+  }, [charList, franchiseList, selectedFranchise, search, isSemanticMode]);
 
   const selectedChar = charList.find(c => c?.id === value);
 
@@ -94,17 +101,38 @@ export default function SearchableCharacterSelector({
             </button>
           </div>
 
-          {/* Search Box */}
-          <div className="relative">
-            <Search className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" />
-            <input
-              type="text"
-              placeholder="Buscar por nombre, saga, tier o técnica..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              className="w-full bg-slate-900 border border-slate-700/90 rounded-xl pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-500 outline-none focus:border-cyan-400"
-              autoFocus
-            />
+          {/* Search Box & Semantic Toggle */}
+          <div className="space-y-1.5">
+            <div className="relative">
+              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" />
+              <input
+                type="text"
+                placeholder={isSemanticMode ? "Busca conceptos: 'regeneración', 'time stop', 'hakai'..." : "Buscar por nombre, saga, tier o técnica..."}
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                className={`w-full bg-slate-900 border rounded-xl pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-500 outline-none transition ${
+                  isSemanticMode ? 'border-purple-500/80 focus:border-purple-400 shadow-[0_0_10px_rgba(168,85,247,0.15)]' : 'border-slate-700/90 focus:border-cyan-400'
+                }`}
+                autoFocus
+              />
+            </div>
+            <div className="flex items-center justify-between text-[10px] px-1">
+              <button
+                type="button"
+                onClick={() => setIsSemanticMode(!isSemanticMode)}
+                className={`flex items-center gap-1.5 px-2 py-0.5 rounded-lg font-bold transition cursor-pointer ${
+                  isSemanticMode 
+                    ? 'bg-purple-900/80 text-purple-200 border border-purple-500/50 shadow-sm' 
+                    : 'bg-slate-900/80 text-slate-400 border border-slate-800 hover:text-slate-200'
+                }`}
+              >
+                <Brain className="w-3 h-3" />
+                {isSemanticMode ? '🧠 Búsqueda Semántica / Hax Activa' : '⚡ Cambiar a Búsqueda por Conceptos / Hax'}
+              </button>
+              {search.trim() && isSemanticMode && (
+                <span className="text-purple-400 text-[9px] font-mono">Similitud Vectorial</span>
+              )}
+            </div>
           </div>
 
           {/* Franchise Filter Pills */}
@@ -164,6 +192,15 @@ export default function SearchableCharacterSelector({
                       <span className="text-[9px] text-slate-400 truncate block">
                         {c.saga ? `${c.saga} · ` : ''}{c.universe}
                       </span>
+                      {c._matchHighlights && c._matchHighlights.length > 0 && (
+                        <div className="flex gap-1 mt-0.5 truncate">
+                          {c._matchHighlights.slice(0, 2).map((m, mi) => (
+                            <span key={mi} className="text-[8px] bg-purple-950/80 border border-purple-800/60 text-purple-300 px-1 rounded truncate">
+                              {m}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0 ml-2">

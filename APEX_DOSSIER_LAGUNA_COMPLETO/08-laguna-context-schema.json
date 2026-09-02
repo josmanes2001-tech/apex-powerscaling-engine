@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "APEX Simulation Context Schema for Laguna S 2.1",
+  "description": "Esquema de entrada compacto que el modelo narrativo Laguna S 2.1 debe recibir para sintetizar combates sin alucinaciones.",
+  "rules": {
+    "rule1_narrativeCannotOverrideVerdict": "La narrativa no puede alterar el ganador ni la dificultad determinada por el veredicto del motor.",
+    "rule2_sourceKiIsDragonBallOnly": "El campo sourceKi pertenece exclusivamente a Dragon Ball; los demas universos usan APEX-Ki monotonico.",
+    "rule3_apexKiIsUniversal": "Todos los personajes tienen un APEX-Ki numerico proporcional a su Tier y multiplicadores de forma.",
+    "rule4_haxDoesNotAutomaticallyChangeTier": "Las habilidades de Hax modulan la estrategia y duracion pero no alteran el APEX-Ki base salvo eventos de anulacion explicitos.",
+    "rule5_oracleEventsMustBeAuthorized": "Laguna solo puede narrar eventos Oraculo si aparecen con status authorized o triggered en el snapshot."
+  },
+  "simulationContext": {
+    "engineVersion": "APEX v2.2",
+    "scenario": {
+      "mapId": "string (slug del escenario)",
+      "mapName": "string (nombre visible)",
+      "ruleset": "string (ej. apex-standard | strict-canon)",
+      "collateralMode": "string (ej. standard | contained | unbounded)",
+      "allowFusion": "boolean",
+      "allowExternalItems": "boolean",
+      "allowPreparation": "boolean",
+      "allowNonCanonical": "boolean"
+    },
+    "combatants": [
+      {
+        "combatantId": "string (identificador unico de combate)",
+        "name": "string (nombre del luchador)",
+        "universe": "string (franquicia)",
+        "saga": "string (saga cronologica)",
+        "version": "string (version)",
+        "activeState": "string (forma activa)",
+        "tierExact": "string (ej. 7-B, 4-A)",
+        "apexKiDisplay": "string (ej. 29.4 B, 351.00 Mil)",
+        "canonicalScouterKiDisplay": "string | null (ej. 2.600 Unidades (Scouter))",
+        "stats": {
+          "ap": "number (0 a 1)",
+          "speed": "number (0 a 1)",
+          "durability": "number (0 a 1)",
+          "battleIQ": "number (0 a 1)",
+          "haxReliability": "number (0 a 1)"
+        },
+        "allowedAbilities": [
+          {
+            "id": "string",
+            "name": "string",
+            "type": "super | ultimate | passive",
+            "staminaCost": "number",
+            "description": "string"
+          }
+        ],
+        "specialMechanics": [
+          "string"
+        ],
+        "weaknesses": [
+          "string"
+        ],
+        "synergies": [
+          "string"
+        ]
+      }
+    ],
+    "oracleEvents": [
+      {
+        "id": "string",
+        "name": "string",
+        "phase": "number (1 a 4)",
+        "triggered": "boolean",
+        "type": "string"
+      }
+    ],
+    "combatLog": [
+      {
+        "turn": "number",
+        "phase": "number (1 a 4)",
+        "phaseName": "string",
+        "actorId": "string",
+        "targetId": "string",
+        "actionName": "string",
+        "hpChangeA": "number",
+        "staminaChangeA": "number",
+        "hpChangeB": "number",
+        "staminaChangeB": "number",
+        "mapEffect": "string",
+        "result": "hit | counter | decisive-hit"
+      }
+    ],
+    "verdict": {
+      "winnerTeamId": "string",
+      "winnerName": "string",
+      "winnerTierExact": "string",
+      "loserName": "string",
+      "loserTierExact": "string",
+      "difficulty": "No-Diff | Low-Diff | Mid-Diff | High-Diff | Extreme-Diff",
+      "finalMapState": "string",
+      "finalBiometrics": [
+        {
+          "combatantId": "string",
+          "hp": "number",
+          "stamina": "number",
+          "vitalStatus": "string"
+        }
+      ]
+    }
+  },
+  "lagunaExpectedOutputSchema": {
+    "narrative": "string (Cronica completa estructurada en 4 fases)",
+    "phaseSummaries": "Array<{ phase: number, summary: string }>",
+    "tacticalNotes": "string[]",
+    "consistencyWarnings": "string[]",
+    "suggestedNextActions": "string[]"
+  }
+}

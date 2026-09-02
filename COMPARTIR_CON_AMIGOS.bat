@@ -27,4 +27,5 @@ echo Presiona Ctrl+C para apagar el tunel cuando terminen de jugar.
 echo.
 
 cloudflared.exe tunnel --url http://localhost:3001
+popd
 pause

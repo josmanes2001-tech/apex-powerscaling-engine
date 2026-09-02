@@ -1,0 +1,847 @@
+{
+  "combatants": [
+    {
+      "combatantId": "cell-saga-androides-98-team-a",
+      "characterId": "cell-saga-androides-98",
+      "name": "Cell",
+      "teamId": "team-a",
+      "stateName": "Cell Perfecto",
+      "tierExact": "4-B",
+      "tierRank": 32,
+      "powerKey": 3306,
+      "apexKiLog10": 33.36902999566398,
+      "apexKiDisplay": "110.00 Mil Millones",
+      "formMultiplier": 20,
+      "hp": 69,
+      "stamina": 32,
+      "statusEffects": [],
+      "cooldowns": {},
+      "isActive": true,
+      "originalCharacter": {
+        "id": "cell-saga-androides-98",
+        "name": "Cell",
+        "alias": "El Bio-Androide Perfecto",
+        "universe": "Dragon Ball Z",
+        "saga": "Saga Androides",
+        "version": "Evolución Completa",
+        "tier": "4-B",
+        "ap": "Nivel Sistema Solar. La creación culmen del Dr. Gero. Contiene células de Goku, Vegeta, Piccolo, Freezer y King Cold. En su forma Super Perfecta, su Kamehameha Solar amenazaba con vaporizar todo el sistema solar, forzando a Gohan SSJ2 a superarlo en un choque legendario.",
+        "range": "Sistema Solar.",
+        "speed": {
+          "combat": "MFTL+.",
+          "reaction": "MFTL+.",
+          "travel": "Shunkanido.",
+          "attack": "Elegante y veloz."
+        },
+        "strength": "Clase Sistema Solar.. Levantamiento: Clase Estelar.",
+        "durability": "Nivel Sistema Solar. Regeneración de Namekian, núcleo en la cabeza (retcon: cualquier célula).",
+        "stamina": "Muy Alta. Usa células Androide para estabilizar el consumo.",
+        "battleIQ": "El combatiente perfecto. Domina las técnicas de Z de forma innata y no tiene puntos ciegos tácticos.",
+        "haxTags": [
+          "Regeneración Celular",
+          "Zenkai Saiyan",
+          "Absorción Biológica",
+          "Shunkanido"
+        ],
+        "arsenal": {
+          "basicAttacks": "Copia perfecta de los estilos marciales de Goku, Vegeta, y Freezer.",
+          "superAttacks": [
+            {
+              "name": "Makankosappo / Kienzan",
+              "desc": "Técnicas heredadas, usadas con mayor eficiencia y velocidad.",
+              "cost": "15% Ki"
+            },
+            {
+              "name": "Death Beam",
+              "desc": "Rayo rápido de Freezer, usado para asesinar a Trunks.",
+              "cost": "10% Ki"
+            }
+          ],
+          "ultimateAttacks": [
+            {
+              "name": "Kamehameha Solar (Super Perfecto)",
+              "desc": "Canaliza todo su poder Zenkai en una onda que asegura destruir todo el Sistema Solar si no es repelida por una fuerza superior.",
+              "cost": "60% Ki"
+            }
+          ],
+          "passives": [
+            {
+              "name": "Zenkai Inmortal",
+              "desc": "Si se regenera desde el borde de la muerte (núcleo celular), su poder se multiplica y gana aura SSJ2.",
+              "cost": "Buff Pasivo"
+            },
+            {
+              "name": "Asimilación Genética Biológica",
+              "desc": "Puede absorber a un oponente herido gravemente o aliado sacrificado para robar sus Hax Tags y sumar estadísticas base.",
+              "cost": "Instintivo"
+            }
+          ]
+        },
+        "forms": [
+          {
+            "id": "cell-saga-androides-98-base-std",
+            "name": "Cell (Estado Base)",
+            "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cell antes de liberar transformaciones.",
+            "apexKiMultiplier": 1
+          },
+          {
+            "id": "cell-imperfecto",
+            "name": "Cell Imperfecto",
+            "stats": "Nivel Estrella Enana. Aspecto de insecto reptiliano, usa su cola para beber humanos."
+          },
+          {
+            "id": "cell-semi",
+            "name": "Cell Semi-Perfecto",
+            "stats": "Nivel Estrella Enana Alta. Absorbió a 17. Muy musculoso, rostro más humanoide."
+          },
+          {
+            "id": "cell-perfecto",
+            "name": "Cell Perfecto",
+            "stats": "Nivel Sistema Solar Menor. Absorbió a 18. Rostro pulido, elegante, intocable para Vegeta."
+          },
+          {
+            "id": "cell-super-perfecto",
+            "name": "Cell Super Perfecto",
+            "stats": "Nivel Sistema Solar. Zenkai tras su suicidio. Electricidad en el aura, poder máximo."
+          }
+        ],
+        "feats": [
+          "Humilló a Vegeta Super Saiyan y a Trunks SSJ de tercer grado.",
+          "Sobrevivió a la auto-destrucción total y regresó aún más fuerte.",
+          "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+        ],
+        "psychology": "Narcisista supremo. No quiere conquistar el universo, solo quiere aterrorizar y demostrar que es la existencia perfecta probando su poder en un torneo.",
+        "weaknesses": "Ego desmedido que lo llevó a enfurecer a Gohan innecesariamente y sellar su propia muerte.",
+        "synergies": [
+          {
+            "name": "Biomasa Compartida",
+            "partnerTags": [
+              "Androide",
+              "Cell"
+            ],
+            "effect": "Aumenta la eficiencia de absorción cuando hay androides o variantes en el equipo."
+          }
+        ],
+        "teamCombos": [],
+        "transformativeMechanics": {
+          "canFuse": false,
+          "canAbsorb": true,
+          "fusionMethods": []
+        },
+        "franchise": "Dragon Ball",
+        "continuity": "canon_main",
+        "era_or_saga": "Saga Androides",
+        "form_or_state": "Cell (Estado Base)",
+        "profile_type": "individual",
+        "canon_status": "canon_main",
+        "variant_of": null,
+        "character_family": "Cell",
+        "source_confidence": "verified",
+        "legacy_status": "active",
+        "universe_number": null,
+        "members": null,
+        "parent_team_profile": null,
+        "team_affiliation": null,
+        "notes": "",
+        "legacy_data": "",
+        "_activeFormId": "cell-perfecto"
+      }
+    },
+    {
+      "combatantId": "son-gohan-joven-saga-androides-cell-945-team-b",
+      "characterId": "son-gohan-joven-saga-androides-cell-945",
+      "name": "Son Gohan (Joven / Cell Games)",
+      "teamId": "team-b",
+      "stateName": "Super Saiyajin 2 (Ira Desatada)",
+      "tierExact": "4-B",
+      "tierRank": 32,
+      "powerKey": 3306,
+      "apexKiLog10": 34.068,
+      "apexKiDisplay": "280.00 Mil Millones",
+      "formMultiplier": 100,
+      "hp": 0,
+      "stamina": 0,
+      "statusEffects": [],
+      "cooldowns": {},
+      "isActive": false,
+      "originalCharacter": {
+        "id": "son-gohan-joven-saga-androides-cell-945",
+        "name": "Son Gohan (Joven / Cell Games)",
+        "alias": "El Despertar del Guerrero Definitivo",
+        "universe": "Dragon Ball Z",
+        "saga": "Saga de los Androides y Cell",
+        "version": "Super Saiyan 2",
+        "tier": "4-B",
+        "ap": "Nivel Sistema Solar en SSJ1 Full Power; asciende a Multi-Sistema Solar en SSJ2 al superar y pulverizar a Super Perfect Cell con el Father-Son Kamehameha.",
+        "range": "Planetario a Sistema Solar.",
+        "speed": {
+          "combat": "Masivamente FTL. Tan veloz que Cell no podía ver sus movimientos, robándole las semillas del ermitaño de las manos sin que lo notara.",
+          "reaction": "MFTL.",
+          "travel": "MFTL.",
+          "attack": "Ráfagas instantáneas."
+        },
+        "strength": "Clase Sistema Solar. Dos golpes secos en el abdomen de Cell lo hicieron vomitar a la Androide 18.. Levantamiento: Clase Estelar.",
+        "durability": "Nivel Sistema Solar. Inmune a ráfagas de ki inferiores, pero biológicamente vulnerable si baja su ki para proteger a otros (perdió el uso del brazo izquierdo protegiendo a Vegeta).",
+        "stamina": "Muy Alta. Su reserva latente era inmensa.",
+        "battleIQ": "Normalmente pacifista, pero en SSJ2 se vuelve despiadado y excesivamente arrogante (Síndrome Saiyan), lo que alarga las batallas innecesariamente buscando torturar.",
+        "haxTags": [
+          "Saiyan",
+          "Híbrido Saiyan-Humano",
+          "Furia Latente / Rage Boost",
+          "Zenkai",
+          "Voluntad Inquebrantable",
+          "Usuario de Ki"
+        ],
+        "arsenal": {
+          "basicAttacks": "Artes marciales del estilo Kame y escuela de Piccolo con reflejos MFTL+.",
+          "superAttacks": [
+            {
+              "name": "Masenko",
+              "desc": "Ráfaga icónica de Ki concentrado disparada a dos manos sobre la frente.",
+              "cost": "Consumo moderado de Ki"
+            },
+            {
+              "name": "Super Kamehameha",
+              "desc": "Poderosa onda de choque de energía pura.",
+              "cost": "Consumo medio de Ki"
+            },
+            {
+              "name": "Gekiretsu Madan",
+              "desc": "Bombardeo continuo de esferas de Ki a quemarropa.",
+              "cost": "Consumo medio"
+            }
+          ],
+          "ultimateAttacks": [
+            {
+              "name": "Father-Son Kamehameha (Oyako Kamehameha)",
+              "desc": "Onda colosal a una sola mano guiada por el espíritu de Goku que desintegra al objetivo a nivel molecular/atómico.",
+              "cost": "Requiere canalizar el 100% de la energía vital y de Ki restante"
+            }
+          ],
+          "passives": [
+            {
+              "name": "Furia Desatada (Rage Boost)",
+              "desc": "Multiplica drásticamente su AP y velocidad cuando sus seres queridos son lastimados.",
+              "cost": "Pasivo de activación emocional"
+            },
+            {
+              "name": "Zenkai Saiyan",
+              "desc": "Aumento permanente de poder tras recuperarse de heridas mortales.",
+              "cost": "Pasivo"
+            }
+          ]
+        },
+        "forms": [
+          {
+            "id": "gohan-joven-base",
+            "name": "Son Gohan (Estado Base)",
+            "stats": "Tier 4-C | Nivel Estrella Enana. Entrenamiento en la Sala del Espíritu y el Tiempo.",
+            "apexKiMultiplier": 1
+          },
+          {
+            "id": "gohan-joven-ssj1",
+            "name": "Super Saiyajin (Máximo Poder)",
+            "stats": "Tier 4-B | Nivel Sistema Solar Menor. Dominio del SSJ Full Power sin desgaste."
+          },
+          {
+            "id": "gohan-joven-ssj2",
+            "name": "Super Saiyajin 2 (Ira Desatada)",
+            "stats": "Tier 4-A | Nivel Multi-Sistema Solar. Rayos eléctricos, humillación de Cell y Cell Juniors."
+          }
+        ],
+        "feats": [
+          "Aniquiló a 7 Cell Jrs en menos de 10 segundos.",
+          "Hizo vomitar a Cell Perfecto con solo dos golpes físicos.",
+          "Ganó un choque de Kamehamehas contra un ataque que iba a destruir el Sistema Solar, usando solo un brazo."
+        ],
+        "psychology": "Odia pelear. Lloró al transformarse pidiéndole a Cell que parase. Pero al cruzar el límite (SSJ2), su personalidad se invierte: se vuelve cruel, arrogante y sádico, queriendo ver a su enemigo sufrir ('¡Aún no! ¡Aún no he terminado de jugar con él!').",
+        "weaknesses": "Exceso de arrogancia que llevó a la muerte de Goku y Trunks. Falta de instinto marcial puro sin estar impulsado por la furia.",
+        "synergies": [
+          {
+            "name": "Vínculo Padre e Hijo",
+            "partnerTags": [
+              "Goku",
+              "Son Goku"
+            ],
+            "effect": "Incrementa el daño del Kamehameha en un +25% si Goku está presente o como apoyo espiritual."
+          }
+        ],
+        "teamCombos": [],
+        "transformativeMechanics": {
+          "canFuse": false,
+          "canAbsorb": false,
+          "fusionMethods": []
+        },
+        "avatar": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400&auto=format&fit=crop&q=80",
+        "image": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400&auto=format&fit=crop&q=80",
+        "franchise": "Dragon Ball",
+        "continuity": "canon_main",
+        "era_or_saga": "Saga de los Androides y Cell",
+        "form_or_state": "Son Gohan (Estado Base)",
+        "profile_type": "individual",
+        "canon_status": "canon_main",
+        "variant_of": null,
+        "character_family": "Cell",
+        "source_confidence": "verified",
+        "legacy_status": "active",
+        "universe_number": null,
+        "members": null,
+        "parent_team_profile": null,
+        "team_affiliation": null,
+        "notes": "",
+        "legacy_data": "",
+        "_activeFormId": "gohan-joven-ssj2"
+      }
+    }
+  ],
+  "resolvedStates": [
+    {
+      "characterId": "cell-saga-androides-98",
+      "activeStateId": "cell-perfecto",
+      "stateName": "Cell Perfecto",
+      "tierExact": "4-B",
+      "tierRank": 32,
+      "withinTierScore": 74,
+      "powerKey": 3306,
+      "apexScore": "32.74",
+      "baseApexKiLog10": 32.068,
+      "currentApexKiLog10": 33.36902999566398,
+      "apexKiDisplay": "110.00 Mil Millones",
+      "apexKiRaw": 110000000000,
+      "apexKiStatus": "resolved",
+      "scalingMethod": "config-alias",
+      "formMultiplier": 20,
+      "multiplierDisplay": "×20",
+      "sourceKiBase": 5500000000,
+      "sourceKiCurrent": 110000000000,
+      "sourceKiDisplay": "110.00 Mil Millones (Scouter)",
+      "sourceKiStatus": "calculated",
+      "activeStats": {
+        "ap": 0.68,
+        "speed": 1,
+        "durability": 1,
+        "formControl": 0.68,
+        "battleIQ": 0.68,
+        "haxReliability": 0.25
+      },
+      "statModifiers": {
+        "speed": 3,
+        "durability": 3
+      },
+      "specialMechanics": [],
+      "warnings": [],
+      "manualReviewRequired": false
+    },
+    {
+      "characterId": "son-gohan-joven-saga-androides-cell-945",
+      "activeStateId": "gohan-joven-ssj2",
+      "stateName": "Super Saiyajin 2 (Ira Desatada)",
+      "tierExact": "4-B",
+      "tierRank": 32,
+      "withinTierScore": 74,
+      "powerKey": 3306,
+      "apexScore": "32.74",
+      "baseApexKiLog10": 32.068,
+      "currentApexKiLog10": 34.068,
+      "apexKiDisplay": "280.00 Mil Millones",
+      "apexKiRaw": 280000000000,
+      "apexKiStatus": "resolved",
+      "scalingMethod": "config-alias",
+      "formMultiplier": 100,
+      "multiplierDisplay": "×100",
+      "sourceKiBase": 2800000000,
+      "sourceKiCurrent": 280000000000,
+      "sourceKiDisplay": "280.00 Mil Millones (Scouter)",
+      "sourceKiStatus": "canonical-db",
+      "activeStats": {
+        "ap": 0.68,
+        "speed": 1,
+        "durability": 1,
+        "formControl": 0.68,
+        "battleIQ": 0.68,
+        "haxReliability": 0.25
+      },
+      "statModifiers": {
+        "speed": 2,
+        "durability": 1.5
+      },
+      "specialMechanics": [],
+      "warnings": [],
+      "manualReviewRequired": false
+    }
+  ],
+  "allowedAbilities": [
+    {
+      "id": "cell-saga-androides-98-atk-0",
+      "name": "Makankosappo / Kienzan",
+      "ownerCharacterIds": [
+        "cell-saga-androides-98"
+      ],
+      "allowedStateIds": [
+        "cell-perfecto",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "cell-saga-androides-98-atk-1",
+      "name": "Death Beam",
+      "ownerCharacterIds": [
+        "cell-saga-androides-98"
+      ],
+      "allowedStateIds": [
+        "cell-perfecto",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "cell-saga-androides-98-atk-2",
+      "name": "Kamehameha Solar (Super Perfecto)",
+      "ownerCharacterIds": [
+        "cell-saga-androides-98"
+      ],
+      "allowedStateIds": [
+        "cell-perfecto",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "cell-saga-androides-98-atk-3",
+      "name": "Zenkai Inmortal",
+      "ownerCharacterIds": [
+        "cell-saga-androides-98"
+      ],
+      "allowedStateIds": [
+        "cell-perfecto",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "cell-saga-androides-98-atk-4",
+      "name": "Asimilación Genética Biológica",
+      "ownerCharacterIds": [
+        "cell-saga-androides-98"
+      ],
+      "allowedStateIds": [
+        "cell-perfecto",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "son-gohan-joven-saga-androides-cell-945-atk-0",
+      "name": "Masenko",
+      "ownerCharacterIds": [
+        "son-gohan-joven-saga-androides-cell-945"
+      ],
+      "allowedStateIds": [
+        "gohan-joven-ssj2",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "son-gohan-joven-saga-androides-cell-945-atk-1",
+      "name": "Super Kamehameha",
+      "ownerCharacterIds": [
+        "son-gohan-joven-saga-androides-cell-945"
+      ],
+      "allowedStateIds": [
+        "gohan-joven-ssj2",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "son-gohan-joven-saga-androides-cell-945-atk-2",
+      "name": "Gekiretsu Madan",
+      "ownerCharacterIds": [
+        "son-gohan-joven-saga-androides-cell-945"
+      ],
+      "allowedStateIds": [
+        "gohan-joven-ssj2",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "son-gohan-joven-saga-androides-cell-945-atk-3",
+      "name": "Father-Son Kamehameha (Oyako Kamehameha)",
+      "ownerCharacterIds": [
+        "son-gohan-joven-saga-androides-cell-945"
+      ],
+      "allowedStateIds": [
+        "gohan-joven-ssj2",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "son-gohan-joven-saga-androides-cell-945-atk-4",
+      "name": "Furia Desatada (Rage Boost)",
+      "ownerCharacterIds": [
+        "son-gohan-joven-saga-androides-cell-945"
+      ],
+      "allowedStateIds": [
+        "gohan-joven-ssj2",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    },
+    {
+      "id": "son-gohan-joven-saga-androides-cell-945-atk-5",
+      "name": "Zenkai Saiyan",
+      "ownerCharacterIds": [
+        "son-gohan-joven-saga-androides-cell-945"
+      ],
+      "allowedStateIds": [
+        "gohan-joven-ssj2",
+        "base"
+      ],
+      "continuity": "canon_main",
+      "canonStatus": "canon_main",
+      "type": "attack",
+      "staminaCost": 15,
+      "cooldownTurns": 1,
+      "powerModifier": 1,
+      "effects": [],
+      "requires": [],
+      "counterplay": [
+        "Bloqueo",
+        "Evasión",
+        "Dispersión de Energía"
+      ]
+    }
+  ],
+  "allowedForms": [
+    {
+      "id": "cell-saga-androides-98-base-std",
+      "name": "Cell (Estado Base)",
+      "characterId": "cell-saga-androides-98",
+      "tier": "4-B",
+      "multiplier": 1
+    },
+    {
+      "id": "cell-imperfecto",
+      "name": "Cell Imperfecto",
+      "characterId": "cell-saga-androides-98",
+      "tier": "4-B",
+      "multiplier": 1
+    },
+    {
+      "id": "cell-semi",
+      "name": "Cell Semi-Perfecto",
+      "characterId": "cell-saga-androides-98",
+      "tier": "4-B",
+      "multiplier": 1
+    },
+    {
+      "id": "cell-perfecto",
+      "name": "Cell Perfecto",
+      "characterId": "cell-saga-androides-98",
+      "tier": "4-B",
+      "multiplier": 1
+    },
+    {
+      "id": "cell-super-perfecto",
+      "name": "Cell Super Perfecto",
+      "characterId": "cell-saga-androides-98",
+      "tier": "4-B",
+      "multiplier": 1
+    },
+    {
+      "id": "gohan-joven-base",
+      "name": "Son Gohan (Estado Base)",
+      "characterId": "son-gohan-joven-saga-androides-cell-945",
+      "tier": "4-B",
+      "multiplier": 1
+    },
+    {
+      "id": "gohan-joven-ssj1",
+      "name": "Super Saiyajin (Máximo Poder)",
+      "characterId": "son-gohan-joven-saga-androides-cell-945",
+      "tier": "4-B",
+      "multiplier": 1
+    },
+    {
+      "id": "gohan-joven-ssj2",
+      "name": "Super Saiyajin 2 (Ira Desatada)",
+      "characterId": "son-gohan-joven-saga-androides-cell-945",
+      "tier": "4-B",
+      "multiplier": 1
+    }
+  ],
+  "oracleEventsTriggered": [],
+  "oracleGeneratedAbilities": [],
+  "combatLog": [
+    {
+      "turn": 1,
+      "phase": 1,
+      "phaseName": "FASE 1 · TANTEO CINÉTICO",
+      "actorId": "cell-saga-androides-98-team-a",
+      "targetId": "son-gohan-joven-saga-androides-cell-945-team-b",
+      "actionType": "strike",
+      "actionId": "kinetic-probing-strike",
+      "actionName": "Intercambio de Reconocimiento y Presión Inicial",
+      "hpChangeA": 0,
+      "staminaChangeA": -5,
+      "hpChangeB": -4,
+      "staminaChangeB": -8,
+      "mapEffect": "Fisuras menores en el suelo de la arena.",
+      "result": "hit"
+    },
+    {
+      "turn": 6,
+      "phase": 2,
+      "phaseName": "FASE 2 · ESCALADA & SÚPER ATAQUES",
+      "actorId": "cell-saga-androides-98-team-a",
+      "targetId": "son-gohan-joven-saga-androides-cell-945-team-b",
+      "actionType": "ability",
+      "actionId": "cell-saga-androides-98-atk-0",
+      "actionName": "Makankosappo / Kienzan",
+      "hpChangeA": -12,
+      "staminaChangeA": -20,
+      "hpChangeB": -18,
+      "staminaChangeB": -22,
+      "mapEffect": "Cráter de impacto térmico y desprendimiento de rocas.",
+      "result": "hit"
+    },
+    {
+      "turn": 11,
+      "phase": 3,
+      "phaseName": "FASE 3 · EL GIRO TÁCTICO / CISNE NEGRO",
+      "actorId": "son-gohan-joven-saga-androides-cell-945-team-b",
+      "targetId": "cell-saga-androides-98-team-a",
+      "actionType": "ability",
+      "actionId": "son-gohan-joven-saga-androides-cell-945-atk-0",
+      "actionName": "Masenko",
+      "hpChangeA": -14,
+      "staminaChangeA": -18,
+      "hpChangeB": -8,
+      "staminaChangeB": -15,
+      "mapEffect": "Fractura tectónica severa y perturbación atmosférica.",
+      "result": "success"
+    },
+    {
+      "turn": 16,
+      "phase": 4,
+      "phaseName": "FASE 4 · EL CLÍMAX ANATÓMICO (FINISHERS)",
+      "actorId": "cell-saga-androides-98-team-a",
+      "targetId": "son-gohan-joven-saga-androides-cell-945-team-b",
+      "actionType": "finisher",
+      "actionId": "climax-finisher",
+      "actionName": "Liberación de Potencia Máxima & Impacto Definitivo",
+      "hpChangeA": -5,
+      "staminaChangeA": -25,
+      "hpChangeB": -45,
+      "staminaChangeB": -35,
+      "mapEffect": "Colapso del sector central de la arena con disipación energética.",
+      "result": "decisive-hit"
+    }
+  ],
+  "verdict": {
+    "winnerTeamId": "team-a",
+    "winnerName": "Cell",
+    "winnerTierExact": "4-B",
+    "loserName": "Son Gohan (Joven / Cell Games)",
+    "loserTierExact": "4-B",
+    "difficulty": "High-Diff",
+    "finalMapState": "regional-severo",
+    "finalFighterStates": [
+      {
+        "combatantId": "cell-saga-androides-98-team-a",
+        "name": "Cell",
+        "hp": 69,
+        "stamina": 32,
+        "vitalStatus": "Dañado",
+        "isActive": true
+      },
+      {
+        "combatantId": "son-gohan-joven-saga-androides-cell-945-team-b",
+        "name": "Son Gohan (Joven / Cell Games)",
+        "hp": 0,
+        "stamina": 0,
+        "vitalStatus": "Incapacitado",
+        "isActive": false
+      }
+    ],
+    "oracleSummary": {
+      "oracleEventsSelected": [],
+      "oracleEventsTriggered": [],
+      "oracleEventsFailed": [],
+      "oracleCustomContentCreated": [],
+      "oracleEffectsThatChangedOutcome": []
+    },
+    "permissionsSnapshot": {
+      "allowedStateIdsByCombatant": {
+        "cell-saga-androides-98-team-a": [
+          "base",
+          "cell-perfecto",
+          "cell-saga-androides-98-base-std",
+          "cell-imperfecto",
+          "cell-semi",
+          "cell-super-perfecto"
+        ],
+        "son-gohan-joven-saga-androides-cell-945-team-b": [
+          "base",
+          "gohan-joven-ssj2",
+          "gohan-joven-base",
+          "gohan-joven-ssj1"
+        ]
+      },
+      "allowedAbilityIdsByCombatant": {
+        "cell-saga-androides-98-team-a": [
+          "cell-saga-androides-98-atk-0",
+          "cell-saga-androides-98-atk-1",
+          "cell-saga-androides-98-atk-2",
+          "cell-saga-androides-98-atk-3",
+          "cell-saga-androides-98-atk-4"
+        ],
+        "son-gohan-joven-saga-androides-cell-945-team-b": [
+          "son-gohan-joven-saga-androides-cell-945-atk-0",
+          "son-gohan-joven-saga-androides-cell-945-atk-1",
+          "son-gohan-joven-saga-androides-cell-945-atk-2",
+          "son-gohan-joven-saga-androides-cell-945-atk-3",
+          "son-gohan-joven-saga-androides-cell-945-atk-4",
+          "son-gohan-joven-saga-androides-cell-945-atk-5"
+        ]
+      },
+      "allowedExternalItemIds": [],
+      "blockedActions": []
+    }
+  },
+  "scenario": {
+    "mapId": "cell-games-arena",
+    "mapName": "Arena Neutral",
+    "ruleset": "standard",
+    "collateralMode": "medium",
+    "allowFusion": false,
+    "allowExternalItems": false,
+    "allowPreparation": false,
+    "allowNonCanonical": false,
+    "allowedExternalItemIds": []
+  }
+}

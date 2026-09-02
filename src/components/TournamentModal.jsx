@@ -2,10 +2,13 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Trophy, Swords, Sparkles, RefreshCw, X, Play, Shield, ChevronRight, 
   Crown, Flame, Coins, Dices, FastForward, Award, CheckCircle, AlertCircle,
-  Save, History, Download, Trash2, Filter, Shuffle, Layers, BookOpen, ExternalLink
+  Save, History, Download, Trash2, Filter, Shuffle, Layers, BookOpen, ExternalLink,
+  Users, UserPlus, UserCheck, Edit3, Check
 } from 'lucide-react';
+import SearchableCharacterSelector from './SearchableCharacterSelector';
 import { FRANCHISE_GROUPS } from '../services/franchiseHelper';
 import { SoundFX } from '../services/soundFx';
+import { enrichMatchNarrative } from '../services/narrativeFormatter';
 
 const STORAGE_KEY_TOURNAMENT_HISTORY = 'apex_tournament_history';
 
@@ -25,9 +28,11 @@ export default function TournamentModal({
   const [participants, setParticipants] = useState([]);
   const [rounds, setRounds] = useState([]);
   const [champion, setChampion] = useState(null);
+  const [selectedChronicleMatch, setSelectedChronicleMatch] = useState(null);
+  const [isSimulatingDetailed, setIsSimulatingDetailed] = useState(false);
   
   // Navigation & Modals
-  const [activeTab, setActiveTab] = useState('bracket'); // 'bracket' | 'history' | 'filter'
+  const [activeTab, setActiveTab] = useState('bracket'); // 'bracket' | 'custom' | 'history' | 'filter'
   
   // Betting System
   const [bets, setBets] = useState({}); // { [matchId]: { charId, amount, odds } }
@@ -167,6 +172,34 @@ export default function TournamentModal({
     setupBracket(list, size);
   };
 
+  const handleUpdateSlot = (index, newChar) => {
+    const next = [...participants];
+    next[index] = newChar;
+    setParticipants(next);
+    setupBracket(next, tournamentSize);
+  };
+
+  const handleFillEmptySlotsRandomly = () => {
+    const current = [...participants];
+    const usedIds = new Set(current.filter(Boolean).map(c => c.id));
+    const available = characters.filter(c => !usedIds.has(c.id)).sort(() => 0.5 - Math.random());
+    
+    let availIdx = 0;
+    for (let i = 0; i < tournamentSize; i++) {
+      if (!current[i] && availIdx < available.length) {
+        current[i] = available[availIdx++];
+      }
+    }
+    setParticipants(current);
+    setupBracket(current, tournamentSize);
+  };
+
+  const handleClearAllSlots = () => {
+    const emptyList = new Array(tournamentSize).fill(null);
+    setParticipants(emptyList);
+    setupBracket(emptyList, tournamentSize);
+  };
+
   // Advanced Category & Tag Filtered Generator
   const handleGenerateFilteredTournament = () => {
     let pool = [...characters];
@@ -197,7 +230,9 @@ export default function TournamentModal({
     // 3. Combat Tag Filter
     if (filterTag !== 'all') {
       pool = pool.filter(c => {
-        const full = `${c.name} ${c.haxTags?.join(' ') || ''} ${c.abilities?.join(' ') || ''}`.toLowerCase();
+        const haxStr = Array.isArray(c.haxTags) ? c.haxTags.join(' ') : (typeof c.haxTags === 'string' ? c.haxTags : '');
+        const abilsStr = Array.isArray(c.abilities) ? c.abilities.map(a => typeof a === 'object' ? (a.name || a.desc || '') : String(a)).join(' ') : (typeof c.abilities === 'string' ? c.abilities : '');
+        const full = `${c.name || ''} ${haxStr} ${abilsStr}`.toLowerCase();
         return full.includes(filterTag.toLowerCase());
       });
     }
@@ -273,10 +308,44 @@ export default function TournamentModal({
     return { winner, log };
   };
 
-  const advanceWinner = (roundIdx, matchIdx, winner, logText) => {
+  const generateTournamentMatchChronicle = (charA, charB) => {
+    const scoreA = getTierScore(charA.tier);
+    const scoreB = getTierScore(charB.tier);
+    const rollA = scoreA * (0.88 + Math.random() * 0.25);
+    const rollB = scoreB * (0.88 + Math.random() * 0.25);
+    const winner = rollA >= rollB ? charA : charB;
+    const loser = winner.id === charA.id ? charB : charA;
+    const diff = Math.abs(rollA - rollB);
+
+    let factor = 'potencia de ataque y velocidad';
+    if (diff > 35) factor = 'superioridad abrumadora de escala destructiva';
+    else if (diff > 15) factor = 'adaptación táctica y dominio de técnicas clave';
+    else factor = 'resistencia extrema en el último intercambio al límite';
+
+    const techA = charA.arsenal?.superAttacks?.[0]?.name || charA.abilities?.[0]?.name || 'Técnica de Impacto';
+    const techB = charB.arsenal?.superAttacks?.[0]?.name || charB.abilities?.[0]?.name || 'Ráfaga de Poder';
+    const ultimateWinner = winner.arsenal?.ultimateAttacks?.[0]?.name || 'Ataque Definitivo';
+
+    const turns = [
+      { text: `Ambos combatientes toman posiciones en la arena. ${charA.name} abre las hostilidades con una ofensiva frontal mientras ${charB.name} lee sus patrones cinéticos.` },
+      { text: `¡Se desata el choque de técnicas especiales! ${charA.name} despliega '${techA}', pero ${charB.name} contraataca de inmediato con '${techB}', provocando una onda expansiva en el escenario.` },
+      { text: `Entrando en la fase decisiva, la ventaja en ${factor} comienza a desgastar las defensas de ${loser.name}, obligándolo a retroceder.` },
+      { text: `¡Clímax del combate! ${winner.name} ejecuta su técnica definitiva '${ultimateWinner}', quebrando la guardia de ${loser.name} y sellando la victoria definitiva.` }
+    ];
+
+    const fullNarrative = enrichMatchNarrative({ char1: charA, char2: charB, turns, winner, factor });
+    const summaryLog = `🏆 Victoria para ${winner.name} tras superar a ${loser.name} mediante ${factor}.`;
+
+    return { winner, fullNarrative, summaryLog };
+  };
+
+  const advanceWinner = (roundIdx, matchIdx, winner, logText, fullNarrative = null) => {
     const updatedRounds = [...rounds];
     updatedRounds[roundIdx].matches[matchIdx].winner = winner;
     updatedRounds[roundIdx].matches[matchIdx].log = logText;
+    if (fullNarrative) {
+      updatedRounds[roundIdx].matches[matchIdx].fullNarrative = fullNarrative;
+    }
 
     // Check Bet Settlement
     const matchId = updatedRounds[roundIdx].matches[matchIdx].id;
@@ -300,8 +369,6 @@ export default function TournamentModal({
     if (isFinal) {
       setChampion(winner);
       try { SoundFX.playChampionFanfare?.(); } catch {}
-      
-      // Auto-save finished tournament to history
       saveTournamentToHistory(tournamentTitle, winner, updatedRounds);
     } else {
       const nextRoundIdx = roundIdx + 1;
@@ -325,6 +392,14 @@ export default function TournamentModal({
     advanceWinner(roundIdx, matchIdx, winner, log);
   };
 
+  const handleSimulateDetailed = (roundIdx, matchIdx) => {
+    const match = rounds[roundIdx]?.matches[matchIdx];
+    if (!match || !match.charA || !match.charB || match.winner) return;
+    try { SoundFX.playEnergyClash?.() || SoundFX.playSwordClash?.(); } catch {}
+    const { winner, fullNarrative, summaryLog } = generateTournamentMatchChronicle(match.charA, match.charB);
+    advanceWinner(roundIdx, matchIdx, winner, summaryLog, fullNarrative);
+  };
+
   const handleSimulateAllRemainingFast = () => {
     for (let r = 0; r < rounds.length; r++) {
       for (let m = 0; m < rounds[r].matches.length; m++) {
@@ -335,6 +410,25 @@ export default function TournamentModal({
         }
       }
     }
+  };
+
+  const handleSimulateAllRemainingDetailed = () => {
+    setIsSimulatingDetailed(true);
+    try { SoundFX.playEnergyClash?.(); } catch {}
+    setTimeout(() => {
+      for (let r = 0; r < rounds.length; r++) {
+        for (let m = 0; m < rounds[r].matches.length; m++) {
+          const match = rounds[r].matches[m];
+          if (match.charA && match.charB && !match.winner) {
+            const { winner, fullNarrative, summaryLog } = generateTournamentMatchChronicle(match.charA, match.charB);
+            advanceWinner(r, m, winner, summaryLog, fullNarrative);
+          }
+        }
+      }
+      setIsSimulatingDetailed(false);
+      setToastMsg('⚔️ ¡Todo el torneo ha sido simulado con crónicas completas!');
+      setTimeout(() => setToastMsg(null), 3500);
+    }, 400);
   };
 
   // Tournament Save & History Functions
@@ -456,6 +550,16 @@ export default function TournamentModal({
               </button>
 
               <button
+                onClick={() => setActiveTab('custom')}
+                className={`px-2.5 py-1 rounded-lg font-bold text-[11px] transition cursor-pointer flex items-center gap-1 ${
+                  activeTab === 'custom' ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                <Users className="w-3.5 h-3.5" />
+                <span>Elegir Participantes</span>
+              </button>
+
+              <button
                 onClick={() => setActiveTab('filter')}
                 className={`px-2.5 py-1 rounded-lg font-bold text-[11px] transition cursor-pointer flex items-center gap-1 ${
                   activeTab === 'filter' ? 'bg-purple-600 text-white' : 'text-slate-400 hover:text-white'
@@ -523,16 +627,27 @@ export default function TournamentModal({
                 className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-amber-500/40 text-amber-300 font-bold transition flex items-center gap-1.5 cursor-pointer shadow-sm text-[11px]"
               >
                 <Save className="w-3.5 h-3.5" />
-                <span>Guardar Estado</span>
+                <span>Guardar</span>
               </button>
 
               <button
                 onClick={handleSimulateAllRemainingFast}
-                disabled={!!champion}
-                className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-bold transition flex items-center gap-1.5 cursor-pointer shadow-md text-[11px] disabled:opacity-50"
+                disabled={!!champion || isSimulatingDetailed}
+                className="px-2.5 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 font-bold transition flex items-center gap-1 cursor-pointer text-[11px] disabled:opacity-50"
+                title="Resolver todos los combates de forma instantánea"
               >
                 <FastForward className="w-3.5 h-3.5" />
-                <span>Simular Todo</span>
+                <span>⚡ Rápido</span>
+              </button>
+
+              <button
+                onClick={handleSimulateAllRemainingDetailed}
+                disabled={!!champion || isSimulatingDetailed}
+                className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-red-600 via-amber-600 to-orange-600 hover:from-red-500 text-white font-bold transition flex items-center gap-1.5 cursor-pointer shadow-md shadow-red-950 text-[11px] disabled:opacity-50"
+                title="Simular crónicas completas y detalladas para todos los combates restantes"
+              >
+                <Swords className={`w-3.5 h-3.5 ${isSimulatingDetailed ? 'animate-spin' : ''}`} />
+                <span>{isSimulatingDetailed ? 'Simulando...' : '⚔️ Simular Crónicas (Todo)'}</span>
               </button>
             </div>
           </div>
@@ -653,21 +768,57 @@ export default function TournamentModal({
 
                         {/* Log / Resolution Controls */}
                         {hasFighters && !match.winner && (
-                          <div className="mt-2 pt-2 border-t border-slate-800 flex items-center justify-between gap-1">
+                          <div className="mt-2 pt-2 border-t border-slate-800 flex items-center justify-between gap-1.5">
                             <button
                               onClick={() => handleSimulateFast(rIdx, mIdx)}
-                              className="flex-1 py-1 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-bold text-[10px] transition cursor-pointer flex items-center justify-center gap-1 shadow-sm"
+                              className="flex-1 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 font-bold text-[10px] transition cursor-pointer flex items-center justify-center gap-1"
+                              title="Resolución matemática rápida instantánea"
                             >
-                              <Play className="w-3 h-3" />
-                              <span>Resolver</span>
+                              <FastForward className="w-3 h-3 text-slate-400" />
+                              <span>⚡ Rápido</span>
+                            </button>
+                            <button
+                              onClick={() => handleSimulateDetailed(rIdx, mIdx)}
+                              className="flex-1 py-1 rounded-lg bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 text-white font-bold text-[10px] transition cursor-pointer flex items-center justify-center gap-1 shadow-sm"
+                              title="Simular crónica de combate completa con fases y narrativa"
+                            >
+                              <Swords className="w-3 h-3" />
+                              <span>⚔️ Crónica</span>
                             </button>
                           </div>
                         )}
 
                         {match.log && (
-                          <p className="mt-2 text-[10px] text-slate-400 italic bg-slate-950 p-2 rounded-lg border border-slate-800">
+                          <p className="mt-2 text-[10px] text-slate-400 italic bg-slate-950 p-2 rounded-lg border border-slate-800 leading-snug">
                             {match.log}
                           </p>
+                        )}
+
+                        {match.fullNarrative && (
+                          <div className="mt-2 flex items-center gap-1.5">
+                            <button
+                              type="button"
+                              onClick={() => setSelectedChronicleMatch(match)}
+                              className="flex-1 py-1 px-2 rounded-lg bg-slate-950 hover:bg-slate-900 border border-cyan-500/40 text-cyan-300 font-bold text-[10px] flex items-center justify-center gap-1 transition cursor-pointer shadow-sm"
+                            >
+                              <BookOpen className="w-3 h-3 text-cyan-400" />
+                              <span>📜 Leer Crónica</span>
+                            </button>
+                            {onOpenSimulationResult && (
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  onOpenSimulationResult(match.fullNarrative, match.charA, match.charB, match.winner);
+                                  onClose();
+                                }}
+                                className="p-1 px-2 rounded-lg bg-slate-950 hover:bg-slate-900 border border-amber-500/40 text-amber-300 transition cursor-pointer flex items-center gap-1 text-[9.5px] font-bold"
+                                title="Abrir en el Visor Biométrico de la Arena Principal"
+                              >
+                                <span>Arena</span>
+                                <ExternalLink className="w-3 h-3 text-amber-400" />
+                              </button>
+                            )}
+                          </div>
                         )}
                       </div>
                     );
@@ -694,7 +845,121 @@ export default function TournamentModal({
           </div>
         )}
 
-        {/* Modal Body: TAB 2 (ADVANCED FILTER & RANDOMIZER) */}
+        {/* Modal Body: TAB 2 (CUSTOM PARTICIPANT SELECTION) */}
+        {activeTab === 'custom' && (
+          <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-4">
+            <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-950 border border-emerald-500/40 flex flex-wrap items-center justify-between gap-3 shadow-lg">
+              <div>
+                <h4 className="font-bold text-white text-sm font-cinzel flex items-center gap-2">
+                  <Users className="w-4 h-4 text-emerald-400" />
+                  <span>Configuración Manual de Participantes ({tournamentSize} Plazas)</span>
+                </h4>
+                <p className="text-slate-400 text-xs mt-0.5">
+                  Elige individualmente a cada uno de los luchadores del torneo usando el buscador del catálogo completo ({characters.length} gladiadores).
+                </p>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  onClick={handleFillEmptySlotsRandomly}
+                  className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-emerald-500/40 text-emerald-300 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer"
+                >
+                  <Shuffle className="w-3.5 h-3.5" />
+                  <span>Rellenar Huecos al Azar</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleClearAllSlots}
+                  className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-red-500/40 text-red-300 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer"
+                >
+                  <Trash2 className="w-3.5 h-3.5" />
+                  <span>Vaciar Todo</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setActiveTab('bracket')}
+                  className="px-4 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 text-white font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-lg shadow-emerald-950"
+                >
+                  <Trophy className="w-3.5 h-3.5" />
+                  <span>Aplicar y Ver Cuadro ⚔️</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Grid of Slots */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {Array.from({ length: tournamentSize }).map((_, idx) => {
+                const char = participants[idx];
+                const matchNumber = Math.floor(idx / 2) + 1;
+                const corner = idx % 2 === 0 ? 'Esquina Roja' : 'Esquina Azul';
+
+                return (
+                  <div 
+                    key={idx} 
+                    className={`p-3 rounded-2xl border transition relative flex flex-col justify-between gap-2.5 ${
+                      char 
+                        ? 'bg-slate-900/90 border-emerald-500/40 shadow-sm' 
+                        : 'bg-slate-950/60 border-dashed border-slate-800'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between border-b border-slate-800 pb-1 text-[10.5px]">
+                      <span className="font-bold text-emerald-400 font-mono">
+                        Plaza #{idx + 1}
+                      </span>
+                      <span className="text-slate-500 text-[9.5px]">
+                        Match {matchNumber} · {corner}
+                      </span>
+                    </div>
+
+                    {/* Character Selector Component */}
+                    <SearchableCharacterSelector
+                      characters={characters}
+                      value={char?.id}
+                      onChange={(selected) => handleUpdateSlot(idx, selected)}
+                      label="Elegir Gladiador:"
+                      color="emerald"
+                    />
+
+                    {/* Quick Card Preview */}
+                    {char ? (
+                      <div className="flex items-center gap-2.5 p-2 rounded-xl bg-slate-950/80 border border-slate-800 text-xs">
+                        <div className="w-8 h-8 rounded-lg overflow-hidden bg-slate-900 shrink-0 border border-slate-700">
+                          <img src={char.avatar || `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(char.name)}`} alt="" className="w-full h-full object-contain" />
+                        </div>
+                        <div className="truncate flex-1">
+                          <span className="font-bold text-white block truncate text-[11px]">{char.name}</span>
+                          <div className="flex items-center gap-1 text-[9px] text-slate-400 truncate">
+                            <span className="px-1 rounded bg-slate-900 text-amber-300 font-bold border border-slate-800">
+                              {char.tier?.split('|')[0] || char.tier}
+                            </span>
+                            <span className="truncate">{char.universe}</span>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => handleUpdateSlot(idx, null)}
+                          className="p-1 text-slate-500 hover:text-red-400 rounded-lg transition cursor-pointer"
+                          title="Quitar de esta plaza"
+                        >
+                          <X className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    ) : (
+                      <div className="p-3 text-center border border-dashed border-slate-800 rounded-xl text-slate-500 text-[10px]">
+                        Plaza Vacía — Selecciona un gladiador arriba
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Modal Body: TAB 3 (ADVANCED FILTER & RANDOMIZER) */}
         {activeTab === 'filter' && (
           <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-5">
             <div className="p-4 rounded-2xl bg-gradient-to-r from-purple-950/40 via-slate-900 to-purple-950/40 border border-purple-500/40 space-y-1">
@@ -862,7 +1127,7 @@ export default function TournamentModal({
         {/* Footer */}
         <div className="p-3 border-t border-slate-800 bg-slate-950 flex items-center justify-between text-xs font-mono">
           <span className="text-slate-500 text-[11px]">
-            💡 Puedes apostar Monedas del Oráculo en cualquier combate antes de resolverlo para multiplicar tus ganancias.
+            💡 Puedes simular crónicas completas ⚔️ o resolver rápido ⚡ para avanzar de ronda y multiplicar tus apuestas.
           </span>
           <button
             type="button"
@@ -873,6 +1138,75 @@ export default function TournamentModal({
           </button>
         </div>
       </div>
+
+      {/* Floating Modal for Full Tournament Match Chronicle */}
+      {selectedChronicleMatch && (
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="bg-slate-950 border border-cyan-500/50 rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl shadow-cyan-950/50 animate-in zoom-in-95 font-sans">
+            <div className="p-4 border-b border-slate-800 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Trophy className="w-5 h-5 text-amber-400" />
+                <h3 className="font-bold text-white text-sm font-cinzel">
+                  Crónica de Combate · {selectedChronicleMatch.round}
+                </h3>
+              </div>
+              <button
+                onClick={() => setSelectedChronicleMatch(null)}
+                className="p-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="p-5 overflow-y-auto flex-1 space-y-4 text-xs text-slate-200 leading-relaxed">
+              <div className="flex items-center justify-around p-3 rounded-2xl bg-slate-900/80 border border-slate-800">
+                <div className="text-center">
+                  <span className="font-bold text-white block">{selectedChronicleMatch.charA?.name}</span>
+                  <span className="text-[10px] text-amber-300 font-mono">{selectedChronicleMatch.charA?.tier}</span>
+                </div>
+                <span className="font-bold text-red-500 font-cinzel text-sm">VS</span>
+                <div className="text-center">
+                  <span className="font-bold text-white block">{selectedChronicleMatch.charB?.name}</span>
+                  <span className="text-[10px] text-amber-300 font-mono">{selectedChronicleMatch.charB?.tier}</span>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-900/50 border border-slate-800/80 whitespace-pre-line leading-relaxed text-[13px] text-slate-300 font-sans shadow-inner">
+                {selectedChronicleMatch.fullNarrative}
+              </div>
+            </div>
+
+            <div className="p-4 border-t border-slate-800 flex items-center justify-between">
+              <span className="text-[11px] text-emerald-400 font-bold flex items-center gap-1.5 font-mono">
+                <CheckCircle className="w-4 h-4" /> Vencedor: {selectedChronicleMatch.winner?.name}
+              </span>
+              <div className="flex gap-2">
+                {onOpenSimulationResult && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      onOpenSimulationResult(selectedChronicleMatch.fullNarrative, selectedChronicleMatch.charA, selectedChronicleMatch.charB, selectedChronicleMatch.winner);
+                      setSelectedChronicleMatch(null);
+                      onClose();
+                    }}
+                    className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-500 text-white font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-md"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>Abrir en Visor de la Arena</span>
+                  </button>
+                )}
+                <button
+                  type="button"
+                  onClick={() => setSelectedChronicleMatch(null)}
+                  className="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition cursor-pointer"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

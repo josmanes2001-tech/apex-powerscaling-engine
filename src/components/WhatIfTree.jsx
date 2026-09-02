@@ -18,8 +18,18 @@ const WHATIF_PRESETS = [
     divergence: 'Veredicto Final'
   },
   {
-    title: '⚔️ Intervención de una Facción Hostil',
-    desc: 'Una armada enemiga o entidad cósmica aprovecha el agotamiento crítico de ambos contendientes para emboscarlos al caer el telón.',
+    title: '💥 Intervención de 3er Contendiente Canónico / Némesis',
+    desc: 'Un 3er contendiente canónico de gran escala (ej. Broly, Metal Cooler, Bills, Sukuna, Thanos, Doomsday) irrumpe con nombre oficial completo desatando una guerra a 3 bandas.',
+    divergence: 'Fase 3 (Giro Táctico)'
+  },
+  {
+    title: '👥 Asalto Coordinado de un Dúo / Emboscada',
+    desc: 'Dos guerreros aliados o rivales coordinados (ej. Androides 17 y 18 / Goku Black & Zamasu / Toji & Maki) tienden una emboscada 2v1 en el momento más crítico.',
+    divergence: 'Fase 3 (Giro Táctico)'
+  },
+  {
+    title: '🛡️ Respaldo de Emergencia de un Aliado / Mentor',
+    desc: 'Un compañero de equipo legendario o mentor canónico (ej. Vegeta / Piccolo / Gojo / Thor) interviene en el último milisegundo para rescatar a su aliado.',
     divergence: 'Fase 3 (Giro Táctico)'
   },
   {
@@ -404,11 +414,61 @@ Condición: Especifica un giro dramático inesperado (trauma, despertar, traici�
             </div>
           </div>
 
-          {/* Custom What-If Premise Field */}
-          <div className="p-4 rounded-xl bg-purple-950/20 border border-purple-900/50 space-y-2.5">
+          {/* Custom What-If Premise Field with Dropdown Selector */}
+          <div className="p-4 rounded-xl bg-purple-950/20 border border-purple-900/50 space-y-3">
+            
+            {/* Selector Desplegable de Giros Tácticos & Intervenciones */}
+            <div className="bg-slate-950/90 p-3 rounded-xl border border-fuchsia-900/50 space-y-2">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[11px]">
+                <span className="font-bold text-fuchsia-300 flex items-center gap-1.5">
+                  <Flame className="w-3.5 h-3.5 text-fuchsia-400" />
+                  <span>🌀 Desplegable de Giros Argumentales & Intervenciones Canónicas:</span>
+                </span>
+                <span className="text-[9px] font-mono text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-700/60">
+                  LEY CANÓNICA APEX ACTIVA
+                </span>
+              </div>
+
+              <select
+                className="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs focus:border-fuchsia-400 focus:outline-none transition cursor-pointer"
+                onChange={(e) => {
+                  if (e.target.value) {
+                    setCustomText(e.target.value);
+                  }
+                }}
+                defaultValue=""
+              >
+                <option value="" disabled>⚡ Elige un giro argumental o intervención canónica...</option>
+                <option value="Irrumpe sorpresivamente un 3er contendiente canónico icónico y específico del universo del combate (con nombre oficial completo, ej. Metal Cooler, Broly, Cell Max, Bills, Hit, Freezer, Sukuna, Thor, Doomsday, Thanos) que interrumpe el duelo desatando un choque a tres bandas.">
+                  💥 [3er Contendiente] Villano Némesis / Rival Histórico del Universo
+                </option>
+                <option value="Un aliado canónico de respaldo o mentor histórico (ej. Vegeta / Piccolo / Gojo / Thor / Superman) interviene en el último milisegundo para rescatar a su compañero y coordinar un contraataque 2v1.">
+                  🛡️ [Aliado de Respaldo] Intervención Heroica en el Milisegundo Crítico
+                </option>
+                <option value="Aparece un dúo de asalto coordinado (ej. Androides 17 y 18 / Goku Black & Zamasu / Toji & Maki) ejecutando una emboscada 2v1 de alta presión táctica.">
+                  👥 [Dúo / Emboscada] Asalto Coordinado de 2 Guerreros
+                </option>
+                <option value="Uno de los luchadores realiza una técnica de fusión de emergencia o metamorfosis prohibida para duplicar su poder a costa de un drenaje crítico de energía.">
+                  ⚡ [Fusión de Crisis] Unión de Emergencia para Salvar la Vida
+                </option>
+                <option value="Al recibir un golpe letal, un catalizador fisiológico o divino latente despierta una forma oculta no prevista que invierte la balanza de poder.">
+                  👑 [Despertar Oculto] Desbloqueo de Nueva Transformación / Forma Latente
+                </option>
+                <option value="El contendiente inferior en estadísticas descifra el patrón de combate y logra copiar, anular o absorber temporalmente el Hax principal de su oponente.">
+                  🧬 [Robo de Técnica / Adaptación] Anulación Táctica del Hax Rival
+                </option>
+                <option value="El terreno de combate colapsa por la densidad de los impactos y ambos contendientes son succionados hacia otra arena cósmica hostil.">
+                  🌀 [Colapso Dimensional] Teletransportación hacia una Arena Devastada
+                </option>
+                <option value="El combatiente al borde de la derrota activa una técnica kamikaze de auto-destrucción total para forzar una aniquilación mutua.">
+                  🩸 [Ataque Kamikaze] Sacrificio Final de Auto-Destrucción
+                </option>
+              </select>
+            </div>
+
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <label className="text-[11px] font-bold text-purple-300 uppercase tracking-wider flex items-center gap-1.5">
-                <span>✍️ Premisa Personalizada de Realidad Alternativa:</span>
+                <span>✍️ Premisa Personalizada / Texto del Giro:</span>
               </label>
 
               <div className="flex items-center gap-2 flex-wrap">

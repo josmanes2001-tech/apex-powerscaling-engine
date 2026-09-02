@@ -1005,6 +1005,90 @@ export default function ScenarioPanel({
           </div>
         </div>
 
+        {/* Desplegable Táctico de Premisas, Giros & 3er Contendiente */}
+        <div className="bg-slate-950/80 p-2.5 rounded-xl border border-emerald-900/50 space-y-2">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[11px]">
+            <span className="font-bold text-emerald-300 flex items-center gap-1.5">
+              <Swords className="w-3.5 h-3.5 text-emerald-400" />
+              <span>💥 Desplegable de Giros, 3er Contendiente & Premisas Especiales:</span>
+            </span>
+            <span className="text-[9px] font-mono text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-700/60 flex items-center gap-1">
+              <Check className="w-3 h-3 text-cyan-400" />
+              <span>LEY CANÓNICA APEX ACTIVA</span>
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-12 gap-2">
+            <select
+              className="sm:col-span-9 p-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs focus:border-emerald-400 focus:outline-none transition cursor-pointer"
+              onChange={(e) => {
+                if (e.target.value) {
+                  setModifiers(prev => ({ ...prev, customContext: e.target.value }));
+                }
+              }}
+              defaultValue=""
+            >
+              <option value="" disabled>⚡ Selecciona una premisa, 3er contendiente o giro especial...</option>
+              <option value="Irrumpe sorpresivamente un 3er contendiente canónico icónico y específico del universo del combate (con nombre oficial completo, ej. Metal Cooler, Broly, Cell Max, Bills, Hit, Freezer, Sukuna, Thor, Doomsday, Thanos) que interrumpe el duelo desatando un choque a tres bandas.">
+                💥 [3er Contendiente Sorpresa] Villano Némesis / Rival Histórico del Universo
+              </option>
+              <option value="Irrumpe un villano némesis canónico legendario con sed de venganza (ej. Metal Cooler / Broly / Sukuna / Thanos / Darkseid) atacando a quemarropa a ambos contendientes.">
+                😈 [Némesis Hostil] Asalto Inesperado de un Villano Supremo
+              </option>
+              <option value="Un aliado canónico de respaldo o mentor histórico (ej. Vegeta / Piccolo / Gojo / Thor / Superman) interviene en el último milisegundo para rescatar a su compañero y coordinar un contraataque 2v1.">
+                🛡️ [Aliado de Respaldo] Intervención Heroica en el Milisegundo Crítico
+              </option>
+              <option value="Aparece un dúo de asalto coordinado (ej. Androides 17 y 18 / Goku Black & Zamasu / Toji & Maki) ejecutando una emboscada 2v1 de alta presión táctica.">
+                👥 [Dúo / Emboscada] Asalto Coordinado de 2 Guerreros
+              </option>
+              <option value="Uno de los luchadores realiza una técnica de fusión de emergencia o metamorfosis prohibida para duplicar su poder a costa de un drenaje crítico de energía.">
+                ⚡ [Fusión de Crisis] Protocolo de Fusión / Metamorfosis de Emergencia
+              </option>
+              <option value="Al recibir un impacto letal, un catalizador fisiológico o divino latente despierta una nueva transformación que invierte la balanza de poder.">
+                👑 [Despertar Oculto] Desbloqueo de Nueva Transformación / Forma Latente
+              </option>
+              <option value="El contendiente inferior en estadísticas descifra el patrón de combate y logra copiar, anular o absorber temporalmente el Hax principal de su oponente.">
+                🧬 [Robo de Técnica / Adaptación] Copia o Neutralización del Hax Rival
+              </option>
+              <option value="El clima y la física del escenario colapsan desatando una lluvia de meteoros cósmicos y tormentas de plasma que golpean a ambos luchadores.">
+                🌧️ [Cataclismo Ambiental] Tormenta de Plasma y Lluvia de Meteoros
+              </option>
+              <option value="Una entidad cósmica suprema o árbitro divino (ej. Whis / Gran Patriarca / Anti-Monitor / Tribunal Viviente) irrumpe imponiendo una alteración de la realidad.">
+                🌌 [Deidad Cósmica] Juicio de una Entidad Multiversal
+              </option>
+              <option value="El terreno de combate colapsa por la densidad del choque y ambos contendientes caen arrastrados a otra dimensión paralela hostil.">
+                🌀 [Colapso Dimensional] Teletransportación a una Arena Hostil
+              </option>
+              <option value="El combatiente al borde de la derrota activa una técnica kamikaze de auto-destrucción total para forzar una aniquilación mutua.">
+                🩸 [Ataque Kamikaze] Sacrificio Final de Auto-Destrucción
+              </option>
+            </select>
+
+            <div className="sm:col-span-3 flex gap-1.5">
+              <button
+                type="button"
+                onClick={() => setModifiers(prev => ({ 
+                  ...prev, 
+                  customContext: "Irrumpe sorpresivamente un 3er contendiente canónico icónico y específico del universo del combate (con nombre oficial completo, ej. Metal Cooler, Broly, Cell Max, Bills, Hit, Freezer, Sukuna, Thor, Doomsday, Thanos) que interrumpe el duelo desatando un choque a tres bandas." 
+                }))}
+                className="flex-1 py-1 px-2 rounded-lg bg-emerald-950/70 hover:bg-emerald-900 text-emerald-300 text-[10px] font-bold border border-emerald-700/60 transition flex items-center justify-center gap-1"
+                title="Cargar 3er contendiente canónico"
+              >
+                <Sparkles className="w-3 h-3 text-emerald-400" />
+                <span>3er Rival</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setModifiers(prev => ({ ...prev, customContext: '' }))}
+                className="py-1 px-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-slate-200 text-[10px] border border-slate-700 transition"
+                title="Limpiar texto"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        </div>
+
         {/* Quick Premise Chips */}
         <div className="space-y-1.5 pt-1">
           <div className="flex items-center justify-between text-[11px] flex-wrap gap-1">
@@ -1186,6 +1270,46 @@ export default function ScenarioPanel({
                   className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-emerald-900/40 text-slate-300 hover:text-emerald-200 border border-slate-800 transition cursor-pointer"
                 >
                   🔮 Colisión de Universos
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Irrumpe sorpresivamente un 3er contendiente canónico icónico del universo del combate (con nombre oficial completo, ej. Metal Cooler, Broly, Cell Max, Bills, Hit, Sukuna, Thanos) que interrumpe el duelo desatando un choque a tres bandas.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-700/60 transition cursor-pointer font-bold"
+                >
+                  💥 3er Contendiente Canónico
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Aparece un dúo de asalto coordinado (ej. Androides 17 y 18 / Goku Black & Zamasu / Toji & Maki) ejecutando una emboscada 2v1 de alta presión táctica.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-cyan-950/80 hover:bg-cyan-900 text-cyan-300 border border-cyan-700/60 transition cursor-pointer font-bold"
+                >
+                  👥 Emboscada Dúo (2v1)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Uno de los luchadores al borde de la aniquilación ejecuta una técnica de fusión de emergencia o metamorfosis prohibida para duplicar su poder a costa de un drenaje crítico de energía.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-700/60 transition cursor-pointer font-bold"
+                >
+                  ⚡ Fusión de Crisis
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setModifiers(prev => ({ 
+                    ...prev, 
+                    customContext: `Al recibir un golpe de gracia letal, un catalizador fisiológico o divino latente despierta una nueva transformación que invierte de golpe la balanza de poder.` 
+                  }))}
+                  className="px-2.5 py-1 rounded-lg bg-fuchsia-950/80 hover:bg-fuchsia-900 text-fuchsia-300 border border-fuchsia-700/60 transition cursor-pointer font-bold"
+                >
+                  👑 Despertar Oculto
                 </button>
                 <button
                   type="button"

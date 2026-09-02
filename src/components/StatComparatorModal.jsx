@@ -7,6 +7,7 @@ import { getFranchiseCategoriesList } from '../services/franchiseHelper';
 import { calculateFormScaledStats, POWERSCALING_TIERING_SYSTEM, SPEED_SCALE_SYSTEM } from '../data/powerscalingCodex';
 import { SoundFX } from '../services/soundFx';
 import { calculateScouterReading, getPowerLevelFormulaBreakdown } from '../services/scouterEngine';
+import { resolveCombatState } from '../lib/combatStateResolver';
 
 // Full VS Battles tier scoring with sub-tiers A/B/C
 const TIER_SCORE_MAP = [
@@ -150,24 +151,30 @@ function buildPolygonPath(stats, maxR, cx, cy) {
 
 function computeEffectiveStats(character, selectedFormId) {
   if (!character) return null;
+  const combatState = resolveCombatState(character, selectedFormId);
   const scaled = calculateFormScaledStats(character, selectedFormId);
   const forms = character.forms || [];
   const form = forms.find(f => f.id === selectedFormId) || forms[0] || { id: 'base', name: 'Forma Base', stats: character.tier };
   
-  const effectiveTier = scaled.currentTier || character.tier;
+  const effectiveTier = combatState.tierExact || scaled.currentTier || character.tier;
   const baseScore = parseTierScore(effectiveTier);
 
   let multiplierBonus = 0;
-  const formStatsStr = form.stats || '';
-  if (/x([0-9]+)/i.test(formStatsStr)) {
-    const m = parseInt(formStatsStr.match(/x([0-9]+)/i)[1], 10);
-    multiplierBonus = Math.min(30, Math.round(Math.log2(m) * 2.8));
+  if (combatState.formMultiplier > 1) {
+    multiplierBonus = Math.min(30, Math.round(Math.log2(combatState.formMultiplier) * 2.8));
+  } else {
+    const formStatsStr = form.stats || '';
+    if (/x([0-9]+)/i.test(formStatsStr)) {
+      const m = parseInt(formStatsStr.match(/x([0-9]+)/i)[1], 10);
+      multiplierBonus = Math.min(30, Math.round(Math.log2(m) * 2.8));
+    }
   }
 
   const effectiveScore = Math.min(150, baseScore + multiplierBonus);
 
   const rawSpeed = typeof character.speed === 'object' ? (character.speed.combat || '') : (character.speed || '');
   let effectiveSpeedScore = parseSpeedScore(rawSpeed);
+  const formStatsStr = form.stats || '';
   if (formStatsStr.toLowerCase().includes('velocidad') || formStatsStr.toLowerCase().includes('mftl') || formStatsStr.toLowerCase().includes('godspeed') || formStatsStr.toLowerCase().includes('tiempo 0')) {
     effectiveSpeedScore = Math.min(100, effectiveSpeedScore + 12);
   }
@@ -202,7 +209,8 @@ function computeEffectiveStats(character, selectedFormId) {
     speedDisplay: rawSpeed || 'Nivel Canónico',
     haxCount,
     multiplierBonus,
-    scaled
+    scaled,
+    combatState
   };
 }
 
@@ -385,7 +393,9 @@ function FighterCardConfig({
           </select>
           {effectiveForm.stats && (
             <p className="text-[9px] text-amber-300/90 italic px-1">
-              ⚡ {effectiveForm.stats}
+              ⚡ {typeof effectiveForm.stats === 'object'
+                ? (effectiveForm.stats.ap || effectiveForm.stats.tier || Object.values(effectiveForm.stats).join(' | '))
+                : effectiveForm.stats}
             </p>
           )}
 

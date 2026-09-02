@@ -1,0 +1,666 @@
+{
+  "recordsWithBasicAttacks": 821,
+  "recordsWithSuperAttacks": 821,
+  "recordsWithUltimateAttacks": 818,
+  "recordsWithPassives": 821,
+  "recordsWithHaxTags": 821,
+  "emptyArsenalRecords": [],
+  "genericAbilityRecords": [
+    {
+      "id": "darkness-devil-csm-p1",
+      "name": "Demonio de la Oscuridad",
+      "universe": "Chainsaw Man"
+    },
+    {
+      "id": "genya-shinazugawa-kny-sv",
+      "name": "Genya Shinazugawa",
+      "universe": "Demon Slayer: Kimetsu no Yaiba"
+    },
+    {
+      "id": "homeless-emperor-opm-ma",
+      "name": "Homeless Emperor",
+      "universe": "One Punch Man"
+    },
+    {
+      "id": "captain-cold-dc-rebirth",
+      "name": "Captain Cold",
+      "universe": "DC Comics"
+    },
+    {
+      "id": "muscular-mha-forest",
+      "name": "Muscular",
+      "universe": "My Hero Academia"
+    },
+    {
+      "id": "kokushibo-kny-ic",
+      "name": "Kokushibo",
+      "universe": "Demon Slayer: Kimetsu no Yaiba"
+    },
+    {
+      "id": "darkseid-dc-rebirth",
+      "name": "Darkseid",
+      "universe": "DC Comics"
+    },
+    {
+      "id": "gyomei-himejima-kny-ic",
+      "name": "Gyomei Himejima",
+      "universe": "Demon Slayer: Kimetsu no Yaiba"
+    }
+  ],
+  "possibleAnachronisms": [],
+  "needsAbilityVerification": [],
+  "samples": [
+    {
+      "id": "son-goku-ni-o-dragon-ball-cl-sico-987",
+      "name": "Son Goku (Niño)",
+      "universe": "Dragon Ball (Clásico)",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Kamehameha",
+        "desc": "Su técnica firma, aunque en esta etapa tarda unos segundos en cargar.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Golpe del Mono Gigante (Penetración Oozaru)",
+        "desc": "Canaliza el poder del Oozaru en su puño propulsándose con un Kamehameha hacia atrás. Atraviesa el cuerpo del adversario como un torpedo vivo, destrozándolo.",
+        "cost": "80% Ki"
+      },
+      "haxTags": [
+        "Cola de Oozaru",
+        "Báculo Mágico (Nyoibo Extensión Infinita)",
+        "Kamehameha Impulsor"
+      ]
+    },
+    {
+      "id": "son-goku-23-tenkaichi",
+      "name": "Son Goku (23º Tenkaichi Budokai)",
+      "universe": "Dragon Ball (Clásico)",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 2,
+      "passivesCount": 1,
+      "haxTagsCount": 4,
+      "sampleSuperAttack": {
+        "name": "Kamehameha de Pies",
+        "desc": "Dispara un Kamehameha desde las plantas de sus pies como propulsor balístico para embestir con los puños.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Super Kamehameha Terrestre",
+        "desc": "Onda de Ki de escala gigantesca que rivalizó con el Chou Makouhou de Piccolo Jr.",
+        "cost": "45% Ki"
+      },
+      "haxTags": [
+        "Super Kamehameha",
+        "Kamehameha con los Pies",
+        "Percepción de Ki a Ciegas",
+        "Sin Cola (Inmune a agarre de cola)"
+      ]
+    },
+    {
+      "id": "son-goku-llegada-dbz-saga-saiyan-169",
+      "name": "Son Goku (Llegada DBZ)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 1,
+      "ultimateAttacksCount": 2,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Kaio-ken x2 y x3",
+        "desc": "Aumenta la velocidad y fuerza temporalmente para asestar palizas (como a Nappa) o combatir de tú a tú con la élite.",
+        "cost": "20% HP (Desgaste corporal)"
+      },
+      "sampleUltimateAttack": {
+        "name": "Kamehameha Kaio-ken x4",
+        "desc": "Desobedece a Kaio-sama rompiendo todos sus vasos sanguíneos para impulsar el Kamehameha, generando una presión letal que doblega el Galick Gun.",
+        "cost": "50% HP / 50% Ki"
+      },
+      "haxTags": [
+        "Multiplicador Exponencial de Atributos (Kaio-ken)",
+        "Genkidama Terrestre",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "son-goku-saga-namek-saga-namek-176",
+      "name": "Son Goku (Saga Namek)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Kamehameha Furioso",
+        "desc": "Lanzado con una mano en pleno vuelo, color dorado ardiente.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Super Kamehameha (Ira de Namek)",
+        "desc": "Rechazando el último ataque desesperado de Freezer con un grito de 'Estúpido', lanza un estallido masivo de energía para hundirlo.",
+        "cost": "50% Ki"
+      },
+      "haxTags": [
+        "Amplificación de Ira",
+        "Telepatía Básica (Kaio)",
+        "Telequinesis Defensiva Mínima"
+      ]
+    },
+    {
+      "id": "son-goku-saga-cell-saga-androides-459",
+      "name": "Son Goku (Saga Cell)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 2,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Kamehameha Teletransportado",
+        "desc": "Apunta al planeta fingiendo lanzar el ataque, pero se teletransporta en el último microsegundo a la cara del oponente para dispararle sin dejarle margen de reacción.",
+        "cost": "30% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Super Kamehameha Full Power",
+        "desc": "La cúspide de su poder en esa etapa.",
+        "cost": "45% Ki"
+      },
+      "haxTags": [
+        "Eficiencia de Ki Perfecta (SSJ Full Power)",
+        "Teletransportación Ofensiva",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "son-goku-saga-buu-saga-buu-646",
+      "name": "Son Goku (Saga Buu, Base)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 2,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Meteor Blast",
+        "desc": "Combo rápido rematado con una esfera de Ki de impacto contundente.",
+        "cost": "15% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Super Kamehameha (SSJ2)",
+        "desc": "Versión extrema y cargada del Kamehameha que rivaliza con el Final Flash de Majin Vegeta.",
+        "cost": "45% Ki"
+      },
+      "haxTags": [
+        "Aura Eléctrica Paralizante (SSJ2)",
+        "Shunkanido Instantáneo",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "son-goku-saga-super-dragon-ball-super-732",
+      "name": "Son Goku (Saga Super)",
+      "universe": "Dragon Ball Super",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 2,
+      "passivesCount": 1,
+      "haxTagsCount": 5,
+      "sampleSuperAttack": {
+        "name": "Kamehameha Divino",
+        "desc": "Una versión refinada con Ki de los dioses, inmensamente más letal y veloz.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Kamehameha Supremo del Ultra Instinto",
+        "desc": "Un torrente de energía plateada capaz de erradicar amenazas de nivel galáctico-universal instantáneamente.",
+        "cost": "70% Ki"
+      },
+      "haxTags": [
+        "Ultra Instinto (Evasión Automática / Autodefensa)",
+        "Zenkai (Limit Break Constante)",
+        "Teletransportación Dimensional (Shunkanido)",
+        "Proyección Avatar de Ki Gigante",
+        "Hakai (Uso Básico/Imperfecto)"
+      ]
+    },
+    {
+      "id": "son-goku-saga-gt-dragon-ball-gt-281",
+      "name": "Son Goku (Saga GT)",
+      "universe": "Dragon Ball GT",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Kamehameha x10",
+        "desc": "Su ataque firma en GT. Una onda masiva roja capaz de atravesar galaxias y desintegrar a Baby Ohzaru o empujar a Super 17.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Super Genkidama Universal",
+        "desc": "Canaliza la energía de todos los seres del universo (pidiendo a Kaio que transmita el mensaje). El ataque final de toda la franquicia GT, borrando a Omega Shenron.",
+        "cost": "Milagro/Inmunidad Total temporal"
+      },
+      "haxTags": [
+        "Absorción Pasiva de Ki (SSJ4)",
+        "Milagro Final (Genkidama Universal)",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "son-goku-mini-dragon-ball-daima-751",
+      "name": "Son Goku (Mini)",
+      "universe": "Dragon Ball Daima",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Extensión Nyoibo",
+        "desc": "Alarga el palo para empujar monstruos demoníacos a gran distancia y golpearlos contra montañas.",
+        "cost": "10% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Combo Super Saiyan Mini",
+        "desc": "Se transforma en SSJ (Daima), soltando un combo brutal y terminando con un rayo potente concentrado.",
+        "cost": "40% Ki"
+      },
+      "haxTags": [
+        "Fisiología Reducida",
+        "Báculo Mágico Reforzado de Ki",
+        "Kamehameha Reducido"
+      ]
+    },
+    {
+      "id": "vegeta-llegada-a-la-tierra-saga-saiyan-504",
+      "name": "Vegeta (Llegada a la Tierra)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Cañón Galick (Galick Gun)",
+        "desc": "Carga energía púrpura cruzando los brazos, disparando un torrente capaz de perforar y vaporizar un planeta de tamaño similar a la Tierra.",
+        "cost": "25% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Transformación Oozaru",
+        "desc": "Multiplica su poder por 10. A diferencia de los de clase baja, Vegeta conserva 100% su inteligencia y velocidad, volviéndose una bestia capaz de aplastar a Goku fácilmente.",
+        "cost": "Requiere Luna"
+      },
+      "haxTags": [
+        "Transformación Oozaru Cósmica",
+        "Luna Artificial de Ki (Bola de Poder)",
+        "Resiliencia de Orgullo"
+      ]
+    },
+    {
+      "id": "vegeta-saga-namek-saga-namek-783",
+      "name": "Vegeta (Saga Namek)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 1,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Ráfaga de Ki Incesante (Lluvia de Meteoros)",
+        "desc": "Dispara cientos de rayos de Ki de forma iracunda cubriendo todo de explosiones y humo (aunque casi nunca mata a villanos fuertes).",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Cañón Garlick Final",
+        "desc": "Versión mejorada de su ataque, aunque fue devuelto por una patada casual de Freezer.",
+        "cost": "40% Ki"
+      },
+      "haxTags": [
+        "Zenkai Acumulado",
+        "Ráfagas Múltiples de Presión",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "vegeta-saga-cell-saga-androides-856",
+      "name": "Vegeta (Saga Cell)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 1,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 2,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Big Bang Attack",
+        "desc": "Dispara una esfera concentrada desde la palma que explota en una enorme cúpula (Con la que destrozó al Androide 19).",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Final Flash (Destello Final)",
+        "desc": "Abre los brazos de par en par acumulando electricidad amarilla en todo el planeta; dispara un haz ineludible que condensa el espacio a su alrededor. Si se dispara hacia el núcleo, borra el planeta.",
+        "cost": "50% Ki"
+      },
+      "haxTags": [
+        "Compresión de Masa Muscular (Grado 2)",
+        "Ráfaga Perforante Definitiva",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "vegeta-saga-buu-saga-buu-213",
+      "name": "Vegeta (Saga Buu Base)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 1,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 2,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Luces de Destrucción",
+        "desc": "El combo con el que aniquiló a Pui Pui (Pone su mano en el pecho del enemigo y libera una explosión a quemarropa que vaporiza el torso).",
+        "cost": "15% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Big Bang Attack",
+        "desc": "Su ataque letal concentrado y sin piedad.",
+        "cost": "30% Ki"
+      },
+      "haxTags": [
+        "Fuerza Bruta Absoluta",
+        "Ráfaga de Ki Comprimida",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "vegeta-saga-super-dragon-ball-super-454",
+      "name": "Vegeta (Saga Super)",
+      "universe": "Dragon Ball Super",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Final Flash Divino",
+        "desc": "Una colosal ola amarilla que atraviesa incluso escudos de energía de nivel galáctico.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Explosión Final del Ego (Hakai Máximo)",
+        "desc": "Libera todo el poder del Dios de la Destrucción asimilado en una supernova de aura violeta que desintegra al enemigo por completo.",
+        "cost": "80% Ki"
+      },
+      "haxTags": [
+        "Fisión Forzada del Espíritu (Separa fusiones y robos de energía)",
+        "Manipulación de Hakai (Borrado Existencial)",
+        "Mega Instinto (Aumento de poder mediante dolor/daño)"
+      ]
+    },
+    {
+      "id": "vegeta-saga-gt-dragon-ball-gt-851",
+      "name": "Vegeta (Saga GT)",
+      "universe": "Dragon Ball GT",
+      "superAttacksCount": 1,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Final Flash",
+        "desc": "Su ataque clásico, ahora verde/dorado.",
+        "cost": "15% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Final Shine Attack (Ataque de Brillo Final)",
+        "desc": "Carga un inmenso rayo de energía verde con una mano y lo lanza con fuerza suficiente para borrar a Super 17 o dañar Dragones. Lo usó en SSJ4 con ambas manos.",
+        "cost": "40% Ki"
+      },
+      "haxTags": [
+        "Máquina de Rayos Blutz",
+        "Orgullo Evolucionado",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "son-gohan-ni-o-saga-saiyan-namek-830",
+      "name": "Son Gohan (Niño)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 1,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Masenko Iracundo",
+        "desc": "Pone las manos en la frente y libera toda su rabia en un rayo dorado devastador.",
+        "cost": "50% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Lluvia de Ira (Rush Masenko)",
+        "desc": "Un asalto físico incesante donde golpea sin descanso superando a enemigos de nivel dios temporalmente, finalizando con un ataque de Ki masivo (Usado contra Freezer 3ra forma).",
+        "cost": "Todo su Ki y Estamina restante"
+      },
+      "haxTags": [
+        "Ruptura de Límites (Ira Inconsciente)",
+        "Oozaru Incontrolable",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "son-gohan-joven-saga-androides-cell-945",
+      "name": "Son Gohan (Joven / Cell Games)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 3,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 2,
+      "haxTagsCount": 6,
+      "sampleSuperAttack": {
+        "name": "Masenko",
+        "desc": "Ráfaga icónica de Ki concentrado disparada a dos manos sobre la frente.",
+        "cost": "Consumo moderado de Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Father-Son Kamehameha (Oyako Kamehameha)",
+        "desc": "Onda colosal a una sola mano guiada por el espíritu de Goku que desintegra al objetivo a nivel molecular/atómico.",
+        "cost": "Requiere canalizar el 100% de la energía vital y de Ki restante"
+      },
+      "haxTags": [
+        "Saiyan",
+        "Híbrido Saiyan-Humano",
+        "Furia Latente / Rage Boost",
+        "Zenkai",
+        "Voluntad Inquebrantable",
+        "Usuario de Ki"
+      ]
+    },
+    {
+      "id": "gohan-ultimate-mystic-897",
+      "name": "Gohan Definitivo (Ultimate/Mystic)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 3,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 2,
+      "haxTagsCount": 6,
+      "sampleSuperAttack": {
+        "name": "Burst Rush / Asalto Furioso Místico",
+        "desc": "Secuencia fulminante de golpes de puño, rodillazos y patada de hacha que lanza al oponente contra el suelo, rematando con una ráfaga de Ki a quemarropa.",
+        "cost": "Consumo moderado de Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "I'm Here to Kill You (Poder Místico Pleno)",
+        "desc": "Despliegue absoluto de Ki místico que anula la regeneración enemiga por sobrecarga de daño directo y castiga cualquier intento de contraataque.",
+        "cost": "Gasto elevado de energía"
+      },
+      "haxTags": [
+        "Saiyan",
+        "Híbrido Saiyan-Humano",
+        "Desbloqueo Místico",
+        "Voluntad Inquebrantable",
+        "Usuario de Ki",
+        "Potencial Absoluto"
+      ]
+    },
+    {
+      "id": "son-gohan-saga-super-dragon-ball-super-39",
+      "name": "Son Gohan (Saga Super)",
+      "universe": "Dragon Ball Super",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Masenko Definitivo",
+        "desc": "Un torrente brutal de energía que barre amenazas cósmicas instantáneamente.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Makankosappo Especial (Modo Bestia)",
+        "desc": "Técnica de su maestro llevada a su clímax masivo; un rayo espiral de aura eléctrica ineludible que perfora núcleos universales como mantequilla.",
+        "cost": "75% Ki"
+      },
+      "haxTags": [
+        "Explosión de Potencial Oculto (Ira Absoluta)",
+        "Curación Mística (vía Ki)",
+        "Anulación de Durabilidad Física"
+      ]
+    },
+    {
+      "id": "gohan-del-futuro-l-nea-temporal-futura-43",
+      "name": "Gohan del Futuro",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Masenko Múltiple",
+        "desc": "Dispara desde la frente múltiples ráfagas mientras esquiva para alejar a oponentes dobles.",
+        "cost": "15% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Kamehameha Unilateral (One-Handed)",
+        "desc": "Carga un Kamehameha letal con su único brazo derecho impulsado por la desesperación de proteger el futuro.",
+        "cost": "50% Ki"
+      },
+      "haxTags": [
+        "Determinación Inquebrantable",
+        "Bloqueo Asimétrico",
+        "Manipulación de Escudos Ki Básicos"
+      ]
+    },
+    {
+      "id": "piccolo-saga-saiyan-namek-saga-saiyan-967",
+      "name": "Piccolo (Saga Namek)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 1,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Onda Expansiva Demoníaca",
+        "desc": "Una gran explosión centrada en su cuerpo para repeler.",
+        "cost": "15% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Makankosappo Veloz",
+        "desc": "Al ser asimilado, ya no necesita tanta carga para disparar ráfagas penetrantes altísimas.",
+        "cost": "25% Ki"
+      },
+      "haxTags": [
+        "Fusión Permanente Namek (Asimilación)",
+        "Regeneración Avanzada",
+        "Brazos Elásticos"
+      ]
+    },
+    {
+      "id": "piccolo-saga-cell-buu-saga-androides-946",
+      "name": "Piccolo (Saga Androides / Cell)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Makankosappo",
+        "desc": "Su ataque perforante clásico, ahora disparado mucho más rápido.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Granada Infernal (Hellzone Grenade)",
+        "desc": "Piccolo dispara cientos de ráfagas erráticas que parecen fallar, pero quedan suspendidas en el aire rodeando al enemigo. Luego baja los brazos bruscamente, haciendo que todas impacten a la vez en un punto muerto sin escape.",
+        "cost": "45% Ki"
+      },
+      "haxTags": [
+        "Regeneración Namekiana Avanzada",
+        "Magia de Kami (Creación de Ropa)",
+        "Gigantificación (Rara vez usada)"
+      ]
+    },
+    {
+      "id": "piccolo-saga-super-dragon-ball-super-228",
+      "name": "Piccolo (Saga Super)",
+      "universe": "Dragon Ball Super",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 4,
+      "sampleSuperAttack": {
+        "name": "Granada de Luz (Light Grenade)",
+        "desc": "Dispara una esfera concentrada con ambas manos que detona en una onda masiva.",
+        "cost": "15% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Makankosappo Combinado con Gohan",
+        "desc": "Carga su técnica al 200% mientras Gohan retiene al enemigo para atravesar a dos objetivos simultáneamente.",
+        "cost": "50% Ki"
+      },
+      "haxTags": [
+        "Makankosappo Perforador",
+        "Brazos Elásticos Gigantes",
+        "Regeneración Namekiana",
+        "Telepatía Fina"
+      ]
+    },
+    {
+      "id": "trunks-ni-o-saga-buu-209",
+      "name": "Trunks (Niño)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 3,
+      "sampleSuperAttack": {
+        "name": "Big Tree Cannon",
+        "desc": "Su propia versión del Final Flash, disparando una onda masiva con ambas manos.",
+        "cost": "20% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Fusión Metamoru (Mitad)",
+        "desc": "Técnica combinada con Goten para crear a Gotenks.",
+        "cost": "0% Ki (Requiere Goten)"
+      },
+      "haxTags": [
+        "Entrenamiento de Gravedad (Leve)",
+        "Genética Híbrida",
+        "Voluntad Indomable"
+      ]
+    },
+    {
+      "id": "freezer-saga-namek-saga-namek-167",
+      "name": "Freezer (Dragon Ball Z — Saga de Namek)",
+      "universe": "Dragon Ball Z",
+      "superAttacksCount": 2,
+      "ultimateAttacksCount": 1,
+      "passivesCount": 1,
+      "haxTagsCount": 5,
+      "sampleSuperAttack": {
+        "name": "Death Beam",
+        "desc": "Rayo púrpura lanzado del dedo, tan rápido que Piccolo no lo pudo ver.",
+        "cost": "10% Ki"
+      },
+      "sampleUltimateAttack": {
+        "name": "Death Ball / Supernova",
+        "desc": "Esfera colosal de fuego capaz de destruir el núcleo de un planeta al instante o con retraso.",
+        "cost": "50% Ki"
+      },
+      "haxTags": [
+        "Telequinesis Cósmica",
+        "Supernova Planetaria",
+        "Death Beam Perforante",
+        "Supervivencia al Vacío Espacial",
+        "Tsuibi Death Beam"
+      ]
+    }
+  ]
+}

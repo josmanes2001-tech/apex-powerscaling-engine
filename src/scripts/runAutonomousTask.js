@@ -1,0 +1,351 @@
+/**
+ * APEX UNIVERSAL AUTONOMOUS TASK RUNNER — GOLDEN STANDARD EDITION
+ * 
+ * Enriquecimiento Integral de Fichas con Máximo Rigor:
+ * - Auditoría de Formas Base + Transformaciones Canónicas y APEX-Custom
+ * - Arsenal Táctico con Costes de Stamina y Contrajuegos
+ * - Pasivas Fisiológicas continuas y Debilidades de combate
+ * - Combos Coordinados de Equipo (Team Combos de 3 Fases) y Sinergias
+ * - Compatibilidad Dinámica para cualquier número de personajes y archivos externos
+ */
+
+import fs from 'fs';
+import path from 'path';
+import http from 'http';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const projectRoot = path.resolve(__dirname, '../../');
+
+const CHARACTERS_FILE = path.join(projectRoot, 'src/data/characters.js');
+const OUTPUT_DIR = path.join(projectRoot, 'src/data');
+const PROXY_PORT = 4097;
+
+// CLI arguments
+const TASK_DESCRIPTION = process.argv[2] || 'full_enrichment';
+const TARGET_UNIVERSE = process.argv[3] || 'all';
+const MODEL = process.argv[4] || 'google/gemini-3.5-flash-lite';
+const MAX_LIMIT = process.argv[5] ? parseInt(process.argv[5], 10) : 0;
+const ROUNDS = process.argv[6] !== undefined ? parseInt(process.argv[6], 10) : 1;
+const BATCH_SIZE = 2;
+
+const SYSTEM_PROMPT_MASTER = `APEX MASTER ROSTER ENRICHMENT & AUDIT ENGINE
+ESTÁNDAR DORADO — MODO AUTÓNOMO DE ALTA PRECISIÓN TÁCTICA
+
+Actúa como Diseñador Maestro de Roster, Curador de Lore y Especialista en Arquitectura de Combate para APEX Power Scaling Engine.
+
+Tu misión es transformar cada personaje del lote en una ficha táctica de nivel maestro siguiendo estrictamente esta plantilla:
+
+1. RECONOCIMIENTO Y FIDELIDAD CRONOLÓGICA:
+   - Identifica al personaje por su nombre, saga, versión, universo y contexto canónico.
+   - Cero anacronismos: Respeta la línea temporal estricta de la saga indicada.
+
+2. AUDITORÍA EXHAUSTIVA DE FORMAS Y TRANSFORMACIONES:
+   - Toda ficha DEBE tener su FORMA BASE correctamente registrada.
+   - Para cada TRANSFORMACIÓN CANÓNICA y APEX-CUSTOM, genera:
+     * id y name descriptivo
+     * stats textuales y apexKiMultiplier (si aplica)
+     * activationCondition (trigger de entrada)
+     * staminaDrain (consumo por turno o coste de mantenimiento)
+     * grantedTags y suppressedTags
+     * grantedAbilities (ataques/técnicas exclusivas de la forma)
+     * limitations y drawbacks (desgaste muscular, fatiga, inestabilidad, tiempo límite)
+     * exitCondition y counterplay (reversión forzada o voluntaria)
+     * canonStatus: "source_backed" para canónicas, "apex_custom" para originales de APEX.
+
+3. ARSENAL TÁCTICO CON FÍSICA DE STAMINA:
+   - basicAttacks: Golpes marciales (coste 3-8 stamina, daño contundente/cortante).
+   - superAttacks: Técnicas de firma (coste 15-30 stamina, tiempo de carga, descripción, counterplay táctico).
+   - ultimateAttacks: Finishers definitivos (coste 35-50 stamina, condiciones de acierto, counterplay).
+   - passives: Rasgos biológicos/fisiológicos continuos de raza o entrenamiento (regeneración, Zenkai, adaptación, sentidos agudos).
+   - specialMechanics: Hax, sellos, manipulación de espacio/tiempo, barras de Ki.
+   - weaknesses: Puntos ciegos y vulnerabilidades físicas reales con counterTags asociados.
+
+4. SINERGIAS DE EQUIPO Y TEAM COMBOS DE 3 FASES:
+   - synergies: Vínculos tácticos (maestro-alumno, rivales, linaje, facción) con partnerTags y efecto pasivo.
+   - teamCombos: Ataques coordinados entre aliados específicos:
+     * partners: Lista de personajes participantes.
+     * sequence: Array de 3 pasos exactos [Apertura/Inmovilización, Canalización/Apoyo, Remate Definitivo].
+     * staminaCostPerParticipant: Desglose del gasto de energía de cada uno.
+     * effect: Efecto e impacto si el combo conecta con éxito.
+     * partialFailureResult: Qué ocurre si el rival interrumpe o esquiva un paso intermedio.
+     * canonStatus: "source_backed" o "apex_custom".
+
+5. NIVELES DE PODER, CALIBRACIÓN APEX-KI Y MULTIPLICADORES:
+   - Rigor en apexKiMultiplier: Cada transformación DEBE tener su multiplicador canónico verificado (ej. Kaio-ken x2=2, Kaio-ken x10=10, Kaio-ken x20=20, SSJ1=50, SSJ2=100, SSJ3=400, Oozaru=10, Espalda Demonio Baki=2.5, Gear 2nd=5, etc.). Si faltaba o estaba en 1 erróneamente, se corrige.
+   - Rigor en Descripciones de Potencia y Feats (AP): Audita que las descripciones de potencia destructiva (Joules, Megatones, escala planetaria o cósmica) correspondan rigurosamente al Tier exacto del personaje.
+   - Roleplay y Comportamiento Táctico: Modela el estilo de combate y la gestión de energía con fidelidad matemática al nivel de poder del personaje.
+
+6. POLÍTICA DE NO BORRAR Y CAMPOS INMUTABLES:
+   - Conserva todo dato previo correcto.
+   - PROHIBIDO modificar tierExact, tierRank, powerKey, APEX-Ki, Source Ki o stats numéricas primarias en el motor de simulación.
+   - Toda entrada debe incluir "doesChangeTier": false, "doesChangePowerKey": false.
+
+SALIDA ESTRICTA: Devuelve EXCLUSIVAMENTE un objeto JSON válido con esquema:
+{
+  "batchId": "...",
+  "universe": "...",
+  "results": [ /* array de fichas enriquecidas */ ],
+  "integrationPatch": [ /* array de operaciones de parche atómicas */ ]
+}
+Sin markdown fuera del JSON, sin saludos, sin explicaciones.`;
+
+async function loadCharacters() {
+  // 1. Carga desde archivo JSON o JS externo si se especifica
+  if (TARGET_UNIVERSE && (TARGET_UNIVERSE.endsWith('.json') || TARGET_UNIVERSE.endsWith('.js'))) {
+    const targetPath = path.isAbsolute(TARGET_UNIVERSE) ? TARGET_UNIVERSE : path.resolve(projectRoot, TARGET_UNIVERSE);
+    if (fs.existsSync(targetPath)) {
+      console.log(`📂 Cargando lote de personajes desde archivo externo: ${targetPath}`);
+      if (targetPath.endsWith('.json')) {
+        const raw = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
+        return Array.isArray(raw) ? raw : (raw.characters || raw.records || [raw]);
+      } else {
+        const customMod = await import('file://' + targetPath.replace(/\\/g, '/'));
+        return customMod.INITIAL_CHARACTERS || customMod.characters || [];
+      }
+    }
+  }
+
+  // 2. Carga dinámica del Roster completo de APEX
+  const mod = await import('file://' + CHARACTERS_FILE.replace(/\\/g, '/'));
+  let chars = mod.INITIAL_CHARACTERS || [];
+
+  // 3. Filtrar por universo si no es 'all'
+  if (TARGET_UNIVERSE && TARGET_UNIVERSE !== 'all') {
+    chars = chars.filter(c => 
+      (c.universe || '').toLowerCase().includes(TARGET_UNIVERSE.toLowerCase()) ||
+      (c.category || '').toLowerCase().includes(TARGET_UNIVERSE.toLowerCase()) ||
+      (c.saga || '').toLowerCase().includes(TARGET_UNIVERSE.toLowerCase())
+    );
+  }
+  return chars;
+}
+
+import { executeResilientCompletion } from './aiKeyRotator.js';
+
+function sendCompletion(payload) {
+  return executeResilientCompletion(SYSTEM_PROMPT_MASTER, payload, MODEL);
+}
+
+function cleanJson(raw) {
+  if (typeof raw !== 'string') return '{}';
+  let text = raw.trim().replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/i, '');
+  const start = text.indexOf('{');
+  if (start === -1) return '{}';
+  text = text.substring(start);
+
+  // 1. Limpieza inicial de comas finales inválidas (trailing commas)
+  text = text.replace(/,\s*([}\]])/g, '$1');
+
+  // 2. Intento directo de parseo
+  try {
+    JSON.parse(text);
+    return text;
+  } catch (initialErr) {
+    // 3. Intento de reparación automática de cierres cortados
+    let stack = [];
+    let inString = false;
+    let escaped = false;
+
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (escaped) { escaped = false; continue; }
+      if (c === '\\') { escaped = true; continue; }
+      if (c === '"') { inString = !inString; continue; }
+      if (!inString) {
+        if (c === '{') stack.push('}');
+        else if (c === '[') stack.push(']');
+        else if (c === '}' || c === ']') {
+          if (stack.length > 0 && stack[stack.length - 1] === c) stack.pop();
+        }
+      }
+    }
+
+    if (inString) text += '"';
+    while (stack.length > 0) {
+      text += stack.pop();
+    }
+
+    text = text.replace(/,\s*([}\]])/g, '$1');
+    return text;
+  }
+}
+
+function renderProgressBar(current, total, length = 22) {
+  if (!total || total <= 0) return '░'.repeat(length);
+  const pct = Math.min(1, Math.max(0, current / total));
+  const filled = Math.round(length * pct);
+  const empty = length - filled;
+  return '█'.repeat(filled) + '░'.repeat(empty);
+}
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function main() {
+  const startTime = Date.now();
+  const targetRounds = (ROUNDS === 0) ? Infinity : ROUNDS;
+  const isInfinite = (ROUNDS === 0);
+
+  console.log('╔════════════════════════════════════════════════════════════════╗');
+  console.log('║   🌟 APEX MASTER ROSTER ENRICHMENT ENGINE (GOLDEN STANDARD)    ║');
+  console.log('╠════════════════════════════════════════════════════════════════╣');
+  console.log(`║  • Tarea:        ${TASK_DESCRIPTION.toUpperCase().padEnd(46)}║`);
+  console.log(`║  • Universo:     ${TARGET_UNIVERSE.toUpperCase().padEnd(46)}║`);
+  console.log(`║  • Motor IA:     ${MODEL.padEnd(46)}║`);
+  console.log(`║  • Modo Vueltas: ${isInfinite ? 'Bucle Infinito Nocturno (Continuo)'.padEnd(46) : `${ROUNDS} Vuelta(s) al Roster`.padEnd(46)}║`);
+  console.log(`║  • Limite Lote:  ${MAX_LIMIT > 0 ? `${MAX_LIMIT} personajes por vuelta`.padEnd(46) : 'TODO el Roster (Completo)'.padEnd(46)}║`);
+  console.log('╚════════════════════════════════════════════════════════════════╝\n');
+
+  let baseChars = await loadCharacters();
+  if (MAX_LIMIT > 0 && MAX_LIMIT < baseChars.length) {
+    baseChars = baseChars.slice(0, MAX_LIMIT);
+  }
+  const totalChars = baseChars.length;
+  const totalBatches = Math.ceil(totalChars / BATCH_SIZE);
+
+  const safeUniverseName = TARGET_UNIVERSE.replace(/[\s\W]+/g, '_').toLowerCase();
+  const outputFile = path.join(OUTPUT_DIR, `apex_golden_enriched_${safeUniverseName}.json`);
+  const statusFile = path.join(OUTPUT_DIR, 'audit_live_status.json');
+  const logFile = path.join(OUTPUT_DIR, 'audit_live.log');
+
+  let allPatches = [];
+  let allResults = [];
+  if (fs.existsSync(outputFile)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
+      allResults = data.results || [];
+      allPatches = data.integrationPatch || [];
+    } catch {}
+  }
+
+  for (let currentRound = 1; currentRound <= targetRounds; currentRound++) {
+    const roundHeader = isInfinite ? `🔄 VUELTA ${currentRound} (BUCLE INFINITO NOCTURNO)` : `🔄 VUELTA ${currentRound} DE ${ROUNDS}`;
+    console.log(`\n════════════════════════════════════════════════════════════════`);
+    console.log(`   ${roundHeader}`);
+    console.log(`   📋 ${totalChars} personajes en ${totalBatches} lotes`);
+    console.log(`════════════════════════════════════════════════════════════════\n`);
+
+    for (let i = 0; i < totalChars; i += BATCH_SIZE) {
+      const batchStart = Date.now();
+      const end = Math.min(i + BATCH_SIZE, totalChars);
+      const batch = baseChars.slice(i, end);
+      const batchIndex = Math.floor(i / BATCH_SIZE) + 1;
+      const batchSummary = batch.map(c => c.name).join(' | ');
+      const batchId = `golden_round_${currentRound}_batch_${batchIndex}`;
+
+      const progressPctNum = (end / totalChars) * 100;
+      const progressPct = progressPctNum.toFixed(1);
+      const bar = renderProgressBar(end, totalChars, 20);
+
+      console.log(`\n┌──────────────────────────────────────────────────────────────┐`);
+      console.log(`│ 🌌 [V${currentRound}] LOTE ${batchIndex}/${totalBatches} · [${bar}] ${progressPct}%`);
+      console.log(`│ 👥 ${batchSummary.slice(0, 58)}...`);
+      console.log(`└──────────────────────────────────────────────────────────────┘`);
+
+      const payload = {
+        mode: 'APEX_GOLDEN_ROSTER_ENRICHMENT',
+        batchId: batchId,
+        round: currentRound,
+        auditMode: 'continuous_auto_enrichment',
+        crossVerseMode: false,
+        allowApexCustomAutoIntegration: true,
+        maxRecordsPerRun: BATCH_SIZE,
+        requestedFocus: [
+          'full_audit', 'base_form_verification', 'canonical_transformations',
+          'apex_custom_states', 'tactical_arsenal', 'stamina_physics', 
+          'counterplay_mechanics', 'physiological_passives', 'tactical_weaknesses', 
+          'team_synergies', 'three_phase_team_combos', 'hax_tags'
+        ],
+        records: batch
+      };
+
+      let attempts = 0;
+      let ok = false;
+      while (attempts < 5 && !ok) {
+        attempts++;
+        try {
+          const raw = await sendCompletion(payload);
+          const parsed = JSON.parse(cleanJson(raw));
+          
+          if (parsed.results || parsed.integrationPatch) {
+            const newPatches = parsed.integrationPatch || [];
+            allPatches.push(...newPatches);
+            allResults.push(...(parsed.results || []));
+
+            fs.writeFileSync(outputFile, JSON.stringify({
+              universe: TARGET_UNIVERSE,
+              currentRound: currentRound,
+              totalProcessed: end,
+              results: allResults,
+              integrationPatch: allPatches
+            }, null, 2), 'utf8');
+
+            const batchDurationSec = ((Date.now() - batchStart) / 1000).toFixed(1);
+            const totalElapsedMin = ((Date.now() - startTime) / 60000).toFixed(1);
+            const totalBatchesProcessed = (currentRound - 1) * totalBatches + batchIndex;
+            const avgPerBatch = (Date.now() - startTime) / totalBatchesProcessed / 1000;
+            const remainingBatchesInRound = totalBatches - batchIndex;
+            const etaMin = ((remainingBatchesInRound * avgPerBatch) / 60).toFixed(1);
+
+            console.log(`  ✅ Lote ${batchIndex} procesado en ${batchDurationSec}s.`);
+            console.log(`  📊 [${bar}] ${end}/${totalChars} pjs | Ops acumuladas: ${allPatches.length} | Tiempo: ${totalElapsedMin}m (ETA vuelta: ~${etaMin}m)`);
+
+            // Guardar estado en vivo para monitoreo
+            const liveState = {
+              active: true,
+              round: currentRound,
+              totalRounds: isInfinite ? 'Infinito' : ROUNDS,
+              currentBatch: batchIndex,
+              totalBatches: totalBatches,
+              processedChars: end,
+              totalChars: totalChars,
+              percent: progressPct,
+              totalPatches: allPatches.length,
+              lastBatchDurationSec: batchDurationSec,
+              elapsedMin: totalElapsedMin,
+              etaMin: etaMin,
+              lastUpdated: new Date().toLocaleTimeString()
+            };
+            fs.writeFileSync(statusFile, JSON.stringify(liveState, null, 2), 'utf8');
+            fs.appendFileSync(logFile, `[${new Date().toLocaleTimeString()}] V${currentRound} Lote ${batchIndex}/${totalBatches} (${progressPct}%) [${batchSummary.slice(0, 40)}] -> OK (+${newPatches.length} ops)\n`, 'utf8');
+
+            ok = true;
+          } else {
+            throw new Error('La respuesta JSON no contiene results ni integrationPatch.');
+          }
+        } catch (err) {
+          console.error(`  ⚠️ Intento ${attempts}/5 falló: ${err.message}`);
+          if (attempts < 5) {
+            const waitTime = attempts * 3500;
+            console.log(`  ⏳ Reintentando en ${waitTime / 1000}s...`);
+            await sleep(waitTime);
+          }
+        }
+      }
+
+      if (!ok) {
+        console.error(`  ❌ Lote ${batchId} omitido tras 5 intentos para continuar el avance.`);
+      }
+
+      await sleep(1200);
+    }
+
+    console.log(`\n🏆 ¡VUELTA ${currentRound} COMPLETADA AL 100%! (${totalChars} personajes enriquecidos)`);
+    if (isInfinite || currentRound < targetRounds) {
+      console.log(`⏳ Iniciando siguiente vuelta de refinamiento en 5 segundos...`);
+      await sleep(5000);
+    }
+  }
+
+  const totalMin = ((Date.now() - startTime) / 60000).toFixed(1);
+  console.log('\n╔════════════════════════════════════════════════════════════════╗');
+  console.log(`║  🎉 ¡ENRIQUECIMIENTO DORADO APEX FINALIZADO CON ÉXITO!        ║`);
+  console.log(`║  • Fichas maestras enriquecidas: ${allResults.length.toString().padEnd(30)}║`);
+  console.log(`║  • Operaciones atómicas de parche: ${allPatches.length.toString().padEnd(28)}║`);
+  console.log(`║  • Tiempo total empleado: ${`${totalMin} minutos`.padEnd(36)}║`);
+  console.log('╚════════════════════════════════════════════════════════════════╝\n');
+
+  fs.writeFileSync(statusFile, JSON.stringify({ active: false, completed: true, totalPatches: allPatches.length, totalMin }, null, 2), 'utf8');
+}
+
+main().catch(console.error);

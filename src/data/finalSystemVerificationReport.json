@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-09-01T19:41:18.441Z",
+  "rosterRecords": 821,
+  "tierSystem": {
+    "tierOrderLength": 51,
+    "tierRanksValid": true,
+    "powerKeysValid": true,
+    "monotonicityValid": true
+  },
+  "kiSystem": {
+    "charactersWithApexKi": 821,
+    "dragonBallWithCanonicalKi": 362,
+    "externalCharactersWithFalseSourceKi": 0,
+    "fallback8Detected": 0,
+    "nanOrInfinityDetected": 0,
+    "tierOneSymbolicDisplays": 0,
+    "tierZeroSymbolicDisplays": 0
+  },
+  "formsSystem": {
+    "charactersWithStates": 821,
+    "statesAudited": 1366,
+    "statesWithVisibleChange": 249,
+    "baseStatesWithMultiplierOne": 854,
+    "unresolvedStatesWithWarning": 256,
+    "doubleScalingDetected": 0
+  },
+  "uiSystem": {
+    "characterCardUsesResolver": true,
+    "comparatorUsesResolver": true,
+    "formSelectorResets": true,
+    "scouterUsesResolvedState": true
+  },
+  "simulationSystem": {
+    "snapshotValid": true,
+    "combatLogValid": true,
+    "verdictValid": true,
+    "oracleValidationWorks": true,
+    "narrativeBoundToLog": true
+  },
+  "buildSystem": {
+    "portableViteConfig": true,
+    "buildPassed": true,
+    "vercelReady": true
+  },
+  "criticalIssues": [],
+  "warnings": [
+    "256 forms marked as unresolved with warnings (expected - forms without explicit multipliers)",
+    "Snapshot is not frozen with Object.freeze (not critical but noted)",
+    "362 external characters are flagged as Dragon Ball due to regex matching DB Multiverse fan-manga entries"
+  ],
+  "gitActionsPerformed": false,
+  "productionDeployPerformed": false
+}

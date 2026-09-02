@@ -1,0 +1,2127 @@
+[
+  {
+    "id": "son-goku-ni-o-dragon-ball-cl-sico-987",
+    "name": "Son Goku (Niño)",
+    "alias": "El Niño Mono Salvaje",
+    "universe": "Dragon Ball (Clásico)",
+    "saga": "Búsqueda de las Esferas / Red Ribbon / Rey Piccolo",
+    "version": "Pre-Rey Piccolo (Agua Ultra Divina)",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "260 Unidades",
+      "sourceKiDisplay": "260 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "goku-nino-base",
+        "name": "Goku Niño (Estado Base)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "goku-nino-oozaru",
+        "name": "Goku Niño (Ohzaru / Mono Gigante)",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Mordiscos salvajes, golpizas al estilo mono, uso del Báculo Mágico para golpear de lejos.",
+      "superAttacks": [
+        "Kamehameha",
+        "Janken (Piedra, Papel, Tijeras)"
+      ],
+      "ultimateAttacks": [
+        "Golpe del Mono Gigante (Penetración Oozaru)"
+      ],
+      "passives": [
+        "Corazón Puro"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Cola de Oozaru",
+      "Báculo Mágico (Nyoibo Extensión Infinita)",
+      "Kamehameha Impulsor"
+    ],
+    "synergies": [
+      {
+        "name": "Sangre Saiyajin (Zenkai Compartido)",
+        "partnerTags": [
+          "Goku",
+          "Vegeta",
+          "Gohan",
+          "Trunks",
+          "Broly",
+          "Goten"
+        ],
+        "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+      }
+    ],
+    "weaknesses": "Su cola (si la agarran con fuerza, pierde el 100% de su energía y cae al suelo inútil). El hambre extrema lo debilita muchísimo.",
+    "existingFeats": [
+      "Derrotó a la organización paramilitar más grande de la Tierra (Ejército Red Ribbon) él solo.",
+      "Atravesó y mató al Rey Demonio Piccolo impulsado con un solo brazo funcional.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "son-goku-saga-namek-saga-namek-176",
+    "name": "Son Goku (Saga Namek)",
+    "alias": "El Legendario Super Saiyajin",
+    "universe": "Dragon Ball Z",
+    "saga": "Saga de Namek",
+    "version": "Despertar del Super Saiyajin (Furia en Namek)",
+    "tier": "4-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 32,
+      "powerKey": 3299,
+      "apexKiDisplay": "3.00 Millones",
+      "sourceKiDisplay": "3.0 Millones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "goku-namek-base",
+        "name": "Son Goku (Estado Base Namek)",
+        "multiplier": 1,
+        "tier": "4-B"
+      },
+      {
+        "id": "goku-namek-kk20",
+        "name": "Kaio-ken x10 / x20",
+        "multiplier": 1,
+        "tier": "4-B"
+      },
+      {
+        "id": "goku-namek-ssj1",
+        "name": "Super Saiyan 1 (Despertar Legendario)",
+        "multiplier": 1,
+        "tier": "4-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Golpes coléricos a puño cerrado, combos aéreos (Meteor Smash).",
+      "superAttacks": [
+        "Kamehameha Furioso",
+        "Ráfaga Rompe-Meteoros"
+      ],
+      "ultimateAttacks": [
+        "Super Kamehameha (Ira de Namek)"
+      ],
+      "passives": [
+        "Corazón Gélido del SSJ"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Amplificación de Ira",
+      "Telepatía Básica (Kaio)",
+      "Telequinesis Defensiva Mínima"
+    ],
+    "synergies": [
+      {
+        "name": "Sangre Saiyajin (Zenkai Compartido)",
+        "partnerTags": [
+          "Goku",
+          "Vegeta",
+          "Gohan",
+          "Trunks",
+          "Broly",
+          "Goten"
+        ],
+        "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+      }
+    ],
+    "weaknesses": "Falta de control de ira, pérdida de Stamina drástica hacia el final del combate, y vulnerabilidad a ataques en áreas orgánicas sin Ki si baja la guardia (sobrevive al vacío de milagro).",
+    "existingFeats": [
+      "Devolvió el rayo mortal de Freezer con un simple parpadeo/manotazo.",
+      "Rompió a Freezer 100% psicológicamente al demostrar su superioridad y luego renunciar a seguir peleando.",
+      "Sobrevivió a la detonación final del planeta Namek estando malherido y exhausto."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "vegeta-llegada-a-la-tierra-saga-saiyan-504",
+    "name": "Vegeta (Llegada a la Tierra)",
+    "alias": "El Príncipe de los Saiyans",
+    "universe": "Dragon Ball Z",
+    "saga": "Saga Saiyan",
+    "version": "Invasor Élite",
+    "tier": "5-A",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 27,
+      "powerKey": 2794,
+      "apexKiDisplay": "18.00 Mil",
+      "sourceKiDisplay": "18.000 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "vegeta-scouter",
+        "name": "Príncipe Saiyan",
+        "multiplier": 1,
+        "tier": "5-A"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Golpes precisos, rodillazos a la columna vertebral, pisotones sádicos a rivales caídos.",
+      "superAttacks": [
+        "Cañón Galick (Galick Gun)",
+        "Luna Artificial"
+      ],
+      "ultimateAttacks": [
+        "Transformación Oozaru"
+      ],
+      "passives": [
+        "Armadura de Combate Saiyan"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Transformación Oozaru Cósmica",
+      "Luna Artificial de Ki (Bola de Poder)",
+      "Resiliencia de Orgullo"
+    ],
+    "synergies": [
+      {
+        "name": "Sangre Saiyajin (Zenkai Compartido)",
+        "partnerTags": [
+          "Goku",
+          "Vegeta",
+          "Gohan",
+          "Trunks",
+          "Broly",
+          "Goten"
+        ],
+        "effect": "Si un aliado Saiyan cae en combate, el usuario recibe un Zenkai instantáneo que restaura su AP y Stamina a su pico."
+      }
+    ],
+    "weaknesses": "Cortar su cola anula el modo Oozaru. Si su orgullo es quebrado (ser superado por un 'clase baja'), pierde los estribos y desperdicia Ki.",
+    "existingFeats": [
+      "Soportó un Kamehameha potenciado con Kaio-ken x4.",
+      "Sobrevivió al impacto de la Genkidama y al aplastamiento de un Oozaru consecutivamente.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "son-gohan-joven-saga-androides-cell-945",
+    "name": "Son Gohan (Joven / Cell Games)",
+    "alias": "El Despertar del Guerrero Definitivo",
+    "universe": "Dragon Ball Z",
+    "saga": "Saga de los Androides y Cell",
+    "version": "Super Saiyan 2",
+    "tier": "4-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 32,
+      "powerKey": 3299,
+      "apexKiDisplay": "2.80 Mil Millones",
+      "sourceKiDisplay": "2.80 Mil Millones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "gohan-joven-base",
+        "name": "Son Gohan (Estado Base)",
+        "multiplier": 1,
+        "tier": "4-B"
+      },
+      {
+        "id": "gohan-joven-ssj1",
+        "name": "Super Saiyajin (Máximo Poder)",
+        "multiplier": 1,
+        "tier": "4-B"
+      },
+      {
+        "id": "gohan-joven-ssj2",
+        "name": "Super Saiyajin 2 (Ira Desatada)",
+        "multiplier": 1,
+        "tier": "4-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Artes marciales del estilo Kame y escuela de Piccolo con reflejos MFTL+.",
+      "superAttacks": [
+        "Masenko",
+        "Super Kamehameha",
+        "Gekiretsu Madan"
+      ],
+      "ultimateAttacks": [
+        "Father-Son Kamehameha (Oyako Kamehameha)"
+      ],
+      "passives": [
+        "Furia Desatada (Rage Boost)",
+        "Zenkai Saiyan"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Saiyan",
+      "Híbrido Saiyan-Humano",
+      "Furia Latente / Rage Boost",
+      "Zenkai",
+      "Voluntad Inquebrantable",
+      "Usuario de Ki"
+    ],
+    "synergies": [
+      {
+        "name": "Vínculo Padre e Hijo",
+        "partnerTags": [
+          "Goku",
+          "Son Goku"
+        ],
+        "effect": "Incrementa el daño del Kamehameha en un +25% si Goku está presente o como apoyo espiritual."
+      }
+    ],
+    "weaknesses": "Exceso de arrogancia que llevó a la muerte de Goku y Trunks. Falta de instinto marcial puro sin estar impulsado por la furia.",
+    "existingFeats": [
+      "Aniquiló a 7 Cell Jrs en menos de 10 segundos.",
+      "Hizo vomitar a Cell Perfecto con solo dos golpes físicos.",
+      "Ganó un choque de Kamehamehas contra un ataque que iba a destruir el Sistema Solar, usando solo un brazo."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "krilin-db-clasico",
+    "name": "Krilin (Dragon Ball Clásico)",
+    "alias": "El Monje de Orin / Discípulo de Roshi",
+    "universe": "Dragon Ball (Clásico)",
+    "saga": "21º - 23º Tenkaichi Budokai / Rey Piccolo",
+    "version": "Joven Artista Marcial de la Escuela Tortuga",
+    "tier": "8-A",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 9,
+      "powerKey": 976,
+      "apexKiDisplay": "366 Unidades",
+      "sourceKiDisplay": "366 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "krilin-db-base",
+        "name": "Krilin Niño (Estado Base)",
+        "multiplier": 1,
+        "tier": "8-A"
+      },
+      {
+        "id": "krilin-db-21torneo",
+        "name": "Krilin (21º Torneo / Estilo Tortuga)",
+        "multiplier": 1,
+        "tier": "8-A"
+      },
+      {
+        "id": "krilin-db-23torneo",
+        "name": "Krilin (23º Torneo / Adulto Joven)",
+        "multiplier": 1,
+        "tier": "8-A"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Golpes acrobáticos del estilo Tortuga, patadas aéreas y codazos veloces.",
+      "superAttacks": [
+        "Kamehameha",
+        "Zanshinken (Técnica de la Imagen Residual)"
+      ],
+      "ultimateAttacks": [
+        "Doble Kamehameha Dirigido"
+      ],
+      "passives": [
+        "Sin Nariz Física"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Kamehameha",
+      "Zanshinken (Imagen Residual)",
+      "Inmunidad Olfativa (Sin Nariz)"
+    ],
+    "synergies": [],
+    "weaknesses": "Fuerza física limitada comparada con los Saiyans o demonios.",
+    "existingFeats": [
+      "Venció a Bacterian al recordar que no tenía nariz física.",
+      "Puso contra las cuerdas a Jackie Chun (Maestro Roshi) en un duelo de ultra-velocidad.",
+      "Se ganó el respeto del Rey Demonio Piccolo y su reencarnación Ma Junior."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "vegetto-base-saga-buu-120",
+    "name": "Vegetto (Saga Buu)",
+    "alias": "El Guerrero Pothala Supremo / Super Vegetto",
+    "universe": "Dragon Ball Z",
+    "saga": "Saga de Buu",
+    "version": "Super Saiyan (Pothala Fusion)",
+    "tier": "3-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 35,
+      "powerKey": 3602,
+      "apexKiDisplay": "5.00 Billones",
+      "sourceKiDisplay": "5.00 Billones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "vegetto-base-z",
+        "name": "Vegetto Base",
+        "multiplier": 1,
+        "tier": "3-B"
+      },
+      {
+        "id": "super-vegetto",
+        "name": "Super Vegetto",
+        "multiplier": 1,
+        "tier": "3-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Golpes secos con las piernas, bloqueos con los brazos cruzados, burlas crueles ('¿Eso es todo lo que puede hacer el gran monstruo?').",
+      "superAttacks": [
+        "Big Bang Attack / Kamehameha",
+        "Espada de Espíritu Estelar (Spirit Sword)"
+      ],
+      "ultimateAttacks": [
+        "Final Kamehameha"
+      ],
+      "passives": [
+        "Presión Divina Inquebrantable",
+        "Asimilación Genética Biológica"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Fusión Pothala",
+      "Inmunidad Total a Transmutación (Caramelo Peleonero)",
+      "Barrera de Energía Penetrante",
+      "Espada Espiritual Pura"
+    ],
+    "synergies": [
+      {
+        "name": "Biomasa Compartida",
+        "partnerTags": [
+          "Androide",
+          "Cell"
+        ],
+        "effect": "Aumenta la eficiencia de absorción cuando hay androides o variantes en el equipo."
+      }
+    ],
+    "weaknesses": "El ambiente del estómago de Buu desactivó temporalmente el estado divino/mágico de los pendientes, separando a Goku y Vegeta (Retcon en DBS: Límite de 1 hora por no ser Kaioshins).",
+    "existingFeats": [
+      "No sufrió absolutamente ningún daño en toda su pelea contra Buuhan (el mayor monstruo de Z).",
+      "Peleó, hirió y destrozó a un Dios Oscuro siendo del tamaño de un confite.",
+      "Detuvo una grieta dimensional con un solo golpe seco (Kiai)."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "rey-cold-saga-androides-751",
+    "name": "Rey Cold",
+    "alias": "El Gran Patriarca del Imperio del Frío",
+    "universe": "Dragon Ball Z",
+    "saga": "Saga Androides / Mecha Freezer",
+    "version": "Forma Restringida (Segunda Forma)",
+    "tier": "4-C",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 30,
+      "powerKey": 3097,
+      "apexKiDisplay": "156.00 Millones",
+      "sourceKiDisplay": "156.0 Millones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "cold-segunda",
+        "name": "Forma Estándar (Segunda Forma)",
+        "multiplier": 1,
+        "tier": "4-C"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Golpes pesados con cuernos y cola gigante.",
+      "superAttacks": [
+        "Rayo de Muerte Real"
+      ],
+      "ultimateAttacks": [
+        "Estocada de la Espada Saiyan"
+      ],
+      "passives": [
+        "Emperador Oculto"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Supervivencia en el Vacío Espacial",
+      "Linaje Mutante del Frío",
+      "Voluntad Indomable"
+    ],
+    "synergies": [],
+    "weaknesses": "Pésima evaluación del Ki ajeno; creyó que la espada le daba poder a Trunks.",
+    "existingFeats": [
+      "Gobernó el imperio galáctico durante siglos antes de delegarlo a Freezer.",
+      "Su Ki fue sentido en la Tierra a años luz de distancia.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "yujiro-hanma-baki",
+    "name": "Yujiro Hanma",
+    "alias": "El Ogro / La Criatura Más Fuerte del Planeta",
+    "universe": "Baki the Grappler / Baki Hanma",
+    "saga": "Son of Ogre / Torneo Máximo",
+    "version": "Demon Back (Espalda del Demonio Activada)",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Estado Base (El Ogro Relajado)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "demon-back",
+        "name": "Espalda del Demonio (Demon Back)",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Bofetadas sónicas, pisotones que agrietan estadios, golpes directos con nudillos de diamante.",
+      "superAttacks": [
+        "Benda (Golpe del Látigo Dérmico)",
+        "Xiao-Lee Ofensivo (Flujo de Absorción y Devolución)"
+      ],
+      "ultimateAttacks": [
+        "Puñetazo del Ogro: Despertar de la Espalda del Demonio"
+      ],
+      "passives": [
+        "Visión Anatómica de Rayos X"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Demon Back (Espalda del Demonio)",
+      "Xiao-Lee Defensivo & Ofensivo",
+      "Lectura Anatómica de Debilidades de Rayos X",
+      "Golpe de Látigo Benda",
+      "Detener Terremotos a Puño Limpio"
+    ],
+    "synergies": [
+      {
+        "name": "Resonancia Maldita",
+        "partnerTags": [
+          "Gojo",
+          "Sukuna",
+          "Yuji",
+          "Megumi"
+        ],
+        "effect": "Aumenta el AP de los ataques mágicos y reduce el coste de Dominio si pelean juntos."
+      }
+    ],
+    "weaknesses": "Arrogancia extrema: Disfruta recibiendo los mejores ataques del rival solo para demostrar su absoluta superioridad genética.",
+    "existingFeats": [
+      "Detuvo un terremoto en curso golpeando el suelo con el puño.",
+      "Caminó a través de un rayo eléctrico cayendo del cielo sin inmutarse.",
+      "Obligó a todos los presidentes de Estados Unidos a firmar un pacto de no agresión individual con él."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "baki-hanma-baki",
+    "name": "Baki Hanma",
+    "alias": "El Campeón del Domo Subterráneo / El Hijo del Ogro",
+    "universe": "Baki the Grappler / Baki Hanma",
+    "saga": "Son of Ogre / Padre contra Hijo",
+    "version": "Demon Back + Demon Brain",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Estado Base (El Campeón Técnico)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "demon-back",
+        "name": "Espalda del Demonio Despertada",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Combinaciones de boxeo, muay thai, llaves de sumisión jiujitsu, codazos al mentón.",
+      "superAttacks": [
+        "Cockroach Dash (Aceleración Instantánea)",
+        "Inconsciencia de 0.5 Segundos"
+      ],
+      "ultimateAttacks": [
+        "Puño Triceratops + Demon Back"
+      ],
+      "passives": [
+        "Endorfina de Combate Extrema"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Demon Back (Espalda del Demonio)",
+      "Demon Brain (Cerebro del Demonio)",
+      "Ataque del 0.5 Segundo (Inconsciencia Motora)",
+      "Puño Triceratops (Estilo Imaginario)",
+      "Gota de Cockroach Dash (Aceleración de Cucaracha Mach 3)"
+    ],
+    "synergies": [],
+    "weaknesses": "Masa muscular humana estándar: Puede ser dañado por armas cortantes directas o golpes de seres con AP masivamente superior.",
+    "existingFeats": [
+      "Derrotó a Pickle, el humano prehistórico gigante que cazaba tiranosaurios rex.",
+      "Llevó a Yujiro Hanma a una pelea a muerte hasta ser reconocido como el número uno.",
+      "Ejecutó el Cockroach Dash noqueando a Oliva en su propia prisión."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "satoru-gojo-jjk",
+    "name": "Satoru Gojo",
+    "alias": "El Hechicero Más Fuerte de la Era Moderna",
+    "universe": "Jujutsu Kaisen",
+    "saga": "Batalla Decisiva de Shinjuku",
+    "version": "Seis Ojos + Infinito + Púrpura Ilimitado 200%",
+    "tier": "7-A",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 15,
+      "powerKey": 1582,
+      "apexKiDisplay": "1.75 Mil",
+      "sourceKiDisplay": "800 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Estado Base (Venda en los Ojos)",
+        "multiplier": 1,
+        "tier": "7-A"
+      },
+      {
+        "id": "unsealed-six-eyes",
+        "name": "Seis Ojos Desatados (Shinjuku Showdown)",
+        "multiplier": 1,
+        "tier": "7-A"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Puñetazos cargados de Azul que succionan el espacio, Black Flash consecutivos.",
+      "superAttacks": [
+        "Azul (Atracción) & Rojo (Repulsión Divergente)",
+        "Expansión de Dominio: Vacío Inconmensurable (Muryōkūsho)"
+      ],
+      "ultimateAttacks": [
+        "Púrpura Ilimitado Ilimitado (200% Hollow Purple Remoto)"
+      ],
+      "passives": [
+        "Filtro Automático del Infinito (Mugen Activo 24/7)"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Barrera del Infinito (Mugen - Intangibilidad Espacial)",
+      "Seis Ojos (Rikugan - Visión Atómica & Cero Gasto de Energía)",
+      "Expansión de Dominio: Vacío Inconmensurable (Muryōkūsho)",
+      "Púrpura Ilimitado (Hollow Purple - Borrado de Masa)",
+      "Azul & Rojo (Atracción y Repulsión Espacial)"
+    ],
+    "synergies": [
+      {
+        "name": "Resonancia Maldita",
+        "partnerTags": [
+          "Gojo",
+          "Sukuna",
+          "Yuji",
+          "Megumi"
+        ],
+        "effect": "Aumenta el AP de los ataques mágicos y reduce el coste de Dominio si pelean juntos."
+      }
+    ],
+    "weaknesses": "Ataques que corten o anulen el espacio mismo (como el Corte Mundial de Sukuna o la Lanza Invertida del Cielo).",
+    "existingFeats": [
+      "Activó su dominio por 0.2 segundos noqueando a miles de maldiciones y civiles sin causarles muerte cerebral permanente.",
+      "Sobrevivió a los cortes dentro del Santuario Malévolo de Sukuna usando Técnica Maldita Inversa a máxima potencia.",
+      "Destruyó a Toji Fushiguro tras despertar y descubrir el núcleo de la energía maldita."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "sukuna-ryomen-jjk-20sellos-s001",
+    "name": "Ryomen Sukuna",
+    "alias": "El Rey de las Maldiciones / La Calamidad",
+    "universe": "Jujutsu Kaisen",
+    "saga": "Era Heian / Batalla de Shinjuku",
+    "version": "Forma Verdadera (4 Brazos / 20 Dedos)",
+    "tier": "7-A",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 15,
+      "powerKey": 1582,
+      "apexKiDisplay": "1.75 Mil",
+      "sourceKiDisplay": "800 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "sukuna-ryomen-jjk-20sellos-s001-base-std",
+        "name": "Ryomen Sukuna (Estado Base)",
+        "multiplier": 1,
+        "tier": "7-A"
+      },
+      {
+        "id": "sukuna-base",
+        "name": "Sukuna (Cuerpo de Megumi / 20 Dedos)",
+        "multiplier": 1,
+        "tier": "7-A"
+      },
+      {
+        "id": "sukuna-heian",
+        "name": "Forma Verdadera (Era Heian)",
+        "multiplier": 1,
+        "tier": "7-A"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Cortes invisibles a distancia, combate de 4 brazos bloqueando y contraatacando simultáneamente.",
+      "superAttacks": [
+        "Desmantelar y Hender",
+        "Flecha de Fuego (Fuga / Horno)"
+      ],
+      "ultimateAttacks": [
+        "Expansión de Dominio: Santuario Malevolente (Fukuma Mizushi)",
+        "Corte que Corta el Mundo (World Slash)"
+      ],
+      "passives": [
+        "Fisiología Heian Perfecta",
+        "Resistencia a Estados Alterados"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Corte que Divide el Mundo (Ignora Durabilidad / Corta el Espacio)",
+      "Expansión de Dominio Abierta: Santuario Malevolente",
+      "Llamas Divinas: Fuga (Flecha de Fuego Termobárica)",
+      "Cuerpo Verdadero de 4 Brazos y 2 Bocas"
+    ],
+    "synergies": [
+      {
+        "name": "Resonancia Maldita",
+        "partnerTags": [
+          "Gojo",
+          "Sukuna",
+          "Yuji",
+          "Megumi"
+        ],
+        "effect": "Aumenta el AP de los ataques mágicos y reduce el coste de Dominio si pelean juntos."
+      }
+    ],
+    "weaknesses": "Ataques que golpeen directamente la barrera entre su alma y el cuerpo del anfitrión (como los golpes de Yuji Itadori) o la Escalera de Jacob.",
+    "existingFeats": [
+      "Derrotó y partió en dos a Gojo Satoru.",
+      "Aniquiló a Mahoraga y a Jogo en Shibuya arrasando distritos enteros.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "jotaro-kujo",
+    "name": "Jotaro Kujo",
+    "alias": "El Portador de Star Platinum",
+    "universe": "JoJo's Bizarre Adventure",
+    "saga": "Stardust Crusaders / Diamond is Unbreakable / Stone Ocean",
+    "version": "Pico de Poder (Star Platinum: The World)",
+    "tier": "Tier 8-C Físico | Tier 2-C Hax Temporal",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 6,
+      "powerKey": 673,
+      "apexKiDisplay": "94 Unidades",
+      "sourceKiDisplay": "80 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "jotaro-base",
+        "name": "Jotaro Kujo (Star Platinum / Base)",
+        "multiplier": 1,
+        "tier": "Tier 8-C Físico | Tier 2-C Hax Temporal"
+      },
+      {
+        "id": "jotaro-timestop",
+        "name": "Jotaro (Star Platinum: The World / Parada Temporal)",
+        "multiplier": 1,
+        "tier": "Tier 8-C Físico | Tier 2-C Hax Temporal"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Ráfaga legendaria de puñetazos gritando '¡ORA ORA ORA ORA!' a velocidad lumínica.",
+      "superAttacks": [
+        "Star Finger"
+      ],
+      "ultimateAttacks": [
+        "Star Platinum: The World (Detención del Tiempo)"
+      ],
+      "passives": [
+        "Calma Joestar"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Star Platinum: The World (Detención del Tiempo de 5 Segundos)",
+      "Velocidad FTL y Precisión Microscópica",
+      "Star Finger"
+    ],
+    "synergies": [],
+    "weaknesses": "Rango muy corto de 2 metros y cuerpo humano normal susceptible a heridas si Star Platinum es eludido.",
+    "existingFeats": [
+      "Derrotó a DIO y destruyó a The World de una sola patada fracturadora.",
+      "Atrapó una bala disparada a quemarropa con los dedos de Star Platinum.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "giorno-giovanna-ger-jojo-gg001",
+    "name": "Giorno Giovanna (GER)",
+    "alias": "El Jefe de Passione / Portador del Réquiem",
+    "universe": "JoJo's Bizarre Adventure",
+    "saga": "Vento Aureo",
+    "version": "Gold Experience Requiem (Flecha de la Dominación)",
+    "tier": "Tier 8-C Físico | Tier 2-C Hax Causal / Trascendental",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 6,
+      "powerKey": 673,
+      "apexKiDisplay": "94 Unidades",
+      "sourceKiDisplay": "80 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "giorno-ge",
+        "name": "Gold Experience (Base)",
+        "multiplier": 1,
+        "tier": "Tier 8-C Físico | Tier 2-C Hax Causal / Trascendental"
+      },
+      {
+        "id": "giorno-ger",
+        "name": "Gold Experience Requiem",
+        "multiplier": 1,
+        "tier": "Tier 8-C Físico | Tier 2-C Hax Causal / Trascendental"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Ráfagas continuas de puñetazos gritando '¡MUDA MUDA MUDA!' que distorsionan la materia.",
+      "superAttacks": [
+        "Disparo de Piedra Viva"
+      ],
+      "ultimateAttacks": [
+        "Retorno a Cero (Return to Zero)",
+        "Bucle de Muerte Infinita (Infinite Death Loop)"
+      ],
+      "passives": [
+        "Autonomía del Réquiem"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Retorno a Cero (Return to Zero - Anulación Causal Absoluta)",
+      "Bucle de Muerte Infinita",
+      "Creación de Vida Orgánica y Reflejo de Daño"
+    ],
+    "synergies": [],
+    "weaknesses": "Su poder físico bruto destructivo (sin contar el hax de Réquiem) es comparable al de un Stand de combate estándar.",
+    "existingFeats": [
+      "Anuló el borrado de tiempo y la premonición absoluta de King Crimson como si nunca hubieran ocurrido.",
+      "Condenó a Diavolo a un bucle de muertes infinitas sin fin.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "saitama-opm",
+    "name": "Saitama",
+    "alias": "El Calvo con Capa / Saitama Modo Serio",
+    "universe": "One Punch Man",
+    "saga": "Saga de los Monstruos / Combate en la Luna de Júpiter",
+    "version": "Crecimiento Exponencial (Viaje en el Tiempo)",
+    "tier": "4-A",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 33,
+      "powerKey": 3400,
+      "apexKiDisplay": "93.60 Mil Millones",
+      "sourceKiDisplay": "80.00 Mil Millones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Estado Base (Despreocupado / Modo Compra del Súper)",
+        "multiplier": 1,
+        "tier": "4-A"
+      },
+      {
+        "id": "serious-mode",
+        "name": "Modo Serio (Júpiter Escalado)",
+        "multiplier": 1,
+        "tier": "4-A"
+      },
+      {
+        "id": "exponential-growth",
+        "name": "Crecimiento Exponencial Absoluto",
+        "multiplier": 1,
+        "tier": "4-A"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Golpes normales continuos, golpes casuales que desintegran monstruos de nivel dragón.",
+      "superAttacks": [
+        "Golpes Normales Consecutivos",
+        "Tabla Invertida Seria (Serious Table Flip)"
+      ],
+      "ultimateAttacks": [
+        "Golpe Serio al 100% (Serious Punch / Omnidireccional)",
+        "Golpe Cero (Zero Punch - Causalidad Revertida)"
+      ],
+      "passives": [
+        "Limitador Roto (Ruptura Biológica)"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Crecimiento Exponencial Infinito (Sin Limitador)",
+      "Manipulación Hiperespacial Física (Patear Portales)",
+      "Puño Cero (Zero Punch - Viaje Temporal)",
+      "Inmunidad a la Radiación Cósmica",
+      "Estornudo Serio Interplanetario"
+    ],
+    "synergies": [],
+    "weaknesses": "Falta de motivación y aburrimiento crónico: Suele contenerse para buscar una pelea entretenida y llega tarde por las rebajas del supermercado.",
+    "existingFeats": [
+      "Destruyó el 90% de la masa de Júpiter de un estornudo serio involuntario.",
+      "Desvió el Cañón de Estrella Colapsante de Boros dividiendo las nubes de la Tierra por miles de kilómetros.",
+      "Agarró portales de distorsión dimensional con las manos y los lanzó como platos."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "garou-cosmico-opm",
+    "name": "Cosmic Garou (Modo Despertar Cósmico)",
+    "alias": "El Terror Cósmico / Garou Dios del Miedo",
+    "universe": "One Punch Man",
+    "saga": "Saga de los Monstruos / Pelea Cósmica de Júpiter",
+    "version": "Modo Saitama (Puño de Dios)",
+    "tier": "4-A",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 33,
+      "powerKey": 3400,
+      "apexKiDisplay": "93.60 Mil Millones",
+      "sourceKiDisplay": "80.00 Mil Millones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "garou-cosmico-opm-base-std",
+        "name": "Cosmic Garou (Modo Despertar Cósmico) (Estado Base)",
+        "multiplier": 1,
+        "tier": "4-A"
+      },
+      {
+        "id": "base",
+        "name": "Garou Monstruo Despertado (Pre-Cósmico)",
+        "multiplier": 1,
+        "tier": "4-A"
+      },
+      {
+        "id": "cosmic-fear",
+        "name": "Modo Miedo Cósmico (Bendición de Dios)",
+        "multiplier": 1,
+        "tier": "4-A"
+      },
+      {
+        "id": "mode-saitama",
+        "name": "Modo Saitama (Copia de Fuerza Ilimitada)",
+        "multiplier": 1,
+        "tier": "4-A"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Puño de Agua Rompe Rocas Cósmico, ráfagas de energía nuclear subatómica.",
+      "superAttacks": [
+        "Explosión de Rayos Gamma (Gamma Ray Burst)",
+        "Portales de Urdimbre Hiperespacial"
+      ],
+      "ultimateAttacks": [
+        "Modo Saitama: Golpes Serios Consecutivos Cósmicos"
+      ],
+      "passives": [
+        "Aura Radiactiva de Muerte Inmediata"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Copiar Modo (Modo Saitama / All-Out Copy)",
+      "Emisión de Radiación Gamma Nuclear Pasiva",
+      "Manipulación de Portales Hiperespaciales",
+      "Explosión de Rayos Gamma (Gamma Ray Burst)",
+      "Puño de la Erradicación de Toda la Vida"
+    ],
+    "synergies": [],
+    "weaknesses": "Influencia de Dios: Si rechaza la voluntad de Dios pierde su energía cósmica; su tasa de copiado tiene un límite si el rival escala más rápido que él.",
+    "existingFeats": [
+      "Mató a casi todos los héroes de la Tierra solo por estar presente con su radiación pasiva.",
+      "Destruyó satélites de Júpiter de las ondas expansivas de sus choques con Saitama.",
+      "Generó un fenómeno de Gamma Ray Burst idéntico a una supernova estelar."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "lord-boros-opm",
+    "name": "Lord Boros",
+    "alias": "El Conquistador del Universo / El Dominador de Galaxias",
+    "universe": "One Punch Man",
+    "saga": "Saga de la Invasión Alienígena",
+    "version": "Modo Meteoric Burst (Cañón de Estrella Colapsante)",
+    "tier": "5-A",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 27,
+      "powerKey": 2794,
+      "apexKiDisplay": "175.50 Millones",
+      "sourceKiDisplay": "150.0 Millones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Forma Contenida (Armadura Selladora)",
+        "multiplier": 1,
+        "tier": "5-A"
+      },
+      {
+        "id": "unsealed",
+        "name": "Forma Liberada (Sin Armadura)",
+        "multiplier": 1,
+        "tier": "5-A"
+      },
+      {
+        "id": "meteoric-burst",
+        "name": "Meteoric Burst (Estallido Meteórico)",
+        "multiplier": 1,
+        "tier": "5-A"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Puñetazos de energía cósmica pura, patadas propulsadas por plasma.",
+      "superAttacks": [
+        "Ráfaga de Meteoro: Patada a la Luna",
+        "Regeneración por Núcleo de Energía"
+      ],
+      "ultimateAttacks": [
+        "Cañón de Estrella Colapsante (Collapsing Star Roaring Cannon)"
+      ],
+      "passives": [
+        "Fisiología Alienígena de Adaptación Extrema"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Meteoric Burst (Impulso Metabólico Extremo)",
+      "Regeneración Celular Instantánea (Núcleo de Energía)",
+      "Cañón de Estrella Colapsante (Collapsing Star Roaring Cannon)",
+      "Emisión de Energía Latente Desbordante"
+    ],
+    "synergies": [],
+    "weaknesses": "Gasto de energía en Meteoric Burst: Drena su esperanza de vida y si su núcleo de energía se agota por completo, no puede regenerarse.",
+    "existingFeats": [
+      "Pateó a Saitama a la Luna a la velocidad de la luz en 1.5 segundos.",
+      "Sobrevivió y se regeneró al instante de los Golpes Consecutivos Normales de Saitama.",
+      "Obligó a Saitama a utilizar su Golpe Serio para disipar su ataque definitivo."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "meruem-hxh-911",
+    "name": "Meruem",
+    "alias": "El Rey de las Hormigas Quimera",
+    "universe": "Hunter x Hunter",
+    "saga": "Saga de las Hormigas Quimera",
+    "version": "Post-Rosa (Alimentado por Youpi y Pouf)",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "meruem-nacimiento",
+        "name": "Rey Hormiga (Base)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "meruem-post-rosa",
+        "name": "Meruem Post-Rosa",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Coletazos capaces de decapitar líderes militares, golpes marciales de precisión absoluta.",
+      "superAttacks": [
+        "En de Fotones",
+        "Rage Blast"
+      ],
+      "ultimateAttacks": [
+        "Desplazamiento Fotónico y Decapitación"
+      ],
+      "passives": [
+        "Lectura de Patrones de Gungi"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "En de Fotones (Lectura Mente y Emociones / Teletransporte)",
+      "Síntesis de Aura por Ingestión",
+      "Alas de Metamorfosis",
+      "Rage Blast (Cañón de Masa)"
+    ],
+    "synergies": [],
+    "weaknesses": "Envenenamiento por radiación tóxica (La Rosa Miniatura causó necrosis celular irreversible que acabó con su vida).",
+    "existingFeats": [
+      "Soportó miles de golpes directos del Guanyin Bodhisattva de Netero sin daño significativo.",
+      "Destruyó una montaña de un solo disparo de aura casual tras renacer.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "gon-freecss",
+    "name": "Gon Freecss",
+    "alias": "El Niño Monstruo / Gon Adulto (Restricción Absoluta)",
+    "universe": "Hunter x Hunter",
+    "saga": "Saga de las Hormigas Quimera",
+    "version": "Pico de Juramento y Restricción (Gon Adulto)",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "gon-nino",
+        "name": "Gon (Base)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "gon-adulto",
+        "name": "Gon Adulto (Transformación)",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Puñetazos titánicos que generan cráteres tectónicos en el bosque.",
+      "superAttacks": [
+        "Jajanken: Tijeras (Corte de Aura)"
+      ],
+      "ultimateAttacks": [
+        "Jajanken: Piedra Definitivo (Gon Adulto)"
+      ],
+      "passives": [
+        "Aura de Desesperación Monstruosa"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Juramento y Restricción Absoluta (Poder Equivalente al Rey)",
+      "Jajanken: Piedra (Golpe Masivo Concentrado)",
+      "Jajanken: Tijeras (Espada de Aura Cortante)",
+      "Jajanken: Papel (Disparo de Aura)"
+    ],
+    "synergies": [],
+    "weaknesses": "La transformación es un pacto suicida; tras terminar el combate, su cuerpo queda en un estado momificado de descomposición y necrosis espiritual.",
+    "existingFeats": [
+      "Aniquiló por completo a Neferpitou sin recibir daño real.",
+      "Su aura fue sentida a kilómetros de distancia como una fuerza catastrófica.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "netero-hxh-912",
+    "name": "Isaac Netero",
+    "alias": "El 12° Presidente de la Asociación de Cazadores",
+    "universe": "Hunter x Hunter",
+    "saga": "Saga de las Hormigas Quimera",
+    "version": "Pico de Poder (Guanyin Bodhisattva de 100 Brazos)",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "netero-base",
+        "name": "Presidente Netero (Estado Base)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "netero-hyakushiki",
+        "name": "Guanyin Bodhisattva de 100 Tipos (Pico)",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Junta las manos en oración instantánea para invocar la estatua gigante de 100 brazos dorados.",
+      "superAttacks": [
+        "Primera / Tercera / Noventa y Nueve Mano"
+      ],
+      "ultimateAttacks": [
+        "Mano Cero (Zero Hand)",
+        "La Rosa Miniatura (Poor Man's Rose)"
+      ],
+      "passives": [
+        "Velocidad del Rezo Sagrado"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Guanyin Bodhisattva de 100 Brazos",
+      "Plegaria más Rápida que el Sonido",
+      "Mano Cero (Rayo de Aura Total)",
+      "Bomba de la Rosa del Pobre (Bomba Nuclear en el Corazón)"
+    ],
+    "synergies": [],
+    "weaknesses": "Cuerpo humano de 110 años susceptible al daño penetrante letal si el enemigo logra atravesar la estatua.",
+    "existingFeats": [
+      "Conectó más de 1,000 golpes al Rey Meruem sin que este pudiera atravesar su guardia durante minutos.",
+      "Detonó la Rosa Miniatura acabando con la vida de Meruem, Youpi y Pouf.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "denji-csm-903",
+    "name": "Denji (Chainsaw Man)",
+    "alias": "El Demonio Motosierra / El Héroe del Infierno",
+    "universe": "Chainsaw Man",
+    "saga": "Parte 1 / Parte 2",
+    "version": "Forma Verdadera (Pochita / Héroe del Infierno)",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "denji-humano",
+        "name": "Denji (Humano)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "denji-motosierra",
+        "name": "Híbrido Motosierra",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "denji-pochita",
+        "name": "Héroe del Infierno (Pochita Verdadero)",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Cortes brutales con motosierras en cabeza y brazos, patadas con sierras en las piernas.",
+      "superAttacks": [
+        "Lanzamiento de Cadena Espinal"
+      ],
+      "ultimateAttacks": [
+        "Devoración Conceptual del Demonio"
+      ],
+      "passives": [
+        "Motor de Sangre Infinito"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Borrado Conceptual de la Existencia (Al Devorar)",
+      "Inmortalidad Híbrida (Reinicio por Cuerda)",
+      "Cadenas de Intestinos de Motosierra"
+    ],
+    "synergies": [],
+    "weaknesses": "Si se queda sin sangre en su organismo y no puede tirar de su cuerda, queda temporalmente inerte.",
+    "existingFeats": [
+      "Devoró y borró múltiples conceptos fundamentales de la existencia.",
+      "Sobrevivió en el espacio exterior, se arrancó el corazón y lo lanzó de vuelta a la Tierra para regenerarse entero en la atmósfera.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "makima-csm-904",
+    "name": "Makima",
+    "alias": "El Demonio del Control",
+    "universe": "Chainsaw Man",
+    "saga": "Parte 1 (Saga de Seguridad Pública)",
+    "version": "Demonio del Control (Poder Pleno)",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "makima-csm-904-base-std",
+        "name": "Makima (Estado Base)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "makima-base",
+        "name": "Líder de Seguridad Pública",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Golpes simples con la mano abierta, miradas de intimidación.",
+      "superAttacks": [
+        "Disparo 'Bang'",
+        "Ritual del Santuario"
+      ],
+      "ultimateAttacks": [
+        "Cadena de Dominación Absoluta"
+      ],
+      "passives": [
+        "Contrato de Inmortalidad Nacional"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Control Mental Absoluto (De seres que considere inferiores)",
+      "Contrato con el Primer Ministro (Redirección de Daño Mortal)",
+      "Disparo Invisible 'Bang'",
+      "Ritual de Aplastamiento a Distancia"
+    ],
+    "synergies": [],
+    "weaknesses": "Ataques que no nazcan de la hostilidad o el rencor asesino (como Denji devorándola por amor culinario, lo que evitó la activación de su contrato).",
+    "existingFeats": [
+      "Sometió al Demonio Pistola en segundos.",
+      "Manipuló a toda la división de cazadores y doblegó a híbridos legendarios.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "yoriichi-tsugikuni-kny-902",
+    "name": "Yoriichi Tsugikuni",
+    "alias": "El Creador de la Respiración Solar / El Cazador Inalcanzable",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
+    "saga": "Era Sengoku (Flashbacks)",
+    "version": "Pico de Poder Marcial",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "yoriichi-tsugikuni-kny-902-base-std",
+        "name": "Yoriichi Tsugikuni (Estado Base)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "yoriichi-joven",
+        "name": "Yoriichi (Pico Sengoku)",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "yoriichi-anciano",
+        "name": "Yoriichi Anciano (85 Años)",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Esgrima perfecta sin movimientos innecesarios.",
+      "superAttacks": [
+        "Respiración Solar: Sol Ardiente"
+      ],
+      "ultimateAttacks": [
+        "Forma Decimotercera de la Respiración Solar"
+      ],
+      "passives": [
+        "Estado Desinteresado",
+        "Inmunidad a la Maldición de la Marca"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Respiración Solar Pura (Quema Celular Permanente)",
+      "Mundo Transparente (Visión Rayos X Anatómica)",
+      "Estado Desinteresado (Cero Sed de Sangre)",
+      "Espada Nichirin Carmesí Permanente"
+    ],
+    "synergies": [],
+    "weaknesses": "Posee un cuerpo biológico humano; falleció pacíficamente de vejez.",
+    "existingFeats": [
+      "Dejó a Muzan al borde de la muerte y traumatizado por siglos con un solo asalto de 1 segundo.",
+      "Casi decapita a la Luna Superior 1 (Kokushibo) teniendo 85 años de edad.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "muzan-kibutsuji-kny-901",
+    "name": "Muzan Kibutsuji",
+    "alias": "El Rey de los Demonios / El Progenitor",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
+    "saga": "Fortaleza Dimensional Infinita / Cuenta Regresiva",
+    "version": "Forma de Combate Final",
+    "tier": "7-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 14,
+      "powerKey": 1481,
+      "apexKiDisplay": "936 Unidades",
+      "sourceKiDisplay": "400 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "muzan-elegante",
+        "name": "Disfraz Humano",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "muzan-combate",
+        "name": "Forma de Combate Final",
+        "multiplier": 1,
+        "tier": "7-B"
+      },
+      {
+        "id": "muzan-bebe",
+        "name": "Armadura de Bebé Gigante",
+        "multiplier": 1,
+        "tier": "7-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Látigos de carne con púas desde la espalda y muslos que cortan a cientos de metros por segundo.",
+      "superAttacks": [
+        "Onda de Choque de Espasmo Neuronal"
+      ],
+      "ultimateAttacks": [
+        "Infusión de Sangre Asesina"
+      ],
+      "passives": [
+        "Regeneración Celular Sin Retraso"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Regeneración Instantánea Extrema",
+      "Sangre Venenosa Celular",
+      "7 Corazones y 5 Cerebros Móviles",
+      "Onda de Choque Neuronal"
+    ],
+    "synergies": [],
+    "weaknesses": "Luz solar directa (lo desintegra por completo), espadas Nichirin Carmesí y la Respiración Solar pura de Yoriichi.",
+    "existingFeats": [
+      "Sometió a todos los Pilares supervivientes y a Tanjiro a la vez durante horas.",
+      "Sobrevivió a la explosión de la mansión Ubuyashiki y a 4 venenos combinados de Tamayo.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "iron-man-marvel-908",
+    "name": "Iron Man (Tony Stark)",
+    "alias": "El Vengador Dorado / El Hombre de Hierro",
+    "universe": "Marvel Comics",
+    "saga": "Avengers / Model Prime / Godkiller",
+    "version": "Pico Tecnológico (Armadura Godbuster / Bleeding Edge)",
+    "tier": "Tier 7-A Físico | Tier 2-C con Armaduras Buster Cósmicas",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 15,
+      "powerKey": 1582,
+      "apexKiDisplay": "1.75 Mil",
+      "sourceKiDisplay": "800 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "ironman-base",
+        "name": "Bleeding Edge (Armadura Base)",
+        "multiplier": 1,
+        "tier": "Tier 7-A Físico | Tier 2-C con Armaduras Buster Cósmicas"
+      },
+      {
+        "id": "ironman-godbuster",
+        "name": "Armadura Godbuster",
+        "multiplier": 1,
+        "tier": "Tier 7-A Físico | Tier 2-C con Armaduras Buster Cósmicas"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Disparos repulsores desde las palmas, misiles micrométricos guiados.",
+      "superAttacks": [
+        "Unibeam Máximo"
+      ],
+      "ultimateAttacks": [
+        "Despliegue Godbuster / Armadura Celestial"
+      ],
+      "passives": [
+        "Análisis de Patrones de Pelea"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Nanotecnología Adaptativa",
+      "Rayo Unibeam",
+      "IA de Análisis Predictivo de Combate",
+      "Armaduras Buster Específicas"
+    ],
+    "synergies": [],
+    "weaknesses": "Cuerpo humano vulnerable dentro de la armadura; vulnerable a virus informáticos alienígenas o EMP de grado dimensional.",
+    "existingFeats": [
+      "Diseñó el cañón que dividió a la Fuerza Fénix en cinco partes.",
+      "Combatió mano a mano contra Thor y Hulk con armaduras personalizadas.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "thor-marvel-907",
+    "name": "Thor Odinson",
+    "alias": "El Dios del Trueno / El Rey de Asgard",
+    "universe": "Marvel Comics",
+    "saga": "Rune King Thor / All-Black Thor",
+    "version": "Rey Thor (Fuerza de Odín / Runas de Yggdrasil)",
+    "tier": "2-C",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 39,
+      "powerKey": 4006,
+      "apexKiDisplay": "1.17 Trillones",
+      "sourceKiDisplay": "10.00 Trillones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "thor-base",
+        "name": "Thor Vengador (Estado Base / Mjolnir)",
+        "multiplier": 1,
+        "tier": "2-C"
+      },
+      {
+        "id": "thor-rkt",
+        "name": "Rune King Thor",
+        "multiplier": 1,
+        "tier": "2-C"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Martillazos atronadores con Mjolnir, golpes con el puño del trueno.",
+      "superAttacks": [
+        "Llamada del Trueno Celestial",
+        "Anti-Force"
+      ],
+      "ultimateAttacks": [
+        "God-Blast (Ráfaga de Dios)"
+      ],
+      "passives": [
+        "El Encantamiento de la Dignidad"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Fuerza de Odín / Magia de las Runas",
+      "God-Blast (Ráfaga de la Esencia Divina)",
+      "Manipulación Absoluta del Clima y la Tormenta",
+      "Encantamiento del Mjolnir (Solo los Dignos)"
+    ],
+    "synergies": [],
+    "weaknesses": "Furia de Guerrero (Warrior's Madness), un estado de locura berserker que multiplica su fuerza pero le hace perder la razón táctica.",
+    "existingFeats": [
+      "Destruyó los hilos del destino cortando el ciclo eterno del Ragnarok.",
+      "Hizo retroceder a Galactus hambriento de un God-Blast directo.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "batman-dc-910",
+    "name": "Batman (Bruce Wayne)",
+    "alias": "El Caballero de la Noche / El Detective Supremo",
+    "universe": "DC Comics",
+    "saga": "Liga de la Justicia / Batman Endgame",
+    "version": "Pico Táctico (Armadura Hellbat / Plan de Contingencia)",
+    "tier": "Tier 9-A Físico | Tier 2-C con Hellbat y Tiempo de Preparación",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 5,
+      "powerKey": 572,
+      "apexKiDisplay": "47 Unidades",
+      "sourceKiDisplay": "40 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "batman-base",
+        "name": "Caballero Oscuro (Batsuit Estándar)",
+        "multiplier": 1,
+        "tier": "Tier 9-A Físico | Tier 2-C con Hellbat y Tiempo de Preparación"
+      },
+      {
+        "id": "batman-hellbat",
+        "name": "Armadura Hellbat",
+        "multiplier": 1,
+        "tier": "Tier 9-A Físico | Tier 2-C con Hellbat y Tiempo de Preparación"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Maestro de 127 artes marciales, uso de Batarangs de impacto y gas somnífero.",
+      "superAttacks": [
+        "Batarang de Kryptonita / Granadas de Frecuencia Sónica"
+      ],
+      "ultimateAttacks": [
+        "Despliegue de la Armadura Hellbat"
+      ],
+      "passives": [
+        "Siempre Cinco Pasos por Delante"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Tiempo de Preparación Supremo (Prep-Time)",
+      "Armadura Hellbat",
+      "Planes de Contingencia de la Liga de la Justicia (Kryptonita, EMP, Nanites)"
+    ],
+    "synergies": [
+      {
+        "name": "Vínculo de la Liga",
+        "partnerTags": [
+          "Superman",
+          "Batman",
+          "Flash",
+          "Wonder Woman"
+        ],
+        "effect": "La voluntad inquebrantable les da inmunidad a control mental y aumenta su Battle IQ coordinado."
+      }
+    ],
+    "weaknesses": "Es biológicamente un ser humano mortal; la armadura Hellbat drena su propio metabolismo celular si se usa por tiempo prolongado.",
+    "existingFeats": [
+      "Sometió a toda la Liga de la Justicia en múltiples ocasiones con sus planes de contingencia.",
+      "Se infiltró en Apokolips y rescató el sarcófago de Damian Wayne enfrentando a Darkseid.",
+      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "superman-dc-909",
+    "name": "Superman (Clark Kent / Kal-El)",
+    "alias": "El Hombre de Acero / El Último Hijo de Krypton",
+    "universe": "DC Comics",
+    "saga": "Post-Crisis / Rebirth",
+    "version": "Pico de Poder Solar (Radiación Solar Amarilla)",
+    "tier": "2-C",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 39,
+      "powerKey": 4006,
+      "apexKiDisplay": "1.17 Trillones",
+      "sourceKiDisplay": "10.00 Trillones (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "superman-dc-909-base-std",
+        "name": "Superman (Clark Kent / Kal-El) (Estado Base)",
+        "multiplier": 1,
+        "tier": "2-C"
+      },
+      {
+        "id": "superman-base",
+        "name": "Superman (Traje Clásico)",
+        "multiplier": 1,
+        "tier": "2-C"
+      },
+      {
+        "id": "superman-sundipped",
+        "name": "Superman Sun-Dipped",
+        "multiplier": 1,
+        "tier": "2-C"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Puñetazos titánicos que generan ondas de choque atmosféricas masivas.",
+      "superAttacks": [
+        "Visión Calorífica Solar",
+        "Aliento Ártico"
+      ],
+      "ultimateAttacks": [
+        "Infinite Mass Punch (Puñetazo de Masa Infinita)",
+        "Solar Flare (Super llamarada Solar)"
+      ],
+      "passives": [
+        "Torquasm-Vo (Defensa Psíquica)"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Fisiología Kryptoniana Solar",
+      "Visión Calorífica del Big Bang",
+      "Aliento Ártico de Cero Absoluto",
+      "Bio-Matriz de Invulnerabilidad"
+    ],
+    "synergies": [
+      {
+        "name": "Vínculo de la Liga",
+        "partnerTags": [
+          "Superman",
+          "Batman",
+          "Flash",
+          "Wonder Woman"
+        ],
+        "effect": "La voluntad inquebrantable les da inmunidad a control mental y aumenta su Battle IQ coordinado."
+      }
+    ],
+    "weaknesses": "Radiación de Kryptonita verde (debilita y envenena sus células), magia mística pura y radiación de soles rojos.",
+    "existingFeats": [
+      "Sostuvo un libro con páginas infinitas junto a Shazam.",
+      "Reconstruyó una línea temporal de un solo puñetazo (Punching Reality).",
+      "Voló más rápido que la teletransportación instantánea."
+    ],
+    "missingOrGenericFields": [
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Estadisticas numericas en plantilla temporal"
+    ]
+  },
+  {
+    "id": "omni-man-invincible-905",
+    "name": "Omni-Man (Nolan Grayson)",
+    "alias": "El Conquistador de Viltrum",
+    "universe": "Invincible",
+    "saga": "Invasión Viltrumita / Guerra Viltrumita",
+    "version": "Pico de Poder (Guerra Viltrumita)",
+    "tier": "5-B",
+    "sourceKi": null,
+    "apexRuntime": {
+      "tierRank": 26,
+      "powerKey": 2693,
+      "apexKiDisplay": "620.10 Mil",
+      "sourceKiDisplay": "530.000 Unidades (Scouter)",
+      "formMultiplier": 1
+    },
+    "identityAssessment": {
+      "isGrouped": false,
+      "isVariant": true,
+      "classification": "usable-profile"
+    },
+    "forms": [
+      {
+        "id": "omni-man-invincible-905-base-std",
+        "name": "Omni-Man (Nolan Grayson) (Estado Base)",
+        "multiplier": 1,
+        "tier": "5-B"
+      },
+      {
+        "id": "omniman-tierra",
+        "name": "Héroe de la Tierra",
+        "multiplier": 1,
+        "tier": "5-B"
+      },
+      {
+        "id": "omniman-emperador",
+        "name": "Emperador de Viltrum",
+        "multiplier": 1,
+        "tier": "5-B"
+      }
+    ],
+    "arsenalSummary": {
+      "basicAttacks": "Golpes con el filo de la mano (chops) capaces de decapitar seres sobrehumanos de un solo tajo.",
+      "superAttacks": [
+        "Vuelo de Ignición Atmosférica"
+      ],
+      "ultimateAttacks": [
+        "Embestida Partenúcleos de Viltrum"
+      ],
+      "passives": [
+        "Adaptación Genética Dominante"
+      ],
+      "specialMechanics": []
+    },
+    "haxTags": [
+      "Fisiología Viltrumita Pura",
+      "Vuelo Espacial MFTL",
+      "Longevidad de Milenios",
+      "Respiración Contenida de 2 Semanas en el Vacío"
+    ],
+    "synergies": [],
+    "weaknesses": "Vulnerabilidad a frecuencias sonoras extremadamente agudas que desestabilizan el oído interno viltrumita, calor estelar del centro del sol y el virus del Azote (Scourge Virus).",
+    "existingFeats": [
+      "Masacró a los Guardianes del Globo en minutos.",
+      "Extinguió a la civilización Flaxan devastando su planeta.",
+      "Atravesó y destruyó el Planeta Viltrum."
+    ],
+    "missingOrGenericFields": [
+      "Campo synergies ausente o vacio",
+      "Estadisticas numericas en plantilla temporal"
+    ],
+    "recommendedFutureReview": [
+      "Refinar: Campo synergies ausente o vacio, Estadisticas numericas en plantilla temporal"
+    ]
+  }
+]

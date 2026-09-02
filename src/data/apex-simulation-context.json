@@ -1,0 +1,197 @@
+{
+  "mode": "SIMULATION_CRONICLE",
+  "apexSimulationContext": {
+    "combatants": [
+      {
+        "characterId": "cell-saga-androides-98-team-a",
+        "name": "Cell (Perfecto)",
+        "universe": "Dragon Ball Z — Saga de Cell",
+        "saga": "Saga de Cell",
+        "version": "Fighting Video Game / Anime (1992-1994)",
+        "stateId": "cell-perfecto",
+        "stateName": "Cell Perfecto",
+        "tierExact": "4-B",
+        "tierRank": 32,
+        "powerKey": 3306,
+        "apexKiDisplay": "110.00 Mil Millones",
+        "sourceKiDisplay": null,
+        "scalingMethod": "config-alias",
+        "formMultiplier": 20
+      },
+      {
+        "characterId": "son-gohan-joven-saga-androides-cell-945-team-b",
+        "name": "Son Gohan (Joven / Cell Games)",
+        "universe": "Dragon Ball Z — Saga de Cell",
+        "saga": "Saga de Cell",
+        "version": "Anime Original (1992-1994)",
+        "stateId": "gohan-joven-ssj2",
+        "stateName": "Super Saiyajin 2 (Ira Desatada)",
+        "tierExact": "4-B",
+        "tierRank": 32,
+        "powerKey": 3306,
+        "apexKiDisplay": "280.00 Mil Millones",
+        "sourceKiDisplay": null,
+        "scalingMethod": "config-alias",
+        "formMultiplier": 100
+      }
+    ],
+    "resolvedStates": [
+      {
+        "stateName": "Cell Perfecto",
+        "tierExact": "4-B",
+        "tierRank": 32,
+        "powerKey": 3306,
+        "apexKiDisplay": "110.00 Mil Millones",
+        "formMultiplier": 20,
+        "scalingMethod": "config-alias"
+      },
+      {
+        "stateName": "Super Saiyajin 2 (Ira Desatada)",
+        "tierExact": "4-B",
+        "tierRank": 32,
+        "powerKey": 3306,
+        "apexKiDisplay": "280.00 Mil Millones",
+        "formMultiplier": 100,
+        "scalingMethod": "config-alias"
+      }
+    ],
+    "allowedAbilities": [
+      {
+        "id": "cell-saga-androides-98-atk-0",
+        "name": "Makankosappo / Kienzan",
+        "type": "super",
+        "staminaCost": 25,
+        "powerModifier": 1.5
+      },
+      {
+        "id": "cell-saga-androides-98-atk-1",
+        "name": "Asimilación Genética Biológica",
+        "type": "passive",
+        "staminaCost": 10
+      },
+      {
+        "id": "cell-saga-androides-98-atk-2",
+        "name": "Kamehameha Solar (Super Perfecto)",
+        "type": "ultimate",
+        "staminaCost": 40,
+        "powerModifier": 2.0
+      },
+      {
+        "id": "son-gohan-joven-saga-androides-cell-945-atk-0",
+        "name": "Masenko",
+        "type": "super",
+        "staminaCost": 20,
+        "powerModifier": 1.2
+      },
+      {
+        "id": "son-gohan-joven-saga-androides-cell-945-atk-1",
+        "name": "Kamehameha",
+        "type": "super",
+        "staminaCost": 25,
+        "powerModifier": 1.3
+      },
+      {
+        "id": "son-gohan-joven-saga-androides-cell-945-atk-2",
+        "name": "Super Kamehameha",
+        "type": "super",
+        "staminaCost": 30,
+        "powerModifier": 1.5
+      },
+      {
+        "id": "son-gohan-joven-saga-androides-cell-945-atk-3",
+        "name": "Father-Son Kamehameha (Oyako Kamehameha)",
+        "type": "ultimate",
+        "staminaCost": 40,
+        "powerModifier": 2.0
+      },
+      {
+        "id": "son-gohan-joven-saga-androides-cell-945-atk-4",
+        "name": "Furia Desatada (Rage Boost)",
+        "type": "passive",
+        "staminaCost": 15
+      },
+      {
+        "id": "son-gohan-joven-saga-androides-cell-945-atk-5",
+        "name": "Gekiretsu Madan",
+        "type": "super",
+        "staminaCost": 20,
+        "powerModifier": 1.4
+      }
+    ],
+    "oracleEventsTriggered": [],
+    "oracleGeneratedAbilities": [],
+    "combatLog": [
+      {
+        "turn": 1,
+        "phase": 1,
+        "phaseName": "Tanteo",
+        "actorId": "cell-saga-androides-98-team-a",
+        "targetId": "son-gohan-joven-saga-androides-cell-945-team-b",
+        "actionId": "cell-saga-androides-98-atk-0",
+        "actionName": "Intercambio de Reconocimiento y Presión Inicial",
+        "hpChangeA": 0,
+        "staminaChangeA": -10,
+        "hpChangeB": -15,
+        "staminaChangeB": -10,
+        "result": "hit"
+      },
+      {
+        "turn": 6,
+        "phase": 2,
+        "phaseName": "Presión",
+        "actorId": "cell-saga-androides-98-team-a",
+        "targetId": "son-gohan-joven-saga-androides-cell-945-team-b",
+        "actionId": "cell-saga-androides-98-atk-0",
+        "actionName": "Makankosappo / Kienzan",
+        "hpChangeA": 0,
+        "staminaChangeA": 0,
+        "hpChangeB": -25,
+        "staminaChangeB": -15,
+        "result": "hit"
+      },
+      {
+        "turn": 11,
+        "phase": 3,
+        "phaseName": "Oráculo",
+        "actorId": "son-gohan-joven-saga-androides-cell-945-team-b",
+        "targetId": "cell-saga-androides-98-team-a",
+        "actionId": "son-gohan-joven-saga-androides-cell-945-atk-0",
+        "actionName": "Masenko",
+        "hpChangeA": -20,
+        "staminaChangeA": -15,
+        "hpChangeB": 0,
+        "staminaChangeB": -10,
+        "mapEffect": "high-gravity",
+        "result": "success"
+      },
+      {
+        "turn": 16,
+        "phase": 4,
+        "phaseName": "Resolución",
+        "actorId": "cell-saga-androides-98-team-a",
+        "targetId": "son-gohan-joven-saga-androides-cell-945-team-b",
+        "actionId": "cell-saga-androides-98-atk-2",
+        "actionName": "Liberación de Potencia Máxima & Impacto Definitivo",
+        "hpChangeA": 0,
+        "staminaChangeA": -32,
+        "hpChangeB": -85,
+        "staminaChangeB": -35,
+        "mapEffect": "regional-severo",
+        "result": "decisive-hit"
+      }
+    ],
+    "verdict": {
+      "winnerTeamId": "team-a",
+      "winnerName": "Cell",
+      "winnerTierExact": "4-B",
+      "loserName": "Son Gohan (Joven / Cell Games)",
+      "loserTierExact": "4-B",
+      "difficulty": "High-Diff",
+      "finalMapState": "regional-severo"
+    },
+    "finalBiometrics": {
+      "cell-saga-androides-98-team-a": { "hp": 69, "stamina": 32, "vitalStatus": "Dañado", "isActive": true },
+      "son-gohan-joven-saga-androides-cell-945-team-b": { "hp": 0, "stamina": 0, "vitalStatus": "Incapacitado", "isActive": false }
+    }
+  }
+}

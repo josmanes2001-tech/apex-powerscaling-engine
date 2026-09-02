@@ -1,0 +1,230 @@
+{
+  "mode": "APEX_CONTINUOUS_ROSTER_AUDIT",
+  "status": "completed_batch",
+  "batchId": "roster_audit_todos",
+  "processedCount": 5,
+  "cursor": {
+    "nextRecordIndex": 15,
+    "nextRecordId": "vegeta-saga-gt-dragon-ball-gt-851",
+    "continueCommand": "CONTINUE_APEX_AUDIT batch_id=roster_audit_todos start_index=15"
+  },
+  "results": [
+    {
+      "characterId": "vegeta-saga-namek-saga-namek-783",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Vegeta Saga Namek"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Arsenal needs APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Transformation mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["2 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal needs structure"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "pride_boost", "martial_artist", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["transformación_ozaru_cósmica", "luna_artificial_de_ki", "resiliencia_de_orgullo"],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "vegeta-saga-cell-saga-androides-856",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Vegeta Saga Cell"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Cell"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Abilities need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["SSJ Full Power efficiency not formalized"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "additions_proposed", notes: ["No team context"]},
+          {section: "team_combos", status: "additions_proposed", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["3 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal techniques lack APEX structure"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "super_saiyan_transformation", "instant_transmission", "ki_efficiency"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["kienzan_user", "biological_assimilation", "instant_transmission_offensive"],
+          weaknessesToAdd: ["copied_technique_imperfection", "ssj_stamina_drain_base"],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "vegeta-saga-buu-saga-buu-213",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Vegeta Saga Buu Base"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Buu Base"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Abilities need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Transformation mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "additions_proposed", notes: ["No team context"]},
+          {section: "team_combos", status: "additions_proposed", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["4 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal techniques lack APEX structure"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "super_saiyan_transformation", "flight", "energy_projection", "regenerator"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["ozaru_tail", "magic_staff", "kamehameha_boost"],
+          weaknessesToAdd: ["tail_weakness", "child_physical_limit"],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "vegeta-saga-super-dragon-ball-super-454",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Vegeta Saga Super"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Super"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Super form abilities need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Super form passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Ultra Instinct, God form, Blue form need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "additions_proposed", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["6 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "God form, Blue form formalization"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "divine_ki", "ultra_instinct", "god_ki", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["ultra_instinct", "god_ki_blue", "ki_projection"],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "vegeta-saga-gt-dragon-ball-gt-851",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Vegeta Saga GT"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga GT"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["GT-specific techniques need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["GT passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["SSJ4 transformation not formalized"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "additions_proposed", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["5 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "SSJ4 transformation not formalized"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "speedster", "golden_ape", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["absorpcion_pasiva_ki", "milagro_final", "voluntad_indomable"],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    }
+  ],
+  "integrationPatch": [],
+  "warnings": []
+}

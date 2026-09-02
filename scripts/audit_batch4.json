@@ -1,0 +1,230 @@
+{
+  "mode": "APEX_CONTINUOUS_ROSTER_AUDIT",
+  "status": "completed_batch",
+  "batchId": "roster_audit_todos",
+  "processedCount": 5,
+  "cursor": {
+    "nextRecordIndex": 20,
+    "nextRecordId": "gohan-del-futuro-l-nea-temporal-futura-43",
+    "continueCommand": "CONTINUE_APEX_AUDIT batch_id=roster_audit_todos start_index=20"
+  },
+  "results": [
+    {
+      "characterId": "son-gohan-ni-o-saga-saiyan-namek-830",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Gohan (Niño)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Arsenal needs APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Transformation mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["2 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal needs structure"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "child_body", "monkey_tail"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: [],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-gohan-joven-saga-androides-cell-945",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Gohan (Joven / Cell Games)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Arsenal needs APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Transformation mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["6 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["3 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal needs structure"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "ssj", "flight"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["ultra_instinct", "genkidama", "rage_boost"],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "gohan-ultimate-mystic-897",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Gohan Definitivo (Ultimate/Mystic)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Abilities need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Mystic state mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["6 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["4 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal needs structure"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "mystic", "flight"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: [],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-gohan-saga-super-dragon-ball-super-39",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Gohan (Saga Super)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Super"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Super Saiyan abilities need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Super form passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Gohan Super form mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "additions_proposed", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["5 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Gohan Super form formalization"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "super_saiyan", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: [],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "gohan-del-futuro-l-nea-temporal-futura-43",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Gohan del Futuro"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Gohan del Futuro"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Future Gohan abilities need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Future Gohan passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Future time-period mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "additions_proposed", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["2 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Future period mechanics"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "future", "flight"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: [],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        "conflictsToReview": [],
+        "doNotChange": ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    }
+  ],
+  "integrationPatch": [],
+  "warnings": []
+}

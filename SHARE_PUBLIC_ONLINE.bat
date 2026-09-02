@@ -7,6 +7,7 @@ echo ========================================================
 echo.
 echo Creando tunel seguro HTTPS para acceder desde cualquier movil o PC...
 echo.
-cd /d "%~dp0"
+pushd "%~dp0"
 npx --yes untun@latest tunnel --port 5173
+popd
 pause

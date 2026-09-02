@@ -1,0 +1,443 @@
+{
+  "mode": "APEX_CONTINUOUS_ROSTER_AUDIT",
+  "status": "completed_batch",
+  "batchId": "roster_audit_todos",
+  "processedCount": 10,
+  "cursor": {
+    "nextRecordIndex": 10,
+    "nextRecordId": "son-goku-saga-buu-saga-buu-646",
+    "continueCommand": "CONTINUE_APEX_AUDIT batch_id=roster_audit_todos start_index=10"
+  },
+  "results": [
+    {
+      "characterId": "son-goku-ni-o-dragon-ball-cl-sico-987",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (Niño)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Arsenal needs APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Transformation mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["2 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal needs structure"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "martial_artist", "saiyan", "child_body", "monkey_tail", "magic_staff", "ozaru_transform", "pure_heart"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: [],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-goku-23-tenkaichi",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (23º Tenkaichi Budokai)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Arsenal needs APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Weighted clothing mechanic not formalized"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["4 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["2 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal needs structure", "Weighted clothing mechanic"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "martial_artist", "saiyan", "speedster", "tactical_genius", "kiai", "tail_immunity", "weighted_clothing"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["super_kamehameha", "kamehameha_feet_tag", "blind_ki_sense", "tail_immunity"],
+          weaknessesToAdd: ["weighted_mobility_penalty"],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-goku-llegada-dbz-saga-saiyan-169",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (Llegada DBZ)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga DBZ"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Kaio-ken techniques need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Músculo Destrozado needs APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Kaio-ken multiplier mechanic missing"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["Kaio-ken recoil not formalized"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["3 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Kaio-ken multiplier mechanic"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "martial_artist", "saiyan", "kaioken_multiplication", "multiplier_technique", "genkidama_user"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["kaioken_multiplication", "genkidama_terrestrial", "indomitable_will"],
+          weaknessesToAdd: ["kaioken_recoil"],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-goku-saga-namek-saga-namek-176",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (Saga Namek)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Namek"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["SSJ transformation, Kaio-ken x20 need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Corazón Gélido del SSJ needs APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["SSJ transformation trigger, Kaio-ken x20 mechanic missing"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["SSJ emotional instability, Kaio-ken x20 body strain"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["3 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "SSJ transformation trigger", "Kaio-ken x20 extreme drawback"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "super_saiyan_transformation", "rage_amplification", "kaioken_multiplication", "telepathy", "telekinesis"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["rage_amplification", "basic_telepathy", "minimal_telekinesis"],
+          weaknessesToAdd: ["ssj_emotional_instability", "kaioken_x20_body_destruction"],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-goku-saga-cell-saga-androides-459",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (Saga Cell)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Cell"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["IT Kamehameha, copied Kienzan, SSJFP mastery need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Calma Marcial, Asimilación Genética need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["SSJ Full Power efficiency, IT offensive missing"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["Copied technique imperfection, SSJ stamina drain"]},
+          {section: "synergies", status: "additions_proposed", notes: ["Father-Son Kamehameha with Gohan not formalized"]},
+          {section: "team_combos", status: "additions_proposed", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["3 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "IT offensive use not formalized", "Kienzan copied imperfectly", "SSJ Full Power stamina efficiency"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "martial_artist", "saiyan", "super_saiyan_transformation", "instant_transmission", "teleportation_offense", "kienzan_user", "ssj_full_power", "ki_efficiency", "biological_assimilation", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["ki_efficiency", "teleportation_offense", "indomitable_will"],
+          weaknessesToAdd: ["copied_technique_imperfection", "ssj_stamina_drain_base"],
+          artifactsToAdd: [],
+          synergiesToAdd: ["father_son_kamehameha_synergy"],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-goku-saga-buu-saga-buu-646",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (Saga Buu)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Buu"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Abilities need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Transformation mechanics need formalization"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "additions_proposed", notes: ["No team context"]},
+          {section: "team_combos", status: "additions_proposed", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["4 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Arsenal techniques lack APEX structure"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "super_saiyan_transformation", "flight", "energy_projection", "regenerator"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["ozaru_tail", "magic_staff", "kamehameha_boost"],
+          weaknessesToAdd: ["tail_weakness", "child_physical_limit"],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-goku-saga-super-dragon-ball-super-732",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (Saga Super)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Super"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Ultra Instinct, God form, Blue form need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Corazón Gélido del SSJ needs APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Ultra Instinct mechanic, Kaio-ken x20 not formalized"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["5 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["Ultra Instinct instability, Kaio-ken x20 body strain"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["8 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Ultra Instinct mechanic not formalized", "Kaio-ken x20 extreme drawback not modeled"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "divine_ki", "ultra_instinct", "god_ki", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["ultra_instinct", "zenkai_limit_break", "teleportacion_dimensional"],
+          weaknessesToAdd: ["ultra_instability", "kaioken_x20_body_destruction"],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-goku-saga-gt-dragon-ball-gt-281",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (Saga GT)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga GT"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["GT-specific techniques need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["GT passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["SSJ4 transformation not formalized"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["6 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "SSJ4 transformation not formalized"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "speedster", "golden_ape", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["absorpcion_pasiva_ki", "milagro_final", "voluntad_indomable"],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "son-goku-mini-dragon-ball-daima-751",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Son Goku (Mini Daima)"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Saga Daima"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Mini form techniques need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Mini form passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Reduced physiology mechanic not formalized"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["2 forms exist but lack APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Reduced physiology mechanic not formalized"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "mini_body", "báculo_ki", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["fisiologia_reducida", "báculo_mágico_reforzado_de_ki", "kamehameha_reducido"],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: [],
+        doNotChange: ["tierExact", "tierRank", "powerKey", "APEX-Ki", "Source Ki", "numericStats", "simulationOutput"]
+      },
+      "conflictsToReview": []
+    },
+    {
+      "characterId": "vegeta-llegada-a-la-tierra-saga-saiyan-504",
+      "identityCheck": {
+        "status": "valid",
+        "notes": ["Audit completed for Vegeta llegada a la Tierra"],
+        "recommendedAction": "keep_separate"
+      },
+      "auditSummary": {
+        "auditResult": "additions_proposed",
+        "sections": [
+          {section: "identity", status: "complete", notes: ["Valid identity, Vegeta llegada a la Tierra"]},
+          {section: "tags", status: "additions_proposed", notes: ["Missing all functional tags"]},
+          {section: "abilities", status: "additions_proposed", notes: ["Vegeta-specific techniques need APEX structure"]},
+          {section: "passives", status: "additions_proposed", notes: ["Vegeta passives need APEX format"]},
+          {section: "special_mechanics", status: "additions_proposed", notes: ["Oozaru cósmico no formalizado"]},
+          {section: "hax_tags", status: "additions_proposed", notes: ["3 haxTags need snake_case normalization"]},
+          {section: "weaknesses", status: "additions_proposed", notes: ["No weaknesses defined"]},
+          {section: "synergies", status: "needs_review", notes: ["No team context"]},
+          {section: "team_combos", status: "needs_review", notes: ["No combos defined"]},
+          {section: "forms", status: "additions_proposed", notes: ["1 form exists but lacks APEX structure"]},
+          {section: "artifacts", status: "additions_proposed", notes: ["No artifacts defined"]}
+        ],
+        "identifiedGaps": ["Missing tierExact", "Missing tags", "Oozaru cósmico no formalizado"],
+        "identifiedConflicts": [],
+        "evidenceLimitations": ["No source_refs provided"],
+        "proposals": {
+          tagsToAdd: ["ki_user", "saiyan", "pride_boost", "martial_artist", "flight", "energy_projection"],
+          abilitiesToAdd: [],
+          passivesToAdd: [],
+          specialMechanicsToAdd: [],
+          haxTagsToAdd: ["transformación_ozaru_cósmica", "luna_artificial_de_ki", "resiliencia_de_orgullo"],
+          weaknessesToAdd: [],
+          artifactsToAdd: [],
+          synergiesToAdd: [],
+          teamCombosToAdd: [],
+          formsToAddOrUpdate: [],
+          statesToPropose: []
+        },
+        conflictsToReview: []
+      }
+    }
+  ],
+  "integrationPatch": [],
+  "warnings": []
+}

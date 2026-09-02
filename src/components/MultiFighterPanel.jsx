@@ -11,6 +11,8 @@ function SquadSynergyCard({ team, title, accentColor = 'cyan' }) {
 
   if (!team || team.length <= 1) return null;
 
+  const totalItems = (synergy.buffs?.length || 0) + (synergy.combos?.length || 0);
+
   return (
     <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2.5 font-mono text-xs">
       <div className="flex items-center justify-between">
@@ -20,7 +22,7 @@ function SquadSynergyCard({ team, title, accentColor = 'cyan' }) {
             {title || 'Sinergia & Tácticas de Alianza'}
           </span>
         </div>
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-2">
           <span className={`text-[10px] px-2 py-0.5 rounded font-bold ${
             synergy.cohesion >= 85 ? 'bg-emerald-950/80 border border-emerald-500/50 text-emerald-300' : 'bg-slate-800 text-slate-300'
           }`}>
@@ -29,9 +31,9 @@ function SquadSynergyCard({ team, title, accentColor = 'cyan' }) {
           <button
             type="button"
             onClick={() => setExpanded(!expanded)}
-            className="text-[10px] text-slate-400 hover:text-white underline cursor-pointer"
+            className="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-[10px] text-cyan-300 hover:text-white transition cursor-pointer flex items-center gap-1"
           >
-            {expanded ? 'Ocultar' : 'Ver Combos'}
+            <span>{expanded ? '▲ Ocultar Sinergias' : `▼ Ver Sinergias & Combos (${totalItems})`}</span>
           </button>
         </div>
       </div>
@@ -44,39 +46,57 @@ function SquadSynergyCard({ team, title, accentColor = 'cyan' }) {
         />
       </div>
 
-      {/* Buffs Activos */}
-      {synergy.buffs.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
-          {synergy.buffs.map((b, i) => (
-            <div key={i} className="p-1.5 rounded-lg bg-slate-900/90 border border-slate-800 flex items-start gap-1.5">
-              <span className="text-sm">{b.icon}</span>
-              <div className="leading-tight">
-                <span className="font-bold text-amber-300 text-[10px] block">{b.name}</span>
-                <span className="text-[9px] text-slate-400">{b.desc}</span>
-              </div>
-            </div>
-          ))}
+      {/* Resumen Compacto cuando está colapsado */}
+      {!expanded && totalItems > 0 && (
+        <div className="flex items-center justify-between text-[10px] text-slate-400 pt-0.5">
+          <span>✨ {synergy.buffs?.length || 0} Buffs de Alianza Activos</span>
+          <span>⚔️ {synergy.combos?.length || 0} Ataques Combinados</span>
         </div>
       )}
 
-      {/* Ataques Combinados Expandibles */}
-      {expanded && synergy.combos.length > 0 && (
-        <div className="p-2.5 rounded-lg bg-gradient-to-r from-purple-950/40 via-slate-900 to-indigo-950/40 border border-purple-500/40 space-y-2 mt-1">
-          <span className="font-bold text-purple-300 text-[10px] flex items-center gap-1.5">
-            <Swords className="w-3.5 h-3.5 text-purple-400" />
-            <span>Ataques Combinados Disponibles (Dual Finishers):</span>
-          </span>
-          <div className="space-y-1.5">
-            {synergy.combos.map((c, i) => (
-              <div key={i} className="p-1.5 rounded bg-black/40 border border-white/5 space-y-0.5">
-                <div className="flex items-center justify-between">
-                  <span className="font-bold text-amber-300 text-[11px]">{c.name}</span>
-                  <span className="text-[9px] text-slate-400">{c.pair}</span>
-                </div>
-                <p className="text-[10px] text-slate-300">{c.desc}</p>
+      {/* Contenido Expandible (Buffs y Combos) */}
+      {expanded && (
+        <div className="space-y-2.5 pt-1 animate-in fade-in">
+          {/* Buffs Activos */}
+          {synergy.buffs.length > 0 && (
+            <div>
+              <span className="font-bold text-amber-300 text-[10px] block mb-1.5">
+                ✨ Buffs Activos de Escuadra ({synergy.buffs.length}):
+              </span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                {synergy.buffs.map((b, i) => (
+                  <div key={i} className="p-1.5 rounded-lg bg-slate-900/90 border border-slate-800 flex items-start gap-1.5">
+                    <span className="text-sm">{b.icon}</span>
+                    <div className="leading-tight">
+                      <span className="font-bold text-amber-300 text-[10px] block">{b.name}</span>
+                      <span className="text-[9px] text-slate-400">{b.desc}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          )}
+
+          {/* Ataques Combinados */}
+          {synergy.combos.length > 0 && (
+            <div className="p-2.5 rounded-lg bg-gradient-to-r from-purple-950/40 via-slate-900 to-indigo-950/40 border border-purple-500/40 space-y-2">
+              <span className="font-bold text-purple-300 text-[10px] flex items-center gap-1.5">
+                <Swords className="w-3.5 h-3.5 text-purple-400" />
+                <span>Ataques Combinados Disponibles (Dual Finishers - {synergy.combos.length}):</span>
+              </span>
+              <div className="space-y-1.5">
+                {synergy.combos.map((c, i) => (
+                  <div key={i} className="p-1.5 rounded bg-black/40 border border-white/5 space-y-0.5">
+                    <div className="flex items-center justify-between">
+                      <span className="font-bold text-amber-300 text-[11px]">{c.name}</span>
+                      <span className="text-[9px] text-slate-400">{c.pair}</span>
+                    </div>
+                    <p className="text-[10px] text-slate-300">{c.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>

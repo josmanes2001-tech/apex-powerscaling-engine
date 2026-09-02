@@ -143,14 +143,15 @@ export function calculateSquadSynergy(team = []) {
     // 4.2 Extraer combos definidos en el personaje
     if (c.teamCombos && Array.isArray(c.teamCombos)) {
       c.teamCombos.forEach(combo => {
-        const hasPartners = (combo.partnerRequirements || []).every(req => 
+        const reqs = Array.isArray(combo.partnerRequirements) ? combo.partnerRequirements : [];
+        const hasPartners = reqs.length > 0 && reqs.every(req => 
           team.some(ally => ally.id !== c.id && (ally.name || '').toLowerCase().includes(req.toLowerCase()))
         );
         if (hasPartners) {
           combos.push({
-            pair: `${c.name} + ${combo.partnerRequirements.join(' & ')}`,
-            name: `«${combo.comboName}»`,
-            desc: combo.description
+            pair: `${c.name} + ${reqs.join(' & ')}`,
+            name: `«${combo.comboName || 'Ataque Combinado'}»`,
+            desc: combo.description || ''
           });
         }
       });

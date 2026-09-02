@@ -1,0 +1,46 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "openrouter/nvidia/nemotron-3.5-lightning:free",
+  "small_model": "openrouter/cohere/north-mini-code:free",
+  "instructions": [
+    "APEX_RULES.md"
+  ],
+  "command": {
+    "enrich": {
+      "description": "Enriquece automáticamente en bucle continuo personajes con Tags, Súpers/Finishers, Pasivas, Combos y Sinergias (Uso: enrich [full_enrichment|synergies_combos|passives_weaknesses] [universo|all])",
+      "template": "node src/scripts/runAutonomousTask.js \"$1\" \"$2\""
+    },
+    "apply_patches": {
+      "description": "Aplica y fusiona todos los parches y mejoras generados directamente en characters.js con backup automático",
+      "template": "node src/scripts/applyEnrichmentPatches.js"
+    },
+    "audit_auto": {
+      "description": "Inicia la auditoría y enriquecimiento nocturno autónomo de todo el roster en bucle desatendido sin pausas",
+      "template": "node src/scripts/runAutonomousAudit.js \"$1\""
+    },
+    "audit_progress": {
+      "description": "Muestra el estado y porcentaje completado de la auditoría del roster",
+      "template": "node src/scripts/checkAuditProgress.js"
+    },
+    "read_pc": {
+      "description": "Lee el contenido de cualquier archivo o carpeta de este PC (C:\\Users\\Jose Luis) sin moverlo",
+      "template": "node src/scripts/readPcFile.js \"$1\""
+    },
+    "test": {
+      "description": "Ejecuta las 14 pruebas mínimas del motor APEX",
+      "template": "node src/scripts/runComprehensiveTests.js"
+    },
+    "verify": {
+      "description": "Verifica multiplicadores y escalado en vivo",
+      "template": "node src/scripts/verifyLiveScaling.js"
+    },
+    "build": {
+      "description": "Compila el bundle de producción",
+      "template": "npm run build"
+    },
+    "deploy": {
+      "description": "Despliega el proyecto verificado a Vercel",
+      "template": "node src/scripts/autoDeployVercel.js"
+    }
+  }
+}

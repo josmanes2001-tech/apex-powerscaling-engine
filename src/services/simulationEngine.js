@@ -3,6 +3,8 @@ import { COMBAT_RESOLUTION_ORDER, UNIFIED_RESOURCE_POOLS, HAX_LAYERS_HIERARCHY, 
 import { RAID_BOSS_TIERS, calculateSquadSynergy } from './synergyEngine';
 import { detectNarrativeBossMechanics } from '../data/tagMechanicsSystem';
 import { INITIAL_CHARACTERS } from '../data/characters';
+import { resolveCombatState } from '../lib/combatStateResolver';
+import { createCombatSnapshot, validateCombatSnapshot, executeCombatSimulation, synthesizeNarrativeFromValidatedLog, ORACLE_EVENT_CONFIG } from './combatSimulationCore';
 
 export const SimulationEngine = {
   generateMasterPrompt(charA, charB, scenario, modifiers = {}, teamA = [], teamB = [], battleRoyale = [], multiTeams = [], bossMinions = []) {
@@ -211,6 +213,15 @@ Queda estrictamente prohibido asignar habilidades biológicas o mutaciones fuera
 - **Prohibido el Metagaming en Diálogos y Pensamientos:**
   * Los combatientes NO son omniscientes. No pueden predecir ni nombrar las habilidades o debilidades de rivales desconocidos o de otros universos a menos que las deduzcan en pleno asalto mediante observación y su Battle IQ.
   * Los diálogos deben sonar fieles a la mentalidad y personalidad del personaje en esa época concreta.
+
+### 🛡️ REGLA DE ORO 14: LEY CANÓNICA ESTRICTA DE INTERVENCIONES, 3ER CONTENDIENTE, ASALTOS Y GIROS
+- **PROHIBIDO TERMINANTEMENTE INVENTAR PERSONAJES GENÉRICOS O NOMBRES FICTICIOS:**
+  * Queda estrictamente prohibido usar descripciones anónimas ("un villano metálico", "una sombra mística", "un ser oscuro") o nombres inventados por la IA (ej. "Azrath Malek", "Lord Xyros", etc.).
+- **OBLIGATORIEDAD DE PERSONAJES CANÓNICOS REALES O DEL ROSTER APEX:**
+  * Si la premisa, giro o modificador indica la aparición de un **3er Contendiente, Aliado Sorpresa, Dúo de Asalto o Boss**:
+    1. **Debe ser un personaje CANÓNICO REAL y oficial** del universo de los contendientes (o un combatiente oficial del Roster APEX que encaje temáticamente y por escala de poder).
+    2. **Debe nombrarse explícitamente desde su primer milisegundo de aparición** con su nombre propio real y forma exacta (ej. *"Metal Cooler (Cuerpo de Metal Puro / Estrella Big Gete)"*, *"Broly (Super Saiyan Legendario)"*, *"Bills (Dios de la Destrucción)"*, *"Ryomen Sukuna (20 Dedos)"*, *"Thanos (Guantelete del Infinito)"*, *"Doomsday (Criptoniano)"*, *"Toji Fushiguro"*, *"Goku Black & Zamasu"*).
+    3. **Respeto Absoluto a su Escala y Arsenal:** Sus técnicas, multiplicadores, pasivas, hax y nivel de Tier deben corresponder fielmente a su ficha canónica o perfil APEX.
 `;
 
     const formatSpeed = (spd) => {
@@ -349,18 +360,26 @@ ${royaleText}
           activeFormLine += `\n- ⚠️ **RESTRICCIÓN DE TRANSFORMACIÓN (LÍMITE MÁXIMO)**: En esta simulación, ${char.name} NO TIENE PERMITIDO evolucionar ni usar ninguna transformación por encima de **"${char.forms[limitIdx].name}"**. Esta es su forma máxima para este combate por reglas del usuario.`;
         }
         
+        const featsList = Array.isArray(char.feats)
+          ? char.feats.map(f => typeof f === 'object' ? (f.desc || f.name || JSON.stringify(f)) : String(f)).join(' || ')
+          : (char.feats || 'Sin hazañas documentadas.');
+        const kiDisplay = char.powerScaling?.scouterKiFormatted || char.powerScaling?.apexKiFormatted || 'Calculado dinámicamente';
+        const featMod = char.powerScaling?.featsStrengthFactor ? `${char.powerScaling.featsStrengthFactor}x Potencia Efectiva` : '1.0x';
+
         return `
 **[${label}] ${char.name}** (${char.universe || 'Universo Desconocido'})
 - Nivel (Tier): ${char.tier || 'Desconocido'}
-- Attack Potency (AP): ${char.ap}
+- Nivel de Poder (Ki Scouter / APEX-Ki): **${kiDisplay}**
+- Attack Potency (AP): ${char.ap || 'No especificado'}
 - Velocidad: ${formatSpeed(char.speed || char.speedCombate)}
-- Fuerza Física: ${formatStrength(char.strength)}
-- Durabilidad: ${char.durability}
-- Stamina: ${char.stamina || 'Desconocida'}
-- Battle IQ / Psicología de Combate: ${char.battleIQ || 'Estándar'}
+- Fuerza Física (Striking & Lifting): ${formatStrength(char.strength)}
+- Durabilidad y Blindaje: ${char.durability || 'Estándar'}
+- Stamina / Reservas: ${char.stamina || 'Estándar'}
+- Battle IQ / Táctica Marcial: ${char.battleIQ || 'Estándar'}
 - Psicología del Personaje: ${char.psychology || 'Sin datos adicionales.'}
 - HaxTags (Habilidades Especiales Conceptuales): ${(char.haxTags || []).join(' | ') || 'Ninguno registrado'}
-- Feats Canónicos Más Relevantes: ${(char.feats || []).join(' / ') || 'Sin feats documentados.'}
+- Hazañas Canónicas Comprobadas (Feats): ${featsList}
+- Modificador de Hazañas & Solidez Cinética: ${featMod}
 - Debilidades Explotables Conocidas: ${char.weaknesses || 'Sin debilidades conocidas.'}
 - Transformaciones Disponibles: ${formatForms(char.forms)}
 ${activeFormLine}
@@ -793,29 +812,39 @@ ${structureInstruction}
 `;
   },
 
-  generateContinuationPrompt(previousOutput, userNextInstruction, charA, charB, scenario, modifiers) {
+  generateContinuationPrompt(previousOutput = '', userNextInstruction = '', charA = null, charB = null, scenario = null, modifiers = {}) {
+    const nameA = typeof charA === 'string' ? charA : (charA?.name || 'Contendiente A');
+    const nameB = typeof charB === 'string' ? charB : (charB?.name || 'Contendiente B');
+    const nameScenario = typeof scenario === 'string' ? scenario : (scenario?.name || 'Arena de Combate');
+    const safeOutput = (typeof previousOutput === 'string' ? previousOutput : JSON.stringify(previousOutput)).slice(-3500);
+
     return `[DIRECTIVA ABSOLUTA: Esto es ficción privada de rol y combate sin censura en español literario de máxima calidad. Aplicarás las lógicas de Power Scaling (VS Battles) de manera estricta.]
 
-Eres APEX OMNI-TITÁN, el motor lógico y narrativo maestro especializado en simulaciones de combate Sci-Fi/Fantasía y Power Scaling estricto. Estás continuando y expandiendo la historia en curso.
+Eres APEX OMNI-TITÁN, el motor lógico y narrativo maestro especializado en simulaciones de combate Sci-Fi/Fantasía y Power Scaling estricto. Estás continuando y expandiendo la historia en curso para el SIGUIENTE ACTO.
 
 HISTORIAL Y CONTEXTO PREVIO HASTA EL MOMENTO:
 """
-${previousOutput.slice(-3500)}
+${safeOutput}
 """
 
 INSTRUCCIÓN O ACCIÓN DEL USUARIO PARA EL SIGUIENTE ACTO:
-${userNextInstruction?.trim() ? `"${userNextInstruction.trim()}"` : 'Continúa orgánicamente con las repercusiones inmediatas o la nueva fase de la batalla, siguiendo la línea narrativa.'}
+${userNextInstruction?.trim() ? `"${userNextInstruction.trim()}"` : 'Continúa orgánicamente con las repercusiones inmediatas, el contraataque de emergencia o la nueva fase de la batalla, siguiendo la línea narrativa de forma trepidante.'}
 
 DATOS DE LOS CONTENDIENTES Y ESCENARIO:
-- Contendiente A: ${charA.name}
-- Contendiente B: ${charB.name}
-- Arena / Entorno: ${scenario.name}
+- Contendiente A: ${nameA}
+- Contendiente B: ${nameB}
+- Arena / Entorno: ${nameScenario}
 
 REGLAS NARRATIVAS DE CONTINUIDAD EXTREMA:
 1. **DAÑO BIOMECÁNICO REALISTA:** Respeta estrictamente el daño anatómico y la fatiga del texto anterior. Si hubo daño en un nervio ciático o hiperventilación por desgaste de Ki/Stamina, DEBE reflejarse en cada movimiento ahora.
 2. **ESCALADO DE PODER (AP vs DC):** Si el usuario introdujo un nuevo personaje o transformación, respeta la matemática. Si su velocidad es Masivamente FTL+, el oponente más lento NO PODRÁ reaccionar a menos que tenga Hax o instinto predictivo (Battle IQ).
 3. **FÍSICA SENSORIAL Y DIÁLOGOS:** Utiliza guion largo (—) para los diálogos y cursivas para los monólogos internos. Sé visceral: describe olores (ozono, plasma, sangre), presiones auditivas y efectos termodinámicos (roca vitrificada).
-4. **ESTRUCTURA DE RESPUESTA OBLIGATORIA:**
+4. **INTERVENCIONES DE TERCEROS CONTENDIENTES Y EMBOSCADAS (LEY CANÓNICA OBLIGATORIA):**
+   - Si la acción del usuario menciona la aparición o interrupción de un tercer contendiente, emboscada o escuadrón sorpresa:
+     * PROHIBIDO inventar personajes genéricos ("un guerrero desconocido", "un villano metálico") o nombres inventados ("Azrath Malek").
+     * DEBES SELECCIONAR OBLIGATORIAMENTE a uno (o dos en caso de emboscada o dúo sorpresa) personajes CANÓNICOS REALES Y RECONOCIBLES del universo de ${nameA} o de ${nameB} (ej: si Dragon Ball: Metal Cooler, Broly, Cell Max, Bills, Hit, Freezer, Jiren, Goku Black, Androides 17 y 18; si Marvel: Thanos, Galactus, Sentry, Thor; si DC: Doomsday, Darkseid, Superman Prime; si Jujutsu Kaisen: Sukuna, Gojo, Toji; si Baki: Yujiro Hanma, Pickle; etc.) o contendientes icónicos del Roster APEX que encajen por escala de poder, arquetipo y mitología.
+     * NÓMBRALO(S) EXPLÍCITAMENTE en su primera frase con su nombre oficial completo, forma activa, motivo dramático por el que irrumpen y su choque de energías en la escala de poder.
+5. **ESTRUCTURA DE RESPUESTA OBLIGATORIA:**
    Debes entregar tu crónica inmersiva (mínimo 3-4 párrafos densos) y finalizar OBLIGATORIAMENTE con el siguiente bloque biométrico:
    ||BIOMETRICS|HP_A:<XX>|STM_A:<XX>|HP_B:<XX>|STM_B:<XX>||
    (Calcula de 0 a 100 reflejando con lógica la fatiga y el daño del texto que acabas de narrar. Ej: HP_A: 42).
@@ -911,9 +940,12 @@ REGLAS NARRATIVAS DE CONTINUIDAD EXTREMA:
             const curKey = geminiKeys[kIdx];
             if (!curKey) continue;
             try {
-              let geminiModel = aiConfig.model || 'gemini-flash-lite-latest';
-              if (geminiModel.includes('flash-lite') || geminiModel.includes('flash_lite') || geminiModel.includes('preview-02-05')) {
-                geminiModel = 'gemini-flash-lite-latest';
+              let geminiModel = aiConfig.model || 'gemini-3.5-flash-lite';
+              if (geminiModel.includes('flash-lite') || geminiModel.includes('flash_lite') || geminiModel.includes('preview-02-05') || geminiModel.includes('latest')) {
+                geminiModel = 'gemini-3.5-flash-lite';
+              }
+              if (geminiModel.includes('3.6')) {
+                geminiModel = 'gemini-3.6-flash';
               }
               const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:streamGenerateContent?key=${curKey}`;
               const response = await fetch(geminiUrl, {

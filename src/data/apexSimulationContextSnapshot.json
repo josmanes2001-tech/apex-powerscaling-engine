@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2026-09-01T17:31:00.000Z",
+  "projectStatus": {
+    "buildVerified": true,
+    "simulationEngineStatus": "implemented",
+    "narrativeEngineStatus": "implemented",
+    "combatStateResolverStatus": "implemented",
+    "oracleSystemStatus": "implemented"
+  },
+  "powerSystem": {
+    "tierOrderSource": "src/lib/apexTierSystem.js (TIER_ORDER: 51 tiers from 10-C to 0)",
+    "sourceKiRule": "Daizenshuu canonical values strictly for Dragon Ball; universal baseline 5 units for Tier 10-B average human",
+    "apexKiRule": "Monotonic universal scouter units: BaseScouterEnergy(tierRank) * formMultiplier",
+    "powerKeyRule": "tierRank * 101 + withinTierQualityScore (guarantees absolute monotonicity between tiers)",
+    "formsRule": "Strict resolution priority: base -> explicit apexKi -> explicit multiplier -> config alias -> active tier -> DB source ratio -> unresolved fallback",
+    "unresolvedFormRule": "Retains base power multiplier x1, logs warning, prevents double multiplication and zero-division"
+  },
+  "simulationPipeline": [
+    {
+      "step": "Character & Form Selection",
+      "status": "implemented",
+      "source": "src/components/SimulationViewer.jsx"
+    },
+    {
+      "step": "Combat State Resolution",
+      "status": "implemented",
+      "source": "src/lib/combatStateResolver.js"
+    },
+    {
+      "step": "Combat Snapshot Creation & Validation",
+      "status": "implemented",
+      "source": "src/services/combatSimulationCore.js"
+    },
+    {
+      "step": "4-Phase Deterministic Combat Execution",
+      "status": "implemented",
+      "source": "src/services/combatSimulationCore.js"
+    },
+    {
+      "step": "HP/Stamina Telemetry Tracking",
+      "status": "implemented",
+      "source": "src/services/combatSimulationCore.js"
+    },
+    {
+      "step": "Oracle (Black Swan) Event Resolution",
+      "status": "implemented",
+      "source": "src/services/combatSimulationCore.js"
+    },
+    {
+      "step": "Objective Verdict & Difficulty Calculation",
+      "status": "implemented",
+      "source": "src/services/combatSimulationCore.js"
+    },
+    {
+      "step": "Narrative Synthesis",
+      "status": "implemented",
+      "source": "src/services/combatSimulationCore.js"
+    }
+  ],
+  "characterSchema": {
+    "id": "string",
+    "name": "string",
+    "universe": "string",
+    "saga": "string",
+    "version": "string",
+    "tier": "string",
+    "tierExact": "string",
+    "sourceKi": "number | null",
+    "sourceKiStatus": "string | null",
+    "stats": {
+      "ap": "number (0-1)",
+      "speed": "number (0-1)",
+      "durability": "number (0-1)",
+      "formControl": "number (0-1)",
+      "battleIQ": "number (0-1)",
+      "haxReliability": "number (0-1)"
+    },
+    "arsenal": {
+      "superAttacks": "Array<{ name, desc, cost }>",
+      "ultimateAttacks": "Array<{ name, desc, cost }>",
+      "passives": "Array<{ name, desc, cost }>",
+      "actives": "Array<{ name, desc, cost }>"
+    },
+    "forms": "Array<{ id, name, multiplier, tier, statModifiers, specialMechanics }>",
+    "specialMechanics": "string[]",
+    "haxTags": "string[]"
+  },
+  "stateSchema": {
+    "characterId": "string",
+    "activeStateId": "string",
+    "stateName": "string",
+    "tierExact": "string",
+    "tierRank": "number (0-50)",
+    "powerKey": "number",
+    "apexKiDisplay": "string",
+    "formMultiplier": "number",
+    "scalingMethod": "string",
+    "sourceKiCurrent": "number | null",
+    "sourceKiDisplay": "string | null",
+    "warnings": "string[]"
+  },
+  "combatSnapshotSchema": {
+    "simulationId": "string",
+    "seed": "number",
+    "scenario": {
+      "mapId": "string",
+      "mapName": "string",
+      "ruleset": "string",
+      "collateralMode": "string",
+      "allowFusion": "boolean",
+      "allowExternalItems": "boolean",
+      "allowPreparation": "boolean",
+      "allowNonCanonical": "boolean"
+    },
+    "teams": "Array<{ teamId, name, members: Combatant[] }>",
+    "resolvedStates": "ResolvedCombatState[]",
+    "allowedAbilities": "Array<{ id, name, ownerCharacterIds, type, staminaCost, cooldownTurns, powerModifier }>",
+    "allowedForms": "Array<{ id, name, characterId, tier, multiplier }>",
+    "oracleEvents": {
+      "enabled": "boolean",
+      "active": "OracleEvent[]"
+    }
+  },
+  "combatLogSchema": {
+    "turn": "number",
+    "phase": "number (1-4)",
+    "phaseName": "string",
+    "actorId": "string",
+    "targetId": "string",
+    "actionId": "string",
+    "actionName": "string",
+    "hpChangeA": "number",
+    "staminaChangeA": "number",
+    "hpChangeB": "number",
+    "staminaChangeB": "number",
+    "mapEffect": "string",
+    "result": "string"
+  },
+  "oracleEvents": [
+    { "id": "arena-collapse-zero-gravity", "name": "Colapso de Arena y Gravedad Cero", "type": "map-event", "phase": 3 },
+    { "id": "same-verse-canon-invader", "name": "Invasor del Mismo Verso", "type": "reinforcement", "phase": 3 },
+    { "id": "multiversal-surprise-warrior", "name": "Guerrero Multiversal Sorpresa", "type": "reinforcement", "phase": 3 },
+    { "id": "canonical-fusion", "name": "Fusión Canónica en Batalla", "type": "fusion", "phase": 3 },
+    { "id": "what-if-hybrid-fusion", "name": "Fusión What-If Híbrida", "type": "apex-custom-fusion", "phase": 3 },
+    { "id": "cell-absorption", "name": "Absorción de Cell", "type": "absorption", "phase": 3 },
+    { "id": "majin-buu-absorption", "name": "Absorción de Majin Buu", "type": "absorption", "phase": 3 },
+    { "id": "baby-parasitation", "name": "Parasitación y Subditos Tsufur", "type": "control-event", "phase": 3 },
+    { "id": "canonical-awakening", "name": "Despertar Canónico", "type": "state-upgrade", "phase": 3 },
+    { "id": "transcendent-awakening", "name": "Despertar Trascendente", "type": "apex-custom-state-upgrade", "phase": 3 },
+    { "id": "forbidden-finisher-awakening", "name": "Despertar de Super Técnica o Finisher", "type": "temporary-technique", "phase": 3 },
+    { "id": "third-faction-invader", "name": "Invasor de Tercera Facción", "type": "reinforcement", "phase": 3 },
+    { "id": "temporary-hax-nullification", "name": "Anulación Catastrófica de Hax", "type": "temporary-rule", "phase": 3 },
+    { "id": "space-time-failure", "name": "Falla Espacio-Temporal", "type": "map-event", "phase": 3 },
+    { "id": "corruption-berserk-miasma", "name": "Miasma de Corrupción o Berserk", "type": "temporary-status", "phase": 3 },
+    { "id": "divine-blessing-shield", "name": "Bendición Divina", "type": "single-use-defense", "phase": 3 },
+    { "id": "mirror-paradox-doppelganger", "name": "Paradoja del Espejo", "type": "temporary-duplicate", "phase": 3 },
+    { "id": "localized-time-dilation", "name": "Dilatación Temporal Localizada", "type": "temporary-rule", "phase": 3 },
+    { "id": "runaway-ki-supernova", "name": "Supernova de Ki Desbocado", "type": "map-event", "phase": 3 }
+  ],
+  "lagunaConstraints": {
+    "mustUseOnlyProvidedData": true,
+    "mustNotInventAbilities": true,
+    "mustNotChangeStats": true,
+    "mustNotChangeWinner": true,
+    "mustFlagMissingRules": true,
+    "mustLabelOracleCustomContent": true
+  },
+  "knownLimitations": [
+    "Approx 60% of character stat numbers are currently balanced templates pending manual lore audit",
+    "287 secondary/obscure forms default to base multiplier (x1) pending custom multipliers in formScalingConfig.js",
+    "Full character database is 73k lines (4MB), requiring the use of lightweight indices for high-frequency prompts"
+  ],
+  "promptRequirements": [
+    "Inject CombatSnapshot, resolvedStates, allowedAbilities, and validated combatLog into the prompt",
+    "Enforce immutable winner and difficulty as output by the deterministic simulation verdict",
+    "Require structured 4-phase chronicle with biometric telemeters ||BIOMETRICS|...||",
+    "Strictly format response as parseable JSON matching the requested schema"
+  ]
+}

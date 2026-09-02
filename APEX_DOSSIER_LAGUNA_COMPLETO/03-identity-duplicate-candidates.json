@@ -1,0 +1,1062 @@
+[
+  {
+    "recordIds": [
+      "son-goku-ni-o-dragon-ball-cl-sico-987",
+      "son-goku-23-tenkaichi"
+    ],
+    "names": [
+      "Son Goku (Niño)",
+      "Son Goku (23º Tenkaichi Budokai)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Búsqueda de las Esferas / Red Ribbon / Rey Piccolo vs 23º Torneo de las Artes Marciales / Final DB Clásico)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-llegada-dbz-saga-saiyan-169",
+      "son-goku-saga-namek-saga-namek-176"
+    ],
+    "names": [
+      "Son Goku (Llegada DBZ)",
+      "Son Goku (Saga Namek)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan vs Saga de Namek)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-llegada-dbz-saga-saiyan-169",
+      "son-goku-saga-cell-saga-androides-459"
+    ],
+    "names": [
+      "Son Goku (Llegada DBZ)",
+      "Son Goku (Saga Cell)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan vs Juegos de Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-llegada-dbz-saga-saiyan-169",
+      "son-goku-saga-buu-saga-buu-646"
+    ],
+    "names": [
+      "Son Goku (Llegada DBZ)",
+      "Son Goku (Saga Buu, Base)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan vs Saga de Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-llegada-dbz-saga-saiyan-169",
+      "goku-namek-post-zenkai-892"
+    ],
+    "names": [
+      "Son Goku (Llegada DBZ)",
+      "Son Goku (Saga Freezer / Post-Zenkai)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan vs Saga de Freezer)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-llegada-dbz-saga-saiyan-169",
+      "goku-ssj3-buu-saga-893"
+    ],
+    "names": [
+      "Son Goku (Llegada DBZ)",
+      "Son Goku (Saga Buu, SSJ3)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan vs Saga Majin Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-namek-saga-namek-176",
+      "son-goku-saga-cell-saga-androides-459"
+    ],
+    "names": [
+      "Son Goku (Saga Namek)",
+      "Son Goku (Saga Cell)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de Namek vs Juegos de Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-namek-saga-namek-176",
+      "son-goku-saga-buu-saga-buu-646"
+    ],
+    "names": [
+      "Son Goku (Saga Namek)",
+      "Son Goku (Saga Buu, Base)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de Namek vs Saga de Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-namek-saga-namek-176",
+      "goku-namek-post-zenkai-892"
+    ],
+    "names": [
+      "Son Goku (Saga Namek)",
+      "Son Goku (Saga Freezer / Post-Zenkai)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de Namek vs Saga de Freezer)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-namek-saga-namek-176",
+      "goku-ssj3-buu-saga-893"
+    ],
+    "names": [
+      "Son Goku (Saga Namek)",
+      "Son Goku (Saga Buu, SSJ3)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de Namek vs Saga Majin Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-cell-saga-androides-459",
+      "son-goku-saga-buu-saga-buu-646"
+    ],
+    "names": [
+      "Son Goku (Saga Cell)",
+      "Son Goku (Saga Buu, Base)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Juegos de Cell vs Saga de Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-cell-saga-androides-459",
+      "goku-namek-post-zenkai-892"
+    ],
+    "names": [
+      "Son Goku (Saga Cell)",
+      "Son Goku (Saga Freezer / Post-Zenkai)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Juegos de Cell vs Saga de Freezer)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-cell-saga-androides-459",
+      "goku-ssj3-buu-saga-893"
+    ],
+    "names": [
+      "Son Goku (Saga Cell)",
+      "Son Goku (Saga Buu, SSJ3)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Juegos de Cell vs Saga Majin Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-buu-saga-buu-646",
+      "goku-namek-post-zenkai-892"
+    ],
+    "names": [
+      "Son Goku (Saga Buu, Base)",
+      "Son Goku (Saga Freezer / Post-Zenkai)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de Buu vs Saga de Freezer)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-buu-saga-buu-646",
+      "goku-ssj3-buu-saga-893"
+    ],
+    "names": [
+      "Son Goku (Saga Buu, Base)",
+      "Son Goku (Saga Buu, SSJ3)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de Buu vs Saga Majin Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-saga-super-dragon-ball-super-732",
+      "son-goku-ultra-instinto-limitado"
+    ],
+    "names": [
+      "Son Goku (Saga Super)",
+      "Son Goku (Ultra Instinto Limitado / Perfecto)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Torneo del Poder / Granolah vs Torneo del Poder / Saga Moro / Saga Granolah)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-mini-dragon-ball-daima-751",
+      "son-goku-mini-daima-full"
+    ],
+    "names": [
+      "Son Goku (Mini)",
+      "Son Goku (Daima — Mini)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Reino de los Demonios vs Aventura en el Reino Demoníaco (Daima))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-mini-dragon-ball-daima-751",
+      "son-goku-adulto-daima"
+    ],
+    "names": [
+      "Son Goku (Mini)",
+      "Son Goku (Daima — Adulto)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Reino de los Demonios vs Prólogo y Clímax del Reino Demoníaco (Daima))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "goku-namek-post-zenkai-892",
+      "goku-ssj3-buu-saga-893"
+    ],
+    "names": [
+      "Son Goku (Saga Freezer / Post-Zenkai)",
+      "Son Goku (Saga Buu, SSJ3)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de Freezer vs Saga Majin Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-goku-mini-daima-full",
+      "son-goku-adulto-daima"
+    ],
+    "names": [
+      "Son Goku (Daima — Mini)",
+      "Son Goku (Daima — Adulto)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Aventura en el Reino Demoníaco (Daima) vs Prólogo y Clímax del Reino Demoníaco (Daima))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-llegada-a-la-tierra-saga-saiyan-504",
+      "vegeta-saga-namek-saga-namek-783"
+    ],
+    "names": [
+      "Vegeta (Llegada a la Tierra)",
+      "Vegeta (Saga Namek)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan vs Saga Namek)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-llegada-a-la-tierra-saga-saiyan-504",
+      "vegeta-saga-cell-saga-androides-856"
+    ],
+    "names": [
+      "Vegeta (Llegada a la Tierra)",
+      "Vegeta (Saga Cell)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan vs Saga Androides / Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-llegada-a-la-tierra-saga-saiyan-504",
+      "vegeta-saga-buu-saga-buu-213"
+    ],
+    "names": [
+      "Vegeta (Llegada a la Tierra)",
+      "Vegeta (Saga Buu Base)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan vs Torneo de las Artes Marciales / Pui Pui)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-saga-namek-saga-namek-783",
+      "vegeta-saga-cell-saga-androides-856"
+    ],
+    "names": [
+      "Vegeta (Saga Namek)",
+      "Vegeta (Saga Cell)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Namek vs Saga Androides / Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-saga-namek-saga-namek-783",
+      "vegeta-saga-buu-saga-buu-213"
+    ],
+    "names": [
+      "Vegeta (Saga Namek)",
+      "Vegeta (Saga Buu Base)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Namek vs Torneo de las Artes Marciales / Pui Pui)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-saga-cell-saga-androides-856",
+      "vegeta-saga-buu-saga-buu-213"
+    ],
+    "names": [
+      "Vegeta (Saga Cell)",
+      "Vegeta (Saga Buu Base)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Androides / Cell vs Torneo de las Artes Marciales / Pui Pui)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-saga-super-dragon-ball-super-454",
+      "vegeta-ultra-ego"
+    ],
+    "names": [
+      "Vegeta (Saga Super)",
+      "Vegeta (Ultra Ego / Destrucción)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Granolah vs Saga Granolah)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-dragon-ball-daima-527",
+      "vegeta-mini-daima"
+    ],
+    "names": [
+      "Vegeta (Daima Mini)",
+      "Vegeta (Daima — Mini)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Reino de los Demonios vs Aventura en el Reino Demoníaco (Daima))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-dragon-ball-daima-527",
+      "vegeta-adulto-daima"
+    ],
+    "names": [
+      "Vegeta (Daima Mini)",
+      "Vegeta (Daima — Adulto)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Reino de los Demonios vs Prólogo y Clímax del Reino Demoníaco (Daima))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-mini-daima",
+      "vegeta-adulto-daima"
+    ],
+    "names": [
+      "Vegeta (Daima — Mini)",
+      "Vegeta (Daima — Adulto)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Aventura en el Reino Demoníaco (Daima) vs Prólogo y Clímax del Reino Demoníaco (Daima))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-u18-dbm",
+      "vegeta-u13-dbm"
+    ],
+    "names": [
+      "Vegeta (Universo 18, Línea Temporal Principal DBM)",
+      "Vegeta (Universo 13)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Torneo Interuniversal DBM — Universo 18 (Universo Principal) vs Torneo Interuniversal DBM — Universo 13)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-u18-dbm",
+      "vegeta-rey-universo18-dbm"
+    ],
+    "names": [
+      "Vegeta (Universo 18, Línea Temporal Principal DBM)",
+      "Vegeta (Rey, Universo 18 — DBM)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Torneo Interuniversal DBM — Universo 18 (Universo Principal) vs Torneo Interuniversal DBM)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "vegeta-u13-dbm",
+      "vegeta-rey-universo18-dbm"
+    ],
+    "names": [
+      "Vegeta (Universo 13)",
+      "Vegeta (Rey, Universo 18 — DBM)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Torneo Interuniversal DBM — Universo 13 vs Torneo Interuniversal DBM)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-gohan-ni-o-saga-saiyan-namek-830",
+      "son-gohan-joven-saga-androides-cell-945"
+    ],
+    "names": [
+      "Son Gohan (Niño)",
+      "Son Gohan (Joven / Cell Games)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan / Namek vs Saga de los Androides y Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "son-gohan-saga-super-dragon-ball-super-39",
+      "gohan-dbs-fnf-pre-torneo"
+    ],
+    "names": [
+      "Son Gohan (Saga Super)",
+      "Son Gohan (Dragon Ball Super — Resurrección de 'F' / Pre-Torneo)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Super Hero vs Saga de la Resurrección de 'F' y Entrenamiento Pre-Torneo del Poder)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "gohan-dbs-fnf-pre-torneo",
+      "son-gohan-dbs-superhero"
+    ],
+    "names": [
+      "Son Gohan (Dragon Ball Super — Resurrección de 'F' / Pre-Torneo)",
+      "Son Gohan (Super Hero)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de la Resurrección de 'F' y Entrenamiento Pre-Torneo del Poder vs Super Hero)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "piccolo-saga-saiyan-namek-saga-saiyan-967",
+      "piccolo-saga-cell-buu-saga-androides-946"
+    ],
+    "names": [
+      "Piccolo (Saga Namek)",
+      "Piccolo (Saga Androides / Cell)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Namek vs Saga Androides / Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "piccolo-saga-super-dragon-ball-super-228",
+      "piccolo-finales-z-principios-super"
+    ],
+    "names": [
+      "Piccolo (Saga Super)",
+      "Piccolo (Finales de Z / Principios de Super)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Torneo del Poder / Saga de Moro vs Batalla de los Dioses / Resurrección de F (Principios de Super))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "piccolo-saga-super-dragon-ball-super-228",
+      "piccolo-dbs-superhero"
+    ],
+    "names": [
+      "Piccolo (Saga Super)",
+      "Piccolo (Super Hero)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Torneo del Poder / Saga de Moro vs Super Hero)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "piccolo-finales-z-principios-super",
+      "piccolo-dbs-superhero"
+    ],
+    "names": [
+      "Piccolo (Finales de Z / Principios de Super)",
+      "Piccolo (Super Hero)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Batalla de los Dioses / Resurrección de F (Principios de Super) vs Super Hero)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "piccolo-inicio-saga-saiyan",
+      "piccolo-saga-saiyan"
+    ],
+    "names": [
+      "Piccolo (Inicio Saga Saiyan / vs Raditz)",
+      "Piccolo (Final Saga Saiyan / vs Nappa)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan (Llegada de Raditz) vs Saga Saiyan (Invasión de Nappa y Vegeta))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "freezer-torneo-del-poder-dbs",
+      "freezer-resurreccion-f"
+    ],
+    "names": [
+      "Freezer (Dragon Ball Super — Torneo del Poder)",
+      "Freezer (Dragon Ball Super — Resurrección de 'F')"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de la Supervivencia Universal / Torneo del Poder (DBS) vs Saga de la Resurrección de 'F' (DBS))"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "freezer-torneo-del-poder-dbs",
+      "freezer-dbs-broly-movie"
+    ],
+    "names": [
+      "Freezer (Dragon Ball Super — Torneo del Poder)",
+      "Freezer (Dragon Ball Super: Broly — Película Canónica)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de la Supervivencia Universal / Torneo del Poder (DBS) vs Película Dragon Ball Super: Broly)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "freezer-resurreccion-f",
+      "freezer-dbs-broly-movie"
+    ],
+    "names": [
+      "Freezer (Dragon Ball Super — Resurrección de 'F')",
+      "Freezer (Dragon Ball Super: Broly — Película Canónica)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de la Resurrección de 'F' (DBS) vs Película Dragon Ball Super: Broly)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "majin-buu-gordo-saga-buu-604",
+      "buuhan-majin-901"
+    ],
+    "names": [
+      "Majin Buu (Gordo)",
+      "Majin Buu (Buuhan)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga de Buu / DBS vs Saga Majin Buu)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "broly-u20-dbm-congelado",
+      "broly-legendario-dbm"
+    ],
+    "names": [
+      "Broly (Universo 20 — DBM, Superviviente Congelado)",
+      "Broly (Super Saiyan Legendario, Aparición DBM)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Torneo Interuniversal DBM — Universo 20 vs Torneo Interuniversal DBM)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "krilin-saga-saiyan-namek",
+      "krilin-saga-cell"
+    ],
+    "names": [
+      "Krilin (Saga Saiyan / Namek)",
+      "Krilin (Saga Cell / Androides)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan / Saga de Namek vs Saga Androides / Juegos de Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "yamcha-saga-saiyan",
+      "yamcha-dragon-ball-cl-sico-865"
+    ],
+    "names": [
+      "Yamcha (Saga Saiyan / Kaio-sama)",
+      "Yamcha (Saga Androides / Cell)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan / Planeta Kaio vs Saga Androides / Juegos de Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "tenshinhan-saga-saiyan",
+      "tenshinhan-saga-cell"
+    ],
+    "names": [
+      "Ten Shin Han (Saga Saiyan / Kaio-sama)",
+      "Ten Shin Han (Saga Cell / Androides)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Saiyan / Planeta Kaio vs Saga Androides / Juegos de Cell)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "androide-17-saga-androides-489",
+      "androide-17-futuro-l-nea-temporal-futura-398"
+    ],
+    "names": [
+      "Androide 17",
+      "Androide 17 (Futuro)"
+    ],
+    "duplicateClassification": "valid-variant",
+    "confidence": "high",
+    "evidence": [
+      "Progresion temporal o narrativa distinta entre sagas (Saga Androides vs Trunks del Futuro / TV Special)"
+    ],
+    "recommendedAction": "keep-both",
+    "manualReviewRequired": false
+  },
+  {
+    "recordIds": [
+      "soldados-de-freezer-saga-namek-793"
+    ],
+    "names": [
+      "Soldados de Freezer"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Soldados de Freezer)"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "adult-gon-hxh"
+    ],
+    "names": [
+      "Gon Adulto (Voto y Restricción Suprema)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Gon Adulto (Voto y Restricción Suprema))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "tamagami-2-escudo-daima"
+    ],
+    "names": [
+      "Tamagami #2 (Guardián del Escudo y Lanza)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Tamagami #2 (Guardián del Escudo y Lanza))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "kat-syd-u6-dbm"
+    ],
+    "names": [
+      "Kat y Syd (Guerreras Misteriosas, Universo 6)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Kat y Syd (Guerreras Misteriosas, Universo 6))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "tidar-xeniloum-u19-dbm"
+    ],
+    "names": [
+      "Tidar y Xeniloum (Guerreros Heliotas, Universo 19)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Tidar y Xeniloum (Guerreros Heliotas, Universo 19))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "saiyans-namekianos-u10-grupo"
+    ],
+    "names": [
+      "Mahissu, Romanesco, Cargot, Caracoru y Lumaca (Guerreros del Universo 10)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Mahissu, Romanesco, Cargot, Caracoru y Lumaca (Guerreros del Universo 10))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "goten-trunks-ninos-u16-dbm"
+    ],
+    "names": [
+      "Goten y Trunks (Niños, Universo 16, Pre-Fusión)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Goten y Trunks (Niños, Universo 16, Pre-Fusión))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "dr-raichi-fantasmas-del-odio-u3-dbm"
+    ],
+    "names": [
+      "Dr. Raichi (y los Fantasmas del Odio)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Dr. Raichi (y los Fantasmas del Odio))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "mai-shu-pilaf"
+    ],
+    "names": [
+      "Mai y Shu (Subordinados de Pilaf)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Mai y Shu (Subordinados de Pilaf))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "silva-illumi-zoldyck"
+    ],
+    "names": [
+      "Silva e Illumi Zoldyck"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Silva e Illumi Zoldyck)"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "trunks-futuro-v1-espada-ssj-basico"
+    ],
+    "names": [
+      "Trunks del Futuro (DBZ — Primer Viaje al Pasado, Espada y SSJ Básico)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Trunks del Futuro (DBZ — Primer Viaje al Pasado, Espada y SSJ Básico))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "trunks-futuro-v2-armadura-grados"
+    ],
+    "names": [
+      "Trunks del Futuro (DBZ — Saga Cell, Armadura y SSJ Grado 3)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Trunks del Futuro (DBZ — Saga Cell, Armadura y SSJ Grado 3))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "trunks-futuro-v3-saga-buu-ssj2"
+    ],
+    "names": [
+      "Trunks del Futuro (Continuidad Extendida Post-Cell — SSJ Perfeccionado y SSJ2)"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Trunks del Futuro (Continuidad Extendida Post-Cell — SSJ Perfeccionado y SSJ2))"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  },
+  {
+    "recordIds": [
+      "gyutaro-daki-kny-ed"
+    ],
+    "names": [
+      "Gyutaro y Daki"
+    ],
+    "duplicateClassification": "grouped-characters",
+    "confidence": "high",
+    "evidence": [
+      "Nombre contiene conjuncion o indicador de grupo multiple (Gyutaro y Daki)"
+    ],
+    "recommendedAction": "split-record",
+    "manualReviewRequired": true
+  }
+]

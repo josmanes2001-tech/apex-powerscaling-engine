@@ -67,7 +67,19 @@ export const POWERSCALING_TIERING_SYSTEM = [
   { tier: '1-A', name: 'Outerverse', category: 'Nivel 1: Infinito Superior', desc: 'Superioridad puramente ontológica/cualitativa que trasciende la física.', joules: 'Trascendencia Cualitativa' },
   { tier: 'High 1-A', name: 'Outerverse Alto', category: 'Nivel 1: Infinito Superior', desc: 'Metacualidades infinitas y espacio de todos los mundos lógicamente posibles.', joules: 'Metacualitativo Absoluto' },
   
-  { tier: 'Tier 0', name: 'Sin Límites (Boundless)', category: 'Nivel 0: Supremo', desc: 'Trascendencia absoluta, indivisible, inefable e insuperable más allá de toda ontología.', joules: 'Omnipotencia Real / Sin Límites' }
+  { tier: 'Tier 0', name: 'Sin Límites (Boundless)', category: 'Nivel 0: Supremo', desc: 'Trascendencia absoluta, indivisible, inefable e insuperable más allá de toda ontología dimensional o metafísica.', joules: 'Omnipotencia / Trascendencia Absoluta' },
+  { tier: 'Tier 9-C Físico', name: 'Tier 9-C Físico', category: 'Nivel 9: Sobrehumano', desc: 'Luchadores de élite física en combate cuerpo a cuerpo y artes marciales.', joules: '300 J a 15 kJ' },
+  { tier: 'Tier 9-A Físico', name: 'Tier 9-A Físico', category: 'Nivel 9: Sobrehumano', desc: 'Fuerza física destructora de habitaciones o muros de hormigón.', joules: '2.092x10^7 a 1.046x10^9 J' },
+  { tier: 'Tier 8-C Físico', name: 'Tier 8-C Físico', category: 'Nivel 8: Urbano', desc: 'Impacto cinético puro capaz de colapsar edificios y estructuras industriales.', joules: '1.046x10^9 a 8.368x10^9 J' },
+  { tier: 'Tier 7-A Físico', name: 'Tier 7-A Físico', category: 'Nivel 7: Nuclear', desc: 'Fuerza física pura capaz de partir o pulverizar formaciones montañosas.', joules: '4.184x10^17 a 4.184x10^18 J' },
+  { tier: 'Tier 7-B Base', name: 'Tier 7-B Base', category: 'Nivel 7: Nuclear', desc: 'Nivel destructivo de ciudad en estado base sin transformaciones.', joules: '2.635x10^16 a 4.184x10^17 J' },
+  { tier: 'Tier High 6-A', name: 'Tier High 6-A', category: 'Nivel 6: Tectónico', desc: 'Devastación multicontinental de alta escala y fisuras en la corteza terrestre.', joules: '1.855x10^25 a 1.24x10^29 J' },
+  { tier: 'Tier High 6-A a 5-C', name: 'Tier High 6-A a 5-C', category: 'Nivel 6-5: Tectónico a Lunar', desc: 'Rango de transición entre impacto multicontinental masivo y fragmentación lunar.', joules: '1.855x10^25 a 1.81x10^30 J' },
+  { tier: 'Tier 6-A', name: 'Tier 6-A', category: 'Nivel 6: Tectónico', desc: 'Destrucción de placas tectónicas continentales completas.', joules: '3.179x10^24 a 1.855x10^25 J' },
+  { tier: 'Tier 5-B', name: 'Tier 5-B', category: 'Nivel 5: Subestelar', desc: 'Destrucción de planetas rocosos similares a la Tierra.', joules: '2.487x10^32 a 1.59x10^34 J' },
+  { tier: 'Tier 5-A', name: 'Tier 5-A', category: 'Nivel 5: Subestelar', desc: 'Destrucción de gigantes gaseosos masivos tipo Júpiter.', joules: '1.59x10^34 a 6.906x10^37 J' },
+  { tier: 'Tier 4-B', name: 'Tier 4-B', category: 'Nivel 4: Estelar', desc: 'Destrucción completa de un sistema solar en onda expansiva esférica.', joules: '2.923x10^45 a 2.008x10^57 J' },
+  { tier: 'Tier 3-B', name: 'Tier 3-B', category: 'Nivel 3: Cósmico', desc: 'Destrucción de múltiples galaxias y cúmulos galácticos en el vacío interestelar.', joules: '8.593x10^68 a 2.825x10^92 J' },
 ];
 
 export const SPEED_SCALE_SYSTEM = [

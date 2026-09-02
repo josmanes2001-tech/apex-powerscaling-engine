@@ -4,11 +4,18 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run watch:deploy & vite",
     "build": "vite build",
     "preview": "vite preview",
     "server": "node server.cjs",
     "start": "node server.cjs",
+    "deploy": "node src/scripts/autoDeployVercel.js",
+    "watch:deploy": "node src/scripts/watchAndSync.js",
+    "opencode": "opencode .",
+    "opencode:web": "node src/scripts/launchOpenCodeWeb.js",
+    "opencode:model": "node src/scripts/selectOpenCodeModel.js",
+    "opencode:new": "node src/scripts/createNewProject.js",
+    "opencode:hub": "start CENTRO_DE_CONTROL.html",
     "apex:build-index": "node src/scripts/buildApexRosterIndex.js"
   },
   "dependencies": {

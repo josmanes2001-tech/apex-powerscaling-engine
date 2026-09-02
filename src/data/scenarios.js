@@ -363,16 +363,183 @@ export const SCENARIOS = [
     civilians: false
   },
   {
-    id: "dbm-tournament-ring",
-    name: "Ring del Torneo del Multiverso (Estadio del Espacio 0 — DBM)",
-    universe: "Dragon Ball Multiverse",
-    desc: "Plataforma esférica gigante de mineral ultradenso flotando en el vacío del Espacio 0, rodeada por 20 gradas dimensionales protegidas por campos de fuerza de los Vargas y Namekianos.",
-    sensory: "El vacío infinito del cosmos sin estrellas tradicionales. La atmósfera artificial creada por tecnología Varga zumba con la presión de los Ki de 20 universos alternativos.",
-    terrainEffect: "Gravedad 10G estándar en el ring. La superficie del ring se regenera con magia namekiana tras destrucciones masivas. Caer fuera del ring o tocar el suelo más de 30 segundos activa el conteo de descalificación.",
-    gravity: "10G (Gravedad Pesada de los Vargas)",
-    temperature: "Templada artificial (20°C, control ambiental de gravedad y oxígeno)",
+    id: "tournament-of-power-void",
+    name: "Plataforma del Torneo del Poder (Reino de la Nada)",
+    universe: "Dragon Ball Super",
+    desc: "Plataforma monumental en forma de peonza construida con el mineral Kachi Katchin (más duro que el acero divino), suspendida en el vacío infinito sin tiempo ni espacio.",
+    sensory: "El cielo es una nebulosa infinita de colores verde, violáceo y carmesí. La energía de los dioses destructores satura el ambiente. El Kachi Katchin vibra como un diapasón con cada onda de choque divina.",
+    terrainEffect: "Gravedad individual pesada ajustada a cada guerrero. El vuelo con Ki exterior está anulado (solo propulsión física, alas o saltos hipersónicos). La arena se fragmenta en bloques gigantes flotantes.",
+    gravity: "Gravedad Adaptativa Dinámica (10G a 50G por luchador)",
+    temperature: "Neutra cósmica (20°C en campo protegido)",
+    civilians: false
+  },
+  {
+    id: "valley-of-the-end",
+    name: "El Valle del Fin (Cascada de los Fundadores)",
+    universe: "Naruto Shippuden",
+    desc: "Garganta colosal flanqueada por las estatuas ciclópeas de Hashirama Senju y Madara Uchiha unidas por sellos Shinobi, divididas por una catarata ensordecedora y un lago caudaloso.",
+    sensory: "Rocío constante de agua fría vaporizada por el choque de energía. El rugido atronador de millones de litros de agua cayendo por segundo amortigua cualquier sonido menor. Olor a piedra húmeda, musgo y chakra concentrado.",
+    terrainEffect: "Superficie de agua para combate anfibio o caminata sobre chakra. Cabezas de las estatuas utilizables como puntos de ventaja táctica elevada. Muros de roca escarpada para rebotes y derribos.",
+    gravity: "1G (Tierra Shinobi)",
+    temperature: "Fresca y húmeda (16°C, brisa de catarata)",
+    civilians: false
+  },
+  {
+    id: "malevolent-shrine-domain",
+    name: "Expansión de Dominio: Santuario Malévolo",
+    universe: "Jujutsu Kaisen",
+    desc: "Estructura arquitectónica budista profanada con calaveras humanas y cuernos demoníacos, sobre un espejo de agua oscura y niebla densa impregnada de energía maldita letal.",
+    sensory: "Silencio sepulcral solo roto por el goteo de sangre en el agua estancada. El aire zumba con una presión asfixiante de muerte inminente. Olor a hierro y carne chamuscada.",
+    terrainEffect: "Dominio sin barrera cerrada con un radio de impacto de hasta 200 metros. El entorno desata micro-cortes 'Dismantle' en objetos inanimados y 'Cleave' adaptativo en seres con energía maldita.",
+    gravity: "1G (Territorio Maldito)",
+    temperature: "Gélida y opresiva (10°C)",
+    civilians: false
+  },
+  {
+    id: "sokyoku-hill",
+    name: "Colina del Sōkyoku (Guillotina de las Almas)",
+    universe: "Bleach",
+    desc: "Cima escarpada de la Sociedad de Almas con vista panorámica a todo el Seireitei, coronada por la colosal guillotina de madera sagrada y el poste del Fénix de Fuego.",
+    sensory: "Presión espiritual (Reiatsu) densa que hace crujir el suelo de piedra blanca. Cuando el Sōkyoku se activa, el calor espiritual asciende a millones de grados generando un fuego dorado cegador.",
+    terrainEffect: "Terreno plano elevado ideal para duelos de alta velocidad (Shunpo/Sonido). Borde al abismo de 1,000 metros de caída hacia las murallas del Seireitei.",
+    gravity: "1G (Dimensión Espiritual)",
+    temperature: "Variable (20°C normal / Hipertermia extrema al desatar el Fénix)",
+    civilians: false
+  },
+  {
+    id: "titan-ruins-cosmic",
+    name: "Titán: Ruinas de la Civilización Muerta",
+    universe: "Marvel Comics",
+    desc: "Planeta natal de Thanos convertido en un páramo desértico de color óxido, lleno de rascacielos de metal alienígena colapsados, campos gravitacionales erráticos y naves nodrizas estrelladas.",
+    sensory: "Vientos rojizos cargados de partículas de titanio y radiación cósmica. La gravedad cambia de ángulo según el área por la colisión de satélites orbitales. Atmósfera enrarecida.",
+    terrainEffect: "Zonas con gravedad anómala que permiten saltos monumentales. Escombros colosales de acero alienígena como cobertura o proyectiles telequinéticos.",
+    gravity: "0.5G a 1.5G (Anomalías Gravitatorias)",
+    temperature: "Fría desértica (4°C)",
+    civilians: false
+  },
+  {
+    id: "tokyo-underground-dome",
+    name: "Cúpula Subterránea del Tokyo Dome (Arena Sin Reglas)",
+    universe: "Baki the Grappler",
+    desc: "Foso de combate circular de 30 metros de diámetro a 6 pisos bajo tierra, rodeado por paredes de acero y arena empapada con la sangre y dientes de cientos de gladiadores.",
+    sensory: "Olor a sudor, sangre seca y cloroformo. El eco ensordecedor de los golpes contra la carne desnuda resuena en las paredes de hormigón. Gradas privadas para los hombres más poderosos del mundo.",
+    terrainEffect: "Espacio cerrado claustrofóbico. Cero escape: no hay esquinas ni cuerdas. La arena del suelo absorbe impactos pero puede usarse para cegar al rival.",
+    gravity: "1G (Tierra)",
+    temperature: "Húmeda y calurosa (29°C por la multitud)",
+    civilians: false
+  },
+  {
+    id: "tenkaichi-budokai-arena",
+    name: "Estadio del Torneo Mundial de las Artes Marciales (Tenkaichi Budokai)",
+    universe: "Dragon Ball (Budokai Tenkaichi)",
+    desc: "El ring tradicional de baldosas de piedra con estatuas de leones y gradas llenas de miles de espectadores humanos apasionados.",
+    sensory: "El rugido ensordecedor de miles de espectadores coreando los nombres de los luchadores. Olor a pólvora de fuegos artificiales y césped recién cortado. La voz del Presentador con gafas de sol resuena en los altavoces.",
+    terrainEffect: "Regla oficial de Fuera de Ring: tocar el césped o las gradas descalifica al combatiente. Baldosas destructibles que revelan tierra compacta. Civiles en el perímetro que pueden ser puestos en peligro por ondas de choque.",
+    gravity: "1G (Tierra)",
+    temperature: "Cálida y soleada (24°C)",
+    civilians: true
+  },
+  {
+    id: "cell-games-arena",
+    name: "Ring del Torneo de Cell (Cell Games)",
+    universe: "Dragon Ball Z (Budokai Tenkaichi)",
+    desc: "Plataforma cuadrada de roca pulida de 50 metros esculpida por el propio Cell con telequinesis, situada en una meseta solitaria rodeada de colinas rocosas bajo un cielo inquietante.",
+    sensory: "Tensión electrizante que eriza la piel. Viento seco que levanta pequeños remolinos de polvo entre las montañas. El zumbido de las cámaras de televisión de la prensa mundial apostada en la lejanía.",
+    terrainEffect: "Los 4 pilares de las esquinas pueden ser pulverizados o usados como proyectiles. Destruir el ring amplía el combate al desierto montañoso circundante sin límites de espacio.",
+    gravity: "1G (Tierra)",
+    temperature: "Templada desértica (23°C)",
+    civilians: false
+  },
+  {
+    id: "rocky-wasteland-dbz",
+    name: "Páramo Rocoso / Desierto de las Rocas (Duelo de Saiyans)",
+    universe: "Dragon Ball Z (Budokai Tenkaichi)",
+    desc: "El escenario más icónico de la franquicia: inmenso cañón desértico con pilares naturales de arenisca de cientos de metros de altura y desfiladeros laberínticos.",
+    sensory: "Viento áspero que transporta tierra rojiza y olor a ozono. Las formaciones rocosas se quiebran con estruendo ante el menor choque supersónico, llenando el aire de nubes de polvo y fragmentos afilados.",
+    terrainEffect: "Entorno 100% destructible. Los pilares de roca colapsan al ser atravesados por luchadores lanzados a alta velocidad. Desfiladeros profundos para emboscadas y ataques sorpresa.",
+    gravity: "1G (Tierra)",
+    temperature: "Árida y calurosa (33°C)",
+    civilians: false
+  },
+  {
+    id: "tropical-islands-dbz",
+    name: "Archipiélago de Islas Tropicales (Islands)",
+    universe: "Dragon Ball Z (Budokai Tenkaichi)",
+    desc: "Grupo de islas paradisíacas con densa vegetación selvática, palmeras y arrecifes de coral rodeadas por un océano cristalino de profundidad abisal.",
+    sensory: "La brisa marina salada se mezcla con el calor sofocante del trópico. El romper de las olas y el canto de gaviotas se interrumpe violentamente por ondas de choque que vaporizan el agua.",
+    terrainEffect: "Combate anfibio y subacuático tridimensional. Ocultación táctica bajo el agua o entre la densa jungla. Las explosiones de Ki generan tsunamis de 30 metros.",
+    gravity: "1G (Tierra)",
+    temperature: "Tropical cálida (28°C)",
+    civilians: false
+  },
+  {
+    id: "west-city-ruins-future",
+    name: "Ciudad del Oeste en Ruinas (Futuro Apocalíptico de Trunks)",
+    universe: "Dragon Ball Z (Budokai Tenkaichi)",
+    desc: "Metrópolis futurista devastada por los Androides, con rascacielos partidos por la mitad, coches calcinados y la cúpula destruida de Capsule Corporation.",
+    sensory: "El hedor a combustible quemado, asfalto derretido y metal oxidado domina el ambiente. Un cielo perpetuamente encapotado por nubes de humo oscuro amortigua la luz del sol.",
+    terrainEffect: "Laberinto urbano vertical de escombros de alta densidad. Rascacielos que pueden ser derribados sobre el rival. Estructuras subterráneas de metro accesibles para persecuciones.",
+    gravity: "1G (Tierra)",
+    temperature: "Gélida y deprimente (12°C)",
+    civilians: false
+  },
+  {
+    id: "sacred-glacier-arctic",
+    name: "Glaciar Ártico / Tierras Polares (Glacier)",
+    universe: "Dragon Ball Z (Budokai Tenkaichi)",
+    desc: "Inmenso mar congelado flanqueado por icebergs ciclópeos de hielo azul milenario, cavernas glaciares subterráneas y tormentas de nieve.",
+    sensory: "Frío cortante que congela el sudor al instante. Las ráfagas de Ki vaporizan instantáneamente toneladas de hielo generando densas cortinas de vapor blanco que ciegan los radares y la vista.",
+    terrainEffect: "Superficie de hielo ultrarresbaladiza que afecta la tracción física terrestre. Los icebergs se fracturan y caen al agua helada. Zonas de agua gélida que inducen hipotermia severa a combatientes humanos.",
+    gravity: "1G (Tierra Polar)",
+    temperature: "Extrema bajo cero (-35°C)",
+    civilians: false
+  },
+  {
+    id: "janemba-hell-dimension",
+    name: "Infierno Espiritual de Janemba (Reino de las Esferas de Colores)",
+    universe: "Dragon Ball Z: Fusión (Budokai Tenkaichi)",
+    desc: "El Infierno distorsionado por la magia caótica de Janemba, cubierto por miles de esferas de caramelo flotantes multicolores, ríos de energía espectral y agujas de cristal dimensional.",
+    sensory: "El espacio se curva de forma psicodélica con tonos amarillos, rosas y morados. Un eco estridente resuena en la mente de los combatientes. El suelo es de gelatina gomosa que rebota los impactos.",
+    terrainEffect: "Las esferas de colores pueden ser atravesadas, rebotadas o destruidas como proyectiles explosivos. Distorsión de portales: los ataques directos pueden doblar esquinas o reaparecer por la espalda.",
+    gravity: "0.8G Variable (Caos Espiritual)",
+    temperature: "Mística cambiante (15°C)",
+    civilians: false
+  },
+  {
+    id: "beerus-sacred-planet",
+    name: "Planeta Sagrado de Bills (Templo del Dios de la Destrucción)",
+    universe: "Dragon Ball Super",
+    desc: "Mundo paradisíaco coronado por un árbol sagrado piramidal invertido flotando sobre un lago cristalino infinito y praderas doradas bajo un firmamento estrellado diurno.",
+    sensory: "Paz divina absoluta impregnada del aroma de flores cósmicas y comida gourmet. La presencia pasiva del Hakai hace que el aire vibre con una microfrecuencia destructiva.",
+    terrainEffect: "La física divina del planeta amortigua y repara instantáneamente los daños ambientales menores. Árbol del templo indestructible por ataques no divinos. El Pez Oráculo y Whis observan desde la distancia.",
+    gravity: "2G (Gravedad Divina de Destructor)",
+    temperature: "Perfecta eterna (21°C)",
+    civilians: false
+  },
+  {
+    id: "king-kai-planet",
+    name: "Planeta del Kaio del Norte (Gravedad x10)",
+    universe: "Dragon Ball Z (Budokai Tenkaichi)",
+    desc: "Minúsculo planeta esférico de apenas 100 metros de diámetro cubierto de césped verde, con una carretera circular, la casa roja de Kaio-sama, un manzano y el coche deportivo clásico.",
+    sensory: "La curvatura extrema del horizonte permite ver la espalda del planeta con solo mirar al frente. El aire es limpio y liviano, pero el peso del cuerpo se multiplica por 10 de golpe.",
+    terrainEffect: "Espacio ultra reducido y curvatura 360°. Gravedad x10 constante que penaliza la velocidad de desplazamiento a luchadores sin acondicionamiento pesado. Gregory y Bubbles huyen por el perímetro.",
+    gravity: "10G (Hipergravedad Constante)",
+    temperature: "Primaveral fresca (19°C)",
+    civilians: false
+  },
+  {
+    id: "kami-lookout-palace",
+    name: "Palacio Sagrado de Kamisama (Templo Celestial)",
+    universe: "Dragon Ball (Budokai Tenkaichi)",
+    desc: "Plataforma semiesférica de baldosas blancas flotando sobre el cielo terrestre a 10,000 metros de altura, con árboles sagrados, fuentes de agua mística y la entrada al Palacio de Dende y Mr. Popo.",
+    sensory: "Silencio celestial por encima del manto de nubes. Aire enrarecido y limpio con bajo oxígeno. Vista infinita hacia la curvatura azul del planeta Tierra.",
+    terrainEffect: "Borde directo a una caída libre de 10 kilómetros hacia la Tierra. Baldosas blancas indestructibles ante ataques mundanos. El Reloj de Arena y la torre de observación ofrecen cobertura vertical.",
+    gravity: "1G (Tierra de Alta Altitud)",
+    temperature: "Fresca y pura (14°C, bajo oxígeno)",
     civilians: false
   }
 ];
+
+
 
 

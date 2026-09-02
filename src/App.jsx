@@ -1,29 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import CharacterCard from './components/CharacterCard';
 import CharacterModal from './components/CharacterModal';
 import ScenarioPanel from './components/ScenarioPanel';
 import MatchupMatrix from './components/MatchupMatrix';
 import SimulationViewer from './components/SimulationViewer';
-import WhatIfTree from './components/WhatIfTree';
-import VaultBrowserModal from './components/VaultBrowserModal';
-import AiConfigModal from './components/AiConfigModal';
 import MultiFighterPanel from './components/MultiFighterPanel';
-import TournamentModal from './components/TournamentModal';
-import TierListModal from './components/TierListModal';
-import CardExporterModal from './components/CardExporterModal';
-import StatComparatorModal from './components/StatComparatorModal';
-import CommunityVaultModal from './components/CommunityVaultModal';
-import BatchAiImporterModal from './components/BatchAiImporterModal';
-import VipModal from './components/VipModal';
 import MerchBanner from './components/MerchBanner';
 import AdBanner from './components/AdBanner';
-import RosterManagerModal from './components/RosterManagerModal';
-import RandomMatchmakerModal from './components/RandomMatchmakerModal';
-import ModesGuideModal from './components/ModesGuideModal';
-import PowerscalingGuideModal from './components/PowerscalingGuideModal';
-import AiSmartMatchmakerModal from './components/AiSmartMatchmakerModal';
-import AuthModal from './components/AuthModal';
+
+// Modales secundarios cargados perezosamente (Code Splitting)
+const WhatIfTree = lazy(() => import('./components/WhatIfTree'));
+const VaultBrowserModal = lazy(() => import('./components/VaultBrowserModal'));
+const AiConfigModal = lazy(() => import('./components/AiConfigModal'));
+const TournamentModal = lazy(() => import('./components/TournamentModal'));
+const TierListModal = lazy(() => import('./components/TierListModal'));
+const CardExporterModal = lazy(() => import('./components/CardExporterModal'));
+const StatComparatorModal = lazy(() => import('./components/StatComparatorModal'));
+const CommunityVaultModal = lazy(() => import('./components/CommunityVaultModal'));
+const BatchAiImporterModal = lazy(() => import('./components/BatchAiImporterModal'));
+const VipModal = lazy(() => import('./components/VipModal'));
+const RosterManagerModal = lazy(() => import('./components/RosterManagerModal'));
+const RandomMatchmakerModal = lazy(() => import('./components/RandomMatchmakerModal'));
+const ModesGuideModal = lazy(() => import('./components/ModesGuideModal'));
+const PowerscalingGuideModal = lazy(() => import('./components/PowerscalingGuideModal'));
+const AiSmartMatchmakerModal = lazy(() => import('./components/AiSmartMatchmakerModal'));
+const AuthModal = lazy(() => import('./components/AuthModal'));
+const BeamStruggleModal = lazy(() => import('./components/BeamStruggleModal'));
 import { CloudSync } from './services/cloudSyncService';
 import { INITIAL_CHARACTERS } from './data/characters';
 import { SCENARIOS } from './data/scenarios';
@@ -254,15 +257,21 @@ export default function App() {
     }
   });
 
-  const handleApplyAiMatchup = (parsed) => {
+  const handleApplyAiMatchup = (parsed, autoStart = false) => {
     if (!parsed) return;
     
-    // Set match mode
+    // 1. Set match mode and assign fighters with active forms
     if (parsed.mode === 'boss' || parsed.mode === '1vN') {
       setMatchMode('1vN');
       if (parsed.boss?.id) {
-        const found = characters.find(c => c.id === parsed.boss.id);
-        if (found) setCharA(found);
+        let found = characters.find(c => c.id === parsed.boss.id);
+        if (found) {
+          if (parsed.boss.requestedForm && found.forms) {
+            const formIdx = found.forms.findIndex(f => f.id === parsed.boss.requestedForm || f.name.toLowerCase().includes(parsed.boss.requestedForm.toLowerCase()));
+            if (formIdx >= 0) found = { ...found, _activeFormIndex: formIdx, _activeFormId: found.forms[formIdx].id };
+          }
+          setCharA(found);
+        }
       }
       if (parsed.squad && Array.isArray(parsed.squad) && parsed.squad.length > 0) {
         const squadChars = parsed.squad.map(s => characters.find(c => c.id === s.id)).filter(Boolean);
@@ -287,20 +296,56 @@ export default function App() {
     } else {
       setMatchMode('1v1');
       if (parsed.charA?.id) {
-        const found = characters.find(c => c.id === parsed.charA.id);
-        if (found) setCharA(found);
+        let found = characters.find(c => c.id === parsed.charA.id);
+        if (found) {
+          if (parsed.charA.requestedForm && found.forms) {
+            const formIdx = found.forms.findIndex(f => f.id === parsed.charA.requestedForm || f.name.toLowerCase().includes(parsed.charA.requestedForm.toLowerCase()));
+            if (formIdx >= 0) found = { ...found, _activeFormIndex: formIdx, _activeFormId: found.forms[formIdx].id };
+          }
+          setCharA(found);
+        }
       }
       if (parsed.charB?.id) {
-        const found = characters.find(c => c.id === parsed.charB.id);
-        if (found) setCharB(found);
+        let found = characters.find(c => c.id === parsed.charB.id);
+        if (found) {
+          if (parsed.charB.requestedForm && found.forms) {
+            const formIdx = found.forms.findIndex(f => f.id === parsed.charB.requestedForm || f.name.toLowerCase().includes(parsed.charB.requestedForm.toLowerCase()));
+            if (formIdx >= 0) found = { ...found, _activeFormIndex: formIdx, _activeFormId: found.forms[formIdx].id };
+          }
+          setCharB(found);
+        }
       }
     }
 
-    // Set scenario if mentioned
-    if (parsed.scenarioName) {
+    // 2. Set scenario if mentioned
+    if (parsed.scenario) {
+      setScenario(parsed.scenario);
+    } else if (parsed.scenarioName) {
       const q = parsed.scenarioName.toLowerCase();
       const scen = SCENARIOS.find(s => s.name.toLowerCase().includes(q) || s.universe.toLowerCase().includes(q));
       if (scen) setScenario(scen);
+    }
+
+    // 3. Apply Modifiers & Premise
+    if (parsed.modifiers) {
+      setModifiers(prev => ({
+        ...prev,
+        ...parsed.modifiers,
+        customContext: parsed.modifiers.customContext || parsed.prompt || prev.customContext
+      }));
+    }
+
+    // 4. Set active tab
+    setActiveTab('arena');
+
+    // 5. If autoStart is requested, trigger simulation
+    if (autoStart) {
+      setTimeout(() => {
+        handleStartSimulation();
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      }, 400);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -662,21 +707,27 @@ export default function App() {
 
 
   const handleContinueSimulation = async (userPromptNext = '') => {
-    if (isSimulating || !simulationResult?.fullOutput) return;
+    if (isSimulating) return;
+    const baseOutput = simulationResult?.fullOutput || simulationResult?.narrative || simulationResult?.output || '';
+    if (!baseOutput) return;
+
     setIsSimulating(true);
-    setProgress({ percent: 15, step: 'Preparando siguiente acto / continuación...' });
+    setProgress({ percent: 15, step: 'Preparando siguiente acto / continuación RPG...' });
 
     try {
       const continuationPrompt = SimulationEngine.generateContinuationPrompt(
-        simulationResult.fullOutput,
+        baseOutput,
         userPromptNext,
-        charA,
-        charB,
-        scenario,
+        charA || 'Contendiente A',
+        charB || 'Contendiente B',
+        scenario || 'Arena de Combate',
         { ...modifiers, language: lang }
       );
 
-      let currentText = simulationResult.fullOutput + '\n\n';
+      let currentText = baseOutput + '\n\n';
+      if (userPromptNext && typeof userPromptNext === 'string' && userPromptNext.trim()) {
+        currentText += `> 🎲 **DECISIÓN TÁCTICA DEL USUARIO:** ${userPromptNext.trim()}\n\n`;
+      }
 
       await SimulationEngine.streamSimulation(
         continuationPrompt,
@@ -684,15 +735,15 @@ export default function App() {
         (token) => {
           currentText += token;
           setSimulationResult({ fullOutput: currentText });
-          setProgress({ percent: 80, step: 'Escribiendo continuación de la historia...' });
+          setProgress({ percent: 80, step: 'Escribiendo el siguiente acto del combate...' });
         },
         () => {
-          setProgress({ percent: 100, step: 'Continuación Completada' });
+          setProgress({ percent: 100, step: 'Siguiente Acto Completado' });
           setIsSimulating(false);
         },
         (error) => {
           console.error('Stream continuation error:', error);
-          setSimulationResult({ fullOutput: currentText + '\n\n[ERROR: ' + error + ']' });
+          setSimulationResult({ fullOutput: currentText + '\n\n[ERROR AL GENERAR SIGUIENTE ACTO: ' + error + ']' });
           setIsSimulating(false);
         }
       );
@@ -1106,8 +1157,9 @@ export default function App() {
         />
       )}
 
-      <VaultBrowserModal
-        isOpen={vaultModalOpen}
+      <Suspense fallback={null}>
+        <VaultBrowserModal
+          isOpen={vaultModalOpen}
         onClose={() => setVaultModalOpen(false)}
         allCharacters={characters}
         onImportCharacters={(newChars) => {
@@ -1275,6 +1327,7 @@ export default function App() {
         }}
         aiConfig={charEngine}
       />
+      </Suspense>
       {rewardToast && (
         <div className="fixed bottom-6 right-6 z-50 p-4 rounded-2xl bg-gradient-to-r from-amber-950/90 via-slate-900/95 to-purple-950/90 backdrop-blur-md border border-amber-500/70 shadow-[0_0_35px_rgba(245,158,11,0.45)] flex items-center gap-3.5 animate-in slide-in-from-bottom-5 duration-300 font-mono text-xs max-w-sm">
           <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/50 flex items-center justify-center text-xl shrink-0 shadow-inner">

@@ -1,16 +1,17 @@
 @echo off
-title DESPLEGAR APEX A VERCEL
-color 0a
-echo ========================================================
-echo   ?? DESPLEGANDO APEX ENGINE A VERCEL (819 LUCHADORES)
-echo ========================================================
-echo.
+title SINCRONIZADOR APEX ENGINE
+chcp 65001 >nul
 cd /d "%~dp0"
-echo Subiendo el bundle de 819 personajes a https://apex-engine-six.vercel.app ...
-echo.
-call npx vercel --prod --yes
-echo.
+
 echo ========================================================
-echo   ? DESPLIEGUE FINALIZADO EN https://apex-engine-six.vercel.app/
+echo   SINCRONIZANDO APEX ENGINE (GITHUB + VERCEL)
 echo ========================================================
+echo.
+
+git add .
+git commit -m "feat: sync y despliegue limpio" 2>nul
+git push origin main
+
+echo.
+node src/scripts/autoDeployVercel.js
 pause

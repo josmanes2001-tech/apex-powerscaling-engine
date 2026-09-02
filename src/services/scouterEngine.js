@@ -83,7 +83,7 @@ export const KNOWN_CANON_DB_LEVELS = [
   { pattern: /^burter|\bburter\b/i, base: 43000, name: 'Burter' },
   { pattern: /^jeice|\bjeice\b/i, base: 44000, name: 'Jeice' },
   { pattern: /^recoome|\brecoome\b/i, base: 45000, name: 'Recoome' },
-  { pattern: /ginyu/i, base: 120000, name: 'Capitán Ginyu' },
+  { pattern: /^(capit[aá]n\s+)?ginyu\b|\bcapit[aá]n\s+ginyu\b/i, base: 120000, name: 'Capitán Ginyu' },
   { pattern: /vegeta.*(namek)/i, base: 385000, max: 490000, name: 'Vegeta (Namek Zenkai)' },
   { pattern: /freezer.*(1.*forma|primera)/i, base: 530000, name: 'Freezer (1ª Forma)' },
   { pattern: /freezer.*(2.*forma|segunda)/i, base: 1100000, name: 'Freezer (2ª Forma)' },
@@ -91,9 +91,8 @@ export const KNOWN_CANON_DB_LEVELS = [
   { pattern: /freezer.*(final|100%)/i, base: 128000000, name: 'Freezer (Forma Final 100%)' },
   { pattern: /goku.*(namek|super saiyan)/i, base: 3000000, ssj: 150000000, name: 'Goku Super Saiyan (Namek)' },
 
-  // 5. Saga Androides / Cell
   { pattern: /mecha freezer/i, base: 156000000, name: 'Mecha Freezer' },
-  { pattern: /trunks.*(futuro.*17|ssj)/i, base: 240000000, ssjGrade3: 2040000000, name: 'Trunks del Futuro SSJ' },
+  { pattern: /trunks.*(primer viaje|llegada|mecha freezer|ssj b[aá]sico)/i, base: 240000000, ssjGrade3: 2040000000, name: 'Trunks del Futuro (Llegada Androides)' },
   { pattern: /androide 19/i, base: 100000000, name: 'Androide 19' },
   { pattern: /androide 20|dr\. gero/i, base: 110000000, name: 'Dr. Gero (Androide 20)' },
   { pattern: /androide 17/i, base: 360000000, name: 'Androide 17' },
@@ -197,12 +196,24 @@ export function getBaseEnergyFromTier(tierStr = '') {
     return { value: 4.5e8, label: '450.000.000 Ki', joules: '10^32 J' };
   }
 
-  // Tier 5: Planetario / Lunar
+  // Tier 5: Planetario / Subestelar
+  if (low.includes('high 5-a')) {
+    return { value: 1.5e8, label: '150.000.000 Ki', joules: '10^29 J' };
+  }
   if (low.includes('5-a') || low.includes('planeta grande') || low.includes('enana')) {
-    return { value: 1.5e8, label: '150.000.000 Ki', joules: '10^28 J' };
+    return { value: 6e7, label: '60.000.000 Ki', joules: '10^28 J' };
+  }
+  if (low.includes('low 5-a')) {
+    return { value: 1.5e7, label: '15.000.000 Ki', joules: '10^26 J' };
+  }
+  if (low.includes('high 5-b')) {
+    return { value: 2.5e6, label: '2.500.000 Unidades', joules: '10^25 J' };
   }
   if (low.includes('5-b') || low.includes('planeta')) {
     return { value: 530000, label: '530.000 Unidades', joules: '10^24 J' };
+  }
+  if (low.includes('low 5-b')) {
+    return { value: 120000, label: '120.000 Unidades', joules: '10^23 J' };
   }
   if (low.includes('5-c') || low.includes('luna') || low.includes('moon')) {
     return { value: 18000, label: '18.000 Unidades', joules: '10^21 J' };
@@ -321,6 +332,62 @@ export function getHaxBiqFactor(battleIQStr = '', haxTags = []) {
 }
 
 /**
+ * Extrae el coeficiente derivado de Hazañas (Feats), Fuerza de Golpe/Levantamiento y Arsenal Definitivo
+ */
+export function getFeatsAndStrengthFactor(feats = [], strength = {}, arsenal = {}) {
+  let factor = 1.0;
+  let reasons = [];
+
+  // 1. Conteo y escala de Hazañas registradas
+  const featList = Array.isArray(feats) ? feats : [];
+  if (featList.length > 0) {
+    const featCountBonus = Math.min(0.25, featList.length * 0.05);
+    factor += featCountBonus;
+    reasons.push(`${featList.length} Hazañas (+${Math.round(featCountBonus * 100)}%)`);
+
+    const featsText = featList.map(f => typeof f === 'object' ? (f.desc || f.name || JSON.stringify(f)) : String(f)).join(' ').toLowerCase();
+    if (featsText.includes('multiversal') || featsText.includes('espacio-tiempo') || featsText.includes('dimensional')) {
+      factor += 0.3;
+      reasons.push('Hazaña Multiversal (+30%)');
+    } else if (featsText.includes('universal') || featsText.includes('universo') || featsText.includes('galact')) {
+      factor += 0.2;
+      reasons.push('Hazaña Cósmica (+20%)');
+    } else if (featsText.includes('planeta') || featsText.includes('luna') || featsText.includes('estrella')) {
+      factor += 0.15;
+      reasons.push('Hazaña Planetaria (+15%)');
+    } else if (featsText.includes('meteor') || featsText.includes('continente') || featsText.includes('montaña')) {
+      factor += 0.1;
+      reasons.push('Hazaña Tectónica (+10%)');
+    }
+  }
+
+  // 2. Fuerza de Levantamiento / Impacto (Strength)
+  const strText = (typeof strength === 'object' ? `${strength.striking || ''} ${strength.lifting || ''}` : String(strength || '')).toLowerCase();
+  if (strText.includes('inconmensurable') || strText.includes('infinita') || strText.includes('universal')) {
+    factor += 0.25;
+    reasons.push('Fuerza Inconmensurable (+25%)');
+  } else if (strText.includes('planetaria') || strText.includes('estelar') || strText.includes('yotta') || strText.includes('zetta')) {
+    factor += 0.15;
+    reasons.push('Fuerza Planetaria (+15%)');
+  } else if (strText.includes('clase 100') || strText.includes('clase m') || strText.includes('clase g') || strText.includes('clase t')) {
+    factor += 0.1;
+    reasons.push('Fuerza Titánica (+10%)');
+  }
+
+  // 3. Ataques Definitivos
+  const ultList = arsenal?.ultimateAttacks || [];
+  if (Array.isArray(ultList) && ultList.length > 0) {
+    factor += 0.1;
+    reasons.push(`${ultList.length} Finishers (+10%)`);
+  }
+
+  return {
+    factor: Math.min(2.5, factor),
+    label: reasons.length > 0 ? reasons.join(', ') : 'Estándar (x1.0)'
+  };
+}
+
+/**
  * DESGLOSE COMPLETO DE LA FÓRMULA MATEMÁTICA DE POWER SCALING
  */
 export function getPowerLevelFormulaBreakdown(character, activeFormId) {
@@ -331,8 +398,11 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   const formName = (activeForm.name || 'Base').toLowerCase();
   const formMultiplierStr = activeForm.multiplier || '';
 
-  // 1. Energía Base por Tier
-  const baseEnergy = getBaseEnergyFromTier(character.tier);
+  // 1. Energía Base por Tier (Cuerpo / Físico)
+  const rawTier = activeForm.tierExact || activeForm.tier || character.physicalTier || character.tierExact || character.tier || '';
+  const physTierPart = rawTier.includes('|') ? rawTier.split('|')[0].trim() : rawTier;
+  const haxTierPart = rawTier.includes('|') ? rawTier.split('|')[1].trim() : (character.haxTier || null);
+  const baseEnergy = getBaseEnergyFromTier(physTierPart);
 
   // 2. Modificador de Velocidad
   const speed = getSpeedFactor(character.speed);
@@ -343,54 +413,85 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   // 4. Modificador de Hax & Battle IQ
   const haxBiq = getHaxBiqFactor(character.battleIQ, character.haxTags);
 
-  // 5. Multiplicador de Forma
+  // 5. Modificador de Hazañas & Fuerza Física
+  const featsStrength = getFeatsAndStrengthFactor(character.feats, character.strength, character.arsenal);
+
+  // 6. Multiplicador de Forma
   let formMult = 1.0;
   let formLabel = 'Forma Base (x1.0)';
 
-  if (formName.includes('oozaru') || formName.includes('ohzaru') || formName.includes('mono') || formName.includes('simio')) {
-    formMult = 10;
-    formLabel = 'Gran Simio / Oozaru (x10)';
-  } else if (formName.includes('kaioken x20') || formName.includes('kaio-ken x20')) {
-    formMult = 20;
-    formLabel = 'Kaiō-ken x20 (x20)';
-  } else if (formName.includes('kaioken x10') || formName.includes('kaio-ken x10')) {
-    formMult = 10;
-    formLabel = 'Kaiō-ken x10 (x10)';
-  } else if (formName.includes('kaioken x4') || formName.includes('kaio-ken x4')) {
-    formMult = 4;
-    formLabel = 'Kaiō-ken x4 (x4)';
-  } else if (formName.includes('kaioken x3') || formName.includes('kaio-ken x3')) {
-    formMult = 3;
-    formLabel = 'Kaiō-ken x3 (x3)';
-  } else if (formName.includes('kaioken x2') || formName.includes('kaio-ken x2')) {
-    formMult = 2;
-    formLabel = 'Kaiō-ken x2 (x2)';
-  } else if (formName.includes('ssj4') || formName.includes('super saiyan 4')) {
-    formMult = 4000;
-    formLabel = 'Super Saiyan 4 (x4000)';
-  } else if (formName.includes('ssj3') || formName.includes('super saiyan 3')) {
-    formMult = 400;
-    formLabel = 'Super Saiyan 3 (x400)';
-  } else if (formName.includes('ssj2') || formName.includes('super saiyan 2')) {
-    formMult = 100;
-    formLabel = 'Super Saiyan 2 (x100)';
-  } else if (formName.includes('fssj') || formName.includes('false super saiyan') || formName.includes('pseudo')) {
-    formMult = 25;
-    formLabel = 'False Super Saiyan (x25)';
-  } else if (formName.includes('ssj') || formName.includes('super saiyan')) {
-    formMult = 50;
-    formLabel = 'Super Saiyan (x50)';
-  } else if (formName.includes('beast') || formName.includes('bestia')) {
-    formMult = 1000000;
-    formLabel = 'Gohan Beast (x1,000,000)';
-  } else if (formName.includes('daima mini') || formName.includes('mini') || /\bdaima\b/i.test(formName)) {
-    formMult = 0.1;
-    formLabel = 'Compresión DAIMA (÷10)';
-  } else if (/([0-9\.]+)\s*x/i.test(formMultiplierStr)) {
-    const m = parseFloat(formMultiplierStr.match(/([0-9\.]+)\s*x/i)[1]);
-    if (!isNaN(m) && m > 0) {
-      formMult = m;
-      formLabel = 'Boost Especial (' + m + 'x)';
+  // Check multiplier string first (e.g. 50x, x50, x10, 1000000x, 2x, etc.)
+  const xMatch = (formMultiplierStr || '').match(/(?:x\s*([0-9\.]+)|([0-9\.]+)\s*x)/i);
+  if (xMatch) {
+    const val = parseFloat(xMatch[1] || xMatch[2]);
+    if (!isNaN(val) && val > 0) {
+      formMult = val;
+      formLabel = `Multiplicador (${val}x)`;
+    }
+  }
+
+  // If no explicit multiplier or default 1.0, detect from form name
+  if (formMult === 1.0) {
+    if (formName.includes('beast') || formName.includes('bestia')) {
+      formMult = 1000000;
+      formLabel = 'Gohan Beast (x1,000,000)';
+    } else if (formName.includes('ssj4') || formName.includes('super saiyan 4')) {
+      formMult = 4000;
+      formLabel = 'Super Saiyan 4 (x4000)';
+    } else if (formName.includes('ssj3') || formName.includes('super saiyan 3')) {
+      formMult = 400;
+      formLabel = 'Super Saiyan 3 (x400)';
+    } else if (formName.includes('ssj2') || formName.includes('super saiyan 2')) {
+      formMult = 100;
+      formLabel = 'Super Saiyan 2 (x100)';
+    } else if (formName.includes('fssj') || formName.includes('false super saiyan') || formName.includes('pseudo')) {
+      formMult = 25;
+      formLabel = 'False Super Saiyan (x25)';
+    } else if (formName.includes('ssj') || formName.includes('super saiyan') || formName.includes('super saiyajin')) {
+      formMult = 50;
+      formLabel = 'Super Saiyan (x50)';
+    } else if (formName.includes('oozaru') || formName.includes('ohzaru') || formName.includes('mono') || formName.includes('simio')) {
+      formMult = 10;
+      formLabel = 'Gran Simio / Oozaru (x10)';
+    } else if (formName.includes('kaioken x20') || formName.includes('kaio-ken x20')) {
+      formMult = 20;
+      formLabel = 'Kaiō-ken x20 (x20)';
+    } else if (formName.includes('kaioken x10') || formName.includes('kaio-ken x10')) {
+      formMult = 10;
+      formLabel = 'Kaiō-ken x10 (x10)';
+    } else if (formName.includes('kaioken x4') || formName.includes('kaio-ken x4')) {
+      formMult = 4;
+      formLabel = 'Kaiō-ken x4 (x4)';
+    } else if (formName.includes('kaioken x3') || formName.includes('kaio-ken x3')) {
+      formMult = 3;
+      formLabel = 'Kaiō-ken x3 (x3)';
+    } else if (formName.includes('kaioken x2') || formName.includes('kaio-ken x2')) {
+      formMult = 2;
+      formLabel = 'Kaiō-ken x2 (x2)';
+    } else if (formName.includes('kaioken') || formName.includes('kaio-ken')) {
+      formMult = 1.5;
+      formLabel = 'Kaiō-ken (x1.5)';
+    } else if (formName.includes('demon back') || formName.includes('espalda del demonio') || formName.includes('espalda demon')) {
+      formMult = 2.5;
+      formLabel = 'Espalda del Demonio (x2.5)';
+    } else if (formName.includes('gear 5') || formName.includes('nika')) {
+      formMult = 50;
+      formLabel = 'Gear 5 Nika (x50)';
+    } else if (formName.includes('gear 4')) {
+      formMult = 10;
+      formLabel = 'Gear 4 (x10)';
+    } else if (formName.includes('gear 2')) {
+      formMult = 3;
+      formLabel = 'Gear 2 (x3)';
+    } else if (formName.includes('bankai')) {
+      formMult = 10;
+      formLabel = 'Bankai (x10)';
+    } else if (formName.includes('baryon')) {
+      formMult = 100;
+      formLabel = 'Modo Baryon (x100)';
+    } else if (formName.includes('daima mini') || formName.includes('mini') || /\bdaima\b/i.test(formName)) {
+      formMult = 0.1;
+      formLabel = 'Compresión DAIMA (÷10)';
     }
   }
 
@@ -407,13 +508,12 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   let finalVal = 0;
   if (canonOverride && !canonOverride.calculatedOnly) {
     finalVal = canonOverride.base;
-    if (formMult > 1) finalVal = Math.round(finalVal * formMult);
-    else if (formMult < 1) finalVal = Math.round(finalVal * formMult);
+    if (formMult !== 1.0) finalVal = Math.round(finalVal * formMult);
   } else {
     if (baseEnergy.value === Infinity) {
       finalVal = Infinity;
     } else {
-      finalVal = Math.round(baseEnergy.value * speed.factor * durability.factor * haxBiq.factor * formMult);
+      finalVal = Math.round(baseEnergy.value * speed.factor * durability.factor * haxBiq.factor * featsStrength.factor * formMult);
     }
   }
 
@@ -421,14 +521,14 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   let closestDb = KNOWN_CANON_DB_LEVELS[0];
   let minDiff = Infinity;
   for (const dbChar of KNOWN_CANON_DB_LEVELS) {
-    const diff = Math.abs(dbChar.base - (finalVal === Infinity ? 1e20 : finalVal));
+    const diff = Math.abs(dbChar.base - (finalVal > 1e20 ? 1e20 : finalVal));
     if (diff < minDiff) {
       minDiff = diff;
       closestDb = dbChar;
     }
   }
 
-    // 6. Cálculo Invariante APEX Core (BigInt y Escala Monotónica de Ki Universal)
+  // 6. Cálculo Invariante APEX Core (Escala Monotónica de Ki Universal)
   const profile = {
     id: character.id || 'char-id',
     tierExact: character.tierExact || character.tier,
@@ -437,26 +537,27 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
     durability: (durability.factor - 1.0) / 1.0,
     form: Math.min(1.0, formMult / 50.0),
     battleIQ: (haxBiq.factor - 1.0) / 1.2,
-    haxReliability: (character.haxTags?.length || 0) / 10.0
+    haxReliability: (character.haxTags?.length || 0) / 10.0,
+    formMult: formMult
   };
 
-  const apexPLBigInt = calculateApexPL(profile);
-  const apexKi = calculateApexKiEquivalent(profile);
+  const apexPLNum = calculateApexPL(profile);
 
   // Determinar si hay sourceKi histórico oficial de Dragon Ball
   let sourceKi = character.sourceKi || (canonOverride && !canonOverride.calculatedOnly ? canonOverride.base : null);
-  if (sourceKi && formMult > 1) sourceKi = Math.round(sourceKi * formMult);
+  if (sourceKi && formMult !== 1.0) sourceKi = Math.round(sourceKi * formMult);
 
-  const scouter = formatScouterResult(finalVal, character.tier);
+  const effectiveKi = sourceKi || finalVal;
+  const scouter = formatScouterResult(effectiveKi, character.tier);
 
   return {
     characterName: character.name,
     activeFormName: activeForm.name || 'Forma Base',
     tier: character.tier,
     tierExact: character.tierExact || character.tier,
-    apexPL: apexPLBigInt.toString(),
-    apexKi: apexKi.formatted,
-    apexKiRaw: apexKi.raw,
+    apexPL: String(apexPLNum),
+    apexKi: scouter.formatted,
+    apexKiRaw: effectiveKi,
     sourceKi: sourceKi,
     sourceKiFormatted: sourceKi ? (sourceKi.toLocaleString('es-ES') + ' Unidades (Canon DB)') : null,
     baseEnergyValue: baseEnergy.value,
@@ -466,13 +567,15 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
     durabilityLabel: durability.label,
     haxBiqFactor: haxBiq.factor,
     haxBiqLabel: haxBiq.label,
+    featsStrengthFactor: featsStrength.factor,
+    featsStrengthLabel: featsStrength.label,
     formMultiplier: formMult,
     formLabel: formLabel,
-    finalPowerLevel: apexKi.raw,
-    formattedKi: sourceKi ? (sourceKi.toLocaleString('es-ES') + ' Unidades') : apexKi.formatted,
-    rank: apexKi.rank,
-    isOverload: apexKi.isOverload,
-    formulaExpression: 'PL_APEX = B^R(T) × [Q_min + ΔQ·q] | APEX-Ki = ' + apexKi.formatted + (sourceKi ? (' | Scouter Canónico DB: ' + sourceKi.toLocaleString('es-ES') + ' Unidades') : ''),
+    finalPowerLevel: effectiveKi,
+    formattedKi: scouter.formatted,
+    rank: scouter.rank,
+    isOverload: scouter.isOverload,
+    formulaExpression: `PL_Scouter = BaseEnergy(${character.tier}) × Vel(${speed.factor}x) × Def(${durability.factor}x) × Hax/IQ(${haxBiq.factor}x) × Hazañas/Fuerza(${featsStrength.factor}x) × Forma(${formMult}x) = ${scouter.formatted}` + (sourceKi ? (` | Oficial DB: ${sourceKi.toLocaleString('es-ES')} Unidades`) : ''),
     closestDbComparison: closestDb ? (closestDb.name + ' (' + closestDb.base.toLocaleString() + ' Ki)') : 'Desconocido'
   };
 }
@@ -483,7 +586,8 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
 export function calculateScouterReading(character, activeFormId) {
   const breakdown = getPowerLevelFormulaBreakdown(character, activeFormId);
   if (!breakdown) return { rawValue: 0, formatted: '0', rank: 'Desconocido', isOverload: false };
-  return formatScouterResult(breakdown.finalPowerLevel, character?.tier);
+  const valToFormat = breakdown.sourceKi || breakdown.finalPowerLevel;
+  return formatScouterResult(valToFormat, character?.tier);
 }
 
 function formatScouterResult(num, tierFallback) {

@@ -64,8 +64,15 @@ export const GUEST_PROFILES = [
 
 export const FREE_MODELS_LIST = [
   { id: 'google/gemini-2.0-flash-lite:free', name: '⚡ Gemini 2.0 Flash Lite (Ultrarrápido y Preciso)' },
-  { id: 'minimax/minimax-m3:free', name: '👑 MiniMax M3 (Top Recomendado para Fichas Técnicas / 1.05M Context)' },
-  { id: 'nvidia/nemotron-3-ultra-550b-a55b:free', name: '👑 NVIDIA Nemotron 3 Ultra 550B (Top Recomendado para Narración Épica)' },
+  { id: 'poolside/laguna-s-2.1:free', name: '🏆 Poolside Laguna S 2.1 (118B MoE · Agente de Código & Lógica)' },
+  { id: 'cohere/north-mini-code:free', name: '⚡ Cohere North Mini Code (256K Ctx · Fichas Técnicas JSON)' },
+  { id: 'z-ai/glm-5.2:free', name: '🧠 Z.ai GLM 5.2 (1M Ctx · Razonamiento Extremo & Powerscaling)' },
+  { id: 'thinkingmachines/inkling:free', name: '🦁 Thinking Machines Inkling (975B MoE · 1.05M Ctx · Multimodal)' },
+  { id: 'nvidia/nemotron-3.5-lightning:free', name: '⚡ NVIDIA Nemotron 3.5 Lightning (1M Ctx · Ultra Rendimiento)' },
+  { id: 'dots-studio/dots-3-note-preview:free', name: '📝 Dots3-Note Preview (280B MoE · 512K Ctx)' },
+  { id: 'inclusionai/ling-3.0-flash-fin:free', name: '📊 InclusionAI Ling 3.0 Flash (124B MoE · Cálculo Matemático Tiers)' },
+  { id: 'minimax/minimax-m3:free', name: '👑 MiniMax M3 (Top Fichas Técnicas / 1.05M Context)' },
+  { id: 'nvidia/nemotron-3-ultra-550b-a55b:free', name: '👑 NVIDIA Nemotron 3 Ultra 550B (Top Narración Épica)' },
   { id: 'deepseek/deepseek-r1:free', name: '🧠 DeepSeek R1 (Razonamiento Puro & Powerscaling)' },
   { id: 'meta-llama/llama-3.3-70b-instruct:free', name: '🔥 Meta Llama 3.3 70B (Literatura Visceral & Grimdark)' },
   { id: 'google/gemma-4-31b-it:free', name: '💎 Gemma 4 31B (Equilibrio de Combate)' },
@@ -84,6 +91,13 @@ export const AI_PRESETS = {
   ],
   openrouter: [
     { id: 'google/gemini-2.0-flash-lite:free', name: '⚡ Google Gemini 2.0 Flash Lite [GRATIS]' },
+    { id: 'poolside/laguna-s-2.1:free', name: '🏆 Poolside Laguna S 2.1 [GRATIS - 118B MoE]' },
+    { id: 'cohere/north-mini-code:free', name: '⚡ Cohere North Mini Code [GRATIS - 256K Ctx]' },
+    { id: 'z-ai/glm-5.2:free', name: '🧠 Z.ai GLM 5.2 [GRATIS - 1M Ctx Razonamiento]' },
+    { id: 'thinkingmachines/inkling:free', name: '🦁 Thinking Machines Inkling [GRATIS - 975B MoE]' },
+    { id: 'nvidia/nemotron-3.5-lightning:free', name: '⚡ NVIDIA Nemotron 3.5 Lightning [GRATIS - 1M Ctx]' },
+    { id: 'dots-studio/dots-3-note-preview:free', name: '📝 Dots3-Note Preview [GRATIS - 512K Ctx]' },
+    { id: 'inclusionai/ling-3.0-flash-fin:free', name: '📊 InclusionAI Ling 3.0 Flash [GRATIS - Cálculos Tiers]' },
     { id: 'minimax/minimax-m3:free', name: '👑 MiniMax M3 [GRATIS - TOP FICHAS]' },
     { id: 'nvidia/nemotron-3-ultra-550b-a55b:free', name: '👑 NVIDIA Nemotron 3 Ultra 550B [GRATIS - TOP NARRACIÓN]' },
     { id: 'deepseek/deepseek-r1:free', name: '🧠 DeepSeek R1 [GRATIS - Razonamiento]' },
@@ -91,6 +105,7 @@ export const AI_PRESETS = {
     { id: 'google/gemma-4-31b-it:free', name: '💎 Google Gemma 4 31B [GRATIS]' },
     { id: 'nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free', name: '⚡ NVIDIA Nemotron 3 Nano [GRATIS]' },
     { id: 'deepseek/deepseek-chat', name: 'DeepSeek V3 (Directo)' },
+    { id: 'anthropic/claude-3.7-sonnet', name: 'Claude 3.7 Sonnet (Top Código)' },
     { id: 'anthropic/claude-3.5-sonnet', name: 'Claude 3.5 Sonnet' }
   ],
   gemini: [

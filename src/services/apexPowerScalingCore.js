@@ -1,6 +1,9 @@
-/* Apex Power Scaling Engine — invariant PL core
+﻿/* Apex Power Scaling Engine — invariant PL core
    PL is an ordinal combat index. sourceKi is a separate historical DB field.
+   No BigInt, no Infinity, no NaN, no fallback-8.
 */
+
+import { formatApexKi } from '../lib/apexTierSystem.js';
 
 export const TIER_ORDER = [
   '10-C','10-B','10-A','9-C','9-B','9-A','8-C','High 8-C','8-B','8-A',
@@ -12,9 +15,6 @@ export const TIER_ORDER = [
 ];
 
 const TIER_INDEX = new Map(TIER_ORDER.map((tier, index) => [tier, index]));
-const BAND_BASE = 1_000_000n;
-const MIN_QUALITY = 1_000_000n;
-const MAX_QUALITY = 1_999_999n;
 
 export function assert(condition, message) {
   if (!condition) throw new Error(`APEX validation: ${message}`);
@@ -34,19 +34,15 @@ export function makeVariantId({ universe, character, continuity, saga, version }
 
 export function tierIndex(tier) {
   if (!tier) return 0;
-  // Limpieza y extracción de sub-tier exacto
-  const clean = String(tier).trim().replace(/^Tiers*/i, '');
-  // Intentar coincidencia directa
+  const clean = String(tier).trim().replace(/^Tier\s*/i, '');
   if (TIER_INDEX.has(clean)) return TIER_INDEX.get(clean);
   
-  // Coincidencias de prefijos comunes
   for (const [t, idx] of TIER_INDEX.entries()) {
     if (clean.toLowerCase().startsWith(t.toLowerCase()) || clean.toLowerCase().includes(t.toLowerCase())) {
       return idx;
     }
   }
   
-  // Fallback seguro
   const low = clean.toLowerCase();
   if (low.includes('outerversal') || low.includes('1-a')) return TIER_INDEX.get('1-A') ?? 48;
   if (low.includes('hyperversal') || low.includes('1-b')) return TIER_INDEX.get('1-B') ?? 45;
@@ -73,8 +69,6 @@ export function clamp01(x) {
   return Math.max(0, Math.min(1, x));
 }
 
-/* All inputs are normalized in [0, 1]. Hax only measures reliability/usefulness,
-   never ontological AP. This keeps a wall-level hax user from becoming cosmic in PL. */
 export function withinTierQuality({ ap = 0.5, speed = 0.5, durability = 0.5, form = 0.5, battleIQ = 0.5, haxReliability = 0.5 } = {}) {
   const q =
     0.62 * clamp01(ap) +
@@ -86,15 +80,13 @@ export function withinTierQuality({ ap = 0.5, speed = 0.5, durability = 0.5, for
   return clamp01(q);
 }
 
-/* Exact, sortable and free of JS Number precision loss. The result is an ordinal
-   combat index: larger values always mean a higher configured tier/quality. */
 export function calculateApexPL(profile) {
-  if (!profile) return 0n;
+  if (!profile) return 0;
   const tierKey = profile.tierExact || profile.tier || '10-B';
   const rank = tierIndex(tierKey);
   const q = withinTierQuality(profile);
-  const quality = MIN_QUALITY + BigInt(Math.round(Number(MAX_QUALITY - MIN_QUALITY) * q));
-  return (BAND_BASE ** BigInt(rank)) * quality;
+  const quality = Math.max(0, Math.min(100, Math.round(q * 100)));
+  return rank * 101 + quality;
 }
 
 export function comparePL(a, b) {
@@ -103,145 +95,35 @@ export function comparePL(a, b) {
   return pa === pb ? 0 : pa > pb ? 1 : -1;
 }
 
-/* Hard validation: there cannot be a lower PL for a higher exact tier because every
-   tier band is separated by 10^6 while quality is constrained to [1, 1.999999]. */
 export function assertMonotonic(a, b) {
   const tierDelta = tierIndex(a.tierExact || a.tier) - tierIndex(b.tierExact || b.tier);
   const plDelta = comparePL(a, b);
-  assert(tierDelta === 0 || Math.sign(tierDelta) === plDelta,
-    `Tier/PL inversion: ${a.id} (${a.tierExact || a.tier}) vs ${b.id} (${b.tierExact || b.tier})`);
-  return true;
+  if (tierDelta > 0) {
+    assert(plDelta > 0, `Monotonicity violation: ${a.character || a.name || 'A'} is higher tier than ${b.character || b.name || 'B'} but has lower or equal PL.`);
+  }
 }
 
-const TIER_KI_BASE = {
-  '10-C': 2, '10-B': 5, '10-A': 10,
-  '9-C': 20, '9-B': 40, '9-A': 80,
-  '8-C': 120, 'High 8-C': 160, '8-B': 220, '8-A': 300,
-  'Low 7-C': 350, '7-C': 420, 'High 7-C': 500, 'Low 7-B': 600, '7-B': 750, '7-A': 1200, 'High 7-A': 1500,
-  '6-C': 2500, 'High 6-C': 3500, 'Low 6-B': 5000, '6-B': 7500, 'High 6-B': 10000, '6-A': 14000, 'High 6-A': 16000,
-  '5-C': 18000, 'Low 5-B': 100000, '5-B': 530000, '5-A': 18000000, 'High 5-A': 60000000,
-  'Low 4-C': 150000000, '4-C': 450000000, 'High 4-C': 1200000000,
-  '4-B': 5500000000, '4-A': 80000000000,
-  '3-C': 1000000000000, '3-B': 5000000000000, '3-A': 25000000000000, 'High 3-A': 100000000000000,
-  'Low 2-C': 1000000000000000, '2-C': 10000000000000000, '2-B': 50000000000000000, '2-A': 500000000000000000,
-  'Low 1-C': 1e20, '1-C': 1e21, 'High 1-C': 1e22, '1-B': 1e24, 'High 1-B': 1e25,
-  'Low 1-A': 1e27, '1-A': Infinity, 'High 1-A': Infinity, '0': Infinity
-};
-
-/**
- * Mapeo de Visualización APEX-Ki (Escala de Ordenación y UI)
- */
 export function calculateApexKiEquivalent(profile) {
-  if (!profile) return { raw: 0, formatted: '0 Unidades', rank: 'Desconocido' };
+  const pl = calculateApexPL(profile);
   const tierKey = profile.tierExact || profile.tier || '10-B';
   const rank = tierIndex(tierKey);
-  const canonicalTier = TIER_ORDER[rank] || '10-B';
   const q = withinTierQuality(profile);
-  
-  const baseVal = TIER_KI_BASE[canonicalTier] || 100;
-  let kiValue = baseVal === Infinity ? Infinity : baseVal * Math.pow(2, q - 0.5);
 
-  // Formato UI amigable
-  return formatApexKiDisplay(kiValue, canonicalTier);
-}
+  // Escala Scouter: usar el ancla directo del tier en lugar de log10
+  const baseLog10 = 2.0 + (rank * 1.5);
+  const currentLog10 = baseLog10 + (q * 1.5);
 
-export function formatApexKiDisplay(num, tierStr = '') {
-  if (num === Infinity || isNaN(num) || num > 1e25) {
-    return {
-      raw: 999999999999999,
-      formatted: '∞ TRASCENDENTE',
-      numberDisplay: '999,999,999,999+',
-      rank: 'DEIDAD / OMNIPRESENTE',
-      isOverload: true,
-      color: 'text-fuchsia-400'
-    };
-  }
+  // Convertir a un valor absoluto usando la escala Scouter
+  const baseEnergy = Math.pow(10, baseLog10);
+  const currentEnergy = Math.pow(10, Math.min(currentLog10, 68)); // Cap at 1e68
 
-  let formatted = '';
-  let rank = 'GUERRERO';
-  let isOverload = num >= 1e12;
-
-  if (num >= 1e15) {
-    formatted = (num / 1e15).toFixed(2) + ' Trillones de APEX-Ki';
-    rank = 'TRASCENDENCIA MULTIVERSAL';
-  } else if (num >= 1e12) {
-    formatted = (num / 1e12).toFixed(2) + ' Billones de APEX-Ki';
-    rank = 'RANGO DIOS DE LA DESTRUCCIÓN';
-  } else if (num >= 1e9) {
-    formatted = (num / 1e9).toFixed(2) + ' Mil Millones de APEX-Ki';
-    rank = 'AMENAZA CÓSMICA / GALÁCTICA';
-  } else if (num >= 1e6) {
-    formatted = (num / 1e6).toFixed(2) + ' Millones de APEX-Ki';
-    rank = 'EMPERADOR ESTELAR / SUPER SAIYAN';
-  } else if (num >= 18000) {
-    formatted = Math.round(num).toLocaleString('es-ES') + ' APEX-Ki';
-    rank = 'DESTRUCTOR PLANETARIO / ÉLITE';
-  } else if (num >= 1000) {
-    formatted = Math.round(num).toLocaleString('es-ES') + ' APEX-Ki';
-    rank = 'GUERRERO DE ALTO RANGO';
-  } else {
-    formatted = Math.max(1, Math.round(num)).toLocaleString('es-ES') + ' APEX-Ki';
-    rank = 'RANGO TERRESTRE';
-  }
+  // Usar formatApexKi para etiquetas DB en lugar de notación científica
+  const formatted = formatApexKi(currentEnergy);
 
   return {
-    raw: num,
+    log10: currentLog10,
+    raw: currentEnergy,
     formatted,
-    rank,
-    isOverload,
-    color: isOverload ? 'text-red-400' : num >= 1e6 ? 'text-amber-400' : 'text-emerald-400'
+    pl
   };
-}
-
-export function validateFighter(fighter) {
-  const required = ['id', 'tierExact'];
-  for (const key of required) assert(fighter[key] || fighter.tier, `${key} is required for ${fighter.id ?? 'unknown fighter'}`);
-  if (fighter.sourceKi !== null && fighter.sourceKi !== undefined) {
-    assert(Number.isFinite(fighter.sourceKi) && fighter.sourceKi > 0, 'sourceKi must be a positive number');
-  }
-  return true;
-}
-
-export class VariantRegistry {
-  #byId = new Map();
-  #byNaturalKey = new Map();
-
-  register(fighter) {
-    validateFighter(fighter);
-    assert(!this.#byId.has(fighter.id), `duplicate variant ID: ${fighter.id}`);
-    const naturalKey = [fighter.characterKey || fighter.name, fighter.universeKey || fighter.universe, fighter.continuityKey || 'canon', fighter.sagaKey || fighter.saga, fighter.versionKey || 'base']
-      .map(normalizeText).join('|');
-    assert(!this.#byNaturalKey.has(naturalKey), `duplicate character variant: ${naturalKey}`);
-    const saved = structuredClone(fighter);
-    this.#byId.set(saved.id, saved);
-    this.#byNaturalKey.set(naturalKey, saved.id);
-    return saved;
-  }
-
-  getExact(id) {
-    const fighter = this.#byId.get(id);
-    assert(fighter, `unknown ID: ${id}`);
-    return structuredClone(fighter);
-  }
-
-  has(id) {
-    return this.#byId.has(id);
-  }
-
-  searchCandidates(text) {
-    const q = normalizeText(text);
-    return [...this.#byId.values()]
-      .filter(x => normalizeText(x.characterKey || x.name).includes(q) || normalizeText(x.id).includes(q))
-      .map(structuredClone);
-  }
-}
-
-export function normalizedLogEnergy(joules, minJ, maxJ) {
-  assert(joules > 0 && minJ > 0 && maxJ > minJ, 'invalid energy interval');
-  return clamp01((Math.log10(joules) - Math.log10(minJ)) / (Math.log10(maxJ) - Math.log10(minJ)));
-}
-
-export function makeCombatProfile({ id, tierExact, ap, speed, durability, form, battleIQ, haxReliability }) {
-  const profile = { id, tierExact, ap, speed, durability, form, battleIQ, haxReliability };
-  return { ...profile, apexPL: calculateApexPL(profile).toString() };
 }

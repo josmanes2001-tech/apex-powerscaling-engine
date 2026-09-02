@@ -1,0 +1,177 @@
+{
+  "simulationId": "apex-sim-1788297027560-o3coh1",
+  "seed": 28890,
+  "scenario": {
+    "mapId": "cell-games-arena",
+    "mapName": "Arena Neutral",
+    "ruleset": "standard",
+    "collateralMode": "medium",
+    "allowFusion": false,
+    "allowExternalItems": false,
+    "allowPreparation": false,
+    "allowNonCanonical": false,
+    "allowedExternalItemIds": []
+  },
+  "teams": [
+    {
+      "teamId": "team-a",
+      "name": "Bando Alfa (Rojo)",
+      "members": [
+        {
+          "combatantId": "fighter-team-a-0-team-a",
+          "teamId": "team-a",
+          "stateName": "Estado Base",
+          "tierExact": null,
+          "tierRank": null,
+          "powerKey": null,
+          "apexKiLog10": null,
+          "apexKiDisplay": "—",
+          "formMultiplier": 1,
+          "hp": 100,
+          "stamina": 100,
+          "statusEffects": [],
+          "cooldowns": {},
+          "isActive": true,
+          "originalCharacter": {
+            "characterId": "son-gohan-joven-saga-androides-cell-945",
+            "stateId": "gohan-joven-ssj2"
+          }
+        }
+      ]
+    },
+    {
+      "teamId": "team-b",
+      "name": "Bando Beta (Azul)",
+      "members": [
+        {
+          "combatantId": "fighter-team-b-0-team-b",
+          "teamId": "team-b",
+          "stateName": "Estado Base",
+          "tierExact": null,
+          "tierRank": null,
+          "powerKey": null,
+          "apexKiLog10": null,
+          "apexKiDisplay": "—",
+          "formMultiplier": 1,
+          "hp": 100,
+          "stamina": 100,
+          "statusEffects": [],
+          "cooldowns": {},
+          "isActive": true,
+          "originalCharacter": {
+            "characterId": "cell-saga-androides-98",
+            "stateId": "cell-perfecto"
+          }
+        }
+      ]
+    }
+  ],
+  "resolvedStates": [
+    {
+      "characterId": "char-unknown",
+      "activeStateId": "base",
+      "stateName": "Estado Base",
+      "tierExact": null,
+      "tierRank": null,
+      "withinTierScore": 67,
+      "powerKey": null,
+      "apexScore": null,
+      "baseApexKiLog10": null,
+      "currentApexKiLog10": null,
+      "apexKiDisplay": "—",
+      "apexKiRaw": null,
+      "apexKiStatus": "unresolved",
+      "scalingMethod": "base",
+      "formMultiplier": 1,
+      "multiplierDisplay": "×1",
+      "sourceKiBase": null,
+      "sourceKiCurrent": null,
+      "sourceKiDisplay": null,
+      "sourceKiStatus": null,
+      "activeStats": {
+        "ap": 0.68,
+        "speed": 0.68,
+        "durability": 0.68,
+        "formControl": 0.68,
+        "battleIQ": 0.68,
+        "haxReliability": 0.25
+      },
+      "statModifiers": {},
+      "specialMechanics": [],
+      "warnings": [
+        "Tier base no reconocido en TIER_ORDER: 'null'"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "characterId": "char-unknown",
+      "activeStateId": "base",
+      "stateName": "Estado Base",
+      "tierExact": null,
+      "tierRank": null,
+      "withinTierScore": 67,
+      "powerKey": null,
+      "apexScore": null,
+      "baseApexKiLog10": null,
+      "currentApexKiLog10": null,
+      "apexKiDisplay": "—",
+      "apexKiRaw": null,
+      "apexKiStatus": "unresolved",
+      "scalingMethod": "base",
+      "formMultiplier": 1,
+      "multiplierDisplay": "×1",
+      "sourceKiBase": null,
+      "sourceKiCurrent": null,
+      "sourceKiDisplay": null,
+      "sourceKiStatus": null,
+      "activeStats": {
+        "ap": 0.68,
+        "speed": 0.68,
+        "durability": 0.68,
+        "formControl": 0.68,
+        "battleIQ": 0.68,
+        "haxReliability": 0.25
+      },
+      "statModifiers": {},
+      "specialMechanics": [],
+      "warnings": [
+        "Tier base no reconocido en TIER_ORDER: 'null'"
+      ],
+      "manualReviewRequired": true
+    }
+  ],
+  "allowedAbilities": [],
+  "allowedForms": [],
+  "validationWarnings": [],
+  "permissions": {
+    "allowedStateIdsByCombatant": {
+      "fighter-team-a-0-team-a": [
+        "base"
+      ],
+      "fighter-team-b-0-team-b": [
+        "base"
+      ]
+    },
+    "allowedAbilityIdsByCombatant": {
+      "fighter-team-a-0-team-a": [],
+      "fighter-team-b-0-team-b": []
+    },
+    "allowedExternalItemIds": [],
+    "allowedFusionMethods": [],
+    "allowedOracleEventIds": [],
+    "oracleUsesRemaining": {},
+    "allowNonCanonical": false,
+    "allowExternalItems": false,
+    "allowFusion": false
+  },
+  "itemInventory": {
+    "team-a": [],
+    "team-b": []
+  },
+  "oracleEvents": {
+    "enabled": false,
+    "active": []
+  },
+  "oracleGeneratedAbilities": [],
+  "blockedActions": []
+}

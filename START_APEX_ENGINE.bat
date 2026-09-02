@@ -6,7 +6,7 @@ echo        INICIANDO MOTOR APEX POWERSCALING ENGINE
 echo ========================================================
 echo.
 
-cd /d "%~dp0"
+pushd "%~dp0"
 
 echo [1/2] Iniciando Servidor Backend (Puerto 3001)...
 start "APEX Backend (3001)" cmd /k "node server.cjs"
@@ -26,4 +26,5 @@ echo ¡APEX Engine esta en ejecucion!
 echo Puedes dejar las ventanas minimizadas o cerrarlas cuando termines.
 echo Para APAGAR completamente la aplicacion, ejecuta STOP_APEX_ENGINE.bat
 echo.
+popd
 pause

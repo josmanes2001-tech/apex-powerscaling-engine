@@ -31,17 +31,17 @@ export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' })
   });
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
-      <div className="bg-slate-950 border border-slate-700/80 rounded-2xl p-5 sm:p-6 max-w-5xl w-full max-h-[92vh] overflow-y-auto space-y-5 font-mono text-xs shadow-[0_0_70px_rgba(0,0,0,0.95)] custom-scrollbar flex flex-col">
+    <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-2 sm:p-4">
+      <div className="bg-slate-950 border border-slate-700/80 rounded-2xl max-w-5xl w-full h-[92vh] max-h-[900px] shadow-[0_0_70px_rgba(0,0,0,0.95)] flex flex-col overflow-hidden font-mono text-xs">
         
-        {/* Header */}
-        <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+        {/* Header (Pinned) */}
+        <div className="shrink-0 p-4 sm:p-5 border-b border-slate-800 flex items-center justify-between bg-slate-950/95 backdrop-blur z-20">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-600 to-red-600 flex items-center justify-center text-white shadow-lg">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-600 to-red-600 flex items-center justify-center text-white shadow-lg shrink-0">
               <Scale className="w-5 h-5 text-amber-200" />
             </div>
             <div>
-              <h2 className="text-base sm:text-lg font-bold text-white font-cinzel tracking-wider flex items-center gap-2">
+              <h2 className="text-base sm:text-lg font-bold text-white font-cinzel tracking-wider flex items-center gap-2 flex-wrap">
                 <span>📖 Compendio Canónico de Power Scaling</span>
                 <span className="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px] border border-amber-500/40">
                   VS Battles Wiki Standard
@@ -52,13 +52,13 @@ export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' })
               </p>
             </div>
           </div>
-          <button onClick={onClose} className="p-1.5 rounded-lg text-slate-400 hover:text-white cursor-pointer bg-slate-900 border border-slate-800 transition">
+          <button onClick={onClose} className="p-1.5 rounded-lg text-slate-400 hover:text-white cursor-pointer bg-slate-900 border border-slate-800 transition shrink-0 ml-2">
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Tab Navigation */}
-        <div className="flex items-center gap-1.5 overflow-x-auto border-b border-slate-800 pb-2 custom-scrollbar">
+        {/* Tab Navigation (Pinned) */}
+        <div className="shrink-0 px-4 sm:px-5 py-2.5 bg-slate-900/60 border-b border-slate-800 flex items-center gap-1.5 overflow-x-auto custom-scrollbar z-10">
           {TABS.map(tab => {
             const Icon = tab.icon;
             const active = activeTab === tab.id;
@@ -66,10 +66,10 @@ export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' })
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer ${
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer shrink-0 ${
                   active
                     ? 'bg-gradient-to-r from-amber-600 to-red-600 text-white shadow-md shadow-amber-950/50'
-                    : 'bg-slate-900/60 text-slate-400 hover:text-slate-200 hover:bg-slate-800/60 border border-slate-800'
+                    : 'bg-slate-950/80 text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 border border-slate-800/80'
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
@@ -78,6 +78,9 @@ export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' })
             );
           })}
         </div>
+
+        {/* Scrollable Content */}
+        <div className="flex-1 overflow-y-auto p-4 sm:p-5 custom-scrollbar">
 
         {/* Tab 0: Power Levels & Scouter (DB Canon vs APEX Universal) */}
         {activeTab === 'powerlevels' && (
@@ -301,7 +304,19 @@ export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' })
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[560px] overflow-y-auto pr-1">
+            <div className="p-3 mb-4 rounded-xl bg-gradient-to-r from-cyan-900/40 to-slate-900 border border-cyan-500/30 text-xs text-slate-200 space-y-2 font-sans">
+              <strong className="text-cyan-400 block font-mono">⚡ Sistema de APEX-Ki y Escalado de Formas:</strong>
+              <p>
+                El <b>APEX-Ki</b> se calcula evaluando el <span className="text-amber-400">Tier Base</span> y la <span className="text-amber-400">Calidad de Stats</span> del personaje. 
+                Si un personaje adopta una transformación o estado (ej. <i>Super Saiyan</i>, <i>Golden Freezer</i>, <i>Forma Máxima</i>), el motor detecta el alias y aplica un <b>multiplicador exacto de poder y estadísticas</b>.
+              </p>
+              <ul className="list-disc pl-4 text-[11px] text-slate-300">
+                <li>Si la forma tiene un Tier propio, el motor recalcula el APEX-Ki desde cero usando el nuevo nivel.</li>
+                <li>Si la forma mantiene el mismo Tier pero otorga un <i>Boost</i> (como Bido o King Cold), el motor aplica el multiplicador de transformación, actualizando el APEX-Ki final instantáneamente.</li>
+              </ul>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {filteredTiers.map(item => (
                 <div key={item.tier} className="p-3.5 rounded-xl bg-slate-900/50 border border-slate-800/80 hover:border-amber-500/40 transition space-y-1.5 group">
                   <div className="flex items-center justify-between">
@@ -480,8 +495,10 @@ export default function PowerscalingGuideModal({ isOpen, onClose, lang = 'es' })
           </div>
         )}
 
-        {/* Footer */}
-        <div className="flex items-center justify-between pt-3 border-t border-slate-800 text-slate-400 text-[11px]">
+        </div>
+
+        {/* Footer (Pinned) */}
+        <div className="shrink-0 p-3.5 px-5 border-t border-slate-800 flex items-center justify-between text-slate-400 text-[11px] bg-slate-950/95">
           <span className="flex items-center gap-1.5 text-amber-400 font-bold">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Integrado en el motor de simulación cuántica de APEX Engine 2.0</span>
