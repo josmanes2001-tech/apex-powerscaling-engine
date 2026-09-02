@@ -1,0 +1,109 @@
+{
+  "version": "20260304",
+  "runtime": "node",
+  "framework": "vite",
+  "runtimeVersion": {
+    "resolved": "24"
+  },
+  "dependencies": [
+    {
+      "name": "@tailwindcss/vite",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^4.0.0",
+      "resolved": ""
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^4.3.4",
+      "resolved": ""
+    },
+    {
+      "name": "clsx",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^2.1.1",
+      "resolved": ""
+    },
+    {
+      "name": "cors",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^2.8.6",
+      "resolved": ""
+    },
+    {
+      "name": "express",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^4.22.2",
+      "resolved": ""
+    },
+    {
+      "name": "lucide-react",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^1.16.0",
+      "resolved": ""
+    },
+    {
+      "name": "react",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^19.0.0",
+      "resolved": ""
+    },
+    {
+      "name": "react-dom",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^19.0.0",
+      "resolved": ""
+    },
+    {
+      "name": "tailwind-merge",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^3.0.2",
+      "resolved": ""
+    },
+    {
+      "name": "tailwindcss",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^4.0.0",
+      "resolved": ""
+    },
+    {
+      "name": "vite",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^6.0.0",
+      "resolved": ""
+    }
+  ]
+}
