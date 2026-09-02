@@ -3917,7 +3917,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "son-gohan-ni-o-saga-saiyan-namek-830-base-std",
         "name": "Son Gohan (Niño) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Son Gohan (Niño) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -5495,7 +5495,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "piccolo-saga-super-dragon-ball-super-228-base-std",
         "name": "Piccolo (Saga Super) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Piccolo (Saga Super) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -6830,7 +6830,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "cell-saga-androides-98-base-std",
         "name": "Cell (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cell antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -7056,7 +7056,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "majin-buu-gordo-saga-buu-604-base-std",
         "name": "Majin Buu (Gordo) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Majin Buu (Gordo) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -7493,7 +7493,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kid-buu-saga-buu-907-base-std",
         "name": "Kid Buu (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Kid Buu antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -8094,7 +8094,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "maestro-roshi-jackie-chun-dragon-ball-cl-sico-224-base-std",
         "name": "Maestro Roshi (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Maestro Roshi antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -9792,7 +9792,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nam-dragon-ball-cl-sico-33-base-std",
         "name": "Nam (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Nam antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -9985,7 +9985,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "ranfan-dragon-ball-cl-sico-172-base-std",
         "name": "Ranfan (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Ranfan antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -10152,7 +10152,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "giran-dragon-ball-cl-sico-697-base-std",
         "name": "Giran (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Giran antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -10342,7 +10342,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "bacterian-dragon-ball-cl-sico-986-base-std",
         "name": "Bacterian (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Bacterian antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -11365,7 +11365,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "chaos-dragon-ball-cl-sico-318-base-std",
         "name": "Chaos (Chiaotzu) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Chaos (Chiaotzu) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -11801,7 +11801,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "comandante-red-dragon-ball-cl-sico-526-base-std",
         "name": "Comandante Red (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Comandante Red antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -11983,7 +11983,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "coronel-silver-dragon-ball-cl-sico-336-base-std",
         "name": "Coronel Silver (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Coronel Silver antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -12166,7 +12166,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "general-blue-dragon-ball-cl-sico-650-base-std",
         "name": "General Blue (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de General Blue antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -12341,7 +12341,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mayor-metallitron-dragon-ball-cl-sico-265-base-std",
         "name": "Mayor Metallitron (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mayor Metallitron antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -12510,7 +12510,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-8-dragon-ball-cl-sico-704-base-std",
         "name": "Androide 8 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 8 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -12688,7 +12688,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "coronel-murasaki-dragon-ball-cl-sico-136-base-std",
         "name": "Coronel Murasaki (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Coronel Murasaki antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -12835,7 +12835,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "rey-piccolo-dragon-ball-cl-sico-497-base-std",
         "name": "Rey Demonio Piccolo (Daimaoh) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Rey Demonio Piccolo (Daimaoh) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -13027,7 +13027,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tambourine-dragon-ball-cl-sico-273-base-std",
         "name": "Tambourine (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tambourine antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -13195,7 +13195,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "cymbal-dragon-ball-cl-sico-617-base-std",
         "name": "Cymbal (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cymbal antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -13384,7 +13384,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "drum-dragon-ball-cl-sico-175-base-std",
         "name": "Drum (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Drum antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -13569,7 +13569,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kami-sama-dragon-ball-cl-sico-772-base-std",
         "name": "Kami-sama (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Kami-sama antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -13742,7 +13742,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mr-popo-dragon-ball-cl-sico-370-base-std",
         "name": "Mr. Popo (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mr. Popo antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "tierExact": "7-B",
@@ -13946,7 +13946,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yajirobe-dragon-ball-cl-sico-111-base-std",
         "name": "Yajirobe (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Yajirobe antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -14153,7 +14153,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "granjero-con-escopeta-dragon-ball-cl-sico-331-base-std",
         "name": "Granjero con Escopeta (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Granjero con Escopeta antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -14686,7 +14686,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "saibaman-saga-saiyan-791-base-std",
         "name": "Saibaman (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Saibaman antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -14881,7 +14881,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kaio-sama-del-norte-saga-saiyan-446-base-std",
         "name": "Kaio-sama del Norte (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Kaio-sama del Norte antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -15071,7 +15071,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "enma-daioh-saga-saiyan-579-base-std",
         "name": "Enma Daioh (Rey Yemma) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Enma Daioh (Rey Yemma) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -15251,7 +15251,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "cui-saga-namek-132-base-std",
         "name": "Cui (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cui antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -15457,7 +15457,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dodoria-saga-namek-528-base-std",
         "name": "Dodoria (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dodoria antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -15673,7 +15673,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "zarbon-saga-namek-939-base-std",
         "name": "Zarbon (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Zarbon antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -15861,7 +15861,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "guerreros-namek-saga-namek-520-base-std",
         "name": "Guerreros Namek (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Guerreros Namek antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -16364,7 +16364,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gran-patriarca-guru-saga-namek-183-base-std",
         "name": "Gran Patriarca Guru (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gran Patriarca Guru antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -16543,7 +16543,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nail-saga-namek-672-base-std",
         "name": "Nail (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Nail antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -16912,7 +16912,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "recoome-saga-namek-951-base-std",
         "name": "Recoome (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Recoome antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -17087,7 +17087,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "jeice-saga-namek-726-base-std",
         "name": "Jeice (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Jeice antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -17298,7 +17298,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "burter-saga-namek-641-base-std",
         "name": "Burter (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Burter antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -17501,7 +17501,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "guldo-saga-namek-583-base-std",
         "name": "Guldo (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Guldo antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 5-B",
         "tierExact": "Low 5-B",
@@ -17878,7 +17878,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "spice-saga-garlic-jr-70-base-std",
         "name": "Spice (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Spice antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -18079,7 +18079,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "vinegar-saga-garlic-jr-502-base-std",
         "name": "Vinegar (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Vinegar antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -18256,7 +18256,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mustard-saga-garlic-jr-331-base-std",
         "name": "Mustard (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mustard antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -18432,7 +18432,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "salt-saga-garlic-jr-435-base-std",
         "name": "Salt (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Salt antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -18781,7 +18781,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-19-saga-androides-393-base-std",
         "name": "Androide 19 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 19 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -18966,7 +18966,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-20-saga-androides-799-base-std",
         "name": "Androide 20 (Dr. Gero) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 20 (Dr. Gero) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -19158,7 +19158,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-17-saga-androides-489-base-std",
         "name": "Androide 17 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 17 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -19569,7 +19569,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-16-saga-androides-313-base-std",
         "name": "Androide 16 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 16 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -19804,7 +19804,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "cell-jr-saga-androides-134-base-std",
         "name": "Cell Jr. (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cell Jr. antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -20429,7 +20429,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "olibu-torneo-del-otro-mundo-109-base-std",
         "name": "Olibu (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Olibu antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -20630,7 +20630,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mijorin-torneo-del-otro-mundo-618-base-std",
         "name": "Mijorin (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mijorin antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -20783,7 +20783,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "caterpy-torneo-del-otro-mundo-838-base-std",
         "name": "Caterpy (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Caterpy antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -20909,7 +20909,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "arqua-torneo-del-otro-mundo-715-base-std",
         "name": "Arqua (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Arqua antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -21057,7 +21057,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "maraikoh-torneo-del-otro-mundo-620-base-std",
         "name": "Maraikoh (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Maraikoh antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -21649,7 +21649,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shin-kaio-shin-del-este-saga-buu-0-base-std",
         "name": "Shin (Kaio-shin del Este) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Shin (Kaio-shin del Este) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -21794,7 +21794,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kibito-saga-buu-184-base-std",
         "name": "Kibito (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Kibito antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -21959,7 +21959,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "videl-saga-buu-6-base-std",
         "name": "Videl (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Videl antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -22134,7 +22134,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "babidi-saga-buu-330-base-std",
         "name": "Babidi (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Babidi antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -22308,7 +22308,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dabura-saga-buu-107-base-std",
         "name": "Dabura (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dabura antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -22663,7 +22663,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "pan-saga-buu-780-base-std",
         "name": "Pan (GT) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Pan (GT) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -22864,7 +22864,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "spopovich-saga-buu-676-base-std",
         "name": "Spopovich (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Spopovich antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -23045,7 +23045,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yamu-saga-buu-59-base-std",
         "name": "Yamu (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Yamu antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -23217,7 +23217,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "anciano-kaio-shin-saga-buu-404-base-std",
         "name": "Anciano Kaio-shin (Ro Kaio-shin) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Anciano Kaio-shin (Ro Kaio-shin) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "High 5-A",
         "tierExact": "High 5-A",
@@ -23595,7 +23595,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dr-wheelo-pel-culas-dbz-toei-823-base-std",
         "name": "Dr. Wheelo (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dr. Wheelo antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -24005,7 +24005,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "lord-cooler-pel-culas-dbz-toei-792-base-std",
         "name": "Cooler (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cooler antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -24212,7 +24212,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "meta-cooler-pel-culas-dbz-toei-714-base-std",
         "name": "Meta Cooler (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Meta Cooler antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -24616,7 +24616,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-14-pel-culas-dbz-toei-392-base-std",
         "name": "Androide 14 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 14 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -24829,7 +24829,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-15-pel-culas-dbz-toei-547-base-std",
         "name": "Androide 15 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 15 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -25040,7 +25040,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "paragus-pel-culas-dbz-toei-728-base-std",
         "name": "Paragus (Z) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Paragus (Z) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -25420,7 +25420,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "zangya-pel-culas-dbz-toei-447-base-std",
         "name": "Zangya (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Zangya antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -25626,7 +25626,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "bido-pel-culas-dbz-toei-296-base-std",
         "name": "Bido (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Bido antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -25826,7 +25826,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "bujin-pel-culas-dbz-toei-994-base-std",
         "name": "Bujin (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Bujin antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -26272,7 +26272,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dr-lychee-pel-culas-dbz-toei-354-base-std",
         "name": "Dr. Lychee (Dr. Raichi) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dr. Lychee (Dr. Raichi) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -26468,7 +26468,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hatchiyack-pel-culas-dbz-toei-383-base-std",
         "name": "Hatchiyack (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Hatchiyack antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "tierExact": "5-C",
@@ -26645,7 +26645,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "bio-broly-pel-culas-dbz-toei-858-base-std",
         "name": "Bio-Broly (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Bio-Broly antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -26820,7 +26820,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "janemba-gordo-pel-culas-dbz-toei-542-base-std",
         "name": "Super Janemba (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Super Janemba antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -27179,7 +27179,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hirudegarn-pel-culas-dbz-toei-805-base-std",
         "name": "Hirudegarn (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Hirudegarn antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -27340,7 +27340,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tapion-pel-culas-dbz-toei-767-base-std",
         "name": "Tapion (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tapion antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -27548,7 +27548,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-17-futuro-l-nea-temporal-futura-398-base-std",
         "name": "Androide 17 (Futuro) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 17 (Futuro) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -27770,7 +27770,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "androide-18-futuro-l-nea-temporal-futura-419-base-std",
         "name": "Androide 18 (Línea del Futuro) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Androide 18 (Línea del Futuro) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -28446,7 +28446,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mai-l-nea-temporal-futura-446-base-std",
         "name": "Mai (Línea del Futuro) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Mai (Línea del Futuro) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -29050,7 +29050,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "champa-dragon-ball-super-179-base-std",
         "name": "Champa (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Champa antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -29236,7 +29236,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "vados-dragon-ball-super-918-base-std",
         "name": "Vados (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Vados antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -29411,7 +29411,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Estado Base (Contenido)",
         "stats": "Nivel Universal. Lucha con reglas de torneo, sin dar golpes letales.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "3-A",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -29622,7 +29622,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Saiyan Base",
         "stats": "Nivel Universal. Físico muy delgado, traje morado de Sadala.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "3-A",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -29824,7 +29824,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "botamo-dragon-ball-super-999-base-std",
         "name": "Botamo (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Botamo antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -30218,7 +30218,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "monaka-dragon-ball-super-955-base-std",
         "name": "Monaka (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Monaka antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -30428,7 +30428,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Base (Contenido)",
         "stats": "Nivel Universal+. Aura sutil, ni se mueve para pelear, medita.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "Low 2-C",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -30630,7 +30630,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Toppo (Líder Tropas del Orgullo / Base)",
         "stats": "Nivel Galáctico a Universal Menor. Justicia implacable y Justice Flash.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "3-A",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -30821,7 +30821,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dyspo-dragon-ball-super-188-base-std",
         "name": "Dyspo (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Dyspo antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -31233,7 +31233,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Saiyan Base",
         "stats": "Nivel Estrella Enana a Universal. Cabello desordenado, top magenta, pantalones anchos.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "3-A",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -31448,7 +31448,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Saiyan Base",
         "stats": "Nivel Ciudad a Universal (Oculto). Tímida, cabello atado, top rojo.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "3-A",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -31655,7 +31655,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "anilaza-dragon-ball-super-645-base-std",
         "name": "Anilaza (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Anilaza antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -31856,7 +31856,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Base Humanoide Lobo",
         "stats": "Nivel Universal Bajo. Bufanda roja, cuerpo alto esbelto.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "3-A",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -32057,7 +32057,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "basil-dragon-ball-super-757-base-std",
         "name": "Basil (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Basil antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -32272,7 +32272,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "lavender-dragon-ball-super-460-base-std",
         "name": "Lavender (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Lavender antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -32869,7 +32869,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gas-dragon-ball-super-973-base-std",
         "name": "Gas (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gas antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -33283,7 +33283,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gamma-1-dragon-ball-super-885-base-std",
         "name": "Gamma 1 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gamma 1 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 2-C",
         "tierExact": "Low 2-C",
@@ -33484,7 +33484,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gamma-2-dragon-ball-super-446-base-std",
         "name": "Gamma 2 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gamma 2 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 2-C",
         "tierExact": "Low 2-C",
@@ -33671,7 +33671,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "cell-max-dragon-ball-super-993-base-std",
         "name": "Cell Max (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cell Max antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 2-C",
         "tierExact": "Low 2-C",
@@ -33880,7 +33880,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Vegetto Base",
         "stats": "Nivel Universal+ (Manga). Suficiente para presionar a deidades menores.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "Low 2-C",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -34754,7 +34754,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "super-17-dragon-ball-gt-73-base-std",
         "name": "Super 17 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Super 17 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "Low 2-C",
         "tierExact": "Low 2-C",
@@ -35335,7 +35335,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "eis-shenron-dragon-ball-gt-308-base-std",
         "name": "Eis Shenron (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Eis Shenron antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -35720,7 +35720,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "majuub-dragon-ball-gt-859-base-std",
         "name": "Majuub (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Majuub antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -35923,7 +35923,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "panzy-dragon-ball-daima-138-base-std",
         "name": "Panzy (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Panzy antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -36122,7 +36122,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tamagami-n-mero-1-dragon-ball-daima-763-base-std",
         "name": "Tamagami Número 1 (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tamagami Número 1 antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -36312,7 +36312,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "piccolo-dragon-ball-daima-343-base-std",
         "name": "Piccolo (Daima Mini) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Piccolo (Daima Mini) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -36773,7 +36773,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "granolah-peak-dbs-manga-gr001-base-std",
         "name": "Granolah (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Granolah antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -37176,7 +37176,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "sukuna-ryomen-jjk-20sellos-s001-base-std",
         "name": "Ryomen Sukuna (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Ryomen Sukuna antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -38150,7 +38150,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yoriichi-tsugikuni-kny-902-base-std",
         "name": "Yoriichi Tsugikuni (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Yoriichi Tsugikuni antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -38531,7 +38531,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "makima-csm-904-base-std",
         "name": "Makima (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Makima antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -38726,7 +38726,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "omni-man-invincible-905-base-std",
         "name": "Omni-Man (Nolan Grayson) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Omni-Man (Nolan Grayson) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -39388,7 +39388,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "superman-dc-909-base-std",
         "name": "Superman (Clark Kent / Kal-El) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Superman (Clark Kent / Kal-El) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -40192,7 +40192,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "homelander-the-boys-913-base-std",
         "name": "Homelander (John) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Homelander (John) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -40737,7 +40737,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "josh-apex-oc-base-std",
         "name": "Josh (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Josh antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -40987,7 +40987,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "maki-zenin-base-std",
         "name": "Maki Zen'in (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Maki Zen'in antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -41193,7 +41193,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "megumi-fushiguro-base-std",
         "name": "Megumi Fushiguro (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Megumi Fushiguro antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -41394,7 +41394,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "suguru-geto-base-std",
         "name": "Suguru Geto / Kenjaku (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Suguru Geto / Kenjaku antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -41762,7 +41762,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gyomei-himejima-base-std",
         "name": "Gyomei Himejima (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gyomei Himejima antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -43248,7 +43248,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "reze-base-std",
         "name": "Reze (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Reze antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -43480,7 +43480,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "thragg-base-std",
         "name": "Gran Regente Thragg (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gran Regente Thragg antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -43683,7 +43683,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "battle-beast-base-std",
         "name": "Battle Beast (Thokk) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Battle Beast (Thokk) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -43877,7 +43877,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "conquest-base-std",
         "name": "Conquest (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Conquest antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -44064,7 +44064,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "atom-eve-base-std",
         "name": "Atom Eve (Samantha Eve Wilkins) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Atom Eve (Samantha Eve Wilkins) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -44618,7 +44618,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "chrollo-lucilfer-base-std",
         "name": "Chrollo Lucilfer (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Chrollo Lucilfer antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -44945,7 +44945,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "soldier-boy-base-std",
         "name": "Soldier Boy (Ben) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Soldier Boy (Ben) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -45134,7 +45134,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "a-train-base-std",
         "name": "A-Train (Reggie Franklin) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de A-Train (Reggie Franklin) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -45347,7 +45347,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "queen-maeve-base-std",
         "name": "Queen Maeve (Maggie Shaw) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Queen Maeve (Maggie Shaw) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -45760,7 +45760,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "doctor-strange-base-std",
         "name": "Doctor Strange (Stephen Strange) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Doctor Strange (Stephen Strange) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -48809,7 +48809,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "baby-vegeta-god-brokoly-base-std",
         "name": "Super Baby Vegeta (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Super Baby Vegeta antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -50771,7 +50771,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Frost (Primera Forma / Estado Base)",
         "stats": "Nivel Universal Bajo. Idéntico a Freezer 1, pero colores azules, modales exquisitos.",
         "apexKiMultiplier": 1,
-        "tier": "7-A",
+        "tier": "3-A",
         "tierExact": "7-A",
         "multiplier": "1x"
       },
@@ -53599,7 +53599,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "garou-cosmico-opm-base-std",
         "name": "Cosmic Garou (Modo Despertar Cósmico) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Cosmic Garou (Modo Despertar Cósmico) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -55767,7 +55767,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "all-might-prime-mha-base-std",
         "name": "All Might (Prime) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de All Might (Prime) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -56950,7 +56950,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "adult-gon-hxh-base-std",
         "name": "Gon Adulto (Voto y Restricción Suprema) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Gon Adulto (Voto y Restricción Suprema) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -60521,7 +60521,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "zen-buu-dbm-u4-base-std",
         "name": "Zen Buu (Multiverse — U4) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Zen Buu (Multiverse — U4) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -61535,7 +61535,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "xxi-hechicero-dbm-u5-base-std",
         "name": "XXI (Multiverse — U5) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de XXI (Multiverse — U5) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -62326,7 +62326,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "rey-cold-formas-dbm-u8-base-std",
         "name": "Rey Cold (Multiverse — U8) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Rey Cold (Multiverse — U8) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -62532,7 +62532,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "eleim-ultra-dbm-u19-base-std",
         "name": "Eleim (Multiverse — U19) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Eleim (Multiverse — U19) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "tierExact": "7-A",
@@ -63704,7 +63704,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "rey-gomah-daima-base-std",
         "name": "Rey Gomah (King Gomah) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Rey Gomah (King Gomah) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -63863,7 +63863,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tamagami-1-espada-daima-base-std",
         "name": "Tamagami #1 (Guardián de la Espada de Fuego) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tamagami #1 (Guardián de la Espada de Fuego) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -64043,7 +64043,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tamagami-2-escudo-daima-base-std",
         "name": "Tamagami #2 (Guardián del Escudo y Lanza) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tamagami #2 (Guardián del Escudo y Lanza) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -64219,7 +64219,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tamagami-3-supremo-daima-base-std",
         "name": "Tamagami #3 (Guardián Supremo) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Tamagami #3 (Guardián Supremo) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -64435,7 +64435,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "majin-kuu-daima-base-std",
         "name": "Majin Kuu (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Majin Kuu antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -64884,7 +64884,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "glorio-daima-reino-demonio-base-std",
         "name": "Glorio (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Glorio antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -65107,7 +65107,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "anciano-neva-daima-base-std",
         "name": "Neva (El Creador de las Esferas) (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Neva (El Creador de las Esferas) antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -65338,7 +65338,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "princesa-panzy-daima-base-std",
         "name": "Princesa Panzy (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Princesa Panzy antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "tierExact": "5-A",
@@ -89972,7 +89972,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base (Uniforme Militar)",
-        "stats": "Tier 10-A",
+        "stats": "Tier 10-A | Nivel Atleta. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -90134,7 +90134,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base (Traje Ninja Púrpura)",
-        "stats": "Tier 10-A",
+        "stats": "Tier 10-A | Nivel Atleta. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -90315,7 +90315,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base (Ciborg)",
-        "stats": "Tier 4-C",
+        "stats": "Tier 4-C | Nivel Estrella. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -90496,7 +90496,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base (Ciborg)",
-        "stats": "Tier 4-C",
+        "stats": "Tier 4-C | Nivel Estrella. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -90672,7 +90672,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base",
-        "stats": "Tier 5-B",
+        "stats": "Tier 5-B | Nivel Planetario. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -90849,7 +90849,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base",
-        "stats": "Tier 5-B",
+        "stats": "Tier 5-B | Nivel Planetario. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -91034,7 +91034,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base (Aura Desplegada)",
-        "stats": "Tier 8-B+",
+        "stats": "Tier 8-B+ | Nivel 8-B+. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -91202,7 +91202,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base (Illumi)",
-        "stats": "Tier 8-C+",
+        "stats": "Tier 8-C+ | Nivel 8-C+. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -91401,7 +91401,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Armadura de Combate Ultra",
-        "stats": "Tier 5-A",
+        "stats": "Tier 5-A | Nivel Planeta Grande. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -91589,7 +91589,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Armadura Ultra Pesada con God Blade",
-        "stats": "Tier 4-C",
+        "stats": "Tier 4-C | Nivel Estrella. Físico y arsenal operativo de combate.",
         "apexKiMultiplier": 1
       }
     ],
@@ -94383,7 +94383,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yuji-itadori-jjk-shinjuku-base",
         "name": "Yuji Itadori (Shinjuku) (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -95377,7 +95377,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yuki-tsukumo-jjk-base",
         "name": "Yuki Tsukumo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -95562,7 +95562,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "rex-splode-invincible-base",
         "name": "Rex Splode (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -98292,7 +98292,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "deadpool-marvel-616-base",
         "name": "Deadpool (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -98464,7 +98464,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "deathstroke-dc-rebirth-base",
         "name": "Deathstroke (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -99224,7 +99224,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yakon-dbz-buu-base",
         "name": "Yakon (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -99629,7 +99629,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kusakabe-jjk-shinjuku-base",
         "name": "Atsuya Kusakabe (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -99777,7 +99777,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shota-aizawa-mha-base-base",
         "name": "Shota Aizawa (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -100085,7 +100085,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gouki-shibukawa-baki-base",
         "name": "Gouki Shibukawa (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -100392,7 +100392,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "black-panther-marvel-616-base",
         "name": "Black Panther (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -100534,7 +100534,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hiromi-higuruma-jjk-culling-base",
         "name": "Hiromi Higuruma (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -100701,7 +100701,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "lady-nagant-mha-tartarus-base",
         "name": "Lady Nagant (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -100857,7 +100857,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "maji-kayo-dbs-top-base",
         "name": "Maji-Kayo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -101008,7 +101008,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "leonidas-ror-r9-base",
         "name": "Leonidas (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -101160,7 +101160,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shaiapouf-hxh-ca-base",
         "name": "Shaiapouf (Pouf) (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -101346,7 +101346,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "constantine-dc-hellblazer-base",
         "name": "John Constantine (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -101689,7 +101689,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "doctor-octopus-marvel-616-base",
         "name": "Doctor Octopus (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -101849,7 +101849,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "motobe-izou-baki-base",
         "name": "Motobe Izou (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -102360,7 +102360,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "metal-bat-opm-ma-base",
         "name": "Metal Bat (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -102862,7 +102862,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mei-mei-jjk-shibuya-base",
         "name": "Mei Mei (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -103550,7 +103550,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "zatanna-dc-pcf-base",
         "name": "Zatanna Zatara (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -103713,7 +103713,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "victoria-neuman-the-boys-base",
         "name": "Victoria Neuman (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -103855,7 +103855,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "fumihiko-takaba-jjk-culling-base",
         "name": "Fumihiko Takaba (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -103997,7 +103997,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "falling-devil-csm-p2-base",
         "name": "Demonio de la Caída (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -104139,7 +104139,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "star-and-stripe-mha-war-base",
         "name": "Star and Stripe (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -104286,7 +104286,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "risotto-nero-jojo-va-base",
         "name": "Risotto Nero (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -104440,7 +104440,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "susanoo-no-mikoto-ror-r10-base",
         "name": "Susanoo no Mikoto (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -104716,7 +104716,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "lucan-invincible-base",
         "name": "Lucan (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -105027,7 +105027,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "doctor-doom-marvel-616-base",
         "name": "Doctor Doom (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -105344,7 +105344,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kurogiri-mha-loa-base",
         "name": "Kurogiri (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -105645,7 +105645,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kanao-tsuyuri-kny-ic-base",
         "name": "Kanao Tsuyuri (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -105998,7 +105998,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "apollo-ror-r9-base",
         "name": "Apollo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -106161,7 +106161,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "takako-uro-jjk-culling-base",
         "name": "Takako Uro (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -106324,7 +106324,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kaku-kaioh-baki-base",
         "name": "Kaku Kaioh (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -106481,7 +106481,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kimiko-miyashiro-the-boys-base",
         "name": "Kimiko Miyashiro (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -107111,7 +107111,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "ryu-ishigori-jjk-culling-base",
         "name": "Ryu Ishigori (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -107625,7 +107625,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "edgeshot-mha-war-base",
         "name": "Edgeshot (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -107965,7 +107965,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "feitan-portor-hxh-ca-base",
         "name": "Feitan Portor (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -108124,7 +108124,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "sukune-baki-dou-base",
         "name": "Nomi no Sukune II (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -108280,7 +108280,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "thaedus-invincible-war-base",
         "name": "Thaedus (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -108433,7 +108433,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "okuyasu-nijimura-jojo-diu-base",
         "name": "Okuyasu Nijimura (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -108590,7 +108590,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mahoraga-jjk-shibuya-base",
         "name": "Mahoraga (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -108723,7 +108723,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "zombieman-opm-ma-base",
         "name": "Zombieman (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -108891,7 +108891,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "best-jeanist-mha-war-base",
         "name": "Best Jeanist (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -109050,7 +109050,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "genya-shinazugawa-kny-sv-base",
         "name": "Genya Shinazugawa (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -109221,7 +109221,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "weather-report-jojo-so-base",
         "name": "Weather Report (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -109341,7 +109341,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "spec-baki-drc-base",
         "name": "Spec (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -109473,7 +109473,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nobunaga-hazama-hxh-yr-base",
         "name": "Nobunaga Hazama (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -109799,7 +109799,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "rozie-dbs-top-base",
         "name": "Rozie (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -110113,7 +110113,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tamaki-amajiki-mha-shie-base",
         "name": "Tamaki Amajiki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -110253,7 +110253,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nejire-hado-mha-war-base",
         "name": "Nejire Hado (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -110392,7 +110392,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shoot-mcmahon-hxh-ca-base",
         "name": "Shoot McMahon (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -110536,7 +110536,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "katsumi-orochi-baki-pickle-base",
         "name": "Katsumi Orochi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -110689,7 +110689,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "noriaki-kakyoin-jojo-sc-base",
         "name": "Noriaki Kakyoin (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -110831,7 +110831,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "polnareff-jojo-sc-base",
         "name": "Jean Pierre Polnareff (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -111158,7 +111158,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "barem-bridge-csm-p2-base",
         "name": "Barem Bridge (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -111337,7 +111337,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "carmine-dbs-superhero-base",
         "name": "Carmine (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -111529,7 +111529,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "miguel-jjk-shinjuku-base",
         "name": "Miguel (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -111698,7 +111698,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dr-hedo-dbs-superhero-base",
         "name": "Dr. Hedo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -112152,7 +112152,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "phinks-magcub-hxh-yr-base",
         "name": "Phinks Magcub (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -112405,7 +112405,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mai-zenin-jjk-kyoto-base",
         "name": "Mai Zenin (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -112723,7 +112723,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "wamuu-jojo-bt-base",
         "name": "Wamuu (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -112903,7 +112903,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "the-deep-the-boys-base",
         "name": "The Deep (Profundo) (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -113068,7 +113068,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "grandpa-gohan-db-21tb-base",
         "name": "Son Gohan (Abuelo) (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -113415,7 +113415,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "jogo-jjk-shibuya-base",
         "name": "Jogo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -113717,7 +113717,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "knuckle-bine-hxh-ca-base",
         "name": "Knuckle Bine (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -113874,7 +113874,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mirko-mha-war-base",
         "name": "Mirko (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -114074,7 +114074,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "loki-ror-ragnarok-base",
         "name": "Loki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -114226,7 +114226,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "jun-guevaru-baki-base",
         "name": "Jun Guevaru (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -114380,7 +114380,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dupli-kate-invincible-base",
         "name": "Dupli-Kate (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -114539,7 +114539,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "ledgic-dbgt-base",
         "name": "Ledgic (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -114693,7 +114693,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "himiko-toga-mha-war-base",
         "name": "Himiko Toga (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -115030,7 +115030,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "esidisi-jojo-bt-base",
         "name": "Esidisi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -115187,7 +115187,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "puri-puri-prisoner-opm-ma-base",
         "name": "Puri-Puri Prisoner (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -115338,7 +115338,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "sakonji-urokodaki-kny-train-base",
         "name": "Sakonji Urokodaki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -115497,7 +115497,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "stain-mha-hosu-base",
         "name": "Stain (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -115664,7 +115664,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shizuku-murasaki-hxh-yr-base",
         "name": "Shizuku Murasaki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -115829,7 +115829,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "stormfront-the-boys-base",
         "name": "Stormfront (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -116002,7 +116002,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "fami-csm-p2-base",
         "name": "Fami / Kiga (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -116170,7 +116170,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "momo-nishimiya-jjk-kyoto-base",
         "name": "Momo Nishimiya (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -116476,7 +116476,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tooru-jojo-jjl-base",
         "name": "Tooru (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -116621,7 +116621,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gyro-zeppeli-jojo-sbr-base",
         "name": "Gyro Zeppeli (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -116869,7 +116869,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "merus-dbs-moro-base",
         "name": "Merus (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -117043,7 +117043,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hanami-jjk-shibuya-base",
         "name": "Hanami (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -117198,7 +117198,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "flashy-flash-opm-ma-base",
         "name": "Flashy Flash (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -117356,7 +117356,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "adam-warlock-marvel-616-base",
         "name": "Adam Warlock (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -117682,7 +117682,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "zeno-zoldyck-hxh-ca-base",
         "name": "Zeno Zoldyck (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -117847,7 +117847,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gorilla-grodd-dc-rebirth-base",
         "name": "Gorilla Grodd (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -118004,7 +118004,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kanae-kocho-kny-lore-base",
         "name": "Kanae Kocho (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -118207,7 +118207,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nakime-kny-ic-base",
         "name": "Nakime (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -118347,7 +118347,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "charles-bernard-jjk-culling-base",
         "name": "Charles Bernard (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -118495,7 +118495,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "obni-dbs-top-base",
         "name": "Obni (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -118801,7 +118801,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "sikorsky-baki-drc-base",
         "name": "Sikorsky (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -118967,7 +118967,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "pakunoda-hxh-yr-base",
         "name": "Pakunoda (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -119274,7 +119274,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "narancia-ghirga-jojo-va-base",
         "name": "Narancia Ghirga (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -119415,7 +119415,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "space-racer-invincible-base",
         "name": "Space Racer (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -119592,7 +119592,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "vision-marvel-616-base",
         "name": "Vision (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -119753,7 +119753,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "vanilla-ice-jojo-sc-base",
         "name": "Vanilla Ice (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -119914,7 +119914,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "uraume-jjk-shibuya-base",
         "name": "Uraume (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -120061,7 +120061,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "homeless-emperor-opm-ma-base",
         "name": "Homeless Emperor (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -120243,7 +120243,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "bane-dc-rebirth-base",
         "name": "Bane (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -120404,7 +120404,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "angel-devil-csm-p1-base",
         "name": "Angel Devil (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -120556,7 +120556,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kamui-woods-mha-war-base",
         "name": "Kamui Woods (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -120715,7 +120715,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "machi-komacine-hxh-yr-base",
         "name": "Machi Komacine (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -120857,7 +120857,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kagaya-ubuyashiki-kny-lore-base",
         "name": "Kagaya Ubuyashiki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -121044,7 +121044,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "doyle-baki-drc-base",
         "name": "Doyle (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -121187,7 +121187,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "magenta-dbs-superhero-base",
         "name": "Magenta (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -121362,7 +121362,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "caesar-zeppeli-jojo-bt-base",
         "name": "Caesar Anthonio Zeppeli (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -121520,7 +121520,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "naobito-zenin-jjk-shibuya-base",
         "name": "Naobito Zenin (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -121694,7 +121694,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "rui-kny-mn-base",
         "name": "Rui (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -121852,7 +121852,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "rappa-mha-shie-base",
         "name": "Rappa (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -122015,7 +122015,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yanagi-baki-drc-base",
         "name": "Yanagi Ryuko (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -122161,7 +122161,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "franklin-bordeau-hxh-yr-base",
         "name": "Franklin Bordeau (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -122344,7 +122344,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nightwing-dc-rebirth-base",
         "name": "Nightwing (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -122534,7 +122534,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "captain-cold-dc-rebirth-base",
         "name": "Captain Cold (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -122834,7 +122834,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "beam-csm-p1-base",
         "name": "Beam (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -123128,7 +123128,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nikola-tesla-ror-r8-base",
         "name": "Nikola Tesla (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -123271,7 +123271,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "suiryu-opm-tournament-base",
         "name": "Suiryu (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -123448,7 +123448,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "bonolenov-ndongo-hxh-yr-base",
         "name": "Bonolenov Ndongo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -123623,7 +123623,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kaigaku-kny-ic-base",
         "name": "Kaigaku (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -123751,7 +123751,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gang-orca-mha-pl-base",
         "name": "Gang Orca (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -123904,7 +123904,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shinogi-kosho-baki-mt-base",
         "name": "Shinogi Kosho (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -124056,7 +124056,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "carnage-marvel-616-base",
         "name": "Carnage (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -124357,7 +124357,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kakunsa-dbs-top-base",
         "name": "Kakunsa (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -124527,7 +124527,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "sir-nighteye-mha-shie-base",
         "name": "Sir Nighteye (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -124860,7 +124860,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "general-lude-dbgt-base",
         "name": "General Lude (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -125185,7 +125185,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nyan-opm-ma-base",
         "name": "Nyan (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -125452,7 +125452,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "melody-hxh-yc-base",
         "name": "Melody (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -125613,7 +125613,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "aoi-kanzaki-kny-base",
         "name": "Aoi Kanzaki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -125750,7 +125750,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "bulletproof-invincible-base",
         "name": "Bulletproof (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -125894,7 +125894,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "katopesla-dbs-top-base",
         "name": "Katopesla (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -126040,7 +126040,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "diavolo-jojo-va-base",
         "name": "Diavolo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -126193,7 +126193,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "mechamaru-jjk-shibuya-base",
         "name": "Kokichi Muta (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -126342,7 +126342,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "evil-natural-water-opm-ma-base",
         "name": "Evil Natural Water (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -126510,7 +126510,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "eobard-thawne-dc-rebirth-base",
         "name": "Reverse-Flash (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -126648,7 +126648,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "muscular-mha-forest-base",
         "name": "Muscular (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -126775,7 +126775,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "odin-ror-ragnarok-base",
         "name": "Odín (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -126928,7 +126928,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "fubuki-opm-ha-base",
         "name": "Fubuki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -127084,7 +127084,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "venom-marvel-616-base",
         "name": "Venom (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -127240,7 +127240,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shinogi-kureha-baki-mt-base",
         "name": "Shinogi Kureha (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -127404,7 +127404,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "ganos-dbs-top-base",
         "name": "Ganos (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -127561,7 +127561,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "flect-turn-mha-whm-base",
         "name": "Flect Turn (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -127719,7 +127719,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "naoya-zenin-human-jjk-base",
         "name": "Naoya Zenin (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -127864,7 +127864,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tanktop-master-opm-ha-base",
         "name": "Tanktop Master (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -128025,7 +128025,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "will-a-zeppeli-jojo-pb-base",
         "name": "Will A. Zeppeli (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -128184,7 +128184,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "future-devil-csm-p1-base",
         "name": "Future Devil (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -128359,7 +128359,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "jigoro-kuwajima-kny-lore-base",
         "name": "Jigoro Kuwajima (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -128662,7 +128662,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "muhammad-ali-jr-baki-base",
         "name": "Muhammad Ali Jr. (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -128815,7 +128815,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "jimizu-dbs-top-base",
         "name": "Jimizu (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -128983,7 +128983,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "universa-invincible-base",
         "name": "Universa (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -129120,7 +129120,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "rohan-kishibe-jojo-diu-base",
         "name": "Rohan Kishibe (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -129258,7 +129258,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nine-mha-heroes-rising-base",
         "name": "Nine (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -129418,7 +129418,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "larue-jjk-shinjuku-base",
         "name": "Larue (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -129570,7 +129570,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gouketsu-opm-ma-base",
         "name": "Gouketsu (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -129715,7 +129715,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "caway-dbs-top-base",
         "name": "Caway (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -130030,7 +130030,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "la-brava-mha-ua-base",
         "name": "La Brava (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -130201,7 +130201,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "komugi-hxh-ca-base",
         "name": "Komugi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -130381,7 +130381,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "daredevil-marvel-616-base",
         "name": "Daredevil (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -130518,7 +130518,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "sonic-opm-ma-base",
         "name": "Speed-o'-Sound Sonic (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -130680,7 +130680,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "elec-dbs-granolah-base",
         "name": "Elec (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -130841,7 +130841,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "amai-mask-opm-ma-base",
         "name": "Sweet Mask (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -130985,7 +130985,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shen-kami-db-23tb-base",
         "name": "Shen (Kami-sama) (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -131141,7 +131141,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "trish-una-jojo-va-base",
         "name": "Trish Una (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -131295,7 +131295,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "lobo-dc-rebirth-base",
         "name": "Lobo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -131476,7 +131476,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shang-chi-marvel-616-base",
         "name": "Shang-Chi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -131656,7 +131656,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "iggy-jojo-sc-base",
         "name": "Iggy (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -131799,7 +131799,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "ryu-kaioh-baki-rt-base",
         "name": "Ryu Kaioh (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -131950,7 +131950,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "leorio-hxh-election-base",
         "name": "Leorio Paradinight (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -132115,7 +132115,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kobeni-csm-p1-base",
         "name": "Kobeni Higashiyama (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -132297,7 +132297,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kurapika-hxh-yr-base",
         "name": "Kurapika (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -132463,7 +132463,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "angel-hana-jjk-culling-base",
         "name": "Hana Kurusu / Ángel (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -132628,7 +132628,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "watchdog-man-opm-ma-base",
         "name": "Watchdog Man (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -132973,7 +132973,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kregg-invincible-war-base",
         "name": "General Kregg (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -133120,7 +133120,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "translucent-the-boys-s1-base",
         "name": "Translucent (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -133650,7 +133650,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "atomic-samurai-opm-ma-base",
         "name": "Atomic Samurai (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -133789,7 +133789,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "guido-mista-jojo-va-base",
         "name": "Guido Mista (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -133940,7 +133940,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "diego-brando-jojo-sbr-base",
         "name": "Diego Brando (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -134074,7 +134074,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "doctor-fate-dc-rebirth-base",
         "name": "Doctor Fate (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -134387,7 +134387,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "black-widow-marvel-616-base",
         "name": "Black Widow (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -134558,7 +134558,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "pariston-hill-hxh-election-base",
         "name": "Pariston Hill (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -134886,7 +134886,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "red-hood-dc-rebirth-base",
         "name": "Red Hood (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -135031,7 +135031,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yoshida-hirofumi-csm-p2-base",
         "name": "Yoshida Hirofumi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -135195,7 +135195,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "punisher-marvel-616-base",
         "name": "Punisher (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -135348,7 +135348,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "luke-cage-marvel-616-base",
         "name": "Luke Cage (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -135497,7 +135497,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "cyborg-dc-rebirth-base",
         "name": "Cyborg (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -135645,7 +135645,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "black-adam-dc-rebirth-base",
         "name": "Black Adam (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -135767,7 +135767,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "aquaman-dc-rebirth-base",
         "name": "Aquaman (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -135918,7 +135918,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "muhammad-avdol-jojo-sc-base",
         "name": "Muhammad Avdol (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -136090,7 +136090,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "psykos-opm-ma-base",
         "name": "Psykos (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -136248,7 +136248,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "siegfried-ror-ragnarok-base",
         "name": "Siegfried (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -136393,7 +136393,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "saonel-dbs-top-base",
         "name": "Saonel (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -136558,7 +136558,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "pirina-dbs-top-base",
         "name": "Pirina (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -136753,7 +136753,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dr-myuu-dbgt-base",
         "name": "Dr. Myuu (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -136924,7 +136924,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "elder-centipede-opm-ma-base",
         "name": "Elder Centipede (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -137089,7 +137089,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "beyond-netero-hxh-dc-base",
         "name": "Beyond Netero (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -137259,7 +137259,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tech-jacket-invincible-base",
         "name": "Tech Jacket (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -137416,7 +137416,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "elektra-marvel-616-base",
         "name": "Elektra (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -137569,7 +137569,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "ultron-marvel-616-base",
         "name": "Ultron (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -137729,7 +137729,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "swamp-thing-dc-rebirth-base",
         "name": "Swamp Thing (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -137905,7 +137905,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hol-horse-jojo-sc-base",
         "name": "Hol Horse (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -138108,7 +138108,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "nayuta-csm-p2-base",
         "name": "Nayuta (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -138309,7 +138309,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "chichi-db-23tb-base",
         "name": "Chichi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -138675,7 +138675,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hajun-ror-r6-base",
         "name": "Hajun (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -138813,7 +138813,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "maki-dbs-granolah-base",
         "name": "Maki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -138987,7 +138987,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "oil-dbs-granolah-base",
         "name": "Oil (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -139336,7 +139336,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "silva-zoldyck-hxh-ca-base",
         "name": "Silva Zoldyck (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -139495,7 +139495,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "starro-dc-rebirth-base",
         "name": "Starro (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -139775,7 +139775,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "ryan-butcher-the-boys-base",
         "name": "Ryan Butcher (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -140066,7 +140066,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hit-dbs-u6-base",
         "name": "Hit (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -140375,7 +140375,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "jack-hanma-baki-max-base",
         "name": "Jack Hanma (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -140524,7 +140524,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "jack-the-ripper-ror-r4-base",
         "name": "Jack The Ripper (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -140679,7 +140679,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "thragg-invincible-war-base",
         "name": "Grand Regent Thragg (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -140845,7 +140845,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dabi-mha-war-base",
         "name": "Dabi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -141017,7 +141017,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "pig-god-opm-ma-base",
         "name": "Pig God (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -141211,7 +141211,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kortopi-hxh-yr-base",
         "name": "Kortopi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -141384,7 +141384,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "risotto-nero-jojo-gw-base",
         "name": "Risotto Nero (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -141809,7 +141809,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "metal-knight-opm-ha-base",
         "name": "Metal Knight (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -141961,7 +141961,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "endeavor-mha-war-base",
         "name": "Endeavor (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -142124,7 +142124,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hawks-mha-war-base",
         "name": "Hawks (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -142310,7 +142310,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "okuyasu-jojo-diu-base",
         "name": "Okuyasu Nijimura (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -142467,7 +142467,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "hanayama-baki-max-base",
         "name": "Kaoru Hanayama (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -142609,7 +142609,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "isaac-netero-hxh-ca-base",
         "name": "Isaac Netero (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -142757,7 +142757,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "megumi-fushiguro-jjk-culling-base",
         "name": "Megumi Fushiguro (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -142929,7 +142929,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "josuke-higashikata-jojo-diu-base",
         "name": "Josuke Higashikata (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -143092,7 +143092,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "biscuit-oliva-baki-max-base",
         "name": "Biscuit Oliva (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -143596,7 +143596,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "poseidon-ror-r3-base",
         "name": "Poseidón (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -143750,7 +143750,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yuki-tsukumo-jjk-shibuya-base",
         "name": "Yuki Tsukumo (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -144070,7 +144070,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "beelzebub-ror-r8-base",
         "name": "Beelzebub (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -144234,7 +144234,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kaku-kaioh-baki-rt-base",
         "name": "Kaku Kaioh (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -144553,7 +144553,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "funny-valentine-jojo-sbr-base",
         "name": "Funny Valentine (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -144702,7 +144702,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yoshikage-kira-jojo-diu-base",
         "name": "Yoshikage Kira (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -144864,7 +144864,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "martian-manhunter-dc-rebirth-base",
         "name": "Martian Manhunter (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -145017,7 +145017,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kinji-hakari-jjk-culling-base",
         "name": "Kinji Hakari (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -145266,7 +145266,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "darkseid-dc-rebirth-base",
         "name": "Darkseid (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -145592,7 +145592,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shibukawa-gouki-baki-max-base",
         "name": "Gouki Shibukawa (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -145756,7 +145756,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "battle-beast-invincible-base",
         "name": "Battle Beast (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -145942,7 +145942,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "superalloy-darkshine-opm-ma-base",
         "name": "Superalloy Darkshine (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -146130,7 +146130,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "gyomei-himejima-kny-ic-base",
         "name": "Gyomei Himejima (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -146442,7 +146442,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "yuta-okkotsu-jjk-culling-base",
         "name": "Yuta Okkotsu (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -146745,7 +146745,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "doppo-orochi-baki-max-base",
         "name": "Doppo Orochi (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -146891,7 +146891,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "kojiro-sasaki-ror-r3-base",
         "name": "Kojiro Sasaki (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -147153,7 +147153,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "neferpitou-hxh-ca-base",
         "name": "Neferpitou (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -147358,7 +147358,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "shigaraki-tomura-mha-war-base",
         "name": "Shigaraki Tomura (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -147527,7 +147527,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "giorno-giovanna-jojo-va-base",
         "name": "Giorno Giovanna (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -147719,7 +147719,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "tengen-uzui-kny-edd-base",
         "name": "Tengen Uzui (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -147917,7 +147917,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "atom-eve-invincible-base",
         "name": "Atom Eve (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -148087,7 +148087,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "maki-zenin-jjk-culling-base",
         "name": "Maki Zenin (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -148548,7 +148548,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "android-18-dbs-top-base",
         "name": "Androide 18 (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -148718,7 +148718,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "robot-rudy-invincible-base",
         "name": "Robot (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -149070,7 +149070,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "john-constantine-dc-rebirth-base",
         "name": "John Constantine (Estado Base)",
-        "stats": "Estadísticas estándar y combate activo.",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1
       }
     ],
@@ -149414,7 +149414,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "ryomen-sukuna-jjk-base-std",
         "name": "Ryomen Sukuna (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Ryomen Sukuna antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
@@ -149977,7 +149977,7 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "muzan-kibutsuji-kimetsu-base-std",
         "name": "Muzan Kibutsuji (Estado Base)",
-        "stats": "Tier base. Fuerza, velocidad y reservas de energía estándar de Muzan Kibutsuji antes de liberar transformaciones.",
+        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
         "apexKiMultiplier": 1
       },
       {
