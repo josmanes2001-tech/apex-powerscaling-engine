@@ -13,8 +13,9 @@ git add .
 git commit -m "feat: sync y despliegue limpio" 2>nul
 
 echo.
-echo [2/2] Subiendo a GitHub...
-git push origin main
+echo [2/2] Subiendo a repositorios (GitHub + Vercel)...
+git push vercel-origin main
+git push origin main 2>nul
 
 echo.
 node src/scripts/autoDeployVercel.js
