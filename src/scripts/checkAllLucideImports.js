@@ -35,18 +35,17 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  optimizeDeps: {
-    noDiscovery: true,
-    include: []
+  resolve: {
+    dedupe: ['react', 'react-dom']
   },
   server: {
-    host: true,
+    host: '0.0.0.0',
     port: 5173,
     strictPort: true,
     watch: {
       usePolling: true,
       interval: 1000,
-      ignored: ['**/node_modules/**', '**/.git/**', '**/*.mjs', '**/dist/**']
+      ignored: ['**/node_modules/**', '**/.git/**', '**/dist/**']
     },
     proxy: {
       '/api': 'http://127.0.0.1:3001'
@@ -56,7 +55,7 @@ export default defineConfig({
 `;
 
   fs.writeFileSync(viteConfigFile, cleanViteConfig, 'utf8');
-  console.log('✓ vite.config.js blindado para unidades de red Samba/Windows (Z: y D:).');
+  console.log('✓ vite.config.js configurado con dedupe de React y proxy.');
 }
 
 main().catch(console.error);
