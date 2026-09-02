@@ -2,6 +2,7 @@ import { spawn, exec } from 'child_process';
 import http from 'http';
 import https from 'https';
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -10,6 +11,24 @@ const projectRoot = path.resolve(__dirname, '../../');
 console.log('  🚀 INICIANDO OPENCODE WEB — APEX POWER SCALING');
 console.log('========================================================');
 console.log('Directorio del proyecto:', projectRoot);
+
+// ── Cargar .env automáticamente si existe ──────────────────────────────────
+const envPath = path.join(projectRoot, '.env');
+if (fs.existsSync(envPath)) {
+  const lines = fs.readFileSync(envPath, 'utf-8').split('\n');
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const eqIdx = trimmed.indexOf('=');
+    if (eqIdx === -1) continue;
+    const key = trimmed.slice(0, eqIdx).trim();
+    const val = trimmed.slice(eqIdx + 1).trim();
+    if (key && !process.env[key]) process.env[key] = val;
+  }
+  console.log('   ✅ Claves cargadas desde .env');
+} else {
+  console.warn('   ⚠️  No se encontró .env — usa variables de entorno del sistema');
+}
 
 const KEYS = [
   process.env.OPENROUTER_API_KEY || '',
@@ -98,15 +117,24 @@ proxyServer.listen(proxyPort, '0.0.0.0', () => {
   console.log('🏡  Proxy de Respaldo Automático de Claves activo en:');
   console.log('   • Local: http://127.0.0.1:' + proxyPort + '/');
   console.log('   • Red LAN: http://0.0.0.0:' + proxyPort + '/');
-  console.log('   • Clave Principal: ' + KEYS[0].slice(0, 16) + '...');
-  console.log('   • Clave Respaldo:  ' + KEYS[1].slice(0, 16) + '...');
+  const mainKey = KEYS[0] || 'SIN_CLAVE';
+  const backupKey = KEYS[1] || 'SIN_CLAVE';
+  console.log('   • Clave Principal: ' + mainKey.slice(0, 16) + '...');
+  console.log('   • Clave Respaldo:  ' + backupKey.slice(0, 16) + '...');
   console.log('   (Conmutación automática activa sin cortar la sesión)\n');
 });
 
+// Advertir si no hay claves configuradas (no crashear)
+if (KEYS.length === 0) {
+  console.warn('\n⚠️  ATENCIÓN: No se han configurado claves de API de OpenRouter.');
+  console.warn('   Define las variables de entorno OPENROUTER_API_KEY y (opcional) OPENROUTER_BACKUP_API_KEY');
+  console.warn('   antes de ejecutar este script para que el proxy funcione correctamente.\n');
+}
+
 process.env.OPENROUTER_BASE_URL = 'http://127.0.0.1:' + proxyPort + '/api/v1';
 process.env.OPENAI_BASE_URL = 'http://127.0.0.1:' + proxyPort + '/api/v1';
-process.env.OPENROUTER_API_KEY = KEYS[0];
-process.env.OPENROUTER_BACKUP_API_KEY = KEYS[1];
+process.env.OPENROUTER_API_KEY = KEYS[0] || '';
+process.env.OPENROUTER_BACKUP_API_KEY = KEYS[1] || '';
 process.env.GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
 process.env.GOOGLE_GENERATIVE_AI_API_KEY = process.env.GOOGLE_GENERATIVE_AI_API_KEY || '';
 process.env.PATH = (process.env.APPDATA ? (process.env.APPDATA + '\\npm;') : '') + (process.env.PATH || '');
