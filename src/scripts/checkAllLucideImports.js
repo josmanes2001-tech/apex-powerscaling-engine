@@ -28,64 +28,44 @@ function getAllFiles(dir, exts = ['.jsx', '.js', '.tsx', '.ts'], res = []) {
 }
 
 async function main() {
-  const serverFile = path.join(projectRoot, 'server.cjs');
-  let content = fs.readFileSync(serverFile, 'utf8');
+  const startBat = path.join(projectRoot, 'START_APEX_ENGINE.bat');
+  const cleanBatContent = [
+    '@echo off',
+    'title APEX Engine',
+    'color 0A',
+    'cd /d "%~dp0"',
+    '',
+    'echo ========================================================',
+    'echo        INICIANDO APEX POWERSCALING ENGINE',
+    'echo ========================================================',
+    'echo.',
+    '',
+    'echo [1/2] Iniciando Servidor Backend (Puerto 3001)...',
+    'start "APEX Backend (3001)" cmd /k "node server.cjs"',
+    '',
+    'echo [2/2] Iniciando Servidor Frontend (Puerto 5173)...',
+    'start "APEX Frontend (5173)" cmd /k "npx vite --host 0.0.0.0 --port 5173"',
+    '',
+    'echo.',
+    'echo Esperando a que el servidor de desarrollo cargue...',
+    'timeout /t 10 /nobreak >nul',
+    '',
+    'echo Abriendo navegador en http://localhost:5173 ...',
+    'start http://localhost:5173',
+    '',
+    'echo.',
+    'echo ========================================================',
+    'echo   APEX Engine esta en ejecucion',
+    'echo   Local: http://localhost:5173/',
+    'echo   (Si el navegador carga antes de tiempo, pulsa F5)',
+    'echo ========================================================',
+    'echo.',
+    'pause',
+    ''
+  ].join('\r\n');
 
-  const oldHttpBlock = `const http = require('http');
-const server = http.createServer(app);
-
-function startServer(portToTry) {
-  server.listen(portToTry, '0.0.0.0', () => {
-    console.log(\`====================================================\`);
-    console.log(\`⚡ APEX ENGINE MULTI-AI BACKEND RUNNING\`);
-    console.log(\`🌐 Port: http://0.0.0.0:\${portToTry}\`);
-    console.log(\`🧠 Providers: OpenRouter, Gemini, OpenAI, Ollama, Custom URL\`);
-    console.log(\`📂 Vault Path: \${VAULT_PATH}\`);
-    console.log(\`====================================================\`);
-  });
-}
-
-server.on('error', (e) => {
-  if (e.code === 'EADDRINUSE') {
-    console.log(\`ℹ️ El puerto \${PORT} ya está en uso por una instancia previa de APEX.\`);
-    console.log(\`⚡ Conectando automáticamente al puerto de respaldo \${PORT + 1}...\`);
-    setTimeout(() => {
-      server.close();
-      startServer(PORT + 1);
-    }, 500);
-  } else {
-    console.error('Error en el servidor backend:', e);
-  }
-});
-
-startServer(PORT);`;
-
-  const newHttpBlock = `const http = require('http');
-const server = http.createServer(app);
-
-server.on('error', (e) => {
-  if (e.code === 'EADDRINUSE') {
-    console.log(\`ℹ️ El backend de APEX ya está corriendo activamente en el puerto \${PORT}. No es necesario iniciarlo de nuevo.\`);
-    process.exit(0);
-  } else {
-    console.error('Error en el servidor backend:', e);
-  }
-});
-
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(\`====================================================\`);
-  console.log(\`⚡ APEX ENGINE MULTI-AI BACKEND RUNNING\`);
-  console.log(\`🌐 Port: http://0.0.0.0:\${PORT}\`);
-  console.log(\`🧠 Providers: OpenRouter, Gemini, OpenAI, Ollama, Custom URL\`);
-  console.log(\`📂 Vault Path: \${VAULT_PATH}\`);
-  console.log(\`====================================================\`);
-});`;
-
-  if (content.includes('const http = require(\'http\');')) {
-    content = content.replace(oldHttpBlock, newHttpBlock);
-    fs.writeFileSync(serverFile, content, 'utf8');
-    console.log('✓ server.cjs corregido: ahora detecta instancia activa y sale limpiamente sin bucles.');
-  }
+  fs.writeFileSync(startBat, cleanBatContent, 'binary');
+  console.log('✓ START_APEX_ENGINE.bat actualizado con 10s de espera para inicialización completa de Vite.');
 }
 
 main().catch(console.error);
