@@ -53,7 +53,7 @@ const DEFAULT_AI_CONFIG = {
   }
 };
 
-const ROSTER_VERSION = 'v9.1_FIX_BASE_TIERS_FORCE_REFRESH_1788364410785';
+const ROSTER_VERSION = 'v9.2_SYNC_SLOTS_AND_PURGE_CACHE_1788366100000';
 
 export default function App() {
   // Load characters from localStorage with automatic version-based cache migration
@@ -62,9 +62,15 @@ export default function App() {
       const currentVersion = localStorage.getItem('apex_roster_version');
       const saved = localStorage.getItem(STORAGE_KEY_CHARACTERS);
       
-      // If version changed, always ensure all 819 initial characters are present
+      // If version changed, always ensure all 819 initial characters are present and clear stale character caches
       if (currentVersion !== ROSTER_VERSION || !saved) {
         localStorage.setItem('apex_roster_version', ROSTER_VERSION);
+        localStorage.removeItem('apex_selected_charA');
+        localStorage.removeItem('apex_selected_charB');
+        localStorage.removeItem('apex_selected_teamA');
+        localStorage.removeItem('apex_selected_teamB');
+        localStorage.removeItem('apex_selected_battleRoyale');
+        localStorage.removeItem('apex_selected_multiTeams');
         let customOnly = [];
         if (saved) {
           try {
@@ -114,8 +120,23 @@ export default function App() {
     setCharacters(merged);
     try {
       localStorage.setItem(STORAGE_KEY_CHARACTERS, JSON.stringify(merged));
+      localStorage.removeItem('apex_selected_charA');
+      localStorage.removeItem('apex_selected_charB');
     } catch (e) {}
     return merged.length;
+  };
+
+  const resolveLatestCharacter = (c, roster) => {
+    if (!c || !c.id) return c;
+    const pool = roster && roster.length ? roster : INITIAL_CHARACTERS;
+    const found = pool.find(x => x.id === c.id);
+    if (!found) return c;
+    return {
+      ...found,
+      _activeFormIndex: c._activeFormIndex,
+      _activeFormId: c._activeFormId,
+      _formLimitIndex: c._formLimitIndex
+    };
   };
 
   const [charA, setCharA] = useState(() => {
@@ -123,7 +144,7 @@ export default function App() {
       const saved = localStorage.getItem('apex_selected_charA');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed && parsed.id) return parsed;
+        if (parsed && parsed.id) return resolveLatestCharacter(parsed, INITIAL_CHARACTERS);
       }
     } catch {}
     return characters[0] || INITIAL_CHARACTERS[0];
@@ -134,11 +155,30 @@ export default function App() {
       const saved = localStorage.getItem('apex_selected_charB');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed && parsed.id) return parsed;
+        if (parsed && parsed.id) return resolveLatestCharacter(parsed, INITIAL_CHARACTERS);
       }
     } catch {}
     return characters[1] || INITIAL_CHARACTERS[1] || INITIAL_CHARACTERS[0];
   });
+
+  // Always keep charA & charB in sync with master roster definitions
+  useEffect(() => {
+    if (charA?.id) {
+      const latest = characters.find(c => c.id === charA.id);
+      if (latest && (latest.tier !== charA.tier || latest.forms?.[0]?.tier !== charA.forms?.[0]?.tier || latest.forms?.[0]?.tierExact !== charA.forms?.[0]?.tierExact)) {
+        setCharA(prev => ({ ...latest, _activeFormIndex: prev._activeFormIndex, _activeFormId: prev._activeFormId, _formLimitIndex: prev._formLimitIndex }));
+      }
+    }
+  }, [characters, charA?.id]);
+
+  useEffect(() => {
+    if (charB?.id) {
+      const latest = characters.find(c => c.id === charB.id);
+      if (latest && (latest.tier !== charB.tier || latest.forms?.[0]?.tier !== charB.forms?.[0]?.tier || latest.forms?.[0]?.tierExact !== charB.forms?.[0]?.tierExact)) {
+        setCharB(prev => ({ ...latest, _activeFormIndex: prev._activeFormIndex, _activeFormId: prev._activeFormId, _formLimitIndex: prev._formLimitIndex }));
+      }
+    }
+  }, [characters, charB?.id]);
 
   const [matchMode, setMatchMode] = useState(() => {
     try {

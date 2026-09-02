@@ -325,7 +325,7 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
             <span className="text-[10px] uppercase font-bold">{isTransformed ? 'Durabilidad (Forma)' : 'Durabilidad'}</span>
           </div>
           <p className="text-slate-200 line-clamp-2 text-[11px]">
-            {isTransformed ? `Escalado a ${currentForm?.name || 'Forma'}` : (typeof character.durability === 'object' ? (character.durability?.text || Object.values(character.durability).join(' | ')) : character.durability)}
+            {isTransformed ? `Escalado a ${currentForm?.name || 'Forma'}` : (currentForm?.stats ? `Escalado a ${currentForm.name || 'Estado Base'}` : (typeof character.durability === 'object' ? (character.durability?.text || Object.values(character.durability).join(' | ')) : character.durability))}
           </p>
         </div>
       </div>
