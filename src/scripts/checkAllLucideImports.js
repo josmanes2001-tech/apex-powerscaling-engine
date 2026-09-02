@@ -27,14 +27,32 @@ function getAllFiles(dir, exts = ['.jsx', '.js', '.tsx', '.ts'], res = []) {
   return res;
 }
 
+import { resolveCombatState } from '../lib/combatStateResolver.js';
+import { INITIAL_CHARACTERS } from '../data/characters.js';
+
 async function main() {
-  const appFile = path.join(projectRoot, 'src/App.jsx');
-  let appContent = fs.readFileSync(appFile, 'utf8');
+  const gokus = INITIAL_CHARACTERS.filter(c => c.name.toLowerCase().includes('goku') && c.name.toLowerCase().includes('cell'));
+  const cells = INITIAL_CHARACTERS.filter(c => c.name.toLowerCase() === 'cell');
   
-  const newVer = `v9.0_FULL_DEPLOY_FORCE_REFRESH_${Date.now()}`;
-  appContent = appContent.replace(/const ROSTER_VERSION = '([^']+)';/, `const ROSTER_VERSION = '${newVer}';`);
-  fs.writeFileSync(appFile, appContent, 'utf8');
-  console.log(`✓ ROSTER_VERSION actualizado a ${newVer} para forzar refresco total en Vercel.`);
+  console.log(`Found ${gokus.length} Goku Cell characters and ${cells.length} Cell characters.`);
+  
+  for (const g of gokus) {
+    console.log(`\n--- ${g.name} (${g.id}) ---`);
+    console.log(`Root tier: ${g.tier}`);
+    for (const f of (g.forms || [])) {
+      const res = resolveCombatState(g, f.id);
+      console.log(`  Form [${f.name}] (${f.id}) -> Tier: ${res.tierExact} | Scouter: ${res.sourceKiDisplay} | APEX-Ki: ${res.apexKiDisplay}`);
+    }
+  }
+
+  for (const c of cells) {
+    console.log(`\n--- ${c.name} (${c.id}) ---`);
+    console.log(`Root tier: ${c.tier}`);
+    for (const f of (c.forms || [])) {
+      const res = resolveCombatState(c, f.id);
+      console.log(`  Form [${f.name}] (${f.id}) -> Tier: ${res.tierExact} | Scouter: ${res.sourceKiDisplay} | APEX-Ki: ${res.apexKiDisplay}`);
+    }
+  }
 }
 
 main().catch(console.error);

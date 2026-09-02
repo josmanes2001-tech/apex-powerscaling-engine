@@ -53,7 +53,7 @@ const DEFAULT_AI_CONFIG = {
   }
 };
 
-const ROSTER_VERSION = 'v9.0_FULL_DEPLOY_FORCE_REFRESH_1788364410785';
+const ROSTER_VERSION = 'v9.1_FIX_BASE_TIERS_FORCE_REFRESH_1788364410785';
 
 export default function App() {
   // Load characters from localStorage with automatic version-based cache migration

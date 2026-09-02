@@ -307,10 +307,10 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
             <span className="text-[10px] uppercase font-bold">{isTransformed ? 'Attack Potency (Escalado)' : 'Attack Potency'}</span>
           </div>
           <p className={`line-clamp-2 text-[11px] font-bold ${isTransformed ? 'text-amber-200' : 'text-slate-200'}`}>
-            {isTransformed
-              ? (typeof currentForm?.stats === 'object'
+            {currentForm?.stats
+              ? (typeof currentForm.stats === 'object'
                   ? (currentForm.stats.ap || currentForm.stats.tier || Object.values(currentForm.stats).join(' | '))
-                  : (currentForm?.stats || character.ap))
+                  : currentForm.stats)
               : (typeof character.ap === 'object'
                   ? (character.ap?.text || character.ap?.ap || Object.values(character.ap).join(' | '))
                   : character.ap)}

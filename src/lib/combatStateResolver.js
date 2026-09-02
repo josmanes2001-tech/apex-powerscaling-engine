@@ -116,6 +116,10 @@ function applyStatModifiers(baseStats, modifiers = {}) {
 export function findStateInCharacter(character, stateId) {
   if (!character) return null;
   if (!stateId || stateId === 'base' || stateId === 'default') {
+    const firstForm = Array.isArray(character.forms) && character.forms.length > 0 ? character.forms[0] : null;
+    if (firstForm) {
+      return { ...firstForm, isBase: true };
+    }
     return { id: 'base', name: character.form_or_state || character.name || 'Estado Base', isBase: true };
   }
 
