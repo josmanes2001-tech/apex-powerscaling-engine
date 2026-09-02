@@ -8,6 +8,10 @@ echo.
 
 pushd "%~dp0"
 
+echo [0/2] Liberando puertos previos si estuvieran ocupados...
+for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3001 ^| findstr LISTENING') do taskkill /f /pid %%a >nul 2>&1
+for /f "tokens=5" %%a in ('netstat -aon ^| findstr :5173 ^| findstr LISTENING') do taskkill /f /pid %%a >nul 2>&1
+
 echo [1/2] Iniciando Servidor Backend (Puerto 3001)...
 start "APEX Backend (3001)" cmd /k "node server.cjs"
 
