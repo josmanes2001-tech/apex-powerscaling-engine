@@ -1014,19 +1014,31 @@ app.get('*', (req, res, next) => {
   next();
 });
 
-const server = app.listen(PORT, '0.0.0.0', () => {
-  console.log(`====================================================`);
-  console.log(`⚡ APEX ENGINE MULTI-AI BACKEND RUNNING`);
-  console.log(`🌐 Port: http://0.0.0.0:${PORT}`);
-  console.log(`🧠 Providers: OpenRouter, Gemini, OpenAI, Ollama, Custom URL`);
-  console.log(`📂 Vault Path: ${VAULT_PATH}`);
-  console.log(`====================================================`);
-});
+const http = require('http');
+const server = http.createServer(app);
+
+function startServer(portToTry) {
+  server.listen(portToTry, '0.0.0.0', () => {
+    console.log(`====================================================`);
+    console.log(`⚡ APEX ENGINE MULTI-AI BACKEND RUNNING`);
+    console.log(`🌐 Port: http://0.0.0.0:${portToTry}`);
+    console.log(`🧠 Providers: OpenRouter, Gemini, OpenAI, Ollama, Custom URL`);
+    console.log(`📂 Vault Path: ${VAULT_PATH}`);
+    console.log(`====================================================`);
+  });
+}
 
 server.on('error', (e) => {
   if (e.code === 'EADDRINUSE') {
-    console.log(`ℹ️ El puerto ${PORT} ya está en uso por otra instancia activa de APEX. Continuando normalmente...`);
+    console.log(`ℹ️ El puerto ${PORT} ya está en uso por una instancia previa de APEX.`);
+    console.log(`⚡ Conectando automáticamente al puerto de respaldo ${PORT + 1}...`);
+    setTimeout(() => {
+      server.close();
+      startServer(PORT + 1);
+    }, 500);
   } else {
     console.error('Error en el servidor backend:', e);
   }
 });
+
+startServer(PORT);
