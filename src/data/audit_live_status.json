@@ -1,15 +1,6 @@
 {
-  "active": true,
-  "round": 1,
-  "totalRounds": 1,
-  "currentBatch": 355,
-  "totalBatches": 385,
-  "processedChars": 711,
-  "totalChars": 769,
-  "percent": "92.5",
-  "totalPatches": 388,
-  "lastBatchDurationSec": "15.2",
-  "elapsedMin": "67.0",
-  "etaMin": "5.7",
-  "lastUpdated": "12:38:36"
+  "active": false,
+  "completed": true,
+  "totalPatches": 415,
+  "totalMin": "79.3"
 }
