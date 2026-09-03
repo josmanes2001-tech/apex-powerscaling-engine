@@ -9,6 +9,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { validateAndAutoCorrectRoster } from './rosterCanonicalValidator.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '../../');
@@ -76,9 +77,21 @@ async function main() {
               if (!f || !f.name) continue;
               let formToAdd = { ...f };
 
-              // Ignorar 'Estado Base (100% Máximo Poder)' espurio
-              if (formToAdd.id === 'base_max_power' || (formToAdd.name || '').includes('100% Máximo Poder')) {
+              // Ignorar 'Estado Base (100% Máximo Poder)' o modos espurios en personajes que no sean Freezer/Roshi/Toguro
+              const formNameLow = (formToAdd.name || '').toLowerCase();
+              const targetNameLow = (target.name || '').toLowerCase();
+              const isAllowed100 = targetNameLow.includes('freezer') || targetNameLow.includes('roshi') || targetNameLow.includes('toguro');
+              if (formToAdd.id === 'base_max_power' || (formNameLow.includes('100% máximo poder') && !isAllowed100)) {
                 continue;
+              }
+              if (formNameLow.includes('poder desatado / sin contención')) {
+                continue;
+              }
+
+              // Blindaje: Personajes fuera de Dragon Ball nunca deben tener sourceKi de DB
+              if (target.franchise && target.franchise !== 'Dragon Ball') {
+                delete target.sourceKi;
+                delete target.sourceKiStatus;
               }
 
               const isIncomingBase = (formToAdd.id === 'base' || (formToAdd.name || '').toLowerCase().includes('base'));
@@ -256,8 +269,46 @@ async function main() {
     }
   }
 
+  // Reordenar permanentemente por Franquicias y Cronología
+  const FRANCHISE_ORDER = [
+    'Dragon Ball', 'Jujutsu Kaisen', 'Demon Slayer (Kimetsu no Yaiba)',
+    'Chainsaw Man', 'Hunter x Hunter', "JoJo's Bizarre Adventure",
+    'One Punch Man', 'My Hero Academia', 'Baki the Grappler',
+    'Record of Ragnarok', 'Marvel Comics', 'DC Comics',
+    'Invincible', 'The Boys', 'Spy x Family', 'APEX Original / Híbrido'
+  ];
+
+  const DB_UNIVERSE_ORDER = [
+    'Dragon Ball (Clásico)', 'Dragon Ball Z', 'Dragon Ball Super',
+    'Dragon Ball Daima', 'Dragon Ball GT', 'Dragon Ball Z — Películas y OVAs',
+    'Dragon Ball (Multi-Era)', 'Dragon Ball Multiverse (Fan-Manga)',
+    'Dragon Ball (Fan-Mangas & What-If)'
+  ];
+
+  characters.sort((a, b) => {
+    const fIdxA = FRANCHISE_ORDER.indexOf(a.franchise);
+    const fIdxB = FRANCHISE_ORDER.indexOf(b.franchise);
+    const rankA = fIdxA === -1 ? 999 : fIdxA;
+    const rankB = fIdxB === -1 ? 999 : fIdxB;
+    if (rankA !== rankB) return rankA - rankB;
+    if (a.franchise === 'Dragon Ball' && b.franchise === 'Dragon Ball') {
+      const uIdxA = DB_UNIVERSE_ORDER.indexOf(a.universe);
+      const uIdxB = DB_UNIVERSE_ORDER.indexOf(b.universe);
+      const uRankA = uIdxA === -1 ? 999 : uIdxA;
+      const uRankB = uIdxB === -1 ? 999 : uIdxB;
+      if (uRankA !== uRankB) return uRankA - uRankB;
+    }
+    return (a.name || '').localeCompare(b.name || '');
+  });
+
+  // 🛡️ Validación y Auto-Corrección Canónica Maestra Final
+  const { characters: finalValidated, correctionsCount } = validateAndAutoCorrectRoster(characters);
+  if (correctionsCount > 0) {
+    console.log(`  🛡️ Validador Canónico APEX: ${correctionsCount} auto-correcciones aplicadas.`);
+  }
+
   // Write updated characters.js file
-  const newContent = `// APEX Power Scaling Engine — Master Characters Roster\n// Refinado y enriquecido automáticamente con Estándar Dorado APEX\n\nexport const INITIAL_CHARACTERS = ${JSON.stringify(characters, null, 2)};\n`;
+  const newContent = `// APEX Power Scaling Engine — Master Characters Roster\n// Refinado y enriquecido automáticamente con Estándar Dorado APEX\n\nexport const INITIAL_CHARACTERS = ${JSON.stringify(finalValidated, null, 2)};\n`;
   fs.writeFileSync(CHARACTERS_FILE, newContent, 'utf8');
 
   console.log('\n================================================================');

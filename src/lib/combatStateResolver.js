@@ -429,6 +429,11 @@ export function resolveCombatState(character, activeStateId = 'base', scenario =
       formMultiplier = 1.0;
       currentApexKiLog10 = baseApexKiLog10;
     }
+
+    // Ensure DB sourceKi scales with formMultiplier if not explicitly overridden
+    if (isDB && validPositive(sourceKiBase) && formMultiplier !== 1.0 && !validPositive(stateObj?.explicitSourceKi) && !validPositive(stateObj?.sourceKi)) {
+      sourceKiCurrent = sourceKiBase * formMultiplier;
+    }
   }
 
   // ── 6. Active stats (apply form modifiers to base stats) ─────────────────

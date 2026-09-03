@@ -57,57 +57,57 @@ async function runMenu() {
   // 3. Motor IA
   console.log('\n\x1b[1m\x1b[32m[3/4] SELECCIONA EL MOTOR DE INTELIGENCIA ARTIFICIAL:\x1b[0m');
   console.log('  \x1b[90m─── EN SOLITARIO ────────────────────────────────────────────────\x1b[0m');
-  console.log('  \x1b[33m1.\x1b[0m \x1b[1mNVIDIA Nemotron 3.5 Lightning Free\x1b[0m \x1b[32m[⚡ ULTRA RÁPIDO - CERO LATENCIA]\x1b[0m');
-  console.log('  \x1b[33m2.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Super 120B Free\x1b[0m  \x1b[36m[🧠 RAZONAMIENTO Y EQUILIBRIO]\x1b[0m');
-  console.log('  \x1b[33m3.\x1b[0m \x1b[1mMiniMax M3 Free\x1b[0m (minimax-m3:free)  \x1b[33m[🌟 LORE ÉPICO Y ESPAÑOL MAESTRO]\x1b[0m');
-  console.log('  \x1b[33m4.\x1b[0m \x1b[1mGoogle Gemini Flash Latest\x1b[0m (~google/gemini-flash-latest) \x1b[34m[🌐 MODELO INSIGNIA GOOGLE]\x1b[0m');
+  console.log('  \x1b[33m1.\x1b[0m \x1b[1mGoogle Gemini Flash Lite Latest\x1b[0m (~google/gemini-flash-lite-latest) \x1b[32m[⭐ RECOMENDADO - API OFICIAL GOOGLE]\x1b[0m');
+  console.log('  \x1b[33m2.\x1b[0m \x1b[1mNVIDIA Nemotron 3.5 Lightning Free\x1b[0m \x1b[36m[⚡ ULTRA RÁPIDO - CERO LATENCIA]\x1b[0m');
+  console.log('  \x1b[33m3.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Super 120B Free\x1b[0m  \x1b[36m[🧠 RAZONAMIENTO Y EQUILIBRIO]\x1b[0m');
+  console.log('  \x1b[33m4.\x1b[0m \x1b[1mMiniMax M3 Free\x1b[0m (minimax-m3:free)  \x1b[33m[🌟 LORE ÉPICO Y ESPAÑOL MAESTRO]\x1b[0m');
   console.log('  \x1b[33m5.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Ultra 550B MoE\x1b[0m   \x1b[35m[🏛️ LÓGICA PURA Y MÁXIMO RIGOR]\x1b[0m');
   console.log('  \x1b[90m─── MODOS HÍBRIDOS (50/50 DÚO ALTERNADO) ────────────────────────\x1b[0m');
-  console.log('  \x1b[33m6.\x1b[0m \x1b[1mHíbrido Nemotron (Lightning + Super 120B)\x1b[0m       \x1b[32m[⭐ RECOMENDADO NOCHE COMPLETA]\x1b[0m');
-  console.log('  \x1b[33m7.\x1b[0m \x1b[1mHíbrido Gemini Flash + Lightning (Google + NVIDIA)\x1b[0m [MÁXIMA POTENCIA COMBINADA]');
-  console.log('  \x1b[33m8.\x1b[0m \x1b[1mHíbrido Gemini Flash + Nemotron Super 120B\x1b[0m         \x1b[36m[GOOGLE + CEREBRO 120B]\x1b[0m');
-  console.log('  \x1b[33m9.\x1b[0m \x1b[1mHíbrido Gemini Flash + MiniMax M3\x1b[0m                  \x1b[33m[GOOGLE + LORE ÉPICO ESPAÑOL]\x1b[0m');
-  console.log('  \x1b[33m10.\x1b[0m \x1b[1mHíbrido MiniMax M3 + Nemotron Lightning\x1b[0m          \x1b[33m[LORE ÉPICO + VELOCIDAD]\x1b[0m');
-  console.log('  \x1b[33m11.\x1b[0m \x1b[1mHíbrido MiniMax M3 + Nemotron Super 120B\x1b[0m         \x1b[36m[LORE + PODER TÁCTICO]\x1b[0m');
+  console.log('  \x1b[33m6.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + Lightning 3.5\x1b[0m        \x1b[32m[GOOGLE API + NVIDIA]\x1b[0m');
+  console.log('  \x1b[33m7.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + Nemotron Super 120B\x1b[0m  \x1b[34m[GOOGLE API + CEREBRO 120B]\x1b[0m');
+  console.log('  \x1b[33m8.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + MiniMax M3\x1b[0m           \x1b[33m[GOOGLE API + LORE ÉPICO]\x1b[0m');
+  console.log('  \x1b[33m9.\x1b[0m \x1b[1mHíbrido Nemotron (Lightning + Super 120B)\x1b[0m        \x1b[36m[NVIDIA DÚO COMPLETO]\x1b[0m');
+  console.log('  \x1b[33m10.\x1b[0m \x1b[1mHíbrido MiniMax M3 + Nemotron Lightning\x1b[0m         \x1b[33m[LORE ÉPICO + VELOCIDAD]\x1b[0m');
+  console.log('  \x1b[33m11.\x1b[0m \x1b[1mHíbrido MiniMax M3 + Nemotron Super 120B\x1b[0m        \x1b[36m[LORE + PODER TÁCTICO]\x1b[0m');
   console.log('  \x1b[90m─── OTROS MODELOS ───────────────────────────────────────────────\x1b[0m');
   console.log('  \x1b[33m12.\x1b[0m Ling 3.0 Flash Fin Free (Contexto masivo de 262k)');
   console.log('  \x1b[33m13.\x1b[0m Ingresar cualquier modelo de OpenRouter personalizado');
-  const modelChoice = await ask('\n👉 Elige Motor IA [1-13, Enter=1]: ', '1');
+  const modelChoice = await ask('\n👉 Elige Motor IA [1-13, Enter=1 (Gemini Flash Lite Oficial)]: ', '1');
 
-  let model = 'nvidia/nemotron-3.5-lightning:free';
+  let model = '~google/gemini-flash-lite-latest';
   if (modelChoice === '1') {
-    model = 'nvidia/nemotron-3.5-lightning:free';
-    console.log('  \x1b[32m✔ Seleccionado: NVIDIA Nemotron 3.5 Lightning Free (Ultra Rápido)\x1b[0m');
+    model = '~google/gemini-flash-lite-latest';
+    console.log('  \x1b[32m✔ Seleccionado: Google Gemini Flash Lite Latest (API Oficial de Google Gemini)\x1b[0m');
   } else if (modelChoice === '2') {
+    model = 'nvidia/nemotron-3.5-lightning:free';
+    console.log('  \x1b[36m✔ Seleccionado: NVIDIA Nemotron 3.5 Lightning Free (Ultra Rápido)\x1b[0m');
+  } else if (modelChoice === '3') {
     model = 'nvidia/nemotron-3-super-120b-a12b:free';
     console.log('  \x1b[36m✔ Seleccionado: NVIDIA Nemotron 3 Super 120B Free\x1b[0m');
-  } else if (modelChoice === '3') {
+  } else if (modelChoice === '4') {
     model = 'minimax/minimax-m3:free';
     console.log('  \x1b[33m✔ Seleccionado: MiniMax M3 Free (Lore Épico en Español)\x1b[0m');
-  } else if (modelChoice === '4') {
-    model = '~google/gemini-flash-latest';
-    console.log('  \x1b[34m✔ Seleccionado: Google Gemini Flash Latest (~google/gemini-flash-latest)\x1b[0m');
   } else if (modelChoice === '5') {
     model = 'nvidia/nemotron-3-ultra-550b-a55b:free';
     console.log('  \x1b[35m✔ Seleccionado: NVIDIA Nemotron 3 Ultra 550B MoE Free\x1b[0m');
   } else if (modelChoice === '6') {
-    model = 'hybrid:nvidia/nemotron-3.5-lightning:free|nvidia/nemotron-3-super-120b-a12b:free';
-    console.log('  \x1b[32m✔ Seleccionado: Modo Híbrido (Lightning 3.5 + Super 120B 50/50)\x1b[0m');
+    model = 'hybrid:~google/gemini-flash-lite-latest|nvidia/nemotron-3.5-lightning:free';
+    console.log('  \x1b[32m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite Oficial + Lightning 3.5 50/50)\x1b[0m');
   } else if (modelChoice === '7') {
-    model = 'hybrid:~google/gemini-flash-latest|nvidia/nemotron-3.5-lightning:free';
-    console.log('  \x1b[34m✔ Seleccionado: Modo Híbrido (Gemini Flash Latest + Lightning 3.5 50/50)\x1b[0m');
+    model = 'hybrid:~google/gemini-flash-lite-latest|nvidia/nemotron-3-super-120b-a12b:free';
+    console.log('  \x1b[34m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite Oficial + Super 120B 50/50)\x1b[0m');
   } else if (modelChoice === '8') {
-    model = 'hybrid:~google/gemini-flash-latest|nvidia/nemotron-3-super-120b-a12b:free';
-    console.log('  \x1b[36m✔ Seleccionado: Modo Híbrido (Gemini Flash Latest + Super 120B 50/50)\x1b[0m');
+    model = 'hybrid:~google/gemini-flash-lite-latest|minimax/minimax-m3:free';
+    console.log('  \x1b[33m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite Oficial + MiniMax M3 50/50)\x1b[0m');
   } else if (modelChoice === '9') {
-    model = 'hybrid:~google/gemini-flash-latest|minimax/minimax-m3:free';
-    console.log('  \x1b[33m✔ Seleccionado: Modo Híbrido (Gemini Flash Latest + MiniMax M3 50/50)\x1b[0m');
+    model = 'hybrid:nvidia/nemotron-3.5-lightning:free|nvidia/nemotron-3-super-120b-a12b:free';
+    console.log('  \x1b[36m✔ Seleccionado: Modo Híbrido (Lightning 3.5 + Super 120B 50/50)\x1b[0m');
   } else if (modelChoice === '10') {
     model = 'hybrid:minimax/minimax-m3:free|nvidia/nemotron-3.5-lightning:free';
-    console.log('  \x1b[32m✔ Seleccionado: Modo Híbrido (MiniMax M3 + Lightning 3.5 50/50)\x1b[0m');
+    console.log('  \x1b[33m✔ Seleccionado: Modo Híbrido (MiniMax M3 + Lightning 3.5 50/50)\x1b[0m');
   } else if (modelChoice === '11') {
     model = 'hybrid:minimax/minimax-m3:free|nvidia/nemotron-3-super-120b-a12b:free';
-    console.log('  \x1b[32m✔ Seleccionado: Modo Híbrido (MiniMax M3 + Super 120B 50/50)\x1b[0m');
+    console.log('  \x1b[36m✔ Seleccionado: Modo Híbrido (MiniMax M3 + Super 120B 50/50)\x1b[0m');
   } else if (modelChoice === '12') {
     model = 'inclusionai/ling-3.0-flash-fin:free';
     console.log('  \x1b[32m✔ Seleccionado: Ling 3.0 Flash Fin Free\x1b[0m');
@@ -117,8 +117,8 @@ async function runMenu() {
   }
 
   // 4. Vueltas al Roster
-  console.log('\n\x1b[1m\x1b[32m[4/4] SELECCIONA EL MODO DE VUELTAS AL ROSTER:\x1b[0m');
-  console.log('  \x1b[33m1.\x1b[0m \x1b[1m1 Vuelta Completa al Roster\x1b[0m (Audita y enriquece los 821 pjs una vez) \x1b[32m[RECOMENDADO]\x1b[0m');
+  console.log('\n\x1b[1m\x1b[32m[4/5] SELECCIONA EL MODO DE VUELTAS AL ROSTER:\x1b[0m');
+  console.log('  \x1b[33m1.\x1b[0m \x1b[1m1 Vuelta Completa al Roster\x1b[0m (Audita y enriquece los 769 pjs una vez) \x1b[32m[RECOMENDADO]\x1b[0m');
   console.log('  \x1b[33m2.\x1b[0m 2 Vueltas de Refinamiento Maestro (Pasa 2 veces puliendo cada detalle)');
   console.log('  \x1b[33m3.\x1b[0m 3 Vueltas a Fondo');
   console.log('  \x1b[33m4.\x1b[0m \x1b[1mBucle Infinito Nocturno\x1b[0m (Sigue dando vueltas continuas toda la noche)');
@@ -135,6 +135,17 @@ async function runMenu() {
     limit = 10;
   }
 
+  // 5. Punto de Inicio / Reanudación
+  console.log('\n\x1b[1m\x1b[32m[5/5] SELECCIONA EL PUNTO DE INICIO (REANUDACIÓN):\x1b[0m');
+  console.log('  • Presiona \x1b[1mEnter\x1b[0m para empezar desde el principio (Ficha #1)');
+  console.log('  • O escribe el número de ficha por donde quieres arrancar (ej: 50, 100, 250, etc.)');
+  const startChoice = await ask('\n👉 Número de ficha inicial [Enter=1]: ', '1');
+  const startIndex = Math.max(1, parseInt(startChoice, 10) || 1);
+
+  if (startIndex > 1) {
+    console.log(`  \x1b[36m⏩ Configurado: Se iniciará la auditoría directamente desde la ficha #${startIndex}\x1b[0m`);
+  }
+
   rl.close();
 
   console.log('\n\x1b[32m🚀 INICIANDO ENRIQUECEDOR AUTÓNOMO...\x1b[0m\n');
@@ -146,7 +157,8 @@ async function runMenu() {
     universe,
     model,
     limit.toString(),
-    rounds.toString()
+    rounds.toString(),
+    startIndex.toString()
   ], {
     cwd: projectRoot,
     stdio: 'inherit'

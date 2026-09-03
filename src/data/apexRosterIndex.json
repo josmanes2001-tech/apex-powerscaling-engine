@@ -164,7 +164,7 @@
   {
     "id": "whis-kakumei-especulativo",
     "name": "Whis (Kakumei, Especulativo)",
-    "universe": "Dragon Ball Kakumei (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "2-A",
     "tierRank": 41,
     "withinTierScore": 75,
@@ -182,7 +182,7 @@
   {
     "id": "amond-kakumei",
     "name": "Amond",
-    "universe": "Dragon Ball Kakumei (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "2-B",
     "tierRank": 40,
     "withinTierScore": 75,
@@ -218,7 +218,7 @@
   {
     "id": "merus",
     "name": "Merus",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "2-B",
     "tierRank": 40,
     "withinTierScore": 75,
@@ -380,7 +380,7 @@
   {
     "id": "goku-universo-cero-kakumei",
     "name": "Son Goku (Universo Cero)",
-    "universe": "Dragon Ball Kakumei (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "2-C",
     "tierRank": 39,
     "withinTierScore": 79,
@@ -398,7 +398,7 @@
   {
     "id": "vegeta-kakumei",
     "name": "Vegeta (Hakaishin)",
-    "universe": "Dragon Ball Kakumei (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "2-C",
     "tierRank": 39,
     "withinTierScore": 79,
@@ -506,7 +506,7 @@
   {
     "id": "beerus-kakumei",
     "name": "Beerus (Kakumei)",
-    "universe": "Dragon Ball Kakumei (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "2-C",
     "tierRank": 39,
     "withinTierScore": 75,
@@ -668,7 +668,7 @@
   {
     "id": "gohan-kakumei",
     "name": "Gohan (Heredero del U11)",
-    "universe": "Dragon Ball Kakumei (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "2-C",
     "tierRank": 39,
     "withinTierScore": 75,
@@ -722,7 +722,7 @@
   {
     "id": "jiren-dbs-top",
     "name": "Jiren",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "2-C",
     "tierRank": 39,
     "withinTierScore": 75,
@@ -812,7 +812,7 @@
   {
     "id": "broly-kakumei",
     "name": "Broly (Kakumei)",
-    "universe": "Dragon Ball Kakumei (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "2-C",
     "tierRank": 39,
     "withinTierScore": 74,
@@ -1244,7 +1244,7 @@
   {
     "id": "goku-janemba-movie12",
     "name": "Son Goku (Fusión Reborn / Infierno)",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 79,
@@ -1316,7 +1316,7 @@
   {
     "id": "baby-god-brokoly",
     "name": "Super Baby Vegeta (Baby God)",
-    "universe": "Dragon Ball What-If (Brokoly350)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 79,
@@ -1334,7 +1334,7 @@
   {
     "id": "baby-vegeta-god-brokoly",
     "name": "Super Baby Vegeta (What-If Baby God)",
-    "universe": "Dragon Ball What-If (Brokoly350)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 79,
@@ -1352,7 +1352,7 @@
   {
     "id": "vegeta-db-after",
     "name": "Vegeta (DB After)",
-    "universe": "Dragon Ball After (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 79,
@@ -1442,7 +1442,7 @@
   {
     "id": "basil-dbs-top",
     "name": "Basil",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1478,7 +1478,7 @@
   {
     "id": "bergamo-dbs-top",
     "name": "Bergamo",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1514,7 +1514,7 @@
   {
     "id": "cabba-dbs-u6",
     "name": "Cabba",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1550,7 +1550,7 @@
   {
     "id": "caulifla-dbs-u6",
     "name": "Caulifla",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1622,7 +1622,7 @@
   {
     "id": "frost-dbs-u6",
     "name": "Frost",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1676,7 +1676,7 @@
   {
     "id": "gogeta-pel-culas-dbz-toei-800",
     "name": "Gogeta (Z)",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1712,7 +1712,7 @@
   {
     "id": "gotenks-adulto-db-after",
     "name": "Gotenks Adulto",
-    "universe": "Dragon Ball After (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1748,7 +1748,7 @@
   {
     "id": "hit-dbs-u6",
     "name": "Hit",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1784,7 +1784,7 @@
   {
     "id": "kale-dragon-ball-super-934",
     "name": "Kale",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -1874,7 +1874,7 @@
   {
     "id": "lavender-dbs-top",
     "name": "Lavender",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -2126,7 +2126,7 @@
   {
     "id": "son-gohan-db-after",
     "name": "Son Gohan (DB After)",
-    "universe": "Dragon Ball After (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 75,
@@ -2414,7 +2414,7 @@
   {
     "id": "dyspo-dbs-top",
     "name": "Dyspo",
-    "universe": "Dragon Ball Super",
+    "universe": "Unknown",
     "tierExact": "3-A",
     "tierRank": 36,
     "withinTierScore": 65,
@@ -2450,7 +2450,7 @@
   {
     "id": "vegeta-kaioken-brokoly",
     "name": "Vegeta (What-If Kaio-ken)",
-    "universe": "Dragon Ball What-If (Brokoly350)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-B",
     "tierRank": 35,
     "withinTierScore": 79,
@@ -2486,7 +2486,7 @@
   {
     "id": "gohan-futuro-brokoly",
     "name": "Gohan del Futuro (What-If Místico)",
-    "universe": "Dragon Ball What-If (Brokoly350)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-B",
     "tierRank": 35,
     "withinTierScore": 75,
@@ -2504,7 +2504,7 @@
   {
     "id": "janemba-gordo-pel-culas-dbz-toei-542",
     "name": "Super Janemba",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "3-B",
     "tierRank": 35,
     "withinTierScore": 75,
@@ -2666,7 +2666,7 @@
   {
     "id": "cell-hiper-perfecto-new-hope",
     "name": "Cell (Hiper Perfecto)",
-    "universe": "Dragon Ball New Hope (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-C",
     "tierRank": 34,
     "withinTierScore": 75,
@@ -2738,7 +2738,7 @@
   {
     "id": "goten-new-hope-adult",
     "name": "Goten (New Hope - Adulto)",
-    "universe": "Dragon Ball New Hope (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "3-C",
     "tierRank": 34,
     "withinTierScore": 75,
@@ -2990,7 +2990,7 @@
   {
     "id": "piccolo-new-hope",
     "name": "Piccolo (New Hope)",
-    "universe": "Dragon Ball New Hope (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "4-A",
     "tierRank": 33,
     "withinTierScore": 75,
@@ -3026,7 +3026,7 @@
   {
     "id": "saibaman-mutante-brokoly",
     "name": "Saibaman (Mutante Evolutivo)",
-    "universe": "Dragon Ball What-If (Brokoly350)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "4-A",
     "tierRank": 33,
     "withinTierScore": 75,
@@ -3080,7 +3080,7 @@
   {
     "id": "tenshinhan-new-hope",
     "name": "Tenshinhan (New Hope)",
-    "universe": "Dragon Ball New Hope (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "4-A",
     "tierRank": 33,
     "withinTierScore": 69,
@@ -3116,7 +3116,7 @@
   {
     "id": "rey-vegeta-dbm-u13",
     "name": "Rey Vegeta (Multiverse — U13)",
-    "universe": "Dragon Ball Multiverse",
+    "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 79,
@@ -3296,7 +3296,7 @@
   {
     "id": "vegeta-dragon-ball-daima-527",
     "name": "Vegeta (Daima Mini)",
-    "universe": "Dragon Ball Daima",
+    "universe": "Unknown",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 79,
@@ -3404,7 +3404,7 @@
   {
     "id": "androide-13-base-pel-culas-dbz-toei-646",
     "name": "Androide 13",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3440,7 +3440,7 @@
   {
     "id": "bardock-superviviente-brokoly",
     "name": "Bardock (El Superviviente del Destino)",
-    "universe": "Dragon Ball What-If (Brokoly350)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3476,7 +3476,7 @@
   {
     "id": "bojack-pel-culas-dbz-toei-695",
     "name": "Bojack",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3530,7 +3530,7 @@
   {
     "id": "lord-cooler-pel-culas-dbz-toei-792",
     "name": "Cooler",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3548,7 +3548,7 @@
   {
     "id": "cooler-u8-dbm",
     "name": "Cooler (Continuidad Universo 8, Imperio Intacto)",
-    "universe": "Dragon Ball Multiverse (Fan-Manga, Canon DBM)",
+    "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3620,7 +3620,7 @@
   {
     "id": "dr-raichi-dbm-u3",
     "name": "Dr. Raichi / Fantasmas del Odio (Multiverse — U3)",
-    "universe": "Dragon Ball Multiverse",
+    "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3728,7 +3728,7 @@
   {
     "id": "goten-new-hope-cell-saga",
     "name": "Goten (New Hope - Saga de Cell)",
-    "universe": "Dragon Ball New Hope (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3764,7 +3764,7 @@
   {
     "id": "hatchiyack-pel-culas-dbz-toei-383",
     "name": "Hatchiyack",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3782,7 +3782,7 @@
   {
     "id": "hirudegarn-pel-culas-dbz-toei-805",
     "name": "Hirudegarn",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3800,7 +3800,7 @@
   {
     "id": "kakarotto-db-after",
     "name": "Kakarotto",
-    "universe": "Dragon Ball After (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3890,7 +3890,7 @@
   {
     "id": "meta-cooler-pel-culas-dbz-toei-714",
     "name": "Meta Cooler",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3962,7 +3962,7 @@
   {
     "id": "pikkon-torneo-del-otro-mundo-912",
     "name": "Pikkon (Paikuhan)",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -3980,7 +3980,7 @@
   {
     "id": "raditz-redimido-brokoly",
     "name": "Raditz (Guerrero Z)",
-    "universe": "Dragon Ball What-If (Brokoly350)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -4178,7 +4178,7 @@
   {
     "id": "uub-saga-buu-276",
     "name": "Uub",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 75,
@@ -4196,7 +4196,7 @@
   {
     "id": "broly-dbz-pel-culas-dbz-toei-822",
     "name": "Broly (Z)",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 74,
@@ -4214,7 +4214,7 @@
   {
     "id": "krillin-new-hope",
     "name": "Krilin (Dragon Ball New Hope)",
-    "universe": "Dragon Ball New Hope (Fan-Manga)",
+    "universe": "Dragon Ball (Fan-Mangas & What-If)",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 69,
@@ -4250,7 +4250,7 @@
   {
     "id": "beelzebub-ror-r8",
     "name": "Beelzebub",
-    "universe": "Shuumatsu no Valkyrie (Record of Ragnarok)",
+    "universe": "Unknown",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 67,
@@ -4322,7 +4322,7 @@
   {
     "id": "hades-ror-r7",
     "name": "Hades",
-    "universe": "Shuumatsu no Valkyrie (Record of Ragnarok)",
+    "universe": "Unknown",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 67,
@@ -4394,7 +4394,7 @@
   {
     "id": "kojiro-sasaki-shuumatsu",
     "name": "Kojiro Sasaki",
-    "universe": "Shuumatsu no Valkyrie (Record of Ragnarok)",
+    "universe": "Chainsaw Man",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 67,
@@ -4412,7 +4412,7 @@
   {
     "id": "kojiro-sasaki-ror-r3",
     "name": "Kojiro Sasaki",
-    "universe": "Shuumatsu no Valkyrie (Record of Ragnarok)",
+    "universe": "Unknown",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 67,
@@ -4538,7 +4538,7 @@
   {
     "id": "nikola-tesla-ror-r8",
     "name": "Nikola Tesla",
-    "universe": "Shuumatsu no Valkyrie (Record of Ragnarok)",
+    "universe": "Unknown",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 67,
@@ -4646,7 +4646,7 @@
   {
     "id": "qin-shi-huang-ror-r7",
     "name": "Qin Shi Huang",
-    "universe": "Shuumatsu no Valkyrie (Record of Ragnarok)",
+    "universe": "Unknown",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 67,
@@ -4772,7 +4772,7 @@
   {
     "id": "dr-doom-marvel-616",
     "name": "Doctor Doom",
-    "universe": "Marvel Comics",
+    "universe": "Unknown",
     "tierExact": "4-B",
     "tierRank": 32,
     "withinTierScore": 59,
@@ -4790,7 +4790,7 @@
   {
     "id": "kogu-pel-culas-dbz-toei-693",
     "name": "Kogu (Gokua)",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 79,
@@ -4898,7 +4898,7 @@
   {
     "id": "androide-14-pel-culas-dbz-toei-392",
     "name": "Androide 14",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -4916,7 +4916,7 @@
   {
     "id": "androide-15-pel-culas-dbz-toei-547",
     "name": "Androide 15",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5024,7 +5024,7 @@
   {
     "id": "arqua-torneo-del-otro-mundo-715",
     "name": "Arqua",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5060,7 +5060,7 @@
   {
     "id": "bido-pel-culas-dbz-toei-296",
     "name": "Bido",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5078,7 +5078,7 @@
   {
     "id": "bujin-pel-culas-dbz-toei-994",
     "name": "Bujin",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5222,7 +5222,7 @@
   {
     "id": "lord-slug-pel-culas-dbz-toei-952",
     "name": "Lord Slug",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5240,7 +5240,7 @@
   {
     "id": "maraikoh-torneo-del-otro-mundo-620",
     "name": "Maraikoh",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5258,7 +5258,7 @@
   {
     "id": "mijorin-torneo-del-otro-mundo-618",
     "name": "Mijorin",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5312,7 +5312,7 @@
   {
     "id": "olibu-torneo-del-otro-mundo-109",
     "name": "Olibu",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5618,7 +5618,7 @@
   {
     "id": "turles-dbz-toei",
     "name": "Turles",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5672,7 +5672,7 @@
   {
     "id": "zangya-pel-culas-dbz-toei-447",
     "name": "Zangya",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 75,
@@ -5690,7 +5690,7 @@
   {
     "id": "bio-broly-pel-culas-dbz-toei-858",
     "name": "Bio-Broly",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "4-C",
     "tierRank": 30,
     "withinTierScore": 74,
@@ -5978,7 +5978,7 @@
   {
     "id": "spice-saga-garlic-jr-70",
     "name": "Spice",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "5-A",
     "tierRank": 27,
     "withinTierScore": 75,
@@ -6014,7 +6014,7 @@
   {
     "id": "vinegar-saga-garlic-jr-502",
     "name": "Vinegar",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "5-A",
     "tierRank": 27,
     "withinTierScore": 75,
@@ -6266,7 +6266,7 @@
   {
     "id": "bardock-dragon-ball-super-194",
     "name": "Bardock",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 75,
@@ -6338,7 +6338,7 @@
   {
     "id": "caterpy-torneo-del-otro-mundo-838",
     "name": "Caterpy",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 75,
@@ -6374,7 +6374,7 @@
   {
     "id": "dr-wheelo-pel-culas-dbz-toei-823",
     "name": "Dr. Wheelo",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 75,
@@ -6392,7 +6392,7 @@
   {
     "id": "garlic-jr-saga-garlic-jr-47",
     "name": "Garlic Jr.",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 75,
@@ -6518,7 +6518,7 @@
   {
     "id": "mustard-saga-garlic-jr-331",
     "name": "Mustard",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 75,
@@ -6554,7 +6554,7 @@
   {
     "id": "paragus-pel-culas-dbz-toei-728",
     "name": "Paragus (Z)",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 75,
@@ -6572,7 +6572,7 @@
   {
     "id": "piccolo-saga-saiyan",
     "name": "Piccolo (Final Saga Saiyan / vs Nappa)",
-    "universe": "Dragon Ball Z (Canon Toriyama)",
+    "universe": "Dragon Ball Z",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 75,
@@ -6626,7 +6626,7 @@
   {
     "id": "salt-saga-garlic-jr-435",
     "name": "Salt",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 75,
@@ -6896,7 +6896,7 @@
   {
     "id": "mark-grayson-invincible-906",
     "name": "Mark Grayson (Invincible)",
-    "universe": "Invincible",
+    "universe": "Unknown",
     "tierExact": "5-B",
     "tierRank": 26,
     "withinTierScore": 67,
@@ -7076,7 +7076,7 @@
   {
     "id": "maestro-roshi-jackie-chun-dragon-ball-cl-sico-224",
     "name": "Maestro Roshi",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "5-C",
     "tierRank": 24,
     "withinTierScore": 69,
@@ -7094,7 +7094,7 @@
   {
     "id": "all-for-one",
     "name": "All For One",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "My Hero Academia",
     "tierExact": "High 6-A",
     "tierRank": 23,
     "withinTierScore": 67,
@@ -7112,7 +7112,7 @@
   {
     "id": "dabi-mha",
     "name": "Dabi (Touya Todoroki)",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "My Hero Academia",
     "tierExact": "High 6-A",
     "tierRank": 23,
     "withinTierScore": 67,
@@ -7130,7 +7130,7 @@
   {
     "id": "hawks-mha",
     "name": "Hawks (Keigo Takami)",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "My Hero Academia",
     "tierExact": "High 6-A",
     "tierRank": 23,
     "withinTierScore": 67,
@@ -7148,7 +7148,7 @@
   {
     "id": "izuku-midoriya-deku-mha",
     "name": "Izuku Midoriya (Deku)",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "My Hero Academia",
     "tierExact": "High 6-A",
     "tierRank": 23,
     "withinTierScore": 67,
@@ -7166,7 +7166,7 @@
   {
     "id": "shigaraki-tomura-mha",
     "name": "Shigaraki Tomura",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "Chainsaw Man",
     "tierExact": "High 6-A",
     "tierRank": 23,
     "withinTierScore": 67,
@@ -7202,7 +7202,7 @@
   {
     "id": "tatsumaki-opm",
     "name": "Tatsumaki",
-    "universe": "One Punch Man",
+    "universe": "Chainsaw Man",
     "tierExact": "High 6-A",
     "tierRank": 23,
     "withinTierScore": 67,
@@ -7238,7 +7238,7 @@
   {
     "id": "piccolo-inicio-saga-saiyan",
     "name": "Piccolo (Inicio Saga Saiyan / vs Raditz)",
-    "universe": "Dragon Ball Z (Canon Toriyama)",
+    "universe": "Dragon Ball Z",
     "tierExact": "6-A",
     "tierRank": 22,
     "withinTierScore": 75,
@@ -7256,7 +7256,7 @@
   {
     "id": "all-might-prime-mha",
     "name": "All Might (Prime)",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "My Hero Academia",
     "tierExact": "6-A",
     "tierRank": 22,
     "withinTierScore": 67,
@@ -7616,7 +7616,7 @@
   {
     "id": "endeavor-mha",
     "name": "Endeavor",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "My Hero Academia",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -7814,7 +7814,7 @@
   {
     "id": "katsuki-bakugo-mha",
     "name": "Katsuki Bakugo",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "My Hero Academia",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -7868,7 +7868,7 @@
   {
     "id": "kokushibo-kny-ic",
     "name": "Kokushibo",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Unknown",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -7886,7 +7886,7 @@
   {
     "id": "lex-luthor",
     "name": "Lex Luthor",
-    "universe": "DC Comics",
+    "universe": "Marvel Comics",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -7994,7 +7994,7 @@
   {
     "id": "neferpitou",
     "name": "Neferpitou",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -8084,7 +8084,7 @@
   {
     "id": "ryomen-sukuna-jjk",
     "name": "Ryomen Sukuna",
-    "universe": "Jujutsu Kaisen",
+    "universe": "Unknown",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -8120,7 +8120,7 @@
   {
     "id": "shigaraki-tomura-mha-war",
     "name": "Shigaraki Tomura",
-    "universe": "My Hero Academia",
+    "universe": "Unknown",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -8138,7 +8138,7 @@
   {
     "id": "shoto-todoroki-mha",
     "name": "Shoto Todoroki",
-    "universe": "My Hero Academia (Boku no Hero)",
+    "universe": "My Hero Academia",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -8210,7 +8210,7 @@
   {
     "id": "yuki-tsukumo-jjk-shibuya",
     "name": "Yuki Tsukumo",
-    "universe": "Jujutsu Kaisen",
+    "universe": "Unknown",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -8246,7 +8246,7 @@
   {
     "id": "yuta-okkotsu-jjk",
     "name": "Yuta Okkotsu",
-    "universe": "Jujutsu Kaisen",
+    "universe": "Unknown",
     "tierExact": "7-A",
     "tierRank": 15,
     "withinTierScore": 67,
@@ -8336,7 +8336,7 @@
   {
     "id": "kyojuro-rengoku-kimetsu",
     "name": "Kyojuro Rengoku",
-    "universe": "Demon Slayer (Kimetsu no Yaiba)",
+    "universe": "Dragon Ball Z",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 79,
@@ -8372,7 +8372,7 @@
   {
     "id": "pickle-baki",
     "name": "Pickle",
-    "universe": "Baki the Grappler / Baki Hanma",
+    "universe": "Baki the Grappler",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 78,
@@ -8444,7 +8444,7 @@
   {
     "id": "kami-sama-dragon-ball-cl-sico-772",
     "name": "Kami-sama",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 75,
@@ -8462,7 +8462,7 @@
   {
     "id": "mr-popo-dragon-ball-cl-sico-370",
     "name": "Mr. Popo",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 75,
@@ -8516,7 +8516,7 @@
   {
     "id": "soldados-de-freezer-saga-namek-793",
     "name": "Soldados de Freezer",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 75,
@@ -8552,7 +8552,7 @@
   {
     "id": "tapion-pel-culas-dbz-toei-767",
     "name": "Tapion",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 75,
@@ -8606,7 +8606,7 @@
   {
     "id": "yujiro-hanma-baki",
     "name": "Yujiro Hanma",
-    "universe": "Baki the Grappler / Baki Hanma",
+    "universe": "Baki the Grappler",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 73,
@@ -8642,7 +8642,7 @@
   {
     "id": "meruem-hxh",
     "name": "Meruem",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 71,
@@ -8660,7 +8660,7 @@
   {
     "id": "baki-hanma-baki",
     "name": "Baki Hanma",
-    "universe": "Baki the Grappler / Baki Hanma",
+    "universe": "Chainsaw Man",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 70,
@@ -8678,7 +8678,7 @@
   {
     "id": "doppo-orochi",
     "name": "Doppo Orochi",
-    "universe": "Baki the Grappler / Baki Hanma",
+    "universe": "Baki the Grappler",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 69,
@@ -8696,7 +8696,7 @@
   {
     "id": "musashi-miyamoto-baki",
     "name": "Musashi Miyamoto (Reencarnado)",
-    "universe": "Baki the Grappler / Baki Hanma",
+    "universe": "Baki the Grappler",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 69,
@@ -8732,7 +8732,7 @@
   {
     "id": "retsu-kaioh",
     "name": "Retsu Kaioh",
-    "universe": "Baki the Grappler / Baki Hanma",
+    "universe": "Baki the Grappler",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 69,
@@ -8840,7 +8840,7 @@
   {
     "id": "chrollo-lucilfer",
     "name": "Chrollo Lucilfer",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -8930,7 +8930,7 @@
   {
     "id": "endeavor-mha-war",
     "name": "Endeavor",
-    "universe": "My Hero Academia",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -8966,7 +8966,7 @@
   {
     "id": "giyu-tomioka-kny-ic",
     "name": "Giyu Tomioka",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9038,7 +9038,7 @@
   {
     "id": "gyutaro-daki-kny-ed",
     "name": "Gyutaro y Daki",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Jujutsu Kaisen",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9146,7 +9146,7 @@
   {
     "id": "isaac-netero-hxh-ca",
     "name": "Isaac Netero",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9164,7 +9164,7 @@
   {
     "id": "isaac-netero-hxh",
     "name": "Isaac Netero",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9200,7 +9200,7 @@
   {
     "id": "katsuki-bakugo-mha-war",
     "name": "Katsuki Bakugo",
-    "universe": "My Hero Academia",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9218,7 +9218,7 @@
   {
     "id": "killua-zoldyck",
     "name": "Killua Zoldyck",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9308,7 +9308,7 @@
   {
     "id": "mitsuri-kanroji-kny-sv",
     "name": "Mitsuri Kanroji",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9344,7 +9344,7 @@
   {
     "id": "muichiro-tokito-kny-sv",
     "name": "Muichiro Tokito",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9380,7 +9380,7 @@
   {
     "id": "muzan-kibutsuji-kimetsu",
     "name": "Muzan Kibutsuji",
-    "universe": "Demon Slayer (Kimetsu no Yaiba)",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9470,7 +9470,7 @@
   {
     "id": "obanai-iguro-kny-ic",
     "name": "Obanai Iguro",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9578,7 +9578,7 @@
   {
     "id": "sakonji-urokodaki-kny-train",
     "name": "Sakonji Urokodaki",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9596,7 +9596,7 @@
   {
     "id": "sanemi-shinazugawa-kny-ic",
     "name": "Sanemi Shinazugawa",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9668,7 +9668,7 @@
   {
     "id": "silva-zoldyck-hxh-ca",
     "name": "Silva Zoldyck",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9794,7 +9794,7 @@
   {
     "id": "tengen-uzui-kny-ed",
     "name": "Tengen Uzui",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9866,7 +9866,7 @@
   {
     "id": "yoriichi-tsugikuni-kimetsu",
     "name": "Yoriichi Tsugikuni",
-    "universe": "Demon Slayer (Kimetsu no Yaiba)",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -9902,7 +9902,7 @@
   {
     "id": "yuta-okkotsu-jjk-culling",
     "name": "Yuta Okkotsu",
-    "universe": "Jujutsu Kaisen",
+    "universe": "Unknown",
     "tierExact": "7-B",
     "tierRank": 14,
     "withinTierScore": 67,
@@ -10046,7 +10046,7 @@
   {
     "id": "biscuit-oliva-baki",
     "name": "Biscuit Oliva",
-    "universe": "Baki the Grappler",
+    "universe": "Unknown",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 74,
@@ -10064,7 +10064,7 @@
   {
     "id": "kaoru-hanayama",
     "name": "Kaoru Hanayama",
-    "universe": "Baki the Grappler / Baki Hanma",
+    "universe": "Baki the Grappler",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 74,
@@ -10100,7 +10100,7 @@
   {
     "id": "jack-hanma-baki",
     "name": "Jack Hanma",
-    "universe": "Baki the Grappler / Baki Hanma",
+    "universe": "Baki the Grappler",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 69,
@@ -10154,7 +10154,7 @@
   {
     "id": "gyokko-kny-sv",
     "name": "Gyokko",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10172,7 +10172,7 @@
   {
     "id": "gyomei-himejima-kny-ic",
     "name": "Gyomei Himejima",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Unknown",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10190,7 +10190,7 @@
   {
     "id": "hantengu-kny-sv",
     "name": "Hantengu",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10226,7 +10226,7 @@
   {
     "id": "illumi-zoldyck-hxh-exam",
     "name": "Illumi Zoldyck",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10244,7 +10244,7 @@
   {
     "id": "jigoro-kuwajima-kny-lore",
     "name": "Jigoro Kuwajima",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10262,7 +10262,7 @@
   {
     "id": "kaigaku-kny-ic",
     "name": "Kaigaku",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10280,7 +10280,7 @@
   {
     "id": "kanae-kocho-kny-lore",
     "name": "Kanae Kocho",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10298,7 +10298,7 @@
   {
     "id": "kanao-tsuyuri-kny-ic",
     "name": "Kanao Tsuyuri",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10352,7 +10352,7 @@
   {
     "id": "nakime-kny-ic",
     "name": "Nakime",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10496,7 +10496,7 @@
   {
     "id": "tengen-uzui-kny-edd",
     "name": "Tengen Uzui",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Unknown",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 67,
@@ -10532,7 +10532,7 @@
   {
     "id": "yor-forger",
     "name": "Yor Forger (Thorn Princess)",
-    "universe": "Spy x Family",
+    "universe": "Marvel Comics",
     "tierExact": "7-C",
     "tierRank": 11,
     "withinTierScore": 58,
@@ -10748,7 +10748,7 @@
   {
     "id": "hanayama-baki-max",
     "name": "Kaoru Hanayama",
-    "universe": "Baki the Grappler",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 74,
@@ -10784,7 +10784,7 @@
   {
     "id": "kaku-kaioh-baki-rt",
     "name": "Kaku Kaioh",
-    "universe": "Baki the Grappler",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 69,
@@ -11054,7 +11054,7 @@
   {
     "id": "enmu-kny-mt",
     "name": "Enmu",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11180,7 +11180,7 @@
   {
     "id": "genya-shinazugawa-kny-sv",
     "name": "Genya Shinazugawa",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11234,7 +11234,7 @@
   {
     "id": "kashimo-hajime-jjk-culling",
     "name": "Hajime Kashimo",
-    "universe": "Jujutsu Kaisen",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11270,7 +11270,7 @@
   {
     "id": "hisoka-morow-hxh",
     "name": "Hisoka Morow",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11288,7 +11288,7 @@
   {
     "id": "jack-the-ripper-ror-r4",
     "name": "Jack The Ripper",
-    "universe": "Shuumatsu no Valkyrie (Record of Ragnarok)",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11378,7 +11378,7 @@
   {
     "id": "kinji-hakari-jjk-culling",
     "name": "Kinji Hakari",
-    "universe": "Jujutsu Kaisen",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11468,7 +11468,7 @@
   {
     "id": "kurapika-hxh-yr",
     "name": "Kurapika",
-    "universe": "Hunter x Hunter",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11540,7 +11540,7 @@
   {
     "id": "maki-zenin",
     "name": "Maki Zen'in",
-    "universe": "Jujutsu Kaisen",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11594,7 +11594,7 @@
   {
     "id": "megumi-fushiguro-jjk-culling",
     "name": "Megumi Fushiguro",
-    "universe": "Jujutsu Kaisen",
+    "universe": "Unknown",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11738,7 +11738,7 @@
   {
     "id": "nayuta-csm-p2",
     "name": "Nayuta",
-    "universe": "Chainsaw Man",
+    "universe": "Jujutsu Kaisen",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11900,7 +11900,7 @@
   {
     "id": "rui-kny-mn",
     "name": "Rui",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -11972,7 +11972,7 @@
   {
     "id": "tamaki-amajiki-mha-shie",
     "name": "Tamaki Amajiki",
-    "universe": "My Hero Academia",
+    "universe": "Chainsaw Man",
     "tierExact": "8-A",
     "tierRank": 9,
     "withinTierScore": 67,
@@ -12314,7 +12314,7 @@
   {
     "id": "yajirobe-dragon-ball-cl-sico-111",
     "name": "Yajirobe",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "8-B",
     "tierRank": 8,
     "withinTierScore": 75,
@@ -12350,7 +12350,7 @@
   {
     "id": "jack-hanma-baki-max",
     "name": "Jack Hanma",
-    "universe": "Baki the Grappler",
+    "universe": "Unknown",
     "tierExact": "8-B",
     "tierRank": 8,
     "withinTierScore": 69,
@@ -12584,7 +12584,7 @@
   {
     "id": "josuke-higashikata-jojo-diu",
     "name": "Josuke Higashikata",
-    "universe": "JoJo's Bizarre Adventure",
+    "universe": "Unknown",
     "tierExact": "8-B",
     "tierRank": 8,
     "withinTierScore": 67,
@@ -12710,7 +12710,7 @@
   {
     "id": "okuyasu-jojo-diu",
     "name": "Okuyasu Nijimura",
-    "universe": "JoJo's Bizarre Adventure",
+    "universe": "Unknown",
     "tierExact": "8-B",
     "tierRank": 8,
     "withinTierScore": 67,
@@ -12782,7 +12782,7 @@
   {
     "id": "risotto-nero-jojo-gw",
     "name": "Risotto Nero",
-    "universe": "JoJo's Bizarre Adventure",
+    "universe": "Unknown",
     "tierExact": "8-B",
     "tierRank": 8,
     "withinTierScore": 67,
@@ -12800,7 +12800,7 @@
   {
     "id": "shizuku-murasaki-hxh-yr",
     "name": "Shizuku Murasaki",
-    "universe": "Hunter x Hunter",
+    "universe": "Chainsaw Man",
     "tierExact": "8-B",
     "tierRank": 8,
     "withinTierScore": 67,
@@ -12944,7 +12944,7 @@
   {
     "id": "doppo-orochi-baki-max",
     "name": "Doppo Orochi",
-    "universe": "Baki the Grappler",
+    "universe": "Unknown",
     "tierExact": "8-C",
     "tierRank": 6,
     "withinTierScore": 69,
@@ -12998,7 +12998,7 @@
   {
     "id": "gouki-shibukawa-baki",
     "name": "Gouki Shibukawa",
-    "universe": "Baki the Grappler",
+    "universe": "Unknown",
     "tierExact": "8-C",
     "tierRank": 6,
     "withinTierScore": 69,
@@ -13538,7 +13538,7 @@
   {
     "id": "noriaki-kakyoin-jojo-sc",
     "name": "Noriaki Kakyoin",
-    "universe": "JoJo's Bizarre Adventure",
+    "universe": "Chainsaw Man",
     "tierExact": "8-C",
     "tierRank": 6,
     "withinTierScore": 67,
@@ -13898,7 +13898,7 @@
   {
     "id": "dende-saga-namek-100",
     "name": "Dende",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "9-A",
     "tierRank": 5,
     "withinTierScore": 75,
@@ -13916,7 +13916,7 @@
   {
     "id": "dr-lychee-pel-culas-dbz-toei-354",
     "name": "Dr. Lychee",
-    "universe": "Dragon Ball Z — Películas, OVAs y Relleno Toei",
+    "universe": "Dragon Ball Z — Películas y OVAs",
     "tierExact": "9-A",
     "tierRank": 5,
     "withinTierScore": 75,
@@ -14240,7 +14240,7 @@
   {
     "id": "mr-satan-saga-androides-140",
     "name": "Mr. Satán (Hercule)",
-    "universe": "Dragon Ball (Apariciones Multi-Era)",
+    "universe": "Dragon Ball (Multi-Era)",
     "tierExact": "9-B",
     "tierRank": 4,
     "withinTierScore": 75,
@@ -14276,7 +14276,7 @@
   {
     "id": "aoi-kanzaki-kny",
     "name": "Aoi Kanzaki",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "9-B",
     "tierRank": 4,
     "withinTierScore": 67,
@@ -14366,7 +14366,7 @@
   {
     "id": "john-constantine-dc-rebirth",
     "name": "John Constantine",
-    "universe": "DC Comics",
+    "universe": "Unknown",
     "tierExact": "9-B",
     "tierRank": 4,
     "withinTierScore": 67,
@@ -14726,7 +14726,7 @@
   {
     "id": "kagaya-ubuyashiki-kny-lore",
     "name": "Kagaya Ubuyashiki",
-    "universe": "Demon Slayer: Kimetsu no Yaiba",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
     "tierExact": "10-C",
     "tierRank": 0,
     "withinTierScore": 67,

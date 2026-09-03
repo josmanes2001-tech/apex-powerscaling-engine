@@ -270,6 +270,50 @@ ${actives}`;
       return details;
     };
 
+    const formatFullChar = (char, label) => {
+      if (!char) return '';
+      const activeFormIdx = char._activeFormIndex ?? 0;
+      const activeFormId = char._activeFormId || char.forms?.[activeFormIdx]?.id || 'base';
+      const combatState = resolveCombatState(char, activeFormId);
+      const activeForm = char.forms?.find(f => f.id === activeFormId) || char.forms?.[activeFormIdx];
+      const limitIdx = char._formLimitIndex;
+      
+      let activeFormLine = activeForm 
+        ? `- Forma Activa Inicial: **${activeForm.name}** [Tier: ${combatState.tierExact || char.tier}] — ${typeof activeForm.stats === 'string' ? activeForm.stats : JSON.stringify(activeForm.stats || '')}`
+        : `- Forma Activa Inicial: **Estado Base** [Tier: ${combatState.tierExact || char.tier}]`;
+      
+      if (limitIdx !== undefined && limitIdx !== null && char.forms) {
+        activeFormLine += `\n- ⚠️ **RESTRICCIÓN DE TRANSFORMACIÓN (LÍMITE MÁXIMO)**: En esta simulación, ${char.name} NO TIENE PERMITIDO evolucionar ni usar ninguna transformación por encima de **"${char.forms[limitIdx]?.name || 'Límite fijado'}"**. Esta es su forma máxima para este combate por reglas del usuario.`;
+      }
+      
+      const featsList = Array.isArray(char.feats)
+        ? char.feats.map(f => typeof f === 'object' ? (f.desc || f.name || JSON.stringify(f)) : String(f)).join(' || ')
+        : (char.feats || 'Sin hazañas documentadas.');
+      
+      const apexKiDisplay = combatState.apexKiDisplay || 'Calculado por motor';
+      const scouterDisplay = combatState.sourceKiDisplay ? ` | Scouter Oficial DB: **${combatState.sourceKiDisplay}**` : '';
+      const formMultDisplay = combatState.formMultiplier > 1 ? ` | Multiplicador de Forma: **${combatState.formMultiplier}x**` : '';
+
+      return `
+**[${label}] ${char.name}** (${char.universe || 'Universo Desconocido'})
+- Nivel (Tier): ${combatState.tierExact || char.tier || 'Desconocido'}
+- Nivel de Combate (APEX-Ki): **${apexKiDisplay}**${scouterDisplay}${formMultDisplay}
+${activeFormLine}
+- Attack Potency (AP): ${char.ap || 'No especificado'}
+- Velocidad: ${formatSpeed(char.speed || char.speedCombate)}
+- Fuerza Física (Striking & Lifting): ${formatStrength(char.strength)}
+- Durabilidad y Blindaje: ${char.durability || 'Estándar'}
+- Stamina / Reservas: ${char.stamina || 'Estándar'}
+- Battle IQ / Táctica Marcial: ${char.battleIQ || 'Estándar'}
+- Psicología del Personaje: ${char.psychology || 'Sin datos adicionales.'}
+- HaxTags (Habilidades Especiales Conceptuales): ${(char.haxTags || []).join(' | ') || 'Ninguno registrado'}
+- Hazañas Canónicas Comprobadas (Feats): ${featsList}
+- Debilidades Explotables Conocidas: ${char.weaknesses || 'Sin debilidades conocidas.'}
+- Transformaciones Disponibles: ${formatForms(char.forms)}
+- Arsenal y Habilidades Completas:
+${formatArsenal(char)}`;
+    };
+
     // Format Combatants depending on mode
     let combatantsSection = "";
     if (matchMode === 'teams') {
@@ -280,11 +324,7 @@ ${actives}`;
 
       const teamsBlocks = teamsToUse.map((tm, tIdx) => {
         const syn = calculateSquadSynergy(tm.members || []);
-        const membersText = (tm.members || []).map((c, i) => `
-**[${tm.name.toUpperCase()}-${i + 1}] ${c.name} (${c.universe})**
-- Tier: ${c.tier} | AP: ${c.ap} | Vel: ${formatSpeed(c.speed)} | Res: ${c.durability}
-- Transformaciones: ${formatForms(c.forms)}
-${formatArsenal(c)}`).join('\n');
+        const membersText = (tm.members || []).map((c, i) => formatFullChar(c, `${tm.name.toUpperCase()}-${i + 1}`)).join('\n');
 
         return `--- ${tm.name.toUpperCase()} (Cohesión: ${syn.cohesion}% - ${syn.synergyTier}) ---
 - BUFFS DE FACCIÓN ACTIVOS: ${syn.buffs.map(b => `${b.icon} ${b.name}: ${b.desc}`).join(' | ') || 'Estándar'}
@@ -303,28 +343,16 @@ ${teamsBlocks}
       const hasBossMinions = bossMinions && bossMinions.length > 0;
       const bossFactionSynergy = hasBossMinions ? calculateSquadSynergy([charA, ...bossMinions]) : null;
 
-      const squadText = teamB.map((c, i) => `
-**[ASALTANTE-${i + 1}] ${c.name} (${c.universe})**
-- Tier: ${c.tier} | AP: ${c.ap} | Vel: ${formatSpeed(c.speed)} | Res: ${c.durability}
-- Transformaciones: ${formatForms(c.forms)}
-${formatArsenal(c)}`).join('\n');
-
-      const bossMinionsText = hasBossMinions ? bossMinions.map((m, i) => `
-**[SUB-JEFE / ESBIRRO DEL BOSS ${i + 1}] ${m.name} (${m.universe})**
-- Rol: Unidad de Asalto / Guardia de Élite del Boss
-- Tier: ${m.tier} | AP: ${m.ap} | Vel: ${formatSpeed(m.speed)} | Res: ${m.durability}
-- Transformaciones: ${formatForms(m.forms)}
-${formatArsenal(m)}`).join('\n') : '';
+      const squadText = teamB.map((c, i) => formatFullChar(c, `ASALTANTE-${i + 1}`)).join('\n');
+      const bossMinionsText = hasBossMinions ? bossMinions.map((m, i) => formatFullChar(m, `SUB-JEFE / ESBIRRO DEL BOSS ${i + 1}`)).join('\n') : '';
+      const bossFullText = formatFullChar(charA, 'JEFE TITÁN SUPREMO');
 
       combatantsSection = `
 ### III. FICHAS DE COMBATE (BOSS RAID ASIMÉTRICO${hasBossMinions ? ` CON ${bossMinions.length} SUB-JEFES ALIADOS` : ''})
 --- JEFE SUPREMO & DOMINIO (ESCALADO RAID: ${bossTierInfo.label} - ${bossTierInfo.badge}) ---
-**[JEFE TITÁN SUPREMO] ${charA.name} (${charA.universe})**
 - MULTIPLICADOR DE AMENAZA BOSS RAID: ${bossMult}x (${bossTierInfo.desc} con ${bossTierInfo.aura})
 - EFECTO ESPECIAL DE RAID: Durabilidad, HP y Attack Potency multiplicados por ${bossMult}x. Resistencia a aturdimiento masivo y capacidad para castigar a toda la escuadra simultáneamente con ataques de área.
-- Tier Base: ${charA.tier} | AP: ${charA.ap} | Vel: ${formatSpeed(charA.speed)} | Res: ${charA.durability}
-- Transformaciones: ${formatForms(charA.forms)}
-${formatArsenal(charA)}
+${bossFullText}
 ${hasBossMinions ? `
 - SINERGIA DE LA FACCIÓN DEL BOSS: Cohesión ${bossFactionSynergy.cohesion}% (${bossFactionSynergy.synergyTier})
 - BUFFS DEL DOMINIO DEL BOSS: ${bossFactionSynergy.buffs.map(b => `${b.icon} ${b.name}`).join(' | ') || 'Aura del Titán'}
@@ -339,54 +367,13 @@ ${bossMinionsText}` : ''}
 ${squadText}
 `;
     } else if (matchMode === 'battle_royale') {
-      const royaleText = battleRoyale.map((c, i) => `
-**[GLADIADOR ${i + 1}] ${c.name} (${c.universe})**
-- Tier: ${c.tier} | AP: ${c.ap} | Vel: ${formatSpeed(c.speed)} | Res: ${c.durability}
-- Transformaciones: ${formatForms(c.forms)}
-${formatArsenal(c)}`).join('\n');
+      const royaleText = battleRoyale.map((c, i) => formatFullChar(c, `GLADIADOR ${i + 1}`)).join('\n');
 
       combatantsSection = `
 ### III. GLADIADORES DEL BATTLE ROYALE (TODOS CONTRA TODOS)
 ${royaleText}
 `;
     } else {
-      const formatFullChar = (char, label) => {
-        const activeFormIdx = char._activeFormIndex ?? 0;
-        const activeForm = char.forms?.[activeFormIdx];
-        const limitIdx = char._formLimitIndex;
-        
-        let activeFormLine = activeForm ? `- Forma Activa Seleccionada: **${activeForm.name}** — ${activeForm.stats}` : '';
-        if (limitIdx !== undefined && limitIdx !== null && char.forms) {
-          activeFormLine += `\n- ⚠️ **RESTRICCIÓN DE TRANSFORMACIÓN (LÍMITE MÁXIMO)**: En esta simulación, ${char.name} NO TIENE PERMITIDO evolucionar ni usar ninguna transformación por encima de **"${char.forms[limitIdx].name}"**. Esta es su forma máxima para este combate por reglas del usuario.`;
-        }
-        
-        const featsList = Array.isArray(char.feats)
-          ? char.feats.map(f => typeof f === 'object' ? (f.desc || f.name || JSON.stringify(f)) : String(f)).join(' || ')
-          : (char.feats || 'Sin hazañas documentadas.');
-        const kiDisplay = char.powerScaling?.scouterKiFormatted || char.powerScaling?.apexKiFormatted || 'Calculado dinámicamente';
-        const featMod = char.powerScaling?.featsStrengthFactor ? `${char.powerScaling.featsStrengthFactor}x Potencia Efectiva` : '1.0x';
-
-        return `
-**[${label}] ${char.name}** (${char.universe || 'Universo Desconocido'})
-- Nivel (Tier): ${char.tier || 'Desconocido'}
-- Nivel de Poder (Ki Scouter / APEX-Ki): **${kiDisplay}**
-- Attack Potency (AP): ${char.ap || 'No especificado'}
-- Velocidad: ${formatSpeed(char.speed || char.speedCombate)}
-- Fuerza Física (Striking & Lifting): ${formatStrength(char.strength)}
-- Durabilidad y Blindaje: ${char.durability || 'Estándar'}
-- Stamina / Reservas: ${char.stamina || 'Estándar'}
-- Battle IQ / Táctica Marcial: ${char.battleIQ || 'Estándar'}
-- Psicología del Personaje: ${char.psychology || 'Sin datos adicionales.'}
-- HaxTags (Habilidades Especiales Conceptuales): ${(char.haxTags || []).join(' | ') || 'Ninguno registrado'}
-- Hazañas Canónicas Comprobadas (Feats): ${featsList}
-- Modificador de Hazañas & Solidez Cinética: ${featMod}
-- Debilidades Explotables Conocidas: ${char.weaknesses || 'Sin debilidades conocidas.'}
-- Transformaciones Disponibles: ${formatForms(char.forms)}
-${activeFormLine}
-- Arsenal y Habilidades Completas:
-${formatArsenal(char)}`;
-      };
-
       combatantsSection = `
 ### III. FICHAS TÉCNICAS RIGUROSAS & ARSENAL DE COMBATE
 ${formatFullChar(charA, 'CONTENDIENTE A')}

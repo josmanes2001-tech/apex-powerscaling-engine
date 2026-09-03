@@ -208,13 +208,13 @@ export function getBaseEnergyFromTier(tierStr = '') {
     return { value: 1.5e7, label: '15.000.000 Ki', joules: '10^26 J' };
   }
   if (low.includes('high 5-b')) {
-    return { value: 2.5e6, label: '2.500.000 Unidades', joules: '10^25 J' };
+    return { value: 250000, label: '250.000 Unidades', joules: '10^25 J' };
   }
   if (low.includes('5-b') || low.includes('planeta')) {
-    return { value: 530000, label: '530.000 Unidades', joules: '10^24 J' };
+    return { value: 45000, label: '45.000 Unidades', joules: '10^24 J' };
   }
   if (low.includes('low 5-b')) {
-    return { value: 120000, label: '120.000 Unidades', joules: '10^23 J' };
+    return { value: 24000, label: '24.000 Unidades', joules: '10^23 J' };
   }
   if (low.includes('5-c') || low.includes('luna') || low.includes('moon')) {
     return { value: 18000, label: '18.000 Unidades', joules: '10^21 J' };
@@ -403,7 +403,17 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   const rawTier = activeForm.tierExact || activeForm.tier || character.physicalTier || character.tierExact || character.tier || '';
   const physTierPart = rawTier.includes('|') ? rawTier.split('|')[0].trim() : rawTier;
   const haxTierPart = rawTier.includes('|') ? rawTier.split('|')[1].trim() : (character.haxTier || null);
-  const baseEnergy = getBaseEnergyFromTier(physTierPart);
+  let baseEnergy = getBaseEnergyFromTier(physTierPart);
+
+  // Si el personaje o forma tiene sourceKi oficial canónico de Dragon Ball, usarlo como valor base auténtico
+  const explicitKi = activeForm.sourceKi || character.sourceKi;
+  if (explicitKi && typeof explicitKi === 'number' && explicitKi > 0) {
+    baseEnergy = {
+      value: explicitKi,
+      label: `${explicitKi.toLocaleString('es-ES')} Unidades (Canónico DB)`,
+      joules: baseEnergy.joules
+    };
+  }
 
   // 2. Modificador de Velocidad
   const speed = getSpeedFactor(character.speed);

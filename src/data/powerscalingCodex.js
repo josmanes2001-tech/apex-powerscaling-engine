@@ -138,21 +138,25 @@ export function calculateFormScaledStats(character, formIndex = 0) {
     const statsText = rawStats.toLowerCase();
     
     // 1. Detect Tier inside form stats
-    const tierMatch = rawStats.match(/(Tier\s*[\w\-\+]+|High\s*[\w\-\+]+|Low\s*[\w\-\+]+)/i);
-    if (tierMatch) {
-      scaledTier = tierMatch[1];
+    if (activeForm.tierExact || activeForm.tier) {
+      scaledTier = activeForm.tierExact || activeForm.tier;
     } else {
-      // Check for level names
-      if (statsText.includes('sistema solar') || statsText.includes('4-b')) scaledTier = 'Tier 4-B';
-      else if (statsText.includes('galáctico') || statsText.includes('galaxia') || statsText.includes('3-c')) scaledTier = 'Tier 3-C';
-      else if (statsText.includes('multigalaxia') || statsText.includes('3-b')) scaledTier = 'Tier 3-B';
-      else if (statsText.includes('universal') || statsText.includes('universo') || statsText.includes('3-a')) scaledTier = 'Tier 3-A';
-      else if (statsText.includes('multiverso') || statsText.includes('2-c') || statsText.includes('2-b')) scaledTier = 'Tier 2-C';
-      else if (statsText.includes('complejo') || statsText.includes('1-c')) scaledTier = 'Tier 1-C';
-      else if (statsText.includes('estrella') || statsText.includes('4-c')) scaledTier = 'Tier 4-C';
-      else if (statsText.includes('planeta') || statsText.includes('5-b') || statsText.includes('5-a')) scaledTier = 'Tier 5-B';
-      else if (statsText.includes('luna') || statsText.includes('5-c')) scaledTier = 'Tier 5-C';
-      else if (statsText.includes('continente') || statsText.includes('6-a')) scaledTier = 'Tier 6-A';
+      const tierMatch = rawStats.match(/(Tier\s*[\w\-\+]+|High\s*[\w\-\+]+|Low\s*[\w\-\+]+)/i);
+      if (tierMatch) {
+        scaledTier = tierMatch[1];
+      } else {
+        // Check for level names strictly (avoiding mere location mentions like 'en el planeta Vampa')
+        if (/\b(?:nivel\s+)?complejo\b|\b1-c\b/i.test(statsText)) scaledTier = 'Tier 1-C';
+        else if (/\b(?:nivel\s+)?multivers(?:al|o)\b|\b2-[abc]\b/i.test(statsText)) scaledTier = 'Tier 2-C';
+        else if (/\b(?:nivel\s+)?univers(?:al|o)\b|\b3-a\b/i.test(statsText)) scaledTier = 'Tier 3-A';
+        else if (/\b(?:nivel\s+)?multigalax(?:ia|ico)\b|\b3-b\b/i.test(statsText)) scaledTier = 'Tier 3-B';
+        else if (/\b(?:nivel\s+)?galax(?:ia|ico)\b|\b3-c\b/i.test(statsText)) scaledTier = 'Tier 3-C';
+        else if (/\b(?:nivel\s+)?(?:sistema\s+solar|multi-solar)\b|\b4-[ab]\b/i.test(statsText)) scaledTier = 'Tier 4-B';
+        else if (/\b(?:nivel\s+)?estrella\b|\b4-c\b/i.test(statsText)) scaledTier = 'Tier 4-C';
+        else if (/\b(?:nivel\s+)?planet(?:ario|a)\b|\b5-[ab]\b/i.test(statsText) && !/en\s+el\s+planeta/i.test(statsText)) scaledTier = 'Tier 5-B';
+        else if (/\b(?:nivel\s+)?lunar?\b|\b5-c\b/i.test(statsText)) scaledTier = 'Tier 5-C';
+        else if (/\b(?:nivel\s+)?continent(?:al|e)\b|\b6-a\b/i.test(statsText)) scaledTier = 'Tier 6-A';
+      }
     }
 
     // 2. Derive AP & Durability

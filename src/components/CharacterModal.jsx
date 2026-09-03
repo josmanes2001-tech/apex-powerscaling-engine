@@ -897,7 +897,7 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                           <span className="text-slate-500 group-open:rotate-90 transition-transform">▶</span>
                         </summary>
                         <div className="mt-2 p-2.5 rounded-lg bg-slate-950/80 border border-emerald-900/30 text-[9.5px] space-y-1 text-slate-300">
-                          <p><span className="text-slate-400">• Energía Base Tier:</span> <span className="text-amber-300 font-bold">{formData.tier || 'Tier 7-B'} ({breakdown.baseEnergyValue === Infinity ? 'Infinito' : breakdown.baseEnergyValue.toLocaleString()} Ki)</span></p>
+                          <p><span className="text-slate-400">• Energía Base Tier:</span> <span className="text-amber-300 font-bold">{formData.sourceKi ? `${formData.sourceKi.toLocaleString('es-ES')} Unidades (Oficial DB)` : `${formData.tier || 'Tier 7-B'} (${breakdown.baseEnergyValue === Infinity ? 'Infinito' : breakdown.baseEnergyValue.toLocaleString()} Ki)`}</span></p>
                           <p><span className="text-slate-400">• Modificador Velocidad:</span> <span className="text-cyan-300">{breakdown.speedLabel}</span></p>
                           <p><span className="text-slate-400">• Modificador Durabilidad:</span> <span className="text-emerald-300">{breakdown.durabilityLabel}</span></p>
                           <p><span className="text-slate-400">• Modificador Hax/Battle IQ:</span> <span className="text-purple-300">{breakdown.haxBiqLabel}</span></p>

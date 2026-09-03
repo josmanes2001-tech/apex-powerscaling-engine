@@ -44,16 +44,16 @@ for (const envFile of envCandidateFiles) {
       const gem = content.match(/GEMINI_API_KEY=([^\r\n]+)/);
       if (or1 && or1[1] && !envOpenRouterKeys.includes(or1[1].trim())) envOpenRouterKeys.push(or1[1].trim());
       if (or2 && or2[1] && !envOpenRouterKeys.includes(or2[1].trim())) envOpenRouterKeys.push(or2[1].trim());
-      if (!envGemini && gem && gem[1] && gem[1].trim().startsWith('AIzaSy')) envGemini = gem[1].trim();
+      if (!envGemini && gem && gem[1] && gem[1].trim().length > 10) envGemini = gem[1].trim();
     }
   } catch (e) {}
 }
 
-// Fallback garantizado de emergencia (codificado para proteger el escaneo de GitHub)
-const SECURE_FALLBACK_KEYS = [
-  'c2stb3ItdjEtOTJmYjhjMDZjOGNhMDlhM2ExYzBlNTRmYzA1NjdmMTc0ZmU1MmRiYWQ5NmNhNGUxZGQxNTAwMTVlYTFiODU4Mg==',
-  'c2stb3ItdjEtZjgwZTA1NTlhY2QwNWQ1NTI3Mzk5ZTBlNTA2NTkwYTVhNjEwM2M3MzBlMjBhYzQzY2EwOTVkNDM4N2ZiNWY5MQ=='
-];
+if (!envGemini) {
+  envGemini = process.env.GEMINI_API_KEY || '';
+}
+
+const SECURE_FALLBACK_KEYS = [];
 
 for (const b64 of SECURE_FALLBACK_KEYS) {
   try {
@@ -79,18 +79,19 @@ export function getNextOpenRouterKey() {
   return key;
 }
 
-// 🚀 Llamada a Google Gemini Oficial Directo
-export function callGeminiDirect(systemPrompt, userPayload, model = 'gemini-3.5-flash-lite') {
-  if (!GEMINI_API_KEY || !GEMINI_API_KEY.startsWith('AIzaSy')) {
+// 🚀 Llamada a Google Gemini Oficial Directo (Google AI Studio API)
+export function callGeminiDirect(systemPrompt, userPayload, model = 'gemini-flash-lite-latest') {
+  if (!GEMINI_API_KEY || GEMINI_API_KEY.length < 10) {
     // Si no hay clave oficial de Google AI Studio, usar Gemini gratuito a traves de OpenRouter
     return callOpenRouterRotated(systemPrompt, userPayload, 'google/gemini-2.0-flash-lite:free');
   }
 
   return new Promise((resolve, reject) => {
-    let resolvedModel = 'gemini-3.5-flash-lite';
+    let resolvedModel = 'gemini-flash-lite-latest';
     if (typeof model === 'string') {
-      if (model.includes('3.6')) resolvedModel = 'gemini-3.6-flash';
-      else if (model.includes('flash')) resolvedModel = 'gemini-3.5-flash-lite';
+      if (model.includes('flash-latest') && !model.includes('lite')) resolvedModel = 'gemini-flash-latest';
+      else if (model.includes('3.6')) resolvedModel = 'gemini-3.6-flash';
+      else if (model.includes('lite') || model.includes('flash-lite')) resolvedModel = 'gemini-flash-lite-latest';
     }
 
     const postData = JSON.stringify({
@@ -168,12 +169,15 @@ export function callOpenRouterRotated(systemPrompt, userPayload, model = 'minima
       attempts++;
 
       let resolvedModel = model;
-      if (model.includes('gemini-flash') || model.includes('gemini-latest') || model.includes('gemini-3.5') || model.includes('gemini-2.5')) {
+      if (model.includes('gemini') && (model.includes('lite') || model.includes('flash-lite'))) {
+        resolvedModel = 'google/gemini-3.5-flash-lite';
+      } else if (model.includes('gemini-flash') || model.includes('gemini-latest')) {
         resolvedModel = '~google/gemini-flash-latest';
       }
 
       const isFreeModel = resolvedModel.includes(':free');
-      const tokenLimit = isFreeModel ? 12288 : 8192;
+      const isLite = resolvedModel.includes('flash-lite');
+      const tokenLimit = isFreeModel ? 12288 : (isLite ? 4096 : 8192);
 
       const postData = JSON.stringify({
         model: resolvedModel,
@@ -253,7 +257,7 @@ export function callOpenRouterRotated(systemPrompt, userPayload, model = 'minima
 }
 
 // 🌓 MODO HÍBRIDO CONJUNTO (Alterna 50% Modelo A y 50% Modelo B lote por lote)
-export async function executeHybridCompletion(systemPrompt, userPayload, modelA = 'nvidia/nemotron-3.5-lightning:free', modelB = 'nvidia/nemotron-3-super-120b-a12b:free') {
+export async function executeHybridCompletion(systemPrompt, userPayload, modelA = 'gemini-flash-lite-latest', modelB = 'nvidia/nemotron-3.5-lightning:free') {
   const isTurnA = (hybridTurn % 2 === 0);
   hybridTurn++;
 
@@ -262,19 +266,36 @@ export async function executeHybridCompletion(systemPrompt, userPayload, modelA 
 
   console.log(`  ⚡ [Turno Híbrido 50/50: ${activeModel}]`);
   try {
+    if (activeModel.includes('gemini') || activeModel.includes('google')) {
+      return await callGeminiDirect(systemPrompt, userPayload, 'gemini-flash-lite-latest');
+    }
     return await callOpenRouterRotated(systemPrompt, userPayload, activeModel);
   } catch (err) {
-    console.warn(`  ⚠️ ${activeModel} saturado (${err.message}). Conmutando al compañero híbrido (${backupModel})...`);
+    console.warn(`  ⚠️ ${activeModel} falló (${err.message}). Conmutando al compañero híbrido (${backupModel})...`);
+    if (backupModel.includes('gemini') || backupModel.includes('google')) {
+      return await callGeminiDirect(systemPrompt, userPayload, 'gemini-flash-lite-latest');
+    }
     return await callOpenRouterRotated(systemPrompt, userPayload, backupModel);
   }
 }
 
 // 🛡️ Llamada Maestra Universal con Auto-Fallback Total
-export async function executeResilientCompletion(systemPrompt, userPayload, preferredModel = 'nvidia/nemotron-3.5-lightning:free') {
+export async function executeResilientCompletion(systemPrompt, userPayload, preferredModel = 'gemini-flash-lite-latest') {
   if (preferredModel.startsWith('hybrid:')) {
     const spec = preferredModel.replace('hybrid:', '');
     const [modelA, modelB] = spec.split('|');
     return await executeHybridCompletion(systemPrompt, userPayload, modelA, modelB || 'nvidia/nemotron-3.5-lightning:free');
+  }
+
+  // 🌐 Si el modelo solicitado es Gemini, usar SIEMPRE la API oficial de Google Gemini Directo
+  if (preferredModel.includes('gemini') || preferredModel.includes('google')) {
+    try {
+      console.log(`  🌐 [Google Gemini API Oficial Directa]: Conectando a generativelanguage.googleapis.com (gemini-flash-lite-latest)...`);
+      return await callGeminiDirect(systemPrompt, userPayload, 'gemini-flash-lite-latest');
+    } catch (geminiErr) {
+      console.warn(`  ⚠️ Google Gemini API Oficial dio error (${geminiErr.message}). Conmutando a OpenRouter...`);
+      return await callOpenRouterRotated(systemPrompt, userPayload, 'nvidia/nemotron-3.5-lightning:free');
+    }
   }
 
   try {

@@ -27,6 +27,7 @@ const TARGET_UNIVERSE = process.argv[3] || 'all';
 const MODEL = process.argv[4] || 'minimax/minimax-m3:free';
 const MAX_LIMIT = process.argv[5] ? parseInt(process.argv[5], 10) : 0;
 const ROUNDS = process.argv[6] !== undefined ? parseInt(process.argv[6], 10) : 1;
+const START_INDEX = process.argv[7] ? Math.max(1, parseInt(process.argv[7], 10)) : 1;
 
 // Optimizacion dinamica de lote para maximizar respuestas y no saturar cuota gratuita
 let BATCH_SIZE = 2;
@@ -143,7 +144,16 @@ Tu misión es transformar cada personaje del lote en una ficha táctica de nivel
         "crossVerseAwareness": "none" // "none" por defecto, "fourth_wall_breaker" para Deadpool, o "multiverse_omnipresent" para Tier 1
       }
 
-13. POLÍTICA DE NO BORRAR Y CAMPOS INMUTABLES:
+13. INTEGRIDAD DE FRANQUICIA, UNIVERSO Y NIVELES DE PODER:
+    - CONSERVACIÓN ESTRICTA DE FRANQUICIA Y UNIVERSO: Mantén intacto el valor de universe y franchise. PROHIBIDO inventar franquicias nuevas o dejar franchise como undefined.
+    - PROHIBICIÓN DE SOURCEKI EN PERSONAJES NO-DRAGON BALL: Solo personajes canónicos del universo Dragon Ball pueden poseer un campo sourceKi numérico. ESTRICTAMENTE PROHIBIDO asignar niveles de unidades o sourceKi a personajes de Baki, Marvel, DC, Hunter x Hunter, Demon Slayer, Jujutsu Kaisen, etc.
+    - ORDEN CANÓNICO ASCENDENTE DE TRANSFORMACIONES: Si un personaje posee transformaciones, DEBEN listarse en estricto orden progresivo de poder ascendente:
+      * Índice 0: Forma Base (apexKiMultiplier: 1.0)
+      * Índice 1: Primera Transformación (ej: SSJ1, Gear 2, etc.)
+      * Índice 2: Segunda Transformación (ej: SSJ2, Gear 3, etc.)
+      * NUNCA coloques una transformación básica después de una superior ni una forma base al final.
+
+14. POLÍTICA DE NO BORRAR Y CAMPOS INMUTABLES:
     - Conserva todo dato previo correcto.
     - PROHIBIDO modificar tierExact, tierRank, powerKey, APEX-Ki, Source Ki o stats numéricas primarias en el motor de simulación.
     - Toda entrada debe incluir "doesChangeTier": false, "doesChangePowerKey": false.
@@ -304,9 +314,15 @@ async function main() {
     console.log(`\n════════════════════════════════════════════════════════════════`);
     console.log(`   ${roundHeader}`);
     console.log(`   📋 ${totalChars} personajes en ${totalBatches} lotes`);
+    if (currentRound === 1 && START_INDEX > 1) {
+      const charAtStart = baseChars[Math.min(START_INDEX - 1, totalChars - 1)]?.name || '';
+      console.log(`   ⏩ Reanudando desde la ficha #${START_INDEX} (${charAtStart})`);
+    }
     console.log(`════════════════════════════════════════════════════════════════\n`);
 
-    for (let i = 0; i < totalChars; i += BATCH_SIZE) {
+    const startFrom = (currentRound === 1 && START_INDEX > 1) ? Math.min(START_INDEX - 1, totalChars - 1) : 0;
+
+    for (let i = startFrom; i < totalChars; i += BATCH_SIZE) {
       const batchStart = Date.now();
       const end = Math.min(i + BATCH_SIZE, totalChars);
       const batch = baseChars.slice(i, end);
@@ -360,10 +376,16 @@ async function main() {
                 p.formsAudited = p.formsAudited.filter(f => {
                   if (!f || !f.name) return false;
                   const lower = f.name.toLowerCase();
-                  if (lower.includes('100% máximo poder')) return false;
+                  if (lower.includes('100% máximo poder') && !lower.includes('freezer') && !lower.includes('roshi') && !lower.includes('toguro')) return false;
                   if (lower.includes('poder desatado / sin contención')) return false;
                   return true;
                 });
+              }
+              // Blindaje de Ki no-Dragon Ball
+              const uLow = (p.universe || '').toLowerCase();
+              if (uLow && !uLow.includes('dragon ball')) {
+                delete p.sourceKi;
+                delete p.sourceKiStatus;
               }
               return p;
             });

@@ -9,6 +9,8 @@ dist/
 .env.local
 .env.*.local
 *.backup.*.js
+*.bak_*
+repeated_bases_report.json
 
 # Logs
 *.log
