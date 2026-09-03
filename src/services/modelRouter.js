@@ -1,4 +1,4 @@
-﻿/**
+/**
  * APEX ENGINE - Intelligent Model Router
  * Sistema de selección y enrutamiento dinámico entre modelos de IA gratuitos
  * Optimiza la asignación según tipo de tarea, complejidad y límites de tokens sin desperdicio.
@@ -89,6 +89,17 @@ export const FREE_MODEL_CATALOG = {
     isFree: true,
     description: 'Cálculo de alta velocidad para fórmulas de Ki, matrices de probabilidad y física de combate.',
     tags: ['math', 'physics', 'scouter', 'simulation', 'benchmarks']
+  },
+  'meta/muse-spark-1.3-contributor:free': {
+    id: 'meta/muse-spark-1.3-contributor:free',
+    name: 'Meta Muse Spark 1.3',
+    provider: 'Meta',
+    category: 'agentic_audit',
+    contextWindow: 1000000,
+    maxOutputTokens: 131072,
+    isFree: true,
+    description: '1M Contexto y 131K Output. Razonamiento agéntico holístico para auditorías masivas de 4 pjs por lote, combos y counterplay.',
+    tags: ['audit', 'agentic', 'long-context', 'team-combos', 'synergies']
   },
 
   // 4. EMBEDDINGS Y BÚSQUEDA SEMÁNTICA

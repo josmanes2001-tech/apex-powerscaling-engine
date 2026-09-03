@@ -7,6 +7,15 @@ import {
 
 export const GUEST_PROFILES = [
   {
+    id: 'muse_spark',
+    title: '🔥 Meta Muse Spark 1.3 (1M Ctx · Auditoría Agéntica)',
+    desc: 'Meta Muse Spark 1.3 Free (1M Contexto y 131K Output). Razonamiento agéntico holístico para auditoría exhaustiva, combinatorias cruzadas de 4 personajes por lote y análisis táctico de combate.',
+    charModel: 'meta/muse-spark-1.3-contributor:free',
+    simModel: 'meta/muse-spark-1.3-contributor:free',
+    badge: '⭐ 1M AGÉNTICO FREE',
+    border: 'border-fuchsia-500/80 bg-gradient-to-r from-fuchsia-950/40 via-purple-950/30 to-slate-900 text-fuchsia-300 shadow-lg shadow-fuchsia-950/40'
+  },
+  {
     id: 'speed_lite',
     title: '⚡ Gemini Flash Lite Latest (Por Defecto · Gratis)',
     desc: 'Google Gemini Flash Lite Latest. Máxima velocidad de respuesta instantánea para fichas y combate en <0.5s sin API Key.',
@@ -63,6 +72,7 @@ export const GUEST_PROFILES = [
 ];
 
 export const FREE_MODELS_LIST = [
+  { id: 'meta/muse-spark-1.3-contributor:free', name: '🔥 Meta Muse Spark 1.3 Free (1M Ctx · 131K Out · Auditoría Agéntica)' },
   { id: 'google/gemini-2.0-flash-lite:free', name: '⚡ Gemini 2.0 Flash Lite (Ultrarrápido y Preciso)' },
   { id: 'poolside/laguna-s-2.1:free', name: '🏆 Poolside Laguna S 2.1 (118B MoE · Agente de Código & Lógica)' },
   { id: 'cohere/north-mini-code:free', name: '⚡ Cohere North Mini Code (256K Ctx · Fichas Técnicas JSON)' },
@@ -90,6 +100,7 @@ export const AI_PRESETS = {
     { id: 'Mistral-Large-2407', name: 'Mistral Large 2407 (Powerscaling Complejo)' }
   ],
   openrouter: [
+    { id: 'meta/muse-spark-1.3-contributor:free', name: '🔥 Meta Muse Spark 1.3 [GRATIS - 1M Ctx / 131K Output]' },
     { id: 'google/gemini-2.0-flash-lite:free', name: '⚡ Google Gemini 2.0 Flash Lite [GRATIS]' },
     { id: 'poolside/laguna-s-2.1:free', name: '🏆 Poolside Laguna S 2.1 [GRATIS - 118B MoE]' },
     { id: 'cohere/north-mini-code:free', name: '⚡ Cohere North Mini Code [GRATIS - 256K Ctx]' },
