@@ -1,43 +1,65 @@
-# ⚡ APEX Power Scaling Engine — Reglas de Arquitectura & Código
+# ⚡ APEX Power Scaling Engine — Constitución Canónica, Arquitectura & DevOps
 
-Este documento rige para todos los agentes y desarrolladores que trabajen en este repositorio.
+Este documento rige como la **Norma Suprema de Arquitectura, Lore Canónico y DevOps** para todos los agentes, desarrolladores y herramientas que operan en este repositorio.
 
-## 1. Arquitectura del Motor
-- **Resolutor Único (`src/lib/combatStateResolver.js`)**:
-  - Toda forma, transformación, fusión o estado debe resolverse exclusivamente mediante `resolveCombatState(character, stateId, scenario)`.
-  - Prioridad de cálculo:
-    1. Tier propio de la forma $\rightarrow$ recalcula APEX-Ki desde el nuevo Tier.
-    2. Multiplicador de forma por alias en `src/data/formScalingConfig.js`.
-    3. Multiplicador textual o `stats` de la forma.
-- **Configuración de Multiplicadores (`src/data/formScalingConfig.js`)**:
-  - Contiene los multiplicadores por universo (`dragon-ball`, `baki`, `one-piece`, `opm`, etc.).
-  - Aliases exactos normalizados.
-- **Formateador y Escala (`src/lib/apexTierSystem.js`)**:
-  - Rangos logarítmicos de Ki: `getBaseApexKiLog10(tier, qualityScore)`.
-  - Formato legible: `formatApexKiFromLog10()` (`K`, `M`, `B`, `T`, `Qd`, `Qn`, `Sx`, `Sp`, `Oc`, `Nn`, `Dc`, etc.).
+---
 
-## 2. Restricciones Críticas
-- ❌ **NUNCA usar `BigInt`** en el runtime ni en cálculos de Ki/stats.
-- ❌ **NUNCA usar `Infinity` o `NaN`**; siempre retornar valores finitos numéricos y cadenas seguras.
-- ❌ **NUNCA usar `fallback 8`** (`sourceKi || 8`, `tier[0] || 8`).
-- ❌ **NO renderizar objetos en JSX**: cualquier campo de estadísticas como `form.stats` o `character.ap` puede ser un objeto o una cadena; siempre renderizarlo defensivamente: `typeof stats === 'object' ? (stats.ap || Object.values(stats).join(' | ')) : stats`.
+## 🏛️ PARTE 1: LAS 6 REGLAS DE ORO CANÓNICAS DE LA FICHA PERFECTA
 
-## 3. Reglas de Oro Canónicas de Roster y Formas
-- **Exactamente UNA SOLA Forma Base por Ficha**:
-  - Toda ficha DEBE tener su Forma Base en el índice 0 del array `forms` con `apexKiMultiplier: 1.0`.
-  - NUNCA duplicar la forma base ni crear formas artificiales como "100% Máximo Poder" o "Poder Desatado" en personajes con transformaciones reales (Goku, Vegeta, etc.).
-- **Orden Ascendente Estricto de Transformaciones**:
-  - Orden cronológico/potencial: Base (1.0x) -> Técnica Menor -> SSJ1 -> SSJ2 -> SSJ3 -> Formas Divinas.
-  - Toda forma debe tener `apexKiMultiplier`, `tier` escalado, `staminaDrain` numérico y `stats` descriptivas.
-- **Prohibición de Ki de Dragon Ball en otros Universos**:
-  - `sourceKi` SOLO está permitido en personajes canónicos de Dragon Ball con registros oficiales del Daizenshuu. Personajes de Marvel, DC, Baki, HxH, etc. NUNCA deben tener `sourceKi`.
-- **Cero Números de Punto Flotante Raros**:
-  - Prohibidos artefactos como `82500000000000020`. Redondear siempre a cifras significativas limpias.
-- **16 Franquicias Oficiales Inmutables**:
-  - Mantener siempre agrupado el roster dentro de las 16 franquicias oficiales sin valores `undefined`.
+### 1. Regla de Oro de Formas (Forma Base Obligatoria en Índice 0)
+- Toda ficha **DEBE** tener su Forma Base en el índice `0` del array `forms` con:
+  - `apexKiMultiplier: 1.0`
+  - `staminaDrain: 0`
+  - `tier` base correspondiente.
+- Si el personaje ya posee una forma base con nombre específico de saga (ej: *"Son Goku (Estado Base / Más de 8.000)"*, *"Piccolo Jr. Base"*, etc.), **CONSERVA ESA FORMA**. NUNCA crees una segunda forma llamada *"Estado Base"* genérica.
+- **NUNCA sitúes una Forma Base después de una transformación.**
+- **Prohibición Absoluta de Formas Artificiales**: Prohibido inventar formas como *"Estado Base (100% Máximo Poder)"*, *"Poder Desatado"*, *"Sin Contención"* o similares en personajes que poseen transformaciones reales (Goku, Vegeta, Gohan, Naruto, Ichigo). Solo se permite el 100% si es una transformación muscular canónica de autor (ej: Freezer 100%, Muten Roshi Máximo Poder, Younger Toguro 100%).
 
-## 4. Estándar Dorado APEX: Especificación Maestra de Ficha Completa
-Toda ficha de personaje en APEX Power Scaling debe estructurarse con los siguientes componentes esenciales:
+### 2. Orden Ascendente Estricto de Transformaciones
+- Las transformaciones en `forms` deben ordenarse estrictamente de menor a mayor multiplicador:
+  $$\text{Base (1.0x)} \rightarrow \text{Técnicas Menores (Kaio-ken, Gear 2)} \rightarrow \text{SSJ1 (50x)} \rightarrow \text{SSJ2 (100x)} \rightarrow \text{SSJ3 (400x)} \rightarrow \text{Formas Divinas}$$
+- Toda transformación debe poseer: `id`, `name`, `apexKiMultiplier` numérico, `tier` escalado correlativo, `staminaDrain` por segundo y `stats` descriptivas.
+
+### 3. Blindaje de Ki, Niveles de Poder y Cero Niveles Planos Genéricos
+- **`sourceKi` (unidades numéricas de Scouter del Daizenshuu)**: SOLO está permitido en personajes canónicos de Dragon Ball (ej: Goku 8.000, Vegeta 18.000, Freezer 530.000).
+- **Estrictamente Prohibido** asignar `sourceKi` a personajes ajenos a Dragon Ball (Marvel, DC, Jujutsu Kaisen, Demon Slayer, Baki, Hunter x Hunter, etc.). En ellos solo rige el sistema `tier` y `numericStats.apexKi`.
+- **Cero Artefactos Flotantes**: Prohibidos números como `82500000000000020`. Redondear siempre a cifras significativas limpias (ej: `82.500.000.000`).
+- **Prohibición Absoluta de Niveles Planos / Clones Estáticos**: Queda terminantemente prohibido asignar números genéricos sin contexto como `800 Unidades` o `5.50 Mil Millones` a personajes de un mismo Tier. Cada combatiente debe calcular su APEX-Ki y Scouter Ki mediante la **Fórmula Contextual Continua** y su **Firma Determinística Única** (`getCharacterSignatureVariance`), reflejando su velocidad real, durabilidad, intelecto táctico y hazañas.
+
+### 4. Aislamiento Biológico y Cero Contaminación de Lore
+- Solo los Saiyajins legítimos reciben la pasiva `Zenkai` y cola de mono.
+- Solo Cell y bio-androides poseen absorción de biomasa celular.
+- Solo hechiceros y espíritus malditos de Jujutsu Kaisen gestionan Energía Maldita y Expansión de Dominio.
+- Solo cazadores de Hunter x Hunter usan Nen y condiciones de juramento.
+- Solo usuarios de JoJo's Bizarre Adventure manifiestan Stands.
+
+### 5. Las 16 Franquicias Oficiales Inmutables
+El campo `franchise` debe pertenecer obligatoriamente a una de estas 16:
+1. `Dragon Ball`
+2. `Jujutsu Kaisen`
+3. `Demon Slayer (Kimetsu no Yaiba)`
+4. `Chainsaw Man`
+5. `Hunter x Hunter`
+6. `JoJo's Bizarre Adventure`
+7. `One Punch Man`
+8. `My Hero Academia`
+9. `Baki the Grappler`
+10. `Record of Ragnarok`
+11. `Marvel Comics`
+12. `DC Comics`
+13. `Invincible`
+14. `The Boys`
+15. `Spy x Family`
+16. `APEX Original / Híbrido`
+
+### 6. Dinamismo Total del Roster
+- **NUNCA** asumas un número estático de personajes (ej: 769 u 821). Procesa siempre sobre `characters.length` (la totalidad del roster activo dinámico).
+
+---
+
+## 📜 PARTE 2: ESQUEMA JSON DEL ESTÁNDAR DORADO APEX
+
+Toda ficha enriquecida debe estructurarse con estos campos obligatorios:
 
 ```json
 {
@@ -47,16 +69,16 @@ Toda ficha de personaje en APEX Power Scaling debe estructurarse con los siguien
   "universe": "Universo Canónico Específico",
   "franchise": "Una de las 16 Franquicias Oficiales",
   "tier": "Tier Principal (ej: 5-A | 2-C Hax)",
-  "physicalTier": "Tier de Fuerza/Resistencia Físicas",
-  "haxTier": "Tier de Habilidades Especiales/Trascendentes",
-  "ap": "Potencia de Ataque descriptiva y en julios/TNT",
+  "physicalTier": "Tier Físico (Fuerza/Resistencia)",
+  "haxTier": "Tier de Hax y Técnicas Especiales",
+  "ap": "Potencia de Ataque descriptiva y escala de energía",
   "range": "Alcance efectivo de combate",
   "speed": "Velocidad de combate y reacción (ej: FTL+, Mach 50)",
-  "strength": "Fuerza de elevación e impacto",
-  "durability": "Resistencia a impactos y daño energético",
-  "stamina": "Reserva de resistencia física/energética",
-  "battleIQ": "Inteligencia táctica de combate (ej: Genio, Prodigio)",
-  "sourceKi": 18000, // SOLO en Dragon Ball con registro oficial; omitir en otros
+  "strength": "Fuerza de elevación e impacto físico",
+  "durability": "Resistencia corporal a impactos y energía",
+  "stamina": "Reserva energética y tolerancia al dolor",
+  "battleIQ": "Inteligencia táctica de combate",
+  "sourceKi": 18000,
   "numericStats": {
     "apexKi": 18000,
     "scouterKi": 18000,
@@ -69,56 +91,86 @@ Toda ficha de personaje en APEX Power Scaling debe estructurarse con los siguien
       "apexKiMultiplier": 1.0,
       "staminaDrain": 0,
       "tier": "Tier Base",
-      "stats": "Descripción de límites y capacidades."
+      "stats": "Descripción de capacidades y límites iniciales."
     },
     {
       "id": "transformacion-id",
-      "name": "Nombre Transformación",
+      "name": "Nombre Transformación Canónica",
       "apexKiMultiplier": 50.0,
       "staminaDrain": 20,
       "tier": "Tier Escalado",
-      "stats": "Incremento de poder y desgaste muscular."
+      "stats": "Aumento exponencial de estadísticas y coste biológico."
     }
   ],
   "arsenal": {
     "basicAttacks": [
-      { "name": "Ataque Básico", "description": "Golpe marcial", "staminaCost": 5 }
+      {
+        "name": "Ataque Básico Marcial",
+        "description": "Golpe rápido o ráfaga menor de hostigamiento.",
+        "staminaCost": 5
+      }
     ],
     "superAttacks": [
-      { "name": "Técnica Especial", "description": "Ataque de firma con carga", "staminaCost": 25, "counterplay": "Esquiva lateral o barrera" }
+      {
+        "name": "Técnica Especial de Firma",
+        "description": "Ataque concentrado con tiempo de carga.",
+        "staminaCost": 25,
+        "counterplay": "Esquiva angular o choque de energía opuesto."
+      }
     ],
     "ultimateAttacks": [
-      { "name": "Técnica Definitiva", "description": "Finisher masivo de alto impacto", "staminaCost": 50, "counterplay": "Interrupción o choque de energía" }
+      {
+        "name": "Técnica Definitiva (Finisher)",
+        "description": "Remate masivo que consume gran parte de la energía.",
+        "staminaCost": 50,
+        "counterplay": "Interrumpir la concentración o barrera absoluta."
+      }
     ],
     "passives": [
-      { "name": "Rasgo Biológico", "description": "Adaptación, Zenkai, regeneración" }
+      {
+        "name": "Rasgo Fisiológico Canónico",
+        "description": "Adaptación, regeneración celular o Zenkai Saiyan."
+      }
     ],
     "specialMechanics": [
-      { "name": "Mecánica Hax", "description": "Sellos, distorsión temporal o espacial" }
+      {
+        "name": "Mecánica Especial / Hax",
+        "description": "Sellos, distorsión espacio-temporal o alteración causal."
+      }
     ],
     "weaknesses": [
-      { "name": "Punto Ciego", "description": "Vulnerabilidad física o psicológica", "counterTags": ["TagVulnerable"] }
+      {
+        "name": "Punto Ciego / Debilidad Crítica",
+        "description": "Vulnerabilidad física, mental o sobrecalentamiento de stamina.",
+        "counterTags": ["StaminaBurn", "Overheat", "Cocky"]
+      }
     ]
   },
   "synergies": [
-    { "targetCharacterId": "id-aliado", "name": "Nombre de Sinergia", "bonus": "Efecto táctico combinado" }
+    {
+      "targetCharacterId": "id-aliado-lore",
+      "name": "Nombre de Sinergia",
+      "bonus": "+20% Precisión en relevos y cobertura táctica."
+    }
   ],
   "teamCombos": [
     {
-      "name": "Nombre del Combo",
-      "partner": "Nombre Aliado",
-      "phase1_opening": "Ataque inicial desestabilizador",
-      "phase2_bridge": "Técnica intermedia de retención o aturdimiento",
-      "phase3_finisher": "Impacto definitivo conjunto letal"
+      "name": "Ataque Combinado de Equipo",
+      "partner": "Nombre del Compañero",
+      "phase1_opening": "Apertura desestabilizadora que rompe la guardia rival.",
+      "phase2_bridge": "Enlace de aturdimiento o retención física.",
+      "phase3_finisher": "Impacto simultáneo devastador inesquivable."
     }
   ],
-  "combatAIPersonality": "Estilo de combate de la IA (Agresivo, Calculador, Contragolpeador)",
-  "environmentalAffinity": "Bonificaciones en terrenos favorables (ej: Gravedad aumentada, Espacio exterior)",
-  "provenFeats": ["Hazaña canónica 1 comprobada con número de capítulo o escena"],
+  "combatAIPersonality": "Estilo de combate (Honorable, Calculador, Agresivo, Berserker, Sádico).",
+  "environmentalAffinity": "Bonificaciones en terrenos favorables (ej: Gravedad x10, Espacio, Noche).",
+  "provenFeats": [
+    "Hazaña canónica comprobada con cita de capítulo de manga o escena de anime."
+  ],
   "combatDialogue": {
-    "intro": ["Frase inicial de combate"],
-    "lowHealth": ["Frase al recibir daño crítico"],
-    "victory": ["Frase tras derrotar al rival"]
+    "intro": ["Frase inicial al comenzar el combate"],
+    "lowHealth": ["Frase de desesperación o determinación al tener vida crítica"],
+    "victory": ["Frase tras noquear al rival"]
   },
   "staminaProfile": {
     "basePool": 100,
@@ -128,10 +180,51 @@ Toda ficha de personaje en APEX Power Scaling debe estructurarse con los siguien
 }
 ```
 
-## 5. Comandos de Verificación & Despliegue
-- **Validador Canónico Integral**: `node src/scripts/rosterCanonicalValidator.js`
-- **Auditoría Nocturna Directa Gemini API**: `node src/scripts/runAutonomousTask.js "full_audit" "all" 1 1000 0 "~google/gemini-flash-lite-latest"`
-- **Pruebas Unitarias**: `node src/scripts/runComprehensiveTests.js`
-- **Verificación de Multiplicadores en Vivo**: `node src/scripts/verifyLiveScaling.js`
-- **Compilación de Producción**: `npm run build`
-- **Despliegue a Vercel Producción**: `npx vercel --prod --yes --token $VERCEL_TOKEN`
+---
+
+## 🛠️ PARTE 3: PROTOCOLO DE VALIDACIÓN CANÓNICA AUTOMÁTICA
+
+Antes de considerar cualquier tarea completada o desplegar a producción:
+
+1. **Ejecutar el Validador Canónico APEX**:
+   ```powershell
+   node src/scripts/rosterCanonicalValidator.js
+   ```
+2. **Criterio de Aprobación**:
+   El validador debe reportar:
+   ```text
+   ✨ Roster 100% canónico, ordenado y sin anomalías detectadas (0 errores).
+   ```
+   Si detecta discrepancias, las auto-corrige y guarda en `characters.js` automáticamente.
+
+---
+
+## 🚀 PARTE 4: PROTOCOLO DE DEVOPS Y DESPLIEGUE DIRECTO A VERCEL
+
+### 1. Variables y Credenciales de Producción
+- **Token Oficial Vercel**: `$VERCEL_TOKEN`
+- **URL Producción Oficial**: `https://apex-engine-six.vercel.app/`
+
+### 2. Comando Obligatorio de Despliegue Directo (CLI)
+En este proyecto **el despliegue se hace directo mediante el CLI de Vercel**:
+```powershell
+npx vercel --prod --yes --token $VERCEL_TOKEN
+```
+*(O pasando el token oficial directamente en el terminal local)*.
+- `--prod`: Promueve de inmediato a producción y actualiza el alias principal.
+- `--yes`: Omite cualquier confirmación interactiva.
+
+### 3. Sincronización Multi-Disco Previa
+Antes del despliegue, asegurar que los archivos del roster estén sincronizados en las rutas de trabajo correspondientes:
+```powershell
+if (Test-Path "D:\Vault Obsidian\apex-powerscaling-engine") {
+    # Repositorio activo verificado
+}
+```
+
+### 4. Verificación Post-Despliegue (Health Check)
+Tras completar el despliegue, comprobar el estado HTTP del servidor:
+```powershell
+Invoke-WebRequest -Uri "https://apex-engine-six.vercel.app" -Method Head | Select-Object StatusCode, StatusDescription
+```
+El resultado debe ser estrictamente: **`StatusCode: 200`**.

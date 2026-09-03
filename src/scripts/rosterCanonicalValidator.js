@@ -13,6 +13,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { getCharacterSignatureVariance, getPowerLevelFormulaBreakdown } from '../services/scouterEngine.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '../../');
@@ -132,20 +133,42 @@ export function validateAndAutoCorrectRoster(characters) {
       correctionsCount++;
     }
 
-    // 3. Limpieza de números flotantes raros
-    const ki = c.numericStats?.apexKi || c.powerScaling?.apexKi || 0;
-    const originalKiStr = ki.toString();
-    const cleanKi = cleanSignificantDigits(ki);
-    if (cleanKi.toString() !== originalKiStr) {
-      if (!c.numericStats) c.numericStats = {};
-      c.numericStats.apexKi = cleanKi;
-      c.numericStats.scouterKi = cleanKi;
-      c.numericStats.powerLevel = cleanKi;
-      if (c.powerScaling) {
-        c.powerScaling.apexKi = cleanKi;
-        c.powerScaling.scouterKi = cleanKi;
-      }
+    // 3. Blindaje de Ki numérico contextual (Prohibición estricta de niveles planos como 800 o 5.5e9)
+    if (!c.numericStats || typeof c.numericStats !== 'object') {
+      c.numericStats = {};
+    }
+    const currentKi = c.numericStats.apexKi || 0;
+    const isGenericFlat = (currentKi === 800 || currentKi === 5.5e9 || currentKi === 60000000 || currentKi <= 0);
+    if (isGenericFlat && c.franchise !== 'Dragon Ball') {
+      const bd = getPowerLevelFormulaBreakdown(c, 'base');
+      const authenticKi = cleanSignificantDigits(bd?.finalPowerLevel || 1500);
+      c.numericStats.apexKi = authenticKi;
+      c.numericStats.scouterKi = authenticKi;
+      c.numericStats.powerLevel = authenticKi;
       correctionsCount++;
+    } else {
+      const cleanKi = cleanSignificantDigits(currentKi);
+      if (cleanKi !== currentKi) {
+        c.numericStats.apexKi = cleanKi;
+        c.numericStats.scouterKi = cleanKi;
+        c.numericStats.powerLevel = cleanKi;
+        correctionsCount++;
+      }
+    }
+
+    // 3.5. Aislamiento Biológico y Cero Contaminación de Lore
+    if (c.arsenal && Array.isArray(c.arsenal.passives)) {
+      const isSaiyan = (c.franchise === 'Dragon Ball') && (
+        /saiyajin|saiyan|goku|vegeta|gohan|broly|raditz|nappa|bardock|goten|trunks|cumber|shallot|giblet|kakarotto/i.test(c.name + ' ' + (c.alias || ''))
+      );
+      if (!isSaiyan) {
+        const initialLen = c.arsenal.passives.length;
+        c.arsenal.passives = c.arsenal.passives.filter(p => {
+          const pName = (typeof p === 'object' ? (p.name || p.desc || '') : String(p)).toLowerCase();
+          return !pName.includes('zenkai') && !pName.includes('cola saiyan');
+        });
+        if (c.arsenal.passives.length !== initialLen) correctionsCount++;
+      }
     }
 
     // 4. Formas: Asegurar array
