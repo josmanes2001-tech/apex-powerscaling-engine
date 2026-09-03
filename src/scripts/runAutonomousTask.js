@@ -57,23 +57,24 @@ SYSTEM_PROMPT_MASTER += `\n\nTu misión es transformar cada personaje del lote e
 
 2. AUDITORÍA EXHAUSTIVA DE FORMAS Y REGLA DE ORO CANÓNICA:
    - REGLA DE ORO: EXACTAMENTE UNA SOLA FORMA BASE POR PERSONAJE:
-     * Toda ficha DEBE tener su Forma Base en el índice 0 del array forms.
+     * Toda ficha DEBE tener su Forma Base en el índice 0 del array forms con apexKiMultiplier: 1.0 y staminaDrain: 0.
      * Si el personaje ya tiene una forma base con nombre específico de saga (ej: "Goku Mini Estado Base", "Son Goku (Estado Base Saga Cell)", "Piccolo Base", etc.), CONSERVA Y AUDITA ESA MISMA FORMA. NUNCA insertes una segunda forma llamada "Estado Base" genérica.
      * NUNCA pongas una forma base después de una transformación.
+   - CLASIFICACIÓN RIGUROSA EN 4 CATEGORÍAS ONTOLÓGICAS:
+     * "transformation": Cambio biológico o fisiológico sostenido que escala apexKi y Tier (SSJ1-4, God, Blue, Beast, Orange Piccolo, Gear 4/5, Bankai, Resurrección).
+     * "state_amp": Técnica de amplificación o sobreesfuerzo temporal que escala burstKi con daño de retroceso/recoil (Kaio-ken x1-x20, Espalda del Demonio de Baki/Yujiro, 100% Deku).
+     * "hax_mode": Expansión de Dominio, barrera o estado conceptual. NO infla la fuerza física de Scouter; otorga acierto seguro o control espacial y lleva doesNotIncrease: ["baseAP", "durabilityKi"].
+     * "degradation_state": Estado de fatiga, veneno, enfermedad o compresión dimensional (Goku virus corazón, Daima Mini compresión ÷10, All Might forma débil).
    - PROHIBICIÓN ABSOLUTA DE FORMAS ESPURIAS Y MODOS INVENTADOS:
-     * ESTRICTAMENTE PROHIBIDO crear formas artificiales llamadas "Estado Base (100% Máximo Poder)", "Estado Base (Poder Desatado / Sin Contención)", "Forma Base Alternativa" o similares en personajes que ya cuentan con transformaciones reales (como Goku, Vegeta, Gohan, Ichigo, Naruto, etc.).
-     * SOLO personajes cuya transformación canónica de autor sea explícitamente el 100% muscular (ej. Freezer Forma Final 100%, Maestro Roshi Máximo Poder, Toguro 100%) pueden llevar esa forma. En los demás, el 100% de su capacidad base ya está en su forma base normal.
-     * CERO formas duplicadas o con nombres redundantes.
-   - PARA CADA TRANSFORMACIÓN CANÓNICA REAL:
-     * id y name descriptivo canónico oficial (ej: "Super Saiyan 1", "Super Saiyan 2", "Gear Second", "Bankai").
-     * stats textuales y apexKiMultiplier verificado (ej: SSJ1=50, SSJ2=100, SSJ3=400, Kaio-ken x2=2, etc.).
-     * activationCondition (trigger de entrada exacto).
-     * staminaDrain (consumo por turno o coste de mantenimiento).
-     * grantedTags y suppressedTags.
-     * grantedAbilities (técnicas exclusivas de la forma).
-     * limitations y drawbacks (desgaste muscular, fatiga, tiempo límite).
-     * exitCondition y counterplay (reversión forzada o voluntaria).
-     * canonStatus: "source_backed" para canónicas oficiales, "apex_custom" solo para What-Ifs debidamente etiquetados.
+     * ESTRICTAMENTE PROHIBIDO crear formas artificiales llamadas "Estado Base (100% Máximo Poder)", "Estado Base (Poder Desatado / Sin Contención)" o similares en personajes que ya cuentan con transformaciones reales.
+     * SOLO personajes cuya transformación canónica de autor sea explícitamente el 100% muscular (ej. Freezer Forma Final 100%, Maestro Roshi Máximo Poder, Toguro 100%) pueden llevar esa forma.
+   - PARA CADA FORMA DECLARAR:
+     * id, name canónico descriptivo y category ("transformation" | "state_amp" | "hax_mode" | "degradation_state").
+     * apexKiMultiplier (1.0 para base, factor correspondiente para superiores, <1.0 para debuffs).
+     * tier y tierExact escalado según el nuevo nivel de potencia.
+     * activationCondition, durationLimit, staminaDrain (gasto por turno) y drawbacks (fatiga, daño muscular, tiempo).
+     * combatModifiers: { initiative, hitChance, dodgeChance, defensePenetration }.
+     * canonStatus: "source_backed" para canónicas oficiales, "apex_custom" solo para What-Ifs.
 
 3. ARSENAL TÁCTICO CON FÍSICA DE STAMINA:
    - basicAttacks: Golpes marciales (coste 3-8 stamina, daño contundente/cortante).
@@ -93,10 +94,23 @@ SYSTEM_PROMPT_MASTER += `\n\nTu misión es transformar cada personaje del lote e
      * partialFailureResult: Qué ocurre si el rival interrumpe o esquiva un paso intermedio.
      * canonStatus: "source_backed" o "apex_custom".
 
-5. NIVELES DE PODER, CALIBRACIÓN APEX-KI Y MULTIPLICADORES:
-   - Rigor en apexKiMultiplier: Cada transformación DEBE tener su multiplicador canónico verificado (ej. Kaio-ken x2=2, Kaio-ken x10=10, Kaio-ken x20=20, SSJ1=50, SSJ2=100, SSJ3=400, Oozaru=10, Espalda Demonio Baki=2.5, Gear 2nd=5, etc.). Si faltaba o estaba en 1 erróneamente, se corrige.
-   - Rigor en Descripciones de Potencia y Feats (AP): Audita que las descripciones de potencia destructiva (Joules, Megatones, escala planetaria o cósmica) correspondan rigurosamente al Tier exacto del personaje.
-   - Roleplay y Comportamiento Táctico: Modela el estilo de combate y la gestión de energía con fidelidad matemática al nivel de poder del personaje.
+5. NIVELES DE PODER UNIVERSALES (APEX-Ki, BURST-KI, DURABILIDAD Y HAX):
+   - APEX-Ki UNIVERSAL DE COMBATE: Es el índice interno de balance para el Scouter y comparativas cross-verse.
+     * NO es Ki místico para personajes fuera de Dragon Ball (en ellos sourceKi es estrictamente null).
+     * CERO FALSA PRECISIÓN: Usa rangos [min, max] y centros redondeados (ej: [700, 1100] con apexKi: 950 para Spider-Man; [4200, 5500] con apexKi: 4800 para Sukuna; [2200, 3200] con apexKi: 2800 para Homelander; [750, 950] con apexKi: 850 para Baki).
+     * burstKi: Pico temporal mediante técnica cargada, sacrificio o ultimate (siempre >= apexKi).
+     * durabilityKi: Equivalencia de resistencia física/energética sostenida.
+     * confidence: "high", "medium" o "low" según la consistencia de las hazañas documentadas.
+   - LA VELOCIDAD NO INFLA EL AP FÍSICO NI EL APEX-KI:
+     * NUNCA multipliques el Ki base porque un personaje sea hipersónico o FTL.
+     * La velocidad se destina a combatModifiers: { initiative, dodgeChance, hitChance, comboWindow }.
+   - EL HAX NO AUMENTA LA FUERZA FÍSICA BRUTA:
+     * Defensas espaciales (Infinity), técnicas de sellado, ataques conceptuales o dominio se declaran en hax[] con doesNotIncrease: ["baseAP", "liftingStrength", "durabilityKi"].
+   - DIRECTIVAS ESPECIALIZADAS POR MODELO DE INTELIGENCIA ARTIFICIAL:
+     * Meta Muse Spark 1.3: Aplica tu razonamiento holístico agéntico de 1M de tokens para interconectar los 4 personajes del lote, calibrando sus debilidades, counterplay de stamina y combos cruzados sin resumir.
+     * Google Gemini Flash Lite: Garantiza consistencia matemática rigurosa, JSON nativo estricto y cero truncamiento.
+     * NVIDIA Nemotron: Valida la física de impacto, límites cinéticos y rigor de combate táctico.
+     * MiniMax M3: Imprime excelencia narrativa en citas de combate (combatDialogue) y fidelidad de lore en español neutro.
 
 6. MATRIZ DE RESISTENCIAS A HAX (haxResistances):
    - existenceErasure (0-100): Resistencia a borrado existencial o Hakai.
@@ -153,19 +167,38 @@ SYSTEM_PROMPT_MASTER += `\n\nTu misión es transformar cada personaje del lote e
         "crossVerseAwareness": "none" // "none" por defecto, "fourth_wall_breaker" para Deadpool, o "multiverse_omnipresent" para Tier 1
       }
 
-13. INTEGRIDAD DE FRANQUICIA, UNIVERSO Y NIVELES DE PODER:
+13. INTEGRIDAD DE FRANQUICIA, UNIVERSO Y NIVELES DE PODER (ESCALA OFICIAL APEX):
     - CONSERVACIÓN ESTRICTA DE FRANQUICIA Y UNIVERSO: Mantén intacto el valor de universe y franchise. PROHIBIDO inventar franquicias nuevas o dejar franchise como undefined.
     - PROHIBICIÓN DE SOURCEKI EN PERSONAJES NO-DRAGON BALL: Solo personajes canónicos del universo Dragon Ball pueden poseer un campo sourceKi numérico. ESTRICTAMENTE PROHIBIDO asignar niveles de unidades o sourceKi a personajes de Baki, Marvel, DC, Hunter x Hunter, Demon Slayer, Jujutsu Kaisen, etc.
-    - ORDEN CANÓNICO ASCENDENTE DE TRANSFORMACIONES: Si un personaje posee transformaciones, DEBEN listarse en estricto orden progresivo de poder ascendente:
-      * Índice 0: Forma Base (apexKiMultiplier: 1.0)
-      * Índice 1: Primera Transformación (ej: SSJ1, Gear 2, etc.)
-      * Índice 2: Segunda Transformación (ej: SSJ2, Gear 3, etc.)
+    - CALIBRACIÓN OFICIAL DE MULTIPLICADORES Y SOURCEKI EN DRAGON BALL:
+      * Base = 1.0x (sourceKi inicial de saga)
+      * Kaio-ken x1: 1.5x | x2: 2x | x3: 3x | x4: 4x | x10: 10x | x20: 20x | Oozaru: 10x
+      * False Super Saiyan (FSSJ): 25x
+      * Super Saiyan (SSJ1): 50x | SSJ Grade 2: 62.5x | SSJ Grade 3: 100x (-75% velocidad) | SSJ Mastered: 50x
+      * Super Saiyan 2: 100x | Super Saiyan 3: 400x | Super Saiyan 4 (GT): 4000x
+      * Saiyan Más Allá de Dios: 3200x | Super Saiyan God (SSG): 6400x | Super Saiyan Blue (SSB): 7700x
+      * SSB Kaio-ken x20: 84,700x | SSB Evolution (SSBE): 77,000x | SSJ Rage: 3700x
+      * Ultra Instinto Signo: 150,000x | Ultra Instinto Perfecto (MUI): 300,000x
+      * Gohan Místico/Ultimate: 800x | Gohan Beast: 1,000,000x | Orange Piccolo: 10,000x
+      * SSJ Tipo C: 200x | LSSJ (Legendario): 2000x | Broly Ikari: 35x | Golden Freezer: 100,000x
+      * Fusiones Potara: (A+B) * 1120 (Vegetto) | Metamoru: (A+B) * 1000 (Gogeta) | Gotenks: (A+B) * 5.7
+      * Daima Compresión Mini: ÷10 sobre el poder adulto
+    - ORDEN CANÓNICO ASCENDENTE DE TRANSFORMACIONES Y CATEGORÍAS:
+      * Índice 0: OBLIGATORIAMENTE Forma Base (id: "base", category: "base", apexKiMultiplier: 1.0, staminaDrain: 0).
+      * Índice 1+: Transformaciones reales (category: "transformation"), estados de sobreesfuerzo (category: "state_amp"), expansiones de dominio (category: "hax_mode") o debuffs (category: "degradation_state").
       * NUNCA coloques una transformación básica después de una superior ni una forma base al final.
+      * NUNCA marques la forma base con category: "transformation".
 
-14. POLÍTICA DE NO BORRAR Y CAMPOS INMUTABLES:
-    - Conserva todo dato previo correcto.
-    - PROHIBIDO modificar tierExact, tierRank, powerKey, APEX-Ki, Source Ki o stats numéricas primarias en el motor de simulación.
+14. POLÍTICA DE INMUTABILIDAD Y BLINDAJE DE NIVELES DE PODER:
+    - Conserva intactos todos los datos de combate calibrados.
+    - PROHIBIDO modificar, inflar o sobreescribir apexKi, apexKiRange, burstKi, durabilityKi, sourceKi o tierExact en el motor.
     - Toda entrada debe incluir "doesChangeTier": false, "doesChangePowerKey": false.
+    - En personajes no-Dragon Ball: sourceKi debe ser siempre null y sourceType: "cross_verse_estimate".
+    - Para nuevas formas añadidas:
+      * "transformation": escala apexKi proporcionalmente (apexKi_base * mult).
+      * "state_amp": eleva temporalmente burstKi con daño de retroceso/recoil y gasto de stamina acelerado.
+      * "hax_mode": no infla la fuerza física de Scouter y declara doesNotIncrease: ["apexKi", "durabilityKi", "liftingStrength"].
+      * "degradation_state": apexKiMultiplier < 1.0 y reduce la stamina máxima.
 
 SALIDA ESTRICTA: Devuelve EXCLUSIVAMENTE un objeto JSON válido con esquema:
 {
@@ -379,9 +412,10 @@ async function main() {
           if (parsed.results || parsed.integrationPatch) {
             let newPatches = parsed.integrationPatch || [];
 
-            // 🛡️ Filtro de seguridad en caliente: purgar cualquier forma espuria antes de guardar el parche
+            // 🛡️ Filtro de seguridad en caliente: purgar formas espurias y blindar formas y Ki
             newPatches = newPatches.map(p => {
               if (p && p.formsAudited && Array.isArray(p.formsAudited)) {
+                // 1. Filtrar formas espurias de 100% inventadas
                 p.formsAudited = p.formsAudited.filter(f => {
                   if (!f || !f.name) return false;
                   const lower = f.name.toLowerCase();
@@ -389,13 +423,29 @@ async function main() {
                   if (lower.includes('poder desatado / sin contención')) return false;
                   return true;
                 });
+
+                // 2. Garantizar que la forma en índice 0 sea siempre category: 'base'
+                if (p.formsAudited.length > 0) {
+                  p.formsAudited[0].id = 'base';
+                  p.formsAudited[0].category = 'base';
+                  p.formsAudited[0].apexKiMultiplier = 1.0;
+                  p.formsAudited[0].staminaDrain = 0;
+                }
               }
-              // Blindaje de Ki no-Dragon Ball
+
+              // 3. Blindaje de Ki no-Dragon Ball
               const uLow = (p.universe || '').toLowerCase();
               if (uLow && !uLow.includes('dragon ball')) {
                 delete p.sourceKi;
                 delete p.sourceKiStatus;
+                p.sourceType = 'cross_verse_estimate';
               }
+
+              // 4. Prohibir sobreescritura de numericStats principales
+              delete p.apexKi;
+              delete p.numericStats;
+              delete p.tierExact;
+
               return p;
             });
 

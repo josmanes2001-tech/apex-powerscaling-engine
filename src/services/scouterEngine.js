@@ -168,14 +168,14 @@ export function getCharacterSignatureVariance(char) {
  * Integra modulación de firma única por personaje para eliminar valores planos por defecto.
  */
 export function getBaseEnergyFromTier(tierStr = '', character = null) {
-  const low = (tierStr || '').toLowerCase();
+  const low = (tierStr || '').toLowerCase().trim();
   const variance = character ? getCharacterSignatureVariance(character) : 1.0;
 
   // Tier 1 & 0: Trascendente
   if (low.includes('1-a') || low.includes('outer') || low.includes('tier 0') || low.includes('boundless')) {
     return { value: Infinity, label: '∞ Trascendente', joules: 'Infinito 1-A' };
   }
-  if (low.includes('1-b') || low.includes('hyper')) {
+  if (low.includes('high 1-b') || low.includes('1-b') || low.includes('hyper')) {
     const val = Math.round(1e24 * variance);
     return { value: val, label: `${val.toExponential(2)} Ki`, joules: '10^24 Joules' };
   }
@@ -187,132 +187,246 @@ export function getBaseEnergyFromTier(tierStr = '', character = null) {
   // Tier 2: Multiversal
   if (low.includes('2-a') || low.includes('multiversal+')) {
     const val = Math.round(5e18 * variance);
-    return { value: val, label: 'Multiversal+', joules: '10^18 Joules' };
+    return { value: val, label: 'Multiversal+ (Countably Infinite)', joules: '10^18 Joules' };
   }
   if (low.includes('2-b') || low.includes('multiversal')) {
-    const val = Math.round(5e16 * variance);
-    return { value: val, label: 'Multiversal', joules: '10^16 Joules' };
+    // 50 Billones a 1500 Billones (Gohan Beast 77B, Gogeta Blue 1.25B)
+    const val = Math.round(75000000000000 * variance);
+    return { value: val, label: 'Multiversal (2-B)', joules: '10^16 Joules' };
   }
-  if (low.includes('2-c') || low.includes('universal+')) {
-    const val = Math.round(1.2e16 * variance);
-    return { value: val, label: 'Universal+', joules: '10^15 Joules' };
+  if (low.includes('2-c') || low.includes('bajo multiverso')) {
+    // 1 Billón a 50 Billones (Beerus 8.2B, Jiren 21B, Goku UI 24.6B, Broly LSSJ 36B)
+    const val = Math.round(14000000000000 * variance);
+    return { value: val, label: 'Bajo Multiverso (2-C)', joules: '10^15 Joules' };
+  }
+  if (low.includes('low 2-c') || low.includes('universal+')) {
+    // 100 Mil Millones a 1 Billón (Super Vegetto SSJ 5B, Goku SSG 524M, Goku SSB 631M)
+    const val = Math.round(500000000000 * variance);
+    return { value: val, label: 'Universal+ 4D (Low 2-C)', joules: '10^14 Joules' };
   }
 
-  // Tier 3: Cósmico / Universal
+  // Tier 3: Cósmico / Universal 3D
+  if (low.includes('high 3-a')) {
+    // 30 Mil Millones a 100 Mil Millones (Goku SSJ3 31.2B, Kid Buu 32B, Gohan Místico 80B, Buuhan 96B)
+    const val = Math.round(45000000000 * variance);
+    return { value: val, label: 'Alto Universo (High 3-A)', joules: 'Infinito 3D' };
+  }
   if (low.includes('3-a') || low.includes('universal')) {
-    const val = Math.round(2.5e13 * variance);
-    return { value: val, label: 'Universal', joules: '2.8 × 10^44 J' };
+    // 5 Mil Millones a 30 Mil Millones (Gohan SSJ2 5.6B, Super Perfect Cell 5.5B, Buu Gordo 20B)
+    const val = Math.round(7500000000 * variance);
+    return { value: val, label: 'Universo Finito (3-A)', joules: '2.8 × 10^44 J' };
   }
   if (low.includes('3-b') || low.includes('multi-galact')) {
-    const val = Math.round(5.4e12 * variance);
-    return { value: val, label: 'Multi-Galáctico', joules: '10^42 J' };
+    // 2.5 Mil Millones a 5 Mil Millones (Goku SSJ Cell 2.7B, Gohan SSJ 2.8B, Cell Perfecto 3.4B)
+    const val = Math.round(3200000000 * variance);
+    return { value: val, label: 'Multi-Galáctico (3-B)', joules: '10^42 J' };
   }
   if (low.includes('3-c') || low.includes('galact')) {
-    const val = Math.round(1.1e12 * variance);
-    return { value: val, label: 'Galáctico', joules: '10^40 J' };
+    // 1 Mil Millones a 2.5 Mil Millones (Super Vegeta SSJ G2 1.28B, Trunks USSJ 2.04B, Cell Perfecto inicial 2B)
+    const val = Math.round(1500000000 * variance);
+    return { value: val, label: 'Galáctico (3-C)', joules: '10^40 J' };
   }
 
   // Tier 4: Estelar / Sistema Solar
   if (low.includes('4-a') || low.includes('multi-solar')) {
-    const val = Math.round(8.5e10 * variance);
-    return { value: val, label: 'Multi-Sistema Solar', joules: '10^36 J' };
+    // 250M a 1,000M (Trunks SSJ 240M, Androides 17/18 360M, Cell Imperfecto 470M, Cell Semi 940M)
+    const val = Math.round(380000000 * variance);
+    return { value: val, label: 'Multi-Sistema Solar (4-A)', joules: '10^36 J' };
   }
   if (low.includes('4-b') || low.includes('solar')) {
-    const val = Math.round(5.8e9 * variance);
-    return { value: val, label: 'Sistema Solar', joules: '10^34 J' };
+    // 135M a 250M (Goku SSJ Namek 150M, Mecha Freezer 156M)
+    const val = Math.round(160000000 * variance);
+    return { value: val, label: 'Sistema Solar (4-B)', joules: '10^34 J' };
+  }
+  if (low.includes('high 4-c')) {
+    // 70M a 135M (Freezer 100% 128M, Goku base Buu 75M)
+    const val = Math.round(95000000 * variance);
+    return { value: val, label: 'Gran Estrella (High 4-C)', joules: '10^33 J' };
   }
   if (low.includes('4-c') || low.includes('estrella') || low.includes('stellar')) {
-    const val = Math.round(6.5e8 * variance);
-    return { value: val, label: 'Estelar', joules: '10^32 J' };
+    // 20M a 70M (Goku Kaio-ken x10 30M, Kaio-ken x20 60M, Freezer 50% 64M)
+    const val = Math.round(45000000 * variance);
+    return { value: val, label: 'Estelar (4-C)', joules: '10^32 J' };
+  }
+  if (low.includes('low 4-c')) {
+    // 4M a 20M (King Cold 3.5M, Goku base regreso 5M)
+    const val = Math.round(8000000 * variance);
+    return { value: val, label: 'Estrella Pequeña (Low 4-C)', joules: '10^30 J' };
   }
 
   // Tier 5: Planetario / Subestelar
   if (low.includes('high 5-a')) {
-    const val = Math.round(1.6e8 * variance);
-    return { value: val, label: 'Planeta Masivo / Enana', joules: '10^29 J' };
+    // 1.5M a 4M (Freezer 3ª forma 2M, Goku Zenkai 3M)
+    const val = Math.round(2500000 * variance);
+    return { value: val, label: 'Enana Marrón (High 5-A)', joules: '10^29 J' };
   }
-  if (low.includes('5-a') || low.includes('planeta grande') || low.includes('enana')) {
-    const val = Math.round(6.2e7 * variance);
-    return { value: val, label: 'Planeta Grande', joules: '10^28 J' };
+  if (low.includes('5-a') || low.includes('planeta grande')) {
+    // 600k a 1.5M (Freezer 2ª forma 1.1M, Piccolo Nail 1.3M)
+    const val = Math.round(950000 * variance);
+    return { value: val, label: 'Planeta Grande (5-A)', joules: '10^28 J' };
   }
   if (low.includes('low 5-a')) {
-    const val = Math.round(1.8e7 * variance);
-    return { value: val, label: 'Planeta Mediano', joules: '10^26 J' };
+    // 350k a 600k (Freezer 1ª forma 530k, Vegeta Zenkai 3 385k)
+    const val = Math.round(480000 * variance);
+    return { value: val, label: 'Planeta Mediano (Low 5-A)', joules: '10^26 J' };
   }
   if (low.includes('high 5-b')) {
-    const val = Math.round(265000 * variance);
-    return { value: val, label: 'High Planeta', joules: '10^25 J' };
+    // 150k a 350k (Freezer 1ª forma reprimido 150k, vs Nail 300k, Goku Kaio-ken x2 180k)
+    const val = Math.round(220000 * variance);
+    return { value: val, label: 'Planeta Sólido (High 5-B)', joules: '10^25 J' };
   }
   if (low.includes('5-b') || low.includes('planeta')) {
-    const val = Math.round(48000 * variance);
-    return { value: val, label: 'Planeta', joules: '10^24 J' };
+    // 70k a 150k (Goku Namek 90k, Capitán Ginyu 120k)
+    const val = Math.round(105000 * variance);
+    return { value: val, label: 'Planeta (5-B)', joules: '10^24 J' };
   }
   if (low.includes('low 5-b')) {
-    const val = Math.round(25000 * variance);
-    return { value: val, label: 'Low Planeta', joules: '10^23 J' };
+    // 30k a 70k (Goku Kaio-ken x3 25.8k, Kaio-ken x4 34.4k, Recoome 45k)
+    const val = Math.round(42000 * variance);
+    return { value: val, label: 'Planeta Pequeño (Low 5-B)', joules: '10^23 J' };
   }
   if (low.includes('5-c') || low.includes('luna') || low.includes('moon')) {
-    const val = Math.round(18500 * variance);
-    return { value: val, label: 'Luna / Planeta Pequeño', joules: '10^21 J' };
+    // 18k a 30k (Vegeta Saiyan 18k, Galick Gun 24k, Dodoria 21k, Zarbon 22k)
+    const val = Math.round(21000 * variance);
+    return { value: val, label: 'Lunar (5-C)', joules: '10^21 J' };
   }
 
   // Tier 6: Continente / Isla
+  if (low.includes('high 6-a')) {
+    // 14k a 18k (Goku Kaio-ken x1 13.7k, Kaio-ken x2 18.3k)
+    const val = Math.round(16000 * variance);
+    return { value: val, label: 'Multi-Continental (High 6-A)', joules: '10^19 J' };
+  }
   if (low.includes('6-a') || low.includes('continental')) {
-    const val = Math.round(8500 * variance);
-    return { value: val, label: 'Continental', joules: '10^18 J' };
+    // 11.5k a 14k (Guldo 11.5k, Raditz Oozaru 13k)
+    const val = Math.round(12500 * variance);
+    return { value: val, label: 'Continental (6-A)', joules: '10^18 J' };
+  }
+  if (low.includes('high 6-b')) {
+    // 9.5k a 11.5k (Goku en batalla 9175, Oozaru Gohan 11k)
+    const val = Math.round(10500 * variance);
+    return { value: val, label: 'Gran País (High 6-B)', joules: '10^17 J' };
   }
   if (low.includes('6-b') || low.includes('país') || low.includes('country')) {
-    const val = Math.round(4200 * variance);
-    return { value: val, label: 'País', joules: '10^16 J' };
+    // 7.5k a 9.5k (Goku llegada 8618, Nappa blast 7200)
+    const val = Math.round(8500 * variance);
+    return { value: val, label: 'País (6-B)', joules: '10^16 J' };
+  }
+  if (low.includes('low 6-b')) {
+    // 6k a 7.5k (Vegeta post-batalla 6k)
+    const val = Math.round(6800 * variance);
+    return { value: val, label: 'País Pequeño (Low 6-B)', joules: '10^15 J' };
+  }
+  if (low.includes('high 6-c')) {
+    // 5k a 6k (Nappa full power 5500)
+    const val = Math.round(5400 * variance);
+    return { value: val, label: 'Gran Isla (High 6-C)', joules: '10^14.5 J' };
   }
   if (low.includes('6-c') || low.includes('isla') || low.includes('island')) {
-    const val = Math.round(1650 * variance);
-    return { value: val, label: 'Isla', joules: '10^14 J' };
+    // 4k a 5k (Nappa reprimido 4600)
+    const val = Math.round(4500 * variance);
+    return { value: val, label: 'Isla (6-C)', joules: '10^14 J' };
   }
 
-  // Tier 7: Montaña / Ciudad
+  // Tier 7: Montaña / Ciudad / Pueblo
+  if (low.includes('high 7-a')) {
+    // 3.5k a 4k (Kaio-sama 3600)
+    const val = Math.round(3700 * variance);
+    return { value: val, label: 'Gran Montaña (High 7-A)', joules: '10^13 J' };
+  }
   if (low.includes('7-a') || low.includes('montaña') || low.includes('mountain')) {
-    const val = Math.round(1850 * variance);
-    return { value: val, label: 'Montaña', joules: '10^12 J' };
+    // 2.8k a 3.5k (Piccolo Saiyan 3000, Gohan rage 2800)
+    const val = Math.round(3000 * variance);
+    return { value: val, label: 'Montaña (7-A)', joules: '10^12 J' };
+  }
+  if (low.includes('high 7-b')) {
+    // 2.2k a 2.8k (Saibaman suicidio 2600)
+    const val = Math.round(2400 * variance);
+    return { value: val, label: 'Gran Ciudad (High 7-B)', joules: '10^11 J' };
   }
   if (low.includes('7-b') || low.includes('ciudad') || low.includes('city')) {
-    const val = Math.round(850 * variance);
-    return { value: val, label: 'Ciudad', joules: '10^10 J' };
+    // 1.8k a 2.2k (Ten Shin Han Z 1830, Krilin Z 1770)
+    const val = Math.round(1800 * variance);
+    return { value: val, label: 'Ciudad (7-B)', joules: '10^10 J' };
+  }
+  if (low.includes('low 7-b')) {
+    // 1.5k a 1.8k (Yamcha Z 1480, Piccolo Makankosappo 1480, Gohan rage Raditz 1485)
+    const val = Math.round(1500 * variance);
+    return { value: val, label: 'Ciudad Pequeña (Low 7-B)', joules: '10^9.5 J' };
+  }
+  if (low.includes('high 7-c')) {
+    // 1.2k a 1.5k (Raditz 1300, Saibaman 1200)
+    const val = Math.round(1250 * variance);
+    return { value: val, label: 'Gran Pueblo (High 7-C)', joules: '10^9 J' };
   }
   if (low.includes('7-c') || low.includes('pueblo') || low.includes('town')) {
-    const val = Math.round(350 * variance);
-    return { value: val, label: 'Pueblo', joules: '10^8 J' };
+    // 950 a 1.2k (Gohan base Saiyan 1100, Mr. Popo 1040, Yajirobe 970)
+    const val = Math.round(1050 * variance);
+    return { value: val, label: 'Pueblo (7-C)', joules: '10^8 J' };
+  }
+  if (low.includes('low 7-c')) {
+    // 750 a 950 (Chaos 660, Piccolo Jr gigante 732, Oozaru Goku 21º 800)
+    const val = Math.round(800 * variance);
+    return { value: val, label: 'Pueblo Pequeño (Low 7-C)', joules: '10^7.5 J' };
   }
 
-  // Tier 8: Edificio
-  if (low.includes('8-a') || low.includes('multi-edificio')) {
-    const val = Math.round(195 * variance);
-    return { value: val, label: 'Multi-Edificio', joules: '10^6 J' };
+  // Tier 8: Urbano / Edificio
+  if (low.includes('8-a') || low.includes('multi-city block') || low.includes('multi-manzana')) {
+    // 1000 a 1500 de Ki equivalente (Nivel Multi-City Block: Baki, Yujiro, Spider-Man, Raditz destructivo)
+    const val = Math.round(1250 * variance);
+    return { value: val, label: 'Multi-Bloque Urbano (8-A)', joules: '10^7 J' };
   }
-  if (low.includes('8-b') || low.includes('manzana')) {
-    const val = Math.round(135 * variance);
-    return { value: val, label: 'Manzana Urbana', joules: '10^5 J' };
+  if (low.includes('8-b') || low.includes('city block') || low.includes('manzana')) {
+    // 500 a 1000 de Ki equivalente (Bloque de ciudad)
+    const val = Math.round(750 * variance);
+    return { value: val, label: 'Bloque de Ciudad (8-B)', joules: '10^6 J' };
+  }
+  if (low.includes('high 8-c') || low.includes('large building') || low.includes('gran edificio')) {
+    // 250 a 500 de Ki equivalente (Rascacielos: Rey Piccolo 270-330, Goku Agua Ultra 290, Roshi Kamehameha 270)
+    const val = Math.round(310 * variance);
+    return { value: val, label: 'Gran Edificio / Rascacielos (High 8-C)', joules: '10^5.5 J' };
   }
   if (low.includes('8-c') || low.includes('edificio') || low.includes('building')) {
-    const val = Math.round(85 * variance);
-    return { value: val, label: 'Edificio', joules: '10^4 J' };
+    // 180 a 250 de Ki equivalente (Edificio: Roshi Max 216, Ten Shin Han 22º 240, Goku 22º 185)
+    const val = Math.round(215 * variance);
+    return { value: val, label: 'Edificio (8-C)', joules: '10^5 J' };
   }
 
-  // Tier 9: Muro / Sobrehumano
-  if (low.includes('9-a') || low.includes('edificio pequeño')) {
-    const val = Math.round(42 * variance);
-    return { value: val, label: 'Edificio Pequeño', joules: '10^3 J' };
+  // Tier 9: Sobrehumano / Muro / Calle (CULMEN HUMANO Y UMBRAL SOBREHUMANO)
+  if (low.includes('9-a') || low.includes('edificio pequeño') || low.includes('small building')) {
+    // 100 a 180 de Ki equivalente (Sobrehumano medio: Tao Pai Pai 117, General Blue 115, Roshi serio 180)
+    const val = Math.round(140 * variance);
+    return { value: val, label: 'Edificio Pequeño (9-A)', joules: '10^4 J' };
   }
   if (low.includes('9-b') || low.includes('muro') || low.includes('wall')) {
-    const val = Math.round(26 * variance);
-    return { value: val, label: 'Muro', joules: '500 J' };
+    // 50 a 100 de Ki equivalente (Sobrehumano inicial: destruye muros y acero, Goku 21º 80, Roshi 83, Krilin 87, Eighter 91)
+    const val = Math.round(75 * variance);
+    return { value: val, label: 'Muro / Sobrehumano (9-B)', joules: '10^3 J' };
   }
   if (low.includes('9-c') || low.includes('calle') || low.includes('street')) {
-    const val = Math.round(16 * variance);
-    return { value: val, label: 'Calle', joules: '200 J' };
+    // 25 a 50 de Ki equivalente (CULMEN HUMANO ENTRENADO / Artes Marciales: Nam 26, Giran 29, Bora 23)
+    const val = Math.round(35 * variance);
+    return { value: val, label: 'Culmen Humano Entrenado (9-C)', joules: '500 J' };
   }
 
   // Tier 10: Humano
+  if (low.includes('10-a') || low.includes('atleta') || low.includes('athlete')) {
+    // 10 a 25 de Ki equivalente (Atleta entrenado / Humano en forma: Yamcha inicio 13, Ranfan 8)
+    const val = Math.round(18 * variance);
+    return { value: val, label: 'Humano Atleta (10-A)', joules: '250 J' };
+  }
+  if (low.includes('10-b') || low.includes('humano promedio') || low.includes('regular human')) {
+    // 5 a 10 de Ki equivalente (Humano promedio: 5 unidades canónicas)
+    const val = Math.round(7 * variance);
+    return { value: val, label: 'Humano Promedio (10-B)', joules: '100 J' };
+  }
+  if (low.includes('10-c') || low.includes('humano inferior') || low.includes('below average')) {
+    // 1 a 5 de Ki equivalente (Granjero con escopeta = 5, Bulma = 4, Tortuga = 0.1)
+    const val = Math.max(1, Math.round(5 * variance));
+    return { value: val, label: 'Humano Civil / Inferior (10-C)', joules: '50 J' };
+  }
+
+  // Fallback estándar (Humano promedio: 5 unidades)
   const val = Math.max(1, Math.round(5 * variance));
   return { value: val, label: `${val} Unidades`, joules: '100 J' };
 }
@@ -565,15 +679,21 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
     }
   }
 
+  // Si el personaje ya tiene un apexKi explícito definido en su ficha, respetarlo como fuente primaria
   let finalVal = 0;
   if (canonOverride && !canonOverride.calculatedOnly) {
     finalVal = canonOverride.base;
     if (formMult !== 1.0) finalVal = Math.round(finalVal * formMult);
+  } else if (typeof character.apexKi === 'number' && character.apexKi > 0) {
+    finalVal = Math.round(character.apexKi * formMult);
   } else {
     if (baseEnergy.value === Infinity) {
       finalVal = Infinity;
     } else {
-      finalVal = Math.round(baseEnergy.value * speed.factor * durability.factor * haxBiq.factor * featsStrength.factor * formMult);
+      // APEX-Ki Físico Sostenido: NO se multiplica por speed.factor ni haxBiq.factor.
+      // La velocidad y el Hax influyen en combatModifiers (iniciativa/esquiva) y habilidades, no en el AP base.
+      const consistencyFactor = featsStrength?.factor ? Math.min(1.35, Math.max(0.70, featsStrength.factor)) : 1.0;
+      finalVal = Math.round(baseEnergy.value * consistencyFactor * formMult);
     }
   }
 
@@ -635,7 +755,14 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
     formattedKi: scouter.formatted,
     rank: scouter.rank,
     isOverload: scouter.isOverload,
-    formulaExpression: `PL_Scouter = BaseEnergy(${character.tier}) × Vel(${speed.factor}x) × Def(${durability.factor}x) × Hax/IQ(${haxBiq.factor}x) × Hazañas/Fuerza(${featsStrength.factor}x) × Forma(${formMult}x) = ${scouter.formatted}` + (sourceKi ? (` | Oficial DB: ${sourceKi.toLocaleString('es-ES')} Unidades`) : ''),
+    burstKi: character.burstKi || Math.round(effectiveKi * 1.35),
+    durabilityKi: character.durabilityKi || Math.round(effectiveKi * (durability.factor || 1.0)),
+    combatModifiers: {
+      initiative: Number((speed.factor * 0.6 + 0.4).toFixed(2)),
+      dodgeChance: Number((speed.factor * 0.4 + 0.6).toFixed(2)),
+      hitChance: Number((haxBiq.factor * 0.5 + 0.5).toFixed(2))
+    },
+    formulaExpression: `APEX-Ki = BaseEnergy(${character.tier}) × Consistencia × Forma(${formMult}x) = ${scouter.formatted}` + (sourceKi ? (` | Oficial DB: ${sourceKi.toLocaleString('es-ES')} Unidades`) : ''),
     closestDbComparison: closestDb ? (closestDb.name + ' (' + closestDb.base.toLocaleString() + ' Ki)') : 'Desconocido'
   };
 }

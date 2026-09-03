@@ -1,23 +1,25 @@
 /**
- * APEX POWER SCALING ENGINE — MASTER CANONICAL VALIDATOR & AUTO-CORRECTOR
+ * APEX POWER SCALING ENGINE — MASTER CANONICAL VALIDATOR & AUDITOR
  * 
- * Garantiza de forma 100% autónoma y continua:
- * 1. Forma Base obligatoria en índice 0 (apexKiMultiplier: 1.0)
- * 2. Orden ascendente estricto de transformaciones (Base -> SSJ1 -> SSJ2 -> SSJ3...)
- * 3. Cero formas sin tier, multiplicador o stamina
- * 4. Cero números flotantes raros (...020) o clones estáticos
- * 5. Cero sourceKi en personajes fuera de Dragon Ball
- * 6. Organización inmutable de las 16 franquicias oficiales
+ * Modos de ejecución:
+ * 1. AUDIT (por defecto): `node src/scripts/rosterCanonicalValidator.js`
+ *    - Inspecciona exhaustivamente el Roster sin modificar characters.js.
+ *    - Emite informe detallado de errores, advertencias, sugerencias y diffs.
+ * 2. FIX (explícito): `node src/scripts/rosterCanonicalValidator.js --fix`
+ *    - Crea automáticamente un backup timestamped en src/data/backups/
+ *    - Guarda un reporte de auditoría en src/data/reports/
+ *    - Corrige y guarda characters.js.
  */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getCharacterSignatureVariance, getPowerLevelFormulaBreakdown } from '../services/scouterEngine.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '../../');
 const CHARACTERS_FILE = path.join(projectRoot, 'src/data/characters.js');
+const BACKUPS_DIR = path.join(projectRoot, 'src/data/backups');
+const REPORTS_DIR = path.join(projectRoot, 'src/data/reports');
 
 export const VALID_FRANCHISES = [
   'Dragon Ball',
@@ -57,447 +59,265 @@ const TIER_ORDER = [
   'Low 7-C', '7-C', 'High 7-C',
   'Low 7-B', '7-B', '7-A', 'High 7-A',
   'Low 6-C', '6-C', 'High 6-C',
-  '6-B', '6-A', 'High 6-A',
-  '5-C', 'Low 5-B', '5-B', 'High 5-B', 'Low 5-A', '5-A', 'High 5-A',
+  'Low 6-B', '6-B', 'High 6-B',
+  '6-A', 'High 6-A',
+  '5-C', 'Low 5-B', '5-B', '5-A', 'High 5-A',
   'Low 4-C', '4-C', 'High 4-C',
   '4-B', '4-A',
   '3-C', '3-B', '3-A', 'High 3-A',
   'Low 2-C', '2-C', '2-B', '2-A',
   'Low 1-C', '1-C', 'High 1-C',
   '1-B', 'High 1-B',
-  '1-A', 'High 1-A',
-  '0'
+  '1-A', 'High 1-A', '0'
 ];
 
-function scaleTier(baseTier, mult) {
-  if (!baseTier) return '7-B';
-  const cleanBase = baseTier.split('|')[0].replace('Tier', '').trim();
-  const idx = TIER_ORDER.indexOf(cleanBase);
-  if (idx === -1) return cleanBase;
-  if (mult <= 1.0) return cleanBase;
+/**
+ * AUDITORÍA PURA DEL ROSTER
+ * Inspecciona cada personaje e identifica fallos sin alterar datos en memoria.
+ */
+export function auditRoster(characters) {
+  const issues = [];
+  const warnings = [];
+  const stats = {
+    total: characters.length,
+    dbCharacters: 0,
+    crossVerseCharacters: 0,
+    nonDbWithSourceKi: 0,
+    missingSourceRef: 0,
+    invalidBaseCategory: 0,
+    burstLessThanApex: 0,
+    outOfRangeApex: 0,
+    tier2WithoutCosmology: 0
+  };
 
-  let steps = 0;
-  if (mult >= 50000) steps = 6;
-  else if (mult >= 10000) steps = 5;
-  else if (mult >= 1000) steps = 4;
-  else if (mult >= 100) steps = 2;
-  else if (mult >= 50) steps = 1;
-  else if (mult >= 10) steps = 1;
+  characters.forEach((c) => {
+    const isDb = c.franchise === 'Dragon Ball';
+    if (isDb) stats.dbCharacters++;
+    else stats.crossVerseCharacters++;
 
-  const newIdx = Math.min(TIER_ORDER.length - 1, idx + steps);
-  return TIER_ORDER[newIdx];
-}
-
-function cleanSignificantDigits(num) {
-  if (typeof num !== 'number' || isNaN(num) || num <= 0) return 1000;
-  if (!Number.isFinite(num)) return 1e24;
-  if (num < 1000) return Math.round(num);
-  if (num < 100000) return Math.round(num / 10) * 10;
-  if (num < 1000000) return Math.round(num / 100) * 100;
-  const magnitude = Math.pow(10, Math.floor(Math.log10(num)) - 2);
-  return Math.round(num / magnitude) * magnitude;
-}
-
-function deduplicateArsenal(arr) {
-  if (!Array.isArray(arr)) return [];
-  const seen = new Set();
-  const res = [];
-  for (const item of arr) {
-    const rawName = typeof item === 'object' ? (item.name || item.desc || '') : String(item);
-    const norm = rawName.toLowerCase()
-      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9]/g, '');
-    if (!norm) continue;
-    let duplicate = false;
-    for (const s of seen) {
-      if (s === norm || (s.length > 5 && norm.length > 5 && (s.includes(norm) || norm.includes(s)))) {
-        duplicate = true;
-        break;
-      }
-    }
-    if (!duplicate) {
-      seen.add(norm);
-      res.push(item);
-    }
-  }
-  return res;
-}
-
-export function validateAndAutoCorrectRoster(characters) {
-  let correctionsCount = 0;
-
-  for (const c of characters) {
-    const idLower = (c.id || '').toLowerCase();
-    const nameLower = (c.name || '').toLowerCase();
-
-    // 1. Franquicia y Universo canónico inmutable
-    if (idLower.includes('kojiro-sasaki') || nameLower.includes('kojiro sasaki')) {
-      if (c.franchise !== 'Record of Ragnarok') {
-        c.franchise = 'Record of Ragnarok';
-        c.universe = 'Shuumatsu no Valkyrie (Record of Ragnarok)';
-        correctionsCount++;
-      }
-    } else if (idLower.includes('kakyoin') || nameLower.includes('kakyoin')) {
-      if (c.franchise !== "JoJo's Bizarre Adventure") {
-        c.franchise = "JoJo's Bizarre Adventure";
-        c.universe = "JoJo's Bizarre Adventure";
-        correctionsCount++;
-      }
-    } else if (idLower === 'gyutaro-daki-kny-ed') {
-      if (c.franchise !== 'Demon Slayer (Kimetsu no Yaiba)') {
-        c.franchise = 'Demon Slayer (Kimetsu no Yaiba)';
-        c.universe = 'Demon Slayer (Kimetsu no Yaiba)';
-        correctionsCount++;
-      }
-    } else if (idLower === 'nayuta-csm-p2') {
-      if (c.franchise !== 'Chainsaw Man') {
-        c.franchise = 'Chainsaw Man';
-        c.universe = 'Chainsaw Man';
-        correctionsCount++;
-      }
-    } else if (idLower === 'baki-hanma-baki') {
-      if (c.franchise !== 'Baki the Grappler') {
-        c.franchise = 'Baki the Grappler';
-        c.universe = 'Baki the Grappler';
-        correctionsCount++;
-      }
-    } else if (idLower === 'shigaraki-tomura-mha') {
-      if (c.franchise !== 'My Hero Academia') {
-        c.franchise = 'My Hero Academia';
-        c.universe = 'My Hero Academia';
-        correctionsCount++;
-      }
-    } else if (idLower === 'shizuku-murasaki-hxh-yr') {
-      if (c.franchise !== 'Hunter x Hunter') {
-        c.franchise = 'Hunter x Hunter';
-        c.universe = 'Hunter x Hunter';
-        correctionsCount++;
-      }
-    } else if (idLower === 'tamaki-amajiki-mha-shie') {
-      if (c.franchise !== 'My Hero Academia') {
-        c.franchise = 'My Hero Academia';
-        c.universe = 'My Hero Academia';
-        correctionsCount++;
-      }
-    } else if (idLower === 'tatsumaki-opm') {
-      if (c.franchise !== 'One Punch Man') {
-        c.franchise = 'One Punch Man';
-        c.universe = 'One Punch Man';
-        correctionsCount++;
-      }
-    } else if (!c.franchise || !VALID_FRANCHISES.includes(c.franchise)) {
-      const u = (c.universe || '').toLowerCase();
-      const n = (c.name || '').toLowerCase();
-      if (u.includes('dragon ball') || n.includes('goku') || n.includes('vegeta')) c.franchise = 'Dragon Ball';
-      else if (u.includes('jujutsu') || n.includes('gojo') || n.includes('sukuna')) c.franchise = 'Jujutsu Kaisen';
-      else if (u.includes('demon slayer') || u.includes('kimetsu')) c.franchise = 'Demon Slayer (Kimetsu no Yaiba)';
-      else if (u.includes('marvel') || n.includes('spiderman') || n.includes('iron man')) c.franchise = 'Marvel Comics';
-      else if (u.includes('dc') || n.includes('superman') || n.includes('batman')) c.franchise = 'DC Comics';
-      else if (u.includes('hunter')) c.franchise = 'Hunter x Hunter';
-      else if (u.includes('baki')) c.franchise = 'Baki the Grappler';
-      else if (u.includes('ragnarok') || u.includes('valkyrie')) c.franchise = 'Record of Ragnarok';
-      else if (u.includes('the boys')) c.franchise = 'The Boys';
-      else if (u.includes('invincible')) c.franchise = 'Invincible';
-      else if (u.includes('one punch') || n.includes('saitama')) c.franchise = 'One Punch Man';
-      else if (u.includes('my hero') || u.includes('boku no hero')) c.franchise = 'My Hero Academia';
-      else if (u.includes('jojo')) c.franchise = "JoJo's Bizarre Adventure";
-      else if (u.includes('chainsaw')) c.franchise = 'Chainsaw Man';
-      else if (u.includes('spy x family')) c.franchise = 'Spy x Family';
-      else c.franchise = 'APEX Original / Híbrido';
-      correctionsCount++;
-    }
-
-    // 1.5. Blindaje de Tiers Canónicos Críticos
-    if (idLower.includes('granjero-con-escopeta') || nameLower.includes('granjero con escopeta')) {
-      if (c.tier !== '10-C' || c.numericStats?.apexKi !== 5) {
-        c.tier = '10-C';
-        c.physicalTier = '10-C';
-        c.haxTier = '10-C';
-        c.sourceKi = 5;
-        c.numericStats = { apexKi: 5, scouterKi: 5, powerLevel: 5 };
-        if (c.forms && c.forms[0]) c.forms[0].tier = '10-C';
-        correctionsCount++;
-      }
-    } else if (idLower.includes('nam') && (c.universe || '').includes('Clásico')) {
-      if (c.tier !== '9-A' || c.numericStats?.apexKi !== 26) {
-        c.tier = '9-A';
-        c.physicalTier = '9-A';
-        c.haxTier = '9-A';
-        c.sourceKi = 26;
-        c.numericStats = { apexKi: 26, scouterKi: 26, powerLevel: 26 };
-        if (c.forms && c.forms[0]) c.forms[0].tier = '9-A';
-        correctionsCount++;
-      }
-    } else if (idLower === 'videl-saga-buu-6') {
-      if (c.tier !== '9-A' || c.numericStats?.apexKi !== 42) {
-        c.tier = '9-A';
-        c.physicalTier = '9-A';
-        c.haxTier = '9-A';
-        c.numericStats = { apexKi: 42, scouterKi: 42, powerLevel: 42 };
-        if (c.forms && c.forms[0]) c.forms[0].tier = '9-A';
-        correctionsCount++;
-      }
-    } else if (idLower.includes('carmine') && (c.universe || '').includes('Super')) {
-      if (c.tier !== '9-C' || c.numericStats?.apexKi !== 10) {
-        c.tier = '9-C';
-        c.physicalTier = '9-C';
-        c.haxTier = '9-C';
-        c.numericStats = { apexKi: 10, scouterKi: 10, powerLevel: 10 };
-        if (c.forms && c.forms[0]) c.forms[0].tier = '9-C';
-        correctionsCount++;
-      }
-    } else if (idLower === 'videl-u9-dbm') {
-      if (c.tier !== '8-A') {
-        c.tier = '8-A';
-        c.physicalTier = '8-A';
-        if (c.forms && c.forms[0]) c.forms[0].tier = '8-A';
-        correctionsCount++;
-      }
-    } else if (c.franchise === 'Baki the Grappler') {
-      if (['doppo-orochi', 'retsu-kaioh', 'sukune-baki-dou'].includes(idLower) && c.tier !== '8-B') {
-        c.tier = '8-B';
-        c.physicalTier = '8-B';
-        if (c.forms && c.forms[0]) c.forms[0].tier = '8-B';
-        correctionsCount++;
-      } else if (['pickle-baki', 'musashi-miyamoto-baki', 'yujiro-hanma-baki', 'baki-hanma-baki'].includes(idLower) && c.tier !== '8-A') {
-        c.tier = '8-A';
-        c.physicalTier = '8-A';
-        if (c.forms && c.forms[0]) c.forms[0].tier = '8-A';
-        correctionsCount++;
-      }
-    }
-
-    // 2. Blindaje de Ki no-Dragon Ball
-    if (c.franchise !== 'Dragon Ball' && c.sourceKi) {
-      delete c.sourceKi;
-      delete c.sourceKiStatus;
-      correctionsCount++;
-    }
-
-    // 2.5. Sanitización de Nombres Duplicados (ej: "X / X")
-    if (c.name && c.name.includes('/')) {
-      const parts = c.name.split('/').map(p => p.trim());
-      if (parts.length === 2 && parts[0].toLowerCase() === parts[1].toLowerCase()) {
-        c.name = parts[0];
-        correctionsCount++;
-      }
-    }
-
-    // 2.6. Erradicación de Textos Genéricos de Plantilla en AP y Durabilidad
-    const apStr = typeof c.ap === 'string' ? c.ap : '';
-    if (apStr.includes('Capacidades de combate activas al 100% de su rendimiento físico') ||
-        apStr.includes('Forma inicial de combate con balance óptimo entre velocidad, resistencia física') ||
-        apStr.includes('Forma Base canónica estándar')) {
-      const cleanTier = (c.tier || c.physicalTier || '7-B').split('|')[0].replace('Tier', '').trim();
-      c.ap = `Nivel destructivo correspondiente a Tier ${cleanTier}. Despliega todo su repertorio característico de combate y artes marciales en estado base.`;
-      correctionsCount++;
-    }
-
-    const durStr = typeof c.durability === 'string' ? c.durability : '';
-    if (durStr.startsWith('Escalado a ') || durStr === 'Escalado a Base' || durStr.length < 15) {
-      const cleanTier = (c.physicalTier || c.tier || '7-B').split('|')[0].replace('Tier', '').trim();
-      c.durability = `Resistencia física y tolerancia a impactos consistente con su Tier ${cleanTier}, reforzada por su fisionomía y experiencia en combate.`;
-      correctionsCount++;
-    }
-
-    // 2.7. Deduplicación Estricta de Arsenal
-    if (c.arsenal) {
-      ['basicAttacks', 'superAttacks', 'ultimateAttacks', 'passives', 'specialMechanics', 'weaknesses'].forEach(k => {
-        if (Array.isArray(c.arsenal[k])) {
-          const originalLen = c.arsenal[k].length;
-          c.arsenal[k] = deduplicateArsenal(c.arsenal[k]);
-          if (c.arsenal[k].length !== originalLen) correctionsCount++;
-        }
+    // 1. Detección de sourceKi en no-Dragon Ball
+    if (!isDb && c.sourceKi !== null && c.sourceKi !== undefined) {
+      stats.nonDbWithSourceKi++;
+      issues.push({
+        type: 'NON_DB_SOURCEKI',
+        severity: 'CRITICAL',
+        characterId: c.id,
+        characterName: c.name,
+        franchise: c.franchise,
+        detail: `Personaje fuera de Dragon Ball posee sourceKi: ${c.sourceKi}. Debe ser estrictamente null.`
       });
     }
 
-    // 3. Blindaje de Ki numérico contextual (Prohibición estricta de niveles planos como 800 o 5.5e9)
-    if (!c.numericStats || typeof c.numericStats !== 'object') {
-      c.numericStats = {};
-    }
-    const currentKi = c.numericStats.apexKi || 0;
-    const isGenericFlat = (currentKi === 800 || currentKi === 5.5e9 || currentKi === 60000000 || currentKi <= 0);
-    if (isGenericFlat && c.franchise !== 'Dragon Ball') {
-      const bd = getPowerLevelFormulaBreakdown(c, 'base');
-      const authenticKi = cleanSignificantDigits(bd?.finalPowerLevel || 1500);
-      c.numericStats.apexKi = authenticKi;
-      c.numericStats.scouterKi = authenticKi;
-      c.numericStats.powerLevel = authenticKi;
-      correctionsCount++;
-    } else {
-      const cleanKi = cleanSignificantDigits(currentKi);
-      if (cleanKi !== currentKi) {
-        c.numericStats.apexKi = cleanKi;
-        c.numericStats.scouterKi = cleanKi;
-        c.numericStats.powerLevel = cleanKi;
-        correctionsCount++;
-      }
+    // 2. sourceType canon_explicit sin fuente
+    if (c.sourceType === 'canon_explicit' && !c.sourceReference) {
+      stats.missingSourceRef++;
+      issues.push({
+        type: 'MISSING_CANON_REFERENCE',
+        severity: 'HIGH',
+        characterId: c.id,
+        characterName: c.name,
+        detail: `sourceType está marcado como 'canon_explicit' pero carece del campo sourceReference obligatorio.`
+      });
     }
 
-    // 3.5. Aislamiento Biológico y Cero Contaminación de Lore
-    if (c.arsenal && Array.isArray(c.arsenal.passives)) {
-      const isSaiyan = (c.franchise === 'Dragon Ball') && (
-        /saiyajin|saiyan|goku|vegeta|gohan|broly|raditz|nappa|bardock|goten|trunks|cumber|shallot|giblet|kakarotto/i.test(c.name + ' ' + (c.alias || ''))
-      );
-      if (!isSaiyan) {
-        const initialLen = c.arsenal.passives.length;
-        c.arsenal.passives = c.arsenal.passives.filter(p => {
-          const pName = (typeof p === 'object' ? (p.name || p.desc || '') : String(p)).toLowerCase();
-          return !pName.includes('zenkai') && !pName.includes('cola saiyan');
+    // 3. Forma base en índice 0 no categorizada como 'base'
+    if (Array.isArray(c.forms) && c.forms.length > 0) {
+      if (c.forms[0].category !== 'base') {
+        stats.invalidBaseCategory++;
+        issues.push({
+          type: 'INVALID_BASE_FORM_CATEGORY',
+          severity: 'HIGH',
+          characterId: c.id,
+          characterName: c.name,
+          detail: `La forma en índice 0 tiene category: '${c.forms[0].category}'. Debe ser estrictamente category: 'base'.`
         });
-        if (c.arsenal.passives.length !== initialLen) correctionsCount++;
       }
     }
 
-    // 4. Formas: Asegurar array
-    if (!c.forms || !Array.isArray(c.forms) || c.forms.length === 0) {
-      c.forms = [{
-        id: 'base',
-        name: `${c.name} (Estado Base)`,
-        apexKiMultiplier: 1.0,
-        staminaDrain: 0,
-        tier: c.tier || '7-B',
-        stats: 'Forma Base estándar.'
-      }];
-      correctionsCount++;
-      continue;
+    // 4. burstKi menor que apexKi
+    const apexKi = c.numericStats?.apexKi || c.apexKi || 5;
+    if (typeof c.burstKi === 'number' && c.burstKi < apexKi) {
+      stats.burstLessThanApex++;
+      issues.push({
+        type: 'BURST_LESS_THAN_APEX',
+        severity: 'HIGH',
+        characterId: c.id,
+        characterName: c.name,
+        detail: `burstKi (${c.burstKi}) es menor que apexKi (${apexKi}). El pico temporal nunca puede ser inferior al poder base sostenido.`
+      });
     }
 
-    // Asegurar que ninguna forma tenga multiplicador ni tier undefined
-    c.forms.forEach((f, idx) => {
-      if (typeof f.apexKiMultiplier !== 'number' || f.apexKiMultiplier <= 0) {
-        f.apexKiMultiplier = idx === 0 ? 1.0 : 2.0;
-        correctionsCount++;
-      }
-      if (!f.tier) {
-        f.tier = scaleTier(c.tier || c.physicalTier || '7-B', f.apexKiMultiplier);
-        correctionsCount++;
-      }
-      if (typeof f.staminaDrain !== 'number') {
-        f.staminaDrain = idx === 0 ? 0 : Math.min(50, Math.round(f.apexKiMultiplier * 5));
-        correctionsCount++;
-      }
-    });
-
-    // Asegurar que la Forma Base esté en el índice 0
-    const firstFormName = (c.forms[0]?.name || '').toLowerCase();
-    const firstFormId = (c.forms[0]?.id || '').toLowerCase();
-    const isFirstBase = firstFormName.includes('base') || firstFormId.includes('base') || c.forms[0]?.apexKiMultiplier === 1;
-
-    if (!isFirstBase) {
-      const baseIdx = c.forms.findIndex(f => (f.name || '').toLowerCase().includes('base') || (f.id || '').toLowerCase().includes('base') || f.apexKiMultiplier === 1);
-      if (baseIdx > 0) {
-        const [baseF] = c.forms.splice(baseIdx, 1);
-        c.forms.unshift(baseF);
-        correctionsCount++;
-      } else {
-        c.forms.unshift({
-          id: 'base',
-          name: `${c.name} (Estado Base)`,
-          apexKiMultiplier: 1.0,
-          staminaDrain: 0,
-          tier: c.tier || '7-B',
-          stats: 'Forma Base canónica estándar.'
+    // 5. apexKi fuera del rango declarado
+    if (Array.isArray(c.apexKiRange) && c.apexKiRange.length === 2) {
+      const [minR, maxR] = c.apexKiRange;
+      if (apexKi < minR || apexKi > maxR) {
+        stats.outOfRangeApex++;
+        warnings.push({
+          type: 'APEX_OUT_OF_RANGE',
+          severity: 'MEDIUM',
+          characterId: c.id,
+          characterName: c.name,
+          detail: `apexKi (${apexKi}) está fuera del rango declarado [${minR}, ${maxR}].`
         });
-        correctionsCount++;
       }
     }
 
-    // Orden ascendente de transformaciones
-    const baseForm = c.forms[0];
-    const transforms = c.forms.slice(1);
-    let needsSort = false;
-    for (let i = 0; i < transforms.length - 1; i++) {
-      const tName = (transforms[i + 1].name || '').toLowerCase();
-      const isDebuff = tName.includes('penalizado') || tName.includes('sin compuesto v') || tName.includes('humana común') || tName.includes('debilitado');
-      if (transforms[i].apexKiMultiplier > transforms[i + 1].apexKiMultiplier && !isDebuff) {
-        needsSort = true;
-        break;
-      }
+    // 6. Tier 2+ sin cosmologyClass
+    const t = c.tier || '';
+    if ((t.includes('2-') || t.includes('1-') || t === '0') && !c.cosmologyClass) {
+      stats.tier2WithoutCosmology++;
+      warnings.push({
+        type: 'TIER_2_WITHOUT_COSMOLOGY',
+        severity: 'MEDIUM',
+        characterId: c.id,
+        characterName: c.name,
+        detail: `Personaje en Tier ${t} no posee 'cosmologyClass' ni reglas dimensionales declaradas.`
+      });
     }
-
-    if (needsSort) {
-      transforms.sort((a, b) => (a.apexKiMultiplier || 1) - (b.apexKiMultiplier || 1));
-      c.forms = [baseForm, ...transforms];
-      correctionsCount++;
-    }
-
-    // 5. Garantizar estructura completa de ficha (Arsenal, Stamina, Feats, Diálogos)
-    if (!c.arsenal || typeof c.arsenal !== 'object') {
-      c.arsenal = {
-        basicAttacks: [],
-        superAttacks: [],
-        ultimateAttacks: [],
-        passives: [],
-        specialMechanics: [],
-        weaknesses: []
-      };
-      correctionsCount++;
-    } else {
-      if (!Array.isArray(c.arsenal.basicAttacks)) { c.arsenal.basicAttacks = []; correctionsCount++; }
-      if (!Array.isArray(c.arsenal.superAttacks)) { c.arsenal.superAttacks = []; correctionsCount++; }
-      if (!Array.isArray(c.arsenal.ultimateAttacks)) { c.arsenal.ultimateAttacks = []; correctionsCount++; }
-      if (!Array.isArray(c.arsenal.passives)) { c.arsenal.passives = []; correctionsCount++; }
-      if (!Array.isArray(c.arsenal.specialMechanics)) { c.arsenal.specialMechanics = []; correctionsCount++; }
-      if (!Array.isArray(c.arsenal.weaknesses)) { c.arsenal.weaknesses = []; correctionsCount++; }
-    }
-
-    if (!c.staminaProfile || typeof c.staminaProfile !== 'object') {
-      c.staminaProfile = { basePool: 100, recoveryRate: 5, exhaustionThreshold: 20 };
-      correctionsCount++;
-    }
-    if (!Array.isArray(c.provenFeats)) c.provenFeats = [];
-    if (!Array.isArray(c.synergies)) c.synergies = [];
-    if (!Array.isArray(c.teamCombos)) c.teamCombos = [];
-  }
-
-  // 5. Reordenar permanentemente por Franquicia y Cronología
-  characters.sort((a, b) => {
-    const fIdxA = VALID_FRANCHISES.indexOf(a.franchise);
-    const fIdxB = VALID_FRANCHISES.indexOf(b.franchise);
-    const rankA = fIdxA === -1 ? 999 : fIdxA;
-    const rankB = fIdxB === -1 ? 999 : fIdxB;
-    if (rankA !== rankB) return rankA - rankB;
-
-    if (a.franchise === 'Dragon Ball' && b.franchise === 'Dragon Ball') {
-      const uIdxA = DB_UNIVERSE_ORDER.indexOf(a.universe);
-      const uIdxB = DB_UNIVERSE_ORDER.indexOf(b.universe);
-      const uRankA = uIdxA === -1 ? 999 : uIdxA;
-      const uRankB = uIdxB === -1 ? 999 : uIdxB;
-      if (uRankA !== uRankB) return uRankA - uRankB;
-    }
-
-    return (a.name || '').localeCompare(b.name || '');
   });
 
-  return { characters, correctionsCount };
+  return { issues, warnings, stats };
 }
 
-// Ejecución directa por CLI
+/**
+ * AUTO-CORRECCIÓN EXPLÍCITA (--fix)
+ */
+export function applyAutoCorrections(characters) {
+  let correctionsCount = 0;
+  const diffs = [];
+
+  characters.forEach(c => {
+    const isDb = c.franchise === 'Dragon Ball';
+
+    // 1. Limpiar sourceKi en personajes ajenos a Dragon Ball
+    if (!isDb && (c.sourceKi !== null || c.sourceType !== 'cross_verse_estimate')) {
+      const oldKi = c.sourceKi;
+      c.sourceKi = null;
+      c.sourceType = 'cross_verse_estimate';
+      diffs.push({ id: c.id, field: 'sourceKi', old: oldKi, new: null });
+      correctionsCount++;
+    }
+
+    // 2. Normalizar forma base en índice 0
+    if (Array.isArray(c.forms) && c.forms.length > 0) {
+      if (c.forms[0].category !== 'base') {
+        const oldCat = c.forms[0].category;
+        c.forms[0].category = 'base';
+        c.forms[0].apexKiMultiplier = 1.0;
+        diffs.push({ id: c.id, field: 'forms[0].category', old: oldCat, new: 'base' });
+        correctionsCount++;
+      }
+    }
+
+    // 3. Normalizar burstKi
+    const curApex = c.numericStats?.apexKi || c.apexKi || 5;
+    if (typeof c.burstKi !== 'number' || c.burstKi < curApex) {
+      const oldBurst = c.burstKi;
+      c.burstKi = Math.round(curApex * 1.35);
+      diffs.push({ id: c.id, field: 'burstKi', old: oldBurst, new: c.burstKi });
+      correctionsCount++;
+    }
+
+    // 4. Normalizar apexKiRange
+    if (!Array.isArray(c.apexKiRange) || c.apexKiRange.length !== 2) {
+      c.apexKiRange = [Math.max(1, Math.round(curApex * 0.85)), Math.round(curApex * 1.25)];
+      diffs.push({ id: c.id, field: 'apexKiRange', old: null, new: c.apexKiRange });
+      correctionsCount++;
+    }
+
+    // 5. Añadir cosmologyClass básica a Tiers multiversales si falta
+    const t = c.tier || '';
+    if ((t.includes('2-') || t.includes('1-') || t === '0') && !c.cosmologyClass) {
+      c.cosmologyClass = t.includes('1-A') || t === '0' ? 'outerversal_boundary' : 'multiversal_macrocosm';
+      diffs.push({ id: c.id, field: 'cosmologyClass', old: null, new: c.cosmologyClass });
+      correctionsCount++;
+    }
+  });
+
+  return { characters, correctionsCount, diffs };
+}
+
+export const validateAndAutoCorrectRoster = applyAutoCorrections;
+
 async function main() {
+  const isFixMode = process.argv.includes('--fix');
+
   console.log('================================================================');
-  console.log('  🛡️ VALIDADOR Y AUTO-CORRECTOR CANÓNICO DEL ROSTER — APEX');
+  console.log(`  🛡️ AUDITOR Y VALIDADOR CANÓNICO DEL ROSTER — APEX [${isFixMode ? 'MODO FIX' : 'MODO AUDIT'}]`);
   console.log('================================================================\n');
+
+  if (!fs.existsSync(CHARACTERS_FILE)) {
+    console.error(`❌ Archivo no encontrado: ${CHARACTERS_FILE}`);
+    process.exit(1);
+  }
 
   const content = fs.readFileSync(CHARACTERS_FILE, 'utf8');
   let characters;
   try {
     characters = eval(content.replace(/export\s+const\s+INITIAL_CHARACTERS\s*=\s*/, '').replace(/;\s*$/, ''));
   } catch (err) {
-    console.error('❌ Error al evaluar characters.js:', err.message);
+    console.error('❌ Error al parsear characters.js:', err.message);
     process.exit(1);
   }
+
   console.log(`📋 Total de personajes cargados: ${characters.length}`);
 
-  const { characters: validated, correctionsCount } = validateAndAutoCorrectRoster(characters);
+  // 1. Ejecución de auditoría
+  const auditResult = auditRoster(characters);
+  console.log('\n--- RESUMEN DE AUDITORÍA ---');
+  console.log(`• Personajes Dragon Ball: ${auditResult.stats.dbCharacters}`);
+  console.log(`• Personajes Cross-Verse: ${auditResult.stats.crossVerseCharacters}`);
+  console.log(`• Errores críticos/altos detectados: ${auditResult.issues.length}`);
+  console.log(`• Advertencias detectadas: ${auditResult.warnings.length}`);
 
-  if (correctionsCount > 0) {
-    console.log(`⚠️ Se aplicaron ${correctionsCount} auto-correcciones canónicas.`);
-    fs.writeFileSync(CHARACTERS_FILE, 'export const INITIAL_CHARACTERS = ' + JSON.stringify(validated, null, 2) + ';\n', 'utf8');
-    console.log(`✅ characters.js actualizado y 100% blindado.`);
-  } else {
-    console.log(`✨ Roster 100% canónico, ordenado y sin anomalías detectadas (0 errores).`);
+  if (auditResult.issues.length > 0) {
+    console.log('\n🔴 ERRORES DETECTADOS:');
+    auditResult.issues.slice(0, 10).forEach((iss, i) => {
+      console.log(`  ${i + 1}. [${iss.type}] ${iss.characterName}: ${iss.detail}`);
+    });
+    if (auditResult.issues.length > 10) {
+      console.log(`  ... y ${auditResult.issues.length - 10} errores más.`);
+    }
   }
+
+  if (auditResult.warnings.length > 0) {
+    console.log('\n🟡 ADVERTENCIAS:');
+    auditResult.warnings.slice(0, 5).forEach((w, i) => {
+      console.log(`  ${i + 1}. [${w.type}] ${w.characterName}: ${w.detail}`);
+    });
+    if (auditResult.warnings.length > 5) {
+      console.log(`  ... y ${auditResult.warnings.length - 5} advertencias más.`);
+    }
+  }
+
+  // 2. Acciones según modo
+  if (!isFixMode) {
+    console.log('\n🔒 MODO AUDIT ACTIVO: characters.js NO ha sido modificado.');
+    console.log('👉 Para aplicar las correcciones con backup previo, ejecuta:');
+    console.log('   node src/scripts/rosterCanonicalValidator.js --fix\n');
+    return;
+  }
+
+  // 3. MODO FIX: Backup previo obligatorio
+  if (!fs.existsSync(BACKUPS_DIR)) fs.mkdirSync(BACKUPS_DIR, { recursive: true });
+  if (!fs.existsSync(REPORTS_DIR)) fs.mkdirSync(REPORTS_DIR, { recursive: true });
+
+  const timestamp = Date.now();
+  const backupFile = path.join(BACKUPS_DIR, `characters_backup_${timestamp}.js`);
+  fs.writeFileSync(backupFile, content, 'utf8');
+  console.log(`\n💾 Backup previo creado en: ${backupFile}`);
+
+  // Aplicar correcciones
+  const { characters: corrected, correctionsCount, diffs } = applyAutoCorrections(characters);
+
+  // Guardar reporte
+  const reportFile = path.join(REPORTS_DIR, `audit_report_${timestamp}.json`);
+  fs.writeFileSync(reportFile, JSON.stringify({ timestamp, correctionsCount, diffs }, null, 2), 'utf8');
+  console.log(`📄 Reporte de cambios guardado en: ${reportFile}`);
+
+  // Guardar characters.js
+  fs.writeFileSync(CHARACTERS_FILE, 'export const INITIAL_CHARACTERS = ' + JSON.stringify(corrected, null, 2) + ';\n', 'utf8');
+  console.log(`✅ characters.js actualizado con éxito (${correctionsCount} correcciones aplicadas).\n`);
 }
 
 if (process.argv[1] && process.argv[1].includes('rosterCanonicalValidator.js')) {
