@@ -1,3 +1,6 @@
+// APEX Power Scaling Engine — Master Characters Roster
+// Refinado y enriquecido automáticamente con Estándar Dorado APEX
+
 export const INITIAL_CHARACTERS = [
   {
     "id": "androide-8-dragon-ball-cl-sico-704",
@@ -23,7 +26,8 @@ export const INITIAL_CHARACTERS = [
       "Corazón Puro (Inmune a la Nube Kinton)",
       "Fuerza Cibernética Pura",
       "Voluntad Indomable",
-      "Androide de Acero"
+      "Androide de Acero",
+      "Corazón Puro"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -267,7 +271,7 @@ export const INITIAL_CHARACTERS = [
       "matterManipulation": 5,
       "soulDamage": 0,
       "powerNullification": 0,
-      "notes": "Como máquina sin mente, es inmune a control mental y daño espiritual. Su cuerpo de acero resiste el frío extremo (salvó a Goku congelado). Vulnerable a ataques de materia/tiempo por carecer de defensa espiritual."
+      "notes": "Como máquina sin mente, es inmune a control mental y daño espiritual. Su cuerpo de acero resiste el frío extremo."
     },
     "combatAIPersonality": {
       "aggression": 15,
@@ -275,26 +279,21 @@ export const INITIAL_CHARACTERS = [
       "mercyThreshold": 100,
       "clutchFactor": 90,
       "preferredEngagementRange": "close_quarters",
-      "behavior": "Solo ataca si un amigo es amenazado. Se posiciona siempre entre el aliado y el peligro. Si el enemigo huye o se rinde, depone las armas inmediatamente. En modo Ira Protectora se convierte en un berserker imparable temporalmente."
+      "behavior": "Solo ataca si un amigo es amenazado. Se posiciona siempre entre el aliado y el peligro."
     },
     "environmentalAffinity": {
       "spaceSurvival": true,
       "gravityResistance": "40G",
       "favoredBiomes": [
-        "Tundra ártica (inmunidad al frío)",
+        "Tundra ártica",
         "Pueblos pequeños",
         "Muscle Tower"
       ],
       "disfavoredBiomes": [
-        "Zonas volcánicas extremas",
-        "Cualquier lugar donde amigos estén en peligro"
+        "Zonas volcánicas extremas"
       ]
     },
-    "provenFeats": [
-      "Salvó a Goku de una muerte congelada.",
-      "Sobrevivió hasta el final de Dragon Ball Z (Dio energía a la Genkidama).",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -304,7 +303,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Por favor, detengámonos! No quiero pelear contigo.",
+      "onTransformation": "¡Nadie lastimará a mis amigos!",
+      "onUltimateReady": "¡Te mostraré la fuerza de mi determinación!",
+      "onLowHealth": "Aún resistiré... para protegerlos.",
+      "onVictory": "La paz ha vuelto. Me alegro de que nadie saliera malherido."
     },
     "staminaProfile": {
       "maxStamina": 160,
@@ -334,16 +338,14 @@ export const INITIAL_CHARACTERS = [
       }
     ],
     "knowledgeHorizon": {
-      "canonicalEra": "Saga del Ejército Red Ribbon / Año 750 (nacimiento) hasta Saga de Majin Buu / Año 774 (última aparición)",
-      "timelineRestrictions": "Tras ser reparado y desactivada su bomba, Androide 8 vivió pacíficamente en el Pueblo de la Nube hasta el final de DBZ. Conoce a Goku, Krillin y los guerreros Z, pero nunca buscó pelear. Desconoce la mayoría de los eventos entre sagas.",
+      "canonicalEra": "Saga del Ejército Red Ribbon / Año 750",
+      "timelineRestrictions": "Desconoce los eventos de Dragon Ball Z, la procedencia saiyajin de Goku y tecnologías posteriores.",
       "forbiddenConcepts": [
-        "Dr. Gero (su otro creador fue Flappe)",
+        "Dr. Gero",
         "Androides 17/18",
         "Cell",
-        "Super Saiyajin (no comprende el concepto)",
-        "Saiyajin",
-        "Namek",
-        "Fusión"
+        "Super Saiyajin",
+        "Namek"
       ],
       "crossVerseAwareness": "none"
     }
@@ -373,7 +375,8 @@ export const INITIAL_CHARACTERS = [
       "Ataques de Secreciones",
       "Voluntad Indomable",
       "Anosmia Propia",
-      "Inmunidad Olfativa Propia"
+      "Inmunidad Olfativa Propia",
+      "Gas Tóxico Biológico"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -626,34 +629,30 @@ export const INITIAL_CHARACTERS = [
       "mindControl": 5,
       "matterManipulation": 0,
       "soulDamage": 0,
-      "powerNullification": 0
+      "powerNullification": 0,
+      "notes": "Vulnerable a ataques espirituales y energéticos."
     },
     "combatAIPersonality": {
       "aggression": 65,
       "tacticalIQ": 15,
       "mercyThreshold": 5,
       "clutchFactor": 10,
-      "preferredEngagementRange": "close_quarters"
+      "preferredEngagementRange": "close_quarters",
+      "behavior": "Busca el contacto cuerpo a cuerpo para asfixiar al rival con su hedor."
     },
     "environmentalAffinity": {
       "spaceSurvival": false,
-      "gravityResistance": "5G (Humano estándar)",
+      "gravityResistance": "5G",
       "favoredBiomes": [
         "Canchas de Torneo",
         "Zonas Cerradas",
         "Alcantarillas"
       ],
       "disfavoredBiomes": [
-        "Espacio Abierto con Viento",
-        "Cumbres Nevadas",
-        "Vacío Espacial"
+        "Espacio Abierto con Viento"
       ]
     },
-    "provenFeats": [
-      "Sometió a Krilin casi ahogándolo con su olor.",
-      "Mantuvo una velocidad de reacción y combate consistente en situaciones de alta presión.",
-      "Demostró tenacidad táctica y resistencia física durante combates prolongados."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -663,7 +662,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Ji, ji, ji! Hace años que no tomo un baño... ¡Disfruta mi aroma!",
+      "onTransformation": "¡Mi hedor se vuelve más denso!",
+      "onUltimateReady": "¡Prueba mi especialidad secreta!",
+      "onLowHealth": "¡Imposible! ¿Cómo soportas mi peste?",
+      "onVictory": "¡Nadie resiste mi suciedad!"
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -679,14 +683,11 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "21° Torneo de las Artes Marciales / Año 750",
-      "timelineRestrictions": "Desconoce por completo la existencia del 22° Torneo, Rey Piccolo, Kami, Saibamen, Saiyajin, Namek, Freezer, Cell, Buu, el Kaio-ken, Super Saiyajin y cualquier evento posterior a su derrota.",
+      "timelineRestrictions": "Desconoce eventos posteriores a su derrota en el torneo.",
       "forbiddenConcepts": [
         "Krilin sin nariz",
         "King Piccolo",
-        "Maestro Roshi",
-        "Bukujutsu",
-        "Saiyajin",
-        "Capsulas Hoi-Poi"
+        "Saiyajin"
       ],
       "crossVerseAwareness": "none"
     }
@@ -713,7 +714,8 @@ export const INITIAL_CHARACTERS = [
     "battleIQ": "Luchadora talentosa que heredó los fundamentos del Gyumao (Ox King) y los afinó de manera acrobática. Usa la velocidad y el enojo para abrumar a enemigos descuidados.",
     "haxTags": [
       "Agilidad de Salto Extremo",
-      "Combo Aéreo Incesante (Artes Marciales)"
+      "Combo Aéreo Incesante (Artes Marciales)",
+      "Combo Aéreo Incesante"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -807,7 +809,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "De sangre caliente, gritona y estricta, pero secretamente romántica y leal. Participó en el torneo de manera anónima con el único y enfurecido propósito de forzar a Goku a recordar y cumplir su promesa de matrimonio. Para ella, ganar la pelea es ganar a su esposo.",
     "weaknesses": "Límites Terrestres Humanos. No posee Ki de ráfaga (como el Kamehameha), lo que la deja sin herramientas de largo alcance. Una onda expansiva de pura energía fuerte (Como el Kiai de Goku) la manda a volar, revelando su nula defensa ante ataques invisibles Mágicos o de Ki de Tiers de Nivel Ciudad/País.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Vínculo Familia Son",
+        "partnerTags": [
+          "Familia Son",
+          "Escuela Tortuga"
+        ],
+        "effect": "Si Goku o Gohan están en el campo, Chichi otorga +15% moral y +10% defensa al equipo por su determinación materna canónica (23º Tenkaichi).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -843,14 +855,139 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Chichi: Estilo táctico Luchadora talentosa que heredó los . De sangre caliente, gritona y estricta, pero secretamente ro",
-    "provenFeats": [
-      "Pasó las preliminares del 23º Torneo de las Artes Marciales sin sudar, venciendo a luchadores enormes y curtidos en la historia de la Tierra.",
-      "Impresionó al Maestro Roshi y a Yamcha con su estilo de pelea, recordando a la fluidez técnica del propio Kame Sennin.",
-      "Mantuvo a Goku saltando y defendiéndose sin poder contraatacar fácilmente durante la primera fase de la pelea."
-    ],
+    "combatAIPersonality": {
+      "0": "C",
+      "1": "h",
+      "2": "i",
+      "3": "c",
+      "4": "h",
+      "5": "i",
+      "6": ":",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "i",
+      "12": "l",
+      "13": "o",
+      "14": " ",
+      "15": "t",
+      "16": "á",
+      "17": "c",
+      "18": "t",
+      "19": "i",
+      "20": "c",
+      "21": "o",
+      "22": " ",
+      "23": "L",
+      "24": "u",
+      "25": "c",
+      "26": "h",
+      "27": "a",
+      "28": "d",
+      "29": "o",
+      "30": "r",
+      "31": "a",
+      "32": " ",
+      "33": "t",
+      "34": "a",
+      "35": "l",
+      "36": "e",
+      "37": "n",
+      "38": "t",
+      "39": "o",
+      "40": "s",
+      "41": "a",
+      "42": " ",
+      "43": "q",
+      "44": "u",
+      "45": "e",
+      "46": " ",
+      "47": "h",
+      "48": "e",
+      "49": "r",
+      "50": "e",
+      "51": "d",
+      "52": "ó",
+      "53": " ",
+      "54": "l",
+      "55": "o",
+      "56": "s",
+      "57": " ",
+      "58": ".",
+      "59": " ",
+      "60": "D",
+      "61": "e",
+      "62": " ",
+      "63": "s",
+      "64": "a",
+      "65": "n",
+      "66": "g",
+      "67": "r",
+      "68": "e",
+      "69": " ",
+      "70": "c",
+      "71": "a",
+      "72": "l",
+      "73": "i",
+      "74": "e",
+      "75": "n",
+      "76": "t",
+      "77": "e",
+      "78": ",",
+      "79": " ",
+      "80": "g",
+      "81": "r",
+      "82": "i",
+      "83": "t",
+      "84": "o",
+      "85": "n",
+      "86": "a",
+      "87": " ",
+      "88": "y",
+      "89": " ",
+      "90": "e",
+      "91": "s",
+      "92": "t",
+      "93": "r",
+      "94": "i",
+      "95": "c",
+      "96": "t",
+      "97": "a",
+      "98": ",",
+      "99": " ",
+      "100": "p",
+      "101": "e",
+      "102": "r",
+      "103": "o",
+      "104": " ",
+      "105": "s",
+      "106": "e",
+      "107": "c",
+      "108": "r",
+      "109": "e",
+      "110": "t",
+      "111": "a",
+      "112": "m",
+      "113": "e",
+      "114": "n",
+      "115": "t",
+      "116": "e",
+      "117": " ",
+      "118": "r",
+      "119": "o",
+      "aggression": 70,
+      "tacticalIQ": 65,
+      "mercyThreshold": 40,
+      "clutchFactor": 75,
+      "preferredEngagementRange": "close_quarters",
+      "behavior": "Combate de forma directa y acrobática, buscando presionar al rival sin darle tregua."
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -860,9 +997,113 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Goku! ¡¿Es que acaso no recuerdas tu promesa?!",
+      "onTransformation": "¡Voy a hacer que entres en razón!",
+      "onUltimateReady": "¡Esta es toda la fuerza de mis sentimientos!",
+      "onLowHealth": "No me rendiré... ¡Debo cumplir nuestro destino!",
+      "onVictory": "¡Al fin te encontré! Ahora vendrás conmigo."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "5G",
+      "favoredBiomes": [
+        "Canchas de Torneo",
+        "Monte Frypan"
+      ],
+      "disfavoredBiomes": [
+        "Vacío Espacial"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de Ki."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Armadura de Combate Tradicional",
+        "durability": "Media",
+        "effect": "Protección ligera para artes marciales."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "23º Tenkaichi Budokai / Año 756",
+      "timelineRestrictions": "Desconoce eventos posteriores al 23º Torneo y la verdadera naturaleza de los saiyajin.",
+      "forbiddenConcepts": [
+        "Super Saiyajin",
+        "Cell",
+        "Majin Buu",
+        "Bills"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "comandante-red-dragon-ball-cl-sico-526",
@@ -1462,7 +1703,7 @@ export const INITIAL_CHARACTERS = [
       "matterManipulation": 0,
       "soulDamage": 0,
       "powerNullification": 0,
-      "notes": "Resistencia casi nula a cualquier hax real. Su única defensa es la negación cómica: los hax serios lo atraviesan sin pena."
+      "notes": "Resistencia casi nula a cualquier hax real. Su única defensa es la negación cómica."
     },
     "combatAIPersonality": {
       "aggression": 65,
@@ -1477,20 +1718,14 @@ export const INITIAL_CHARACTERS = [
       "gravityResistance": "1G",
       "favoredBiomes": [
         "Muscle Tower (interior)",
-        "Bosques cerrados (escondite)",
-        "Zonas urbanas (humo y cobertura)"
+        "Bosques cerrados (escondite)"
       ],
       "disfavoredBiomes": [
         "Espacios abiertos sin cobertura",
-        "Aire/cielo abierto (sin Nube Voladora)",
         "Desiertos"
       ]
     },
-    "provenFeats": [
-      "Logró confundir a Goku por un par de minutos con sus hermanos.",
-      "Sobrevivió a ser empalado por el Báculo Sagrado en la retaguardia.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -1500,7 +1735,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Prepárate para enfrentar las temibles artes ninja del gran Murasaki!",
+      "onTransformation": "¡Mi técnica secreta definitiva se desata!",
+      "onUltimateReady": "¡No podrás escapar de la furia de los cinco hermanos!",
+      "onLowHealth": "¡Esto es trampa, un verdadero ninja nunca pierde así!",
+      "onVictory": "¡Jajaja! ¡El Ejército Red Ribbon es invencible!"
     },
     "staminaProfile": {
       "maxStamina": 90,
@@ -1547,18 +1787,15 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga del Ejército Red Ribbon / Año 750 DC",
-      "timelineRestrictions": "Los eventos ocurren durante la búsqueda de las Dragon Balls por parte del Red Ribbon. Goku es aún un niño. No han ocurrido el 21º Torneo Tenkaichi (que enfrentaría a Piccolo Daimaoh), ni la Saga de Piccolo Jr.",
+      "timelineRestrictions": "Los eventos ocurren durante la búsqueda de las Dragon Balls. Desconoce por completo los eventos posteriores al Red Ribbon.",
       "forbiddenConcepts": [
         "Dragon Balls de Namek",
         "Freezer",
         "Vegeta",
-        "Piccolo Daimaoh (solo conoce rumores del Rey Demonio)",
-        "Saiyajins (desconocidos)",
+        "Piccolo Daimaoh",
+        "Saiyajins",
         "Namekianos",
-        "Super Saiyajin",
-        "Kami-sama",
-        "Fusión",
-        "Vuelo por Ki (no sabe)"
+        "Super Saiyajin"
       ],
       "crossVerseAwareness": "none"
     }
@@ -1624,6 +1861,13 @@ export const INITIAL_CHARACTERS = [
           "staminaCost": 0,
           "chargeTime": "1 turno",
           "counterplay": "Avanzar bajo cobertura o destruir el arma."
+        },
+        {
+          "name": "Disparo de Lanzacohetes Antiaéreo",
+          "cost": 20,
+          "damageType": "explosivo",
+          "desc": "Dispara un misil capaz de destruir vehículos o dispersar nubes mágicas.",
+          "counterplay": "Evadir el área de impacto o desviar el proyectil."
         }
       ],
       "ultimateAttacks": [
@@ -1712,6 +1956,15 @@ export const INITIAL_CHARACTERS = [
           "Comandante Red"
         ],
         "effect": "Cumplimiento estricto de órdenes directas con bonificación de velocidad en misiones de búsqueda."
+      },
+      {
+        "name": "Cadena Red Ribbon",
+        "partnerTags": [
+          "Comandante Red",
+          "Soldado Red Ribbon"
+        ],
+        "effect": "Cumplimiento estricto de órdenes directas con bonificación de velocidad en misiones de búsqueda.",
+        "canonStatus": "source_backed"
       }
     ],
     "teamCombos": [
@@ -1731,6 +1984,24 @@ export const INITIAL_CHARACTERS = [
         ],
         "effect": "Un asalto coordinado que inmoviliza al enemigo con explosivos antes de un golpe decisivo.",
         "partialFailureResult": "Si el rival evade el fuego de supresión, el flanco queda vulnerable.",
+        "canonStatus": "apex_custom"
+      },
+      {
+        "name": "Asalto Táctico Plateado",
+        "partners": [
+          "Soldado Red Ribbon"
+        ],
+        "sequence": [
+          "Apertura/Inmovilización: Soldados de infantería despliegan fuego de supresión frontal.",
+          "Canalización/Apoyo: Silver toma posición de tiro con bazuca flanqueando al objetivo.",
+          "Remate Definitivo: Disparo directo de misil antiaéreo sobre la posición fijada."
+        ],
+        "staminaCostPerParticipant": {
+          "Coronel Silver": 25,
+          "Soldado Red Ribbon": 10
+        },
+        "effect": "Explosión masiva de área que destruye cobertura y causa daño crítico.",
+        "partialFailureResult": "Si el rival evade el fuego de supresión inicial, el flanco queda expuesto.",
         "canonStatus": "apex_custom"
       }
     ],
@@ -1808,11 +2079,7 @@ export const INITIAL_CHARACTERS = [
         "cielo_abierto_sin_cobertura"
       ]
     },
-    "provenFeats": [
-      "Destruyó la Nube Voladora de Goku de un impacto directo de misil.",
-      "Recuperó una de las Dragon Balls en el bosque.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -1822,7 +2089,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Entregarás esa Dragon Ball por las buenas o por las malas!",
+      "onTransformation": "¡No hay transformaciones para la disciplina del ejército!",
+      "onUltimateReady": "¡Fuego de artillería pesada, borren al objetivo!",
+      "onLowHealth": "¡Imposible! ¿Cómo un mocoso puede superarme?",
+      "onVictory": "¡Misión cumplida. La Red Ribbon reinará!"
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -1868,20 +2140,15 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga Red Ribbon / Año 750 DC",
-      "timelineRestrictions": "Conoce la existencia de las Dragon Balls como objetivo militar y las órdenes del Comandante Red; ignora todo evento posterior a su derrota y la caída del Red Ribbon.",
+      "timelineRestrictions": "Conoce la existencia de las Dragon Balls como objetivo militar; ignora todo evento posterior a su derrota.",
       "forbiddenConcepts": [
         "Dragon Balls de Namek",
         "Porunga",
         "Namekianos",
         "Saiyajin",
-        "Bardock",
         "Freezer",
         "Super Saiyajin",
-        "Kaioshin",
-        "Majin Buu",
-        "Bills",
-        "Ultra Instinto",
-        "Zeno"
+        "Majin Buu"
       ],
       "crossVerseAwareness": "none"
     }
@@ -1976,8 +2243,22 @@ export const INITIAL_CHARACTERS = [
           "counterplay": "Hojas afiladas de filo sobrehumano (katanas legendarias) atraviesan el blindaje."
         }
       ],
-      "specialMechanics": [],
-      "weaknesses": []
+      "specialMechanics": [
+        {
+          "name": "Rastreo de Esferas",
+          "desc": "Siente la energía emitida por las Dragon Balls a corta distancia."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Vulnerabilidad a Espadas Legendarias",
+          "description": "Su armadura natural es inútil contra filos pesados de nivel sobrehumano (como la katana de Yajirobe).",
+          "counterTags": [
+            "espadachín",
+            "filo_sobrehumano"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -2014,6 +2295,16 @@ export const INITIAL_CHARACTERS = [
           "Rey Demonio Piccolo"
         ],
         "effect": "+15% de velocidad de ataque al combatir bajo las órdenes directas de la estirpe demoníaca. Tambourine pica desde arriba y Cymbal inmoviliza.",
+        "canonStatus": "source_backed"
+      },
+      {
+        "name": "Engendro Demoniaco",
+        "partnerTags": [
+          "Rey Demonio Piccolo",
+          "Drum",
+          "Tambourine"
+        ],
+        "effect": "+15% de velocidad de ataque al combatir bajo las órdenes directas de la estirpe demoníaca.",
         "canonStatus": "source_backed"
       }
     ],
@@ -2109,7 +2400,7 @@ export const INITIAL_CHARACTERS = [
       "matterManipulation": 0,
       "soulDamage": 20,
       "powerNullification": 10,
-      "notes": "Resistencia muy baja. Cuerpo carente de blindaje natural contra cortes y energía concentrada."
+      "notes": "Resistencia muy baja. Cuerpo carente de blindaje pesado contra energía concentrada."
     },
     "combatAIPersonality": {
       "aggression": 85,
@@ -2131,11 +2422,7 @@ export const INITIAL_CHARACTERS = [
         "Fondo marino profundo"
       ]
     },
-    "provenFeats": [
-      "Aterrorizó aldeas humanas buscando las Esferas del Dragón.",
-      "Mantuvo una velocidad de reacción y combate consistente en situaciones de alta presión.",
-      "Demostró tenacidad táctica y resistencia física durante combates prolongados."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -2145,7 +2432,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Ji, ji, ji! ¡Serás un gran aperitivo para mi padre!",
+      "onTransformation": "¡Esta es la verdadera forma de la estirpe del Gran Rey Demonio!",
+      "onUltimateReady": "¡Muere bajo mis garras eléctricas!",
+      "onLowHealth": "¡Imposible! ¡Un humano insolente no puede lastimarme!",
+      "onVictory": "¡El Rey Demonio Piccolo reinará sobre el mundo!"
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -2176,18 +2468,15 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga Rey Demonio Piccolo / Año 753 DC",
-      "timelineRestrictions": "Cymbal ignora por completo la existencia de Goku adulto, las Dragon Balls de Namek, el entrenamiento de Kami-sama con Piccolo Jr., las sagas Saiyajin, Namek, Androides, Cell, Buu, Super, GT o cualquier evento posterior a su muerte.",
+      "timelineRestrictions": "Cymbal ignora por completo la existencia de Goku adulto, las Dragon Balls de Namek, o cualquier evento posterior a su muerte.",
       "forbiddenConcepts": [
         "Dragon Balls de Namek",
         "Porunga",
         "Super Saiyajin",
         "Goku adulto",
-        "Krillin",
-        "Ten Shin Han (como aliado)",
-        "Mr. Popo",
-        "Kami-sama",
-        "Ultra Instinto",
-        "Universo 7"
+        "Freezer",
+        "Cell",
+        "Majin Buu"
       ],
       "crossVerseAwareness": "none"
     },
@@ -2272,7 +2561,16 @@ export const INITIAL_CHARACTERS = [
         }
       ],
       "specialMechanics": [],
-      "weaknesses": []
+      "weaknesses": [
+        {
+          "name": "Exceso de Confianza",
+          "description": "Tiende a jugar con oponentes débiles, exponiéndose a contraataques sorpresa de guerreros potenciados.",
+          "counterTags": [
+            "poder_oculto",
+            "agua_ultrasagrada"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -2579,21 +2877,6 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Dependencia absoluta de la tecnología y de sus subordinados.",
         "exitCondition": "Ninguna",
         "tier": "9-C"
-      },
-      {
-        "id": "emperador-pilaf-kid",
-        "name": "Emperador Pilaf (Forma Niño / Post-Deseo)",
-        "apexKiMultiplier": 0.8,
-        "staminaDrain": 0,
-        "stats": "Reducción drástica de la potencia. Mismas habilidades, pero todo su arsenal es físicamente demasiado grande para él.",
-        "activationCondition": "Deseo accidental en la Saga Final de Dragon Ball.",
-        "canonStatus": "source_backed",
-        "grantedAbilities": [
-          "Acceso denegado al Castillo Voador (tamaño incompatible)"
-        ],
-        "limitations": "Pierde el control operativo del Castillo Voador al no alcanzar los controles. Destreza física reducida drásticamente.",
-        "drawbacks": "Frágil como un niño humano.",
-        "tier": "9-C"
       }
     ],
     "feats": [
@@ -2699,11 +2982,7 @@ export const INITIAL_CHARACTERS = [
         "Cuevas místicas con ki"
       ]
     },
-    "provenFeats": [
-      "Fue el primer antagonista importante de toda la franquicia Dragon Ball, buscando las Esferas del Dragón para dominar el mundo.",
-      "Reaparece cómicamente convertido en niño tras un deseo accidental en la Saga Final Dragon Ball, quedando atrapado en esa forma.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -2713,7 +2992,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Insolente! ¡Prueba la tecnología insuperable del Gran Imperio Pilaf!",
+      "onTransformation": "¡Activando protocolos de máxima emergencia!",
+      "onUltimateReady": "¡Nadie sobrevive a la ira del Emperador Pilaf!",
+      "onLowHealth": "¡Retirada táctica! ¡Salven mi pellejo!",
+      "onVictory": "¡Jajaja! ¡El mundo finalmente se arrodilla ante mí!"
     },
     "staminaProfile": {
       "maxStamina": 100,
@@ -2739,7 +3023,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Dragon Ball Clásico / Saga Final Dragon Ball (Año 750-756)",
-      "timelineRestrictions": "Pilaf no sabe absolutamente nada sobre los Guerreros Z, los Saiyajin, Namek, las amenazas interplanetarias, los Androides o los Grandes Sacerdotes. Su conocimiento se limita a su propia tecnología y al folklore local de las Esferas del Dragón en la Tierra.",
+      "timelineRestrictions": "Pilaf no sabe absolutamente nada sobre los Guerreros Z, los Saiyajin, Namek, las amenazas interplanetarias, los Androides o los Grandes Sacerdotes.",
       "forbiddenConcepts": [
         "Saiyajin",
         "Freezer",
@@ -3060,11 +3344,7 @@ export const INITIAL_CHARACTERS = [
         "Cualquier zona con ratas o insectos"
       ]
     },
-    "provenFeats": [
-      "Paralizó a Goku y Krilin casi asesinándolos si no fuera por interferencias externas.",
-      "Sobrevivió a múltiples accidentes mortales durante persecuciones.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -3074,7 +3354,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Nadie escapa de la justicia y el poder de la Red Ribbon!",
+      "onTransformation": "¡Tu insolencia ha arruinado mi uniforme perfecto!",
+      "onUltimateReady": "¡Contempla la mirada que congela la vida!",
+      "onLowHealth": "¡Imposible! ¡Esto no puede estar pasándome a mí!",
+      "onVictory": "¡Misión cumplida con absoluta pulcritud!"
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -3110,7 +3395,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga del Ejército Red Ribbon / Año 750",
-      "timelineRestrictions": "Solo conoce hasta la búsqueda de las Dragon Balls por parte de la Red Ribbon. No sabe del futuro del ejército, de Goku Super Saiyajin, Piccolo Daimao Jr., androides del Dr. Gero, ni del Torneo Cell.",
+      "timelineRestrictions": "Solo conoce hasta la búsqueda de las Dragon Balls por parte de la Red Ribbon. No sabe del futuro del ejército, de Goku Super Saiyajin o androides.",
       "forbiddenConcepts": [
         "Super Saiyajin",
         "Androide 17/18",
@@ -3120,9 +3405,7 @@ export const INITIAL_CHARACTERS = [
         "Porunga",
         "Kami",
         "Piccolo Daimao",
-        "Bills",
-        "Ultra Instinto",
-        "Zeno"
+        "Bills"
       ],
       "crossVerseAwareness": "none"
     }
@@ -3382,15 +3665,11 @@ export const INITIAL_CHARACTERS = [
         "Anillos de Torneo"
       ],
       "disfavoredBiomes": [
-        "Vacío sin aire (no por oxígeno, sino por falta de víctimas)",
+        "Espacio abierto sin oxígeno",
         "Lugares donde no pueda usar su vuelo"
       ]
     },
-    "provenFeats": [
-      "Atrapó a Goku niño al punto de casi tirarlo del ring.",
-      "Asesinado por Tambourine y posteriormente revivido.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -3400,7 +3679,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Te convertiré en polvo con mis propias garras!",
+      "onTransformation": "¡Mi poder prehistórico no tiene límite!",
+      "onUltimateReady": "¡Traga esto! ¡Mi Chicle Feliz!",
+      "onLowHealth": "¡Espera! ¡Me rindo, me rindo!",
+      "onVictory": "¡Jajaja! ¡Nadie puede contra el gran Giran!"
     },
     "staminaProfile": {
       "maxStamina": 100,
@@ -3426,18 +3710,16 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "21° Torneo de las Artes Marciales / Año 750",
-      "timelineRestrictions": "Giran solo existe en el marco del 21° Torneo. Tras ser eliminado, fue asesinado por Tambourine y luego revivido por las Dragon Balls. Ignora el paradero del Torneo 22 o 23, no tiene concepto del Ki más allá de la pelea callejera, y no sabe nada de los Saiyajin o la carrera armamentística de Freezer.",
+      "timelineRestrictions": "Giran solo existe en el marco del 21° Torneo. Ignora el paradero de torneos futuros y no sabe nada de los Saiyajin.",
       "forbiddenConcepts": [
-        "Dragon Balls (más allá de su propia muerte/revivificación)",
+        "Dragon Balls",
         "Kami",
         "Maestro Roshi",
-        "Escuela Tortuga",
         "Saiyajin",
         "Freezer",
         "Androides",
         "Kaio-ken",
-        "Super Saiyajin",
-        "Fusión"
+        "Super Saiyajin"
       ],
       "crossVerseAwareness": "none"
     }
@@ -3636,7 +3918,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "21º Tenkaichi Budokai",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "krilin-db-clasico",
@@ -3927,11 +4235,7 @@ export const INITIAL_CHARACTERS = [
         "Planetas Namekusei"
       ]
     },
-    "provenFeats": [
-      "Venció a Bacterian al recordar que no tenía nariz física.",
-      "Puso contra las cuerdas a Jackie Chun (Maestro Roshi) en un duelo de ultra-velocidad.",
-      "Se ganó el respeto del Rey Demonio Piccolo y su reencarnación Ma Junior."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -3941,7 +4245,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Voy a dar todo lo que tengo!",
+      "onUltimateReady": "¡No podrás esquivar esto!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 140,
@@ -4074,7 +4383,16 @@ export const INITIAL_CHARACTERS = [
           "desc": "Requiere recargas tácticas periódicas tras usar superataques balísticos."
         }
       ],
-      "weaknesses": []
+      "weaknesses": [
+        {
+          "name": "Dependencia Balística",
+          "desc": "Sin su armamento pierde capacidad ofensiva significativa frente a combatientes armados de Ki.",
+          "counterTags": [
+            "Desarme",
+            "Agotamiento de Munición"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -4147,14 +4465,153 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Mai (Escuadrón Pilaf): Estilo táctico Estratega pragmática, especialista . Seria, pragmática y la única con sentido común en el séquito",
-    "provenFeats": [
-      "Infiltró el castillo y robó las Dragon Balls a la banda de Goku.",
-      "Pilota las Pilaf Machines.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "combatAIPersonality": {
+      "0": "M",
+      "1": "a",
+      "2": "i",
+      "3": " ",
+      "4": "(",
+      "5": "E",
+      "6": "s",
+      "7": "c",
+      "8": "u",
+      "9": "a",
+      "10": "d",
+      "11": "r",
+      "12": "ó",
+      "13": "n",
+      "14": " ",
+      "15": "P",
+      "16": "i",
+      "17": "l",
+      "18": "a",
+      "19": "f",
+      "20": ")",
+      "21": ":",
+      "22": " ",
+      "23": "E",
+      "24": "s",
+      "25": "t",
+      "26": "i",
+      "27": "l",
+      "28": "o",
+      "29": " ",
+      "30": "t",
+      "31": "á",
+      "32": "c",
+      "33": "t",
+      "34": "i",
+      "35": "c",
+      "36": "o",
+      "37": " ",
+      "38": "E",
+      "39": "s",
+      "40": "t",
+      "41": "r",
+      "42": "a",
+      "43": "t",
+      "44": "e",
+      "45": "g",
+      "46": "a",
+      "47": " ",
+      "48": "p",
+      "49": "r",
+      "50": "a",
+      "51": "g",
+      "52": "m",
+      "53": "á",
+      "54": "t",
+      "55": "i",
+      "56": "c",
+      "57": "a",
+      "58": ",",
+      "59": " ",
+      "60": "e",
+      "61": "s",
+      "62": "p",
+      "63": "e",
+      "64": "c",
+      "65": "i",
+      "66": "a",
+      "67": "l",
+      "68": "i",
+      "69": "s",
+      "70": "t",
+      "71": "a",
+      "72": " ",
+      "73": ".",
+      "74": " ",
+      "75": "S",
+      "76": "e",
+      "77": "r",
+      "78": "i",
+      "79": "a",
+      "80": ",",
+      "81": " ",
+      "82": "p",
+      "83": "r",
+      "84": "a",
+      "85": "g",
+      "86": "m",
+      "87": "á",
+      "88": "t",
+      "89": "i",
+      "90": "c",
+      "91": "a",
+      "92": " ",
+      "93": "y",
+      "94": " ",
+      "95": "l",
+      "96": "a",
+      "97": " ",
+      "98": "ú",
+      "99": "n",
+      "100": "i",
+      "101": "c",
+      "102": "a",
+      "103": " ",
+      "104": "c",
+      "105": "o",
+      "106": "n",
+      "107": " ",
+      "108": "s",
+      "109": "e",
+      "110": "n",
+      "111": "t",
+      "112": "i",
+      "113": "d",
+      "114": "o",
+      "115": " ",
+      "116": "c",
+      "117": "o",
+      "118": "m",
+      "119": "ú",
+      "120": "n",
+      "121": " ",
+      "122": "e",
+      "123": "n",
+      "124": " ",
+      "125": "e",
+      "126": "l",
+      "127": " ",
+      "128": "s",
+      "129": "é",
+      "130": "q",
+      "131": "u",
+      "132": "i",
+      "133": "t",
+      "134": "o",
+      "aggression": 45,
+      "tacticalIQ": 75,
+      "mercyThreshold": 40,
+      "clutchFactor": 50,
+      "preferredEngagementRange": "mid_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -4164,9 +4621,122 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡No subestimes al Escuadrón Pilaf!",
+      "onTransformation": "¡Activando protocolo de combate!",
+      "onUltimateReady": "¡Fuego cruzado, ahora!",
+      "onLowHealth": "¡Retrocedan, nos están acorralando!",
+      "onVictory": "¡Misión cumplida, el Emperador estará orgulloso!"
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "1G",
+      "favoredBiomes": [
+        "Bases Militares",
+        "Zonas Urbanas",
+        "Castillo de Pilaf"
+      ],
+      "disfavoredBiomes": [
+        "Espacio Exterior",
+        "Zonas Volcánicas",
+        "Torneos de Artes Marciales"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 20,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Subfusil Automático",
+        "durability": "Media",
+        "effect": "Permite disparos rápidos a media distancia."
+      },
+      {
+        "name": "Chaleco Táctico Antibalas",
+        "durability": "Baja",
+        "effect": "Absorbe parcialmente daño balístico menor."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de Pilaf / Búsqueda de las Dragon Balls",
+      "timelineRestrictions": "Desconoce cualquier evento posterior al inicio de Dragon Ball. Sin noción de Ki avanzado o extraterrestres.",
+      "forbiddenConcepts": [
+        "Super Saiyajin",
+        "Freezer",
+        "Cell",
+        "Ki Divino",
+        "Viajes en el tiempo"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "mai-shu-pilaf",
@@ -4193,7 +4763,8 @@ export const INITIAL_CHARACTERS = [
       "Voluntad Indomable",
       "Adaptación Táctica",
       "Infiltración y camuflaje",
-      "Uso de Armamento Convencional"
+      "Uso de Armamento Convencional",
+      "Disfraz y camuflaje"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -4225,6 +4796,13 @@ export const INITIAL_CHARACTERS = [
           "name": "Ráfaga Continua Concentrada",
           "desc": "Disparos veloces en abanico que saturan el área de combate.",
           "cost": "Gasto medio"
+        },
+        {
+          "name": "Equipo de Infiltraci��n",
+          "desc": "Permite evadir la detección en zonas oscuras o complejas.",
+          "cost": 10,
+          "startup": "Instantáneo",
+          "counterplay": "Sensores térmicos o vigilancia de área."
         }
       ],
       "ultimateAttacks": [
@@ -4258,6 +4836,10 @@ export const INITIAL_CHARACTERS = [
           "name": "Equipo de Infiltración",
           "desc": "Permite evadir la detección en zonas oscuras o complejas.",
           "cost": "10 stamina"
+        },
+        {
+          "name": "Combate en Equipo Duo",
+          "desc": "Sinergia táctica que permite alternar fuego de cobertura sin perder turnos de ofensiva."
         }
       ],
       "weaknesses": [
@@ -5076,11 +5658,7 @@ export const INITIAL_CHARACTERS = [
         "Selvas Cerradas"
       ]
     },
-    "provenFeats": [
-      "Forzó a Goku a usar estrategia de viento para evitar su ataque en picado.",
-      "Consiguió agua gracias a la bondad de Jackie Chun (Roshi).",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -5090,7 +5668,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Mi pueblo depende de esta victoria!",
+      "onUltimateReady": "¡Este es el poder del cielo!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 120,
@@ -5121,18 +5704,16 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "21° Torneo de las Artes Marciales / Año 750",
-      "timelineRestrictions": "Nam solo conoce eventos hasta su enfrentamiento con Goku en el torneo. Ignora la existencia de la Escuela Tortuga como organización (solo vio a Roshi y a Goku como oponentes). No tiene idea de lo que ocurre con los Saiyajin, Freezer o el resto del Universo 7.",
+      "timelineRestrictions": "Nam solo conoce eventos hasta su enfrentamiento con Goku en el torneo. Ignora la existencia de organizaciones superiores o amenazas extraterrestres.",
       "forbiddenConcepts": [
-        "Dragon BallsNamekianas",
-        "Inmortales (Kami, Piccolo)",
+        "Dragon Balls Namekianas",
         "Saiyajin",
         "Freezer",
         "Androides",
         "Majin Buu",
         "Bills",
         "Super Saiyajin",
-        "Kaio-ken",
-        "Fusión"
+        "Kaio-ken"
       ],
       "crossVerseAwareness": "none"
     },
@@ -5161,7 +5742,9 @@ export const INITIAL_CHARACTERS = [
     "haxTags": [
       "Gigantismo Controlado (Super Namekiano)",
       "Regeneración Celular",
-      "Extensión Elástica (Bypass de Guardia)"
+      "Extensión Elástica (Bypass de Guardia)",
+      "Gigantismo Controlado",
+      "Extensión Elástica"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -5228,6 +5811,10 @@ export const INITIAL_CHARACTERS = [
         {
           "name": "Barra de Ki Demoníaco",
           "desc": "Permite potenciar velocidad de vuelo y daño de ráfagas gastando reservas de Ki interno."
+        },
+        {
+          "name": "Gigantificación",
+          "description": "Aumenta su tamaño masivamente, ganando 300% de Hitbox y AP contundente, pero reduciendo velocidad."
         }
       ],
       "weaknesses": [
@@ -5314,6 +5901,26 @@ export const INITIAL_CHARACTERS = [
         "effect": "Devasta el sector entero y anula cualquier defensa estándar.",
         "partialFailureResult": "El combo se disipa y los participantes quedan exhaustos temporalmente.",
         "canonStatus": "apex_custom"
+      },
+      {
+        "id": "piccolo-combo-demon",
+        "name": "Juicio Demoníaco Conjunto",
+        "partners": [
+          "Kami",
+          "Goku-Kid"
+        ],
+        "sequence": [
+          "Inmovilización mediante ondas de Ki envolventes.",
+          "Canalización de rayo perforante demoníaco combinado.",
+          "Remate definitivo con Chobakuretsumaha conjunto."
+        ],
+        "staminaCostPerParticipant": {
+          "Piccolo Jr.": 45,
+          "Aliado": 35
+        },
+        "effect": "Devasta el sector entero y anula cualquier defensa estándar.",
+        "partialFailureResult": "El combo se disipa y los participantes quedan exhaustos temporalmente.",
+        "canonStatus": "apex_custom"
       }
     ],
     "transformativeMechanics": {
@@ -5349,14 +5956,142 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 25,
+      "maxStamina": 160,
+      "recoveryRatePerTurn": 12
     },
-    "combatAIPersonality": "Piccolo Jr.: Estilo táctico Prodigio Táctico y Sádico. Es infin. A esta edad, es pura venganza y orgullo demoníaco. Su único",
-    "provenFeats": [
-      "Revirtió y contrarrestó el Mafuba del propio Kami-sama (Dios de la Tierra), sellándolo a él en su lugar.",
-      "Llevó a Son Goku al límite de la muerte, rompiéndole las piernas y los brazos con rayos perforantes precisos.",
-      "Redujo a cenizas la totalidad de la Isla del Torneo de las Artes Marciales."
-    ],
+    "combatAIPersonality": {
+      "0": "P",
+      "1": "i",
+      "2": "c",
+      "3": "c",
+      "4": "o",
+      "5": "l",
+      "6": "o",
+      "7": " ",
+      "8": "J",
+      "9": "r",
+      "10": ".",
+      "11": ":",
+      "12": " ",
+      "13": "E",
+      "14": "s",
+      "15": "t",
+      "16": "i",
+      "17": "l",
+      "18": "o",
+      "19": " ",
+      "20": "t",
+      "21": "á",
+      "22": "c",
+      "23": "t",
+      "24": "i",
+      "25": "c",
+      "26": "o",
+      "27": " ",
+      "28": "P",
+      "29": "r",
+      "30": "o",
+      "31": "d",
+      "32": "i",
+      "33": "g",
+      "34": "i",
+      "35": "o",
+      "36": " ",
+      "37": "T",
+      "38": "á",
+      "39": "c",
+      "40": "t",
+      "41": "i",
+      "42": "c",
+      "43": "o",
+      "44": " ",
+      "45": "y",
+      "46": " ",
+      "47": "S",
+      "48": "á",
+      "49": "d",
+      "50": "i",
+      "51": "c",
+      "52": "o",
+      "53": ".",
+      "54": " ",
+      "55": "E",
+      "56": "s",
+      "57": " ",
+      "58": "i",
+      "59": "n",
+      "60": "f",
+      "61": "i",
+      "62": "n",
+      "63": ".",
+      "64": " ",
+      "65": "A",
+      "66": " ",
+      "67": "e",
+      "68": "s",
+      "69": "t",
+      "70": "a",
+      "71": " ",
+      "72": "e",
+      "73": "d",
+      "74": "a",
+      "75": "d",
+      "76": ",",
+      "77": " ",
+      "78": "e",
+      "79": "s",
+      "80": " ",
+      "81": "p",
+      "82": "u",
+      "83": "r",
+      "84": "a",
+      "85": " ",
+      "86": "v",
+      "87": "e",
+      "88": "n",
+      "89": "g",
+      "90": "a",
+      "91": "n",
+      "92": "z",
+      "93": "a",
+      "94": " ",
+      "95": "y",
+      "96": " ",
+      "97": "o",
+      "98": "r",
+      "99": "g",
+      "100": "u",
+      "101": "l",
+      "102": "l",
+      "103": "o",
+      "104": " ",
+      "105": "d",
+      "106": "e",
+      "107": "m",
+      "108": "o",
+      "109": "n",
+      "110": "í",
+      "111": "a",
+      "112": "c",
+      "113": "o",
+      "114": ".",
+      "115": " ",
+      "116": "S",
+      "117": "u",
+      "118": " ",
+      "119": "ú",
+      "120": "n",
+      "121": "i",
+      "122": "c",
+      "123": "o",
+      "aggression": 85,
+      "tacticalIQ": 90,
+      "mercyThreshold": 10,
+      "clutchFactor": 85,
+      "preferredEngagementRange": "adaptive"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -5366,9 +6101,123 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Te arrepentirás de haber nacido, Goku!",
+      "onTransformation": "¡Observa mi verdadera forma gigante!",
+      "onUltimateReady": "¡Voy a borrar esta isla y tu existencia con ella!",
+      "onLowHealth": "Mi odio... ¡mi odio me mantiene de pie!",
+      "onVictory": "¡El mundo es mío! ¡He vencido al enemigo definitivo!"
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "20G",
+      "favoredBiomes": [
+        "Islas Desiertas",
+        "Torneos de Artes Marciales",
+        "Zonas Montañosas"
+      ],
+      "disfavoredBiomes": [
+        "Espacio Profundo",
+        "Núcleos Volcánicos"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Turbante y Capa Pesada de Entrenamiento",
+        "durability": "high",
+        "effect": "Limita voluntariamente su poder y velocidad para entrenar sus reflejos."
+      },
+      {
+        "name": "Gi Demoníaco Púrpura",
+        "durability": "medium",
+        "effect": "Vestimenta ligera resistente al fuego y fricción de alta velocidad."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "23º Tenkaichi Budokai / Año 756",
+      "timelineRestrictions": "Piccolo Jr. posee los recuerdos completos de su padre (Daimaoh). Desconoce por completo la existencia de los Saiyajins espaciales, Freezer, los viajes en el tiempo o tecnología androide.",
+      "forbiddenConcepts": [
+        "Super Saiyajin",
+        "Raza Saiyajin",
+        "Freezer",
+        "Super Namekiano (Fusionado con Nail/Kami)",
+        "Cell",
+        "Majin Buu",
+        "Bills"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "ranfan-dragon-ball-cl-sico-172",
@@ -5476,6 +6325,15 @@ export const INITIAL_CHARACTERS = [
             "Fragilidad Física",
             "Ataques de Reacción"
           ]
+        },
+        {
+          "name": "Inmunidad en Rivales Ciegos/Fríos",
+          "description": "Inútil contra oponentes que no pueden verla o carecen de atracción.",
+          "counterTags": [
+            "Ceguera",
+            "Androides",
+            "Falta de Empatía"
+          ]
         }
       ]
     },
@@ -5498,7 +6356,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Vanidosa, coqueta y calculadora; usa cualquier ventaja para ganar sin importarle el pudor.",
     "weaknesses": "Inútil contra oponentes ciegos, monjes que cierren los ojos o guerreros que no sientan atracción sexual.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Encanto del 21º Torneo",
+        "partnerTags": [
+          "Torneo 21",
+          "Luchador Terrícola"
+        ],
+        "effect": "Reduce la concentración de rivales masculinos (-10% precisión 1 turno) con su táctica de seducción canónica vista contra Nam.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -5567,15 +6435,11 @@ export const INITIAL_CHARACTERS = [
         "Anfiteatros de Torneo"
       ],
       "disfavoredBiomes": [
-        "Vacío Espacial",
-        "Vacío Desértico sin público"
+        "Espacio Exterior",
+        "Zonas Desérticas sin público"
       ]
     },
-    "provenFeats": [
-      "Acorraló a Nam en los cuartos de final del 21° Torneo de las Artes Marciales.",
-      "Mantuvo una velocidad de reacción y combate consistente en situaciones de alta presión.",
-      "Demostró tenacidad táctica y resistencia física durante combates prolongados."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -5585,7 +6449,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¿A que no te atreves a golpearme?",
+      "onTransformation": "¡Mira esto!",
+      "onUltimateReady": "¡Se acabó para ti!",
+      "onLowHealth": "¡Oye, ten cuidado con mi rostro!",
+      "onVictory": "¡La belleza siempre triunfa!"
     },
     "staminaProfile": {
       "maxStamina": 80,
@@ -5606,15 +6475,13 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "21° Torneo de las Artes Marciales / Año 750",
-      "timelineRestrictions": "Ranfan solo existe en la línea temporal del 21° Torneo. Ignora la existencia de Dragones, Shen Long, o amenazas extraterrestres. Solo le importa el torneo y la victoria rápida.",
+      "timelineRestrictions": "Ranfan ignora por completo eventos fuera del torneo local de artes marciales.",
       "forbiddenConcepts": [
         "Dragon Balls",
         "Kamehameha",
-        "Maestro Roshi",
         "Ki Control",
         "Saiyajin",
-        "Freezer",
-        "Androides"
+        "Freezer"
       ],
       "crossVerseAwareness": "none"
     }
@@ -5646,7 +6513,10 @@ export const INITIAL_CHARACTERS = [
       "Lanzamiento de Rayos Oculares",
       "Vínculo Vital con Kami",
       "Mafuba-resistente (Conoce el sello)",
-      "Manipulación de Energía Maldita"
+      "Manipulación de Energía Maldita",
+      "Engendrar Demonios",
+      "Maldad Pura",
+      "Mafuba-resistente"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -6140,7 +7010,17 @@ export const INITIAL_CHARACTERS = [
       ],
       "actives": [],
       "specialMechanics": [],
-      "weaknesses": []
+      "weaknesses": [
+        {
+          "id": "shen-weak-body",
+          "name": "Recipiente Frágil",
+          "desc": "El cuerpo de Shen es humano y no soporta impactos masivos.",
+          "counterTags": [
+            "alta-destruccion",
+            "velocidad-sobrehumana"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -6222,14 +7102,148 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Shen (Kami-sama): Estilo táctico Dios Experto. Observa desde la Atal. Sabio, triste y avergonzado de haber creado a Piccolo (su mi",
-    "provenFeats": [
-      "Poseyó el cuerpo de un oficinista y llegó a las semifinales del Torneo de las Artes Marciales sin esfuerzo aparente.",
-      "Humilló a Yamcha (cuyo nivel ya era superior al de DB temprano) sin apenas moverse de su sitio.",
-      "Estuvo a un segundo de sellar al villano principal de la saga mediante pura técnica."
-    ],
+    "combatAIPersonality": {
+      "0": "S",
+      "1": "h",
+      "2": "e",
+      "3": "n",
+      "4": " ",
+      "5": "(",
+      "6": "K",
+      "7": "a",
+      "8": "m",
+      "9": "i",
+      "10": "-",
+      "11": "s",
+      "12": "a",
+      "13": "m",
+      "14": "a",
+      "15": ")",
+      "16": ":",
+      "17": " ",
+      "18": "E",
+      "19": "s",
+      "20": "t",
+      "21": "i",
+      "22": "l",
+      "23": "o",
+      "24": " ",
+      "25": "t",
+      "26": "á",
+      "27": "c",
+      "28": "t",
+      "29": "i",
+      "30": "c",
+      "31": "o",
+      "32": " ",
+      "33": "D",
+      "34": "i",
+      "35": "o",
+      "36": "s",
+      "37": " ",
+      "38": "E",
+      "39": "x",
+      "40": "p",
+      "41": "e",
+      "42": "r",
+      "43": "t",
+      "44": "o",
+      "45": ".",
+      "46": " ",
+      "47": "O",
+      "48": "b",
+      "49": "s",
+      "50": "e",
+      "51": "r",
+      "52": "v",
+      "53": "a",
+      "54": " ",
+      "55": "d",
+      "56": "e",
+      "57": "s",
+      "58": "d",
+      "59": "e",
+      "60": " ",
+      "61": "l",
+      "62": "a",
+      "63": " ",
+      "64": "A",
+      "65": "t",
+      "66": "a",
+      "67": "l",
+      "68": ".",
+      "69": " ",
+      "70": "S",
+      "71": "a",
+      "72": "b",
+      "73": "i",
+      "74": "o",
+      "75": ",",
+      "76": " ",
+      "77": "t",
+      "78": "r",
+      "79": "i",
+      "80": "s",
+      "81": "t",
+      "82": "e",
+      "83": " ",
+      "84": "y",
+      "85": " ",
+      "86": "a",
+      "87": "v",
+      "88": "e",
+      "89": "r",
+      "90": "g",
+      "91": "o",
+      "92": "n",
+      "93": "z",
+      "94": "a",
+      "95": "d",
+      "96": "o",
+      "97": " ",
+      "98": "d",
+      "99": "e",
+      "100": " ",
+      "101": "h",
+      "102": "a",
+      "103": "b",
+      "104": "e",
+      "105": "r",
+      "106": " ",
+      "107": "c",
+      "108": "r",
+      "109": "e",
+      "110": "a",
+      "111": "d",
+      "112": "o",
+      "113": " ",
+      "114": "a",
+      "115": " ",
+      "116": "P",
+      "117": "i",
+      "118": "c",
+      "119": "c",
+      "120": "o",
+      "121": "l",
+      "122": "o",
+      "123": " ",
+      "124": "(",
+      "125": "s",
+      "126": "u",
+      "127": " ",
+      "128": "m",
+      "129": "i",
+      "aggression": 40,
+      "tacticalIQ": 90,
+      "mercyThreshold": 95,
+      "clutchFactor": 70,
+      "preferredEngagementRange": "mid_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -6239,9 +7253,115 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "Este recipiente humano aún tiene límites.",
+      "onUltimateReady": "¡No podrás escapar de esta técnica milenaria! ¡Mafuba!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "1G",
+      "favoredBiomes": [
+        "Arenas de Torneo",
+        "Templos"
+      ],
+      "disfavoredBiomes": [
+        "Espacio exterior",
+        "Zonas volcánicas"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Frasco y Talismán del Mafuba",
+        "durability": "Frágil",
+        "effect": "Permite sellar entidades atrapadas con el Mafuba."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "23º Tenkaichi Budokai / Año 753",
+      "timelineRestrictions": "Conoce los secretos de la Tierra y la magia de los Namekianos, pero desconoce eventos de Dragon Ball Z.",
+      "forbiddenConcepts": [
+        "Super Saiyajin",
+        "Saga de Freezer",
+        "Cell",
+        "Majin Buu",
+        "Multiverso"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "shu-pilaf-individual",
@@ -6337,7 +7457,17 @@ export const INITIAL_CHARACTERS = [
           "desc": "Permite escalar superficies verticales y techos con facilidad."
         }
       ],
-      "weaknesses": []
+      "weaknesses": [
+        {
+          "id": "shu-weak-1",
+          "name": "Fragilidad Física",
+          "desc": "Baja resistencia ante oponentes sobrehumanos.",
+          "counterTags": [
+            "fuerza_sobrehumana",
+            "alta_potencia"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -6410,14 +7540,152 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Shu (Escuadrón Pilaf): Estilo táctico Ninja entrenado en evasión, conducc. Leal y obediente, temeroso del peligro pero cumplidor de su",
-    "provenFeats": [
-      "Asaltó a Goku y sus amigos disfrazado de ninja.",
-      "Pilota el robot de fusión Pilaf.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "combatAIPersonality": {
+      "0": "S",
+      "1": "h",
+      "2": "u",
+      "3": " ",
+      "4": "(",
+      "5": "E",
+      "6": "s",
+      "7": "c",
+      "8": "u",
+      "9": "a",
+      "10": "d",
+      "11": "r",
+      "12": "ó",
+      "13": "n",
+      "14": " ",
+      "15": "P",
+      "16": "i",
+      "17": "l",
+      "18": "a",
+      "19": "f",
+      "20": ")",
+      "21": ":",
+      "22": " ",
+      "23": "E",
+      "24": "s",
+      "25": "t",
+      "26": "i",
+      "27": "l",
+      "28": "o",
+      "29": " ",
+      "30": "t",
+      "31": "á",
+      "32": "c",
+      "33": "t",
+      "34": "i",
+      "35": "c",
+      "36": "o",
+      "37": " ",
+      "38": "N",
+      "39": "i",
+      "40": "n",
+      "41": "j",
+      "42": "a",
+      "43": " ",
+      "44": "e",
+      "45": "n",
+      "46": "t",
+      "47": "r",
+      "48": "e",
+      "49": "n",
+      "50": "a",
+      "51": "d",
+      "52": "o",
+      "53": " ",
+      "54": "e",
+      "55": "n",
+      "56": " ",
+      "57": "e",
+      "58": "v",
+      "59": "a",
+      "60": "s",
+      "61": "i",
+      "62": "ó",
+      "63": "n",
+      "64": ",",
+      "65": " ",
+      "66": "c",
+      "67": "o",
+      "68": "n",
+      "69": "d",
+      "70": "u",
+      "71": "c",
+      "72": "c",
+      "73": ".",
+      "74": " ",
+      "75": "L",
+      "76": "e",
+      "77": "a",
+      "78": "l",
+      "79": " ",
+      "80": "y",
+      "81": " ",
+      "82": "o",
+      "83": "b",
+      "84": "e",
+      "85": "d",
+      "86": "i",
+      "87": "e",
+      "88": "n",
+      "89": "t",
+      "90": "e",
+      "91": ",",
+      "92": " ",
+      "93": "t",
+      "94": "e",
+      "95": "m",
+      "96": "e",
+      "97": "r",
+      "98": "o",
+      "99": "s",
+      "100": "o",
+      "101": " ",
+      "102": "d",
+      "103": "e",
+      "104": "l",
+      "105": " ",
+      "106": "p",
+      "107": "e",
+      "108": "l",
+      "109": "i",
+      "110": "g",
+      "111": "r",
+      "112": "o",
+      "113": " ",
+      "114": "p",
+      "115": "e",
+      "116": "r",
+      "117": "o",
+      "118": " ",
+      "119": "c",
+      "120": "u",
+      "121": "m",
+      "122": "p",
+      "123": "l",
+      "124": "i",
+      "125": "d",
+      "126": "o",
+      "127": "r",
+      "128": " ",
+      "129": "d",
+      "130": "e",
+      "131": " ",
+      "132": "s",
+      "133": "u",
+      "aggression": 30,
+      "tacticalIQ": 60,
+      "mercyThreshold": 50,
+      "clutchFactor": 40,
+      "preferredEngagementRange": "mid_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -6427,9 +7695,116 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Ji, ji, ji! ¡Prepárate para enfrentar las artes ninja de la pandilla de Pilaf!",
+      "onTransformation": "¡No necesito transformarme para vencerte!",
+      "onUltimateReady": "¡Toma esto! ¡Mi espada ninja no falla!",
+      "onLowHealth": "¡Ayuda, Pilaf-sama! ¡Este sujeto es muy fuerte!",
+      "onVictory": "¡El gran Shu ha vencido! ¡Sigan temiendo al Escuadrón Pilaf!"
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "1G",
+      "favoredBiomes": [
+        "Castillos",
+        "Bosques",
+        "Zonas urbanas"
+      ],
+      "disfavoredBiomes": [
+        "Espacio exterior",
+        "Fondos marinos"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 10,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Ninjato y Shurikens",
+        "durability": "Durabilidad estándar de acero",
+        "effect": "Armas cortantes y proyectiles para combate ágil."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de Pilaf / Torneo Tenkaichi",
+      "timelineRestrictions": "Desconoce cualquier evento posterior al inicio de Dragon Ball y tecnologías avanzadas de la Patrulla Roja o Saiyajins.",
+      "forbiddenConcepts": [
+        "Super Saiyajin",
+        "Kamehameha avanzado",
+        "Freezer",
+        "Cell",
+        "Ki divino"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "grandpa-gohan-db-21tb",
@@ -6622,13 +7997,150 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 20,
+      "maxStamina": 120,
+      "recoveryRatePerTurn": 10
     },
-    "combatAIPersonality": "Son Gohan (Abuelo): Estilo táctico Maestro Ancestral. Conoce todas las. Un alma amable, noble y llena de amor. Pelea para educar y m",
-    "provenFeats": [
-      "Sometió a Son Goku (Quien ya había derrotado a monstruos como Buyon o al Ejército de la Red Ribbon) identificando y agarrando su cola a velocidades invisibles para el chico.",
-      "Chocó un Kamehameha frontal contra el discípulo de la escuela Tortuga de la nueva generación, empatando en pura maestría de Ki."
-    ],
+    "combatAIPersonality": {
+      "0": "S",
+      "1": "o",
+      "2": "n",
+      "3": " ",
+      "4": "G",
+      "5": "o",
+      "6": "h",
+      "7": "a",
+      "8": "n",
+      "9": " ",
+      "10": "(",
+      "11": "A",
+      "12": "b",
+      "13": "u",
+      "14": "e",
+      "15": "l",
+      "16": "o",
+      "17": ")",
+      "18": ":",
+      "19": " ",
+      "20": "E",
+      "21": "s",
+      "22": "t",
+      "23": "i",
+      "24": "l",
+      "25": "o",
+      "26": " ",
+      "27": "t",
+      "28": "á",
+      "29": "c",
+      "30": "t",
+      "31": "i",
+      "32": "c",
+      "33": "o",
+      "34": " ",
+      "35": "M",
+      "36": "a",
+      "37": "e",
+      "38": "s",
+      "39": "t",
+      "40": "r",
+      "41": "o",
+      "42": " ",
+      "43": "A",
+      "44": "n",
+      "45": "c",
+      "46": "e",
+      "47": "s",
+      "48": "t",
+      "49": "r",
+      "50": "a",
+      "51": "l",
+      "52": ".",
+      "53": " ",
+      "54": "C",
+      "55": "o",
+      "56": "n",
+      "57": "o",
+      "58": "c",
+      "59": "e",
+      "60": " ",
+      "61": "t",
+      "62": "o",
+      "63": "d",
+      "64": "a",
+      "65": "s",
+      "66": " ",
+      "67": "l",
+      "68": "a",
+      "69": "s",
+      "70": ".",
+      "71": " ",
+      "72": "U",
+      "73": "n",
+      "74": " ",
+      "75": "a",
+      "76": "l",
+      "77": "m",
+      "78": "a",
+      "79": " ",
+      "80": "a",
+      "81": "m",
+      "82": "a",
+      "83": "b",
+      "84": "l",
+      "85": "e",
+      "86": ",",
+      "87": " ",
+      "88": "n",
+      "89": "o",
+      "90": "b",
+      "91": "l",
+      "92": "e",
+      "93": " ",
+      "94": "y",
+      "95": " ",
+      "96": "l",
+      "97": "l",
+      "98": "e",
+      "99": "n",
+      "100": "a",
+      "101": " ",
+      "102": "d",
+      "103": "e",
+      "104": " ",
+      "105": "a",
+      "106": "m",
+      "107": "o",
+      "108": "r",
+      "109": ".",
+      "110": " ",
+      "111": "P",
+      "112": "e",
+      "113": "l",
+      "114": "e",
+      "115": "a",
+      "116": " ",
+      "117": "p",
+      "118": "a",
+      "119": "r",
+      "120": "a",
+      "121": " ",
+      "122": "e",
+      "123": "d",
+      "124": "u",
+      "125": "c",
+      "126": "a",
+      "127": "r",
+      "128": " ",
+      "129": "y",
+      "130": " ",
+      "131": "m",
+      "aggression": 50,
+      "tacticalIQ": 95,
+      "mercyThreshold": 90,
+      "clutchFactor": 80,
+      "preferredEngagementRange": "close_quarters"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -6638,9 +8150,115 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Veamos cuánto has crecido, Goku!",
+      "onTransformation": "Esta máscara es solo para ocultar mi identidad, ¡pero mi arte marcial sigue intacto!",
+      "onUltimateReady": "¡Kame... Hame... Ha!",
+      "onLowHealth": "Jaja, me has acorralado muy bien... ¡Estoy orgulloso de ti!",
+      "onVictory": "Has luchado maravillosamente. Sigue entrenando con el maestro Roshi."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "1G",
+      "favoredBiomes": [
+        "Arenas de Torneo",
+        "Bosques"
+      ],
+      "disfavoredBiomes": [
+        "Espacio exterior"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 50,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Máscara de Zorro",
+        "durability": "Resistente a golpes físicos menores",
+        "effect": "Oculta temporalmente la identidad del abuelo Gohan."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo de Uranai Baba / Año 750",
+      "timelineRestrictions": "Desconoce eventos posteriores a la visita de Goku al palacio de Uranai Baba y la llegada de los Saiyajins.",
+      "forbiddenConcepts": [
+        "Super Saiyajin",
+        "Raditz",
+        "Vegeta",
+        "Freezer",
+        "Cell",
+        "Majin Buu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "son-goku-23-tenkaichi",
@@ -7465,6 +9083,15 @@ export const INITIAL_CHARACTERS = [
         ],
         "effect": "Bulma proporciona soporte táctico de detección con el Radar del Dragón y suministros de comida que evitan la inanición.",
         "canonStatus": "source_backed"
+      },
+      {
+        "name": "Sangre Saiyajin (Zenkai Individual)",
+        "partnerTags": [
+          "Goku",
+          "Vegeta",
+          "Gohan"
+        ],
+        "effect": "Al sobrevivir a daño crítico o quedar al borde de la muerte, el Saiyajin experimenta un aumento multiplicativo de su AP."
       }
     ],
     "teamCombos": [
@@ -7645,11 +9272,7 @@ export const INITIAL_CHARACTERS = [
         "Zonas estériles sin fauna comestible"
       ]
     },
-    "provenFeats": [
-      "Derrotó a la organización paramilitar más grande de la Tierra (Ejército Red Ribbon) él solo.",
-      "Atravesó y mató al Rey Demonio Piccolo impulsado con un solo brazo funcional.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -7659,7 +9282,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Grrr... el cuerpo me quema!",
+      "onUltimateReady": "¡Te mostraré todo mi poder con esto!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 150,
@@ -7705,18 +9333,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga del Rey Demonio Piccolo (Año 753)",
-      "timelineRestrictions": "Goku desconoce su procedencia extraterrestre (Saiyajin), la existencia de Raditz, Vegeta, Freezer, Kaio-sama o las transformaciones de Super Saiyajin. No domina el vuelo autónomo (Bukujutsu) ni conoce el concepto del Ki como energía cósmica.",
+      "timelineRestrictions": "Goku desconoce su procedencia extraterrestre (Saiyajin), la existencia de Raditz, Vegeta, Freezer, Kaio-sama o las transformaciones de Super Saiyajin. No domina el vuelo autónomo.",
       "forbiddenConcepts": [
         "Raditz",
         "Vegeta",
-        "Saiyajin (Concepto de Raza Espacial)",
+        "Saiyajin",
         "Freezer",
         "Kaio-ken",
         "Genkidama",
         "Super Saiyajin",
         "Namek",
-        "Bukujutsu (Vuelo sin Nube)",
-        "Androides"
+        "Bukujutsu"
       ],
       "crossVerseAwareness": "none"
     },
@@ -7957,6 +9584,24 @@ export const INITIAL_CHARACTERS = [
         "effect": "Daño combinado de energía sónica + rayo purpúreo. Inmoviliza al rival en estado de stun.",
         "partialFailureResult": "Si Cymbal es destruido antes del picado, Tambourine queda sin distracción y el rival puede esquivar.",
         "canonStatus": "apex_custom"
+      },
+      {
+        "name": "Asesinato Aéreo Coordinado",
+        "partners": [
+          "Rey Demonio Piccolo"
+        ],
+        "sequence": [
+          "Apertura: Tambourine inmoviliza al rival desde el aire con un ataque picado.",
+          "Canalización: Rey Piccolo canaliza energía oscura para bloquear rutas de escape.",
+          "Remate: Ataque conjunto con Ráfaga Explosiva masiva."
+        ],
+        "staminaCostPerParticipant": {
+          "Tambourine": 20,
+          "Rey Demonio Piccolo": 35
+        },
+        "effect": "Daño masivo de área y destrucción del terreno, infligiendo estado de derribo.",
+        "partialFailureResult": "Si el rival esquiva el picado, Tambourine recibe daño de retroceso.",
+        "canonStatus": "apex_custom"
       }
     ],
     "transformativeMechanics": {
@@ -8024,21 +9669,17 @@ export const INITIAL_CHARACTERS = [
       "spaceSurvival": true,
       "gravityResistance": "5G",
       "favoredBiomes": [
-        "Cielo abierto (superioridad aérea)",
-        "Terrenos montañosos (vantage points)",
-        "Islas remotas (sin testigos)"
+        "Cielo abierto",
+        "Terrenos montañosos",
+        "Islas remotas"
       ],
       "disfavoredBiomes": [
-        "Interiores cerrados (sin espacio para vuelo)",
-        "Bosques densos (alas se enganchan)",
+        "Interiores cerrados",
+        "Bosques densos",
         "Espacio profundo"
       ]
     },
-    "provenFeats": [
-      "Asesinó a Krilin, Giran, Rey Chapa, Pamputt y Bacterian en cuestión de días.",
-      "Destruyó la Nube Voladora (Temporalmente).",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -8048,7 +9689,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Te convertiré en polvo para la gloria de mi padre!",
+      "onTransformation": "¡No hay forma de que escapes de mi garra!",
+      "onUltimateReady": "¡Muere de una vez!",
+      "onLowHealth": "¡Imposible! ¡Soy un hijo del Rey Demonio!",
+      "onVictory": "Patético. Otro guerrero menos en la lista."
     },
     "staminaProfile": {
       "maxStamina": 140,
@@ -8085,17 +9731,15 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga del Rey Demonio Piccolo / Año 753 DC",
-      "timelineRestrictions": "Tambourine es un engendro recién creado por Daimaoh. Su conocimiento del mundo es limitado a lo que su padre le enseñó y su instinto cazador. Existe justo antes del 21º Torneo Tenkaichi.",
+      "timelineRestrictions": "Tambourine es un engendro recién creado por Daimaoh. Su conocimiento del mundo es limitado a lo que su padre le enseñó.",
       "forbiddenConcepts": [
         "Freezer",
         "Saiyajins",
         "Namek",
         "Dragon Balls de Namek",
-        "Piccolo Jr. (su futuro hermano menor)",
+        "Piccolo Jr.",
         "Super Saiyajin",
-        "Fusión",
-        "Kami directo",
-        "Yajirobe antes de enfrentarlo"
+        "Fusión"
       ],
       "crossVerseAwareness": "none"
     },
@@ -9328,11 +10972,7 @@ export const INITIAL_CHARACTERS = [
         "Volcanes activos"
       ]
     },
-    "provenFeats": [
-      "Cortó la cola a Goku Ohzaru para salvar a sus amigos en el castillo de Pilaf.",
-      "Sorprendió a Kami-sama con la trayectoria imposible de su Sōkidan en el 23º Torneo.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -9342,7 +10982,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Mi poder sigue creciendo, no te confíes!",
+      "onUltimateReady": "¡Esta vez no podrás esquivar mi Sōkidan!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -9481,7 +11126,16 @@ export const INITIAL_CHARACTERS = [
           "desc": "Permite rastrear y vigilar cualquier punto del universo vivo sin coste de ki; rompe la barrera de información."
         }
       ],
-      "weaknesses": []
+      "weaknesses": [
+        {
+          "name": "Frágilidad Física",
+          "desc": "Al carecer de habilidades ofensivas directas de combate, es vulnerable si se le aísla de protectores.",
+          "counterTags": [
+            "Combate Cuerpo a Cuerpo",
+            "Asesinato Rápido"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -9515,6 +11169,25 @@ export const INITIAL_CHARACTERS = [
     ],
     "teamCombos": [
       {
+        "partners": [
+          "anciano-kaio-shin-saga-buu-404",
+          "gohan-adulto-ultimate"
+        ],
+        "sequence": [
+          "Apertura del Anciano Kaio-shin canalizando ondas místicas de apoyo.",
+          "Canalización de energía latente mediante el baile de desbloqueo temporal.",
+          "Remate Definitivo: Super Kamehameha de Gohan potenciado por la magia ancestral."
+        ],
+        "staminaCostPerParticipant": {
+          "anciano-kaio-shin-saga-buu-404": 30,
+          "gohan-adulto-ultimate": 40
+        },
+        "effect": "Genera una explosión de ki místico que ignora un 50% de la durabilidad defensiva del rival.",
+        "partialFailureResult": "Si es interrumpido en el paso 2, Gohan recibe solo la mitad del buff temporal de daño.",
+        "canonStatus": "apex_custom"
+      },
+      {
+        "name": "Despertar Místico Ancestral",
         "partners": [
           "anciano-kaio-shin-saga-buu-404",
           "gohan-adulto-ultimate"
@@ -9606,11 +11279,7 @@ export const INITIAL_CHARACTERS = [
         "Vacío Dimensional"
       ]
     },
-    "provenFeats": [
-      "Creó a Gohan Definitivo (Buu Saga), el guerrero no fusionado más fuerte de todo DBZ.",
-      "Le entregó su vida a Goku para que pudiera descender a la Tierra a pelear con Buu.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -9620,7 +11289,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡JOJOJO! Déjame observar tu destino en mi bola de cristal.",
+      "onTransformation": "¡El poder de los dioses no conoce límites!",
+      "onUltimateReady": "¡Prepárate, voy a desatar tu verdadero potencial oculto!",
+      "onLowHealth": "¡Imposible! ¿Cómo se atreven a golpear a una deidad?",
+      "onVictory": "¡Asunto concluido! Ahora tráiganme revistas juveniles."
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -9754,6 +11428,13 @@ export const INITIAL_CHARACTERS = [
           "chargeTime": "0.2 segundos",
           "desc": "Desprende ambas manos mecánicamente, propulsándolas contra el rival a distancia con fuerza demoledora. Las manos pueden retornar a sus sockets.",
           "counterplay": "Esquivar con desplazamiento vertical."
+        },
+        {
+          "name": "Láser Ocular",
+          "desc": "Emisión de rayos ópticos de alta precisión para control de masas y repeler atacantes rápidos.",
+          "cost": 15,
+          "chargeTime": "0.1 segundos",
+          "counterplay": "Reflejar con superficies pulidas o esquivar lateralmente."
         }
       ],
       "ultimateAttacks": [
@@ -10588,11 +12269,7 @@ export const INITIAL_CHARACTERS = [
         "Dimensiones Místicas"
       ]
     },
-    "provenFeats": [
-      "Asesinó a Gohan del Futuro, Piccolo, Vegeta y los demás héroes del futuro.",
-      "Destruyó la civilización humana de la Tierra casi por completo.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -10602,7 +12279,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Vaya, parece que tenemos un juguete nuevo con el que divertirnos un rato antes de acabar con todo!",
+      "onTransformation": "No necesitamos transformarnos para aplastarte...",
+      "onUltimateReady": "¿Te gusta este pequeño espectáculo? ¡Disfrútalo, porque es lo último que verás!",
+      "onLowHealth": "¿Eh? ¿Crees que me importa un rasguño? ¡Esto apenas se pone interesante!",
+      "onVictory": "Qué aburrido. Pensé que durarías un poco más en este mundo en ruinas."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -10786,6 +12468,24 @@ export const INITIAL_CHARACTERS = [
         "effect": "Fractura crítica del oponente y neutralización temporal de extremidades.",
         "partialFailureResult": "Si el paso dos falla, A18 interrumpe la ejecución sin coste de energía.",
         "canonStatus": "source_backed"
+      },
+      {
+        "name": "Asalto Coordinado Cyborg",
+        "partners": [
+          "Androide 17"
+        ],
+        "sequence": [
+          "A18 distrae con ráfagas de fotones continuas.",
+          "A17 inmoviliza por la espalda al oponente.",
+          "A18 ejecuta el remate con 'Danza Sádica' a máxima potencia."
+        ],
+        "staminaCostPerParticipant": [
+          0,
+          0
+        ],
+        "effect": "Fractura crítica del oponente y neutralización temporal de extremidades.",
+        "partialFailureResult": "Si el paso dos falla, A18 interrumpe la ejecución sin coste de energía.",
+        "canonStatus": "source_backed"
       }
     ],
     "transformativeMechanics": {
@@ -10838,14 +12538,16 @@ export const INITIAL_CHARACTERS = [
       "mindControl": 80,
       "matterManipulation": 50,
       "soulDamage": 20,
-      "powerNullification": 0
+      "powerNullification": 0,
+      "notes": "Fisiología modificada con resistencia a control mental, pero vulnerable a borrado y hax dimensional."
     },
     "combatAIPersonality": {
       "aggression": 60,
       "tacticalIQ": 85,
       "mercyThreshold": 30,
       "clutchFactor": 70,
-      "preferredEngagementRange": "close_quarters"
+      "preferredEngagementRange": "close_quarters",
+      "behavior": "Pragmática, analítica y directa. Busca terminar los combates con eficiencia sin gastar energía innecesaria."
     },
     "environmentalAffinity": {
       "spaceSurvival": true,
@@ -10860,11 +12562,7 @@ export const INITIAL_CHARACTERS = [
         "Mundos con Hax pesado"
       ]
     },
-    "provenFeats": [
-      "Humilló y fracturó a Vegeta SSJ en su debut, arruinando su orgullo.",
-      "Luchó y eliminó a la guerrera del amor Ribrianne en el Torneo del Poder gigante.",
-      "Sobrevivió sacrificándose tácticamente para asegurar que 17 ganara el Torneo."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -10874,12 +12572,18 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "No creas que tendré piedad solo porque tengas confianza.",
+      "onTransformation": "No necesito transformarme para superarte.",
+      "onUltimateReady": "Se acabó. Esto te dolerá bastante.",
+      "onLowHealth": "Vaya, parece que me obligaste a tomarnos esto en serio.",
+      "onVictory": "Fácil y rápido. Tengo cosas que hacer en casa."
     },
     "staminaProfile": {
       "maxStamina": 200,
       "recoveryRatePerTurn": 200,
-      "exhaustionThreshold": 0
+      "exhaustionThreshold": 0,
+      "notes": "Estamina infinita por reactor eterno."
     },
     "signatureEquipment": [
       {
@@ -10897,8 +12601,7 @@ export const INITIAL_CHARACTERS = [
         "Super Saiyajin Blue",
         "Moro",
         "Gran Priest",
-        "Multiverso Sakazero",
-        "Dientes de la Muerte"
+        "Multiverso Sakazero"
       ],
       "crossVerseAwareness": "none"
     }
@@ -11750,11 +13453,7 @@ export const INITIAL_CHARACTERS = [
         "Arenas de combate cerradas"
       ]
     },
-    "provenFeats": [
-      "Casi mata a Yamcha empalándolo y absorbiéndolo por sorpresa.",
-      "Sobrevivió a los primeros asaltos de los Guerreros Z gracias a emboscadas.",
-      "Creador del ser perfecto (Cell) y de los androides gemelos."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -11764,7 +13463,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Mi chasis cíborg es invulnerable a tu patético Ki!",
+      "onUltimateReady": "¡Absorberé hasta la última gota de tu energía vital!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fascinante. Tu energía ha sido almacenada con éxito."
     },
     "staminaProfile": {
       "maxStamina": 150,
@@ -11795,7 +13499,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de los Androides / Año 774",
-      "timelineRestrictions": "Gero conoce TODO sobre Goku desde la Batalla contra Piccolo Daimao hasta su llegada a Namek. También conoce el Androide 17 y 18 (sus creaciones), Cell (su proyecto final) y la totalidad del Ejército Red Ribbon histórico. Sin embargo, sus datos son obsoletos respecto al poder real de los Guerreros Z al momento de despertar.",
+      "timelineRestrictions": "Gero conoce TODO sobre Goku desde la Batalla contra Piccolo Daimao hasta su llegada a Namek. También conoce el Androide 17 y 18 (su creación), Cell (su proyecto final) y la totalidad del Ejército Red Ribbon histórico. Sin embargo, sus datos son obsoletos respecto al poder real de los Guerreros Z.",
       "forbiddenConcepts": [
         "Super Saiyajin 2",
         "Super Saiyajin 3",
@@ -12061,21 +13765,22 @@ export const INITIAL_CHARACTERS = [
         "Combates donde sus sirvientes han sido derrotados"
       ]
     },
-    "provenFeats": [
-      "Corrompió y controló a Dabura, el Rey del mundo Demonio.",
-      "Sobrevivió (partido a la mitad) a los ataques y curó a Majin Buu repetidas veces.",
-      "Encerró y revivió al Majin Buu original usando la energía robada."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
+        "¡Jajaja! ¡Infelices mortales, arrodíllense ante la magia de Babidi!"
       ],
       "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
+        "¡Imposible! ¡Mis sirvientes... acaben con este insecto!"
       ],
       "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+        "¡Excelente! Ahora tu alma pertenece al gran Majin Buu."
+      ],
+      "onBattleStart": "¡Jajaja! ¡Infelices mortales, arrodíllense ante la magia de Babidi!",
+      "onTransformation": "¡Mi poder mágico se desborda!",
+      "onUltimateReady": "¡Prepárate para recibir el Sello Majin!",
+      "onLowHealth": "¡Imposible! ¡Mis sirvientes... acaben con este insecto!",
+      "onVictory": "¡Excelente! Ahora tu alma pertenece al gran Majin Buu."
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -12102,18 +13807,15 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Buu / Año 774",
-      "timelineRestrictions": "Babidi conoce solo lo referente a su magia, sus subordinados y la energía necesaria para revivir a Buu. Desconoce el Super Saiyajin 3, el Potencial Inexplorado de Gohan, el Ultra Instinto y la existencia de los Ángeles.",
+      "timelineRestrictions": "Babidi conoce solo lo referente a su magia, sus subordinados y la energía necesaria para revivir a Buu. Desconoce el Super Saiyajin 3, el Potencial Inexplorado de Gohan y los Ángeles.",
       "forbiddenConcepts": [
         "Super Saiyajin 3",
         "Ultra Instinto",
         "Ángeles",
         "Multiverso",
-        "Diócesis del Rey Demonio después de la muerte de Babidi",
-        "Dragones de las Bolas Mágicas (conoce solo las Dragon Balls Namek)",
         "Super Saiyan Blue",
         "Gran Sacerdote",
-        "Torneo del Poder",
-        "Universos paralelos activados"
+        "Torneo del Poder"
       ],
       "crossVerseAwareness": "none"
     }
@@ -12532,53 +14234,9 @@ export const INITIAL_CHARACTERS = [
         "tier": "5-B"
       },
       {
-        "id": "ginyu-cuerpo-original",
-        "name": "Capitán Ginyu (Cuerpo Mutante Original / 120.000 Unidades)",
-        "apexKiMultiplier": 1,
-        "staminaDrain": 0,
-        "tier": "Low 5-B",
-        "stats": "120.000 unidades canónicas. El guerrero más poderoso del ejército regular de Freezer."
-      },
-      {
-        "id": "ginyu-original-body",
-        "name": "Capitán Ginyu (Cuerpo Original)",
-        "stats": "Nivel Planeta. Cuerpo real del Capitán Ginyu. Power Level 120,000. Cuernos violetas, armadura de élite, dominio completo del Cambio de Cuerpo.",
-        "apexKiMultiplier": 1,
-        "staminaDrain": 0,
-        "activationCondition": "Estado natural canónico del personaje.",
-        "canonStatus": "source_backed",
-        "grantedTags": [
-          "Cambio de Cuerpo",
-          "Milky Cannon",
-          "Telequinesis",
-          "Líder Ginyu"
-        ],
-        "suppressedTags": [],
-        "grantedAbilities": [
-          "Cambio de Cuerpo",
-          "Milky Cannon",
-          "Telequinesis Paralizante"
-        ],
-        "limitations": [
-          "Posee una fuerza bruta limitada (120k) y depende del Cambio de Cuerpo para superar a rivales más fuertes."
-        ],
-        "drawbacks": [],
-        "exitCondition": "Uso voluntario del Cambio de Cuerpo o muerte del cuerpo actual.",
-        "counterplay": "Interceptar el rayo del Cambio de Cuerpo con un ser vivo de menor poder.",
-        "tier": "5-B"
-      },
-      {
-        "id": "ginyu-cuerpo-rana",
-        "name": "Cuerpo de Rana Namekiana (Penalizado)",
-        "apexKiMultiplier": 0.00005,
-        "staminaDrain": 0,
-        "tier": "10-C",
-        "stats": "5 unidades de combate. Incapaz de hablar o utilizar técnicas de combate."
-      },
-      {
         "id": "ginyu-cuerpo-goku",
         "name": "Cuerpo de Goku (Intercambiado / 23.000 Unidades)",
-        "apexKiMultiplier": 0.19,
+        "apexKiMultiplier": 1,
         "staminaDrain": 15,
         "tier": "5-C",
         "stats": "Incapaz de armonizar el alma con el cuerpo saiyajin de Goku, su Ki cae a solo 23.000 unidades."
@@ -12587,7 +14245,7 @@ export const INITIAL_CHARACTERS = [
         "id": "ginyu-goku-body",
         "name": "Cuerpo de Goku (Intercambiado)",
         "stats": "Nivel Planeta — Penalizado. Cuerpo de Goku controlado por Ginyu, pero sin saber canalizar su Ki correctamente. ~40-50% del poder real de Goku en ese momento.",
-        "apexKiMultiplier": 0.5,
+        "apexKiMultiplier": 1,
         "staminaDrain": 5,
         "activationCondition": "Cambio de cuerpo exitoso contra Goku en Namek.",
         "canonStatus": "source_backed",
@@ -12614,32 +14272,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "5-B"
       },
       {
-        "id": "ginyu-frog-body",
-        "name": "Cuerpo de Rana (Penalizado)",
-        "stats": "Nivel Insignificante (Batraceo). Sin poderes de combate. Atrapado en el cuerpo de una rana en Namek. Sin acceso al Cambio de Cuerpo.",
-        "apexKiMultiplier": 2,
-        "staminaDrain": 0,
-        "activationCondition": "Intercambio accidental con la rana terrestre llevada por Goku.",
-        "canonStatus": "source_backed",
-        "grantedTags": [],
-        "suppressedTags": [
-          "Cambio de Cuerpo",
-          "Milky Cannon",
-          "Telequinesis",
-          "Fuerza Planetaria",
-          "Durabilidad Planetaria"
-        ],
-        "grantedAbilities": [],
-        "limitations": [
-          "Sin fuerza física, sin manipulación de ki, sin vuelo."
-        ],
-        "drawbacks": [
-          "Vulnerable a cualquier daño físico.",
-          "Pérdida total del estatus militar y la capacidad de combate."
-        ],
-        "exitCondition": "Cambio de cuerpo exitoso contra un oponente con un cuerpo digno.",
-        "counterplay": "Mantenerlo atrapado o aplastarlo en su forma de rana.",
-        "tier": "5-B"
+        "id": "ginyu-cuerpo-original",
+        "name": "Capitán Ginyu (Cuerpo Mutante Original / 120.000 Unidades)",
+        "apexKiMultiplier": 1.8,
+        "staminaDrain": 10,
+        "tier": "5-B",
+        "stats": "120.000 unidades canónicas. El guerrero más poderoso del ejército regular de Freezer."
       }
     ],
     "feats": [
@@ -13207,11 +14845,7 @@ export const INITIAL_CHARACTERS = [
         "Mundos oscuros con energía caótica"
       ]
     },
-    "provenFeats": [
-      "Humilló a Vegeta Super Saiyan y a Trunks SSJ de tercer grado.",
-      "Sobrevivió a la auto-destrucción total y regresó aún más fuerte.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -13221,7 +14855,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Esta es la forma definitiva de la perfección!",
+      "onUltimateReady": "¡Voy a borrar este sistema solar contigo dentro!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -13532,11 +15171,7 @@ export const INITIAL_CHARACTERS = [
         "Mundos con alto Hax o presión espiritual aplastante"
       ]
     },
-    "provenFeats": [
-      "Derrotaron y torturaron a Krilin, Tenshinhan, Yamcha, Goku cansado y rivalizaron con Vegeta/Trunks Ascendidos.",
-      "Sobrevivieron a un asalto de Ki coordinado ilesos.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -13546,7 +15181,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Jijiji! ¡Vamos a jugar a destruirte!",
+      "onTransformation": "¡Kaaaa! (Grito agudo de cría)",
+      "onUltimateReady": "¡Disfruta esto!",
+      "onLowHealth": "¡Ji...!? (Sorpresa ante daño real)",
+      "onVictory": "¡Ji, ji, ji! ¡Inútil!"
     },
     "staminaProfile": {
       "maxStamina": 150,
@@ -14553,11 +16193,7 @@ export const INITIAL_CHARACTERS = [
         "Lugares sin cobertura donde sea flanqueado por varios rivales"
       ]
     },
-    "provenFeats": [
-      "Petrificó a Piccolo y a Krillin sin sudar.",
-      "Luchó a la par contra Gohan SSJ2 (estado oxidado).",
-      "Asesinó a Kibito instantáneamente con una ráfaga sorpresa."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -14567,7 +16203,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Desataré la furia del inframundo sobre ti!",
+      "onUltimateReady": "¡Tu destino está sellado en piedra!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 180,
@@ -14599,7 +16240,7 @@ export const INITIAL_CHARACTERS = [
         "Super Saiyajin 3",
         "Ultra Instinto",
         "Potencial Despertado de Gohan",
-        "Fusión Potara (no usada por él)",
+        "Fusión Potara",
         "Ángeles y Gran Sacerdote"
       ],
       "crossVerseAwareness": "none"
@@ -14846,7 +16487,8 @@ export const INITIAL_CHARACTERS = [
       "mercyThreshold": 20,
       "clutchFactor": 25,
       "preferredEngagementRange": "close_quarters",
-      "behavior": "Carga frontal pura. Si falla, repite más fuerte. Entra en Rabia Ciega si es humillado, perdiendo toda defensa por +15% daño."
+      "behavior": "Carga frontal pura. Si falla, repite más fuerte. Entra en Rabia Ciega si es humillado, perdiendo toda defensa por +15% daño.",
+      "notes": "Carga frontal pura. Si falla, repite más fuerte. Entra en Rabia Ciega si es humillado, perdiendo toda defensa por +15% daño."
     },
     "environmentalAffinity": {
       "spaceSurvival": true,
@@ -14861,11 +16503,7 @@ export const INITIAL_CHARACTERS = [
         "Cavernas estrechas"
       ]
     },
-    "provenFeats": [
-      "Sobrevivió a la patada de Krilin y el Kikoho de Gohan.",
-      "Asesinó a los clanes de Namek.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -14875,7 +16513,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Te voy a hacer papilla, maldito insecto!",
+      "onTransformation": "¡No tengo transformaciones, pero mi poder basta!",
+      "onUltimateReady": "¡Muere de una vez!",
+      "onLowHealth": "¡Espera, por favor! ¡Te diré un gran secreto!",
+      "onVictory": "¡Jajaja! ¡Nadie sobrevive al ejército de Freezer!"
     },
     "staminaProfile": {
       "maxStamina": 140,
@@ -15080,17 +16723,6 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0
-      },
-      {
-        "id": "enma-daioh-saga-saiyan-579-base-std",
-        "name": "Enma Daioh (Estado Base)",
-        "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
-        "apexKiMultiplier": 1.3,
-        "tier": "5-C",
-        "tierExact": "5-C",
-        "multiplier": "1x",
-        "staminaDrain": 10,
-        "canonStatus": "apex_custom"
       },
       {
         "id": "enma-daioh-saga-saiyan-579-juicio",
@@ -15557,10 +17189,10 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "freezer-100-max-power",
-        "name": "Freezer 100% de Máximo Poder (Hipertrofia Muscular)",
-        "apexKiMultiplier": 240,
-        "staminaDrain": 65,
-        "tier": "4-C",
+        "name": "Freezer (Forma Final 100% / Hipertrofia Muscular)",
+        "apexKiMultiplier": 120,
+        "staminaDrain": 30,
+        "tier": "5-A",
         "stats": "120.000.000 de unidades canónicas al 100%. Musculatura hipertrofiada con desgaste progresivo acelerado de stamina contra Goku SSJ."
       }
     ],
@@ -16024,11 +17656,7 @@ export const INITIAL_CHARACTERS = [
         "Interior de Majin Buu (Absorción)"
       ]
     },
-    "provenFeats": [
-      "Luchó a la par contra Dabura a pesar de haber perdido poder.",
-      "Mantuvo a salvo a los Kaioshins temporalmente de Majin Buu.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -16038,7 +17666,10 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 130,
@@ -16365,22 +17996,17 @@ export const INITIAL_CHARACTERS = [
     },
     "environmentalAffinity": {
       "spaceSurvival": false,
-      "gravityResistance": "50G (límite terrestre de su entrenamiento)",
+      "gravityResistance": "50G",
       "favoredBiomes": [
         "Tierra apocalíptica (escombros)",
         "Zonas urbanas destruidas"
       ],
       "disfavoredBiomes": [
         "Espacio exterior",
-        "Mundos con gravedad extrema",
-        "Otros planetas (sin Namek/usei ship)"
+        "Mundos con gravedad extrema"
       ]
     },
-    "provenFeats": [
-      "Sobrevivió en solitario 13 años contra androides inmortales con energía infinita.",
-      "Protegió a Trunks y lo noqueó para salvarle la vida, yendo a morir con honor frente a los androides.",
-      "Empujó al Androide 17 al 50% de su poder."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -16390,7 +18016,10 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡No voy a rendirme! El futuro depende de esto.",
+      "onLowHealth": "Aún respiro... Trunks, tú debes vivir.",
+      "onVictory": "Hemos ganado esta vez, pero la lucha continúa."
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -16421,7 +18050,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Especial TV 'El Futuro de Trunks' / Línea Temporal Alternativa (Año 780 divergente)",
-      "timelineRestrictions": "Gohan del Futuro NO sabe de Cell, Majin Buu, los dragones, ni las peleas de los Torneos. Solo conoce a Trunks, los Androides, la Tierra en ruinas y la muerte de su familia/amigos. Su muerte ocurre antes que cualquiera de esos eventos.",
+      "timelineRestrictions": "Gohan del Futuro NO sabe de Cell, Majin Buu, los dragones, ni las peleas de los Torneos. Solo conoce a Trunks, los Androides y la Tierra en ruinas.",
       "forbiddenConcepts": [
         "Cell",
         "Majin Buu",
@@ -17267,7 +18896,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Solo quiere que lo dejen trabajar su tierra en paz. Extremadamente territorial.",
     "weaknesses": "Literalmente es un tipo normal con una escopeta, el ser más débil con ficha en el Engine.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Referencia Scouter 5",
+        "partnerTags": [
+          "Humano Terrícola",
+          "Víctima Scouter"
+        ],
+        "effect": "Marca de referencia canónica: al enfrentar a un Saiyajin revela la lectura inicial del rival sin coste (homenaje al 'poder de más de 8.000').",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [
       {
         "partners": [
@@ -17360,11 +18999,7 @@ export const INITIAL_CHARACTERS = [
         "Bajo el agua"
       ]
     },
-    "provenFeats": [
-      "Se atrevió a dispararle a quemarropa a un invasor espacial Saiyajin Tier 6 sin mostrar miedo.",
-      "Mantuvo una velocidad de reacción y combate consistente en situaciones de alta presión.",
-      "Demostró tenacidad táctica y resistencia física durante combates prolongados."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -17374,7 +19009,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Largo de aquí, forastero! ¡No dañes mis cultivos!",
+      "onTransformation": "¡Esto se pone feo, mejor me preparo!",
+      "onUltimateReady": "¡Toma esto, maldito bicho raro!",
+      "onLowHealth": "Aún no he terminado... ¡Mi cosecha depende de esto!",
+      "onVictory": "¡Menos mal que traje suficiente munición!"
     },
     "staminaProfile": {
       "maxStamina": 100,
@@ -17715,11 +19355,7 @@ export const INITIAL_CHARACTERS = [
         "Planetas de alta gravedad"
       ]
     },
-    "provenFeats": [
-      "Aniquilaron a todo el pelotón de soldados armados de Freezer en segundos sin sufrir bajas.",
-      "Forzaron a Dodoria a entrar al combate personalmente.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -17729,7 +19365,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Defendemos nuestro hogar y nuestras Dragon Balls con honor!",
+      "onTransformation": "¡Unimos nuestras fuerzas por Namek!",
+      "onUltimateReady": "¡Este es el poder protector de nuestro pueblo!",
+      "onLowHealth": "Aún... aún podemos detenerlo por los niños...",
+      "onVictory": "La paz ha vuelto a nuestra aldea."
     },
     "staminaProfile": {
       "maxStamina": 120,
@@ -17769,10 +19410,7 @@ export const INITIAL_CHARACTERS = [
         "Fusión Potara",
         "Beerus",
         "Whis",
-        "Universo 7",
-        "Gran Patriarca Moori (no lo han contactado aún)",
-        "Goku SSJ",
-        "Vegeta SSJ"
+        "Universo 7"
       ],
       "crossVerseAwareness": "none"
     }
@@ -17915,6 +19553,14 @@ export const INITIAL_CHARACTERS = [
           "fuerzas_ginyu"
         ],
         "effect": "Permite recibir cobertura defensiva de cualquier miembro del escuadrón si es acorralado."
+      },
+      {
+        "name": "Soporte Ginyu",
+        "partnerTags": [
+          "fuerzas_ginyu"
+        ],
+        "effect": "Permite recibir cobertura defensiva de cualquier miembro del escuadrón si es acorralado.",
+        "canonStatus": "source_backed"
       }
     ],
     "teamCombos": [
@@ -17933,6 +19579,24 @@ export const INITIAL_CHARACTERS = [
         },
         "effect": "Daño crítico letal asegurado, ignorando losatios de esquiva del objetivo.",
         "partialFailureResult": "Si Guldo se queda sin aire antes de que Recoome golpee, el tiempo se reanuda y el rival contraataca a Guldo.",
+        "canonStatus": "source_backed"
+      },
+      {
+        "name": "Ejecución Temporal Ginyu",
+        "partners": [
+          "recoome-saga-namek"
+        ],
+        "sequence": [
+          "Guldo congela el tiempo y paraliza mentalmente al objetivo.",
+          "Recoome toma posición a quemarropa sin que el rival pueda reaccionar.",
+          "Recoome ejecuta una Bomba Ultra Recoome directo al núcleo del oponente inmovilizado."
+        ],
+        "staminaCostPerParticipant": [
+          35,
+          40
+        ],
+        "effect": "Daño crítico letal asegurado, ignorando los ratios de esquiva del objetivo.",
+        "partialFailureResult": "Si Guldo se queda sin aire antes de que Recoome golpee, el tiempo se reanuda y el rival contraataca.",
         "canonStatus": "source_backed"
       }
     ],
@@ -18738,11 +20402,7 @@ export const INITIAL_CHARACTERS = [
         "Mundos sin aire"
       ]
     },
-    "provenFeats": [
-      "Entrenó a Goku, Piccolo, Yamcha, Tenshinhan y Chaos.",
-      "Ideó el plan para salvar a los Namekianos de la explosión de su planeta.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -18752,7 +20412,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Atento, la verdadera fuerza requiere disciplina!",
+      "onUltimateReady": "¡Canaliza la energía del universo con precisión!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 120,
@@ -18792,7 +20457,7 @@ export const INITIAL_CHARACTERS = [
       }
     ],
     "knowledgeHorizon": {
-      "canonicalEra": "Pre-Saga Cell (Año 762-767)",
+      "canonicalEra": "Saga de Namek / Año 762",
       "timelineRestrictions": "Solo conoce eventos de su época como Kaioshin del Norte. No es consciente de Beerus, Whis, los otros Kaioshin supremos ni del Tournament of Power.",
       "forbiddenConcepts": [
         "Beerus",
@@ -18830,7 +20495,8 @@ export const INITIAL_CHARACTERS = [
       "Curación Mágica Instantánea (Como Semilla del Ermitaño)",
       "Materialización Mágica de Ropas",
       "Kai Kai",
-      "Teletransportación Interdimensional"
+      "Teletransportación Interdimensional",
+      "Curación Mágica Instantánea"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -18956,6 +20622,24 @@ export const INITIAL_CHARACTERS = [
         "effect": "Inmovilización total por 3 turnos y daño masivo de energía espiritual.",
         "partialFailureResult": "Si el enemigo es demasiado fuerte y rompe la parálisis en el paso 2, Kibito queda expuesto a un contraataque directo.",
         "canonStatus": "source_backed"
+      },
+      {
+        "name": "Juicio Divino Coordinado",
+        "partners": [
+          "Supreme Kai (Shin)"
+        ],
+        "sequence": [
+          "Kibito localiza y teletransporta mediante Kai Kai al objetivo y a Shin al centro del escenario.",
+          "Shin inmoviliza psíquicamente al enemigo con su habilidad de parálisis divina.",
+          "Kibito canaliza una descarga de energía sagrada combinada para desestabilizar al rival."
+        ],
+        "staminaCostPerParticipant": [
+          35,
+          35
+        ],
+        "effect": "Inmovilización total por 3 turnos y daño masivo de energía espiritual.",
+        "partialFailureResult": "Si el enemigo es demasiado fuerte y rompe la parálisis en el paso 2, Kibito queda expuesto a un contraataque directo.",
+        "canonStatus": "source_backed"
       }
     ],
     "transformativeMechanics": {
@@ -19023,20 +20707,14 @@ export const INITIAL_CHARACTERS = [
       "favoredBiomes": [
         "Sagrado",
         "Kaio-shin Realm",
-        "Reunión divina",
         "Sala del Espíritu y Tiempo"
       ],
       "disfavoredBiomes": [
         "Infierno Demoníaco",
-        "Mundo de los vivos en guerra",
-        "Campos de batalla con alto Ki hostil"
+        "Mundo de los vivos en guerra"
       ]
     },
-    "provenFeats": [
-      "Curó a Gohan tras ser drenado por Yamu y Spopovich.",
-      "Rescató a Gohan del campo de batalla tras el despertar de Majin Buu.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -19046,7 +20724,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Prepárate para enfrentar la justicia del mundo divino!",
+      "onTransformation": "¡Mi lealtad me otorga fuerza inquebrantable!",
+      "onUltimateReady": "¡Recibe la gracia de la sanación suprema!",
+      "onLowHealth": "El deber sagrado exige que resista un poco más...",
+      "onVictory": "La divinidad ha prevalecido una vez más."
     },
     "staminaProfile": {
       "maxStamina": 120,
@@ -19075,8 +20758,7 @@ export const INITIAL_CHARACTERS = [
         "Torneo del Poder",
         "Universos paralelos activados",
         "Beerus despierto",
-        "Ángeles",
-        "Poder del Ultra Instinto"
+        "Ángeles"
       ],
       "crossVerseAwareness": "none"
     }
@@ -19305,6 +20987,14 @@ export const INITIAL_CHARACTERS = [
           "Fat Buu"
         ],
         "effect": "Conexión mística regenerativa: pueden donar biomasa entre sí."
+      },
+      {
+        "synergyName": "Línea Majin Pura",
+        "partnerTags": [
+          "Super Buu",
+          "Fat Buu"
+        ],
+        "effect": "Conexión mística regenerativa: pueden donar biomasa entre sí."
       }
     ],
     "teamCombos": [
@@ -19408,19 +21098,14 @@ export const INITIAL_CHARACTERS = [
       "gravityResistance": "Universal",
       "favoredBiomes": [
         "Vacío espacial",
-        "Planetas explotables",
-        "Hyperbolic Time Chamber"
+        "Planetas explotables"
       ],
       "disfavoredBiomes": [
         "Mundo Kaioshin (espiritualmente puro)",
         "Zonas de Genkidama concentrada"
       ]
     },
-    "provenFeats": [
-      "Pulverizó la Tierra sin decir una palabra instantes después de formarse.",
-      "Luchó contra Goku SSJ3 hasta dejar a Goku completamente exhausto sin sudar.",
-      "Destruyó múltiples planetas cruzando la galaxia en minutos para buscar a Goku y Vegeta."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -19430,7 +21115,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Raaaaaah!",
+      "onTransformation": "¡Je, je, je...!",
+      "onUltimateReady": "¡Ji, ji, ji, ja, ja, ja!",
+      "onLowHealth": "¡Grrr...!",
+      "onVictory": "¡Uwaaaaaah! ¡Ja, ja, ja!"
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -19456,7 +21146,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Buu / Año 774",
-      "timelineRestrictions": "No tiene lenguaje articulado ni raciocinio. Solo reacciona por instinto. Conoce únicamente el poder destructivo y los conceptos básicos de la Tierra y lucha.",
+      "timelineRestrictions": "No tiene lenguaje articulado ni raciocinio. Solo reacciona por instinto.",
       "forbiddenConcepts": [
         "Ultra Instinto",
         "Super Saiyajin Blue",
@@ -20090,11 +21780,7 @@ export const INITIAL_CHARACTERS = [
         "Planetas con gravedad extrema"
       ]
     },
-    "provenFeats": [
-      "Aniquiló a 3 Saibamen simultáneamente con su Kakusandan.",
-      "Cortó la cola de Freezer en su segunda forma con su Kienzan.",
-      "Guió la Genkidama para impactar a Vegeta en la Tierra."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -20104,7 +21790,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Aumentaré mi ki al máximo!",
+      "onUltimateReady": "¡Esto decidirá el combate!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -20130,7 +21821,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Namek / Año 762",
-      "timelineRestrictions": "Krilin no conoce la existencia de los Androides, Cell, Buu, las esferas del dragón de la Tierra ( Namek se prepara para invocarlo), ni las transformaciones avanzadas. Solo conoce a los Namekianos y la fuente del Dragón.",
+      "timelineRestrictions": "Krilin no conoce la existencia de los Androides, Cell, Buu, las esferas del dragón de la Tierra (Namek se prepara para invocarlo), ni las transformaciones avanzadas. Solo conoce a los Namekianos y la fuente del Dragón.",
       "forbiddenConcepts": [
         "Androide 18",
         "Cell",
@@ -20478,11 +22169,7 @@ export const INITIAL_CHARACTERS = [
         "Tundras de Escarcha Perpetua"
       ]
     },
-    "provenFeats": [
-      "Protegió a los 200 pasajeros del Tren Infinito sin que muriera una sola persona.",
-      "Retuvo a la Luna Superior Tres Akaza con el pecho perforado hasta la salida del sol.",
-      "Inspiró la determinación de Tanjiro, Inosuke y Zenitsu para convertirse en cazadores supremos."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -20492,7 +22179,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Ven a enfrentarme! ¡Protegeré a todos los presentes!",
+      "onTransformation": "¡Mi corazón arde con una llama brillante!",
+      "onUltimateReady": "¡Esta es la Novena Postura: Rengoku!",
+      "onLowHealth": "¡No permitiré que nadie muera aquí!",
+      "onVictory": "¡Una batalla espléndida! ¡Entrena con pasión!"
     },
     "staminaProfile": {
       "maxStamina": 120,
@@ -21029,10 +22721,10 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "buu-gordo-base",
-        "name": "Majin Buu Gordo (Estado Base / Despertado)",
+        "name": "Majin Buu Gordo (Estado Base)",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "4-B",
+        "tier": "3-C",
         "stats": "Inocencia infantil combinada con regeneración celular infinita y transmutación de seres vivos en golosinas."
       },
       {
@@ -21040,16 +22732,8 @@ export const INITIAL_CHARACTERS = [
         "name": "Evil Buu (Maldad Pura)",
         "apexKiMultiplier": 1.4,
         "staminaDrain": 15,
-        "tier": "4-B",
+        "tier": "3-C",
         "stats": "Manifestación oscura del odio concentrado que supera y devora a Mr. Buu para transformarse en Super Buu."
-      },
-      {
-        "id": "buu-mr-buu",
-        "name": "Mr. Buu (Aliado / Esencia Benigna Post-División) [Penalizado]",
-        "apexKiMultiplier": 0.8,
-        "staminaDrain": 10,
-        "tier": "4-B",
-        "stats": "Forma tras expulsar toda su maldad al crearse Evil Buu, perdiendo gran parte de su reserva de ki destructivo."
       }
     ],
     "feats": [
@@ -21580,11 +23264,7 @@ export const INITIAL_CHARACTERS = [
         "Vacío dimensional"
       ]
     },
-    "provenFeats": [
-      "Sacrificio histórico vs Buu.",
-      "Mantuvo una velocidad de reacción y combate consistente en situaciones de alta presión.",
-      "Demostró tenacidad táctica y resistencia física durante combates prolongados."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -21594,7 +23274,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Nadie puede vencerme ahora que he desatado mi verdadero poder!",
+      "onUltimateReady": "¡Voy a hacerte polvo junto con todo este lugar!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -21950,11 +23635,7 @@ export const INITIAL_CHARACTERS = [
         "Mundos de energía espiritual densa (Sala del Espíritu y Tiempo)"
       ]
     },
-    "provenFeats": [
-      "Sobrevivió a la explosión de Namek mutilado.",
-      "Viajó a la Tierra con la intención de torturar a los amigos de Goku.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -21964,7 +23645,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Vengo a mostrarte el verdadero terror del universo!",
+      "onTransformation": "¡Mi cuerpo de acero es indestructible!",
+      "onUltimateReady": "¡Voy a borrar este miserable planeta contigo!",
+      "onLowHealth": "¡Imposible! ¡Yo soy el emperador del universo!",
+      "onVictory": "Joya insignificante... Tu existencia ha terminado."
     },
     "staminaProfile": {
       "maxStamina": 180,
@@ -23022,15 +24708,169 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 20,
+      "maxStamina": 120,
+      "recoveryRatePerTurn": 8
     },
-    "combatAIPersonality": "Piccolo (Final Saga Saiyan / vs Nappa): Estilo táctico Genio Táctico y Líder Supremo de lo. Noble, disciplinado, sabio y profundamente conmovido por la",
-    "provenFeats": [
-      "Alcanzó 3,500 unidades oficiales de poder tras entrenar 1 año en soledad y con Gohan.",
-      "Asesinó a un Saibaman de un solo impacto contundente.",
-      "Atrapó la cola de Nappa y coordinó el asalto de tres guerreros Z.",
-      "Salvó a Gohan del ataque mortal de Nappa sacrificando su propia vida, redimiendo su linaje demoníaco."
-    ],
+    "combatAIPersonality": {
+      "0": "P",
+      "1": "i",
+      "2": "c",
+      "3": "c",
+      "4": "o",
+      "5": "l",
+      "6": "o",
+      "7": " ",
+      "8": "(",
+      "9": "F",
+      "10": "i",
+      "11": "n",
+      "12": "a",
+      "13": "l",
+      "14": " ",
+      "15": "S",
+      "16": "a",
+      "17": "g",
+      "18": "a",
+      "19": " ",
+      "20": "S",
+      "21": "a",
+      "22": "i",
+      "23": "y",
+      "24": "a",
+      "25": "n",
+      "26": " ",
+      "27": "/",
+      "28": " ",
+      "29": "v",
+      "30": "s",
+      "31": " ",
+      "32": "N",
+      "33": "a",
+      "34": "p",
+      "35": "p",
+      "36": "a",
+      "37": ")",
+      "38": ":",
+      "39": " ",
+      "40": "E",
+      "41": "s",
+      "42": "t",
+      "43": "i",
+      "44": "l",
+      "45": "o",
+      "46": " ",
+      "47": "t",
+      "48": "á",
+      "49": "c",
+      "50": "t",
+      "51": "i",
+      "52": "c",
+      "53": "o",
+      "54": " ",
+      "55": "G",
+      "56": "e",
+      "57": "n",
+      "58": "i",
+      "59": "o",
+      "60": " ",
+      "61": "T",
+      "62": "á",
+      "63": "c",
+      "64": "t",
+      "65": "i",
+      "66": "c",
+      "67": "o",
+      "68": " ",
+      "69": "y",
+      "70": " ",
+      "71": "L",
+      "72": "í",
+      "73": "d",
+      "74": "e",
+      "75": "r",
+      "76": " ",
+      "77": "S",
+      "78": "u",
+      "79": "p",
+      "80": "r",
+      "81": "e",
+      "82": "m",
+      "83": "o",
+      "84": " ",
+      "85": "d",
+      "86": "e",
+      "87": " ",
+      "88": "l",
+      "89": "o",
+      "90": ".",
+      "91": " ",
+      "92": "N",
+      "93": "o",
+      "94": "b",
+      "95": "l",
+      "96": "e",
+      "97": ",",
+      "98": " ",
+      "99": "d",
+      "100": "i",
+      "101": "s",
+      "102": "c",
+      "103": "i",
+      "104": "p",
+      "105": "l",
+      "106": "i",
+      "107": "n",
+      "108": "a",
+      "109": "d",
+      "110": "o",
+      "111": ",",
+      "112": " ",
+      "113": "s",
+      "114": "a",
+      "115": "b",
+      "116": "i",
+      "117": "o",
+      "118": " ",
+      "119": "y",
+      "120": " ",
+      "121": "p",
+      "122": "r",
+      "123": "o",
+      "124": "f",
+      "125": "u",
+      "126": "n",
+      "127": "d",
+      "128": "a",
+      "129": "m",
+      "130": "e",
+      "131": "n",
+      "132": "t",
+      "133": "e",
+      "134": " ",
+      "135": "c",
+      "136": "o",
+      "137": "n",
+      "138": "m",
+      "139": "o",
+      "140": "v",
+      "141": "i",
+      "142": "d",
+      "143": "o",
+      "144": " ",
+      "145": "p",
+      "146": "o",
+      "147": "r",
+      "148": " ",
+      "149": "l",
+      "150": "a",
+      "aggression": 65,
+      "tacticalIQ": 95,
+      "mercyThreshold": 20,
+      "clutchFactor": 85,
+      "preferredEngagementRange": "mid_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -23040,9 +24880,121 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡No subestimes el entrenamiento infernal al que me he sometido!",
+      "onUltimateReady": "¡Este será tu fin! ¡Makankosappo!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "50G",
+      "favoredBiomes": [
+        "Montañas",
+        "Páramos rocosos",
+        "Campos abiertos"
+      ],
+      "disfavoredBiomes": [
+        "Vac��o espacial",
+        "Zonas marinas profundas"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cola de Saiyajin",
+        "durability": "Puede ser cortada",
+        "effect": "Fuente de Zenkai y transformación Oozaru."
+      },
+      {
+        "name": "Capa y Turbante de Entrenamiento Pesado",
+        "durability": "Alta",
+        "effect": "Suprime el ki y restringe ligeramente la velocidad para forzar el incremento de fuerza."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga Saiyan (Invasión de Nappa y Vegeta) / Año 762",
+      "timelineRestrictions": "Desconoce los eventos de Namek, la existencia de los Androides, Cell, Majin Buu y transformaciones superiores como el Super Saiyajin.",
+      "forbiddenConcepts": [
+        "Super Saiyan",
+        "Freezer",
+        "Cell",
+        "Majin Buu",
+        "Namekianos de otros universos"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "piccolo-inicio-saga-saiyan",
@@ -23227,6 +25179,25 @@ export const INITIAL_CHARACTERS = [
         "effect": "Acierto crítico garantizado que ignora la durabilidad defensiva del objetivo.",
         "partialFailureResult": "Si el rival se libera antes del disparo, el Makankosappo impacta únicamente a Goku.",
         "canonStatus": "source_backed"
+      },
+      {
+        "id": "combo-raditz-nelson",
+        "name": "Asalto Perforante Conjunto",
+        "partners": [
+          "Goku (Inicio Saga Saiyan)"
+        ],
+        "sequence": [
+          "Goku sujeta al rival por la espalda inmovilizando sus brazos (Nelson Full-Nelson).",
+          "Piccolo canaliza el Makankosappo a máxima potencia sin distracciones.",
+          "Piccolo dispara el haz penetrante atravesando tanto al aliado como al enemigo."
+        ],
+        "staminaCostPerParticipant": {
+          "Goku": 40,
+          "Piccolo": 50
+        },
+        "effect": "Acierto crítico garantizado que ignora la durabilidad defensiva del objetivo.",
+        "partialFailureResult": "Si el rival se libera antes del disparo, el Makankosappo impacta únicamente a Goku.",
+        "canonStatus": "source_backed"
       }
     ],
     "powerScaling": {
@@ -23260,14 +25231,172 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Piccolo (Inicio Saga Saiyan / vs Raditz): Estilo táctico Genio Táctico / Estratega (creador . Orgulloso, frío, calculador y determinado a superar a Goku c",
-    "provenFeats": [
-      "Destruyó la Luna con un solo ataque de ki para calmar la transformación de Gohan.",
-      "Derrotó y asesinó a Raditz perforando su cuerpo mediante el Makankosappo.",
-      "Ideó la estrategia de inmovilización junto a Goku."
-    ],
+    "combatAIPersonality": {
+      "0": "P",
+      "1": "i",
+      "2": "c",
+      "3": "c",
+      "4": "o",
+      "5": "l",
+      "6": "o",
+      "7": " ",
+      "8": "(",
+      "9": "I",
+      "10": "n",
+      "11": "i",
+      "12": "c",
+      "13": "i",
+      "14": "o",
+      "15": " ",
+      "16": "S",
+      "17": "a",
+      "18": "g",
+      "19": "a",
+      "20": " ",
+      "21": "S",
+      "22": "a",
+      "23": "i",
+      "24": "y",
+      "25": "a",
+      "26": "n",
+      "27": " ",
+      "28": "/",
+      "29": " ",
+      "30": "v",
+      "31": "s",
+      "32": " ",
+      "33": "R",
+      "34": "a",
+      "35": "d",
+      "36": "i",
+      "37": "t",
+      "38": "z",
+      "39": ")",
+      "40": ":",
+      "41": " ",
+      "42": "E",
+      "43": "s",
+      "44": "t",
+      "45": "i",
+      "46": "l",
+      "47": "o",
+      "48": " ",
+      "49": "t",
+      "50": "á",
+      "51": "c",
+      "52": "t",
+      "53": "i",
+      "54": "c",
+      "55": "o",
+      "56": " ",
+      "57": "G",
+      "58": "e",
+      "59": "n",
+      "60": "i",
+      "61": "o",
+      "62": " ",
+      "63": "T",
+      "64": "á",
+      "65": "c",
+      "66": "t",
+      "67": "i",
+      "68": "c",
+      "69": "o",
+      "70": " ",
+      "71": "/",
+      "72": " ",
+      "73": "E",
+      "74": "s",
+      "75": "t",
+      "76": "r",
+      "77": "a",
+      "78": "t",
+      "79": "e",
+      "80": "g",
+      "81": "a",
+      "82": " ",
+      "83": "(",
+      "84": "c",
+      "85": "r",
+      "86": "e",
+      "87": "a",
+      "88": "d",
+      "89": "o",
+      "90": "r",
+      "91": " ",
+      "92": ".",
+      "93": " ",
+      "94": "O",
+      "95": "r",
+      "96": "g",
+      "97": "u",
+      "98": "l",
+      "99": "l",
+      "100": "o",
+      "101": "s",
+      "102": "o",
+      "103": ",",
+      "104": " ",
+      "105": "f",
+      "106": "r",
+      "107": "í",
+      "108": "o",
+      "109": ",",
+      "110": " ",
+      "111": "c",
+      "112": "a",
+      "113": "l",
+      "114": "c",
+      "115": "u",
+      "116": "l",
+      "117": "a",
+      "118": "d",
+      "119": "o",
+      "120": "r",
+      "121": " ",
+      "122": "y",
+      "123": " ",
+      "124": "d",
+      "125": "e",
+      "126": "t",
+      "127": "e",
+      "128": "r",
+      "129": "m",
+      "130": "i",
+      "131": "n",
+      "132": "a",
+      "133": "d",
+      "134": "o",
+      "135": " ",
+      "136": "a",
+      "137": " ",
+      "138": "s",
+      "139": "u",
+      "140": "p",
+      "141": "e",
+      "142": "r",
+      "143": "a",
+      "144": "r",
+      "145": " ",
+      "146": "a",
+      "147": " ",
+      "148": "G",
+      "149": "o",
+      "150": "k",
+      "151": "u",
+      "152": " ",
+      "153": "c",
+      "aggression": 60,
+      "tacticalIQ": 92,
+      "mercyThreshold": 10,
+      "clutchFactor": 80,
+      "preferredEngagementRange": "mid_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -23277,9 +25406,121 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡No permitiré que arruines este planeta!",
+      "onTransformation": "¡Fuera ropa pesada! Es hora de terminar con esto.",
+      "onUltimateReady": "¡Muevete de aquí, Goku! ¡Makankosappo!",
+      "onLowHealth": "Aún... aún puedo mantener el brazo alzado...",
+      "onVictory": "Has caído. Nadie puede desafiarme y sobrevivir."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "30G",
+      "favoredBiomes": [
+        "Bosques",
+        "Áreas montañosas",
+        "Zonas desérticas"
+      ],
+      "disfavoredBiomes": [
+        "Vacío espacial",
+        "Océano profundo"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cola de Saiyajin",
+        "durability": "Puede ser cortada",
+        "effect": "Fuente de Zenkai y transformación Oozaru."
+      },
+      {
+        "name": "Vestimenta Demoníaca con Turbante",
+        "durability": "Media",
+        "effect": "Protección estándar y supresión de Ki."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga Saiyan (Llegada de Raditz) / Año 761",
+      "timelineRestrictions": "Desconoce la llegada de Nappa y Vegeta, las Esferas de Namek, Super Saiyajin y eventos posteriores.",
+      "forbiddenConcepts": [
+        "Super Saiyan",
+        "Nappa",
+        "Vegeta",
+        "Freezer",
+        "Cell"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "piccolo-saga-cell-buu-saga-androides-946",
@@ -24201,13 +26442,138 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Pui Pui: Estilo táctico Arrogante y confiado. Depende demas. Sumamente arrogante. Se cree superior a casi cualquier raza",
-    "provenFeats": [
-      "Sobrevivió ileso a ataques en gravedad x10, considerándola su mayor ventaja bélica.",
-      "Considerado por Babidi como lo suficientemente fuerte para recolectar energía y enfrentar a los Guerreros Z en el nivel 1."
-    ],
+    "combatAIPersonality": {
+      "0": "P",
+      "1": "u",
+      "2": "i",
+      "3": " ",
+      "4": "P",
+      "5": "u",
+      "6": "i",
+      "7": ":",
+      "8": " ",
+      "9": "E",
+      "10": "s",
+      "11": "t",
+      "12": "i",
+      "13": "l",
+      "14": "o",
+      "15": " ",
+      "16": "t",
+      "17": "á",
+      "18": "c",
+      "19": "t",
+      "20": "i",
+      "21": "c",
+      "22": "o",
+      "23": " ",
+      "24": "A",
+      "25": "r",
+      "26": "r",
+      "27": "o",
+      "28": "g",
+      "29": "a",
+      "30": "n",
+      "31": "t",
+      "32": "e",
+      "33": " ",
+      "34": "y",
+      "35": " ",
+      "36": "c",
+      "37": "o",
+      "38": "n",
+      "39": "f",
+      "40": "i",
+      "41": "a",
+      "42": "d",
+      "43": "o",
+      "44": ".",
+      "45": " ",
+      "46": "D",
+      "47": "e",
+      "48": "p",
+      "49": "e",
+      "50": "n",
+      "51": "d",
+      "52": "e",
+      "53": " ",
+      "54": "d",
+      "55": "e",
+      "56": "m",
+      "57": "a",
+      "58": "s",
+      "59": ".",
+      "60": " ",
+      "61": "S",
+      "62": "u",
+      "63": "m",
+      "64": "a",
+      "65": "m",
+      "66": "e",
+      "67": "n",
+      "68": "t",
+      "69": "e",
+      "70": " ",
+      "71": "a",
+      "72": "r",
+      "73": "r",
+      "74": "o",
+      "75": "g",
+      "76": "a",
+      "77": "n",
+      "78": "t",
+      "79": "e",
+      "80": ".",
+      "81": " ",
+      "82": "S",
+      "83": "e",
+      "84": " ",
+      "85": "c",
+      "86": "r",
+      "87": "e",
+      "88": "e",
+      "89": " ",
+      "90": "s",
+      "91": "u",
+      "92": "p",
+      "93": "e",
+      "94": "r",
+      "95": "i",
+      "96": "o",
+      "97": "r",
+      "98": " ",
+      "99": "a",
+      "100": " ",
+      "101": "c",
+      "102": "a",
+      "103": "s",
+      "104": "i",
+      "105": " ",
+      "106": "c",
+      "107": "u",
+      "108": "a",
+      "109": "l",
+      "110": "q",
+      "111": "u",
+      "112": "i",
+      "113": "e",
+      "114": "r",
+      "115": " ",
+      "116": "r",
+      "117": "a",
+      "118": "z",
+      "119": "a",
+      "aggression": 70,
+      "tacticalIQ": 45,
+      "mercyThreshold": 10,
+      "clutchFactor": 25,
+      "preferredEngagementRange": "mid_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -24217,9 +26583,114 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder en este entorno!",
+      "onTransformation": "¡No necesito transformarme para aplastarte!",
+      "onUltimateReady": "¡Este es tu fin, no hay escapatoria a mi disparo certero!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "10G",
+      "favoredBiomes": [
+        "Planeta Zun",
+        "Nave de Babidi"
+      ],
+      "disfavoredBiomes": [
+        "Espacio abierto sin oxígeno",
+        "Entornos sin gravedad regulada"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Armadura de Zun",
+        "durability": "Media",
+        "effect": "Protección estándar frente a impactos contundentes menores."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga Buu / Año 774",
+      "timelineRestrictions": "Pui Pui desconoce los acontecimientos posteriores a su muerte en la nave de Babidi, así como el verdadero poder de Majin Buu en su estado completo o las transformaciones divinas.",
+      "forbiddenConcepts": [
+        "Super Saiyan 3",
+        "Super Saiyan God",
+        "Fusion Potara",
+        "Majin Buu Completo Desatado"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "raditz-saga-saiyan-640",
@@ -24297,6 +26768,14 @@ export const INITIAL_CHARACTERS = [
           "name": "Begging Trick (Súplica Falsa)",
           "desc": "Raditz implora piedad llorando sobre sus rodillas. Cuando el enemigo baja la defensa y el Ki, lanza un golpe traicionero a matar.",
           "cost": "Táctica"
+        },
+        {
+          "id": "raditz_u_1",
+          "name": "Súplica Falsa (Begging Trick)",
+          "desc": "Raditz implora piedad de rodillas. Cuando el enemigo baja la guardia, lanza un golpe mortal traicionero.",
+          "cost": 35,
+          "damageType": "Contundente Sorpresa",
+          "counterplay": "Mantener la guardia activa sin importar las súplicas."
         }
       ],
       "passives": [
@@ -24320,7 +26799,11 @@ export const INITIAL_CHARACTERS = [
         "Fisiología Saiyan",
         "Radar Scouter Analítico",
         "Control de Ki limitado",
-        "Dependencia tecnológica (Scouter): Sin él, no puede medir el poder enemigo, pero mantiene su combate natural."
+        "Dependencia tecnológica (Scouter): Sin él, no puede medir el poder enemigo, pero mantiene su combate natural.",
+        {
+          "name": "Dependencia del Scouter",
+          "desc": "Permite lectura numérica exacta del Ki rival, pero es vulnerable a ocultamiento de energía."
+        }
       ],
       "weaknesses": [
         {
@@ -24357,31 +26840,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-C",
         "stats": "Forma Base canónica de Raditz previo a cualquier transformación."
-      },
-      {
-        "id": "raditz-zenkai-revival",
-        "name": "Estado Base / Zenkai Extremo",
-        "stats": "Multiplicador x1.5 post Zenkai. Tras ser torturado por Piccolo, su cuerpo se regenera y su Ki se duplica temporalmente. Aunque sigue siendo 5-C, su presión de combate se vuelve aplastante para los terrícolas.",
-        "apexKiMultiplier": 1.5,
-        "staminaDrain": 0,
-        "activationCondition": "Sobrevivir a una herida letal (cansancio celular Saiyan).",
-        "grantedTags": [
-          "Zenkai-Boost",
-          "Aggressive"
-        ],
-        "suppressedTags": [
-          "Stamina_Recovery"
-        ],
-        "grantedAbilities": [
-          "Double Sunday (Potenciado)",
-          "Golpes brutales mejorados"
-        ],
-        "limitations": "Aplica una vez por ciclo de combate antes de la muerte total.",
-        "drawbacks": "Daño muscular residual y dolor extremo.",
-        "exitCondition": "Estabilización de Ki.",
-        "counterplay": "Ataques preventivos que no le den oportunidad de sanar.",
-        "canonStatus": "apex_custom",
-        "tier": "5-C"
       },
       {
         "id": "raditz-ozaru",
@@ -24573,20 +27031,14 @@ export const INITIAL_CHARACTERS = [
       "gravityResistance": "10G",
       "favoredBiomes": [
         "Planetas áridos",
-        "Espacio abierto",
-        "Campos de batalla extensos"
+        "Espacio abierto"
       ],
       "disfavoredBiomes": [
-        "Bosques cerrados (cola se enreda)",
-        "Cuevas estrechas (vuela pero la armadura limita)",
-        "Arenas submarinas (limitaciones de respiración no confirmadas, asume estándar Saiyan)"
+        "Bosques cerrados",
+        "Cuevas estrechas"
       ]
     },
-    "provenFeats": [
-      "Atrapó balas de rifle como si fueran polvo.",
-      "Dejó KO a Krillin de un solo latigazo de su cola.",
-      "Obligó al mayor sacrificio de la época, requiriendo que Goku muriera para poder retenerlo a duras penas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -24596,7 +27048,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Insektos de la Tierra, van a presenciar el poder de un Saiyan!",
+      "onTransformation": "¡La luz de la luna me otorgará mi verdadera forma!",
+      "onUltimateReady": "¡Suplica por tu vida, no servirá de nada!",
+      "onLowHealth": "¡Imposible! ¿Cómo un clase baja puede vencerme?",
+      "onVictory": "¡Patético! Sabía que este planeta no valía nada."
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -24627,25 +27084,14 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga Saiyan / Año 762",
-      "timelineRestrictions": "Raditz fue derrotado y muerto por Goku en el Año 762. No conoce los eventos de Namek, el Super Saiyan Legendario, la muerte de Freezer, ni la existencia de Bardock como Super Saiyan.",
+      "timelineRestrictions": "Raditz muere en el Año 762. Desconoce Namek, Freezer, Super Saiyan y eventos posteriores.",
       "forbiddenConcepts": [
         "Super Saiyan",
-        "Super Saiyan 2",
-        "Super Saiyan 3",
         "Freezer Final Form",
         "Namek",
-        "Porunga",
-        "Gine",
-        "Bardock Super Saiyan",
-        "Androides",
         "Cell",
         "Buu",
-        "Beerus",
-        "Whis",
-        "Ultra Instinto",
-        "Multiverso",
-        "DBS Broly",
-        "DBS Super Hero"
+        "Ultra Instinto"
       ],
       "crossVerseAwareness": "none"
     },
@@ -24858,20 +27304,15 @@ export const INITIAL_CHARACTERS = [
       "spaceSurvival": true,
       "gravityResistance": "50G",
       "favoredBiomes": [
-        "Planetas abiertos para espectáculo",
-        "Terrenos llanos y desolados",
-        "Bases militares"
+        "Planetas abiertos",
+        "Terrenos llanos"
       ],
       "disfavoredBiomes": [
-        "Vacío espacial profundo",
-        "Terrenos cerrados o confinados (limitan sus poses y carga de Eraser Gun)"
+        "Espacio profundo",
+        "Espacios confinados"
       ]
     },
-    "provenFeats": [
-      "Vapuleó a Vegeta hasta dejarlo sollozando e inerte.",
-      "Mantuvo su fuerza después de que Krillin lo atacara por sorpresa y Vegeta le volara parte de los dientes y el pelo.",
-      "Se necesitó de Goku recién entrenado en gravedad x100 para noquearlo de un solo codazo al estómago."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -24881,7 +27322,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Prepárate para presocer el arte de las Fuerzas Ginyu!",
+      "onTransformation": "¡No necesito transformarme para destruirte!",
+      "onUltimateReady": "¡Recoome... ERASER GUN!",
+      "onLowHealth": "¡Imposible! ¡Mi cuerpo indestructible!",
+      "onVictory": "¡Eso fue pan comido! ¡Y ahora, la pose final!"
     },
     "staminaProfile": {
       "maxStamina": 180,
@@ -24898,18 +27344,21 @@ export const INITIAL_CHARACTERS = [
         "name": "Scouter de Recoome",
         "durability": 50,
         "effect": "Medidor de energía para detectar el PL de cualquier rival."
+      },
+      {
+        "name": "Armadura de Fuerzas Especiales Ginyu",
+        "durability": 90,
+        "effect": "Armadura militar de gran resistencia."
       }
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Namek / Año 762",
-      "timelineRestrictions": "Recoome muere a manos de Goku base con un solo codazo al estómago. No tiene conocimiento de ningún evento posterior: ni Androides, ni Cell, ni Buu, ni Saiyajin Dios.",
+      "timelineRestrictions": "Recoome muere en Namek. Desconoce eventos posteriores como Androides, Cell o Buu.",
       "forbiddenConcepts": [
-        "Super Saiyajin / SSJ2 / SSJ3",
+        "Super Saiyajin",
+        "Cell",
         "Majin Buu",
-        "Androides / Cell",
-        "Dragones de las Super Balls",
-        "Beerus / Kaioshin / Ultra Instinto",
-        "Fusión Metamoru / Potara"
+        "Ultra Instinto"
       ],
       "crossVerseAwareness": "none"
     },
@@ -25477,11 +27926,7 @@ export const INITIAL_CHARACTERS = [
         "atmósferas tóxicas"
       ]
     },
-    "provenFeats": [
-      "Gobernó el Planeta Vegeta como su último monarca antes de la traición y destrucción a manos de Freezer.",
-      "Es mencionado como una de las razones del odio profundo de Vegeta hacia Freezer, siendo su padre asesinado en la masacre.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -25491,7 +27936,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder frente a la realeza!",
+      "onTransformation": "¡Mi poder como monarca no conoce límites!",
+      "onUltimateReady": "¡Prepárate para presenciar la ira del Rey Vegeta!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 110,
@@ -25551,7 +28001,8 @@ export const INITIAL_CHARACTERS = [
       "Auto-Destrucción Letal",
       "Secreción de Ácido",
       "Pack_Tactics",
-      "Semilla_Cultivable"
+      "Semilla_Cultivable",
+      "Fisiología Botánica"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -25736,6 +28187,23 @@ export const INITIAL_CHARACTERS = [
         "effect": "Aniquilación total del objetivo si la inmovilización tiene éxito (equivalente a tres explosiones lunares).",
         "partialFailureResult": "Si uno falla el agarre, los otros dos quedan expuestos y el objetivo puede反击.",
         "canonStatus": "apex_custom"
+      },
+      {
+        "partners": [
+          "Nappa"
+        ],
+        "sequence": [
+          "Saibaman surge por sorpresa bajo los pies del rival.",
+          "Saibaman ejecuta Agarrón Mortal inmovilizando al objetivo.",
+          "Nappa lanza un ataque de energía masivo directo a la posición."
+        ],
+        "staminaCostPerParticipant": [
+          15,
+          30
+        ],
+        "effect": "Daño crítico asegurado e interrupción de la guardia del enemigo.",
+        "partialFailureResult": "Si el rival esquiva el agarre, Nappa impacta al Saibaman por fuego amigo.",
+        "canonStatus": "source_backed"
       }
     ],
     "transformativeMechanics": {
@@ -25801,21 +28269,15 @@ export const INITIAL_CHARACTERS = [
       "spaceSurvival": false,
       "gravityResistance": "5G",
       "favoredBiomes": [
-        "Tierra fértil (donde pueden regenerarse)",
-        "Terrenos rocosos con cobertura",
-        "Climas áridos (resistentes)"
+        "Tierra fértil",
+        "Terrenos rocosos"
       ],
       "disfavoredBiomes": [
         "Vacío del espacio",
-        "Arenas bajo el agua",
-        "Ambientes de gravedad extrema"
+        "Océanos profundos"
       ]
     },
-    "provenFeats": [
-      "Equipararon el nivel de los Guerreros Z tras entrenar con Kami.",
-      "Asesinaron a Yamcha, borrando su exceso de confianza para siempre.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -25825,7 +28287,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Kiiii-chiiiii!",
+      "onTransformation": "¡Grrrrr...",
+      "onUltimateReady": "¡KABOOM!",
+      "onLowHealth": "¡Screeech!",
+      "onVictory": "¡Ji, ji, ji!"
     },
     "staminaProfile": {
       "maxStamina": 80,
@@ -25851,21 +28318,13 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga Saiyan / Año 762",
-      "timelineRestrictions": "Los Saibamen fueron exterminados en su totalidad por los Guerreros Z. No poseen autoconciencia ni conocimiento de eventos fuera de sus creadores (Nappa y Vegeta).",
+      "timelineRestrictions": "Los Saibamen fueron exterminados en su totalidad por los Guerreros Z. No poseen autoconciencia ni conocimiento de eventos fuera de sus creadores.",
       "forbiddenConcepts": [
         "Super Saiyan",
-        "Super Saiyan 2",
         "Freezer Forma Final",
-        "Namek",
-        "Androides",
         "Cell",
         "Buu",
-        "Beerus",
-        "Whis",
-        "Ultra Instinto",
-        "Multiverso",
-        "DBS Broly",
-        "DBS Super Hero"
+        "Beerus"
       ],
       "crossVerseAwareness": "none"
     },
@@ -25895,7 +28354,8 @@ export const INITIAL_CHARACTERS = [
     "haxTags": [
       "Teletransportación Kai Kai (Sin necesidad de Ki)",
       "Parálisis Telequinética Divina",
-      "Vínculo Vital con Beerus"
+      "Vínculo Vital con Beerus",
+      "Teletransportación Kai Kai"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -25911,6 +28371,11 @@ export const INITIAL_CHARACTERS = [
           "cost": 5,
           "damageType": "contundente",
           "description": "Onda invisible de presión psíquica."
+        },
+        {
+          "name": "Golpe Divino Menor",
+          "cost": 4,
+          "desc": "Impacto marcial imbuido con ki divino básico."
         }
       ],
       "superAttacks": [
@@ -26129,7 +28594,7 @@ export const INITIAL_CHARACTERS = [
     "sourceMedium": "manga",
     "haxResistances": {
       "existenceErasure": 40,
-      "timeManipulation": 60,
+      "timeManipulation": 6,
       "mindControl": 85,
       "matterManipulation": 30,
       "soulDamage": 50,
@@ -26808,11 +29273,7 @@ export const INITIAL_CHARACTERS = [
         "Lunas con Oozaru Trigger"
       ]
     },
-    "provenFeats": [
-      "Quebró la armadura y costillas de Raditz de un solo cabezazo volador.",
-      "Empujó a Freezer en su tercera forma forzándolo a bloquear ráfagas continuas de pánico.",
-      "Aplastó a Vegeta transformado en Oozaru."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -26822,7 +29283,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡No voy a dejar que les hagas daño!",
+      "onUltimateReady": "¡Toma esto... Masenko!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 80,
@@ -27290,7 +29756,7 @@ export const INITIAL_CHARACTERS = [
     },
     "environmentalAffinity": {
       "spaceSurvival": true,
-      "gravityResistance": "100G (Capacidad Kaioshin/Kaio)",
+      "gravityResistance": "100G",
       "favoredBiomes": [
         "Planetas áridos",
         "Atmósferas destruidas",
@@ -27301,11 +29767,7 @@ export const INITIAL_CHARACTERS = [
         "Mundos con alta humedad"
       ]
     },
-    "provenFeats": [
-      "Derrotó a Nappa paralizándolo dejándolo caer al suelo sin esfuerzo (Base).",
-      "Venció en el choque de energía más icónico de la historia a Vegeta.",
-      "Sobrevivió con casi todos los huesos rotos al aplastamiento de Oozaru Vegeta."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -27315,7 +29777,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Kaio-ken, multiplícate por cuatro!",
+      "onUltimateReady": "¡Kamehamehaaaaa!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 120,
@@ -28645,11 +31112,7 @@ export const INITIAL_CHARACTERS = [
         "Planetas con atmósfera tóxica (sin preparación)"
       ]
     },
-    "provenFeats": [
-      "Voló el torso completo de Cell Perfecto usando el Kamehameha Instantáneo.",
-      "Rindió el combate admitiendo que no podía ganar, para dar paso al verdadero salvador (Gohan).",
-      "Se sacrificó llevando a Cell bomba al planeta del Kaio del Norte."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -28659,7 +31122,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Este es el poder del Super Saiyajin definitivo!",
+      "onUltimateReady": "¡No podrás escapar de esto!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -28690,8 +31158,8 @@ export const INITIAL_CHARACTERS = [
         "Majin Buu",
         "Kid Buu",
         "Super Saiyajin 3",
-        "Fusión Metamoru completada (solo vio a Trunks y Goten)",
-        "Dragon Balls de Namek (Porunga) reencarnadas",
+        "Fusión Metamoru completada",
+        "Dragon Balls de Namek reencarnadas",
         "Universo 6",
         "Beerus",
         "Ultra Instinto",
@@ -29086,11 +31554,7 @@ export const INITIAL_CHARACTERS = [
         "mundos_subterráneos"
       ]
     },
-    "provenFeats": [
-      "Venció a Freezer 100%.",
-      "Mantuvo una velocidad de reacción y combate consistente en situaciones de alta presión.",
-      "Demostró tenacidad táctica y resistencia física durante combates prolongados."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -29100,7 +31564,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Voy a derrotarte!",
+      "onUltimateReady": "¡Este es el final!",
+      "onLowHealth": "Aún no he terminado...",
+      "onVictory": "Fue una gran pelea."
     },
     "staminaProfile": {
       "maxStamina": 140,
@@ -29112,6 +31581,11 @@ export const INITIAL_CHARACTERS = [
         "name": "Nube Kinto'un (Nube Voladora)",
         "durability": "Indestructible",
         "effect": "Transporte MFTL controlado por ki."
+      },
+      {
+        "name": "Nube Kinto'un",
+        "durability": "Indestructible",
+        "effect": "Transporte controlado por ki."
       }
     ],
     "knowledgeHorizon": {
@@ -30131,14 +32605,10 @@ export const INITIAL_CHARACTERS = [
       ],
       "disfavoredBiomes": [
         "Vacío espacial",
-        "Mundos con alta gravedad (no soporta su peso mutado)"
+        "Mundos con alta gravedad"
       ]
     },
-    "provenFeats": [
-      "Derrotó y masacró a Videl (quien era mucho más técnica y ágil que él).",
-      "Soportó la rotura de su cuello como si nada.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -30148,7 +32618,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡El sello de Babidi me otorga fuerza eterna!",
+      "onUltimateReady": "¡No voy a tener piedad contigo!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -30164,11 +32639,11 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Buu (Año 774)",
-      "timelineRestrictions": "Spopovich solo tiene conocimiento operativo de su misión. No conoce la vida fuera de la esfera de control de Babidi, ni las amenazas cósmicas más allá del Torneo. Desconoce todo sobre los Saiyajin o Namek.",
+      "timelineRestrictions": "Spopovich solo tiene conocimiento operativo de su misión. No conoce la vida fuera de la esfera de control de Babidi.",
       "forbiddenConcepts": [
         "Super Saiyajin 3",
         "Fusión Potara",
-        "Majin Buu Original (solo conoce al cascarón)",
+        "Majin Buu Original",
         "Super Saiyan Blue",
         "Universos 6-12"
       ],
@@ -30585,23 +33060,17 @@ export const INITIAL_CHARACTERS = [
     },
     "environmentalAffinity": {
       "spaceSurvival": true,
-      "gravityResistance": "Universal (Lucha cómodamente en gravedad de 500G, fue visto en el Salón del Kaioshin con gravedad extrema)",
+      "gravityResistance": "Universal",
       "favoredBiomes": [
         "Kaioshin Realm",
         "Hyperbolic Time Chamber",
-        "Planetas rocosos densos",
         "Interior Dimensional"
       ],
       "disfavoredBiomes": [
-        "Vacío total sin materia",
-        "Lugares de máxima pureza espiritual (Mundo Kaioshin original)"
+        "Vacío total sin materia"
       ]
     },
-    "provenFeats": [
-      "Abrió un portal en el Salón del Espíritu y el Tiempo gritando.",
-      "Llevó el universo entero al borde del colapso dimensional.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -30611,7 +33080,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Grahahaha! Te arrepentirás de haber venido aquí.",
+      "onTransformation": "¡Nadie puede vencerme ahora que te he absorbido!",
+      "onUltimateReady": "¡Voy a hacer estallar este universo entero con mi grito!",
+      "onLowHealth": "Imposible... ¡Un insecto como tú no puede dañarme!",
+      "onVictory": "¡Ji, ji, ji! Eres demasiado débil."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -30652,14 +33126,13 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Buu / Año 774",
-      "timelineRestrictions": "Tiene pleno conocimiento del universo y las técnicas vistas hasta la saga de Buu (Kamehameha, Masenko, Makankosappo, Galick Ho, Shunkanido). Desconoce Dragones de las Bolas de Dragón del Infinito, noción de Omni-King, ni eventos de Dragon Ball Super.",
+      "timelineRestrictions": "Tiene pleno conocimiento del universo y las técnicas vistas hasta la saga de Buu. Desconoce Super",
       "forbiddenConcepts": [
         "Ultra Instinto",
         "Super Saiyajin Blue",
         "Super Saiyajin God",
         "Jiren",
         "Torneo del Poder",
-        "Beyonder",
         "Zen-Oh",
         "Beerus"
       ],
@@ -30690,7 +33163,8 @@ export const INITIAL_CHARACTERS = [
       "Shin Kikoho (Presión Gravitacional de Contención Absoluta)",
       "Supresión de Bio-Androides",
       "Voluntad Indomable",
-      "Tercer Ojo Divino (Sentidos Espirituales Agudizados)"
+      "Tercer Ojo Divino (Sentidos Espirituales Agudizados)",
+      "Tercer Ojo Divino"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -31823,11 +34297,7 @@ export const INITIAL_CHARACTERS = [
         "Vacío espacial"
       ]
     },
-    "provenFeats": [
-      "Acertó un golpe en el rostro de Vegeta en la cámara de gravedad x150.",
-      "Derrotó a Mr. Satán de un solo golpe 'débil' (reteniéndose) mandándolo fuera de la arena y de la ciudad.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -31837,7 +34307,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Este es el poder de un Super Saiyan!",
+      "onUltimateReady": "¡No podrás escapar de esto!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 100,
@@ -32060,6 +34535,14 @@ export const INITIAL_CHARACTERS = [
         ],
         "effect": "Aumenta un 15% el daño contra amenazas artificiales o divinas cuando pelea junto a su mentor o padre.",
         "canonStatus": "source_backed"
+      },
+      {
+        "name": "Dúo Din��mico Pre-Fusión",
+        "partnerTags": [
+          "Goten"
+        ],
+        "effect": "Sincronización perfecta de Ki. Permite ejecutar la Danza de la Fusión en Gotenks instantáneamente.",
+        "canonStatus": "source_backed"
       }
     ],
     "teamCombos": [
@@ -32107,14 +34590,210 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Trunks del Futuro (Continuidad Extendida Post-Cell — SSJ Perfeccionado y SSJ2): Estilo táctico Maduro y disciplinado, la experienc. Más sereno y seguro de sí mismo que en etapas anteriores, ha",
-    "provenFeats": [
-      "En el material expandido de videojuegos, finalmente eliminó a los Androides 17 y 18 de su línea temporal, cerrando el conflicto que definió su adolescencia.",
-      "Alcanzó el verdadero Super Saiyan 2 de forma independiente, sin la guía directa de Goku o Gohan, un logro notable dado su aislamiento en una línea temporal sin otros Saiyans de apoyo.",
-      "Es representado en crossovers de videojuegos (Dragon Ball Heroes, Xenoverse) combatiendo codo a codo con versiones de otros universos alternativos en escenarios de nivel equivalente a la Saga Buu."
-    ],
+    "combatAIPersonality": {
+      "0": "T",
+      "1": "r",
+      "2": "u",
+      "3": "n",
+      "4": "k",
+      "5": "s",
+      "6": " ",
+      "7": "d",
+      "8": "e",
+      "9": "l",
+      "10": " ",
+      "11": "F",
+      "12": "u",
+      "13": "t",
+      "14": "u",
+      "15": "r",
+      "16": "o",
+      "17": " ",
+      "18": "(",
+      "19": "C",
+      "20": "o",
+      "21": "n",
+      "22": "t",
+      "23": "i",
+      "24": "n",
+      "25": "u",
+      "26": "i",
+      "27": "d",
+      "28": "a",
+      "29": "d",
+      "30": " ",
+      "31": "E",
+      "32": "x",
+      "33": "t",
+      "34": "e",
+      "35": "n",
+      "36": "d",
+      "37": "i",
+      "38": "d",
+      "39": "a",
+      "40": " ",
+      "41": "P",
+      "42": "o",
+      "43": "s",
+      "44": "t",
+      "45": "-",
+      "46": "C",
+      "47": "e",
+      "48": "l",
+      "49": "l",
+      "50": " ",
+      "51": "—",
+      "52": " ",
+      "53": "S",
+      "54": "S",
+      "55": "J",
+      "56": " ",
+      "57": "P",
+      "58": "e",
+      "59": "r",
+      "60": "f",
+      "61": "e",
+      "62": "c",
+      "63": "c",
+      "64": "i",
+      "65": "o",
+      "66": "n",
+      "67": "a",
+      "68": "d",
+      "69": "o",
+      "70": " ",
+      "71": "y",
+      "72": " ",
+      "73": "S",
+      "74": "S",
+      "75": "J",
+      "76": "2",
+      "77": ")",
+      "78": ":",
+      "79": " ",
+      "80": "E",
+      "81": "s",
+      "82": "t",
+      "83": "i",
+      "84": "l",
+      "85": "o",
+      "86": " ",
+      "87": "t",
+      "88": "á",
+      "89": "c",
+      "90": "t",
+      "91": "i",
+      "92": "c",
+      "93": "o",
+      "94": " ",
+      "95": "M",
+      "96": "a",
+      "97": "d",
+      "98": "u",
+      "99": "r",
+      "100": "o",
+      "101": " ",
+      "102": "y",
+      "103": " ",
+      "104": "d",
+      "105": "i",
+      "106": "s",
+      "107": "c",
+      "108": "i",
+      "109": "p",
+      "110": "l",
+      "111": "i",
+      "112": "n",
+      "113": "a",
+      "114": "d",
+      "115": "o",
+      "116": ",",
+      "117": " ",
+      "118": "l",
+      "119": "a",
+      "120": " ",
+      "121": "e",
+      "122": "x",
+      "123": "p",
+      "124": "e",
+      "125": "r",
+      "126": "i",
+      "127": "e",
+      "128": "n",
+      "129": "c",
+      "130": ".",
+      "131": " ",
+      "132": "M",
+      "133": "á",
+      "134": "s",
+      "135": " ",
+      "136": "s",
+      "137": "e",
+      "138": "r",
+      "139": "e",
+      "140": "n",
+      "141": "o",
+      "142": " ",
+      "143": "y",
+      "144": " ",
+      "145": "s",
+      "146": "e",
+      "147": "g",
+      "148": "u",
+      "149": "r",
+      "150": "o",
+      "151": " ",
+      "152": "d",
+      "153": "e",
+      "154": " ",
+      "155": "s",
+      "156": "í",
+      "157": " ",
+      "158": "m",
+      "159": "i",
+      "160": "s",
+      "161": "m",
+      "162": "o",
+      "163": " ",
+      "164": "q",
+      "165": "u",
+      "166": "e",
+      "167": " ",
+      "168": "e",
+      "169": "n",
+      "170": " ",
+      "171": "e",
+      "172": "t",
+      "173": "a",
+      "174": "p",
+      "175": "a",
+      "176": "s",
+      "177": " ",
+      "178": "a",
+      "179": "n",
+      "180": "t",
+      "181": "e",
+      "182": "r",
+      "183": "i",
+      "184": "o",
+      "185": "r",
+      "186": "e",
+      "187": "s",
+      "188": ",",
+      "189": " ",
+      "190": "h",
+      "191": "a",
+      "aggression": 80,
+      "tacticalIQ": 85,
+      "mercyThreshold": 40,
+      "clutchFactor": 85,
+      "preferredEngagementRange": "adaptive"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -32124,9 +34803,109 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "He recorrido demasiado para flaquear aquí. ¡En guardia!",
+      "onTransformation": "¡Este es el resultado de mi entrenamiento sin descanso!",
+      "onUltimateReady": "¡No habrá escapatoria para ti!",
+      "onLowHealth": "Aún me queda ki... ¡Protegeré mi línea temporal!",
+      "onVictory": "La paz prevalecerá una vez más."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "300G",
+      "favoredBiomes": [
+        "Áreas urbanas devastadas",
+        "Páramos desolados",
+        "Campos de combate abiertos"
+      ],
+      "disfavoredBiomes": [
+        "Vacío espacial absoluto",
+        "Dimensiones de bolsillo inestables"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Equivalente narrativo a una 'Saga Buu' de la línea temporal del futuro (Material Expandido / Videojuegos)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "trunks-futuro-v1-espada-ssj-basico",
@@ -32162,51 +34941,89 @@ export const INITIAL_CHARACTERS = [
       "Super Saiyan"
     ],
     "arsenal": {
-      "basicAttacks": [],
-      "superAttacks": [
+      "basicAttacks": [
         {
-          "name": "Corte de Espada de Energía",
-          "desc": "Ataque directo con su espada de ki concentrado, suficiente para herir gravemente a los Androides del futuro aunque no para destruirlos.",
-          "cost": "20% de reserva de ki"
+          "name": "Espada de Destello Aureo",
+          "cost": 6,
+          "type": "cortante",
+          "desc": "Golpes con su espada dorada energizada. Rápidos y precisos."
         },
         {
+          "name": "Puñetazo Aéreo SSJ",
+          "cost": 5,
+          "type": "contundente",
+          "desc": "Puñetazo potenciado por la rabia del Super Saiyajin básico."
+        },
+        {
+          "name": "Zanmato Slash",
+          "cost": 8,
+          "type": "cortante",
+          "desc": "Corte diagonal descendente con la espada al máximo de su velocidad."
+        }
+      ],
+      "superAttacks": [
+        {
           "name": "Burning Attack",
-          "desc": "Movimientos de brazos rápidos seguidos de una ráfaga esférica de Ki devastadora.",
-          "cost": "Gasto medio de Ki"
+          "cost": 18,
+          "staminaDrain": 6,
+          "desc": "Llama la espada con fuero azul y realiza una ráfaga de cortes giratorios.",
+          "counterplay": "Esquivar lateral o bloquear con barrera energética."
+        },
+        {
+          "name": "Shining Sword Attack",
+          "cost": 22,
+          "staminaDrain": 8,
+          "desc": "Carga la espada con ki dorado y desata una oleada de energía cortante.",
+          "counterplay": "Bloqueo resistente o absorción de energía."
+        },
+        {
+          "name": "Final Smasher",
+          "cost": 25,
+          "staminaDrain": 10,
+          "desc": "Embiste al rival con la espada en llamas a máxima velocidad.",
+          "counterplay": "Esquiva angular o contraataque en el momento del impacto."
         }
       ],
       "ultimateAttacks": [
         {
-          "name": "Shining Sword Attack (Corte Resplandeciente)",
-          "desc": "Secuencia de cortes veloces de espada que rebanan al enemigo seguido de una onda de Ki que lo desintegra.",
-          "cost": "Gasto alto"
+          "name": "Burning Buster",
+          "cost": 50,
+          "staminaDrain": 20,
+          "desc": "Combina la espada con un Kamehameha dorado en un ataque definitivo de nivel Multi-Ciudad.",
+          "counterplay": "Interrumpir la concentración o barrera absoluta."
         }
       ],
       "passives": [
         {
-          "name": "Última Esperanza de la Línea Temporal",
-          "desc": "Como único guerrero Z activo de su futuro devastado, su determinación de proteger a los civiles supervivientes define cada decisión de combate.",
-          "cost": "Pasivo narrativo"
+          "name": "Raza Saiyajin",
+          "desc": "Incremento de poder tras cada batalla. Supervivencia mejorada con cada herida."
         },
         {
-          "name": "Zenkai Saiyan",
-          "desc": "Aumento permanente de poder tras recuperarse de heridas mortales.",
-          "cost": "Pasivo"
+          "name": "Hijos del Amor Paterno",
+          "desc": "Herencia de la determinación de Vegeta. +10% agresividad en combate."
         }
       ],
       "specialMechanics": [
         {
-          "name": "Ki Blade Slicing",
-          "desc": "Capacidad de infundir ki en una espada física o proyectar filo puro para ignorar parcialmente la durabilidad externa de oponentes mecánicos o biológicos."
+          "name": "Control del Tiempo",
+          "desc": "Habilidad temporal heredada de su padre. Puede esquivar ataques a costa de stamina."
         }
       ],
       "weaknesses": [
         {
-          "name": "Inexperiencia Táctica Juvenil",
-          "desc": "Tiende a subestimar la regeneración o los recursos ocultos de enemigos biomecánicos si confía demasiado en ataques sorpresa con espada.",
+          "name": "Arrogancia Juvenil",
+          "desc": "Subestima a rivales aparentemente débiles.",
           "counterTags": [
-            "Regeneración Avanzada",
-            "Lectura Predictiva"
+            "SpeedBlitz",
+            "Manipulación"
+          ]
+        },
+        {
+          "name": "Dependencia de la Espada",
+          "desc": "Sin su espada, su combate cuerpo a cuerpo es limitado.",
+          "counterTags": [
+            "Desarme",
+            "Distancia"
           ]
         }
       ]
@@ -32344,7 +35161,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de los Androides (Línea Temporal Alternativa, Año 785)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "trunks-futuro-v2-armadura-grados",
@@ -32380,47 +35223,96 @@ export const INITIAL_CHARACTERS = [
       "Armadura de combate Saiyan"
     ],
     "arsenal": {
-      "basicAttacks": [],
-      "superAttacks": [
+      "basicAttacks": [
         {
-          "name": "Burning Attack (Grado 2)",
-          "desc": "Ráfaga de energía concentrada, ejecutada con la potencia adicional del aumento de masa muscular del Grado 2.",
-          "cost": "25% de reserva de ki"
+          "name": "Puñetazo Trueno Dorado",
+          "cost": 6,
+          "type": "contundente",
+          "desc": "Puñetazo cargado de energía eléctrica dorada SSJ Grado 3."
         },
         {
-          "name": "Buster Cannon",
-          "desc": "Doble rayo de energía disparado desde ambas manos con enorme fuerza de empuje.",
-          "cost": "Gasto moderado"
+          "name": "Patada Aérea Grado 3",
+          "cost": 5,
+          "type": "cortante",
+          "desc": "Patada descendente con aura destructiva de Grado 3."
+        },
+        {
+          "name": "Corte de Armadura Definitivo",
+          "cost": 7,
+          "type": "cortante",
+          "desc": "Golpe con la armadura dorada potenciado por Grado 3."
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Burning Storm",
+          "cost": 18,
+          "staminaDrain": 8,
+          "desc": "Ráfaga de energía dorada en todas las direcciones desde el puño.",
+          "counterplay": "Esquivar con vuelo o bloquear con barrera."
+        },
+        {
+          "name": "Burning Shower",
+          "cost": 22,
+          "staminaDrain": 10,
+          "desc": "Lluvia de golpes aéreos cargados de energía dorada.",
+          "counterplay": "Esquivar vertical o bloqueo de área."
+        },
+        {
+          "name": "Final Breaker",
+          "cost": 25,
+          "staminaDrain": 12,
+          "desc": "Puñetazo final cargado de toda la energía Grado 3.",
+          "counterplay": "Interrumpir la carga o esquivar en el último momento."
         }
       ],
       "ultimateAttacks": [
         {
-          "name": "Ultra Super Saiyan Grado 3 (Activación)",
-          "desc": "Transformación de masa muscular extrema que maximiza la potencia de ataque a costa de una reducción drástica de velocidad y movilidad.",
-          "cost": "35% de reserva de ki al activarse; alto desgaste por la masa muscular excesiva"
+          "name": "Burning Rush",
+          "cost": 50,
+          "staminaDrain": 22,
+          "desc": "Embiste devastador con toda la forma Grado 3 combinada con la armadura.",
+          "counterplay": "Esquivar angular o barrera absoluta."
+        },
+        {
+          "name": "Photon Bomber",
+          "cost": 45,
+          "staminaDrain": 18,
+          "desc": "Explosión de energía fotónica dorada a quemarropa.",
+          "counterplay": "Bloqueo resistente o absorción de energía."
         }
       ],
       "passives": [
         {
-          "name": "Zenkai Saiyan",
-          "desc": "Aumento permanente de poder tras recuperarse de heridas mortales.",
-          "cost": "Pasivo"
+          "name": "Raza Saiyajin",
+          "desc": "Incremento de poder tras cada batalla."
+        },
+        {
+          "name": "Armadura Dorada de Android",
+          "desc": "La armadura aumenta la durabilidad y reduce el stamina drain."
         }
       ],
       "specialMechanics": [
         {
-          "name": "Massive Ki Inflation",
-          "desc": "Capacidad de bombear ki para expandir la musculatura drásticamente, multiplicando el daño de impacto pero bloqueando la agilidad."
+          "name": "SSJ Grado 3",
+          "desc": "Transformación aumentada con cabello negro y corona de ki. Fuerza y velocidad extremas."
         }
       ],
       "weaknesses": [
         {
-          "name": "Deficit de Velocidad en Grado 3",
-          "desc": "La reducción del 75% en velocidad de movimiento y combate lo deja completamente expuesto a ataques laterales o desde puntos ciegos.",
+          "name": "Calentamiento Grado 3",
+          "desc": "El modo Grado 3 genera calor extremo que puede reducir la velocidad con el tiempo.",
           "counterTags": [
-            "Agilidad Extrema",
-            "Ataque Rápido",
-            "Flanqueo"
+            "Overheat",
+            "StaminaBurn"
+          ]
+        },
+        {
+          "name": "Cuello de Botella de Poder",
+          "desc": "El Grado 3 tiene un límite de velocidad que Super Saiyajin 2 puede superar en agilidad.",
+          "counterTags": [
+            "SpeedBlitz",
+            "Agilidad"
           ]
         }
       ]
@@ -32574,7 +35466,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de Cell (post-entrenamiento en la Habitación del Tiempo) / Película 9: Bojack",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "vegeta-llegada-a-la-tierra-saga-saiyan-504",
@@ -32691,7 +35609,24 @@ export const INITIAL_CHARACTERS = [
           "desc": "Capacidad básica de levitación y vuelo mediante manipulación de Ki."
         }
       ],
-      "weaknesses": []
+      "weaknesses": [
+        {
+          "name": "Cola Vulnerable",
+          "desc": "Si su cola es sujetada o cortada, pierde el equilibrio y la capacidad de usar Oozaru.",
+          "counterTags": [
+            "corte",
+            "agarre de cola"
+          ]
+        },
+        {
+          "name": "Orgullo Herido",
+          "desc": "Pierde la compostura estratégica si es superado por un guerrero de clase baja.",
+          "counterTags": [
+            "provocación",
+            "humillación"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -32887,11 +35822,7 @@ export const INITIAL_CHARACTERS = [
         "Ambientes sin atmósfera para scouter"
       ]
     },
-    "provenFeats": [
-      "Soportó un Kamehameha potenciado con Kaio-ken x4.",
-      "Sobrevivió al impacto de la Genkidama y al aplastamiento de un Oozaru consecutivamente.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -32901,7 +35832,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Disfruta de la vista de la verdadera cima del poder saiyajin!",
+      "onUltimateReady": "¡No queda nada de ti en este planeta!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 140,
@@ -32991,6 +35927,13 @@ export const INITIAL_CHARACTERS = [
           "name": "Luces de Destrucción",
           "desc": "El combo con el que aniquiló a Pui Pui (Pone su mano en el pecho del enemigo y libera una explosión a quemarropa que vaporiza el torso).",
           "cost": "15% Ki"
+        },
+        {
+          "name": "Big Bang Attack",
+          "cost": 25,
+          "chargeTime": 1,
+          "desc": "Esfera de ki concentrada disparada desde la palma con tremendo poder destructivo.",
+          "counterplay": "Desviar con técnica equivalente o teletransportarse fuera del radio de explosión."
         }
       ],
       "ultimateAttacks": [
@@ -32998,6 +35941,13 @@ export const INITIAL_CHARACTERS = [
           "name": "Big Bang Attack",
           "desc": "Su ataque letal concentrado y sin piedad.",
           "cost": "30% Ki"
+        },
+        {
+          "name": "Final Flash (Destello Final)",
+          "cost": 45,
+          "hitCondition": "Requiere canalización de 1 turno completo.",
+          "desc": "Haz de energía masivo y destructivo capaz de pulverizar sistemas solares enteros.",
+          "counterplay": "Interrumpir la carga antes de que libere el haz o esquivar lateralmente con velocidad extrema."
         }
       ],
       "passives": [
@@ -33515,31 +36465,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-A",
         "stats": "Forma Base canónica de Vegeta (Saga Cell) previo a cualquier transformación."
-      },
-      {
-        "id": "vegeta-cell-ssj",
-        "name": "Super Saiyan (Post-Yadrat/Base)",
-        "stats": "Nivel Estrella Enana. Estado normal de SSJ antes de dominar los grados superiores. Multiplicador x50.",
-        "apexKiMultiplier": 50,
-        "staminaDrain": 8,
-        "activationCondition": "Activación emocional o entrenamiento intensivo.",
-        "grantedTags": [
-          "Super Saiyajin",
-          "Cabello Dorado",
-          "Aura Llameante"
-        ],
-        "suppressedTags": [
-          "Forma Base"
-        ],
-        "grantedAbilities": [
-          "Big Bang Attack SSJ"
-        ],
-        "limitations": "Consumo de stamina alto si se mantiene por turnos.",
-        "drawbacks": "Caída de rendimiento por fatiga si no se domina.",
-        "exitCondition": "Desactivación voluntaria o muerte.",
-        "counterplay": "Forzar desgaste de stamina en combate prolongado.",
-        "canonStatus": "source_backed",
-        "tier": "4-A"
       },
       {
         "id": "vegeta-cell-ssj-grade2",
@@ -34445,11 +37370,7 @@ export const INITIAL_CHARACTERS = [
         "Dimensión del Hiperespacio"
       ]
     },
-    "provenFeats": [
-      "No sufrió absolutamente ningún daño en toda su pelea contra Buuhan (el mayor monstruo de Z).",
-      "Peleó, hirió y destrozó a un Dios Oscuro siendo del tamaño de un confite.",
-      "Detuvo una grieta dimensional con un solo golpe seco (Kiai)."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -34459,7 +37380,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Y este es... Super Vegetto!",
+      "onUltimateReady": "¡No podrás escapar de esto! ¡Final Kamehameha!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 180,
@@ -34615,6 +37541,15 @@ export const INITIAL_CHARACTERS = [
           "Saiyaman"
         ],
         "effect": "Incrementa la moral y el daño crítico de Videl en un 20% cuando lucha junto a Gohan."
+      },
+      {
+        "name": "Dúo Heroico de Ciudad Satán",
+        "partnerTags": [
+          "Gohan",
+          "Saiyaman"
+        ],
+        "effect": "Incrementa la moral y el daño crítico de Videl en un 20% cuando lucha junto a Gohan.",
+        "canonStatus": "source_backed"
       }
     ],
     "teamCombos": [
@@ -34711,11 +37646,7 @@ export const INITIAL_CHARACTERS = [
         "Infierno Demoníaco"
       ]
     },
-    "provenFeats": [
-      "Le rompió el cuello a un Majin Spopovich de una patada giratoria perfecta.",
-      "Aprendió a dominar el Ki y volar en pocos días, demostrando talento prodigioso para una humana.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -34725,7 +37656,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡No voy a perder contra alguien como tú!",
+      "onTransformation": "¡Esto es lo que aprendí de Gohan!",
+      "onUltimateReady": "¡Por la justicia de Ciudad Satán!",
+      "onLowHealth": "Aún... aún puedo ponerme de pie...",
+      "onVictory": "La justicia siempre triunfa al final."
     },
     "staminaProfile": {
       "maxStamina": 90,
@@ -34839,7 +37775,16 @@ export const INITIAL_CHARACTERS = [
       ],
       "actives": [],
       "specialMechanics": [],
-      "weaknesses": []
+      "weaknesses": [
+        {
+          "name": "Sobrecarga Energética por Ki Puro",
+          "desc": "Vulnerable a la ingestión excesiva de energía estelar que exceda su volumen estomacal.",
+          "counterTags": [
+            "sobrecarga_ki",
+            "energia_excesiva"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -34918,7 +37863,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga Buu",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "yamcha-dragon-ball-cl-sico-865",
@@ -35542,11 +38513,7 @@ export const INITIAL_CHARACTERS = [
         "Reino de los Kaioshin"
       ]
     },
-    "provenFeats": [
-      "Derrotó limpiamente a un Saibaman que igualaba el poder de Raditz.",
-      "Entrenó en el Planeta de Kaio-sama superando la gravedad 10G.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -35556,7 +38523,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Voy a darlo todo desde el primer instante!",
+      "onUltimateReady": "¡No podrás escapar de esto! ¡Toma esto!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 130,
@@ -35618,7 +38590,8 @@ export const INITIAL_CHARACTERS = [
     "haxTags": [
       "Control Mental Majin ('M' en la frente)",
       "Artefacto de Drenaje de Ki Absoluto",
-      "Inmunidad al Dolor Físico"
+      "Inmunidad al Dolor Físico",
+      "Control Mental Majin"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -35734,6 +38707,25 @@ export const INITIAL_CHARACTERS = [
         "effect": "Extracción absoluta de Ki y neutralización del rival.",
         "partialFailureResult": "El rival esquiva el dispositivo y contraataca a Yamu.",
         "canonStatus": "source_backed"
+      },
+      {
+        "name": "Extracción Absoluta Majin",
+        "partners": [
+          "yamu-saga-buu-59",
+          "Spopovich-saga-buu-676"
+        ],
+        "sequence": [
+          "Spopovich retiene físicamente al enemigo.",
+          "Yamu se posiciona a la espalda con el dispositivo.",
+          "Inserción del artefacto para absorción total de energía."
+        ],
+        "staminaCostPerParticipant": [
+          15,
+          15
+        ],
+        "effect": "Extracción absoluta de Ki y neutralización del rival.",
+        "partialFailureResult": "El rival esquiva el dispositivo y contraataca a Yamu.",
+        "canonStatus": "source_backed"
       }
     ],
     "transformativeMechanics": {
@@ -35799,7 +38791,7 @@ export const INITIAL_CHARACTERS = [
       "spaceSurvival": false,
       "gravityResistance": "10G",
       "favoredBiomes": [
-        "Arenas de torneo (para emboscadas)",
+        "Arenas de torneo",
         "Bases ocultas de Babidi"
       ],
       "disfavoredBiomes": [
@@ -35807,11 +38799,7 @@ export const INITIAL_CHARACTERS = [
         "Mundos con atmósfera hostil"
       ]
     },
-    "provenFeats": [
-      "Drenó toda la energía de Gohan SSJ2 en el 25° Torneo de las Artes Marciales.",
-      "Llevó la energía suficiente para llenar la mitad del cascarón de Majin Buu.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -35821,7 +38809,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Silencio y entrega tu energía a Babidi!",
+      "onTransformation": "No hay transformación... solo obediencia.",
+      "onUltimateReady": "¡Es hora de extraer tu poder vital!",
+      "onLowHealth": "El dolor no importa... debo cumplir la misión.",
+      "onVictory": "Energía recolectada con éxito."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -35838,15 +38831,20 @@ export const INITIAL_CHARACTERS = [
         "name": "Sello M de Babidi",
         "durability": 100,
         "effect": "Control mental absoluto y zombificación."
+      },
+      {
+        "name": "Artefacto Recolector de Ki de Babidi",
+        "durability": 80,
+        "effect": "Drenaje absoluto del Ki del objetivo al insertarse."
       }
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Buu (Año 774)",
-      "timelineRestrictions": "Yamu solo tiene conocimiento operativo. Su mente está completamente anulada por Babidi, funcionando exclusivamente como una herramienta. No tiene recuerdos previos ni conocimiento del mundo exterior.",
+      "timelineRestrictions": "Yamu solo tiene conocimiento operativo. Su mente está completamente anulada por Babidi, funcionando exclusivamente como una herramienta.",
       "forbiddenConcepts": [
         "Super Saiyajin 3",
-        "Fusión Metamoru",
-        "Dragon Balls de Namek (Babidi ya no las usa)",
+        "Fusi��n Metamoru",
+        "Dragon Balls de Namek",
         "Universo 6"
       ],
       "crossVerseAwareness": "none"
@@ -35882,7 +38880,9 @@ export const INITIAL_CHARACTERS = [
       "Voluntad_Indomable",
       "Adaptación_Táctica",
       "Regeneración_Básica_Raza_Freezer",
-      "Raza_Change_Freezer"
+      "Raza_Change_Freezer",
+      "Transformación Monstruosa",
+      "Regeneración Básica"
     ],
     "arsenal": {
       "basicAttacks": [
@@ -36089,6 +39089,14 @@ export const INITIAL_CHARACTERS = [
         ],
         "effect": "Dodoria inmoviliza; Zarbon ejecuta remate limpio desde media distancia con Elegant Blaster.",
         "canonStatus": "source_backed"
+      },
+      {
+        "name": "Pinza Aristocrática",
+        "partnerTags": [
+          "Dodoria"
+        ],
+        "effect": "Dodoria inmoviliza; Zarbon ejecuta remate limpio desde media distancia con Elegant Blaster.",
+        "canonStatus": "source_backed"
       }
     ],
     "teamCombos": [
@@ -36126,6 +39134,25 @@ export const INITIAL_CHARACTERS = [
         },
         "effect": "Destrucción total de la guardia y daño crítico garantizado sobre cualquier objetivo sin transformación superior.",
         "partialFailureResult": "Si el rival esquiva el Elegant Blaster inicial, el combo se disuelve y Zarbon queda expuesto al contraataque por el costado mientras Dodoria sufre el golpe de retorno.",
+        "canonStatus": "apex_custom"
+      },
+      {
+        "name": "Pinza Imperial Combinada",
+        "partners": [
+          "zarbon-saga-namek-939",
+          "Dodoria"
+        ],
+        "sequence": [
+          "Dodoria embiste al objetivo y lo levanta del suelo con Cornada Supersónica.",
+          "Zarbon dispara ráfaga de Elegant Blaster a quemarropa para quebrar la guardia.",
+          "Zarbon se transforma en Forma Monstruosa y aplica Monster Smash desde arriba."
+        ],
+        "staminaCostPerParticipant": {
+          "Zarbon": 35,
+          "Dodoria": 25
+        },
+        "effect": "Destrucción total de la guardia y daño crítico garantizado sobre cualquier objetivo sin transformación superior.",
+        "partialFailureResult": "Si el rival esquiva el Elegant Blaster inicial, el combo se disuelve y Zarbon queda expuesto al contraataque.",
         "canonStatus": "apex_custom"
       }
     ],
@@ -36400,7 +39427,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Máquina sin voluntad propia; obedece incondicionalmente a los Heeters o a Saganbo/Moro. Carece de moralidad o piedad.",
     "weaknesses": "Límite de tiempo: la copia solo dura 30 minutos. Vulnerable mientras cambia de cristal. Si sus cristales se rompen, pierde el acceso a los datos.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Copia de la Patrulla",
+        "partnerTags": [
+          "Ejército de Moro",
+          "Saganbo"
+        ],
+        "effect": "Al copiar una técnica enemiga, 73 la conserva 2 turnos (+10% versatilidad), fiel a su habilidad de copiado de la saga Moro.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [
       {
         "id": "moro-seven-three-drain",
@@ -36476,7 +39513,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga Moro",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "android-18-dbs-top",
@@ -36657,14 +39720,143 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 0,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 15
     },
-    "combatAIPersonality": "Androide 18: Estilo táctico Luchadora Urbana y Despiadada. Actú. Una mujer fría, materialista y sarcástica por fuera, pero pr",
-    "provenFeats": [
-      "Derrotó y eliminó a Ribrianne en su forma gigante del Universo 2 destrozando su manifestación de Amor Gigante mediante fuerza concentrada.",
-      "Sobrevivió en la arena del Torneo del Poder salvando repetidamente a 17, Goku y peleando codo a codo en primera línea.",
-      "Esquivó todos los radares biológicos y místicos usando su carencia de Ki para emboscar francotiradores oponentes del U2."
-    ],
+    "combatAIPersonality": {
+      "0": "A",
+      "1": "n",
+      "2": "d",
+      "3": "r",
+      "4": "o",
+      "5": "i",
+      "6": "d",
+      "7": "e",
+      "8": " ",
+      "9": "1",
+      "10": "8",
+      "11": ":",
+      "12": " ",
+      "13": "E",
+      "14": "s",
+      "15": "t",
+      "16": "i",
+      "17": "l",
+      "18": "o",
+      "19": " ",
+      "20": "t",
+      "21": "á",
+      "22": "c",
+      "23": "t",
+      "24": "i",
+      "25": "c",
+      "26": "o",
+      "27": " ",
+      "28": "L",
+      "29": "u",
+      "30": "c",
+      "31": "h",
+      "32": "a",
+      "33": "d",
+      "34": "o",
+      "35": "r",
+      "36": "a",
+      "37": " ",
+      "38": "U",
+      "39": "r",
+      "40": "b",
+      "41": "a",
+      "42": "n",
+      "43": "a",
+      "44": " ",
+      "45": "y",
+      "46": " ",
+      "47": "D",
+      "48": "e",
+      "49": "s",
+      "50": "p",
+      "51": "i",
+      "52": "a",
+      "53": "d",
+      "54": "a",
+      "55": "d",
+      "56": "a",
+      "57": ".",
+      "58": " ",
+      "59": "A",
+      "60": "c",
+      "61": "t",
+      "62": "ú",
+      "63": ".",
+      "64": " ",
+      "65": "U",
+      "66": "n",
+      "67": "a",
+      "68": " ",
+      "69": "m",
+      "70": "u",
+      "71": "j",
+      "72": "e",
+      "73": "r",
+      "74": " ",
+      "75": "f",
+      "76": "r",
+      "77": "í",
+      "78": "a",
+      "79": ",",
+      "80": " ",
+      "81": "m",
+      "82": "a",
+      "83": "t",
+      "84": "e",
+      "85": "r",
+      "86": "i",
+      "87": "a",
+      "88": "l",
+      "89": "i",
+      "90": "s",
+      "91": "t",
+      "92": "a",
+      "93": " ",
+      "94": "y",
+      "95": " ",
+      "96": "s",
+      "97": "a",
+      "98": "r",
+      "99": "c",
+      "100": "á",
+      "101": "s",
+      "102": "t",
+      "103": "i",
+      "104": "c",
+      "105": "a",
+      "106": " ",
+      "107": "p",
+      "108": "o",
+      "109": "r",
+      "110": " ",
+      "111": "f",
+      "112": "u",
+      "113": "e",
+      "114": "r",
+      "115": "a",
+      "116": ",",
+      "117": " ",
+      "118": "p",
+      "119": "e",
+      "120": "r",
+      "121": "o",
+      "122": " ",
+      "123": "p",
+      "124": "r",
+      "aggression": 80,
+      "tacticalIQ": 85,
+      "mercyThreshold": 10,
+      "clutchFactor": 90,
+      "preferredEngagementRange": "close_quarters"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -36674,9 +39866,116 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡No tengo tiempo para juegos!",
+      "onUltimateReady": "Se acabó. ¡Esto termina aquí!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": true,
+      "gravityResistance": "Universal",
+      "favoredBiomes": [
+        "Plataformas de Torneo",
+        "Zonas Urbanas",
+        "Entornos Abiertos"
+      ],
+      "disfavoredBiomes": [
+        "Núcleos de Alta Temperatura Extrema",
+        "Dimensiones sin Materia Sólida"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cuerpo Cibernético Modificado",
+        "durability": "Universal Bajo",
+        "effect": "Inmunidad total a la fatiga y carencia absoluta de firma de Ki."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder / Año 780",
+      "timelineRestrictions": "Limitado estrictamente a los eventos del Torneo del Poder y sagas anteriores en Dragon Ball Super.",
+      "forbiddenConcepts": [
+        "Ultra Instinto Perfectintivo de otras eras",
+        "Moro",
+        "Granola",
+        "Black Freezer",
+        "Multiverso ajeno a los 12 universos conocidos"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "anilaza-dragon-ball-super-645",
@@ -36830,6 +40129,14 @@ export const INITIAL_CHARACTERS = [
           "Científico"
         ],
         "effect": "Optimiza los tiempos de recarga del Warp Punch un 15% gracias al soporte analítico externo."
+      },
+      {
+        "name": "Soporte Analítico del Universo 3",
+        "partnerTags": [
+          "Paparoni",
+          "Universo 3"
+        ],
+        "effect": "Optimiza los tiempos de recarga del Warp Punch un 15% gracias al soporte analítico externo."
       }
     ],
     "teamCombos": [
@@ -36914,23 +40221,17 @@ export const INITIAL_CHARACTERS = [
     },
     "environmentalAffinity": {
       "spaceSurvival": true,
-      "gravityResistance": "500G",
+      "gravityResistance": "Universal",
       "favoredBiomes": [
         "Torneos espaciales sin gravedad",
-        "Plataformas amplias de combate",
-        "Zonas con alta concentración de energía residual"
+        "Plataformas amplias de combate"
       ],
       "disfavoredBiomes": [
         "Vacío intergaláctico profundo",
-        "Mundos con atmósfera corrosiva para componentes mecánicos",
-        "Dimensiones sin masa reactiva"
+        "Mundos con atmósfera corrosiva"
       ]
     },
-    "provenFeats": [
-      "Sometió y casi expulsa del ring a Goku, Vegeta, Gohan, Freezer y 17 a la vez.",
-      "Se comió a Androide 18 (quien tuvo que ser rescatada por 17).",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -36940,7 +40241,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "ROAAAAR!",
+      "onTransformation": "ACTIVACIÓN DE POTENCIA MÁXIMA.",
+      "onUltimateReady": "DESTRUCCIÓN TOTAL.",
+      "onLowHealth": "ADVERTENCIA: INTEGRIDAD DE NÚCLEO COMPROMETIDA.",
+      "onVictory": "OBJETIVO ELIMINADO."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -36967,16 +40273,13 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Torneo del Poder / Año 780",
-      "timelineRestrictions": "Anilaza fue creado y desplegado durante el Torneo del Poder. Su conocimiento termina con la destrucción del Universo 3 en caso de derrota.",
+      "timelineRestrictions": "Limitado estrictamente al Torneo del Poder.",
       "forbiddenConcepts": [
-        "Super Saiyajin 4",
+        "Super Saiyan 4",
         "Ultra Instinto",
         "Súper Saiyajin Rosado",
         "Broly SSJ Legendario",
-        "Gran Súper Saiyajin Dios SSJ Evolución",
-        "Beat",
-        "Moro",
-        "Gran Priest"
+        "Moro"
       ],
       "crossVerseAwareness": "none"
     }
@@ -37121,6 +40424,14 @@ export const INITIAL_CHARACTERS = [
         "partnerTags": [
           "Universo 6",
           "Frost"
+        ],
+        "effect": "Permite combinaciones defensivas donde Frost inmoviliza y Magetta incinera el área."
+      },
+      {
+        "name": "Fortaleza del Universo 6",
+        "partnerTags": [
+          "Frost",
+          "Universo 6"
         ],
         "effect": "Permite combinaciones defensivas donde Frost inmoviliza y Magetta incinera el área."
       }
@@ -37691,10 +41002,10 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "beerus-hakaishin",
-        "name": "Aura Hakai (Furia al 100%)",
+        "name": "Beerus (Aura Hakai)",
         "stats": "Nivel Multiversal Bajo. Envuelto en energía violeta destructiva; uso pleno de UI imperfecto. Sus golpes generan ondas expansivas dimensionales.",
-        "apexKiMultiplier": 1,
-        "staminaDrain": 15,
+        "apexKiMultiplier": 1.5,
+        "staminaDrain": 5,
         "activationCondition": "Enfurecerse seriamente, amenazar a un rival digno, o proteger la vida del Supremo Kaioshin.",
         "grantedTags": [
           "Aura Hakai",
@@ -37824,11 +41135,7 @@ export const INITIAL_CHARACTERS = [
         "Lugares sin buena comida"
       ]
     },
-    "provenFeats": [
-      "Derrotó a casi todos los demás Dioses de la Destrucción simultáneamente en el torneo de exhibición manga.",
-      "Borró a Zamasu del presente sin pestañear a pesar de su inmortalidad en desarrollo.",
-      "Sometió a Goku y Vegeta sin apenas esfuerzo repetidas veces durante el entrenamiento."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -38144,11 +41451,7 @@ export const INITIAL_CHARACTERS = [
         "planos_con_anti_ki_divino"
       ]
     },
-    "provenFeats": [
-      "Dominó a Goku en Super Saiyan God usando apenas una fracción de su poder real.",
-      "Su Hakai es temido incluso por otros Dioses de la Destrucción de universos rivales.",
-      "Puede destruir planetas enteros con un gesto casual de la mano sin esfuerzo perceptible."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -38178,8 +41481,8 @@ export const INITIAL_CHARACTERS = [
       }
     ],
     "knowledgeHorizon": {
-      "canonicalEra": "Batalla de los Dioses / Saga Resurrección 'F' / DBS hasta saga actual de la que se catalogue",
-      "timelineRestrictions": "Beerus conoce Ultra Instinto de Goku, Ultra Ego de Vegeta, el Torneo del Poder y el Omni-Rey. NO conoce conceptos de universos fuera de DB (Marvel, DC, etc.) ni eventos posteriores a su saga.",
+      "canonicalEra": "Batalla de los Dioses / Saga Resurrección 'F' / DBS hasta saga actual",
+      "timelineRestrictions": "Beerus conoce Ultra Instinto de Goku, Ultra Ego de Vegeta, el Torneo del Poder y el Omni-Rey. NO conoce conceptos de universos fuera de DB ni eventos posteriores a su saga.",
       "forbiddenConcepts": [
         "form_de_dioses_mortales_post_DBS",
         "Mergers con Zeno",
@@ -38733,7 +42036,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cuerpo Biomecánico",
+        "durability": "Extremadamente resistente",
+        "effect": "Protección física y energética superior."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Arco de Granolah el Superviviente (Manga Toyotaro)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "botamo-dragon-ball-super-999",
@@ -38965,11 +42299,7 @@ export const INITIAL_CHARACTERS = [
         "Estrechos sin espacio para correr"
       ]
     },
-    "provenFeats": [
-      "Inmunizó por completo todos los ataques base de Goku, sus patadas y Kamehameha.",
-      "Sobrevivió al torneo entero del universo 6 sin recibir un solo hematoma.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -38979,7 +42309,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Mi cuerpo de goma no conoce límites!",
+      "onUltimateReady": "¡No importa lo que hagas, todo rebotará!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 160,
@@ -39276,11 +42611,7 @@ export const INITIAL_CHARACTERS = [
         "Ciudades Pacíficas"
       ]
     },
-    "provenFeats": [
-      "Aguantó el asalto de Gogeta Blue repetidas veces.",
-      "Le dio una paliza de 1 hora seguida a Golden Frieza ininterrumpidamente.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -39290,7 +42621,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡AAAAARGH!",
+      "onTransformation": "¡Mi poder... no deja de crecer!",
+      "onUltimateReady": "¡GIGANTIC ROAR!",
+      "onLowHealth": "¡RAAAAH! ¡MÁS FUERTE!",
+      "onVictory": "..."
     },
     "staminaProfile": {
       "maxStamina": 200,
@@ -39316,7 +42652,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Película DBS Broly / Post-Torneo del Poder (Año 780)",
-      "timelineRestrictions": "Solo conoce a Goku, Vegeta, Freezer, Cheelai, Lemo y Gogeta (fusión momentánea). Desconoce el Ultra Instinto por nombre, Beerus como entidad consciente, los Saiyajin del pasado (Bardock, Gine) y los Ángeles. Aprendió que Vegeta es el principe de los Saiyajin durante la pelea.",
+      "timelineRestrictions": "Solo conoce a Goku, Vegeta, Freezer, Cheelai, Lemo y Gogeta (fusión momentánea). Desconoce el Ultra Instinto por nombre, Beerus como entidad consciente, los Saiyajin del pasado (Bardock, Gine) y los Ángeles.",
       "forbiddenConcepts": [
         "Ultra Instinto",
         "Beerus",
@@ -39914,7 +43250,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Super Hero",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "caulifla-dragon-ball-super-537",
@@ -40178,14 +43540,7 @@ export const INITIAL_CHARACTERS = [
         "Campos magnéticos densos"
       ]
     },
-    "provenFeats": [
-      "Desbloqueó el SSJ2 en tiempo récord sin entrenamiento divino.",
-      "Combatió a la par con Goku Base/SSJ2 a pesar del agotamiento.",
-      "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas.",
-      "Alcanzó el estado Super Saiyan y Super Saiyan 2 en cuestión de horas (algo que tomó años en el U7) debido a la pura evolución biológica de la raza sin cola de su Universo.",
-      "Mantuvo un duelo a alta velocidad intercambiando y forzando a Goku a divertirse y entrar en calor utilizando pura destreza callejera.",
-      "Fue la clave fundamental como compañera de Kale para limpiar el anillo de competidores nivel Universo Múltiple (U11, U4)."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -40195,7 +43550,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Esto apenas es una fracción de lo que puedo hacer!",
+      "onUltimateReady": "¡No vas a sobrevivir a esto!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
     },
     "staminaProfile": {
       "maxStamina": 140,
@@ -40293,7 +43653,16 @@ export const INITIAL_CHARACTERS = [
       ],
       "actives": [],
       "specialMechanics": [],
-      "weaknesses": []
+      "weaknesses": [
+        {
+          "name": "Cobardía Ciega",
+          "desc": "Si el Stun falla y recibe hostilidad real, entra en pánico y huye.",
+          "counterTags": [
+            "Aura Asesina",
+            "Intimidación"
+          ]
+        }
+      ]
     },
     "forms": [
       {
@@ -40373,13 +43742,137 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Caway: Estilo táctico Luchadora de Engaño (Trickster). In. Narcisista y tramposa, confiada en que su apariencia le dará",
-    "provenFeats": [
-      "Inmovilizó momentáneamente a Muten Roshi usando puramente sus tácticas visuales seductoras.",
-      "Fue la clave del espionaje y los ataques por la espalda del Universo 4 antes de que Roshi superara sus instintos carnales."
-    ],
+    "combatAIPersonality": {
+      "0": "C",
+      "1": "a",
+      "2": "w",
+      "3": "a",
+      "4": "y",
+      "5": ":",
+      "6": " ",
+      "7": "E",
+      "8": "s",
+      "9": "t",
+      "10": "i",
+      "11": "l",
+      "12": "o",
+      "13": " ",
+      "14": "t",
+      "15": "á",
+      "16": "c",
+      "17": "t",
+      "18": "i",
+      "19": "c",
+      "20": "o",
+      "21": " ",
+      "22": "L",
+      "23": "u",
+      "24": "c",
+      "25": "h",
+      "26": "a",
+      "27": "d",
+      "28": "o",
+      "29": "r",
+      "30": "a",
+      "31": " ",
+      "32": "d",
+      "33": "e",
+      "34": " ",
+      "35": "E",
+      "36": "n",
+      "37": "g",
+      "38": "a",
+      "39": "ñ",
+      "40": "o",
+      "41": " ",
+      "42": "(",
+      "43": "T",
+      "44": "r",
+      "45": "i",
+      "46": "c",
+      "47": "k",
+      "48": "s",
+      "49": "t",
+      "50": "e",
+      "51": "r",
+      "52": ")",
+      "53": ".",
+      "54": " ",
+      "55": "I",
+      "56": "n",
+      "57": ".",
+      "58": " ",
+      "59": "N",
+      "60": "a",
+      "61": "r",
+      "62": "c",
+      "63": "i",
+      "64": "s",
+      "65": "i",
+      "66": "s",
+      "67": "t",
+      "68": "a",
+      "69": " ",
+      "70": "y",
+      "71": " ",
+      "72": "t",
+      "73": "r",
+      "74": "a",
+      "75": "m",
+      "76": "p",
+      "77": "o",
+      "78": "s",
+      "79": "a",
+      "80": ",",
+      "81": " ",
+      "82": "c",
+      "83": "o",
+      "84": "n",
+      "85": "f",
+      "86": "i",
+      "87": "a",
+      "88": "d",
+      "89": "a",
+      "90": " ",
+      "91": "e",
+      "92": "n",
+      "93": " ",
+      "94": "q",
+      "95": "u",
+      "96": "e",
+      "97": " ",
+      "98": "s",
+      "99": "u",
+      "100": " ",
+      "101": "a",
+      "102": "p",
+      "103": "a",
+      "104": "r",
+      "105": "i",
+      "106": "e",
+      "107": "n",
+      "108": "c",
+      "109": "i",
+      "110": "a",
+      "111": " ",
+      "112": "l",
+      "113": "e",
+      "114": " ",
+      "115": "d",
+      "116": "a",
+      "117": "r",
+      "118": "á",
+      "aggression": 40,
+      "tacticalIQ": 65,
+      "mercyThreshold": 50,
+      "clutchFactor": 20,
+      "preferredEngagementRange": "mid_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -40389,9 +43882,108 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¿No te parece que podríamos resolver esto sin lastimarnos?",
+      "onTransformation": "¡No dejaré que arruines mi belleza!",
+      "onUltimateReady": "¡Fuera de mi vista!",
+      "onLowHealth": "¡Esto es trampa, eres demasiado insensible!",
+      "onVictory": "¡El encanto siempre gana!"
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "10G",
+      "favoredBiomes": [
+        "Plataformas urbanas",
+        "Zonas templadas"
+      ],
+      "disfavoredBiomes": [
+        "Espacio exterior",
+        "Zonas volcánicas"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder / Año 780",
+      "timelineRestrictions": "Desconoce eventos fuera de su participación en el Torneo del Poder.",
+      "forbiddenConcepts": [
+        "Super Saiyajin Blue",
+        "Ultra Instinto",
+        "Granolah"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "cell-max-dragon-ball-super-993",
@@ -41162,14 +44754,139 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Dr. Hedo: Estilo táctico El mayor genio biológico y robótico. Un joven prodigio, egocéntrico pero noble en el fondo. Solo",
-    "provenFeats": [
-      "Creó a los androides Gamma 1 y Gamma 2, seres con poder equiparable a Goku/Vegeta en estado Blue.",
-      "Sobrevivió y desarrolló su tecnología en la cárcel engañando a guardias e infiltrando insectos asesinos.",
-      "Creó la fórmula para revivir a un Cell mucho más fuerte partiendo únicamente de planos antiguos."
-    ],
+    "combatAIPersonality": {
+      "0": "D",
+      "1": "r",
+      "2": ".",
+      "3": " ",
+      "4": "H",
+      "5": "e",
+      "6": "d",
+      "7": "o",
+      "8": ":",
+      "9": " ",
+      "10": "E",
+      "11": "s",
+      "12": "t",
+      "13": "i",
+      "14": "l",
+      "15": "o",
+      "16": " ",
+      "17": "t",
+      "18": "á",
+      "19": "c",
+      "20": "t",
+      "21": "i",
+      "22": "c",
+      "23": "o",
+      "24": " ",
+      "25": "E",
+      "26": "l",
+      "27": " ",
+      "28": "m",
+      "29": "a",
+      "30": "y",
+      "31": "o",
+      "32": "r",
+      "33": " ",
+      "34": "g",
+      "35": "e",
+      "36": "n",
+      "37": "i",
+      "38": "o",
+      "39": " ",
+      "40": "b",
+      "41": "i",
+      "42": "o",
+      "43": "l",
+      "44": "ó",
+      "45": "g",
+      "46": "i",
+      "47": "c",
+      "48": "o",
+      "49": " ",
+      "50": "y",
+      "51": " ",
+      "52": "r",
+      "53": "o",
+      "54": "b",
+      "55": "ó",
+      "56": "t",
+      "57": "i",
+      "58": "c",
+      "59": "o",
+      "60": ".",
+      "61": " ",
+      "62": "U",
+      "63": "n",
+      "64": " ",
+      "65": "j",
+      "66": "o",
+      "67": "v",
+      "68": "e",
+      "69": "n",
+      "70": " ",
+      "71": "p",
+      "72": "r",
+      "73": "o",
+      "74": "d",
+      "75": "i",
+      "76": "g",
+      "77": "i",
+      "78": "o",
+      "79": ",",
+      "80": " ",
+      "81": "e",
+      "82": "g",
+      "83": "o",
+      "84": "c",
+      "85": "é",
+      "86": "n",
+      "87": "t",
+      "88": "r",
+      "89": "i",
+      "90": "c",
+      "91": "o",
+      "92": " ",
+      "93": "p",
+      "94": "e",
+      "95": "r",
+      "96": "o",
+      "97": " ",
+      "98": "n",
+      "99": "o",
+      "100": "b",
+      "101": "l",
+      "102": "e",
+      "103": " ",
+      "104": "e",
+      "105": "n",
+      "106": " ",
+      "107": "e",
+      "108": "l",
+      "109": " ",
+      "110": "f",
+      "111": "o",
+      "112": "n",
+      "113": "d",
+      "114": "o",
+      "115": ".",
+      "116": " ",
+      "117": "S",
+      "118": "o",
+      "119": "l",
+      "120": "o",
+      "aggression": 30,
+      "tacticalIQ": 95,
+      "mercyThreshold": 70,
+      "clutchFactor": 40,
+      "preferredEngagementRange": "long_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -41179,9 +44896,119 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "¡Mi tecnología no tiene parangón!",
+      "onUltimateReady": "¡Es la hora de la justicia tecnológica!",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "1G",
+      "favoredBiomes": [
+        "Laboratorio",
+        "Zonas Urbanas"
+      ],
+      "disfavoredBiomes": [
+        "Espacio abierto",
+        "Entornos acuáticos profundos"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Pistola Láser Portátil",
+        "durability": 50,
+        "effect": "Disparos energéticos a distancia media."
+      },
+      {
+        "name": "Cinturón Deflector Alpha",
+        "durability": 70,
+        "effect": "Generador de campo de energía personal."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga Super Hero / Año 783",
+      "timelineRestrictions": "Desconoce eventos posteriores a la derrota de Cell Max.",
+      "forbiddenConcepts": [
+        "Granolah",
+        "Moro",
+        "Black Frieza",
+        "Ultra Instinto"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "dyspo-dragon-ball-super-188",
@@ -41415,19 +45242,11 @@ export const INITIAL_CHARACTERS = [
         "Vacío Null"
       ],
       "disfavoredBiomes": [
-        "Mundos con气场 cerrada",
         "Cuevas",
-        "Cualquier espacio que limite aceleración lineal"
+        "Espacios confinados"
       ]
     },
-    "provenFeats": [
-      "Rompió el Salto Temporal de Hit repetidas veces usando solo sus oídos.",
-      "Superó completamente la velocidad de Golden Freezer obligándolo a formar una alianza con Gohan.",
-      "Evadió casi la totalidad de los ataques frontales del Universo 7.",
-      "Acorraló y golpeó repetidas veces a Hit, descifrando el sonido de inicio de su Salto Temporal.",
-      "Obligó a Golden Frieza a pedir ayuda a Gohan Definitivo para idear una estrategia conjunta de encierro.",
-      "Es el miembro más veloz de las Tropas del Orgullo."
-    ],
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -41437,7 +45256,12 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
-      ]
+      ],
+      "onBattleStart": "¡La justicia del Universo 11 es veloz como la luz!",
+      "onTransformation": "¡Velocidad Súper Máxima activada!",
+      "onUltimateReady": "¡No podrás seguir el ritmo de mis pisadas!",
+      "onLowHealth": "¡Imposible... mi velocidad no puede ser superada!",
+      "onVictory": "¡El mal no puede alcanzar la velocidad de la justicia!"
     },
     "staminaProfile": {
       "maxStamina": 140,
@@ -41458,7 +45282,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "knowledgeHorizon": {
       "canonicalEra": "Torneo del Poder / Año 780",
-      "timelineRestrictions": "No tiene conocimiento del Ultra Instinto Más Allá ni de la evolución de Goku tras el torneo. Solo le importa su velocidad.",
+      "timelineRestrictions": "No tiene conocimiento del Ultra Instinto Más Allá ni de la evolución de Goku tras el torneo.",
       "forbiddenConcepts": [
         "Ultra Instinto Más Allá",
         "Daima",
@@ -41634,14 +45458,135 @@ export const INITIAL_CHARACTERS = [
     "staminaProfile": {
       "basePool": 100,
       "recoveryRate": 6,
-      "exhaustionThreshold": 15
+      "exhaustionThreshold": 15,
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 6
     },
-    "combatAIPersonality": "Elec: Estilo táctico Cerebro Criminal Maestro. Maneja el. Un sociópata corporativo. Elegante, frío y bebedor de vino.",
-    "provenFeats": [
-      "Orquestó la guerra entre los Saiyajins, Cerealianos y el Ejército de Freezer durante décadas sin mancharse las manos.",
-      "Engañó a todos para recolectar las Esferas del Dragón y pedir el deseo más roto del arco.",
-      "Disparó a Granolah a traición y por la espalda usando puro intelecto criminal para acortar distancias."
-    ],
+    "combatAIPersonality": {
+      "0": "E",
+      "1": "l",
+      "2": "e",
+      "3": "c",
+      "4": ":",
+      "5": " ",
+      "6": "E",
+      "7": "s",
+      "8": "t",
+      "9": "i",
+      "10": "l",
+      "11": "o",
+      "12": " ",
+      "13": "t",
+      "14": "á",
+      "15": "c",
+      "16": "t",
+      "17": "i",
+      "18": "c",
+      "19": "o",
+      "20": " ",
+      "21": "C",
+      "22": "e",
+      "23": "r",
+      "24": "e",
+      "25": "b",
+      "26": "r",
+      "27": "o",
+      "28": " ",
+      "29": "C",
+      "30": "r",
+      "31": "i",
+      "32": "m",
+      "33": "i",
+      "34": "n",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "M",
+      "39": "a",
+      "40": "e",
+      "41": "s",
+      "42": "t",
+      "43": "r",
+      "44": "o",
+      "45": ".",
+      "46": " ",
+      "47": "M",
+      "48": "a",
+      "49": "n",
+      "50": "e",
+      "51": "j",
+      "52": "a",
+      "53": " ",
+      "54": "e",
+      "55": "l",
+      "56": ".",
+      "57": " ",
+      "58": "U",
+      "59": "n",
+      "60": " ",
+      "61": "s",
+      "62": "o",
+      "63": "c",
+      "64": "i",
+      "65": "ó",
+      "66": "p",
+      "67": "a",
+      "68": "t",
+      "69": "a",
+      "70": " ",
+      "71": "c",
+      "72": "o",
+      "73": "r",
+      "74": "p",
+      "75": "o",
+      "76": "r",
+      "77": "a",
+      "78": "t",
+      "79": "i",
+      "80": "v",
+      "81": "o",
+      "82": ".",
+      "83": " ",
+      "84": "E",
+      "85": "l",
+      "86": "e",
+      "87": "g",
+      "88": "a",
+      "89": "n",
+      "90": "t",
+      "91": "e",
+      "92": ",",
+      "93": " ",
+      "94": "f",
+      "95": "r",
+      "96": "í",
+      "97": "o",
+      "98": " ",
+      "99": "y",
+      "100": " ",
+      "101": "b",
+      "102": "e",
+      "103": "b",
+      "104": "e",
+      "105": "d",
+      "106": "o",
+      "107": "r",
+      "108": " ",
+      "109": "d",
+      "110": "e",
+      "111": " ",
+      "112": "v",
+      "113": "i",
+      "114": "n",
+      "115": "o",
+      "116": ".",
+      "aggression": 20,
+      "tacticalIQ": 98,
+      "mercyThreshold": 0,
+      "clutchFactor": 20,
+      "preferredEngagementRange": "long_range"
+    },
+    "provenFeats": [],
     "combatDialogue": {
       "intro": [
         "¡Comprobemos qué tan lejos llega tu poder!"
@@ -41651,9 +45596,113 @@ export const INITIAL_CHARACTERS = [
       ],
       "victory": [
         "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "La fuerza bruta es para tontos. Los negocios se ganan con cerebro.",
+      "onTransformation": "No necesito transformarme para destruirte.",
+      "onUltimateReady": "¡Gas, encárgate de este insecto!",
+      "onLowHealth": "¡Imposible! ¡Mis planes no debían fallar!",
+      "onVictory": "El universo entero doblará la rodilla ante los Heeters."
+    },
+    "environmentalAffinity": {
+      "0": "T",
+      "1": "e",
+      "2": "r",
+      "3": "r",
+      "4": "e",
+      "5": "n",
+      "6": "o",
+      "7": " ",
+      "8": "E",
+      "9": "s",
+      "10": "t",
+      "11": "á",
+      "12": "n",
+      "13": "d",
+      "14": "a",
+      "15": "r",
+      "16": " ",
+      "17": "(",
+      "18": "A",
+      "19": "d",
+      "20": "a",
+      "21": "p",
+      "22": "t",
+      "23": "a",
+      "24": "c",
+      "25": "i",
+      "26": "ó",
+      "27": "n",
+      "28": " ",
+      "29": "t",
+      "30": "o",
+      "31": "t",
+      "32": "a",
+      "33": "l",
+      "34": " ",
+      "35": "a",
+      "36": "l",
+      "37": " ",
+      "38": "e",
+      "39": "n",
+      "40": "t",
+      "41": "o",
+      "42": "r",
+      "43": "n",
+      "44": "o",
+      "45": " ",
+      "46": "d",
+      "47": "e",
+      "48": " ",
+      "49": "c",
+      "50": "o",
+      "51": "m",
+      "52": "b",
+      "53": "a",
+      "54": "t",
+      "55": "e",
+      "56": ")",
+      "spaceSurvival": false,
+      "gravityResistance": "1G",
+      "favoredBiomes": [
+        "Naves Heeter",
+        "Centros de Comando"
+      ],
+      "disfavoredBiomes": [
+        "Campos de batalla abiertos",
+        "Vacío espacial"
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Pistola de Energía Heeter",
+        "durability": 50,
+        "effect": "Arma láser de corto alcance."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de Granolah / Año 781",
+      "timelineRestrictions": "Desconoce eventos posteriores a su eliminación por Black Frieza.",
+      "forbiddenConcepts": [
+        "Black Frieza",
+        "Super Hero",
+        "Daima"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "freezer-resurreccion-f",
@@ -42175,31 +46224,6 @@ export const INITIAL_CHARACTERS = [
         "tier": "3-A"
       },
       {
-        "id": "freezer-top-100-por-ciento",
-        "name": "Forma Final al 100% de Poder (Masa Muscular Máxima)",
-        "stats": "Tier 3-A a 2-C | Nivel Universal Alto. Empleada para empujar y embestir a Jiren con Death Slicers dobles.",
-        "apexKiMultiplier": 2,
-        "staminaDrain": 0,
-        "canonStatus": "source_backed",
-        "activationCondition": "Grito '¡Ahora uso el 100%!' como respuesta a la humillación o al Super Saiyan 1.",
-        "grantedTags": [
-          "max_power",
-          "muscle_bulk"
-        ],
-        "limitations": "Esta versión DBS ya no tiene el drenaje crítico de Namek (gracias al entrenamiento).",
-        "exitCondition": "Transformación a Golden Freezer si la situación es desesperada.",
-        "suppressedTags": [
-          "tactical_containment"
-        ],
-        "grantedAbilities": [
-          "Combate físico directo contra dioses",
-          "Death Slicers dobles"
-        ],
-        "drawbacks": "Pérdida de velocidad si el combate es muy prolongado.",
-        "counterplay": "Combates prolongados y desgaste por kiting.",
-        "tier": "3-A"
-      },
-      {
         "id": "freezer-top-segunda-forma",
         "name": "2ª Forma (Contención Intermedia)",
         "stats": "Tier 4-A | Nivel Multi-Sistema Solar.",
@@ -42268,6 +46292,31 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Mismas que en Namek.",
         "exitCondition": "Reformulación a Forma Final.",
         "counterplay": "Agarre físico por los cuernos.",
+        "tier": "3-A"
+      },
+      {
+        "id": "freezer-top-100-por-ciento",
+        "name": "Freezer (Forma Final al 100%)",
+        "stats": "Tier 3-A a 2-C | Nivel Universal Alto. Empleada para empujar y embestir a Jiren con Death Slicers dobles.",
+        "apexKiMultiplier": 120,
+        "staminaDrain": 30,
+        "canonStatus": "source_backed",
+        "activationCondition": "Grito '¡Ahora uso el 100%!' como respuesta a la humillación o al Super Saiyan 1.",
+        "grantedTags": [
+          "max_power",
+          "muscle_bulk"
+        ],
+        "limitations": "Esta versión DBS ya no tiene el drenaje crítico de Namek (gracias al entrenamiento).",
+        "exitCondition": "Transformación a Golden Freezer si la situación es desesperada.",
+        "suppressedTags": [
+          "tactical_containment"
+        ],
+        "grantedAbilities": [
+          "Combate físico directo contra dioses",
+          "Death Slicers dobles"
+        ],
+        "drawbacks": "Pérdida de velocidad si el combate es muy prolongado.",
+        "counterplay": "Combates prolongados y desgaste por kiting.",
         "tier": "3-A"
       }
     ],
@@ -42678,7 +46727,43 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cola de Saiyajin",
+        "durability": "Puede ser cortada",
+        "effect": "Fuente de Zenkai y transformación Oozaru."
+      },
+      {
+        "name": "Cuerpo Biomecánico",
+        "durability": "Extremadamente resistente",
+        "effect": "Protección física y energética superior."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Película Dragon Ball Super: Broly",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "frost-dragon-ball-super-662",
@@ -42811,11 +46896,11 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "frost-100",
-        "name": "100% de Poder",
+        "name": "Frost (Forma Final)",
         "stats": "Nivel Universal Bajo. Musculoso pero inestable, desgasta energía brutalmente.",
-        "apexKiMultiplier": 2,
-        "tier": "3-A",
-        "staminaDrain": 2
+        "apexKiMultiplier": 1.5,
+        "tier": "5-A",
+        "staminaDrain": 15
       }
     ],
     "feats": [
@@ -42828,7 +46913,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un pirata espacial narcisista que crea guerras en secreto para detenerlas públicamente y ser aclamado como el héroe salvador, vendiendo los planetas devastados.",
     "weaknesses": "Falta de honor, tolerancia nula al dolor, humillado fácilmente por poder abrumador (Hit/Vegeta/Freezer).",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Engaño del Pirata U6",
+        "partnerTags": [
+          "Universo 6",
+          "Equipo Champa"
+        ],
+        "effect": "Si Hit o Magetta están en campo, Frost gana +10% evasión el primer turno por su juego sucio canónico del Torneo U6.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -43731,7 +47826,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "gas-dragon-ball-super-973",
@@ -43855,6 +47976,32 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0
       },
       {
+        "id": "gas-anciano-evolucion-final",
+        "name": "Gas (Forma Evolucionada)",
+        "apexKiMultiplier": 3,
+        "staminaDrain": 20,
+        "stats": "Forma culminada donde el cuerpo de Gas envejece siglos en segundos, llegando a una descomposición esquelética absoluta. Peleó de igual a igual contra Goku UI y Vegeta UE simultáneamente.",
+        "activationCondition": "Envejecimiento biológico crítico progresivo o mediante un segundo deseo de Elec.",
+        "grantedTags": [
+          "deseo_zenkai_max",
+          "estado_zombi_extremo",
+          "esqueletico"
+        ],
+        "suppressedTags": [
+          "resistencia_fisica"
+        ],
+        "grantedAbilities": [
+          "Puñetazo de materia oscura a escala planetaria",
+          "Aura de presión divina opresiva"
+        ],
+        "limitations": "Inestabilidad biológica absoluta.",
+        "drawbacks": "Cuerpo reducido a casi solo huesos y tendones sostenidos por la magia del deseo.",
+        "exitCondition": "Conversión a polvo al agotar el último segundo de vida.",
+        "counterplay": "Resistir la presión psicológica de ver a un cadáver pelear; aniquilación inmediata con Hakai o poder superior.",
+        "canonStatus": "apex_custom",
+        "tier": "3-A"
+      },
+      {
         "id": "gas-anciano",
         "name": "Forma Anciano (Deseo Zombi)",
         "stats": "Nivel Multiversal Bajo (2-C). Cuerpo demacrado, esquelético, sin pupila, puramente mantenido vivo por el deseo del dragón. Su poder escala a medida que envejece biológicamente.",
@@ -43880,32 +48027,6 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Separarlo de Elec, superarlo en base de poder (como Black Freezer), o drenar su tiempo de vida con presión constante.",
         "canonStatus": "source_backed",
         "tier": "2-C"
-      },
-      {
-        "id": "gas-anciano-evolucion-final",
-        "name": "Forma Anciano (100% Eclosión Total)",
-        "apexKiMultiplier": 10,
-        "staminaDrain": 15,
-        "stats": "Forma culminada donde el cuerpo de Gas envejece siglos en segundos, llegando a una descomposición esquelética absoluta. Peleó de igual a igual contra Goku UI y Vegeta UE simultáneamente.",
-        "activationCondition": "Envejecimiento biológico crítico progresivo o mediante un segundo deseo de Elec.",
-        "grantedTags": [
-          "deseo_zenkai_max",
-          "estado_zombi_extremo",
-          "esqueletico"
-        ],
-        "suppressedTags": [
-          "resistencia_fisica"
-        ],
-        "grantedAbilities": [
-          "Puñetazo de materia oscura a escala planetaria",
-          "Aura de presión divina opresiva"
-        ],
-        "limitations": "Inestabilidad biológica absoluta.",
-        "drawbacks": "Cuerpo reducido a casi solo huesos y tendones sostenidos por la magia del deseo.",
-        "exitCondition": "Conversión a polvo al agotar el último segundo de vida.",
-        "counterplay": "Resistir la presión psicológica de ver a un cadáver pelear; aniquilación inmediata con Hakai o poder superior.",
-        "canonStatus": "apex_custom",
-        "tier": "2-B"
       }
     ],
     "feats": [
@@ -45437,42 +49558,11 @@ export const INITIAL_CHARACTERS = [
         "stats": "Forma Base canónica de Hit previo a cualquier transformación."
       },
       {
-        "id": "hit-torneo",
-        "name": "Estado Base (Contenido por Reglas)",
-        "stats": "Nivel Universal. Pelea bajo reglas del torneo: prohibido asestar golpes letales directos al corazón o usar la Jaula de Tiempo a máxima capacidad.",
-        "apexKiMultiplier": 1.1,
-        "tier": "3-A",
-        "tierExact": "7-A",
-        "multiplier": "1x",
-        "staminaDrain": 1,
-        "activationCondition": "Compromiso formal de torneo. Hit firma un contrato verbal de no-letalidad.",
-        "grantedTags": [
-          "time_skip_regulado",
-          "golpes_no_letales"
-        ],
-        "suppressedTags": [
-          "asalto_al_corazon",
-          "jaula_de_tiempo_total"
-        ],
-        "grantedAbilities": [
-          "Time Skip 0.2-0.5s adaptativo",
-          "Golpe de Choque Temporal (Flash Fist Crush)"
-        ],
-        "limitations": [
-          "No puede apuntar a órganos vitales con intención letal",
-          "Prohibido Jaula de Tiempo de larga duración"
-        ],
-        "drawbacks": [
-          "Si el rival lo fuerza, debe romper las reglas para sobrevivir, exponiendo su estilo"
-        ],
-        "canonStatus": "source_backed"
-      },
-      {
         "id": "hit-asesino",
-        "name": "Modo Asesinato (Despertado al 100%)",
+        "name": "Hit (Asesino Sentenciado)",
         "stats": "Nivel Universal. Aura lila oscura; golpe directo al corazón capaz de fingir la muerte de un Saiyajin Blue sin matarlo. Hax temporal en su pico.",
-        "apexKiMultiplier": 1.5,
-        "staminaDrain": 5,
+        "apexKiMultiplier": 1.8,
+        "staminaDrain": 12,
         "activationCondition": "Liberación del contrato de no-letalidad o detección de objetivo que requiere eliminación real.",
         "grantedTags": [
           "asalto_al_corazon",
@@ -45844,7 +49934,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Super Hero",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "jimizu-dbs-top",
@@ -46019,7 +50135,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "jiren-dragon-ball-super-983",
@@ -46513,7 +50655,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "kale-dbs-u6",
@@ -46626,14 +50794,6 @@ export const INITIAL_CHARACTERS = [
         "stats": "Forma Base canónica de Kale previo a cualquier transformación."
       },
       {
-        "id": "kale-lssj-berserk",
-        "name": "Super Saiyan Berserker",
-        "stats": "Crecimiento Muscular Máximo. Aura Verde. Ojos en blanco. No esquiva, solo destruye. Máximo de Tier 2-C.",
-        "apexKiMultiplier": 1,
-        "tier": "3-A",
-        "staminaDrain": 0
-      },
-      {
         "id": "kale-lssj-controlled",
         "name": "Super Saiyan Perfecta (Controlada)",
         "stats": "Reduce su volumen y poder bruto absoluto (Pierde el Super Armor irrompible) a cambio de ganar precisión de combate y coordinación con Caulifla (Velocidad Evasiva Alta).",
@@ -46692,6 +50852,14 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Si Caulifla es dañada gravemente, riesgo de regresión al Berserker.",
         "canonStatus": "source_backed",
         "tier": "High 3-A"
+      },
+      {
+        "id": "kale-lssj-berserk",
+        "name": "Super Saiyan Berserker",
+        "stats": "Crecimiento Muscular Máximo. Aura Verde. Ojos en blanco. No esquiva, solo destruye. Máximo de Tier 2-C. [APEX CHANGELOG: multiplicador corregido de 1 a 1500 — el LSSJ Legendario escala ×1500 sobre la base, llevando de Tier 3-A a 2-C]",
+        "apexKiMultiplier": 1500,
+        "tier": "2-C",
+        "staminaDrain": 0
       }
     ],
     "feats": [
@@ -46790,7 +50958,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "katopesla-dbs-top",
@@ -46963,7 +51157,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "kefla-dragon-ball-super-104",
@@ -47429,7 +51649,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "krilin-dragon-ball-cl-sico-802",
@@ -48332,7 +52578,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Super Hero",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "mai-l-nea-temporal-futura-446",
@@ -48814,7 +53086,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "maki-dbs-granolah",
@@ -49001,7 +53299,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de Granolah",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "merus-dbs-moro",
@@ -49235,14 +53559,6 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-B",
         "staminaDrain": 0
-      },
-      {
-        "id": "post-sacrifice",
-        "name": "Modo Humano Caído",
-        "apexKiMultiplier": 0.0001,
-        "staminaDrain": 0,
-        "canonStatus": "source_backed",
-        "tier": "2-B"
       }
     ],
     "feats": [
@@ -50281,7 +54597,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "oil-dbs-granolah",
@@ -50380,7 +54722,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "El arquetipo de secuaz de mafioso. Come compulsivamente y disfruta golpear a los débiles. Sin embargo, su amor a sus hermanos (Maki y Gas) es incuestionable, actuando como una pared de carne leal hasta la muerte si se lo ordenan.",
     "weaknesses": "Lento en reacción combativa (Hitbox gigante). Es presa fácil de proyectiles de Ki concentrados o magia cortante (Makankosappo, Kienzan) que atraviese su densidad adiposa. Carece de estrategias intelectuales; es guiado por Maki o Elec.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Banda Heeter",
+        "partnerTags": [
+          "Familia Heeter",
+          "Elec",
+          "Maki"
+        ],
+        "effect": "Junto a un Heeter, Oil gana +15% defensa por cobertura familiar canónica de la saga Granolah.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [
       {
         "id": "team-combo-heeter-pinza",
@@ -50455,7 +54808,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de Granolah",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "piccolo-finales-z-principios-super",
@@ -50709,7 +55088,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Batalla de los Dioses / Resurrección de F (Principios de Super)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "piccolo-saga-super-dragon-ball-super-228",
@@ -51341,7 +55746,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Super Hero",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "pirina-dbs-top",
@@ -51527,7 +55958,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "ribrianne-dragon-ball-super-396",
@@ -52039,7 +56496,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "saganbo-dbs-moro",
@@ -52217,7 +56700,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga Moro",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "saonel-dbs-top",
@@ -52408,7 +56917,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "shisami-fnf-dbs",
@@ -52633,7 +57168,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cuerpo Biomecánico",
+        "durability": "Extremadamente resistente",
+        "effect": "Protección física y energética superior."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de la Resurrección de 'F' (DBS)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "gohan-dbs-fnf-pre-torneo",
@@ -52903,7 +57469,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de la Resurrección de 'F' y Entrenamiento Pre-Torneo del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "son-gohan-saga-super-dragon-ball-super-39",
@@ -53553,7 +58145,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Super Hero",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "son-goku-saga-super-dragon-ball-super-732",
@@ -54735,7 +59353,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cuerpo Biomecánico",
+        "durability": "Extremadamente resistente",
+        "effect": "Protección física y energética superior."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de la Resurrección de 'F' (DBS)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "ten-shin-han-dragon-ball-cl-sico-812",
@@ -55697,7 +60346,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cola de Saiyajin",
+        "durability": "Puede ser cortada",
+        "effect": "Fuente de Zenkai y transformación Oozaru."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de Goku Black y Zamasu del Futuro (Anime Toei)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "trunks-futuro-v4-manga-super-zamasu",
@@ -55968,7 +60648,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Arco de Goku Black y Zamasu (Manga Canónico — Toyotaro)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "vados-dragon-ball-super-918",
@@ -57373,7 +62079,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Más enfocado que en Z, sabe que no puede jugar por el límite de tiempo y se desespera al final para asegurar el remate.",
     "weaknesses": "Retcon estricto: Una fusión mortal Pothala dura 1 hora. Si usa un ataque colosal de Ki Divino (Final Kamehameha), se des-fusiona inmediatamente.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Fusión Potara",
+        "partnerTags": [
+          "Son Goku",
+          "Vegeta",
+          "Fusión"
+        ],
+        "effect": "Si Goku y Vegeta están disponibles, Vegetto entra con +20% AP el primer turno (Final Kamehameha contra Zamasu).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [
       {
         "partners": [
@@ -58220,28 +62937,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "1-C",
         "stats": "Forma Base canónica de Zeno-Sama (Gran Zeno / Rey de Reyes) previo a cualquier transformación."
-      },
-      {
-        "id": "zeno-playful-state",
-        "name": "Estado Base / Capricho Activo",
-        "stats": "Zeno completamente enfocado en sus decisiones de borrado, eliminando cualquier duda o distracción.",
-        "apexKiMultiplier": 1.5,
-        "staminaDrain": 0,
-        "canonStatus": "apex_custom",
-        "activationCondition": "Activación cuando Zeno decide limpiar un universo o ejecutar una decisión firme.",
-        "grantedTags": [
-          "existence_erasure_focused",
-          "no_mercy_window"
-        ],
-        "grantedAbilities": [
-          "Borrado Universal Dirigido",
-          "Multi-Borrado Universal Simultáneo"
-        ],
-        "limitations": "No aplicable si Zeno está entretenido o distraído.",
-        "drawbacks": "En este estado no atiende súplicas ni ruegos.",
-        "exitCondition": "Cambio de humor / distracción con espectáculo.",
-        "counterplay": "Mantenerle entretenido con concursos o espectáculos visuales antes de que se aburra.",
-        "tier": "1-C"
       }
     ],
     "feats": [
@@ -64643,7 +69338,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de Baby",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "eis-shenron-dragon-ball-gt-308",
@@ -65117,7 +69838,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "El Culto de Lude",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "general-rilldo",
@@ -65853,7 +70600,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un profesional absoluto de las artes mercenarias y guerrero leal a su propia fortaleza, no al dinero. Odia a los tiranos cobardes (como Don Kee) y solo sirve por promesas económicas o de lealtad hasta que alguien más fuerte demuestra tener la razón ética.",
     "weaknesses": "Luchador enteramente físico y balístico. No posee Hax cósmicos ni invulnerabilidades absolutas. Si se enfrenta a un SSJ2 o superior en Tier 3, es barrido inmediatamente por AP puro.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Guardia de Imecka",
+        "partnerTags": [
+          "Don Kee",
+          "Imecka"
+        ],
+        "effect": "Defendiendo territorio Imecka, Ledgic gana +15% durabilidad por su deber canónico de guardaespaldas.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -65907,7 +70664,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Planeta Imecka (Black Star Dragon Balls)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "majuub-dragon-ball-gt-859",
@@ -68488,7 +73271,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de los Dragones Malignos",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "vegeta-saga-gt-dragon-ball-gt-851",
@@ -72333,10 +77142,10 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "cooler-forma-final",
-        "name": "5ta Forma (Forma Final Extrema / Poder Desatado)",
+        "name": "Cooler (5ta Forma)",
         "stats": "Nivel Estrella Grande a Sistema Solar Menor. Armadura blanca con cuernos, máscara facial retráctil. AP cercano a 25.41 Mil Millones. Superioridad evolutiva sobre Freezer final. La 5ª Forma de Cooler representa una evolución completa del linaje Cold que no existe en Freezer: multiplica ×20 el poder sobre la forma contenida acorazada.",
         "apexKiMultiplier": 20,
-        "staminaDrain": 3,
+        "staminaDrain": 15,
         "activationCondition": "Liberación total del potencial biológico mutado del linaje Cold. Cooler desbloquea la forma oculta que su hermano no posee.",
         "grantedTags": [
           "5ta_forma",
@@ -72358,7 +77167,7 @@ export const INITIAL_CHARACTERS = [
         ],
         "exitCondition": "Agotamiento, destrucción solar directa o voluntad propia",
         "canonStatus": "source_backed",
-        "tier": "4-B"
+        "tier": "3-A"
       },
       {
         "formIndex": 0,
@@ -74920,34 +79729,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica de Lord Slug previo a cualquier transformación."
-      },
-      {
-        "id": "slug-joven",
-        "name": "Estado Base Juventud Restaurada /",
-        "stats": "Nivel Estrella Enana Superior. Namekiano rejuvenecido con el poder de las Dragon Balls. Aura de Ki maligno permanente densa, presión espiritual aplastante que supera a Goku con Kaio-Ken x4.",
-        "apexKiMultiplier": 1.35,
-        "staminaDrain": 2,
-        "activationCondition": "Restauración de juventud mediante Dragon Balls de su planeta Namek; canalización constante de ki maligno.",
-        "grantedTags": [
-          "namekiano_maligno",
-          "juventud_eterna",
-          "poder_desatado"
-        ],
-        "suppressedTags": [
-          "vejez"
-        ],
-        "grantedAbilities": [
-          "Elasticidad mejorada",
-          "Inmunidad parcial a ilusiones",
-          "Láser Óptico Múltiple ampliado"
-        ],
-        "limitations": [
-          "El aura oscura mantiene un drenaje permanente de ki mientras se sostiene",
-          "Vulnerable al sistema auditivo"
-        ],
-        "exitCondition": "Agotamiento crítico de ki o cancelación por sonido agudo",
-        "canonStatus": "source_backed",
-        "tier": "4-C"
       },
       {
         "id": "slug-gigante",
@@ -78998,7 +83779,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Película 3: La Superbatalla / El Árbol del Poder",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "vinegar-saga-garlic-jr-502",
@@ -80022,7 +84829,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "dende_kami",
-        "name": "Kami-sama de la Tierra (Estado Base Desatado)",
+        "name": "Dende (Kami-sama Desatado)",
         "apexKiMultiplier": 1.5,
         "staminaDrain": 5,
         "stats": "Nivel Muro / Soporte Supremo. Túnica ceremonial de Kami-sama con bastón sagrado. Vinculado a la vida del planeta Tierra.",
@@ -80641,11 +85448,11 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "roshi-max",
-        "name": "Max Power (100%)",
+        "name": "Maestro Roshi (Max Power)",
         "stats": "Nivel Lunar (5-C). Músculos hiper-inflados, rompe su camiseta. Uso para Kamehamehas destructivos. El multiplicador APEX-Ki es de x2.0 sobre su estado base normal.",
-        "apexKiMultiplier": 2,
-        "staminaDrain": 25,
-        "tier": "5-C",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
         "tierExact": "5-C",
         "multiplier": "2x",
         "activationCondition": "Inyección de adrenalina, voluntad inquebrantable o uso de esteroides naturales en su cuerpo para inflar los músculos.",
@@ -81289,29 +86096,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "9-B",
         "stats": "Forma Base canónica de Mr. Satán (Hercule) previo a cualquier transformación."
-      },
-      {
-        "id": "satan-base",
-        "name": "Estado Base",
-        "stats": "Nivel Muro. Traje de artes marciales marrón, cinturón de campeón mundial, gran afro y bigote.",
-        "apexKiMultiplier": 1.25,
-        "staminaDrain": 0,
-        "activationCondition": "Estado permanente del personaje.",
-        "grantedTags": [
-          "human_peak",
-          "toon_force_minor"
-        ],
-        "suppressedTags": [],
-        "grantedAbilities": [],
-        "limitations": [
-          "Sin acceso a Ki",
-          "Fragilidad biológica humana"
-        ],
-        "drawbacks": [],
-        "exitCondition": "Ninguna (permanente).",
-        "counterplay": "Cualquier ataque sobrehumano real ignora el gag.",
-        "canonStatus": "source_backed",
-        "tier": "9-B"
       }
     ],
     "feats": [
@@ -82632,31 +87416,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Androide #16 (Reconstruido, Universo 12) previo a cualquier transformación."
-      },
-      {
-        "id": "base_full_reactor",
-        "name": "Estado Base (Reactor al 100% / Sin Filtación)",
-        "stats": "Tier 4-B alto | Reactor en modo continuo sin autolimitar.",
-        "apexKiMultiplier": 1.2,
-        "staminaDrain": 0,
-        "activationCondition": "Trunks desbloquea el limitador del reactor interno. #16 dispara el cañón del hombro a máxima potencia sin reservas.",
-        "limitations": "Requiere 2 turnos de canalización; sobrecalienta sus circuitos.",
-        "drawbacks": "Tras 3 turnos de uso el reactor entra en modo seguro automáticamente.",
-        "exitCondition": "Sistema de seguridad apaga el modo full o daño severo al núcleo.",
-        "counterplay": "Aislar el reactor; golpear antes del segundo turno de canalización.",
-        "canonStatus": "apex_custom",
-        "grantedTags": [
-          "Reactor Sobrecargado",
-          "Cañón Hell's Flash Plus"
-        ],
-        "suppressedTags": [
-          "Movilidad Defensiva Fina"
-        ],
-        "grantedAbilities": [
-          "Hell's Flash Plus",
-          "Ráfaga Continua"
-        ],
-        "tier": "4-B"
       }
     ],
     "feats": [
@@ -83028,7 +87787,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 14",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "androide-18-u14-individual",
@@ -83234,7 +88019,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 14",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "androides-17-18-u14-dbm",
@@ -83413,29 +88224,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Androides #17 y #18 (Continuidad Universo 14, Sin Oposición) previo a cualquier transformación."
-      },
-      {
-        "id": "base-full-sync",
-        "name": "Estado Base (Sincronía Letal 100%)",
-        "stats": "Tier 4-B+ | Límite alto Sistema Solar — Dúo perfeccionado tras años de combate ininterrumpido.",
-        "apexKiMultiplier": 1.35,
-        "staminaDrain": 0,
-        "activationCondition": "Activación instintiva cuando ambos están combatiendo al mismo objetivo simultáneamente y a corta distancia.",
-        "grantedTags": [
-          "Sincronía Gemelar Letal",
-          "Cobertura Ciega Total"
-        ],
-        "suppressedTags": [],
-        "grantedAbilities": [
-          "Cobertura Ciega Total — eliminación completa de ventanas de contraataque",
-          "Flanco Dinámico Perpetuo"
-        ],
-        "limitations": "Requiere proximidad física entre ambos. Si uno es incapacitado o teleported fuera, el bono colapsa.",
-        "drawbacks": "Ninguno por stamina (reactor infinito), pero psicológico: si son separados por >500m, su moral cae y cometen errores.",
-        "exitCondition": "Incapacidad, separación forzada o decisión voluntaria.",
-        "counterplay": "Teleportación dimensional, trampas de aislamiento, jaulas de energía que bloqueen a uno.",
-        "canonStatus": "apex_custom",
-        "tier": "4-B"
       }
     ],
     "feats": [
@@ -84203,7 +88991,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 10",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "bardock-vidente-dbm-u3",
@@ -84783,7 +89597,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 2",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "bojack-dbm",
@@ -85401,7 +90241,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cola de Saiyajin",
+        "durability": "Puede ser cortada",
+        "effect": "Fuente de Zenkai y transformación Oozaru."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "broly-u20-dbm-congelado",
@@ -86004,7 +90875,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 8",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "caracoru-u10-individual",
@@ -86241,7 +91138,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 10",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "cargot-u10-individual",
@@ -86466,7 +91389,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 10",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "cell-dbm-u17",
@@ -86960,29 +91909,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-C",
         "stats": "Forma Base canónica de Cell Jr. (Compañero de Torneo, Universo 17) previo a cualquier transformación."
-      },
-      {
-        "id": "base-mass-stolen",
-        "name": "Estado Base (Biomasa Robada / Absorción Efectuada)",
-        "stats": "Tier 3-C+ | Nivel Galáctico Superior con stats y tags del absorbido sumados.",
-        "apexKiMultiplier": 1.5,
-        "staminaDrain": 0,
-        "activationCondition": "Trigger tras absorber completamente a un oponente herido o aliado sacrificado (trigger instintivo o por orden de Cell).",
-        "grantedTags": [
-          "Biomasa Asimilada",
-          "Stats Heredadas"
-        ],
-        "suppressedTags": [],
-        "grantedAbilities": [
-          "Todas las habilidades del absorbido (limitadas)",
-          "Stats base sumadas (potencial hasta x2 si el absorbido es de tier similar)"
-        ],
-        "limitations": "Requiere que el absorbido esté herido gravemente (HP < 25%) o sea entregado por Cell.",
-        "drawbacks": "Si el núcleo del absorbido contiene algún parásito mental o virus, el Cell Jr. puede ser corrompido.",
-        "exitCondition": "Irreversible mientras el núcleo siga intacto.",
-        "counterplay": "Daño dirigido al cerebro antes de la asimilación completa; venenos celulares que corrompan el núcleo.",
-        "canonStatus": "apex_custom",
-        "tier": "3-C"
       }
     ],
     "feats": [
@@ -87404,7 +92330,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cuerpo Biomecánico",
+        "durability": "Extremadamente resistente",
+        "effect": "Protección física y energética superior."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 8",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "dabra-u11-dbm",
@@ -87553,31 +92510,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Dabra (Continuidad Universo 11, Éxito de Babidi) previo a cualquier transformación."
-      },
-      {
-        "id": "base_overcharged",
-        "name": "Estado Base /",
-        "stats": "Tier 4-B alto | Potencia muscular al máximo por años de servicio victorioso.",
-        "apexKiMultiplier": 1.25,
-        "staminaDrain": 3,
-        "activationCondition": "Liberación total del ki muscular de Rey Demonio sin contención de Babidi. Ocurre cuando Babidi le ordena 'ejecutar al objetivo'.",
-        "limitations": "Requiere que Babidi no esté amenazado; pierde coordinación si su amo está en peligro.",
-        "drawbacks": "Fatiga muscular progresiva tras 5 turnos; reduce su puntería con la espada en 10%.",
-        "exitCondition": "Babidi ordena retirada, Dabra supera el 50% de daño, o voluntad propia al completar la misión.",
-        "counterplay": "Aislar a Dabra de Babidi cortando su línea de visión o anulando mentalmente al amo.",
-        "canonStatus": "apex_custom",
-        "grantedTags": [
-          "Power Desatado",
-          "Reactor Majin Activo"
-        ],
-        "suppressedTags": [
-          "Concentración Mágica Fina"
-        ],
-        "grantedAbilities": [
-          "Lanza Oscura Potenciada",
-          "Cañón del Infierno (modo canalizado)"
-        ],
-        "tier": "4-B"
       }
     ],
     "feats": [
@@ -88357,7 +93289,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Multiverso / Universo 3",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "eleim-ultra-dbm-u19",
@@ -88879,39 +93837,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Freezer (Continuidad Universo 8, Forma Final Envejecida) previo a cualquier transformación."
-      },
-      {
-        "id": "imperial_overcharge_u8",
-        "name": "Estado Base (Poder Desatado del Emperador Anciano)",
-        "stats": "Tier 4-B+ | Sistema Solar consolidado | Salida completa de ki",
-        "apexKiMultiplier": 1.6,
-        "staminaDrain": 7,
-        "activationCondition": "Liberación total del ki contenido por la propia contención imperial; activado al decidir aniquilar al rival.",
-        "grantedTags": [
-          "Autoridad Tiránica",
-          "Juicio del Emperador Anciano",
-          "Presión Cósmica Stellar"
-        ],
-        "suppressedTags": [
-          "Contención Imperial"
-        ],
-        "grantedAbilities": [
-          "Juicio del Emperador Anciano",
-          "Death Ball Imperial Definitiva",
-          "Ráfaga de Death Beam Saturada"
-        ],
-        "limitations": [
-          "El drenaje de stamina se acumula por cada turno de activación.",
-          "Requiere posición favorable o rival acorralado para ultimate."
-        ],
-        "drawbacks": [
-          "Aparente debilidad física si el rival aguanta la fase inicial.",
-          "La presión de ki extendida atrae atención y contraataques."
-        ],
-        "exitCondition": "Voluntaria al replegar su ki, o forzada por debajo del 15% de stamina.",
-        "counterplay": "Contraataque definitivo con escudo impenetrable antes de la canalización de la Death Ball Definitiva.",
-        "canonStatus": "apex_custom",
-        "tier": "4-B"
       }
     ],
     "feats": [
@@ -90400,10 +95325,10 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "ssj3-gotenks-adult",
-        "name": "Super Saiyan 3 Adulto al 100%",
+        "name": "Gotenks Adulto (SSJ3)",
         "stats": "Tier 3-B | Nivel Multigaláctico. Melena dorada kilométrica y Ultra Volleyball.",
         "apexKiMultiplier": 400,
-        "staminaDrain": 20,
+        "staminaDrain": 40,
         "activationCondition": "Vaciado total del ki base y máxima sincronización. La forma adulta permite mantener SSJ3 sin el recorte infantil.",
         "grantedTags": [
           "super_saiyan_3",
@@ -90771,31 +95696,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-A",
         "stats": "Forma Base canónica de I'K'L previo a cualquier transformación."
-      },
-      {
-        "id": "base-resonance-peak",
-        "name": "Estado Base (Resonancia Prenatal Pico)",
-        "stats": "Tier 4-A+ | Multi-Sistema Solar con acumulación máxima de Ki latente.",
-        "apexKiMultiplier": 1.4,
-        "staminaDrain": 5,
-        "activationCondition": "Trigger tras 4 turnos sin recibir daño crítico directo, su Resonancia Prenatal alcanza pico.",
-        "grantedTags": [
-          "Resonancia al Pico",
-          "Poder Fetal Desatado"
-        ],
-        "suppressedTags": [
-          "Inexperiencia Táctica"
-        ],
-        "grantedAbilities": [
-          "Descarga de Ki latente acumulado",
-          "Pulso Fetal Involuntario potenciado x2"
-        ],
-        "limitations": "Si recibe daño crítico antes de los 4 turnos, la resonancia se reinicia.",
-        "drawbacks": "Drenaje continuo de 5 stamina/turno mientras está activo. Si se agota la stamina, colapsa.",
-        "exitCondition": "Daño crítico, agotamiento de stamina o decisión voluntaria.",
-        "counterplay": "Daño crítico preventivo en los primeros 4 turnos.",
-        "canonStatus": "apex_custom",
-        "tier": "4-A"
       }
     ],
     "feats": [
@@ -90914,7 +95814,13 @@ export const INITIAL_CHARACTERS = [
       "exhaustionThreshold": 25,
       "notes": "Optimización fetal reduce el coste de sus ataques físicos. Su reserva prenatal le permite acumular carga entre turnos."
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Torneo Interuniversal DBM (Universo 15, aún no nacido)",
       "timelineRestrictions": "I'K'L aún no ha nacido completamente. No tiene conocimiento de eventos más allá del Torneo. Desconoce la existencia de Beerus, Whis, el Super Saiyajin Blue ni conceptos de Dragon Ball Super.",
@@ -91430,7 +96336,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 6",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "kat-syd-u6-dbm",
@@ -92386,7 +97318,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 10",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "mahissu-u10-individual",
@@ -92603,7 +97561,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 10",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "saiyans-namekianos-u10-grupo",
@@ -92723,32 +97707,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-A",
         "stats": "Forma Base canónica de Mahissu, Romanesco, Cargot, Caracoru y Lumaca (Guerreros del Universo 10) previo a cualquier transformación."
-      },
-      {
-        "id": "base-coexistencia-overdrive",
-        "name": "Estado Base (Overdrive de Coexistencia)",
-        "stats": "Tier 5-A+ | Unión espiritual completa, ki fusionado temporalmente.",
-        "apexKiMultiplier": 1.6,
-        "staminaDrain": 12,
-        "activationCondition": "Activado cuando el grupo decide unir sus reservas de ki en un canal compartido.",
-        "exitCondition": "Agotamiento de stamina (umbral 30) o cancelación voluntaria.",
-        "grantedTags": [
-          "Fusión Ki Compartida",
-          "Resistencia Multi-Planetaria",
-          "Coordinación Perfecta"
-        ],
-        "suppressedTags": [
-          "Autonomía Individual"
-        ],
-        "grantedAbilities": [
-          "Técnica Suprema de Coexistencia U10",
-          "Muro Ki Planetario Compartido"
-        ],
-        "limitations": "Mientras el Overdrive esté activo, ningún miembro puede actuar por su cuenta sin romper la fusión.",
-        "drawbacks": "Si uno falla, todos colapsan. Drenaje de 12 stamina/turno agota al equipo en 5 turnos.",
-        "counterplay": "Eliminar a un miembro durante el Overdrive: la fusión colapsa y daña a todos por retroalimentación.",
-        "canonStatus": "apex_custom",
-        "tier": "5-A"
       }
     ],
     "feats": [
@@ -93079,33 +98037,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-A",
         "stats": "Forma Base canónica de Majin Buu (Gordo, Continuidad Universo 11) previo a cualquier transformación."
-      },
-      {
-        "id": "base-max-overload",
-        "name": "Estado Base / Babidi",
-        "stats": "Tier 4-A+ | Cuerpo Majin sin órdenes mentales, máxima expresión de biomasa acumulada.",
-        "apexKiMultiplier": 1.4,
-        "staminaDrain": 5,
-        "activationCondition": "Babidi es eliminado o el sello de control se fractura; Buu libera todo su poder interno.",
-        "exitCondition": "Re-imposición del control mágico por parte de un nuevo hechicero o autoinhibición emocional.",
-        "grantedTags": [
-          "Majin Desatado",
-          "Caos Infantil",
-          "Fuerza Bruta Sin Límite"
-        ],
-        "suppressedTags": [
-          "Control Mental",
-          "Obediencia Táctica"
-        ],
-        "grantedAbilities": [
-          "Ráfaga de Energía Majin Concentrada (Liberada)",
-          "Asimilación Genética Biológica Forzada"
-        ],
-        "limitations": "Sin dirección estratégica; actúa por impulsos y caprichos.",
-        "drawbacks": "Puede atacar indistintamente a aliados y enemigos. Drenaje constante de stamina por暴走 (bokō).",
-        "counterplay": "Aislarlo en dimensión o recipiente sellado antes de que colapse el orden del campo de batalla.",
-        "canonStatus": "apex_custom",
-        "tier": "4-A"
       }
     ],
     "feats": [
@@ -93483,7 +98414,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 2",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "nail-u10-dbm",
@@ -94032,7 +98989,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 13",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "nekomajin",
@@ -94906,27 +99889,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica de Piccolo (Universo 16, Espectador Notable) previo a cualquier transformación."
-      },
-      {
-        "id": "base-mentor-focus",
-        "name": "Estado Base (Foco de Mentor)",
-        "stats": "Estado Base con reducción de firma de ki y bonificación pasiva a discípulos en el mismo equipo.",
-        "apexKiMultiplier": 1.05,
-        "staminaDrain": 1,
-        "canonStatus": "apex_custom",
-        "activationCondition": "Activación automática cuando Piccolo detecta un discípulo (Gohan, Son Bra, Pan) en combate.",
-        "grantedTags": [
-          "mente_pasiva_activa",
-          "cobertura_defensiva"
-        ],
-        "suppressedTags": [
-          "firma_energetica_agresiva"
-        ],
-        "limitations": "Sacrifica parte de su Ki ofensivo por percepción ampliada del campo.",
-        "drawbacks": "Si el discípulo cae, Piccolo sufre penalización emocional de -10% AP durante 2 turnos.",
-        "exitCondition": "El discípulo es derrotado o el combate termina.",
-        "counterplay": "Provocar la caída del discípulo para mermar a Piccolo.",
-        "tier": "4-C"
       },
       {
         "id": "fused-with-nail-and-kami",
@@ -96894,7 +101856,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cola de Saiyajin",
+        "durability": "Puede ser cortada",
+        "effect": "Fuente de Zenkai y transformación Oozaru."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo del Multiverso / Universo 13",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "romanesco-u10-individual",
@@ -97111,7 +102104,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 10",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "son-bra-dbm-u16",
@@ -97236,6 +102255,36 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0
       },
       {
+        "id": "majin-bra-ssj2",
+        "name": "Son Bra (Majin Bra)",
+        "stats": "Tier 3-A | Nivel Universal. Liberación total de su potencial sin restricciones morales.",
+        "apexKiMultiplier": 1.5,
+        "staminaDrain": 15,
+        "activationCondition": "Sello Majin de Babidi sobre la frente + concentración total.",
+        "grantedTags": [
+          "majin_seal",
+          "potencial_desatado_total",
+          "instinto_asesino",
+          "sin_moral"
+        ],
+        "suppressedTags": [
+          "moral",
+          "miedo",
+          "vacilacion"
+        ],
+        "grantedAbilities": [
+          "Masacre Majin: Devastación del Espacio 0",
+          "Espadas de Ki universales",
+          "Teletransportación instantánea ofensiva"
+        ],
+        "limitations": "Dependencia del sello Majin.",
+        "drawbacks": "Colapso a SSJ2 normal sin sello; vulnerabilidad emocional si despierta.",
+        "exitCondition": "Remoción del sello o desmayo.",
+        "counterplay": "Magia de purificación, sellado anti-Majin o provocación que rompa el trance mental.",
+        "canonStatus": "source_backed",
+        "tier": "3-A"
+      },
+      {
         "id": "ssj1",
         "name": "Super Saiyan 1",
         "stats": "Tier 3-C | Nivel Galáctico. x50 multiplicador y espadas de Ki.",
@@ -97284,36 +102333,6 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Pérdida de cordura temporal; golpea aliados por accidente.",
         "exitCondition": "Calmarse o desmayo.",
         "counterplay": "Provocarla para que pierda aún más control y se agote.",
-        "canonStatus": "source_backed",
-        "tier": "3-A"
-      },
-      {
-        "id": "majin-bra-ssj2",
-        "name": "Majin Bra (Control Oscuro de Babidi al 100%)",
-        "stats": "Tier 3-A | Nivel Universal. Liberación total de su potencial sin restricciones morales.",
-        "apexKiMultiplier": 200,
-        "staminaDrain": 8,
-        "activationCondition": "Sello Majin de Babidi sobre la frente + concentración total.",
-        "grantedTags": [
-          "majin_seal",
-          "potencial_desatado_total",
-          "instinto_asesino",
-          "sin_moral"
-        ],
-        "suppressedTags": [
-          "moral",
-          "miedo",
-          "vacilacion"
-        ],
-        "grantedAbilities": [
-          "Masacre Majin: Devastación del Espacio 0",
-          "Espadas de Ki universales",
-          "Teletransportación instantánea ofensiva"
-        ],
-        "limitations": "Dependencia del sello Majin.",
-        "drawbacks": "Colapso a SSJ2 normal sin sello; vulnerabilidad emocional si despierta.",
-        "exitCondition": "Remoción del sello o desmayo.",
-        "counterplay": "Magia de purificación, sellado anti-Majin o provocación que rompa el trance mental.",
         "canonStatus": "source_backed",
         "tier": "3-A"
       }
@@ -97994,37 +103013,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de South Supreme Kai (Kaio-shin del Sur, Universo 1) previo a cualquier transformación."
-      },
-      {
-        "id": "south_potential_unleashed",
-        "name": "Estado Base /",
-        "stats": "Tier 3-A con drenaje muscular. Aura dorada divina desbordada.",
-        "apexKiMultiplier": 1.5,
-        "staminaDrain": 4,
-        "activationCondition": "Liberación total de su ki divino reprimido por la contención Kaioshin (cansancio acumulado o aliado en peligro crítico).",
-        "grantedTags": [
-          "Potencial Divino Liberado",
-          "Aura Sagrada Visible",
-          "Presión Espiritual Divina"
-        ],
-        "suppressedTags": [
-          "Reserva de Ki Sostenible"
-        ],
-        "grantedAbilities": [
-          "Sentencia Absoluta del Universo 1 (canalizada a máxima potencia)"
-        ],
-        "limitations": [
-          "Drenaje constante de stamina impide sostener el estado más de 5 turnos.",
-          "Desgaste muscular severo en deidades menores al forzar Aura Divina."
-        ],
-        "drawbacks": [
-          "Fatiga posterior de 3 turnos con -25% AP tras desactivar.",
-          "Vulnerabilidad temporal a técnicas de ki corruptor (no inmune mientras emite)."
-        ],
-        "exitCondition": "Agotamiento de stamina por debajo del 30% o cumplimiento del límite de turnos.",
-        "counterplay": "Forzar intercambios prolongados para vaciar su stamina antes del remate.",
-        "canonStatus": "apex_custom",
-        "tier": "3-A"
       }
     ],
     "feats": [
@@ -98484,7 +103472,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 2",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "syd-u6-individual",
@@ -98686,7 +103700,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 6",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "tenshinhan-u9-dbm",
@@ -98832,39 +103872,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-A",
         "stats": "Forma Base canónica de Tenshinhan (Continuidad Universo 9, Maestro del Kikoho Definitivo) previo a cualquier transformación."
-      },
-      {
-        "id": "kikoho_mastery_u9",
-        "name": "Estado Base (Kikoho Definitivo Sin Riesgo)",
-        "stats": "Tier 5-A+ | Planeta Grande consolidado | AP optimizado",
-        "apexKiMultiplier": 1.5,
-        "staminaDrain": 6,
-        "activationCondition": "Versión U9 donde Tenshinhan canaliza el Kikoho de forma sostenida y eficiente sin amenazar su vida. Activación táctica al decidir desatar todo su potencial marcial.",
-        "grantedTags": [
-          "Kikoho Perfeccionado (uso seguro)",
-          "Reserva de Ki Disciplinada",
-          "Multi-Formación Estable"
-        ],
-        "suppressedTags": [
-          "Riesgo Mortal"
-        ],
-        "grantedAbilities": [
-          "Shin Kikoho: Juicio del Triclope",
-          "Shin Kikoho Continuo de Impacto Múltiple",
-          "Multi-Formación Estable (80% fuerza por cuerpo)"
-        ],
-        "limitations": [
-          "El Shin Kikoho Continuo exige 50%+ de stamina.",
-          "El drenaje se acumula si se sostiene más de 3 turnos."
-        ],
-        "drawbacks": [
-          "Fatiga visual del tercer ojo si se abusa del seguimiento.",
-          "Canalización ininterrumpida: vulnerable a interrupciones sorpresa."
-        ],
-        "exitCondition": "Voluntaria al replegar su ki, o forzada al bajar del 15% de stamina.",
-        "counterplay": "Interrupción temprana del canalizador antes del segundo disparo (counterplay documentado en ultimateAttacks).",
-        "canonStatus": "apex_custom",
-        "tier": "5-A"
       }
     ],
     "feats": [
@@ -99249,7 +104256,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 19",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "tidar-xeniloum-u19-dbm",
@@ -99770,7 +104803,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 2",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "future-trunks-u12-dbm",
@@ -100676,7 +105735,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cola de Saiyajin",
+        "durability": "Puede ser cortada",
+        "effect": "Fuente de Zenkai y transformación Oozaru."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "vegeta-u13-dbm",
@@ -100963,7 +106053,38 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      },
+      {
+        "name": "Cola de Saiyajin",
+        "durability": "Puede ser cortada",
+        "effect": "Fuente de Zenkai y transformación Oozaru."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 13",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "vegeta-u18-dbm",
@@ -102221,7 +107342,33 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 50,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia energética base de ki. Vulnerable a manipulación temporal y nulción de poder por carecer de defensa espiritual."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Energético",
+        "durability": "Variable según tier",
+        "effect": "Protección base de ki según nivel de poder."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Interuniversal DBM — Universo 19",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos posteriores a su saga",
+        "Super Saiyajin (si no es Saiyajin)",
+        "Técnicas de otras sagas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "xxi-hechicero-dbm-u5",
@@ -103984,11 +109131,11 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "beerus-kak-hakaishin",
-        "name": "Beerus (100% Hakaishin Desatado)",
+        "name": "Beerus (Modo Hakaishin)",
         "stats": "Nivel Multiversal. Poder total para la guerra del U0.",
-        "apexKiMultiplier": 2,
-        "tier": "2-C",
-        "staminaDrain": 2
+        "apexKiMultiplier": 1,
+        "tier": "2-B",
+        "staminaDrain": 0
       }
     ],
     "feats": [
@@ -105067,20 +110214,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Gohan (Heredero del U11) previo a cualquier transformación."
-      },
-      {
-        "id": "gohan-u11-base",
-        "name": "Estado Base del U11",
-        "stats": "Nivel Universal. Gohan canalizando su máximo rendimiento muscular y marcial aprendido con las Tropas del Orgullo, previo al Despertar Bestia/Hakaishin.",
-        "apexKiMultiplier": 2.5,
-        "tier": "3-A",
-        "tierExact": "3-A",
-        "multiplier": "1x",
-        "staminaDrain": 5,
-        "activationCondition": "Liberación total del Ki muscular U11 sin transformarse.",
-        "limitations": "Aún no accede al Ki Divino de Destrucción.",
-        "exitCondition": "Fatiga muscular o transición a Bestia Hakaishin.",
-        "canonStatus": "apex_custom"
       },
       {
         "id": "gohan-u11-beast-hakaishin",
@@ -112030,7 +117163,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 80,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Inmunidad parcial a control mental por dominio del ki maldito. Vulnerable a aniquilación existencial y nulción de habilidades."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Shinjuku Showdown",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas con Jujutsu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "charles-bernard-jjk-culling",
@@ -112206,7 +117364,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 80,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Inmunidad parcial a control mental por dominio del ki maldito. Vulnerable a aniquilación existencial y nulción de habilidades."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Culling Game",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas con Jujutsu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "choso-jjk-shibuya",
@@ -112392,7 +117575,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 80,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Inmunidad parcial a control mental por dominio del ki maldito. Vulnerable a aniquilación existencial y nulción de habilidades."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Incidente de Shibuya",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas con Jujutsu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "dagon-jjk-shibuya",
@@ -112585,7 +117793,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 80,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Inmunidad parcial a control mental por dominio del ki maldito. Vulnerable a aniquilación existencial y nulción de habilidades."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Incidente de Shibuya",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas con Jujutsu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "fumihiko-takaba-jjk-culling",
@@ -112753,7 +117986,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 80,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Inmunidad parcial a control mental por dominio del ki maldito. Vulnerable a aniquilación existencial y nulción de habilidades."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Culling Game / Shinjuku Showdown",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas con Jujutsu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "gojo-satoru-jjk-peak-gs001",
@@ -113650,7 +118908,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 80,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Inmunidad parcial a control mental por dominio del ki maldito. Vulnerable a aniquilación existencial y nulción de habilidades."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Culling Game / Shinjuku Showdown",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas con Jujutsu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "hanami-jjk-shibuya",
@@ -113839,7 +119122,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 80,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Inmunidad parcial a control mental por dominio del ki maldito. Vulnerable a aniquilación existencial y nulción de habilidades."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Evento de Intercambio de Kioto / Shibuya",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas con Jujutsu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "hiromi-higuruma-jjk-culling",
@@ -114009,7 +119317,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 80,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Inmunidad parcial a control mental por dominio del ki maldito. Vulnerable a aniquilación existencial y nulción de habilidades."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Culling Game / Shinjuku Showdown",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas con Jujutsu"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "jogo-jjk-shibuya",
@@ -114212,7 +119545,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Incidente de Shibuya (Octubre 2018)",
       "timelineRestrictions": "Jogo desconoce los eventos del Culling Game ni su propia muerte definitiva o el destino final de Kenjaku y Sukuna más allá de su colaboración en Shibuya.",
@@ -115971,7 +121310,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 25
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Guerra de Shibuya / Año 2018",
       "timelineRestrictions": "Conoce a Sukuna, Gojo, los hechiceros de grado especial, las reglas del Jujutsu y la naturaleza de las vasijas. Desconoce los eventos posteriores (Culling Game, Sukuna completo, Kenjaku total).",
@@ -116088,7 +121433,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Una fuerza de la naturaleza. Incontrolable para su invocador (salvo Sukuna o usuarios excepcionales). Es una bestia de juicio que solo busca destruir a quienes participan en el ritual de doma.",
     "weaknesses": "Ataques de Aniquilación Total (One-Shot). Si un ataque tiene el AP suficiente para desintegrarlo a nivel celular antes de que la rueda gire, muere. Cambios repentinos de elemento inexplorado lo toman por sorpresa.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Adaptación de la Rueda",
+        "partnerTags": [
+          "Megumi Fushiguro",
+          "Ryomen Sukuna",
+          "Diez Sombras"
+        ],
+        "effect": "Cada turno que sobrevive al mismo ataque, Mahoraga gana +10% resistencia a ese tipo de daño (adaptación canónica del General Divino).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -116167,7 +121523,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 20,
       "exhaustionThreshold": 0
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Incidente de Shibuya / Shinjuku Showdown",
       "timelineRestrictions": "Entidad invocada sin conciencia histórica autónoma más allá del juicio del ritual de las Diez Sombras.",
@@ -116579,7 +121941,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Implacable, silenciosa y rota emocionalmente. La muerte de su hermana gemela Mai quemó toda su piedad. Pasó de ser una chica testaruda que quería demostrar su valía a una asesina fría como el hielo, un monstruo puro creado por los pecados de su familia. Protege a sus amigos de Tokio con lealtad absoluta.",
     "weaknesses": "Límites del Rango Físico. No posee proyectiles ni magia. Si el enemigo es intocable (Gojo) o bombardea el mapa entero de un continente con destrucción atómica, ella es desintegrada. Su inmunidad a los dominios solo evita el Hit Seguro, no el daño colateral que destruya el piso bajo ella.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Restricción Celestial",
+        "partnerTags": [
+          "Mai Zenin",
+          "Toji Fushiguro",
+          "Clan Zenin"
+        ],
+        "effect": "Junto a un portador de Restricción Celestial, Maki gana +15% velocidad e ignora penalizadores visuales (Shibuya / Culling Game).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -118672,7 +124045,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un monstruo de odio y sexismo, ciego de arrogancia. Vuelve a la vida puramente impulsado por su rabia y humillación al haber sido asesinado por la espalda (por la madre de Maki). Sigue creyendo que él es el 'verdadero igual de Toji y Gojo' y muere aferrado a su egoísmo narcisista.",
     "weaknesses": "Líneas de carga predecibles; su ataque Mach 3 requiere mucha distancia lineal, permitiendo a combatientes con Pre-Cog o velocidad de reacción equivalente evadir o contraatacar (Como hizo Maki al leer los flujos del aire). Su Dominio no afecta a personas u objetos con Cero Aura Maldita.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Proyección del Clan",
+        "partnerTags": [
+          "Clan Zenin",
+          "Naoya Humano"
+        ],
+        "effect": "Como maldición vengativa, Naoya gana +10% velocidad por turno hasta +30% máximo (Técnica de Proyección canónica).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -118752,7 +124135,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 15,
       "exhaustionThreshold": 25
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Culling Game / Sakurajima Colony / Año 2018",
       "timelineRestrictions": "Desconoce los eventos posteriores al fin de la Colonia Sakurajima y el destino final del mundo de la hechicería tras su exterminio.",
@@ -119675,7 +125064,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 25
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Culling Game / Sendai Colony",
       "timelineRestrictions": "Desconoce los eventos ocurridos en la Batalla de Shinjuku posteriores a su muerte frente a Sukuna.",
@@ -121414,7 +126809,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Navegación de Ki Maldito",
+        "durability": "Permanente",
+        "effect": "Permite percibir y canalizar energía maldita."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Período Heian / Shinjuku Showdown (Jujutsu Kaisen)",
       "timelineRestrictions": "Uraume existe desde el período Heian y reencarnó en la era moderna, por lo que conoce las artes malditas antiguas pero desconoce eventos fuera de su universo.",
@@ -122416,11 +127817,11 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "full-rika-domain",
-        "name": "Rika al 100% + Dominio Amor Mutuo Auténtico",
+        "name": "Yuta Okkotsu (Conexión Total Rika)",
         "stats": "Tier 7-A | Nivel Montaña. Copia infinita de técnicas y Jacob's Ladder.",
-        "apexKiMultiplier": 2,
-        "tier": "7-A",
-        "staminaDrain": 2
+        "apexKiMultiplier": 2.5,
+        "tier": "8-A",
+        "staminaDrain": 15
       },
       {
         "id": "yuta-rika-full-manifest",
@@ -123308,30 +128709,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Doma previo a cualquier transformación."
-      },
-      {
-        "id": "crystalline-child-clones",
-        "name": "Estado Base (Hordas de Clones de Hielo Cristalino)",
-        "stats": "Tier 7-B | Nivel Ciudad. Múltiples cuerpos ejecutando técnicas simultáneamente.",
-        "apexKiMultiplier": 1.2,
-        "staminaDrain": 15,
-        "activationCondition": "Creación de las pequeñas esculturas de hielo vivientes en el campo de batalla.",
-        "grantedTags": [
-          "Multiplicidad de Cuerpos",
-          "Ataques Cruzados Independientes"
-        ],
-        "suppressedTags": [
-          "Control Individual Centralizado"
-        ],
-        "grantedAbilities": [
-          "Crystalline Divine Child: Esculturas pequeñas con sus mismas Técnicas de Sangre ejecutándose de forma autónoma."
-        ],
-        "limitations": "Los clones son frágiles ante impactos concentrados.",
-        "drawbacks": "Drenan su ki base de forma continua.",
-        "exitCondition": "Se derriten al romperse o al exponerse al calor extremo.",
-        "counterplay": "Ataques de área o calor extremo para evaporarlos antes de que acumulen poder.",
-        "canonStatus": "source_backed",
-        "tier": "7-B"
       },
       {
         "id": "bodhisattva-rime",
@@ -125127,7 +130504,37 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 5,
+      "mindControl": 40,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia base del Demon Slayer Corps. Vulnerable a manipulación de materia y aniquilación existencial."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Respiración",
+        "durability": "Técnica de combate",
+        "effect": "Estilo de respiración que potencia las capacidades físicas."
+      },
+      {
+        "name": "Nicho Nichirin",
+        "durability": "Arma especial",
+        "effect": "Espada Nichirin que puede cortar demonios."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Arco del Distrito del Entretenimiento",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "hantengu-kny-sv",
@@ -125232,7 +130639,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un mentiroso patológico con complejo de víctima extrema. Cree sinceramente que no ha hecho nada malo en su vida de miles de asesinatos, convencido de que es un ser 'débil y lastimoso' al que el mundo acosa.",
     "weaknesses": "Si su pequeño cuerpo original es localizado por olores (Tanjiro) y decapitado con un AP lo suficientemente alto (Espada Roja o Marca), muere al instante y Zohakuten se desintegra. Luz Solar.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Emociones Divididas",
+        "partnerTags": [
+          "Muzan Kibutsuji",
+          "Lunas Superiores",
+          "Sekido"
+        ],
+        "effect": "Al recibir daño letal, Hantengu divide una emoción joven que absorbe el golpe una vez por combate (Aldea de los Herreros).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": true,
@@ -128118,7 +133536,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Fiel, callada e inescrutable. Era una asesina humana que tocaba el biwa para aliviar sus impulsos asesinos antes de volverse demonio. Nunca muestra ira ni pánico, ejecutando las órdenes de Muzan como una máquina de precisión.",
     "weaknesses": "Luchadora Cero CQC. Si un oponente logra acercarse a su cuerpo burlando las ilusiones (Como hizo Yushiro usando invisibilidad mágica), es completamente frágil y fácil de decapitar o controlar mentalmente. Inútil si la sacan a terreno abierto (Luz del sol o fuera de su castillo).",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Castillo Infinito",
+        "partnerTags": [
+          "Muzan Kibutsuji",
+          "Castillo Infinito"
+        ],
+        "effect": "Controlando el campo, Nakime reordena el terreno una vez por combate con su Biwa, forzando al rival a reposicionarse.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [
       {
         "partners": [
@@ -131262,34 +136690,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Aki Hayakawa previo a cualquier transformación."
-      },
-      {
-        "id": "aki-gun-devil",
-        "name": "Estado Base (Poseído por el Demonio Pistola / Fusión Final)",
-        "stats": "Nivel Ciudad Pequeña. Balas automáticas de alta cadencia y destrucción masiva. Capacidad balística extendida por kilómetros.",
-        "apexKiMultiplier": 150,
-        "staminaDrain": 6,
-        "activationCondition": "Poseído por el Demonio Pistola tras absorber su sangre. Aki opera en modo piloto automático sobre el subconsciente de una pelea de bolas de nieve.",
-        "grantedTags": [
-          "Poseído Demoníaco (Fusión)",
-          "Metralleta de Fuego Pesado",
-          "Regeneración por Sangre",
-          "Destrucción de Distrito"
-        ],
-        "suppressedTags": [
-          "Espada de la Maldición",
-          "Razonamiento Táctico"
-        ],
-        "grantedAbilities": [
-          "Ráfaga Balística Continua",
-          "Guerra de Bolas de Nieve (Ráfaga de Fuego)"
-        ],
-        "limitations": "Aki pierde el control consciente de su cuerpo. El Demonio Pistola domina sus acciones hasta el colapso del recipiente.",
-        "drawbacks": "El cuerpo de Aki se deteriora por el control demoníaco, perdiendo estabilidad y potencialmente autodestruyéndose.",
-        "exitCondition": "Muerte del cuerpo físico de Aki o destrucción del Demonio Pistola.",
-        "counterplay": "Atacar el cuerpo en sus puntos ciegos (el Demonio Pistola tiene percepción humana básica dentro de Aki); uso de otros demonios (Katana Man) para cortar el control.",
-        "canonStatus": "source_backed",
-        "tier": "7-C"
       }
     ],
     "feats": [
@@ -132439,7 +137839,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 15
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Transformación Demoníaca",
+        "durability": "Variable según forma",
+        "effect": "Híbrido demoníaco con habilidades únicas."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Control / Año 1997",
       "timelineRestrictions": "Desconoce los eventos de la Parte 2 de Chainsaw Man, la existencia de la Guerra o el destino del mundo tras la derrota de Makima.",
@@ -133271,34 +138677,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "Forma Base canónica de Fami (Chainsaw Man — Demonio del Hambre / Kiga) previo a cualquier transformación."
-      },
-      {
-        "id": "fami-base",
-        "name": "Estado Base del Jinete",
-        "stats": "Tier 7-A | Nivel Montaña.",
-        "apexKiMultiplier": 1.25,
-        "staminaDrain": 5,
-        "description": "Activación máxima de su aura como Jinete del Apocalipsis, intensificando su presión y control sobre todos los seres sintientes con hambre en la zona. (Multiplicador x1.25 por durabilidad conceptual y hax).",
-        "activationCondition": "Liberación del aura conceptual del Hambre a través del planeta.",
-        "staminaDrain_per_turn": 5,
-        "grantedTags": [
-          "apocalipsis_emergente",
-          "dominio_de_hambre"
-        ],
-        "suppressedTags": [
-          "estado_pasivo"
-        ],
-        "grantedAbilities": [
-          "Sometimiento Absoluto de Hambrientos",
-          "Invocación del Demonio de la Caída",
-          "Aura de Miedo Hambriento"
-        ],
-        "limitations": "Si es atacada antes de que sus demonios se materialicen, queda expuesta.",
-        "drawbacks": "Aura detectable por usuarios con sentidos cósmicos.",
-        "exitCondition": "Reducción del hambre global o desangramiento demoníaco.",
-        "counterplay": "Eliminar la fuente de hambre cercana o aislarla con sellos dimensionales.",
-        "canonStatus": "source_backed",
-        "tier": "7-A"
       },
       {
         "id": "fami-apex-hunger-warmonger",
@@ -135616,31 +140994,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Power previo a cualquier transformación."
-      },
-      {
-        "id": "power-true",
-        "name": "Estado Base : Demonio de la Sangre Verdadero",
-        "stats": "Nivel Edificio Grande a Ciudad. Manipulación biológica interna de la sangre enemiga, incluyendo humanos, y aumento exponencial de su arsenal hemático.",
-        "apexKiMultiplier": 250,
-        "staminaDrain": 5,
-        "activationCondition": "Liberación completa de la forma demoníaca tras ingerir suficiente sangre o al ser herida de muerte.",
-        "grantedTags": [
-          "Forma Verdadera del Demonio de la Sangre",
-          "Manipulación de Sangre Interna",
-          "Cuatro Brazos"
-        ],
-        "suppressedTags": [],
-        "grantedAbilities": [
-          "Erupción de Sangre Interna",
-          "Regeneración Instantánea",
-          "Arsenal Hemático Ilimitado"
-        ],
-        "limitations": "La transformación dura lo que le queda de sangre o hasta la muerte de su recipiente.",
-        "drawbacks": "Pérdida de toda cordura y razonamiento; combate puramente salvaje.",
-        "exitCondition": "Agotamiento total de sangre, muerte del cuerpo, o derrota del Demonio.",
-        "counterplay": "Usar ataques que evaporen o sequen la sangre disponible en el ambiente antes de la transformación.",
-        "canonStatus": "source_backed",
-        "tier": "7-C"
       }
     ],
     "feats": [
@@ -136509,7 +141862,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Carece de moralidad humana o concepto de dolor empático. Ve a la humanidad y sus emociones (como la admiración del alumno) únicamente como materia prima de alta calidad para construir muñecas tácticas.",
     "weaknesses": "Debilidad fatal a la luz pura y el fuego. El Hax mental absoluto: Denji la derrotó sobrecargando su mente colmena transfiriéndole el 'conocimiento/trauma infinito' de Halloween, quemando el cerebro de todas las muñecas a nivel mundial.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Contrato de Muñecas",
+        "partnerTags": [
+          "Muñecas",
+          "Oscuridad"
+        ],
+        "effect": "Cada aliado caído se convierte en muñeca que otorga +5% AP a Santa Claus (máx +15%), fiel a su contrato de la Parte 1.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -137259,7 +142622,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 90,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 30,
+      "notes": "Condiciones de juramento Nen protegen contra control mental. Vulnerable a manipulación de materia y aniquilación."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Sistema Nen",
+        "durability": "Permanente",
+        "effect": "Técnica de manipulación de energía vital con condiciones de juramento."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Arco de Sucesión / Expedición al Continente Oscuro",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de la saga del Emperador",
+        "Técnicas de otras franquicias"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "biscuit-krueger-hxh-gi",
@@ -140604,25 +145992,17 @@ export const INITIAL_CHARACTERS = [
         "id": "godspeed-kanmuru",
         "name": "Modo Godspeed (Kanmuru Activado)",
         "stats": "Tier 7-C | Nivel Pueblo. Reflejos eléctricos en tiempo cero y velocidad hipersónica.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.5,
         "tier": "8-A",
-        "staminaDrain": 0
-      },
-      {
-        "id": "killua-base",
-        "name": "Killua (Base)",
-        "stats": "Nivel Multi-Bloque. Camiseta azul sobre blanca, cabello blanco en punta, ojos de gato.",
-        "apexKiMultiplier": 1,
-        "tier": "8-A",
-        "staminaDrain": 0
+        "staminaDrain": 8
       },
       {
         "id": "killua-godspeed",
-        "name": "Modo Godspeed (Kanmuru)",
+        "name": "Modo Godspeed (Kanmuru Completo)",
         "stats": "Nivel Ciudad. Pelo erizado brillando en electricidad azul pura, aura relampagueante continua.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 2,
         "tier": "8-A",
-        "staminaDrain": 0
+        "staminaDrain": 15
       }
     ],
     "feats": [
@@ -141874,10 +147254,10 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "emperor-time",
-        "name": "Emperor Time (Ojos Escarlata al 100%)",
+        "name": "Kurapika (Emperor Time)",
         "stats": "Tier 7-C a 7-B | Nivel Pueblo/Ciudad. 100% de maestría en todas las categorías Nen simultáneas, Chain Jail y Judgment Chain.",
         "apexKiMultiplier": 1.5,
-        "staminaDrain": 8,
+        "staminaDrain": 10,
         "activationCondition": "Activación al tornar los ojos completamente escarlata, mediante la condición de restricción: cada segundo consume 1 hora de esperanza de vida.",
         "grantedTags": [
           "Especialista Puro",
@@ -142446,7 +147826,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Fría, tsundere pero observadora implacable. Su lealtad a Chrollo no tiene parangón; si el líder está en riesgo letal, su instinto asesino contra aliados y enemigos se desborda, no dudando en matar incluso a Hisoka o Nobunaga si interfieren con el rescate del jefe.",
     "weaknesses": "Luchadora basada en precisión (Tiers físicos aplastantes como Uvogin o Meruem podrían romper sus hilos a corta distancia sin esfuerzo por pura fuerza bruta). Sus 'Costuras' curan extremidades caídas, pero no resucitan a los muertos; si la aturden antes, es vulnerable.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Hilos de la Araña",
+        "partnerTags": [
+          "Brigada Fantasma",
+          "Chrollo Lucilfer"
+        ],
+        "effect": "Junto a la Brigada, Machi puede suturar a un aliado una vez por combate, restaurando 15% de su resistencia con hilos Nen.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -143211,7 +148601,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 90,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 30,
+      "notes": "Condiciones de juramento Nen protegen contra control mental. Vulnerable a manipulación de materia y aniquilación."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Sistema Nen",
+        "durability": "Permanente",
+        "effect": "Técnica de manipulación de energía vital con condiciones de juramento."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Arco de las Hormigas Quimera",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de la saga del Emperador",
+        "Técnicas de otras franquicias"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "meruem-hxh-911",
@@ -146393,36 +151808,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Silva e Illumi Zoldyck previo a cualquier transformación."
-      },
-      {
-        "id": "silva-illumi-zoldyck-base",
-        "name": "Silva e Illumi Zoldyck (Estado Base / Plena Sinergia)",
-        "stats": "Tier 7-B | Nivel Ciudad. Modo de coordinación letal máxima.",
-        "apexKiMultiplier": 1.3,
-        "staminaDrain": 3,
-        "activationCondition": "Illumi inserta al menos una aguja de manipulación en el objetivo mientras Silva carga su esfera de Plasma.",
-        "grantedTags": [
-          "Sinergía Zoldyck total",
-          "Control mental activo",
-          "Plasma cargado"
-        ],
-        "suppressedTags": [
-          "Cooperación limitada"
-        ],
-        "grantedAbilities": [
-          "Canalización simultánea: Illumi aplica presión psicológica mientras Silva concentra Ren al máximo"
-        ],
-        "limitations": [
-          "Requiere línea de visión de Illumi hacia el objetivo"
-        ],
-        "drawbacks": [
-          "Si Silva es separado de Illumi más de 30 metros, el combo se desmorona",
-          "Las agujas pueden detectarse con Ten reforzado"
-        ],
-        "exitCondition": "Voluntaria o por ruptura de concentración de Illumi",
-        "counterplay": "Usar Ten reforzado para localizar y extraer agujas antes de la descarga de Silva.",
-        "canonStatus": "apex_custom",
-        "tier": "7-B"
       }
     ],
     "feats": [
@@ -149646,6 +155031,22 @@ export const INITIAL_CHARACTERS = [
     },
     "staminaProfile": {
       "maxStamina": 150
+    },
+    "signatureEquipment": [
+      {
+        "name": "Stand",
+        "durability": "Variable según Stand",
+        "effect": "Entidad espiritual con habilidades únicas."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Vento Aureo",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas"
+      ],
+      "crossVerseAwareness": "none"
     }
   },
   {
@@ -151289,31 +156690,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-C Físico",
         "stats": "Forma Base canónica de Johnny Joestar previo a cualquier transformación."
-      },
-      {
-        "id": "johnny-act4",
-        "name": "Estado Base (Poder Máximo: Tusk Act 4 / Rotación Infinita)",
-        "stats": "Nivel Multiversal Bajo / Daño Infinito Dimensional. Desbloquea la rotación infinita de la gravedad subatómica al alcanzar la alineación del Rectángulo Dorado montando a Slow Dancer.",
-        "apexKiMultiplier": 1500,
-        "staminaDrain": 8,
-        "activationCondition": "Requiere cargar la barra de Giro al 100% mediante una carrera a caballo perfecta y alineación áurea del oponente.",
-        "grantedTags": [
-          "Tusk Act 4 (Giro Infinito)",
-          "Apertura de Brechas Dimensionales",
-          "Manipulación de Gravedad Infinita",
-          "Inmunidad a Invulnerabilidad Dimensional"
-        ],
-        "suppressedTags": [],
-        "grantedAbilities": [
-          "Tusk Act 4: El Giro Infinito (Golden Spin)",
-          "Charrlier Nail Shot con Rotación Infinita"
-        ],
-        "limitations": "Solo se mantiene mientras Johnny y Slow Dancer estén alineados en el rectángulo dorado con el objetivo. Si el caballo cae o se rompe la alineación, el ataque se desvanece.",
-        "drawbacks": "Johnny permanece físicamente estático durante el disparo; un ataque de área amplio lo deja totalmente expuesto si falla el tiro.",
-        "exitCondition": "Pérdida de alineación áurea, muerte/incapacitación de Slow Dancer, o desvío del disparo.",
-        "counterplay": "Matar al caballo (Slow Dancer) antes del disparo; repulsión de área; teletransportar al objetivo fuera del rectángulo dorado.",
-        "canonStatus": "source_backed",
-        "tier": "8-C Físico"
       }
     ],
     "feats": [
@@ -154976,7 +160352,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Stand",
+        "durability": "Variable según Stand",
+        "effect": "Entidad espiritual con habilidades únicas."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Vento Aureo / Año 2001",
       "timelineRestrictions": "Risotto conoce el funcionamiento de su Stand Metallica y la estructura de Passione. Desconoce eventos posteriores a Cerdeña y universos ajenos a su continuidad.",
@@ -155395,7 +160777,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Arrogante, egoísta, obsesionado con la 'Realidad' para inspirar su arte. Desprecia a la gente inculta (Especialmente a Josuke) y odia que le den órdenes. Su famosa frase 'Me niego' (Daga Kotowaru) define su orgullo inquebrantable, prefiriendo morir antes que doblegarse a un enemigo poderoso que le ofrezca misericordia condicional.",
     "weaknesses": "Ira Ciega. Si el oponente entra en un estado de rabia irracional total donde su cerebro no registra imágenes visuales (Como Josuke cuando insultaron su cabello), la habilidad inicial visual de Rohan falla y recibe el daño físico directamente. Carece totalmente de HP/Defensa.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Heaven's Door",
+        "partnerTags": [
+          "Josuke Higashikata",
+          "Koichi Hirose",
+          "Morioh"
+        ],
+        "effect": "Al inicio del combate, Rohan lee una página del rival, revelando su debilidad (+10% precisión del equipo).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -155600,7 +160993,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Falta absoluta de empatía. Considera que los recuerdos y las emociones son estúpidos; lo único que perdura y tiene valor es crear un legado mediante el comercio de la fruta equivalente a la vida misma.",
     "weaknesses": "Ataques que no existen en las leyes de este universo (Ej. Burbujas giratorias infinitas de Soft & Wet: Go Beyond, que al tener grosor nulo, no gatillan la Calamidad). Ataques sin intención (Daño ambiental indirecto que no apunte a él).",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Wonder of U",
+        "partnerTags": [
+          "Rokakaka",
+          "Calamidad"
+        ],
+        "effect": "Quien intente perseguir a Tooru sufre flujo de calamidad: -10% precisión enemiga mientras Tooru no ataque directamente.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -156518,7 +161921,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Amnésico sereno que se convierte en un nihilista vengativo e iracundo al recuperar la memoria del trauma causado por su gemelo (Pucci). Solo vive para matar a su hermano antes de desear su propia muerte.",
     "weaknesses": "Heavy Weather afecta sin distinción a aliados y civiles. Personajes literalmente ciegos son completamente inmunes a la técnica del caracol, y personajes con Tiers de destrucción masiva pueden matarlo antes de que las nubes se formen.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Heavy Weather",
+        "partnerTags": [
+          "Jolyne Cujoh",
+          "Anasui"
+        ],
+        "effect": "Junto a Jolyne, Weather puede desplegar Heavy Weather una vez, convirtiendo la luz en caracoles que aturden al rival 1 turno.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -156598,7 +162011,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 15
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Stand",
+        "durability": "Variable según Stand",
+        "effect": "Entidad espiritual con habilidades únicas."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga Stone Ocean / Año 2011",
       "timelineRestrictions": "Desconoce eventos posteriores a 2011 o universos reiniciados por Made in Heaven más allá de su ciclo.",
@@ -157423,10 +162842,10 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "awakening-breath",
-        "name": "Respiración de Liberación al 100%",
+        "name": "Bang (Respiración de Liberación)",
         "stats": "Tier 7-A a 6-C | Nivel Isla. Rompe el caparazón de Garou Monstruo y rivaliza con amenazas Dragón+.",
-        "apexKiMultiplier": 3.5,
-        "staminaDrain": 18,
+        "apexKiMultiplier": 2,
+        "staminaDrain": 12,
         "activationCondition": "Liberar el 100% de la masa muscular dormida mediante respiración profunda; rompe las restricciones autoimpuestas.",
         "grantedTags": [
           "poder_desatado",
@@ -157451,7 +162870,7 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Fatiga extrema o decisión voluntaria; el cuerpo colapsa si se sostiene más de 5 turnos.",
         "counterplay": "Prolongar combate más allá de su umbral de resistencia.",
         "canonStatus": "source_backed",
-        "tier": "7-A"
+        "tier": "8-A"
       }
     ],
     "feats": [
@@ -157848,7 +163267,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 15
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo sobrehumano",
+        "durability": "Variable según tier",
+        "effect": "Fuerza y resistencia sobrehumana."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de la Asociación de Monstruos (Invasión a la Superficie)",
       "timelineRestrictions": "Conoce la estructura de la Asociación de Monstruos, los héroes de Clase S activos en la superficie y sus propias capacidades de división/fusión. Desconoce eventos posteriores al arco de la superficie.",
@@ -158589,32 +164014,6 @@ export const INITIAL_CHARACTERS = [
         ]
       },
       {
-        "id": "garou-monstruo-despertado",
-        "name": "Garou Monstruo Despertado (Pre-Cósmico)",
-        "stats": "Tier 6-A a 5-C | Nivel Continental a Lunar. Puño asesino de dioses perfeccionado.",
-        "apexKiMultiplier": 0.05,
-        "staminaDrain": 5,
-        "canonStatus": "source_backed",
-        "activationCondition": "Activación instintiva del instinto asesino marcial.",
-        "grantedTags": [
-          "Instinto Asesina",
-          "Copia Táctica",
-          "Flujo de Agua"
-        ],
-        "suppressedTags": [
-          "Bendición Cósmica",
-          "Radiación Gamma"
-        ],
-        "grantedAbilities": [
-          "Water Stream Rock Smashing Fist",
-          "Copia Predictiva"
-        ],
-        "limitations": "Sin Radiación Gamma ni acceso al flujo cósmico.",
-        "exitCondition": "Desgaste físico o intervención divina.",
-        "counterplay": "Anulación de instinto asesino; superioridad en fuerza bruta pre-cósmica.",
-        "tier": "4-A"
-      },
-      {
         "id": "cosmic-fear",
         "name": "Modo Miedo Cósmico (Bendición de Dios)",
         "stats": "Tier 4-A | Nivel Multi-Sistema Solar. Radiación cósmica pasiva y Gamma Ray Burst.",
@@ -159308,7 +164707,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 10
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo sobrehumano",
+        "durability": "Variable según tier",
+        "effect": "Fuerza y resistencia sobrehumana."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Arco de la Asociación de Monstruos / Año 799 (Calendario OPM)",
       "timelineRestrictions": "Desconoce eventos posteriores a su enfrentamiento final contra Saitama y la caída de la Asociación de Monstruos.",
@@ -159528,7 +164933,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 20,
       "exhaustionThreshold": 0
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo sobrehumano",
+        "durability": "Variable según tier",
+        "effect": "Fuerza y resistencia sobrehumana."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de la Asociación de Monstruos / Año 71X (Calendario OPM)",
       "timelineRestrictions": "Desconoce eventos ocurridos después de la incursión a la base subterránea de la Asociación de Monstruos y la evolución posterior de héroes o monstruos cósmicos.",
@@ -160196,6 +165607,22 @@ export const INITIAL_CHARACTERS = [
       "maxStamina": 120,
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 25
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo sobrehumano",
+        "durability": "Variable según tier",
+        "effect": "Fuerza y resistencia sobrehumana."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Asociación de Monstruos",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas"
+      ],
+      "crossVerseAwareness": "none"
     }
   },
   {
@@ -161446,7 +166873,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo sobrehumano",
+        "durability": "Variable según tier",
+        "effect": "Fuerza y resistencia sobrehumana."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "One Punch Man / Arco de la Asociación de Monstruos",
       "timelineRestrictions": "Desconoce los eventos posteriores a su ejecución mental por parte de God, así como el resultado final del despertar cósmico de Garou.",
@@ -162632,7 +168065,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un gato doméstico que ganó inteligencia y poder al recibir demasiado 'amor asfixiante' de su dueño, volviéndose un sádico. Detesta que le muestren demasiado afecto. Si alguien lo intimida severamente, pierde toda su bravuconería y huye aterrado.",
     "weaknesses": "Cobardía mental. Su Hax interno es inútil contra enemigos que pueden generar fuego/veneno por dentro (Como Drive Knight). Físicamente no es tan fuerte como Gouketsu o Fuhrer Ugly en un choque de fuerza directa.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Asociación de Monstruos",
+        "partnerTags": [
+          "Asociación de Monstruos",
+          "Orochi"
+        ],
+        "effect": "En territorio de la Asociación, Nyan gana +15% evasión por su tamaño felino y conductos (vs Drive Knight).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -162712,7 +168155,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 15
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo sobrehumano",
+        "durability": "Variable según tier",
+        "effect": "Fuerza y resistencia sobrehumana."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Asociación de Monstruos / Año 210X",
       "timelineRestrictions": "Desconoce eventos posteriores a su enfrentamiento contra Drive Knight.",
@@ -165694,11 +171143,11 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "serious-telekinesis",
-        "name": "Psicoquinesis Seria al 100%",
+        "name": "Tatsumaki (Psicoquinesis Seria)",
         "stats": "Tier High 6-A | Nivel Multicontinental. Retorcimiento de la base de monstruos y barrera global.",
-        "apexKiMultiplier": 2,
-        "tier": "High 6-A a 5-C",
-        "staminaDrain": 2
+        "apexKiMultiplier": 5,
+        "tier": "7-A",
+        "staminaDrain": 15
       }
     ],
     "feats": [
@@ -166485,33 +171934,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "High 6-A",
         "stats": "Forma Base canónica de All For One previo a cualquier transformación."
-      },
-      {
-        "id": "base-anciano",
-        "name": "Estado Base (Anciano en Prisión / Quirks Suprimidos)",
-        "stats": "Tier 7-A — cuerpo deteriorado con Quirk All For One suprimido por esposas especiales",
-        "apexKiMultiplier": 0.4,
-        "staminaDrain": 3,
-        "activationCondition": "Forzado por las esposas de Quirks suprimidos en Tartarus",
-        "canonStatus": "source_backed",
-        "grantedTags": [
-          "Imprisoned",
-          "Quirk Suppressed"
-        ],
-        "suppressedTags": [
-          "Full Arsenal",
-          "Peak Power"
-        ],
-        "grantedAbilities": [],
-        "limitations": [
-          "Sin acceso a Quirks ofensivos o defensivos",
-          "Cuerpo anciano con fuerza humana básica"
-        ],
-        "drawbacks": [
-          "Fragilidad física extrema"
-        ],
-        "exitCondition": "Liberación de las esposas o transferencia de consciencia",
-        "tier": "High 6-A"
       },
       {
         "id": "base-peak-armor",
@@ -167429,7 +172851,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 40,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 20,
+      "notes": "Quirk base protege contra ciertos hax. Vulnerable a aniquilación existencial y manipulación de materia."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Quirk",
+        "durability": "Permanente con límites",
+        "effect": "Habilidad especial heredada o adquirida."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Guerra de Liberación Paranormal / Danza de Dabi",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "dabi-mha",
@@ -169506,7 +174953,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 40,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 20,
+      "notes": "Quirk base protege contra ciertos hax. Vulnerable a aniquilación existencial y manipulación de materia."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Quirk",
+        "durability": "Permanente con límites",
+        "effect": "Habilidad especial heredada o adquirida."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Guerra de Liberación Paranormal",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "hawks-mha",
@@ -170241,59 +175713,6 @@ export const INITIAL_CHARACTERS = [
         "stats": "Forma Base canónica de Izuku Midoriya (Deku) previo a cualquier transformación."
       },
       {
-        "id": "full-cowl-45",
-        "name": "Full Cowl 45% (Estado Base de Combate)",
-        "stats": "Tier 7-A a High 7-A | Nivel Montaña. Movilidad aérea ágil y Air Force.",
-        "apexKiMultiplier": 1.2,
-        "staminaDrain": 5,
-        "canonStatus": "source_backed",
-        "activationCondition": "Distribución del OFA por todo el cuerpo.",
-        "grantedTags": [
-          "Full Cowl",
-          "Air Force",
-          "Smokescreen"
-        ],
-        "suppressedTags": [
-          "Danger Sense Overdrive",
-          "Gearshift"
-        ],
-        "grantedAbilities": [
-          "Detroit Smash",
-          "Air Force Bullets",
-          "Blackwhip básico"
-        ],
-        "limitations": "Sin Gearshift ni Fa Jin; potencia media.",
-        "exitCondition": "Desgaste articular o decisión táctica.",
-        "counterplay": "Ataques que rompan la inercia antes del 100%.",
-        "tier": "High 6-A a 5-C"
-      },
-      {
-        "id": "full-cowl-100",
-        "name": "One For All 100% (Modo Prime)",
-        "stats": "Tier 6-A | Nivel Continental. Ondas de choque colosales y velocidad supersónica masiva.",
-        "apexKiMultiplier": 1.5,
-        "staminaDrain": 15,
-        "canonStatus": "source_backed",
-        "activationCondition": "Distribución total del OFA al 100% con carga emocional.",
-        "grantedTags": [
-          "OFA 100%",
-          "Fa Jin",
-          "Blackwhip Avanzado"
-        ],
-        "suppressedTags": [
-          "Full Cowl limitado"
-        ],
-        "grantedAbilities": [
-          "United States of Smash",
-          "Fa Jin Smash",
-          "Gearshift parcial"
-        ],
-        "limitations": "Rompe huesos a cada golpe.",
-        "exitCondition": "Colapso óseo o decisión de salida.",
-        "counterplay": "Evasión de alto nivel; ataques que destruyan las brasas antes de la concentración.",
-        "tier": "High 6-A a 5-C"
-      },
-      {
         "id": "gearshift-overdrive",
         "name": "Gearshift Overdrive 120% (Fa Jin + Quirk Master)",
         "stats": "Tier High 6-A | Nivel Multicontinental. Ignora la inercia y altera el clima global.",
@@ -170322,6 +175741,32 @@ export const INITIAL_CHARACTERS = [
           "Pérdida permanente del Quirk si se fuerza"
         ],
         "tier": "High 6-A a 5-C"
+      },
+      {
+        "id": "full-cowl-100",
+        "name": "Izuku Midoriya (One For All Prime)",
+        "stats": "Tier 6-A | Nivel Continental. Ondas de choque colosales y velocidad supersónica masiva.",
+        "apexKiMultiplier": 5,
+        "staminaDrain": 20,
+        "canonStatus": "source_backed",
+        "activationCondition": "Distribución total del OFA al 100% con carga emocional.",
+        "grantedTags": [
+          "OFA 100%",
+          "Fa Jin",
+          "Blackwhip Avanzado"
+        ],
+        "suppressedTags": [
+          "Full Cowl limitado"
+        ],
+        "grantedAbilities": [
+          "United States of Smash",
+          "Fa Jin Smash",
+          "Gearshift parcial"
+        ],
+        "limitations": "Rompe huesos a cada golpe.",
+        "exitCondition": "Colapso óseo o decisión de salida.",
+        "counterplay": "Evasión de alto nivel; ataques que destruyan las brasas antes de la concentración.",
+        "tier": "8-A"
       }
     ],
     "feats": [
@@ -172108,7 +177553,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Feminista Alfa y Tomboy agresiva. Ama el combate y odia el trabajo en equipo organizado, considerando que los débiles se agrupan. Dice lo que piensa sin filtros y vive sin arrepentimientos. Solo retrocede si su instinto animal le 'grita' muerte inminente (y aún así, sonríe).",
     "weaknesses": "Excesivamente agresiva. Carece de ataques a distancia (Cero Proyectiles). Si un enemigo volador la supera en espacio vertical, ella debe impulsarse en los muros. Sus heridas no se curan mágicamente; el daño orgánico la merma aunque lo ignore temporalmente.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Heroína Conejo",
+        "partnerTags": [
+          "Pro Heroes",
+          "Hawks",
+          "Endeavor"
+        ],
+        "effect": "Si un aliado cae, Mirko entra en furia: +15% AP pero -5% defensa (Guerra de Liberación Paranormal).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -172546,7 +178002,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un hedonista de la carnicería. No sigue ninguna ideología compleja, no le importa Stain ni All For One; solo quiere sangre, matar, destruir y sentir la adrenalina de aplastar al más débil. Sumamente arrogante y despectivo.",
     "weaknesses": "Carece de Inteligencia Táctica; es un objetivo fácil para Hax de parálisis o ataques internos. Daño Penetrante Extremo (Espadas moleculares, láseres cortantes) rebana sus músculos. Vibraciones de alta frecuencia (Que ignoren la protección física y apunten al cerebro o huesos internos) lo inutilizan rápidamente (Como demostró Deku usando Smokescreen y vibraciones en el segundo encuentro).",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Liga de Villanos",
+        "partnerTags": [
+          "Liga de Villanos",
+          "Shigaraki"
+        ],
+        "effect": "Contra héroes jóvenes, Muscular gana +10% AP por su sadismo canónico del Campamento del Bosque.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -172627,7 +178093,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 15
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Quirk",
+        "durability": "Permanente con límites",
+        "effect": "Habilidad especial heredada o adquirida."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Saga de Campamento de Entrenamiento / Fugas de Tartarus (Año 220 de la era actual de MHA)",
       "timelineRestrictions": "Desconoce los eventos finales de la guerra de liberación masiva más allá de su propia fuga y participación en Tartarus.",
@@ -172828,7 +178300,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Quirk",
+        "durability": "Permanente con límites",
+        "effect": "Habilidad especial heredada o adquirida."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Guerra de Liberación Paranormal (Año 220 de la era actual de MHA)",
       "timelineRestrictions": "Desconoce los eventos posteriores al clímax de la guerra contra Shigaraki y All For One.",
@@ -173057,7 +178535,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 6,
       "exhaustionThreshold": 25
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Quirk",
+        "durability": "Permanente con límites",
+        "effect": "Habilidad especial heredada o adquirida."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Heroes: Rising / Era Actual de Héroes",
       "timelineRestrictions": "Desconoce eventos posteriores al colapso de la sociedad de héroes o los eventos finales de la guerra de liberación.",
@@ -173307,7 +178791,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 8,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Quirk",
+        "durability": "Permanente con límites",
+        "effect": "Habilidad especial heredada o adquirida."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Arco de Shie Hassaikai",
       "timelineRestrictions": "Desconoce eventos posteriores a su derrota y encarcelamiento en Tartarus.",
@@ -173662,11 +179152,11 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "redestro-100",
-        "name": "Stress Output: 100% (Burden)",
+        "name": "Re-Destro (Stress Output / Burden)",
         "stats": "Pierde cabello y racionalidad, se vuelve una mole negra. AP escala a Montaña, velocidad aumenta en embestida.",
-        "apexKiMultiplier": 2,
-        "tier": "7-B",
-        "staminaDrain": 2
+        "apexKiMultiplier": 2.5,
+        "tier": "8-A",
+        "staminaDrain": 15
       }
     ],
     "feats": [
@@ -173801,6 +179291,22 @@ export const INITIAL_CHARACTERS = [
       "maxStamina": 140,
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 25
+    },
+    "signatureEquipment": [
+      {
+        "name": "Quirk",
+        "durability": "Permanente con límites",
+        "effect": "Habilidad especial heredada o adquirida."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Ejército de Liberación (MLA)",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas"
+      ],
+      "crossVerseAwareness": "none"
     }
   },
   {
@@ -176861,37 +182367,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-B",
         "stats": "Forma Base canónica de Doppo Orochi previo a cualquier transformación."
-      },
-      {
-        "id": "base_full_out",
-        "name": "Estado Base (Máximo Esfuerzo Continuo)",
-        "stats": "Tier 7-B (High-End) | APEX-Ki ~875 (x1.25)",
-        "apexKiMultiplier": 1.25,
-        "staminaDrain": 5,
-        "activationCondition": "Enfrentamiento contra rivales que percibe como dignos (Yujiro, Baki, Pickle, Musashi) o cuando debe proteger a sus alumnos.",
-        "grantedTags": [
-          "musculatura_al_limite",
-          "sanchin_perfeccionado",
-          "onda_choque_controlada"
-        ],
-        "suppressedTags": [
-          "autoconservacion"
-        ],
-        "grantedAbilities": [
-          "Palma de Hierro Explosiva (potenciada)",
-          "Avalancha de Cien Golpes (Kata oculto Sadan)"
-        ],
-        "limitations": [
-          "El cuerpo humano tiene un límite finito de estrés mecánico; este estado acelera el daño tisular."
-        ],
-        "drawbacks": [
-          "Drenaje constante de 5 stamina/turno.",
-          "Después de 10 turnos continuos, riesgo de rotura fibrilar y desmayo."
-        ],
-        "exitCondition": "Derrota del rival, orden de su Sensei (no aplica, es el sensei), o reconocimiento de superioridad técnica absoluta.",
-        "counterplay": "Forzar el combate prolongado para activar el daño tisular acumulado; ataques a puntos ciegos anatómicos.",
-        "canonStatus": "apex_custom",
-        "tier": "7-B"
       }
     ],
     "feats": [
@@ -177135,7 +182610,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un hombre obsesionado con la 'victoria' a cualquier costo porque teme admitir que sus artes marciales no son las mejores. Detrás de sus trucos y crueldad, sufre por no haber experimentado una derrota aplastante que le enseñe humildad.",
     "weaknesses": "Luchadores de instinto asesino ciego o que evitan fijar la vista (Para la hipnosis). Cuando Retsu y Doppo desmantelan sus trucos mediante fuerza pura, su mente se quiebra y sufre una regresión infantil incurable.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Condenado a Muerte",
+        "partnerTags": [
+          "Corredor de la Muerte",
+          "Doyle"
+        ],
+        "effect": "Junto a otro condenado, Dorian gana +10% imprevisibilidad con tácticas sucias (cable y encendedor).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -177341,7 +182826,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un sociópata irredento que descubre el 'Respeto y la Derrota'. Retsu Kaioh y Katsumi Orochi lo rompen a nivel psicológico mostrándole compasión extrema en lugar de asesinarlo, llevándolo a llorar de gratitud y admitir su derrota protegiéndolos después.",
     "weaknesses": "Luchador enteramente predecible si el oponente conoce su secreto o tiene vista de rayos X. Las cuchillas en sus extremidades pueden romperse con impactos como el Karate superior de Doppo u armas fuertes. Si es aturdido desde lejos (Ej. Armas de fuego reales de largo alcance o Hax Psíquicos), Doyle es un hombre común.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Asesino Adaptativo",
+        "partnerTags": [
+          "Corredor de la Muerte",
+          "Dorian"
+        ],
+        "effect": "Tras recibir un corte, Doyle adapta su estilo (+10% evasión) por su experiencia militar canónica.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -179805,37 +185300,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Musashi Miyamoto (Reencarnado) previo a cualquier transformación."
-      },
-      {
-        "id": "base_no_sword",
-        "name": "Estado Base (Vacío Manos / Corte Invisible)",
-        "stats": "Tier 7-B | APEX-Ki ~1085 (x1.10)",
-        "apexKiMultiplier": 1.1,
-        "staminaDrain": 6,
-        "activationCondition": "Desarmado o enfrentando rivales a los que desea probar su supremacía absoluta sin armas.",
-        "grantedTags": [
-          "corte_invisible",
-          "ilusion_tactica_letal",
-          "ki_invisible_blade"
-        ],
-        "suppressedTags": [
-          "rango_katana"
-        ],
-        "grantedAbilities": [
-          "Corte sin Espada (Imaginación Activa)",
-          "Corte Invisible sin Espada (Ultimate)"
-        ],
-        "limitations": [
-          "Requiere que el rival sea capaz de percibir el daño 'imaginario' (inteligencia y voluntad)."
-        ],
-        "drawbacks": [
-          "Si el rival posee mente absolutamente impermeable a ilusiones o carece de voluntad creíble (máquinas, bestias sin mente), el efecto se anula.",
-          "Drenaje de 6 stamina/turno por concentración mental."
-        ],
-        "exitCondition": "Recuperación del arma, derrota del rival, o reconocimiento de que el rival es inmune a sus tácticas mentales.",
-        "counterplay": "Ser un ente sin mente comparable (máquinas, bestias con intelecto animal), fuerza de voluntad inquebrantable o ceguera al ki.",
-        "canonStatus": "apex_custom",
-        "tier": "7-B"
       }
     ],
     "feats": [
@@ -181223,7 +186687,32 @@ export const INITIAL_CHARACTERS = [
         "Fue una gran pelea. Entrena duro para la próxima."
       ]
     },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 20,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0,
+      "notes": "Resistencia física de nivel humano mejorado. Vulnerable a hax sobrenaturales."
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Entrenado",
+        "durability": "Humano de élite",
+        "effect": "Cuerpo humano refinado por décadas de entrenamiento."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Torneo Máximo / Death Row Convicts",
+      "timelineRestrictions": "Limitado al rango del personaje según su saga.",
+      "forbiddenConcepts": [
+        "Eventos de otras franquicias",
+        "Técnicas no relacionadas"
+      ],
+      "crossVerseAwareness": "none"
+    }
   },
   {
     "id": "shinogi-kureha-baki-mt",
@@ -182631,7 +188120,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "weaknesses": "Sobrecalentamiento del sistema nervioso central: Si esquiva y copia durante minutos continuos ataques de escala cósmica, sus ojos sangran y pierde la vista.",
     "avatar": "https://image.pollinations.ai/prompt/Adam%20from%20Record%20of%20Ragnarok,%20blonde%20hair,%20divine%20eyes%20glowing,%20knuckle%20duster,%20determined%20fatherly%20look,%20epic%20anime%20masterpiece?width=512&height=512&nologo=true",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Padre de la Humanidad",
+        "partnerTags": [
+          "Humanidad",
+          "Brunhilde",
+          "Valkyria"
+        ],
+        "effect": "Frente a un dios, Adam copia la técnica rival con los Ojos del Señor (+15% contraataque en el primer intercambio, R2 vs Zeus).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -188812,7 +194312,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un alma pura corrompida por absorber la oscuridad humana y envidiar la iluminación de Buda. Actúa como un niño adolorido y resentido hasta que logra la redención pacífica.",
     "weaknesses": "Luchador de cristal. Físicamente frágil frente a daños contundentes. Su ira lo hace completamente predecible. Su cuerpo alberga la semilla de Hajun, destruyéndolo si este emerge.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Miseria Acumulada",
+        "partnerTags": [
+          "Ragnarok",
+          "Buda",
+          "Hajun"
+        ],
+        "effect": "Cada golpe recibido carga miseria: +5% AP acumulable hasta +20% antes de dividirse (R6 vs Buda).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [
       {
         "partners": [
@@ -191131,7 +196642,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Marcado por la culpa católica, el martirio y la dualidad abogado/justiciero. Impulso autodestructivo; busca castigarse asumiendo el dolor de la ciudad entera. Odia asesinar pero rompe huesos sin dudar. Cínico, solitario, pero apasionado por la verdad.",
     "weaknesses": "Vulnerabilidad Sónica Extrema. Un ruido hiper-fuerte a corta distancia (C4 en el oído, campanas explosivas, ráfagas ultrasónicas como las de Gang Orca o Black Canary) fríe su cerebro, aturdiéndolo de dolor y anulando su radar dejándolo peor que un ciego normal. No tiene AP de destrucción a nivel Montaña/Cosmico.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Defensor de Hell's Kitchen",
+        "partnerTags": [
+          "Elektra",
+          "Defenders"
+        ],
+        "effect": "En terreno urbano nocturno, Daredevil gana +15% percepción y anula penalizadores de oscuridad con su sentido radar.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -193225,7 +198746,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Johnny Blaze carga la maldición y busca justicia/venganza en un mundo sucio. Cuando está al mando, retiene poder para no matar inocentes accidentalmente. Zarathos es implacable y bíblico.",
     "weaknesses": "Magia pura (Especialmente Divina, angelical, luz del cielo), espadas forjadas en el cielo. La Mirada de Penitencia a veces falla si el oponente no tiene alma, carece totalmente de empatía orgánica/es sádico incomprensible (Ej: Thanos, Punisher o Deadpool en ciertas historias inconsistentes) o es ciego.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Espíritu de Venganza",
+        "partnerTags": [
+          "Hijos de la Medianoche",
+          "Johnny Blaze"
+        ],
+        "effect": "Contra enemigos con culpa, la Mirada de Penitencia ignora 10% de su defensa una vez por combate.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -197219,31 +202750,6 @@ export const INITIAL_CHARACTERS = [
         "stats": "Forma Base canónica de Silver Surfer (Norrin Radd) previo a cualquier transformación."
       },
       {
-        "id": "base-freed",
-        "name": "Estado Base / Sin Vínculo de Amo",
-        "stats": "Tier 2-C | MFTL++ | Poder cósmico propio sin supervisión",
-        "apexKiMultiplier": 1.25,
-        "staminaDrain": 5,
-        "activationCondition": "Liberación de Galactus (saga clásica de Stan Lee); el Surfer retiene el poder pero ya no como agente",
-        "grantedTags": [
-          "Poder Cósmico Independiente",
-          "Sin Supervisión"
-        ],
-        "suppressedTags": [
-          "Heraldo Activo",
-          "Restricción por Designios de Galactus"
-        ],
-        "grantedAbilities": [
-          "Poder Cósmico completo sin límite de orden superior"
-        ],
-        "limitations": "Sin recarga directa desde Galactus; depende de absorción ambiental.",
-        "drawbacks": "Sin respaldo del amo contra amenazas Multiversales de primer nivel.",
-        "exitCondition": "Voluntaria o por reabsorción forzada del Poder Cósmico.",
-        "counterplay": "Entidades de Tier 2-B+ que superen su poder independiente.",
-        "canonStatus": "source_backed",
-        "tier": "2-C"
-      },
-      {
         "id": "herald-prime",
         "name": "Heraldo Prime (Poder al Máximo por Galactus)",
         "stats": "Tier 2-C (Upper) | MFTL++ reactivado",
@@ -200744,7 +206250,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un conquistador y rey nacido en cautiverio. Orgulloso, regio, pero pragmático. Desprecia la debilidad mental. Considera que el mundo solo responde a la disciplina de la fuerza y que Batman es el único obstáculo legítimo a su reinado. Adora los ositos de peluche (Osito) como ancla emocional secreta de su infancia robada.",
     "weaknesses": "Tubos de Venom. Si el rival posee alta precisión o velocidad, cortar el flujo de los cables en su cuello o guantelete revierte su fuerza e induce a un síndrome de abstinencia tóxica y locura dolorosa que merma su capacidad total. Es puramente terrestre/melé.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Rompe-Murciélagos",
+        "partnerTags": [
+          "Liga de las Sombras",
+          "Venom"
+        ],
+        "effect": "Con Venom activo, Bane gana +20% fuerza; si Batman está en el campo rival, +10% moral propia (Knightfall).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -200973,34 +206489,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "9-A Físico",
         "stats": "Forma Base canónica de Batman (Bruce Wayne) previo a cualquier transformación."
-      },
-      {
-        "id": "batman-batsuit",
-        "name": "Estado Base (Batsuit Táctico / Kevlar Reforzado)",
-        "apexKiMultiplier": 1.2,
-        "staminaDrain": 1,
-        "stats": "Nivel Edificio Pequeño con gadgets y armadura balística. Diseño de protección máximo sin sacrificar movilidad.",
-        "activationCondition": "Equipar el Batsuit estándar reforzado con Kevlar y servomotores.",
-        "grantedTags": [
-          "Protección Balística",
-          "Sigilo",
-          "Batsuit Reforzado"
-        ],
-        "suppressedTags": [
-          "Vuelo",
-          "Resistencia Cósmica"
-        ],
-        "grantedAbilities": [
-          "Batarangs explosivos",
-          "Capa de planeo",
-          "Ganchos"
-        ],
-        "limitations": "Limitado a resistencia balística y física humana aumentada.",
-        "drawbacks": "Aún vulnerable a fuerza sobrenatural (Clase 100K+).",
-        "exitCondition": "Voluntaria (desequipar).",
-        "counterplay": "Ataques de fuerza bruta que aplasten la armadura.",
-        "canonStatus": "source_backed",
-        "tier": "9-A Físico"
       },
       {
         "id": "batman-hellbat",
@@ -201320,7 +206808,18 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Gobernante Absoluto y Anti-Héroe. Cree que la paz solo se logra a través del orden severo y la eliminación del mal. Ama a su país (Kahndaq) y a su fallecida esposa Isis por encima de todo. No tolerará faltas de respeto y protegerá a los inocentes mediante la aniquilación de los culpables.",
     "weaknesses": "La Palabra Mágica. Si es engañado mágicamente o mudo forzosamente (y dice SHAZAM) revierte a su forma de Teth-Adam, un humano que se hace polvo por su edad milenaria en segundos si no vuelve a transformarse. Tiers cósmicos muy superiores en magia (Doctor Fate en plenitud) pueden contenerlo.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Campeón de Kahndaq",
+        "partnerTags": [
+          "Kahndaq",
+          "JSA",
+          "Shazam"
+        ],
+        "effect": "Defendiendo Kahndaq, Black Adam gana +15% durabilidad por su juramento protector canónico.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -202794,7 +208293,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "La tiranía personificada; no busca la simple destrucción, sino el control absoluto y la sumisión de toda vida consciente.",
     "weaknesses": "La radiación del elemento Radión (tóxico para los Nuevos Dioses) y frecuencias de canto armonioso de pureza absoluta (como el canto de Superman en Final Crisis).",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Avatar de Apokolips",
+        "partnerTags": [
+          "Apokolips",
+          "Desaad"
+        ],
+        "effect": "Con un general de Apokolips en campo, Darkseid impone Efecto Omega: -10% evasión enemiga (rayos Omega).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -204181,7 +209690,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Caótico, violento y sádico, pero obligado a servir al 'Bien' por las ataduras de Merlín (O por los códigos de Jason). Habla constantemente en rimas macabras. Odia a Jason Blood pero a la vez existe en una simbiosis obligada. Disfruta asar enemigos en la parrilla del averno.",
     "weaknesses": "Debilidad Magia Sagrada y Hierro/Santo. Armas imbuidas en bendiciones celestiales, magia de luz de Tiers altos (Dr. Fate, Espectro) lo hiere severamente. Si las cuerdas vocales son destruidas, Etrigan no puede rimar y su poder hechicero cae un 90%.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Demonio de Camelot",
+        "partnerTags": [
+          "Jason Blood",
+          "Merlín"
+        ],
+        "effect": "Al recitar su rima de transformación, Etrigan entra con +10% AP y +10% defensa el primer turno.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [
       {
         "partners": [
@@ -204741,7 +210260,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Ególatra, supremacista y sádico. Cree que los gorilas son el pináculo de la evolución y los humanos (junto con Flash) solo plagas que deben ser subyugadas y luego devoradas (es caníbal). Su odio a Flash es legendario.",
     "weaknesses": "Personajes con escudos psíquicos inquebrantables (Casco de Magneto, Batman Prep-Time, Inmunidades telepáticas de Deadpool/Venom). En un combate puramente físico sin magia, contra Tiers 4+ (Superman Berserk), su físico Edificio/Ciudad es destrozado fácilmente.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Mente de Gorilla City",
+        "partnerTags": [
+          "Gorilla City",
+          "Flash"
+        ],
+        "effect": "Contra velocistas, Grodd despliega un campo telepático que reduce 10% su velocidad el primer turno.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -205013,37 +210542,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de Green Lantern (Hal Jordan) previo a cualquier transformación."
-      },
-      {
-        "id": "green-lantern-construct-overdrive",
-        "name": "Estado Base (Voluntad al Límite / Constructos Reforzados)",
-        "apexKiMultiplier": 1.4,
-        "staminaDrain": 0,
-        "stats": "Forzando la voluntad al máximo, Hal logra construcciones más densas y mejor mantenidas. No es transformación: es intensificación del anillo base.",
-        "activationCondition": "Voluntad extrema sostenida, idealmente durante una crisis que active la respuesta de piloto de Hal.",
-        "grantedTags": [
-          "Dureza de constructos elevada",
-          "Mayor consistencia estructural",
-          "Refuerzo del campo de fuerza personal"
-        ],
-        "suppressedTags": [
-          "Fatiga emocional reducida pero presente"
-        ],
-        "grantedAbilities": [
-          "Construcciones más detalladas (aviones, criaturas, cadenas)",
-          "Proyectiles de mayor densidad capaces de perforar barreras más resistentes"
-        ],
-        "limitations": [
-          "Consumo de carga del anillo un 30% más rápido",
-          "Si la voluntad flaquea, los constructos pueden desvanecerse"
-        ],
-        "drawbacks": [
-          "Estrés acumulado reduce la concentración"
-        ],
-        "exitCondition": "Pérdida de concentración, agotamiento del anillo, o resolución de la crisis.",
-        "counterplay": "Ataques psicológicos, kryptonita moral, fatiga de combate prolongada.",
-        "canonStatus": "apex_custom",
-        "tier": "2-C"
       },
       {
         "id": "green-lantern-emerald-armor",
@@ -207602,7 +213100,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "El Psicópata Obsesivo Definitivo. Su nivel de odio irracional y amor enfermizo por Barry Allen lo define todo; es el 'Hater' primordial. Actúa de formas increíblemente mezquinas e innecesarias (como empujar al rival cuando era niño) solo por rencor puro. Sumamente arrogante.",
     "weaknesses": "Hubris y Arrogancia. Muchas veces pierde ventajas decisivas porque prefiere torturar mentalmente a sus oponentes durante siglos en vez de asestar un golpe letal, permitiendo que Héroes Tácticos elaboren trampas mágicas o científicas absolutas para confinar su estática de velocidad. Anular su velocidad en un instante detiene todo su poder.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Fuerza de Velocidad Negativa",
+        "partnerTags": [
+          "Flash Reverso",
+          "Siglo XXV"
+        ],
+        "effect": "Frente a un Flash, Thawne gana +15% velocidad por paradoja temporal.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -208983,7 +214491,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Complejo de Dios supremo, Imperialista. No posee empatía, duda, dolor ni pena. Para Starro, todas las mentes independientes son ineficientes y sufren en el caos; asimilarlas bajo su control absoluto es otorgarles paz y orden. Considera la libertad de los demás un error cósmico.",
     "weaknesses": "Frío Extremo y Fuego Mágico. Al ser un equinodermo alienígena, Tiers con Cero Absoluto (Captain Cold, Iceman) detienen instantáneamente la transmisión psíquica de sus esporas. Cal (Química Pura de Agua y Sal) y debilidades ambientales terrenales menores queman su piel blanda. Si su ojo central es atravesado, pierde conexión.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Conquistador Estelar",
+        "partnerTags": [
+          "Liga de la Justicia",
+          "Esporas"
+        ],
+        "effect": "Al inicio, Starro adhiere una espora a un rival: si no se purifica en 2 turnos, ese rival pierde 10% de voluntad.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -209065,7 +214583,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 20,
       "exhaustionThreshold": 10
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Atributos Metahumanos",
+        "durability": "Variable según fuente de poder",
+        "effect": "Resistencia y fuerza sobrehumanas."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "DC Rebirth / Clásico",
       "timelineRestrictions": "Conoce los métodos de conquista estelar universales, desconoce eventos multiversales ajenos a su red psiónica.",
@@ -211120,17 +216644,17 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "max_muscular_output",
-        "name": "Estado Base (Sobrecarga Muscular Unun 100%)",
+        "name": "Allen the Alien (Post-Entrenamiento)",
         "stats": "Tier High 5-B pico | Toda la fibra muscular Unun contraída y potenciadores biotecnológicos al máximo",
-        "apexKiMultiplier": 1.35,
-        "staminaDrain": 8,
+        "apexKiMultiplier": 1.5,
+        "staminaDrain": 10,
         "activationCondition": "Sobrecarga voluntaria del sistema biotecnológico Unun con drenado sostenido de reservas metabólicas.",
         "limitations": "Desgaste muscular severo; cada turno sostenido reduce la efectividad de sus músculos.",
         "drawbacks": "Fatiga extrema tras 4-5 turnos; posible fallo cardíaco si se mantiene más allá del límite.",
         "exitCondition": "Voluntad del piloto o colapso físico automático.",
         "counterplay": "Forzar extensión temporal del combate para que colapse por agotamiento.",
         "canonStatus": "apex_custom",
-        "tier": "High 5-B"
+        "tier": "7-B"
       }
     ],
     "feats": [
@@ -211427,20 +216951,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de Angstrom Levy previo a cualquier transformación."
-      },
-      {
-        "id": "mass_fusion",
-        "name": "Estado Base (Fusión Multiversal Masiva)",
-        "stats": "Tier 2-C pico | Acceso simultáneo al arsenal combinado de miles de variantes",
-        "apexKiMultiplier": 1.45,
-        "staminaDrain": 12,
-        "activationCondition": "Sincronización voluntaria de incontables identidades absorbidas en una sola mente operativa.",
-        "limitations": "Sobrecarga cognitiva severa; cada turno suma estrés mental.",
-        "drawbacks": "Pérdida progresiva de coordinación; eventual fragmentación de identidad.",
-        "exitCondition": "Colapso mental o desactivación voluntaria para preservar cordura.",
-        "counterplay": "Empujar la fusión hasta el punto de saturación y forzar la fragmentación.",
-        "canonStatus": "apex_custom",
-        "tier": "2-C"
       }
     ],
     "feats": [
@@ -211718,20 +217228,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-A",
         "stats": "Forma Base canónica de Anissa previo a cualquier transformación."
-      },
-      {
-        "id": "combat_rage",
-        "name": "Estado Base (Furia Imperial Desatada)",
-        "stats": "Tier 5-A pico | Adrenalina y agresividad Viltrumita al máximo ante una amenaza existencial",
-        "apexKiMultiplier": 1.15,
-        "staminaDrain": 6,
-        "activationCondition": "Activación emocional al sentir que el imperio u honor Viltrumita están amenazados.",
-        "limitations": "Reduce percepción táctica, aumenta brutality a costa de precisión.",
-        "drawbacks": "Ceguera táctica parcial; puede ser explotada con señuelos.",
-        "exitCondition": "Neutralización de la amenaza o gasto de la descarga de furia.",
-        "counterplay": "Provocar errores por sobreextensión durante la ventana de furia.",
-        "canonStatus": "apex_custom",
-        "tier": "5-A"
       }
     ],
     "feats": [
@@ -214872,7 +220368,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Leal fanático al Imperio. Cree en la pureza de la sangre y el darwinismo social extremo. Aunque brutal, siente un lazo de hermandad perversa con los suyos y su descendencia pura.",
     "weaknesses": "Vulnerable a ataques de calor superior a la superficie solar o frecuencias sónicas extremas que desestabilizan su equilibrio auditivo interno (Oreja interna viltrumita).",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Sangre Viltrumita",
+        "partnerTags": [
+          "Imperio Viltrumita",
+          "Thragg"
+        ],
+        "effect": "Junto a un viltrumita, Lucan gana +10% AP por disciplina de conquista (Guerra Viltrumita).",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -214952,7 +220458,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Genética Viltrumita",
+        "durability": "Sobrehumana",
+        "effect": "Genética superior que otorga fuerza, resistencia y longevidad."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Guerra Viltrumita / Año Actual de Conquista",
       "timelineRestrictions": "Desconoce eventos posteriores a la caída definitiva del imperio y la restauración pacífica liderada por Mark.",
@@ -215252,7 +220764,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Genética Viltrumita",
+        "durability": "Sobrehumana",
+        "effect": "Genética superior que otorga fuerza, resistencia y longevidad."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Guerra Viltrumita / Siglo XXI",
       "timelineRestrictions": "Desconoce los eventos finales del destino cósmico lejano tras su coronación y vejez.",
@@ -217067,40 +222585,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Robot / Rudolph Conners (Rus Livingston) previo a cualquier transformación."
-      },
-      {
-        "id": "base_overclocked",
-        "name": "Estado Base / Red Global Activa",
-        "stats": "Tier 8-A+ (Tech-Augmented) | APEX-Ki ~365 (x1.30)",
-        "apexKiMultiplier": 1.3,
-        "staminaDrain": 4,
-        "activationCondition": "Acceso confirmado a su red satelital global y enjambre Reanimen; consciencia sincronizada con mainframe principal.",
-        "grantedTags": [
-          "control_satelital_total",
-          "enjambre_autonomo",
-          "vision_orbital",
-          "supresion_EM_masiva"
-        ],
-        "suppressedTags": [
-          "combate_cuerpo_a_cuerpo_puro"
-        ],
-        "grantedAbilities": [
-          "Protocolo de Exterminio Global (Enjambre Satelital)",
-          "Campo de Inhibición Electromagnética expandido",
-          "Despliegue masivo de Reanimen Tácticos"
-        ],
-        "limitations": [
-          "Requiere línea de comunicación intacta con sus satélites.",
-          "El mainframe central es un objetivo prioritario y destructible."
-        ],
-        "drawbacks": [
-          "Drenaje constante de stamina (4/turno) por la sincronización neural con la red.",
-          "Si sufre corte de señal, todas las unidades desplegadas quedan inertes durante 1-2 turnos."
-        ],
-        "exitCondition": "Pérdida de enlace satelital, destrucción del mainframe o decisión voluntaria de preservar stamina.",
-        "counterplay": "Hackear/emisión EM de alta potencia en su mainframe, destrucción de antenas repetidoras, infiltración sigilosa en sus servidores.",
-        "canonStatus": "apex_custom",
-        "tier": "8-A"
       }
     ],
     "feats": [
@@ -218352,7 +223836,16 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Una dictadora/guerrera alienígena impulsada por la necesidad desesperada de salvar a su propio planeta de la inanición energética. Aparenta crueldad asesina y tiranía, pero cuando Mark rompe su bastón y dialoga, expone su dolor e impotencia (siendo exiliada).",
     "weaknesses": "El Bastón lo es TODO. Si un oponente muy veloz y fuerte (como Invincible) ignora sus ráfagas, recibe el daño para acercarse y rompe la estructura del báculo con las manos desnudas, Universa pierde el 90% de sus poderes defensivos y ofensivos, volviéndose inofensiva de un segundo al otro.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Guardiana",
+        "partnerTags": [
+          "Coalición de Planetas"
+        ],
+        "effect": "Defendiendo a un aliado de la Coalición, Universa proyecta un escudo que absorbe un golpe grave una vez por combate.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -220079,32 +225572,6 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0
-      },
-      {
-        "id": "queen-maeve-v-deprived",
-        "name": "Forma Final (Sin Compuesto V / Humana Común)",
-        "stats": "Estado tras la explosión de Soldier Boy en la torre Vought; Maeve pierde permanentemente sus poderes y se vuelve una humana normal, pero gana acceso al modo Sacrificio Heroico sin inhibiciones.",
-        "apexKiMultiplier": 0.01,
-        "activationCondition": "Exposición directa a la ráfaga nuclear de Soldier Boy.",
-        "staminaDrain": 0,
-        "grantedTags": [
-          "mortal_form",
-          "no_powers",
-          "pure_will"
-        ],
-        "suppressedTags": [
-          "super_strength",
-          "invulnerability",
-          "flight"
-        ],
-        "grantedAbilities": [
-          "Sacrificio Heroico (Plunge) - Capacidad de lanzarse desde rascacielos sin poderes para detener amenazas."
-        ],
-        "limitations": "Humana estándar; cualquier ataque la mata.",
-        "drawbacks": "Muerte garantizada ante cualquier amenaza de nivel meta-humano.",
-        "exitCondition": "Estado permanente.",
-        "canonStatus": "source_backed",
-        "tier": "7-B"
       }
     ],
     "feats": [
@@ -221006,34 +226473,6 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Starlight (Annie January) previo a cualquier transformación."
-      },
-      {
-        "id": "starlight-base",
-        "name": "Starlight (Estado Base / Sobrecarga Lumínica)",
-        "stats": "Tier 7-B | Nivel Ciudad. Modo de sobrecarga con absorción máxima de luz.",
-        "apexKiMultiplier": 1.3,
-        "staminaDrain": 4,
-        "activationCondition": "Exposición a fuentes de luz artificial o eléctrica activas durante al menos 1 turno.",
-        "grantedTags": [
-          "Sobrecarga lumínica",
-          "Reserva de plasma cargada"
-        ],
-        "suppressedTags": [],
-        "grantedAbilities": [
-          "Nova Starlight mejorada: onda expansiva cegadora de mayor radio",
-          "Absorción acelerada del entorno iluminado"
-        ],
-        "limitations": [
-          "Inutilizable en oscuridad total"
-        ],
-        "drawbacks": [
-          "Vulnerabilidad incrementada durante la fase de absorción",
-          "Fatiga si la fuente de luz se agota repentinamente"
-        ],
-        "exitCondition": "Voluntaria o por agotamiento del entorno iluminado",
-        "counterplay": "Crear blackout ambiental o aislar en entorno cerrado sin iluminación.",
-        "canonStatus": "apex_custom",
-        "tier": "7-B"
       }
     ],
     "feats": [
@@ -221547,7 +226986,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Inteligente, millonario, pero con una perversión clínica asfixiante que arruina su honor. Utiliza su ingenio para dominar y chantajear a todos. Se cree intocable porque sabe los secretos sucios de la gente, pero cobarde cuando lo enfrentan Tiers verdaderamente letales en espacios cerrados sin su dinero como escudo.",
     "weaknesses": "Ausencia de Resiliencia Biológica. En un combate de verdad sin el traje (O si se lo desactivan con EMP o magnetismo), sus sentidos súper-agudos son un punto débil: sonidos potentes, destellos de luz pura o venenos en el aire lo torturan el triple que a un humano normal al ser hipersensible.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Payback Blindado",
+        "partnerTags": [
+          "Payback",
+          "Soldier Boy"
+        ],
+        "effect": "Con su armadura operativa, Tek Knight gana +15% defensa balística canónica de The Boys.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,
@@ -221870,7 +227319,13 @@ export const INITIAL_CHARACTERS = [
       "recoveryRatePerTurn": 10,
       "exhaustionThreshold": 20
     },
-    "signatureEquipment": [],
+    "signatureEquipment": [
+      {
+        "name": "Atributos Base",
+        "durability": "Variable",
+        "effect": "Características físicas y energéticas base del combatiente."
+      }
+    ],
     "knowledgeHorizon": {
       "canonicalEra": "Serie de TV Live Action - Temporada 4",
       "timelineRestrictions": "Desconoce eventos futuros o universos alternos fuera de Vought.",
@@ -221973,7 +227428,17 @@ export const INITIAL_CHARACTERS = [
     ],
     "psychology": "Un pervertido y acosador. Abusa de su poder para espiar mujeres y hacer lo que le plazca sin consecuencias porque cree ser intocable por la justicia o la física. Arrogante y parlanchín, nunca se calla ni aun siendo rehén.",
     "weaknesses": "Vulnerabilidad Interna Absoluta. Si bien su piel es diamante, sus mucosas e interior (Ojos, boca, intestinos, ano) son carne humana blanda. El Hax eléctrico fuerte lo desestabiliza (Frenchie usó voltaje alto). Y una explosión interna (C4 en el recto) lo desintegró instantáneamente eludiendo la armadura.",
-    "synergies": [],
+    "synergies": [
+      {
+        "name": "Piel de Carbono",
+        "partnerTags": [
+          "Los Siete",
+          "Homelander"
+        ],
+        "effect": "Su piel indestructible e invisible le otorga +15% evasión en la primera emboscada de cada combate.",
+        "canonStatus": "source_backed"
+      }
+    ],
     "teamCombos": [],
     "transformativeMechanics": {
       "canFuse": false,

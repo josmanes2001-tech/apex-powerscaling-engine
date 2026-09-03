@@ -31,16 +31,25 @@ const START_INDEX = process.argv[7] ? Math.max(1, parseInt(process.argv[7], 10))
 
 // Optimizacion dinamica de lote para maximizar respuestas y no saturar cuota gratuita
 let BATCH_SIZE = 2;
-if (MODEL.includes('minimax') || MODEL.includes('ling')) {
+if (MODEL.includes('muse')) {
+  BATCH_SIZE = 4; // ⭐ Lote óptimo de 4 para Meta Muse Spark: aprovecha su contexto de 1M y sus 131k tokens de salida
+} else if (MODEL.includes('minimax') || MODEL.includes('ling')) {
   BATCH_SIZE = 3; // 33% menos llamadas a la API de OpenRouter
 }
 
-const SYSTEM_PROMPT_MASTER = `APEX MASTER ROSTER ENRICHMENT & AUDIT ENGINE
+let SYSTEM_PROMPT_MASTER = `APEX MASTER ROSTER ENRICHMENT & AUDIT ENGINE
 ESTÁNDAR DORADO — MODO AUTÓNOMO DE ALTA PRECISIÓN TÁCTICA
 
-Actúa como Diseñador Maestro de Roster, Curador de Lore y Especialista en Arquitectura de Combate para APEX Power Scaling Engine.
+Actúa como Diseñador Maestro de Roster, Curador de Lore y Especialista en Arquitectura de Combate para APEX Power Scaling Engine.`;
 
-Tu misión es transformar cada personaje del lote en una ficha táctica de nivel maestro siguiendo estrictamente esta plantilla:
+if (MODEL.includes('muse')) {
+  SYSTEM_PROMPT_MASTER += `\n\n[MODO AGÉNTICO DE META MUSE SPARK 1.3 ACTIVADO]:
+- Tienes una ventana masiva de 1 Millón de tokens y 131k de salida. Aprovéchala para analizar los 4 personajes del lote de forma holística.
+- Correlaciona a los personajes del lote entre sí: si comparten universo o saga, genera 'synergies' cruzadas y 'teamCombos' coordinados directos.
+- Desglosa cada arsenal con el máximo detalle táctico, especificando costes exactos de stamina (3-60) y 'counterplay' realista para cada técnica.`;
+}
+
+SYSTEM_PROMPT_MASTER += `\n\nTu misión es transformar cada personaje del lote en una ficha táctica de nivel maestro siguiendo estrictamente esta plantilla:
 
 1. RECONOCIMIENTO Y FIDELIDAD CRONOLÓGICA:
    - Identifica al personaje por su nombre, saga, versión, universo y contexto canónico.

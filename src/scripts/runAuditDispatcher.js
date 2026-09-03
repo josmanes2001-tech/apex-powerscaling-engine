@@ -38,6 +38,13 @@ const MODEL_ALIASES = {
   'minimax-m3': 'minimax/minimax-m3:free',
   'minimax-m2.7': 'minimax/minimax-m2.7:free',
   'ling': 'inclusionai/ling-3.0-flash-fin:free',
+  'muse': 'opencode/muse-spark-1.3-contributor-free',
+  'muse-spark': 'opencode/muse-spark-1.3-contributor-free',
+  'zen': 'opencode/muse-spark-1.3-contributor-free',
+  'gemma': 'google/gemma-4-31b-it:free',
+  'gemma-4': 'google/gemma-4-31b-it:free',
+  'glm': 'z-ai/glm-5.2:free',
+  'glm-5': 'z-ai/glm-5.2:free',
   'cohere': 'cohere/north-mini-code:free',
   'openrouter': 'nvidia/nemotron-3.5-lightning:free'
 };

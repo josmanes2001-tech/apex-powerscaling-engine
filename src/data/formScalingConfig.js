@@ -3253,6 +3253,326 @@ export const FORM_SCALING_CONFIG = {
       "availability": "verified",
       "requiresExplicitData": true
     }
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // APEX v1.0 — Nuevas secciones de universos y aliases huérfanos
+  // Añadidas para resolver personajes/formas que caían en "unresolved".
+  // Filosofía: formas externas se RECONOCEN pero NO se les inventa
+  // multiplicador a menos que haya dato canónico verificable.
+  // ─────────────────────────────────────────────────────────────────────────
+
+  "hxh": {
+    "meruem_post_rose": {
+      "aliases": ["post rosa", "meruem post rosa", "alas de fotones", "photon wings"],
+      "apexKiMultiplier": 6.31,
+      "statModifiers": { "speed": 1.4, "durability": 1.2 },
+      "availability": "derived"
+    },
+    "godspeed": {
+      "aliases": ["godspeed", "kanmuru", "modo godspeed"],
+      "apexKiMultiplier": 19.95,
+      "statModifiers": { "speed": 4, "durability": 0.8 },
+      "availability": "derived"
+    },
+    "gittarackur": {
+      "aliases": ["gittarackur", "disfraz de gittarackur", "illumi gittarackur"],
+      "apexKiMultiplier": 2,
+      "statModifiers": { "speed": 1.3, "haxReliability": 0.6 },
+      "availability": "derived"
+    },
+    "post_mortem_nen": {
+      "aliases": ["post mortem nen", "hisoka renacido", "post mortem hisoka"],
+      "apexKiMultiplier": 19.95,
+      "statModifiers": { "durability": 0.6, "haxReliability": 0.5 },
+      "availability": "derived"
+    }
+  },
+
+  "jojos": {
+    "the_world_timestop": {
+      "aliases": ["the world", "star platinum the world", "parada temporal", "timestop"],
+      "apexKiMultiplier": 100,
+      "statModifiers": { "speed": 50, "haxReliability": 0.95 },
+      "availability": "verified"
+    },
+    "gold_experience_requiem": {
+      "aliases": ["ger", "gold experience requiem", "requiem"],
+      "apexKiMultiplier": 500,
+      "statModifiers": { "haxReliability": 1.0 },
+      "availability": "verified"
+    },
+    "made_in_heaven": {
+      "aliases": ["made in heaven", "mih"],
+      "apexKiMultiplier": 800,
+      "statModifiers": { "speed": 100, "haxReliability": 0.9 },
+      "availability": "verified"
+    },
+    "d4c_love_train": {
+      "aliases": ["d4c love train", "love train", "funny valentine"],
+      "apexKiMultiplier": 200,
+      "statModifiers": { "haxReliability": 0.85 },
+      "availability": "verified"
+    },
+    "bites_the_dust": {
+      "aliases": ["bites the dust", "btd", "killer queen bites the dust"],
+      "apexKiMultiplier": 150,
+      "statModifiers": { "haxReliability": 0.9 },
+      "availability": "verified"
+    },
+    "d4c": {
+      "aliases": ["d4c", "dirty deeds done dirt cheap"],
+      "apexKiMultiplier": 50,
+      "statModifiers": { "haxReliability": 0.7 },
+      "availability": "verified"
+    }
+  },
+
+  "kimetsu": {
+    "sun_breathing_form_13": {
+      "aliases": ["decimotercera forma", "thirteenth form", "decimotercera forma solar", "forma 13 solar"],
+      "apexKiMultiplier": 2,
+      "statModifiers": { "speed": 1.5, "durability": 1.2 },
+      "availability": "derived"
+    },
+    "muzan_combat_final": {
+      "aliases": ["forma de combate final", "combat final", "forma combate final muzan"],
+      "apexKiMultiplier": 5,
+      "statModifiers": { "speed": 1.3, "durability": 1.5 },
+      "availability": "derived"
+    },
+    "kokushibo_monster": {
+      "aliases": ["kokushibo monstruo", "monstruo kokushibo", "kokushibo superado", "monster form kokushibo"],
+      "apexKiMultiplier": 4,
+      "statModifiers": { "durability": 1.4, "haxReliability": 0.5 },
+      "availability": "derived"
+    }
+  },
+
+  "chainsaw": {
+    "pochita_hero_of_hell": {
+      "aliases": ["pochita verdadero", "hero of hell", "heroe del infierno", "pochita hero"],
+      "apexKiMultiplier": 8,
+      "statModifiers": { "durability": 2, "haxReliability": 0.6 },
+      "availability": "derived"
+    },
+    "chainsaw_hybrid": {
+      "aliases": ["hibrido motosierra", "chainsaw hybrid", "denji motosierra"],
+      "apexKiMultiplier": 2.5,
+      "statModifiers": { "durability": 1.5, "speed": 1.2 },
+      "availability": "derived"
+    }
+  },
+
+  "opm": {
+    "garou_cosmic_fear": {
+      "aliases": ["modo miedo cosmico", "fear mode", "garou cosmico miedo", "god赋予"],
+      "apexKiMultiplier": 20,
+      "statModifiers": { "durability": 2, "haxReliability": 0.4 },
+      "availability": "derived"
+    },
+    "garou_mode_saitama": {
+      "aliases": ["modo saitama", "saitama copy", "garou saitama copy"],
+      "apexKiMultiplier": 40,
+      "statModifiers": { "speed": 3, "durability": 3 },
+      "availability": "derived"
+    },
+    "garou_half_monster": {
+      "aliases": ["half monster garou", "garou semi monstruo", "garou medio monstruo"],
+      "apexKiMultiplier": 19.95,
+      "statModifiers": { "durability": 1.5, "speed": 1.3 },
+      "availability": "derived"
+    },
+    "meteoric_burst": {
+      "aliases": ["meteoric burst", "estallido meteorico", "modo estallido meteorico"],
+      "apexKiMultiplier": 10,
+      "statModifiers": { "speed": 2, "durability": 0.8 },
+      "availability": "verified"
+    },
+    "serious_mode": {
+      "aliases": ["serious mode", "modo serio", "serious punch", "golpe serio"],
+      "apexKiMultiplier": 100,
+      "statModifiers": { "speed": 5, "durability": 5 },
+      "availability": "verified"
+    }
+  },
+
+  "jjk": {
+    "sukuna_heian_form": {
+      "aliases": ["forma original heian", "heian era", "heian form", "sukuna heian", "cuatro brazos"],
+      "apexKiMultiplier": 3,
+      "statModifiers": { "speed": 1.4, "haxReliability": 0.5 },
+      "availability": "derived"
+    },
+    "sukuna_world_cutting_slash": {
+      "aliases": ["world cutting slash", "corte mundial", "corte que divide el mundo"],
+      "apexKiMultiplier": 5,
+      "statModifiers": { "haxReliability": 0.7 },
+      "availability": "derived"
+    },
+    "gojo_six_eyes_unsealed": {
+      "aliases": ["seis ojos desatados", "unsealed six eyes", "gojo sin venda"],
+      "apexKiMultiplier": 1.5,
+      "statModifiers": { "speed": 1.3, "haxReliability": 0.5 },
+      "availability": "derived"
+    },
+    "gojo_purple_unlimited": {
+      "aliases": ["purple ilimitado", "hollow purple", "purple 200", "purple 200%"],
+      "apexKiMultiplier": 4,
+      "statModifiers": { "haxReliability": 0.8 },
+      "availability": "derived"
+    },
+    "toji_heavenly_restriction": {
+      "aliases": ["restriccion celestial", "toji fushiguro", "heavenly restriction"],
+      "apexKiMultiplier": 2,
+      "statModifiers": { "speed": 1.5, "durability": 0.7 },
+      "availability": "derived"
+    },
+    "mahoraga_adapt": {
+      "aliases": ["mahoraga", "eight handled sword", "ocho manos", "adaptacion mahoraga"],
+      "apexKiMultiplier": 4,
+      "statModifiers": { "durability": 1.5, "haxReliability": 0.6 },
+      "availability": "derived"
+    },
+    "rika_manifested_100": {
+      "aliases": ["rika manifestada", "rika 100", "rika al 100", "full rika", "rika 100%"],
+      "apexKiMultiplier": 3,
+      "statModifiers": { "haxReliability": 0.5 },
+      "availability": "derived"
+    },
+    "domain_expansion_mutual_love": {
+      "aliases": ["amor mutuo autentico", "mutual love", "domain expansion mutual love"],
+      "apexKiMultiplier": 2,
+      "statModifiers": { "haxReliability": 0.7 },
+      "availability": "derived"
+    }
+  },
+
+  "shuumatsu": {
+    "poseidon_true_form": {
+      "aliases": ["poseidon verdadero", "trident true form", "poseidon base"],
+      "apexKiMultiplier": 1,
+      "statModifiers": { "speed": 1.5 },
+      "availability": "verified"
+    },
+    "sasaki_enveiled_in_ash": {
+      "aliases": ["sasaki enveiled", "sasaki ash", "sasaki en ceniza"],
+      "apexKiMultiplier": 1.5,
+      "statModifiers": { "haxReliability": 0.6 },
+      "availability": "derived"
+    }
+  },
+
+  "invincible": {
+    "viltrumite_emperor": {
+      "aliases": ["viltrumite peak", "viltrumita pico", "viltrum emperor"],
+      "apexKiMultiplier": 10,
+      "statModifiers": { "speed": 2, "durability": 2 },
+      "availability": "derived"
+    },
+    "thragg_full_power": {
+      "aliases": ["thragg poder completo", "thragg unleashed", "grand regent thragg pico"],
+      "apexKiMultiplier": 50,
+      "statModifiers": { "speed": 1.5, "durability": 1.5 },
+      "availability": "derived"
+    }
+  },
+
+  "the-boys": {
+    "homelander_full_power": {
+      "aliases": ["homelander laser", "full power homelander"],
+      "apexKiMultiplier": 5,
+      "statModifiers": { "durability": 1.5, "haxReliability": 0.3 },
+      "availability": "derived"
+    },
+    "temp_v_hax": {
+      "aliases": ["temp v", "temp v explosivo", "temp v powers"],
+      "apexKiMultiplier": 10,
+      "statModifiers": { "durability": 1.5 },
+      "availability": "derived"
+    }
+  },
+
+  "spyxfamily": {
+    "twilight_full_kit": {
+      "aliases": ["twilight equipo completo", "loid full kit", "twilight arsenal completo"],
+      "apexKiMultiplier": 2,
+      "statModifiers": { "haxReliability": 0.4 },
+      "availability": "derived"
+    },
+    "thorn_princess_full": {
+      "aliases": ["thorn princess completa", "yor thorn princess", "yor combat"],
+      "apexKiMultiplier": 1.8,
+      "statModifiers": { "speed": 1.2 },
+      "availability": "derived"
+    }
+  },
+
+  "apextech": {
+    "apex_default": {
+      "aliases": ["apex base", "default state"],
+      "apexKiMultiplier": 1,
+      "statModifiers": {},
+      "availability": "verified"
+    }
+  },
+
+  // Aliases adicionales de Dragon Ball para formas huérfanas canónicas
+  "dragon-ball": {
+    "ultra_instinto": {
+      "aliases": ["ultra instinto", "ultra instinct", "migatte no gokui", "ui completo", "ultra instinto completo"],
+      "apexKiMultiplier": 100000,
+      "statModifiers": { "speed": 50, "durability": 30 },
+      "availability": "verified"
+    },
+    "ultra_instinto_sign": {
+      "aliases": ["ultra instinto sign", "ui sign", "omen"],
+      "apexKiMultiplier": 50000,
+      "statModifiers": { "speed": 25, "durability": 15 },
+      "availability": "verified"
+    },
+    "towa_darkness": {
+      "aliases": ["towa oscuridad", "towa dark", "dokawa"],
+      "apexKiMultiplier": 8,
+      "statModifiers": { "haxReliability": 0.5 },
+      "availability": "verified"
+    },
+    "majin_vegeta": {
+      "aliases": ["majin vegeta", "vegeta majin", "marca majin", "majin mark"],
+      "apexKiMultiplier": 1.5,
+      "statModifiers": { "speed": 1.1, "durability": 1.1 },
+      "availability": "verified"
+    },
+    "super_maximum_light_speed": {
+      "aliases": ["super maximum light speed", "speed mode dyspo", "modo velocidad maxima", "max light speed dyspo"],
+      "apexKiMultiplier": 4,
+      "statModifiers": { "speed": 5 },
+      "availability": "derived"
+    },
+    "jiren_full_power": {
+      "aliases": ["jiren full power", "jiren poder completo", "jiren unleashed", "poder oculto jiren"],
+      "apexKiMultiplier": 10,
+      "statModifiers": { "speed": 3, "durability": 3 },
+      "availability": "derived"
+    },
+    "mecha_freezer": {
+      "aliases": ["mecha freezer", "mecha frieza", "freezer mecanico", "freezer cyborg"],
+      "apexKiMultiplier": 2,
+      "statModifiers": { "durability": 3 },
+      "availability": "verified"
+    },
+    "guanyin_100_arms": {
+      "aliases": ["guanyin 100 brazos", "100 arms", "100 manos", "hyakushiki kannon", "bodhisattva 100"],
+      "apexKiMultiplier": 2,
+      "statModifiers": { "speed": 2 },
+      "availability": "verified"
+    },
+    "netero_poor_rose_bomb": {
+      "aliases": ["poor rose bomb", "bomba rosa pobre", "rosa pobre"],
+      "apexKiMultiplier": 100,
+      "statModifiers": { "haxReliability": 0.5 },
+      "availability": "verified"
+    }
   }
 };
 

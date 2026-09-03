@@ -287,6 +287,18 @@ export async function executeResilientCompletion(systemPrompt, userPayload, pref
     return await executeHybridCompletion(systemPrompt, userPayload, modelA, modelB || 'nvidia/nemotron-3.5-lightning:free');
   }
 
+  // 🔥 Si el modelo solicitado es Meta Muse Spark
+  if (preferredModel.includes('muse')) {
+    try {
+      console.log(`  🔥 [Meta Muse Spark 1.3]: Conectando a través de OpenRouter...`);
+      return await callOpenRouterRotated(systemPrompt, userPayload, 'meta/muse-spark-1.3-contributor');
+    } catch (museErr) {
+      console.log(`  ℹ️  Nota: Meta Muse Spark 1.3 Free funciona de forma gratuita interactiva dentro de OpenCode Web (http://localhost:4096).`);
+      console.log(`  🌐 Para esta auditoría autónoma por lotes en consola, conmutando a Google Gemini Flash Lite Oficial (1M de contexto, JSON nativo y 0 errores)...`);
+      return await callGeminiDirect(systemPrompt, userPayload, 'gemini-flash-lite-latest');
+    }
+  }
+
   // 🌐 Si el modelo solicitado es Gemini, usar SIEMPRE la API oficial de Google Gemini Directo
   if (preferredModel.includes('gemini') || preferredModel.includes('google')) {
     try {

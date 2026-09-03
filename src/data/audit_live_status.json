@@ -2,14 +2,14 @@
   "active": true,
   "round": 1,
   "totalRounds": 1,
-  "currentBatch": 56,
-  "totalBatches": 257,
-  "processedChars": 168,
+  "currentBatch": 32,
+  "totalBatches": 193,
+  "processedChars": 128,
   "totalChars": 769,
-  "percent": "21.8",
-  "totalPatches": 723,
-  "lastBatchDurationSec": "729.5",
-  "elapsedMin": "138.2",
-  "etaMin": "495.9",
-  "lastUpdated": "16:26:24"
+  "percent": "16.6",
+  "totalPatches": 0,
+  "lastBatchDurationSec": "19.4",
+  "elapsedMin": "15.3",
+  "etaMin": "76.8",
+  "lastUpdated": "20:46:45"
 }
