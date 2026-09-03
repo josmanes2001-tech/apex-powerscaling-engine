@@ -174,6 +174,52 @@ export function auditRoster(characters) {
         detail: `Personaje en Tier ${t} no posee 'cosmologyClass' ni reglas dimensionales declaradas.`
       });
     }
+
+    // 7. Validación Exhaustiva de Transformaciones y Estados
+    if (Array.isArray(c.forms)) {
+      c.forms.forEach((f, fIdx) => {
+        // A. Multiplicador inválido
+        if (typeof f.apexKiMultiplier !== 'number' || f.apexKiMultiplier <= 0) {
+          issues.push({
+            type: 'INVALID_FORM_MULTIPLIER',
+            severity: 'HIGH',
+            characterId: c.id,
+            characterName: c.name,
+            detail: `Forma #${fIdx} ('${f.name}') posee apexKiMultiplier inválido: ${f.apexKiMultiplier}.`
+          });
+        }
+        // B. apexKi de forma no numérico
+        if (typeof f.apexKi !== 'number' || f.apexKi <= 0) {
+          issues.push({
+            type: 'INVALID_FORM_APEX_KI',
+            severity: 'HIGH',
+            characterId: c.id,
+            characterName: c.name,
+            detail: `Forma #${fIdx} ('${f.name}') no tiene un apexKi numérico válido.`
+          });
+        }
+        // C. burstKi de forma menor que su apexKi
+        if (typeof f.burstKi === 'number' && typeof f.apexKi === 'number' && f.burstKi < f.apexKi) {
+          issues.push({
+            type: 'FORM_BURST_LESS_THAN_APEX',
+            severity: 'HIGH',
+            characterId: c.id,
+            characterName: c.name,
+            detail: `Forma #${fIdx} ('${f.name}') tiene burstKi (${f.burstKi}) menor que apexKi (${f.apexKi}).`
+          });
+        }
+        // D. sourceKi en formas no-Dragon Ball
+        if (!isDb && f.sourceKi !== null && f.sourceKi !== undefined) {
+          issues.push({
+            type: 'NON_DB_FORM_SOURCEKI',
+            severity: 'CRITICAL',
+            characterId: c.id,
+            characterName: c.name,
+            detail: `Forma #${fIdx} ('${f.name}') de universo no-DB tiene sourceKi (${f.sourceKi}). Debe ser null.`
+          });
+        }
+      });
+    }
   });
 
   return { issues, warnings, stats };

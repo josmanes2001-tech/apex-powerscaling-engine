@@ -53,40 +53,40 @@ export const SCOUTER_ENERGY_ANCHORS = {
   "10-B": 5,
   "10-A": 10,
   "9-C": 15,
-  "9-B": 25,
-  "9-A": 40,
-  "8-C": 80,
-  "High 8-C": 100,
-  "8-B": 130,
-  "8-A": 180,
-  "Low 7-C": 220,
-  "7-C": 260,
-  "High 7-C": 500,
-  "Low 7-B": 650,
-  "7-B": 800,
-  "7-A": 1500,
-  "High 7-A": 3000,
-  "6-C": 4000,
-  "High 6-C": 6000,
-  "Low 6-B": 8000,
-  "6-B": 10000,
-  "High 6-B": 15000,
-  "6-A": 40000,
-  "High 6-A": 65000,
-  "5-C": 18000,
-  "Low 5-B": 150000,
-  "5-B": 530000,
-  "5-A": 150000000,
-  "High 5-A": 200000000,
-  "Low 4-C": 450000000,
-  "4-C": 1000000000,
-  "High 4-C": 2500000000,
-  "4-B": 5500000000,
-  "4-A": 80000000000,
-  "3-C": 1000000000000,
-  "3-B": 5000000000000,
-  "3-A": 25000000000000,
-  "High 3-A": 100000000000000,
+  "9-B": 22,
+  "9-A": 35,
+  "8-C": 120,
+  "High 8-C": 350,
+  "8-B": 550,
+  "8-A": 900,
+  "Low 7-C": 1300,
+  "7-C": 1800,
+  "High 7-C": 2200,
+  "Low 7-B": 2500,
+  "7-B": 2800,
+  "7-A": 4800,
+  "High 7-A": 6500,
+  "6-C": 8000,
+  "High 6-C": 9500,
+  "Low 6-B": 10500,
+  "6-B": 12000,
+  "High 6-B": 14000,
+  "6-A": 16000,
+  "High 6-A": 22000,
+  "5-C": 4500,
+  "Low 5-B": 530000,
+  "5-B": 2000000,
+  "5-A": 18000,
+  "High 5-A": 150000000,
+  "Low 4-C": 200000000,
+  "4-C": 500000000,
+  "High 4-C": 1000000000,
+  "4-B": 1200000000,
+  "4-A": 1500000000,
+  "3-C": 5000000000,
+  "3-B": 15000000000,
+  "3-A": 50000000000,
+  "High 3-A": 200000000000,
   "Low 2-C": 500000000000000,
   "2-C": 1000000000000000,
   "2-B": 50000000000000000,
@@ -326,3 +326,43 @@ export function calculateScores(tierRank, quality, tierExact) {
     powerBand
   };
 }
+
+/**
+ * Deduce el Tier de combate más coherente para un nivel numérico APEX-Ki
+ */
+export function getEstimatedTierFromApexKi(apexKi) {
+  if (apexKi === null || apexKi === undefined || isNaN(apexKi)) return "8-A";
+  if (apexKi <= 3) return "10-C";
+  if (apexKi <= 7) return "10-B";
+  if (apexKi <= 12) return "10-A";
+  if (apexKi <= 18) return "9-C";
+  if (apexKi <= 28) return "9-B";
+  if (apexKi <= 60) return "9-A";
+  if (apexKi <= 200) return "8-C";
+  if (apexKi <= 450) return "High 8-C";
+  if (apexKi <= 700) return "8-B";
+  if (apexKi <= 1150) return "8-A";
+  if (apexKi <= 1500) return "Low 7-C";
+  if (apexKi <= 2000) return "7-C";
+  if (apexKi <= 2400) return "High 7-C";
+  if (apexKi <= 2700) return "Low 7-B";
+  if (apexKi <= 3800) return "7-B";
+  if (apexKi <= 5800) return "7-A";
+  if (apexKi <= 7500) return "High 7-A";
+  if (apexKi <= 9000) return "6-C";
+  if (apexKi <= 10000) return "High 6-C";
+  if (apexKi <= 11000) return "Low 6-B";
+  if (apexKi <= 13000) return "6-B";
+  if (apexKi <= 15000) return "High 6-B";
+  if (apexKi <= 20000) return "6-A";
+  if (apexKi <= 100000) return "High 6-A";
+  if (apexKi <= 800000) return "Low 5-B";
+  if (apexKi <= 5000000) return "5-B";
+  if (apexKi <= 80000000) return "5-A";
+  if (apexKi <= 250000000) return "High 5-A";
+  if (apexKi <= 800000000) return "4-C";
+  if (apexKi <= 2000000000) return "4-B";
+  if (apexKi <= 5000000000) return "4-A";
+  return "3-C";
+}
+
