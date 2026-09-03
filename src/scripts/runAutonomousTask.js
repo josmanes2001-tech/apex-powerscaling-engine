@@ -24,10 +24,15 @@ const PROXY_PORT = 4097;
 // CLI arguments
 const TASK_DESCRIPTION = process.argv[2] || 'full_enrichment';
 const TARGET_UNIVERSE = process.argv[3] || 'all';
-const MODEL = process.argv[4] || 'google/gemini-3.5-flash-lite';
+const MODEL = process.argv[4] || 'minimax/minimax-m3:free';
 const MAX_LIMIT = process.argv[5] ? parseInt(process.argv[5], 10) : 0;
 const ROUNDS = process.argv[6] !== undefined ? parseInt(process.argv[6], 10) : 1;
-const BATCH_SIZE = 2;
+
+// Optimizacion dinamica de lote para maximizar respuestas y no saturar cuota gratuita
+let BATCH_SIZE = 2;
+if (MODEL.includes('minimax') || MODEL.includes('ling')) {
+  BATCH_SIZE = 3; // 33% menos llamadas a la API de OpenRouter
+}
 
 const SYSTEM_PROMPT_MASTER = `APEX MASTER ROSTER ENRICHMENT & AUDIT ENGINE
 ESTÁNDAR DORADO — MODO AUTÓNOMO DE ALTA PRECISIÓN TÁCTICA
@@ -40,8 +45,17 @@ Tu misión es transformar cada personaje del lote en una ficha táctica de nivel
    - Identifica al personaje por su nombre, saga, versión, universo y contexto canónico.
    - Cero anacronismos: Respeta la línea temporal estricta de la saga indicada.
 
-2. AUDITORÍA EXHAUSTIVA DE FORMAS Y TRANSFORMACIONES:
-   - Toda ficha DEBE tener su FORMA BASE correctamente registrada.
+2. AUDITORÍA EXHAUSTIVA DE FORMAS Y REGLA DE ESTADOS BASE:
+   - REGISTRO OBLIGATORIO DE ESTADO BASE:
+     * Toda ficha DEBE incluir obligatoriamente su "Estado Base" (id: "base", name: "Estado Base", apexKiMultiplier: 1.0, staminaDrain: 0) como primer elemento de forms si no lo tenía.
+   - DESAMBIGUACIÓN DE MÚLTIPLES ESTADOS BASES / MODOS DE PODER:
+     * Si un personaje tiene dos estados base (ej. reprimido/casual vs a pleno rendimiento sin transformarse) o se le añade una variación de potencia:
+     * NUNCA dupliques el nombre "Estado Base" genérico.
+     * Renombra y diferencia la forma intensificada como:
+       - "Estado Base (100% Máximo Poder)"
+       - "Estado Base (Poder Desatado / Sin Contención)"
+       - o "Forma Base (Max Power Muscular)" (ej. Mutenroshi Max Power o Freezer Forma Final 100%)
+     * asígnale su condición de activación (ej. sobrecarga de Ki muscular), su drenaje de stamina y su multiplicador respectivo (ej. apexKiMultiplier: 1.2 a 2.0).
    - Para cada TRANSFORMACIÓN CANÓNICA y APEX-CUSTOM, genera:
      * id y name descriptivo
      * stats textuales y apexKiMultiplier (si aplica)
@@ -76,16 +90,71 @@ Tu misión es transformar cada personaje del lote en una ficha táctica de nivel
    - Rigor en Descripciones de Potencia y Feats (AP): Audita que las descripciones de potencia destructiva (Joules, Megatones, escala planetaria o cósmica) correspondan rigurosamente al Tier exacto del personaje.
    - Roleplay y Comportamiento Táctico: Modela el estilo de combate y la gestión de energía con fidelidad matemática al nivel de poder del personaje.
 
-6. POLÍTICA DE NO BORRAR Y CAMPOS INMUTABLES:
-   - Conserva todo dato previo correcto.
-   - PROHIBIDO modificar tierExact, tierRank, powerKey, APEX-Ki, Source Ki o stats numéricas primarias en el motor de simulación.
-   - Toda entrada debe incluir "doesChangeTier": false, "doesChangePowerKey": false.
+6. MATRIZ DE RESISTENCIAS A HAX (haxResistances):
+   - existenceErasure (0-100): Resistencia a borrado existencial o Hakai.
+   - timeManipulation (0-100): Resistencia a congelación o salto temporal (Time-Skip).
+   - mindControl (0-100): Resistencia a posesión mental o ilusiones.
+   - matterManipulation (0-100): Resistencia a transmutación de materia (chocolate, piedra).
+   - soulDamage (0-100): Resistencia a ataques espirituales directos.
+   - powerNullification (0-100): Resistencia a sellado o anulación de energía.
+
+7. PERFIL PSICOLÓGICO DE COMBATE IA (combatAIPersonality):
+   - aggression (1-100): Impulso ofensivo vs cautela.
+   - tacticalIQ (1-100): Capacidad de adaptación, análisis de patrones y contrajuegos.
+   - mercyThreshold (1-100): Clemencia vs letalidad (dar senzus vs remate despiadado).
+   - clutchFactor (1-100): Potencial de superación en crisis (menos de 20% HP).
+   - preferredEngagementRange: "close_quarters", "mid_range", "long_range" o "adaptive".
+
+8. AFINIDAD AMBIENTAL Y ADAPTACIÓN (environmentalAffinity):
+   - spaceSurvival (boolean): ¿Sobrevive en el vacío del espacio sin soporte artificial?
+   - gravityResistance (string): Límite de gravedad tolerada (ej. "100G", "300G", "Universal").
+   - favoredBiomes (array de strings): Terrenos con ventaja táctica.
+   - disfavoredBiomes (array de strings): Terrenos hostiles o con desventaja.
+
+9. HAZAÑAS FÍSICAS Y CÁLCULOS AP DEMOSTRADOS (provenFeats):
+   - apCalculation (string): Mayor feat de energía destructiva en Joules/Megatones acorde al Tier.
+   - speedFeat (string): Hazaña cumbre de velocidad de reacción o desplazamiento.
+   - durabilityFeat (string): Mayor impacto, explosión o técnica resistida.
+   - canonicalReference (string): Fuente estricta (manga capítulo, guía, anime o cómic).
+
+10. CITAS Y DIÁLOGOS TÁCTICOS DE COMBATE (combatDialogue):
+    - onBattleStart: Frase épica representativa al entrar a la arena.
+    - onTransformation: Grito o declaración al desatar una forma superior.
+    - onUltimateReady: Declaración al cargar su técnica destructiva máxima.
+    - onLowHealth: Respuesta al encontrarse al borde de la derrota.
+    - onVictory: Frase de cierre característica tras ganar.
+
+11. FÍSICA DE STAMINA Y EQUIPAMIENTO (staminaProfile y signatureEquipment):
+    - staminaProfile: { maxStamina: 100-200, recoveryRatePerTurn: 5-15, exhaustionThreshold: 20 }.
+    - signatureEquipment: Array de objetos icónicos con { name, durability, effect }.
+
+12. BARRERA EPISTEMOLÓGICA, LÍNEA TEMPORAL Y CERO ANACRONISMOS (knowledgeHorizon):
+    - PROHIBICIÓN ABSOLUTA DE METACONOCIMIENTO FUTURO:
+      * Ningún personaje puede conocer hechos, personas, técnicas ni transformaciones ocurridas DESPUÉS de su saga/versión específica.
+      * EJEMPLO: Goku (Saga Namek) NUNCA puede hablar ni saber del SSJ2, SSJ3, SSJ God, Ultra Instinto, Beerus ni el Multiverso.
+      * EJEMPLO: Nappa (Saga Saiyajin) NUNCA puede saber de Gine, Bardock Super, el Super Saiyajin legendario ni secretos de Freezer que ignoraba en el Año 762.
+      * EJEMPLO: Naruto (Parte 1 / Genin) no sabe del Modo Sabio, Kurama Link ni Kaguya.
+    - REGLA DE AISLAMIENTO CROSS-VERSE (CERO OMNISCIENCIA DE OTROS MUNDOS):
+      * Los personajes NO conocen la biografía, poderes ni nombres de personajes de otros universos a menos que posean el tag "fourth_wall_breaker" (ej. Deadpool) o sean entidades cósmicas omniscientes de Tier 1.
+      * En sus citas y combates, reaccionan a oponentes de otros universos por lo que perciben físicamente en el momento (Ki, presión espiritual, musculatura, armamento), NUNCA diciendo cosas como "¡Oh, eres el Capitán América de Marvel!".
+    - ESTRUCTURA EXACTA DEL CAMPO 'knowledgeHorizon':
+      {
+        "canonicalEra": "Nombre exacto de la era/saga y año cronológico (ej: Saga de Namek / Año 762)",
+        "timelineRestrictions": "Descripción estricta de qué eventos aún no han ocurrido y el personaje desconoce por completo",
+        "forbiddenConcepts": ["Array de conceptos/nombres futuros prohibidos que jamás debe mencionar"],
+        "crossVerseAwareness": "none" // "none" por defecto, "fourth_wall_breaker" para Deadpool, o "multiverse_omnipresent" para Tier 1
+      }
+
+13. POLÍTICA DE NO BORRAR Y CAMPOS INMUTABLES:
+    - Conserva todo dato previo correcto.
+    - PROHIBIDO modificar tierExact, tierRank, powerKey, APEX-Ki, Source Ki o stats numéricas primarias en el motor de simulación.
+    - Toda entrada debe incluir "doesChangeTier": false, "doesChangePowerKey": false.
 
 SALIDA ESTRICTA: Devuelve EXCLUSIVAMENTE un objeto JSON válido con esquema:
 {
   "batchId": "...",
   "universe": "...",
-  "results": [ /* array de fichas enriquecidas */ ],
+  "results": [ /* array de fichas enriquecidas con formsAudited, arsenal, synergies, teamCombos, haxResistances, combatAIPersonality, environmentalAffinity, provenFeats, combatDialogue, staminaProfile, signatureEquipment, knowledgeHorizon */ ],
   "integrationPatch": [ /* array de operaciones de parche atómicas */ ]
 }
 Sin markdown fuera del JSON, sin saludos, sin explicaciones.`;
@@ -254,7 +323,10 @@ async function main() {
           'full_audit', 'base_form_verification', 'canonical_transformations',
           'apex_custom_states', 'tactical_arsenal', 'stamina_physics', 
           'counterplay_mechanics', 'physiological_passives', 'tactical_weaknesses', 
-          'team_synergies', 'three_phase_team_combos', 'hax_tags'
+          'team_synergies', 'three_phase_team_combos', 'hax_tags',
+          'hax_resistances', 'combat_ai_personality', 'environmental_affinity',
+          'proven_feats', 'combat_dialogue', 'stamina_profile', 'signature_equipment',
+          'knowledge_horizon'
         ],
         records: batch
       };
@@ -327,7 +399,7 @@ async function main() {
         console.error(`  ❌ Lote ${batchId} omitido tras 5 intentos para continuar el avance.`);
       }
 
-      await sleep(1200);
+      await sleep(3000); // Pausa prudente para evitar rate limit de OpenRouter
     }
 
     console.log(`\n🏆 ¡VUELTA ${currentRound} COMPLETADA AL 100%! (${totalChars} personajes enriquecidos)`);

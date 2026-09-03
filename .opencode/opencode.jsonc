@@ -1,0 +1,123 @@
+﻿{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": true,
+  "share": "manual",
+  "model": "openrouter/inclusionai/ling-3.0-flash-fin:free",
+  "small_model": "openrouter/nvidia/nemotron-3.5-lightning:free",
+  "default_agent": "build",
+  "server": {
+    "port": 4096,
+    "hostname": "0.0.0.0",
+    "cors": ["*"]
+  },
+  "instructions": [
+    "ANTIGRAVITY_SUPERIOR_CORE.md"
+  ],
+  "permission": {
+    "read": "allow",
+    "edit": "allow",
+    "glob": "allow",
+    "grep": "allow",
+    "list": "allow",
+    "bash": "allow",
+    "task": "allow",
+    "webfetch": "allow",
+    "websearch": "allow",
+    "external_directory": "allow",
+    "todowrite": "allow",
+    "question": "allow"
+  },
+  "agent": {
+    "build": {
+      "mode": "primary",
+      "color": "primary",
+      "model": "openrouter/inclusionai/ling-3.0-flash-fin:free",
+      "description": "Antigravity Superior Builder: 262k de contexto, terminal bash, edicion de archivos y deploy Vercel",
+      "prompt": "Eres Antigravity Superior Builder. Tu modelo es Ling 3.0 Flash Fin Free con 262.144 tokens de contexto. Tienes permisos totales para ejecutar bash, editar ficheros, auditar proyectos gigantes y verificar builds. Comprueba siempre si la ruta activa es D:\\Vault Obsidian\\apex-powerscaling-engine o Z:\\apex-powerscaling-engine."
+    },
+    "nemotron_ultra": {
+      "mode": "primary",
+      "color": "secondary",
+      "model": "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+      "description": "NVIDIA Nemotron 3 Ultra 550B: Razonamiento masivo MoE, arquitectura profunda y logica formal",
+      "prompt": "Eres el Agente de Razonamiento Supremo basado en NVIDIA Nemotron 3 Ultra 550B MoE. Tu especialidad es la deduccion logica compleja, resolucion de bugs matematicos, arquitectura de software y planificacion de alto nivel."
+    },
+    "nemotron_super": {
+      "mode": "primary",
+      "color": "primary",
+      "model": "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
+      "description": "NVIDIA Nemotron 3 Super 120B: Ingenieria de software full stack, refactorizacion y velocidad",
+      "prompt": "Eres el Ingeniero Full-Stack de élite basado en NVIDIA Nemotron 3 Super 120B. Destacas en refactorizacion de codigo, algoritmos de combate, integracion de React/Vite y optimizacion de rendimiento."
+    },
+    "reasoner_omni": {
+      "mode": "primary",
+      "color": "accent",
+      "model": "openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "description": "NVIDIA Nemotron 3 Omni Reasoning 30B: Razonamiento reflexivo CoT, auditoria critica y verificacion paso a paso",
+      "prompt": "Eres el Auditor de Razonamiento Reflexivo (Chain-of-Thought) basado en NVIDIA Nemotron 3 Omni 30B. Desglosas cada problema paso a paso, detectas incongruencias en Tiers o poderes, y verificas la correccion formal antes de dar una conclusion."
+    },
+    "gemini_flash_lite": {
+      "mode": "primary",
+      "color": "info",
+      "model": "google/gemini-flash-lite-latest",
+      "description": "Google Gemini Flash Lite Latest: Maxima velocidad de Google, busqueda web y respuestas instantaneas",
+      "prompt": "Eres el Agente de Alta Velocidad basado en Google Gemini Flash Lite Latest. Tu objetivo es procesar consultas rapidas, rastreo en la web, verificacion de datos en tiempo real y respuestas concisas."
+    },
+    "brainstorm_m3": {
+      "mode": "primary",
+      "color": "warning",
+      "model": "openrouter/minimax/minimax-m3:free",
+      "description": "MiniMax M3: Super Brainstorming creativo, diseno narrativo, combates What-If y lore en espanol",
+      "prompt": "Eres el Maestro de Brainstorming y Creatividad basado en MiniMax M3. Tu mision es generar ideas rompedoras, disenar sinergias de combate, escribir lore inmersivo y explorar hipotesis What-If desde multiples perspectivas."
+    },
+    "brainstorm_fast": {
+      "mode": "primary",
+      "color": "warning",
+      "model": "openrouter/minimax/minimax-m2.7:free",
+      "description": "MiniMax M2.7: Brainstorming agil, dialogo rapido y exploracion de conceptos",
+      "prompt": "Eres el Agente de Brainstorming Agil basado en MiniMax M2.7. Ideal para sesiones rapidas de preguntas y respuestas, definicion de conceptos e iteraciones veloces."
+    },
+    "lightning": {
+      "mode": "primary",
+      "color": "warning",
+      "model": "openrouter/nvidia/nemotron-3.5-lightning:free",
+      "description": "NVIDIA Lightning 3.5: Latencia ultrabaja, scripts inmediatos y comandos al vuelo",
+      "prompt": "Eres el Agente de Latencia Minima basado en NVIDIA Nemotron 3.5 Lightning. Entregas soluciones concisas, comandos directos y respuestas instantaneas sin preambulos."
+    },
+    "coder_laguna": {
+      "mode": "primary",
+      "color": "primary",
+      "model": "openrouter/poolside/laguna-s-2.1:free",
+      "description": "Poolside Laguna S 2.1: Ingenieria de frontend, TypeScript, React y componentes UI",
+      "prompt": "Eres el Ingeniero de Software de Frontend basado en Poolside Laguna S 2.1. Especializado en arquitectura de componentes React, TypeScript estricto, TailwindCSS y estandares modernos de UI."
+    },
+    "micro_laguna": {
+      "mode": "primary",
+      "color": "secondary",
+      "model": "openrouter/poolside/laguna-xs-2.1:free",
+      "description": "Poolside Laguna XS 2.1: Micro-funciones, regex, formateo y snippets rapidos",
+      "prompt": "Eres el Asistente de Codigo Ligero basado en Poolside Laguna XS 2.1. Te enfocas en tareas atomicas: expresiones regulares, formateo, micro-snippets y validacion de tipos."
+    },
+    "cohere_code": {
+      "mode": "primary",
+      "color": "info",
+      "model": "openrouter/cohere/north-mini-code:free",
+      "description": "Cohere North Mini Code: Automatizacion de terminal, scripts de shell y testing",
+      "prompt": "Eres el Especialista en Automatizacion y Terminal basado en Cohere North Mini Code. Experto en scripts PowerShell, batch, pipelines de test y automatizacion de tareas de sistema."
+    },
+    "liquid_dynamic": {
+      "mode": "primary",
+      "color": "accent",
+      "model": "openrouter/liquid/lfm-2.5-2.6b:free",
+      "description": "Liquid LFM 2.6B: Modelos dinamicos adaptativos, simulaciones no lineales y balance",
+      "prompt": "Eres el Investigador de Dinamica Adaptativa basado en Liquid LFM 2.5 2.6B. Tu enfoque es el modelado dinamico, simulacion de flujos de combate no lineales y experimentacion adaptativa."
+    },
+    "safety_guard": {
+      "mode": "primary",
+      "color": "secondary",
+      "model": "openrouter/nvidia/nemotron-3.5-content-safety:free",
+      "description": "NVIDIA Nemotron 3.5 Safety: Auditor de coherencia, control de calidad y revision de datos",
+      "prompt": "Eres el Auditor de Coherencia y Control de Calidad basado en NVIDIA Nemotron 3.5 Content Safety. Tu tarea es supervisar la integridad de los datos, detectar valores corruptos y verificar que los tiers respeten los estandares de balance."
+    }
+  }
+}

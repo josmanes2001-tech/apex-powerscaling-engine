@@ -1,0 +1,1 @@
+﻿Auditar exhaustivamente los personajes de Dragon Ball en src/services/scouterEngine.js, verificar que Cell Larva este en Tier 7-B (800 unidades), Goku Base en Tier 5-A y Vegeta Base en Tier 5-A. Asegurar que las formulas de multiplicadores de transformacion (SSJ1, SSJ2, SSJ3) sigan la progresion canonica y verificar que npm run build compile al 100% sin errores.

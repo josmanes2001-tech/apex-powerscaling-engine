@@ -73,12 +73,40 @@ async function main() {
           if (res.formsAudited && Array.isArray(res.formsAudited) && res.formsAudited.length > 0) {
             if (!Array.isArray(target.forms)) target.forms = [];
             for (const f of res.formsAudited) {
-              const existingFormIdx = target.forms.findIndex(ef => ef && (ef.id === f.id || ef.name === f.name));
-              if (existingFormIdx >= 0) {
-                target.forms[existingFormIdx] = { ...target.forms[existingFormIdx], ...f };
-              } else {
-                target.forms.push(f);
+              let formToAdd = { ...f };
+              const isBaseCandidate = (f.id === 'base' || (f.name || '').toLowerCase().trim() === 'estado base');
+              const alreadyHasExactBase = target.forms.some(ef => ef && (ef.id === 'base' || (ef.name || '').toLowerCase().trim() === 'estado base'));
+
+              // Si ya tiene un estado base y este es otro estado base adicional, diferenciarlo como 100% Máximo Poder
+              if (isBaseCandidate && alreadyHasExactBase && target.forms.length > 0) {
+                if (!(formToAdd.name || '').includes('100%') && !(formToAdd.name || '').toLowerCase().includes('máximo')) {
+                  formToAdd.name = `${formToAdd.name || 'Estado Base'} (100% Máximo Poder)`;
+                  formToAdd.id = formToAdd.id === 'base' ? 'base_max_power' : formToAdd.id;
+                  if (!formToAdd.apexKiMultiplier || formToAdd.apexKiMultiplier === 1) {
+                    formToAdd.apexKiMultiplier = 1.25;
+                  }
+                }
               }
+
+              const existingFormIdx = target.forms.findIndex(ef => ef && (ef.id === formToAdd.id || ef.name === formToAdd.name));
+              if (existingFormIdx >= 0) {
+                target.forms[existingFormIdx] = { ...target.forms[existingFormIdx], ...formToAdd };
+              } else {
+                target.forms.push(formToAdd);
+              }
+              appliedOps++;
+            }
+
+            // Garantizar que la forma base este siempre presente en el array de formas
+            const hasAnyBase = target.forms.some(ef => ef && (ef.id === 'base' || (ef.name || '').toLowerCase().includes('base')));
+            if (!hasAnyBase) {
+              target.forms.unshift({
+                id: 'base',
+                name: 'Estado Base',
+                apexKiMultiplier: 1.0,
+                staminaDrain: 0,
+                canonStatus: 'source_backed'
+              });
               appliedOps++;
             }
           }
@@ -132,6 +160,59 @@ async function main() {
                 appliedOps++;
               }
             }
+          }
+
+          // Merge Hax Resistances (0-100)
+          if (res.haxResistances && typeof res.haxResistances === 'object') {
+            target.haxResistances = { ...(target.haxResistances || {}), ...res.haxResistances };
+            appliedOps++;
+          }
+
+          // Merge Combat AI Personality
+          if (res.combatAIPersonality && typeof res.combatAIPersonality === 'object') {
+            target.combatAIPersonality = { ...(target.combatAIPersonality || {}), ...res.combatAIPersonality };
+            appliedOps++;
+          }
+
+          // Merge Environmental Affinity
+          if (res.environmentalAffinity && typeof res.environmentalAffinity === 'object') {
+            target.environmentalAffinity = { ...(target.environmentalAffinity || {}), ...res.environmentalAffinity };
+            appliedOps++;
+          }
+
+          // Merge Proven Feats
+          if (res.provenFeats && typeof res.provenFeats === 'object') {
+            target.provenFeats = { ...(target.provenFeats || {}), ...res.provenFeats };
+            appliedOps++;
+          }
+
+          // Merge Combat Dialogue
+          if (res.combatDialogue && typeof res.combatDialogue === 'object') {
+            target.combatDialogue = { ...(target.combatDialogue || {}), ...res.combatDialogue };
+            appliedOps++;
+          }
+
+          // Merge Stamina Profile
+          if (res.staminaProfile && typeof res.staminaProfile === 'object') {
+            target.staminaProfile = { ...(target.staminaProfile || {}), ...res.staminaProfile };
+            appliedOps++;
+          }
+
+          // Merge Signature Equipment
+          if (res.signatureEquipment && Array.isArray(res.signatureEquipment)) {
+            if (!Array.isArray(target.signatureEquipment)) target.signatureEquipment = [];
+            for (const eq of res.signatureEquipment) {
+              if (!target.signatureEquipment.some(e => (e?.name || e) === (eq?.name || eq))) {
+                target.signatureEquipment.push(eq);
+                appliedOps++;
+              }
+            }
+          }
+
+          // Merge Knowledge Horizon & Anti-Anachronism Boundaries
+          if (res.knowledgeHorizon && typeof res.knowledgeHorizon === 'object') {
+            target.knowledgeHorizon = { ...(target.knowledgeHorizon || {}), ...res.knowledgeHorizon };
+            appliedOps++;
           }
         }
       }

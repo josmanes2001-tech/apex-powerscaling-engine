@@ -56,46 +56,64 @@ async function runMenu() {
 
   // 3. Motor IA
   console.log('\n\x1b[1m\x1b[32m[3/4] SELECCIONA EL MOTOR DE INTELIGENCIA ARTIFICIAL:\x1b[0m');
-  console.log('  \x1b[33m1.\x1b[0m \x1b[1mGoogle Gemini Flash Lite\x1b[0m (Clave Directa Oficial de Google) \x1b[32m[ULTRA RÁPIDO - 1s/lote]\x1b[0m');
-  console.log('  \x1b[33m2.\x1b[0m Modo Híbrido Conjunto (Gemini Flash Lite + OpenRouter 50/50)');
-  console.log('  \x1b[33m3.\x1b[0m Solo OpenRouter (NVIDIA Nemotron 3.5 Lightning / Llama 70B)');
-  const modelChoice = await ask('\n👉 Elige Motor IA [1-3, Enter=1]: ', '1');
+  console.log('  \x1b[90m─── EN SOLITARIO ────────────────────────────────────────────────\x1b[0m');
+  console.log('  \x1b[33m1.\x1b[0m \x1b[1mNVIDIA Nemotron 3.5 Lightning Free\x1b[0m \x1b[32m[⚡ ULTRA RÁPIDO - CERO LATENCIA]\x1b[0m');
+  console.log('  \x1b[33m2.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Super 120B Free\x1b[0m  \x1b[36m[🧠 RAZONAMIENTO Y EQUILIBRIO]\x1b[0m');
+  console.log('  \x1b[33m3.\x1b[0m \x1b[1mMiniMax M3 Free\x1b[0m (minimax-m3:free)  \x1b[33m[🌟 LORE ÉPICO Y ESPAÑOL MAESTRO]\x1b[0m');
+  console.log('  \x1b[33m4.\x1b[0m \x1b[1mGoogle Gemini Flash Lite Latest\x1b[0m    \x1b[34m[🌐 VELOCIDAD OFICIAL GOOGLE]\x1b[0m');
+  console.log('  \x1b[33m5.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Ultra 550B MoE\x1b[0m   \x1b[35m[🏛️ LÓGICA PURA Y MÁXIMO RIGOR]\x1b[0m');
+  console.log('  \x1b[90m─── MODOS HÍBRIDOS (50/50 DÚO ALTERNADO) ────────────────────────\x1b[0m');
+  console.log('  \x1b[33m6.\x1b[0m \x1b[1mHíbrido Nemotron (Lightning + Super 120B)\x1b[0m       \x1b[32m[⭐ RECOMENDADO NOCHE COMPLETA]\x1b[0m');
+  console.log('  \x1b[33m7.\x1b[0m \x1b[1mHíbrido Gemini + Lightning (Google + NVIDIA)\x1b[0m     \x1b[34m[MÁXIMA VELOCIDAD COMBINADA]\x1b[0m');
+  console.log('  \x1b[33m8.\x1b[0m \x1b[1mHíbrido Gemini + Nemotron Super 120B\x1b[0m             \x1b[36m[GOOGLE + CEREBRO 120B]\x1b[0m');
+  console.log('  \x1b[33m9.\x1b[0m \x1b[1mHíbrido Gemini + MiniMax M3\x1b[0m                      \x1b[33m[GOOGLE + LORE ÉPICO ESPAÑOL]\x1b[0m');
+  console.log('  \x1b[33m10.\x1b[0m \x1b[1mHíbrido MiniMax M3 + Nemotron Lightning\x1b[0m          \x1b[33m[LORE ÉPICO + VELOCIDAD]\x1b[0m');
+  console.log('  \x1b[33m11.\x1b[0m \x1b[1mHíbrido MiniMax M3 + Nemotron Super 120B\x1b[0m         \x1b[36m[LORE + PODER TÁCTICO]\x1b[0m');
+  console.log('  \x1b[90m─── OTROS MODELOS ───────────────────────────────────────────────\x1b[0m');
+  console.log('  \x1b[33m12.\x1b[0m Ling 3.0 Flash Fin Free (Contexto masivo de 262k)');
+  console.log('  \x1b[33m13.\x1b[0m Ingresar cualquier modelo de OpenRouter personalizado');
+  const modelChoice = await ask('\n👉 Elige Motor IA [1-13, Enter=1]: ', '1');
 
-  let model = 'google/gemini-3.5-flash-lite';
-  if (modelChoice === '2') {
-    console.log('\n  \x1b[90mElige el compañero de OpenRouter para alternar con Gemini:\x1b[0m');
-    console.log('    1. NVIDIA Nemotron 3.5 Lightning (Gratis - Ultra Rápido) \x1b[32m[RECOMENDADO]\x1b[0m');
-    console.log('    2. Meta Llama 3.3 70B Instruct (Alta Precisión de Combate)');
-    console.log('    3. MiniMax M3 (minimax/minimax-m3:free - Gratis & Alta Capacidad)');
-    console.log('    4. DeepSeek R1 (deepseek/deepseek-r1:free - Pensamiento Extremo)');
-    console.log('    5. Poolside Laguna S 2.1 (Razonamiento de Código/Agentes)');
-    console.log('    6. Ingresar cualquier modelo de OpenRouter personalizado');
-    const subChoice = await ask('\n  👉 OpenRouter [1-6, Enter=1]: ', '1');
-    if (subChoice === '2') model = 'hybrid:meta-llama/llama-3.3-70b-instruct:free';
-    else if (subChoice === '3') model = 'hybrid:minimax/minimax-m3:free';
-    else if (subChoice === '4') model = 'hybrid:deepseek/deepseek-r1:free';
-    else if (subChoice === '5') model = 'hybrid:poolside/laguna-s-2.1:free';
-    else if (subChoice === '6') {
-      const customId = await ask('  👉 Escribe el Model ID de OpenRouter (ej: minimax/minimax-m3:free): ', 'minimax/minimax-m3:free');
-      model = `hybrid:${customId}`;
-    } else model = 'hybrid:nvidia/nemotron-3.5-lightning:free';
+  let model = 'nvidia/nemotron-3.5-lightning:free';
+  if (modelChoice === '1') {
+    model = 'nvidia/nemotron-3.5-lightning:free';
+    console.log('  \x1b[32m✔ Seleccionado: NVIDIA Nemotron 3.5 Lightning Free (Ultra Rápido)\x1b[0m');
+  } else if (modelChoice === '2') {
+    model = 'nvidia/nemotron-3-super-120b-a12b:free';
+    console.log('  \x1b[36m✔ Seleccionado: NVIDIA Nemotron 3 Super 120B Free\x1b[0m');
   } else if (modelChoice === '3') {
-    console.log('\n  \x1b[90mElige el modelo de OpenRouter:\x1b[0m');
-    console.log('    1. NVIDIA Nemotron 3.5 Lightning (Gratis - Ultra Rápido)');
-    console.log('    2. Meta Llama 3.3 70B Instruct (Alta Precisión)');
-    console.log('    3. MiniMax M3 (minimax/minimax-m3:free - Gratis & Alta Capacidad)');
-    console.log('    4. DeepSeek R1 (deepseek/deepseek-r1:free - Pensamiento Extremo)');
-    console.log('    5. Poolside Laguna S 2.1 (Razonamiento)');
-    console.log('    6. Ingresar cualquier modelo de OpenRouter personalizado');
-    const subChoice = await ask('\n  👉 OpenRouter [1-6, Enter=1]: ', '1');
-    if (subChoice === '2') model = 'meta-llama/llama-3.3-70b-instruct:free';
-    else if (subChoice === '3') model = 'minimax/minimax-m3:free';
-    else if (subChoice === '4') model = 'deepseek/deepseek-r1:free';
-    else if (subChoice === '5') model = 'poolside/laguna-s-2.1:free';
-    else if (subChoice === '6') {
-      const customId = await ask('  👉 Escribe el Model ID de OpenRouter (ej: minimax/minimax-m3:free): ', 'minimax/minimax-m3:free');
-      model = customId;
-    } else model = 'nvidia/nemotron-3.5-lightning:free';
+    model = 'minimax/minimax-m3:free';
+    console.log('  \x1b[33m✔ Seleccionado: MiniMax M3 Free (Lore Épico en Español)\x1b[0m');
+  } else if (modelChoice === '4') {
+    model = 'google/gemini-2.5-flash-lite';
+    console.log('  \x1b[34m✔ Seleccionado: Google Gemini Flash Lite Latest\x1b[0m');
+  } else if (modelChoice === '5') {
+    model = 'nvidia/nemotron-3-ultra-550b-a55b:free';
+    console.log('  \x1b[35m✔ Seleccionado: NVIDIA Nemotron 3 Ultra 550B MoE Free\x1b[0m');
+  } else if (modelChoice === '6') {
+    model = 'hybrid:nvidia/nemotron-3.5-lightning:free|nvidia/nemotron-3-super-120b-a12b:free';
+    console.log('  \x1b[32m✔ Seleccionado: Modo Híbrido (Lightning 3.5 + Super 120B 50/50)\x1b[0m');
+  } else if (modelChoice === '7') {
+    model = 'hybrid:google/gemini-2.5-flash-lite|nvidia/nemotron-3.5-lightning:free';
+    console.log('  \x1b[34m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite + Lightning 3.5 50/50)\x1b[0m');
+  } else if (modelChoice === '8') {
+    model = 'hybrid:google/gemini-2.5-flash-lite|nvidia/nemotron-3-super-120b-a12b:free';
+    console.log('  \x1b[36m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite + Super 120B 50/50)\x1b[0m');
+  } else if (modelChoice === '9') {
+    model = 'hybrid:google/gemini-2.5-flash-lite|minimax/minimax-m3:free';
+    console.log('  \x1b[33m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite + MiniMax M3 50/50)\x1b[0m');
+  } else if (modelChoice === '10') {
+    model = 'hybrid:minimax/minimax-m3:free|nvidia/nemotron-3.5-lightning:free';
+    console.log('  \x1b[32m✔ Seleccionado: Modo Híbrido (MiniMax M3 + Lightning 3.5 50/50)\x1b[0m');
+  } else if (modelChoice === '11') {
+    model = 'hybrid:minimax/minimax-m3:free|nvidia/nemotron-3-super-120b-a12b:free';
+    console.log('  \x1b[32m✔ Seleccionado: Modo Híbrido (MiniMax M3 + Super 120B 50/50)\x1b[0m');
+  } else if (modelChoice === '12') {
+    model = 'inclusionai/ling-3.0-flash-fin:free';
+    console.log('  \x1b[32m✔ Seleccionado: Ling 3.0 Flash Fin Free\x1b[0m');
+  } else if (modelChoice === '13') {
+    const customId = await ask('  👉 Escribe el Model ID (ej: poolside/laguna-s-2.1:free): ', 'minimax/minimax-m3:free');
+    model = customId;
   }
 
   // 4. Vueltas al Roster
