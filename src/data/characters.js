@@ -1,6 +1,3 @@
-// APEX Power Scaling Engine — Master Characters Roster
-// Refinado y enriquecido automáticamente con Estándar Dorado APEX
-
 export const INITIAL_CHARACTERS = [
   {
     "id": "androide-8-dragon-ball-cl-sico-704",
@@ -118171,7 +118168,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "saga": "Torneo del Multiverso / Universo 13",
     "version": "Super Saiyan Inmortal (Deseo de las Dragon Balls)",
-    "tier": "4-A",
+    "tier": "4-C",
     "ap": "Capaz de devastar sistemas solares enteros. Su inmortalidad le permite luchar con un salvajismo suicida, ejecutando ataques a quemarropa sin temor a autodestruirse.",
     "range": "Planetario a Sistema Solar.",
     "speed": {
@@ -118262,60 +118259,51 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "base",
-        "name": "Estado Base (Kakarotto Salvaje)",
-        "stats": "Tier 5-A | Nivel Planeta Grande. Inmortalidad activa y cola de mono intacta.",
-        "apexKiMultiplier": 1,
-        "tier": "4-B",
-        "tierExact": "7-A",
-        "multiplier": "1x",
-        "staminaDrain": 0,
+        "name": "Kakarotto Salvaje (Estado Base)",
         "category": "base",
-        "apexKi": 31248,
-        "burstKi": 43747,
-        "durabilityKi": 31248,
-        "sourceKi": null
-      },
-      {
-        "id": "golden-oozaru",
-        "name": "Ozaru Dorado Gigante",
-        "stats": "Tier 4-A+ | Nivel Multi-Sistema Solar Alto. Fuerza descomunal titánica, ráfagas bucales planetarias y resistencia colosal.",
-        "apexKiMultiplier": 10,
-        "tier": "3-C",
-        "staminaDrain": 18,
-        "category": "transformation",
-        "multiplier": "10x",
-        "apexKi": 312480,
-        "burstKi": 421848,
-        "durabilityKi": 312480,
-        "sourceKi": null
+        "apexKiMultiplier": 1,
+        "apexKi": 50000000,
+        "burstKi": 75000000,
+        "staminaDrain": 0,
+        "staminaCost": 0,
+        "tier": "4-C",
+        "stats": "Kakarotto salvaje e inmortal sin golpe en la cabeza, curtido en guerras galácticas."
       },
       {
         "id": "ssj1-immortal",
         "name": "Super Saiyan 1 Inmortal",
-        "stats": "Tier 4-B | Nivel Sistema Solar. x50 multiplicador con sadismo desenfrenado.",
-        "apexKiMultiplier": 50,
-        "tier": "3-C",
-        "staminaDrain": 60,
         "category": "transformation",
-        "multiplier": "50x",
-        "apexKi": 1562400,
-        "burstKi": 2109240,
-        "durabilityKi": 1562400,
-        "sourceKi": null
+        "apexKiMultiplier": 50,
+        "apexKi": 2500000000,
+        "burstKi": 3750000000,
+        "staminaDrain": 15,
+        "staminaCost": 15,
+        "tier": "4-B",
+        "stats": "Transformación dorada potenciada por su fisionomía inmortal que ignora el daño letal."
       },
       {
         "id": "ssj2-immortal",
         "name": "Super Saiyan 2 Inmortal",
-        "stats": "Tier 4-A | Nivel Multi-Sistema Solar. Rayos bio-eléctricos, velocidad cegadora y ferocidad psicópata sin límite de dolor.",
-        "apexKiMultiplier": 100,
-        "tier": "3-B",
-        "staminaDrain": 60,
         "category": "transformation",
-        "multiplier": "100x",
-        "apexKi": 3124800,
-        "burstKi": 4218480,
-        "durabilityKi": 3124800,
-        "sourceKi": null
+        "apexKiMultiplier": 100,
+        "apexKi": 5000000000,
+        "burstKi": 7500000000,
+        "staminaDrain": 30,
+        "staminaCost": 30,
+        "tier": "4-B",
+        "stats": "Descargas eléctricas de ki salvaje con agresión desmedida e inmortalidad."
+      },
+      {
+        "id": "golden-oozaru",
+        "name": "Ozaru Dorado Gigante",
+        "category": "transformation",
+        "apexKiMultiplier": 500,
+        "apexKi": 25000000000,
+        "burstKi": 37500000000,
+        "staminaDrain": 60,
+        "staminaCost": 60,
+        "tier": "4-A",
+        "stats": "Transformación monstruosa en gran simio dorado con poder masivo descontrolado."
       }
     ],
     "feats": [
@@ -118401,18 +118389,22 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(2.8x) × Def(1.65x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 739.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 31248,
-      "burstKi": 43747,
-      "durabilityKi": 31248,
-      "initiativeModifier": 1,
-      "dodgeModifier": 1,
-      "hitChanceModifier": 1,
-      "comboWindowModifier": 1
+      "apexKi": 50000000,
+      "scouterKi": 50000000,
+      "powerLevel": 50000000,
+      "burstKi": 75000000,
+      "durabilityKi": 50000000,
+      "minApexKi": 40000000,
+      "maxApexKi": 60000000,
+      "initiativeModifier": 1.1,
+      "dodgeModifier": 1.1,
+      "hitChanceModifier": 1.1,
+      "comboWindowModifier": 1.1
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 13",
-    "physicalTier": "4-A",
-    "haxTier": "4-A",
+    "physicalTier": "4-C",
+    "haxTier": "4-C",
     "sourceMedium": "fan_manga",
     "haxResistances": {
       "existenceErasure": 20,
@@ -118493,13 +118485,13 @@ export const INITIAL_CHARACTERS = [
       ],
       "crossVerseAwareness": "none"
     },
-    "burstKi": 43747,
+    "burstKi": 75000000,
     "apexKiRange": [
-      25296,
-      37200
+      40000000,
+      60000000
     ],
-    "apexKi": 31248,
-    "durabilityKi": 31248,
+    "apexKi": 50000000,
+    "durabilityKi": 50000000,
     "sourceType": "derived",
     "confidence": "medium",
     "scaling": {
@@ -118522,7 +118514,8 @@ export const INITIAL_CHARACTERS = [
         "durabilityKi",
         "liftingStrength"
       ]
-    }
+    },
+    "sourceKi": 50000000
   },
   {
     "id": "kat-u6-individual",
@@ -122361,7 +122354,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "saga": "Torneo Interuniversal DBM — Universo 13",
     "version": "Versión que sobrevivió a la conquista de Namek junto a Vegeta, en lugar de morir tempranamente en la Tierra a manos de Vegeta como en el canon principal",
-    "tier": "4-B",
+    "tier": "5-A",
     "ap": "Al sobrevivir mucho más tiempo que su contraparte del canon principal (donde muere en la Saga Saiyan a manos de su propio príncipe), este Nappa tuvo la oportunidad de participar en la conquista exitosa de Namek, resultando en un desarrollo de combate considerablemente superior.",
     "range": "Extendido, técnicas de ki Saiyan de élite.",
     "speed": {
@@ -122477,17 +122470,15 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "base",
-        "name": "Nappa (Estado Base)",
-        "stats": "Tier 4-B | Nivel Sistema Solar. Forma principal en combate.",
-        "apexKiMultiplier": 1,
-        "tier": "4-B",
-        "staminaDrain": 0,
+        "name": "Nappa Veterano (Estado Base U13)",
         "category": "base",
-        "apexKi": 4200,
-        "burstKi": 6300,
-        "durabilityKi": 4200,
-        "sourceKi": 4000,
-        "multiplier": "1x"
+        "apexKiMultiplier": 1,
+        "apexKi": 1850000,
+        "burstKi": 2775000,
+        "staminaDrain": 0,
+        "staminaCost": 0,
+        "tier": "5-A",
+        "stats": "Tanque saiyan veterano con más de 30 años de entrenamiento tras sobrevivir a Freezer."
       }
     ],
     "feats": [
@@ -122556,21 +122547,25 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 4600 Unidades | Oficial DB: 4600 Unidades"
     },
     "numericStats": {
-      "apexKi": 4200,
-      "burstKi": 6300,
-      "durabilityKi": 4200,
+      "apexKi": 1850000,
+      "scouterKi": 1850000,
+      "powerLevel": 1850000,
+      "burstKi": 2775000,
+      "durabilityKi": 1850000,
+      "minApexKi": 1480000,
+      "maxApexKi": 2220000,
       "initiativeModifier": 1,
-      "dodgeModifier": 1,
-      "hitChanceModifier": 1,
+      "dodgeModifier": 0.95,
+      "hitChanceModifier": 1.05,
       "comboWindowModifier": 1
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 13",
-    "physicalTier": "4-B",
-    "haxTier": "4-B",
+    "physicalTier": "5-A",
+    "haxTier": "5-A",
     "canonicalKi": 4000,
     "sourceMedium": "fan_manga",
-    "sourceKi": 4000,
+    "sourceKi": 1850000,
     "sourceKiStatus": "canonical-db",
     "staminaProfile": {
       "basePool": 100,
@@ -122840,13 +122835,13 @@ export const INITIAL_CHARACTERS = [
       ],
       "crossVerseAwareness": "none"
     },
-    "burstKi": 6300,
+    "burstKi": 2775000,
     "apexKiRange": [
-      3400,
-      5000
+      1480000,
+      2220000
     ],
-    "apexKi": 4200,
-    "durabilityKi": 4200,
+    "apexKi": 1850000,
+    "durabilityKi": 1850000,
     "sourceType": "canon_explicit",
     "confidence": "high",
     "scaling": {
@@ -124154,7 +124149,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "saga": "Torneo del Multiverso / Universo 13",
     "version": "Ritual del Anciano Kaiōshin (Estado Místico Desbloqueado)",
-    "tier": "4-A",
+    "tier": "5-A",
     "ap": "Nivel Galáctico. Cansado de ser el miembro más débil del escuadrón del Universo 13, convenció al Anciano Kaiōshin del Universo 9 para que realizara el ritual de desbloqueo de potencial. En su estado Místico supera en poder a Kakarotto, Nappa e incluso rivaliza con los guerreros Z más fuertes sin necesidad de transformarse.",
     "range": "Sistema Solar a Galáctico.",
     "speed": {
@@ -124271,57 +124266,28 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "base",
-        "name": "Estado Base (Raditz Guerrero U13)",
-        "stats": "Tier 5-B | Nivel Planeta. Guerrero de élite Saiyan que nunca logró desbloquear el Super Saiyan.",
-        "apexKiMultiplier": 1,
-        "tier": "4-B",
-        "tierExact": "7-A",
-        "multiplier": "1x",
-        "staminaDrain": 0,
+        "name": "Raditz (Guerrero U13 Base)",
         "category": "base",
-        "apexKi": 1575,
-        "burstKi": 2205,
-        "durabilityKi": 1575,
-        "sourceKi": 1300
+        "apexKiMultiplier": 1,
+        "apexKi": 8500000,
+        "burstKi": 12750000,
+        "staminaDrain": 0,
+        "staminaCost": 0,
+        "tier": "5-A",
+        "stats": "Raditz veterano de U13 fortalecido por décadas de conquistas y zenkais continuos."
       },
       {
         "id": "mystic-raditz",
         "name": "Raditz Místico (Potencial Supremo Kaiōshin)",
-        "stats": "Tier 4-A | Nivel Galáctico. Desbloqueo de potencial divino directo por el Anciano Kaiōshin del U9, sin fases Super Saiyan intermedias.",
-        "apexKiMultiplier": 2,
-        "staminaDrain": 0,
-        "activationCondition": "Permanente tras la finalización del ritual del Anciano Kaiōshin. Solo se desactiva por muerte del oficiante o intervención externa.",
-        "grantedTags": [
-          "potential_unleashed",
-          "divine_aura",
-          "no_ki_leak",
-          "zenkai_active"
-        ],
-        "suppressedTags": [
-          "super_saiyan_required",
-          "transformation_strain"
-        ],
-        "grantedAbilities": [
-          "Double Sunday Místico Perforante",
-          "Saturday Crash Supremo",
-          "Venganza del Hermano Mayor: Devastación Mística",
-          "Resonancia Divina U9-U13"
-        ],
-        "limitations": [
-          "No acumulable con transformaciones Saiyan estándar (colisión ki).",
-          "Pérdida total de poder si el Anciano Kaiōshin es sellado o muere.",
-          "Resentimiento crónico que puede desestabilizar el control fino del aura."
-        ],
-        "exitCondition": "Muerte del usuario o del Anciano Kaiōshin oficiante.",
-        "counterplay": "Aislamiento del Anciano Kaiōshin U9 antes del combate. Provocación psicológica sostenida para romper concentración.",
-        "canonStatus": "apex_custom",
-        "tier": "4-A",
         "category": "transformation",
-        "multiplier": "2x",
-        "apexKi": 1300,
-        "sourceKi": 1300,
-        "burstKi": 1755,
-        "durabilityKi": 1300
+        "apexKiMultiplier": 1941.17,
+        "apexKi": 16500000000,
+        "burstKi": 24750000000,
+        "explicitSourceKi": 16500000000,
+        "staminaDrain": 10,
+        "staminaCost": 10,
+        "tier": "4-A",
+        "stats": "Potencial oculto completamente desbloqueado por el ritual del Anciano Kaiōshin, rivalizando con guerreros cumbre de DBM."
       }
     ],
     "feats": [
@@ -124434,18 +124400,22 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 1500 Unidades | Oficial DB: 1500 Unidades"
     },
     "numericStats": {
-      "apexKi": 1575,
-      "burstKi": 2205,
-      "durabilityKi": 1575,
-      "initiativeModifier": 1,
-      "dodgeModifier": 1,
-      "hitChanceModifier": 1,
-      "comboWindowModifier": 1
+      "apexKi": 8500000,
+      "scouterKi": 8500000,
+      "powerLevel": 8500000,
+      "burstKi": 12750000,
+      "durabilityKi": 8500000,
+      "minApexKi": 6800000,
+      "maxApexKi": 10200000,
+      "initiativeModifier": 1.05,
+      "dodgeModifier": 1.05,
+      "hitChanceModifier": 1.05,
+      "comboWindowModifier": 1.05
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 13",
-    "physicalTier": "4-A",
-    "haxTier": "4-A",
+    "physicalTier": "5-A",
+    "haxTier": "5-A",
     "canonicalKi": 1500,
     "sourceMedium": "fan_manga",
     "haxResistances": {
@@ -124522,15 +124492,15 @@ export const INITIAL_CHARACTERS = [
       ],
       "crossVerseAwareness": "none"
     },
-    "sourceKi": 1300,
+    "sourceKi": 8500000,
     "sourceKiStatus": "canonical-db",
-    "burstKi": 2205,
+    "burstKi": 12750000,
     "apexKiRange": [
-      1275,
-      1875
+      6800000,
+      10200000
     ],
-    "apexKi": 1575,
-    "durabilityKi": 1575,
+    "apexKi": 8500000,
+    "durabilityKi": 8500000,
     "sourceType": "guidebook",
     "sourceReference": "Daizenshuu 7 / Guías Oficiales Dragon Ball",
     "confidence": "high",
@@ -125837,7 +125807,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "saga": "Torneo del Multiverso / Universo 13",
     "version": "Super Saiyan Real con Capa y Dominio de Ki",
-    "tier": "4-B",
+    "tier": "5-B",
     "ap": "Nivel Sistema Solar. El gobernante de los Saiyans que derrocó a Freezer en su universo y expandió el Imperio Saiyan por toda la galaxia. Al alcanzar el Super Saiyan domina técnicas de bombardeo masivo y ataques de espada de Ki con disciplina militar.",
     "range": "Planetario a Sistema Solar.",
     "speed": {
@@ -125930,32 +125900,27 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "base",
-        "name": "Estado Base (Rey Vegeta)",
-        "stats": "Tier 5-A | Nivel Planeta Grande. Comandante supremo con capa y barba real.",
-        "apexKiMultiplier": 1,
-        "tier": "7-A",
-        "tierExact": "7-A",
-        "multiplier": "1x",
-        "staminaDrain": 0,
+        "name": "Rey Vegeta (Estado Base)",
         "category": "base",
-        "apexKi": 15519,
-        "burstKi": 21727,
-        "durabilityKi": 15519,
-        "sourceKi": null
+        "apexKiMultiplier": 1,
+        "apexKi": 160000,
+        "burstKi": 240000,
+        "staminaDrain": 0,
+        "staminaCost": 0,
+        "tier": "5-B",
+        "stats": "Soberano de los Saiyans con poder de élite original."
       },
       {
         "id": "ssj1-king-vegeta",
         "name": "Super Saiyan Real (Rey Vegeta SSJ)",
-        "stats": "Tier 4-B | Nivel Sistema Solar. x50 multiplicador con barba dorada erizada y aura regia.",
-        "apexKiMultiplier": 50,
-        "tier": "4-A",
-        "staminaDrain": 60,
         "category": "transformation",
-        "multiplier": "50x",
-        "apexKi": 775950,
-        "burstKi": 1047533,
-        "durabilityKi": 775950,
-        "sourceKi": null
+        "apexKiMultiplier": 50,
+        "apexKi": 8000000,
+        "burstKi": 12000000,
+        "staminaDrain": 25,
+        "staminaCost": 25,
+        "tier": "5-A",
+        "stats": "Despertar de la leyenda dorada del Rey Vegeta en la continuidad de DBM."
       }
     ],
     "feats": [
@@ -126053,20 +126018,24 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 32.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 15519,
-      "burstKi": 21727,
-      "durabilityKi": 15519,
-      "initiativeModifier": 1,
+      "apexKi": 160000,
+      "scouterKi": 160000,
+      "powerLevel": 160000,
+      "burstKi": 240000,
+      "durabilityKi": 160000,
+      "minApexKi": 128000,
+      "maxApexKi": 192000,
+      "initiativeModifier": 1.05,
       "dodgeModifier": 1,
-      "hitChanceModifier": 1,
+      "hitChanceModifier": 1.05,
       "comboWindowModifier": 1
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball Multiverse",
     "sourceMedium": "fan_manga",
     "sagaOrArc": "Torneo del Multiverso / Universo 13",
-    "physicalTier": "4-B",
-    "haxTier": "4-B",
+    "physicalTier": "5-B",
+    "haxTier": "5-B",
     "franchise": "Dragon Ball",
     "staminaProfile": {
       "basePool": 100,
@@ -126122,13 +126091,13 @@ export const INITIAL_CHARACTERS = [
       ],
       "crossVerseAwareness": "none"
     },
-    "burstKi": 21727,
+    "burstKi": 240000,
     "apexKiRange": [
-      12563,
-      18475
+      128000,
+      192000
     ],
-    "apexKi": 15519,
-    "durabilityKi": 15519,
+    "apexKi": 160000,
+    "durabilityKi": 160000,
     "sourceType": "derived",
     "confidence": "medium",
     "scaling": {
@@ -126151,7 +126120,8 @@ export const INITIAL_CHARACTERS = [
         "durabilityKi",
         "liftingStrength"
       ]
-    }
+    },
+    "sourceKi": 160000
   },
   {
     "id": "romanesco-u10-individual",
@@ -131091,7 +131061,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "saga": "Torneo Interuniversal DBM — Universo 13",
     "version": "Versión donde Kakarotto nunca se golpeó la cabeza de bebé, permaneciendo violento y sirviendo bajo Vegeta en su conquista de Namek, donde este desbloqueó el secreto del Super Saiyan",
-    "tier": "3-C",
+    "tier": "4-C",
     "ap": "En Estado Base y SSJ domina el cuadrilátero; con SSJ2 y SSJ3 desata un poder destructivo masivo capaz de aniquilar ejércitos de guerreros fantasmas del Dr. Raichi.",
     "range": "Extendido, técnicas de ki real Saiyan combinadas con Super Saiyan.",
     "speed": {
@@ -131220,60 +131190,51 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "base",
-        "name": "Estado Base (Vegeta U13)",
-        "stats": "Tier 5-A | Nivel Planeta Grande. Comandante supremo y líder despiadado de los cuatro Super Saiyans.",
-        "apexKiMultiplier": 1,
-        "tier": "7-A",
-        "tierExact": "7-A",
-        "multiplier": "1x",
-        "staminaDrain": 0,
+        "name": "Vegeta (Estado Base U13)",
         "category": "base",
-        "apexKi": 15257,
-        "burstKi": 22886,
-        "durabilityKi": 15257,
-        "sourceKi": null
+        "apexKiMultiplier": 1,
+        "apexKi": 65000000,
+        "burstKi": 97500000,
+        "staminaDrain": 0,
+        "staminaCost": 0,
+        "tier": "4-C",
+        "stats": "Forma Base veterana del Rey de los Saiyans del Universo 13."
       },
       {
         "id": "ssj1-vegeta-u13",
-        "name": "Super Saiyan 1 (SSJ1)",
-        "stats": "Tier 4-B a 4-A | Nivel Sistema Solar. x50 multiplicador, forma descubierta tras su victoria sobre Freezer en Namek.",
-        "apexKiMultiplier": 50,
-        "tier": "3-B",
-        "staminaDrain": 60,
+        "name": "Super Saiyan (SSJ1)",
         "category": "transformation",
-        "multiplier": "50x",
-        "apexKi": 762850,
-        "burstKi": 1029848,
-        "durabilityKi": 762850,
-        "sourceKi": null
+        "apexKiMultiplier": 50,
+        "apexKi": 3250000000,
+        "burstKi": 4875000000,
+        "staminaDrain": 15,
+        "staminaCost": 15,
+        "tier": "4-B",
+        "stats": "Primer nivel de Super Saiyan dominado tras el derrocamiento de Freezer."
       },
       {
         "id": "ssj2-vegeta-u13",
         "name": "Super Saiyan 2 (SSJ2)",
-        "stats": "Tier 4-A | Nivel Multi-Sistema Solar. Bio-electricidad densa, gran incremento de velocidad marcial y dominio táctico.",
-        "apexKiMultiplier": 100,
-        "tier": "3-A",
-        "staminaDrain": 60,
         "category": "transformation",
-        "multiplier": "100x",
-        "apexKi": 1525700,
-        "burstKi": 2059695,
-        "durabilityKi": 1525700,
-        "sourceKi": null
+        "apexKiMultiplier": 100,
+        "apexKi": 6500000000,
+        "burstKi": 9750000000,
+        "staminaDrain": 30,
+        "staminaCost": 30,
+        "tier": "4-B",
+        "stats": "Evolución con bioelectricidad desatada en los torneos imperiales."
       },
       {
         "id": "ssj3-vegeta-u13",
         "name": "Super Saiyan 3 (SSJ3)",
-        "stats": "Tier 3-C a 3-B | Nivel Galaxia a Multi-Galaxia. Cabello largo dorado, máxima carta de triunfo revelada contra el Dr. Raichi.",
-        "apexKiMultiplier": 400,
-        "tier": "3-A",
-        "staminaDrain": 60,
         "category": "transformation",
-        "multiplier": "400x",
-        "apexKi": 6102800,
-        "burstKi": 8238780,
-        "durabilityKi": 6102800,
-        "sourceKi": null
+        "apexKiMultiplier": 400,
+        "apexKi": 26000000000,
+        "burstKi": 39000000000,
+        "staminaDrain": 75,
+        "staminaCost": 75,
+        "tier": "4-A",
+        "stats": "Poder supremo del Rey Saiyan U13 para luchar contra guerreros cósmicos."
       }
     ],
     "feats": [
@@ -131361,18 +131322,22 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 5.08 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 15257,
-      "burstKi": 22886,
-      "durabilityKi": 15257,
-      "initiativeModifier": 1,
-      "dodgeModifier": 1,
-      "hitChanceModifier": 1,
-      "comboWindowModifier": 1
+      "apexKi": 65000000,
+      "scouterKi": 65000000,
+      "powerLevel": 65000000,
+      "burstKi": 97500000,
+      "durabilityKi": 65000000,
+      "minApexKi": 52000000,
+      "maxApexKi": 78000000,
+      "initiativeModifier": 1.15,
+      "dodgeModifier": 1.1,
+      "hitChanceModifier": 1.1,
+      "comboWindowModifier": 1.1
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 13",
-    "physicalTier": "3-C",
-    "haxTier": "3-C",
+    "physicalTier": "4-C",
+    "haxTier": "4-C",
     "sourceMedium": "fan_manga",
     "staminaProfile": {
       "basePool": 100,
@@ -131650,13 +131615,13 @@ export const INITIAL_CHARACTERS = [
       ],
       "crossVerseAwareness": "none"
     },
-    "burstKi": 22886,
+    "burstKi": 97500000,
     "apexKiRange": [
-      12351,
-      18163
+      52000000,
+      78000000
     ],
-    "apexKi": 15257,
-    "durabilityKi": 15257,
+    "apexKi": 65000000,
+    "durabilityKi": 65000000,
     "sourceType": "derived",
     "confidence": "medium",
     "scaling": {
@@ -131680,7 +131645,8 @@ export const INITIAL_CHARACTERS = [
         "durabilityKi",
         "liftingStrength"
       ]
-    }
+    },
+    "sourceKi": 65000000
   },
   {
     "id": "vegeta-u18-dbm",
