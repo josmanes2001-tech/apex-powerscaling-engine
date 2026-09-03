@@ -1,0 +1,10 @@
+node_modules
+.git
+.github
+src/data/backups
+src/data/reports
+*.backup.*
+*.log
+
+dist
+.cache
