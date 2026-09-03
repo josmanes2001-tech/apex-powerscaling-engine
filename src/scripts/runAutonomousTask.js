@@ -12,7 +12,7 @@
 import fs from 'fs';
 import path from 'path';
 import http from 'http';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '../../');
@@ -177,14 +177,14 @@ async function loadCharacters() {
         const raw = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
         return Array.isArray(raw) ? raw : (raw.characters || raw.records || [raw]);
       } else {
-        const customMod = await import('file://' + targetPath.replace(/\\/g, '/'));
+        const customMod = await import(pathToFileURL(targetPath).href);
         return customMod.INITIAL_CHARACTERS || customMod.characters || [];
       }
     }
   }
 
   // 2. Carga dinámica del Roster completo de APEX
-  const mod = await import('file://' + CHARACTERS_FILE.replace(/\\/g, '/'));
+  const mod = await import(pathToFileURL(CHARACTERS_FILE).href);
   let chars = mod.INITIAL_CHARACTERS || [];
 
   // 3. Filtrar por universo si no es 'all'

@@ -664,7 +664,7 @@ export function createCombatSnapshot({
         allowedStateIds: [activeStateId, "base"],
         continuity: char.continuity || "canon_main",
         canonStatus: char.canon_status || "verified",
-        type: atk.cost?.toLowerCase().includes("ultimate") ? "ultimate" : "attack",
+        type: (typeof atk.cost === 'string' && atk.cost.toLowerCase().includes("ultimate")) ? "ultimate" : "attack",
         staminaCost: typeof atk.staminaCost === "number" ? atk.staminaCost : 15,
         cooldownTurns: atk.cooldownTurns || 1,
         powerModifier: atk.powerModifier || 1.0,

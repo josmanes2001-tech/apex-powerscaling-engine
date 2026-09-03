@@ -1,4 +1,4 @@
-import { spawn, exec } from 'child_process';
+import { spawn, exec, execSync } from 'child_process';
 import http from 'http';
 import https from 'https';
 import path from 'path';
@@ -11,6 +11,13 @@ const projectRoot = path.resolve(__dirname, '../../');
 console.log('  🚀 INICIANDO OPENCODE WEB — APEX POWER SCALING');
 console.log('========================================================');
 console.log('Directorio del proyecto:', projectRoot);
+
+// ── Liberar automáticamente puertos huérfanos 4096 y 4097 si quedaron colgados ──
+try {
+  if (process.platform === 'win32') {
+    execSync('powershell -NoProfile -Command "Get-NetTCPConnection -LocalPort 4096,4097 -ErrorAction SilentlyContinue | ForEach-Object { if ($_.OwningProcess -ne $PID) { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue } }"', { stdio: 'ignore' });
+  }
+} catch (e) {}
 
 // ── Cargar .env automáticamente si existe ──────────────────────────────────
 const envPath = path.join(projectRoot, '.env');
@@ -113,16 +120,27 @@ const proxyServer = http.createServer((clientReq, clientRes) => {
   });
 });
 
-proxyServer.listen(proxyPort, '0.0.0.0', () => {
-  console.log('🏡  Proxy de Respaldo Automático de Claves activo en:');
-  console.log('   • Local: http://127.0.0.1:' + proxyPort + '/');
-  console.log('   • Red LAN: http://0.0.0.0:' + proxyPort + '/');
-  const mainKey = KEYS[0] || 'SIN_CLAVE';
-  const backupKey = KEYS[1] || 'SIN_CLAVE';
-  console.log('   • Clave Principal: ' + mainKey.slice(0, 16) + '...');
-  console.log('   • Clave Respaldo:  ' + backupKey.slice(0, 16) + '...');
-  console.log('   (Conmutación automática activa sin cortar la sesión)\n');
+proxyServer.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.warn(`\n⚠️  El puerto proxy ${proxyPort} ya estaba activo.`);
+    console.warn(`   Reutilizando el proxy existente sin interrupción...\n`);
+  } else {
+    console.error('[PROXY SERVER ERROR]', err);
+  }
 });
+
+try {
+  proxyServer.listen(proxyPort, '0.0.0.0', () => {
+    console.log('🏡  Proxy de Respaldo Automático de Claves activo en:');
+    console.log('   • Local: http://127.0.0.1:' + proxyPort + '/');
+    console.log('   • Red LAN: http://0.0.0.0:' + proxyPort + '/');
+    const mainKey = KEYS[0] || 'SIN_CLAVE';
+    const backupKey = KEYS[1] || 'SIN_CLAVE';
+    console.log('   • Clave Principal: ' + mainKey.slice(0, 16) + '...');
+    console.log('   • Clave Respaldo:  ' + backupKey.slice(0, 16) + '...');
+    console.log('   (Conmutación automática activa sin cortar la sesión)\n');
+  });
+} catch (e) {}
 
 // Advertir si no hay claves configuradas (no crashear)
 if (KEYS.length === 0) {

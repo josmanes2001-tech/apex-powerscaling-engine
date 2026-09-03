@@ -10,6 +10,7 @@ import { translateCharacterSheet } from '../services/translatorService';
 import { UNIVERSE_PRESETS } from '../services/franchiseHelper';
 import { SoundFX } from '../services/soundFx';
 import { calculateScouterReading, getPowerLevelFormulaBreakdown } from '../services/scouterEngine';
+import { resolveCombatState } from '../lib/combatStateResolver';
 
 const COMMON_HAX_TAGS = [
   'Negación de Durabilidad',
@@ -855,43 +856,76 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                   }
                   setTimeout(() => setIsScanningKi(false), 600);
                 };
+                const combatState = resolveCombatState(formData, 'base');
                 return (
-                  <div className="p-3.5 bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-950 border border-emerald-500/40 rounded-xl space-y-3 shadow-sm font-mono">
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                      <div className="flex items-center gap-2.5">
-                        <span className="text-xl animate-pulse">📟</span>
-                        <div>
-                          <span className="text-[10px] text-slate-400 font-bold block uppercase tracking-wider">
-                            Nivel de Poder Canónico (Ki / Scouter):
-                          </span>
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span className={`text-base sm:text-lg font-black font-cinzel ${scouter.color}`}>
-                              {isScanningKi ? 'ESCANEO...' : scouter.formatted}
+                  <div className="p-3.5 bg-gradient-to-r from-slate-950 via-slate-900 to-indigo-950/40 border border-indigo-500/30 rounded-xl space-y-3 shadow-sm font-mono">
+                    {/* Dual Telemetry Badges */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {/* 1. APEX-Ki Universal */}
+                      <div className="p-2.5 rounded-lg bg-indigo-950/40 border border-indigo-500/40 flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <Zap className="w-4 h-4 text-indigo-400 animate-pulse shrink-0" />
+                          <div>
+                            <span className="text-[9px] text-indigo-300 font-bold block uppercase tracking-wider">
+                              APEX-Ki Universal:
                             </span>
-                            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400 font-mono font-bold">
-                              {scouter.rank}
+                            <span className="text-sm sm:text-base font-black text-white font-cinzel">
+                              {combatState.apexKiDisplay || '—'}
                             </span>
                           </div>
                         </div>
+                        <span className="text-[9px] px-1.5 py-0.5 rounded bg-indigo-900/60 border border-indigo-400/40 text-indigo-200 font-bold">
+                          Cross-Verse
+                        </span>
                       </div>
 
-                      <button
-                        type="button"
-                        onClick={handleScouterBeep}
-                        className={`px-3.5 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition cursor-pointer shadow-sm shrink-0 self-start sm:self-auto select-none ${
-                          isScanningKi
-                            ? 'bg-emerald-400 text-black border-emerald-300 ring-2 ring-emerald-300 scale-105 shadow-[0_0_15px_rgba(52,211,153,0.8)] animate-pulse'
-                            : 'bg-emerald-600/30 hover:bg-emerald-500/40 border-emerald-400 text-emerald-200'
-                        }`}
-                        title="Medir Ki con Scouter y reproducir pitido electrónico"
-                      >
-                        <Zap className="w-3.5 h-3.5 text-emerald-300 animate-pulse" />
-                        <span>{isScanningKi ? 'Escaneando Ki...' : 'Escanear Ki (Sonido)'}</span>
-                      </button>
+                      {/* 2. Scouter Ki Oficial (DB / Equivalente) */}
+                      <div className="p-2.5 rounded-lg bg-emerald-950/40 border border-emerald-500/40 flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <span className="text-base animate-pulse shrink-0">📟</span>
+                          <div>
+                            <span className="text-[9px] text-emerald-400 font-bold block uppercase tracking-wider">
+                              Scouter Ki (Toriyama):
+                            </span>
+                            <span className={`text-sm sm:text-base font-black font-cinzel ${scouter.color}`}>
+                              {isScanningKi ? 'ESCANEO...' : scouter.formatted}
+                            </span>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={handleScouterBeep}
+                          className={`px-2 py-1 rounded text-[10px] font-bold flex items-center gap-1 transition cursor-pointer shadow-sm shrink-0 select-none ${
+                            isScanningKi
+                              ? 'bg-emerald-400 text-black animate-pulse ring-2 ring-emerald-300'
+                              : 'bg-emerald-800/40 hover:bg-emerald-700/50 border border-emerald-500/40 text-emerald-200'
+                          }`}
+                          title="Escanear Ki"
+                        >
+                          <Zap className="w-2.5 h-2.5 text-emerald-300" />
+                          <span>Sonido</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Secondary Metrics: Physical Tier, Hax Tier, Stamina Pool */}
+                    <div className="grid grid-cols-3 gap-2 pt-1 border-t border-slate-800 text-[10px]">
+                      <div className="p-1.5 rounded bg-slate-950/60 border border-red-900/40 flex flex-col">
+                        <span className="text-slate-400 text-[8.5px] uppercase font-bold">Tier Físico</span>
+                        <span className="text-red-300 font-bold font-mono">{formData.physicalTier || formData.tier || '7-B'}</span>
+                      </div>
+                      <div className="p-1.5 rounded bg-slate-950/60 border border-purple-900/40 flex flex-col">
+                        <span className="text-slate-400 text-[8.5px] uppercase font-bold">Tier Hax</span>
+                        <span className="text-purple-300 font-bold font-mono">{formData.haxTier || formData.tier || '7-B'}</span>
+                      </div>
+                      <div className="p-1.5 rounded bg-slate-950/60 border border-cyan-900/40 flex flex-col">
+                        <span className="text-slate-400 text-[8.5px] uppercase font-bold">Stamina Pool</span>
+                        <span className="text-cyan-300 font-bold font-mono">{formData.staminaProfile?.basePool || 100} HP (Rec: {formData.staminaProfile?.recoveryRate || 6}/s)</span>
+                      </div>
                     </div>
 
                     {breakdown && (
-                      <details className="group border-t border-emerald-900/40 pt-2">
+                      <details className="group border-t border-slate-800 pt-2">
                         <summary className="text-[10px] text-emerald-400 hover:text-emerald-300 font-bold cursor-pointer flex items-center justify-between transition select-none">
                           <span>📐 Desglose de la Fórmula: PL = E_Tier × M_Vel × M_Def × M_Hax/IQ</span>
                           <span className="text-slate-500 group-open:rotate-90 transition-transform">▶</span>

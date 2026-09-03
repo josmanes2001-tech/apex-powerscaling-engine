@@ -220,6 +220,34 @@ export function validateAndAutoCorrectRoster(characters) {
       c.forms = [baseForm, ...transforms];
       correctionsCount++;
     }
+
+    // 5. Garantizar estructura completa de ficha (Arsenal, Stamina, Feats, Diálogos)
+    if (!c.arsenal || typeof c.arsenal !== 'object') {
+      c.arsenal = {
+        basicAttacks: [],
+        superAttacks: [],
+        ultimateAttacks: [],
+        passives: [],
+        specialMechanics: [],
+        weaknesses: []
+      };
+      correctionsCount++;
+    } else {
+      if (!Array.isArray(c.arsenal.basicAttacks)) { c.arsenal.basicAttacks = []; correctionsCount++; }
+      if (!Array.isArray(c.arsenal.superAttacks)) { c.arsenal.superAttacks = []; correctionsCount++; }
+      if (!Array.isArray(c.arsenal.ultimateAttacks)) { c.arsenal.ultimateAttacks = []; correctionsCount++; }
+      if (!Array.isArray(c.arsenal.passives)) { c.arsenal.passives = []; correctionsCount++; }
+      if (!Array.isArray(c.arsenal.specialMechanics)) { c.arsenal.specialMechanics = []; correctionsCount++; }
+      if (!Array.isArray(c.arsenal.weaknesses)) { c.arsenal.weaknesses = []; correctionsCount++; }
+    }
+
+    if (!c.staminaProfile || typeof c.staminaProfile !== 'object') {
+      c.staminaProfile = { basePool: 100, recoveryRate: 5, exhaustionThreshold: 20 };
+      correctionsCount++;
+    }
+    if (!Array.isArray(c.provenFeats)) c.provenFeats = [];
+    if (!Array.isArray(c.synergies)) c.synergies = [];
+    if (!Array.isArray(c.teamCombos)) c.teamCombos = [];
   }
 
   // 5. Reordenar permanentemente por Franquicia y Cronología

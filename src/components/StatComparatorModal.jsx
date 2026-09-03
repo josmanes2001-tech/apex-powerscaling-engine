@@ -441,6 +441,9 @@ function FighterCardConfig({
 function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
   const [isScanning, setIsScanning] = useState(false);
 
+  const combatStateA = useMemo(() => resolveCombatState(characterA, formAId), [characterA, formAId]);
+  const combatStateB = useMemo(() => resolveCombatState(characterB, formBId), [characterB, formBId]);
+
   const breakdownA = useMemo(() => getPowerLevelFormulaBreakdown(characterA, formAId), [characterA, formAId]);
   const breakdownB = useMemo(() => getPowerLevelFormulaBreakdown(characterB, formBId), [characterB, formBId]);
 
@@ -461,37 +464,37 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
     }, 450);
   };
 
-  // Comparación Invariante y Monotónica APEX
-  const valA = breakdownA?.apexKiRaw || breakdownA?.finalPowerLevel || 1;
-  const valB = breakdownB?.apexKiRaw || breakdownB?.finalPowerLevel || 1;
-  const isAOverload = breakdownA?.isOverload;
-  const isBOverload = breakdownB?.isOverload;
+  // Comparación Invariante y Monotónica APEX basada en combatState
+  const keyA = combatStateA?.powerKey || breakdownA?.apexKiRaw || 1;
+  const keyB = combatStateB?.powerKey || breakdownB?.apexKiRaw || 1;
+  const isALeading = keyA >= keyB;
+  const leaderName = isALeading ? characterA?.name : characterB?.name;
 
   const ratio = useMemo(() => {
-    if (valA === Infinity || valB === Infinity) return 'INCONMENSURABLE (DIVINO)';
-    if (valA <= 0 || valB <= 0) return '1.0x';
-    const rawRatio = valA >= valB ? valA / Math.max(1, valB) : valB / Math.max(1, valA);
+    if (keyA <= 0 || keyB <= 0) return '1.0x';
+    const rawRatio = keyA >= keyB ? keyA / Math.max(1, keyB) : keyB / Math.max(1, keyA);
     if (rawRatio >= 1e9) return '> 1.000.000.000x (Abismo Cósmico)';
     if (rawRatio >= 1e6) return (rawRatio / 1e6).toFixed(1) + 'M x';
     if (rawRatio >= 1e3) return (rawRatio / 1e3).toFixed(1) + 'k x';
     return rawRatio.toFixed(1) + 'x';
-  }, [valA, valB]);
+  }, [keyA, keyB]);
 
-  const isALeading = valA >= valB;
-  const leaderName = isALeading ? characterA?.name : characterB?.name;
+  const totalPower = keyA + keyB;
+  const pctA = Math.min(98, Math.max(2, Math.round((keyA / totalPower) * 100)));
+  const pctB = 100 - pctA;
 
   return (
-    <div className="p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-950 to-emerald-950/40 border border-emerald-500/50 shadow-[0_0_25px_rgba(16,185,129,0.15)] space-y-3 font-mono text-xs">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-emerald-900/50 pb-2">
+    <div className="p-3.5 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-indigo-500/40 shadow-[0_0_25px_rgba(99,102,241,0.15)] space-y-3 font-mono text-xs">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-2">
         <div className="flex items-center gap-2">
-          <span className="text-base animate-pulse">📟</span>
+          <span className="text-base animate-pulse">⚡</span>
           <div>
-            <h4 className="font-bold text-emerald-300 uppercase tracking-wider font-cinzel text-xs flex items-center gap-2">
-              Rastreador Scouter / Nivel de Poder Canónico (Ki)
+            <h4 className="font-bold text-indigo-300 uppercase tracking-wider font-cinzel text-xs flex items-center gap-2">
+              Telemetría Comparativa de Ki & APEX Energy
               {isScanning && <span className="text-red-400 text-[10px] animate-ping font-mono">ESCANEO ACTIVO...</span>}
             </h4>
             <p className="text-[10px] text-slate-400">
-              Sistema Invariante APEX: sourceKi (Canon DB) + APEX-Ki Monotónico (Universal)
+              Escala Universal Dual: APEX-Ki Monotónico (Cross-Verse) + Scouter Ki Canónico Oficial (Dragon Ball)
             </p>
           </div>
         </div>
@@ -508,72 +511,129 @@ function ScouterBattleHUD({ characterA, formAId, characterB, formBId }) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {/* Contendiente A */}
-        <div className={`p-3 rounded-xl border space-y-1.5 transition-all ${
-          isAOverload 
-            ? 'bg-red-950/40 border-red-500 text-red-200 shadow-[0_0_15px_rgba(239,68,68,0.3)]' 
-            : 'bg-slate-900/80 border-slate-800 text-slate-200'
-        }`}>
+        <div className="p-3 rounded-xl border bg-slate-950/80 border-red-500/40 text-slate-200 space-y-2">
           <div className="flex justify-between items-center text-[11px]">
             <span className="font-bold text-red-400 truncate">{characterA?.name}</span>
-            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400">{breakdownA?.rank || scouterA.rank}</span>
+            <div className="flex items-center gap-1">
+              <span className="text-[9px] px-1.5 py-0.5 rounded bg-red-950 border border-red-800/60 text-red-300 font-bold">
+                {combatStateA.tierExact || characterA.tier}
+              </span>
+              {combatStateA.formMultiplier > 1 && (
+                <span className="text-[9px] px-1.5 py-0.5 rounded bg-amber-950 border border-amber-800/60 text-amber-300 font-bold">
+                  {combatStateA.multiplierDisplay}
+                </span>
+              )}
+            </div>
           </div>
-          <div className="flex items-baseline gap-2">
-            <span className={`text-base sm:text-lg font-black tracking-tight font-cinzel ${breakdownA?.isOverload ? 'text-fuchsia-400' : 'text-emerald-400'}`}>
-              {isScanning ? '888,888...' : (breakdownA?.apexKi || scouterA.formatted)}
-            </span>
+
+          {/* APEX-Ki Badge */}
+          <div className="p-2 rounded-lg bg-indigo-950/40 border border-indigo-500/30 flex items-center justify-between">
+            <div>
+              <span className="text-[8.5px] text-indigo-300 uppercase font-bold block">APEX-Ki Universal:</span>
+              <span className="text-base font-black font-cinzel text-white">
+                {isScanning ? '888,888...' : combatStateA.apexKiDisplay}
+              </span>
+            </div>
+            <span className="text-[8px] px-1 rounded bg-indigo-900/60 text-indigo-200 font-bold">CROSS-VERSE</span>
           </div>
-          {breakdownA?.sourceKi && (
-            <div className="text-[9px] text-amber-300 bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40 font-mono">
-              📜 Scouter Canónico: <span className="font-bold">{breakdownA.sourceKi.toLocaleString('es-ES')} Unidades</span>
+
+          {/* Scouter Ki Canónico (si aplica) */}
+          {(combatStateA.sourceKiDisplay || scouterA.formatted) && (
+            <div className="p-1.5 rounded-lg bg-emerald-950/30 border border-emerald-500/30 flex items-center justify-between text-[9.5px]">
+              <span className="text-emerald-400 font-bold">📟 Scouter Ki:</span>
+              <span className="text-emerald-300 font-bold font-cinzel">
+                {combatStateA.sourceKiDisplay || scouterA.formatted}
+              </span>
             </div>
           )}
-          {isAOverload && (
-            <span className="text-[9px] text-red-400 font-bold block animate-pulse">
-              ⚠️ ¡EXPLOSIÓN DE SCOUTER POR SOBRECARGA DE KI!
-            </span>
-          )}
+
+          {/* Physical vs Hax Tiers */}
+          <div className="grid grid-cols-2 gap-1.5 text-[9px]">
+            <div className="p-1 rounded bg-slate-900 border border-slate-800">
+              <span className="text-slate-400 block text-[8px]">Físico:</span>
+              <span className="text-red-300 font-bold">{characterA.physicalTier || characterA.tier}</span>
+            </div>
+            <div className="p-1 rounded bg-slate-900 border border-slate-800">
+              <span className="text-slate-400 block text-[8px]">Hax:</span>
+              <span className="text-purple-300 font-bold">{characterA.haxTier || characterA.tier}</span>
+            </div>
+          </div>
         </div>
 
         {/* Contendiente B */}
-        <div className={`p-3 rounded-xl border space-y-1.5 transition-all ${
-          isBOverload 
-            ? 'bg-red-950/40 border-red-500 text-red-200 shadow-[0_0_15px_rgba(239,68,68,0.3)]' 
-            : 'bg-slate-900/80 border-slate-800 text-slate-200'
-        }`}>
+        <div className="p-3 rounded-xl border bg-slate-950/80 border-blue-500/40 text-slate-200 space-y-2">
           <div className="flex justify-between items-center text-[11px]">
             <span className="font-bold text-blue-400 truncate">{characterB?.name}</span>
-            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400">{breakdownB?.rank || scouterB.rank}</span>
+            <div className="flex items-center gap-1">
+              <span className="text-[9px] px-1.5 py-0.5 rounded bg-blue-950 border border-blue-800/60 text-blue-300 font-bold">
+                {combatStateB.tierExact || characterB.tier}
+              </span>
+              {combatStateB.formMultiplier > 1 && (
+                <span className="text-[9px] px-1.5 py-0.5 rounded bg-amber-950 border border-amber-800/60 text-amber-300 font-bold">
+                  {combatStateB.multiplierDisplay}
+                </span>
+              )}
+            </div>
           </div>
-          <div className="flex items-baseline gap-2">
-            <span className={`text-base sm:text-lg font-black tracking-tight font-cinzel ${breakdownB?.isOverload ? 'text-fuchsia-400' : 'text-emerald-400'}`}>
-              {isScanning ? '888,888...' : (breakdownB?.apexKi || scouterB.formatted)}
-            </span>
+
+          {/* APEX-Ki Badge */}
+          <div className="p-2 rounded-lg bg-indigo-950/40 border border-indigo-500/30 flex items-center justify-between">
+            <div>
+              <span className="text-[8.5px] text-indigo-300 uppercase font-bold block">APEX-Ki Universal:</span>
+              <span className="text-base font-black font-cinzel text-white">
+                {isScanning ? '888,888...' : combatStateB.apexKiDisplay}
+              </span>
+            </div>
+            <span className="text-[8px] px-1 rounded bg-indigo-900/60 text-indigo-200 font-bold">CROSS-VERSE</span>
           </div>
-          {breakdownB?.sourceKi && (
-            <div className="text-[9px] text-amber-300 bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40 font-mono">
-              📜 Scouter Canónico: <span className="font-bold">{breakdownB.sourceKi.toLocaleString('es-ES')} Unidades</span>
+
+          {/* Scouter Ki Canónico (si aplica) */}
+          {(combatStateB.sourceKiDisplay || scouterB.formatted) && (
+            <div className="p-1.5 rounded-lg bg-emerald-950/30 border border-emerald-500/30 flex items-center justify-between text-[9.5px]">
+              <span className="text-emerald-400 font-bold">📟 Scouter Ki:</span>
+              <span className="text-emerald-300 font-bold font-cinzel">
+                {combatStateB.sourceKiDisplay || scouterB.formatted}
+              </span>
             </div>
           )}
-          {isBOverload && (
-            <span className="text-[9px] text-red-400 font-bold block animate-pulse">
-              ⚠️ ¡EXPLOSIÓN DE SCOUTER POR SOBRECARGA DE KI!
-            </span>
-          )}
+
+          {/* Physical vs Hax Tiers */}
+          <div className="grid grid-cols-2 gap-1.5 text-[9px]">
+            <div className="p-1 rounded bg-slate-900 border border-slate-800">
+              <span className="text-slate-400 block text-[8px]">Físico:</span>
+              <span className="text-blue-300 font-bold">{characterB.physicalTier || characterB.tier}</span>
+            </div>
+            <div className="p-1 rounded bg-slate-900 border border-slate-800">
+              <span className="text-slate-400 block text-[8px]">Hax:</span>
+              <span className="text-purple-300 font-bold">{characterB.haxTier || characterB.tier}</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Relación de Poder y Diagnóstico Táctico */}
-      <div className="p-2.5 rounded-xl bg-slate-950 border border-emerald-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[10px]">
-        <div>
-          <span className="text-emerald-400 font-bold">⚡ Disparidad de Poder Universal: </span>
-          <span className="text-white font-bold">{leaderName}</span> lidera con un multiplicador de <span className="text-emerald-300 font-bold">{ratio}</span>.
+      {/* Barra Dinámica de Dominio Cósmico (Tug-of-War Bar) */}
+      <div className="p-2.5 rounded-xl bg-slate-950 border border-indigo-900/50 space-y-1.5">
+        <div className="flex justify-between items-center text-[10px] font-bold">
+          <span className="text-red-400">{characterA?.name} ({pctA}%)</span>
+          <span className="text-indigo-300 uppercase text-[9px]">⚡ Balance de Fuerza Cósmica ⚡</span>
+          <span className="text-blue-400">{characterB?.name} ({pctB}%)</span>
         </div>
-        <div className="text-slate-400 text-[9px] italic">
-          {ratio === '1.0x' || ratio.includes('1.')
-            ? '⚔️ Pelea simétrica. El Battle IQ y Hax deciden el resultado.'
-            : ratio.includes('Abismo Cósmico') || ratio.includes('INCONMENSURABLE')
-            ? '💀 Disparidad dimensional absoluta. Ataques ordinarios rebotan (Tanqueo puro).'
-            : '🔥 Ventaja cinética masiva. Riesgo inminente de "Speed Blitz".'}
+        <div className="h-3 rounded-full overflow-hidden bg-slate-900 border border-slate-800 flex">
+          <div className="bg-gradient-to-r from-red-600 via-rose-500 to-amber-500 transition-all duration-700" style={{ width: `${pctA}%` }} />
+          <div className="bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 transition-all duration-700" style={{ width: `${pctB}%` }} />
+        </div>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[9.5px] text-slate-300">
+          <div>
+            <span className="text-amber-400 font-bold">Ventaja APEX-Ki: </span>
+            <span className="text-white font-bold">{leaderName}</span> lidera con factor de <span className="text-emerald-300 font-bold">{ratio}</span>.
+          </div>
+          <div className="text-slate-400 text-[9px] italic">
+            {ratio === '1.0x' || ratio.includes('1.')
+              ? '⚔️ Paridad absoluta de energía. El combate se decidirá por Battle IQ y Hax.'
+              : ratio.includes('Abismo Cósmico') || ratio.includes('INCONMENSURABLE')
+              ? '💀 Disparidad dimensional extrema. Los ataques físicos ordinarios serán repelidos por aura pura.'
+              : '🔥 Superioridad cinética notable. Riesgo inminente de Blitz si no se despliega Hax defensivo.'}
+          </div>
         </div>
       </div>
 

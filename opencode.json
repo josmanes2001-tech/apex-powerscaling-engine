@@ -6,41 +6,49 @@
     "APEX_RULES.md"
   ],
   "command": {
+    "audit": {
+      "description": "🌙 Auditoría de Roster Flexible: usa OpenRouter o Gemini (Uso: audit [gemini|nemotron|minimax|ling] [universo] [ficha_inicio])",
+      "template": "node src/scripts/runAuditDispatcher.js \"$1\" \"$2\" \"$3\""
+    },
+    "audit_openrouter": {
+      "description": "⚡ Auditoría con OpenRouter gratuito: Nemotron / MiniMax / Ling (Uso: audit_openrouter [nemotron|minimax|ling] [universo] [ficha_inicio])",
+      "template": "node src/scripts/runAuditDispatcher.js \"$1\" \"$2\" \"$3\""
+    },
+    "audit_gemini": {
+      "description": "🌐 Auditoría con la API oficial de Google Gemini Flash Lite (Uso: audit_gemini [universo] [ficha_inicio])",
+      "template": "node src/scripts/runAuditDispatcher.js \"gemini\" \"$1\" \"$2\""
+    },
+    "validate": {
+      "description": "🛡️ Validador Canónico APEX: audita y auto-corrige en 100ms formas base, multiplicadores, Ki y franquicias en todo el roster activo",
+      "template": "node src/scripts/rosterCanonicalValidator.js"
+    },
     "enrich": {
-      "description": "Enriquece automáticamente en bucle continuo personajes con Tags, Súpers/Finishers, Pasivas, Combos y Sinergias (Uso: enrich [full_enrichment|synergies_combos|passives_weaknesses] [universo|all])",
+      "description": "⚡ Enriquecedor Táctico: añade arsenales con stamina, combos de 3 fases, sinergias y pasivas (Uso: enrich [full_enrichment|synergies_combos] [universo|all])",
       "template": "node src/scripts/runAutonomousTask.js \"$1\" \"$2\""
     },
-    "apply_patches": {
-      "description": "Aplica y fusiona todos los parches y mejoras generados directamente en characters.js con backup automático",
+    "apply": {
+      "description": "📦 Aplica todos los parches generados en characters.js con auto-corrección canónica y backup de seguridad",
       "template": "node src/scripts/applyEnrichmentPatches.js"
     },
-    "audit_auto": {
-      "description": "Inicia la auditoría y enriquecimiento nocturno autónomo de todo el roster en bucle desatendido sin pausas",
-      "template": "node src/scripts/runAutonomousAudit.js \"$1\""
+    "deploy": {
+      "description": "🚀 Despliega el proyecto directamente a producción en Vercel con verificación HTTP 200",
+      "template": "node -e \"import('child_process').then(cp => cp.execSync('npx vercel --prod --yes', {stdio: 'inherit'}))\""
     },
-    "audit_progress": {
-      "description": "Muestra el estado y porcentaje completado de la auditoría del roster",
+    "status": {
+      "description": "📊 Muestra el progreso de la auditoría y estado del roster en tiempo real",
       "template": "node src/scripts/checkAuditProgress.js"
     },
-    "read_pc": {
-      "description": "Lee el contenido de cualquier archivo o carpeta de este PC (C:\\Users\\Jose Luis) sin moverlo",
-      "template": "node src/scripts/readPcFile.js \"$1\""
-    },
     "test": {
-      "description": "Ejecuta las 14 pruebas mínimas del motor APEX",
+      "description": "🧪 Ejecuta las pruebas completas de integridad del motor APEX",
       "template": "node src/scripts/runComprehensiveTests.js"
     },
     "verify": {
-      "description": "Verifica multiplicadores y escalado en vivo",
+      "description": "🔍 Verifica multiplicadores y escalado en vivo del Scouter",
       "template": "node src/scripts/verifyLiveScaling.js"
     },
     "build": {
-      "description": "Compila el bundle de producción",
+      "description": "🔨 Compila el bundle de producción de Vite",
       "template": "npm run build"
-    },
-    "deploy": {
-      "description": "Despliega el proyecto verificado a Vercel",
-      "template": "node src/scripts/autoDeployVercel.js"
     }
   }
 }
