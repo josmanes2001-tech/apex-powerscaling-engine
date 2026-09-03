@@ -45,27 +45,25 @@ Tu misión es transformar cada personaje del lote en una ficha táctica de nivel
    - Identifica al personaje por su nombre, saga, versión, universo y contexto canónico.
    - Cero anacronismos: Respeta la línea temporal estricta de la saga indicada.
 
-2. AUDITORÍA EXHAUSTIVA DE FORMAS Y REGLA DE ESTADOS BASE:
-   - REGISTRO OBLIGATORIO DE ESTADO BASE:
-     * Toda ficha DEBE incluir obligatoriamente su "Estado Base" (id: "base", name: "Estado Base", apexKiMultiplier: 1.0, staminaDrain: 0) como primer elemento de forms si no lo tenía.
-   - DESAMBIGUACIÓN DE MÚLTIPLES ESTADOS BASES / MODOS DE PODER:
-     * Si un personaje tiene dos estados base (ej. reprimido/casual vs a pleno rendimiento sin transformarse) o se le añade una variación de potencia:
-     * NUNCA dupliques el nombre "Estado Base" genérico.
-     * Renombra y diferencia la forma intensificada como:
-       - "Estado Base (100% Máximo Poder)"
-       - "Estado Base (Poder Desatado / Sin Contención)"
-       - o "Forma Base (Max Power Muscular)" (ej. Mutenroshi Max Power o Freezer Forma Final 100%)
-     * asígnale su condición de activación (ej. sobrecarga de Ki muscular), su drenaje de stamina y su multiplicador respectivo (ej. apexKiMultiplier: 1.2 a 2.0).
-   - Para cada TRANSFORMACIÓN CANÓNICA y APEX-CUSTOM, genera:
-     * id y name descriptivo
-     * stats textuales y apexKiMultiplier (si aplica)
-     * activationCondition (trigger de entrada)
-     * staminaDrain (consumo por turno o coste de mantenimiento)
-     * grantedTags y suppressedTags
-     * grantedAbilities (ataques/técnicas exclusivas de la forma)
-     * limitations y drawbacks (desgaste muscular, fatiga, inestabilidad, tiempo límite)
-     * exitCondition y counterplay (reversión forzada o voluntaria)
-     * canonStatus: "source_backed" para canónicas, "apex_custom" para originales de APEX.
+2. AUDITORÍA EXHAUSTIVA DE FORMAS Y REGLA DE ORO CANÓNICA:
+   - REGLA DE ORO: EXACTAMENTE UNA SOLA FORMA BASE POR PERSONAJE:
+     * Toda ficha DEBE tener su Forma Base en el índice 0 del array forms.
+     * Si el personaje ya tiene una forma base con nombre específico de saga (ej: "Goku Mini Estado Base", "Son Goku (Estado Base Saga Cell)", "Piccolo Base", etc.), CONSERVA Y AUDITA ESA MISMA FORMA. NUNCA insertes una segunda forma llamada "Estado Base" genérica.
+     * NUNCA pongas una forma base después de una transformación.
+   - PROHIBICIÓN ABSOLUTA DE FORMAS ESPURIAS Y MODOS INVENTADOS:
+     * ESTRICTAMENTE PROHIBIDO crear formas artificiales llamadas "Estado Base (100% Máximo Poder)", "Estado Base (Poder Desatado / Sin Contención)", "Forma Base Alternativa" o similares en personajes que ya cuentan con transformaciones reales (como Goku, Vegeta, Gohan, Ichigo, Naruto, etc.).
+     * SOLO personajes cuya transformación canónica de autor sea explícitamente el 100% muscular (ej. Freezer Forma Final 100%, Maestro Roshi Máximo Poder, Toguro 100%) pueden llevar esa forma. En los demás, el 100% de su capacidad base ya está en su forma base normal.
+     * CERO formas duplicadas o con nombres redundantes.
+   - PARA CADA TRANSFORMACIÓN CANÓNICA REAL:
+     * id y name descriptivo canónico oficial (ej: "Super Saiyan 1", "Super Saiyan 2", "Gear Second", "Bankai").
+     * stats textuales y apexKiMultiplier verificado (ej: SSJ1=50, SSJ2=100, SSJ3=400, Kaio-ken x2=2, etc.).
+     * activationCondition (trigger de entrada exacto).
+     * staminaDrain (consumo por turno o coste de mantenimiento).
+     * grantedTags y suppressedTags.
+     * grantedAbilities (técnicas exclusivas de la forma).
+     * limitations y drawbacks (desgaste muscular, fatiga, tiempo límite).
+     * exitCondition y counterplay (reversión forzada o voluntaria).
+     * canonStatus: "source_backed" para canónicas oficiales, "apex_custom" solo para What-Ifs debidamente etiquetados.
 
 3. ARSENAL TÁCTICO CON FÍSICA DE STAMINA:
    - basicAttacks: Golpes marciales (coste 3-8 stamina, daño contundente/cortante).
@@ -211,32 +209,46 @@ function cleanJson(raw) {
     JSON.parse(text);
     return text;
   } catch (initialErr) {
-    // 3. Intento de reparación automática de cierres cortados
-    let stack = [];
-    let inString = false;
-    let escaped = false;
+    // 3. Reparación profunda y progresiva de JSON truncado por tokens
+    let sanitized = text;
+    for (let attempt = 0; attempt < 120; attempt++) {
+      let candidate = sanitized;
+      let quoteCount = (candidate.match(/(?<!\\)"/g) || []).length;
+      if (quoteCount % 2 !== 0) candidate += '"';
 
-    for (let i = 0; i < text.length; i++) {
-      const c = text[i];
-      if (escaped) { escaped = false; continue; }
-      if (c === '\\') { escaped = true; continue; }
-      if (c === '"') { inString = !inString; continue; }
-      if (!inString) {
-        if (c === '{') stack.push('}');
-        else if (c === '[') stack.push(']');
-        else if (c === '}' || c === ']') {
-          if (stack.length > 0 && stack[stack.length - 1] === c) stack.pop();
+      let stack = [];
+      let inString = false;
+      let escaped = false;
+      for (let i = 0; i < candidate.length; i++) {
+        const c = candidate[i];
+        if (escaped) { escaped = false; continue; }
+        if (c === '\\') { escaped = true; continue; }
+        if (c === '"') { inString = !inString; continue; }
+        if (!inString) {
+          if (c === '{') stack.push('}');
+          else if (c === '[') stack.push(']');
+          else if (c === '}' || c === ']') {
+            if (stack.length > 0 && stack[stack.length - 1] === c) stack.pop();
+          }
+        }
+      }
+      while (stack.length > 0) candidate += stack.pop();
+      candidate = candidate.replace(/,\s*([}\]])/g, '$1');
+
+      try {
+        JSON.parse(candidate);
+        return candidate; // ¡Reparado exitosamente sin perder personajes válidos!
+      } catch (e) {
+        // Podar hasta la última coma para descartar propiedades o claves truncadas
+        const lastComma = sanitized.lastIndexOf(',');
+        if (lastComma > start) {
+          sanitized = sanitized.substring(0, lastComma);
+        } else {
+          break;
         }
       }
     }
-
-    if (inString) text += '"';
-    while (stack.length > 0) {
-      text += stack.pop();
-    }
-
-    text = text.replace(/,\s*([}\]])/g, '$1');
-    return text;
+    return '{}';
   }
 }
 
@@ -340,7 +352,22 @@ async function main() {
           const parsed = JSON.parse(cleanJson(raw));
           
           if (parsed.results || parsed.integrationPatch) {
-            const newPatches = parsed.integrationPatch || [];
+            let newPatches = parsed.integrationPatch || [];
+
+            // 🛡️ Filtro de seguridad en caliente: purgar cualquier forma espuria antes de guardar el parche
+            newPatches = newPatches.map(p => {
+              if (p && p.formsAudited && Array.isArray(p.formsAudited)) {
+                p.formsAudited = p.formsAudited.filter(f => {
+                  if (!f || !f.name) return false;
+                  const lower = f.name.toLowerCase();
+                  if (lower.includes('100% máximo poder')) return false;
+                  if (lower.includes('poder desatado / sin contención')) return false;
+                  return true;
+                });
+              }
+              return p;
+            });
+
             allPatches.push(...newPatches);
             allResults.push(...(parsed.results || []));
 

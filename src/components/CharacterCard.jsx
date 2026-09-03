@@ -359,7 +359,9 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
                 <span className="text-red-400 font-bold flex items-center gap-1">
                   <Zap className="w-3 h-3 text-red-400" /> Finisher:
                 </span>
-                <span className="text-red-200 font-bold truncate max-w-[170px]">{ult.name}</span>
+                <span className="text-red-200 font-bold truncate max-w-[170px]">
+                  {typeof ult === 'object' && ult !== null ? (ult.name || ult.desc || 'Finisher') : String(ult)}
+                </span>
               </div>
             ))}
           </div>
@@ -368,18 +370,18 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
         {/* Super Attacks, Passives & Actives Badges */}
         <div className="flex items-center gap-1 flex-wrap">
           {character.arsenal?.superAttacks?.map((s, idx) => (
-            <span key={`super-${idx}`} className="px-2 py-0.5 rounded bg-orange-950/60 border border-orange-500/40 text-[9px] text-orange-300 font-mono flex items-center gap-1" title={s.desc}>
-              <Flame className="w-2.5 h-2.5" /> {s.name}
+            <span key={`super-${idx}`} className="px-2 py-0.5 rounded bg-orange-950/60 border border-orange-500/40 text-[9px] text-orange-300 font-mono flex items-center gap-1" title={typeof s === 'object' ? s.desc : ''}>
+              <Flame className="w-2.5 h-2.5" /> {typeof s === 'object' && s !== null ? (s.name || s.desc || 'Técnica') : String(s)}
             </span>
           ))}
           {character.arsenal?.passives?.map((p, idx) => (
-            <span key={`pass-${idx}`} className="px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/40 text-[9px] text-emerald-300 font-mono flex items-center gap-1" title={p.desc}>
-              <ShieldAlert className="w-2.5 h-2.5" /> {p.name}
+            <span key={`pass-${idx}`} className="px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/40 text-[9px] text-emerald-300 font-mono flex items-center gap-1" title={typeof p === 'object' ? p.desc : ''}>
+              <ShieldAlert className="w-2.5 h-2.5" /> {typeof p === 'object' && p !== null ? (p.name || p.desc || 'Pasiva') : String(p)}
             </span>
           ))}
           {character.arsenal?.actives?.map((a, idx) => (
-            <span key={`act-${idx}`} className="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-500/40 text-[9px] text-cyan-300 font-mono flex items-center gap-1" title={a.desc}>
-              <Sparkles className="w-2.5 h-2.5" /> {a.name}
+            <span key={`act-${idx}`} className="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-500/40 text-[9px] text-cyan-300 font-mono flex items-center gap-1" title={typeof a === 'object' ? a.desc : ''}>
+              <Sparkles className="w-2.5 h-2.5" /> {typeof a === 'object' && a !== null ? (a.name || a.desc || 'Activa') : String(a)}
             </span>
           ))}
         </div>
@@ -392,9 +394,9 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
             <span
               key={idx}
               className="px-1.5 py-0.5 rounded-full bg-purple-900/60 text-purple-200 text-[9px] font-mono border border-purple-500/30 truncate max-w-[120px]"
-              title={tag}
+              title={typeof tag === 'object' ? JSON.stringify(tag) : String(tag)}
             >
-              🔮 {tag}
+              🔮 {typeof tag === 'object' ? (tag.name || tag.tag || JSON.stringify(tag)) : String(tag)}
             </span>
           ))}
           {character.haxTags.length > 4 && (
@@ -409,7 +411,7 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
       {character.feats && character.feats.length > 0 && (
         <div className="mt-2 px-2 py-1.5 rounded-lg bg-cyan-950/20 border-l-2 border-cyan-600/50">
           <p className="text-[10px] text-cyan-400/90 font-mono italic line-clamp-2">
-            ⭐ {character.feats?.[0] || 'Hazañas de combate registradas'}
+            ⭐ {typeof character.feats[0] === 'object' ? (character.feats[0].name || character.feats[0].desc || JSON.stringify(character.feats[0])) : (character.feats[0] || 'Hazañas de combate registradas')}
           </p>
         </div>
       )}
@@ -417,7 +419,14 @@ export default function CharacterCard({ character = {}, role = '', onInspect, on
       {/* Weakness */}
       <div className="mt-2 flex items-start gap-1.5 text-[11px] text-slate-400">
         <AlertTriangle className="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5" />
-        <p className="line-clamp-1"><span className="text-slate-300 font-medium">Debilidad:</span> {character.weaknesses}</p>
+        <p className="line-clamp-1">
+          <span className="text-slate-300 font-medium">Debilidad:</span>{' '}
+          {Array.isArray(character.weaknesses)
+            ? character.weaknesses.map(w => typeof w === 'object' ? (w.name || w.desc) : w).join(', ')
+            : (typeof character.weaknesses === 'object' && character.weaknesses !== null
+                ? (character.weaknesses.desc || character.weaknesses.name || 'Ninguna conocida.')
+                : (character.weaknesses || 'Ninguna conocida.'))}
+        </p>
       </div>
     </div>
   );

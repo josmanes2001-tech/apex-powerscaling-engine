@@ -73,22 +73,34 @@ async function main() {
           if (res.formsAudited && Array.isArray(res.formsAudited) && res.formsAudited.length > 0) {
             if (!Array.isArray(target.forms)) target.forms = [];
             for (const f of res.formsAudited) {
+              if (!f || !f.name) continue;
               let formToAdd = { ...f };
-              const isBaseCandidate = (f.id === 'base' || (f.name || '').toLowerCase().trim() === 'estado base');
-              const alreadyHasExactBase = target.forms.some(ef => ef && (ef.id === 'base' || (ef.name || '').toLowerCase().trim() === 'estado base'));
 
-              // Si ya tiene un estado base y este es otro estado base adicional, diferenciarlo como 100% Máximo Poder
-              if (isBaseCandidate && alreadyHasExactBase && target.forms.length > 0) {
-                if (!(formToAdd.name || '').includes('100%') && !(formToAdd.name || '').toLowerCase().includes('máximo')) {
-                  formToAdd.name = `${formToAdd.name || 'Estado Base'} (100% Máximo Poder)`;
-                  formToAdd.id = formToAdd.id === 'base' ? 'base_max_power' : formToAdd.id;
-                  if (!formToAdd.apexKiMultiplier || formToAdd.apexKiMultiplier === 1) {
-                    formToAdd.apexKiMultiplier = 1.25;
-                  }
-                }
+              // Ignorar 'Estado Base (100% Máximo Poder)' espurio
+              if (formToAdd.id === 'base_max_power' || (formToAdd.name || '').includes('100% Máximo Poder')) {
+                continue;
               }
 
-              const existingFormIdx = target.forms.findIndex(ef => ef && (ef.id === formToAdd.id || ef.name === formToAdd.name));
+              const isIncomingBase = (formToAdd.id === 'base' || (formToAdd.name || '').toLowerCase().includes('base'));
+              const existingBaseIdx = target.forms.findIndex(ef => ef && (ef.id === 'base' || (ef.name || '').toLowerCase().includes('base') || (ef.id || '').toLowerCase().includes('base')));
+
+              // Si la forma entrante es base y ya existe una forma base en el personaje, actualizar la existente en vez de crear duplicado
+              if (isIncomingBase && existingBaseIdx >= 0) {
+                target.forms[existingBaseIdx] = {
+                  ...target.forms[existingBaseIdx],
+                  apexKiMultiplier: formToAdd.apexKiMultiplier || target.forms[existingBaseIdx].apexKiMultiplier || 1.0,
+                  staminaDrain: formToAdd.staminaDrain ?? target.forms[existingBaseIdx].staminaDrain ?? 0,
+                  canonStatus: formToAdd.canonStatus || target.forms[existingBaseIdx].canonStatus || 'source_backed'
+                };
+                appliedOps++;
+                continue;
+              }
+
+              const existingFormIdx = target.forms.findIndex(ef => ef && (
+                ef.id === formToAdd.id || 
+                (ef.name || '').toLowerCase().trim() === (formToAdd.name || '').toLowerCase().trim()
+              ));
+
               if (existingFormIdx >= 0) {
                 target.forms[existingFormIdx] = { ...target.forms[existingFormIdx], ...formToAdd };
               } else {
@@ -97,9 +109,9 @@ async function main() {
               appliedOps++;
             }
 
-            // Garantizar que la forma base este siempre presente en el array de formas
-            const hasAnyBase = target.forms.some(ef => ef && (ef.id === 'base' || (ef.name || '').toLowerCase().includes('base')));
-            if (!hasAnyBase) {
+            // Garantizar que si no tiene ninguna base, agregar una al inicio
+            const hasAnyBase = target.forms.some(ef => ef && ((ef.id || '').toLowerCase().includes('base') || (ef.name || '').toLowerCase().includes('base')));
+            if (!hasAnyBase && target.forms.length > 0) {
               target.forms.unshift({
                 id: 'base',
                 name: 'Estado Base',

@@ -1105,16 +1105,37 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                 <p className="text-[10px] text-slate-500 mb-2">Golpes cuerpo a cuerpo estándar, ráfagas de ki menores, combinaciones sin gasto crítico.</p>
                 {isEditingMode ? (
                   <textarea 
-                    rows={2} 
+                    rows={3} 
                     placeholder="Ej: Golpes de plasma a 5,000°C, Ráfagas de Ki consecutivas, Barrido de piernas imbuido en fuego." 
-                    value={formData.arsenal?.basicAttacks || ''} 
+                    value={typeof formData.arsenal?.basicAttacks === 'string' ? formData.arsenal.basicAttacks : (Array.isArray(formData.arsenal?.basicAttacks) ? formData.arsenal.basicAttacks.map(b => typeof b === 'object' ? `${b.name || ''}: ${b.desc || ''} (Coste: ${b.cost || 'N/A'}, Daño: ${b.damageType || 'Físico'})` : String(b)).join('\n') : '')} 
                     onChange={e => handleNestedChange('arsenal', 'basicAttacks', e.target.value)} 
-                    className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white text-xs" 
+                    className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white text-xs font-mono" 
                   />
                 ) : (
-                  <p className="text-slate-300 p-2.5 bg-slate-950/60 rounded-xl leading-relaxed">
-                    {formData.arsenal?.basicAttacks || 'Sin ataques básicos registrados.'}
-                  </p>
+                  <div className="text-slate-300 p-2.5 bg-slate-950/60 rounded-xl leading-relaxed">
+                    {Array.isArray(formData.arsenal?.basicAttacks) ? (
+                      <div className="space-y-2">
+                        {formData.arsenal.basicAttacks.map((atk, bIdx) => (
+                          <div key={bIdx} className="p-2 rounded-lg bg-slate-900/80 border border-slate-800 text-xs">
+                            <div className="flex items-center justify-between gap-2">
+                              <span className="font-bold text-amber-300">{typeof atk === 'object' ? atk.name : atk}</span>
+                              {typeof atk === 'object' && (
+                                <div className="flex items-center gap-1.5 text-[10px] font-mono">
+                                  {atk.cost && <span className="text-amber-400 bg-amber-950/60 px-1.5 py-0.5 rounded border border-amber-500/30">Coste: {atk.cost}</span>}
+                                  {atk.damageType && <span className="text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">{atk.damageType}</span>}
+                                </div>
+                              )}
+                            </div>
+                            {typeof atk === 'object' && atk.desc && (
+                              <p className="text-slate-400 text-[11px] mt-1 leading-relaxed">{atk.desc}</p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-xs">{formData.arsenal?.basicAttacks || 'Sin ataques básicos registrados.'}</p>
+                    )}
+                  </div>
                 )}
               </div>
 
@@ -1448,9 +1469,19 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                   <AlertTriangle className="w-3.5 h-3.5"/> Debilidades Anatómicas & Condición de Derrota
                 </label>
                 {isEditingMode ? (
-                  <textarea rows={2} value={formData.weaknesses || ''} onChange={e => handleChange('weaknesses', e.target.value)} className="w-full bg-slate-900 border border-red-900/50 rounded-lg p-2 text-white text-xs" />
+                  <textarea rows={2} value={typeof formData.weaknesses === 'string' ? formData.weaknesses : (Array.isArray(formData.weaknesses) ? formData.weaknesses.map(w => typeof w === 'object' ? (w.name ? `${w.name}: ${w.desc || ''}` : JSON.stringify(w)) : String(w)).join('\n') : '')} onChange={e => handleChange('weaknesses', e.target.value)} className="w-full bg-slate-900 border border-red-900/50 rounded-lg p-2 text-white text-xs" />
                 ) : (
-                  <p className="text-red-200 leading-relaxed">{formData.weaknesses || 'Ninguna conocida.'}</p>
+                  <div className="text-red-200 leading-relaxed text-xs">
+                    {Array.isArray(formData.weaknesses) ? (
+                      <ul className="list-disc list-inside space-y-1">
+                        {formData.weaknesses.map((w, wIdx) => (
+                          <li key={wIdx}>{typeof w === 'object' ? `${w.name || 'Debilidad'}: ${w.desc || ''}` : String(w)}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>{typeof formData.weaknesses === 'object' && formData.weaknesses !== null ? (formData.weaknesses.desc || formData.weaknesses.name || JSON.stringify(formData.weaknesses)) : (formData.weaknesses || 'Ninguna conocida.')}</p>
+                    )}
+                  </div>
                 )}
               </div>
             </div>
