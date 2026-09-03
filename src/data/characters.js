@@ -111171,6 +111171,14 @@ export const INITIAL_CHARACTERS = [
             "expose_identity",
             "power_scaling_check"
           ]
+        },
+        {
+          "point": "Discrepancia de Poder Real",
+          "desc": "Su poder de combate real es el de Ginyu, notablemente inferior al del auténtico Rey Cold.",
+          "counterTags": [
+            "expose_identity",
+            "power_scaling_check"
+          ]
         }
       ]
     },
@@ -111731,6 +111739,14 @@ export const INITIAL_CHARACTERS = [
             "aoe",
             "planet_destroyer"
           ]
+        },
+        {
+          "point": "Vulnerabilidad a Ataques de Área Masivos",
+          "desc": "Dificultad para cubrir grandes radios contra explosiones planetarias.",
+          "counterTags": [
+            "aoe",
+            "planet_destroyer"
+          ]
         }
       ]
     },
@@ -112206,6 +112222,14 @@ export const INITIAL_CHARACTERS = [
           "counterTags": [
             "High-Tier AP",
             "Annihilation"
+          ]
+        },
+        {
+          "point": "Vulnerabilidad a Daño Crítico Masivo",
+          "desc": "Ataques de nivel superior al Tier 6-B pueden saturar su capacidad regenerativa.",
+          "counterTags": [
+            "high_tier_ap",
+            "annihilation"
           ]
         },
         {
@@ -128557,6 +128581,13 @@ export const INITIAL_CHARACTERS = [
         }
       ],
       "weaknesses": [
+        {
+          "desc": "Techo biológico humano frente a entidades con regeneración cósmica.",
+          "counterTags": [
+            "regeneración",
+            "inmortalidad"
+          ]
+        },
         {
           "desc": "Techo biológico humano frente a entidades con regeneración cósmica.",
           "counterTags": [
@@ -200536,6 +200567,7 @@ export const INITIAL_CHARACTERS = [
           "desc": "Guarda a Stray Cat en el abdomen de Killer Queen. Dispara burbujas de aire comprimido invisibles que viajan y estallan al contacto con el rival.",
           "cost": "Ataque a Distancia Furtivo."
         },
+        {},
         {}
       ],
       "ultimateAttacks": [
@@ -241519,6 +241551,14 @@ export const INITIAL_CHARACTERS = [
             "Planet-Buster",
             "Energy-Projection-Massive"
           ]
+        },
+        {
+          "id": "weak_human_limits",
+          "desc": "Aunque es el pico del potencial humano, sigue siendo vulnerable a ataques de escala cósmica o destrucción planetaria si no evade o bloquea correctamente.",
+          "counterTags": [
+            "Planet-Buster",
+            "Energy-Projection-Massive"
+          ]
         }
       ]
     },
@@ -249312,6 +249352,15 @@ export const INITIAL_CHARACTERS = [
             "Magia Caos",
             "Alteración de Realidad"
           ]
+        },
+        {
+          "id": "shang-chi-weak-1",
+          "point": "Vulnerabilidad a Magia Cósmica",
+          "desc": "Hechizos de alteración de realidad o ataques conceptuales a gran escala superan sus defensas físicas.",
+          "counterTags": [
+            "Magia Caos",
+            "Alteración de Realidad"
+          ]
         }
       ]
     },
@@ -249607,6 +249656,15 @@ export const INITIAL_CHARACTERS = [
           "counterTags": [
             "manipulación_emocional",
             "tácticas_rehenes"
+          ]
+        },
+        {
+          "id": "ss-weak-1",
+          "point": "Dependencia del Amo",
+          "desc": "Su vínculo puede ser cortado por entidades de nivel superior o separación de su tabla.",
+          "counterTags": [
+            "supresión_cósmica",
+            "aislamiento_dimensional"
           ]
         },
         {
@@ -250047,6 +250105,15 @@ export const INITIAL_CHARACTERS = [
           "counterTags": [
             "kiting",
             "estilo de desgaste"
+          ]
+        },
+        {
+          "id": "spidey-weak-1",
+          "point": "Sobrecarga Sensorial",
+          "desc": "El sentido arácnido puede ser abrumado por estímulos sónicos intensos.",
+          "counterTags": [
+            "sonico",
+            "multidireccional"
           ]
         },
         {
@@ -260411,6 +260478,15 @@ export const INITIAL_CHARACTERS = [
             "calor extremo",
             "pirokinesis"
           ]
+        },
+        {
+          "type": "Pirofobia / Fuego",
+          "desc": "El fuego provoca parálisis de pánico, anula su telepatía y debilita su regeneración maleable.",
+          "counterTags": [
+            "fuego",
+            "calor extremo",
+            "pirokinesis"
+          ]
         }
       ]
     },
@@ -260848,6 +260924,15 @@ export const INITIAL_CHARACTERS = [
             "calor extremo",
             "pánico"
           ]
+        },
+        {
+          "type": "Fuego / Pánico Psicológico",
+          "desc": "La exposición al fuego desestabiliza su control molecular y genera un trauma innato severo.",
+          "counterTags": [
+            "fuego",
+            "calor extremo",
+            "pánico"
+          ]
         }
       ]
     },
@@ -261187,6 +261272,14 @@ export const INITIAL_CHARACTERS = [
         }
       ],
       "weaknesses": [
+        {
+          "type": "Límites Humanos Biológicos",
+          "desc": "Vulnerable a ataques de área cósmica o daño masivo directo sin cobertura.",
+          "counterTags": [
+            "fuerza bruta cósmica",
+            "magia dimensional"
+          ]
+        },
         {
           "type": "Límites Humanos Biológicos",
           "desc": "Vulnerable a ataques de área cósmica o daño masivo directo sin cobertura.",
