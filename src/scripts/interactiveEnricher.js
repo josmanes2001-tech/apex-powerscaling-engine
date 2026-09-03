@@ -58,53 +58,60 @@ async function runMenu() {
   console.log('\n\x1b[1m\x1b[32m[3/4] SELECCIONA EL MOTOR DE INTELIGENCIA ARTIFICIAL:\x1b[0m');
   console.log('  \x1b[90m─── EN SOLITARIO ────────────────────────────────────────────────\x1b[0m');
   console.log('  \x1b[33m1.\x1b[0m \x1b[1mGoogle Gemini Flash Lite Latest\x1b[0m (~google/gemini-flash-lite-latest) \x1b[32m[⭐ RECOMENDADO AUDITORÍA NOCTURNA - API OFICIAL]\x1b[0m');
-  console.log('  \x1b[33m2.\x1b[0m \x1b[1mNVIDIA Nemotron 3.5 Lightning Free\x1b[0m                 \x1b[36m[⚡ ULTRA RÁPIDO - CERO LATENCIA]\x1b[0m');
-  console.log('  \x1b[33m3.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Super 120B Free\x1b[0m                  \x1b[36m[🧠 RAZONAMIENTO Y EQUILIBRIO]\x1b[0m');
-  console.log('  \x1b[33m4.\x1b[0m \x1b[1mMiniMax M3 Free\x1b[0m (minimax-m3:free)                  \x1b[33m[🌟 LORE ÉPICO Y ESPAÑOL MAESTRO]\x1b[0m');
-  console.log('  \x1b[33m5.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Ultra 550B MoE\x1b[0m                   \x1b[35m[🏛️ LÓGICA PURA Y MÁXIMO RIGOR]\x1b[0m');
-  console.log('  \x1b[33m6.\x1b[0m \x1b[1mGoogle Gemma 4 31B Free\x1b[0m (gemma-4-31b-it:free)      \x1b[34m[💎 NUEVO MODELO DE GOOGLE]\x1b[0m');
+  console.log('  \x1b[33m2.\x1b[0m \x1b[1mMeta Muse Spark 1.3 Free\x1b[0m (meta/muse-spark-1.3-contributor:free) \x1b[35m[🔥 1M CTX · RAZONAMIENTO AGÉNTICO HOLÍSTICO]\x1b[0m');
+  console.log('  \x1b[33m3.\x1b[0m \x1b[1mNVIDIA Nemotron 3.5 Lightning Free\x1b[0m                 \x1b[36m[⚡ ULTRA RÁPIDO - CERO LATENCIA]\x1b[0m');
+  console.log('  \x1b[33m4.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Super 120B Free\x1b[0m                  \x1b[36m[🧠 RAZONAMIENTO Y EQUILIBRIO]\x1b[0m');
+  console.log('  \x1b[33m5.\x1b[0m \x1b[1mMiniMax M3 Free\x1b[0m (minimax-m3:free)                  \x1b[33m[🌟 LORE ÉPICO Y ESPAÑOL MAESTRO]\x1b[0m');
+  console.log('  \x1b[33m6.\x1b[0m \x1b[1mNVIDIA Nemotron 3 Ultra 550B MoE\x1b[0m                   \x1b[35m[🏛️ LÓGICA PURA Y MÁXIMO RIGOR]\x1b[0m');
+  console.log('  \x1b[33m7.\x1b[0m \x1b[1mGoogle Gemma 4 31B Free\x1b[0m (gemma-4-31b-it:free)      \x1b[34m[💎 NUEVO MODELO DE GOOGLE]\x1b[0m');
   console.log('  \x1b[90m─── MODOS HÍBRIDOS (50/50 DÚO ALTERNADO) ────────────────────────\x1b[0m');
-  console.log('  \x1b[33m7.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + Lightning 3.5\x1b[0m         \x1b[32m[GOOGLE API + NVIDIA VELOCIDAD]\x1b[0m');
-  console.log('  \x1b[33m8.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + MiniMax M3\x1b[0m            \x1b[33m[GOOGLE API + LORE ÉPICO]\x1b[0m');
-  console.log('  \x1b[33m9.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + Nemotron Super 120B\x1b[0m  \x1b[36m[GOOGLE API + CEREBRO 120B]\x1b[0m');
+  console.log('  \x1b[33m8.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + Meta Muse Spark 1.3\x1b[0m   \x1b[35m[GOOGLE API + META AGÉNTICO 1M]\x1b[0m');
+  console.log('  \x1b[33m9.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + Lightning 3.5\x1b[0m         \x1b[32m[GOOGLE API + NVIDIA VELOCIDAD]\x1b[0m');
+  console.log('  \x1b[33m10.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + MiniMax M3\x1b[0m           \x1b[33m[GOOGLE API + LORE ÉPICO]\x1b[0m');
+  console.log('  \x1b[33m11.\x1b[0m \x1b[1mHíbrido Gemini Flash Lite + Nemotron Super 120B\x1b[0m \x1b[36m[GOOGLE API + CEREBRO 120B]\x1b[0m');
   console.log('  \x1b[90m─── OTROS MODELOS ───────────────────────────────────────────────\x1b[0m');
-  console.log('  \x1b[33m10.\x1b[0m Ling 3.0 Flash Fin Free (Contexto masivo de 262k)');
-  console.log('  \x1b[33m11.\x1b[0m Ingresar cualquier modelo personalizado (OpenRouter)');
-  console.log('  \x1b[90m(Nota: Meta Muse Spark 1.3 Free funciona directamente dentro de OpenCode Web en http://localhost:4096)\x1b[0m');
-  const modelChoice = await ask('\n👉 Elige Motor IA [1-11, Enter=1 (Gemini Flash Lite Oficial)]: ', '1');
+  console.log('  \x1b[33m12.\x1b[0m Ling 3.0 Flash Fin Free (Contexto masivo de 262k)');
+  console.log('  \x1b[33m13.\x1b[0m Ingresar cualquier modelo personalizado (OpenRouter)');
+  const modelChoice = await ask('\n👉 Elige Motor IA [1-13, Enter=1 (Gemini Flash Lite Oficial)]: ', '1');
 
   let model = '~google/gemini-flash-lite-latest';
   if (modelChoice === '1') {
     model = '~google/gemini-flash-lite-latest';
     console.log('  \x1b[32m✔ Seleccionado: Google Gemini Flash Lite Latest (API Oficial de Google Gemini)\x1b[0m');
   } else if (modelChoice === '2') {
+    model = 'meta/muse-spark-1.3-contributor:free';
+    console.log('  \x1b[35m✔ Seleccionado: Meta Muse Spark 1.3 Free (1M Contexto · Razonamiento Agéntico)\x1b[0m');
+  } else if (modelChoice === '3') {
     model = 'nvidia/nemotron-3.5-lightning:free';
     console.log('  \x1b[36m✔ Seleccionado: NVIDIA Nemotron 3.5 Lightning Free (Ultra Rápido)\x1b[0m');
-  } else if (modelChoice === '3') {
+  } else if (modelChoice === '4') {
     model = 'nvidia/nemotron-3-super-120b-a12b:free';
     console.log('  \x1b[36m✔ Seleccionado: NVIDIA Nemotron 3 Super 120B Free\x1b[0m');
-  } else if (modelChoice === '4') {
+  } else if (modelChoice === '5') {
     model = 'minimax/minimax-m3:free';
     console.log('  \x1b[33m✔ Seleccionado: MiniMax M3 Free (Lore Épico en Español)\x1b[0m');
-  } else if (modelChoice === '5') {
+  } else if (modelChoice === '6') {
     model = 'nvidia/nemotron-3-ultra-550b-a55b:free';
     console.log('  \x1b[35m✔ Seleccionado: NVIDIA Nemotron 3 Ultra 550B MoE Free\x1b[0m');
-  } else if (modelChoice === '6') {
+  } else if (modelChoice === '7') {
     model = 'google/gemma-4-31b-it:free';
     console.log('  \x1b[34m✔ Seleccionado: Google Gemma 4 31B Free\x1b[0m');
-  } else if (modelChoice === '7') {
+  } else if (modelChoice === '8') {
+    model = 'hybrid:~google/gemini-flash-lite-latest|meta/muse-spark-1.3-contributor:free';
+    console.log('  \x1b[35m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite Oficial + Meta Muse Spark 1.3 50/50)\x1b[0m');
+  } else if (modelChoice === '9') {
     model = 'hybrid:~google/gemini-flash-lite-latest|nvidia/nemotron-3.5-lightning:free';
     console.log('  \x1b[32m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite Oficial + Lightning 3.5 50/50)\x1b[0m');
-  } else if (modelChoice === '8') {
+  } else if (modelChoice === '10') {
     model = 'hybrid:~google/gemini-flash-lite-latest|minimax/minimax-m3:free';
     console.log('  \x1b[33m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite Oficial + MiniMax M3 50/50)\x1b[0m');
-  } else if (modelChoice === '9') {
+  } else if (modelChoice === '11') {
     model = 'hybrid:~google/gemini-flash-lite-latest|nvidia/nemotron-3-super-120b-a12b:free';
     console.log('  \x1b[36m✔ Seleccionado: Modo Híbrido (Gemini Flash Lite Oficial + Super 120B 50/50)\x1b[0m');
-  } else if (modelChoice === '10') {
+  } else if (modelChoice === '12') {
     model = 'inclusionai/ling-3.0-flash-fin:free';
     console.log('  \x1b[32m✔ Seleccionado: Ling 3.0 Flash Fin Free\x1b[0m');
-  } else if (modelChoice === '11') {
+  } else if (modelChoice === '13') {
     const customId = await ask('  👉 Escribe el Model ID (ej: z-ai/glm-5.2:free): ', 'nvidia/nemotron-3.5-lightning:free');
     model = customId;
   }
