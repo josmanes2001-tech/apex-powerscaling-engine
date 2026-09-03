@@ -3912,6 +3912,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "jackie-chun-base",
+        "name": "Jackie Chun (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-C",
+        "stats": "Forma Base canónica de Jackie Chun previo a cualquier transformación."
+      },
+      {
         "id": "jackie-chun-max",
         "name": "Forma Máximo Poder",
         "stats": "Musculatura gigantesca. Pierde agilidad y evasión, pero su AP y Rango saltan a Nivel 5-C masivo de un golpe.",
@@ -5633,6 +5641,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "piccolo-jr-base",
+        "name": "Piccolo Jr. (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-A",
+        "stats": "Forma Base canónica de Piccolo Jr. previo a cualquier transformación."
+      },
+      {
         "id": "piccolo-jr-giant",
         "name": "Piccolo Gigante",
         "stats": "Incrementa masivamente su fuerza de agarre y rango, permitiendo aplastar a oponentes pequeños, pero volviéndose vulnerable a Hax internos.",
@@ -6140,11 +6156,6 @@ export const INITIAL_CHARACTERS = [
         {
           "name": "Vuelo Demoniaco",
           "description": "Puede volar mediante ki maléfico."
-        },
-        {
-          "name": "Ki Maldito Opresivo",
-          "description": "Su mera presencia emana un aura que paraliza a humanos comunes y artistas marciales de bajo nivel.",
-          "counterplay": "Entrenamiento mental previo o aumento de Ki propio."
         }
       ],
       "specialMechanics": [
@@ -13529,6 +13540,42 @@ export const INITIAL_CHARACTERS = [
         "tier": "5-B"
       },
       {
+        "id": "ginyu-cuerpo-original",
+        "name": "Capitán Ginyu (Cuerpo Mutante Original / 120.000 Unidades)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "Low 5-B",
+        "stats": "120.000 unidades canónicas. El guerrero más poderoso del ejército regular de Freezer."
+      },
+      {
+        "id": "ginyu-original-body",
+        "name": "Capitán Ginyu (Cuerpo Original)",
+        "stats": "Nivel Planeta. Cuerpo real del Capitán Ginyu. Power Level 120,000. Cuernos violetas, armadura de élite, dominio completo del Cambio de Cuerpo.",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "activationCondition": "Estado natural canónico del personaje.",
+        "canonStatus": "source_backed",
+        "grantedTags": [
+          "Cambio de Cuerpo",
+          "Milky Cannon",
+          "Telequinesis",
+          "Líder Ginyu"
+        ],
+        "suppressedTags": [],
+        "grantedAbilities": [
+          "Cambio de Cuerpo",
+          "Milky Cannon",
+          "Telequinesis Paralizante"
+        ],
+        "limitations": [
+          "Posee una fuerza bruta limitada (120k) y depende del Cambio de Cuerpo para superar a rivales más fuertes."
+        ],
+        "drawbacks": [],
+        "exitCondition": "Uso voluntario del Cambio de Cuerpo o muerte del cuerpo actual.",
+        "counterplay": "Interceptar el rayo del Cambio de Cuerpo con un ser vivo de menor poder.",
+        "tier": "5-B"
+      },
+      {
         "id": "ginyu-cuerpo-rana",
         "name": "Cuerpo de Rana Namekiana (Penalizado)",
         "apexKiMultiplier": 0.00005,
@@ -13572,42 +13619,6 @@ export const INITIAL_CHARACTERS = [
         ],
         "exitCondition": "Recuperación del cuerpo original o muerte del cuerpo actual.",
         "counterplay": "Provocarlo para que se sobrepase y destruya su propio cuerpo.",
-        "tier": "5-B"
-      },
-      {
-        "id": "ginyu-cuerpo-original",
-        "name": "Capitán Ginyu (Cuerpo Mutante Original / 120.000 Unidades)",
-        "apexKiMultiplier": 1,
-        "staminaDrain": 0,
-        "tier": "Low 5-B",
-        "stats": "120.000 unidades canónicas. El guerrero más poderoso del ejército regular de Freezer."
-      },
-      {
-        "id": "ginyu-original-body",
-        "name": "Capitán Ginyu (Cuerpo Original)",
-        "stats": "Nivel Planeta. Cuerpo real del Capitán Ginyu. Power Level 120,000. Cuernos violetas, armadura de élite, dominio completo del Cambio de Cuerpo.",
-        "apexKiMultiplier": 1,
-        "staminaDrain": 0,
-        "activationCondition": "Estado natural canónico del personaje.",
-        "canonStatus": "source_backed",
-        "grantedTags": [
-          "Cambio de Cuerpo",
-          "Milky Cannon",
-          "Telequinesis",
-          "Líder Ginyu"
-        ],
-        "suppressedTags": [],
-        "grantedAbilities": [
-          "Cambio de Cuerpo",
-          "Milky Cannon",
-          "Telequinesis Paralizante"
-        ],
-        "limitations": [
-          "Posee una fuerza bruta limitada (120k) y depende del Cambio de Cuerpo para superar a rivales más fuertes."
-        ],
-        "drawbacks": [],
-        "exitCondition": "Uso voluntario del Cambio de Cuerpo o muerte del cuerpo actual.",
-        "counterplay": "Interceptar el rayo del Cambio de Cuerpo con un ser vivo de menor poder.",
         "tier": "5-B"
       },
       {
@@ -14723,11 +14734,6 @@ export const INITIAL_CHARACTERS = [
         {
           "name": "Vínculo Vital con Tenshinhan",
           "desc": "Si Tenshinhan cae en combate, el rendimiento mental de Chaos decae un 20% por desesperación, pero incrementa su resistencia al dolor temporalmente."
-        },
-        {
-          "name": "Telequinesis Permanente",
-          "desc": "Permite manipular objetos y su propio cuerpo sin gravedad.",
-          "type": "Pasivo"
         }
       ],
       "specialMechanics": [
@@ -15931,6 +15937,14 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "dodoria-base",
         "name": "Dodoria (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "5-C",
+        "stats": "Forma Base canónica de Dodoria previo a cualquier transformación."
+      },
+      {
+        "id": "dodoria-base",
+        "name": "Dodoria (Estado Base)",
         "apexKiMultiplier": 1.2,
         "staminaDrain": 5,
         "tier": "5-C",
@@ -16363,6 +16377,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "yemma-base",
+        "name": "Enma Daioh (Rey Yemma) (Estado Base)",
+        "stats": "Nivel Planeta Grande. Gigante rojo con cuernos, barba negra espesa, traje de oficina y casco vikingo.",
+        "apexKiMultiplier": 1,
+        "tier": "5-A",
+        "staminaDrain": 0
+      },
+      {
         "id": "enma-daioh-saga-saiyan-579-base-std",
         "name": "Enma Daioh (Estado Base)",
         "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico.",
@@ -16372,14 +16394,6 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 10,
         "canonStatus": "apex_custom"
-      },
-      {
-        "id": "yemma-base",
-        "name": "Rey Yemma",
-        "stats": "Nivel Planeta Grande. Gigante rojo con cuernos, barba negra espesa, traje de oficina y casco vikingo.",
-        "apexKiMultiplier": 1,
-        "tier": "5-A",
-        "staminaDrain": 0
       },
       {
         "id": "enma-daioh-saga-saiyan-579-juicio",
@@ -22669,20 +22683,20 @@ export const INITIAL_CHARACTERS = [
         "stats": "Inocencia infantil combinada con regeneración celular infinita y transmutación de seres vivos en golosinas."
       },
       {
-        "id": "buu-mr-buu",
-        "name": "Mr. Buu (Aliado / Esencia Benigna Post-División) [Penalizado]",
-        "apexKiMultiplier": 0.8,
-        "staminaDrain": 10,
-        "tier": "4-B",
-        "stats": "Forma tras expulsar toda su maldad al crearse Evil Buu, perdiendo gran parte de su reserva de ki destructivo."
-      },
-      {
         "id": "buu-evil",
         "name": "Evil Buu (Maldad Pura)",
         "apexKiMultiplier": 1.4,
         "staminaDrain": 15,
         "tier": "4-B",
         "stats": "Manifestación oscura del odio concentrado que supera y devora a Mr. Buu para transformarse en Super Buu."
+      },
+      {
+        "id": "buu-mr-buu",
+        "name": "Mr. Buu (Aliado / Esencia Benigna Post-División) [Penalizado]",
+        "apexKiMultiplier": 0.8,
+        "staminaDrain": 10,
+        "tier": "4-B",
+        "stats": "Forma tras expulsar toda su maldad al crearse Evil Buu, perdiendo gran parte de su reserva de ki destructivo."
       }
     ],
     "feats": [
@@ -24430,6 +24444,14 @@ export const INITIAL_CHARACTERS = [
     ],
     "forms": [
       {
+        "id": "piccolo-final-saga-saiyan-vs-nappa-base",
+        "name": "Piccolo (Final Saga Saiyan / vs Nappa) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "5-C",
+        "stats": "Forma Base canónica de Piccolo (Final Saga Saiyan / vs Nappa) previo a cualquier transformación."
+      },
+      {
         "id": "supresion-pesada-nappa",
         "name": "Supresión Inicial (Ropa Pesada / 1.220 Unidades)",
         "apexKiMultiplier": 1,
@@ -26053,8 +26075,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "raditz-base",
+        "name": "Raditz (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "5-C",
+        "stats": "Forma Base canónica de Raditz previo a cualquier transformación."
+      },
+      {
         "id": "raditz-zenkai-revival",
-        "name": "Estado Base (Poder Desatado / Zenkai Extremo)",
+        "name": "Estado Base / Zenkai Extremo",
         "stats": "Multiplicador x1.5 post Zenkai. Tras ser torturado por Piccolo, su cuerpo se regenera y su Ki se duplica temporalmente. Aunque sigue siendo 5-C, su presión de combate se vuelve aplastante para los terrícolas.",
         "apexKiMultiplier": 1.5,
         "staminaDrain": 0,
@@ -26237,9 +26267,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-C) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1500 Unidades | Oficial DB: 1500 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1200,
+      "scouterKi": 1200,
+      "powerLevel": 1200
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan",
@@ -26718,6 +26748,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "rey-cold-base",
+        "name": "Rey Cold (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-C",
+        "stats": "Forma Base canónica de Rey Cold previo a cualquier transformación."
+      },
       {
         "id": "cold-segunda",
         "name": "Forma Estándar (Segunda Forma)",
@@ -32780,6 +32818,14 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "super-buu-base",
+        "name": "Super Buu (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-C",
+        "stats": "Forma Base canónica de Super Buu previo a cualquier transformación."
+      },
+      {
+        "id": "super-buu-base",
         "name": "Super Buu (Base Asimétrica)",
         "stats": "Nivel Galaxia. Supera a SSJ3 Goku pero inferior a Gohan Definitivo. Incorpora intelecto piccoliano.",
         "apexKiMultiplier": 1.2,
@@ -36175,6 +36221,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "vegeta-saga-cell-base",
+        "name": "Vegeta (Saga Cell) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-A",
+        "stats": "Forma Base canónica de Vegeta (Saga Cell) previo a cualquier transformación."
+      },
+      {
         "id": "vegeta-cell-ssj",
         "name": "Super Saiyan (Post-Yadrat/Base)",
         "stats": "Nivel Estrella Enana. Estado normal de SSJ antes de dominar los grados superiores. Multiplicador x50.",
@@ -38186,9 +38240,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 1480 Unidades | Oficial DB: 1480 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1700,
+      "scouterKi": 1700,
+      "powerLevel": 1700
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan / Planeta Kaio",
@@ -39654,9 +39708,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 84.40 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 19000,
-      "scouterKi": 19000,
-      "powerLevel": 19000
+      "apexKi": 20400,
+      "scouterKi": 20400,
+      "powerLevel": 20400
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -40795,11 +40849,6 @@ export const INITIAL_CHARACTERS = [
           "name": "Ultra Instinto Parcial",
           "desc": "Su cuerpo reacciona de manera autónoma ante ataques convencionales sin requerir procesamiento consciente.",
           "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Inmunidad a Venenos y Enfermedades Mortales",
-          "desc": "Como deidad, los patógenos mortales son inertes sobre su fisiología.",
-          "cost": "Pasivo"
         }
       ],
       "specialMechanics": [
@@ -42351,6 +42400,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "cabba-base",
+        "name": "Cabba (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de Cabba previo a cualquier transformación."
+      },
       {
         "id": "cabba-base",
         "name": "Saiyan Base (Orgullo Sadala)",
@@ -44304,7 +44361,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "dyspo-smls",
-        "name": "Super Maximum Light Speed Mode (Aura Púrpura)",
+        "name": "Super Light Speed Mode Aura Púrpura",
         "apexKiMultiplier": 4,
         "staminaDrain": 35,
         "tier": "High 3-A",
@@ -45160,6 +45217,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "freezer-dragon-ball-super-torneo-del-poder-base",
+        "name": "Freezer (Dragon Ball Super — Torneo del Poder) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de Freezer (Dragon Ball Super — Torneo del Poder) previo a cualquier transformación."
+      },
       {
         "id": "freezer-top-primera-forma",
         "name": "1ª Forma (Supresión en el Infierno / Halo de Difunto)",
@@ -48488,6 +48553,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "hit-base",
+        "name": "Hit (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de Hit previo a cualquier transformación."
+      },
+      {
         "id": "hit-torneo",
         "name": "Estado Base (Contenido por Reglas)",
         "stats": "Nivel Universal. Pelea bajo reglas del torneo: prohibido asestar golpes letales directos al corazón o usar la Jaula de Tiempo a máxima capacidad.",
@@ -48627,9 +48700,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 263.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 19000,
-      "scouterKi": 19000,
-      "powerLevel": 19000
+      "apexKi": 17200,
+      "scouterKi": 17200,
+      "powerLevel": 17200
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder / U6",
@@ -49687,6 +49760,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "kale-base",
+        "name": "Kale (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de Kale previo a cualquier transformación."
+      },
+      {
         "id": "kale-lssj-berserk",
         "name": "Super Saiyan Berserker",
         "stats": "Crecimiento Muscular Máximo. Aura Verde. Ojos en blanco. No esquiva, solo destruye. Máximo de Tier 2-C.",
@@ -50398,6 +50479,14 @@ export const INITIAL_CHARACTERS = [
       "weaknesses": []
     },
     "forms": [
+      {
+        "id": "koichiarator-base",
+        "name": "Koichiarator (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de Koichiarator previo a cualquier transformación."
+      },
       {
         "id": "anilaza-fusion",
         "name": "Anilaza (Transformación Final Oculta)",
@@ -54356,6 +54445,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "piccolo-super-hero-base",
+        "name": "Piccolo (Super Hero) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de Piccolo (Super Hero) previo a cualquier transformación."
+      },
+      {
         "id": "piccolo-potential-unleashed",
         "name": "Potential Unleashed",
         "stats": "Aumento liso de AP y Velocidad, igualando a oponentes Tier 3-A alto.",
@@ -55936,6 +56033,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "son-gohan-dragon-ball-super-resurreccion-de-f-pre-torneo-base",
+        "name": "Son Gohan (Dragon Ball Super — Resurrección de 'F' / Pre-Torneo) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Son Gohan (Dragon Ball Super — Resurrección de 'F' / Pre-Torneo) previo a cualquier transformación."
+      },
+      {
         "id": "freezer-rof-1ra",
         "name": "Freezer 1ª Forma (Silla Espacial / Entrenado)",
         "apexKiMultiplier": 1,
@@ -56580,6 +56685,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "son-gohan-super-hero-base",
+        "name": "Son Gohan (Super Hero) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "2-C",
+        "stats": "Forma Base canónica de Son Gohan (Super Hero) previo a cualquier transformación."
+      },
       {
         "id": "gohan-ultimate-sh",
         "name": "Estado Definitivo (Ultimate)",
@@ -59318,11 +59431,6 @@ export const INITIAL_CHARACTERS = [
           "cost": "Pasivo continuo"
         },
         {
-          "name": "Ultra Instinto Perfecto Permanente",
-          "desc": "Su cuerpo esquiva y contraataca de forma autónoma, sin intervención consciente. Solo los ataques multiversales pueden forzarlo.",
-          "cost": "Pasivo continuo"
-        },
-        {
           "name": "Resistencia Angelical",
           "desc": "Inmunidad total a fatiga física y a Hax convencional de Tier inferior.",
           "cost": "Pasivo continuo"
@@ -59395,7 +59503,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "vados-base",
-        "name": "Ángel Guía (Poder Pleno Sin Contención)",
+        "name": "Ángel Guía Poder Pleno",
         "stats": "Nivel Multiversal. Alta, piel celeste, cabello blanco atado atrás, báculo sagrado flotante, túnica verde. Capacidad ofensiva completa al 100% sin transformaciones externas.",
         "apexKiMultiplier": 1.2,
         "staminaDrain": 0,
@@ -60274,6 +60382,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "vegeta-ultra-ego-destruccion-base",
+        "name": "Vegeta (Ultra Ego / Destrucción) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "2-C",
+        "stats": "Forma Base canónica de Vegeta (Ultra Ego / Destrucción) previo a cualquier transformación."
+      },
       {
         "id": "ultra-ego-base",
         "name": "Ultra Ego (Activación Inicial)",
@@ -61517,8 +61633,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "zeno-sama-gran-zeno-rey-de-reyes-base",
+        "name": "Zeno-Sama (Gran Zeno / Rey de Reyes) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "1-C",
+        "stats": "Forma Base canónica de Zeno-Sama (Gran Zeno / Rey de Reyes) previo a cualquier transformación."
+      },
+      {
         "id": "zeno-playful-state",
-        "name": "Estado Base (Poder Desatado / Capricho Activo)",
+        "name": "Estado Base / Capricho Activo",
         "stats": "Zeno completamente enfocado en sus decisiones de borrado, eliminando cualquier duda o distracción.",
         "apexKiMultiplier": 1.5,
         "staminaDrain": 0,
@@ -61820,7 +61944,7 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "canonStatus": "source_backed",
-        "staminaDrain": 5,
+        "staminaDrain": 0,
         "activationCondition": "Equipar pistolas y traje de aviador demoníaco.",
         "grantedTags": [
           "Pistolero Equipado",
@@ -73836,7 +73960,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "base-aquatic-overdrive",
-        "name": "Modo Poder Desatado Acuático",
+        "name": "Modo Acuático",
         "apexKiMultiplier": 1.5,
         "staminaDrain": 4,
         "stats": "Forma potenciada una vez activado el Dominio Acuático. Velocidad FTL+, potencia de ataque duplicada por buffs ambientales. Tier 4-C mantenido; el incremento es por buffs kinéticos acuáticos.",
@@ -78890,8 +79014,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "lord-slug-base",
+        "name": "Lord Slug (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-C",
+        "stats": "Forma Base canónica de Lord Slug previo a cualquier transformación."
+      },
+      {
         "id": "slug-joven",
-        "name": "Estado Base (Juventud Restaurada / Poder Desatado)",
+        "name": "Estado Base Juventud Restaurada /",
         "stats": "Nivel Estrella Enana Superior. Namekiano rejuvenecido con el poder de las Dragon Balls. Aura de Ki maligno permanente densa, presión espiritual aplastante que supera a Goku con Kaio-Ken x4.",
         "apexKiMultiplier": 1.35,
         "staminaDrain": 2,
@@ -80690,9 +80822,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.82 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7500,
-      "scouterKi": 7500,
-      "powerLevel": 7500
+      "apexKi": 8700,
+      "scouterKi": 8700,
+      "powerLevel": 8700
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Otro Mundo",
@@ -81294,7 +81426,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Estado Base (Con Ropa Pesada)",
         "stats": "Túnica blanca y gorro alto de peso extremo. Limita severamente su movilidad pero potencia su defensa pasiva.",
         "apexKiMultiplier": 1,
-        "staminaDrain": 2,
+        "staminaDrain": 0,
         "activationCondition": "Uso de indumentaria pesada como limitador de poder.",
         "grantedTags": [
           "gravity_training",
@@ -82915,9 +83047,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 594 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1600,
+      "scouterKi": 1600,
+      "powerLevel": 1600
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: El Ataque del Dragón",
@@ -84372,6 +84504,29 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "dende-namek",
+        "name": "Dende (Estado Base)",
+        "stats": "Nivel Muro. Túnica blanca namekiana con chaleco marrón. Físicamente frágil pero con magia latente del Clan Dragón.",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "canonStatus": "source_backed",
+        "tier": "9-A Físico"
+      },
+      {
+        "id": "dende-kami",
+        "name": "Dende Kami-sama de la Tierra",
+        "stats": "Nivel Muro Físico / Soporte Supremo. Túnica ceremonial de Kami-sama con bastón sagrado. Ahora vinculado al Planeta Tierra con todas las funciones de un Dios.",
+        "apexKiMultiplier": 1.2,
+        "staminaDrain": 2,
+        "activationCondition": "Aceptar el rol de Kami tras la fusión de Kami original con Piccolo y ser ungido por las Dragon Balls de la Tierra.",
+        "canonStatus": "source_backed",
+        "limitations": [
+          "No puede abandonar la Tierra por largos periodos sin riesgo para el planeta",
+          "Su vida está atada a la Tierra (en menor medida que Kami original)"
+        ],
+        "tier": "9-A Físico"
+      },
+      {
         "id": "dende_kami",
         "name": "Kami-sama de la Tierra (Estado Base Desatado)",
         "apexKiMultiplier": 1.5,
@@ -84395,29 +84550,6 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Renuncia al cargo o muerte.",
         "counterplay": "Ataques directos rápidos o destrucción planetaria.",
         "canonStatus": "source_backed",
-        "tier": "9-A Físico"
-      },
-      {
-        "id": "dende-namek",
-        "name": "Dende Niño (Namek)",
-        "stats": "Nivel Muro. Túnica blanca namekiana con chaleco marrón. Físicamente frágil pero con magia latente del Clan Dragón.",
-        "apexKiMultiplier": 1,
-        "staminaDrain": 0,
-        "canonStatus": "source_backed",
-        "tier": "9-A Físico"
-      },
-      {
-        "id": "dende-kami",
-        "name": "Dende Kami-sama de la Tierra",
-        "stats": "Nivel Muro Físico / Soporte Supremo. Túnica ceremonial de Kami-sama con bastón sagrado. Ahora vinculado al Planeta Tierra con todas las funciones de un Dios.",
-        "apexKiMultiplier": 1.2,
-        "staminaDrain": 2,
-        "activationCondition": "Aceptar el rol de Kami tras la fusión de Kami original con Piccolo y ser ungido por las Dragon Balls de la Tierra.",
-        "canonStatus": "source_backed",
-        "limitations": [
-          "No puede abandonar la Tierra por largos periodos sin riesgo para el planeta",
-          "Su vida está atada a la Tierra (en menor medida que Kami original)"
-        ],
         "tier": "9-A Físico"
       }
     ],
@@ -85657,8 +85789,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "mr-satan-hercule-base",
+        "name": "Mr. Satán (Hercule) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "9-B",
+        "stats": "Forma Base canónica de Mr. Satán (Hercule) previo a cualquier transformación."
+      },
+      {
         "id": "satan-base",
-        "name": "Estado Base (100% Máximo Poder)",
+        "name": "Estado Base",
         "stats": "Nivel Muro. Traje de artes marciales marrón, cinturón de campeón mundial, gran afro y bigote.",
         "apexKiMultiplier": 1.25,
         "staminaDrain": 0,
@@ -86318,9 +86458,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 660 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 1700,
+      "scouterKi": 1700,
+      "powerLevel": 1700
     },
     "entityType": "fighter",
     "sagaOrArc": "Namek / Resurrección de F",
@@ -87208,6 +87348,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "androide-16-reconstruido-universo-12-base",
+        "name": "Androide #16 (Reconstruido, Universo 12) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Androide #16 (Reconstruido, Universo 12) previo a cualquier transformación."
+      },
+      {
         "id": "base_full_reactor",
         "name": "Estado Base (Reactor al 100% / Sin Filtación)",
         "stats": "Tier 4-B alto | Reactor en modo continuo sin autolimitar.",
@@ -87993,6 +88141,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "androides-17-y-18-continuidad-universo-14-sin-oposicion-base",
+        "name": "Androides #17 y #18 (Continuidad Universo 14, Sin Oposición) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Androides #17 y #18 (Continuidad Universo 14, Sin Oposición) previo a cualquier transformación."
+      },
       {
         "id": "base-full-sync",
         "name": "Estado Base (Sincronía Letal 100%)",
@@ -91665,6 +91821,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "cell-jr-companero-de-torneo-universo-17-base",
+        "name": "Cell Jr. (Compañero de Torneo, Universo 17) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-C",
+        "stats": "Forma Base canónica de Cell Jr. (Compañero de Torneo, Universo 17) previo a cualquier transformación."
+      },
+      {
         "id": "base-mass-stolen",
         "name": "Estado Base (Biomasa Robada / Absorción Efectuada)",
         "stats": "Tier 3-C+ | Nivel Galáctico Superior con stats y tags del absorbido sumados.",
@@ -92264,8 +92428,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "dabra-continuidad-universo-11-exito-de-babidi-base",
+        "name": "Dabra (Continuidad Universo 11, Éxito de Babidi) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Dabra (Continuidad Universo 11, Éxito de Babidi) previo a cualquier transformación."
+      },
+      {
         "id": "base_overcharged",
-        "name": "Estado Base (Poder Desatado / Sin Contención)",
+        "name": "Estado Base /",
         "stats": "Tier 4-B alto | Potencia muscular al máximo por años de servicio victorioso.",
         "apexKiMultiplier": 1.25,
         "staminaDrain": 3,
@@ -93175,11 +93347,6 @@ export const INITIAL_CHARACTERS = [
           "name": "Sistemas Tácticos Integrados",
           "desc": "La armadura calcula en milisegundos las trayectorias de ataque enemigas y proyecta contramedidas automáticas.",
           "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Inmunidad a Venenos Demoníacos",
-          "cost": "Pasivo continuo",
-          "desc": "El sistema de filtración de aire de la armadura neutraliza las toxinas y los miasmas del Reino Demoníaco."
         }
       ],
       "specialMechanics": [
@@ -93220,7 +93387,7 @@ export const INITIAL_CHARACTERS = [
         "tier": "4-B",
         "tierExact": "4-B",
         "multiplier": "1x",
-        "staminaDrain": 2,
+        "staminaDrain": 0,
         "activationCondition": "Activación de la Armadura Ultra mediante sistema de encendido neural.",
         "grantedTags": [
           "ultra_armor",
@@ -93616,6 +93783,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "freezer-continuidad-universo-8-forma-final-envejecida-base",
+        "name": "Freezer (Continuidad Universo 8, Forma Final Envejecida) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Freezer (Continuidad Universo 8, Forma Final Envejecida) previo a cualquier transformación."
+      },
       {
         "id": "imperial_overcharge_u8",
         "name": "Estado Base (Poder Desatado del Emperador Anciano)",
@@ -95509,6 +95684,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "ikl-base",
+        "name": "I'K'L (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-A",
+        "stats": "Forma Base canónica de I'K'L previo a cualquier transformación."
+      },
+      {
         "id": "base-resonance-peak",
         "name": "Estado Base (Resonancia Prenatal Pico)",
         "stats": "Tier 4-A+ | Multi-Sistema Solar con acumulación máxima de Ki latente.",
@@ -97091,9 +97274,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-C) × Vel(1.25x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 3000 Unidades"
     },
     "numericStats": {
-      "apexKi": 3000,
-      "scouterKi": 3000,
-      "powerLevel": 3000
+      "apexKi": 3600,
+      "scouterKi": 3600,
+      "powerLevel": 3600
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 10",
@@ -97453,6 +97636,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "mahissu-romanesco-cargot-caracoru-y-lumaca-guerreros-del-universo-10-base",
+        "name": "Mahissu, Romanesco, Cargot, Caracoru y Lumaca (Guerreros del Universo 10) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "5-A",
+        "stats": "Forma Base canónica de Mahissu, Romanesco, Cargot, Caracoru y Lumaca (Guerreros del Universo 10) previo a cualquier transformación."
+      },
+      {
         "id": "base-coexistencia-overdrive",
         "name": "Estado Base (Overdrive de Coexistencia)",
         "stats": "Tier 5-A+ | Unión espiritual completa, ki fusionado temporalmente.",
@@ -97801,8 +97992,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "majin-buu-gordo-continuidad-universo-11-base",
+        "name": "Majin Buu (Gordo, Continuidad Universo 11) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-A",
+        "stats": "Forma Base canónica de Majin Buu (Gordo, Continuidad Universo 11) previo a cualquier transformación."
+      },
+      {
         "id": "base-max-overload",
-        "name": "Estado Base (Poder Desatado / Sin Contención Babidi)",
+        "name": "Estado Base / Babidi",
         "stats": "Tier 4-A+ | Cuerpo Majin sin órdenes mentales, máxima expresión de biomasa acumulada.",
         "apexKiMultiplier": 1.4,
         "staminaDrain": 5,
@@ -99696,6 +99895,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "piccolo-universo-16-espectador-notable-base",
+        "name": "Piccolo (Universo 16, Espectador Notable) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-C",
+        "stats": "Forma Base canónica de Piccolo (Universo 16, Espectador Notable) previo a cualquier transformación."
+      },
+      {
         "id": "base-mentor-focus",
         "name": "Estado Base (Foco de Mentor)",
         "stats": "Estado Base con reducción de firma de ki y bonificación pasiva a discípulos en el mismo equipo.",
@@ -100268,9 +100475,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 1500 Unidades | Oficial DB: 1500 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1200,
+      "scouterKi": 1200,
+      "powerLevel": 1200
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 13",
@@ -102902,8 +103109,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "south-supreme-kai-kaio-shin-del-sur-universo-1-base",
+        "name": "South Supreme Kai (Kaio-shin del Sur, Universo 1) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de South Supreme Kai (Kaio-shin del Sur, Universo 1) previo a cualquier transformación."
+      },
+      {
         "id": "south_potential_unleashed",
-        "name": "Estado Base (Poder Desatado / Sin Contención)",
+        "name": "Estado Base /",
         "stats": "Tier 3-A con drenaje muscular. Aura dorada divina desbordada.",
         "apexKiMultiplier": 1.5,
         "staminaDrain": 4,
@@ -103774,6 +103989,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "tenshinhan-continuidad-universo-9-maestro-del-kikoho-definitivo-base",
+        "name": "Tenshinhan (Continuidad Universo 9, Maestro del Kikoho Definitivo) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "5-A",
+        "stats": "Forma Base canónica de Tenshinhan (Continuidad Universo 9, Maestro del Kikoho Definitivo) previo a cualquier transformación."
+      },
       {
         "id": "kikoho_mastery_u9",
         "name": "Estado Base (Kikoho Definitivo Sin Riesgo)",
@@ -107935,9 +108158,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1480 Unidades | Oficial DB: 1480 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1300,
+      "scouterKi": 1300,
+      "powerLevel": 1300
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 9",
@@ -109429,7 +109652,15 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "broly-kakumei-base",
-        "name": "Estado Base (Poder Desatado / Controlado)",
+        "name": "Broly (Kakumei) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de Broly (Kakumei) previo a cualquier transformación."
+      },
+      {
+        "id": "broly-kakumei-base",
+        "name": "Estado Base / Controlado",
         "stats": "Nivel Universal. Broly ha aprendido a canalizar parte de su aura legendaria sin entrar en frenesí total.",
         "apexKiMultiplier": 2,
         "tier": "3-A",
@@ -110242,8 +110473,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "gohan-heredero-del-u11-base",
+        "name": "Gohan (Heredero del U11) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "3-A",
+        "stats": "Forma Base canónica de Gohan (Heredero del U11) previo a cualquier transformación."
+      },
+      {
         "id": "gohan-u11-base",
-        "name": "Estado Base (Poder Desatado del U11)",
+        "name": "Estado Base del U11",
         "stats": "Nivel Universal. Gohan canalizando su máximo rendimiento muscular y marcial aprendido con las Tropas del Orgullo, previo al Despertar Bestia/Hakaishin.",
         "apexKiMultiplier": 2.5,
         "tier": "3-A",
@@ -113429,9 +113668,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1500 Unidades | Oficial DB: 1500 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1400,
+      "scouterKi": 1400,
+      "powerLevel": 1400
     },
     "entityType": "fighter",
     "physicalTier": "4-B",
@@ -114864,11 +115103,6 @@ export const INITIAL_CHARACTERS = [
         }
       ],
       "passives": [
-        {
-          "name": "Inmunidad al Veneno/Parásitos",
-          "desc": "No puede ser poseído o corrompido, ya que él es el parásito definitivo.",
-          "cost": "Pasivo continuo"
-        },
         {
           "name": "Parasitismo Divino",
           "desc": "Absorbe pasivamente las reservas de ki del oponente al contacto físico prolongado.",
@@ -117529,11 +117763,6 @@ export const INITIAL_CHARACTERS = [
       ],
       "passives": [
         {
-          "name": "Sangre Venenosa",
-          "desc": "Cualquier ataque que inyecte su sangre en un oponente humano causa descomposición y fallo sistémico a menos que usen RCT.",
-          "cost": "Pasivo biológico."
-        },
-        {
           "name": "Fisiología de Híbrido Maldito",
           "desc": "Convierte energía maldita en sangre, evitando la muerte por pérdida hemorrágica masiva.",
           "cost": "Consumo pasivo de energía maldita."
@@ -117544,6 +117773,14 @@ export const INITIAL_CHARACTERS = [
       "weaknesses": []
     },
     "forms": [
+      {
+        "id": "choso-base",
+        "name": "Choso (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Choso previo a cualquier transformación."
+      },
       {
         "id": "choso-flowing-red-scale",
         "name": "Escama Roja Fluyente: Apilar",
@@ -117971,9 +118208,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(5x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.2000000000000002x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1600,
+      "scouterKi": 1600,
+      "powerLevel": 1600
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -118440,11 +118677,6 @@ export const INITIAL_CHARACTERS = [
           "name": "Vínculo de Dos Cuerpos",
           "desc": "Gyutaro puede compartir un ojo y control táctico con Daki. Aunque uno reciba un ataque letal (ej. decapitación), el otro mantiene la vida del dúo.",
           "cost": "Condición pasiva del combate."
-        },
-        {
-          "name": "Regeneración Demoníaca y Veneno",
-          "desc": "Curación rápida de heridas no solares y aplicación de toxinas necróticas por contacto.",
-          "cost": "Constante"
         },
         {
           "name": "Regeneración Demoníaca",
@@ -119385,9 +119617,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 970 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2200,
+      "scouterKi": 2200,
+      "powerLevel": 2200
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -119894,11 +120126,6 @@ export const INITIAL_CHARACTERS = [
           "name": "Técnica Maldita Inversa (RCT)",
           "desc": "Capacidad de regenerar extremidades y curar heridas fatales de forma automática usando energía positiva.",
           "cost": "2 stamina por turno activo"
-        },
-        {
-          "name": "Inmunidad a Venenos Tóxicos",
-          "desc": "Ha sobrevivido a milenios consumiendo cerebros con diversas patologías, posee una biología adaptable.",
-          "cost": "Pasivo continuo"
         }
       ],
       "specialMechanics": [
@@ -122412,6 +122639,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "megumi-fushiguro-base",
+        "name": "Megumi Fushiguro (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Megumi Fushiguro previo a cualquier transformación."
+      },
+      {
         "id": "megumi-base",
         "name": "Megumi Fushiguro (Forma con Shikigamis Pesados)",
         "stats": "Nivel Multi-Bloque. Uniforme negro de Jujutsu High, cabello erizado negro. Invocación activa de Perro Divino, Nue y/o Elefante Máximo.",
@@ -124271,6 +124506,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "naoya-zenin-maldicion-base",
+        "name": "Naoya Zenin (Maldición) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Naoya Zenin (Maldición) previo a cualquier transformación."
+      },
       {
         "id": "naoya-curse-womb",
         "name": "Útero (Forma Gusano/Crisálida)",
@@ -126191,9 +126434,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 675 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2100,
+      "scouterKi": 2100,
+      "powerLevel": 2100
     },
     "entityType": "fighter",
     "sagaOrArc": "Jujutsu Kaisen 0 / Pasado de Gojo",
@@ -129281,6 +129524,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "doma-base",
+        "name": "Doma (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Doma previo a cualquier transformación."
+      },
+      {
         "id": "crystalline-child-clones",
         "name": "Estado Base (Hordas de Clones de Hielo Cristalino)",
         "stats": "Tier 7-B | Nivel Ciudad. Múltiples cuerpos ejecutando técnicas simultáneamente.",
@@ -130073,6 +130324,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "giyu-tomioka-base",
+        "name": "Giyu Tomioka (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Giyu Tomioka previo a cualquier transformación."
+      },
+      {
         "id": "giyu-marked",
         "name": "Marca de Cazador de Demonios",
         "stats": "Incrementa masivamente la velocidad de reacción y la temperatura corporal. Permite acceso limitado al Mundo Transparente y teñir la espada de rojo para anular regeneración demoníaca.",
@@ -130295,6 +130554,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "gyokko-base",
+        "name": "Gyokko (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-C",
+        "stats": "Forma Base canónica de Gyokko previo a cualquier transformación."
+      },
       {
         "id": "gyokko-molt",
         "name": "Muda Final (Sireno/Escamas)",
@@ -131004,6 +131271,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "hantengu-base",
+        "name": "Hantengu (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-C",
+        "stats": "Forma Base canónica de Hantengu previo a cualquier transformación."
+      },
+      {
         "id": "hantengu-zohakuten",
         "name": "Zohakuten",
         "stats": "El proxy del Jefe. Tier 7-A con ataques omnidireccionales, mientras el jugador principal se esconde o huye.",
@@ -131268,6 +131543,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "inosuke-hashibira-base",
+        "name": "Inosuke Hashibira (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Inosuke Hashibira previo a cualquier transformación."
+      },
       {
         "id": "inosuke-hashibira-base",
         "name": "Estado Base (Modo Combate / Respiración de la Bestia Activa)",
@@ -133118,6 +133401,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "mitsuri-kanroji-base",
+        "name": "Mitsuri Kanroji (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Mitsuri Kanroji previo a cualquier transformación."
+      },
+      {
         "id": "mitsuri-marked",
         "name": "Marca de Cazador (Corazones Gemelos)",
         "stats": "Su fuerza muscular, ya colosal, se multiplica. Soporta pelear de frente con la forma final de Hantengu por horas, anulando todo avance del demonio.",
@@ -133180,9 +133471,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 805 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 1700,
+      "scouterKi": 1700,
+      "powerLevel": 1700
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -133354,6 +133645,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "muichiro-tokito-base",
+        "name": "Muichiro Tokito (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Muichiro Tokito previo a cualquier transformación."
+      },
       {
         "id": "muichiro-marked",
         "name": "Marca de Cazador (Niebla Carmesí)",
@@ -133613,6 +133912,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "muzan-kibutsuji-base",
+        "name": "Muzan Kibutsuji (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Muzan Kibutsuji previo a cualquier transformación."
+      },
       {
         "id": "muzan-elegante",
         "name": "Disfraz Humano",
@@ -134543,6 +134850,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "obanai-iguro-base",
+        "name": "Obanai Iguro (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Obanai Iguro previo a cualquier transformación."
+      },
+      {
         "id": "obanai-marked",
         "name": "Marca de Cazador (Espada Roja)",
         "stats": "Aumento extremo de velocidad. Obanai aprendió a teñir su espada de rojo apretándola con fuerza bruta, anulando instantáneamente la regeneración, aunque el esfuerzo ahoga sus propios pulmones.",
@@ -135315,6 +135630,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "sanemi-shinazugawa-base",
+        "name": "Sanemi Shinazugawa (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Sanemi Shinazugawa previo a cualquier transformación."
+      },
+      {
         "id": "sanemi-marked",
         "name": "Marca de Cazador de Demonios",
         "stats": "Aumento crítico de fuerza, resistencia al dolor, agilidad y permite el choque de armas rojas para anular regeneración.",
@@ -135548,11 +135871,6 @@ export const INITIAL_CHARACTERS = [
           "name": "Resistencia Farmacológica Corporal",
           "desc": "Su cuerpo entero actúa como un contenedor de veneno de glicina gracias a la ingestión prolongada de medicamentos.",
           "cost": 0
-        },
-        {
-          "name": "Metabolismo Envenenado",
-          "desc": "Su cuerpo ha sido sutilmente infundido con pequeñas dosis de veneno de glicina durante años, volviendo su sangre letal para cualquier demonio que la consuma.",
-          "cost": "Pasivo biológico"
         }
       ],
       "specialMechanics": [
@@ -135599,7 +135917,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Estado Base (Último Sacrificio Planificado)",
         "stats": "Tier 7-C — su cuerpo entero se ha convertido en un contenedor saturado de veneno de glicina",
         "apexKiMultiplier": 1,
-        "staminaDrain": 2,
+        "staminaDrain": 0,
         "activationCondition": "Tras meses ingiriendo cantidades masivas de veneno de glicina",
         "canonStatus": "source_backed",
         "grantedTags": [
@@ -136876,6 +137194,14 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "zenitsu-agatsuma-base",
+        "name": "Zenitsu Agatsuma (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Zenitsu Agatsuma previo a cualquier transformación."
+      },
+      {
+        "id": "zenitsu-agatsuma-base",
         "name": "Estado Base (Modo Dormido / Fulguración Activa)",
         "stats": "Tier 7-B | Nivel Ciudad. Forma principal en combate real.",
         "apexKiMultiplier": 1.5,
@@ -137216,6 +137542,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "aki-hayakawa-base",
+        "name": "Aki Hayakawa (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-C",
+        "stats": "Forma Base canónica de Aki Hayakawa previo a cualquier transformación."
+      },
       {
         "id": "aki-gun-devil",
         "name": "Estado Base (Poseído por el Demonio Pistola / Fusión Final)",
@@ -139326,9 +139660,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 594 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1300,
+      "scouterKi": 1300,
+      "powerLevel": 1300
     },
     "entityType": "fighter",
     "sagaOrArc": "Parte 1 / Parte 2",
@@ -139546,8 +139880,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "fami-chainsaw-man-demonio-del-hambre-kiga-base",
+        "name": "Fami (Chainsaw Man — Demonio del Hambre / Kiga) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-A",
+        "stats": "Forma Base canónica de Fami (Chainsaw Man — Demonio del Hambre / Kiga) previo a cualquier transformación."
+      },
+      {
         "id": "fami-base",
-        "name": "Estado Base (Poder Desatado del Jinete)",
+        "name": "Estado Base del Jinete",
         "stats": "Tier 7-A | Nivel Montaña.",
         "apexKiMultiplier": 1.25,
         "staminaDrain": 5,
@@ -140301,6 +140643,14 @@ export const INITIAL_CHARACTERS = [
       "weaknesses": []
     },
     "forms": [
+      {
+        "id": "katana-man-base",
+        "name": "Katana Man (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Katana Man previo a cualquier transformación."
+      },
       {
         "id": "katana-human",
         "name": "Forma Humana (Yakuza)",
@@ -141721,13 +142071,7 @@ export const INITIAL_CHARACTERS = [
           "cost": "Hax de control de Zona (Arena Trap)."
         }
       ],
-      "passives": [
-        {
-          "name": "Ocultamiento de Stand",
-          "desc": "Debido a la fluidez elástica de su Stand, puede ocultarse dentro de tuberías, debajo del suelo o en resquicios diminutos para ataques furtivos.",
-          "cost": "Pasiva de movilidad."
-        }
-      ],
+      "passives": [],
       "actives": [],
       "specialMechanics": [
         {
@@ -142218,8 +142562,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "power-base",
+        "name": "Power (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-C",
+        "stats": "Forma Base canónica de Power previo a cualquier transformación."
+      },
+      {
         "id": "power-true",
-        "name": "Estado Base (Poder Desatado: Demonio de la Sangre Verdadero)",
+        "name": "Estado Base : Demonio de la Sangre Verdadero",
         "stats": "Nivel Edificio Grande a Ciudad. Manipulación biológica interna de la sangre enemiga, incluyendo humanos, y aumento exponencial de su arsenal hemático.",
         "apexKiMultiplier": 250,
         "staminaDrain": 5,
@@ -143095,6 +143447,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "santa-claus-base",
+        "name": "Santa Claus (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Santa Claus previo a cualquier transformación."
+      },
+      {
         "id": "santa-claus-human",
         "name": "Tolka / Anciano (Señuelo)",
         "stats": "Cuerpos falsos, sin poder real, útiles para engaño narrativo.",
@@ -143742,11 +144102,6 @@ export const INITIAL_CHARACTERS = [
           "name": "Amnesia Selectiva",
           "desc": "Olvida a las personas o eventos en cuanto ya no le sirven. Inmune a la manipulación emocional por remordimientos pasados, ya que no los recuerda.",
           "cost": "Gag Psicológico."
-        },
-        {
-          "name": "Maestría de Conjuración Nen",
-          "desc": "Mantiene a Blinky materializada de forma continua con un gasto mínimo de energía gracias a su pacto subconsciente.",
-          "cost": "Pasiva de Mantenimiento"
         }
       ],
       "actives": [],
@@ -143954,15 +144309,6 @@ export const INITIAL_CHARACTERS = [
         }
       ],
       "passives": [
-        {
-          "name": "Asimilación de Venenos (Cristales/Plantas)",
-          "desc": "Si se ve obligado a ingerir material enemigo (como los cristales de Hojo), puede manifestarlos para usar el arma del enemigo en su contra.",
-          "cost": "Táctica reactiva arriesgada (Daño interno leve al comer)."
-        },
-        {
-          "name": "Asimilación de Venenos y Materiales",
-          "desc": "Si se ve obligado a ingerir material enemigo (como cristales o toxinas), puede manifestarlos para usar el arma del rival en su contra."
-        },
         {
           "name": "Resiliencia de Quimera",
           "desc": "Adaptación tisular instantánea para mitigar impactos físicos distribuyendo el daño a través de múltiples capas biológicas."
@@ -144215,11 +144561,6 @@ export const INITIAL_CHARACTERS = [
         {
           "name": "Defensa Mental Inconsciente",
           "desc": "Incluso cuando duerme o está noqueada, su barrera psíquica se activa automáticamente ante cualquier ataque entrante.",
-          "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Vuelo Telequinético Permanente",
-          "desc": "Permanece levitando en todo momento, anulando trampas terrestres básicas.",
           "cost": "Pasivo continuo"
         }
       ],
@@ -144513,6 +144854,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "violence-fiend-base",
+        "name": "Violence Fiend (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Violence Fiend previo a cualquier transformación."
+      },
       {
         "id": "violence-unmasked",
         "name": "Galgali Sin Máscara",
@@ -145040,9 +145389,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4500000000000002x) × Forma(1x) = 734 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 2200,
+      "scouterKi": 2200,
+      "powerLevel": 2200
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -145168,6 +145517,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "biscuit-krueger-base",
+        "name": "Biscuit Krueger (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-C",
+        "stats": "Forma Base canónica de Biscuit Krueger previo a cualquier transformación."
+      },
       {
         "id": "biscuit-loli",
         "name": "Forma Infante (Disfraz)",
@@ -146512,6 +146869,14 @@ export const INITIAL_CHARACTERS = [
     "forms": [
       {
         "id": "ging-freecss-base",
+        "name": "Ging Freecss (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-A",
+        "stats": "Forma Base canónica de Ging Freecss previo a cualquier transformación."
+      },
+      {
+        "id": "ging-freecss-base",
         "name": "Ging Freecss (Estado Base / Máximo Poder)",
         "stats": "Tier 7-A estimado por reputación narrativa. Forma intensificada a pleno rendimiento muscular.",
         "apexKiMultiplier": 1.25,
@@ -147275,9 +147640,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 675 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1300,
+      "scouterKi": 1300,
+      "powerLevel": 1300
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de las Hormigas Quimera",
@@ -148254,9 +148619,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 625 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1300,
+      "scouterKi": 1300,
+      "powerLevel": 1300
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de las Hormigas Quimera",
@@ -148551,9 +148916,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 401 Unidades"
     },
     "numericStats": {
-      "apexKi": 459,
-      "scouterKi": 459,
-      "powerLevel": 459
+      "apexKi": 519,
+      "scouterKi": 519,
+      "powerLevel": 519
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -150781,6 +151146,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "menthuthuyoupi-base",
+        "name": "Menthuthuyoupi (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Menthuthuyoupi previo a cualquier transformación."
+      },
+      {
         "id": "youpi-centaur",
         "name": "Centauro Controlado",
         "stats": "Aumenta la movilidad y el IQ Táctico al 100%, bajando su impulsividad irracional.",
@@ -151606,9 +151979,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 719 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1400,
+      "scouterKi": 1400,
+      "powerLevel": 1400
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -151955,7 +152328,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "base-fury",
-        "name": "Modo Poder Desatado / Modo Furia",
+        "name": "Modo / Modo Furia",
         "stats": "Tier 7-A (Upper) | Aura al máximo posible",
         "apexKiMultiplier": 1.35,
         "staminaDrain": 12,
@@ -152663,6 +153036,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "palm-siberia-base",
+        "name": "Palm Siberia (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-B",
+        "stats": "Forma Base canónica de Palm Siberia previo a cualquier transformación."
+      },
       {
         "id": "palm-human",
         "name": "Palm (Humana - Modo Oculto)",
@@ -153427,9 +153808,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 891 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2100,
+      "scouterKi": 2100,
+      "powerLevel": 2100
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -153597,6 +153978,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "shalnark-base",
+        "name": "Shalnark (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-C",
+        "stats": "Forma Base canónica de Shalnark previo a cualquier transformación."
+      },
       {
         "id": "shalnark-auto",
         "name": "Piloto Automático (Auto Mode)",
@@ -154115,6 +154504,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "silva-e-illumi-zoldyck-base",
+        "name": "Silva e Illumi Zoldyck (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Silva e Illumi Zoldyck previo a cualquier transformación."
+      },
       {
         "id": "silva-illumi-zoldyck-base",
         "name": "Silva e Illumi Zoldyck (Estado Base / Plena Sinergia)",
@@ -154913,6 +155310,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "bruno-bucciarati-base",
+        "name": "Bruno Bucciarati (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-B",
+        "stats": "Forma Base canónica de Bruno Bucciarati previo a cualquier transformación."
+      },
       {
         "id": "bucciarati-zombie",
         "name": "Alma en Descomposición",
@@ -159030,6 +159435,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "johnny-joestar-base",
+        "name": "Johnny Joestar (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-C Físico",
+        "stats": "Forma Base canónica de Johnny Joestar previo a cualquier transformación."
+      },
+      {
         "id": "johnny-act4",
         "name": "Estado Base (Poder Máximo: Tusk Act 4 / Rotación Infinita)",
         "stats": "Nivel Multiversal Bajo / Daño Infinito Dimensional. Desbloquea la rotación infinita de la gravedad subatómica al alcanzar la alineación del Rectángulo Dorado montando a Slow Dancer.",
@@ -160772,9 +161185,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 8-C Físico | Tier 2-C Hax Temporal) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 416 Unidades"
     },
     "numericStats": {
-      "apexKi": 541,
-      "scouterKi": 541,
-      "powerLevel": 541
+      "apexKi": 463,
+      "scouterKi": 463,
+      "powerLevel": 463
     },
     "entityType": "fighter",
     "sagaOrArc": "Stardust Crusaders / Diamond is Unbreakable / Stone Ocean",
@@ -161471,6 +161884,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "koichi-hirose-base",
+        "name": "Koichi Hirose (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "9-B",
+        "stats": "Forma Base canónica de Koichi Hirose previo a cualquier transformación."
+      },
       {
         "id": "koichi-act-1-2",
         "name": "Echoes Act 1 / Act 2",
@@ -163877,9 +164298,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1400,
+      "scouterKi": 1400,
+      "powerLevel": 1400
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -164982,7 +165403,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "awakening-breath",
-        "name": "Respiración de Liberación al 100% (Poder Desatado)",
+        "name": "Respiración de Liberación al 100%",
         "stats": "Tier 7-A a 6-C | Nivel Isla. Rompe el caparazón de Garou Monstruo y rivaliza con amenazas Dragón+.",
         "apexKiMultiplier": 3.5,
         "staminaDrain": 18,
@@ -165810,6 +166231,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "child-emperor-base",
+        "name": "Child Emperor (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Child Emperor previo a cualquier transformación."
+      },
+      {
         "id": "child-emperor-brave-giant",
         "name": "Modo Brave Giant",
         "stats": "Transformación a AP/Durabilidad Montaña con temporizador de muerte lenta (Stamina decae cada turno hasta el colapso).",
@@ -166491,6 +166920,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "drive-knight-base",
+        "name": "Drive Knight (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-A",
+        "stats": "Forma Base canónica de Drive Knight previo a cualquier transformación."
+      },
       {
         "id": "drive-knight-chariot",
         "name": "Transformación Táctica: Carruaje",
@@ -168117,6 +168554,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "garou-humano-cazador-de-heroes-base",
+        "name": "Garou (Humano / Cazador de Héroes) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-C",
+        "stats": "Forma Base canónica de Garou (Humano / Cazador de Héroes) previo a cualquier transformación."
+      },
       {
         "id": "garou-human",
         "name": "Cazador de Héroes",
@@ -170739,6 +171184,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "phoenix-man-base",
+        "name": "Phoenix Man (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-A",
+        "stats": "Forma Base canónica de Phoenix Man previo a cualquier transformación."
+      },
+      {
         "id": "phoenix-penguin",
         "name": "Modo Pingüino Diamante",
         "stats": "Su fuego y plumas se vuelven hielo súper duro; pierde ataques ígneos, pero aumenta su durabilidad y desvía daño láser o eléctrico.",
@@ -171321,9 +171774,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 750 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 1800,
+      "scouterKi": 1800,
+      "powerLevel": 1800
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -173812,6 +174265,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "all-for-one-base",
+        "name": "All For One (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "High 6-A",
+        "stats": "Forma Base canónica de All For One previo a cualquier transformación."
+      },
+      {
         "id": "base-anciano",
         "name": "Estado Base (Anciano en Prisión / Quirks Suprimidos)",
         "stats": "Tier 7-A — cuerpo deteriorado con Quirk All For One suprimido por esposas especiales",
@@ -173840,7 +174301,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "base-peak-armor",
-        "name": "Modo Poder Desatado / Traje de Refuerzo",
+        "name": "Modo / Traje de Refuerzo",
         "stats": "Tier 6-A alto — despliega múltiples Quirks simultáneamente con su traje de apoyo biomecánico",
         "apexKiMultiplier": 1.4,
         "staminaDrain": 10,
@@ -174921,7 +175382,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "base-max-cremation",
-        "name": "Modo Poder Desatado / Cremation Máxima",
+        "name": "Modo / Cremation Máxima",
         "stats": "Tier High 6-A+ con output térmico destructivo al tope documentado del personaje.",
         "apexKiMultiplier": 1.3,
         "staminaDrain": 12,
@@ -175815,6 +176276,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "fat-gum-base",
+        "name": "Fat Gum (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Fat Gum previo a cualquier transformación."
+      },
+      {
         "id": "fatgum-slim",
         "name": "Taishiro (Forma Delgada)",
         "stats": "Post-uso de FCE. Pierde su barrera de grasa y peso, quedándose sin AP ni Defensa alta.",
@@ -176549,6 +177018,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "gentle-criminal-base",
+        "name": "Gentle Criminal (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-C",
+        "stats": "Forma Base canónica de Gentle Criminal previo a cualquier transformación."
+      },
       {
         "id": "gentle-lover",
         "name": "Gentle (Lover Mode)",
@@ -177637,6 +178114,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "izuku-midoriya-deku-base",
+        "name": "Izuku Midoriya (Deku) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "High 6-A a 5-C",
+        "stats": "Forma Base canónica de Izuku Midoriya (Deku) previo a cualquier transformación."
+      },
       {
         "id": "full-cowl-45",
         "name": "Full Cowl 45% (Estado Base de Combate)",
@@ -179691,6 +180176,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "mt-lady-base",
+        "name": "Mt. Lady (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Mt. Lady previo a cualquier transformación."
+      },
+      {
         "id": "mt-lady-giant",
         "name": "Modo Gigante",
         "stats": "Transformación única. Aumenta AP y Durabilidad al máximo, reduce a 0 el sigilo y la evasión minuciosa.",
@@ -180554,6 +181047,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "overhaul-base",
+        "name": "Overhaul (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Overhaul previo a cualquier transformación."
+      },
+      {
         "id": "overhaul-nemoto",
         "name": "Fusión con Shin Nemoto",
         "stats": "Gana brazos extra y ventajas tácticas (telepatía/forzar la verdad). Aumenta AP y movilidad.",
@@ -181032,6 +181533,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "re-destro-base",
+        "name": "Re-Destro (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Re-Destro previo a cualquier transformación."
+      },
+      {
         "id": "redestro-80",
         "name": "Stress Output: 80%",
         "stats": "Aumento de tamaño, AP nivel Ciudad.",
@@ -181121,9 +181630,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 578 Unidades"
     },
     "numericStats": {
-      "apexKi": 1500,
-      "scouterKi": 1500,
-      "powerLevel": 1500
+      "apexKi": 1600,
+      "scouterKi": 1600,
+      "powerLevel": 1600
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -182035,6 +182544,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "spinner-base",
+        "name": "Spinner (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Spinner previo a cualquier transformación."
+      },
       {
         "id": "spinner-mutated",
         "name": "Monstruo de AFO",
@@ -183290,6 +183807,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "doppo-orochi-base",
+        "name": "Doppo Orochi (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Doppo Orochi previo a cualquier transformación."
+      },
+      {
         "id": "base_full_out",
         "name": "Estado Base (Máximo Esfuerzo Continuo)",
         "stats": "Tier 7-B (High-End) | APEX-Ki ~875 (x1.25)",
@@ -183739,15 +184264,6 @@ export const INITIAL_CHARACTERS = [
       ],
       "passives": [
         {
-          "name": "Inmunidad al Veneno/Enfermedad Temporal",
-          "desc": "Inmunidad relativa a somníferos o venenos biológicos que noquearían a otros (gracias al estrés).",
-          "cost": "Pasivo defensivo."
-        },
-        {
-          "name": "Inmunidad al Veneno Temporal",
-          "description": "Resistencia biológica y mental extrema a somníferos o toxinas."
-        },
-        {
           "name": "Sonar Primitivo por Daño",
           "description": "Al perder la vista, compensa detectando vibraciones aéreas y acústicas menores."
         }
@@ -184009,6 +184525,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "gaia-base",
+        "name": "Gaia (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-C",
+        "stats": "Forma Base canónica de Gaia previo a cualquier transformación."
+      },
       {
         "id": "gaia-nomura",
         "name": "Nomura (Forma Civil Pasiva)",
@@ -186320,6 +186844,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "musashi-miyamoto-reencarnado-base",
+        "name": "Musashi Miyamoto (Reencarnado) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Musashi Miyamoto (Reencarnado) previo a cualquier transformación."
+      },
+      {
         "id": "base_no_sword",
         "name": "Estado Base (Vacío Manos / Corte Invisible)",
         "stats": "Tier 7-B | APEX-Ki ~1085 (x1.10)",
@@ -186423,9 +186955,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.7000000000000002x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 986 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 1700,
+      "scouterKi": 1700,
+      "powerLevel": 1700
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Musashi",
@@ -186952,9 +187484,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 891 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 1600,
+      "scouterKi": 1600,
+      "powerLevel": 1600
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Pickle / Son of Ogre",
@@ -188908,9 +189440,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 963 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2200,
+      "scouterKi": 2200,
+      "powerLevel": 2200
     },
     "entityType": "fighter",
     "sagaOrArc": "Son of Ogre / Torneo Máximo",
@@ -190854,6 +191386,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "heracles-base",
+        "name": "Heracles (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Heracles previo a cualquier transformación."
+      },
       {
         "id": "heracles-cerberus",
         "name": "Modo Cerbero",
@@ -192956,6 +193496,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "okita-souji-base",
+        "name": "Okita Souji (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Okita Souji previo a cualquier transformación."
+      },
+      {
         "id": "okita-demon",
         "name": "Niño Demonio",
         "stats": "El corazón supera el límite. Pierde defensa y HP permanentemente en cada turno, pero gana el stat de velocidad de ataque más alto posible del juego para asestar golpes letales e inesquivables.",
@@ -193995,6 +194543,14 @@ export const INITIAL_CHARACTERS = [
       "weaknesses": []
     },
     "forms": [
+      {
+        "id": "raiden-tameemon-base",
+        "name": "Raiden Tameemon (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Raiden Tameemon previo a cualquier transformación."
+      },
       {
         "id": "raiden-unleashed",
         "name": "Cien Sellos Liberados",
@@ -195793,6 +196349,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "agent-venom-base",
+        "name": "Agent Venom (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Agent Venom previo a cualquier transformación."
+      },
+      {
         "id": "agent-anti-venom",
         "name": "Agent Anti-Venom",
         "stats": "Cura venenos, demonios o enfermedades letales con toques mágicos purificadores, inmune a debilidades sónicas tradicionales.",
@@ -196032,6 +196596,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "ant-man-giant-man-base",
+        "name": "Ant-Man / Giant-Man (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "9-B",
+        "stats": "Forma Base canónica de Ant-Man / Giant-Man previo a cualquier transformación."
+      },
       {
         "id": "antman-micro",
         "name": "Modo Ant-Man (Micro)",
@@ -199572,6 +200144,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "ghost-rider-base",
+        "name": "Ghost Rider (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "5-B",
+        "stats": "Forma Base canónica de Ghost Rider previo a cualquier transformación."
+      },
+      {
         "id": "ghost-rider-zarathos",
         "name": "Zarathos Desatado",
         "stats": "Blaze cede el control por completo. Pierde toda humanidad. AP salta a Nivel 2-C, el fuego infernal crece hasta devorar ciudades enteras y su durabilidad se vuelve cósmica divina.",
@@ -199771,6 +200351,14 @@ export const INITIAL_CHARACTERS = [
       "weaknesses": []
     },
     "forms": [
+      {
+        "id": "green-goblin-base",
+        "name": "Green Goblin (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Green Goblin previo a cualquier transformación."
+      },
       {
         "id": "osborn-red-goblin",
         "name": "Red Goblin (Carnage Symbiote - Lore Variante)",
@@ -199988,6 +200576,14 @@ export const INITIAL_CHARACTERS = [
       "weaknesses": []
     },
     "forms": [
+      {
+        "id": "hawkeye-base",
+        "name": "Hawkeye (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "9-A",
+        "stats": "Forma Base canónica de Hawkeye previo a cualquier transformación."
+      },
       {
         "id": "hawkeye-ronin",
         "name": "Ronin (Katana Mode)",
@@ -202580,6 +203176,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "moon-knight-base",
+        "name": "Moon Knight (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-C",
+        "stats": "Forma Base canónica de Moon Knight previo a cualquier transformación."
+      },
+      {
         "id": "moon-knight-mr-knight",
         "name": "Mr. Knight",
         "stats": "Modo traje de gala. Abandona armas arrojadizas por boxeo limpio, CQC y brutalidad psicológica elegante. Gana Bonus de evasión/precisión.",
@@ -203713,8 +204317,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "silver-surfer-norrin-radd-base",
+        "name": "Silver Surfer (Norrin Radd) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "2-C",
+        "stats": "Forma Base canónica de Silver Surfer (Norrin Radd) previo a cualquier transformación."
+      },
+      {
         "id": "base-freed",
-        "name": "Estado Base (Poder Desatado / Sin Vínculo de Amo)",
+        "name": "Estado Base / Sin Vínculo de Amo",
         "stats": "Tier 2-C | MFTL++ | Poder cósmico propio sin supervisión",
         "apexKiMultiplier": 1.25,
         "staminaDrain": 5,
@@ -204776,6 +205388,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "the-sentry-robert-reynolds-base",
+        "name": "The Sentry (Robert Reynolds) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "2-C",
+        "stats": "Forma Base canónica de The Sentry (Robert Reynolds) previo a cualquier transformación."
+      },
       {
         "id": "sentry-reprimido",
         "name": "Sentry (memoria suprimida)",
@@ -206180,6 +206800,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "wolverine-base",
+        "name": "Wolverine (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Wolverine previo a cualquier transformación."
+      },
+      {
         "id": "wolverine-berserker",
         "name": "Berserker Rage",
         "stats": "Aumenta la ofensiva y anula efectos de control mental o miedo; pierde capacidad de hacer equipo/sinergia táctica.",
@@ -207477,6 +208105,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "batman-bruce-wayne-base",
+        "name": "Batman (Bruce Wayne) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "9-A Físico",
+        "stats": "Forma Base canónica de Batman (Bruce Wayne) previo a cualquier transformación."
+      },
+      {
         "id": "batman-batsuit",
         "name": "Estado Base (Batsuit Táctico / Kevlar Reforzado)",
         "apexKiMultiplier": 1.2,
@@ -208088,7 +208724,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "brainiac-ship-amplified",
-        "name": "Brainiac Enlace de Nave Nodriza (Max Power Sinergizado)",
+        "name": "Brainiac Enlace de Nave Nodriza Sinergizado",
         "stats": "Tier 2-C Plus | Androide sincronizado con red satelital completa y arsenales orbitales desplegados.",
         "apexKiMultiplier": 1.5,
         "staminaDrain": 8,
@@ -210693,6 +211329,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "etrigan-the-demon-base",
+        "name": "Etrigan the Demon (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "4-B",
+        "stats": "Forma Base canónica de Etrigan the Demon previo a cualquier transformación."
+      },
+      {
         "id": "jason-blood",
         "name": "Jason Blood (Humano Inmortal)",
         "stats": "Modo explorador/Hechicero clásico. Baja durabilidad y AP Nivel Bloque. Usa espadas y magia rúnica de Merlín. (Para activar a Etrigan usa el rimo: 'Gone, gone the form of man, Rise the demon Etrigan!').",
@@ -211533,6 +212177,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "green-lantern-hal-jordan-base",
+        "name": "Green Lantern (Hal Jordan) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "2-C",
+        "stats": "Forma Base canónica de Green Lantern (Hal Jordan) previo a cualquier transformación."
+      },
       {
         "id": "green-lantern-construct-overdrive",
         "name": "Estado Base (Voluntad al Límite / Constructos Reforzados)",
@@ -214378,6 +215030,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "scarecrow-base",
+        "name": "Scarecrow (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "9-B",
+        "stats": "Forma Base canónica de Scarecrow previo a cualquier transformación."
+      },
+      {
         "id": "scarebeast",
         "name": "Scarebeast (Mutación de Pánico)",
         "stats": "Forma rara/Hax: Muta por la toxina en una bestia gigante que exhala gas. Gana Fuerza Bruta 8-B y regeneración.",
@@ -216463,6 +217123,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "the-batman-who-laughs-base",
+        "name": "The Batman Who Laughs (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de The Batman Who Laughs previo a cualquier transformación."
+      },
+      {
         "id": "darkest-knight",
         "name": "The Darkest Knight",
         "stats": "Forma Final/Death Metal. Asimiló los poderes puros del Doctor Manhattan. AP salta a 1-C a Tier 0, controlando el espacio, el tiempo y volviéndose casi omnipotente (Borrando planetas apuntando el dedo).",
@@ -217722,11 +218390,6 @@ export const INITIAL_CHARACTERS = [
       ],
       "passives": [
         {
-          "name": "Refuerzo Biotecnológico Permanente",
-          "desc": "Su cuerpo fue modificado quirúrgicamente para aproximar el nivel de fuerza y durabilidad Viltrumita sin ser de esa raza.",
-          "cost": "Pasivo continuo, resultado de cirugías previas"
-        },
-        {
           "name": "Adaptación por Supervivencia",
           "desc": "Incrementa ligeramente su resistencia tras recibir daño crítico severo y sobrevivir.",
           "cost": 0
@@ -217758,6 +218421,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "allen-the-alien-poder-completo-post-entrenamiento-base",
+        "name": "Allen the Alien (Poder Completo Post-Entrenamiento) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "High 5-B",
+        "stats": "Forma Base canónica de Allen the Alien (Poder Completo Post-Entrenamiento) previo a cualquier transformación."
+      },
       {
         "id": "max_muscular_output",
         "name": "Estado Base (Sobrecarga Muscular Unun 100%)",
@@ -218093,6 +218764,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "angstrom-levy-base",
+        "name": "Angstrom Levy (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "2-C",
+        "stats": "Forma Base canónica de Angstrom Levy previo a cualquier transformación."
+      },
+      {
         "id": "mass_fusion",
         "name": "Estado Base (Fusión Multiversal Masiva)",
         "stats": "Tier 2-C pico | Acceso simultáneo al arsenal combinado de miles de variantes",
@@ -218376,6 +219055,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "anissa-base",
+        "name": "Anissa (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "5-A",
+        "stats": "Forma Base canónica de Anissa previo a cualquier transformación."
+      },
+      {
         "id": "combat_rage",
         "name": "Estado Base (Furia Imperial Desatada)",
         "stats": "Tier 5-A pico | Adrenalina y agresividad Viltrumita al máximo ante una amenaza existencial",
@@ -218606,13 +219293,7 @@ export const INITIAL_CHARACTERS = [
           "cost": "Mecánica Hax Suicida Inmortal. Ocurre automáticamente en la frontera de la Muerte. Tras su uso y regreso al HP full, el limitador mental vuelve."
         }
       ],
-      "passives": [
-        {
-          "name": "Bloqueo Biológico (Nerf Permanente)",
-          "desc": "Por lore, el gobierno le implantó un bloqueo para que no pudiera alterar moléculas vivas o humanos de forma ofensiva a voluntad en combates normales, reduciendo su AP pasivo de Tier 2-C a un Rango de Soporte y Zoner 7-B.",
-          "cost": "Mecánica Restrictiva de Balance (Hasta el Hax Limit Break)."
-        }
-      ],
+      "passives": [],
       "actives": [],
       "specialMechanics": [
         {
@@ -221062,7 +221743,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "thragg-warmonger",
-        "name": "Modo Poder Desatado / Belicismo Absoluto",
+        "name": "Modo / Belicismo Absoluto",
         "stats": "Pico de combate absoluto desatado en la Guerra Viltrumita final. Combina toda su potencia física con una sed de conquista total. Ki: ~433.12 Millones (Multiplier x1.5).",
         "apexKiMultiplier": 1.5,
         "staminaDrain": 25,
@@ -222674,6 +223355,14 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "monster-girl-base",
+        "name": "Monster Girl (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-A",
+        "stats": "Forma Base canónica de Monster Girl previo a cualquier transformación."
+      },
+      {
         "id": "monster-girl-human",
         "name": "Amanda (Niña Humana)",
         "stats": "Forma inicial inútil en combate (Físicamente una niña o joven). 100% Vulnerable.",
@@ -223813,8 +224502,16 @@ export const INITIAL_CHARACTERS = [
     },
     "forms": [
       {
+        "id": "robot-rudolph-conners-rus-livingston-base",
+        "name": "Robot / Rudolph Conners (Rus Livingston) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Robot / Rudolph Conners (Rus Livingston) previo a cualquier transformación."
+      },
+      {
         "id": "base_overclocked",
-        "name": "Estado Base (Poder Desatado / Red Global Activa)",
+        "name": "Estado Base / Red Global Activa",
         "stats": "Tier 8-A+ (Tech-Augmented) | APEX-Ki ~365 (x1.30)",
         "apexKiMultiplier": 1.3,
         "staminaDrain": 4,
@@ -227412,11 +228109,6 @@ export const INITIAL_CHARACTERS = [
           "name": "Invulnerabilidad Interna",
           "desc": "Los científicos rusos le dispararon balas dentro de la garganta y su tejido interno no sufrió ningún daño.",
           "cost": "Defensa Pasiva"
-        },
-        {
-          "name": "Anulador Permanente de Compuesto V",
-          "desc": "Su propia fisiología radiactiva (y el ataque nuclear) quema el V de la sangre de cualquier meta-humano, anulando sus poderes para siempre.",
-          "cost": "Pasivo Biológico Ofensivo"
         }
       ],
       "specialMechanics": [
@@ -227467,7 +228159,7 @@ export const INITIAL_CHARACTERS = [
       },
       {
         "id": "soldierboy-russian-overload",
-        "name": "Modo Poder Desatado / Reactor Inestable",
+        "name": "Modo / Reactor Inestable",
         "stats": "Variación intensificada al 100% máximo: su fisiología rusa recarga los contenedores de energía nuclear en su pecho, permitiendo liberar la ráfaga atómica con un destello rojo incandescente.",
         "apexKiMultiplier": 1.3,
         "activationCondition": "Carga emocional extrema, combate prolongado contra meta-humanos o estímulo musical ruso de los 80.",
@@ -227853,6 +228545,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "starlight-annie-january-base",
+        "name": "Starlight (Annie January) (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "7-B",
+        "stats": "Forma Base canónica de Starlight (Annie January) previo a cualquier transformación."
+      },
       {
         "id": "starlight-base",
         "name": "Starlight (Estado Base / Sobrecarga Lumínica)",
@@ -228375,6 +229075,14 @@ export const INITIAL_CHARACTERS = [
       ]
     },
     "forms": [
+      {
+        "id": "tek-knight-base",
+        "name": "Tek Knight (Estado Base)",
+        "apexKiMultiplier": 1,
+        "staminaDrain": 0,
+        "tier": "8-A",
+        "stats": "Forma Base canónica de Tek Knight previo a cualquier transformación."
+      },
       {
         "id": "tek-knight-no-suit",
         "name": "Robert Vernon (Civil/Interrogador)",
