@@ -143,6 +143,48 @@ export function validateAndAutoCorrectRoster(characters) {
         c.universe = "JoJo's Bizarre Adventure";
         correctionsCount++;
       }
+    } else if (idLower === 'gyutaro-daki-kny-ed') {
+      if (c.franchise !== 'Demon Slayer (Kimetsu no Yaiba)') {
+        c.franchise = 'Demon Slayer (Kimetsu no Yaiba)';
+        c.universe = 'Demon Slayer (Kimetsu no Yaiba)';
+        correctionsCount++;
+      }
+    } else if (idLower === 'nayuta-csm-p2') {
+      if (c.franchise !== 'Chainsaw Man') {
+        c.franchise = 'Chainsaw Man';
+        c.universe = 'Chainsaw Man';
+        correctionsCount++;
+      }
+    } else if (idLower === 'baki-hanma-baki') {
+      if (c.franchise !== 'Baki the Grappler') {
+        c.franchise = 'Baki the Grappler';
+        c.universe = 'Baki the Grappler';
+        correctionsCount++;
+      }
+    } else if (idLower === 'shigaraki-tomura-mha') {
+      if (c.franchise !== 'My Hero Academia') {
+        c.franchise = 'My Hero Academia';
+        c.universe = 'My Hero Academia';
+        correctionsCount++;
+      }
+    } else if (idLower === 'shizuku-murasaki-hxh-yr') {
+      if (c.franchise !== 'Hunter x Hunter') {
+        c.franchise = 'Hunter x Hunter';
+        c.universe = 'Hunter x Hunter';
+        correctionsCount++;
+      }
+    } else if (idLower === 'tamaki-amajiki-mha-shie') {
+      if (c.franchise !== 'My Hero Academia') {
+        c.franchise = 'My Hero Academia';
+        c.universe = 'My Hero Academia';
+        correctionsCount++;
+      }
+    } else if (idLower === 'tatsumaki-opm') {
+      if (c.franchise !== 'One Punch Man') {
+        c.franchise = 'One Punch Man';
+        c.universe = 'One Punch Man';
+        correctionsCount++;
+      }
     } else if (!c.franchise || !VALID_FRANCHISES.includes(c.franchise)) {
       const u = (c.universe || '').toLowerCase();
       const n = (c.name || '').toLowerCase();
@@ -202,6 +244,25 @@ export function validateAndAutoCorrectRoster(characters) {
         c.haxTier = '9-C';
         c.numericStats = { apexKi: 10, scouterKi: 10, powerLevel: 10 };
         if (c.forms && c.forms[0]) c.forms[0].tier = '9-C';
+        correctionsCount++;
+      }
+    } else if (idLower === 'videl-u9-dbm') {
+      if (c.tier !== '8-A') {
+        c.tier = '8-A';
+        c.physicalTier = '8-A';
+        if (c.forms && c.forms[0]) c.forms[0].tier = '8-A';
+        correctionsCount++;
+      }
+    } else if (c.franchise === 'Baki the Grappler') {
+      if (['doppo-orochi', 'retsu-kaioh', 'sukune-baki-dou'].includes(idLower) && c.tier !== '8-B') {
+        c.tier = '8-B';
+        c.physicalTier = '8-B';
+        if (c.forms && c.forms[0]) c.forms[0].tier = '8-B';
+        correctionsCount++;
+      } else if (['pickle-baki', 'musashi-miyamoto-baki', 'yujiro-hanma-baki', 'baki-hanma-baki'].includes(idLower) && c.tier !== '8-A') {
+        c.tier = '8-A';
+        c.physicalTier = '8-A';
+        if (c.forms && c.forms[0]) c.forms[0].tier = '8-A';
         correctionsCount++;
       }
     }

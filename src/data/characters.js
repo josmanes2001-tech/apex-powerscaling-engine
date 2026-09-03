@@ -251,9 +251,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 91 Unidades | Oficial DB: 91 Unidades"
     },
     "numericStats": {
-      "apexKi": 191,
-      "scouterKi": 191,
-      "powerLevel": 191
+      "apexKi": 260,
+      "scouterKi": 260,
+      "powerLevel": 260
     },
     "entityType": "fighter",
     "sagaOrArc": "Ejército Red Ribbon",
@@ -1077,9 +1077,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 9-C Físico | Tier 8-B con Ejército y Armas Bélicas) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 88 Unidades | Oficial DB: 88 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2050,
+      "scouterKi": 2050,
+      "powerLevel": 2050
     },
     "entityType": "fighter",
     "sagaOrArc": "Ejército Red Ribbon",
@@ -1446,9 +1446,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 67 Unidades | Oficial DB: 67 Unidades"
     },
     "numericStats": {
-      "apexKi": 53,
-      "scouterKi": 53,
-      "powerLevel": 53
+      "apexKi": 44,
+      "scouterKi": 44,
+      "powerLevel": 44
     },
     "entityType": "fighter",
     "sagaOrArc": "Ejército Red Ribbon",
@@ -1769,9 +1769,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 82 Unidades | Oficial DB: 82 Unidades"
     },
     "numericStats": {
-      "apexKi": 54,
-      "scouterKi": 54,
-      "powerLevel": 54
+      "apexKi": 43,
+      "scouterKi": 43,
+      "powerLevel": 43
     },
     "entityType": "fighter",
     "sagaOrArc": "Ejército Red Ribbon",
@@ -2661,9 +2661,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-C) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 23 Unidades"
     },
     "numericStats": {
-      "apexKi": 17,
-      "scouterKi": 17,
-      "powerLevel": 17
+      "apexKi": 19,
+      "scouterKi": 19,
+      "powerLevel": 19
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de las Esferas del Dragón Originales / Saga Final Dragon Ball",
@@ -3020,9 +3020,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 115 Unidades | Oficial DB: 115 Unidades"
     },
     "numericStats": {
-      "apexKi": 369,
-      "scouterKi": 369,
-      "powerLevel": 369
+      "apexKi": 456,
+      "scouterKi": 456,
+      "powerLevel": 456
     },
     "entityType": "fighter",
     "sagaOrArc": "Ejército Red Ribbon",
@@ -3349,9 +3349,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 29 Unidades | Oficial DB: 29 Unidades"
     },
     "numericStats": {
-      "apexKi": 105,
-      "scouterKi": 105,
-      "powerLevel": 105
+      "apexKi": 101,
+      "scouterKi": 101,
+      "powerLevel": 101
     },
     "entityType": "fighter",
     "sagaOrArc": "21° Torneo de las Artes Marciales",
@@ -3603,9 +3603,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 180 Unidades | Oficial DB: 180 Unidades"
     },
     "numericStats": {
-      "apexKi": 840,
-      "scouterKi": 840,
-      "powerLevel": 840
+      "apexKi": 871,
+      "scouterKi": 871,
+      "powerLevel": 871
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -3889,9 +3889,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 366 Unidades | Oficial DB: 366 Unidades"
     },
     "numericStats": {
-      "apexKi": 499,
-      "scouterKi": 499,
-      "powerLevel": 499
+      "apexKi": 468,
+      "scouterKi": 468,
+      "powerLevel": 468
     },
     "entityType": "fighter",
     "sagaOrArc": "21º - 23º Tenkaichi Budokai / Rey Piccolo",
@@ -4135,9 +4135,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(10-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 7 Unidades"
     },
     "numericStats": {
-      "apexKi": 11,
-      "scouterKi": 11,
-      "powerLevel": 11
+      "apexKi": 12,
+      "scouterKi": 12,
+      "powerLevel": 12
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Pilaf / Búsqueda de las Dragon Balls",
@@ -4362,9 +4362,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 39 Unidades"
     },
     "numericStats": {
-      "apexKi": 28,
-      "scouterKi": 28,
-      "powerLevel": 28
+      "apexKi": 30,
+      "scouterKi": 30,
+      "powerLevel": 30
     },
     "entityType": "duo",
     "sharedMechanics": [
@@ -4700,9 +4700,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 94 Unidades | Oficial DB: 94 Unidades"
     },
     "numericStats": {
-      "apexKi": 252,
-      "scouterKi": 252,
-      "powerLevel": 252
+      "apexKi": 261,
+      "scouterKi": 261,
+      "powerLevel": 261
     },
     "entityType": "fighter",
     "sagaOrArc": "Ejército Red Ribbon",
@@ -5335,9 +5335,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 366 Unidades | Oficial DB: 366 Unidades"
     },
     "numericStats": {
-      "apexKi": 4900,
-      "scouterKi": 4900,
-      "powerLevel": 4900
+      "apexKi": 4200,
+      "scouterKi": 4200,
+      "powerLevel": 4200
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -5535,9 +5535,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-C) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 8 Unidades | Oficial DB: 8 Unidades"
     },
     "numericStats": {
-      "apexKi": 18,
-      "scouterKi": 18,
-      "powerLevel": 18
+      "apexKi": 17,
+      "scouterKi": 17,
+      "powerLevel": 17
     },
     "entityType": "fighter",
     "sagaOrArc": "21° Torneo de las Artes Marciales",
@@ -5966,9 +5966,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades | Oficial DB: 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 1980,
+      "scouterKi": 1980,
+      "powerLevel": 1980
     },
     "entityType": "fighter",
     "sagaOrArc": "Rey Demonio Piccolo",
@@ -6398,9 +6398,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(10-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 7 Unidades"
     },
     "numericStats": {
-      "apexKi": 10,
-      "scouterKi": 10,
-      "powerLevel": 10
+      "apexKi": 9,
+      "scouterKi": 9,
+      "powerLevel": 9
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Pilaf / Torneo Tenkaichi",
@@ -6608,9 +6608,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.2000000000000002x) × Forma(1x) = 150 Unidades | Oficial DB: 150 Unidades"
     },
     "numericStats": {
-      "apexKi": 424,
-      "scouterKi": 424,
-      "powerLevel": 424
+      "apexKi": 480,
+      "scouterKi": 480,
+      "powerLevel": 480
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -9568,9 +9568,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.35x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.17 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1030000000,
-      "scouterKi": 1030000000,
-      "powerLevel": 1030000000
+      "apexKi": 819000000,
+      "scouterKi": 819000000,
+      "powerLevel": 819000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -9897,9 +9897,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 470.00 Millones de Ki | Oficial DB: 470.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1000000000,
-      "scouterKi": 1000000000,
-      "powerLevel": 1000000000
+      "apexKi": 800000000,
+      "scouterKi": 800000000,
+      "powerLevel": 800000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides",
@@ -10186,9 +10186,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 360.00 Millones de Ki | Oficial DB: 360.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 798000000,
-      "scouterKi": 798000000,
-      "powerLevel": 798000000
+      "apexKi": 789000000,
+      "scouterKi": 789000000,
+      "powerLevel": 789000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides",
@@ -10548,9 +10548,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 360.00 Millones de Ki | Oficial DB: 360.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 800000000,
-      "scouterKi": 800000000,
-      "powerLevel": 800000000
+      "apexKi": 977000000,
+      "scouterKi": 977000000,
+      "powerLevel": 977000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Trunks del Futuro / TV Special",
@@ -10823,9 +10823,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 350.00 Millones de Ki | Oficial DB: 350.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1650000000000,
-      "scouterKi": 1650000000000,
-      "powerLevel": 1650000000000
+      "apexKi": 1550000000000,
+      "scouterKi": 1550000000000,
+      "powerLevel": 1550000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Androides / Torneo del Poder",
@@ -11145,9 +11145,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 350.00 Millones de Ki | Oficial DB: 350.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1060000000,
-      "scouterKi": 1060000000,
-      "powerLevel": 1060000000
+      "apexKi": 1010000000,
+      "scouterKi": 1010000000,
+      "powerLevel": 1010000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Un Futuro Diferente: Gohan y Trunks",
@@ -11420,9 +11420,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 100.00 Millones de Ki | Oficial DB: 100.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 757000000,
-      "scouterKi": 757000000,
-      "powerLevel": 757000000
+      "apexKi": 915000000,
+      "scouterKi": 915000000,
+      "powerLevel": 915000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides",
@@ -11713,9 +11713,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 110.00 Millones de Ki | Oficial DB: 110.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 794000000,
-      "scouterKi": 794000000,
-      "powerLevel": 794000000
+      "apexKi": 846000000,
+      "scouterKi": 846000000,
+      "powerLevel": 846000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides",
@@ -12020,9 +12020,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 625 Unidades"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 2430,
+      "scouterKi": 2430,
+      "powerLevel": 2430
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -13170,9 +13170,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 42.10 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5810000000,
-      "scouterKi": 5810000000,
-      "powerLevel": 5810000000
+      "apexKi": 5910000000,
+      "scouterKi": 5910000000,
+      "powerLevel": 5910000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides",
@@ -13496,9 +13496,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 2.76 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 803000000,
-      "scouterKi": 803000000,
-      "powerLevel": 803000000
+      "apexKi": 884000000,
+      "scouterKi": 884000000,
+      "powerLevel": 884000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Juegos de Cell",
@@ -14514,9 +14514,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 23.70 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7860000000,
-      "scouterKi": 7860000000,
-      "powerLevel": 7860000000
+      "apexKi": 6270000000,
+      "scouterKi": 6270000000,
+      "powerLevel": 6270000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -15244,9 +15244,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 120.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 105000000,
-      "scouterKi": 105000000,
-      "powerLevel": 105000000
+      "apexKi": 96800000,
+      "scouterKi": 96800000,
+      "powerLevel": 96800000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan / Buu / Janemba",
@@ -15989,9 +15989,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 80.00 Mil Millones de Ki | Oficial DB: 80.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 33000000000000,
-      "scouterKi": 33000000000000,
-      "powerLevel": 33000000000000
+      "apexKi": 33800000000000,
+      "scouterKi": 33800000000000,
+      "powerLevel": 33800000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Majin Buu",
@@ -16339,9 +16339,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.42 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 832000000,
-      "scouterKi": 832000000,
-      "powerLevel": 832000000
+      "apexKi": 921000000,
+      "scouterKi": 921000000,
+      "powerLevel": 921000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Un Futuro Diferente (Especial TV)",
@@ -16724,9 +16724,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 44.00 Mil Millones de Ki | Oficial DB: 44.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 7040000000,
-      "scouterKi": 7040000000,
-      "powerLevel": 7040000000
+      "apexKi": 7520000000,
+      "scouterKi": 7520000000,
+      "powerLevel": 7520000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -17044,9 +17044,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 787.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 223000,
-      "scouterKi": 223000,
-      "powerLevel": 223000
+      "apexKi": 167200,
+      "scouterKi": 167200,
+      "powerLevel": 167200
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Namek",
@@ -17677,9 +17677,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.33 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 193000,
-      "scouterKi": 193000,
-      "powerLevel": 193000
+      "apexKi": 185100,
+      "scouterKi": 185100,
+      "powerLevel": 185100
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Namek",
@@ -18701,9 +18701,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.40 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 166000,
-      "scouterKi": 166000,
-      "powerLevel": 166000
+      "apexKi": 164700,
+      "scouterKi": 164700,
+      "powerLevel": 164700
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan / Namek",
@@ -18993,9 +18993,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.37 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 898000000,
-      "scouterKi": 898000000,
-      "powerLevel": 898000000
+      "apexKi": 925000000,
+      "scouterKi": 925000000,
+      "powerLevel": 925000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -19379,9 +19379,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 32.00 Mil Millones de Ki | Oficial DB: 32.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 106000000000,
-      "scouterKi": 106000000000,
-      "powerLevel": 106000000000
+      "apexKi": 83300000000,
+      "scouterKi": 83300000000,
+      "powerLevel": 83300000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -19700,9 +19700,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.25 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 946000000,
-      "scouterKi": 946000000,
-      "powerLevel": 946000000
+      "apexKi": 873000000,
+      "scouterKi": 873000000,
+      "powerLevel": 873000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides / Juegos de Cell",
@@ -20053,9 +20053,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1770 Unidades | Oficial DB: 1770 Unidades"
     },
     "numericStats": {
-      "apexKi": 221000,
-      "scouterKi": 221000,
-      "powerLevel": 221000
+      "apexKi": 217500,
+      "scouterKi": 217500,
+      "powerLevel": 217500
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan / Saga de Namek",
@@ -20440,9 +20440,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 2430,
+      "scouterKi": 2430,
+      "powerLevel": 2430
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco del Tren Infinito",
@@ -20813,9 +20813,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 96.00 Mil Millones de Ki | Oficial DB: 96.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 34900000000000,
-      "scouterKi": 34900000000000,
-      "powerLevel": 34900000000000
+      "apexKi": 40500000000000,
+      "scouterKi": 40500000000000,
+      "powerLevel": 40500000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Majin Buu",
@@ -21153,9 +21153,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(5x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 20.00 Mil Millones de Ki | Oficial DB: 20.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1660000000000,
-      "scouterKi": 1660000000000,
-      "powerLevel": 1660000000000
+      "apexKi": 1490000000000,
+      "scouterKi": 1490000000000,
+      "powerLevel": 1490000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu / DBS",
@@ -21543,9 +21543,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(100x) = 750.00 Mil Millones de Ki | Oficial DB: 750.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 38600000000000,
-      "scouterKi": 38600000000000,
-      "powerLevel": 38600000000000
+      "apexKi": 36600000000000,
+      "scouterKi": 36600000000000,
+      "powerLevel": 36600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Majin Buu",
@@ -21914,9 +21914,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 156.00 Millones de Ki | Oficial DB: 156.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 7540000000,
-      "scouterKi": 7540000000,
-      "powerLevel": 7540000000
+      "apexKi": 7060000000,
+      "scouterKi": 7060000000,
+      "powerLevel": 7060000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de los Androides / Llegada a la Tierra (DBZ)",
@@ -23603,9 +23603,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 360.00 Millones de Ki | Oficial DB: 360.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 914000000,
-      "scouterKi": 914000000,
-      "powerLevel": 914000000
+      "apexKi": 870000000,
+      "scouterKi": 870000000,
+      "powerLevel": 870000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides / Cell",
@@ -23962,9 +23962,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.5x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.30 Millones de Ki | Oficial DB: 1.300.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 93300000,
-      "scouterKi": 93300000,
-      "powerLevel": 93300000
+      "apexKi": 95700000,
+      "scouterKi": 95700000,
+      "powerLevel": 95700000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Namek",
@@ -24187,9 +24187,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.3000000000000003x) × Forma(1x) = 1.02 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 198000,
-      "scouterKi": 198000,
-      "powerLevel": 198000
+      "apexKi": 189700,
+      "scouterKi": 189700,
+      "powerLevel": 189700
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -25111,9 +25111,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 156.00 Millones de Ki | Oficial DB: 156.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 865000000,
-      "scouterKi": 865000000,
-      "powerLevel": 865000000
+      "apexKi": 927000000,
+      "scouterKi": 927000000,
+      "powerLevel": 927000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides / Mecha Freezer",
@@ -25440,9 +25440,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-C) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 31.500 Unidades"
     },
     "numericStats": {
-      "apexKi": 27500,
-      "scouterKi": 27500,
-      "powerLevel": 27500
+      "apexKi": 27660,
+      "scouterKi": 27660,
+      "powerLevel": 27660
     },
     "entityType": "fighter",
     "sagaOrArc": "Flashback previo a la destrucción del Planeta Vegeta",
@@ -26118,9 +26118,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 1.63 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1090000000,
-      "scouterKi": 1090000000,
-      "powerLevel": 1090000000
+      "apexKi": 941000000,
+      "scouterKi": 941000000,
+      "powerLevel": 941000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu / DBS",
@@ -26429,9 +26429,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 2.80 Mil Millones de Ki | Oficial DB: 2.800.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 6660000000,
-      "scouterKi": 6660000000,
-      "powerLevel": 6660000000
+      "apexKi": 7750000000,
+      "scouterKi": 7750000000,
+      "powerLevel": 7750000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de los Androides y Cell",
@@ -26772,9 +26772,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1100 Unidades | Oficial DB: 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 195000,
-      "scouterKi": 195000,
-      "powerLevel": 195000
+      "apexKi": 193600,
+      "scouterKi": 193600,
+      "powerLevel": 193600
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan / Namek",
@@ -27728,9 +27728,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 75.00 Millones de Ki | Oficial DB: 75.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 7300000000,
-      "scouterKi": 7300000000,
-      "powerLevel": 7300000000
+      "apexKi": 7580000000,
+      "scouterKi": 7580000000,
+      "powerLevel": 7580000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -28169,9 +28169,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(100x) = 7.50 Mil Millones de Ki | Oficial DB: 7.500.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 40300000000000,
-      "scouterKi": 40300000000000,
-      "powerLevel": 40300000000000
+      "apexKi": 29200000000000,
+      "scouterKi": 29200000000000,
+      "powerLevel": 29200000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Majin Buu",
@@ -28608,9 +28608,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 33.40 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7130000000,
-      "scouterKi": 7130000000,
-      "powerLevel": 7130000000
+      "apexKi": 6450000000,
+      "scouterKi": 6450000000,
+      "powerLevel": 6450000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Juegos de Cell",
@@ -29049,9 +29049,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 10.20 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6590000000,
-      "scouterKi": 6590000000,
-      "powerLevel": 6590000000
+      "apexKi": 5960000000,
+      "scouterKi": 5960000000,
+      "powerLevel": 5960000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Freezer",
@@ -29470,9 +29470,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 3.00 Millones de Ki | Oficial DB: 3.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 7120000000,
-      "scouterKi": 7120000000,
-      "powerLevel": 7120000000
+      "apexKi": 6210000000,
+      "scouterKi": 6210000000,
+      "powerLevel": 6210000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Namek",
@@ -29810,9 +29810,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.11 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 902000000,
-      "scouterKi": 902000000,
-      "powerLevel": 902000000
+      "apexKi": 834000000,
+      "scouterKi": 834000000,
+      "powerLevel": 834000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -30098,9 +30098,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1070 Unidades | Oficial DB: 1070 Unidades"
     },
     "numericStats": {
-      "apexKi": 511,
-      "scouterKi": 511,
-      "powerLevel": 511
+      "apexKi": 393,
+      "scouterKi": 393,
+      "powerLevel": 393
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -30559,9 +30559,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 38.00 Mil Millones de Ki | Oficial DB: 38.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1480000000000,
-      "scouterKi": 1480000000000,
-      "powerLevel": 1480000000000
+      "apexKi": 1680000000000,
+      "scouterKi": 1680000000000,
+      "powerLevel": 1680000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -30954,9 +30954,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.59 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 968000000,
-      "scouterKi": 968000000,
-      "powerLevel": 968000000
+      "apexKi": 866000000,
+      "scouterKi": 866000000,
+      "powerLevel": 866000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides / Juegos de Cell",
@@ -31394,9 +31394,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1830 Unidades | Oficial DB: 1830 Unidades"
     },
     "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
+      "apexKi": 1830,
+      "scouterKi": 1830,
+      "powerLevel": 1830
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan / Planeta Kaio",
@@ -31785,9 +31785,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.09 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 926000000,
-      "scouterKi": 926000000,
-      "powerLevel": 926000000
+      "apexKi": 898000000,
+      "scouterKi": 898000000,
+      "powerLevel": 898000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -32095,9 +32095,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 27.90 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6300000000,
-      "scouterKi": 6300000000,
-      "powerLevel": 6300000000
+      "apexKi": 6230000000,
+      "scouterKi": 6230000000,
+      "powerLevel": 6230000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Equivalente narrativo a una 'Saga Buu' de la línea temporal del futuro (Material Expandido / Videojuegos)",
@@ -32313,9 +32313,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 240.00 Millones de Ki | Oficial DB: 240.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 917000000,
-      "scouterKi": 917000000,
-      "powerLevel": 917000000
+      "apexKi": 836000000,
+      "scouterKi": 836000000,
+      "powerLevel": 836000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de los Androides (Línea Temporal Alternativa, Año 785)",
@@ -32543,9 +32543,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 788.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 910000000,
-      "scouterKi": 910000000,
-      "powerLevel": 910000000
+      "apexKi": 969000000,
+      "scouterKi": 969000000,
+      "powerLevel": 969000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Cell (post-entrenamiento en la Habitación del Tiempo) / Película 9: Bojack",
@@ -33280,9 +33280,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 29.60 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5670000000,
-      "scouterKi": 5670000000,
-      "powerLevel": 5670000000
+      "apexKi": 6850000000,
+      "scouterKi": 6850000000,
+      "powerLevel": 6850000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo de las Artes Marciales / Pui Pui",
@@ -33720,9 +33720,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 30.20 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6050000000,
-      "scouterKi": 6050000000,
-      "powerLevel": 6050000000
+      "apexKi": 6410000000,
+      "scouterKi": 6410000000,
+      "powerLevel": 6410000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides / Cell",
@@ -34116,9 +34116,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 385.000 Unidades | Oficial DB: 385.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 901000000,
-      "scouterKi": 901000000,
-      "powerLevel": 901000000
+      "apexKi": 776000000,
+      "scouterKi": 776000000,
+      "powerLevel": 776000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Namek",
@@ -34407,9 +34407,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.8x) × Forma(1x) = 56.30 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 7370000000000,
-      "scouterKi": 7370000000000,
-      "powerLevel": 7370000000000
+      "apexKi": 6030000000000,
+      "scouterKi": 6030000000000,
+      "powerLevel": 6030000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -34886,9 +34886,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.2000000000000002x) × Forma(1x) = 1.66 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 797000000,
-      "scouterKi": 797000000,
-      "powerLevel": 797000000
+      "apexKi": 1040000000,
+      "scouterKi": 1040000000,
+      "powerLevel": 1040000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -35179,9 +35179,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 189.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 102000000,
-      "scouterKi": 102000000,
-      "powerLevel": 102000000
+      "apexKi": 98400000,
+      "scouterKi": 98400000,
+      "powerLevel": 98400000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Androides / Juegos de Cell",
@@ -35504,9 +35504,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 1480 Unidades | Oficial DB: 1480 Unidades"
     },
     "numericStats": {
-      "apexKi": 198000,
-      "scouterKi": 198000,
-      "powerLevel": 198000
+      "apexKi": 222000,
+      "scouterKi": 222000,
+      "powerLevel": 222000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan / Planeta Kaio",
@@ -35771,9 +35771,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 267 Unidades"
     },
     "numericStats": {
-      "apexKi": 498,
-      "scouterKi": 498,
-      "powerLevel": 498
+      "apexKi": 388,
+      "scouterKi": 388,
+      "powerLevel": 388
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Buu",
@@ -36443,9 +36443,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 27.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6220000000,
-      "scouterKi": 6220000000,
-      "powerLevel": 6220000000
+      "apexKi": 6070000000,
+      "scouterKi": 6070000000,
+      "powerLevel": 6070000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -36643,9 +36643,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 350.00 Millones de Ki | Oficial DB: 350.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 6370000000000,
-      "scouterKi": 6370000000000,
-      "powerLevel": 6370000000000
+      "apexKi": 6180000000000,
+      "scouterKi": 6180000000000,
+      "powerLevel": 6180000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -36886,9 +36886,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 84.40 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 134000000000000000,
-      "scouterKi": 134000000000000000,
-      "powerLevel": 134000000000000000
+      "apexKi": 131000000000000000,
+      "scouterKi": 131000000000000000,
+      "powerLevel": 131000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -37179,9 +37179,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 74.30 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 29600000000000,
-      "scouterKi": 29600000000000,
-      "powerLevel": 29600000000000
+      "apexKi": 28500000000000,
+      "scouterKi": 28500000000000,
+      "powerLevel": 28500000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Universo 6",
@@ -37472,9 +37472,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 116.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 40200000000000,
-      "scouterKi": 40200000000000,
-      "powerLevel": 40200000000000
+      "apexKi": 33600000000000,
+      "scouterKi": 33600000000000,
+      "powerLevel": 33600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo de Exhibición / Torneo del Poder",
@@ -37787,9 +37787,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 820.00 Mil Millones de Ki | Oficial DB: 820.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 152000000000000000,
-      "scouterKi": 152000000000000000,
-      "powerLevel": 152000000000000000
+      "apexKi": 130000000000000000,
+      "scouterKi": 130000000000000000,
+      "powerLevel": 130000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "La Batalla de los Dioses / Granolah",
@@ -38106,9 +38106,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 820.00 Mil Millones de Ki | Oficial DB: 820.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 2580,
+      "scouterKi": 2580,
+      "powerLevel": 2580
     },
     "entityType": "fighter",
     "sagaOrArc": "Batalla de los Dioses (estimación de poder real, nunca mostrado al 100%)",
@@ -38417,9 +38417,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 131.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 33900000000000,
-      "scouterKi": 33900000000000,
-      "powerLevel": 33900000000000
+      "apexKi": 30800000000000,
+      "scouterKi": 30800000000000,
+      "powerLevel": 30800000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo de Exhibición / Poder",
@@ -38702,9 +38702,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 132.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 123000000000000000,
-      "scouterKi": 123000000000000000,
-      "powerLevel": 123000000000000000
+      "apexKi": 147000000000000000,
+      "scouterKi": 147000000000000000,
+      "powerLevel": 147000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de Granolah el Superviviente (Manga Toyotaro)",
@@ -39239,9 +39239,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 206.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 31200000000000,
-      "scouterKi": 31200000000000,
-      "powerLevel": 31200000000000
+      "apexKi": 39200000000000,
+      "scouterKi": 39200000000000,
+      "powerLevel": 39200000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: Broly",
@@ -39612,9 +39612,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 144.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 30100000000000,
-      "scouterKi": 30100000000000,
-      "powerLevel": 30100000000000
+      "apexKi": 33100000000000,
+      "scouterKi": 33100000000000,
+      "powerLevel": 33100000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -40142,9 +40142,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 143.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 40600000000000,
-      "scouterKi": 40600000000000,
-      "powerLevel": 40600000000000
+      "apexKi": 32900000000000,
+      "scouterKi": 32900000000000,
+      "powerLevel": 32900000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -40359,9 +40359,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4000000000000001x) × Forma(1x) = 882 Unidades"
     },
     "numericStats": {
-      "apexKi": 493,
-      "scouterKi": 493,
-      "powerLevel": 493
+      "apexKi": 450,
+      "scouterKi": 450,
+      "powerLevel": 450
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -40606,9 +40606,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1.65x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 22.00 Billones de Ki | Oficial DB: 22.000.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 126000000000000000,
-      "scouterKi": 126000000000000000,
-      "powerLevel": 126000000000000000
+      "apexKi": 108000000000000000,
+      "scouterKi": 108000000000000000,
+      "powerLevel": 108000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Super Hero",
@@ -40911,9 +40911,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 93.50 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 142000000000000000,
-      "scouterKi": 142000000000000000,
-      "powerLevel": 142000000000000000
+      "apexKi": 144000000000000000,
+      "scouterKi": 144000000000000000,
+      "powerLevel": 144000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo U6 vs U7",
@@ -41148,9 +41148,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 44 Unidades"
     },
     "numericStats": {
-      "apexKi": 26,
-      "scouterKi": 26,
-      "powerLevel": 26
+      "apexKi": 27,
+      "scouterKi": 27,
+      "powerLevel": 27
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -41382,9 +41382,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 186.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 29400000000000,
-      "scouterKi": 29400000000000,
-      "powerLevel": 29400000000000
+      "apexKi": 40300000000000,
+      "scouterKi": 40300000000000,
+      "powerLevel": 40300000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -41620,9 +41620,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 48 Unidades"
     },
     "numericStats": {
-      "apexKi": 27,
-      "scouterKi": 27,
-      "powerLevel": 27
+      "apexKi": 23,
+      "scouterKi": 23,
+      "powerLevel": 23
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -41914,9 +41914,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 36.10 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5400000000,
-      "scouterKi": 5400000000,
-      "powerLevel": 5400000000
+      "apexKi": 6590000000,
+      "scouterKi": 6590000000,
+      "powerLevel": 6590000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de la Resurrección de 'F' (DBS)",
@@ -42364,9 +42364,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 234.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 28500000000000,
-      "scouterKi": 28500000000000,
-      "powerLevel": 28500000000000
+      "apexKi": 31800000000000,
+      "scouterKi": 31800000000000,
+      "powerLevel": 31800000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de la Supervivencia Universal / Torneo del Poder (DBS)",
@@ -42503,7 +42503,7 @@ export const INITIAL_CHARACTERS = [
         },
         {
           "name": "Combo Ártico de Alta Velocidad",
-          "desc": "Intercambio de golpes f��sicos contra rivales Berserk.",
+          "desc": "Intercambio de golpes fsicos contra rivales Berserk.",
           "cost": 6
         },
         {
@@ -42647,9 +42647,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 18.00 Mil Millones de Ki | Oficial DB: 18.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 28700000000000,
-      "scouterKi": 28700000000000,
-      "powerLevel": 28700000000000
+      "apexKi": 36700000000000,
+      "scouterKi": 36700000000000,
+      "powerLevel": 36700000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película Dragon Ball Super: Broly",
@@ -42865,9 +42865,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 163.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 29000000000000,
-      "scouterKi": 29000000000000,
-      "powerLevel": 29000000000000
+      "apexKi": 29600000000000,
+      "scouterKi": 29600000000000,
+      "powerLevel": 29600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo U6 vs U7",
@@ -43152,9 +43152,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 82.50 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 145000000000000000,
-      "scouterKi": 145000000000000000,
-      "powerLevel": 145000000000000000
+      "apexKi": 144000000000000000,
+      "scouterKi": 144000000000000000,
+      "powerLevel": 144000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Super Hero",
@@ -43455,9 +43455,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 85.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 149000000000000000,
-      "scouterKi": 149000000000000000,
-      "powerLevel": 149000000000000000
+      "apexKi": 133000000000000000,
+      "scouterKi": 133000000000000000,
+      "powerLevel": 133000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Super Hero",
@@ -43698,9 +43698,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 164.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 38500000000000,
-      "scouterKi": 38500000000000,
-      "powerLevel": 38500000000000
+      "apexKi": 32200000000000,
+      "scouterKi": 32200000000000,
+      "powerLevel": 32200000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -43980,9 +43980,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 87.50 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 113000000000000000,
-      "scouterKi": 113000000000000000,
-      "powerLevel": 113000000000000000
+      "apexKi": 152000000000000000,
+      "scouterKi": 152000000000000000,
+      "powerLevel": 152000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Granolah",
@@ -44301,9 +44301,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 105.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 119000000000000000,
-      "scouterKi": 119000000000000000,
-      "powerLevel": 119000000000000000
+      "apexKi": 121000000000000000,
+      "scouterKi": 121000000000000000,
+      "powerLevel": 121000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: Broly",
@@ -44634,9 +44634,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.8x) × Forma(1x) = 113.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 151000000000000000,
-      "scouterKi": 151000000000000000,
-      "powerLevel": 151000000000000000
+      "apexKi": 132000000000000000,
+      "scouterKi": 132000000000000000,
+      "powerLevel": 132000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Trunks del Futuro",
@@ -44900,9 +44900,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 37.20 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2530,
+      "scouterKi": 2530,
+      "powerLevel": 2530
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -45080,7 +45080,7 @@ export const INITIAL_CHARACTERS = [
         },
         {
           "name": "Inexperiencia Cuerpo a Cuerpo Rústico",
-          "desc": "Vulnerable a estilos de pelea salvajes e impredecibles que no siguen patrones anat��micos lógicos.",
+          "desc": "Vulnerable a estilos de pelea salvajes e impredecibles que no siguen patrones anatmicos lógicos.",
           "counterTags": [
             "Combate Caótico",
             "Cuerpo a Cuerpo"
@@ -45197,9 +45197,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 93.80 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 130000000000000000,
-      "scouterKi": 130000000000000000,
-      "powerLevel": 130000000000000000
+      "apexKi": 115000000000000000,
+      "scouterKi": 115000000000000000,
+      "powerLevel": 115000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Granolah",
@@ -45576,9 +45576,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 263.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 35800000000000,
-      "scouterKi": 35800000000000,
-      "powerLevel": 35800000000000
+      "apexKi": 32300000000000,
+      "scouterKi": 32300000000000,
+      "powerLevel": 32300000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder / U6",
@@ -45811,9 +45811,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 343 Unidades"
     },
     "numericStats": {
-      "apexKi": 415,
-      "scouterKi": 415,
-      "powerLevel": 415
+      "apexKi": 469,
+      "scouterKi": 469,
+      "powerLevel": 469
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -45986,9 +45986,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 2.22 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 768000000,
-      "scouterKi": 768000000,
-      "powerLevel": 768000000
+      "apexKi": 867000000,
+      "scouterKi": 867000000,
+      "powerLevel": 867000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -46240,9 +46240,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 14.00 Billones de Ki | Oficial DB: 14.000.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 142000000000000000,
-      "scouterKi": 142000000000000000,
-      "powerLevel": 142000000000000000
+      "apexKi": 149000000000000000,
+      "scouterKi": 149000000000000000,
+      "powerLevel": 149000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -46480,9 +46480,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 197.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 40400000000000,
-      "scouterKi": 40400000000000,
-      "powerLevel": 40400000000000
+      "apexKi": 39800000000000,
+      "scouterKi": 39800000000000,
+      "powerLevel": 39800000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -46754,9 +46754,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(50x) = 8.75 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 33800000000000,
-      "scouterKi": 33800000000000,
-      "powerLevel": 33800000000000
+      "apexKi": 36300000000000,
+      "scouterKi": 36300000000000,
+      "powerLevel": 36300000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -46930,9 +46930,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.94 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 776000000,
-      "scouterKi": 776000000,
-      "powerLevel": 776000000
+      "apexKi": 743000000,
+      "scouterKi": 743000000,
+      "powerLevel": 743000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -47161,9 +47161,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 225.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 37500000000000,
-      "scouterKi": 37500000000000,
-      "powerLevel": 37500000000000
+      "apexKi": 40200000000000,
+      "scouterKi": 40200000000000,
+      "powerLevel": 40200000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -47396,9 +47396,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 179.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 32300000000000,
-      "scouterKi": 32300000000000,
-      "powerLevel": 32300000000000
+      "apexKi": 36100000000000,
+      "scouterKi": 36100000000000,
+      "powerLevel": 36100000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -47695,9 +47695,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.88 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1040000000,
-      "scouterKi": 1040000000,
-      "powerLevel": 1040000000
+      "apexKi": 781000000,
+      "scouterKi": 781000000,
+      "powerLevel": 781000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Supervivencia Universal",
@@ -48053,9 +48053,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 131.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 33400000000000,
-      "scouterKi": 33400000000000,
-      "powerLevel": 33400000000000
+      "apexKi": 34300000000000,
+      "scouterKi": 34300000000000,
+      "powerLevel": 34300000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo de Exhibición / Torneo del Poder",
@@ -48300,9 +48300,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.2000000000000002x) × Forma(1x) = 33 Unidades"
     },
     "numericStats": {
-      "apexKi": 27,
-      "scouterKi": 27,
-      "powerLevel": 27
+      "apexKi": 22,
+      "scouterKi": 22,
+      "powerLevel": 22
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -48549,9 +48549,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 55 Unidades"
     },
     "numericStats": {
-      "apexKi": 48,
-      "scouterKi": 48,
-      "powerLevel": 48
+      "apexKi": 43,
+      "scouterKi": 43,
+      "powerLevel": 43
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Goku Black",
@@ -48781,9 +48781,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 167.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 39700000000000,
-      "scouterKi": 39700000000000,
-      "powerLevel": 39700000000000
+      "apexKi": 37200000000000,
+      "scouterKi": 37200000000000,
+      "powerLevel": 37200000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -48968,9 +48968,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 859 Unidades"
     },
     "numericStats": {
-      "apexKi": 482,
-      "scouterKi": 482,
-      "powerLevel": 482
+      "apexKi": 521,
+      "scouterKi": 521,
+      "powerLevel": 521
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -49338,9 +49338,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-B) × Vel(5x) × Def(1x) × Hax/IQ(1.7000000000000002x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 531.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 2190,
+      "scouterKi": 2190,
+      "powerLevel": 2190
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -49587,9 +49587,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(10-B) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 10 Unidades"
     },
     "numericStats": {
-      "apexKi": 5,
-      "scouterKi": 5,
-      "powerLevel": 5
+      "apexKi": 6,
+      "scouterKi": 6,
+      "powerLevel": 6
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo U6 vs U7",
@@ -50014,9 +50014,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 94.70 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 131000000000000000,
-      "scouterKi": 131000000000000000,
-      "powerLevel": 131000000000000000
+      "apexKi": 149000000000000000,
+      "scouterKi": 149000000000000000,
+      "powerLevel": 149000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "El Prisionero de la Patrulla Galáctica",
@@ -50248,9 +50248,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 208.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 30500000000000,
-      "scouterKi": 30500000000000,
-      "powerLevel": 30500000000000
+      "apexKi": 29000000000000,
+      "scouterKi": 29000000000000,
+      "powerLevel": 29000000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -50422,9 +50422,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 2.43 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 876000000,
-      "scouterKi": 876000000,
-      "powerLevel": 876000000
+      "apexKi": 909000000,
+      "scouterKi": 909000000,
+      "powerLevel": 909000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -50678,9 +50678,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 800.00 Millones de Ki | Oficial DB: 800.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 82400000000,
-      "scouterKi": 82400000000,
-      "powerLevel": 82400000000
+      "apexKi": 98500000000,
+      "scouterKi": 98500000000,
+      "powerLevel": 98500000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Batalla de los Dioses / Resurrección de F (Principios de Super)",
@@ -51014,9 +51014,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 12.00 Mil Millones de Ki | Oficial DB: 12.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 35400000000000,
-      "scouterKi": 35400000000000,
-      "powerLevel": 35400000000000
+      "apexKi": 33600000000000,
+      "scouterKi": 33600000000000,
+      "powerLevel": 33600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder / Saga de Moro",
@@ -51308,9 +51308,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 14.00 Billones de Ki | Oficial DB: 14.000.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 30100000000000,
-      "scouterKi": 30100000000000,
-      "powerLevel": 30100000000000
+      "apexKi": 37100000000000,
+      "scouterKi": 37100000000000,
+      "powerLevel": 37100000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -51494,9 +51494,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 205.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 40100000000000,
-      "scouterKi": 40100000000000,
-      "powerLevel": 40100000000000
+      "apexKi": 37700000000000,
+      "scouterKi": 37700000000000,
+      "powerLevel": 37700000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -51771,9 +51771,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 116.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 31100000000000,
-      "scouterKi": 31100000000000,
-      "powerLevel": 31100000000000
+      "apexKi": 40400000000000,
+      "scouterKi": 40400000000000,
+      "powerLevel": 40400000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -52007,9 +52007,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.6500000000000001x) × Forma(1x) = 127.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 30300000000000,
-      "scouterKi": 30300000000000,
-      "powerLevel": 30300000000000
+      "apexKi": 35600000000000,
+      "scouterKi": 35600000000000,
+      "powerLevel": 35600000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -52184,9 +52184,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 147.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 29800000000000,
-      "scouterKi": 29800000000000,
-      "powerLevel": 29800000000000
+      "apexKi": 31100000000000,
+      "scouterKi": 31100000000000,
+      "powerLevel": 31100000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -52375,9 +52375,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 232.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 33400000000000,
-      "scouterKi": 33400000000000,
-      "powerLevel": 33400000000000
+      "apexKi": 32500000000000,
+      "scouterKi": 32500000000000,
+      "powerLevel": 32500000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -52602,9 +52602,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 263.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 97400000,
-      "scouterKi": 97400000,
-      "powerLevel": 97400000
+      "apexKi": 94600000,
+      "scouterKi": 94600000,
+      "powerLevel": 94600000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de la Resurrección de 'F' (DBS)",
@@ -52872,9 +52872,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.65x) × Forma(1x) = 39.70 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7880000000,
-      "scouterKi": 7880000000,
-      "powerLevel": 7880000000
+      "apexKi": 6230000000,
+      "scouterKi": 6230000000,
+      "powerLevel": 6230000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de la Resurrección de 'F' y Entrenamiento Pre-Torneo del Poder",
@@ -53223,9 +53223,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.65x) × Forma(1x) = 90.80 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 148000000000000000,
-      "scouterKi": 148000000000000000,
-      "powerLevel": 148000000000000000
+      "apexKi": 121000000000000000,
+      "scouterKi": 121000000000000000,
+      "powerLevel": 121000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Super Hero",
@@ -53521,9 +53521,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 66.20 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 153000000000000000,
-      "scouterKi": 153000000000000000,
-      "powerLevel": 153000000000000000
+      "apexKi": 124000000000000000,
+      "scouterKi": 124000000000000000,
+      "powerLevel": 124000000000000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -54024,9 +54024,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1.4x) × Hax/IQ(1.7000000000000002x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 179.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 123000000000000000,
-      "scouterKi": 123000000000000000,
-      "powerLevel": 123000000000000000
+      "apexKi": 108000000000000000,
+      "scouterKi": 108000000000000000,
+      "powerLevel": 108000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder / Granolah",
@@ -54415,9 +54415,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 12.30 Billones de Ki | Oficial DB: 12.300.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 114000000000000000,
-      "scouterKi": 114000000000000000,
-      "powerLevel": 114000000000000000
+      "apexKi": 122000000000000000,
+      "scouterKi": 122000000000000000,
+      "powerLevel": 122000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder / Saga Moro / Saga Granolah",
@@ -55027,9 +55027,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 2.47 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1060000000,
-      "scouterKi": 1060000000,
-      "powerLevel": 1060000000
+      "apexKi": 817000000,
+      "scouterKi": 817000000,
+      "powerLevel": 817000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Supervivencia Universal",
@@ -55346,9 +55346,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 202.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 34000000000000,
-      "scouterKi": 34000000000000,
-      "powerLevel": 34000000000000
+      "apexKi": 28100000000000,
+      "scouterKi": 28100000000000,
+      "powerLevel": 28100000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder",
@@ -55666,9 +55666,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 137.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 33500000000000,
-      "scouterKi": 33500000000000,
-      "powerLevel": 33500000000000
+      "apexKi": 31600000000000,
+      "scouterKi": 31600000000000,
+      "powerLevel": 31600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Goku Black y Zamasu del Futuro (Anime Toei)",
@@ -55937,9 +55937,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 21.90 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 7800000000000,
-      "scouterKi": 7800000000000,
-      "powerLevel": 7800000000000
+      "apexKi": 6020000000000,
+      "scouterKi": 6020000000000,
+      "powerLevel": 6020000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de Goku Black y Zamasu (Manga Canónico — Toyotaro)",
@@ -56216,9 +56216,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-B) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 581.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2510,
+      "scouterKi": 2510,
+      "powerLevel": 2510
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo U6 vs U7",
@@ -56757,9 +56757,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 81.70 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 130000000000000000,
-      "scouterKi": 130000000000000000,
-      "powerLevel": 130000000000000000
+      "apexKi": 134000000000000000,
+      "scouterKi": 134000000000000000,
+      "powerLevel": 134000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Granolah",
@@ -57133,9 +57133,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 24.00 Billones de Ki | Oficial DB: 24.000.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 151000000000000000,
-      "scouterKi": 151000000000000000,
-      "powerLevel": 151000000000000000
+      "apexKi": 147000000000000000,
+      "scouterKi": 147000000000000000,
+      "powerLevel": 147000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Granolah",
@@ -57429,9 +57429,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 100.00 Mil Millones de Ki | Oficial DB: 100.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 130000000000000000,
-      "scouterKi": 130000000000000000,
-      "powerLevel": 130000000000000000
+      "apexKi": 155000000000000000,
+      "scouterKi": 155000000000000000,
+      "powerLevel": 155000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Trunks del Futuro / Torneo Poder (Concepto)",
@@ -57726,9 +57726,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-B) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 50.00 Billones de Ki | Oficial DB: 50.000.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
+      "apexKi": 1960,
+      "scouterKi": 1960,
+      "powerLevel": 1960
     },
     "entityType": "fighter",
     "sagaOrArc": "Todas",
@@ -58019,9 +58019,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 200.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 31200000000000,
-      "scouterKi": 31200000000000,
-      "powerLevel": 31200000000000
+      "apexKi": 40800000000000,
+      "scouterKi": 40800000000000,
+      "powerLevel": 40800000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Goku Black",
@@ -58325,9 +58325,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(1-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 935.00 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2040,
+      "scouterKi": 2040,
+      "powerLevel": 2040
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Poder / Post-Torneo",
@@ -58636,9 +58636,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 7-B Base | Tier 4-B con Pistola Mágica y Nave Espacial) × Vel(2.2x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 2.50 Millones de Ki | Oficial DB: 2.500.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
+      "apexKi": 1870,
+      "scouterKi": 1870,
+      "powerLevel": 1870
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -58941,9 +58941,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.2x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 550.00 Millones de Ki | Oficial DB: 550.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 5790000000,
-      "scouterKi": 5790000000,
-      "powerLevel": 5790000000
+      "apexKi": 7270000000,
+      "scouterKi": 7270000000,
+      "powerLevel": 7270000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -59078,18 +59078,13 @@ export const INITIAL_CHARACTERS = [
           "cost": "Pasivo"
         },
         {
-          "name": "Absorción de Impactos F��sicos",
+          "name": "Absorción de Impactos Físicos",
           "desc": "Anula por completo el daño de golpes contundentes normales dispersando su masa.",
           "cost": "Pasivo"
         },
         {
           "name": "Regeneración Gelatinosa",
           "desc": "Reconstituye cualquier daño físico contundente de forma instantánea absorbiendo el lodo circundante.",
-          "cost": "Pasivo"
-        },
-        {
-          "name": "Absorción de Impactos Físicos",
-          "desc": "Anula el daño de golpes contundentes dispersando su masa gelatinosa.",
           "cost": "Pasivo"
         }
       ],
@@ -59239,9 +59234,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 160.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 101000000,
-      "scouterKi": 101000000,
-      "powerLevel": 101000000
+      "apexKi": 93500000,
+      "scouterKi": 93500000,
+      "powerLevel": 93500000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -59552,9 +59547,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 9.88 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6410000000,
-      "scouterKi": 6410000000,
-      "powerLevel": 6410000000
+      "apexKi": 5560000000,
+      "scouterKi": 5560000000,
+      "powerLevel": 5560000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -59847,9 +59842,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 340 Unidades"
     },
     "numericStats": {
-      "apexKi": 396,
-      "scouterKi": 396,
-      "powerLevel": 396
+      "apexKi": 453,
+      "scouterKi": 453,
+      "powerLevel": 453
     },
     "entityType": "fighter",
     "sagaOrArc": "Reino de los Demonios",
@@ -60160,9 +60155,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.2x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(0.1x) = 11.00 Millones de Ki | Oficial DB: 11.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 7390000000,
-      "scouterKi": 7390000000,
-      "powerLevel": 7390000000
+      "apexKi": 6390000000,
+      "scouterKi": 6390000000,
+      "powerLevel": 6390000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Reino de los Demonios",
@@ -60492,9 +60487,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1500 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 2560,
+      "scouterKi": 2560,
+      "powerLevel": 2560
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -60810,9 +60805,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 232 Unidades | Oficial DB: 232 Unidades"
     },
     "numericStats": {
-      "apexKi": 5500000000,
-      "scouterKi": 5500000000,
-      "powerLevel": 5500000000
+      "apexKi": 7360000000,
+      "scouterKi": 7360000000,
+      "powerLevel": 7360000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -61214,9 +61209,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.55x) × Forma(0.1x) = 4.62 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5620000000,
-      "scouterKi": 5620000000,
-      "powerLevel": 5620000000
+      "apexKi": 5400000000,
+      "scouterKi": 5400000000,
+      "powerLevel": 5400000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Prólogo y Clímax del Reino Demoníaco (Daima)",
@@ -61671,9 +61666,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(0.1x) = 1.00 Millones de Ki | Oficial DB: 1.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 6050000000,
-      "scouterKi": 6050000000,
-      "powerLevel": 6050000000
+      "apexKi": 7860000000,
+      "scouterKi": 7860000000,
+      "powerLevel": 7860000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -62099,9 +62094,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(0.1x) = 1.00 Millones de Ki | Oficial DB: 1.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 5410000000,
-      "scouterKi": 5410000000,
-      "powerLevel": 5410000000
+      "apexKi": 5760000000,
+      "scouterKi": 5760000000,
+      "powerLevel": 5760000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Reino de los Demonios",
@@ -62388,9 +62383,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.2x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 19.20 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7340000000,
-      "scouterKi": 7340000000,
-      "powerLevel": 7340000000
+      "apexKi": 7160000000,
+      "scouterKi": 7160000000,
+      "powerLevel": 7160000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -62666,9 +62661,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.2x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 20.80 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5460000000,
-      "scouterKi": 5460000000,
-      "powerLevel": 5460000000
+      "apexKi": 6550000000,
+      "scouterKi": 6550000000,
+      "powerLevel": 6550000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -62986,9 +62981,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 529.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 106000000000,
-      "scouterKi": 106000000000,
-      "powerLevel": 106000000000
+      "apexKi": 103000000000,
+      "scouterKi": 103000000000,
+      "powerLevel": 103000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -63292,9 +63287,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 33.70 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7250000000,
-      "scouterKi": 7250000000,
-      "powerLevel": 7250000000
+      "apexKi": 5950000000,
+      "scouterKi": 5950000000,
+      "powerLevel": 5950000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Reino de los Demonios",
@@ -63699,9 +63694,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 41.80 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7860000000,
-      "scouterKi": 7860000000,
-      "powerLevel": 7860000000
+      "apexKi": 6500000000,
+      "scouterKi": 6500000000,
+      "powerLevel": 6500000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Prólogo y Clímax del Reino Demoníaco (Daima)",
@@ -64080,9 +64075,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(0.1x) = 900.000 Unidades | Oficial DB: 900.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 5740000000,
-      "scouterKi": 5740000000,
-      "powerLevel": 5740000000
+      "apexKi": 5650000000,
+      "scouterKi": 5650000000,
+      "powerLevel": 5650000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Aventura en el Reino Demoníaco (Daima)",
@@ -64369,9 +64364,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 4.38 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1210000000000,
-      "scouterKi": 1210000000000,
-      "powerLevel": 1210000000000
+      "apexKi": 1500000000000,
+      "scouterKi": 1500000000000,
+      "powerLevel": 1500000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Baby",
@@ -64615,9 +64610,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 192 Unidades"
     },
     "numericStats": {
-      "apexKi": 91,
-      "scouterKi": 91,
-      "powerLevel": 91
+      "apexKi": 78,
+      "scouterKi": 78,
+      "powerLevel": 78
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball GT (Toei)",
@@ -64849,9 +64844,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 113.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 29000000000000,
-      "scouterKi": 29000000000000,
-      "powerLevel": 29000000000000
+      "apexKi": 32600000000000,
+      "scouterKi": 32600000000000,
+      "powerLevel": 32600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Dragones Oscuros",
@@ -65089,9 +65084,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 36.80 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7710000000,
-      "scouterKi": 7710000000,
-      "powerLevel": 7710000000
+      "apexKi": 7810000000,
+      "scouterKi": 7810000000,
+      "powerLevel": 7810000000
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball GT (Toei)",
@@ -65373,9 +65368,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 184.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 39100000000000,
-      "scouterKi": 39100000000000,
-      "powerLevel": 39100000000000
+      "apexKi": 37900000000000,
+      "scouterKi": 37900000000000,
+      "powerLevel": 37900000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de los Mutantes Mecánicos",
@@ -65672,9 +65667,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 86.60 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 132000000000000000,
-      "scouterKi": 132000000000000000,
-      "powerLevel": 132000000000000000
+      "apexKi": 127000000000000000,
+      "scouterKi": 127000000000000000,
+      "powerLevel": 127000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Dragones Oscuros",
@@ -65879,9 +65874,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 36.10 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6210000000,
-      "scouterKi": 6210000000,
-      "powerLevel": 6210000000
+      "apexKi": 7580000000,
+      "scouterKi": 7580000000,
+      "powerLevel": 7580000000
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball GT (Toei)",
@@ -66117,9 +66112,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 122.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 36000000000000,
-      "scouterKi": 36000000000000,
-      "powerLevel": 36000000000000
+      "apexKi": 29200000000000,
+      "scouterKi": 29200000000000,
+      "powerLevel": 29200000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Baby / Dragones",
@@ -66412,9 +66407,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 171.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 36300000000000,
-      "scouterKi": 36300000000000,
-      "powerLevel": 36300000000000
+      "apexKi": 35700000000000,
+      "scouterKi": 35700000000000,
+      "powerLevel": 35700000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Dragones Oscuros",
@@ -66725,9 +66720,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 264.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 34000000000000,
-      "scouterKi": 34000000000000,
-      "powerLevel": 34000000000000
+      "apexKi": 36600000000000,
+      "scouterKi": 36600000000000,
+      "powerLevel": 36600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Dragones Oscuros",
@@ -67017,9 +67012,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.03 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 911000000,
-      "scouterKi": 911000000,
-      "powerLevel": 911000000
+      "apexKi": 761000000,
+      "scouterKi": 761000000,
+      "powerLevel": 761000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Búsqueda Galáctica / Dragones",
@@ -67518,9 +67513,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 560.00 Millones de Ki | Oficial DB: 560.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 28400000000000,
-      "scouterKi": 28400000000000,
-      "powerLevel": 28400000000000
+      "apexKi": 35100000000000,
+      "scouterKi": 35100000000000,
+      "powerLevel": 35100000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Baby / Dragones Oscuros",
@@ -67859,9 +67854,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 230.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 30200000000000,
-      "scouterKi": 30200000000000,
-      "powerLevel": 30200000000000
+      "apexKi": 33600000000000,
+      "scouterKi": 33600000000000,
+      "powerLevel": 33600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Super 17",
@@ -68213,9 +68208,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 29.50 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 5810000000000,
-      "scouterKi": 5810000000000,
-      "powerLevel": 5810000000000
+      "apexKi": 5700000000000,
+      "scouterKi": 5700000000000,
+      "powerLevel": 5700000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Baby",
@@ -68460,9 +68455,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 248.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 40800000000000,
-      "scouterKi": 40800000000000,
-      "powerLevel": 40800000000000
+      "apexKi": 37600000000000,
+      "scouterKi": 37600000000000,
+      "powerLevel": 37600000000000
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball GT (Toei)",
@@ -68828,9 +68823,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 550.00 Millones de Ki | Oficial DB: 550.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 37300000000000,
-      "scouterKi": 37300000000000,
-      "powerLevel": 37300000000000
+      "apexKi": 39600000000000,
+      "scouterKi": 39600000000000,
+      "powerLevel": 39600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Baby / Dragones Oscuros",
@@ -69202,9 +69197,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 27.30 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6520000000,
-      "scouterKi": 6520000000,
-      "powerLevel": 6520000000
+      "apexKi": 6940000000,
+      "scouterKi": 6940000000,
+      "powerLevel": 6940000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: Los 3 Grandes Super Saiyans",
@@ -69556,9 +69551,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.45 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1080000000,
-      "scouterKi": 1080000000,
-      "powerLevel": 1080000000
+      "apexKi": 936000000,
+      "scouterKi": 936000000,
+      "powerLevel": 936000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: Los 3 Grandes Super Saiyans",
@@ -69880,9 +69875,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.67 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 991000000,
-      "scouterKi": 991000000,
-      "powerLevel": 991000000
+      "apexKi": 898000000,
+      "scouterKi": 898000000,
+      "powerLevel": 898000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: Los 3 Grandes Super Saiyans",
@@ -70220,9 +70215,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.47 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 970000000,
-      "scouterKi": 970000000,
-      "powerLevel": 970000000
+      "apexKi": 1030000000,
+      "scouterKi": 1030000000,
+      "powerLevel": 1030000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Otro Mundo",
@@ -70513,9 +70508,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.67 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1030000000,
-      "scouterKi": 1030000000,
-      "powerLevel": 1030000000
+      "apexKi": 878000000,
+      "scouterKi": 878000000,
+      "powerLevel": 878000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película 9: ¡Los Guerreros de Plata!",
@@ -70840,9 +70835,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.20 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 883000000,
-      "scouterKi": 883000000,
-      "powerLevel": 883000000
+      "apexKi": 1050000000,
+      "scouterKi": 1050000000,
+      "powerLevel": 1050000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película 11: ¡El Combate Definitivo!",
@@ -71158,9 +71153,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 25.40 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5540000000,
-      "scouterKi": 5540000000,
-      "powerLevel": 5540000000
+      "apexKi": 7630000000,
+      "scouterKi": 7630000000,
+      "powerLevel": 7630000000
     },
     "entityType": "fighter",
     "sagaOrArc": "¡La Galaxia corre peligro!",
@@ -71549,9 +71544,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 22.80 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5520000000,
-      "scouterKi": 5520000000,
-      "powerLevel": 5520000000
+      "apexKi": 6100000000,
+      "scouterKi": 6100000000,
+      "powerLevel": 6100000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película 8: El Poder Invencible",
@@ -71821,9 +71816,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.73 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1070000000,
-      "scouterKi": 1070000000,
-      "powerLevel": 1070000000
+      "apexKi": 909000000,
+      "scouterKi": 909000000,
+      "powerLevel": 909000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película 9: ¡Los Guerreros de Plata!",
@@ -72122,9 +72117,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 984.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 162000,
-      "scouterKi": 162000,
-      "powerLevel": 162000
+      "apexKi": 168300,
+      "scouterKi": 168300,
+      "powerLevel": 168300
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Otro Mundo",
@@ -72467,9 +72462,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 26.70 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5810000000,
-      "scouterKi": 5810000000,
-      "powerLevel": 5810000000
+      "apexKi": 7660000000,
+      "scouterKi": 7660000000,
+      "powerLevel": 7660000000
     },
     "entityType": "fighter",
     "sagaOrArc": "La Venganza de Cooler",
@@ -72825,9 +72820,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 9-A Físico | Tier 4-C a 4-B con Biotecnología y Bio-Guerreros) × Vel(2.2x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 154 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2290,
+      "scouterKi": 2290,
+      "powerLevel": 2290
     },
     "entityType": "fighter",
     "sagaOrArc": "El Plan para Erradicar a los Saiyans",
@@ -73104,9 +73099,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.06 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 158000,
-      "scouterKi": 158000,
-      "powerLevel": 158000
+      "apexKi": 175400,
+      "scouterKi": 175400,
+      "powerLevel": 175400
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: El Hombre Más Fuerte del Mundo",
@@ -73443,9 +73438,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.38 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 199000,
-      "scouterKi": 199000,
-      "powerLevel": 199000
+      "apexKi": 219900,
+      "scouterKi": 219900,
+      "powerLevel": 219900
     },
     "entityType": "fighter",
     "sagaOrArc": "Película 1 / Saga Garlic",
@@ -73713,9 +73708,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 206.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 34000000000000,
-      "scouterKi": 34000000000000,
-      "powerLevel": 34000000000000
+      "apexKi": 37900000000000,
+      "scouterKi": 37900000000000,
+      "powerLevel": 37900000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "El Renacer de la Fusión",
@@ -74048,9 +74043,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 24.90 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6760000000,
-      "scouterKi": 6760000000,
-      "powerLevel": 6760000000
+      "apexKi": 5360000000,
+      "scouterKi": 5360000000,
+      "powerLevel": 5360000000
     },
     "entityType": "fighter",
     "sagaOrArc": "El Plan para Erradicar a los Saiyans",
@@ -74354,9 +74349,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 42.40 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6710000000,
-      "scouterKi": 6710000000,
-      "powerLevel": 6710000000
+      "apexKi": 5740000000,
+      "scouterKi": 5740000000,
+      "powerLevel": 5740000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: El Ataque del Dragón",
@@ -74708,9 +74703,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.40 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 907000000,
-      "scouterKi": 907000000,
-      "powerLevel": 907000000
+      "apexKi": 887000000,
+      "scouterKi": 887000000,
+      "powerLevel": 887000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película 9: ¡Los Guerreros de Plata!",
@@ -75060,9 +75055,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.56 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1000000000,
-      "scouterKi": 1000000000,
-      "powerLevel": 1000000000
+      "apexKi": 952000000,
+      "scouterKi": 952000000,
+      "powerLevel": 952000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: Lord Slug",
@@ -75363,9 +75358,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.36 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 991000000,
-      "scouterKi": 991000000,
-      "powerLevel": 991000000
+      "apexKi": 908000000,
+      "scouterKi": 908000000,
+      "powerLevel": 908000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Otro Mundo",
@@ -75697,9 +75692,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 37.10 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7700000000,
-      "scouterKi": 7700000000,
-      "powerLevel": 7700000000
+      "apexKi": 6840000000,
+      "scouterKi": 6840000000,
+      "powerLevel": 6840000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: Los Guerreros Más Poderosos",
@@ -76000,9 +75995,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 902.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1070000000,
-      "scouterKi": 1070000000,
-      "powerLevel": 1070000000
+      "apexKi": 782000000,
+      "scouterKi": 782000000,
+      "powerLevel": 782000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Otro Mundo",
@@ -76283,9 +76278,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.18 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 180000,
-      "scouterKi": 180000,
-      "powerLevel": 180000
+      "apexKi": 190500,
+      "scouterKi": 190500,
+      "powerLevel": 190500
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Garlic Jr. (Relleno)",
@@ -76565,9 +76560,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.82 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 852000000,
-      "scouterKi": 852000000,
-      "powerLevel": 852000000
+      "apexKi": 968000000,
+      "scouterKi": 968000000,
+      "powerLevel": 968000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Otro Mundo",
@@ -76865,9 +76860,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 1.23 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 202000,
-      "scouterKi": 202000,
-      "powerLevel": 202000
+      "apexKi": 193200,
+      "scouterKi": 193200,
+      "powerLevel": 193200
     },
     "entityType": "fighter",
     "sagaOrArc": "Película 8: El Poder Invencible",
@@ -77261,9 +77256,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 36.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7910000000,
-      "scouterKi": 7910000000,
-      "powerLevel": 7910000000
+      "apexKi": 7400000000,
+      "scouterKi": 7400000000,
+      "powerLevel": 7400000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Otro Mundo / Película Fusión",
@@ -77511,9 +77506,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.26 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 208000,
-      "scouterKi": 208000,
-      "powerLevel": 208000
+      "apexKi": 176600,
+      "scouterKi": 176600,
+      "powerLevel": 176600
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Garlic Jr. (Relleno)",
@@ -77826,9 +77821,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 159.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 32600000000000,
-      "scouterKi": 32600000000000,
-      "powerLevel": 32600000000000
+      "apexKi": 30400000000000,
+      "scouterKi": 30400000000000,
+      "powerLevel": 30400000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-A",
@@ -78099,9 +78094,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.5x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 155.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 101000000,
-      "scouterKi": 101000000,
-      "powerLevel": 101000000
+      "apexKi": 80500000,
+      "scouterKi": 80500000,
+      "powerLevel": 80500000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Garlic Jr. (Relleno)",
@@ -78372,9 +78367,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 42.20 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 7430000000000,
-      "scouterKi": 7430000000000,
-      "powerLevel": 7430000000000
+      "apexKi": 6020000000000,
+      "scouterKi": 6020000000000,
+      "powerLevel": 6020000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "El Renacer de la Fusión",
@@ -78695,9 +78690,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 594 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2510,
+      "scouterKi": 2510,
+      "powerLevel": 2510
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: El Ataque del Dragón",
@@ -78972,9 +78967,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.5499999999999998x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.92 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 829000000,
-      "scouterKi": 829000000,
-      "powerLevel": 829000000
+      "apexKi": 820000000,
+      "scouterKi": 820000000,
+      "powerLevel": 820000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película 3: La Superbatalla / El Árbol del Poder",
@@ -79201,9 +79196,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 111.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 101000000,
-      "scouterKi": 101000000,
-      "powerLevel": 101000000
+      "apexKi": 91200000,
+      "scouterKi": 91200000,
+      "powerLevel": 91200000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Garlic Jr. (Relleno)",
@@ -79474,9 +79469,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.2x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.66 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 784000000,
-      "scouterKi": 784000000,
-      "powerLevel": 784000000
+      "apexKi": 739000000,
+      "scouterKi": 739000000,
+      "powerLevel": 739000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Película: ¡Los Guerreros de Plata!",
@@ -79816,9 +79811,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.25 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 199000,
-      "scouterKi": 199000,
-      "powerLevel": 199000
+      "apexKi": 211100,
+      "scouterKi": 211100,
+      "powerLevel": 211100
     },
     "entityType": "fighter",
     "sagaOrArc": "El Último Combate / Granolah",
@@ -80161,9 +80156,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 9-A Físico | Tier 2-C Hax de Creación de Esferas) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 55 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2360,
+      "scouterKi": 2360,
+      "powerLevel": 2360
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Namek / Saga Cell / DBS",
@@ -80452,9 +80447,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 310 Unidades | Oficial DB: 310 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2250,
+      "scouterKi": 2250,
+      "powerLevel": 2250
     },
     "entityType": "fighter",
     "sagaOrArc": "Dragon Ball Clásico / Saga Saiyan",
@@ -80742,9 +80737,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 180 Unidades | Oficial DB: 180 Unidades"
     },
     "numericStats": {
-      "apexKi": 23200,
-      "scouterKi": 23200,
-      "powerLevel": 23200
+      "apexKi": 21790,
+      "scouterKi": 21790,
+      "powerLevel": 21790
     },
     "entityType": "fighter",
     "sagaOrArc": "Clásico / Torneo del Poder",
@@ -81070,9 +81065,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades | Oficial DB: 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 2700,
-      "scouterKi": 2700,
-      "powerLevel": 2700
+      "apexKi": 1910,
+      "scouterKi": 1910,
+      "powerLevel": 1910
     },
     "entityType": "fighter",
     "sagaOrArc": "Rey Demonio Piccolo / Namek / Buu",
@@ -81397,9 +81392,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 47 Unidades"
     },
     "numericStats": {
-      "apexKi": 22,
-      "scouterKi": 22,
-      "powerLevel": 22
+      "apexKi": 28,
+      "scouterKi": 28,
+      "powerLevel": 28
     },
     "entityType": "fighter",
     "sagaOrArc": "Juegos de Cell / Buu",
@@ -81831,9 +81826,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 660 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2550,
+      "scouterKi": 2550,
+      "powerLevel": 2550
     },
     "entityType": "fighter",
     "sagaOrArc": "Namek / Resurrección de F",
@@ -82147,9 +82142,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 27.50 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5860000000,
-      "scouterKi": 5860000000,
-      "powerLevel": 5860000000
+      "apexKi": 7830000000,
+      "scouterKi": 7830000000,
+      "powerLevel": 7830000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Final de Z / Baby",
@@ -82423,9 +82418,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 261 Unidades"
     },
     "numericStats": {
-      "apexKi": 251,
-      "scouterKi": 251,
-      "powerLevel": 251
+      "apexKi": 238,
+      "scouterKi": 238,
+      "powerLevel": 238
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga Saiyan",
@@ -82746,9 +82741,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 21.20 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6800000000,
-      "scouterKi": 6800000000,
-      "powerLevel": 6800000000
+      "apexKi": 6370000000,
+      "scouterKi": 6370000000,
+      "powerLevel": 6370000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 12",
@@ -83002,9 +82997,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.76 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 781000000,
-      "scouterKi": 781000000,
-      "powerLevel": 781000000
+      "apexKi": 1020000000,
+      "scouterKi": 1020000000,
+      "powerLevel": 1020000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 14",
@@ -83208,9 +83203,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.78 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 910000000,
-      "scouterKi": 910000000,
-      "powerLevel": 910000000
+      "apexKi": 833000000,
+      "scouterKi": 833000000,
+      "powerLevel": 833000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 14",
@@ -83567,9 +83562,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 26.50 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6840000000,
-      "scouterKi": 6840000000,
-      "powerLevel": 6840000000
+      "apexKi": 5460000000,
+      "scouterKi": 5460000000,
+      "powerLevel": 5460000000
     },
     "entityType": "duo",
     "sharedMechanics": [
@@ -83915,9 +83910,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 106.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 134000000000000000,
-      "scouterKi": 134000000000000000,
-      "powerLevel": 134000000000000000
+      "apexKi": 141000000000000000,
+      "scouterKi": 141000000000000000,
+      "powerLevel": 141000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 2",
@@ -84177,9 +84172,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-C) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 32.600 Unidades"
     },
     "numericStats": {
-      "apexKi": 27800,
-      "scouterKi": 27800,
-      "powerLevel": 27800
+      "apexKi": 23790,
+      "scouterKi": 23790,
+      "powerLevel": 23790
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 10",
@@ -84469,9 +84464,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 38.20 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6810000000,
-      "scouterKi": 6810000000,
-      "powerLevel": 6810000000
+      "apexKi": 6700000000,
+      "scouterKi": 6700000000,
+      "powerLevel": 6700000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 3",
@@ -84757,9 +84752,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 2.28 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1040000000,
-      "scouterKi": 1040000000,
-      "powerLevel": 1040000000
+      "apexKi": 914000000,
+      "scouterKi": 914000000,
+      "powerLevel": 914000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 2",
@@ -85085,9 +85080,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 28.50 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6300000000,
-      "scouterKi": 6300000000,
-      "powerLevel": 6300000000
+      "apexKi": 5920000000,
+      "scouterKi": 5920000000,
+      "powerLevel": 5920000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 6",
@@ -85373,9 +85368,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 18.00 Mil Millones de Ki | Oficial DB: 18.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 7520000000000,
-      "scouterKi": 7520000000000,
-      "powerLevel": 7520000000000
+      "apexKi": 5730000000000,
+      "scouterKi": 5730000000000,
+      "powerLevel": 5730000000000
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball Multiverse",
@@ -85704,9 +85699,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 18.00 Mil Millones de Ki | Oficial DB: 18.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 7870000000000,
-      "scouterKi": 7870000000000,
-      "powerLevel": 7870000000000
+      "apexKi": 7920000000000,
+      "scouterKi": 7920000000000,
+      "powerLevel": 7920000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 20",
@@ -86215,9 +86210,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-B) × Vel(1.25x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 8000 Unidades"
     },
     "numericStats": {
-      "apexKi": 33100,
-      "scouterKi": 33100,
-      "powerLevel": 33100
+      "apexKi": 39300,
+      "scouterKi": 39300,
+      "powerLevel": 39300
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 10",
@@ -86440,9 +86435,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-B) × Vel(1.25x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 10.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 44000,
-      "scouterKi": 44000,
-      "powerLevel": 44000
+      "apexKi": 43210,
+      "scouterKi": 43210,
+      "powerLevel": 43210
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 10",
@@ -86699,9 +86694,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 8.68 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1640000000000,
-      "scouterKi": 1640000000000,
-      "powerLevel": 1640000000000
+      "apexKi": 1400000000000,
+      "scouterKi": 1400000000000,
+      "powerLevel": 1400000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 17",
@@ -87119,9 +87114,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 6.34 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1230000000000,
-      "scouterKi": 1230000000000,
-      "powerLevel": 1230000000000
+      "apexKi": 1500000000000,
+      "scouterKi": 1500000000000,
+      "powerLevel": 1500000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 17",
@@ -87376,9 +87371,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 26.50 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7760000000,
-      "scouterKi": 7760000000,
-      "powerLevel": 7760000000
+      "apexKi": 5460000000,
+      "scouterKi": 5460000000,
+      "powerLevel": 5460000000
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball Multiverse",
@@ -87666,9 +87661,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 27.60 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5600000000,
-      "scouterKi": 5600000000,
-      "powerLevel": 5600000000
+      "apexKi": 6400000000,
+      "scouterKi": 6400000000,
+      "powerLevel": 6400000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 11",
@@ -88017,9 +88012,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 31.30 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5890000000,
-      "scouterKi": 5890000000,
-      "powerLevel": 5890000000
+      "apexKi": 6470000000,
+      "scouterKi": 6470000000,
+      "powerLevel": 6470000000
     },
     "entityType": "squad",
     "sharedMechanics": [
@@ -88326,9 +88321,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 47.70 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5840000000,
-      "scouterKi": 5840000000,
-      "powerLevel": 5840000000
+      "apexKi": 6720000000,
+      "scouterKi": 6720000000,
+      "powerLevel": 6720000000
     },
     "entityType": "squad",
     "sharedMechanics": [
@@ -88641,9 +88636,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 20.70 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6150000000,
-      "scouterKi": 6150000000,
-      "powerLevel": 6150000000
+      "apexKi": 7090000000,
+      "scouterKi": 7090000000,
+      "powerLevel": 7090000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 19",
@@ -89014,9 +89009,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 128.00 Millones de Ki | Oficial DB: 128.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 5610000000,
-      "scouterKi": 5610000000,
-      "powerLevel": 5610000000
+      "apexKi": 7510000000,
+      "scouterKi": 7510000000,
+      "powerLevel": 7510000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 8",
@@ -89307,9 +89302,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 9.30 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1370000000000,
-      "scouterKi": 1370000000000,
-      "powerLevel": 1370000000000
+      "apexKi": 1800000000000,
+      "scouterKi": 1800000000000,
+      "powerLevel": 1800000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 7",
@@ -89749,9 +89744,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 24.10 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6310000000,
-      "scouterKi": 6310000000,
-      "powerLevel": 6310000000
+      "apexKi": 6590000000,
+      "scouterKi": 6590000000,
+      "powerLevel": 6590000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 16 (rol de espectador)",
@@ -90141,9 +90136,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.97 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 883000000,
-      "scouterKi": 883000000,
-      "powerLevel": 883000000
+      "apexKi": 1030000000,
+      "scouterKi": 1030000000,
+      "powerLevel": 1030000000
     },
     "entityType": "duo",
     "sharedMechanics": [
@@ -90518,9 +90513,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 7.60 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1220000000000,
-      "scouterKi": 1220000000000,
-      "powerLevel": 1220000000000
+      "apexKi": 1310000000000,
+      "scouterKi": 1310000000000,
+      "powerLevel": 1310000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universos 16 y 18",
@@ -90858,9 +90853,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 350.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 92300000000,
-      "scouterKi": 92300000000,
-      "powerLevel": 92300000000
+      "apexKi": 116000000000,
+      "scouterKi": 116000000000,
+      "powerLevel": 116000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 15",
@@ -91151,9 +91146,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(2.8x) × Def(1.65x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 739.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 109000000000,
-      "scouterKi": 109000000000,
-      "powerLevel": 109000000000
+      "apexKi": 113000000000,
+      "scouterKi": 113000000000,
+      "powerLevel": 113000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 13",
@@ -91404,9 +91399,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.09 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 213000,
-      "scouterKi": 213000,
-      "powerLevel": 213000
+      "apexKi": 210700,
+      "scouterKi": 210700,
+      "powerLevel": 210700
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 6",
@@ -91726,9 +91721,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 2.30 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 832000000,
-      "scouterKi": 832000000,
-      "powerLevel": 832000000
+      "apexKi": 817000000,
+      "scouterKi": 817000000,
+      "powerLevel": 817000000
     },
     "entityType": "duo",
     "sharedMechanics": [
@@ -92098,9 +92093,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 2.83 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 822000000,
-      "scouterKi": 822000000,
-      "powerLevel": 822000000
+      "apexKi": 800000000,
+      "scouterKi": 800000000,
+      "powerLevel": 800000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 9",
@@ -92360,9 +92355,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-C) × Vel(1.25x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 3000 Unidades"
     },
     "numericStats": {
-      "apexKi": 13600,
-      "scouterKi": 13600,
-      "powerLevel": 13600
+      "apexKi": 12570,
+      "scouterKi": 12570,
+      "powerLevel": 12570
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 10",
@@ -92577,9 +92572,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-A) × Vel(1.25x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 16.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 100000,
-      "scouterKi": 100000,
-      "powerLevel": 100000
+      "apexKi": 104200,
+      "scouterKi": 104200,
+      "powerLevel": 104200
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 10",
@@ -92845,9 +92840,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 305.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 74700000,
-      "scouterKi": 74700000,
-      "powerLevel": 74700000
+      "apexKi": 82800000,
+      "scouterKi": 82800000,
+      "powerLevel": 82800000
     },
     "entityType": "squad",
     "sharedMechanics": [
@@ -93197,9 +93192,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 20.00 Mil Millones de Ki | Oficial DB: 20.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 113000000000,
-      "scouterKi": 113000000000,
-      "powerLevel": 113000000000
+      "apexKi": 101000000000,
+      "scouterKi": 101000000000,
+      "powerLevel": 101000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 11",
@@ -93457,9 +93452,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 29.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7120000000,
-      "scouterKi": 7120000000,
-      "powerLevel": 7120000000
+      "apexKi": 7280000000,
+      "scouterKi": 7280000000,
+      "powerLevel": 7280000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 2",
@@ -94351,9 +94346,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 2.33 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 938000000,
-      "scouterKi": 938000000,
-      "powerLevel": 938000000
+      "apexKi": 1030000000,
+      "scouterKi": 1030000000,
+      "powerLevel": 1030000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 2",
@@ -94656,9 +94651,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 3.03 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1070000000,
-      "scouterKi": 1070000000,
-      "powerLevel": 1070000000
+      "apexKi": 917000000,
+      "scouterKi": 917000000,
+      "powerLevel": 917000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 16",
@@ -95093,9 +95088,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 2.46 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 971000000,
-      "scouterKi": 971000000,
-      "powerLevel": 971000000
+      "apexKi": 749000000,
+      "scouterKi": 749000000,
+      "powerLevel": 749000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 16 (rol de espectador/mentor)",
@@ -95811,9 +95806,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 30.80 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5340000000,
-      "scouterKi": 5340000000,
-      "powerLevel": 5340000000
+      "apexKi": 6870000000,
+      "scouterKi": 6870000000,
+      "powerLevel": 6870000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 8",
@@ -96203,9 +96198,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 260 Unidades | Oficial DB: 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 913000000,
-      "scouterKi": 913000000,
-      "powerLevel": 913000000
+      "apexKi": 790000000,
+      "scouterKi": 790000000,
+      "powerLevel": 790000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 3",
@@ -96567,9 +96562,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 2.01 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 1040000000,
-      "scouterKi": 1040000000,
-      "powerLevel": 1040000000
+      "apexKi": 912000000,
+      "scouterKi": 912000000,
+      "powerLevel": 912000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 10",
@@ -96866,9 +96861,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 32.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6300000000,
-      "scouterKi": 6300000000,
-      "powerLevel": 6300000000
+      "apexKi": 7440000000,
+      "scouterKi": 7440000000,
+      "powerLevel": 7440000000
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball Multiverse",
@@ -97085,9 +97080,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.25x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 120.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 100000000,
-      "scouterKi": 100000000,
-      "powerLevel": 100000000
+      "apexKi": 78300000,
+      "scouterKi": 78300000,
+      "powerLevel": 78300000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 10",
@@ -97401,9 +97396,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 8.14 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1710000000000,
-      "scouterKi": 1710000000000,
-      "powerLevel": 1710000000000
+      "apexKi": 1480000000000,
+      "scouterKi": 1480000000000,
+      "powerLevel": 1480000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Rebelión de Babidi",
@@ -97763,9 +97758,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 123.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 36400000000000,
-      "scouterKi": 36400000000000,
-      "powerLevel": 36400000000000
+      "apexKi": 30500000000000,
+      "scouterKi": 30500000000000,
+      "powerLevel": 30500000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 18 (Universo Principal)",
@@ -98126,9 +98121,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 149.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 31400000000000,
-      "scouterKi": 31400000000000,
-      "powerLevel": 31400000000000
+      "apexKi": 34500000000000,
+      "scouterKi": 34500000000000,
+      "powerLevel": 34500000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo Organizador",
@@ -98458,9 +98453,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 2.56 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 886000000,
-      "scouterKi": 886000000,
-      "powerLevel": 886000000
+      "apexKi": 1030000000,
+      "scouterKi": 1030000000,
+      "powerLevel": 1030000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 2",
@@ -98660,9 +98655,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.11 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 157000,
-      "scouterKi": 157000,
-      "powerLevel": 157000
+      "apexKi": 205000,
+      "scouterKi": 205000,
+      "powerLevel": 205000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 6",
@@ -98954,9 +98949,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 326.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 75100000,
-      "scouterKi": 75100000,
-      "powerLevel": 75100000
+      "apexKi": 89400000,
+      "scouterKi": 89400000,
+      "powerLevel": 89400000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 9",
@@ -99223,9 +99218,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 250.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 103000000,
-      "scouterKi": 103000000,
-      "powerLevel": 103000000
+      "apexKi": 82000000,
+      "scouterKi": 82000000,
+      "powerLevel": 82000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 19",
@@ -99485,9 +99480,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 1.97 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 917000000,
-      "scouterKi": 917000000,
-      "powerLevel": 917000000
+      "apexKi": 1050000000,
+      "scouterKi": 1050000000,
+      "powerLevel": 1050000000
     },
     "entityType": "duo",
     "sharedMechanics": [
@@ -99744,9 +99739,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 2.23 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 737000000,
-      "scouterKi": 737000000,
-      "powerLevel": 737000000
+      "apexKi": 751000000,
+      "scouterKi": 751000000,
+      "powerLevel": 751000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 2",
@@ -100074,9 +100069,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 29.30 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7620000000,
-      "scouterKi": 7620000000,
-      "powerLevel": 7620000000
+      "apexKi": 6830000000,
+      "scouterKi": 6830000000,
+      "powerLevel": 6830000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 12",
@@ -100348,9 +100343,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 177.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 32500000000000,
-      "scouterKi": 32500000000000,
-      "powerLevel": 32500000000000
+      "apexKi": 32900000000000,
+      "scouterKi": 32900000000000,
+      "powerLevel": 32900000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM",
@@ -100648,9 +100643,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 27.30 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6510000000,
-      "scouterKi": 6510000000,
-      "powerLevel": 6510000000
+      "apexKi": 6840000000,
+      "scouterKi": 6840000000,
+      "powerLevel": 6840000000
     },
     "entityType": "fighter",
     "continuity": "Dragon Ball Multiverse",
@@ -100937,9 +100932,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 5.08 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1430000000000,
-      "scouterKi": 1430000000000,
-      "powerLevel": 1430000000000
+      "apexKi": 1690000000000,
+      "scouterKi": 1690000000000,
+      "powerLevel": 1690000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 13",
@@ -101284,9 +101279,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 135.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 34900000000000,
-      "scouterKi": 34900000000000,
-      "powerLevel": 34900000000000
+      "apexKi": 30400000000000,
+      "scouterKi": 30400000000000,
+      "powerLevel": 30400000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 18 (Universo Principal)",
@@ -101656,9 +101651,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 329.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 29300000000000,
-      "scouterKi": 29300000000000,
-      "powerLevel": 29300000000000
+      "apexKi": 31600000000000,
+      "scouterKi": 31600000000000,
+      "powerLevel": 31600000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 16",
@@ -101749,8 +101744,8 @@ export const INITIAL_CHARACTERS = [
     "universe": "Dragon Ball Multiverse (Fan-Manga)",
     "saga": "Torneo Interuniversal DBM — Universo 9",
     "version": "Versión donde desarrolló su propio potencial de combate humano junto a Kulilin, Yamcha y Tenshinhan",
-    "tier": "5-B",
-    "ap": "Desarrollo técnico humano puro apoyada por los Guerreros Z supervivientes de U9.",
+    "tier": "8-A",
+    "ap": "Artista marcial humana veterana de U9 armada con la legendaria Espada Z.",
     "range": "Extendido.",
     "speed": {
       "combat": "MFTL bajo.",
@@ -101759,7 +101754,7 @@ export const INITIAL_CHARACTERS = [
       "travel": "MFTL bajo."
     },
     "strength": "Class Planetary (bajo).. Levantamiento: Class Planetary (bajo).",
-    "durability": "Alta para un humano.",
+    "durability": "Nivel Multi-Edificio. Reforzada por acondicionamiento de alta gravedad con los Kaio-shin.",
     "stamina": "Alta.",
     "battleIQ": "Determinada y disciplinada.",
     "haxTags": [
@@ -101866,9 +101861,9 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Base",
-        "stats": "Tier 5-B | Nivel Planeta",
+        "stats": "Tier 8-A | Nivel Multi-Edificio (Espada Z)",
         "apexKiMultiplier": 1,
-        "tier": "5-B",
+        "tier": "8-A",
         "staminaDrain": 0
       }
     ],
@@ -101950,13 +101945,13 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 2.69 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 187000,
-      "scouterKi": 187000,
-      "powerLevel": 187000
+      "apexKi": 427,
+      "scouterKi": 427,
+      "powerLevel": 427
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 9",
-    "physicalTier": "5-B",
+    "physicalTier": "8-A",
     "haxTier": "5-B",
     "sourceMedium": "fan_manga",
     "haxResistances": {
@@ -102195,9 +102190,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1.71 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 786000000,
-      "scouterKi": 786000000,
-      "powerLevel": 786000000
+      "apexKi": 733000000,
+      "scouterKi": 733000000,
+      "powerLevel": 733000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 19",
@@ -102475,9 +102470,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 60.10 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 28400000000000,
-      "scouterKi": 28400000000000,
-      "powerLevel": 28400000000000
+      "apexKi": 31000000000000,
+      "scouterKi": 31000000000000,
+      "powerLevel": 31000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 5",
@@ -102770,9 +102765,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1480 Unidades | Oficial DB: 1480 Unidades"
     },
     "numericStats": {
-      "apexKi": 194000,
-      "scouterKi": 194000,
-      "powerLevel": 194000
+      "apexKi": 166600,
+      "scouterKi": 166600,
+      "powerLevel": 166600
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo Interuniversal DBM — Universo 9",
@@ -103099,9 +103094,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 412.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 34400000000000,
-      "scouterKi": 34400000000000,
-      "powerLevel": 34400000000000
+      "apexKi": 33900000000000,
+      "scouterKi": 33900000000000,
+      "powerLevel": 33900000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo del Multiverso / Universo 4",
@@ -103383,9 +103378,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-B) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 484.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 2180,
+      "scouterKi": 2180,
+      "powerLevel": 2180
     },
     "entityType": "fighter",
     "physicalTier": "2-B",
@@ -103726,9 +103721,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.2x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 18.90 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6230000000,
-      "scouterKi": 6230000000,
-      "powerLevel": 6230000000
+      "apexKi": 7610000000,
+      "scouterKi": 7610000000,
+      "powerLevel": 7610000000
     },
     "entityType": "fighter",
     "physicalTier": "4-B",
@@ -104146,9 +104141,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 820.00 Mil Millones de Ki | Oficial DB: 820.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 150000000000000000,
-      "scouterKi": 150000000000000000,
-      "powerLevel": 150000000000000000
+      "apexKi": 123000000000000000,
+      "scouterKi": 123000000000000000,
+      "powerLevel": 123000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra del Universo Cero / Multiverso 0",
@@ -104484,9 +104479,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 67.80 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 138000000000000000,
-      "scouterKi": 138000000000000000,
-      "powerLevel": 138000000000000000
+      "apexKi": 107000000000000000,
+      "scouterKi": 107000000000000000,
+      "powerLevel": 107000000000000000
     },
     "entityType": "fighter",
     "physicalTier": "2-C",
@@ -104865,9 +104860,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 3.40 Mil Millones de Ki | Oficial DB: 3.400.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1210000000000,
-      "scouterKi": 1210000000000,
-      "powerLevel": 1210000000000
+      "apexKi": 1810000000000,
+      "scouterKi": 1810000000000,
+      "powerLevel": 1810000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-C",
@@ -105214,9 +105209,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 110.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 129000000000000000,
-      "scouterKi": 129000000000000000,
-      "powerLevel": 129000000000000000
+      "apexKi": 135000000000000000,
+      "scouterKi": 135000000000000000,
+      "powerLevel": 135000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Entrenamiento de los Universos",
@@ -105625,9 +105620,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 80.00 Mil Millones de Ki | Oficial DB: 80.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 6930000000000,
-      "scouterKi": 6930000000000,
-      "powerLevel": 6930000000000
+      "apexKi": 6650000000000,
+      "scouterKi": 6650000000000,
+      "powerLevel": 6650000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-B",
@@ -106043,9 +106038,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 3.85 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1560000000000,
-      "scouterKi": 1560000000000,
-      "powerLevel": 1560000000000
+      "apexKi": 1790000000000,
+      "scouterKi": 1790000000000,
+      "powerLevel": 1790000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-C",
@@ -106334,9 +106329,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 15.50 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6440000000,
-      "scouterKi": 6440000000,
-      "powerLevel": 6440000000
+      "apexKi": 7460000000,
+      "scouterKi": 7460000000,
+      "powerLevel": 7460000000
     },
     "entityType": "fighter",
     "physicalTier": "4-B",
@@ -106778,9 +106773,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 118.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 30100000000000,
-      "scouterKi": 30100000000000,
-      "powerLevel": 30100000000000
+      "apexKi": 39000000000000,
+      "scouterKi": 39000000000000,
+      "powerLevel": 39000000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-A",
@@ -107100,9 +107095,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 36.10 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7920000000,
-      "scouterKi": 7920000000,
-      "powerLevel": 7920000000
+      "apexKi": 5800000000,
+      "scouterKi": 5800000000,
+      "powerLevel": 5800000000
     },
     "entityType": "fighter",
     "sagaOrArc": "La Caída de la Tierra",
@@ -107502,9 +107497,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.2x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 19.80 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7620000000,
-      "scouterKi": 7620000000,
-      "powerLevel": 7620000000
+      "apexKi": 7110000000,
+      "scouterKi": 7110000000,
+      "powerLevel": 7110000000
     },
     "entityType": "fighter",
     "physicalTier": "4-B",
@@ -107789,9 +107784,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(1.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 158.40 Mil Millones de Ki | Oficial DB: 158.400.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 109000000000,
-      "scouterKi": 109000000000,
-      "powerLevel": 109000000000
+      "apexKi": 84200000000,
+      "scouterKi": 84200000000,
+      "powerLevel": 84200000000
     },
     "entityType": "fighter",
     "physicalTier": "4-A",
@@ -108848,9 +108843,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 119.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 35300000000000,
-      "scouterKi": 35300000000000,
-      "powerLevel": 35300000000000
+      "apexKi": 35100000000000,
+      "scouterKi": 35100000000000,
+      "powerLevel": 35100000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-A",
@@ -109161,9 +109156,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 96.90 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 110000000000000000,
-      "scouterKi": 110000000000000000,
-      "powerLevel": 110000000000000000
+      "apexKi": 132000000000000000,
+      "scouterKi": 132000000000000000,
+      "powerLevel": 132000000000000000
     },
     "entityType": "fighter",
     "physicalTier": "2-C",
@@ -109480,9 +109475,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 170.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 27700000000000,
-      "scouterKi": 27700000000000,
-      "powerLevel": 27700000000000
+      "apexKi": 39000000000000,
+      "scouterKi": 39000000000000,
+      "powerLevel": 39000000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-A",
@@ -109883,9 +109878,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 293.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 31000000000000,
-      "scouterKi": 31000000000000,
-      "powerLevel": 31000000000000
+      "apexKi": 32200000000000,
+      "scouterKi": 32200000000000,
+      "powerLevel": 32200000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ruta Alterna: Baby absorbe Ki Divino",
@@ -110292,9 +110287,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 225.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 105000000000,
-      "scouterKi": 105000000000,
-      "powerLevel": 105000000000
+      "apexKi": 112000000000,
+      "scouterKi": 112000000000,
+      "powerLevel": 112000000000
     },
     "entityType": "fighter",
     "physicalTier": "4-A",
@@ -110805,9 +110800,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 149.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 38200000000000,
-      "scouterKi": 38200000000000,
-      "powerLevel": 38200000000000
+      "apexKi": 36100000000000,
+      "scouterKi": 36100000000000,
+      "powerLevel": 36100000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-A",
@@ -111153,9 +111148,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 76.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 139000000000000000,
-      "scouterKi": 139000000000000000,
-      "powerLevel": 139000000000000000
+      "apexKi": 126000000000000000,
+      "scouterKi": 126000000000000000,
+      "powerLevel": 126000000000000000
     },
     "entityType": "fighter",
     "physicalTier": "2-C",
@@ -111491,9 +111486,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 31.70 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 5750000000000,
-      "scouterKi": 5750000000000,
-      "powerLevel": 5750000000000
+      "apexKi": 7640000000000,
+      "scouterKi": 7640000000000,
+      "powerLevel": 7640000000000
     },
     "entityType": "fighter",
     "physicalTier": "3-B",
@@ -111784,9 +111779,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-A) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 50.00 Billones de Ki | Oficial DB: 50.000.000.000.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
+      "apexKi": 2220,
+      "scouterKi": 2220,
+      "powerLevel": 2220
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra del Universo Cero / Multiverso 0",
@@ -112002,9 +111997,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 362 Unidades"
     },
     "numericStats": {
-      "apexKi": 513,
-      "scouterKi": 513,
-      "powerLevel": 513
+      "apexKi": 426,
+      "scouterKi": 426,
+      "powerLevel": 426
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -112178,9 +112173,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 213 Unidades"
     },
     "numericStats": {
-      "apexKi": 197,
-      "scouterKi": 197,
-      "powerLevel": 197
+      "apexKi": 236,
+      "scouterKi": 236,
+      "powerLevel": 236
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -112364,9 +112359,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 295 Unidades"
     },
     "numericStats": {
-      "apexKi": 450,
-      "scouterKi": 450,
-      "powerLevel": 450
+      "apexKi": 383,
+      "scouterKi": 383,
+      "powerLevel": 383
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -112557,9 +112552,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1600 Unidades"
     },
     "numericStats": {
-      "apexKi": 3800,
-      "scouterKi": 3800,
-      "powerLevel": 3800
+      "apexKi": 4310,
+      "scouterKi": 4310,
+      "powerLevel": 4310
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -112726,9 +112721,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(5x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.2000000000000002x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 223,
-      "scouterKi": 223,
-      "powerLevel": 223
+      "apexKi": 248,
+      "scouterKi": 248,
+      "powerLevel": 248
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -113040,9 +113035,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1700 Unidades"
     },
     "numericStats": {
-      "apexKi": 4300,
-      "scouterKi": 4300,
-      "powerLevel": 4300
+      "apexKi": 4480,
+      "scouterKi": 4480,
+      "powerLevel": 4480
     },
     "entityType": "fighter",
     "sagaOrArc": "Incidente de Shibuya / Batalla de Shinjuku",
@@ -113120,226 +113115,6 @@ export const INITIAL_CHARACTERS = [
       ],
       "crossVerseAwareness": "none"
     }
-  },
-  {
-    "id": "gyutaro-daki-kny-ed",
-    "name": "Gyutaro y Daki",
-    "alias": "Luna Superior Seis (Dúo)",
-    "universe": "Jujutsu Kaisen",
-    "saga": "Arco del Distrito del Entretenimiento",
-    "version": "Luna Superior Activa",
-    "tier": "7-B",
-    "ap": "AP físico de nivel Multi-Bloque a Ciudad. Gyutaro inflige necrosis celular con veneno letal; Daki ataca con daño cortante y aplastante en amplias áreas.",
-    "range": "Largo alcance extremo, con Daki cubriendo decenas de metros de ciudad con sus fajas, y Gyutaro con guadañas de sangre guiadas.",
-    "speed": {
-      "combat": "Masivamente Hipersónico",
-      "reaction": "Masivamente Hipersónico",
-      "travel": "Hipersónico+",
-      "attack": "Masivamente Hipersónico"
-    },
-    "strength": "Nivel Multi-Bloque (Gyutaro). Levantamiento: Sobrehumana",
-    "durability": "Nivel Multi-Bloque, pero con Hax de Inmortalidad Condicional: no pueden morir a menos que ambas cabezas sean decapitadas simultáneamente.",
-    "stamina": "Infinita (fisiología demoníaca de Luna Superior).",
-    "battleIQ": "Gyutaro es un asesino táctico, usa tácticas de pinza, veneno y engaño. Daki es emocional y berrinchuda, a menudo perdiendo el enfoque táctico.",
-    "haxTags": [
-      "Inmortalidad Compartida (Condición de Decapitación Doble)",
-      "Regeneración (Alta)",
-      "Veneno Necrótico (Muerte Segura si no hay cura)"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Cortes de Obi",
-          "cost": 4,
-          "desc": "Ataques de corte rápido con las fajas de Daki, flexibles y letales en área amplia."
-        },
-        {
-          "name": "Guadañas de Hueso",
-          "cost": 5,
-          "desc": "Ataques cuerpo a cuerpo precisos y mortales con las cuchillas de sangre de Gyutaro."
-        },
-        {
-          "name": "Corte de Faja de Acero",
-          "cost": 4,
-          "damageType": "Cortante / Área",
-          "desc": "Daki azota con sus fajas de obi afiladas como cuchillas de acero."
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Guadaña Voladora de Sangre (Gyutaro)",
-          "desc": "Lanza cortes de sangre coagulada que persiguen activamente al objetivo como misiles teledirigidos.",
-          "cost": "Uso libre (Sangre Demoníaca)."
-        },
-        {
-          "name": "Cinturones de 8 Capas (Daki)",
-          "desc": "Crea una red ineludible de cortes que reduce a trozos los edificios y defensores.",
-          "cost": "Uso libre."
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Salpicadura de Sangre Rotatoria (Gyutaro)",
-          "desc": "Detona una tormenta omnidireccional de guadañas de sangre al ser acorralado o asesinado, nivelando decenas de bloques de ciudad.",
-          "cost": "Hax Desesperado / Counter de Muerte."
-        }
-      ],
-      "passives": [
-        {
-          "name": "Vínculo de Dos Cuerpos",
-          "desc": "Gyutaro puede compartir un ojo y control táctico con Daki. Aunque uno reciba un ataque letal (ej. decapitación), el otro mantiene la vida del dúo.",
-          "cost": "Condición pasiva del combate."
-        },
-        {
-          "name": "Regeneración Demoníaca",
-          "desc": "Capacidad de sanar extremidades y heridas graves instantáneamente a menos que se use Nichirin.",
-          "cost": "Pasivo biológico"
-        }
-      ],
-      "actives": [],
-      "specialMechanics": [
-        {
-          "name": "Doble Decapitación Obligatoria",
-          "desc": "Para vencer al dúo, ambas cabezas (Daki y Gyutaro) deben ser cortadas de forma simultánea o en una ventana de tiempo extremadamente breve."
-        },
-        {
-          "name": "Doble Cabeza Requerida",
-          "desc": "El daño común no los elimina. Se requiere decapitar a Daki y Gyutaro casi al mismo tiempo para romper el vínculo vital."
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Luz Solar",
-          "counterTag": "Sunlight_Vulnerability",
-          "desc": "Desintegración instantánea bajo la luz directa del sol."
-        },
-        {
-          "name": "Ego de Daki",
-          "counterTag": "Emotional_Flaw",
-          "desc": "Daki se confía fácilmente y su frustración puede descuidar la defensa de Gyutaro."
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "daki-y-gyutaro-base",
-        "name": "Dúo Luna Superior 6",
-        "stats": "Ambos combatiendo en simultáneo. Gyutaro es el atacante principal cuerpo a cuerpo/veneno, Daki provee soporte y rango de zoner.",
-        "apexKiMultiplier": 1,
-        "tier": "7-B",
-        "staminaDrain": 0
-      }
-    ],
-    "feats": [
-      "Destruyeron el Distrito del Entretenimiento en su combate contra Tengen y los cazadores.",
-      "Asesinaron al menos a 22 Pilares (Hashiras) a lo largo de los siglos (15 Gyutaro, 7 Daki).",
-      "Gyutaro paralizó el cuerpo del Pilar Tengen infundiendo veneno con un solo roce."
-    ],
-    "psychology": "Daki es arrogante e infantil; Gyutaro está resentido, envidia la belleza y odia profundamente el mundo que los maltrató, su único amor puro es hacia su hermana.",
-    "weaknesses": "Si un ataque corta la cabeza de ambos al mismo tiempo (o uno inmediatamente después del otro antes de que sanen), mueren definitivamente. Luz solar.",
-    "synergies": [
-      {
-        "name": "Simbiosis de Sangre y Faja",
-        "partnerTags": [
-          "Demonio",
-          "Luna_Superior"
-        ],
-        "effect": "Otorga un incremento del 15% en la velocidad de ataque coordinado y regeneración cruzada."
-      },
-      {
-        "name": "Simbiosis de Hermanos Demonio",
-        "partnerTags": [
-          "Demonio",
-          "Luna Superior"
-        ],
-        "effect": "Comparte campos de visión y absorbe el daño crítico alternadamente entre los dos cuerpos."
-      },
-      {
-        "name": "Amor Incondicional de Rika",
-        "partnerTags": [
-          "Rika"
-        ],
-        "effect": "Rika actúa como reserva infinita de energía maldita y lanza contraataques automáticos al ser herido Yuta.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "teamCombos": [
-      {
-        "partners": [
-          "Gyutaro",
-          "Daki"
-        ],
-        "sequence": [
-          "Daki despliega su red de fajas (Obi) para confinar y cegar el campo visual del rival.",
-          "Gyutaro se oculta dentro de las fajas y se propulsa a velocidad máxima.",
-          "Impacto combinado de Guadañas Envenenadas y Corte Masivo de Fajas simultáneo."
-        ],
-        "staminaCostPerParticipant": [
-          0,
-          0
-        ],
-        "effect": "Corte masivo con envenenamiento necrótico instantáneo y daño crítico en área.",
-        "partialFailureResult": "Si el rival esquiva el paso inicial de Daki, Gyutaro queda expuesto a un contraataque directo.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "transformativeMechanics": {
-      "canFuse": false,
-      "canAbsorb": false,
-      "fusionMethods": []
-    },
-    "powerScaling": {
-      "apexKi": 2600,
-      "apexKiFormatted": "1000 Unidades",
-      "scouterKi": 2600,
-      "scouterKiFormatted": "1000 Unidades",
-      "rank": "GUERRERO DE ALTO RANGO",
-      "isOverload": false,
-      "speedFactor": 1.15,
-      "durabilityFactor": 1.65,
-      "haxBiqFactor": 1.1,
-      "featsStrengthFactor": 1.25,
-      "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.65x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1000 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
-    },
-    "entityType": "duo",
-    "sharedMechanics": [
-      "Decapitación simultánea requerida",
-      "Compartición de percepción ocular"
-    ],
-    "continuity": "Canon Manga / Anime",
-    "sourceMedium": "manga",
-    "sagaOrArc": "Arco del Distrito del Entretenimiento",
-    "physicalTier": "7-B",
-    "haxTier": "7-B",
-    "franchise": "Jujutsu Kaisen",
-    "staminaProfile": {
-      "basePool": 100,
-      "recoveryRate": 6,
-      "exhaustionThreshold": 15
-    },
-    "combatAIPersonality": "Gyutaro y Daki: Estilo táctico Gyutaro es un asesino táctico, usa . Daki es arrogante e infantil; Gyutaro está resentido, envidi",
-    "provenFeats": [
-      "Destruyeron el Distrito del Entretenimiento en su combate contra Tengen y los cazadores.",
-      "Asesinaron al menos a 22 Pilares (Hashiras) a lo largo de los siglos (15 Gyutaro, 7 Daki).",
-      "Gyutaro paralizó el cuerpo del Pilar Tengen infundiendo veneno con un solo roce."
-    ],
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ]
-    },
-    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
   },
   {
     "id": "hajime-kashimo-jjk",
@@ -113619,9 +113394,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 2300 Unidades"
     },
     "numericStats": {
-      "apexKi": 3500,
-      "scouterKi": 3500,
-      "powerLevel": 3500
+      "apexKi": 3440,
+      "scouterKi": 3440,
+      "powerLevel": 3440
     },
     "entityType": "fighter",
     "sagaOrArc": "Culling Game / Batalla contra Sukuna",
@@ -113842,9 +113617,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 125 Unidades"
     },
     "numericStats": {
-      "apexKi": 110,
-      "scouterKi": 110,
-      "powerLevel": 110
+      "apexKi": 99,
+      "scouterKi": 99,
+      "powerLevel": 99
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -114031,9 +113806,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 970 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 1980,
+      "scouterKi": 1980,
+      "powerLevel": 1980
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -114201,9 +113976,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 481,
-      "scouterKi": 481,
-      "powerLevel": 481
+      "apexKi": 403,
+      "scouterKi": 403,
+      "powerLevel": 403
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -114377,9 +114152,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1500 Unidades"
     },
     "numericStats": {
-      "apexKi": 4700,
-      "scouterKi": 4700,
-      "powerLevel": 4700
+      "apexKi": 4910,
+      "scouterKi": 4910,
+      "powerLevel": 4910
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -114705,9 +114480,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(25x) = 52.300 Unidades"
     },
     "numericStats": {
-      "apexKi": 3700,
-      "scouterKi": 3700,
-      "powerLevel": 3700
+      "apexKi": 4000,
+      "scouterKi": 4000,
+      "powerLevel": 4000
     },
     "entityType": "fighter",
     "sagaOrArc": "Incidente de Shibuya / Culling Game",
@@ -114956,9 +114731,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.25x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1600 Unidades"
     },
     "numericStats": {
-      "apexKi": 4700,
-      "scouterKi": 4700,
-      "powerLevel": 4700
+      "apexKi": 4540,
+      "scouterKi": 4540,
+      "powerLevel": 4540
     },
     "entityType": "fighter",
     "sagaOrArc": "Incidente de Shibuya / Culling Game",
@@ -115334,9 +115109,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.65x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2620,
+      "scouterKi": 2620,
+      "powerLevel": 2620
     },
     "entityType": "fighter",
     "sagaOrArc": "Juego del Sacrificio (Culling Game)",
@@ -115579,9 +115354,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 307 Unidades"
     },
     "numericStats": {
-      "apexKi": 436,
-      "scouterKi": 436,
-      "powerLevel": 436
+      "apexKi": 401,
+      "scouterKi": 401,
+      "powerLevel": 401
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -115818,9 +115593,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 307 Unidades"
     },
     "numericStats": {
-      "apexKi": 370,
-      "scouterKi": 370,
-      "powerLevel": 370
+      "apexKi": 519,
+      "scouterKi": 519,
+      "powerLevel": 519
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -116137,9 +115912,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1800 Unidades"
     },
     "numericStats": {
-      "apexKi": 3900,
-      "scouterKi": 3900,
-      "powerLevel": 3900
+      "apexKi": 4240,
+      "scouterKi": 4240,
+      "powerLevel": 4240
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra de Shibuya",
@@ -116334,9 +116109,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1.8499999999999999x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 2500 Unidades"
     },
     "numericStats": {
-      "apexKi": 3900,
-      "scouterKi": 3900,
-      "powerLevel": 3900
+      "apexKi": 4830,
+      "scouterKi": 4830,
+      "powerLevel": 4830
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -116585,9 +116360,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 55 Unidades"
     },
     "numericStats": {
-      "apexKi": 55,
-      "scouterKi": 55,
-      "powerLevel": 55
+      "apexKi": 51,
+      "scouterKi": 51,
+      "powerLevel": 51
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -116825,9 +116600,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 352 Unidades"
     },
     "numericStats": {
-      "apexKi": 425,
-      "scouterKi": 425,
-      "powerLevel": 425
+      "apexKi": 473,
+      "scouterKi": 473,
+      "powerLevel": 473
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -117188,9 +116963,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1.2x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 321 Unidades"
     },
     "numericStats": {
-      "apexKi": 435,
-      "scouterKi": 435,
-      "powerLevel": 435
+      "apexKi": 379,
+      "scouterKi": 379,
+      "powerLevel": 379
     },
     "entityType": "fighter",
     "sagaOrArc": "Incidente de Shibuya / Culling Game",
@@ -117440,9 +117215,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 281 Unidades"
     },
     "numericStats": {
-      "apexKi": 526,
-      "scouterKi": 526,
-      "powerLevel": 526
+      "apexKi": 408,
+      "scouterKi": 408,
+      "powerLevel": 408
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -117678,9 +117453,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 323 Unidades"
     },
     "numericStats": {
-      "apexKi": 475,
-      "scouterKi": 475,
-      "powerLevel": 475
+      "apexKi": 482,
+      "scouterKi": 482,
+      "powerLevel": 482
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -117912,9 +117687,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 179 Unidades"
     },
     "numericStats": {
-      "apexKi": 211,
-      "scouterKi": 211,
-      "powerLevel": 211
+      "apexKi": 205,
+      "scouterKi": 205,
+      "powerLevel": 205
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -118109,7 +117884,7 @@ export const INITIAL_CHARACTERS = [
           ]
         },
         {
-          "name": "Rigidez Met��dica",
+          "name": "Rigidez Metdica",
           "desc": "Su dependencia de la lógica y la previsibilidad puede ser explotada por oponentes con patrones de combate completamente erráticos o caóticos.",
           "counterTags": [
             "Caos",
@@ -118228,9 +118003,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1300 Unidades"
     },
     "numericStats": {
-      "apexKi": 4300,
-      "scouterKi": 4300,
-      "powerLevel": 4300
+      "apexKi": 4430,
+      "scouterKi": 4430,
+      "powerLevel": 4430
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra de Shibuya",
@@ -118463,9 +118238,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 362 Unidades"
     },
     "numericStats": {
-      "apexKi": 485,
-      "scouterKi": 485,
-      "powerLevel": 485
+      "apexKi": 513,
+      "scouterKi": 513,
+      "powerLevel": 513
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -118704,9 +118479,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 285 Unidades"
     },
     "numericStats": {
-      "apexKi": 426,
-      "scouterKi": 426,
-      "powerLevel": 426
+      "apexKi": 423,
+      "scouterKi": 423,
+      "powerLevel": 423
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -118918,9 +118693,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 854 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 2450,
+      "scouterKi": 2450,
+      "powerLevel": 2450
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -118984,278 +118759,6 @@ export const INITIAL_CHARACTERS = [
       "forbiddenConcepts": [
         "Fusión con Kenjaku",
         "Eventos del Shinjuku Showdown"
-      ],
-      "crossVerseAwareness": "none"
-    }
-  },
-  {
-    "id": "nayuta-csm-p2",
-    "name": "Nayuta",
-    "alias": "Control Devil (Reencarnación) / Hermana Menor de Denji",
-    "universe": "Jujutsu Kaisen",
-    "saga": "Parte 2",
-    "version": "Niña Demonio (Cuarteto de los Jinetes)",
-    "tier": "8-A",
-    "ap": "AP de Dominación Psicológica (Hax de Jinetes). Físicamente tiene la fuerza de una niña humana con pequeños picos de fuerza demoníaca (Muro). Su peligro es usar las cadenas de control de Makima, borrando recuerdos en forma de perros o controlando mentes de oponentes humanos débiles o demonios asustados para que peleen por ella.",
-    "range": "Físico Cercano y Medio/Largo (Cadenas de control).",
-    "speed": {
-      "combat": "Humana Normal",
-      "reaction": "Supersónica (Reacciona a balas y Híbridos al usar sus cadenas o ser cargada por Denji)",
-      "travel": "Humana (Niña)",
-      "attack": "Supersónico (Velocidad de penetración de la Cadena del Control)"
-    },
-    "strength": "Humana / Nivel Muro (Cadenas). Levantamiento: Humana",
-    "durability": "Humana Frágil (Nivel Muro). A diferencia de Makima, Nayuta no tiene el Contrato con el Primer Ministro Japonés (Inmortalidad), por lo que un disparo, ataque letal o caída la puede matar igual que a un humano, apoyándose 100% en la protección de Denji.",
-    "stamina": "Baja (Cansancio de niña humana/Escolar).",
-    "battleIQ": "Extremadamente Astuta. Carece de la omnisciencia de Makima, pero entiende perfectamente cómo manipular la psique humana, borrar recuerdos tácticos de oponentes al instante (Asa Mitaka) y fingir ser inocente para sobrevivir.",
-    "haxTags": [
-      "Manipulación y Borrado de Recuerdos",
-      "Control Absoluto (Cadenas de Dominación)",
-      "Reescritura de Personalidad (Modo Perro)"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Mordisco Berrinche",
-          "type": "contundente/perforante",
-          "staminaCost": 3,
-          "desc": "Muerde furiosamente al rival si se acercan demasiado a su espacio personal."
-        },
-        {
-          "name": "Estocada de Cadena Mental",
-          "type": "hax/penetrante",
-          "staminaCost": 6,
-          "desc": "Apunta con su dedo para disparar una cadena espectral invisible al ojo humano común."
-        },
-        {
-          "name": "Cadena Perforante",
-          "desc": "Lanzamiento rápido de cadena con vector mental.",
-          "staminaCost": 6,
-          "damageType": "Hax Psicológico"
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Cadena de Borrado (Memory Wipe)",
-          "desc": "Clava su dedo o cadena en la cabeza del enemigo. Puede borrar todo recuerdo de la batalla, de los Hax, o de la identidad del oponente durante los últimos minutos, provocando confusión (Stun) y desorientación letal.",
-          "cost": "Utilidad de Debuff Cognitivo."
-        },
-        {
-          "name": "Comando: Ladrido (Thief/Dog)",
-          "desc": "Si ella considera que es 'Superior' al objetivo, la cadena de control transforma la psicología del enemigo. Lo vuelve inofensivo, haciéndolo actuar como un perro sumiso que la defiende.",
-          "cost": "Hax de Ejecución Condicional (Funciona en Tiers 9 y 8 humanos o híbridos inestables)."
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Invocación de Multitud Dominada",
-          "desc": "Toma el control de civiles, animales y secuaces menores en el mapa y los usa de escudo humano o zerg rush, forzando a héroes a no atacar por moralidad.",
-          "cost": "Hax de Terreno (Shield Meat)."
-        }
-      ],
-      "passives": [
-        {
-          "name": "Aura del Jinete (Lazos de Makima)",
-          "desc": "Inmunidad pasiva a telepatía menor o control mental de Tiers inferiores, siendo la reencarnación del Demonio Control.",
-          "cost": "Pasiva de Lore."
-        }
-      ],
-      "actives": [],
-      "specialMechanics": [
-        {
-          "name": "Complejo de Superioridad del Jinete",
-          "desc": "Sus habilidades de control absoluto solo funcionan si el objetivo es percibido por Nayuta como intelectual o físicamente inferior."
-        },
-        {
-          "name": "Complejo de Superioridad Cognitiva",
-          "desc": "Sus habilidades de control dependen de que Nayuta perciba al objetivo como inferior a ella."
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Fisiología Humana Frágil",
-          "desc": "Carece por completo de la regeneración y del contrato de inmortalidad de Makima.",
-          "counterTag": "Any Lethal Damage"
-        },
-        {
-          "name": "Hitbox Humano Frágil",
-          "desc": "Sin el contrato de inmortalidad, su resistencia física es la de una niña humana común.",
-          "counterTags": [
-            "Daño Letal Directo",
-            "Ataques de Área",
-            "Balística Rápida"
-          ]
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "nayuta-csm-p2-base",
-        "name": "Nayuta (Estado Base)",
-        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
-        "apexKiMultiplier": 1,
-        "tier": "8-A",
-        "staminaDrain": 0
-      }
-    ],
-    "feats": [
-      "Borró los recuerdos y alteró la percepción de Asa Mitaka / Yoru (Demonio de la Guerra, su hermana Jinete) sin inmutarse ni esforzarse, dominándola psicológicamente.",
-      "Controló y asimiló multitudes civiles forzándolas a proteger a Denji de la Iglesia Chainsaw Man.",
-      "Mantuvo su independencia manipuladora y arrogancia frente a Barem y Fami (Hambre) sobreviviendo como una estratega nata."
-    ],
-    "psychology": "Gamberra, malcriada y protectora. Es Makima sin la adultez corporativa. Denji la crió dándole amor y comida en lugar de terror. Ella es extremadamente territorial con su 'hermano', adora la comida, el colegio y no le importan las metas apocalípticas de sus hermanas (Fami/Yoru), solo vivir su vida diaria con Denji y sus perros.",
-    "weaknesses": "Hitbox Humano Frágil y Cero Defensa Regenerativa. Sin su contrato de inmortalidad, es simplemente una niña con magia rota. Si no considera a su oponente 'Inferior' o el oponente la asusta (Un Primigenio o Brawler sanguinario), su magia de Control/Dominación falla. Depende del daño de aliados.",
-    "synergies": [
-      {
-        "name": "La Familia Disfuncional",
-        "partnerTags": [
-          "Denji"
-        ],
-        "effect": "Ambos comparten un único Slot o Denji absorbe el Aggro pasivamente. Si Nayuta es asesinada, Denji entra en su Modo Hero of Hell (Pochita Definitivo) instantáneamente."
-      },
-      {
-        "name": "Amor Incondicional de Rika",
-        "partnerTags": [
-          "Rika"
-        ],
-        "effect": "Rika actúa como reserva infinita de energía maldita y lanza contraataques automáticos al ser herido Yuta.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "teamCombos": [
-      {
-        "name": "Cadenas y Motosierra",
-        "partners": [
-          "nayuta-csm-p2",
-          "denji-csm"
-        ],
-        "sequence": [
-          "Nayuta inmoviliza mentalmente al rival con una orden de 'Ladrido'.",
-          "Denji se posiciona a máxima velocidad con las motosierras activadas.",
-          "Ejecución combinada cortando al objetivo fraccionado."
-        ],
-        "staminaCostPerParticipant": {
-          "Nayuta": 20,
-          "Denji": 30
-        },
-        "effect": "Daño crítico masivo ignorando la durabilidad defensiva estándar del rival.",
-        "partialFailureResult": "Si el rival resiste la orden mental, Denji queda expuesto a un contraataque frontal.",
-        "canonStatus": "apex_custom"
-      },
-      {
-        "id": "combo-nayuta-denji-chain",
-        "partners": [
-          "nayuta-csm-p2",
-          "denji-csm"
-        ],
-        "sequence": [
-          "Nayuta inmoviliza y confunde mentalmente al objetivo con cadenas.",
-          "Denji se canaliza con velocidad sierra para posicionarse en el punto ciego.",
-          "Remate definitivo: Corte cruzado de motosierra potenciado por la sumisión del enemigo."
-        ],
-        "staminaCostPerParticipant": {
-          "nayuta-csm-p2": 20,
-          "denji-csm": 30
-        },
-        "effect": "Neutralización y daño masivo garantizado al ignorar la defensa del rival.",
-        "partialFailureResult": "Si el rival esquiva la cadena inicial, Denji queda expuesto al contragolpe y Nayuta consume estamina sin efecto.",
-        "canonStatus": "apex_custom"
-      }
-    ],
-    "transformativeMechanics": {
-      "canFuse": false,
-      "canAbsorb": false,
-      "fusionMethods": []
-    },
-    "powerScaling": {
-      "apexKi": 347,
-      "apexKiFormatted": "347 Unidades",
-      "scouterKi": 347,
-      "scouterKiFormatted": "347 Unidades",
-      "rank": "RANGO TERRESTRE",
-      "isOverload": false,
-      "speedFactor": 1,
-      "durabilityFactor": 1.4,
-      "haxBiqFactor": 1.1,
-      "featsStrengthFactor": 1.25,
-      "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 347 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 497,
-      "scouterKi": 497,
-      "powerLevel": 497
-    },
-    "entityType": "fighter",
-    "continuity": "Canon Manga / Anime",
-    "sourceMedium": "manga",
-    "sagaOrArc": "Parte 2",
-    "physicalTier": "8-A",
-    "haxTier": "8-A",
-    "franchise": "Jujutsu Kaisen",
-    "haxResistances": {
-      "existenceErasure": 10,
-      "timeManipulation": 5,
-      "mindControl": 85,
-      "matterManipulation": 10,
-      "soulDamage": 20,
-      "powerNullification": 30
-    },
-    "combatAIPersonality": {
-      "aggression": 60,
-      "tacticalIQ": 85,
-      "mercyThreshold": 40,
-      "clutchFactor": 70,
-      "preferredEngagementRange": "mid_range"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": false,
-      "gravityResistance": "1G (humana estándar)",
-      "favoredBiomes": [
-        "Entornos urbanos",
-        "Escuelas",
-        "Zonas habitadas por civiles"
-      ],
-      "disfavoredBiomes": [
-        "Vacío espacial",
-        "Infiernos demoníacos extremos",
-        "Zonas desérticas aisladas"
-      ]
-    },
-    "provenFeats": [
-      "Borró los recuerdos y alteró la percepción de Asa Mitaka / Yoru (Demonio de la Guerra, su hermana Jinete) sin inmutarse ni esforzarse, dominándola psicológicamente.",
-      "Controló y asimiló multitudes civiles forzándolas a proteger a Denji de la Iglesia Chainsaw Man.",
-      "Mantuvo su independencia manipuladora y arrogancia frente a Barem y Fami (Hambre) sobreviviendo como una estratega nata."
-    ],
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ]
-    },
-    "staminaProfile": {
-      "maxStamina": 90,
-      "recoveryRatePerTurn": 8,
-      "exhaustionThreshold": 15
-    },
-    "signatureEquipment": [
-      {
-        "name": "Ropa escolar ordinaria",
-        "durability": "Baja",
-        "effect": "Vestimenta cotidiana sin propiedades defensivas."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Chainsaw Man Parte 2 / Año 1998 (Alternativo)",
-      "timelineRestrictions": "Nayuta desconoce los eventos posteriores a su confrontación con la Iglesia Chainsaw Man y las acciones de los Demonios Primigenios en el infierno profundo.",
-      "forbiddenConcepts": [
-        "Eventos post-manga Parte 2",
-        "Tecnología moderna avanzada",
-        "Universos alternos"
       ],
       "crossVerseAwareness": "none"
     }
@@ -119328,7 +118831,7 @@ export const INITIAL_CHARACTERS = [
         },
         {
           "name": "Resonancia de Alma Sincronizada",
-          "desc": "Emplea un fragmento directo del cuerpo o alma del enemigo en el muñeco de paja para ejecutar una resonancia de m��xima potencia que daña la estructura del alma.",
+          "desc": "Emplea un fragmento directo del cuerpo o alma del enemigo en el muñeco de paja para ejecutar una resonancia de mxima potencia que daña la estructura del alma.",
           "cost": "45% de reserva de energía maldita",
           "counterplay": "Defensa de barrera avanzada o protección directa del alma."
         }
@@ -119472,9 +118975,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 625 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2280,
+      "scouterKi": 2280,
+      "powerLevel": 2280
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Ejecución Culpable / Guerra de Shibuya",
@@ -119874,9 +119377,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1700 Unidades"
     },
     "numericStats": {
-      "apexKi": 3400,
-      "scouterKi": 3400,
-      "powerLevel": 3400
+      "apexKi": 4710,
+      "scouterKi": 4710,
+      "powerLevel": 4710
     },
     "entityType": "fighter",
     "sagaOrArc": "Era Heian / Batalla de Shinjuku",
@@ -120113,9 +119616,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1300 Unidades"
     },
     "numericStats": {
-      "apexKi": 4200,
-      "scouterKi": 4200,
-      "powerLevel": 4200
+      "apexKi": 4330,
+      "scouterKi": 4330,
+      "powerLevel": 4330
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -120456,9 +119959,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 2100 Unidades"
     },
     "numericStats": {
-      "apexKi": 3900,
-      "scouterKi": 3900,
-      "powerLevel": 3900
+      "apexKi": 3840,
+      "scouterKi": 3840,
+      "powerLevel": 3840
     },
     "entityType": "fighter",
     "sagaOrArc": "Batalla Decisiva de Shinjuku",
@@ -120779,9 +120282,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 675 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2460,
+      "scouterKi": 2460,
+      "powerLevel": 2460
     },
     "entityType": "fighter",
     "sagaOrArc": "Jujutsu Kaisen 0 / Pasado de Gojo",
@@ -121011,9 +120514,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 625 Unidades"
     },
     "numericStats": {
-      "apexKi": 2700,
-      "scouterKi": 2700,
-      "powerLevel": 2700
+      "apexKi": 2080,
+      "scouterKi": 2080,
+      "powerLevel": 2080
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -121252,9 +120755,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 285 Unidades"
     },
     "numericStats": {
-      "apexKi": 499,
-      "scouterKi": 499,
-      "powerLevel": 499
+      "apexKi": 377,
+      "scouterKi": 377,
+      "powerLevel": 377
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -121577,9 +121080,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1000 Unidades"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 2110,
+      "scouterKi": 2110,
+      "powerLevel": 2110
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco del Recipiente de Plasma Estelar / Shibuya",
@@ -121849,9 +121352,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 688 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2430,
+      "scouterKi": 2430,
+      "powerLevel": 2430
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -122131,9 +121634,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 898 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2560,
+      "scouterKi": 2560,
+      "powerLevel": 2560
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -122438,9 +121941,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1800 Unidades"
     },
     "numericStats": {
-      "apexKi": 4000,
-      "scouterKi": 4000,
-      "powerLevel": 4000
+      "apexKi": 4140,
+      "scouterKi": 4140,
+      "powerLevel": 4140
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Ejecución Culpable / Guerra de Shibuya en adelante",
@@ -122689,9 +122192,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1400 Unidades"
     },
     "numericStats": {
-      "apexKi": 3400,
-      "scouterKi": 3400,
-      "powerLevel": 3400
+      "apexKi": 3980,
+      "scouterKi": 3980,
+      "powerLevel": 3980
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -123039,9 +122542,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1400 Unidades"
     },
     "numericStats": {
-      "apexKi": 4200,
-      "scouterKi": 4200,
-      "powerLevel": 4200
+      "apexKi": 4600,
+      "scouterKi": 4600,
+      "powerLevel": 4600
     },
     "entityType": "fighter",
     "sagaOrArc": "Jujutsu Kaisen 0 / Batalla de Shinjuku",
@@ -123364,9 +122867,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.25x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1300 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 1880,
+      "scouterKi": 1880,
+      "powerLevel": 1880
     },
     "entityType": "fighter",
     "sagaOrArc": "Tren Infinito / Castillo Infinito",
@@ -123578,9 +123081,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 34 Unidades"
     },
     "numericStats": {
-      "apexKi": 22,
-      "scouterKi": 22,
-      "powerLevel": 22
+      "apexKi": 30,
+      "scouterKi": 30,
+      "powerLevel": 30
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -123938,9 +123441,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1000 Unidades"
     },
     "numericStats": {
-      "apexKi": 2700,
-      "scouterKi": 2700,
-      "powerLevel": 2700
+      "apexKi": 2520,
+      "scouterKi": 2520,
+      "powerLevel": 2520
     },
     "entityType": "fighter",
     "sagaOrArc": "Castillo Infinito / Batalla contra Shinobu, Kanao e Inosuke",
@@ -124189,9 +123692,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 295 Unidades"
     },
     "numericStats": {
-      "apexKi": 465,
-      "scouterKi": 465,
-      "powerLevel": 465
+      "apexKi": 502,
+      "scouterKi": 502,
+      "powerLevel": 502
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -124417,9 +123920,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 364 Unidades"
     },
     "numericStats": {
-      "apexKi": 444,
-      "scouterKi": 444,
-      "powerLevel": 444
+      "apexKi": 397,
+      "scouterKi": 397,
+      "powerLevel": 397
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -124668,9 +124171,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1000 Unidades"
     },
     "numericStats": {
-      "apexKi": 2700,
-      "scouterKi": 2700,
-      "powerLevel": 2700
+      "apexKi": 2460,
+      "scouterKi": 2460,
+      "powerLevel": 2460
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -124895,9 +124398,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 576 Unidades"
     },
     "numericStats": {
-      "apexKi": 893,
-      "scouterKi": 893,
-      "powerLevel": 893
+      "apexKi": 793,
+      "scouterKi": 793,
+      "powerLevel": 793
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -125313,9 +124816,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 750 Unidades"
     },
     "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
+      "apexKi": 2630,
+      "scouterKi": 2630,
+      "powerLevel": 2630
     },
     "entityType": "fighter",
     "sagaOrArc": "Fortaleza Dimensional Infinita",
@@ -125405,6 +124908,226 @@ export const INITIAL_CHARACTERS = [
       ],
       "crossVerseAwareness": "none"
     }
+  },
+  {
+    "id": "gyutaro-daki-kny-ed",
+    "name": "Gyutaro y Daki",
+    "alias": "Luna Superior Seis (Dúo)",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
+    "saga": "Arco del Distrito del Entretenimiento",
+    "version": "Luna Superior Activa",
+    "tier": "7-B",
+    "ap": "AP físico de nivel Multi-Bloque a Ciudad. Gyutaro inflige necrosis celular con veneno letal; Daki ataca con daño cortante y aplastante en amplias áreas.",
+    "range": "Largo alcance extremo, con Daki cubriendo decenas de metros de ciudad con sus fajas, y Gyutaro con guadañas de sangre guiadas.",
+    "speed": {
+      "combat": "Masivamente Hipersónico",
+      "reaction": "Masivamente Hipersónico",
+      "travel": "Hipersónico+",
+      "attack": "Masivamente Hipersónico"
+    },
+    "strength": "Nivel Multi-Bloque (Gyutaro). Levantamiento: Sobrehumana",
+    "durability": "Nivel Multi-Bloque, pero con Hax de Inmortalidad Condicional: no pueden morir a menos que ambas cabezas sean decapitadas simultáneamente.",
+    "stamina": "Infinita (fisiología demoníaca de Luna Superior).",
+    "battleIQ": "Gyutaro es un asesino táctico, usa tácticas de pinza, veneno y engaño. Daki es emocional y berrinchuda, a menudo perdiendo el enfoque táctico.",
+    "haxTags": [
+      "Inmortalidad Compartida (Condición de Decapitación Doble)",
+      "Regeneración (Alta)",
+      "Veneno Necrótico (Muerte Segura si no hay cura)"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Cortes de Obi",
+          "cost": 4,
+          "desc": "Ataques de corte rápido con las fajas de Daki, flexibles y letales en área amplia."
+        },
+        {
+          "name": "Guadañas de Hueso",
+          "cost": 5,
+          "desc": "Ataques cuerpo a cuerpo precisos y mortales con las cuchillas de sangre de Gyutaro."
+        },
+        {
+          "name": "Corte de Faja de Acero",
+          "cost": 4,
+          "damageType": "Cortante / Área",
+          "desc": "Daki azota con sus fajas de obi afiladas como cuchillas de acero."
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Guadaña Voladora de Sangre (Gyutaro)",
+          "desc": "Lanza cortes de sangre coagulada que persiguen activamente al objetivo como misiles teledirigidos.",
+          "cost": "Uso libre (Sangre Demoníaca)."
+        },
+        {
+          "name": "Cinturones de 8 Capas (Daki)",
+          "desc": "Crea una red ineludible de cortes que reduce a trozos los edificios y defensores.",
+          "cost": "Uso libre."
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Salpicadura de Sangre Rotatoria (Gyutaro)",
+          "desc": "Detona una tormenta omnidireccional de guadañas de sangre al ser acorralado o asesinado, nivelando decenas de bloques de ciudad.",
+          "cost": "Hax Desesperado / Counter de Muerte."
+        }
+      ],
+      "passives": [
+        {
+          "name": "Vínculo de Dos Cuerpos",
+          "desc": "Gyutaro puede compartir un ojo y control táctico con Daki. Aunque uno reciba un ataque letal (ej. decapitación), el otro mantiene la vida del dúo.",
+          "cost": "Condición pasiva del combate."
+        },
+        {
+          "name": "Regeneración Demoníaca",
+          "desc": "Capacidad de sanar extremidades y heridas graves instantáneamente a menos que se use Nichirin.",
+          "cost": "Pasivo biológico"
+        }
+      ],
+      "actives": [],
+      "specialMechanics": [
+        {
+          "name": "Doble Decapitación Obligatoria",
+          "desc": "Para vencer al dúo, ambas cabezas (Daki y Gyutaro) deben ser cortadas de forma simultánea o en una ventana de tiempo extremadamente breve."
+        },
+        {
+          "name": "Doble Cabeza Requerida",
+          "desc": "El daño común no los elimina. Se requiere decapitar a Daki y Gyutaro casi al mismo tiempo para romper el vínculo vital."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Luz Solar",
+          "counterTag": "Sunlight_Vulnerability",
+          "desc": "Desintegración instantánea bajo la luz directa del sol."
+        },
+        {
+          "name": "Ego de Daki",
+          "counterTag": "Emotional_Flaw",
+          "desc": "Daki se confía fácilmente y su frustración puede descuidar la defensa de Gyutaro."
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "daki-y-gyutaro-base",
+        "name": "Dúo Luna Superior 6",
+        "stats": "Ambos combatiendo en simultáneo. Gyutaro es el atacante principal cuerpo a cuerpo/veneno, Daki provee soporte y rango de zoner.",
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "staminaDrain": 0
+      }
+    ],
+    "feats": [
+      "Destruyeron el Distrito del Entretenimiento en su combate contra Tengen y los cazadores.",
+      "Asesinaron al menos a 22 Pilares (Hashiras) a lo largo de los siglos (15 Gyutaro, 7 Daki).",
+      "Gyutaro paralizó el cuerpo del Pilar Tengen infundiendo veneno con un solo roce."
+    ],
+    "psychology": "Daki es arrogante e infantil; Gyutaro está resentido, envidia la belleza y odia profundamente el mundo que los maltrató, su único amor puro es hacia su hermana.",
+    "weaknesses": "Si un ataque corta la cabeza de ambos al mismo tiempo (o uno inmediatamente después del otro antes de que sanen), mueren definitivamente. Luz solar.",
+    "synergies": [
+      {
+        "name": "Simbiosis de Sangre y Faja",
+        "partnerTags": [
+          "Demonio",
+          "Luna_Superior"
+        ],
+        "effect": "Otorga un incremento del 15% en la velocidad de ataque coordinado y regeneración cruzada."
+      },
+      {
+        "name": "Simbiosis de Hermanos Demonio",
+        "partnerTags": [
+          "Demonio",
+          "Luna Superior"
+        ],
+        "effect": "Comparte campos de visión y absorbe el daño crítico alternadamente entre los dos cuerpos."
+      },
+      {
+        "name": "Amor Incondicional de Rika",
+        "partnerTags": [
+          "Rika"
+        ],
+        "effect": "Rika actúa como reserva infinita de energía maldita y lanza contraataques automáticos al ser herido Yuta.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "teamCombos": [
+      {
+        "partners": [
+          "Gyutaro",
+          "Daki"
+        ],
+        "sequence": [
+          "Daki despliega su red de fajas (Obi) para confinar y cegar el campo visual del rival.",
+          "Gyutaro se oculta dentro de las fajas y se propulsa a velocidad máxima.",
+          "Impacto combinado de Guadañas Envenenadas y Corte Masivo de Fajas simultáneo."
+        ],
+        "staminaCostPerParticipant": [
+          0,
+          0
+        ],
+        "effect": "Corte masivo con envenenamiento necrótico instantáneo y daño crítico en área.",
+        "partialFailureResult": "Si el rival esquiva el paso inicial de Daki, Gyutaro queda expuesto a un contraataque directo.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "transformativeMechanics": {
+      "canFuse": false,
+      "canAbsorb": false,
+      "fusionMethods": []
+    },
+    "powerScaling": {
+      "apexKi": 2600,
+      "apexKiFormatted": "1000 Unidades",
+      "scouterKi": 2600,
+      "scouterKiFormatted": "1000 Unidades",
+      "rank": "GUERRERO DE ALTO RANGO",
+      "isOverload": false,
+      "speedFactor": 1.15,
+      "durabilityFactor": 1.65,
+      "haxBiqFactor": 1.1,
+      "featsStrengthFactor": 1.25,
+      "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.65x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1000 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 2690,
+      "scouterKi": 2690,
+      "powerLevel": 2690
+    },
+    "entityType": "duo",
+    "sharedMechanics": [
+      "Decapitación simultánea requerida",
+      "Compartición de percepción ocular"
+    ],
+    "continuity": "Canon Manga / Anime",
+    "sourceMedium": "manga",
+    "sagaOrArc": "Arco del Distrito del Entretenimiento",
+    "physicalTier": "7-B",
+    "haxTier": "7-B",
+    "franchise": "Demon Slayer (Kimetsu no Yaiba)",
+    "staminaProfile": {
+      "basePool": 100,
+      "recoveryRate": 6,
+      "exhaustionThreshold": 15
+    },
+    "combatAIPersonality": "Gyutaro y Daki: Estilo táctico Gyutaro es un asesino táctico, usa . Daki es arrogante e infantil; Gyutaro está resentido, envidi",
+    "provenFeats": [
+      "Destruyeron el Distrito del Entretenimiento en su combate contra Tengen y los cazadores.",
+      "Asesinaron al menos a 22 Pilares (Hashiras) a lo largo de los siglos (15 Gyutaro, 7 Daki).",
+      "Gyutaro paralizó el cuerpo del Pilar Tengen infundiendo veneno con un solo roce."
+    ],
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ]
+    },
+    "environmentalAffinity": "Terreno Estándar (Adaptación total al entorno de combate)"
   },
   {
     "id": "hantengu-kny-sv",
@@ -125532,9 +125255,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 706 Unidades"
     },
     "numericStats": {
-      "apexKi": 882,
-      "scouterKi": 882,
-      "powerLevel": 882
+      "apexKi": 908,
+      "scouterKi": 908,
+      "powerLevel": 908
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -125856,9 +125579,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 675 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2440,
+      "scouterKi": 2440,
+      "powerLevel": 2440
     },
     "entityType": "fighter",
     "sagaOrArc": "Fortaleza Infinita",
@@ -126106,9 +125829,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 586 Unidades"
     },
     "numericStats": {
-      "apexKi": 830,
-      "scouterKi": 830,
-      "powerLevel": 830
+      "apexKi": 775,
+      "scouterKi": 775,
+      "powerLevel": 775
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -126572,9 +126295,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 460 Unidades"
     },
     "numericStats": {
-      "apexKi": 935,
-      "scouterKi": 935,
-      "powerLevel": 935
+      "apexKi": 823,
+      "scouterKi": 823,
+      "powerLevel": 823
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -126822,9 +126545,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 460 Unidades"
     },
     "numericStats": {
-      "apexKi": 857,
-      "scouterKi": 857,
-      "powerLevel": 857
+      "apexKi": 931,
+      "scouterKi": 931,
+      "powerLevel": 931
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -127035,9 +126758,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 586 Unidades"
     },
     "numericStats": {
-      "apexKi": 678,
-      "scouterKi": 678,
-      "powerLevel": 678
+      "apexKi": 865,
+      "scouterKi": 865,
+      "powerLevel": 865
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -127376,9 +127099,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.25x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2540,
+      "scouterKi": 2540,
+      "powerLevel": 2540
     },
     "entityType": "fighter",
     "sagaOrArc": "Castillo Infinito / Batalla contra los Pilares",
@@ -127625,9 +127348,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 805 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 2190,
+      "scouterKi": 2190,
+      "powerLevel": 2190
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -127878,9 +127601,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2390,
+      "scouterKi": 2390,
+      "powerLevel": 2390
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -128171,9 +127894,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 844 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2040,
+      "scouterKi": 2040,
+      "powerLevel": 2040
     },
     "entityType": "fighter",
     "sagaOrArc": "Fortaleza Dimensional Infinita / Cuenta Regresiva",
@@ -128434,9 +128157,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 358 Unidades"
     },
     "numericStats": {
-      "apexKi": 659,
-      "scouterKi": 659,
-      "powerLevel": 659
+      "apexKi": 695,
+      "scouterKi": 695,
+      "powerLevel": 695
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -128831,9 +128554,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.25x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 980 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2110,
+      "scouterKi": 2110,
+      "powerLevel": 2110
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco Final (Fortaleza Infinita)",
@@ -129072,9 +128795,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 719 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2490,
+      "scouterKi": 2490,
+      "powerLevel": 2490
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -129302,9 +129025,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 295 Unidades"
     },
     "numericStats": {
-      "apexKi": 528,
-      "scouterKi": 528,
-      "powerLevel": 528
+      "apexKi": 447,
+      "scouterKi": 447,
+      "powerLevel": 447
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -129536,9 +129259,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 891 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 1840,
+      "scouterKi": 1840,
+      "powerLevel": 1840
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -130100,9 +129823,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 455 Unidades"
     },
     "numericStats": {
-      "apexKi": 908,
-      "scouterKi": 908,
-      "powerLevel": 908
+      "apexKi": 728,
+      "scouterKi": 728,
+      "powerLevel": 728
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco del Distrito de Entretenimiento / Arco de la Fortaleza Infinita",
@@ -130465,9 +130188,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 700 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2370,
+      "scouterKi": 2370,
+      "powerLevel": 2370
     },
     "entityType": "fighter",
     "sagaOrArc": "Fortaleza Dimensional Infinita / Cuenta Regresiva",
@@ -130701,9 +130424,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 805 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 1900,
+      "scouterKi": 1900,
+      "powerLevel": 1900
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -131004,9 +130727,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 700 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2440,
+      "scouterKi": 2440,
+      "powerLevel": 2440
     },
     "entityType": "fighter",
     "sagaOrArc": "Era Sengoku (Flashbacks)",
@@ -131329,9 +131052,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 700 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 2490,
+      "scouterKi": 2490,
+      "powerLevel": 2490
     },
     "entityType": "fighter",
     "sagaOrArc": "Fortaleza Infinita — Combate contra Kaigaku",
@@ -131671,9 +131394,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 304 Unidades"
     },
     "numericStats": {
-      "apexKi": 449,
-      "scouterKi": 449,
-      "powerLevel": 449
+      "apexKi": 529,
+      "scouterKi": 529,
+      "powerLevel": 529
     },
     "entityType": "fighter",
     "sagaOrArc": "Parte 1 (Saga de Seguridad Pública)",
@@ -131941,9 +131664,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 309 Unidades"
     },
     "numericStats": {
-      "apexKi": 415,
-      "scouterKi": 415,
-      "powerLevel": 415
+      "apexKi": 465,
+      "scouterKi": 465,
+      "powerLevel": 465
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -132087,7 +131810,7 @@ export const INITIAL_CHARACTERS = [
         },
         {
           "name": "Regeneración Demoníaca",
-          "desc": "Capacidad básica de sanación mediante consumo de sangre o activaci��n temporal del demonio.",
+          "desc": "Capacidad básica de sanación mediante consumo de sangre o activacin temporal del demonio.",
           "staminaCost": 5
         }
       ],
@@ -132167,9 +131890,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 248 Unidades"
     },
     "numericStats": {
-      "apexKi": 437,
-      "scouterKi": 437,
-      "powerLevel": 437
+      "apexKi": 411,
+      "scouterKi": 411,
+      "powerLevel": 411
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -132242,308 +131965,6 @@ export const INITIAL_CHARACTERS = [
         "Super Saiyan",
         "Baki Hanma",
         "Energía Maldita",
-        "Multiverso"
-      ],
-      "crossVerseAwareness": "none"
-    }
-  },
-  {
-    "id": "baki-hanma-baki",
-    "name": "Baki Hanma",
-    "alias": "El Campeón del Domo Subterráneo / El Hijo del Ogro",
-    "universe": "Chainsaw Man",
-    "saga": "Son of Ogre / Padre contra Hijo",
-    "version": "Demon Back + Demon Brain",
-    "tier": "7-B",
-    "ap": "Nivel Ciudad. Luchó de igual a igual contra Yujiro Hanma en la 'Pelea de Padre e Hijo más Grande del Mundo', intercambiando cientos de golpes a velocidad de mach y rompiendo el concreto blindado con pura técnica imaginaria.",
-    "range": "Cuerpo a cuerpo estándar.",
-    "speed": {
-      "combat": "Hipersónico (Mach 10 - 30+). Conecta el golpe de 0.5 segundos antes de que el cerebro del rival envíe la señal a los músculos.",
-      "reaction": "Hipersónico.",
-      "travel": "Supersónico+.",
-      "attack": "Hipersónico."
-    },
-    "strength": "Clase Ciudad (Derrumba paredes de búnker y noquea animales prehistóricos).. Levantamiento: Clase 100 a K.",
-    "durability": "Nivel Ciudad. Soportó ser arrojado desde un rascacielos y cientos de golpes a plena potencia de Yujiro.",
-    "stamina": "Monstruosa: Pelea durante horas con huesos fracturados y hemorragias internas sin perder el ritmo.",
-    "battleIQ": "Genio de la Lucha Pragmática y las Artes Marciales Mixtas.",
-    "haxTags": [
-      "Demon Back (Espalda del Demonio)",
-      "Demon Brain (Cerebro del Demonio)",
-      "Ataque del 0.5 Segundo (Inconsciencia Motora)",
-      "Puño Triceratops (Estilo Imaginario)",
-      "Gota de Cockroach Dash (Aceleración de Cucaracha Mach 3)",
-      "motor_consciousness_gap",
-      "imaginary_manifestation"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Combinación MMA",
-          "cost": 3,
-          "desc": "Serie rápida de jabs, ganchos al hígado y patadas bajas calibradas."
-        },
-        {
-          "name": "Codazo al Mentón",
-          "cost": 4,
-          "desc": "Impacto corto y seco con el codo para cortar la ceja o desestabilizar."
-        },
-        {
-          "name": "Llave de Sumisión Articular",
-          "cost": 6,
-          "desc": "Palanca de brazo aplicada con precisión milimétrica para hiperextender articulaciones."
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Cockroach Dash (Aceleración Instantánea)",
-          "desc": "Relaja todo su cuerpo como un fluido imitando a una cucaracha, alcanzando velocidad Mach 3 instantáneamente desde reposo total.",
-          "cost": "Bajo"
-        },
-        {
-          "name": "Inconsciencia de 0.5 Segundos",
-          "desc": "Ataca en la ventana biológica donde el cerebro del oponente procesa la intención de moverse, volviendo el ataque físicamente inevitable.",
-          "cost": "Timing perfecto"
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Puño Triceratops + Demon Back",
-          "desc": "Canaliza la postura y masa imaginaria de un dinosaurio de 10 toneladas impulsado por su espalda del demonio, embistiendo al rival con fuerza devastadora.",
-          "cost": "Máximo enfoque físico"
-        }
-      ],
-      "passives": [
-        {
-          "name": "Endorfina de Combate Extrema",
-          "desc": "Libera endorfinas en su cerebro ante el dolor extremo, anulando el sufrimiento y agudizando sus reflejos al 200%.",
-          "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Imaginación Materializada",
-          "desc": "Capacidad de proyectar oponentes y criaturas imaginarias tan reales que provocan daño físico real en su propio cuerpo para entrenar.",
-          "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Regeneración Endorfínica",
-          "desc": "Liberación endorfínica masiva al recibir daño, anulando el sufrimiento y acelerando levemente la sanación natural.",
-          "grantedTags": [
-            "pain_suppression",
-            "combat_high"
-          ]
-        }
-      ],
-      "specialMechanics": [
-        {
-          "name": "Demon Brain Synchronization",
-          "desc": "Sintonización total entre sistema nervioso y masa muscular para calcular trayectorias de combate perfectas."
-        },
-        {
-          "name": "Imaginación Materializada",
-          "desc": "Crea armas y animales imaginarios (como dinosaurios o mantis religiosas gigantes) con efectos físicos reales sobre su cuerpo y el entorno."
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Masa Muscular Humana Estándar",
-          "desc": "Puede ser dañado por armas cortantes directas o golpes de seres con AP masivamente superior si no logra disipar el impacto.",
-          "counterTags": [
-            "Blade Mastery",
-            "Overwhelming AP"
-          ]
-        },
-        {
-          "name": "Masa Muscular Estándar",
-          "desc": "Aunque es extremadamente resistente, su estructura ósea y muscular sigue siendo humana, vulnerable a ataques cortantes extremos.",
-          "counterTag": "piercing_vulnerability"
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "base",
-        "name": "Estado Base (El Campeón Técnico)",
-        "stats": "Tier 8-A a 7-C | Nivel Manzana a Pueblo. Combina artes marciales híbridas.",
-        "apexKiMultiplier": 1,
-        "tier": "7-B",
-        "staminaDrain": 0
-      },
-      {
-        "id": "demon-back",
-        "name": "Espalda del Demonio Despertada",
-        "stats": "Tier 7-B | Nivel Ciudad. Desbloquea la sangre Hanma para rivalizar con el Ogro.",
-        "apexKiMultiplier": 1,
-        "tier": "7-B",
-        "staminaDrain": 0
-      }
-    ],
-    "feats": [
-      "Derrotó a Pickle, el humano prehistórico gigante que cazaba tiranosaurios rex.",
-      "Llevó a Yujiro Hanma a una pelea a muerte hasta ser reconocido como el número uno.",
-      "Ejecutó el Cockroach Dash noqueando a Oliva en su propia prisión."
-    ],
-    "weaknesses": "Masa muscular humana estándar: Puede ser dañado por armas cortantes directas o golpes de seres con AP masivamente superior.",
-    "avatar": "https://image.pollinations.ai/prompt/Baki%20Hanma,%20scars%20on%20face,%20demon%20back%20aura,%20intense%20fighting%20stance,%20masterpiece%20anime%20art?width=512&height=512&nologo=true",
-    "synergies": [
-      {
-        "name": "Lucha del Linaje Hanma",
-        "partnerTags": [
-          "Yujiro Hanma",
-          "Jack Hanma"
-        ],
-        "effect": "Resonancia genética Hanma que permite coordinar ataques en perfecta sincronía marcial.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "teamCombos": [
-      {
-        "partners": [
-          "Yujiro Hanma"
-        ],
-        "sequence": [
-          "Yujiro inmoviliza al objetivo agarrándolo de ambos brazos.",
-          "Baki acelera con Cockroach Dash hacia el blanco.",
-          "Impacto conjunto con el Puño Triceratops."
-        ],
-        "staminaCostPerParticipant": [
-          35,
-          30
-        ],
-        "effect": "Destrucción total del blanco con daño masivo interno y externo.",
-        "partialFailureResult": "Interrupción del agarre inicial cancela el combo y fuerza a combate individual.",
-        "canonStatus": "apex_custom"
-      },
-      {
-        "id": "hanma-pater-filii-impact",
-        "name": "Impacto Paterno-Filial",
-        "partners": [
-          "yujiro-hanma-baki",
-          "baki-hanma-baki"
-        ],
-        "sequence": [
-          "Apertura/Inmovilización: Yujiro inmoviliza al objetivo agarrándolo de ambos brazos.",
-          "Canalización/Apoyo: Baki acelera con Cockroach Dash hacia el blanco para tomar impulso.",
-          "Remate Definitivo: Impacto conjunto con el Puño Triceratops."
-        ],
-        "staminaCostPerParticipant": [
-          35,
-          30
-        ],
-        "effect": "Destrucción total del blanco con daño masivo interno y externo.",
-        "partialFailureResult": "Interrupción del agarre inicial cancela el combo y fuerza a combate individual.",
-        "canonStatus": "apex_custom"
-      }
-    ],
-    "transformativeMechanics": {
-      "canFuse": false,
-      "canAbsorb": false,
-      "fusionMethods": []
-    },
-    "franchise": "Chainsaw Man",
-    "continuity": "canon_main",
-    "era_or_saga": "Son of Ogre / Padre contra Hijo",
-    "form_or_state": "Estado Base (El Campeón Técnico)",
-    "profile_type": "individual",
-    "canon_status": "canon_main",
-    "variant_of": null,
-    "character_family": null,
-    "source_confidence": "verified",
-    "legacy_status": "active",
-    "universe_number": null,
-    "members": null,
-    "parent_team_profile": null,
-    "team_affiliation": null,
-    "notes": "",
-    "psychology": "Combatiente disciplinado y enfocado en la consecución de sus objetivos tácticos.",
-    "legacy_data": "",
-    "powerScaling": {
-      "apexKi": 2400,
-      "apexKiFormatted": "963 Unidades",
-      "scouterKi": 2400,
-      "scouterKiFormatted": "963 Unidades",
-      "rank": "RANGO TERRESTRE",
-      "isOverload": false,
-      "speedFactor": 1.15,
-      "durabilityFactor": 1,
-      "haxBiqFactor": 1.55,
-      "featsStrengthFactor": 1.35,
-      "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 963 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
-    },
-    "entityType": "fighter",
-    "sagaOrArc": "Son of Ogre / Padre contra Hijo",
-    "physicalTier": "7-B",
-    "haxTier": "7-B",
-    "sourceMedium": "manga",
-    "haxResistances": {
-      "existenceErasure": 0,
-      "timeManipulation": 0,
-      "mindControl": 20,
-      "matterManipulation": 0,
-      "soulDamage": 5,
-      "powerNullification": 0
-    },
-    "combatAIPersonality": {
-      "aggression": 90,
-      "tacticalIQ": 95,
-      "mercyThreshold": 10,
-      "clutchFactor": 100,
-      "preferredEngagementRange": "close_quarters"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": false,
-      "gravityResistance": "10G",
-      "favoredBiomes": [
-        "Ring de combate",
-        "Anfiteatro subterráneo",
-        "Zona urbana"
-      ],
-      "disfavoredBiomes": [
-        "Vacío espacial",
-        "Vacío espiritual"
-      ]
-    },
-    "provenFeats": [
-      "Derrotó a Pickle, el humano prehistórico gigante que cazaba tiranosaurios rex.",
-      "Llevó a Yujiro Hanma a una pelea a muerte hasta ser reconocido como el número uno.",
-      "Ejecutó el Cockroach Dash noqueando a Oliva en su propia prisión."
-    ],
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ]
-    },
-    "staminaProfile": {
-      "maxStamina": 180,
-      "recoveryRatePerTurn": 12,
-      "exhaustionThreshold": 25
-    },
-    "signatureEquipment": [
-      {
-        "name": "Pantalones de Combate MMA",
-        "durability": "low",
-        "effect": "Sin protección significativa; máxima movilidad."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Son of Ogre / Padre contra Hijo",
-      "timelineRestrictions": "Baki solo conoce eventos hasta el enfrentamiento final con su padre Yujiro. No tiene acceso al multiverso ni a universos ajenos.",
-      "forbiddenConcepts": [
-        "Toji Fushiguro",
-        "Hollow Purple",
-        "Sukuna",
-        "Energía Maldita",
-        "Jujutsu Kaisen",
         "Multiverso"
       ],
       "crossVerseAwareness": "none"
@@ -132726,9 +132147,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1.65x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 352 Unidades"
     },
     "numericStats": {
-      "apexKi": 191,
-      "scouterKi": 191,
-      "powerLevel": 191
+      "apexKi": 261,
+      "scouterKi": 261,
+      "powerLevel": 261
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -132957,9 +132378,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 144 Unidades"
     },
     "numericStats": {
-      "apexKi": 78,
-      "scouterKi": 78,
-      "powerLevel": 78
+      "apexKi": 97,
+      "scouterKi": 97,
+      "powerLevel": 97
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -133166,9 +132587,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-C) × Vel(1.35x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 4300 Unidades"
     },
     "numericStats": {
-      "apexKi": 11000,
-      "scouterKi": 11000,
-      "powerLevel": 11000
+      "apexKi": 12640,
+      "scouterKi": 12640,
+      "powerLevel": 12640
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -133386,9 +132807,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 11.700 Unidades"
     },
     "numericStats": {
-      "apexKi": 14100,
-      "scouterKi": 14100,
-      "powerLevel": 14100
+      "apexKi": 14800,
+      "scouterKi": 14800,
+      "powerLevel": 14800
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -133641,9 +133062,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 594 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2300,
+      "scouterKi": 2300,
+      "powerLevel": 2300
     },
     "entityType": "fighter",
     "sagaOrArc": "Parte 1 / Parte 2",
@@ -133978,9 +133399,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1.65x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 2700 Unidades"
     },
     "numericStats": {
-      "apexKi": 4000,
-      "scouterKi": 4000,
-      "powerLevel": 4000
+      "apexKi": 4130,
+      "scouterKi": 4130,
+      "powerLevel": 4130
     },
     "entityType": "fighter",
     "sagaOrArc": "Segunda Parte de Chainsaw Man (Arco de la Academia)",
@@ -134225,9 +133646,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 4000,
-      "scouterKi": 4000,
-      "powerLevel": 4000
+      "apexKi": 3680,
+      "scouterKi": 3680,
+      "powerLevel": 3680
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -134472,9 +133893,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.2000000000000002x) × Forma(1x) = 459 Unidades"
     },
     "numericStats": {
-      "apexKi": 758,
-      "scouterKi": 758,
-      "powerLevel": 758
+      "apexKi": 920,
+      "scouterKi": 920,
+      "powerLevel": 920
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -134686,9 +134107,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 356 Unidades"
     },
     "numericStats": {
-      "apexKi": 508,
-      "scouterKi": 508,
-      "powerLevel": 508
+      "apexKi": 491,
+      "scouterKi": 491,
+      "powerLevel": 491
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -135004,9 +134425,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 281 Unidades"
     },
     "numericStats": {
-      "apexKi": 448,
-      "scouterKi": 448,
-      "powerLevel": 448
+      "apexKi": 461,
+      "scouterKi": 461,
+      "powerLevel": 461
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Escuela / Post-Makima",
@@ -135248,9 +134669,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 72 Unidades"
     },
     "numericStats": {
-      "apexKi": 51,
-      "scouterKi": 51,
-      "powerLevel": 51
+      "apexKi": 48,
+      "scouterKi": 48,
+      "powerLevel": 48
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -135514,9 +134935,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 945 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2370,
+      "scouterKi": 2370,
+      "powerLevel": 2370
     },
     "entityType": "fighter",
     "sagaOrArc": "Parte 1 (Saga de Seguridad Pública)",
@@ -135585,6 +135006,278 @@ export const INITIAL_CHARACTERS = [
       "forbiddenConcepts": [
         "Demonio de la Guerra (Yoru en su fase completa post-parte 1)",
         "Apocalipsis global avanzado"
+      ],
+      "crossVerseAwareness": "none"
+    }
+  },
+  {
+    "id": "nayuta-csm-p2",
+    "name": "Nayuta",
+    "alias": "Control Devil (Reencarnación) / Hermana Menor de Denji",
+    "universe": "Chainsaw Man",
+    "saga": "Parte 2",
+    "version": "Niña Demonio (Cuarteto de los Jinetes)",
+    "tier": "8-A",
+    "ap": "AP de Dominación Psicológica (Hax de Jinetes). Físicamente tiene la fuerza de una niña humana con pequeños picos de fuerza demoníaca (Muro). Su peligro es usar las cadenas de control de Makima, borrando recuerdos en forma de perros o controlando mentes de oponentes humanos débiles o demonios asustados para que peleen por ella.",
+    "range": "Físico Cercano y Medio/Largo (Cadenas de control).",
+    "speed": {
+      "combat": "Humana Normal",
+      "reaction": "Supersónica (Reacciona a balas y Híbridos al usar sus cadenas o ser cargada por Denji)",
+      "travel": "Humana (Niña)",
+      "attack": "Supersónico (Velocidad de penetración de la Cadena del Control)"
+    },
+    "strength": "Humana / Nivel Muro (Cadenas). Levantamiento: Humana",
+    "durability": "Humana Frágil (Nivel Muro). A diferencia de Makima, Nayuta no tiene el Contrato con el Primer Ministro Japonés (Inmortalidad), por lo que un disparo, ataque letal o caída la puede matar igual que a un humano, apoyándose 100% en la protección de Denji.",
+    "stamina": "Baja (Cansancio de niña humana/Escolar).",
+    "battleIQ": "Extremadamente Astuta. Carece de la omnisciencia de Makima, pero entiende perfectamente cómo manipular la psique humana, borrar recuerdos tácticos de oponentes al instante (Asa Mitaka) y fingir ser inocente para sobrevivir.",
+    "haxTags": [
+      "Manipulación y Borrado de Recuerdos",
+      "Control Absoluto (Cadenas de Dominación)",
+      "Reescritura de Personalidad (Modo Perro)"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Mordisco Berrinche",
+          "type": "contundente/perforante",
+          "staminaCost": 3,
+          "desc": "Muerde furiosamente al rival si se acercan demasiado a su espacio personal."
+        },
+        {
+          "name": "Estocada de Cadena Mental",
+          "type": "hax/penetrante",
+          "staminaCost": 6,
+          "desc": "Apunta con su dedo para disparar una cadena espectral invisible al ojo humano común."
+        },
+        {
+          "name": "Cadena Perforante",
+          "desc": "Lanzamiento rápido de cadena con vector mental.",
+          "staminaCost": 6,
+          "damageType": "Hax Psicológico"
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Cadena de Borrado (Memory Wipe)",
+          "desc": "Clava su dedo o cadena en la cabeza del enemigo. Puede borrar todo recuerdo de la batalla, de los Hax, o de la identidad del oponente durante los últimos minutos, provocando confusión (Stun) y desorientación letal.",
+          "cost": "Utilidad de Debuff Cognitivo."
+        },
+        {
+          "name": "Comando: Ladrido (Thief/Dog)",
+          "desc": "Si ella considera que es 'Superior' al objetivo, la cadena de control transforma la psicología del enemigo. Lo vuelve inofensivo, haciéndolo actuar como un perro sumiso que la defiende.",
+          "cost": "Hax de Ejecución Condicional (Funciona en Tiers 9 y 8 humanos o híbridos inestables)."
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Invocación de Multitud Dominada",
+          "desc": "Toma el control de civiles, animales y secuaces menores en el mapa y los usa de escudo humano o zerg rush, forzando a héroes a no atacar por moralidad.",
+          "cost": "Hax de Terreno (Shield Meat)."
+        }
+      ],
+      "passives": [
+        {
+          "name": "Aura del Jinete (Lazos de Makima)",
+          "desc": "Inmunidad pasiva a telepatía menor o control mental de Tiers inferiores, siendo la reencarnación del Demonio Control.",
+          "cost": "Pasiva de Lore."
+        }
+      ],
+      "actives": [],
+      "specialMechanics": [
+        {
+          "name": "Complejo de Superioridad del Jinete",
+          "desc": "Sus habilidades de control absoluto solo funcionan si el objetivo es percibido por Nayuta como intelectual o físicamente inferior."
+        },
+        {
+          "name": "Complejo de Superioridad Cognitiva",
+          "desc": "Sus habilidades de control dependen de que Nayuta perciba al objetivo como inferior a ella."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Fisiología Humana Frágil",
+          "desc": "Carece por completo de la regeneración y del contrato de inmortalidad de Makima.",
+          "counterTag": "Any Lethal Damage"
+        },
+        {
+          "name": "Hitbox Humano Frágil",
+          "desc": "Sin el contrato de inmortalidad, su resistencia física es la de una niña humana común.",
+          "counterTags": [
+            "Daño Letal Directo",
+            "Ataques de Área",
+            "Balística Rápida"
+          ]
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "nayuta-csm-p2-base",
+        "name": "Nayuta (Estado Base)",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
+        "apexKiMultiplier": 1,
+        "tier": "8-A",
+        "staminaDrain": 0
+      }
+    ],
+    "feats": [
+      "Borró los recuerdos y alteró la percepción de Asa Mitaka / Yoru (Demonio de la Guerra, su hermana Jinete) sin inmutarse ni esforzarse, dominándola psicológicamente.",
+      "Controló y asimiló multitudes civiles forzándolas a proteger a Denji de la Iglesia Chainsaw Man.",
+      "Mantuvo su independencia manipuladora y arrogancia frente a Barem y Fami (Hambre) sobreviviendo como una estratega nata."
+    ],
+    "psychology": "Gamberra, malcriada y protectora. Es Makima sin la adultez corporativa. Denji la crió dándole amor y comida en lugar de terror. Ella es extremadamente territorial con su 'hermano', adora la comida, el colegio y no le importan las metas apocalípticas de sus hermanas (Fami/Yoru), solo vivir su vida diaria con Denji y sus perros.",
+    "weaknesses": "Hitbox Humano Frágil y Cero Defensa Regenerativa. Sin su contrato de inmortalidad, es simplemente una niña con magia rota. Si no considera a su oponente 'Inferior' o el oponente la asusta (Un Primigenio o Brawler sanguinario), su magia de Control/Dominación falla. Depende del daño de aliados.",
+    "synergies": [
+      {
+        "name": "La Familia Disfuncional",
+        "partnerTags": [
+          "Denji"
+        ],
+        "effect": "Ambos comparten un único Slot o Denji absorbe el Aggro pasivamente. Si Nayuta es asesinada, Denji entra en su Modo Hero of Hell (Pochita Definitivo) instantáneamente."
+      },
+      {
+        "name": "Amor Incondicional de Rika",
+        "partnerTags": [
+          "Rika"
+        ],
+        "effect": "Rika actúa como reserva infinita de energía maldita y lanza contraataques automáticos al ser herido Yuta.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "teamCombos": [
+      {
+        "name": "Cadenas y Motosierra",
+        "partners": [
+          "nayuta-csm-p2",
+          "denji-csm"
+        ],
+        "sequence": [
+          "Nayuta inmoviliza mentalmente al rival con una orden de 'Ladrido'.",
+          "Denji se posiciona a máxima velocidad con las motosierras activadas.",
+          "Ejecución combinada cortando al objetivo fraccionado."
+        ],
+        "staminaCostPerParticipant": {
+          "Nayuta": 20,
+          "Denji": 30
+        },
+        "effect": "Daño crítico masivo ignorando la durabilidad defensiva estándar del rival.",
+        "partialFailureResult": "Si el rival resiste la orden mental, Denji queda expuesto a un contraataque frontal.",
+        "canonStatus": "apex_custom"
+      },
+      {
+        "id": "combo-nayuta-denji-chain",
+        "partners": [
+          "nayuta-csm-p2",
+          "denji-csm"
+        ],
+        "sequence": [
+          "Nayuta inmoviliza y confunde mentalmente al objetivo con cadenas.",
+          "Denji se canaliza con velocidad sierra para posicionarse en el punto ciego.",
+          "Remate definitivo: Corte cruzado de motosierra potenciado por la sumisión del enemigo."
+        ],
+        "staminaCostPerParticipant": {
+          "nayuta-csm-p2": 20,
+          "denji-csm": 30
+        },
+        "effect": "Neutralización y daño masivo garantizado al ignorar la defensa del rival.",
+        "partialFailureResult": "Si el rival esquiva la cadena inicial, Denji queda expuesto al contragolpe y Nayuta consume estamina sin efecto.",
+        "canonStatus": "apex_custom"
+      }
+    ],
+    "transformativeMechanics": {
+      "canFuse": false,
+      "canAbsorb": false,
+      "fusionMethods": []
+    },
+    "powerScaling": {
+      "apexKi": 347,
+      "apexKiFormatted": "347 Unidades",
+      "scouterKi": 347,
+      "scouterKiFormatted": "347 Unidades",
+      "rank": "RANGO TERRESTRE",
+      "isOverload": false,
+      "speedFactor": 1,
+      "durabilityFactor": 1.4,
+      "haxBiqFactor": 1.1,
+      "featsStrengthFactor": 1.25,
+      "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 347 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 530,
+      "scouterKi": 530,
+      "powerLevel": 530
+    },
+    "entityType": "fighter",
+    "continuity": "Canon Manga / Anime",
+    "sourceMedium": "manga",
+    "sagaOrArc": "Parte 2",
+    "physicalTier": "8-A",
+    "haxTier": "8-A",
+    "franchise": "Chainsaw Man",
+    "haxResistances": {
+      "existenceErasure": 10,
+      "timeManipulation": 5,
+      "mindControl": 85,
+      "matterManipulation": 10,
+      "soulDamage": 20,
+      "powerNullification": 30
+    },
+    "combatAIPersonality": {
+      "aggression": 60,
+      "tacticalIQ": 85,
+      "mercyThreshold": 40,
+      "clutchFactor": 70,
+      "preferredEngagementRange": "mid_range"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": false,
+      "gravityResistance": "1G (humana estándar)",
+      "favoredBiomes": [
+        "Entornos urbanos",
+        "Escuelas",
+        "Zonas habitadas por civiles"
+      ],
+      "disfavoredBiomes": [
+        "Vacío espacial",
+        "Infiernos demoníacos extremos",
+        "Zonas desérticas aisladas"
+      ]
+    },
+    "provenFeats": [
+      "Borró los recuerdos y alteró la percepción de Asa Mitaka / Yoru (Demonio de la Guerra, su hermana Jinete) sin inmutarse ni esforzarse, dominándola psicológicamente.",
+      "Controló y asimiló multitudes civiles forzándolas a proteger a Denji de la Iglesia Chainsaw Man.",
+      "Mantuvo su independencia manipuladora y arrogancia frente a Barem y Fami (Hambre) sobreviviendo como una estratega nata."
+    ],
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ]
+    },
+    "staminaProfile": {
+      "maxStamina": 90,
+      "recoveryRatePerTurn": 8,
+      "exhaustionThreshold": 15
+    },
+    "signatureEquipment": [
+      {
+        "name": "Ropa escolar ordinaria",
+        "durability": "Baja",
+        "effect": "Vestimenta cotidiana sin propiedades defensivas."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Chainsaw Man Parte 2 / Año 1998 (Alternativo)",
+      "timelineRestrictions": "Nayuta desconoce los eventos posteriores a su confrontación con la Iglesia Chainsaw Man y las acciones de los Demonios Primigenios en el infierno profundo.",
+      "forbiddenConcepts": [
+        "Eventos post-manga Parte 2",
+        "Tecnología moderna avanzada",
+        "Universos alternos"
       ],
       "crossVerseAwareness": "none"
     }
@@ -135735,9 +135428,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 2600 Unidades"
     },
     "numericStats": {
-      "apexKi": 4600,
-      "scouterKi": 4600,
-      "powerLevel": 4600
+      "apexKi": 3890,
+      "scouterKi": 3890,
+      "powerLevel": 3890
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -136052,9 +135745,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 334 Unidades"
     },
     "numericStats": {
-      "apexKi": 403,
-      "scouterKi": 403,
-      "powerLevel": 403
+      "apexKi": 376,
+      "scouterKi": 376,
+      "powerLevel": 376
     },
     "entityType": "fighter",
     "sagaOrArc": "Parte 1 (Saga de Seguridad Pública)",
@@ -136278,9 +135971,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1.65x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 470 Unidades"
     },
     "numericStats": {
-      "apexKi": 429,
-      "scouterKi": 429,
-      "powerLevel": 429
+      "apexKi": 512,
+      "scouterKi": 512,
+      "powerLevel": 512
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -136622,9 +136315,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 945 Unidades"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 1990,
+      "scouterKi": 1990,
+      "powerLevel": 1990
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Chica Bomba",
@@ -136837,9 +136530,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.65x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 980 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2680,
+      "scouterKi": 2680,
+      "powerLevel": 2680
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -136910,1192 +136603,6 @@ export const INITIAL_CHARACTERS = [
       "forbiddenConcepts": [
         "Eventos post-Parte 1",
         "Universos externos"
-      ],
-      "crossVerseAwareness": "none"
-    }
-  },
-  {
-    "id": "shigaraki-tomura-mha",
-    "name": "Shigaraki Tomura",
-    "alias": "El Símbolo del Terror / Sucesor de All For One",
-    "universe": "Chainsaw Man",
-    "saga": "Guerra Final / Despertar Apex",
-    "version": "Cuerpo Perfecto + All For One Despertado",
-    "tier": "Tier High 6-A a 5-C | Nivel Multicontinental a Lunar Pequeño",
-    "ap": "Nivel Multicontinental. Su 'Decay' (Deterioro) despierto no requiere tocar el objetivo directamente: se propaga en cadena por el suelo desintegrando ciudades enteras y cordilleras en segundos.",
-    "range": "Kilómetros a Continental (Propagación de Deterioro).",
-    "speed": {
-      "combat": "Subrelativista (A la par del 100% de Deku).",
-      "reaction": "Subrelativista (Múltiples Quirks sensoriales y ondas de radio).",
-      "travel": "Hipersónico Masivo+.",
-      "attack": "Subrelativista."
-    },
-    "strength": "Clase Multicontinental (Fuerza física comparable a All Might Prime sin Quirks activos).. Levantamiento: Clase G a T.",
-    "durability": "Nivel Multicontinental + Hiper-Regeneración Celular Inmediata (Sobrevive a misiles crucero y láseres nucleares intercontinentales).",
-    "stamina": "Inagotable por modificaciones biológicas del Dr. Garaki.",
-    "battleIQ": "Genio del Caos / Conciencia combinada con All For One.",
-    "haxTags": [
-      "Deterioro Despertado (Decay en Cadena)",
-      "All For One (Robo y Uso de Múltiples Quirks)",
-      "Hiper-Regeneración Instantánea",
-      "Reflejo de Impacto y Cañones de Aire",
-      "Mutación de Dedos y Extremidades Fisiológicas",
-      "Borrado/Desintegración Molecular Zonal (Decay Despertado)",
-      "Súper Regeneración Biológica",
-      "Arsenal de Quirks Múltiples (AFO Menor)",
-      "Robo de Habilidades (AFO Touch)"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Decay Claw Slash",
-          "desc": "Zarpazo con dedos mutados que inicia el proceso de desintegración al contacto.",
-          "cost": "3 stamina"
-        },
-        {
-          "name": "Air Cannon Blast",
-          "desc": "Ondas de choque de presión media lanzadas desde la palma.",
-          "cost": "5 stamina"
-        },
-        {
-          "name": "Decaying Claw Strike",
-          "desc": "Zarpazo con dedos mutados que inicia el proceso de desintegración al contacto superficial.",
-          "cost": 4
-        },
-        {
-          "name": "Air Pressure Blast",
-          "desc": "Ondas de choque cortas generadas por la presión de sus manos y extremidades reforzadas.",
-          "cost": 6
-        },
-        {
-          "name": "Garras Mutadas Multifase",
-          "cost": 7,
-          "damageType": "cortante/desintegración",
-          "desc": "Ataque conjunto de garras físicas y Decay simultáneo para saturar defensas."
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Decay Cataclísmico (Propagación Telúrica)",
-          "desc": "Toca el suelo y desintegra todo a nivel molecular en un radio de decenas de kilómetros en cadena continua.",
-          "cost": "Bajo"
-        },
-        {
-          "name": "Cañón de Aire Pesado + Cañón de Remaches",
-          "desc": "Dispara ráfagas combinadas de presión capaces de atravesar búnkeres anti-atómicos.",
-          "cost": "Mínimo"
-        },
-        {
-          "name": "Robo Forzado de Quirks",
-          "cost": 15,
-          "damageType": "hax",
-          "desc": "Al contacto, desactiva y roba un Quirk del rival por tiempo indefinido.",
-          "counterplay": "Mantener distancia; Quirks no robables (mutaciones)."
-        },
-        {
-          "name": "Búsqueda (Search) + Transmisión de Quirks",
-          "desc": "Conoce la ubicación de miles de personas a la vez (Stealth es inútil). Dispara combos de Quirks elementales para inmovilizar al enemigo desde lejos.",
-          "cost": "Uso pasivo del kit de AFO."
-        },
-        {
-          "name": "Robo de Quirk (All For One)",
-          "desc": "Agarra la cara del rival e intenta extraer su poder, dejándolo en estado base inútil temporal o permanentemente si no escapan a tiempo.",
-          "cost": "Requires Grapple Check CQC."
-        },
-        {
-          "name": "Radio Waves",
-          "desc": "Emite ondas de radio de alta frecuencia para perturbar los sentidos y sistemas de comunicación enemigos.",
-          "cost": 20,
-          "chargeTime": "0.2 segundos",
-          "counterplay": "Blindaje electromagnético o evasión fuera del cono de emisión."
-        },
-        {
-          "name": "Search & Quirk Transmission",
-          "desc": "Localiza puntos débiles y objetivos prioritarios en un radio masivo, combinando ataques de proyectiles elementales.",
-          "cost": 25,
-          "chargeTime": "Instantáneo",
-          "counterplay": "Invisibilidad conceptual o alteración de firma térmica/biológica."
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Apex Decay: Fin de la Civilización",
-          "desc": "Libera una ola de desintegración omnidireccional potenciada con ondas electromagnéticas que reduce todo el campo de batalla a polvo atómico.",
-          "cost": "Carga de energía All For One"
-        },
-        {
-          "name": "Onda de Decay Continent Apex",
-          "cost": 50,
-          "condition": "Despertar Apex total.",
-          "damageType": "desintegración continental",
-          "desc": "Propagación del Decay a escala continental que desintegra cualquier materia sólida o biológica en segundos.",
-          "counterplay": "Anulación del Quirk antes del estallido; héroes con regeneración superior."
-        }
-      ],
-      "passives": [
-        {
-          "name": "Hiper-Regeneración Automática de Tejidos",
-          "desc": "Regenera extremidades amputadas, órganos quemados y heridas mortales en fracciones de segundo mientras no sea dañado a nivel celular total.",
-          "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Conciencia Colectiva AFO",
-          "desc": "Resistencia pasiva a ataques mentales y alteración de percepciones gracias a la fusión de voluntades.",
-          "cost": 0
-        },
-        {
-          "name": "Inmunidad a la Piel",
-          "desc": "Su epidermis regenerada lo hace inmune al daño convencional de bajo calibre.",
-          "cost": "Pasivo",
-          "staminaDrain": 0
-        }
-      ],
-      "specialMechanics": [
-        {
-          "name": "Robo de Quirks All For One",
-          "desc": "Capacidad latente para desestabilizar y robar habilidades de oponentes mediante contacto prolongado."
-        },
-        {
-          "name": "Despertar del Quirk (Decay Apex)",
-          "desc": "El Decay evoluciona de requerir 5 dedos a extenderse sin contacto directo.",
-          "cost": "Despertar único del usuario"
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Anulación de Quirks (Erasure) / Destrucción del Núcleo",
-          "desc": "Vulnerable a la pérdida temporal de su regeneración si se anulan sus quirks o si su cabeza es destruida por completo de un golpe.",
-          "counterTags": [
-            "erasure",
-            "brain_destruction"
-          ]
-        },
-        {
-          "name": "Conciencia Fragmentada",
-          "desc": "El conflicto entre Tomura y All For One puede desestabilizar sus poderes en momentos críticos.",
-          "counterTags": [
-            "mental_attack",
-            "psychological_pressure"
-          ]
-        },
-        {
-          "name": "Tasa Regenerativa con Techo",
-          "desc": "Si el daño celular es mayor a la tasa de regeneración, colapsa.",
-          "counterTags": [
-            "cellular_destruction",
-            "apex_damage"
-          ]
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "base",
-        "name": "Forma Base (Deterioro Inicial)",
-        "stats": "Tier 8-B a 7-C | Nivel Ciudad. Requiere tocar con los 5 dedos para desintegrar.",
-        "apexKiMultiplier": 1,
-        "tier": "High 6-A a 5-C",
-        "staminaDrain": 0
-      },
-      {
-        "id": "awakened-decay",
-        "name": "Deterioro Despertado (Saga Ejército de Liberación)",
-        "stats": "Tier 7-A a 6-C | Nivel Isla. Propagación en cadena masiva sin contacto directo.",
-        "apexKiMultiplier": 1.3,
-        "staminaDrain": 8,
-        "canonStatus": "source_backed",
-        "activationCondition": "Primera activación instintiva del Decay expandido en Deika.",
-        "grantedTags": [
-          "Decay en Cadena",
-          "Dedos mutados"
-        ],
-        "suppressedTags": [
-          "Forma humana estándar"
-        ],
-        "grantedAbilities": [
-          "Decay Cataclísmico",
-          "Decay Telúrico"
-        ],
-        "limitations": "Pierde control sobre la dirección del Decay.",
-        "exitCondition": "Fatiga mental o intervención de AFO interno.",
-        "counterplay": "Evasión a rango orbital; anticipar la cadena.",
-        "tier": "High 6-A a 5-C"
-      },
-      {
-        "id": "apex-all-for-one",
-        "name": "Cuerpo Perfecto Apex (All For One Fusionado)",
-        "stats": "Tier High 6-A | Nivel Multicontinental. Hiper-regeneración y fuerza física de All Might Prime.",
-        "apexKiMultiplier": 2,
-        "staminaDrain": 25,
-        "canonStatus": "source_backed",
-        "activationCondition": "Fusión total con All For One y Cuerpo Perfecto del Dr. Garaki.",
-        "grantedTags": [
-          "Hiper-Regeneración",
-          "AFO Despertado",
-          "Decay Apex",
-          "Múltiples Quirks"
-        ],
-        "suppressedTags": [
-          "Tomura sin AFO",
-          "Forma humana estándar"
-        ],
-        "grantedAbilities": [
-          "Apex Decay",
-          "Cañón de Aire Pesado",
-          "Reflejo de Impacto"
-        ],
-        "limitations": "La regeneración falla ante destrucción celular total concentrada.",
-        "exitCondition": "Anulación de Quirks o destrucción de la cabeza con energía concentrada.",
-        "counterplay": "Erasure, ataque celular preciso al cerebro, o energía superior a la tasa regenerativa.",
-        "drawbacks": [
-          "Pérdida de identidad entre Tomura y All For One"
-        ],
-        "tier": "High 6-A a 5-C"
-      }
-    ],
-    "feats": [
-      "Desintegró la ciudad de Deika por completo en segundos durante su despertar.",
-      "Sobrevivió al ataque combinado de misiles nucleares 'Tiamat' de Star and Stripe.",
-      "Soportó los golpes al 120% del One For All de Deku regenerándose al instante.",
-      "Borró del mapa el Hospital Jaku y la tercera parte de una metrópolis de un solo toque al suelo, asesinando héroes Top como Crust en milisegundos.",
-      "Luchó simultáneamente contra Endeavor (Nº1), Ryukyu, Eraserhead, Gran Torino, Izuku Midoriya (100% OFA), y Bakugo, sin su Quirk principal activado, usando solo fuerza bruta y regeneración.",
-      "Sobrevivió un ataque suicida Prominence Burn directo y un impacto celestial de Tiers pesados demostrando ser el pináculo físico de la humanidad moderna del verso."
-    ],
-    "weaknesses": "Ataques que destruyan su cabeza y células más rápido que su tasa de regeneración o la anulación de Quirks (Erasure).",
-    "avatar": "https://image.pollinations.ai/prompt/Shigaraki%20Tomura%20final%20form,%20white%20hair,%20decay%20energy%20cracking%20ground,%20red%20eyes,%20villainous%20masterpiece?width=512&height=512&nologo=true",
-    "synergies": [
-      {
-        "partnerTags": [
-          "nomu_high_end",
-          "league_of_villains"
-        ],
-        "effect": "Incrementa la velocidad de regeneración en un 10% mediante respaldo táctico."
-      },
-      {
-        "name": "Legado del Mal",
-        "partnerTags": [
-          "Nomu",
-          "Villano Supremo"
-        ],
-        "effect": "Incrementa la eficiencia de la hiper-regeneración en un 10% en presencia de subordinados de alto rango."
-      },
-      {
-        "name": "Legado de All For One",
-        "partnerTags": [
-          "nomu_high_end",
-          "league_of_villains"
-        ],
-        "effect": "Incrementa la velocidad de regeneración en un 10% mediante respaldo táctico.",
-        "canonStatus": "source_backed"
-      },
-      {
-        "name": "Resonancia con AFO",
-        "partnerTags": [
-          "all_for_one_espíritu"
-        ],
-        "effect": "Permite heredar Quirks adicionales durante el combate si AFO se lo concede.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "teamCombos": [
-      {
-        "partners": [
-          "Gigantomachia"
-        ],
-        "sequence": [
-          "Gigantomachia irrumpe rompiendo las defensas frontales del enemigo.",
-          "Shigaraki aprovecha el cráter para activar el Decay Cataclísmico en cadena.",
-          "Ambos ejecutan una carga combinada que arrasa con el sector completo."
-        ],
-        "staminaCostPerParticipant": {
-          "Shigaraki Tomura": 20,
-          "Gigantomachia": 30
-        },
-        "effect": "Elimina por completo el terreno circundante y desestabiliza las defensas enemigas con daño sísmico y molecular simultáneo.",
-        "partialFailureResult": "Si Gigantomachia es detenido antes del impacto, la propagación del Decay se reduce a la mitad.",
-        "canonStatus": "source_backed"
-      },
-      {
-        "name": "Asalto Gigantomachia-Shigaraki",
-        "partners": [
-          "Gigantomachia"
-        ],
-        "sequence": [
-          "Gigantomachia irrumpe rompiendo las defensas frontales del enemigo con su carga continental.",
-          "Shigaraki aprovecha el cráter para activar el Decay Cataclísmico en cadena sobre los cimientos expuestos.",
-          "Ambos ejecutan una carga combinada que arrasa con el sector completo, mezclando fuerza bruta y desintegración."
-        ],
-        "staminaCostPerParticipant": {
-          "Shigaraki Tomura": 20,
-          "Gigantomachia": 30
-        },
-        "effect": "Elimina por completo el terreno circundante y desestabiliza las defensas enemigas con daño sísmico y molecular simultáneo.",
-        "partialFailureResult": "Si Gigantomachia es detenido antes del impacto, la propagación del Decay se reduce a la mitad.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "transformativeMechanics": {
-      "canFuse": false,
-      "canAbsorb": false,
-      "fusionMethods": []
-    },
-    "franchise": "Chainsaw Man",
-    "continuity": "canon_main",
-    "era_or_saga": "Guerra Final / Despertar Apex",
-    "form_or_state": "Forma Base (Deterioro Inicial)",
-    "profile_type": "individual",
-    "canon_status": "canon_main",
-    "variant_of": null,
-    "character_family": null,
-    "source_confidence": "verified",
-    "legacy_status": "active",
-    "universe_number": null,
-    "members": null,
-    "parent_team_profile": null,
-    "team_affiliation": null,
-    "notes": "",
-    "psychology": "Combatiente disciplinado y enfocado en la consecución de sus objetivos tácticos.",
-    "legacy_data": "",
-    "powerScaling": {
-      "apexKi": 81300,
-      "apexKiFormatted": "63.600 Unidades",
-      "scouterKi": 81300,
-      "scouterKiFormatted": "63.600 Unidades",
-      "rank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
-      "isOverload": false,
-      "speedFactor": 1.35,
-      "durabilityFactor": 1.25,
-      "haxBiqFactor": 1.55,
-      "featsStrengthFactor": 1.35,
-      "formulaExpression": "PL_Scouter = BaseEnergy(Tier High 6-A a 5-C | Nivel Multicontinental a Lunar Pequeño) × Vel(1.35x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 63.600 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
-    },
-    "entityType": "fighter",
-    "sagaOrArc": "Guerra Final / Despertar Apex",
-    "physicalTier": "Tier High 6-A a 5-C",
-    "haxTier": "Nivel Multicontinental a Lunar Pequeño",
-    "sourceMedium": "manga",
-    "haxResistances": {
-      "existenceErasure": 25,
-      "timeManipulation": 15,
-      "mindControl": 65,
-      "matterManipulation": 30,
-      "soulDamage": 40,
-      "powerNullification": 5
-    },
-    "combatAIPersonality": {
-      "aggression": 95,
-      "tacticalIQ": 70,
-      "mercyThreshold": 5,
-      "clutchFactor": 85,
-      "preferredEngagementRange": "mid_range"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": false,
-      "gravityResistance": "30G",
-      "favoredBiomes": [
-        "Zonas urbanas",
-        "Campos de batalla extensos"
-      ],
-      "disfavoredBiomes": [
-        "Vacío espacial",
-        "Zonas de anulación de Quirks"
-      ]
-    },
-    "provenFeats": [
-      "Desintegró la ciudad de Deika por completo en segundos durante su despertar.",
-      "Sobrevivió al ataque combinado de misiles nucleares 'Tiamat' de Star and Stripe.",
-      "Soportó los golpes al 120% del One For All de Deku regenerándose al instante.",
-      "Borró del mapa el Hospital Jaku y la tercera parte de una metrópolis de un solo toque al suelo, asesinando héroes Top como Crust en milisegundos.",
-      "Luchó simultáneamente contra Endeavor (Nº1), Ryukyu, Eraserhead, Gran Torino, Izuku Midoriya (100% OFA), y Bakugo, sin su Quirk principal activado, usando solo fuerza bruta y regeneración.",
-      "Sobrevivió un ataque suicida Prominence Burn directo y un impacto celestial de Tiers pesados demostrando ser el pináculo físico de la humanidad moderna del verso."
-    ],
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ]
-    },
-    "staminaProfile": {
-      "maxStamina": 180,
-      "recoveryRatePerTurn": 12,
-      "exhaustionThreshold": 20
-    },
-    "signatureEquipment": [
-      {
-        "name": "Cuerpo Perfecto (Modificaciones Dr. Garaki)",
-        "durability": "alto; regenera casi todo",
-        "effect": "Base de la hiper-regeneración y resistencia celular."
-      },
-      {
-        "name": "All For One (Conciencia Fusionada)",
-        "durability": "inestable",
-        "effect": "Permite el robo de Quirks y acceso a arsenal variado."
-      },
-      {
-        "name": "Manos Mutadas del Decay",
-        "durability": "constante",
-        "effect": "Cinco dedos que inician el Decay; evolucionan a Decay sin contacto."
-      },
-      {
-        "name": "Cuerpo Perfecto",
-        "durability": "Muy alta",
-        "effect": "Base de hiper-regeneración."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Guerra Final (MHA)",
-      "timelineRestrictions": "Desconoce eventos posteriores al capítulo 431.",
-      "forbiddenConcepts": [
-        "Eventos post-431",
-        "Universos alternos"
-      ],
-      "crossVerseAwareness": "none"
-    }
-  },
-  {
-    "id": "shizuku-murasaki-hxh-yr",
-    "name": "Shizuku Murasaki",
-    "alias": "Miembro del Genei Ryodan (Araña #8)",
-    "universe": "Chainsaw Man",
-    "saga": "Yorknew City / Arco de Sucesión",
-    "version": "Ladrona / Limpiadora de la Araña",
-    "tier": "8-B",
-    "ap": "AP físico moderado. Su fuerza pura de impacto con su aspiradora (Blinky/Deme-chan) puede aplastar el cráneo de guardias humanos u hormigas menores. Su Hax drena el 100% de la sangre de oponentes con heridas abiertas, matándolos de hipovolemia masiva en segundos.",
-    "range": "Corto/Medio (Blinky aspira cosas a pocos metros de distancia).",
-    "speed": {
-      "combat": "Supersónica+",
-      "reaction": "Supersónica+",
-      "travel": "Atlética Superior",
-      "attack": "Supersónica (Los dientes de la aspiradora muerden rapidísimo)"
-    },
-    "strength": "Nivel Edificio (Puede abollar acero con su aspiradora pesada). Levantamiento: Clase 1 a 5 Toneladas (Supera en fuerza de brazos a la mayoría del mundo, pero es de las más débiles en la Araña)",
-    "durability": "Nivel Edificio. Fue envuelta en telarañas y recibió toxinas en el cuerpo a cuerpo contra Pike, manteniéndose consciente y analítica e incluso desangrándose voluntariamente para expulsar el veneno.",
-    "stamina": "Muy Alta. No muestra fatiga emocional. Despiadada al limpiar.",
-    "battleIQ": "Luchadora altamente analítica. Olvidadiza de la vida diaria pero un genio lógico en batalla. Dedujo los puntos ciegos de Pike y usó el terreno a su favor. Utiliza a Blinky como un bloqueo irrompible.",
-    "haxTags": [
-      "Exsanguinación Rápida (Succión Letal)",
-      "Borrado/Absorción de Materia Infinita",
-      "Inmunidad a Venenos Sanguíneos (Drenaje propio)"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Cabezazo de Blinky",
-          "cost": 4,
-          "damageType": "Contundente",
-          "desc": "Golpe directo usando la base metálica de la aspiradora para romper la guardia."
-        },
-        {
-          "name": "Mordisco de Cerdas",
-          "cost": 6,
-          "damageType": "Cortante/Perforante",
-          "desc": "Ataque veloz con los dientes internos de la aspiradora para generar cortes menores propicios para el Hax."
-        },
-        {
-          "name": "Maza de Blinky",
-          "desc": "Golpes contundentes usando el extremo metálico y pesado de la aspiradora para romper huesos y abollar blindajes ligeros.",
-          "cost": "4 stamina",
-          "damageType": "Contundente"
-        },
-        {
-          "name": "Mordisco de Deme-chan",
-          "desc": "Ataque rápido con los dientes flexibles de la boquilla para generar pequeñas heridas de sangrado.",
-          "cost": "5 stamina",
-          "damageType": "Cortante/Perforante"
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Aspiradora de Campo (Blinky)",
-          "desc": "Aspira objetos, trampas enemigas, nubes de humo o toxinas, enviándolas a una dimensión de bolsillo ilimitada. (Condición: Shizuku no puede aspirar cosas vivas o cosas forjadas de aura enemiga).",
-          "cost": "Utilidad/Limpieza."
-        },
-        {
-          "name": "Autotransfusión Purificadora",
-          "desc": "Si es envenenada, le ordena a Blinky aspirar la sangre contaminada de sus propias venas para evitar parálisis.",
-          "cost": "Gasta Puntos de Vida (HP) y estamina para no sufrir Hax peores."
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Drenaje Letal: Ejecución por Desangrado",
-          "desc": "Cuando el oponente tiene una herida abierta (por pequeña que sea), Shizuku usa a Blinky para aspirar exclusivamente la sangre a través del corte. Vacía el cuerpo entero del enemigo de sangre en un instante, momificándolo vivo.",
-          "cost": "Instakill pasivo una vez que el enemigo recibe daño de Sangrado (Bleed Status)."
-        }
-      ],
-      "passives": [
-        {
-          "name": "Amnesia Selectiva",
-          "desc": "Olvida a las personas o eventos en cuanto ya no le sirven. Inmune a la manipulación emocional por remordimientos pasados, ya que no los recuerda.",
-          "cost": "Gag Psicológico."
-        }
-      ],
-      "actives": [],
-      "specialMechanics": [],
-      "weaknesses": []
-    },
-    "forms": [
-      {
-        "id": "shizuku-murasaki-hxh-yr-base",
-        "name": "Shizuku Murasaki (Estado Base)",
-        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
-        "apexKiMultiplier": 1,
-        "tier": "8-B",
-        "staminaDrain": 0
-      }
-    ],
-    "feats": [
-      "Mató a Pike (Oficial Quimera nivel Demonio/Monstruo Gigante) aspirándole la sangre por 28 orificios que ella misma le hizo.",
-      "Aspiró y limpió en segundos un salón entero lleno de decenas de cadáveres de la mafia de Yorknew, sus armas y la sangre sin dejar rastro de ADN.",
-      "Usó el peso del cuerpo de Gon (que le ganaba en un pulso) para hacerlo perder soltando su aura de golpe, mostrando maña táctica superior a la fuerza."
-    ],
-    "psychology": "Apatía encantadora. Parece una chica tímida y despistada, pero es una asesina a sangre fría sin brújula moral, siguiendo únicamente las reglas de la Araña y Chrollo Lucilfer. Todo es 'trabajo' y no siente rabia ni lástima.",
-    "weaknesses": "No puede absorber entidades vivientes ni cosas hechas de Nen puro; por tanto, no puede devorar armas mágicas enemigas. Sus golpes a melee sin Hax no destruirán a Tiers 7 puros sin recibir daño. Mala memoria de trabajo.",
-    "synergies": [
-      {
-        "partnerTags": [
-          "Genei Ryodan",
-          "Chrollo Lucilfer"
-        ],
-        "effect": "Incrementa la eficiencia analítica y reduce el tiempo de preparación de jugadas conjuntas un 15%."
-      }
-    ],
-    "teamCombos": [
-      {
-        "partners": [
-          "Shizuku Murasaki",
-          "Feitan Portor"
-        ],
-        "sequence": [
-          "Shizuku genera múltiples heridas superficiales precisas con Blinky.",
-          "Feitan distrae al enemigo y bloquea rutas de escape con velocidad superior.",
-          "Shizuku activa Drenaje Letal instantáneamente sobre los cortes abiertos."
-        ],
-        "staminaCostPerParticipant": [
-          20,
-          25
-        ],
-        "effect": "Exsanguinación táctica fulminante en el oponente, ignorando durabilidades físicas moderadas.",
-        "partialFailureResult": "Si el enemigo esquiva el paso 3, Shizuku queda vulnerable por el retroceso de la succión interrumpida.",
-        "canonStatus": "apex_custom"
-      }
-    ],
-    "transformativeMechanics": {
-      "canFuse": false,
-      "canAbsorb": false,
-      "fusionMethods": []
-    },
-    "powerScaling": {
-      "apexKi": 67,
-      "apexKiFormatted": "67 Unidades",
-      "scouterKi": 67,
-      "scouterKiFormatted": "67 Unidades",
-      "rank": "RANGO TERRESTRE",
-      "isOverload": false,
-      "speedFactor": 1,
-      "durabilityFactor": 1,
-      "haxBiqFactor": 1.4000000000000001,
-      "featsStrengthFactor": 1.25,
-      "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 67 Unidades | Oficial DB: 67 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 191,
-      "scouterKi": 191,
-      "powerLevel": 191
-    },
-    "entityType": "fighter",
-    "continuity": "Canon Manga / Anime",
-    "sourceMedium": "manga",
-    "sagaOrArc": "Yorknew City / Arco de Sucesión",
-    "physicalTier": "8-B",
-    "haxTier": "8-B",
-    "franchise": "Chainsaw Man",
-    "haxResistances": {
-      "existenceErasure": 0,
-      "timeManipulation": 10,
-      "mindControl": 40,
-      "matterManipulation": 20,
-      "soulDamage": 30,
-      "powerNullification": 25
-    },
-    "combatAIPersonality": {
-      "aggression": 65,
-      "tacticalIQ": 85,
-      "mercyThreshold": 5,
-      "clutchFactor": 70,
-      "preferredEngagementRange": "close_quarters"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": false,
-      "gravityResistance": "1G Normal",
-      "favoredBiomes": [
-        "Urban",
-        "Interiores Cerrados"
-      ],
-      "disfavoredBiomes": [
-        "Espacio Exterior",
-        "Entornos Acuáticos Profundos"
-      ]
-    },
-    "provenFeats": [
-      "Mató a Pike (Oficial Quimera nivel Demonio/Monstruo Gigante) aspirándole la sangre por 28 orificios que ella misma le hizo.",
-      "Aspiró y limpió en segundos un salón entero lleno de decenas de cadáveres de la mafia de Yorknew, sus armas y la sangre sin dejar rastro de ADN.",
-      "Usó el peso del cuerpo de Gon (que le ganaba en un pulso) para hacerlo perder soltando su aura de golpe, mostrando maña táctica superior a la fuerza."
-    ],
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ]
-    },
-    "staminaProfile": {
-      "maxStamina": 100,
-      "recoveryRatePerTurn": 10,
-      "exhaustionThreshold": 15
-    },
-    "signatureEquipment": [
-      {
-        "name": "Blinky (Deme-chan)",
-        "durability": "Indestructible por ataques físicos estándar (Conjuración Nen)",
-        "effect": "Permite aspirar materia infinita no viviente y drenar sangre de heridas abiertas."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Arco de Sucesión / Yorknew City",
-      "timelineRestrictions": "Desconoce eventos futuros más allá del continente oscuro o desenlaces de otros escuadrones de la araña.",
-      "forbiddenConcepts": [
-        "Nanotecnología avanzada",
-        "Viajes dimensionales multiversales"
-      ],
-      "crossVerseAwareness": "none"
-    }
-  },
-  {
-    "id": "tamaki-amajiki-mha-shie",
-    "name": "Tamaki Amajiki",
-    "alias": "Suneater",
-    "universe": "Chainsaw Man",
-    "saga": "Shie Hassaikai",
-    "version": "Los Tres Grandes de la UA",
-    "tier": "8-A",
-    "ap": "AP sumamente versátil. Sus impactos contundentes usando brazos de pulpo, tenazas de cangrejo o caparazones endurecidos le permiten abrumar a múltiples oponentes de nivel Bloque simultáneamente y romper armas de acero.",
-    "range": "Corto a Medio (Puede extender extremidades orgánicas decenas de metros).",
-    "speed": {
-      "combat": "Supersónico+",
-      "reaction": "Supersónico+",
-      "travel": "Atlético a Supersónico (Alas/Propulsión de moluscos)",
-      "attack": "Supersónico+"
-    },
-    "strength": "Nivel Multi-Bloque. Levantamiento: Clase 1 a 5 Toneladas (Variable según el animal)",
-    "durability": "Nivel Multi-Bloque. Puede recubrir su piel con conchas de almeja o caparazones de tortuga ultra-densos, deteniendo espadas y balas sin recibir daño letal.",
-    "stamina": "Muy Alta. Sin embargo, su capacidad depende de su digestión; si agota los nutrientes del animal consumido, pierde esa habilidad temporalmente.",
-    "battleIQ": "Táctico intuitivo de primer nivel. Es capaz de mezclar características biológicas de hasta tres animales distintos en un segundo para crear combinaciones ofensivo-defensivas perfectas.",
-    "haxTags": [
-      "Quimerismo Biológico / Adaptación Activa",
-      "Armadura Orgánica",
-      "Secreción de Toxinas (Opcional)"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Golpe de Caparazón",
-          "desc": "Puñetazo recubierto de placas de tortuga o crustáceo.",
-          "cost": "4 stamina",
-          "type": "contundente"
-        },
-        {
-          "name": "Latigazo de Tentáculo",
-          "desc": "Ataque flexible con extremidades de pulpo para desestabilizar.",
-          "cost": "5 stamina",
-          "type": "contundente"
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Manifiesto: Brazos de Pulpo",
-          "desc": "Transforma sus dedos en enormes tentáculos que atrapan, estrangulan y lanzan enemigos múltiples a la vez.",
-          "cost": "Coste biológico bajo."
-        },
-        {
-          "name": "Manifiesto: Centauro/Quimera",
-          "desc": "Transmuta sus piernas en pezuñas de toro para patear, y crea alas para maniobrabilidad aérea.",
-          "cost": "Coste estándar de digestión."
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Quimera Kraken (Vast Hybrid)",
-          "desc": "Despliega una monstruosa amalgama de tentáculos, conchas gigantes, y garras de crustáceo simultáneamente. Barre una zona urbana completa aplastando a todos los enemigos en el área.",
-          "cost": "Alto desgaste de Stamina. Requiere haber consumido mucha variedad de alimentos antes del combate."
-        }
-      ],
-      "passives": [
-        {
-          "name": "Resiliencia de Quimera",
-          "desc": "Adaptación tisular instantánea para mitigar impactos físicos distribuyendo el daño a través de múltiples capas biológicas."
-        }
-      ],
-      "actives": [],
-      "specialMechanics": [
-        {
-          "name": "Reserva Nutricional",
-          "desc": "Mide la disponibilidad de recursos biológicos consumidos. Si la reserva llega a cero, las manifestaciones avanzadas fallan."
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Dependencia Dietética",
-          "counterTag": "Agotamiento de Recursos",
-          "desc": "Si no ha consumido alimentos específicos antes del combate, su abanico táctico se reduce drásticamente."
-        },
-        {
-          "name": "Ansiedad Social Paralizante",
-          "counterTag": "Manipulación Psicológica",
-          "desc": "Bajo presión mental extrema sin apoyo moral, puede dudar en sus decisiones iniciales."
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "tamaki-amajiki-mha-shie-base",
-        "name": "Tamaki Amajiki (Estado Base)",
-        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
-        "apexKiMultiplier": 1,
-        "tier": "8-A",
-        "staminaDrain": 0
-      }
-    ],
-    "feats": [
-      "Derrotó a tres de los Ocho Preceptos de la Muerte (Yakuza de alto nivel) simultáneamente y sin ayuda.",
-      "Soportó ataques mortales combinados de cristales, devoración de vitalidad y golpes contundentes sin rendirse.",
-      "En el arco final combinó características de decenas de animales y la energía de Nejire para crear el cañón biológico Plasma Cannon."
-    ],
-    "psychology": "Sufre de ansiedad social extrema, timidez paralizante y depresión. Siempre quiere huir y se siente inferior. Sin embargo, en combate, su devoción por Mirio (su sol) lo transforma en un guerrero implacable que no retrocede ante la muerte.",
-    "weaknesses": "Total dependencia de la alimentación previa (Si no comió nada orgánico útil, no puede manifestar nada). Ansiedad que puede ralentizar sus primeras decisiones. Magia de fuego/calor deshidrata rápidamente sus manifestaciones oceánicas.",
-    "synergies": [
-      {
-        "name": "Los Tres Grandes",
-        "partnerTags": [
-          "Mirio Togata",
-          "Nejire Hado"
-        ],
-        "effect": "Al estar junto a sus compañeros, su 'Moral' salta al 100%, volviéndose inmune a la intimidación y reduciendo el coste de sus técnicas biológicas a la mitad."
-      },
-      {
-        "partnerTags": [
-          "Mirio Togata",
-          "Nejire Hado"
-        ],
-        "effect": "Al estar junto a sus compañeros, su 'Moral' salta al 100%, volviéndose inmune a la intimidación y reduciendo el coste de sus técnicas biológicas a la mitad."
-      }
-    ],
-    "teamCombos": [
-      {
-        "partners": [
-          "Mirio Togata",
-          "Nejire Hado"
-        ],
-        "sequence": [
-          "Mirio distrae e inmoviliza al rival atravesando sus defensas.",
-          "Tamaki canaliza su quimera masiva para bloquear rutas de escape y desatar tentáculos.",
-          "Nejire remata con una descarga espiral masiva de ondas de choque."
-        ],
-        "staminaCostPerParticipant": [
-          25,
-          30,
-          35
-        ],
-        "effect": "Colapso total del área de combate y aniquilación del objetivo principal con daño multi-vectorial.",
-        "partialFailureResult": "Si Mirio falla la distracción, Tamaki recibe el impacto directo y se interrumpe la sincronización.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "transformativeMechanics": {
-      "canFuse": false,
-      "canAbsorb": true,
-      "fusionMethods": [
-        "Absorción pasiva por ingesta de materiales biológicos del mapa."
-      ]
-    },
-    "powerScaling": {
-      "apexKi": 260,
-      "apexKiFormatted": "260 Unidades",
-      "scouterKi": 260,
-      "scouterKiFormatted": "260 Unidades",
-      "rank": "RANGO TERRESTRE",
-      "isOverload": false,
-      "speedFactor": 1.05,
-      "durabilityFactor": 1,
-      "haxBiqFactor": 1.1,
-      "featsStrengthFactor": 1.25,
-      "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 487,
-      "scouterKi": 487,
-      "powerLevel": 487
-    },
-    "entityType": "fighter",
-    "continuity": "Canon Manga / Anime",
-    "sourceMedium": "manga",
-    "sagaOrArc": "Shie Hassaikai",
-    "physicalTier": "8-A",
-    "haxTier": "8-A",
-    "franchise": "Chainsaw Man",
-    "haxResistances": {
-      "existenceErasure": 0,
-      "timeManipulation": 0,
-      "mindControl": 20,
-      "matterManipulation": 15,
-      "soulDamage": 10,
-      "powerNullification": 30
-    },
-    "combatAIPersonality": {
-      "aggression": 60,
-      "tacticalIQ": 90,
-      "mercyThreshold": 40,
-      "clutchFactor": 95,
-      "preferredEngagementRange": "mid_range"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": false,
-      "gravityResistance": "1G Normal",
-      "favoredBiomes": [
-        "Urbano",
-        "Costero"
-      ],
-      "disfavoredBiomes": [
-        "Espacio Exterior",
-        "Desiertos Áridos extremos"
-      ]
-    },
-    "provenFeats": [
-      "Derrotó a tres de los Ocho Preceptos de la Muerte (Yakuza de alto nivel) simultáneamente y sin ayuda.",
-      "Soportó ataques mortales combinados de cristales, devoración de vitalidad y golpes contundentes sin rendirse.",
-      "En el arco final combinó características de decenas de animales y la energía de Nejire para crear el cañón biológico Plasma Cannon."
-    ],
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ]
-    },
-    "staminaProfile": {
-      "maxStamina": 130,
-      "recoveryRatePerTurn": 12,
-      "exhaustionThreshold": 20
-    },
-    "signatureEquipment": [
-      {
-        "name": "Alimentos Preparados (Reserva)",
-        "durability": "Consumible",
-        "effect": "Permite activar habilidades específicas de animales ingeridos."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Arco Shie Hassaikai / Incursión Yakuza",
-      "timelineRestrictions": "Desconoce eventos de la guerra final o desarrollos posteriores de la sociedad de héroes.",
-      "forbiddenConcepts": [
-        "Viajes interdimensionales",
-        "Quirks artificiales avanzados del futuro lejano"
-      ],
-      "crossVerseAwareness": "none"
-    }
-  },
-  {
-    "id": "tatsumaki-opm",
-    "name": "Tatsumaki",
-    "alias": "Tornado del Terror / Rango S Clase 2",
-    "universe": "Chainsaw Man",
-    "saga": "Saga de la Asociación de Monstruos",
-    "version": "Psicoquinesis Continental Máxima (Barrera Esférica)",
-    "tier": "Tier High 6-A a 5-C | Nivel Multicontinental a Lunar",
-    "ap": "Nivel Multicontinental. Comprimió y retorció toda la base subterránea de la Asociación de Monstruos y la ciudad Z como si fuera un trapo mojado. Levantó rocas del tamaño de islas y atrajo un meteorito del espacio profundo casualmente.",
-    "range": "Continental a Planetario (Rango Telequinético).",
-    "speed": {
-      "combat": "Subrelativista (Reacciona y desvía bombardeos de energía continental de Psykos-Orochi).",
-      "reaction": "Subrelativista.",
-      "travel": "Hipersónico Masivo+ (Vuelo telequinético).",
-      "attack": "Subrelativista."
-    },
-    "strength": "Clase Multicontinental (Vía aplastamiento psíquico).. Levantamiento: Clase E a Z (Levanta continentes y masas de tierra oceánicas con la mente).",
-    "durability": "Nivel Multicontinental con su barrera psíquica pasiva (soportó rayos cortadores de corteza terrestre).",
-    "stamina": "Alta, aunque sobrecargar su cerebro provoca hemorragias craneales.",
-    "battleIQ": "Genio del Combate Telequinético y Defensa Mental.",
-    "haxTags": [
-      "Psicoquinesis de Escala Continental",
-      "Barrera Telequinética Automática",
-      "Torsión Espacial de Materia",
-      "Vuelo Gravitacional",
-      "Extracción de Meteoritos Espaciales"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Proyectil de Escombros",
-          "desc": "Lanzamiento telequinético de rocas y estructuras a alta velocidad.",
-          "cost": 3
-        },
-        {
-          "name": "Presión Psíquica",
-          "desc": "Onda de choque mental que desestabiliza la postura del rival.",
-          "cost": 5
-        },
-        {
-          "name": "Ráfaga de Viento Telequinético",
-          "desc": "Ondas de presión mental que desestabilizan y empujan al oponente.",
-          "cost": 6,
-          "damageType": "Presión Psíquica"
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Lanza Telequinética de Rocas Comprimidas",
-          "desc": "Comprime miles de toneladas de roca y metal en jabalinas gigantes que disparan a velocidad hipersónica.",
-          "cost": "Bajo"
-        },
-        {
-          "name": "Barrera Esférica Absoluta",
-          "desc": "Genera una cúpula impenetrable que bloquea ataques destructivos continentales y aísla a aliados.",
-          "cost": "Medio"
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Torsión Geológica de la Ciudad Z",
-          "desc": "Agarra la corteza terrestre con su mente y la retuerce 360 grados como una toalla gigante, exprimiendo la vida de cualquier entidad en su interior.",
-          "cost": "Sobrecarga cerebral"
-        }
-      ],
-      "passives": [
-        {
-          "name": "Defensa Mental Inconsciente",
-          "desc": "Incluso cuando duerme o está noqueada, su barrera psíquica se activa automáticamente ante cualquier ataque entrante.",
-          "cost": "Pasivo continuo"
-        }
-      ],
-      "specialMechanics": [
-        {
-          "name": "Barra de Enfoque Psíquico",
-          "desc": "Mide la estabilidad mental del usuario; el uso excesivo de poder reduce la precisión de sus barreras."
-        },
-        {
-          "name": "Torsión de Materia",
-          "desc": "Capacidad de manipular la estructura física de los objetos para retorcerlos y fragmentarlos."
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Vulnerabilidad Cerebral por Conmoción",
-          "desc": "Si sufre daño cerebral directo o fatiga extrema por sobrecarga, su control telequinético disminuye drásticamente.",
-          "counterTags": [
-            "Daño Cerebral",
-            "Fatiga Psíquica"
-          ]
-        },
-        {
-          "name": "Arrogancia Táctica",
-          "desc": "Suele subestimar a oponentes físicamente inferiores, exponiendo puntos ciegos.",
-          "counterTags": [
-            "Distracción Psicológica",
-            "Engaño"
-          ]
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "base",
-        "name": "Estado Base (Tatsumaki Casual)",
-        "stats": "Tier 7-A a 6-C | Nivel Montaña/Isla. Desvía misiles de naves alienígenas con una mano.",
-        "apexKiMultiplier": 1,
-        "tier": "High 6-A a 5-C",
-        "staminaDrain": 0
-      },
-      {
-        "id": "serious-telekinesis",
-        "name": "Psicoquinesis Seria al 100%",
-        "stats": "Tier High 6-A | Nivel Multicontinental. Retorcimiento de la base de monstruos y barrera global.",
-        "apexKiMultiplier": 2,
-        "tier": "High 6-A a 5-C",
-        "staminaDrain": 2
-      }
-    ],
-    "feats": [
-      "Retorció toda la ciudad Z y la base subterránea de la Asociación de Monstruos en un taladro gigante.",
-      "Detuvo el bombardeo de artillería de la nave gigante de Boros y devolvió miles de proyectiles gigantes.",
-      "Luchó contra Saitama levantándolo en el aire y generando terremotos tectónicos."
-    ],
-    "weaknesses": "Vulnerabilidad cerebral por conmoción: Si sufre daño cerebral directo, su control telequinético disminuye drásticamente.",
-    "avatar": "https://image.pollinations.ai/prompt/Tatsumaki%20Tornado%20of%20Terror,%20One%20Punch%20Man,%20green%20glowing%20hair,%20floating%20green%20psychic%20aura,%20intense%20anime%20art?width=512&height=512&nologo=true",
-    "synergies": [
-      {
-        "partnerTags": [
-          "Esper",
-          "Héroe Clase S"
-        ],
-        "effect": "Aumenta la efectividad de las barreras psíquicas conjuntas en un 20%."
-      },
-      {
-        "name": "Hermanas Psíquicas",
-        "partnerTags": [
-          "Fubuki",
-          "Blizzard"
-        ],
-        "effect": "Barrera telequinética dual que desvía proyectiles en 360 grados y dispersa campos de energía.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "teamCombos": [
-      {
-        "partners": [
-          "Fubuki",
-          "Bang"
-        ],
-        "sequence": [
-          "Fubuki estabiliza el flujo de energía psíquica del entorno.",
-          "Bang desvía y neutraliza ataques físicos frontales del oponente.",
-          "Tatsumaki ejecuta una torsión telequinética masiva sobre el núcleo enemigo."
-        ],
-        "staminaCostPerParticipant": [
-          10,
-          15,
-          30
-        ],
-        "effect": "Anula las defensas del rival y desata un colapso estructural en área.",
-        "partialFailureResult": "Si la sincronización falla, Tatsumaki absorbe parte del retroceso energético.",
-        "canonStatus": "apex_custom"
-      }
-    ],
-    "transformativeMechanics": {
-      "canFuse": false,
-      "canAbsorb": false,
-      "fusionMethods": []
-    },
-    "franchise": "Chainsaw Man",
-    "continuity": "canon_main",
-    "era_or_saga": "Saga de la Asociación de Monstruos",
-    "form_or_state": "Estado Base (Tatsumaki Casual)",
-    "profile_type": "individual",
-    "canon_status": "canon_main",
-    "variant_of": null,
-    "character_family": null,
-    "source_confidence": "verified",
-    "legacy_status": "active",
-    "universe_number": null,
-    "members": null,
-    "parent_team_profile": null,
-    "team_affiliation": null,
-    "notes": "",
-    "psychology": "Combatiente disciplinado y enfocado en la consecución de sus objetivos tácticos.",
-    "legacy_data": "",
-    "powerScaling": {
-      "apexKi": 47700,
-      "apexKiFormatted": "50.800 Unidades",
-      "scouterKi": 47700,
-      "scouterKiFormatted": "50.800 Unidades",
-      "rank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
-      "isOverload": false,
-      "speedFactor": 1.35,
-      "durabilityFactor": 1,
-      "haxBiqFactor": 1.55,
-      "featsStrengthFactor": 1.35,
-      "formulaExpression": "PL_Scouter = BaseEnergy(Tier High 6-A a 5-C | Nivel Multicontinental a Lunar) × Vel(1.35x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 50.800 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
-    },
-    "entityType": "fighter",
-    "sagaOrArc": "Saga de la Asociación de Monstruos",
-    "physicalTier": "Tier High 6-A a 5-C",
-    "haxTier": "Nivel Multicontinental a Lunar",
-    "sourceMedium": "manga",
-    "haxResistances": {
-      "existenceErasure": 40,
-      "timeManipulation": 50,
-      "mindControl": 85,
-      "matterManipulation": 60,
-      "soulDamage": 30,
-      "powerNullification": 25
-    },
-    "combatAIPersonality": {
-      "aggression": 70,
-      "tacticalIQ": 90,
-      "mercyThreshold": 15,
-      "clutchFactor": 75,
-      "preferredEngagementRange": "long_range"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": true,
-      "gravityResistance": "300G",
-      "favoredBiomes": [
-        "Zonas Urbanas",
-        "Espacio Aéreo",
-        "Campos Abiertos con Objetos Telequinésicos"
-      ],
-      "disfavoredBiomes": [
-        "Vacío Absoluto sin Escombros",
-        "Dimensiones Psíquicas Nullificantes"
-      ]
-    },
-    "provenFeats": [
-      "Retorció toda la ciudad Z y la base subterránea de la Asociación de Monstruos en un taladro gigante.",
-      "Detuvo el bombardeo de artillería de la nave gigante de Boros y devolvió miles de proyectiles gigantes.",
-      "Luchó contra Saitama levantándolo en el aire y generando terremotos tectónicos."
-    ],
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ]
-    },
-    "staminaProfile": {
-      "maxStamina": 130,
-      "recoveryRatePerTurn": 9,
-      "exhaustionThreshold": 25
-    },
-    "signatureEquipment": [
-      {
-        "name": "Vestido Verde Psíquico",
-        "durability": "Continental",
-        "effect": "Atuendo estándar de combate que no interfiere con su concentración."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Saga de la Asociación de Monstruos (Post-invasión alienígena)",
-      "timelineRestrictions": "Tatsumaki aún no ha enfrentado el Vacío Mental de Saitama ni a Garou en su forma final. Tampoco conoce el despertar de Blast en su totalidad.",
-      "forbiddenConcepts": [
-        "Garou Awakened",
-        "Saitama Serious Punch sentido en todo el cosmos",
-        "Vacío Mental desbloqueado",
-        "Blaster Prime"
       ],
       "crossVerseAwareness": "none"
     }
@@ -138255,9 +136762,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 301 Unidades"
     },
     "numericStats": {
-      "apexKi": 398,
-      "scouterKi": 398,
-      "powerLevel": 398
+      "apexKi": 508,
+      "scouterKi": 508,
+      "powerLevel": 508
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -138485,9 +136992,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 206 Unidades"
     },
     "numericStats": {
-      "apexKi": 232,
-      "scouterKi": 232,
-      "powerLevel": 232
+      "apexKi": 231,
+      "scouterKi": 231,
+      "powerLevel": 231
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -138719,9 +137226,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4500000000000002x) × Forma(1x) = 734 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2330,
+      "scouterKi": 2330,
+      "powerLevel": 2330
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -138928,9 +137435,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 18.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 865,
-      "scouterKi": 865,
-      "powerLevel": 865
+      "apexKi": 798,
+      "scouterKi": 798,
+      "powerLevel": 798
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -139174,9 +137681,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 285 Unidades"
     },
     "numericStats": {
-      "apexKi": 447,
-      "scouterKi": 447,
-      "powerLevel": 447
+      "apexKi": 443,
+      "scouterKi": 443,
+      "powerLevel": 443
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -139456,9 +137963,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 891 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 2120,
+      "scouterKi": 2120,
+      "powerLevel": 2120
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -139708,9 +138215,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 2280,
+      "scouterKi": 2280,
+      "powerLevel": 2280
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -139954,9 +138461,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 285 Unidades"
     },
     "numericStats": {
-      "apexKi": 372,
-      "scouterKi": 372,
-      "powerLevel": 372
+      "apexKi": 452,
+      "scouterKi": 452,
+      "powerLevel": 452
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -140259,9 +138766,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1300 Unidades"
     },
     "numericStats": {
-      "apexKi": 3800,
-      "scouterKi": 3800,
-      "powerLevel": 3800
+      "apexKi": 4440,
+      "scouterKi": 4440,
+      "powerLevel": 4440
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Isla Ballena / Menciones a lo largo de la serie",
@@ -140584,9 +139091,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.25x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 844 Unidades"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 2260,
+      "scouterKi": 2260,
+      "powerLevel": 2260
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de las Hormigas Quimera",
@@ -140916,9 +139423,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 675 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2110,
+      "scouterKi": 2110,
+      "powerLevel": 2110
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de las Hormigas Quimera",
@@ -141265,9 +139772,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 625 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2490,
+      "scouterKi": 2490,
+      "powerLevel": 2490
     },
     "entityType": "fighter",
     "sagaOrArc": "Arena del Cielo / Muerte y Resurrección Post-Chrollo",
@@ -141552,9 +140059,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 161 Unidades"
     },
     "numericStats": {
-      "apexKi": 83,
-      "scouterKi": 83,
-      "powerLevel": 83
+      "apexKi": 108,
+      "scouterKi": 108,
+      "powerLevel": 108
     },
     "entityType": "fighter",
     "sagaOrArc": "Examen de Cazador / Yorknew / Elección del Presidente",
@@ -141883,9 +140390,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 625 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2500,
+      "scouterKi": 2500,
+      "powerLevel": 2500
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de las Hormigas Quimera",
@@ -142180,9 +140687,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 401 Unidades"
     },
     "numericStats": {
-      "apexKi": 531,
-      "scouterKi": 531,
-      "powerLevel": 531
+      "apexKi": 497,
+      "scouterKi": 497,
+      "powerLevel": 497
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -142419,9 +140926,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 633 Unidades"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 2350,
+      "scouterKi": 2350,
+      "powerLevel": 2350
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -142652,9 +141159,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 391 Unidades"
     },
     "numericStats": {
-      "apexKi": 492,
-      "scouterKi": 492,
-      "powerLevel": 492
+      "apexKi": 448,
+      "scouterKi": 448,
+      "powerLevel": 448
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -143137,9 +141644,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 34 Unidades"
     },
     "numericStats": {
-      "apexKi": 25,
-      "scouterKi": 25,
-      "powerLevel": 25
+      "apexKi": 23,
+      "scouterKi": 23,
+      "powerLevel": 23
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -143505,9 +142012,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 401 Unidades"
     },
     "numericStats": {
-      "apexKi": 370,
-      "scouterKi": 370,
-      "powerLevel": 370
+      "apexKi": 423,
+      "scouterKi": 423,
+      "powerLevel": 423
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de Yorknew / Viaje al Continente Oscuro",
@@ -143761,9 +142268,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 97,
-      "scouterKi": 97,
-      "powerLevel": 97
+      "apexKi": 90,
+      "scouterKi": 90,
+      "powerLevel": 90
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -143960,9 +142467,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 248 Unidades"
     },
     "numericStats": {
-      "apexKi": 380,
-      "scouterKi": 380,
-      "powerLevel": 380
+      "apexKi": 494,
+      "scouterKi": 494,
+      "powerLevel": 494
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -144187,9 +142694,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 34 Unidades"
     },
     "numericStats": {
-      "apexKi": 32,
-      "scouterKi": 32,
-      "powerLevel": 32
+      "apexKi": 26,
+      "scouterKi": 26,
+      "powerLevel": 26
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -144439,9 +142946,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 898 Unidades"
     },
     "numericStats": {
-      "apexKi": 2700,
-      "scouterKi": 2700,
-      "powerLevel": 2700
+      "apexKi": 2240,
+      "scouterKi": 2240,
+      "powerLevel": 2240
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -144671,9 +143178,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1400 Unidades"
     },
     "numericStats": {
-      "apexKi": 4100,
-      "scouterKi": 4100,
-      "powerLevel": 4100
+      "apexKi": 3570,
+      "scouterKi": 3570,
+      "powerLevel": 3570
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -144910,9 +143417,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4500000000000002x) × Forma(1x) = 899 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 2500,
+      "scouterKi": 2500,
+      "powerLevel": 2500
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de las Hormigas Quimera",
@@ -145180,9 +143687,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 719 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 1840,
+      "scouterKi": 1840,
+      "powerLevel": 1840
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -145604,9 +144111,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.25x) × Hax/IQ(1.7000000000000002x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 2210,
+      "scouterKi": 2210,
+      "powerLevel": 2210
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -145830,9 +144337,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 362 Unidades"
     },
     "numericStats": {
-      "apexKi": 510,
-      "scouterKi": 510,
-      "powerLevel": 510
+      "apexKi": 454,
+      "scouterKi": 454,
+      "powerLevel": 454
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -146064,9 +144571,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 140 Unidades"
     },
     "numericStats": {
-      "apexKi": 79,
-      "scouterKi": 79,
-      "powerLevel": 79
+      "apexKi": 110,
+      "scouterKi": 110,
+      "powerLevel": 110
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -146316,9 +144823,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 206 Unidades"
     },
     "numericStats": {
-      "apexKi": 228,
-      "scouterKi": 228,
-      "powerLevel": 228
+      "apexKi": 239,
+      "scouterKi": 239,
+      "powerLevel": 239
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -146551,9 +145058,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 76 Unidades"
     },
     "numericStats": {
-      "apexKi": 54,
-      "scouterKi": 54,
-      "powerLevel": 54
+      "apexKi": 48,
+      "scouterKi": 48,
+      "powerLevel": 48
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -146757,9 +145264,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 411 Unidades"
     },
     "numericStats": {
-      "apexKi": 843,
-      "scouterKi": 843,
-      "powerLevel": 843
+      "apexKi": 676,
+      "scouterKi": 676,
+      "powerLevel": 676
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -146988,9 +145495,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 891 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 1910,
+      "scouterKi": 1910,
+      "powerLevel": 1910
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -147230,9 +145737,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 127 Unidades"
     },
     "numericStats": {
-      "apexKi": 114,
-      "scouterKi": 114,
-      "powerLevel": 114
+      "apexKi": 110,
+      "scouterKi": 110,
+      "powerLevel": 110
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -147307,6 +145814,229 @@ export const INITIAL_CHARACTERS = [
       "forbiddenConcepts": [
         "Técnicas avanzadas post-mortem desconocidas",
         "Acontecimientos del Continente Oscuro"
+      ],
+      "crossVerseAwareness": "none"
+    }
+  },
+  {
+    "id": "shizuku-murasaki-hxh-yr",
+    "name": "Shizuku Murasaki",
+    "alias": "Miembro del Genei Ryodan (Araña #8)",
+    "universe": "Hunter x Hunter",
+    "saga": "Yorknew City / Arco de Sucesión",
+    "version": "Ladrona / Limpiadora de la Araña",
+    "tier": "8-B",
+    "ap": "AP físico moderado. Su fuerza pura de impacto con su aspiradora (Blinky/Deme-chan) puede aplastar el cráneo de guardias humanos u hormigas menores. Su Hax drena el 100% de la sangre de oponentes con heridas abiertas, matándolos de hipovolemia masiva en segundos.",
+    "range": "Corto/Medio (Blinky aspira cosas a pocos metros de distancia).",
+    "speed": {
+      "combat": "Supersónica+",
+      "reaction": "Supersónica+",
+      "travel": "Atlética Superior",
+      "attack": "Supersónica (Los dientes de la aspiradora muerden rapidísimo)"
+    },
+    "strength": "Nivel Edificio (Puede abollar acero con su aspiradora pesada). Levantamiento: Clase 1 a 5 Toneladas (Supera en fuerza de brazos a la mayoría del mundo, pero es de las más débiles en la Araña)",
+    "durability": "Nivel Edificio. Fue envuelta en telarañas y recibió toxinas en el cuerpo a cuerpo contra Pike, manteniéndose consciente y analítica e incluso desangrándose voluntariamente para expulsar el veneno.",
+    "stamina": "Muy Alta. No muestra fatiga emocional. Despiadada al limpiar.",
+    "battleIQ": "Luchadora altamente analítica. Olvidadiza de la vida diaria pero un genio lógico en batalla. Dedujo los puntos ciegos de Pike y usó el terreno a su favor. Utiliza a Blinky como un bloqueo irrompible.",
+    "haxTags": [
+      "Exsanguinación Rápida (Succión Letal)",
+      "Borrado/Absorción de Materia Infinita",
+      "Inmunidad a Venenos Sanguíneos (Drenaje propio)"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Cabezazo de Blinky",
+          "cost": 4,
+          "damageType": "Contundente",
+          "desc": "Golpe directo usando la base metálica de la aspiradora para romper la guardia."
+        },
+        {
+          "name": "Mordisco de Cerdas",
+          "cost": 6,
+          "damageType": "Cortante/Perforante",
+          "desc": "Ataque veloz con los dientes internos de la aspiradora para generar cortes menores propicios para el Hax."
+        },
+        {
+          "name": "Maza de Blinky",
+          "desc": "Golpes contundentes usando el extremo metálico y pesado de la aspiradora para romper huesos y abollar blindajes ligeros.",
+          "cost": "4 stamina",
+          "damageType": "Contundente"
+        },
+        {
+          "name": "Mordisco de Deme-chan",
+          "desc": "Ataque rápido con los dientes flexibles de la boquilla para generar pequeñas heridas de sangrado.",
+          "cost": "5 stamina",
+          "damageType": "Cortante/Perforante"
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Aspiradora de Campo (Blinky)",
+          "desc": "Aspira objetos, trampas enemigas, nubes de humo o toxinas, enviándolas a una dimensión de bolsillo ilimitada. (Condición: Shizuku no puede aspirar cosas vivas o cosas forjadas de aura enemiga).",
+          "cost": "Utilidad/Limpieza."
+        },
+        {
+          "name": "Autotransfusión Purificadora",
+          "desc": "Si es envenenada, le ordena a Blinky aspirar la sangre contaminada de sus propias venas para evitar parálisis.",
+          "cost": "Gasta Puntos de Vida (HP) y estamina para no sufrir Hax peores."
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Drenaje Letal: Ejecución por Desangrado",
+          "desc": "Cuando el oponente tiene una herida abierta (por pequeña que sea), Shizuku usa a Blinky para aspirar exclusivamente la sangre a través del corte. Vacía el cuerpo entero del enemigo de sangre en un instante, momificándolo vivo.",
+          "cost": "Instakill pasivo una vez que el enemigo recibe daño de Sangrado (Bleed Status)."
+        }
+      ],
+      "passives": [
+        {
+          "name": "Amnesia Selectiva",
+          "desc": "Olvida a las personas o eventos en cuanto ya no le sirven. Inmune a la manipulación emocional por remordimientos pasados, ya que no los recuerda.",
+          "cost": "Gag Psicológico."
+        }
+      ],
+      "actives": [],
+      "specialMechanics": [],
+      "weaknesses": []
+    },
+    "forms": [
+      {
+        "id": "shizuku-murasaki-hxh-yr-base",
+        "name": "Shizuku Murasaki (Estado Base)",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
+        "apexKiMultiplier": 1,
+        "tier": "8-B",
+        "staminaDrain": 0
+      }
+    ],
+    "feats": [
+      "Mató a Pike (Oficial Quimera nivel Demonio/Monstruo Gigante) aspirándole la sangre por 28 orificios que ella misma le hizo.",
+      "Aspiró y limpió en segundos un salón entero lleno de decenas de cadáveres de la mafia de Yorknew, sus armas y la sangre sin dejar rastro de ADN.",
+      "Usó el peso del cuerpo de Gon (que le ganaba en un pulso) para hacerlo perder soltando su aura de golpe, mostrando maña táctica superior a la fuerza."
+    ],
+    "psychology": "Apatía encantadora. Parece una chica tímida y despistada, pero es una asesina a sangre fría sin brújula moral, siguiendo únicamente las reglas de la Araña y Chrollo Lucilfer. Todo es 'trabajo' y no siente rabia ni lástima.",
+    "weaknesses": "No puede absorber entidades vivientes ni cosas hechas de Nen puro; por tanto, no puede devorar armas mágicas enemigas. Sus golpes a melee sin Hax no destruirán a Tiers 7 puros sin recibir daño. Mala memoria de trabajo.",
+    "synergies": [
+      {
+        "partnerTags": [
+          "Genei Ryodan",
+          "Chrollo Lucilfer"
+        ],
+        "effect": "Incrementa la eficiencia analítica y reduce el tiempo de preparación de jugadas conjuntas un 15%."
+      }
+    ],
+    "teamCombos": [
+      {
+        "partners": [
+          "Shizuku Murasaki",
+          "Feitan Portor"
+        ],
+        "sequence": [
+          "Shizuku genera múltiples heridas superficiales precisas con Blinky.",
+          "Feitan distrae al enemigo y bloquea rutas de escape con velocidad superior.",
+          "Shizuku activa Drenaje Letal instantáneamente sobre los cortes abiertos."
+        ],
+        "staminaCostPerParticipant": [
+          20,
+          25
+        ],
+        "effect": "Exsanguinación táctica fulminante en el oponente, ignorando durabilidades físicas moderadas.",
+        "partialFailureResult": "Si el enemigo esquiva el paso 3, Shizuku queda vulnerable por el retroceso de la succión interrumpida.",
+        "canonStatus": "apex_custom"
+      }
+    ],
+    "transformativeMechanics": {
+      "canFuse": false,
+      "canAbsorb": false,
+      "fusionMethods": []
+    },
+    "powerScaling": {
+      "apexKi": 67,
+      "apexKiFormatted": "67 Unidades",
+      "scouterKi": 67,
+      "scouterKiFormatted": "67 Unidades",
+      "rank": "RANGO TERRESTRE",
+      "isOverload": false,
+      "speedFactor": 1,
+      "durabilityFactor": 1,
+      "haxBiqFactor": 1.4000000000000001,
+      "featsStrengthFactor": 1.25,
+      "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 67 Unidades | Oficial DB: 67 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 214,
+      "scouterKi": 214,
+      "powerLevel": 214
+    },
+    "entityType": "fighter",
+    "continuity": "Canon Manga / Anime",
+    "sourceMedium": "manga",
+    "sagaOrArc": "Yorknew City / Arco de Sucesión",
+    "physicalTier": "8-B",
+    "haxTier": "8-B",
+    "franchise": "Hunter x Hunter",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 10,
+      "mindControl": 40,
+      "matterManipulation": 20,
+      "soulDamage": 30,
+      "powerNullification": 25
+    },
+    "combatAIPersonality": {
+      "aggression": 65,
+      "tacticalIQ": 85,
+      "mercyThreshold": 5,
+      "clutchFactor": 70,
+      "preferredEngagementRange": "close_quarters"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": false,
+      "gravityResistance": "1G Normal",
+      "favoredBiomes": [
+        "Urban",
+        "Interiores Cerrados"
+      ],
+      "disfavoredBiomes": [
+        "Espacio Exterior",
+        "Entornos Acuáticos Profundos"
+      ]
+    },
+    "provenFeats": [
+      "Mató a Pike (Oficial Quimera nivel Demonio/Monstruo Gigante) aspirándole la sangre por 28 orificios que ella misma le hizo.",
+      "Aspiró y limpió en segundos un salón entero lleno de decenas de cadáveres de la mafia de Yorknew, sus armas y la sangre sin dejar rastro de ADN.",
+      "Usó el peso del cuerpo de Gon (que le ganaba en un pulso) para hacerlo perder soltando su aura de golpe, mostrando maña táctica superior a la fuerza."
+    ],
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ]
+    },
+    "staminaProfile": {
+      "maxStamina": 100,
+      "recoveryRatePerTurn": 10,
+      "exhaustionThreshold": 15
+    },
+    "signatureEquipment": [
+      {
+        "name": "Blinky (Deme-chan)",
+        "durability": "Indestructible por ataques físicos estándar (Conjuración Nen)",
+        "effect": "Permite aspirar materia infinita no viviente y drenar sangre de heridas abiertas."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Arco de Sucesión / Yorknew City",
+      "timelineRestrictions": "Desconoce eventos futuros más allá del continente oscuro o desenlaces de otros escuadrones de la araña.",
+      "forbiddenConcepts": [
+        "Nanotecnología avanzada",
+        "Viajes dimensionales multiversales"
       ],
       "crossVerseAwareness": "none"
     }
@@ -147440,9 +146170,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 222 Unidades"
     },
     "numericStats": {
-      "apexKi": 260,
-      "scouterKi": 260,
-      "powerLevel": 260
+      "apexKi": 236,
+      "scouterKi": 236,
+      "powerLevel": 236
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -147767,9 +146497,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 775 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2000,
+      "scouterKi": 2000,
+      "powerLevel": 2000
     },
     "entityType": "duo",
     "sharedMechanics": [
@@ -148034,9 +146764,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 262 Unidades"
     },
     "numericStats": {
-      "apexKi": 210,
-      "scouterKi": 210,
-      "powerLevel": 210
+      "apexKi": 231,
+      "scouterKi": 231,
+      "powerLevel": 231
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de Yorknew / Chimera Ant",
@@ -148283,9 +147013,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 633 Unidades"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 2290,
+      "scouterKi": 2290,
+      "powerLevel": 2290
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -148523,9 +147253,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 637 Unidades"
     },
     "numericStats": {
-      "apexKi": 269,
-      "scouterKi": 269,
-      "powerLevel": 269
+      "apexKi": 283,
+      "scouterKi": 283,
+      "powerLevel": 283
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -148768,9 +147498,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 86,
-      "scouterKi": 86,
-      "powerLevel": 86
+      "apexKi": 95,
+      "scouterKi": 95,
+      "powerLevel": 95
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -148982,9 +147712,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 357 Unidades"
     },
     "numericStats": {
-      "apexKi": 104,
-      "scouterKi": 104,
-      "powerLevel": 104
+      "apexKi": 102,
+      "scouterKi": 102,
+      "powerLevel": 102
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -149184,9 +147914,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 188 Unidades"
     },
     "numericStats": {
-      "apexKi": 251,
-      "scouterKi": 251,
-      "powerLevel": 251
+      "apexKi": 268,
+      "scouterKi": 268,
+      "powerLevel": 268
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -149542,9 +148272,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 8-C Físico | Tier 2-C Hax Temporal) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 520 Unidades"
     },
     "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
+      "apexKi": 2670,
+      "scouterKi": 2670,
+      "powerLevel": 2670
     },
     "entityType": "fighter",
     "sagaOrArc": "Stardust Crusaders",
@@ -149814,9 +148544,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 8-C Físico | Tier 2-C a 2-A Nivel Multiversal (Reinicio Cósmico)) × Vel(5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 748 Unidades"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 2560,
+      "scouterKi": 2560,
+      "powerLevel": 2560
     },
     "entityType": "fighter",
     "sagaOrArc": "Stone Ocean",
@@ -150050,9 +148780,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 866 Unidades"
     },
     "numericStats": {
-      "apexKi": 503,
-      "scouterKi": 503,
-      "powerLevel": 503
+      "apexKi": 516,
+      "scouterKi": 516,
+      "powerLevel": 516
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -150283,9 +149013,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(2.8x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 490 Unidades"
     },
     "numericStats": {
-      "apexKi": 112,
-      "scouterKi": 112,
-      "powerLevel": 112
+      "apexKi": 97,
+      "scouterKi": 97,
+      "powerLevel": 97
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -150600,9 +149330,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 8-C Físico | Tier 2-C a 2-A Hax Multiversal (D4C - Love Train)) × Vel(1x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 217 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 1940,
+      "scouterKi": 1940,
+      "powerLevel": 1940
     },
     "entityType": "fighter",
     "sagaOrArc": "Steel Ball Run — arco final",
@@ -150860,9 +149590,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(2.8x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 500 Unidades"
     },
     "numericStats": {
-      "apexKi": 84,
-      "scouterKi": 84,
-      "powerLevel": 84
+      "apexKi": 83,
+      "scouterKi": 83,
+      "powerLevel": 83
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -151140,9 +149870,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 8-C Físico | Tier 2-C Hax Causal / Trascendental) × Vel(5x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 832 Unidades"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 1910,
+      "scouterKi": 1910,
+      "powerLevel": 1910
     },
     "entityType": "fighter",
     "sagaOrArc": "Vento Aureo",
@@ -151604,9 +150334,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 264 Unidades"
     },
     "numericStats": {
-      "apexKi": 231,
-      "scouterKi": 231,
-      "powerLevel": 231
+      "apexKi": 204,
+      "scouterKi": 204,
+      "powerLevel": 204
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -151851,9 +150581,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 55 Unidades"
     },
     "numericStats": {
-      "apexKi": 48,
-      "scouterKi": 48,
-      "powerLevel": 48
+      "apexKi": 44,
+      "scouterKi": 44,
+      "powerLevel": 44
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -152101,9 +150831,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 131 Unidades"
     },
     "numericStats": {
-      "apexKi": 98,
-      "scouterKi": 98,
-      "powerLevel": 98
+      "apexKi": 91,
+      "scouterKi": 91,
+      "powerLevel": 91
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -152313,9 +151043,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 501 Unidades"
     },
     "numericStats": {
-      "apexKi": 217,
-      "scouterKi": 217,
-      "powerLevel": 217
+      "apexKi": 269,
+      "scouterKi": 269,
+      "powerLevel": 269
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -152681,9 +151411,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 8-C Físico | Tier 2-C a 2-A Hax del Giro Infinito) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 473 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2530,
+      "scouterKi": 2530,
+      "powerLevel": 2530
     },
     "entityType": "fighter",
     "sagaOrArc": "Steel Ball Run (Parte 7)",
@@ -152920,9 +151650,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 688 Unidades"
     },
     "numericStats": {
-      "apexKi": 249,
-      "scouterKi": 249,
-      "powerLevel": 249
+      "apexKi": 259,
+      "scouterKi": 259,
+      "powerLevel": 259
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -153163,9 +151893,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 82,
-      "scouterKi": 82,
-      "powerLevel": 82
+      "apexKi": 79,
+      "scouterKi": 79,
+      "powerLevel": 79
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -153533,9 +152263,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 550 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2270,
+      "scouterKi": 2270,
+      "powerLevel": 2270
     },
     "entityType": "fighter",
     "sagaOrArc": "Battle Tendency",
@@ -153915,9 +152645,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 110 Unidades"
     },
     "numericStats": {
-      "apexKi": 99,
-      "scouterKi": 99,
-      "powerLevel": 99
+      "apexKi": 81,
+      "scouterKi": 81,
+      "powerLevel": 81
     },
     "entityType": "fighter",
     "sagaOrArc": "Diamond is Unbreakable",
@@ -154279,9 +153009,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 8-C Físico | Tier 2-C Hax Temporal) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 416 Unidades"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 2340,
+      "scouterKi": 2340,
+      "powerLevel": 2340
     },
     "entityType": "fighter",
     "sagaOrArc": "Stardust Crusaders / Diamond is Unbreakable / Stone Ocean",
@@ -154520,9 +153250,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 984 Unidades"
     },
     "numericStats": {
-      "apexKi": 419,
-      "scouterKi": 419,
-      "powerLevel": 419
+      "apexKi": 480,
+      "scouterKi": 480,
+      "powerLevel": 480
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -154794,9 +153524,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 8-C Físico | Tier 2-C Hax Temporal (mediante Bites the Dust)) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 125 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2410,
+      "scouterKi": 2410,
+      "powerLevel": 2410
     },
     "entityType": "fighter",
     "sagaOrArc": "Diamond is Unbreakable — arco final",
@@ -155062,9 +153792,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 36 Unidades"
     },
     "numericStats": {
-      "apexKi": 22,
-      "scouterKi": 22,
-      "powerLevel": 22
+      "apexKi": 25,
+      "scouterKi": 25,
+      "powerLevel": 25
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -155277,9 +154007,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 501 Unidades"
     },
     "numericStats": {
-      "apexKi": 235,
-      "scouterKi": 235,
-      "powerLevel": 235
+      "apexKi": 286,
+      "scouterKi": 286,
+      "powerLevel": 286
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -155494,9 +154224,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 179 Unidades"
     },
     "numericStats": {
-      "apexKi": 265,
-      "scouterKi": 265,
-      "powerLevel": 265
+      "apexKi": 207,
+      "scouterKi": 207,
+      "powerLevel": 207
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -155713,9 +154443,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 308 Unidades"
     },
     "numericStats": {
-      "apexKi": 84,
-      "scouterKi": 84,
-      "powerLevel": 84
+      "apexKi": 102,
+      "scouterKi": 102,
+      "powerLevel": 102
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -155944,9 +154674,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 36 Unidades"
     },
     "numericStats": {
-      "apexKi": 29,
-      "scouterKi": 29,
-      "powerLevel": 29
+      "apexKi": 31,
+      "scouterKi": 31,
+      "powerLevel": 31
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -156183,9 +154913,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 109,
-      "scouterKi": 109,
-      "powerLevel": 109
+      "apexKi": 107,
+      "scouterKi": 107,
+      "powerLevel": 107
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -156483,9 +155213,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 261 Unidades"
     },
     "numericStats": {
-      "apexKi": 108,
-      "scouterKi": 108,
-      "powerLevel": 108
+      "apexKi": 97,
+      "scouterKi": 97,
+      "powerLevel": 97
     },
     "entityType": "fighter",
     "physicalTier": "8-C",
@@ -156686,9 +155416,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 36 Unidades"
     },
     "numericStats": {
-      "apexKi": 29,
-      "scouterKi": 29,
-      "powerLevel": 29
+      "apexKi": 23,
+      "scouterKi": 23,
+      "powerLevel": 23
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -156891,9 +155621,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 34 Unidades"
     },
     "numericStats": {
-      "apexKi": 23,
-      "scouterKi": 23,
-      "powerLevel": 23
+      "apexKi": 27,
+      "scouterKi": 27,
+      "powerLevel": 27
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -157116,9 +155846,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 86,
-      "scouterKi": 86,
-      "powerLevel": 86
+      "apexKi": 103,
+      "scouterKi": 103,
+      "powerLevel": 103
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -157347,9 +156077,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 86,
-      "scouterKi": 86,
-      "powerLevel": 86
+      "apexKi": 102,
+      "scouterKi": 102,
+      "powerLevel": 102
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -157596,9 +156326,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 369,
-      "scouterKi": 369,
-      "powerLevel": 369
+      "apexKi": 509,
+      "scouterKi": 509,
+      "powerLevel": 509
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -157809,9 +156539,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 501 Unidades"
     },
     "numericStats": {
-      "apexKi": 217,
-      "scouterKi": 217,
-      "powerLevel": 217
+      "apexKi": 267,
+      "scouterKi": 267,
+      "powerLevel": 267
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -158049,9 +156779,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 147 Unidades"
     },
     "numericStats": {
-      "apexKi": 90,
-      "scouterKi": 90,
-      "powerLevel": 90
+      "apexKi": 103,
+      "scouterKi": 103,
+      "powerLevel": 103
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -158279,9 +157009,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 350 Unidades"
     },
     "numericStats": {
-      "apexKi": 89,
-      "scouterKi": 89,
-      "powerLevel": 89
+      "apexKi": 97,
+      "scouterKi": 97,
+      "powerLevel": 97
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -158496,9 +157226,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.35x) × Def(1.25x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 2420,
+      "scouterKi": 2420,
+      "powerLevel": 2420
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -158796,9 +157526,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.25x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1700 Unidades"
     },
     "numericStats": {
-      "apexKi": 4300,
-      "scouterKi": 4300,
-      "powerLevel": 4300
+      "apexKi": 4360,
+      "scouterKi": 4360,
+      "powerLevel": 4360
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de la Asociación de Monstruos",
@@ -159058,9 +157788,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.8x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 3000 Unidades"
     },
     "numericStats": {
-      "apexKi": 3500,
-      "scouterKi": 3500,
-      "powerLevel": 3500
+      "apexKi": 4370,
+      "scouterKi": 4370,
+      "powerLevel": 4370
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -159324,9 +158054,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 529.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 95300000000,
-      "scouterKi": 95300000000,
-      "powerLevel": 95300000000
+      "apexKi": 84600000000,
+      "scouterKi": 84600000000,
+      "powerLevel": 84600000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra de la Asociación de Monstruos / Conflicto con Dios",
@@ -159448,13 +158178,6 @@ export const INITIAL_CHARACTERS = [
         },
         {
           "id": "ce-basic-1",
-          "name": "Brazos de Ara��a Mecánicos",
-          "desc": "Golpes marciales combinados con extremidades robóticas secundarias.",
-          "cost": 4,
-          "damageType": "Contundente/Cortante"
-        },
-        {
-          "id": "ce-basic-3",
           "name": "Brazos de Araña Mecánicos",
           "desc": "Golpes marciales combinados con extremidades robóticas secundarias.",
           "cost": 4,
@@ -159614,9 +158337,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 304 Unidades"
     },
     "numericStats": {
-      "apexKi": 453,
-      "scouterKi": 453,
-      "powerLevel": 453
+      "apexKi": 532,
+      "scouterKi": 532,
+      "powerLevel": 532
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -160034,9 +158757,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 608.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 105000000000,
-      "scouterKi": 105000000000,
-      "powerLevel": 105000000000
+      "apexKi": 81000000000,
+      "scouterKi": 81000000000,
+      "powerLevel": 81000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de los Monstruos / Pelea Cósmica de Júpiter",
@@ -160280,9 +159003,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1600 Unidades"
     },
     "numericStats": {
-      "apexKi": 4800,
-      "scouterKi": 4800,
-      "powerLevel": 4800
+      "apexKi": 3370,
+      "scouterKi": 3370,
+      "powerLevel": 3370
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -160525,9 +159248,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-C) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 4000 Unidades"
     },
     "numericStats": {
-      "apexKi": 12400,
-      "scouterKi": 12400,
-      "powerLevel": 12400
+      "apexKi": 15280,
+      "scouterKi": 15280,
+      "powerLevel": 15280
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -160744,9 +159467,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1600 Unidades"
     },
     "numericStats": {
-      "apexKi": 3600,
-      "scouterKi": 3600,
-      "powerLevel": 3600
+      "apexKi": 4920,
+      "scouterKi": 4920,
+      "powerLevel": 4920
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -160966,9 +159689,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 990 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2080,
+      "scouterKi": 2080,
+      "powerLevel": 2080
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -161191,9 +159914,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 248 Unidades"
     },
     "numericStats": {
-      "apexKi": 448,
-      "scouterKi": 448,
-      "powerLevel": 448
+      "apexKi": 412,
+      "scouterKi": 412,
+      "powerLevel": 412
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -161415,9 +160138,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1800 Unidades"
     },
     "numericStats": {
-      "apexKi": 4100,
-      "scouterKi": 4100,
-      "powerLevel": 4100
+      "apexKi": 4810,
+      "scouterKi": 4810,
+      "powerLevel": 4810
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -161638,9 +160361,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 471 Unidades"
     },
     "numericStats": {
-      "apexKi": 452,
-      "scouterKi": 452,
-      "powerLevel": 452
+      "apexKi": 423,
+      "scouterKi": 423,
+      "powerLevel": 423
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -161900,9 +160623,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 565 Unidades"
     },
     "numericStats": {
-      "apexKi": 819,
-      "scouterKi": 819,
-      "powerLevel": 819
+      "apexKi": 930,
+      "scouterKi": 930,
+      "powerLevel": 930
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -162209,9 +160932,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4500000000000002x) × Forma(1x) = 2000 Unidades"
     },
     "numericStats": {
-      "apexKi": 4400,
-      "scouterKi": 4400,
-      "powerLevel": 4400
+      "apexKi": 4770,
+      "scouterKi": 4770,
+      "powerLevel": 4770
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de la Asociación de Monstruos",
@@ -162447,9 +161170,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 2000 Unidades"
     },
     "numericStats": {
-      "apexKi": 4400,
-      "scouterKi": 4400,
-      "powerLevel": 4400
+      "apexKi": 3730,
+      "scouterKi": 3730,
+      "powerLevel": 3730
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -162663,9 +161386,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 4300,
-      "scouterKi": 4300,
-      "powerLevel": 4300
+      "apexKi": 3650,
+      "scouterKi": 3650,
+      "powerLevel": 3650
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -162989,9 +161712,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(10-B) × Vel(1x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 9 Unidades"
     },
     "numericStats": {
-      "apexKi": 6,
-      "scouterKi": 6,
-      "powerLevel": 6
+      "apexKi": 5,
+      "scouterKi": 5,
+      "powerLevel": 5
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad general",
@@ -163272,9 +161995,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 253.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 104000000,
-      "scouterKi": 104000000,
-      "powerLevel": 104000000
+      "apexKi": 81100000,
+      "scouterKi": 81100000,
+      "powerLevel": 81100000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de la Invasión Alienígena",
@@ -163522,9 +162245,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 521 Unidades"
     },
     "numericStats": {
-      "apexKi": 919,
-      "scouterKi": 919,
-      "powerLevel": 919
+      "apexKi": 930,
+      "scouterKi": 930,
+      "powerLevel": 930
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -163748,9 +162471,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 2800 Unidades"
     },
     "numericStats": {
-      "apexKi": 12800,
-      "scouterKi": 12800,
-      "powerLevel": 12800
+      "apexKi": 14890,
+      "scouterKi": 14890,
+      "powerLevel": 14890
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -163930,9 +162653,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 521 Unidades"
     },
     "numericStats": {
-      "apexKi": 820,
-      "scouterKi": 820,
-      "powerLevel": 820
+      "apexKi": 931,
+      "scouterKi": 931,
+      "powerLevel": 931
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -164242,9 +162965,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 135.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 86700000,
-      "scouterKi": 86700000,
-      "powerLevel": 86700000
+      "apexKi": 99600000,
+      "scouterKi": 99600000,
+      "powerLevel": 99600000
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Asociación de Monstruos / Invasión Final",
@@ -164504,9 +163227,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4500000000000002x) × Forma(1x) = 2000 Unidades"
     },
     "numericStats": {
-      "apexKi": 4600,
-      "scouterKi": 4600,
-      "powerLevel": 4600
+      "apexKi": 4430,
+      "scouterKi": 4430,
+      "powerLevel": 4430
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -164776,9 +163499,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 405 Unidades"
     },
     "numericStats": {
-      "apexKi": 673,
-      "scouterKi": 673,
-      "powerLevel": 673
+      "apexKi": 738,
+      "scouterKi": 738,
+      "powerLevel": 738
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -165008,9 +163731,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 750 Unidades"
     },
     "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
+      "apexKi": 2080,
+      "scouterKi": 2080,
+      "powerLevel": 2080
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -165229,9 +163952,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.05x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 722 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2020,
+      "scouterKi": 2020,
+      "powerLevel": 2020
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -165602,9 +164325,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-A) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.8x) × Forma(1x) = 1.12 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 82900000000,
-      "scouterKi": 82900000000,
-      "powerLevel": 82900000000
+      "apexKi": 91400000000,
+      "scouterKi": 91400000000,
+      "powerLevel": 91400000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de los Monstruos / Combate en la Luna de Júpiter",
@@ -165837,9 +164560,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2130,
+      "scouterKi": 2130,
+      "powerLevel": 2130
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -166068,9 +164791,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1000 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 1860,
+      "scouterKi": 1860,
+      "powerLevel": 1860
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -166312,9 +165035,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 911 Unidades"
     },
     "numericStats": {
-      "apexKi": 2300,
-      "scouterKi": 2300,
-      "powerLevel": 2300
+      "apexKi": 2600,
+      "scouterKi": 2600,
+      "powerLevel": 2600
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -166554,9 +165277,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 555 Unidades"
     },
     "numericStats": {
-      "apexKi": 958,
-      "scouterKi": 958,
-      "powerLevel": 958
+      "apexKi": 897,
+      "scouterKi": 897,
+      "powerLevel": 897
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -166782,9 +165505,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 281 Unidades"
     },
     "numericStats": {
-      "apexKi": 472,
-      "scouterKi": 472,
-      "powerLevel": 472
+      "apexKi": 518,
+      "scouterKi": 518,
+      "powerLevel": 518
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -166855,6 +165578,284 @@ export const INITIAL_CHARACTERS = [
       "forbiddenConcepts": [
         "Dios (God) entidad multiversal completa",
         "Técnicas divinas posteriores"
+      ],
+      "crossVerseAwareness": "none"
+    }
+  },
+  {
+    "id": "tatsumaki-opm",
+    "name": "Tatsumaki",
+    "alias": "Tornado del Terror / Rango S Clase 2",
+    "universe": "One Punch Man",
+    "saga": "Saga de la Asociación de Monstruos",
+    "version": "Psicoquinesis Continental Máxima (Barrera Esférica)",
+    "tier": "Tier High 6-A a 5-C | Nivel Multicontinental a Lunar",
+    "ap": "Nivel Multicontinental. Comprimió y retorció toda la base subterránea de la Asociación de Monstruos y la ciudad Z como si fuera un trapo mojado. Levantó rocas del tamaño de islas y atrajo un meteorito del espacio profundo casualmente.",
+    "range": "Continental a Planetario (Rango Telequinético).",
+    "speed": {
+      "combat": "Subrelativista (Reacciona y desvía bombardeos de energía continental de Psykos-Orochi).",
+      "reaction": "Subrelativista.",
+      "travel": "Hipersónico Masivo+ (Vuelo telequinético).",
+      "attack": "Subrelativista."
+    },
+    "strength": "Clase Multicontinental (Vía aplastamiento psíquico).. Levantamiento: Clase E a Z (Levanta continentes y masas de tierra oceánicas con la mente).",
+    "durability": "Nivel Multicontinental con su barrera psíquica pasiva (soportó rayos cortadores de corteza terrestre).",
+    "stamina": "Alta, aunque sobrecargar su cerebro provoca hemorragias craneales.",
+    "battleIQ": "Genio del Combate Telequinético y Defensa Mental.",
+    "haxTags": [
+      "Psicoquinesis de Escala Continental",
+      "Barrera Telequinética Automática",
+      "Torsión Espacial de Materia",
+      "Vuelo Gravitacional",
+      "Extracción de Meteoritos Espaciales"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Proyectil de Escombros",
+          "desc": "Lanzamiento telequinético de rocas y estructuras a alta velocidad.",
+          "cost": 3
+        },
+        {
+          "name": "Presión Psíquica",
+          "desc": "Onda de choque mental que desestabiliza la postura del rival.",
+          "cost": 5
+        },
+        {
+          "name": "Ráfaga de Viento Telequinético",
+          "desc": "Ondas de presión mental que desestabilizan y empujan al oponente.",
+          "cost": 6,
+          "damageType": "Presión Psíquica"
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Lanza Telequinética de Rocas Comprimidas",
+          "desc": "Comprime miles de toneladas de roca y metal en jabalinas gigantes que disparan a velocidad hipersónica.",
+          "cost": "Bajo"
+        },
+        {
+          "name": "Barrera Esférica Absoluta",
+          "desc": "Genera una cúpula impenetrable que bloquea ataques destructivos continentales y aísla a aliados.",
+          "cost": "Medio"
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Torsión Geológica de la Ciudad Z",
+          "desc": "Agarra la corteza terrestre con su mente y la retuerce 360 grados como una toalla gigante, exprimiendo la vida de cualquier entidad en su interior.",
+          "cost": "Sobrecarga cerebral"
+        }
+      ],
+      "passives": [
+        {
+          "name": "Defensa Mental Inconsciente",
+          "desc": "Incluso cuando duerme o está noqueada, su barrera psíquica se activa automáticamente ante cualquier ataque entrante.",
+          "cost": "Pasivo continuo"
+        }
+      ],
+      "specialMechanics": [
+        {
+          "name": "Barra de Enfoque Psíquico",
+          "desc": "Mide la estabilidad mental del usuario; el uso excesivo de poder reduce la precisión de sus barreras."
+        },
+        {
+          "name": "Torsión de Materia",
+          "desc": "Capacidad de manipular la estructura física de los objetos para retorcerlos y fragmentarlos."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Vulnerabilidad Cerebral por Conmoción",
+          "desc": "Si sufre daño cerebral directo o fatiga extrema por sobrecarga, su control telequinético disminuye drásticamente.",
+          "counterTags": [
+            "Daño Cerebral",
+            "Fatiga Psíquica"
+          ]
+        },
+        {
+          "name": "Arrogancia Táctica",
+          "desc": "Suele subestimar a oponentes físicamente inferiores, exponiendo puntos ciegos.",
+          "counterTags": [
+            "Distracción Psicológica",
+            "Engaño"
+          ]
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Estado Base (Tatsumaki Casual)",
+        "stats": "Tier 7-A a 6-C | Nivel Montaña/Isla. Desvía misiles de naves alienígenas con una mano.",
+        "apexKiMultiplier": 1,
+        "tier": "High 6-A a 5-C",
+        "staminaDrain": 0
+      },
+      {
+        "id": "serious-telekinesis",
+        "name": "Psicoquinesis Seria al 100%",
+        "stats": "Tier High 6-A | Nivel Multicontinental. Retorcimiento de la base de monstruos y barrera global.",
+        "apexKiMultiplier": 2,
+        "tier": "High 6-A a 5-C",
+        "staminaDrain": 2
+      }
+    ],
+    "feats": [
+      "Retorció toda la ciudad Z y la base subterránea de la Asociación de Monstruos en un taladro gigante.",
+      "Detuvo el bombardeo de artillería de la nave gigante de Boros y devolvió miles de proyectiles gigantes.",
+      "Luchó contra Saitama levantándolo en el aire y generando terremotos tectónicos."
+    ],
+    "weaknesses": "Vulnerabilidad cerebral por conmoción: Si sufre daño cerebral directo, su control telequinético disminuye drásticamente.",
+    "avatar": "https://image.pollinations.ai/prompt/Tatsumaki%20Tornado%20of%20Terror,%20One%20Punch%20Man,%20green%20glowing%20hair,%20floating%20green%20psychic%20aura,%20intense%20anime%20art?width=512&height=512&nologo=true",
+    "synergies": [
+      {
+        "partnerTags": [
+          "Esper",
+          "Héroe Clase S"
+        ],
+        "effect": "Aumenta la efectividad de las barreras psíquicas conjuntas en un 20%."
+      },
+      {
+        "name": "Hermanas Psíquicas",
+        "partnerTags": [
+          "Fubuki",
+          "Blizzard"
+        ],
+        "effect": "Barrera telequinética dual que desvía proyectiles en 360 grados y dispersa campos de energía.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "teamCombos": [
+      {
+        "partners": [
+          "Fubuki",
+          "Bang"
+        ],
+        "sequence": [
+          "Fubuki estabiliza el flujo de energía psíquica del entorno.",
+          "Bang desvía y neutraliza ataques físicos frontales del oponente.",
+          "Tatsumaki ejecuta una torsión telequinética masiva sobre el núcleo enemigo."
+        ],
+        "staminaCostPerParticipant": [
+          10,
+          15,
+          30
+        ],
+        "effect": "Anula las defensas del rival y desata un colapso estructural en área.",
+        "partialFailureResult": "Si la sincronización falla, Tatsumaki absorbe parte del retroceso energético.",
+        "canonStatus": "apex_custom"
+      }
+    ],
+    "transformativeMechanics": {
+      "canFuse": false,
+      "canAbsorb": false,
+      "fusionMethods": []
+    },
+    "franchise": "One Punch Man",
+    "continuity": "canon_main",
+    "era_or_saga": "Saga de la Asociación de Monstruos",
+    "form_or_state": "Estado Base (Tatsumaki Casual)",
+    "profile_type": "individual",
+    "canon_status": "canon_main",
+    "variant_of": null,
+    "character_family": null,
+    "source_confidence": "verified",
+    "legacy_status": "active",
+    "universe_number": null,
+    "members": null,
+    "parent_team_profile": null,
+    "team_affiliation": null,
+    "notes": "",
+    "psychology": "Combatiente disciplinado y enfocado en la consecución de sus objetivos tácticos.",
+    "legacy_data": "",
+    "powerScaling": {
+      "apexKi": 47700,
+      "apexKiFormatted": "50.800 Unidades",
+      "scouterKi": 47700,
+      "scouterKiFormatted": "50.800 Unidades",
+      "rank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
+      "isOverload": false,
+      "speedFactor": 1.35,
+      "durabilityFactor": 1,
+      "haxBiqFactor": 1.55,
+      "featsStrengthFactor": 1.35,
+      "formulaExpression": "PL_Scouter = BaseEnergy(Tier High 6-A a 5-C | Nivel Multicontinental a Lunar) × Vel(1.35x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 50.800 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 2000,
+      "scouterKi": 2000,
+      "powerLevel": 2000
+    },
+    "entityType": "fighter",
+    "sagaOrArc": "Saga de la Asociación de Monstruos",
+    "physicalTier": "Tier High 6-A a 5-C",
+    "haxTier": "Nivel Multicontinental a Lunar",
+    "sourceMedium": "manga",
+    "haxResistances": {
+      "existenceErasure": 40,
+      "timeManipulation": 50,
+      "mindControl": 85,
+      "matterManipulation": 60,
+      "soulDamage": 30,
+      "powerNullification": 25
+    },
+    "combatAIPersonality": {
+      "aggression": 70,
+      "tacticalIQ": 90,
+      "mercyThreshold": 15,
+      "clutchFactor": 75,
+      "preferredEngagementRange": "long_range"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": true,
+      "gravityResistance": "300G",
+      "favoredBiomes": [
+        "Zonas Urbanas",
+        "Espacio Aéreo",
+        "Campos Abiertos con Objetos Telequinésicos"
+      ],
+      "disfavoredBiomes": [
+        "Vacío Absoluto sin Escombros",
+        "Dimensiones Psíquicas Nullificantes"
+      ]
+    },
+    "provenFeats": [
+      "Retorció toda la ciudad Z y la base subterránea de la Asociación de Monstruos en un taladro gigante.",
+      "Detuvo el bombardeo de artillería de la nave gigante de Boros y devolvió miles de proyectiles gigantes.",
+      "Luchó contra Saitama levantándolo en el aire y generando terremotos tectónicos."
+    ],
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ]
+    },
+    "staminaProfile": {
+      "maxStamina": 130,
+      "recoveryRatePerTurn": 9,
+      "exhaustionThreshold": 25
+    },
+    "signatureEquipment": [
+      {
+        "name": "Vestido Verde Psíquico",
+        "durability": "Continental",
+        "effect": "Atuendo estándar de combate que no interfiere con su concentración."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Saga de la Asociación de Monstruos (Post-invasión alienígena)",
+      "timelineRestrictions": "Tatsumaki aún no ha enfrentado el Vacío Mental de Saitama ni a Garou en su forma final. Tampoco conoce el despertar de Blast en su totalidad.",
+      "forbiddenConcepts": [
+        "Garou Awakened",
+        "Saitama Serious Punch sentido en todo el cosmos",
+        "Vacío Mental desbloqueado",
+        "Blaster Prime"
       ],
       "crossVerseAwareness": "none"
     }
@@ -167015,9 +166016,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 2000 Unidades"
     },
     "numericStats": {
-      "apexKi": 3600,
-      "scouterKi": 3600,
-      "powerLevel": 3600
+      "apexKi": 3800,
+      "scouterKi": 3800,
+      "powerLevel": 3800
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -167244,9 +166245,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 325 Unidades"
     },
     "numericStats": {
-      "apexKi": 461,
-      "scouterKi": 461,
-      "powerLevel": 461
+      "apexKi": 445,
+      "scouterKi": 445,
+      "powerLevel": 445
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -167647,9 +166648,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier High 6-A | Nivel Multicontinental) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 22.300 Unidades"
     },
     "numericStats": {
-      "apexKi": 191000,
-      "scouterKi": 191000,
-      "powerLevel": 191000
+      "apexKi": 139000,
+      "scouterKi": 139000,
+      "powerLevel": 139000
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Guerra Final de Héroes vs Villanos",
@@ -167923,9 +166924,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-A) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 20.900 Unidades"
     },
     "numericStats": {
-      "apexKi": 87000,
-      "scouterKi": 87000,
-      "powerLevel": 87000
+      "apexKi": 98630,
+      "scouterKi": 98630,
+      "powerLevel": 98630
     },
     "entityType": "fighter",
     "sagaOrArc": "Era Dorada / Batalla Legendaria contra All For One",
@@ -168160,9 +167161,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4500000000000002x) × Forma(1x) = 471 Unidades"
     },
     "numericStats": {
-      "apexKi": 839,
-      "scouterKi": 839,
-      "powerLevel": 839
+      "apexKi": 802,
+      "scouterKi": 802,
+      "powerLevel": 802
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -168395,9 +167396,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 578 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2080,
+      "scouterKi": 2080,
+      "powerLevel": 2080
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -168695,9 +167696,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier High 6-A | Nivel Multicontinental) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 11.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 191000,
-      "scouterKi": 191000,
-      "powerLevel": 191000
+      "apexKi": 157000,
+      "scouterKi": 157000,
+      "powerLevel": 157000
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra de Paranormales / Arco Final",
@@ -168968,9 +167969,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 285 Unidades"
     },
     "numericStats": {
-      "apexKi": 441,
-      "scouterKi": 441,
-      "powerLevel": 441
+      "apexKi": 512,
+      "scouterKi": 512,
+      "powerLevel": 512
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -169276,9 +168277,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 2100 Unidades"
     },
     "numericStats": {
-      "apexKi": 4300,
-      "scouterKi": 4300,
-      "powerLevel": 4300
+      "apexKi": 3440,
+      "scouterKi": 3440,
+      "powerLevel": 3440
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra de Liberación Paranormal / Guerra Final",
@@ -169525,9 +168526,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 331 Unidades"
     },
     "numericStats": {
-      "apexKi": 488,
-      "scouterKi": 488,
-      "powerLevel": 488
+      "apexKi": 371,
+      "scouterKi": 371,
+      "powerLevel": 371
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -169777,9 +168778,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 364 Unidades"
     },
     "numericStats": {
-      "apexKi": 430,
-      "scouterKi": 430,
-      "powerLevel": 430
+      "apexKi": 506,
+      "scouterKi": 506,
+      "powerLevel": 506
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -170002,9 +169003,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 507,
-      "scouterKi": 507,
-      "powerLevel": 507
+      "apexKi": 532,
+      "scouterKi": 532,
+      "powerLevel": 532
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -170246,9 +169247,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 114,
-      "scouterKi": 114,
-      "powerLevel": 114
+      "apexKi": 77,
+      "scouterKi": 77,
+      "powerLevel": 77
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -170472,9 +169473,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 579 Unidades"
     },
     "numericStats": {
-      "apexKi": 669,
-      "scouterKi": 669,
-      "powerLevel": 669
+      "apexKi": 797,
+      "scouterKi": 797,
+      "powerLevel": 797
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -170775,9 +169776,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier High 6-A | Nivel Multicontinental) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 15.800 Unidades"
     },
     "numericStats": {
-      "apexKi": 180000,
-      "scouterKi": 180000,
-      "powerLevel": 180000
+      "apexKi": 166900,
+      "scouterKi": 166900,
+      "powerLevel": 166900
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Guerra de Paranormales / Arco Final",
@@ -171014,9 +170015,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 281 Unidades"
     },
     "numericStats": {
-      "apexKi": 387,
-      "scouterKi": 387,
-      "powerLevel": 387
+      "apexKi": 371,
+      "scouterKi": 371,
+      "powerLevel": 371
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -171438,9 +170439,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier High 6-A a 5-C | Nivel Multicontinental a Lunar Pequeño) × Vel(1.35x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 50.800 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 1920,
+      "scouterKi": 1920,
+      "powerLevel": 1920
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra Final / Arco del Héroe Oscuro",
@@ -171670,9 +170671,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 435,
-      "scouterKi": 435,
-      "powerLevel": 435
+      "apexKi": 521,
+      "scouterKi": 521,
+      "powerLevel": 521
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -171973,9 +170974,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 2300 Unidades"
     },
     "numericStats": {
-      "apexKi": 4100,
-      "scouterKi": 4100,
-      "powerLevel": 4100
+      "apexKi": 4020,
+      "scouterKi": 4020,
+      "powerLevel": 4020
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra Final / Arco de Shigaraki All For One",
@@ -172213,9 +171214,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 213 Unidades"
     },
     "numericStats": {
-      "apexKi": 235,
-      "scouterKi": 235,
-      "powerLevel": 235
+      "apexKi": 282,
+      "scouterKi": 282,
+      "powerLevel": 282
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -172681,9 +171682,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 203 Unidades"
     },
     "numericStats": {
-      "apexKi": 206,
-      "scouterKi": 206,
-      "powerLevel": 206
+      "apexKi": 270,
+      "scouterKi": 270,
+      "powerLevel": 270
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -172930,9 +171931,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1.4x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 441 Unidades"
     },
     "numericStats": {
-      "apexKi": 437,
-      "scouterKi": 437,
-      "powerLevel": 437
+      "apexKi": 448,
+      "scouterKi": 448,
+      "powerLevel": 448
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -173128,9 +172129,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 467 Unidades"
     },
     "numericStats": {
-      "apexKi": 833,
-      "scouterKi": 833,
-      "powerLevel": 833
+      "apexKi": 840,
+      "scouterKi": 840,
+      "powerLevel": 840
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -173360,9 +172361,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 267 Unidades"
     },
     "numericStats": {
-      "apexKi": 485,
-      "scouterKi": 485,
-      "powerLevel": 485
+      "apexKi": 421,
+      "scouterKi": 421,
+      "powerLevel": 421
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -173566,9 +172567,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 281 Unidades"
     },
     "numericStats": {
-      "apexKi": 428,
-      "scouterKi": 428,
-      "powerLevel": 428
+      "apexKi": 389,
+      "scouterKi": 389,
+      "powerLevel": 389
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -173768,9 +172769,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 248 Unidades"
     },
     "numericStats": {
-      "apexKi": 494,
-      "scouterKi": 494,
-      "powerLevel": 494
+      "apexKi": 517,
+      "scouterKi": 517,
+      "powerLevel": 517
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -173996,9 +172997,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 3900,
-      "scouterKi": 3900,
-      "powerLevel": 3900
+      "apexKi": 4850,
+      "scouterKi": 4850,
+      "powerLevel": 4850
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -174247,9 +173248,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 523,
-      "scouterKi": 523,
-      "powerLevel": 523
+      "apexKi": 377,
+      "scouterKi": 377,
+      "powerLevel": 377
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -174465,9 +173466,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 516,
-      "scouterKi": 516,
-      "powerLevel": 516
+      "apexKi": 386,
+      "scouterKi": 386,
+      "powerLevel": 386
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -174741,9 +173742,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 578 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2100,
+      "scouterKi": 2100,
+      "powerLevel": 2100
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -174800,6 +173801,454 @@ export const INITIAL_CHARACTERS = [
       "maxStamina": 140,
       "recoveryRatePerTurn": 12,
       "exhaustionThreshold": 25
+    }
+  },
+  {
+    "id": "shigaraki-tomura-mha",
+    "name": "Shigaraki Tomura",
+    "alias": "El Símbolo del Terror / Sucesor de All For One",
+    "universe": "My Hero Academia",
+    "saga": "Guerra Final / Despertar Apex",
+    "version": "Cuerpo Perfecto + All For One Despertado",
+    "tier": "Tier High 6-A a 5-C | Nivel Multicontinental a Lunar Pequeño",
+    "ap": "Nivel Multicontinental. Su 'Decay' (Deterioro) despierto no requiere tocar el objetivo directamente: se propaga en cadena por el suelo desintegrando ciudades enteras y cordilleras en segundos.",
+    "range": "Kilómetros a Continental (Propagación de Deterioro).",
+    "speed": {
+      "combat": "Subrelativista (A la par del 100% de Deku).",
+      "reaction": "Subrelativista (Múltiples Quirks sensoriales y ondas de radio).",
+      "travel": "Hipersónico Masivo+.",
+      "attack": "Subrelativista."
+    },
+    "strength": "Clase Multicontinental (Fuerza física comparable a All Might Prime sin Quirks activos).. Levantamiento: Clase G a T.",
+    "durability": "Nivel Multicontinental + Hiper-Regeneración Celular Inmediata (Sobrevive a misiles crucero y láseres nucleares intercontinentales).",
+    "stamina": "Inagotable por modificaciones biológicas del Dr. Garaki.",
+    "battleIQ": "Genio del Caos / Conciencia combinada con All For One.",
+    "haxTags": [
+      "Deterioro Despertado (Decay en Cadena)",
+      "All For One (Robo y Uso de Múltiples Quirks)",
+      "Hiper-Regeneración Instantánea",
+      "Reflejo de Impacto y Cañones de Aire",
+      "Mutación de Dedos y Extremidades Fisiológicas",
+      "Borrado/Desintegración Molecular Zonal (Decay Despertado)",
+      "Súper Regeneración Biológica",
+      "Arsenal de Quirks Múltiples (AFO Menor)",
+      "Robo de Habilidades (AFO Touch)"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Decay Claw Slash",
+          "desc": "Zarpazo con dedos mutados que inicia el proceso de desintegración al contacto.",
+          "cost": "3 stamina"
+        },
+        {
+          "name": "Air Cannon Blast",
+          "desc": "Ondas de choque de presión media lanzadas desde la palma.",
+          "cost": "5 stamina"
+        },
+        {
+          "name": "Decaying Claw Strike",
+          "desc": "Zarpazo con dedos mutados que inicia el proceso de desintegración al contacto superficial.",
+          "cost": 4
+        },
+        {
+          "name": "Air Pressure Blast",
+          "desc": "Ondas de choque cortas generadas por la presión de sus manos y extremidades reforzadas.",
+          "cost": 6
+        },
+        {
+          "name": "Garras Mutadas Multifase",
+          "cost": 7,
+          "damageType": "cortante/desintegración",
+          "desc": "Ataque conjunto de garras físicas y Decay simultáneo para saturar defensas."
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Decay Cataclísmico (Propagación Telúrica)",
+          "desc": "Toca el suelo y desintegra todo a nivel molecular en un radio de decenas de kilómetros en cadena continua.",
+          "cost": "Bajo"
+        },
+        {
+          "name": "Cañón de Aire Pesado + Cañón de Remaches",
+          "desc": "Dispara ráfagas combinadas de presión capaces de atravesar búnkeres anti-atómicos.",
+          "cost": "Mínimo"
+        },
+        {
+          "name": "Robo Forzado de Quirks",
+          "cost": 15,
+          "damageType": "hax",
+          "desc": "Al contacto, desactiva y roba un Quirk del rival por tiempo indefinido.",
+          "counterplay": "Mantener distancia; Quirks no robables (mutaciones)."
+        },
+        {
+          "name": "Búsqueda (Search) + Transmisión de Quirks",
+          "desc": "Conoce la ubicación de miles de personas a la vez (Stealth es inútil). Dispara combos de Quirks elementales para inmovilizar al enemigo desde lejos.",
+          "cost": "Uso pasivo del kit de AFO."
+        },
+        {
+          "name": "Robo de Quirk (All For One)",
+          "desc": "Agarra la cara del rival e intenta extraer su poder, dejándolo en estado base inútil temporal o permanentemente si no escapan a tiempo.",
+          "cost": "Requires Grapple Check CQC."
+        },
+        {
+          "name": "Radio Waves",
+          "desc": "Emite ondas de radio de alta frecuencia para perturbar los sentidos y sistemas de comunicación enemigos.",
+          "cost": 20,
+          "chargeTime": "0.2 segundos",
+          "counterplay": "Blindaje electromagnético o evasión fuera del cono de emisión."
+        },
+        {
+          "name": "Search & Quirk Transmission",
+          "desc": "Localiza puntos débiles y objetivos prioritarios en un radio masivo, combinando ataques de proyectiles elementales.",
+          "cost": 25,
+          "chargeTime": "Instantáneo",
+          "counterplay": "Invisibilidad conceptual o alteración de firma térmica/biológica."
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Apex Decay: Fin de la Civilización",
+          "desc": "Libera una ola de desintegración omnidireccional potenciada con ondas electromagnéticas que reduce todo el campo de batalla a polvo atómico.",
+          "cost": "Carga de energía All For One"
+        },
+        {
+          "name": "Onda de Decay Continent Apex",
+          "cost": 50,
+          "condition": "Despertar Apex total.",
+          "damageType": "desintegración continental",
+          "desc": "Propagación del Decay a escala continental que desintegra cualquier materia sólida o biológica en segundos.",
+          "counterplay": "Anulación del Quirk antes del estallido; héroes con regeneración superior."
+        }
+      ],
+      "passives": [
+        {
+          "name": "Hiper-Regeneración Automática de Tejidos",
+          "desc": "Regenera extremidades amputadas, órganos quemados y heridas mortales en fracciones de segundo mientras no sea dañado a nivel celular total.",
+          "cost": "Pasivo continuo"
+        },
+        {
+          "name": "Conciencia Colectiva AFO",
+          "desc": "Resistencia pasiva a ataques mentales y alteración de percepciones gracias a la fusión de voluntades.",
+          "cost": 0
+        },
+        {
+          "name": "Inmunidad a la Piel",
+          "desc": "Su epidermis regenerada lo hace inmune al daño convencional de bajo calibre.",
+          "cost": "Pasivo",
+          "staminaDrain": 0
+        }
+      ],
+      "specialMechanics": [
+        {
+          "name": "Robo de Quirks All For One",
+          "desc": "Capacidad latente para desestabilizar y robar habilidades de oponentes mediante contacto prolongado."
+        },
+        {
+          "name": "Despertar del Quirk (Decay Apex)",
+          "desc": "El Decay evoluciona de requerir 5 dedos a extenderse sin contacto directo.",
+          "cost": "Despertar único del usuario"
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Anulación de Quirks (Erasure) / Destrucción del Núcleo",
+          "desc": "Vulnerable a la pérdida temporal de su regeneración si se anulan sus quirks o si su cabeza es destruida por completo de un golpe.",
+          "counterTags": [
+            "erasure",
+            "brain_destruction"
+          ]
+        },
+        {
+          "name": "Conciencia Fragmentada",
+          "desc": "El conflicto entre Tomura y All For One puede desestabilizar sus poderes en momentos críticos.",
+          "counterTags": [
+            "mental_attack",
+            "psychological_pressure"
+          ]
+        },
+        {
+          "name": "Tasa Regenerativa con Techo",
+          "desc": "Si el daño celular es mayor a la tasa de regeneración, colapsa.",
+          "counterTags": [
+            "cellular_destruction",
+            "apex_damage"
+          ]
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Forma Base (Deterioro Inicial)",
+        "stats": "Tier 8-B a 7-C | Nivel Ciudad. Requiere tocar con los 5 dedos para desintegrar.",
+        "apexKiMultiplier": 1,
+        "tier": "High 6-A a 5-C",
+        "staminaDrain": 0
+      },
+      {
+        "id": "awakened-decay",
+        "name": "Deterioro Despertado (Saga Ejército de Liberación)",
+        "stats": "Tier 7-A a 6-C | Nivel Isla. Propagación en cadena masiva sin contacto directo.",
+        "apexKiMultiplier": 1.3,
+        "staminaDrain": 8,
+        "canonStatus": "source_backed",
+        "activationCondition": "Primera activación instintiva del Decay expandido en Deika.",
+        "grantedTags": [
+          "Decay en Cadena",
+          "Dedos mutados"
+        ],
+        "suppressedTags": [
+          "Forma humana estándar"
+        ],
+        "grantedAbilities": [
+          "Decay Cataclísmico",
+          "Decay Telúrico"
+        ],
+        "limitations": "Pierde control sobre la dirección del Decay.",
+        "exitCondition": "Fatiga mental o intervención de AFO interno.",
+        "counterplay": "Evasión a rango orbital; anticipar la cadena.",
+        "tier": "High 6-A a 5-C"
+      },
+      {
+        "id": "apex-all-for-one",
+        "name": "Cuerpo Perfecto Apex (All For One Fusionado)",
+        "stats": "Tier High 6-A | Nivel Multicontinental. Hiper-regeneración y fuerza física de All Might Prime.",
+        "apexKiMultiplier": 2,
+        "staminaDrain": 25,
+        "canonStatus": "source_backed",
+        "activationCondition": "Fusión total con All For One y Cuerpo Perfecto del Dr. Garaki.",
+        "grantedTags": [
+          "Hiper-Regeneración",
+          "AFO Despertado",
+          "Decay Apex",
+          "Múltiples Quirks"
+        ],
+        "suppressedTags": [
+          "Tomura sin AFO",
+          "Forma humana estándar"
+        ],
+        "grantedAbilities": [
+          "Apex Decay",
+          "Cañón de Aire Pesado",
+          "Reflejo de Impacto"
+        ],
+        "limitations": "La regeneración falla ante destrucción celular total concentrada.",
+        "exitCondition": "Anulación de Quirks o destrucción de la cabeza con energía concentrada.",
+        "counterplay": "Erasure, ataque celular preciso al cerebro, o energía superior a la tasa regenerativa.",
+        "drawbacks": [
+          "Pérdida de identidad entre Tomura y All For One"
+        ],
+        "tier": "High 6-A a 5-C"
+      }
+    ],
+    "feats": [
+      "Desintegró la ciudad de Deika por completo en segundos durante su despertar.",
+      "Sobrevivió al ataque combinado de misiles nucleares 'Tiamat' de Star and Stripe.",
+      "Soportó los golpes al 120% del One For All de Deku regenerándose al instante.",
+      "Borró del mapa el Hospital Jaku y la tercera parte de una metrópolis de un solo toque al suelo, asesinando héroes Top como Crust en milisegundos.",
+      "Luchó simultáneamente contra Endeavor (Nº1), Ryukyu, Eraserhead, Gran Torino, Izuku Midoriya (100% OFA), y Bakugo, sin su Quirk principal activado, usando solo fuerza bruta y regeneración.",
+      "Sobrevivió un ataque suicida Prominence Burn directo y un impacto celestial de Tiers pesados demostrando ser el pináculo físico de la humanidad moderna del verso."
+    ],
+    "weaknesses": "Ataques que destruyan su cabeza y células más rápido que su tasa de regeneración o la anulación de Quirks (Erasure).",
+    "avatar": "https://image.pollinations.ai/prompt/Shigaraki%20Tomura%20final%20form,%20white%20hair,%20decay%20energy%20cracking%20ground,%20red%20eyes,%20villainous%20masterpiece?width=512&height=512&nologo=true",
+    "synergies": [
+      {
+        "partnerTags": [
+          "nomu_high_end",
+          "league_of_villains"
+        ],
+        "effect": "Incrementa la velocidad de regeneración en un 10% mediante respaldo táctico."
+      },
+      {
+        "name": "Legado del Mal",
+        "partnerTags": [
+          "Nomu",
+          "Villano Supremo"
+        ],
+        "effect": "Incrementa la eficiencia de la hiper-regeneración en un 10% en presencia de subordinados de alto rango."
+      },
+      {
+        "name": "Legado de All For One",
+        "partnerTags": [
+          "nomu_high_end",
+          "league_of_villains"
+        ],
+        "effect": "Incrementa la velocidad de regeneración en un 10% mediante respaldo táctico.",
+        "canonStatus": "source_backed"
+      },
+      {
+        "name": "Resonancia con AFO",
+        "partnerTags": [
+          "all_for_one_espíritu"
+        ],
+        "effect": "Permite heredar Quirks adicionales durante el combate si AFO se lo concede.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "teamCombos": [
+      {
+        "partners": [
+          "Gigantomachia"
+        ],
+        "sequence": [
+          "Gigantomachia irrumpe rompiendo las defensas frontales del enemigo.",
+          "Shigaraki aprovecha el cráter para activar el Decay Cataclísmico en cadena.",
+          "Ambos ejecutan una carga combinada que arrasa con el sector completo."
+        ],
+        "staminaCostPerParticipant": {
+          "Shigaraki Tomura": 20,
+          "Gigantomachia": 30
+        },
+        "effect": "Elimina por completo el terreno circundante y desestabiliza las defensas enemigas con daño sísmico y molecular simultáneo.",
+        "partialFailureResult": "Si Gigantomachia es detenido antes del impacto, la propagación del Decay se reduce a la mitad.",
+        "canonStatus": "source_backed"
+      },
+      {
+        "name": "Asalto Gigantomachia-Shigaraki",
+        "partners": [
+          "Gigantomachia"
+        ],
+        "sequence": [
+          "Gigantomachia irrumpe rompiendo las defensas frontales del enemigo con su carga continental.",
+          "Shigaraki aprovecha el cráter para activar el Decay Cataclísmico en cadena sobre los cimientos expuestos.",
+          "Ambos ejecutan una carga combinada que arrasa con el sector completo, mezclando fuerza bruta y desintegración."
+        ],
+        "staminaCostPerParticipant": {
+          "Shigaraki Tomura": 20,
+          "Gigantomachia": 30
+        },
+        "effect": "Elimina por completo el terreno circundante y desestabiliza las defensas enemigas con daño sísmico y molecular simultáneo.",
+        "partialFailureResult": "Si Gigantomachia es detenido antes del impacto, la propagación del Decay se reduce a la mitad.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "transformativeMechanics": {
+      "canFuse": false,
+      "canAbsorb": false,
+      "fusionMethods": []
+    },
+    "franchise": "My Hero Academia",
+    "continuity": "canon_main",
+    "era_or_saga": "Guerra Final / Despertar Apex",
+    "form_or_state": "Forma Base (Deterioro Inicial)",
+    "profile_type": "individual",
+    "canon_status": "canon_main",
+    "variant_of": null,
+    "character_family": null,
+    "source_confidence": "verified",
+    "legacy_status": "active",
+    "universe_number": null,
+    "members": null,
+    "parent_team_profile": null,
+    "team_affiliation": null,
+    "notes": "",
+    "psychology": "Combatiente disciplinado y enfocado en la consecución de sus objetivos tácticos.",
+    "legacy_data": "",
+    "powerScaling": {
+      "apexKi": 81300,
+      "apexKiFormatted": "63.600 Unidades",
+      "scouterKi": 81300,
+      "scouterKiFormatted": "63.600 Unidades",
+      "rank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
+      "isOverload": false,
+      "speedFactor": 1.35,
+      "durabilityFactor": 1.25,
+      "haxBiqFactor": 1.55,
+      "featsStrengthFactor": 1.35,
+      "formulaExpression": "PL_Scouter = BaseEnergy(Tier High 6-A a 5-C | Nivel Multicontinental a Lunar Pequeño) × Vel(1.35x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 63.600 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 2580,
+      "scouterKi": 2580,
+      "powerLevel": 2580
+    },
+    "entityType": "fighter",
+    "sagaOrArc": "Guerra Final / Despertar Apex",
+    "physicalTier": "Tier High 6-A a 5-C",
+    "haxTier": "Nivel Multicontinental a Lunar Pequeño",
+    "sourceMedium": "manga",
+    "haxResistances": {
+      "existenceErasure": 25,
+      "timeManipulation": 15,
+      "mindControl": 65,
+      "matterManipulation": 30,
+      "soulDamage": 40,
+      "powerNullification": 5
+    },
+    "combatAIPersonality": {
+      "aggression": 95,
+      "tacticalIQ": 70,
+      "mercyThreshold": 5,
+      "clutchFactor": 85,
+      "preferredEngagementRange": "mid_range"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": false,
+      "gravityResistance": "30G",
+      "favoredBiomes": [
+        "Zonas urbanas",
+        "Campos de batalla extensos"
+      ],
+      "disfavoredBiomes": [
+        "Vacío espacial",
+        "Zonas de anulación de Quirks"
+      ]
+    },
+    "provenFeats": [
+      "Desintegró la ciudad de Deika por completo en segundos durante su despertar.",
+      "Sobrevivió al ataque combinado de misiles nucleares 'Tiamat' de Star and Stripe.",
+      "Soportó los golpes al 120% del One For All de Deku regenerándose al instante.",
+      "Borró del mapa el Hospital Jaku y la tercera parte de una metrópolis de un solo toque al suelo, asesinando héroes Top como Crust en milisegundos.",
+      "Luchó simultáneamente contra Endeavor (Nº1), Ryukyu, Eraserhead, Gran Torino, Izuku Midoriya (100% OFA), y Bakugo, sin su Quirk principal activado, usando solo fuerza bruta y regeneración.",
+      "Sobrevivió un ataque suicida Prominence Burn directo y un impacto celestial de Tiers pesados demostrando ser el pináculo físico de la humanidad moderna del verso."
+    ],
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ]
+    },
+    "staminaProfile": {
+      "maxStamina": 180,
+      "recoveryRatePerTurn": 12,
+      "exhaustionThreshold": 20
+    },
+    "signatureEquipment": [
+      {
+        "name": "Cuerpo Perfecto (Modificaciones Dr. Garaki)",
+        "durability": "alto; regenera casi todo",
+        "effect": "Base de la hiper-regeneración y resistencia celular."
+      },
+      {
+        "name": "All For One (Conciencia Fusionada)",
+        "durability": "inestable",
+        "effect": "Permite el robo de Quirks y acceso a arsenal variado."
+      },
+      {
+        "name": "Manos Mutadas del Decay",
+        "durability": "constante",
+        "effect": "Cinco dedos que inician el Decay; evolucionan a Decay sin contacto."
+      },
+      {
+        "name": "Cuerpo Perfecto",
+        "durability": "Muy alta",
+        "effect": "Base de hiper-regeneración."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Guerra Final (MHA)",
+      "timelineRestrictions": "Desconoce eventos posteriores al capítulo 431.",
+      "forbiddenConcepts": [
+        "Eventos post-431",
+        "Universos alternos"
+      ],
+      "crossVerseAwareness": "none"
     }
   },
   {
@@ -174951,9 +174400,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 147 Unidades"
     },
     "numericStats": {
-      "apexKi": 81,
-      "scouterKi": 81,
-      "powerLevel": 81
+      "apexKi": 110,
+      "scouterKi": 110,
+      "powerLevel": 110
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -175248,9 +174697,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 2300 Unidades"
     },
     "numericStats": {
-      "apexKi": 4100,
-      "scouterKi": 4100,
-      "powerLevel": 4100
+      "apexKi": 4860,
+      "scouterKi": 4860,
+      "powerLevel": 4860
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra Final / Arco de Dabi",
@@ -175491,9 +174940,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 179 Unidades"
     },
     "numericStats": {
-      "apexKi": 251,
-      "scouterKi": 251,
-      "powerLevel": 251
+      "apexKi": 204,
+      "scouterKi": 204,
+      "powerLevel": 204
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -175727,9 +175176,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 295 Unidades"
     },
     "numericStats": {
-      "apexKi": 402,
-      "scouterKi": 402,
-      "powerLevel": 402
+      "apexKi": 462,
+      "scouterKi": 462,
+      "powerLevel": 462
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -175954,9 +175403,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 140 Unidades"
     },
     "numericStats": {
-      "apexKi": 106,
-      "scouterKi": 106,
-      "powerLevel": 106
+      "apexKi": 101,
+      "scouterKi": 101,
+      "powerLevel": 101
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -176172,9 +175621,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(High 6-A | Nivel Multicontinental) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 18.200 Unidades"
     },
     "numericStats": {
-      "apexKi": 141000,
-      "scouterKi": 141000,
-      "powerLevel": 141000
+      "apexKi": 198700,
+      "scouterKi": 198700,
+      "powerLevel": 198700
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -176249,6 +175698,243 @@ export const INITIAL_CHARACTERS = [
       "forbiddenConcepts": [
         "Derrota total de Shigaraki a manos de los estudiantes",
         "Quirks evolucionados del futuro lejano"
+      ],
+      "crossVerseAwareness": "none"
+    }
+  },
+  {
+    "id": "tamaki-amajiki-mha-shie",
+    "name": "Tamaki Amajiki",
+    "alias": "Suneater",
+    "universe": "My Hero Academia",
+    "saga": "Shie Hassaikai",
+    "version": "Los Tres Grandes de la UA",
+    "tier": "8-A",
+    "ap": "AP sumamente versátil. Sus impactos contundentes usando brazos de pulpo, tenazas de cangrejo o caparazones endurecidos le permiten abrumar a múltiples oponentes de nivel Bloque simultáneamente y romper armas de acero.",
+    "range": "Corto a Medio (Puede extender extremidades orgánicas decenas de metros).",
+    "speed": {
+      "combat": "Supersónico+",
+      "reaction": "Supersónico+",
+      "travel": "Atlético a Supersónico (Alas/Propulsión de moluscos)",
+      "attack": "Supersónico+"
+    },
+    "strength": "Nivel Multi-Bloque. Levantamiento: Clase 1 a 5 Toneladas (Variable según el animal)",
+    "durability": "Nivel Multi-Bloque. Puede recubrir su piel con conchas de almeja o caparazones de tortuga ultra-densos, deteniendo espadas y balas sin recibir daño letal.",
+    "stamina": "Muy Alta. Sin embargo, su capacidad depende de su digestión; si agota los nutrientes del animal consumido, pierde esa habilidad temporalmente.",
+    "battleIQ": "Táctico intuitivo de primer nivel. Es capaz de mezclar características biológicas de hasta tres animales distintos en un segundo para crear combinaciones ofensivo-defensivas perfectas.",
+    "haxTags": [
+      "Quimerismo Biológico / Adaptación Activa",
+      "Armadura Orgánica",
+      "Secreción de Toxinas (Opcional)"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Golpe de Caparazón",
+          "desc": "Puñetazo recubierto de placas de tortuga o crustáceo.",
+          "cost": "4 stamina",
+          "type": "contundente"
+        },
+        {
+          "name": "Latigazo de Tentáculo",
+          "desc": "Ataque flexible con extremidades de pulpo para desestabilizar.",
+          "cost": "5 stamina",
+          "type": "contundente"
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Manifiesto: Brazos de Pulpo",
+          "desc": "Transforma sus dedos en enormes tentáculos que atrapan, estrangulan y lanzan enemigos múltiples a la vez.",
+          "cost": "Coste biológico bajo."
+        },
+        {
+          "name": "Manifiesto: Centauro/Quimera",
+          "desc": "Transmuta sus piernas en pezuñas de toro para patear, y crea alas para maniobrabilidad aérea.",
+          "cost": "Coste estándar de digestión."
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Quimera Kraken (Vast Hybrid)",
+          "desc": "Despliega una monstruosa amalgama de tentáculos, conchas gigantes, y garras de crustáceo simultáneamente. Barre una zona urbana completa aplastando a todos los enemigos en el área.",
+          "cost": "Alto desgaste de Stamina. Requiere haber consumido mucha variedad de alimentos antes del combate."
+        }
+      ],
+      "passives": [
+        {
+          "name": "Resiliencia de Quimera",
+          "desc": "Adaptación tisular instantánea para mitigar impactos físicos distribuyendo el daño a través de múltiples capas biológicas."
+        }
+      ],
+      "actives": [],
+      "specialMechanics": [
+        {
+          "name": "Reserva Nutricional",
+          "desc": "Mide la disponibilidad de recursos biológicos consumidos. Si la reserva llega a cero, las manifestaciones avanzadas fallan."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Dependencia Dietética",
+          "counterTag": "Agotamiento de Recursos",
+          "desc": "Si no ha consumido alimentos específicos antes del combate, su abanico táctico se reduce drásticamente."
+        },
+        {
+          "name": "Ansiedad Social Paralizante",
+          "counterTag": "Manipulación Psicológica",
+          "desc": "Bajo presión mental extrema sin apoyo moral, puede dudar en sus decisiones iniciales."
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "tamaki-amajiki-mha-shie-base",
+        "name": "Tamaki Amajiki (Estado Base)",
+        "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
+        "apexKiMultiplier": 1,
+        "tier": "8-A",
+        "staminaDrain": 0
+      }
+    ],
+    "feats": [
+      "Derrotó a tres de los Ocho Preceptos de la Muerte (Yakuza de alto nivel) simultáneamente y sin ayuda.",
+      "Soportó ataques mortales combinados de cristales, devoración de vitalidad y golpes contundentes sin rendirse.",
+      "En el arco final combinó características de decenas de animales y la energía de Nejire para crear el cañón biológico Plasma Cannon."
+    ],
+    "psychology": "Sufre de ansiedad social extrema, timidez paralizante y depresión. Siempre quiere huir y se siente inferior. Sin embargo, en combate, su devoción por Mirio (su sol) lo transforma en un guerrero implacable que no retrocede ante la muerte.",
+    "weaknesses": "Total dependencia de la alimentación previa (Si no comió nada orgánico útil, no puede manifestar nada). Ansiedad que puede ralentizar sus primeras decisiones. Magia de fuego/calor deshidrata rápidamente sus manifestaciones oceánicas.",
+    "synergies": [
+      {
+        "name": "Los Tres Grandes",
+        "partnerTags": [
+          "Mirio Togata",
+          "Nejire Hado"
+        ],
+        "effect": "Al estar junto a sus compañeros, su 'Moral' salta al 100%, volviéndose inmune a la intimidación y reduciendo el coste de sus técnicas biológicas a la mitad."
+      },
+      {
+        "partnerTags": [
+          "Mirio Togata",
+          "Nejire Hado"
+        ],
+        "effect": "Al estar junto a sus compañeros, su 'Moral' salta al 100%, volviéndose inmune a la intimidación y reduciendo el coste de sus técnicas biológicas a la mitad."
+      }
+    ],
+    "teamCombos": [
+      {
+        "partners": [
+          "Mirio Togata",
+          "Nejire Hado"
+        ],
+        "sequence": [
+          "Mirio distrae e inmoviliza al rival atravesando sus defensas.",
+          "Tamaki canaliza su quimera masiva para bloquear rutas de escape y desatar tentáculos.",
+          "Nejire remata con una descarga espiral masiva de ondas de choque."
+        ],
+        "staminaCostPerParticipant": [
+          25,
+          30,
+          35
+        ],
+        "effect": "Colapso total del área de combate y aniquilación del objetivo principal con daño multi-vectorial.",
+        "partialFailureResult": "Si Mirio falla la distracción, Tamaki recibe el impacto directo y se interrumpe la sincronización.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "transformativeMechanics": {
+      "canFuse": false,
+      "canAbsorb": true,
+      "fusionMethods": [
+        "Absorción pasiva por ingesta de materiales biológicos del mapa."
+      ]
+    },
+    "powerScaling": {
+      "apexKi": 260,
+      "apexKiFormatted": "260 Unidades",
+      "scouterKi": 260,
+      "scouterKiFormatted": "260 Unidades",
+      "rank": "RANGO TERRESTRE",
+      "isOverload": false,
+      "speedFactor": 1.05,
+      "durabilityFactor": 1,
+      "haxBiqFactor": 1.1,
+      "featsStrengthFactor": 1.25,
+      "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 367,
+      "scouterKi": 367,
+      "powerLevel": 367
+    },
+    "entityType": "fighter",
+    "continuity": "Canon Manga / Anime",
+    "sourceMedium": "manga",
+    "sagaOrArc": "Shie Hassaikai",
+    "physicalTier": "8-A",
+    "haxTier": "8-A",
+    "franchise": "My Hero Academia",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 20,
+      "matterManipulation": 15,
+      "soulDamage": 10,
+      "powerNullification": 30
+    },
+    "combatAIPersonality": {
+      "aggression": 60,
+      "tacticalIQ": 90,
+      "mercyThreshold": 40,
+      "clutchFactor": 95,
+      "preferredEngagementRange": "mid_range"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": false,
+      "gravityResistance": "1G Normal",
+      "favoredBiomes": [
+        "Urbano",
+        "Costero"
+      ],
+      "disfavoredBiomes": [
+        "Espacio Exterior",
+        "Desiertos Áridos extremos"
+      ]
+    },
+    "provenFeats": [
+      "Derrotó a tres de los Ocho Preceptos de la Muerte (Yakuza de alto nivel) simultáneamente y sin ayuda.",
+      "Soportó ataques mortales combinados de cristales, devoración de vitalidad y golpes contundentes sin rendirse.",
+      "En el arco final combinó características de decenas de animales y la energía de Nejire para crear el cañón biológico Plasma Cannon."
+    ],
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ]
+    },
+    "staminaProfile": {
+      "maxStamina": 130,
+      "recoveryRatePerTurn": 12,
+      "exhaustionThreshold": 20
+    },
+    "signatureEquipment": [
+      {
+        "name": "Alimentos Preparados (Reserva)",
+        "durability": "Consumible",
+        "effect": "Permite activar habilidades específicas de animales ingeridos."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Arco Shie Hassaikai / Incursión Yakuza",
+      "timelineRestrictions": "Desconoce eventos de la guerra final o desarrollos posteriores de la sociedad de héroes.",
+      "forbiddenConcepts": [
+        "Viajes interdimensionales",
+        "Quirks artificiales avanzados del futuro lejano"
       ],
       "crossVerseAwareness": "none"
     }
@@ -176408,9 +176094,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 281 Unidades"
     },
     "numericStats": {
-      "apexKi": 398,
-      "scouterKi": 398,
-      "powerLevel": 398
+      "apexKi": 380,
+      "scouterKi": 380,
+      "powerLevel": 380
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -176480,6 +176166,308 @@ export const INITIAL_CHARACTERS = [
       "forbiddenConcepts": [
         "Quirks Singularity Doom definitivo post-guerra",
         "Sucesos del epílogo a largo plazo"
+      ],
+      "crossVerseAwareness": "none"
+    }
+  },
+  {
+    "id": "baki-hanma-baki",
+    "name": "Baki Hanma",
+    "alias": "El Campeón del Domo Subterráneo / El Hijo del Ogro",
+    "universe": "Baki the Grappler",
+    "saga": "Son of Ogre / Padre contra Hijo",
+    "version": "Demon Back + Demon Brain",
+    "tier": "8-A",
+    "ap": "Nivel Ciudad. Luchó de igual a igual contra Yujiro Hanma en la 'Pelea de Padre e Hijo más Grande del Mundo', intercambiando cientos de golpes a velocidad de mach y rompiendo el concreto blindado con pura técnica imaginaria.",
+    "range": "Cuerpo a cuerpo estándar.",
+    "speed": {
+      "combat": "Hipersónico (Mach 10 - 30+). Conecta el golpe de 0.5 segundos antes de que el cerebro del rival envíe la señal a los músculos.",
+      "reaction": "Hipersónico.",
+      "travel": "Supersónico+.",
+      "attack": "Hipersónico."
+    },
+    "strength": "Clase Ciudad (Derrumba paredes de búnker y noquea animales prehistóricos).. Levantamiento: Clase 100 a K.",
+    "durability": "Nivel Ciudad. Soportó ser arrojado desde un rascacielos y cientos de golpes a plena potencia de Yujiro.",
+    "stamina": "Monstruosa: Pelea durante horas con huesos fracturados y hemorragias internas sin perder el ritmo.",
+    "battleIQ": "Genio de la Lucha Pragmática y las Artes Marciales Mixtas.",
+    "haxTags": [
+      "Demon Back (Espalda del Demonio)",
+      "Demon Brain (Cerebro del Demonio)",
+      "Ataque del 0.5 Segundo (Inconsciencia Motora)",
+      "Puño Triceratops (Estilo Imaginario)",
+      "Gota de Cockroach Dash (Aceleración de Cucaracha Mach 3)",
+      "motor_consciousness_gap",
+      "imaginary_manifestation"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Combinación MMA",
+          "cost": 3,
+          "desc": "Serie rápida de jabs, ganchos al hígado y patadas bajas calibradas."
+        },
+        {
+          "name": "Codazo al Mentón",
+          "cost": 4,
+          "desc": "Impacto corto y seco con el codo para cortar la ceja o desestabilizar."
+        },
+        {
+          "name": "Llave de Sumisión Articular",
+          "cost": 6,
+          "desc": "Palanca de brazo aplicada con precisión milimétrica para hiperextender articulaciones."
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Cockroach Dash (Aceleración Instantánea)",
+          "desc": "Relaja todo su cuerpo como un fluido imitando a una cucaracha, alcanzando velocidad Mach 3 instantáneamente desde reposo total.",
+          "cost": "Bajo"
+        },
+        {
+          "name": "Inconsciencia de 0.5 Segundos",
+          "desc": "Ataca en la ventana biológica donde el cerebro del oponente procesa la intención de moverse, volviendo el ataque físicamente inevitable.",
+          "cost": "Timing perfecto"
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Puño Triceratops + Demon Back",
+          "desc": "Canaliza la postura y masa imaginaria de un dinosaurio de 10 toneladas impulsado por su espalda del demonio, embistiendo al rival con fuerza devastadora.",
+          "cost": "Máximo enfoque físico"
+        }
+      ],
+      "passives": [
+        {
+          "name": "Endorfina de Combate Extrema",
+          "desc": "Libera endorfinas en su cerebro ante el dolor extremo, anulando el sufrimiento y agudizando sus reflejos al 200%.",
+          "cost": "Pasivo continuo"
+        },
+        {
+          "name": "Imaginación Materializada",
+          "desc": "Capacidad de proyectar oponentes y criaturas imaginarias tan reales que provocan daño físico real en su propio cuerpo para entrenar.",
+          "cost": "Pasivo continuo"
+        },
+        {
+          "name": "Regeneración Endorfínica",
+          "desc": "Liberación endorfínica masiva al recibir daño, anulando el sufrimiento y acelerando levemente la sanación natural.",
+          "grantedTags": [
+            "pain_suppression",
+            "combat_high"
+          ]
+        }
+      ],
+      "specialMechanics": [
+        {
+          "name": "Demon Brain Synchronization",
+          "desc": "Sintonización total entre sistema nervioso y masa muscular para calcular trayectorias de combate perfectas."
+        },
+        {
+          "name": "Imaginación Materializada",
+          "desc": "Crea armas y animales imaginarios (como dinosaurios o mantis religiosas gigantes) con efectos físicos reales sobre su cuerpo y el entorno."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Masa Muscular Humana Estándar",
+          "desc": "Puede ser dañado por armas cortantes directas o golpes de seres con AP masivamente superior si no logra disipar el impacto.",
+          "counterTags": [
+            "Blade Mastery",
+            "Overwhelming AP"
+          ]
+        },
+        {
+          "name": "Masa Muscular Estándar",
+          "desc": "Aunque es extremadamente resistente, su estructura ósea y muscular sigue siendo humana, vulnerable a ataques cortantes extremos.",
+          "counterTag": "piercing_vulnerability"
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Estado Base (El Campeón Técnico)",
+        "stats": "Tier 8-A a 7-C | Nivel Manzana a Pueblo. Combina artes marciales híbridas.",
+        "apexKiMultiplier": 1,
+        "tier": "8-A",
+        "staminaDrain": 0
+      },
+      {
+        "id": "demon-back",
+        "name": "Espalda del Demonio Despertada",
+        "stats": "Tier 7-B | Nivel Ciudad. Desbloquea la sangre Hanma para rivalizar con el Ogro.",
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "staminaDrain": 0
+      }
+    ],
+    "feats": [
+      "Derrotó a Pickle, el humano prehistórico gigante que cazaba tiranosaurios rex.",
+      "Llevó a Yujiro Hanma a una pelea a muerte hasta ser reconocido como el número uno.",
+      "Ejecutó el Cockroach Dash noqueando a Oliva en su propia prisión."
+    ],
+    "weaknesses": "Masa muscular humana estándar: Puede ser dañado por armas cortantes directas o golpes de seres con AP masivamente superior.",
+    "avatar": "https://image.pollinations.ai/prompt/Baki%20Hanma,%20scars%20on%20face,%20demon%20back%20aura,%20intense%20fighting%20stance,%20masterpiece%20anime%20art?width=512&height=512&nologo=true",
+    "synergies": [
+      {
+        "name": "Lucha del Linaje Hanma",
+        "partnerTags": [
+          "Yujiro Hanma",
+          "Jack Hanma"
+        ],
+        "effect": "Resonancia genética Hanma que permite coordinar ataques en perfecta sincronía marcial.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "teamCombos": [
+      {
+        "partners": [
+          "Yujiro Hanma"
+        ],
+        "sequence": [
+          "Yujiro inmoviliza al objetivo agarrándolo de ambos brazos.",
+          "Baki acelera con Cockroach Dash hacia el blanco.",
+          "Impacto conjunto con el Puño Triceratops."
+        ],
+        "staminaCostPerParticipant": [
+          35,
+          30
+        ],
+        "effect": "Destrucción total del blanco con daño masivo interno y externo.",
+        "partialFailureResult": "Interrupción del agarre inicial cancela el combo y fuerza a combate individual.",
+        "canonStatus": "apex_custom"
+      },
+      {
+        "id": "hanma-pater-filii-impact",
+        "name": "Impacto Paterno-Filial",
+        "partners": [
+          "yujiro-hanma-baki",
+          "baki-hanma-baki"
+        ],
+        "sequence": [
+          "Apertura/Inmovilización: Yujiro inmoviliza al objetivo agarrándolo de ambos brazos.",
+          "Canalización/Apoyo: Baki acelera con Cockroach Dash hacia el blanco para tomar impulso.",
+          "Remate Definitivo: Impacto conjunto con el Puño Triceratops."
+        ],
+        "staminaCostPerParticipant": [
+          35,
+          30
+        ],
+        "effect": "Destrucción total del blanco con daño masivo interno y externo.",
+        "partialFailureResult": "Interrupción del agarre inicial cancela el combo y fuerza a combate individual.",
+        "canonStatus": "apex_custom"
+      }
+    ],
+    "transformativeMechanics": {
+      "canFuse": false,
+      "canAbsorb": false,
+      "fusionMethods": []
+    },
+    "franchise": "Baki the Grappler",
+    "continuity": "canon_main",
+    "era_or_saga": "Son of Ogre / Padre contra Hijo",
+    "form_or_state": "Estado Base (El Campeón Técnico)",
+    "profile_type": "individual",
+    "canon_status": "canon_main",
+    "variant_of": null,
+    "character_family": null,
+    "source_confidence": "verified",
+    "legacy_status": "active",
+    "universe_number": null,
+    "members": null,
+    "parent_team_profile": null,
+    "team_affiliation": null,
+    "notes": "",
+    "psychology": "Combatiente disciplinado y enfocado en la consecución de sus objetivos tácticos.",
+    "legacy_data": "",
+    "powerScaling": {
+      "apexKi": 2400,
+      "apexKiFormatted": "963 Unidades",
+      "scouterKi": 2400,
+      "scouterKiFormatted": "963 Unidades",
+      "rank": "RANGO TERRESTRE",
+      "isOverload": false,
+      "speedFactor": 1.15,
+      "durabilityFactor": 1,
+      "haxBiqFactor": 1.55,
+      "featsStrengthFactor": 1.35,
+      "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 963 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 477,
+      "scouterKi": 477,
+      "powerLevel": 477
+    },
+    "entityType": "fighter",
+    "sagaOrArc": "Son of Ogre / Padre contra Hijo",
+    "physicalTier": "8-A",
+    "haxTier": "7-B",
+    "sourceMedium": "manga",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 20,
+      "matterManipulation": 0,
+      "soulDamage": 5,
+      "powerNullification": 0
+    },
+    "combatAIPersonality": {
+      "aggression": 90,
+      "tacticalIQ": 95,
+      "mercyThreshold": 10,
+      "clutchFactor": 100,
+      "preferredEngagementRange": "close_quarters"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": false,
+      "gravityResistance": "10G",
+      "favoredBiomes": [
+        "Ring de combate",
+        "Anfiteatro subterráneo",
+        "Zona urbana"
+      ],
+      "disfavoredBiomes": [
+        "Vacío espacial",
+        "Vacío espiritual"
+      ]
+    },
+    "provenFeats": [
+      "Derrotó a Pickle, el humano prehistórico gigante que cazaba tiranosaurios rex.",
+      "Llevó a Yujiro Hanma a una pelea a muerte hasta ser reconocido como el número uno.",
+      "Ejecutó el Cockroach Dash noqueando a Oliva en su propia prisión."
+    ],
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ]
+    },
+    "staminaProfile": {
+      "maxStamina": 180,
+      "recoveryRatePerTurn": 12,
+      "exhaustionThreshold": 25
+    },
+    "signatureEquipment": [
+      {
+        "name": "Pantalones de Combate MMA",
+        "durability": "low",
+        "effect": "Sin protección significativa; máxima movilidad."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Son of Ogre / Padre contra Hijo",
+      "timelineRestrictions": "Baki solo conoce eventos hasta el enfrentamiento final con su padre Yujiro. No tiene acceso al multiverso ni a universos ajenos.",
+      "forbiddenConcepts": [
+        "Toji Fushiguro",
+        "Hollow Purple",
+        "Sukuna",
+        "Energía Maldita",
+        "Jujutsu Kaisen",
+        "Multiverso"
       ],
       "crossVerseAwareness": "none"
     }
@@ -176648,9 +176636,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 18.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 470,
-      "scouterKi": 470,
-      "powerLevel": 470
+      "apexKi": 371,
+      "scouterKi": 371,
+      "powerLevel": 371
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -176735,7 +176723,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Baki the Grappler",
     "saga": "Torneo de Artes Marciales Máximas (Saga Original)",
     "version": "Estado de combate completo, incluyendo su técnica de la Palma de Hierro",
-    "tier": "7-B",
+    "tier": "8-B",
     "ap": "Su golpe de karate es capaz de generar ondas de choque destructivas equivalentes a explosiones controladas, considerado uno de los golpeadores más fuertes de toda la serie sin necesidad de biomecánica anormal.",
     "range": "Cuerpo a cuerpo, con ondas de choque generadas por impacto que se extienden más allá del punto de contacto directo.",
     "speed": {
@@ -176871,7 +176859,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Doppo Orochi (Estado Base)",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "7-B",
+        "tier": "8-B",
         "stats": "Forma Base canónica de Doppo Orochi previo a cualquier transformación."
       },
       {
@@ -176981,13 +176969,13 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 700 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 242,
+      "scouterKi": 242,
+      "powerLevel": 242
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo de Artes Marciales Máximas (Saga Original)",
-    "physicalTier": "7-B",
+    "physicalTier": "8-B",
     "haxTier": "7-B",
     "sourceMedium": "manga",
     "haxResistances": {
@@ -177168,9 +177156,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 239 Unidades"
     },
     "numericStats": {
-      "apexKi": 214,
-      "scouterKi": 214,
-      "powerLevel": 214
+      "apexKi": 198,
+      "scouterKi": 198,
+      "powerLevel": 198
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -177374,9 +177362,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 113,
-      "scouterKi": 113,
-      "powerLevel": 113
+      "apexKi": 100,
+      "scouterKi": 100,
+      "powerLevel": 100
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -177623,9 +177611,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 95,
-      "scouterKi": 95,
-      "powerLevel": 95
+      "apexKi": 80,
+      "scouterKi": 80,
+      "powerLevel": 80
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -177869,9 +177857,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 125 Unidades"
     },
     "numericStats": {
-      "apexKi": 111,
-      "scouterKi": 111,
-      "powerLevel": 111
+      "apexKi": 103,
+      "scouterKi": 103,
+      "powerLevel": 103
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -178161,9 +178149,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 626 Unidades"
     },
     "numericStats": {
-      "apexKi": 650,
-      "scouterKi": 650,
-      "powerLevel": 650
+      "apexKi": 838,
+      "scouterKi": 838,
+      "powerLevel": 838
     },
     "entityType": "fighter",
     "sagaOrArc": "Baki Dou (2018) / Guerra de Mordidas",
@@ -178400,9 +178388,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 188 Unidades"
     },
     "numericStats": {
-      "apexKi": 202,
-      "scouterKi": 202,
-      "powerLevel": 202
+      "apexKi": 255,
+      "scouterKi": 255,
+      "powerLevel": 255
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -178638,9 +178626,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 127 Unidades"
     },
     "numericStats": {
-      "apexKi": 87,
-      "scouterKi": 87,
-      "powerLevel": 87
+      "apexKi": 91,
+      "scouterKi": 91,
+      "powerLevel": 91
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -178949,9 +178937,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 406 Unidades"
     },
     "numericStats": {
-      "apexKi": 703,
-      "scouterKi": 703,
-      "powerLevel": 703
+      "apexKi": 853,
+      "scouterKi": 853,
+      "powerLevel": 853
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo de Artes Marciales Máximas / Saga de la Cárcel",
@@ -179170,9 +179158,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 89,
-      "scouterKi": 89,
-      "powerLevel": 89
+      "apexKi": 90,
+      "scouterKi": 90,
+      "powerLevel": 90
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -179397,9 +179385,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 147 Unidades"
     },
     "numericStats": {
-      "apexKi": 96,
-      "scouterKi": 96,
-      "powerLevel": 96
+      "apexKi": 105,
+      "scouterKi": 105,
+      "powerLevel": 105
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -179615,9 +179603,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 107,
-      "scouterKi": 107,
-      "powerLevel": 107
+      "apexKi": 78,
+      "scouterKi": 78,
+      "powerLevel": 78
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -179701,7 +179689,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Baki the Grappler",
     "saga": "Saga de Musashi",
     "version": "Reencarnación completa mediante regeneración celular a partir de restos históricos",
-    "tier": "7-B",
+    "tier": "8-A",
     "ap": "Considerado el mejor espadachín de la historia de Japón, reencarnado con plena consciencia y habilidad histórica intacta; su técnica de espada es capaz de cortar objetivos a velocidades imperceptibles para combatientes de tier inferior.",
     "range": "Cuerpo a cuerpo extendido con katana; su percepción de combate excede el rango de contacto directo.",
     "speed": {
@@ -179815,7 +179803,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Musashi Miyamoto (Reencarnado) (Estado Base)",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "7-B",
+        "tier": "8-A",
         "stats": "Forma Base canónica de Musashi Miyamoto (Reencarnado) previo a cualquier transformación."
       },
       {
@@ -179922,13 +179910,13 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.7000000000000002x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 986 Unidades"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 382,
+      "scouterKi": 382,
+      "powerLevel": 382
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Musashi",
-    "physicalTier": "7-B",
+    "physicalTier": "8-A",
     "haxTier": "7-B",
     "sourceMedium": "manga",
     "haxResistances": {
@@ -180021,7 +180009,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Baki the Grappler",
     "saga": "Baki Dou (2018)",
     "version": "Heredero de Sukuna",
-    "tier": "7-B",
+    "tier": "8-B",
     "ap": "AP de Grappling y Fuerza Bruta Masiva. Su fuerza física está al nivel de Yujiro o Pickle. Una bofetada lanza a hombres de 100 kg a volar como muñecos; un agarre suyo rompe diamantes, columnas y cajas torácicas de Titanes con facilidad biológica.",
     "range": "Combate de Rango Cerrado Exclusivo.",
     "speed": {
@@ -180107,7 +180095,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Nomi no Sukune II (Estado Base)",
         "stats": "Capacidades de combate activas al 100% de su rendimiento físico y técnico en estado base.",
         "apexKiMultiplier": 1,
-        "tier": "7-B",
+        "tier": "8-B",
         "staminaDrain": 0
       }
     ],
@@ -180166,15 +180154,15 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.05x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 919 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 275,
+      "scouterKi": 275,
+      "powerLevel": 275
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
     "sourceMedium": "manga",
     "sagaOrArc": "Baki Dou (2018)",
-    "physicalTier": "7-B",
+    "physicalTier": "8-B",
     "haxTier": "7-B",
     "franchise": "Baki the Grappler",
     "haxResistances": {
@@ -180251,7 +180239,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Baki the Grappler",
     "saga": "Saga de Pickle / Son of Ogre",
     "version": "Forma Primitiva Cuadrúpeda (Despertar del Depredador)",
-    "tier": "7-B",
+    "tier": "8-A",
     "ap": "Nivel Ciudad. Cazaba y devoraba T-Rex con sus propias manos en la era jurásica. Su fuerza física pura obligó a Yujiro Hanma a utilizar una técnica de artes marciales en lugar de chocar de frente.",
     "range": "Cuerpo a cuerpo estándar.",
     "speed": {
@@ -180361,7 +180349,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Estado Base (El Cavernícola Gigante)",
         "stats": "Tier 7-B | Nivel Ciudad. Fuerza bruta suficiente para forzar a Yujiro a usar técnica.",
         "apexKiMultiplier": 1,
-        "tier": "7-B",
+        "tier": "8-A",
         "staminaDrain": 0
       },
       {
@@ -180443,13 +180431,13 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 891 Unidades"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 367,
+      "scouterKi": 367,
+      "powerLevel": 367
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de Pickle / Son of Ogre",
-    "physicalTier": "7-B",
+    "physicalTier": "8-A",
     "haxTier": "7-B",
     "sourceMedium": "manga",
     "haxResistances": {
@@ -180540,7 +180528,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Baki the Grappler",
     "saga": "Torneo de Artes Marciales Máximas",
     "version": "Estado de combate completo con Anagumo Ken (Puño de la Araña)",
-    "tier": "7-B",
+    "tier": "8-B",
     "ap": "Maestro del combate interno chino, capaz de generar daño interno devastador mediante golpes que parecen suaves pero destruyen órganos y huesos desde dentro.",
     "range": "Cuerpo a cuerpo, con daño de propagación interna tras el contacto inicial.",
     "speed": {
@@ -180680,7 +180668,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Base",
         "stats": "Tier 7-B | Nivel Ciudad",
         "apexKiMultiplier": 1,
-        "tier": "7-B",
+        "tier": "8-B",
         "staminaDrain": 0
       }
     ],
@@ -180756,13 +180744,13 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 625 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 249,
+      "scouterKi": 249,
+      "powerLevel": 249
     },
     "entityType": "fighter",
     "sagaOrArc": "Torneo de Artes Marciales Máximas",
-    "physicalTier": "7-B",
+    "physicalTier": "8-B",
     "haxTier": "7-B",
     "sourceMedium": "manga",
     "haxResistances": {
@@ -180979,9 +180967,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 147 Unidades"
     },
     "numericStats": {
-      "apexKi": 103,
-      "scouterKi": 103,
-      "powerLevel": 103
+      "apexKi": 81,
+      "scouterKi": 81,
+      "powerLevel": 81
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -181202,9 +181190,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 87,
-      "scouterKi": 87,
-      "powerLevel": 87
+      "apexKi": 83,
+      "scouterKi": 83,
+      "powerLevel": 83
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -181376,9 +181364,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 116 Unidades"
     },
     "numericStats": {
-      "apexKi": 91,
-      "scouterKi": 91,
-      "powerLevel": 91
+      "apexKi": 78,
+      "scouterKi": 78,
+      "powerLevel": 78
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -181600,9 +181588,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 131 Unidades"
     },
     "numericStats": {
-      "apexKi": 109,
-      "scouterKi": 109,
-      "powerLevel": 109
+      "apexKi": 81,
+      "scouterKi": 81,
+      "powerLevel": 81
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -181832,9 +181820,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 188 Unidades"
     },
     "numericStats": {
-      "apexKi": 252,
-      "scouterKi": 252,
-      "powerLevel": 252
+      "apexKi": 222,
+      "scouterKi": 222,
+      "powerLevel": 222
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -182064,9 +182052,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 163 Unidades"
     },
     "numericStats": {
-      "apexKi": 86,
-      "scouterKi": 86,
-      "powerLevel": 86
+      "apexKi": 112,
+      "scouterKi": 112,
+      "powerLevel": 112
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -182149,7 +182137,7 @@ export const INITIAL_CHARACTERS = [
     "universe": "Baki the Grappler",
     "saga": "Son of Ogre / Torneo Máximo",
     "version": "Demon Back (Espalda del Demonio Activada)",
-    "tier": "7-B",
+    "tier": "8-A",
     "ap": "Nivel Ciudad a Montaña. Detuvo un terremoto de gran magnitud golpeando el suelo con el puño cerrado. Considerado un tratado militar andante más poderoso que el arsenal bélico de Estados Unidos. Puede romper barreras de sonido con bofetadas casuales y atravesar acero blindado como mantequilla.",
     "range": "Cuerpo a cuerpo estándar a decenas de metros (Ondas de choque sónicas).",
     "speed": {
@@ -182256,7 +182244,7 @@ export const INITIAL_CHARACTERS = [
         "name": "Estado Base (El Ogro Relajado)",
         "stats": "Tier 8-A a 7-C | Nivel Manzana a Pueblo. Humilla a campeones mundiales con un solo dedo.",
         "apexKiMultiplier": 1,
-        "tier": "7-B",
+        "tier": "8-A",
         "staminaDrain": 0
       },
       {
@@ -182389,13 +182377,13 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 963 Unidades"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 504,
+      "scouterKi": 504,
+      "powerLevel": 504
     },
     "entityType": "fighter",
     "sagaOrArc": "Son of Ogre / Torneo Máximo",
-    "physicalTier": "7-B",
+    "physicalTier": "8-A",
     "haxTier": "7-B",
     "sourceMedium": "manga",
     "haxResistances": {
@@ -182681,9 +182669,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 243.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 31100000000000,
-      "scouterKi": 31100000000000,
-      "powerLevel": 31100000000000
+      "apexKi": 30000000000000,
+      "scouterKi": 30000000000000,
+      "powerLevel": 30000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 2: El Padre de la Humanidad vs El Padre del Cosmos",
@@ -182913,9 +182901,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 28.10 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7710000000,
-      "scouterKi": 7710000000,
-      "powerLevel": 7710000000
+      "apexKi": 7720000000,
+      "scouterKi": 7720000000,
+      "powerLevel": 7720000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -183244,9 +183232,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.6x) × Forma(1x) = 9.11 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1270000000000,
-      "scouterKi": 1270000000000,
-      "powerLevel": 1270000000000
+      "apexKi": 1630000000000,
+      "scouterKi": 1630000000000,
+      "powerLevel": 1630000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 8: El Señor de las Moscas vs El Mago de la Humanidad",
@@ -183555,9 +183543,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 6.56 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 1630000000000,
-      "scouterKi": 1630000000000,
-      "powerLevel": 1630000000000
+      "apexKi": 1240000000000,
+      "scouterKi": 1240000000000,
+      "powerLevel": 1240000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 6: El Iluminado vs Zerofuku / Hajun",
@@ -183869,9 +183857,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 41.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6070000000,
-      "scouterKi": 6070000000,
-      "powerLevel": 6070000000
+      "apexKi": 7280000000,
+      "scouterKi": 7280000000,
+      "powerLevel": 7280000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 7: El Rey del Inframundo vs El Primer Emperador",
@@ -184119,9 +184107,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 29.60 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7160000000,
-      "scouterKi": 7160000000,
-      "powerLevel": 7160000000
+      "apexKi": 5440000000,
+      "scouterKi": 5440000000,
+      "powerLevel": 5440000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -184373,9 +184361,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 35.40 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6210000000,
-      "scouterKi": 6210000000,
-      "powerLevel": 6210000000
+      "apexKi": 6320000000,
+      "scouterKi": 6320000000,
+      "powerLevel": 6320000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -184739,9 +184727,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 24.30 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5460000000,
-      "scouterKi": 5460000000,
-      "powerLevel": 5460000000
+      "apexKi": 6260000000,
+      "scouterKi": 6260000000,
+      "powerLevel": 6260000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ragnarok — Combate contra Hércules",
@@ -185135,9 +185123,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(10x) = 403.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7010000000,
-      "scouterKi": 7010000000,
-      "powerLevel": 7010000000
+      "apexKi": 6030000000,
+      "scouterKi": 6030000000,
+      "powerLevel": 6030000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 3: El Mayor Perdedor vs El Tirano de los Mares",
@@ -185378,9 +185366,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 26.50 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7350000000,
-      "scouterKi": 7350000000,
-      "powerLevel": 7350000000
+      "apexKi": 6070000000,
+      "scouterKi": 6070000000,
+      "powerLevel": 6070000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -185661,9 +185649,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.7000000000000002x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 45.80 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7620000000,
-      "scouterKi": 7620000000,
-      "powerLevel": 7620000000
+      "apexKi": 6730000000,
+      "scouterKi": 6730000000,
+      "powerLevel": 6730000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -186009,9 +185997,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 25.10 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6380000000,
-      "scouterKi": 6380000000,
-      "powerLevel": 6380000000
+      "apexKi": 5650000000,
+      "scouterKi": 5650000000,
+      "powerLevel": 5650000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ragnarok — Combate contra Zerofuku (dios de la fortuna)",
@@ -186325,9 +186313,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 40.30 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7330000000,
-      "scouterKi": 7330000000,
-      "powerLevel": 7330000000
+      "apexKi": 7120000000,
+      "scouterKi": 7120000000,
+      "powerLevel": 7120000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 8: El Mago de la Humanidad vs El Señor de las Moscas",
@@ -186576,9 +186564,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 27.80 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7100000000,
-      "scouterKi": 7100000000,
-      "powerLevel": 7100000000
+      "apexKi": 5480000000,
+      "scouterKi": 5480000000,
+      "powerLevel": 5480000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -186828,9 +186816,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.2000000000000002x) × Forma(1x) = 25.70 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5450000000,
-      "scouterKi": 5450000000,
-      "powerLevel": 5450000000
+      "apexKi": 6440000000,
+      "scouterKi": 6440000000,
+      "powerLevel": 6440000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -187122,9 +187110,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 42.20 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6750000000,
-      "scouterKi": 6750000000,
-      "powerLevel": 6750000000
+      "apexKi": 6310000000,
+      "scouterKi": 6310000000,
+      "powerLevel": 6310000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 3: El Tirano de los Mares vs El Mayor Perdedor",
@@ -187336,9 +187324,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 37.70 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6070000000,
-      "scouterKi": 6070000000,
-      "powerLevel": 6070000000
+      "apexKi": 5520000000,
+      "scouterKi": 5520000000,
+      "powerLevel": 5520000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -187652,9 +187640,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 41.90 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6120000000,
-      "scouterKi": 6120000000,
-      "powerLevel": 6120000000
+      "apexKi": 6470000000,
+      "scouterKi": 6470000000,
+      "powerLevel": 6470000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 7: El Rey del Inframundo vs El Primer Emperador",
@@ -187876,9 +187864,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 38.50 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5710000000,
-      "scouterKi": 5710000000,
-      "powerLevel": 5710000000
+      "apexKi": 7740000000,
+      "scouterKi": 7740000000,
+      "powerLevel": 7740000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -188190,9 +188178,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 43.90 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6120000000,
-      "scouterKi": 6120000000,
-      "powerLevel": 6120000000
+      "apexKi": 6130000000,
+      "scouterKi": 6130000000,
+      "powerLevel": 6130000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 5: El Dios de la Destrucción vs El Luchador de Sumo Más Fuerte",
@@ -188420,9 +188408,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 33.90 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6870000000,
-      "scouterKi": 6870000000,
-      "powerLevel": 6870000000
+      "apexKi": 6510000000,
+      "scouterKi": 6510000000,
+      "powerLevel": 6510000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -188659,9 +188647,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 33.60 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6090000000,
-      "scouterKi": 6090000000,
-      "powerLevel": 6090000000
+      "apexKi": 7080000000,
+      "scouterKi": 7080000000,
+      "powerLevel": 7080000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -188864,9 +188852,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 23.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5540000000,
-      "scouterKi": 5540000000,
-      "powerLevel": 5540000000
+      "apexKi": 6190000000,
+      "scouterKi": 6190000000,
+      "powerLevel": 6190000000
     },
     "entityType": "fighter",
     "continuity": "Canon Manga / Anime",
@@ -189208,9 +189196,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 252.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 31900000000000,
-      "scouterKi": 31900000000000,
-      "powerLevel": 31900000000000
+      "apexKi": 40200000000000,
+      "scouterKi": 40200000000000,
+      "powerLevel": 40200000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Ronda 2: El Dios Supremo vs Adam",
@@ -189437,9 +189425,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 65.60 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 138000000000000000,
-      "scouterKi": 138000000000000000,
-      "powerLevel": 138000000000000000
+      "apexKi": 118000000000000000,
+      "scouterKi": 118000000000000000,
+      "powerLevel": 118000000000000000
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -189675,9 +189663,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 507 Unidades"
     },
     "numericStats": {
-      "apexKi": 470,
-      "scouterKi": 470,
-      "powerLevel": 470
+      "apexKi": 398,
+      "scouterKi": 398,
+      "powerLevel": 398
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -190167,9 +190155,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 362 Unidades"
     },
     "numericStats": {
-      "apexKi": 425,
-      "scouterKi": 425,
-      "powerLevel": 425
+      "apexKi": 459,
+      "scouterKi": 459,
+      "powerLevel": 459
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -190396,9 +190384,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 55 Unidades"
     },
     "numericStats": {
-      "apexKi": 56,
-      "scouterKi": 56,
-      "powerLevel": 56
+      "apexKi": 48,
+      "scouterKi": 48,
+      "powerLevel": 48
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -190706,9 +190694,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 1300 Unidades"
     },
     "numericStats": {
-      "apexKi": 3400,
-      "scouterKi": 3400,
-      "powerLevel": 3400
+      "apexKi": 4490,
+      "scouterKi": 4490,
+      "powerLevel": 4490
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -190952,9 +190940,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 453 Unidades"
     },
     "numericStats": {
-      "apexKi": 447,
-      "scouterKi": 447,
-      "powerLevel": 447
+      "apexKi": 451,
+      "scouterKi": 451,
+      "powerLevel": 451
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -191164,9 +191152,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 127 Unidades"
     },
     "numericStats": {
-      "apexKi": 92,
-      "scouterKi": 92,
-      "powerLevel": 92
+      "apexKi": 112,
+      "scouterKi": 112,
+      "powerLevel": 112
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -191395,9 +191383,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.15x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 379 Unidades"
     },
     "numericStats": {
-      "apexKi": 243,
-      "scouterKi": 243,
-      "powerLevel": 243
+      "apexKi": 226,
+      "scouterKi": 226,
+      "powerLevel": 226
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -191667,9 +191655,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 375 Unidades"
     },
     "numericStats": {
-      "apexKi": 487,
-      "scouterKi": 487,
-      "powerLevel": 487
+      "apexKi": 480,
+      "scouterKi": 480,
+      "powerLevel": 480
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -191906,9 +191894,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 50 Unidades"
     },
     "numericStats": {
-      "apexKi": 23,
-      "scouterKi": 23,
-      "powerLevel": 23
+      "apexKi": 24,
+      "scouterKi": 24,
+      "powerLevel": 24
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -192232,9 +192220,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 88.20 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 116000000000000000,
-      "scouterKi": 116000000000000000,
-      "powerLevel": 116000000000000000
+      "apexKi": 119000000000000000,
+      "scouterKi": 119000000000000000,
+      "powerLevel": 119000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Classic Strange / Damnation",
@@ -192476,9 +192464,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 127 Unidades"
     },
     "numericStats": {
-      "apexKi": 82,
-      "scouterKi": 82,
-      "powerLevel": 82
+      "apexKi": 111,
+      "scouterKi": 111,
+      "powerLevel": 111
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -192802,9 +192790,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(1-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 1060.00 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 1800,
-      "scouterKi": 1800,
-      "powerLevel": 1800
+      "apexKi": 2260,
+      "scouterKi": 2260,
+      "powerLevel": 2260
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica (varios eventos: Onslaught, House of M implícito)",
@@ -192925,12 +192913,6 @@ export const INITIAL_CHARACTERS = [
           "desc": "Emisión de energía cósmica pura mediante gestos menores para desintegrar amenazas directas.",
           "cost": 5,
           "damageType": "energy"
-        },
-        {
-          "name": "Golpe de Poder C��smico",
-          "cost": 5,
-          "damageType": "Energy/Contundente",
-          "desc": "Emisión directa de energía cósmica condensada a través de extremidades."
         },
         {
           "name": "Golpe de Poder Cósmico",
@@ -193058,9 +193040,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.65x) × Forma(1x) = 404.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2520,
+      "scouterKi": 2520,
+      "powerLevel": 2520
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -193264,9 +193246,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 984.000 Unidades"
     },
     "numericStats": {
-      "apexKi": 191000,
-      "scouterKi": 191000,
-      "powerLevel": 191000
+      "apexKi": 201000,
+      "scouterKi": 201000,
+      "powerLevel": 201000
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -193499,9 +193481,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1.25x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 413 Unidades"
     },
     "numericStats": {
-      "apexKi": 398,
-      "scouterKi": 398,
-      "powerLevel": 398
+      "apexKi": 496,
+      "scouterKi": 496,
+      "powerLevel": 496
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -193725,9 +193707,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 58 Unidades"
     },
     "numericStats": {
-      "apexKi": 55,
-      "scouterKi": 55,
-      "powerLevel": 55
+      "apexKi": 43,
+      "scouterKi": 43,
+      "powerLevel": 43
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -194035,9 +194017,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.65x) × Forma(1x) = 72.20 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 108000000000000000,
-      "scouterKi": 108000000000000000,
-      "powerLevel": 108000000000000000
+      "apexKi": 130000000000000000,
+      "scouterKi": 130000000000000000,
+      "powerLevel": 130000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "World War Hulk / Immortal Hulk",
@@ -194406,9 +194388,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 7-A Físico | Tier 2-C con Armaduras Buster Cósmicas) × Vel(3.5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 5900 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 2080,
+      "scouterKi": 2080,
+      "powerLevel": 2080
     },
     "entityType": "fighter",
     "sagaOrArc": "Avengers / Model Prime / Godkiller",
@@ -194705,9 +194687,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(1-C) × Vel(5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 1080.00 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 2000,
-      "scouterKi": 2000,
-      "powerLevel": 2000
+      "apexKi": 2320,
+      "scouterKi": 2320,
+      "powerLevel": 2320
     },
     "entityType": "fighter",
     "sagaOrArc": "Saga de la Fuerza Fénix / Dark Phoenix Saga",
@@ -195022,9 +195004,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1600 Unidades"
     },
     "numericStats": {
-      "apexKi": 4600,
-      "scouterKi": 4600,
-      "powerLevel": 4600
+      "apexKi": 3560,
+      "scouterKi": 3560,
+      "powerLevel": 3560
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -195240,9 +195222,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 54.30 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 105000000000000000,
-      "scouterKi": 105000000000000000,
-      "powerLevel": 105000000000000000
+      "apexKi": 121000000000000000,
+      "scouterKi": 121000000000000000,
+      "powerLevel": 121000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -195486,9 +195468,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 319 Unidades"
     },
     "numericStats": {
-      "apexKi": 496,
-      "scouterKi": 496,
-      "powerLevel": 496
+      "apexKi": 407,
+      "scouterKi": 407,
+      "powerLevel": 407
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -195746,9 +195728,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 93.80 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 74300000,
-      "scouterKi": 74300000,
-      "powerLevel": 74300000
+      "apexKi": 79700000,
+      "scouterKi": 79700000,
+      "powerLevel": 79700000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -195936,7 +195918,7 @@ export const INITIAL_CHARACTERS = [
           ]
         },
         {
-          "name": "Inestabilidad Psicol��gica",
+          "name": "Inestabilidad Psicolgica",
           "desc": "Inseguridades crónicas y dependencia emocional que pueden ser explotadas para paralizar o desviar su concentración.",
           "counterTags": [
             "psychological_manipulation",
@@ -196020,9 +196002,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(1-C) × Vel(5x) × Def(1.4x) × Hax/IQ(1.7000000000000002x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 1730.00 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2330,
+      "scouterKi": 2330,
+      "powerLevel": 2330
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / Secret Wars",
@@ -196248,9 +196230,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 147 Unidades"
     },
     "numericStats": {
-      "apexKi": 77,
-      "scouterKi": 77,
-      "powerLevel": 77
+      "apexKi": 97,
+      "scouterKi": 97,
+      "powerLevel": 97
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -196485,9 +196467,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 85 Unidades"
     },
     "numericStats": {
-      "apexKi": 39,
-      "scouterKi": 39,
-      "powerLevel": 39
+      "apexKi": 48,
+      "scouterKi": 48,
+      "powerLevel": 48
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -196780,9 +196762,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(1-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 906.00 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 1940,
+      "scouterKi": 1940,
+      "powerLevel": 1940
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / House of M / WandaVision",
@@ -197041,9 +197023,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 323 Unidades"
     },
     "numericStats": {
-      "apexKi": 410,
-      "scouterKi": 410,
-      "powerLevel": 410
+      "apexKi": 481,
+      "scouterKi": 481,
+      "powerLevel": 481
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -197356,9 +197338,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.8x) × Forma(1x) = 84.70 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 144000000000000000,
-      "scouterKi": 144000000000000000,
-      "powerLevel": 144000000000000000
+      "apexKi": 128000000000000000,
+      "scouterKi": 128000000000000000,
+      "powerLevel": 128000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / Heraldo activo de Galactus",
@@ -197770,9 +197752,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 377 Unidades"
     },
     "numericStats": {
-      "apexKi": 517,
-      "scouterKi": 517,
-      "powerLevel": 517
+      "apexKi": 378,
+      "scouterKi": 378,
+      "powerLevel": 378
     },
     "entityType": "fighter",
     "sagaOrArc": "Tierra-616",
@@ -198094,9 +198076,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 2-C Físico | Tier 2-A con Guantelete del Infinito) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 101.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 2670,
+      "scouterKi": 2670,
+      "powerLevel": 2670
     },
     "entityType": "fighter",
     "sagaOrArc": "El Guantelete del Infinito / Infinity",
@@ -198376,9 +198358,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1.65x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 108.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 153000000000000000,
-      "scouterKi": 153000000000000000,
-      "powerLevel": 153000000000000000
+      "apexKi": 114000000000000000,
+      "scouterKi": 114000000000000000,
+      "powerLevel": 114000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -198769,9 +198751,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 95.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 146000000000000000,
-      "scouterKi": 146000000000000000,
-      "powerLevel": 146000000000000000
+      "apexKi": 116000000000000000,
+      "scouterKi": 116000000000000000,
+      "powerLevel": 116000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Rune King Thor / All-Black Thor",
@@ -199031,9 +199013,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 14.40 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5970000000,
-      "scouterKi": 5970000000,
-      "powerLevel": 5970000000
+      "apexKi": 6270000000,
+      "scouterKi": 6270000000,
+      "powerLevel": 6270000000
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -199275,9 +199257,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 453 Unidades"
     },
     "numericStats": {
-      "apexKi": 447,
-      "scouterKi": 447,
-      "powerLevel": 447
+      "apexKi": 512,
+      "scouterKi": 512,
+      "powerLevel": 512
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -199523,9 +199505,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 16.900 Unidades"
     },
     "numericStats": {
-      "apexKi": 112000,
-      "scouterKi": 112000,
-      "powerLevel": 112000
+      "apexKi": 92180,
+      "scouterKi": 92180,
+      "powerLevel": 92180
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -199762,9 +199744,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 401 Unidades"
     },
     "numericStats": {
-      "apexKi": 373,
-      "scouterKi": 373,
-      "powerLevel": 373
+      "apexKi": 418,
+      "scouterKi": 418,
+      "powerLevel": 418
     },
     "entityType": "fighter",
     "continuity": "Earth-616",
@@ -200041,9 +200023,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 358 Unidades"
     },
     "numericStats": {
-      "apexKi": 808,
-      "scouterKi": 808,
-      "powerLevel": 808
+      "apexKi": 691,
+      "scouterKi": 691,
+      "powerLevel": 691
     },
     "entityType": "fighter",
     "sagaOrArc": "Operación Strix",
@@ -200334,9 +200316,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(1-C) × Vel(5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 1090.00 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 2500,
+      "scouterKi": 2500,
+      "powerLevel": 2500
     },
     "entityType": "fighter",
     "sagaOrArc": "Crisis en Tierras Infinitas / Crisis reescrituras posteriores",
@@ -200557,9 +200539,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1.03 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 204000,
-      "scouterKi": 204000,
-      "powerLevel": 204000
+      "apexKi": 196600,
+      "scouterKi": 196600,
+      "powerLevel": 196600
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -200783,9 +200765,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 147 Unidades"
     },
     "numericStats": {
-      "apexKi": 97,
-      "scouterKi": 97,
-      "powerLevel": 97
+      "apexKi": 110,
+      "scouterKi": 110,
+      "powerLevel": 110
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -201142,9 +201124,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(Tier 9-A Físico | Tier 2-C con Hellbat y Tiempo de Preparación) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 208 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2190,
+      "scouterKi": 2190,
+      "powerLevel": 2190
     },
     "entityType": "fighter",
     "sagaOrArc": "Liga de la Justicia / Batman Endgame",
@@ -201359,9 +201341,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 37.30 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5370000000,
-      "scouterKi": 5370000000,
-      "powerLevel": 5370000000
+      "apexKi": 5570000000,
+      "scouterKi": 5570000000,
+      "powerLevel": 5570000000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -201695,9 +201677,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 54.90 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 108000000000000000,
-      "scouterKi": 108000000000000000,
-      "powerLevel": 108000000000000000
+      "apexKi": 123000000000000000,
+      "scouterKi": 123000000000000000,
+      "powerLevel": 123000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -201943,9 +201925,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 34 Unidades"
     },
     "numericStats": {
-      "apexKi": 29,
-      "scouterKi": 29,
-      "powerLevel": 29
+      "apexKi": 27,
+      "scouterKi": 27,
+      "powerLevel": 27
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -202171,9 +202153,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 1700 Unidades"
     },
     "numericStats": {
-      "apexKi": 4700,
-      "scouterKi": 4700,
-      "powerLevel": 4700
+      "apexKi": 3780,
+      "scouterKi": 3780,
+      "powerLevel": 3780
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -202621,9 +202603,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(3-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.7000000000000002x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 47.60 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 6990000000000,
-      "scouterKi": 6990000000000,
-      "powerLevel": 6990000000000
+      "apexKi": 6100000000000,
+      "scouterKi": 6100000000000,
+      "powerLevel": 6100000000000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -202849,9 +202831,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 80.20 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 132000000000000000,
-      "scouterKi": 132000000000000000,
-      "powerLevel": 132000000000000000
+      "apexKi": 125000000000000000,
+      "scouterKi": 125000000000000000,
+      "powerLevel": 125000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Crisis Final / Guerra de Darkseid",
@@ -203077,9 +203059,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 285 Unidades"
     },
     "numericStats": {
-      "apexKi": 462,
-      "scouterKi": 462,
-      "powerLevel": 462
+      "apexKi": 388,
+      "scouterKi": 388,
+      "powerLevel": 388
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -203316,9 +203298,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 81.40 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 152000000000000000,
-      "scouterKi": 152000000000000000,
-      "powerLevel": 152000000000000000
+      "apexKi": 123000000000000000,
+      "scouterKi": 123000000000000000,
+      "powerLevel": 123000000000000000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -203685,9 +203667,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 59.10 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 124000000000000000,
-      "scouterKi": 124000000000000000,
-      "powerLevel": 124000000000000000
+      "apexKi": 132000000000000000,
+      "scouterKi": 132000000000000000,
+      "powerLevel": 132000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "La Muerte de Superman / Hunter/Prey",
@@ -204014,9 +203996,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(1-C) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 888.00 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 2200,
-      "scouterKi": 2200,
-      "powerLevel": 2200
+      "apexKi": 2530,
+      "scouterKi": 2530,
+      "powerLevel": 2530
     },
     "entityType": "fighter",
     "sagaOrArc": "Watchmen / Doomsday Clock",
@@ -204238,9 +204220,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(1.35x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 16.00 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 5760000000,
-      "scouterKi": 5760000000,
-      "powerLevel": 5760000000
+      "apexKi": 7120000000,
+      "scouterKi": 7120000000,
+      "powerLevel": 7120000000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -204553,9 +204535,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 43.10 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 140000000000000000,
-      "scouterKi": 140000000000000000,
-      "powerLevel": 140000000000000000
+      "apexKi": 150000000000000000,
+      "scouterKi": 150000000000000000,
+      "powerLevel": 150000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / Man of Steel",
@@ -204780,9 +204762,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 331 Unidades"
     },
     "numericStats": {
-      "apexKi": 405,
-      "scouterKi": 405,
-      "powerLevel": 405
+      "apexKi": 381,
+      "scouterKi": 381,
+      "powerLevel": 381
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -205167,9 +205149,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.8x) × Forma(1x) = 82.90 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 131000000000000000,
-      "scouterKi": 131000000000000000,
-      "powerLevel": 131000000000000000
+      "apexKi": 148000000000000000,
+      "scouterKi": 148000000000000000,
+      "powerLevel": 148000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / Cuerpo de Linternas Verdes",
@@ -205442,9 +205424,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 48 Unidades"
     },
     "numericStats": {
-      "apexKi": 22,
-      "scouterKi": 22,
-      "powerLevel": 22
+      "apexKi": 24,
+      "scouterKi": 24,
+      "powerLevel": 24
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -205761,9 +205743,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 90 Unidades"
     },
     "numericStats": {
-      "apexKi": 46,
-      "scouterKi": 46,
-      "powerLevel": 46
+      "apexKi": 39,
+      "scouterKi": 39,
+      "powerLevel": 39
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -206008,9 +205990,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 41.40 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 6210000000,
-      "scouterKi": 6210000000,
-      "powerLevel": 6210000000
+      "apexKi": 5660000000,
+      "scouterKi": 5660000000,
+      "powerLevel": 5660000000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -206269,9 +206251,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 39.90 Mil Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 7440000000,
-      "scouterKi": 7440000000,
-      "powerLevel": 7440000000
+      "apexKi": 7560000000,
+      "scouterKi": 7560000000,
+      "powerLevel": 7560000000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -206652,9 +206634,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 49.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 123000000000000000,
-      "scouterKi": 123000000000000000,
-      "powerLevel": 123000000000000000
+      "apexKi": 120000000000000000,
+      "scouterKi": 120000000000000000,
+      "powerLevel": 120000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / Liga de la Justicia",
@@ -206949,9 +206931,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 234 Unidades"
     },
     "numericStats": {
-      "apexKi": 257,
-      "scouterKi": 257,
-      "powerLevel": 257
+      "apexKi": 228,
+      "scouterKi": 228,
+      "powerLevel": 228
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -207209,9 +207191,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 99.40 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 89600000,
-      "scouterKi": 89600000,
-      "powerLevel": 89600000
+      "apexKi": 99600000,
+      "scouterKi": 99600000,
+      "powerLevel": 99600000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -207430,9 +207412,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.15x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 288 Unidades"
     },
     "numericStats": {
-      "apexKi": 232,
-      "scouterKi": 232,
-      "powerLevel": 232
+      "apexKi": 287,
+      "scouterKi": 287,
+      "powerLevel": 287
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -207641,9 +207623,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 116.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 140000000000000000,
-      "scouterKi": 140000000000000000,
-      "powerLevel": 140000000000000000
+      "apexKi": 133000000000000000,
+      "scouterKi": 133000000000000000,
+      "powerLevel": 133000000000000000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -207872,9 +207854,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1000000x) = 43.80 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 31,
-      "scouterKi": 31,
-      "powerLevel": 31
+      "apexKi": 29,
+      "scouterKi": 29,
+      "powerLevel": 29
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -208210,9 +208192,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 53.20 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 133000000000000000,
-      "scouterKi": 133000000000000000,
-      "powerLevel": 133000000000000000
+      "apexKi": 153000000000000000,
+      "scouterKi": 153000000000000000,
+      "powerLevel": 153000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / New 52",
@@ -208392,7 +208374,7 @@ export const INITIAL_CHARACTERS = [
           "staminaCost": 0
         },
         {
-          "name": "Bater��a de Poder Amarilla",
+          "name": "Batera de Poder Amarilla",
           "desc": "Recarga el anillo de poder amarillo; cuando se destruye, Sinestro pierde acceso a todos sus constructos.",
           "staminaCost": 0
         }
@@ -208522,9 +208504,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 61.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 123000000000000000,
-      "scouterKi": 123000000000000000,
-      "powerLevel": 123000000000000000
+      "apexKi": 143000000000000000,
+      "scouterKi": 143000000000000000,
+      "powerLevel": 143000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / Cuerpo de Linternas Amarillas",
@@ -208814,9 +208796,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(1-C) × Vel(5x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 1270.00 Trillones de Ki"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 2550,
+      "scouterKi": 2550,
+      "powerLevel": 2550
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica",
@@ -209024,9 +209006,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 134.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 103000000,
-      "scouterKi": 103000000,
-      "powerLevel": 103000000
+      "apexKi": 79000000,
+      "scouterKi": 79000000,
+      "powerLevel": 79000000
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -209410,9 +209392,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 115.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 142000000000000000,
-      "scouterKi": 142000000000000000,
-      "powerLevel": 142000000000000000
+      "apexKi": 139000000000000000,
+      "scouterKi": 139000000000000000,
+      "powerLevel": 139000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Post-Crisis / Rebirth",
@@ -209681,9 +209663,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-B) × Vel(5x) × Def(1.65x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 703.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 2400,
-      "scouterKi": 2400,
-      "powerLevel": 2400
+      "apexKi": 2220,
+      "scouterKi": 2220,
+      "powerLevel": 2220
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -209904,9 +209886,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 375 Unidades"
     },
     "numericStats": {
-      "apexKi": 406,
-      "scouterKi": 406,
-      "powerLevel": 406
+      "apexKi": 490,
+      "scouterKi": 490,
+      "powerLevel": 490
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -210124,7 +210106,7 @@ export const INITIAL_CHARACTERS = [
       "weaknesses": [
         {
           "name": "Interrupción de la Speed Force",
-          "desc": "Campos de vacío taquiónico o p��rdida de fe/esperanza pueden mermar su conexión.",
+          "desc": "Campos de vacío taquiónico o prdida de fe/esperanza pueden mermar su conexión.",
           "counterTags": [
             "Anti-Speed Force",
             "Vacío Taquiónico"
@@ -210301,9 +210283,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5x) × Forma(1x) = 110.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 134000000000000000,
-      "scouterKi": 134000000000000000,
-      "powerLevel": 134000000000000000
+      "apexKi": 145000000000000000,
+      "scouterKi": 145000000000000000,
+      "powerLevel": 145000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Flashpoint / Crisis en Tierras Infinitas",
@@ -210657,9 +210639,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(2.8x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 45.60 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 116000000000000000,
-      "scouterKi": 116000000000000000,
-      "powerLevel": 116000000000000000
+      "apexKi": 155000000000000000,
+      "scouterKi": 155000000000000000,
+      "powerLevel": 155000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad clásica / New 52 / Rebirth",
@@ -210944,9 +210926,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(1.8x) × Def(1x) × Hax/IQ(1.4000000000000001x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 79 Unidades"
     },
     "numericStats": {
-      "apexKi": 22,
-      "scouterKi": 22,
-      "powerLevel": 22
+      "apexKi": 26,
+      "scouterKi": 26,
+      "powerLevel": 26
     },
     "entityType": "fighter",
     "continuity": "Post-Crisis / Rebirth",
@@ -211223,9 +211205,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(High 5-B) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 15.90 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 825000,
-      "scouterKi": 825000,
-      "powerLevel": 825000
+      "apexKi": 922300,
+      "scouterKi": 922300,
+      "powerLevel": 922300
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Guerra contra el Imperio Viltrumita",
@@ -211532,9 +211514,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(2-C) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 24.00 Mil Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 126000000000000000,
-      "scouterKi": 126000000000000000,
-      "powerLevel": 126000000000000000
+      "apexKi": 133000000000000000,
+      "scouterKi": 133000000000000000,
+      "powerLevel": 133000000000000000
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco del Multiverso / Regreso Final",
@@ -211823,9 +211805,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 328.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 91900000,
-      "scouterKi": 91900000,
-      "powerLevel": 91900000
+      "apexKi": 93100000,
+      "scouterKi": 93100000,
+      "powerLevel": 93100000
     },
     "entityType": "fighter",
     "sagaOrArc": "Arco de la Invasión Viltrumita Inicial",
@@ -212089,9 +212071,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 1100 Unidades"
     },
     "numericStats": {
-      "apexKi": 2100,
-      "scouterKi": 2100,
-      "powerLevel": 2100
+      "apexKi": 2630,
+      "scouterKi": 2630,
+      "powerLevel": 2630
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -212348,9 +212330,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 7300 Unidades"
     },
     "numericStats": {
-      "apexKi": 4100,
-      "scouterKi": 4100,
-      "powerLevel": 4100
+      "apexKi": 3400,
+      "scouterKi": 3400,
+      "powerLevel": 3400
     },
     "entityType": "fighter",
     "sagaOrArc": "El Fin de Todo",
@@ -212582,9 +212564,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1000000x) = 335.00 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 90000000,
-      "scouterKi": 90000000,
-      "powerLevel": 90000000
+      "apexKi": 77500000,
+      "scouterKi": 77500000,
+      "powerLevel": 77500000
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -212880,9 +212862,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1000000x) = 2.90 Billones de Ki"
     },
     "numericStats": {
-      "apexKi": 195000,
-      "scouterKi": 195000,
-      "powerLevel": 195000
+      "apexKi": 217200,
+      "scouterKi": 217200,
+      "powerLevel": 217200
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra Viltrumita",
@@ -213117,9 +213099,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-C) × Vel(1.15x) × Def(1.4x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.6500000000000001x) × Forma(1x) = 4400 Unidades"
     },
     "numericStats": {
-      "apexKi": 12900,
-      "scouterKi": 12900,
-      "powerLevel": 12900
+      "apexKi": 15140,
+      "scouterKi": 15140,
+      "powerLevel": 15140
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -213381,9 +213363,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 3.64 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 181000,
-      "scouterKi": 181000,
-      "powerLevel": 181000
+      "apexKi": 222300,
+      "scouterKi": 222300,
+      "powerLevel": 222300
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra Viltrumita",
@@ -213928,9 +213910,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(5x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 721.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 81700000,
-      "scouterKi": 81700000,
-      "powerLevel": 81700000
+      "apexKi": 77400000,
+      "scouterKi": 77400000,
+      "powerLevel": 77400000
     },
     "entityType": "fighter",
     "sagaOrArc": "Final de la Serie / 500 Años en el Futuro",
@@ -214157,9 +214139,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 448.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 75700000,
-      "scouterKi": 75700000,
-      "powerLevel": 75700000
+      "apexKi": 84800000,
+      "scouterKi": 84800000,
+      "powerLevel": 84800000
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -214503,9 +214485,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 289.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 105000000,
-      "scouterKi": 105000000,
-      "powerLevel": 105000000
+      "apexKi": 84300000,
+      "scouterKi": 84300000,
+      "powerLevel": 84300000
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra Viltrumita / El Fin de Todo",
@@ -214734,9 +214716,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.5999999999999999x) × Forma(1x) = 651.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 102000000,
-      "scouterKi": 102000000,
-      "powerLevel": 102000000
+      "apexKi": 96700000,
+      "scouterKi": 96700000,
+      "powerLevel": 96700000
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -214911,9 +214893,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 2.86 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 195000,
-      "scouterKi": 195000,
-      "powerLevel": 195000
+      "apexKi": 203300,
+      "scouterKi": 203300,
+      "powerLevel": 203300
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -215215,9 +215197,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(High 5-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 16.50 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 926000,
-      "scouterKi": 926000,
-      "powerLevel": 926000
+      "apexKi": 859400,
+      "scouterKi": 859400,
+      "powerLevel": 859400
     },
     "entityType": "fighter",
     "sagaOrArc": "Guerra de Invincible / Arco de la Guerra Viltrumita",
@@ -215515,9 +215497,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.2000000000000002x) × Forma(1x) = 311 Unidades"
     },
     "numericStats": {
-      "apexKi": 447,
-      "scouterKi": 447,
-      "powerLevel": 447
+      "apexKi": 473,
+      "scouterKi": 473,
+      "powerLevel": 473
     },
     "entityType": "fighter",
     "sagaOrArc": "Temporada 1 — Inicios y Aprendizaje",
@@ -215833,9 +215815,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(High 6-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.3000000000000003x) × Forma(1x) = 36.400 Unidades"
     },
     "numericStats": {
-      "apexKi": 204000,
-      "scouterKi": 204000,
-      "powerLevel": 204000
+      "apexKi": 195300,
+      "scouterKi": 195300,
+      "powerLevel": 195300
     },
     "entityType": "fighter",
     "sagaOrArc": "Temporadas 1-2 / Inicios como Superhéroe",
@@ -216084,9 +216066,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1200 Unidades"
     },
     "numericStats": {
-      "apexKi": 3400,
-      "scouterKi": 3400,
-      "powerLevel": 3400
+      "apexKi": 4590,
+      "scouterKi": 4590,
+      "powerLevel": 4590
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -216369,9 +216351,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(High 5-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.4x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 17.20 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 917000,
-      "scouterKi": 917000,
-      "powerLevel": 917000
+      "apexKi": 999500,
+      "scouterKi": 999500,
+      "powerLevel": 999500
     },
     "entityType": "fighter",
     "sagaOrArc": "Invasión Viltrumita / Guerra Viltrumita",
@@ -216612,9 +216594,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-B) × Vel(1.05x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 213 Unidades"
     },
     "numericStats": {
-      "apexKi": 201,
-      "scouterKi": 201,
-      "powerLevel": 201
+      "apexKi": 214,
+      "scouterKi": 214,
+      "powerLevel": 214
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -216864,9 +216846,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.15x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 449 Unidades"
     },
     "numericStats": {
-      "apexKi": 399,
-      "scouterKi": 399,
-      "powerLevel": 399
+      "apexKi": 366,
+      "scouterKi": 366,
+      "powerLevel": 366
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -217194,9 +217176,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 281 Unidades"
     },
     "numericStats": {
-      "apexKi": 467,
-      "scouterKi": 467,
-      "powerLevel": 467
+      "apexKi": 475,
+      "scouterKi": 475,
+      "powerLevel": 475
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad general / Traición y redención",
@@ -217421,9 +217403,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 882 Unidades"
     },
     "numericStats": {
-      "apexKi": 447,
-      "scouterKi": 447,
-      "powerLevel": 447
+      "apexKi": 368,
+      "scouterKi": 368,
+      "powerLevel": 368
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -217664,9 +217646,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(2.8x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 2.55 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 169000,
-      "scouterKi": 169000,
-      "powerLevel": 169000
+      "apexKi": 190200,
+      "scouterKi": 190200,
+      "powerLevel": 190200
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -217890,9 +217872,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(3.5x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.5499999999999998x) × Forma(1x) = 5.03 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 224000,
-      "scouterKi": 224000,
-      "powerLevel": 224000
+      "apexKi": 184000,
+      "scouterKi": 184000,
+      "powerLevel": 184000
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -218173,9 +218155,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(6-A) × Vel(1x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 15.600 Unidades"
     },
     "numericStats": {
-      "apexKi": 84700,
-      "scouterKi": 84700,
-      "powerLevel": 84700
+      "apexKi": 104300,
+      "scouterKi": 104300,
+      "powerLevel": 104300
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad general",
@@ -218391,9 +218373,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 231.00 Millones de Ki"
     },
     "numericStats": {
-      "apexKi": 105000000,
-      "scouterKi": 105000000,
-      "powerLevel": 105000000
+      "apexKi": 80900000,
+      "scouterKi": 80900000,
+      "powerLevel": 80900000
     },
     "entityType": "fighter",
     "continuity": "Image Comics Canon",
@@ -218726,9 +218708,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 267 Unidades"
     },
     "numericStats": {
-      "apexKi": 537,
-      "scouterKi": 537,
-      "powerLevel": 537
+      "apexKi": 383,
+      "scouterKi": 383,
+      "powerLevel": 383
     },
     "entityType": "fighter",
     "sagaOrArc": "Temporadas 1 a 4",
@@ -219056,9 +219038,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.25x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 1000 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2100,
+      "scouterKi": 2100,
+      "powerLevel": 2100
     },
     "entityType": "fighter",
     "sagaOrArc": "Temporadas 3 y 4",
@@ -219373,9 +219355,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1300 Unidades"
     },
     "numericStats": {
-      "apexKi": 4300,
-      "scouterKi": 4300,
-      "powerLevel": 4300
+      "apexKi": 3740,
+      "scouterKi": 3740,
+      "powerLevel": 3740
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad general",
@@ -219677,9 +219659,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 594 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 1990,
+      "scouterKi": 1990,
+      "powerLevel": 1990
     },
     "entityType": "fighter",
     "sagaOrArc": "Temporadas 1 a 4 / Cómics",
@@ -219906,9 +219888,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 138 Unidades"
     },
     "numericStats": {
-      "apexKi": 100,
-      "scouterKi": 100,
-      "powerLevel": 100
+      "apexKi": 95,
+      "scouterKi": 95,
+      "powerLevel": 95
     },
     "entityType": "fighter",
     "continuity": "Dynamite Comics / Serie",
@@ -220246,9 +220228,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 550 Unidades"
     },
     "numericStats": {
-      "apexKi": 2500,
-      "scouterKi": 2500,
-      "powerLevel": 2500
+      "apexKi": 2070,
+      "scouterKi": 2070,
+      "powerLevel": 2070
     },
     "entityType": "fighter",
     "sagaOrArc": "Temporadas 1 a 3",
@@ -220472,9 +220454,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 400 Unidades"
     },
     "numericStats": {
-      "apexKi": 845,
-      "scouterKi": 845,
-      "powerLevel": 845
+      "apexKi": 901,
+      "scouterKi": 901,
+      "powerLevel": 901
     },
     "entityType": "fighter",
     "continuity": "Dynamite Comics / Serie",
@@ -220801,9 +220783,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1.4x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 875 Unidades"
     },
     "numericStats": {
-      "apexKi": 1900,
-      "scouterKi": 1900,
-      "powerLevel": 1900
+      "apexKi": 2660,
+      "scouterKi": 2660,
+      "powerLevel": 2660
     },
     "entityType": "fighter",
     "sagaOrArc": "Temporada 3",
@@ -221123,9 +221105,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 625 Unidades"
     },
     "numericStats": {
-      "apexKi": 2600,
-      "scouterKi": 2600,
-      "powerLevel": 2600
+      "apexKi": 2250,
+      "scouterKi": 2250,
+      "powerLevel": 2250
     },
     "entityType": "fighter",
     "sagaOrArc": "Continuidad general (serie y cómic)",
@@ -221380,9 +221362,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1.25x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 447 Unidades"
     },
     "numericStats": {
-      "apexKi": 689,
-      "scouterKi": 689,
-      "powerLevel": 689
+      "apexKi": 936,
+      "scouterKi": 936,
+      "powerLevel": 936
     },
     "entityType": "fighter",
     "continuity": "Dynamite Comics / Serie",
@@ -221586,9 +221568,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1.05x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 260 Unidades"
     },
     "numericStats": {
-      "apexKi": 499,
-      "scouterKi": 499,
-      "powerLevel": 499
+      "apexKi": 388,
+      "scouterKi": 388,
+      "powerLevel": 388
     },
     "entityType": "fighter",
     "continuity": "Dynamite Comics / Serie",
@@ -221828,9 +221810,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 110 Unidades"
     },
     "numericStats": {
-      "apexKi": 108,
-      "scouterKi": 108,
-      "powerLevel": 108
+      "apexKi": 110,
+      "scouterKi": 110,
+      "powerLevel": 110
     },
     "entityType": "fighter",
     "continuity": "Dynamite Comics / Serie",
@@ -222012,9 +221994,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 110 Unidades"
     },
     "numericStats": {
-      "apexKi": 99,
-      "scouterKi": 99,
-      "powerLevel": 99
+      "apexKi": 90,
+      "scouterKi": 90,
+      "powerLevel": 90
     },
     "entityType": "fighter",
     "continuity": "Dynamite Comics / Serie",
@@ -222225,9 +222207,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 55 Unidades"
     },
     "numericStats": {
-      "apexKi": 56,
-      "scouterKi": 56,
-      "powerLevel": 56
+      "apexKi": 45,
+      "scouterKi": 45,
+      "powerLevel": 45
     },
     "entityType": "fighter",
     "continuity": "Dynamite Comics / Serie",
@@ -222498,9 +222480,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(8-A) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.45x) × Forma(1x) = 287 Unidades"
     },
     "numericStats": {
-      "apexKi": 373,
-      "scouterKi": 373,
-      "powerLevel": 373
+      "apexKi": 536,
+      "scouterKi": 536,
+      "powerLevel": 536
     },
     "entityType": "fighter",
     "sagaOrArc": "Operación Strix",
@@ -222812,9 +222794,9 @@ export const INITIAL_CHARACTERS = [
       "formulaExpression": "PL_Scouter = BaseEnergy(9-B) × Vel(5x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.55x) × Forma(1x) = 242 Unidades"
     },
     "numericStats": {
-      "apexKi": 25,
-      "scouterKi": 25,
-      "powerLevel": 25
+      "apexKi": 28,
+      "scouterKi": 28,
+      "powerLevel": 28
     },
     "entityType": "fighter",
     "physicalTier": "9-B",
