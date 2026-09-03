@@ -1,4 +1,4 @@
-﻿/**
+/**
  * APEX Tier System & Lightweight Mathematical Index Core
  * Single Source of Truth for Tiers and Logarithmic APEX-Ki
  * No BigInt, no giant numbers, no floating point precision artifacts, no fallback 8.
@@ -240,29 +240,23 @@ export function formatApexKi(value) {
   if (value === Infinity) return "∞ Incalculable";
 
   const num = Number(value);
+  if (!Number.isFinite(num)) return "∞ Incalculable";
+
   if (num < 1000) {
     if (num >= 10) return String(Math.round(num)) + " Unidades";
     return num.toFixed(1) + " Unidades";
   }
 
-  if (num >= 1e18) {
-    return (num / 1e18).toFixed(2) + " Cuatrimillones";
-  }
-  if (num >= 1e15) {
-    return (num / 1e15).toFixed(2) + " Trillones";
-  }
-  if (num >= 1e12) {
-    return (num / 1e12).toFixed(2) + " Billones";
-  }
-  if (num >= 1e9) {
-    return (num / 1e9).toFixed(2) + " Mil Millones";
-  }
-  if (num >= 1e6) {
-    return (num / 1e6).toFixed(2) + " Millones";
-  }
-  if (num >= 1e3) {
-    return (num / 1e3).toFixed(2) + " Mil";
-  }
+  if (num >= 1e30) return "Trascendente Cósmico";
+  if (num >= 1e27) return (num / 1e27).toFixed(2) + " Octillones";
+  if (num >= 1e24) return (num / 1e24).toFixed(2) + " Septillones";
+  if (num >= 1e21) return (num / 1e21).toFixed(2) + " Sextillones";
+  if (num >= 1e18) return (num / 1e18).toFixed(2) + " Quintillones";
+  if (num >= 1e15) return (num / 1e15).toFixed(2) + " Trillones";
+  if (num >= 1e12) return (num / 1e12).toFixed(2) + " Billones";
+  if (num >= 1e9)  return (num / 1e9).toFixed(2) + " Mil Millones";
+  if (num >= 1e6)  return (num / 1e6).toFixed(2) + " Millones";
+  if (num >= 1e3)  return (num / 1e3).toFixed(2) + " Mil";
 
   return String(Math.round(num));
 }
@@ -273,12 +267,16 @@ export function formatApexKi(value) {
 export function formatSourceKi(value) {
   if (value === null || value === undefined || isNaN(value) || value <= 0) return null;
   const num = Number(value);
-  if (num >= 1e18) return (num / 1e18).toFixed(2) + " Cuatrimillones (Scouter)";
+  if (!Number.isFinite(num)) return "∞ Incalculable (Scouter)";
+  if (num >= 1e30) return "Trascendente Cósmico (Scouter)";
+  if (num >= 1e24) return (num / 1e24).toFixed(2) + " Septillones (Scouter)";
+  if (num >= 1e21) return (num / 1e21).toFixed(2) + " Sextillones (Scouter)";
+  if (num >= 1e18) return (num / 1e18).toFixed(2) + " Quintillones (Scouter)";
   if (num >= 1e15) return (num / 1e15).toFixed(2) + " Trillones (Scouter)";
   if (num >= 1e12) return (num / 1e12).toFixed(2) + " Billones (Scouter)";
-  if (num >= 1e9) return (num / 1e9).toFixed(2) + " Mil Millones (Scouter)";
-  if (num >= 1e6) return (num / 1e6).toFixed(1) + " Millones (Scouter)";
-  if (num >= 1e3) return num.toLocaleString('es-ES') + " Unidades (Scouter)";
+  if (num >= 1e9)  return (num / 1e9).toFixed(2) + " Mil Millones (Scouter)";
+  if (num >= 1e6)  return (num / 1e6).toFixed(1) + " Millones (Scouter)";
+  if (num >= 1e3)  return num.toLocaleString('es-ES') + " Unidades (Scouter)";
   return Math.round(num) + " Unidades (Scouter)";
 }
 

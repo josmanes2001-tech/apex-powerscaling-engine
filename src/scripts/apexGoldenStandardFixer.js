@@ -112,13 +112,22 @@ function correctCharacter(c, idx) {
   const log = [];
 
   // -----------------------------------------------------------------------
-  // PASO 1: Eliminar formas duplicadas (mismo multiplicador + id similar)
+  // PASO 1: Eliminar formas duplicadas (mismo id base)
   // -----------------------------------------------------------------------
   if (Array.isArray(fixed.forms) && fixed.forms.length > 1) {
     const seen = new Map();
     const deduped = [];
     for (const f of fixed.forms) {
-      const key = `${f.apexKiMultiplier}_${slugify(f.name || f.id || '')}`;
+      // Clave = id base o nombre normalizado
+      const idBase = (f.id || '').toLowerCase().replace(/[-_]/g, '');
+      const nameNorm = (f.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      // Detectar base-like: mult<=1.05 O nombre contiene "base"
+      const isBaseLike = f.apexKiMultiplier <= 1.05 ||
+        f.name.toLowerCase().includes('base') ||
+        (f.id && f.id.toLowerCase().includes('base'));
+      // Para bases-like, agrupar por id
+      const key = isBaseLike ? `base_${idBase}` : `${idBase}_${f.apexKiMultiplier}_${nameNorm}`;
+
       if (!seen.has(key)) {
         seen.set(key, true);
         deduped.push(f);
@@ -131,15 +140,44 @@ function correctCharacter(c, idx) {
 
   // -----------------------------------------------------------------------
   // PASO 2: Renombrar formas artificiales prohibidas
+  // (afecta incluso a mult=1.0 si NO es la base canónica con id='base')
   // -----------------------------------------------------------------------
   if (Array.isArray(fixed.forms)) {
     for (const f of fixed.forms) {
-      if (f.apexKiMultiplier === 1.0) continue; // No tocar la base
+      if (f.id === 'base' || f.id === (slugify(fixed.name) + '-base')) continue; // Solo la base canónica real está exenta
       if (isMuscularFullPower(fixed)) continue; // Permitido en allowlist
       if (hasArtificialName(f.name)) {
         const original = f.name;
         f.name = getCleanBaseName(f.name);
         log.push(`  [RENAME] "${original}" -> "${f.name}"`);
+      }
+    }
+  }
+
+  // -----------------------------------------------------------------------
+  // PASO 2.5: Detectar y fusionar bases genéricas duplicadas (idempotencia)
+  // Si ya inyectamos una base genérica en pasada previa, pero existe una
+  // base con nombre de saga en otra posición, fusionarlas.
+  // -----------------------------------------------------------------------
+  if (Array.isArray(fixed.forms) && fixed.forms.length > 1) {
+    const firstForm = fixed.forms[0];
+    const firstIsGeneric = firstForm.apexKiMultiplier === 1.0 &&
+      (firstForm.name === `${fixed.name} (Estado Base)` ||
+       (firstForm.id && firstForm.id === (slugify(fixed.name) + '-base')));
+
+    if (firstIsGeneric) {
+      // Buscar si hay otra forma base canónica con nombre de saga
+      const sagaBaseIdx = fixed.forms.findIndex((f, idx) =>
+        idx > 0 && f.apexKiMultiplier === 1.0 &&
+        !f.name.includes('(Estado Base)') &&
+        (isBaseForm(f, fixed.name) ||
+         (f.id && f.id.toLowerCase().includes('base') && f.id !== (slugify(fixed.name) + '-base')))
+      );
+
+      if (sagaBaseIdx > 0) {
+        // Eliminar la genérica del índice 0
+        fixed.forms.splice(0, 1);
+        log.push(`  [DEDUP-BASE] Base genérica duplicada eliminada (idempotencia)`);
       }
     }
   }
@@ -167,32 +205,69 @@ function correctCharacter(c, idx) {
        firstForm.id.toLowerCase().includes('base'));
 
     if (!firstIsRealBase) {
-      // Buscar si existe una forma base con mult=1.0 más adelante
+      // Buscar si existe una forma con mult cercano a 1 (saga-base mal catalogada como transformación)
+      const sagaBaseIdx = fixed.forms.findIndex(f =>
+        f.apexKiMultiplier > 1.0 && f.apexKiMultiplier <= 1.5 &&
+        (f.id && f.id.toLowerCase().includes('base'))
+      );
+
       const realBaseIdx = fixed.forms.findIndex(f =>
         f.apexKiMultiplier === 1.0 &&
         (isBaseForm(f, fixed.name) || (f.id && f.id.toLowerCase().includes('base')))
       );
 
       if (realBaseIdx > 0) {
-        // Reubicar al índice 0
-        const [realBase] = fixed.forms.splice(realBaseIdx, 1);
-        // Renombrar la base genérica si era un "Estado Base" genérico
+        // FUSIONAR: renombrar la base con nombre de saga como "Estado Base" canónico
+        const realBase = fixed.forms[realBaseIdx];
+        const originalName = realBase.name;
         realBase.name = `${fixed.name} (Estado Base)`;
-        realBase.id = realBase.id || slugify(fixed.name) + '-base';
+        realBase.id = (slugify(fixed.name) || 'char') + '-base';
+        realBase.apexKiMultiplier = 1.0;
+        realBase.staminaDrain = 0;
+        // Reubicar al índice 0
+        fixed.forms.splice(realBaseIdx, 1);
         fixed.forms.unshift(realBase);
-        log.push(`  [BASE-MOVE] Reubicada forma base canónica al índice 0: ${realBase.name}`);
+        log.push(`  [BASE-FUSE] Forma base con nombre de saga fusionada y renombrada: "${originalName}" -> "${realBase.name}"`);
+      } else if (sagaBaseIdx > 0) {
+        // Caso: base genérica al 0 PERO existe forma con mult 1.05-1.5 que ES la base real (mal catalogada)
+        const realBase = fixed.forms[sagaBaseIdx];
+        const originalName = realBase.name;
+        realBase.name = `${fixed.name} (Estado Base)`;
+        realBase.id = (slugify(fixed.name) || 'char') + '-base';
+        realBase.apexKiMultiplier = 1.0;
+        realBase.staminaDrain = 0;
+        fixed.forms.splice(sagaBaseIdx, 1);
+        fixed.forms.unshift(realBase);
+        log.push(`  [BASE-FIX] Forma base mal catalogada como transformación reasignada: "${originalName}" -> "${realBase.name}"`);
       } else {
-        // Inyectar nueva forma base canónica
-        const newBase = {
-          id: (slugify(fixed.name) || 'char') + '-base',
-          name: `${fixed.name} (Estado Base)`,
-          apexKiMultiplier: 1.0,
-          staminaDrain: 0,
-          tier: firstForm.tier || fixed.tier || '7-B',
-          stats: `Forma Base canónica de ${fixed.name} previo a cualquier transformación.`
-        };
-        fixed.forms.unshift(newBase);
-        log.push(`  [BASE-INJECT] Inyectada forma base canónica: ${newBase.name}`);
+        // Última oportunidad: si existe una forma con mult<=1.1 y nombre contiene "base", tratarla como base
+        const nearBaseIdx = fixed.forms.findIndex(f =>
+          f.apexKiMultiplier > 1.0 && f.apexKiMultiplier <= 1.1 &&
+          f.name.toLowerCase().includes('base')
+        );
+        if (nearBaseIdx > 0) {
+          const realBase = fixed.forms[nearBaseIdx];
+          const originalName = realBase.name;
+          realBase.name = `${fixed.name} (Estado Base)`;
+          realBase.id = (slugify(fixed.name) || 'char') + '-base';
+          realBase.apexKiMultiplier = 1.0;
+          realBase.staminaDrain = 0;
+          fixed.forms.splice(nearBaseIdx, 1);
+          fixed.forms.unshift(realBase);
+          log.push(`  [BASE-MERGE] Variante de base con mult cercano a 1 absorbida: "${originalName}" -> "${realBase.name}"`);
+        } else {
+          // Inyectar nueva forma base canónica
+          const newBase = {
+            id: (slugify(fixed.name) || 'char') + '-base',
+            name: `${fixed.name} (Estado Base)`,
+            apexKiMultiplier: 1.0,
+            staminaDrain: 0,
+            tier: firstForm.tier || fixed.tier || '7-B',
+            stats: `Forma Base canónica de ${fixed.name} previo a cualquier transformación.`
+          };
+          fixed.forms.unshift(newBase);
+          log.push(`  [BASE-INJECT] Inyectada forma base canónica: ${newBase.name}`);
+        }
       }
     } else {
       // La primera ES la base pero por si acaso asegurar mult=1.0

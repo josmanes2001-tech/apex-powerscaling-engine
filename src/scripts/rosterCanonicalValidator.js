@@ -90,21 +90,60 @@ function scaleTier(baseTier, mult) {
 
 function cleanSignificantDigits(num) {
   if (typeof num !== 'number' || isNaN(num) || num <= 0) return 1000;
+  if (!Number.isFinite(num)) return 1e24;
   if (num < 1000) return Math.round(num);
-  if (num < 1000000) {
-    if (num < 100000) return Math.round(num / 100) * 100;
-    return Math.round(num / 1000) * 1000;
-  }
+  if (num < 100000) return Math.round(num / 10) * 10;
+  if (num < 1000000) return Math.round(num / 100) * 100;
   const magnitude = Math.pow(10, Math.floor(Math.log10(num)) - 2);
   return Math.round(num / magnitude) * magnitude;
+}
+
+function deduplicateArsenal(arr) {
+  if (!Array.isArray(arr)) return [];
+  const seen = new Set();
+  const res = [];
+  for (const item of arr) {
+    const rawName = typeof item === 'object' ? (item.name || item.desc || '') : String(item);
+    const norm = rawName.toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]/g, '');
+    if (!norm) continue;
+    let duplicate = false;
+    for (const s of seen) {
+      if (s === norm || (s.length > 5 && norm.length > 5 && (s.includes(norm) || norm.includes(s)))) {
+        duplicate = true;
+        break;
+      }
+    }
+    if (!duplicate) {
+      seen.add(norm);
+      res.push(item);
+    }
+  }
+  return res;
 }
 
 export function validateAndAutoCorrectRoster(characters) {
   let correctionsCount = 0;
 
   for (const c of characters) {
-    // 1. Franquicia y Universo
-    if (!c.franchise || !VALID_FRANCHISES.includes(c.franchise)) {
+    const idLower = (c.id || '').toLowerCase();
+    const nameLower = (c.name || '').toLowerCase();
+
+    // 1. Franquicia y Universo canónico inmutable
+    if (idLower.includes('kojiro-sasaki') || nameLower.includes('kojiro sasaki')) {
+      if (c.franchise !== 'Record of Ragnarok') {
+        c.franchise = 'Record of Ragnarok';
+        c.universe = 'Shuumatsu no Valkyrie (Record of Ragnarok)';
+        correctionsCount++;
+      }
+    } else if (idLower.includes('kakyoin') || nameLower.includes('kakyoin')) {
+      if (c.franchise !== "JoJo's Bizarre Adventure") {
+        c.franchise = "JoJo's Bizarre Adventure";
+        c.universe = "JoJo's Bizarre Adventure";
+        correctionsCount++;
+      }
+    } else if (!c.franchise || !VALID_FRANCHISES.includes(c.franchise)) {
       const u = (c.universe || '').toLowerCase();
       const n = (c.name || '').toLowerCase();
       if (u.includes('dragon ball') || n.includes('goku') || n.includes('vegeta')) c.franchise = 'Dragon Ball';
@@ -126,11 +165,89 @@ export function validateAndAutoCorrectRoster(characters) {
       correctionsCount++;
     }
 
+    // 1.5. Blindaje de Tiers Canónicos Críticos
+    if (idLower.includes('granjero-con-escopeta') || nameLower.includes('granjero con escopeta')) {
+      if (c.tier !== '10-C' || c.numericStats?.apexKi !== 5) {
+        c.tier = '10-C';
+        c.physicalTier = '10-C';
+        c.haxTier = '10-C';
+        c.sourceKi = 5;
+        c.numericStats = { apexKi: 5, scouterKi: 5, powerLevel: 5 };
+        if (c.forms && c.forms[0]) c.forms[0].tier = '10-C';
+        correctionsCount++;
+      }
+    } else if (idLower.includes('nam') && (c.universe || '').includes('Clásico')) {
+      if (c.tier !== '9-A' || c.numericStats?.apexKi !== 26) {
+        c.tier = '9-A';
+        c.physicalTier = '9-A';
+        c.haxTier = '9-A';
+        c.sourceKi = 26;
+        c.numericStats = { apexKi: 26, scouterKi: 26, powerLevel: 26 };
+        if (c.forms && c.forms[0]) c.forms[0].tier = '9-A';
+        correctionsCount++;
+      }
+    } else if (idLower === 'videl-saga-buu-6') {
+      if (c.tier !== '9-A' || c.numericStats?.apexKi !== 42) {
+        c.tier = '9-A';
+        c.physicalTier = '9-A';
+        c.haxTier = '9-A';
+        c.numericStats = { apexKi: 42, scouterKi: 42, powerLevel: 42 };
+        if (c.forms && c.forms[0]) c.forms[0].tier = '9-A';
+        correctionsCount++;
+      }
+    } else if (idLower.includes('carmine') && (c.universe || '').includes('Super')) {
+      if (c.tier !== '9-C' || c.numericStats?.apexKi !== 10) {
+        c.tier = '9-C';
+        c.physicalTier = '9-C';
+        c.haxTier = '9-C';
+        c.numericStats = { apexKi: 10, scouterKi: 10, powerLevel: 10 };
+        if (c.forms && c.forms[0]) c.forms[0].tier = '9-C';
+        correctionsCount++;
+      }
+    }
+
     // 2. Blindaje de Ki no-Dragon Ball
     if (c.franchise !== 'Dragon Ball' && c.sourceKi) {
       delete c.sourceKi;
       delete c.sourceKiStatus;
       correctionsCount++;
+    }
+
+    // 2.5. Sanitización de Nombres Duplicados (ej: "X / X")
+    if (c.name && c.name.includes('/')) {
+      const parts = c.name.split('/').map(p => p.trim());
+      if (parts.length === 2 && parts[0].toLowerCase() === parts[1].toLowerCase()) {
+        c.name = parts[0];
+        correctionsCount++;
+      }
+    }
+
+    // 2.6. Erradicación de Textos Genéricos de Plantilla en AP y Durabilidad
+    const apStr = typeof c.ap === 'string' ? c.ap : '';
+    if (apStr.includes('Capacidades de combate activas al 100% de su rendimiento físico') ||
+        apStr.includes('Forma inicial de combate con balance óptimo entre velocidad, resistencia física') ||
+        apStr.includes('Forma Base canónica estándar')) {
+      const cleanTier = (c.tier || c.physicalTier || '7-B').split('|')[0].replace('Tier', '').trim();
+      c.ap = `Nivel destructivo correspondiente a Tier ${cleanTier}. Despliega todo su repertorio característico de combate y artes marciales en estado base.`;
+      correctionsCount++;
+    }
+
+    const durStr = typeof c.durability === 'string' ? c.durability : '';
+    if (durStr.startsWith('Escalado a ') || durStr === 'Escalado a Base' || durStr.length < 15) {
+      const cleanTier = (c.physicalTier || c.tier || '7-B').split('|')[0].replace('Tier', '').trim();
+      c.durability = `Resistencia física y tolerancia a impactos consistente con su Tier ${cleanTier}, reforzada por su fisionomía y experiencia en combate.`;
+      correctionsCount++;
+    }
+
+    // 2.7. Deduplicación Estricta de Arsenal
+    if (c.arsenal) {
+      ['basicAttacks', 'superAttacks', 'ultimateAttacks', 'passives', 'specialMechanics', 'weaknesses'].forEach(k => {
+        if (Array.isArray(c.arsenal[k])) {
+          const originalLen = c.arsenal[k].length;
+          c.arsenal[k] = deduplicateArsenal(c.arsenal[k]);
+          if (c.arsenal[k].length !== originalLen) correctionsCount++;
+        }
+      });
     }
 
     // 3. Blindaje de Ki numérico contextual (Prohibición estricta de niveles planos como 800 o 5.5e9)
@@ -302,13 +419,13 @@ async function main() {
   console.log('================================================================\n');
 
   const content = fs.readFileSync(CHARACTERS_FILE, 'utf8');
-  const jsonMatch = content.match(/export const INITIAL_CHARACTERS = (\[[\s\S]*\]);/);
-  if (!jsonMatch) {
-    console.error('❌ Error al cargar characters.js');
+  let characters;
+  try {
+    characters = eval(content.replace(/export\s+const\s+INITIAL_CHARACTERS\s*=\s*/, '').replace(/;\s*$/, ''));
+  } catch (err) {
+    console.error('❌ Error al evaluar characters.js:', err.message);
     process.exit(1);
   }
-
-  let characters = JSON.parse(jsonMatch[1]);
   console.log(`📋 Total de personajes cargados: ${characters.length}`);
 
   const { characters: validated, correctionsCount } = validateAndAutoCorrectRoster(characters);

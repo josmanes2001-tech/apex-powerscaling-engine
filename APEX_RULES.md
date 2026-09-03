@@ -228,3 +228,33 @@ Tras completar el despliegue, comprobar el estado HTTP del servidor:
 Invoke-WebRequest -Uri "https://apex-engine-six.vercel.app" -Method Head | Select-Object StatusCode, StatusDescription
 ```
 El resultado debe ser estrictamente: **`StatusCode: 200`**.
+
+---
+
+## 🌟 PARTE 5: LOS 8 PILARES DE CALIDAD Y FIDELIDAD EN FICHAS (APEX EVOLUTION 3.0)
+
+1. **Alineación Estricta de Franquicias y Cero Cruces:**
+   - Cada combatiente debe pertenecer a su universo canónico legítimo (ej. *Kojiro Sasaki* en `Record of Ragnarok`, *Noriaki Kakyoin* en `JoJo's Bizarre Adventure`, nunca en *Chainsaw Man*).
+2. **Blindaje de Tiers Canónicos Críticos:**
+   - Personajes humanos y de nivel básico/cómico no pueden tener Tiers inflados arbitrariamente:
+     * *Granjero con Escopeta*: Tier `10-C`, Ki exacto: `5`.
+     * *Nam*: Tier `9-A`, Ki exacto: `26`.
+     * *Videl*: Tier `9-A`, Ki exacto: `42`.
+     * *Carmine*: Tier `9-C`, Ki exacto: `10`.
+3. **Erradicación de Clones de Ki Numérico (Cero Niveles Planos):**
+   - Prohibido asignar valores estáticos idénticos a través de los Tiers (como `5.80 Mil Millones`, `650.00 Millones`, `25.00 Billones`, `48.00 Mil` o `18.50 Mil`).
+   - Todo personaje sin `sourceKi` oficial de Dragon Ball calcula su APEX-Ki de forma individualizada mediante **`getCharacterSignatureVariance`**, garantizando que cada gladiador posea una cifra distintiva y armónica.
+4. **Erradicación de Notación Científica Rota en la Interfaz:**
+   - Prohibido renderizar strings como `1.1694993910198652e+32 Cuatrimillones`.
+   - Números $\ge 10^{30}$ o Tiers 1-A/0 se formatean limpiamente como `Trascendente Cósmico` o `∞ Incalculable`.
+5. **Deduplicación Estricta de Arsenales:**
+   - Prohibido repetir variantes de la misma técnica en `basicAttacks`, `superAttacks`, `ultimateAttacks` o `passives` (ej. 5 copias de *Discurso Maldito* o 4 de *Mano de Netero*).
+   - El validador depura similitudes automáticamente.
+6. **Erradicación de Textos de Plantilla Genéricos:**
+   - Prohibido el texto copy-paste en Attack Potency (*"Capacidades de combate activas al 100% de su rendimiento físico..."*) y Durabilidad (*"Escalado a Base"*).
+   - Cada ficha debe detallar el tipo de daño, armas y fisionomía del luchador.
+7. **Nombres Limpios y Sin Duplicación:**
+   - Prohibido patrones como `X / X` o duplicaciones en cabeceras.
+8. **Monotonicidad y Consistencia en `resolveCombatState`:**
+   - `resolveCombatState` prioriza siempre los stats auditados y calibrados de `numericStats.apexKi` multiplicados por la forma activa, protegiendo al motor de regresiones.
+

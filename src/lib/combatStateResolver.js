@@ -190,18 +190,23 @@ export function resolveCombatState(character, activeStateId = 'base', scenario =
 
   // Solo Dragon Ball: calcular desde escala Scouter canónica
   if (sourceKiBase === null && isDB && baseTierRank !== null) {
-    const cleanTier = cleanBaseTier;
-    const isTranscendent = cleanTier && (
-      /^(Low|High)?\s*1-[ABC]/.test(cleanTier) ||
-      /^(Low|High)?\s*1-A/.test(cleanTier) ||
-      cleanTier === '0'
-    );
-    if (!isTranscendent) {
-      const baseEnergyObj = getBaseEnergyFromTier(cleanTier);
-      const scouterBase = baseEnergyObj?.value;
-      if (validPositive(scouterBase)) {
-        sourceKiBase = scouterBase;
-        sourceKiStatus = 'calculated';
+    if (validPositive(character.numericStats?.apexKi)) {
+      sourceKiBase = character.numericStats.apexKi;
+      sourceKiStatus = 'character-stats';
+    } else {
+      const cleanTier = cleanBaseTier;
+      const isTranscendent = cleanTier && (
+        /^(Low|High)?\s*1-[ABC]/.test(cleanTier) ||
+        /^(Low|High)?\s*1-A/.test(cleanTier) ||
+        cleanTier === '0'
+      );
+      if (!isTranscendent) {
+        const baseEnergyObj = getBaseEnergyFromTier(cleanTier, character);
+        const scouterBase = baseEnergyObj?.value;
+        if (validPositive(scouterBase)) {
+          sourceKiBase = scouterBase;
+          sourceKiStatus = 'calculated';
+        }
       }
     }
   }
@@ -266,10 +271,15 @@ export function resolveCombatState(character, activeStateId = 'base', scenario =
       activeTierExact = cleanActiveTier;
       currentApexKiLog10 = getBaseApexKiLog10(cleanActiveTier, baseWithinTierScore);
       if (isTrulyBase && isDB) {
-        const baseEnergyObj = getBaseEnergyFromTier(cleanActiveTier);
-        if (validPositive(baseEnergyObj?.value)) {
-          sourceKiBase = baseEnergyObj.value;
-          sourceKiCurrent = baseEnergyObj.value;
+        if (validPositive(character.numericStats?.apexKi)) {
+          sourceKiBase = character.numericStats.apexKi;
+          sourceKiCurrent = character.numericStats.apexKi;
+        } else {
+          const baseEnergyObj = getBaseEnergyFromTier(cleanActiveTier, character);
+          if (validPositive(baseEnergyObj?.value)) {
+            sourceKiBase = baseEnergyObj.value;
+            sourceKiCurrent = baseEnergyObj.value;
+          }
         }
       }
     }
@@ -485,15 +495,21 @@ export function resolveCombatState(character, activeStateId = 'base', scenario =
    } else if (isDB && validPositive(sourceKiCurrent)) {
      apexKiRaw = sourceKiCurrent;
    } else {
-     // Usar el desglose dinámico individualizado por estadísticas, hazañas, velocidad, durabilidad y Hax
-     const bd = getPowerLevelFormulaBreakdown(character, activeStateId);
-     const dynamicKi = bd?.finalPowerLevel || bd?.sourceKi || character.powerScaling?.scouterKi || character.numericStats?.scouterKi;
-     if (validPositive(dynamicKi)) {
-       apexKiRaw = dynamicKi;
-     } else if (baseTierRank !== null) {
-       const scouterBase = getScaledScouterEnergy(cleanBaseTier, baseWithinTierScore);
-       apexKiRaw = validPositive(scouterBase) ? scouterBase * formMultiplier : null;
-     }
+      // Prioridad 1: Si el personaje tiene numericStats auténticos ya calibrados y únicos
+      const charKi = character.numericStats?.apexKi || character.numericStats?.powerLevel || character.numericStats?.scouterKi;
+      if (validPositive(charKi)) {
+        apexKiRaw = charKi * (validPositive(formMultiplier) ? formMultiplier : 1.0);
+      } else {
+        // Usar el desglose dinámico individualizado por estadísticas, hazañas, velocidad, durabilidad y Hax
+        const bd = getPowerLevelFormulaBreakdown(character, activeStateId);
+        const dynamicKi = bd?.finalPowerLevel || bd?.sourceKi || character.powerScaling?.scouterKi;
+        if (validPositive(dynamicKi)) {
+          apexKiRaw = dynamicKi;
+        } else if (baseTierRank !== null) {
+          const scouterBase = getScaledScouterEnergy(cleanBaseTier, baseWithinTierScore);
+          apexKiRaw = validPositive(scouterBase) ? scouterBase * formMultiplier : null;
+        }
+      }
    }
 
   const apexKiDisplay = validPositive(apexKiRaw)
