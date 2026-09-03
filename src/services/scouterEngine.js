@@ -148,124 +148,173 @@ export const KNOWN_CANON_DB_LEVELS = [
 ];
 
 /**
- * Mapeo de Energía Base (E_Tier) en Joules / Escala Logarítmica de Ki
+ * Genera una varianza contextual determinística basada en la firma única del personaje.
+ * Evita números planos o por defecto idénticos entre diferentes luchadores.
  */
-export function getBaseEnergyFromTier(tierStr = '') {
+export function getCharacterSignatureVariance(char) {
+  if (!char) return 1.0;
+  let hash = 0;
+  const str = `${char.id || ''}_${char.name || ''}_${char.alias || ''}_${typeof char.speed === 'object' ? JSON.stringify(char.speed) : char.speed || ''}`;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
+  }
+  const norm = Math.abs(hash % 1000) / 1000;
+  return 0.88 + (norm * 0.36); // Genera una modulación natural entre 0.88x y 1.24x
+}
+
+/**
+ * Mapeo de Energía Base (E_Tier) en Joules / Escala Logarítmica de Ki
+ * Integra modulación de firma única por personaje para eliminar valores planos por defecto.
+ */
+export function getBaseEnergyFromTier(tierStr = '', character = null) {
   const low = (tierStr || '').toLowerCase();
+  const variance = character ? getCharacterSignatureVariance(character) : 1.0;
 
   // Tier 1 & 0: Trascendente
   if (low.includes('1-a') || low.includes('outer') || low.includes('tier 0') || low.includes('boundless')) {
     return { value: Infinity, label: '∞ Trascendente', joules: 'Infinito 1-A' };
   }
   if (low.includes('1-b') || low.includes('hyper')) {
-    return { value: 1e24, label: '1.0 × 10²⁴ Ki', joules: '10^24 Joules' };
+    const val = Math.round(1e24 * variance);
+    return { value: val, label: `${val.toExponential(2)} Ki`, joules: '10^24 Joules' };
   }
   if (low.includes('1-c') || low.includes('multiverso complejo')) {
-    return { value: 1e20, label: '1.0 × 10²⁰ Ki', joules: '10^20 Joules' };
+    const val = Math.round(1e20 * variance);
+    return { value: val, label: `${val.toExponential(2)} Ki`, joules: '10^20 Joules' };
   }
 
   // Tier 2: Multiversal
   if (low.includes('2-a') || low.includes('multiversal+')) {
-    return { value: 5e18, label: '5.0 Trillones de Ki', joules: '10^18 Joules' };
+    const val = Math.round(5e18 * variance);
+    return { value: val, label: 'Multiversal+', joules: '10^18 Joules' };
   }
   if (low.includes('2-b') || low.includes('multiversal')) {
-    return { value: 5e16, label: '50.000 Billones de Ki', joules: '10^16 Joules' };
+    const val = Math.round(5e16 * variance);
+    return { value: val, label: 'Multiversal', joules: '10^16 Joules' };
   }
   if (low.includes('2-c') || low.includes('universal+')) {
-    return { value: 1e16, label: '10.000 Billones de Ki', joules: '10^15 Joules' };
+    const val = Math.round(1.2e16 * variance);
+    return { value: val, label: 'Universal+', joules: '10^15 Joules' };
   }
 
   // Tier 3: Cósmico / Universal
   if (low.includes('3-a') || low.includes('universal')) {
-    return { value: 2.5e13, label: '25 Billones de Ki', joules: '2.8 × 10^44 J' };
+    const val = Math.round(2.5e13 * variance);
+    return { value: val, label: 'Universal', joules: '2.8 × 10^44 J' };
   }
   if (low.includes('3-b') || low.includes('multi-galact')) {
-    return { value: 5e12, label: '5 Billones de Ki', joules: '10^42 J' };
+    const val = Math.round(5.4e12 * variance);
+    return { value: val, label: 'Multi-Galáctico', joules: '10^42 J' };
   }
   if (low.includes('3-c') || low.includes('galact')) {
-    return { value: 1e12, label: '1 Billón de Ki', joules: '10^40 J' };
+    const val = Math.round(1.1e12 * variance);
+    return { value: val, label: 'Galáctico', joules: '10^40 J' };
   }
 
   // Tier 4: Estelar / Sistema Solar
   if (low.includes('4-a') || low.includes('multi-solar')) {
-    return { value: 8e10, label: '80.000.000.000 Ki', joules: '10^36 J' };
+    const val = Math.round(8.5e10 * variance);
+    return { value: val, label: 'Multi-Sistema Solar', joules: '10^36 J' };
   }
   if (low.includes('4-b') || low.includes('solar')) {
-    return { value: 5.5e9, label: '5.500.000.000 Ki', joules: '10^34 J' };
+    const val = Math.round(5.8e9 * variance);
+    return { value: val, label: 'Sistema Solar', joules: '10^34 J' };
   }
   if (low.includes('4-c') || low.includes('estrella') || low.includes('stellar')) {
-    return { value: 4.5e8, label: '450.000.000 Ki', joules: '10^32 J' };
+    const val = Math.round(6.5e8 * variance);
+    return { value: val, label: 'Estelar', joules: '10^32 J' };
   }
 
   // Tier 5: Planetario / Subestelar
   if (low.includes('high 5-a')) {
-    return { value: 1.5e8, label: '150.000.000 Ki', joules: '10^29 J' };
+    const val = Math.round(1.6e8 * variance);
+    return { value: val, label: 'Planeta Masivo / Enana', joules: '10^29 J' };
   }
   if (low.includes('5-a') || low.includes('planeta grande') || low.includes('enana')) {
-    return { value: 6e7, label: '60.000.000 Ki', joules: '10^28 J' };
+    const val = Math.round(6.2e7 * variance);
+    return { value: val, label: 'Planeta Grande', joules: '10^28 J' };
   }
   if (low.includes('low 5-a')) {
-    return { value: 1.5e7, label: '15.000.000 Ki', joules: '10^26 J' };
+    const val = Math.round(1.8e7 * variance);
+    return { value: val, label: 'Planeta Mediano', joules: '10^26 J' };
   }
   if (low.includes('high 5-b')) {
-    return { value: 250000, label: '250.000 Unidades', joules: '10^25 J' };
+    const val = Math.round(265000 * variance);
+    return { value: val, label: 'High Planeta', joules: '10^25 J' };
   }
   if (low.includes('5-b') || low.includes('planeta')) {
-    return { value: 45000, label: '45.000 Unidades', joules: '10^24 J' };
+    const val = Math.round(48000 * variance);
+    return { value: val, label: 'Planeta', joules: '10^24 J' };
   }
   if (low.includes('low 5-b')) {
-    return { value: 24000, label: '24.000 Unidades', joules: '10^23 J' };
+    const val = Math.round(25000 * variance);
+    return { value: val, label: 'Low Planeta', joules: '10^23 J' };
   }
   if (low.includes('5-c') || low.includes('luna') || low.includes('moon')) {
-    return { value: 18000, label: '18.000 Unidades', joules: '10^21 J' };
+    const val = Math.round(18500 * variance);
+    return { value: val, label: 'Luna / Planeta Pequeño', joules: '10^21 J' };
   }
 
   // Tier 6: Continente / Isla
   if (low.includes('6-a') || low.includes('continental')) {
-    return { value: 8000, label: '8.000 Unidades', joules: '10^18 J' };
+    const val = Math.round(8500 * variance);
+    return { value: val, label: 'Continental', joules: '10^18 J' };
   }
   if (low.includes('6-b') || low.includes('país') || low.includes('country')) {
-    return { value: 4000, label: '4.000 Unidades', joules: '10^16 J' };
+    const val = Math.round(4200 * variance);
+    return { value: val, label: 'País', joules: '10^16 J' };
   }
   if (low.includes('6-c') || low.includes('isla') || low.includes('island')) {
-    return { value: 1500, label: '1.500 Unidades', joules: '10^14 J' };
+    const val = Math.round(1650 * variance);
+    return { value: val, label: 'Isla', joules: '10^14 J' };
   }
 
   // Tier 7: Montaña / Ciudad
   if (low.includes('7-a') || low.includes('montaña') || low.includes('mountain')) {
-    return { value: 800, label: '800 Unidades', joules: '10^12 J' };
+    const val = Math.round(1850 * variance);
+    return { value: val, label: 'Montaña', joules: '10^12 J' };
   }
   if (low.includes('7-b') || low.includes('ciudad') || low.includes('city')) {
-    return { value: 400, label: '400 Unidades', joules: '10^10 J' };
+    const val = Math.round(850 * variance);
+    return { value: val, label: 'Ciudad', joules: '10^10 J' };
   }
   if (low.includes('7-c') || low.includes('pueblo') || low.includes('town')) {
-    return { value: 260, label: '260 Unidades', joules: '10^8 J' };
+    const val = Math.round(350 * variance);
+    return { value: val, label: 'Pueblo', joules: '10^8 J' };
   }
 
   // Tier 8: Edificio
   if (low.includes('8-a') || low.includes('multi-edificio')) {
-    return { value: 180, label: '180 Unidades', joules: '10^6 J' };
+    const val = Math.round(195 * variance);
+    return { value: val, label: 'Multi-Edificio', joules: '10^6 J' };
   }
   if (low.includes('8-b') || low.includes('manzana')) {
-    return { value: 130, label: '130 Unidades', joules: '10^5 J' };
+    const val = Math.round(135 * variance);
+    return { value: val, label: 'Manzana Urbana', joules: '10^5 J' };
   }
   if (low.includes('8-c') || low.includes('edificio') || low.includes('building')) {
-    return { value: 80, label: '80 Unidades', joules: '10^4 J' };
+    const val = Math.round(85 * variance);
+    return { value: val, label: 'Edificio', joules: '10^4 J' };
   }
 
   // Tier 9: Muro / Sobrehumano
   if (low.includes('9-a') || low.includes('edificio pequeño')) {
-    return { value: 40, label: '40 Unidades', joules: '10^3 J' };
+    const val = Math.round(42 * variance);
+    return { value: val, label: 'Edificio Pequeño', joules: '10^3 J' };
   }
   if (low.includes('9-b') || low.includes('muro') || low.includes('wall')) {
-    return { value: 25, label: '25 Unidades', joules: '500 J' };
+    const val = Math.round(26 * variance);
+    return { value: val, label: 'Muro', joules: '500 J' };
   }
   if (low.includes('9-c') || low.includes('calle') || low.includes('street')) {
-    return { value: 15, label: '15 Unidades', joules: '200 J' };
+    const val = Math.round(16 * variance);
+    return { value: val, label: 'Calle', joules: '200 J' };
   }
 
   // Tier 10: Humano
-  return { value: 5, label: '5 Unidades (Granjero)', joules: '100 J' };
+  const val = Math.max(1, Math.round(5 * variance));
+  return { value: val, label: `${val} Unidades`, joules: '100 J' };
 }
 
 /**
@@ -403,7 +452,7 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   const rawTier = activeForm.tierExact || activeForm.tier || character.physicalTier || character.tierExact || character.tier || '';
   const physTierPart = rawTier.includes('|') ? rawTier.split('|')[0].trim() : rawTier;
   const haxTierPart = rawTier.includes('|') ? rawTier.split('|')[1].trim() : (character.haxTier || null);
-  let baseEnergy = getBaseEnergyFromTier(physTierPart);
+  let baseEnergy = getBaseEnergyFromTier(physTierPart, character);
 
   // Si el personaje o forma tiene sourceKi oficial canónico de Dragon Ball, usarlo como valor base auténtico
   const explicitKi = activeForm.sourceKi || character.sourceKi;

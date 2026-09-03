@@ -1,7 +1,7 @@
 {
   "universe": "all",
   "currentRound": 1,
-  "totalProcessed": 39,
+  "totalProcessed": 51,
   "results": [
     {
       "id": "son-goku-ni-o-dragon-ball-cl-sico-987",
@@ -146521,6 +146521,4523 @@
       "doesChangePowerKey": false,
       "sourceKi": 43000,
       "sourceKiStatus": "canonical-db"
+    },
+    {
+      "id": "captain-ginyu-saga-namek-524",
+      "name": "Capitán Ginyu",
+      "alias": "El Líder de las Fuerzas Especiales",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga Namek",
+      "version": "Cuerpo Mutante Original",
+      "tier": "5-B",
+      "tierExact": "5-B",
+      "tierRank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
+      "ap": "Nivel Planetario. Con un nivel de poder de 120,000 en Namek, el Capitán Ginyu era el soldado más fuerte del imperio de Freezer. Un solo ataque suyo bastaría para obliterar el núcleo de la Tierra sin despeinarse. Pudo darle una buena pelea al Goku recién llegado a Namek.",
+      "range": "Planetario.",
+      "speed": {
+        "combat": "Relativista.",
+        "reaction": "Relativista.",
+        "travel": "Relativista.",
+        "attack": "Alta velocidad."
+      },
+      "strength": "Clase Planetaria. Levantamiento: Clase Luna.",
+      "durability": "Nivel Planetario. Muy resistente y dispuesto a mutilar su propio cuerpo para ganar ventajas tácticas.",
+      "stamina": "Muy Alta. Curtido en cientos de misiones planetarias.",
+      "battleIQ": "Táctico Leal, estricto con los códigos marciales y de espectáculo de sus poses, pero pragmático a la hora de sobrevivir.",
+      "haxTags": [
+        "Cambio de Cuerpo (Body Change)",
+        "Telequinesis Paralizante",
+        "Voluntad Indomable",
+        "Pose Asesina de la Jungla"
+      ],
+      "apexKi": 120000,
+      "apexKiFormatted": "120.000 Unidades",
+      "scouterKi": 120000,
+      "scouterKiFormatted": "120.000 Unidades",
+      "sourceKi": 120000,
+      "sourceKiStatus": "canonical-db",
+      "powerKey": "5-B-Planetario",
+      "formsAudited": [
+        {
+          "id": "ginyu-original-body",
+          "name": "Capitán Ginyu (Cuerpo Original / 120.000 Unidades)",
+          "apexKiMultiplier": 1,
+          "staminaDrain": 0,
+          "activationCondition": "Estado natural canónico del personaje en Namek.",
+          "canonStatus": "source_backed",
+          "tier": "5-B",
+          "tierExact": "5-B",
+          "stats": "120.000 unidades canónicas. Cuerpo real del Capitán Ginyu. Cuernos violetas, armadura de élite, dominio completo del Cambio de Cuerpo.",
+          "grantedTags": [
+            "Cambio de Cuerpo",
+            "Milky Cannon",
+            "Telequinesis",
+            "Líder Ginyu"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Cambio de Cuerpo",
+            "Milky Cannon",
+            "Telequinesis Paralizante"
+          ],
+          "limitations": [
+            "Posee una fuerza bruta limitada (120k) y depende del Cambio de Cuerpo para superar a rivales más fuertes."
+          ],
+          "drawbacks": [],
+          "exitCondition": "Uso voluntario del Cambio de Cuerpo o muerte del cuerpo actual.",
+          "counterplay": "Interceptar el rayo del Cambio de Cuerpo con un ser vivo de menor poder."
+        },
+        {
+          "id": "ginyu-cuerpo-goku",
+          "name": "Cuerpo de Goku (Intercambiado)",
+          "apexKiMultiplier": 0.19,
+          "staminaDrain": 15,
+          "activationCondition": "Cambio de cuerpo exitoso contra Goku en Namek.",
+          "canonStatus": "source_backed",
+          "tier": "5-C",
+          "tierExact": "5-C",
+          "stats": "Incapaz de armonizar el alma con el cuerpo saiyajin de Goku, su Ki cae a solo 23.000 unidades.",
+          "grantedTags": [
+            "Cuerpo Saiyajin (limitado)",
+            "Acceso parcial a Kamehameha (Ginyu no lo domina)"
+          ],
+          "suppressedTags": [
+            "Cambio de Cuerpo (requiere tiempo para sincronizar)",
+            "Milky Cannon",
+            "Telequinesis"
+          ],
+          "grantedAbilities": [],
+          "limitations": [
+            "Inadaptabilidad inmediata: no puede usar Kaio-ken ni SSJ al instante.",
+            "Descontrol del cuerpo ante heridas o subidas de Ki."
+          ],
+          "drawbacks": [
+            "Frenesí incontrolable al sentir su verdadero cuerpo en peligro (sapo).",
+            "Debilidad para canalizar técnicas avanzadas sin experiencia."
+          ],
+          "exitCondition": "Recuperación del cuerpo original o muerte del cuerpo actual.",
+          "counterplay": "Provocarlo para que se sobrepase y destruya su propio cuerpo."
+        },
+        {
+          "id": "ginyu-cuerpo-rana",
+          "name": "Cuerpo de Rana Namekiana (Penalizado)",
+          "apexKiMultiplier": 0.00005,
+          "staminaDrain": 0,
+          "tier": "10-C",
+          "tierExact": "10-C",
+          "stats": "5 unidades de combate. Incapaz de hablar o utilizar técnicas de combate. Atrapado en el cuerpo de una rana en Namek. Sin acceso al Cambio de Cuerpo.",
+          "activationCondition": "Intercambio accidental con la rana terrestre llevada por Goku.",
+          "canonStatus": "source_backed",
+          "grantedTags": [],
+          "suppressedTags": [
+            "Cambio de Cuerpo",
+            "Milky Cannon",
+            "Telequinesis",
+            "Fuerza Planetaria",
+            "Durabilidad Planetaria"
+          ],
+          "grantedAbilities": [],
+          "limitations": [
+            "Sin fuerza física, sin manipulación de ki, sin vuelo."
+          ],
+          "drawbacks": [
+            "Vulnerable a cualquier daño físico.",
+            "Pérdida total del estatus militar y la capacidad de combate."
+          ],
+          "exitCondition": "Cambio de cuerpo exitoso contra un oponente con un cuerpo digno.",
+          "counterplay": "Mantenerlo atrapado o aplastarlo en su forma de rana."
+        }
+      ],
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Golpes de Boxeo Militarizado",
+            "cost": 5,
+            "staminaCost": 5,
+            "damageType": "contundente",
+            "desc": "Puñetazos rápidos y precisos entrenados en cientos de misiones interplanetarias."
+          },
+          {
+            "name": "Poses de Intimidación",
+            "cost": 3,
+            "staminaCost": 3,
+            "damageType": "psicológico",
+            "desc": "Secuencia coreografiada de poses que desconcierta a rivales serios."
+          },
+          {
+            "name": "Patada de Combate Ginyu",
+            "cost": 6,
+            "staminaCost": 6,
+            "damageType": "contundente",
+            "desc": "Patada ascendente típica del estilo marcial del Capitán Ginyu."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Triturador de Vía Láctea (Milky Cannon)",
+            "desc": "Onda de ki morada masiva que arroja como si fuera un pase de rugby, explosiva al impacto.",
+            "cost": 25,
+            "staminaCost": 25,
+            "kiCost": "20%",
+            "chargeTime": "1 turno",
+            "damageType": "ki",
+            "counterplay": "Esquivar lateralmente o contraatacar durante la fase de lanzamiento."
+          },
+          {
+            "name": "Autolesión Táctica",
+            "desc": "Perfora su propio pecho con la mano para asegurarse de que su próximo movimiento sea letalmente injusto.",
+            "cost": 30,
+            "staminaCost": 30,
+            "hpCost": "25% HP",
+            "damageType": "buff_ofensivo",
+            "counterplay": "Aprovechar la apertura mientras se hiere."
+          },
+          {
+            "name": "Telequinesis Paralizante",
+            "desc": "Inmoviliza al oponente con un gesto de la mano, dejándolo vulnerable a golpes o técnicas de seguimiento.",
+            "cost": 15,
+            "staminaCost": 15,
+            "chargeTime": "Instantáneo",
+            "damageType": "control_mental",
+            "counterplay": "Resistencia mental alta o fuerza bruta para romper la sujeción."
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Cambio de Cuerpo (Body Change)",
+            "desc": "Grita '¡Cambio!', disparando un rayo blanco de su boca que traslada su alma al cuerpo de su oponente y viceversa. Conserva la fuerza física bruta del cuerpo, pero pierde acceso a técnicas exclusivas hasta asimilarlas.",
+            "cost": 50,
+            "staminaCost": 50,
+            "kiCost": "Mágico / Condicional",
+            "chargeTime": "Requiere line of sight y silencio",
+            "damageType": "hax_alma",
+            "counterplay": "Interceptar el rayo con un ser vivo de menor poder (ej: una rana).",
+            "conditions": "Solo funciona si el rival escucha la palabra 'Cambio' y no esquiva el rayo."
+          }
+        ],
+        "passives": [
+          {
+            "name": "Poses Especiales",
+            "desc": "Incrementan la moral propia y pueden desconcertar a rivales serios, dándole una leve ventaja de iniciativa.",
+            "effect": "Buff de iniciativa +10% al comenzar el combate si completa la pose sin ser interrumpido."
+          },
+          {
+            "name": "Voluntad Indomable",
+            "desc": "Resiste dolor extremo y manipulación mental básica gracias a su entrenamiento militar de élite.",
+            "effect": "Resistencia a mindControl +20, resistencia a dolor pasiva."
+          },
+          {
+            "name": "Dominio de Transferencia",
+            "desc": "Permite adaptarse parcialmente al cuerpo robado tras un periodo de asimilación de 2 turnos de combate.",
+            "effect": "Recuperación progresiva del Ki original del cuerpo objetivo."
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Dominio de Transferencia",
+            "desc": "Permite adaptarse parcialmente al cuerpo robado tras un periodo de asimilación de 2 turnos de combate."
+          },
+          {
+            "name": "Cambio de Cuerpo (Soul Swap)",
+            "desc": "Intercambio de almas que requiere interceptación física para ser contrarrestado."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Vulnerabilidad a Interceptación",
+            "desc": "El Cambio de Cuerpo puede ser interceptado lanzando a un ser menor (como una rana) en su trayectoria.",
+            "counterTags": [
+              "intercepción",
+              "control_de_masas",
+              "rayo_interceptable"
+            ],
+            "severity": "Crítica - si es interceptado pierde el cuerpo objetivo."
+          },
+          {
+            "name": "Inadaptabilidad de Ki Avanzado",
+            "desc": "No puede sacar el poder total del cuerpo robado inmediatamente si requiere control de Ki espiritual complejo.",
+            "counterTags": [
+              "tecnica_avanzada",
+              "sincronizacion_ki"
+            ],
+            "severity": "Alta - pérdida de 80% del potencial del cuerpo objetivo durante 2 turnos."
+          },
+          {
+            "name": "Ego Arrogante",
+            "desc": "Su obsesión por las poses y el espectáculo le hace perder valiosos segundos de combate.",
+            "counterTags": [
+              "provocación",
+              "concentración_visual"
+            ],
+            "severity": "Media - expone aperturas durante las poses."
+          }
+        ]
+      },
+      "synergies": [
+        {
+          "name": "Liderazgo Táctico Ginyu",
+          "partnerTags": [
+            "fuerzas_especiales_ginyu",
+            "equipo_ginyu"
+          ],
+          "effect": "Otorga un bono de sincronización de un 20% en combos grupales y aumenta la moral del equipo.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Coordinación Espectral",
+          "partnerTags": [
+            "jeice",
+            "burter",
+            "recoome",
+            "guldo"
+          ],
+          "effect": "Las poses coordinadas del equipo Ginyu infligen desmoralización al rival, reduciendo su tacticalIQ en 15% por 1 turno.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "teamCombos": [
+        {
+          "name": "Combo del Cuerpo Robado",
+          "partners": [
+            "Jeice"
+          ],
+          "sequence": [
+            "Jeice distrae al oponente con una ráfaga de ondas cruzadas (Purple Crusher Ball).",
+            "Capitán Ginyu se posiciona a la espalda del enemigo ejecutando una pose intimidatoria distractora.",
+            "Ginyu lanza el 'Cambio de Cuerpo' aprovechando la confusión generada por Jeice."
+          ],
+          "staminaCostPerParticipant": {
+            "Capitán Ginyu": 40,
+            "Jeice": 20
+          },
+          "effect": "Robo exitoso del cuerpo del oponente con un 90% de probabilidad de éxito.",
+          "partialFailureResult": "Si el rival esquiva la onda de Jeice, Ginyu queda expuesto a un contraataque directo con el doble de penalización de estamina.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Formación de Combate del Equipo Ginyu",
+          "partners": [
+            "Jeice",
+            "Burter",
+            "Recoome",
+            "Guldo"
+          ],
+          "sequence": [
+            "Burter y Guldo ejecutan la Pose de la Jungla en el centro del campo magnético distractor.",
+            "Recoome lanza su Erase Gum para inmovilizar parcialmente al rival.",
+            "Capitán Ginyu y Jeice combinan Milky Cannon + Purple Crusher Ball para remate conjunto."
+          ],
+          "staminaCostPerParticipant": {
+            "Capitán Ginyu": 30,
+            "Jeice": 20,
+            "Burter": 15,
+            "Recoome": 25,
+            "Guldo": 10
+          },
+          "effect": "Ataque combinado de alto impacto que ignora el 30% de la defensa del objetivo.",
+          "partialFailureResult": "Si Burter es interrumpido en la pose, el rival puede atacar a Guldo (eslabón más débil).",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "haxResistances": {
+        "existenceErasure": 0,
+        "timeManipulation": 0,
+        "mindControl": 40,
+        "matterManipulation": 0,
+        "soulDamage": 5,
+        "powerNullification": 0
+      },
+      "combatAIPersonality": {
+        "aggression": 70,
+        "tacticalIQ": 90,
+        "mercyThreshold": 20,
+        "clutchFactor": 75,
+        "preferredEngagementRange": "mid_range"
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "50G (resistencia militar de élite)",
+        "favoredBiomes": [
+          "Planetas ricos en oxígeno",
+          "Campos abiertos de batalla",
+          "Torres de control y bases militares"
+        ],
+        "disfavoredBiomes": [
+          "Vacío espacial profundo",
+          "Planetas sin atmósfera (limita poses visuales)"
+        ]
+      },
+      "provenFeats": [
+        {
+          "apCalculation": "Potencia destructiva planetaria menor (120.000 unidades). Cálculo Joules ≈ 5.39 × 10^33 J a nivel planetario.",
+          "speedFeat": "Esquivó y contraatacó ataques de Goku base (90.000 unidades) en Namek.",
+          "durabilityFeat": "Resistió golpes de Goku Kaio-ken y Vegeta antes del Cambio de Cuerpo.",
+          "canonicalReference": "Dragon Ball Z Capítulos 268-275 (Saga Namek)."
+        },
+        {
+          "apCalculation": "Capacidad de manipular cuerpos a nivel planetario mediante Cambio de Cuerpo.",
+          "speedFeat": "Velocidad de combate igual a Goku Namek (90.000).",
+          "durabilityFeat": "Sobrevivió a la explosión que destruyó su cuerpo al ser engañado por Goku con la rana.",
+          "canonicalReference": "Dragon Ball Z Episodio 67 (anime) / Capítulo 275 (manga)."
+        },
+        {
+          "apCalculation": "Su alma resistió décadas atrapada en el cuerpo de la rana.",
+          "speedFeat": "Movimientos rápidos de cuerpo antes del intercambio.",
+          "durabilityFeat": "Estructura ósea endurecida por entrenamiento militar.",
+          "canonicalReference": "Dragon Ball Z Saga Namek completa + DBS Revival of F (cameo)."
+        }
+      ],
+      "combatDialogue": {
+        "onBattleStart": "¡Bienvenidos al Comando Especial Ginyu! Hagan sus poses favoritas.",
+        "onTransformation": "¡Cambio de Cuerpo! ¡Ahora sentirás el verdadero poder de mi cuerpo mutante!",
+        "onUltimateReady": "¡Prepárate! Una vez que active el Cambio de Cuerpo... ¡nada volverá a ser igual!",
+        "onLowHealth": "Aún no he terminado... ¡El verdadero poder del equipo Ginyu apenas comienza!",
+        "onVictory": "Fue una gran pelea. Entrena duro para la próxima, soldado."
+      },
+      "staminaProfile": {
+        "maxStamina": 140,
+        "recoveryRatePerTurn": 10,
+        "exhaustionThreshold": 25
+      },
+      "signatureEquipment": [
+        {
+          "name": "Armadura de Fuerzas Especiales Ginyu (azul y blanco)",
+          "durability": 80,
+          "effect": "Armadura militar de élite que ofrece defensa balística y contra ki medio."
+        },
+        {
+          "name": "Scouter de Ginyu",
+          "durability": 40,
+          "effect": "Permite medir niveles de energía de cualquier rival a tiempo real."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga de Namek / Año 762",
+        "timelineRestrictions": "Ginyu termina en un cuerpo de rana al ser engañado por Goku, siendo liberado eventualmente tras la saga pero relegado a ese cuerpo. Desconoce las Guerras Androide, Cell, Buu, los Saiyajin Dios o cualquier evento posterior.",
+        "forbiddenConcepts": [
+          "Super Saiyajin / SSJ2 / SSJ3 / SSJ4",
+          "Majin Buu",
+          "Androides / Cell",
+          "Dragones de las Super Balls",
+          "Diócesis de Beerus / Ultra Instinto",
+          "Fusión Metamoru / Pendientes Potara"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "feats": [
+        "Rivalizó contra el nivel base / Kaio-ken x1 de Goku.",
+        "Le robó el cuerpo a Goku obligando a Gohan, Krillin y Vegeta a tener que aliarse desesperadamente.",
+        "Sobrevivió transformado en sapo durante décadas."
+      ],
+      "psychology": "Sumamente leal a Freezer (el único ser al que respeta más que a sí mismo). Ama a sus subordinados y se enfurece si irrespetan sus poses.",
+      "weaknesses": "El Cambio de Cuerpo puede ser interceptado lanzando a un ser menor (como una rana) en su trayectoria. No puede sacar el poder total del cuerpo robado inmediatamente si requiere control de Ki espiritual (Kaio-ken, etc).",
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": false,
+        "fusionMethods": []
+      },
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga Namek",
+      "form_or_state": "Cuerpo Mutante Original",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "variant_of": null,
+      "character_family": null,
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "universe_number": null,
+      "members": null,
+      "parent_team_profile": null,
+      "team_affiliation": null,
+      "notes": "",
+      "legacy_data": "",
+      "powerScaling": {
+        "apexKi": 120000,
+        "apexKiFormatted": "120.000 Unidades",
+        "scouterKi": 120000,
+        "scouterKiFormatted": "120.000 Unidades",
+        "rank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
+        "isOverload": false,
+        "speedFactor": 1.35,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.1,
+        "featsStrengthFactor": 1.4,
+        "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 120.000 Unidades | Oficial DB: 120.000 Unidades"
+      },
+      "numericStats": {
+        "apexKi": 120000,
+        "scouterKi": 120000,
+        "powerLevel": 120000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga Namek",
+      "physicalTier": "5-B",
+      "haxTier": "5-B",
+      "canonicalKi": 120000,
+      "sourceMedium": "manga",
+      "doesChangeTier": false,
+      "doesChangePowerKey": false
+    },
+    {
+      "id": "cell-saga-androides-98",
+      "name": "Cell",
+      "alias": "El Bio-Androide Perfecto",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga Androides",
+      "version": "Evolución Completa",
+      "tier": "4-B",
+      "tierExact": "4-B",
+      "tierRank": "AMENAZA CÓSMICA / CELL & BUU",
+      "ap": "Nivel Sistema Solar. La creación culmen del Dr. Gero. Contiene células de Goku, Vegeta, Piccolo, Freezer y King Cold. En su forma Super Perfecta, su Kamehameha Solar amenazaba con vaporizar todo el sistema solar, forzando a Gohan SSJ2 a superarlo en un choque legendario.",
+      "range": "Sistema Solar.",
+      "speed": {
+        "combat": "MFTL+.",
+        "reaction": "MFTL+.",
+        "travel": "Shunkanido.",
+        "attack": "Elegante y veloz."
+      },
+      "strength": "Clase Sistema Solar. Levantamiento: Clase Estelar.",
+      "durability": "Nivel Sistema Solar. Regeneración de Namekian, núcleo en la cabeza (retcon: cualquier célula).",
+      "stamina": "Muy Alta. Usa células Androide para estabilizar el consumo.",
+      "battleIQ": "El combatiente perfecto. Domina las técnicas de Z de forma innata y no tiene puntos ciegos tácticos.",
+      "haxTags": [
+        "Regeneración Celular (célula única)",
+        "Zenkai Saiyan",
+        "Absorción Biológica",
+        "Shunkanido",
+        "Telequinesis Letal",
+        "Kienzan Destructible",
+        "Kaioken Heredado",
+        "Células Z Integradas"
+      ],
+      "apexKi": 42100000000,
+      "apexKiFormatted": "42.10 Mil Millones de Ki",
+      "scouterKi": 42100000000,
+      "scouterKiFormatted": "42.10 Mil Millones de Ki",
+      "sourceKi": 5500000000,
+      "sourceKiStatus": "apex_custom_derived",
+      "powerKey": "4-B-Sistema-Solar",
+      "formsAudited": [
+        {
+          "id": "cell-imperfecto",
+          "name": "Cell Imperfecto",
+          "tier": "4-C",
+          "tierExact": "4-C",
+          "sourceKi": 390000000,
+          "apexKiMultiplier": 1,
+          "staminaDrain": 10,
+          "activationCondition": "Eclosión tras absorber masa humana/androide.",
+          "canonStatus": "source_backed",
+          "stats": "Nivel Estrella Enana (Tier 4-C). Aspecto de insecto reptiliano, usa su cola para absorber biomasa y rivalizar con Piccolo y A-17.",
+          "grantedTags": [
+            "Bio-Absorción de Cola",
+            "Zenkai en Absorción",
+            "Capa Insectoide"
+          ],
+          "suppressedTags": [
+            "Forma Perfecta"
+          ],
+          "grantedAbilities": [
+            "Lanzakansen líquido bio-absorbente",
+            "Lanzakansen"
+          ],
+          "limitations": "Pérdida de saliva y proteínas tras uso frecuente de la cola.",
+          "drawbacks": "Vulnerable a deshidratación y fuego.",
+          "exitCondition": "Absorción de A-17.",
+          "counterplay": "Cortarle la cola."
+        },
+        {
+          "id": "cell-semi",
+          "name": "Cell Semi-Perfecto",
+          "tier": "High 4-C",
+          "tierExact": "High 4-C",
+          "sourceKi": 940000000,
+          "apexKiMultiplier": 4,
+          "multiplier": "4x",
+          "staminaDrain": 15,
+          "activationCondition": "Absorción exitosa de A-17.",
+          "canonStatus": "source_backed",
+          "stats": "Nivel Estrella Enana Alta (Tier High 4-C). Tras absorber al Androide 17. Gran masa muscular y potencia superior a A-16.",
+          "grantedTags": [
+            "Bio-Absorción Poderosa",
+            "Masa Muscular Bruta",
+            "Capa Verde Oscura"
+          ],
+          "suppressedTags": [
+            "Forma Perfecta"
+          ],
+          "grantedAbilities": [
+            "Látigo de Cola mejorado",
+            "Kamehameha Semi-Perfecto"
+          ],
+          "limitations": "Estilo de pelea bruto, depende de su gran tamaño.",
+          "drawbacks": "Pérdida significativa de velocidad al transformarse.",
+          "exitCondition": "Absorción de A-18 (fusión forzada o combate).",
+          "counterplay": "Atacantes rápidos como Vegeta pueden esquivarlo."
+        },
+        {
+          "id": "cell-perfecto",
+          "name": "Cell Perfecto",
+          "tier": "4-B",
+          "tierExact": "4-B",
+          "sourceKi": 3400000000,
+          "apexKiMultiplier": 20,
+          "multiplier": "20x",
+          "staminaDrain": 20,
+          "activationCondition": "Activación de la cápsula del Androide 18 o fusión forzada con ella.",
+          "canonStatus": "source_backed",
+          "stats": "Nivel Sistema Solar Menor (Tier 4-B). Tras absorber a 18. Cuerpo pulido e intocable para Vegeta y Trunks SSJ Dai Ni/San Dankai.",
+          "grantedTags": [
+            "Forma Perfecta",
+            "Zenki Max",
+            "Maestro Marcial Universal",
+            "Shunkanido"
+          ],
+          "suppressedTags": [
+            "Triggers de Zenkai"
+          ],
+          "grantedAbilities": [
+            "Kamehameha Perfecto",
+            "Shunkanido",
+            "Death Beam",
+            "Regeneración Completa",
+            "Telequinesis"
+          ],
+          "limitations": "Confía demasiado en su poder después de la perfección.",
+          "drawbacks": "Ego desmedido, autocomplacencia con rivales inferiores.",
+          "exitCondition": "Activación de Super Perfecto tras autodestrucción y regeneración.",
+          "counterplay": "Provocarlo para que libere su Kamehameha y gaste energía."
+        },
+        {
+          "id": "cell-super-perfecto",
+          "name": "Cell Super Perfecto",
+          "tier": "4-B",
+          "tierExact": "4-B",
+          "sourceKi": 5500000000,
+          "apexKiMultiplier": 100,
+          "multiplier": "100x",
+          "staminaDrain": 40,
+          "activationCondition": "Sobrevivencia y regeneración tras autodestrucción (Zenkai extremo).",
+          "canonStatus": "source_backed",
+          "stats": "Nivel Sistema Solar (Tier 4-B). Zenkai tras sobrevivir a su autodestrucción. Aura dorada con relámpagos y Kamehameha Solar.",
+          "grantedTags": [
+            "Zenkai Infinito",
+            "Aura SSJ2",
+            "Kamehameha Solar"
+          ],
+          "suppressedTags": [
+            "Estabilidad Emocional"
+          ],
+          "grantedAbilities": [
+            "Kamehameha Solar",
+            "Regeneración Infinita",
+            "Shunkanido Plus"
+          ],
+          "limitations": "Aún confía en su poder aunque esté herido.",
+          "drawbacks": "Pérdida de concentración al enfurecerse por la humillación de su ataque fallido.",
+          "exitCondition": "Muerte por Kamehameha de Gohan SSJ2.",
+          "counterplay": "Esquivar el Kamehameha Solar y atacar cuando se enfurece."
+        }
+      ],
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Artes Marciales Maestras",
+            "desc": "Copia perfecta de los estilos marciales de Goku, Vegeta y Freezer combinados con eficiencia letal.",
+            "cost": 5,
+            "staminaCost": 5,
+            "damageType": "contundente"
+          },
+          {
+            "name": "Golpe Cortante de Cola",
+            "desc": "Látigo con la cola biológica para desequilibrar o perforar defensas.",
+            "cost": 6,
+            "staminaCost": 6,
+            "damageType": "cortante"
+          },
+          {
+            "name": "Artes Marciales Perfectas",
+            "desc": "Golpes marciales combinados que imitan los estilos de Goku, Vegeta y Freezer.",
+            "cost": 5,
+            "staminaCost": 5,
+            "damageType": "contundente"
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Makankosappo / Kienzan",
+            "desc": "Técnicas heredadas, usadas con mayor eficiencia y velocidad.",
+            "cost": 25,
+            "staminaCost": 25,
+            "kiCost": "15%",
+            "chargeTime": "0.5 segundos",
+            "damageType": "ki",
+            "counterplay": "Esquivar lateralmente."
+          },
+          {
+            "name": "Death Beam",
+            "desc": "Rayo rápido de Freezer, usado para asesinar a Trunks.",
+            "cost": 18,
+            "staminaCost": 18,
+            "kiCost": "10%",
+            "chargeTime": "0.2 segundos",
+            "damageType": "ki_perforante",
+            "counterplay": "Esquivar con Shunkanido o bloquear con barrera."
+          },
+          {
+            "name": "Shunkanido Instantáneo",
+            "desc": "Técnica de teletransportación aprendida del Yardratiano.",
+            "cost": 25,
+            "staminaCost": 25,
+            "kiCost": "5%",
+            "chargeTime": "Instantáneo",
+            "damageType": "movimiento",
+            "counterplay": "Predecir el destino o tener telequinesis reactiva."
+          },
+          {
+            "name": "Barrera Psi-Cósmica",
+            "desc": "Escudo de Ki blindado combinado con telequinesis.",
+            "cost": 18,
+            "staminaCost": 18,
+            "kiCost": "10%",
+            "chargeTime": "0.3 segundos",
+            "damageType": "defensivo",
+            "counterplay": "Doble impacto o ataque de perforación."
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Kamehameha Solar (Super Perfecto)",
+            "desc": "Canaliza todo su poder Zenkai en una onda que asegura destruir todo el Sistema Solar si no es repelida por una fuerza superior.",
+            "cost": 50,
+            "staminaCost": 50,
+            "kiCost": "60%",
+            "chargeTime": "1 turno completo",
+            "damageType": "ki_cosmico",
+            "counterplay": "Esquivar con Shunkanido o contraataque de igual potencia (Gohan SSJ2).",
+            "conditions": "Requiere Super Perfecto activado."
+          },
+          {
+            "name": "Autodestrucción Táctica",
+            "desc": "Como táctica desesperada, intenta volar todo con él (mata a Trunks, Goku queda herido).",
+            "cost": 80,
+            "staminaCost": 80,
+            "kiCost": "100%",
+            "chargeTime": "1 turno completo + detonación",
+            "damageType": "muerte_segura",
+            "counterplay": "Teletransportarse fuera del radio o contraatacar antes del trigger.",
+            "conditions": "Activada cuando es arrinconado. Resulta en Zenkai si sobrevive."
+          }
+        ],
+        "passives": [
+          {
+            "name": "Zenkai Inmortal",
+            "desc": "Si se regenera desde el borde de la muerte (núcleo celular), su poder se multiplica y gana aura SSJ2.",
+            "effect": "Buff de Ki x2 cada vez que revive desde estado celular.",
+            "canonStatus": "source_backed"
+          },
+          {
+            "name": "Asimilación Genética Biológica",
+            "desc": "Puede absorber a un oponente herido gravemente o aliado sacrificado para robar sus Hax Tags y sumar estadísticas base.",
+            "effect": "Absorción de oponentes para ganar Hax Tags y stats.",
+            "canonStatus": "source_backed"
+          },
+          {
+            "name": "Maestría Marcial Innata",
+            "desc": "Posee los estilos marciales combinados de Goku, Vegeta, Piccolo, Freezer y King Cold sin necesidad de aprenderlos.",
+            "effect": "Acceso automático a todas las técnicas de los Guerreros Z.",
+            "canonStatus": "source_backed"
+          },
+          {
+            "name": "Núcleo de Regeneración Celular Única",
+            "desc": "Mientras una sola célula permanezca intacta, Cell puede reconstruir todo su cuerpo.",
+            "effect": "Resurrección ilimitada desde cualquier fragmento celular.",
+            "canonStatus": "source_backed"
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Núcleo de Regeneración",
+            "desc": "Mientras una sola célula permanezca intacta, Cell puede reconstruir todo su cuerpo."
+          },
+          {
+            "name": "Shunkanido",
+            "desc": "Teletransportación instantánea ilimitada en cualquier rango planetario o solar."
+          },
+          {
+            "name": "Telequinesis Masiva",
+            "desc": "Puede manipular objetos y oponentes con gestos simples."
+          },
+          {
+            "name": "Lanzakansen",
+            "desc": "Absorción por cola biológica (forma imperfecta)."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Ego Arrogante",
+            "desc": "Su complejo de perfección le impide rematar rápido a rivales heridos si desea probar su superioridad.",
+            "counterTags": [
+              "Provocación",
+              "Manipulación Psicológica"
+            ],
+            "severity": "Alta - pierde oportunidades de remate críticas."
+          },
+          {
+            "name": "Ego Desmedido",
+            "desc": "Su arrogancia le impide rematar combates rápido, permitiendo evoluciones o contraataques del rival.",
+            "counterTags": [
+              "Arrogancia",
+              "Provocación"
+            ],
+            "severity": "Alta - permite contraataques del rival herido."
+          },
+          {
+            "name": "Núcleo en la Cabeza (Retcon)",
+            "desc": "En algunas versiones, destruirle la cabeza con suficiente Ki antes de la regeneración completa lo anula.",
+            "counterTags": [
+              "Ataque Preciso",
+              "Alto Daño de Ki"
+            ],
+            "severity": "Media - solo efectivo antes del retcon."
+          },
+          {
+            "name": "Inversión de Poder Solar (Kamehameha Solar)",
+            "desc": "Si Gohan supera su Kamehameha Solar, el reflejo lo destruye.",
+            "counterTags": [
+              "Contraki",
+              "SSJ2_Trigger"
+            ],
+            "severity": "Crítica - muerte instantánea si es superado."
+          }
+        ]
+      },
+      "synergies": [
+        {
+          "name": "Biomasa Compartida",
+          "partnerTags": [
+            "Androide",
+            "Cell"
+          ],
+          "effect": "Aumenta la eficiencia de absorción cuando hay androides o variantes en el equipo.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Biomasa y Absorción Perfeccionada",
+          "partnerTags": [
+            "Androide",
+            "Cell Jr"
+          ],
+          "effect": "Aumenta un 25% la regeneración celular y la eficiencia de absorción cuando hay bio-androides o Cell Jrs en la arena.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Legado del Dr. Gero",
+          "partnerTags": [
+            "Androide 17",
+            "Androide 18"
+          ],
+          "effect": "Aumenta su prioridad de objetivo y aumenta un 20% su capacidad de absorción sobre androides.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "teamCombos": [
+        {
+          "name": "Combo Kamehameha Solar + Death Beam",
+          "partners": [
+            "Frieza"
+          ],
+          "sequence": [
+            "Cell inmoviliza al rival con Barrera Psíquica",
+            "Freezer canaliza múltiples Death Beams concentrados",
+            "Cell ejecuta Kamehameha Solar combinado para obliterar el sector"
+          ],
+          "staminaCostPerParticipant": {
+            "Cell": 35,
+            "Freezer": 30
+          },
+          "effect": "Daño catastrófico masivo ignorando defensas estándar.",
+          "partialFailureResult": "Si el rival rompe la barrera a tiempo, Freezer absorbe el rebote del daño.",
+          "canonStatus": "apex_custom"
+        },
+        {
+          "name": "Enjambre de Cell Jrs",
+          "partners": [
+            "Cell Jr."
+          ],
+          "sequence": [
+            "Cell lanza 7 Cell Jrs al campo para inmovilizar al rival.",
+            "Los Cell Jrs ejecutan Kamehamehas concentrados en cadena desde múltiples ángulos.",
+            "Cell remata con Kamehameha principal mientras los Jrs se apartan en el último microsegundo."
+          ],
+          "staminaCostPerParticipant": {
+            "Cell": 45,
+            "Cell Jr.": 15
+          },
+          "effect": "Daño masivo garantizado con evasión total para los Jrs.",
+          "partialFailureResult": "Si el rival elimina a los Jrs antes del remate, Cell cancela el Kamehameha.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "haxResistances": {
+        "existenceErasure": 25,
+        "timeManipulation": 60,
+        "mindControl": 35,
+        "matterManipulation": 50,
+        "soulDamage": 45,
+        "powerNullification": 20
+      },
+      "combatAIPersonality": {
+        "aggression": 80,
+        "tacticalIQ": 95,
+        "mercyThreshold": 5,
+        "clutchFactor": 90,
+        "preferredEngagementRange": "adaptive"
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "150G",
+        "favoredBiomes": [
+          "Anillos de asteroides",
+          "Torneos de artes marciales",
+          "Planetas desolados"
+        ],
+        "disfavoredBiomes": [
+          "Mundos Namek (por interferencia de Porunga)",
+          "Mundos oscuros con energía caótica"
+        ]
+      },
+      "provenFeats": [
+        {
+          "apCalculation": "Kamehameha Solar con amenaza de destrucción del Sistema Solar. Cálculo Joules ≈ 6.28 × 10^41 J (sistema solar).",
+          "speedFeat": "Esquivó múltiples Kamehamehas de Gohan SSJ2 usando Shunkanido.",
+          "durabilityFeat": "Sobrevivió a la autodestrucción total regenerándose desde una sola célula.",
+          "canonicalReference": "Dragon Ball Z Capítulos 409-420 (Saga Cell Games)."
+        },
+        {
+          "apCalculation": "Dominio de Kamehameha Perfecto (potencia sistema solar menor).",
+          "speedFeat": "Rivalizó en velocidad con Vegeta SSJ Dai Ni Dankai en la etapa perfecta.",
+          "durabilityFeat": "Resistió Final Flash de Trunks con solo heridas menores.",
+          "canonicalReference": "Dragon Ball Z Capítulos 392-408 (Cell Perfecto vs Guerreros Z)."
+        },
+        {
+          "apCalculation": "Telequinesis capaz de inmovilizar a Vegeta y Trunks.",
+          "speedFeat": "Movimiento MFTL+ rutinario.",
+          "durabilityFeat": "Regeneración completa desde cenizas (Super Perfecto).",
+          "canonicalReference": "Dragon Ball Z Episodio 184-194 (anime)."
+        }
+      ],
+      "combatDialogue": {
+        "onBattleStart": "¡Bienvenidos a los Cell Games! Disfruten del espectáculo perfecto.",
+        "onTransformation": "¡He despertado mi poder completo! ¡Ahora soy perfecto!",
+        "onUltimateReady": "¡Kamehameha Solar! ¡Todo el sistema solar arderá conmigo!",
+        "onLowHealth": "¡No puede ser! ¡Aún no he mostrado mi verdadero poder!",
+        "onVictory": "Fue una pelea espléndida. Gracias por participar en el Cell Games."
+      },
+      "staminaProfile": {
+        "maxStamina": 200,
+        "recoveryRatePerTurn": 12,
+        "exhaustionThreshold": 30
+      },
+      "signatureEquipment": [
+        {
+          "name": "Cola Biológica Asimilativa",
+          "durability": "Sistema Solar",
+          "effect": "Absorbe rivales o biomas para mutar y regenerar."
+        },
+        {
+          "name": "Núcleo Celular de Regeneración",
+          "durability": "Indestructible pasivo",
+          "effect": "Recompone el cuerpo desde una sola célula sobreviviente."
+        },
+        {
+          "name": "Células Z Integradas",
+          "durability": "Inmortal",
+          "effect": "Posee el ADN de Goku, Vegeta, Piccolo, Freezer, King Cold."
+        },
+        {
+          "name": "Tail Asimilador",
+          "durability": "Alta",
+          "effect": "Para absorber androides y obtener poder."
+        },
+        {
+          "name": "Cell Jr. (Lanzables)",
+          "durability": "Media",
+          "effect": "Mini Cells para hostigar y desgastar al rival."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga de los Androides y Cell Games / Año 767",
+        "timelineRestrictions": "Cell es de la línea temporal principal. Existe antes del arco de Buu y no tiene conocimiento alguno del Majin Buu, los Kaioshins fusionados ni el DBS.",
+        "forbiddenConcepts": [
+          "Majin Buu",
+          "SSJ3",
+          "Super Saiyan God",
+          "Ultra Instinto",
+          "DBS",
+          "Torneo del Poder",
+          "Zeno-Sama"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "feats": [
+        "Humilló a Vegeta Super Saiyan y a Trunks SSJ de tercer grado.",
+        "Sobrevivió a la auto-destrucción total y regresó aún más fuerte.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "psychology": "Narcisista supremo. No quiere conquistar el universo, solo quiere aterrorizar y demostrar que es la existencia perfecta probando su poder en un torneo.",
+      "weaknesses": "Ego desmedido que lo llevó a enfurecer a Gohan innecesariamente y sellar su propia muerte.",
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": true,
+        "fusionMethods": []
+      },
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga Androides",
+      "form_or_state": "Cell (Estado Base)",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "variant_of": null,
+      "character_family": "Cell",
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "universe_number": null,
+      "members": null,
+      "parent_team_profile": null,
+      "team_affiliation": null,
+      "notes": "",
+      "legacy_data": "",
+      "powerScaling": {
+        "apexKi": 42100000000,
+        "apexKiFormatted": "42.10 Mil Millones de Ki",
+        "scouterKi": 42100000000,
+        "scouterKiFormatted": "42.10 Mil Millones de Ki",
+        "rank": "AMENAZA CÓSMICA / CELL & BUU",
+        "isOverload": false,
+        "speedFactor": 3.5,
+        "durabilityFactor": 1.25,
+        "haxBiqFactor": 1.25,
+        "featsStrengthFactor": 1.4,
+        "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1.25x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 42.10 Mil Millones de Ki"
+      },
+      "numericStats": {
+        "apexKi": 42100000000,
+        "scouterKi": 42100000000,
+        "powerLevel": 42100000000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga Androides",
+      "physicalTier": "4-B",
+      "haxTier": "4-B",
+      "sourceMedium": "manga",
+      "doesChangeTier": false,
+      "doesChangePowerKey": false
+    },
+    {
+      "id": "cell-jr-saga-androides-134",
+      "name": "Cell Jr.",
+      "alias": "La Cría Perfecta",
+      "universe": "Dragon Ball Z",
+      "saga": "Juegos de Cell",
+      "version": "Engendro Múltiple",
+      "tier": "4-C",
+      "tierExact": "4-C",
+      "tierRank": "AMENAZA ESTELAR / GUERREROS Z",
+      "ap": "Nivel Estrella Enana Alta. Estos pequeños monstruos engendrados por Cell Perfecto poseen casi la misma fuerza, velocidad y técnicas que su 'padre'. Pudiendo apalear sin piedad a Trunks SSJ, Vegeta SSJ y agotando a Goku (cansado), demuestran una capacidad ofensiva demencial para su diminuto tamaño.",
+      "range": "Planetario.",
+      "speed": {
+        "combat": "MFTL.",
+        "reaction": "MFTL.",
+        "travel": "MFTL.",
+        "attack": "Igualan a Cell Perfecto en evasión."
+      },
+      "strength": "Clase Estrella Enana. Levantamiento: Clase Planetaria.",
+      "durability": "Nivel Estrella Enana. Piel durísima, aunque fueron destrozados a puñetazos secos por el SSJ2, resistieron Final Flashes y Makankosappos de los Guerreros Z.",
+      "stamina": "Muy Alta. Al ser sintéticos/celulares apenas se cansan en combates cortos.",
+      "battleIQ": "Instintivo e infantil, juegan a matar con total sadismo usando las artes marciales de todos los Guerreros Z.",
+      "haxTags": [
+        "Copias Perfectas de Técnicas",
+        "Factor de Regeneración",
+        "Tamaño Reducido Evasivo",
+        "Factor de Regeneración Celular",
+        "Absorción Biológica",
+        "Piccolo (Genética)",
+        "Goku (Genética)",
+        "Vegeta (Genética)"
+      ],
+      "apexKi": 2760000000,
+      "apexKiFormatted": "2.76 Mil Millones de Ki",
+      "scouterKi": 2760000000,
+      "scouterKiFormatted": "2.76 Mil Millones de Ki",
+      "sourceKi": null,
+      "sourceKiStatus": "non_canonical_derived",
+      "powerKey": "4-C-Estrella-Enana-Alta",
+      "formsAudited": [
+        {
+          "id": "cell-jr-base",
+          "name": "Engendro Celular",
+          "stats": "Nivel Estrella Enana Alta. Tamaño infantil, aspecto azulado de Cell Perfecto, ojos rosas chillones.",
+          "apexKiMultiplier": 1,
+          "tier": "4-C",
+          "tierExact": "4-C",
+          "staminaDrain": 0,
+          "activationCondition": "Engendrado por Cell Perfecto durante los Cell Games.",
+          "canonStatus": "source_backed",
+          "grantedTags": [
+            "Copias Perfectas de Técnicas",
+            "Regeneración Celular",
+            "Tamaño Reducido Evasivo"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Kamehameha",
+            "Kienzan",
+            "Makankosappo",
+            "Death Beam",
+            "Golpes Sádicos"
+          ],
+          "limitations": "Carece de la inteligencia de combate adulta de Cell. Juega con sus presas en lugar de rematar.",
+          "drawbacks": "Colapso psicológico y físico ante un poder abrumador (SSJ2).",
+          "exitCondition": "Muerte o regreso al cuerpo de Cell.",
+          "counterplay": "Ataques de poder abrumador (SSJ2) los destruyen instantáneamente."
+        }
+      ],
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Garra Sádica",
+            "cost": 3,
+            "staminaCost": 3,
+            "damageType": "cortante",
+            "desc": "Zarpa rápida destinada a infligir daño cortante y desestabilizar la guardia."
+          },
+          {
+            "name": "Tacleada Aérea en Picada",
+            "cost": 5,
+            "staminaCost": 5,
+            "damageType": "contundente",
+            "desc": "Embestida impulsada por propulsión de Ki directo al mentón del oponente."
+          },
+          {
+            "name": "Golpes rápidos y sádicos",
+            "desc": "Tacleadas aéreas y golpes que rompen huesos como juego.",
+            "costStamina": 6,
+            "staminaCost": 6,
+            "damageType": "contundente/cortante",
+            "counterplay": "Bloqueo coordinado o contra-ataque ágil"
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Kamehameha / Kienzan / Makankosappo",
+            "desc": "Pueden usar cualquier técnica insignia de los héroes a discreción y a su máximo nivel destructivo.",
+            "cost": 20,
+            "staminaCost": 20,
+            "kiCost": "20%",
+            "chargeTime": "0.5 segundos",
+            "damageType": "ki",
+            "counterplay": "Esquivar lateralmente."
+          },
+          {
+            "name": "Kamehameha Miniatura",
+            "desc": "Disparo de un haz de energía azul idéntico al de Goku y Cell, con compresión destructiva.",
+            "cost": 20,
+            "staminaCost": 20,
+            "chargeTime": "0.3 segundos",
+            "damageType": "ki",
+            "counterplay": "Bloquear con barrera o desviar con un contraataque de energía."
+          },
+          {
+            "name": "Makankosappo Veloz",
+            "desc": "Rayo espiral perforante lanzado desde dos dedos a velocidad crítica.",
+            "cost": 25,
+            "staminaCost": 25,
+            "chargeTime": "0.5 segundos",
+            "damageType": "ki_perforante",
+            "counterplay": "Esquivar mediante desplazamiento lateral inmediato."
+          },
+          {
+            "name": "Kienzan (Disco Destructivo)",
+            "desc": "Disco cortante de energía verde que gira a alta velocidad buscando cercenar.",
+            "cost": 22,
+            "staminaCost": 22,
+            "chargeTime": "0.4 segundos",
+            "damageType": "cortante",
+            "counterplay": "Esquivar verticalmente; contacto directo = corte."
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Asalto del Enjambre",
+            "desc": "Si hay más de uno, atacan simultáneamente desde puntos ciegos, torturando al oponente y moliéndolo a golpes sin rematarlo.",
+            "cost": 35,
+            "staminaCost": 35,
+            "kiCost": "30%",
+            "chargeTime": "1 turno",
+            "damageType": "multiple_ki",
+            "counterplay": "Separarlos con barrera o eliminarlos uno a uno.",
+            "conditions": "Requiere al menos 2 Cell Jrs en el campo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "chaos-dragon-ball-cl-sico-318",
+      "name": "Chaos (Chiaotzu)",
+      "alias": "El Niño Psíquico / El Mejor Amigo de Ten",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga Saiyan",
+      "version": "Humano Psíquico",
+      "tier": "5-C",
+      "tierRank": "5-C",
+      "tierExact": "5-C",
+      "ap": "Nivel Planeta Pequeño. Aunque su poder bruto de Ki es el menor de los Guerreros Z clásicos, Chaos posee capacidades telequinéticas que pueden paralizar internamente a adversarios descuidados, y su ataque suicida libera toda su energía almacenada en una explosión devastadora.",
+      "range": "Montañas a Lunar.",
+      "speed": {
+        "combat": "Sub-relativista.",
+        "reaction": "Sub-relativista.",
+        "travel": "Supersónica.",
+        "attack": "Veloz mediante ataques psíquicos."
+      },
+      "strength": "Clase Montañas. Levantamiento: Clase Planetaria mediante Telequinesis.",
+      "durability": "Nivel Montañas. Extremadamente frágil. Una patada de Nappa o Rey Piccolo fue suficiente para destrozarlo.",
+      "stamina": "Baja. Sus poderes mentales requieren gran concentración y le causan dolor de cabeza.",
+      "battleIQ": "Infantil, depende mucho de Tenshinhan.",
+      "haxTags": [
+        "Telequinesis Interna",
+        "Parálisis por Vudú Cósmico",
+        "Autodestrucción",
+        "Levitación Constante"
+      ],
+      "doesChangeTier": false,
+      "doesChangePowerKey": false,
+      "formsAudited": [
+        {
+          "id": "chaos-dragon-ball-cl-sico-318-base-std",
+          "name": "Chaos (Chiaotzu) (Estado Base)",
+          "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico. Tez blanca, mejillas rojas, ropa de monje.",
+          "apexKiMultiplier": 1,
+          "tier": "5-C",
+          "tierExact": "5-C",
+          "multiplier": "1x",
+          "staminaDrain": 0,
+          "activationCondition": "Estado natural permanente del personaje.",
+          "grantedTags": [
+            "Humano_Psíquico",
+            "Levitación_Constante",
+            "Guerrero_Z"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Telequinesis Permanente",
+            "Dodonpa Psíquico",
+            "Parálisis Mental (Vudú Cósmico)"
+          ],
+          "limitations": "Parálisis solo funciona si el oponente tiene Ki igual o menor.",
+          "drawbacks": "Dolor de cabeza crónico al usar poderes mentales.",
+          "exitCondition": "N/A (estado base permanente).",
+          "counterplay": "Cegar sus ojos o elevar el Ki muy por encima del suyo para anular el Vudú.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Golpe Levitante",
+            "desc": "Ataque físico impulsado por telequinesis para golpear desde ángulos inesperados.",
+            "staminaCost": 4,
+            "damageType": "contundente",
+            "counterplay": "Predicción de trayectorias flotantes."
+          },
+          {
+            "name": "Ráfaga Psíquica Menor",
+            "desc": "Disparos rápidos de Ki concentrado de bajo calibre.",
+            "staminaCost": 6,
+            "damageType": "energético",
+            "counterplay": "Esquivar lateralmente o reflejar con barrera."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Dodonpa Psíquico",
+            "desc": "Dispara desde un dedo un rayo concentrado, aunque con menos potencia que Tenshinhan.",
+            "staminaCost": 15,
+            "damageType": "energético",
+            "chargeTime": "Instantáneo",
+            "counterplay": "Esquivar la línea de tiro o interponer un escudo."
+          },
+          {
+            "name": "Parálisis Mental (Vudú Cósmico)",
+            "desc": "Ataca los órganos internos del enemigo inmovilizándolo. Requiere un Ki similar o menor al suyo.",
+            "staminaCost": 20,
+            "damageType": "psíquico",
+            "chargeTime": "1 turno de concentración",
+            "activationCondition": "Contacto visual y brecha de Ki reducida.",
+            "counterplay": "Cegar sus ojos o elevar el Ki muy por encima del suyo."
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Adiós Ten... (Autodestrucción)",
+            "desc": "Se adhiere a la espalda del oponente y explota inmolándose. Si el oponente no es ridículamente más fuerte y blindado, sufrirá heridas letales.",
+            "staminaCost": 100,
+            "hpCost": "100% HP (Muerte)",
+            "damageType": "explosivo_nuclear",
+            "chargeTime": "1 turno de adhesión",
+            "hitConditions": "Debe pasar 1 turno entero adherido al rival sin recibir daño AoE o ser arrancado.",
+            "counterplay": "Arrancarlo antes de la detonación, usar barrera o volar a la estratósfera para diluir la explosión."
+          }
+        ],
+        "passives": [
+          {
+            "name": "Levitación Constante",
+            "desc": "No pisa el suelo, evitando trampas de tierra y mitigando daño de caídas.",
+            "type": "Pasivo",
+            "staminaCost": 0
+          },
+          {
+            "name": "Telequinesis Permanente",
+            "desc": "Permite manipular objetos y su propio cuerpo sin gravedad. Otorga evasión terrestre.",
+            "type": "Pasivo",
+            "staminaCost": 0
+          },
+          {
+            "name": "Vínculo Vital con Tenshinhan",
+            "desc": "Si Tenshinhan cae en combate, el rendimiento mental de Chaos decae un 20% por desesperación, pero incrementa su resistencia al dolor temporalmente.",
+            "type": "Condicional",
+            "staminaCost": 0
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Adhesión Táctica",
+            "desc": "Puede adherirse a la espalda de un aliado o rival usando los pies como ventosas, dejándolo inmóvil durante la carga.",
+            "staminaCost": 5,
+            "activationCondition": "Debe pasar 1 turno entero adherido sin recibir daño AoE.",
+            "counterplay": "Ataques de área, sacudirse con fuerza bruta superior."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Fragilidad Extrema",
+            "desc": "Su resistencia física es muy baja ante impactos directos de fuerza bruta.",
+            "counterTags": [
+              "fuerza_bruta",
+              "durabilidad_baja"
+            ]
+          },
+          {
+            "name": "Brecha de Poder en Hax",
+            "desc": "Sus habilidades mentales fallan automáticamente si el Ki del oponente supera abrumadoramente el suyo.",
+            "counterTags": [
+              "ki_superior",
+              "inmunidad_mental"
+            ]
+          },
+          {
+            "name": "Ataques AoE",
+            "desc": "Si está adherido al rival, técnicas de área lo golpean a él también.",
+            "counterTags": [
+              "AoE",
+              "explosión"
+            ]
+          },
+          {
+            "name": "Dependencia Emocional",
+            "desc": "Su concentración cae si Tenshinhan es dañado gravemente.",
+            "counterTags": [
+              "separación_aliado",
+              "shock_emocional"
+            ]
+          }
+        ]
+      },
+      "synergies": [
+        {
+          "name": "Vínculo de Hermanos de Armas",
+          "partnerTags": [
+            "Tenshinhan",
+            "Escuela_Craneo"
+          ],
+          "effect": "Aumenta la precisión de los ataques combinados y reduce el coste de Ki de la Parálisis Mental en un 10% si Tenshinhan está activo."
+        }
+      ],
+      "teamCombos": [
+        {
+          "name": "Ráfaga Psíquico-Solar (Chaos + Tenshinhan)",
+          "partners": [
+            "Tenshinhan"
+          ],
+          "sequence": [
+            "Chaos inmoviliza temporalmente al rival con Parálisis Mental (Vudú Cósmico).",
+            "Tenshinhan canaliza el Kikoho o Dodonpa concentrado mientras Chaos lo apuntala.",
+            "Impacto simultáneo devastador sobre el objetivo estático en un punto vital."
+          ],
+          "staminaCostPerParticipant": {
+            "Chaos (Chiaotzu)": 25,
+            "Tenshinhan": 30
+          },
+          "effect": "Ignora 50% de la durabilidad defensiva del rival gracias al control mental previo.",
+          "partialFailureResult": "Si el rival rompe la parálisis antes del paso 3, Tenshinhan impacta al aire y Chaos recibe contragolpe mental.",
+          "canonStatus": "apex_custom"
+        },
+        {
+          "name": "Sacrificio del Guerrero Leal (Chaos + Tenshinhan)",
+          "partners": [
+            "Tenshinhan"
+          ],
+          "sequence": [
+            "Chaos se adhiere a la espalda del rival como última línea táctica mientras Tenshinhan cubre la zona.",
+            "Tenshinhan dispara un Dodonpa al suelo bajo los pies del rival para inmovilizarlo.",
+            "Chaos detona 'Adiós Ten...' inmolándose para llevarse al rival por delante."
+          ],
+          "staminaCostPerParticipant": {
+            "chaos-dragon-ball-cl-sico-318": 100,
+            "Tenshinhan": 12
+          },
+          "effect": "Muerte asegurada de Chaos. Daño letal al rival. Tenshinhan queda a salvo para rematar.",
+          "partialFailureResult": "Si Tenshinhan falla el Dodonpa antes del paso 3, el rival arranca a Chaos y lo lanza lejos; Chaos muere en el aire sin causar efecto.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "haxResistances": {
+        "existenceErasure": 0,
+        "timeManipulation": 5,
+        "mindControl": 45,
+        "matterManipulation": 0,
+        "soulDamage": 10,
+        "powerNullification": 5
+      },
+      "combatAIPersonality": {
+        "aggression": 50,
+        "tacticalIQ": 70,
+        "mercyThreshold": 30,
+        "clutchFactor": 80,
+        "preferredEngagementRange": "mid_range",
+        "notes": "Loyal bantamweight. Combines telekinetic grabs with mid-range Dodonpa; relies on Tenshinhan for emotional stability."
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": false,
+        "gravityResistance": "10G (con dolor)",
+        "favoredBiomes": [
+          "Arenas de torneos",
+          "Dojos",
+          "Ciudades",
+          "Terreno elevado (para levitar)"
+        ],
+        "disfavoredBiomes": [
+          "Vacío espacial",
+          "Mundos de alta gravedad",
+          "Zonas con campos de ki hostiles"
+        ]
+      },
+      "provenFeats": {
+        "apCalculation": "Pequeña explosión nuclear al inmolarse (~5-10 Kilotones) capaz de pelar armadura Saiyan.",
+        "speedFeat": "Esquivó y bloqueó múltiples ráfagas de Nappa mediante telequinesis evasiva.",
+        "durabilityFeat": "Sobrevivió parcialmente a sus propias explosiones internas de ki (resistencia vital limitada).",
+        "canonicalReference": "Dragon Ball Z, Capítulos 217-222 / Episodios 27-29 (Saga Saiyan)."
+      },
+      "combatDialogue": {
+        "onBattleStart": "¡No dejaré que lastimes a Tenshinhan-chan!",
+        "onTransformation": "¡Mi ki está al límite... lo siento, Ten!",
+        "onUltimateReady": "¡Adiós... Ten...!",
+        "onLowHealth": "Aún me queda un último cartucho... ¡cuidado!",
+        "onVictory": "Volvimos a ganar, Tenshinhan-chan..."
+      },
+      "staminaProfile": {
+        "maxStamina": 80,
+        "recoveryRatePerTurn": 5,
+        "exhaustionThreshold": 15,
+        "notes": "Reservas muy escasas; cualquier técnica seria lo deja al borde del desmayo."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Túnica de Monje de la Escuela Grulla",
+          "durability": "Baja",
+          "effect": "Sin efecto pasivo; característico de su diseño."
+        },
+        {
+          "name": "Medias de Adherencia Psíquica",
+          "durability": "Media",
+          "effect": "Permite adherirse a superficies y enemigos como parte de la mecánica 'Adhesión Táctica'."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga Saiyan / Año 762",
+        "timelineRestrictions": "Sabe de Raditz, Nappa, Vegeta, la muerte de Goku, los Androides (información premonitoria por medio de la técnica de la Escuela Craneo) y Tenshinhan. Desconoce todo lo posterior: Cell, Buu, Super Saiyajin, fusiones, dragones, Beerus, etc.",
+        "forbiddenConcepts": [
+          "Androides 17/18",
+          "Cell",
+          "Majin Buu",
+          "Super Saiyajin",
+          "Fusión",
+          "Dragon Balls de Namek",
+          "Torneo del Poder",
+          "Zeno",
+          "Bills"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "powerScaling": {
+        "apexKi": 660,
+        "apexKiFormatted": "660 Unidades",
+        "scouterKi": 660,
+        "scouterKiFormatted": "660 Unidades",
+        "rank": "RANGO TERRESTRE",
+        "isOverload": false,
+        "speedFactor": 1.35,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.1,
+        "featsStrengthFactor": 1.4,
+        "formulaExpression": "PL_Scouter = BaseEnergy(5-C) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 660 Unidades | Oficial DB: 660 Unidades"
+      },
+      "numericStats": {
+        "apexKi": 660,
+        "scouterKi": 660,
+        "powerLevel": 660
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga Saiyan",
+      "physicalTier": "5-C",
+      "haxTier": "5-C",
+      "sourceMedium": "manga",
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga Saiyan",
+      "form_or_state": "Chaos (Chiaotzu) (Estado Base)",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "forms": [
+        {
+          "id": "chaos-dragon-ball-cl-sico-318-base-std",
+          "name": "Chaos (Chiaotzu) (Estado Base)",
+          "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico. Tez blanca, mejillas rojas, ropa de monje.",
+          "apexKiMultiplier": 1,
+          "tier": "5-C",
+          "staminaDrain": 0,
+          "canonStatus": "source_backed"
+        }
+      ],
+      "feats": [
+        "Inmovilizó a Goku (Niño) temporalmente en el Torneo 22.",
+        "Se inmoló para intentar matar a Nappa, logrando arrancar parte de su armadura (aunque Nappa sobrevivió).",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "psychology": "Leal e inocente, haría cualquier cosa por Tenshinhan.",
+      "weaknesses": "Poder base y durabilidad minúsculas; sus ataques psíquicos no funcionan si el enemigo tiene un nivel de poder muy superior (Nappa simplemente ignoró su parálisis).",
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": false,
+        "fusionMethods": []
+      }
+    },
+    {
+      "id": "cui-saga-namek-132",
+      "name": "Cui",
+      "alias": "Rival Caído de Vegeta",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga Namek",
+      "version": "Soldado de Élite",
+      "tier": "5-A",
+      "tierRank": "5-A",
+      "tierExact": "5-A",
+      "ap": "Nivel Planeta. Con un nivel oficial de 18,000 unidades, Cui era exactamente igual a Vegeta en su llegada a la Tierra. Capaz de destruir planetas fácilmente y liderar purgas masivas para el ejército de Freezer.",
+      "range": "Superficie planetaria.",
+      "speed": {
+        "combat": "Relativista.",
+        "reaction": "Relativista.",
+        "travel": "Sub-relativista.",
+        "attack": "Veloz."
+      },
+      "strength": "Clase Planetaria. Levantamiento: Clase Luna.",
+      "durability": "Nivel Planeta. Murió instantáneamente al recibir un ataque de 24,000 de AP.",
+      "stamina": "Media.",
+      "battleIQ": "Cobarde tramposo. Finge que Freezer está detrás del enemigo para atacar a traición.",
+      "haxTags": [
+        "Trucos Sucios",
+        "Engaño Psicológico",
+        "Lectura de Scouter",
+        "Sin_Zenkai"
+      ],
+      "doesChangeTier": false,
+      "doesChangePowerKey": false,
+      "formsAudited": [
+        {
+          "id": "cui-base",
+          "name": "Cui (Estado Base)",
+          "stats": "Forma canónica única. 18.000 unidades oficiales. Aspecto humanoide con armadura de Freezer y scouter. Rival histórico de Vegeta antes de la llegada a la Tierra.",
+          "apexKiMultiplier": 1,
+          "tier": "5-A",
+          "tierExact": "5-A",
+          "multiplier": "1x",
+          "staminaDrain": 0,
+          "activationCondition": "Estado natural permanente del personaje.",
+          "grantedTags": [
+            "Soldado_Freezer",
+            "Élite_Saiyan_Range",
+            "Dependiente_Scouter"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Ráfaga Desesperada",
+            "¡Mira, es Freezer! (Engaño)",
+            "Cañón Final Cui"
+          ],
+          "limitations": "No posee Zenkai ni transformaciones potenciales.",
+          "drawbacks": "Dependencia total del scouter; queda paralizado un turno si éste explota.",
+          "exitCondition": "N/A (estado base permanente).",
+          "counterplay": "Esquivar el Cañón Final con diferencia de velocidad (Vegeta con 24k lo esquivó y mató).",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Golpe Arrogante",
+            "desc": "Golpe marcial directo con burla previa.",
+            "staminaCost": 4,
+            "damageType": "contundente",
+            "counterplay": "Bloquear con ki elevado o esquivar."
+          },
+          {
+            "name": "Ráfaga de Dedo",
+            "desc": "Disparos rápidos de energía concentrada desde el índice.",
+            "staminaCost": 6,
+            "damageType": "energético",
+            "counterplay": "Diferencia de velocidad para esquivar ráfagas múltiples."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Ráfaga Desesperada",
+            "desc": "Lanza decenas de balas de ki cuando entra en pánico.",
+            "staminaCost": 18,
+            "damageType": "energético_múltiple",
+            "chargeTime": "Instantáneo",
+            "counterplay": "Barrido defensivo o evasión en arco."
+          },
+          {
+            "name": "Patada Táctica Namekiana",
+            "desc": "Patada con rotación que aprovecha el terreno de Namek para desequilibrar.",
+            "staminaCost": 20,
+            "chargeTime": "1 turno",
+            "damageType": "Contundente",
+            "counterplay": "Volar o esquivar antes del impacto.",
+            "grantedTags": [
+              "Combate_Aéreo"
+            ],
+            "suppressedTags": []
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Cañón Final Cui",
+            "desc": "Concentra todo su ki en una esfera roja que dispara contra el enemigo con odio racial.",
+            "staminaCost": 45,
+            "chargeTime": "2 turnos",
+            "damageType": "Energético",
+            "counterplay": "Esquivar con diferencia de velocidad (Vegeta con 24k lo esquivó y mató).",
+            "grantedTags": [
+              "Último_Recurso"
+            ],
+            "suppressedTags": [],
+            "hitConditions": "El rival debe estar estático o ser impactado de lleno."
+          }
+        ],
+        "passives": [
+          {
+            "name": "Soberbia del Scouter",
+            "desc": "Confía 100% en las máquinas. Si su scouter explota por una subida de ki irreal, se queda paralizado por el miedo un turno entero.",
+            "type": "Debuff psicológico",
+            "staminaCost": 0
+          },
+          {
+            "name": "Sin Zenkai (Raza no Saiyajin)",
+            "desc": "No obtiene boosts de poder tras ser dañado, a diferencia de Vegeta.",
+            "type": "Limitación Racial",
+            "staminaCost": 0
+          },
+          {
+            "name": "Trucos Sucios",
+            "desc": "Engaño visual y verbal para descolocar al rival.",
+            "type": "Hax",
+            "staminaCost": 0
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Dependencia del Scouter",
+            "desc": "Queda indefenso si la máquina falla. La explosión del scouter le causa stun mental de 1 turno."
+          },
+          {
+            "name": "Engaño Psicológico: ¡Mira, es Freezer!",
+            "desc": "Grita señalando detrás del enemigo. Si este voltea, le lanza un poderoso cañón energético rojo a quemarropa.",
+            "staminaCost": 25,
+            "damageType": "psíquico_físico",
+            "activationCondition": "El rival debe confiar y voltear.",
+            "counterplay": "Conocimiento del personaje ignora el truco."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Pánico Táctico",
+            "desc": "Total pánico si pierde la superioridad numérica.",
+            "counterTags": [
+              "Pánico_Táctico",
+              "Dependencia_Scouter"
+            ]
+          },
+          {
+            "name": "Sin potencial Zenkai",
+            "desc": "No puede escalar su poder tras ser herido (no es Saiyajin).",
+            "counterTags": [
+              "Sin_Zenkai",
+              "Estancamiento_Poder"
+            ]
+          },
+          {
+            "name": "Arrogancia letal",
+            "desc": "Subestima rivales que ocultan su ki o usan engaños.",
+            "counterTags": [
+              "Engaño_Ki",
+              "Rival_Superior"
+            ]
+          },
+          {
+            "name": "Estancamiento de Poder",
+            "desc": "Poder estático; límite biológico racial.",
+            "counterTags": [
+              "Estancamiento_Poder",
+              "Límite_Biológico_Racial"
+            ]
+          }
+        ]
+      },
+      "synergies": [
+        {
+          "name": "Coordinación del Ejército de Freezer",
+          "partnerTags": [
+            "soldado_frieza",
+            "dodoria",
+            "zarbon"
+          ],
+          "effect": "+10% de daño en ataques combinados gracias a la coordinación táctica del ejército de Freezer."
+        }
+      ],
+      "teamCombos": [
+        {
+          "name": "Traición Coordenada (Cui + Dodoria)",
+          "partners": [
+            "Dodoria",
+            "Cui"
+          ],
+          "sequence": [
+            "Dodoria lanza un ataque de dispersión para cegar al enemigo.",
+            "Cui ejecuta '¡Mira, es Freezer!' para descolocar psicológicamente.",
+            "Ambos concentran un rayo de energía combinado a quemarropa."
+          ],
+          "staminaCostPerParticipant": {
+            "Cui": 15,
+            "Dodoria": 20
+          },
+          "effect": "Daño crítico masivo por sorpresa y quemaduras de energía.",
+          "partialFailureResult": "El ataque se desvía y Cui queda expuesto al contraataque.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "haxResistances": {
+        "existenceErasure": 5,
+        "timeManipulation": 10,
+        "mindControl": 20,
+        "matterManipulation": 15,
+        "soulDamage": 25,
+        "powerNullification": 10
+      },
+      "combatAIPersonality": {
+        "aggression": 75,
+        "tacticalIQ": 55,
+        "mercyThreshold": 15,
+        "clutchFactor": 10,
+        "preferredEngagementRange": "mid_range",
+        "notes": "Bully táctico. Engaña si puede, entra en pánico si su scouter falla."
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "Planetaria estándar",
+        "favoredBiomes": [
+          "Namek",
+          "Planetas conquistados",
+          "Espacio abierto"
+        ],
+        "disfavoredBiomes": [
+          "Aire denso",
+          "Llanuras sin escondite"
+        ]
+      },
+      "provenFeats": {
+        "apCalculation": "Nivel Planetario bajo. 18.000 unidades permiten destruir planetas tipo Tierra con Cañón de ki.",
+        "speedFeat": "Vuelos interplanetarios y reacción lo suficientemente rápida para pelear con Vegeta (18k).",
+        "durabilityFeat": "Resiste brevemente el ambiente de Namek y la presión de Vegeta.",
+        "canonicalReference": "Dragon Ball Z, Capítulo 248 / Episodio 87 (Saga Namek)."
+      },
+      "combatDialogue": {
+        "onBattleStart": "¡Mi scouter dice que soy superior! ¿Qué vas a hacer?",
+        "onTransformation": "¡No necesito transformaciones, ya soy perfecto!",
+        "onUltimateReady": "¡Cañón Final! ¡Esta es toda mi fuerza!",
+        "onLowHealth": "¿¡Qué!? ¡Esto no puede estar pasando!",
+        "onVictory": "Como debía ser... ahora tiembla ante el verdadero poder."
+      },
+      "staminaProfile": {
+        "maxStamina": 100,
+        "recoveryRatePerTurn": 8,
+        "exhaustionThreshold": 20,
+        "notes": "Resistencia estándar de la Fuerza de Freezer; sin picos ni regeneraciones."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Scouter Freezer",
+          "durability": "Frágil (explota con subidas de ki)",
+          "effect": "Lectura de poder base enemigo (engañable con control de ki)."
+        },
+        {
+          "name": "Armadura de Combate Freezer",
+          "durability": "Media",
+          "effect": "Protección estándar del ejército de Freezer."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga Namek (Año 762)",
+        "timelineRestrictions": "Solo conoce eventos hasta la Saga Namek. No sabe de la muerte de Freezer en Namek, ni de la transformación de Vegeta a Super Saiyan, ni de Cell ni Buu.",
+        "forbiddenConcepts": [
+          "Super Saiyan",
+          "Super Saiyan God",
+          "Majin Buu",
+          "Cell",
+          "Freezer Dorado",
+          "Ultra Instinct"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "powerScaling": {
+        "apexKi": 18000,
+        "apexKiFormatted": "18.000 Unidades",
+        "scouterKi": 18000,
+        "scouterKiFormatted": "18.000 Unidades",
+        "rank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
+        "isOverload": false,
+        "speedFactor": 1.35,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.1,
+        "featsStrengthFactor": 1.4,
+        "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 18.000 Unidades | Oficial DB: 18.000 Unidades"
+      },
+      "numericStats": {
+        "apexKi": 18000,
+        "scouterKi": 18000,
+        "powerLevel": 18000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga Namek",
+      "physicalTier": "5-A",
+      "haxTier": "5-A",
+      "canonicalKi": 18000,
+      "sourceMedium": "manga",
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga Namek",
+      "form_or_state": "Cui (Estado Base)",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": false,
+        "fusionMethods": []
+      },
+      "feats": [
+        "Sirvió como rival de Vegeta durante años antes del zenkai.",
+        "Mantuvo una velocidad de reacción y combate consistente en situaciones de alta presión.",
+        "Demostró tenacidad táctica y resistencia física durante combates prolongados."
+      ],
+      "psychology": "Un clásico bravucón, arrogante cuando tiene ventaja y patético cuando es superado. Se creía mejor que Vegeta.",
+      "weaknesses": "Total pánico si pierde la superioridad."
+    },
+    {
+      "id": "dabura-saga-buu-107",
+      "name": "Dabra",
+      "alias": "Rey del Mundo de los Demonios",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga de Buu",
+      "version": "Rey Demonio / Sirviente Majin",
+      "tier": "4-B",
+      "tierRank": "4-B",
+      "tierExact": "4-B",
+      "ap": "Nivel Sistema Solar. Con un poder equiparable al de Cell Perfecto, Dabra es la cúspide del reino demoníaco. Su magia, materialización de armas letales y, sobre todo, su saliva petrificadora lo vuelven un oponente mortífero incluso para guerreros Gohan SSJ2 (que había perdido práctica).",
+      "range": "Planetario.",
+      "speed": {
+        "combat": "MFTL.",
+        "reaction": "MFTL.",
+        "travel": "MFTL.",
+        "attack": "Veloz, especialmente su saliva."
+      },
+      "strength": "Clase Sistema Solar. Levantamiento: Clase Estelar.",
+      "durability": "Nivel Sistema Solar. Demonio resistente, aguanta el combate de Gohan y Majin Buu.",
+      "stamina": "Muy Alta, respaldado por magia oscura.",
+      "battleIQ": "Pragmático y calculador. Advierte a Babidi de los peligros (como la arrogancia de Vegeta o el nivel de Goku).",
+      "haxTags": [
+        "Petrificación Absoluta (Saliva)",
+        "Materialización de Armas Demoníacas",
+        "Aliento Ígneo Mágico",
+        "Inmunidad a Magia Inferior",
+        "Liderazgo Táctico Demoníaco"
+      ],
+      "doesChangeTier": false,
+      "doesChangePowerKey": false,
+      "formsAudited": [
+        {
+          "id": "dabura-saga-buu-107-base-std",
+          "name": "Dabura (Rey Demonio Majin)",
+          "stats": "Forma inicial de combate. Piel roja, cuernos, traje azul, símbolo 'M' en la frente. Poder total equiparable al Cell Perfecto. Balance total entre arsenal mágico y combate físico.",
+          "apexKiMultiplier": 1,
+          "tier": "4-B",
+          "tierExact": "4-B",
+          "multiplier": "1x",
+          "staminaDrain": 0,
+          "activationCondition": "Estado natural permanente del personaje.",
+          "grantedTags": [
+            "Rey Demonio",
+            "Sirviente Majin",
+            "Petrificador"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Saliva Petrificadora",
+            "Materialización de Armas",
+            "Llama Maligna",
+            "Liderazgo Táctico"
+          ],
+          "limitations": "El símbolo Majin sella su voluntad bajo Babidi.",
+          "drawbacks": "Pierde libre albedrío táctico si Babidi le ordena retirarse.",
+          "exitCondition": "Muerte o liberación del sello Majin (solo posible con la muerte del Rey Demonio original).",
+          "counterplay": "Evasión angular de la saliva y separación del Mago (Babidi).",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Corte Demoníaco",
+            "desc": "Ataques precisos con espada pesada imbuida en Ki oscuro.",
+            "staminaCost": 5,
+            "damageType": "cortante",
+            "counterplay": "Esquivar el filo o romper la espada con superioridad física."
+          },
+          {
+            "name": "Empuje de Aura Majin",
+            "desc": "Una onda expansiva de presión demoníaca que empuja al rival y aturde brevemente.",
+            "staminaCost": 7,
+            "damageType": "contundente",
+            "counterplay": "Anclar el cuerpo con ki o volar antes de la onda expansiva."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Llama Maligna",
+            "desc": "Escupe una llamarada infernal masiva de su boca.",
+            "staminaCost": 25,
+            "damageType": "ígneo_mágico",
+            "chargeTime": "1 turno",
+            "counterplay": "Volar hacia arriba o esquivar lateralmente."
+          },
+          {
+            "name": "Lanza de la Oscuridad",
+            "desc": "Materializa una lanza y la arroja con potencia capaz de atravesar a un Gohan distraído.",
+            "staminaCost": 22,
+            "damageType": "perforante_mágico",
+            "chargeTime": "1 turno",
+            "counterplay": "Esquivar la trayectoria lineal."
+          },
+          {
+            "name": "Tormento Infernal",
+            "desc": "Invoca una lluvia de estacas mágicas sobre un área extensa.",
+            "staminaCost": 30,
+            "damageType": "perforante_área",
+            "chargeTime": "1 turno",
+            "counterplay": "Volar fuera del radio de efecto o usar barrera."
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Saliva Petrificadora",
+            "desc": "Escupe sobre su enemigo. Si la saliva toca piel humana o ropa, la víctima se convierte en piedra maciza al instante. Solo la muerte de Dabura puede deshacer el hechizo.",
+            "staminaCost": 45,
+            "damageType": "transmutación_mágica",
+            "chargeTime": "Instantáneo",
+            "counterplay": "Evasión angular de la saliva y separación del Mago (Babidi).",
+            "hitConditions": "Contacto directo con piel o ropa del objetivo.",
+            "grantedTags": [
+              "Petrificación_Absoluta"
+            ]
+          }
+        ],
+        "passives": [
+          {
+            "name": "Aura Demoniaca",
+            "desc": "Inmune a la magia oscura e ilusiones, su naturaleza malévola bloquea manipulación mental básica.",
+            "type": "Pasivo continuo",
+            "staminaCost": 0
+          },
+          {
+            "name": "Resistencia a la Transmutación",
+            "desc": "Su fisiología demoníaca lo hace inmune a hechizos de conversión (no fue convertido en chocolate por Buu, solo dañado).",
+            "type": "Pasivo continuo",
+            "staminaCost": 0
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Materialización del Reino Oscuro",
+            "desc": "Puede invocar espadas, lanzas y estacas mágicas instantáneamente desde el vacío.",
+            "staminaCost": 10,
+            "counterplay": "Destruir el arma antes de que impacte."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Arrogancia del Rey Demonio",
+            "desc": "Tiende a subestimar a oponentes que considera inferiores basándose en su aura inicial.",
+            "counterTags": [
+              "explotacion_confianza",
+              "sorpresa_táctica"
+            ]
+          },
+          {
+            "name": "Dependencia de Magia Física",
+            "desc": "Su petrificación requiere saliva (munición física), no funciona a distancia si se esquiva.",
+            "counterTags": [
+              "esquivo_lateral",
+              "mantener_distancia"
+            ]
+          }
+        ]
+      },
+      "synergies": [
+        {
+          "name": "Sinergia Mago-Guerrero",
+          "partnerTags": [
+            "babidi",
+            "mago",
+            "majin"
+          ],
+          "effect": "Protección absoluta al amo y sinergia táctica en emboscadas. Babidi teleporta; Dabura remata con petrificación."
+        }
+      ],
+      "teamCombos": [
+        {
+          "name": "Teletransportación Petrificadora (Dabura + Babidi)",
+          "partners": [
+            "Babidi"
+          ],
+          "sequence": [
+            "Dabura distrae al enemigo con un asalto frontal de espada y Aura Majin.",
+            "Babidi teleporta la posición de Dabura instantáneamente a la espalda del rival.",
+            "Dabura ejecuta la Saliva Petrificadora a quemarropa sobre el objetivo desprevenido."
+          ],
+          "staminaCostPerParticipant": {
+            "Dabura": 45,
+            "Babidi": 25
+          },
+          "effect": "Petrificación instantánea del oponente por factor sorpresa dimensional. Solo la muerte de Dabura lo revierte.",
+          "partialFailureResult": "Si el enemigo anticipa la teletransportación, Dabura queda expuesto a un contraataque y Babidi queda sin protección.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "haxResistances": {
+        "existenceErasure": 20,
+        "timeManipulation": 30,
+        "mindControl": 90,
+        "matterManipulation": 60,
+        "soulDamage": 70,
+        "powerNullification": 50,
+        "notes": "Su mente es inquebrantable. Solo la superioridad de Ki como Majin Buu pudo dominarlo."
+      },
+      "combatAIPersonality": {
+        "aggression": 75,
+        "tacticalIQ": 85,
+        "mercyThreshold": 5,
+        "clutchFactor": 70,
+        "preferredEngagementRange": "mid_range",
+        "notes": "Rey táctico, usa la saliva como remate. Pelea con la espada en frente y se acerca solo para escupir."
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "Universal (tolera ingravidez interdimensional)",
+        "favoredBiomes": [
+          "Planeta Oscuro",
+          "Reino de los Demonios",
+          "Estadio del Torneo (con Babidi en el aire)"
+        ],
+        "disfavoredBiomes": [
+          "Planetas de alta luminosidad (afecta su concentración oscura)",
+          "Lugares sin cobertura donde sea flanqueado por varios rivales"
+        ]
+      },
+      "provenFeats": {
+        "apCalculation": "Nivel Sistema Solar bajo. Comparable a Cell Perfecto; petrifica y desintegra con un toque.",
+        "speedFeat": "Combate MFTL con Gohan SSJ2 oxidado y esquiva ataques combinados de los Z-Fighters.",
+        "durabilityFeat": "Resiste los golpes de Gohan SSJ2 y aguanta la tortura de Majin Buu.",
+        "canonicalReference": "Dragon Ball Z, Capítulos 444-460 / Episodios 229-232 (Saga de Buu)."
+      },
+      "combatDialogue": {
+        "onBattleStart": "¡Insectos! Babidi, deme la orden y acabo con ellos.",
+        "onTransformation": "Mi magia no requiere transformaciones baratas, Saiyans.",
+        "onUltimateReady": "¡No huyas! ¡Petrifícate!",
+        "onLowHealth": "¡Maldito Majin Buu! ¡No soy tu juguete!",
+        "onVictory": "Esto era lo esperado. La oscuridad siempre gana."
+      },
+      "staminaProfile": {
+        "maxStamina": 180,
+        "recoveryRatePerTurn": 12,
+        "exhaustionThreshold": 25,
+        "notes": "Resistencia brutal propia de los reyes dimensionales. Solo Buu pudo drenarlo por completo."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Espada Demoniaca Materializada",
+          "durability": "Alta, regenerable con magia.",
+          "effect": "Canalizador de ki oscuro cortante."
+        },
+        {
+          "name": "Lanza de la Oscuridad",
+          "durability": "Destructible, pero se reforman rápido.",
+          "effect": "Arrojadiza imbuida en ki demoníaco."
+        },
+        {
+          "name": "Símbolo M (Majin)",
+          "durability": "Místico.",
+          "effect": "Marca de corrupción Majin que sella la conexión con Babidi."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga de Buu / Año 774",
+        "timelineRestrictions": "Dabura solo conoce la magia demoníaca, a Babidi, Buu y los Z-Fighters de su tiempo. Desconoce las técnicas de los Saiyans posteriores (SSJ3, SSJGod) y el potencial oculto de Gohan que no se activó por completo.",
+        "forbiddenConcepts": [
+          "Super Saiyajin 3",
+          "Ultra Instinto",
+          "Potencial Despertado de Gohan",
+          "Fusión Potara (no usada por él)",
+          "Ángeles y Gran Sacerdote"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "powerScaling": {
+        "apexKi": 23700000000,
+        "apexKiFormatted": "23.70 Mil Millones de Ki",
+        "scouterKi": 23700000000,
+        "scouterKiFormatted": "23.70 Mil Millones de Ki",
+        "rank": "AMENAZA CÓSMICA / CELL & BUU",
+        "isOverload": false,
+        "speedFactor": 2.8,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.1,
+        "featsStrengthFactor": 1.4,
+        "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(2.8x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 23.70 Mil Millones de Ki"
+      },
+      "numericStats": {
+        "apexKi": 23700000000,
+        "scouterKi": 23700000000,
+        "powerLevel": 23700000000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga de Buu",
+      "physicalTier": "4-B",
+      "haxTier": "4-B",
+      "sourceMedium": "manga",
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga de Buu",
+      "form_or_state": "Dabura (Rey Demonio Majin)",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": false,
+        "fusionMethods": []
+      },
+      "feats": [
+        "Petrificó a Piccolo y a Krillin sin sudar.",
+        "Luchó a la par contra Gohan SSJ2 (estado oxidado).",
+        "Asesinó a Kibito instantáneamente con una ráfaga sorpresa."
+      ],
+      "psychology": "Leal a Babidi pero conserva su intelecto estratégico del Rey del Inframundo. No subestima a los Saiyans y propone usar la maldad de Vegeta. Curiosamente, tras morir y ser enviado al cielo, se vuelve un ser amoroso y bondadoso.",
+      "weaknesses": "Vulnerable a ataques de purificación de aura; Majin Buu lo superó en fuerza y magia transmutadora sin esfuerzo."
+    },
+    {
+      "id": "dodoria-saga-namek-528",
+      "name": "Dodoria",
+      "alias": "El Ejecutor de Freezer",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga Namek",
+      "version": "Guardaespaldas Élite",
+      "tier": "5-B",
+      "tierExact": "5-B",
+      "tierRank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
+      "powerKey": "5-B",
+      "ap": "Nivel Planeta Grande. Un bruto sádico de gran poder. Masacró a los aldeanos de Namek con un solo brazo y destrozó la armadura e intestinos de los guerreros Namekianos defensores con facilidad. Su ataque de boca fue capaz de barrer cordilleras Namekianas.",
+      "range": "Planetario (Ráfaga Máxima).",
+      "speed": {
+        "combat": "Relativista.",
+        "reaction": "Relativista.",
+        "travel": "Relativista.",
+        "attack": "Sorprendentemente rápido para su tamaño."
+      },
+      "strength": "Clase Planetaria. Levantamiento: Clase Luna.",
+      "durability": "Nivel Planetario. Piel espinosa gruesa.",
+      "stamina": "Media. Se cansa si el enemigo corre demasiado, es propenso a frustrarse.",
+      "battleIQ": "Nulo, solo ataca de frente y confía ciegamente en su poder.",
+      "haxTags": [
+        "Fuerza Bruta",
+        "Voluntad Indomable",
+        "Adaptación Táctica",
+        "Regeneracion_Basica_Raza_Freezer"
+      ],
+      "forms": [
+        {
+          "id": "dodoria-base",
+          "name": "Dodoria (Saga de Namek / Estado Base)",
+          "apexKiMultiplier": 1,
+          "staminaDrain": 0,
+          "tier": "5-C",
+          "tierExact": "5-C",
+          "stats": "22.000 unidades canónicas (Scouter). Guardia de élite de Freezer. Forma racial estable, cuerpo púas, sin transformaciones conocidas.",
+          "activationCondition": "Estado natural del personaje.",
+          "grantedTags": [
+            "Piel_de_Puas",
+            "Raza_Freezer",
+            "Fuerza_Bruta"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [],
+          "limitations": "Ninguna más allá de su biología racial.",
+          "drawbacks": [],
+          "exitCondition": "N/A",
+          "counterplay": "Taiyoken, distracciones, superioridad técnica (Vegeta).",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "formOrState": "Dodoria (Saga de Namek / Estado Base)",
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Golpe Pesado",
+            "cost": 5,
+            "damageType": "Contundente",
+            "desc": "Un derechazo brutal cargado con todo el peso corporal del soldado de élite."
+          },
+          {
+            "name": "Cabezazo de Púas",
+            "cost": 6,
+            "damageType": "Cortante/Contundente",
+            "desc": "Inclinación frontal para impactar con las púas frontales de su cabeza."
+          },
+          {
+            "name": "Pisotón Aplastante",
+            "cost": 4,
+            "damageType": "Contundente",
+            "desc": "Pisotón directo al suelo o sobre rivales derribados."
+          },
+          {
+            "name": "Golpe con Púas",
+            "staminaCost": 5,
+            "damageType": "Contundente",
+            "desc": "Puñetazo reforzado por las protuberancias óseas de sus antebrazos."
+          },
+          {
+            "name": "Barrida Lateral",
+            "staminaCost": 4,
+            "damageType": "Contundente",
+            "desc": "Barrido con la cola gruesa para tumbar rivales de su envergadura."
+          },
+          {
+            "name": "Pisotón Devastador",
+            "staminaCost": 6,
+            "damageType": "Contundente",
+            "desc": "Pisada firme para hundir el suelo o aplastar extremidades."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Ráfaga Devastadora de Boca (Chou Makouhou)",
+            "desc": "Abre la boca y lanza un torrente de Ki anaranjado colosal que arrasa con el entorno.",
+            "staminaCost": 28,
+            "chargeTime": "1 turno",
+            "damageType": "Energía",
+            "counterplay": "Esquiva lateral con barrera Ki o reflejo físico.",
+            "grantedTags": [
+              "Rafaga_Bucal",
+              "Destructor_Terreno"
+            ],
+            "suppressedTags": []
+          },
+          {
+            "name": "Embestida de Púas",
+            "desc": "Carga frontal usando la cabeza como punta de perforación para atravesar armaduras.",
+            "staminaCost": 18,
+            "chargeTime": "Instantáneo",
+            "damageType": "Perforante",
+            "counterplay": "Esquive lateral o contraataque en la base del cuello."
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Asalto del Carnicero",
+            "desc": "Embestida frontal rompiendo brazos y atravesando a la víctima de un puñetazo.",
+            "staminaCost": 40,
+            "chargeTime": "1 turno",
+            "damageType": "Contundente/Perforante",
+            "counterplay": "Interrumpir la carga antes del impacto final o esquivar lateralmente.",
+            "hitCondition": "Inmovilizar al objetivo en cuerpo a cuerpo y descargar el puñetazo perforante.",
+            "grantedTags": [
+              "Perforacion_Mortal"
+            ],
+            "suppressedTags": []
+          }
+        ],
+        "passives": [
+          {
+            "name": "Rabia Ciega",
+            "desc": "Si lo provocan, su poder de ataque sube levemente, pero su precisión y defensa bajan drásticamente.",
+            "cost": "Pasivo continuo"
+          },
+          {
+            "name": "Piel de Púas",
+            "desc": "Sus púas en cabeza, espalda y brazos actúan como disuasión a presas y rasgan al contacto.",
+            "cost": "Pasivo racial"
+          },
+          {
+            "name": "Piel Espinosa",
+            "desc": "Las púas dorsales y craneales funcionan como armadura pasiva; reducen daño cortante en combate cuerpo a cuerpo.",
+            "cost": "Pasivo permanente."
+          },
+          {
+            "name": "Fisiología Raza Freezer",
+            "desc": "Cuerpo resistente al vacío espacial básico y a ambientes hostiles planetarios sin soporte vital.",
+            "cost": "Pasivo racial."
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Radar Scouter",
+            "desc": "Permite rastrear niveles de potencia numérica básica, vulnerable a sobrecargas por ocultamiento de Ki."
+          },
+          {
+            "name": "Combate cuerpo a cuerpo puro",
+            "desc": "No posee sellos ni manipulación de espacio/tiempo."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Arrogancia y Estupidez Táctica",
+            "desc": "Confía ciegamente en la superioridad numérica de su poder, cayendo fácilmente en trampas visuales.",
+            "counterTags": [
+              "Ceguera",
+              "Ilusión",
+              "Engaño"
+            ],
+            "counterplay": "Usar distracciones y ataques feint para explotar su falta de intelecto combativo."
+          },
+          {
+            "name": "Lentitud Mental",
+            "desc": "Lento mentalmente, fácil de engañar (el Taiyoken lo descolocó por completo).",
+            "counterTags": [
+              "Engañable",
+              "LentoReaccion"
+            ],
+            "counterplay": "Usar distracciones y ataques feint para explotar su falta de intelecto combativo."
+          }
+        ]
+      },
+      "synergies": [
+        {
+          "name": "Comando del Ejército de Freezer",
+          "partnerTags": [
+            "Zarbon",
+            "Freezer"
+          ],
+          "effect": "Aumenta la agresividad inicial un 5% al combatir junto a miembros de alto rango del Imperio.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "teamCombos": [
+        {
+          "name": "Pinza Pinchos + Rayo (Dodoria + Zarbon)",
+          "partners": [
+            "Zarbon"
+          ],
+          "sequence": [
+            "Dodoria inmoviliza al rival con un abrazo aplastante frontal (1 turno).",
+            "Zarbon canaliza energía para un ataque de precisión (1 turno).",
+            "Dodoria lanza al rival directamente hacia el Elegant Blaster de Zarbon (1 turno)."
+          ],
+          "staminaCostPerParticipant": {
+            "Dodoria": 30,
+            "Zarbon": 25
+          },
+          "effect": "Daño masivo por impacto combinado y quemadura de Ki elemental.",
+          "partialFailureResult": "Si el rival escapa del abrazo, Dodoria recibe el impacto parcial del Elegant Blaster de Zarbon.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "feats": [
+        "Sobrevivió a la patada de Krilin y el Kikoho de Gohan.",
+        "Asesinó a los clanes de Namek.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "psychology": "Cobarde, matón y mentiroso. Trató de sobornar a Vegeta revelando la verdad del Planeta Vegeta para que lo dejara vivir, suplicando cobardemente.",
+      "weaknesses": "Lento mentalmente, fácil de engañar (el Taiyoken lo descolocó por completo). Vegeta lo mató sin sudar.",
+      "haxResistances": {
+        "existenceErasure": 5,
+        "timeManipulation": 0,
+        "mindControl": 15,
+        "matterManipulation": 5,
+        "soulDamage": 10,
+        "powerNullification": 0
+      },
+      "combatAIPersonality": {
+        "aggression": 90,
+        "tacticalIQ": 15,
+        "mercyThreshold": 20,
+        "clutchFactor": 25,
+        "preferredEngagementRange": "close_quarters",
+        "behavior": "Carga frontal pura. Si falla, repite más fuerte. Entra en Rabia Ciega si es humillado, perdiendo toda defensa por +15% daño."
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "100G",
+        "favoredBiomes": [
+          "Planeta Namek",
+          "Asteroides",
+          "Espacio abierto"
+        ],
+        "disfavoredBiomes": [
+          "Agua profunda",
+          "Cavernas estrechas"
+        ]
+      },
+      "provenFeats": [
+        "Sobrevivió a la patada de Krilin y el Kikoho de Gohan.",
+        "Asesinó a los clanes de Namek.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "combatDialogue": {
+        "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+        "onTransformation": "¡Mis púas están listas para destrozarte!",
+        "onUltimateReady": "¡No escaparás de esta carga!",
+        "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+        "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+      },
+      "staminaProfile": {
+        "maxStamina": 140,
+        "recoveryRatePerTurn": 8,
+        "exhaustionThreshold": 25,
+        "notes": "Estamina media; entra en fatiga rápida si el rival evita combate prolongado."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Scouter de Freezer",
+          "durability": "media",
+          "effect": "Lectura numérica del poder rival; sufre sobrecarga si se expone a ocultamiento de Ki a alto nivel."
+        },
+        {
+          "name": "Piel acorazada con púas",
+          "durability": "alta",
+          "effect": "Defensa pasiva constante y daño por contacto al rival."
+        },
+        {
+          "name": "Armadura de Combate Freezer",
+          "durability": "baja",
+          "effect": "Protección estándar del ejército; rota con ataques concentrados."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga de Namek / Año 762",
+        "timelineRestrictions": "Dodoria muere en Namek durante la Saga Namek a manos de Vegeta. No tiene conocimiento de eventos posteriores como la Saga Cell, Buu, Beerus, Multiverso ni la saga de Granola.",
+        "forbiddenConcepts": [
+          "Super Saiyajin",
+          "Freezer Dorado",
+          "Resurrección F",
+          "Broly",
+          "Jiren",
+          "Beerus",
+          "Whis",
+          "Universo 7",
+          "Ultra Instinto",
+          "Kaio-ken"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": false,
+        "fusionMethods": []
+      },
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga Namek",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "variant_of": null,
+      "character_family": null,
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "universe_number": null,
+      "members": null,
+      "parent_team_profile": null,
+      "team_affiliation": null,
+      "notes": "",
+      "legacy_data": "",
+      "powerScaling": {
+        "apexKi": 22000,
+        "apexKiFormatted": "22.000 Unidades",
+        "scouterKi": 22000,
+        "scouterKiFormatted": "22.000 Unidades",
+        "rank": "DESTRUCTOR PLANETARIO / ÉLITE SAIYAN",
+        "isOverload": false,
+        "speedFactor": 1.35,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.1,
+        "featsStrengthFactor": 1.4,
+        "formulaExpression": "PL_Scouter = BaseEnergy(5-B) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 22.000 Unidades | Oficial DB: 22.000 Unidades"
+      },
+      "numericStats": {
+        "apexKi": 22000,
+        "scouterKi": 22000,
+        "powerLevel": 22000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga Namek",
+      "physicalTier": "5-B",
+      "haxTier": "5-B",
+      "canonicalKi": 22000,
+      "sourceMedium": "manga",
+      "sourceKi": 22000,
+      "sourceKiStatus": "canonical-db",
+      "doesChangeTier": false,
+      "doesChangePowerKey": false
+    },
+    {
+      "id": "enma-daioh-saga-saiyan-579",
+      "name": "Enma Daioh (Rey Yemma)",
+      "alias": "El Juez del Otro Mundo",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga Saiyan / Buu / Janemba",
+      "version": "Juez de las Almas",
+      "tier": "5-A",
+      "tierExact": "5-A",
+      "tierRank": "EMPERADOR GALÁCTICO / SUPER SAIYAN",
+      "powerKey": "5-A",
+      "ap": "Nivel Planeta Grande. El ogro divino supremo encargado de juzgar todas las almas del Universo 7 para enviarlas al Cielo o al Infierno. Sometió personalmente a Raditz con una llave de lucha libre cuando este causó problemas al morir.",
+      "range": "Plano Espiritual del Más Allá.",
+      "speed": {
+        "combat": "Relativista.",
+        "reaction": "Relativista.",
+        "travel": "Sedentario.",
+        "attack": "Golpes colosales de escritorio."
+      },
+      "strength": "Clase Planeta Grande. Levantamiento: Clase Masiva.",
+      "durability": "Nivel Planeta Grande. Inmune a ataques espirituales de almas mortales.",
+      "stamina": "Infinita en su labor burocrática.",
+      "battleIQ": "Juez implacable con milenios de experiencia en sumisión física.",
+      "haxTags": [
+        "Juicio de Almas (Cielo o Infierno)",
+        "Sellado Espiritual",
+        "Fuerza Burocrática Divina",
+        "Inmunidad_Plano_Espectral",
+        "Llave_de_Lucha_Libre_Divina"
+      ],
+      "forms": [
+        {
+          "id": "yemma-base",
+          "name": "Enma Daioh (Rey Yemma / Estado Base)",
+          "apexKiMultiplier": 1,
+          "staminaDrain": 0,
+          "tier": "5-A",
+          "tierExact": "5-A",
+          "stats": "Nivel Planeta Grande. Gigante rojo con cuernos, barba negra espesa, traje de oficina y casco vikingo. Jueza todas las almas del Universo 7.",
+          "activationCondition": "Estado natural del personaje en su oficina.",
+          "grantedTags": [
+            "Autoridad_Divina",
+            "Inmunidad_Plano",
+            "Llave_LuchaLibre"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Yemma Lock",
+            "Sentencia de Despojo",
+            "Juicio de Almas"
+          ],
+          "limitations": "Su jurisdicción termina en su plano.",
+          "drawbacks": [
+            "Sedentarismo",
+            "Hipertensión"
+          ],
+          "exitCondition": "N/A",
+          "counterplay": "Manipulación de realidad (Janemba), anarquía dimensional.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "enma-daioh-saga-saiyan-579-juicio",
+          "name": "Modo Sentencia Activa",
+          "apexKiMultiplier": 1.3,
+          "staminaDrain": 10,
+          "tier": "5-A",
+          "tierExact": "5-A",
+          "stats": "Nivel Planeta Grande. Invoca su autoridad máxima con el mazo de juez, dictando sentencia inmediata sobre cualquier alma presente.",
+          "activationCondition": "Acto de juicio: golpe de mazo y declaración de sentencia.",
+          "grantedTags": [
+            "Veredicto_Divino",
+            "Mazo_de_Juez"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Sentencia al Infierno inmediata"
+          ],
+          "limitations": "Solo funciona sobre almas ya fallecidas o atrapadas entre planos.",
+          "drawbacks": [
+            "Si falla la sentencia, queda atónito 1 turno"
+          ],
+          "exitCondition": "Cumplida la condena o interrumpido.",
+          "counterplay": "Hax de manipulación de realidad que invalide el veredicto (Janemba).",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "formOrState": "Enma Daioh (Rey Yemma / Estado Base)",
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Manotazo Colosal",
+            "desc": "Un golpe con la palma abierta potenciado por la masa divina del juez.",
+            "staminaCost": 5,
+            "damageType": "contundente"
+          },
+          {
+            "name": "Sello de Tinta",
+            "desc": "Impresión rápida de decretos divinos con efectos de aturdimiento.",
+            "staminaCost": 4,
+            "damageType": "místico"
+          },
+          {
+            "name": "Manotazo Gigante",
+            "cost": 5,
+            "stamina": 5,
+            "damageType": "contundente",
+            "description": "Golpe colosal con la mano abierta, capaz de derribar o inmovilizar oponentes espirituales.",
+            "counterplay": "Oponentes con resistencia espiritual alta pueden mitigar el impacto."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Llave Yemma (Yemma Lock)",
+            "desc": "La famosa llave de lucha con la que sometió a Raditz en segundos.",
+            "staminaCost": 18,
+            "chargeTime": "Instantáneo",
+            "damageType": "Lucha Libre",
+            "counterplay": "Salir del agarre mediante fuerza bruta superior o teletransportación.",
+            "grantedTags": [
+              "Inmovilizacion_LuchaLibre"
+            ],
+            "suppressedTags": []
+          },
+          {
+            "name": "Sentencia de Despojo",
+            "desc": "Arrebata temporalmente los recuerdos del alma del oponente, causando confusión espiritual.",
+            "staminaCost": 22,
+            "chargeTime": "1 turno",
+            "damageType": "Místico",
+            "counterplay": "Resistencia espiritual alta o alma con entrenamiento mental.",
+            "grantedTags": [
+              "Memetic_Damage",
+              "Confusion_Alma"
+            ],
+            "suppressedTags": []
+          },
+          {
+            "name": "Burocracia Explosiva",
+            "desc": "Lanza una pila de archivos kármicos al rival que explotan en cadena.",
+            "staminaCost": 25,
+            "chargeTime": "1 turno",
+            "damageType": "Contundente/Energía",
+            "counterplay": "Volar los archivos antes de que exploten.",
+            "grantedTags": [
+              "Archivos_Inferiores"
+            ],
+            "suppressedTags": []
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Sentencia al Infierno",
+            "desc": "Dictamina la condena del alma enemiga enviándola directamente al plano de purificación infernal.",
+            "staminaCost": 45,
+            "chargeTime": "1 turno de lectura",
+            "damageType": "Burocrático/Sellado Espiritual",
+            "counterplay": "Hax de manipulación dimensional que rompa el sistema (Janemba).",
+            "hitCondition": "El alma debe estar fallecida, atrapada o haber sido procesada parcialmente.",
+            "grantedTags": [
+              "Veredicto_Divino",
+              "Sellado_Plano"
+            ],
+            "suppressedTags": []
+          },
+          {
+            "name": "Juicio de Masas",
+            "desc": "Procesa a todas las almas presentes simultáneamente, asignando trayectorias cósmicas masivas.",
+            "staminaCost": 50,
+            "chargeTime": "3 turnos de burocracia",
+            "damageType": "Burocrático total",
+            "counterplay": "Anarquía dimensional que rompa el sistema.",
+            "grantedTags": [
+              "Veredicto_Masivo",
+              "Manipulacion_Destino"
+            ],
+            "suppressedTags": []
+          }
+        ],
+        "passives": [
+          {
+            "name": "Autoridad de la Muerte",
+            "desc": "Ningún alma desencarnada puede hacerle daño dentro de su palacio del Otro Mundo.",
+            "cost": "Inmunidad espiritual"
+          },
+          {
+            "name": "Maza del Juez",
+            "desc": "Su maza dicta el destino espiritual de quien sea golpeado por ella.",
+            "staminaCost": 0
+          },
+          {
+            "name": "Inmunidad en su oficina",
+            "desc": "Las almas mortales no pueden dañarlo en su jurisdicción.",
+            "staminaCost": 0,
+            "tags": [
+              "Inmunidad_Plano",
+              "Autoridad_Divina"
+            ]
+          }
+        ],
+        "specialMechanics": [
+          "Juicio de Almas (Cielo o Infierno)",
+          "Sellado Espiritual",
+          "Fuerza Burocrática Divina",
+          "Inmunidad en su oficina",
+          "Manipulación de Destino sobre almas"
+        ],
+        "weaknesses": [
+          {
+            "name": "Magia Dimensional de Janemba",
+            "desc": "Fue atrapado temporalmente por la magia de Janemba al quedar encerrado en su palacio de caramelos dimensionales.",
+            "counterTags": [
+              "Magia_Dimensional",
+              "Manipulacion_De_Realidad"
+            ],
+            "counterplay": "Anarquía dimensional que rompa el sistema de juicios."
+          },
+          {
+            "name": "Hipertensión Burocrática",
+            "desc": "Propenso a la hipertensión cuando hay errores burocráticos.",
+            "counterTags": [
+              "Estres_Laboral",
+              "Hipertension"
+            ],
+            "counterplay": "Provocar caos administrativo o invadir su oficina con miles de papeleos."
+          },
+          {
+            "name": "Sedentarismo Extremo",
+            "desc": "Rara vez abandona su oficina, por lo que es vulnerable fuera de su jurisdicción.",
+            "counterTags": [
+              "Trampa_Lejos_del_Escritorio",
+              "Aislamiento_Plano"
+            ],
+            "counterplay": "Arrastrarlo fuera del plano del Otro Mundo."
+          },
+          {
+            "name": "Sin autoridad fuera de su plano",
+            "desc": "Su poder cae drásticamente fuera del palacio del Otro Mundo.",
+            "counterTags": [
+              "Restriccion_Plano",
+              "Perdida_Autoridad"
+            ],
+            "counterplay": "Engañarlo para que abandone su oficina."
+          }
+        ]
+      },
+      "synergies": [
+        {
+          "name": "Respaldo Kaioshin",
+          "partnerTags": [
+            "kaioshin",
+            "kibito"
+          ],
+          "effect": "+15% resistencia a ataques espirituales al estar respaldado por la burocracia celestial.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "teamCombos": [
+        {
+          "name": "Justicia Cósmica: Kaio + Yemma",
+          "partners": [
+            "Kaio del Norte"
+          ],
+          "sequence": [
+            "Kaio localiza el objetivo en el plano mortal (1 turno de observación).",
+            "Rey Yemma emite el mandato de teletransportación kármica (1 turno de sentencia).",
+            "Ambos ejecutan el sello de restricción definitivo (1 turno de cierre)."
+          ],
+          "staminaCostPerParticipant": {
+            "Kaio del Norte": 20,
+            "Rey Yemma": 25
+          },
+          "effect": "Inmovilización temporal absoluta del enemigo por 2 turnos.",
+          "partialFailureResult": "El enemigo solo sufre un leve retraso en su movimiento.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "feats": [
+        "Sometió a Raditz sin despeinarse.",
+        "Permitió a Goku conservar su cuerpo físico para recorrer el Camino de la Serpiente.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "psychology": "Estricto, adicto al trabajo administrativo de juzgar millones de almas, pero benevolente con los verdaderos héroes cósmicos.",
+      "weaknesses": "Fue atrapado temporalmente por la magia de Janemba al quedar encerrado en su palacio de caramelos dimensionales.",
+      "haxResistances": {
+        "existenceErasure": 30,
+        "timeManipulation": 40,
+        "mindControl": 50,
+        "matterManipulation": 60,
+        "soulDamage": 80,
+        "powerNullification": 35
+      },
+      "combatAIPersonality": {
+        "aggression": 40,
+        "tacticalIQ": 80,
+        "mercyThreshold": 50,
+        "clutchFactor": 60,
+        "preferredEngagementRange": "close_quarters",
+        "behavior": "Juez burocrático. Ataca cuando alguien altera el orden del Otro Mundo; castiga con Yemma Lock."
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "Planetaria",
+        "favoredBiomes": [
+          "Palacio del Otro Mundo",
+          "Oficinas Celestiales",
+          "Planos Espirituales"
+        ],
+        "disfavoredBiomes": [
+          "Mundo Mortal",
+          "Campos de batalla activos"
+        ]
+      },
+      "provenFeats": [
+        "Sometió a Raditz sin despeinarse.",
+        "Permitió a Goku conservar su cuerpo físico para recorrer el Camino de la Serpiente.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "combatDialogue": {
+        "onBattleStart": "¡Tu alma será procesada!",
+        "onTransformation": "¡Que caiga el mazo del juicio!",
+        "onUltimateReady": "¡La sentencia ha sido dictada!",
+        "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+        "onVictory": "Otra alma que pasa al registro. Siguiente."
+      },
+      "staminaProfile": {
+        "maxStamina": 150,
+        "recoveryRatePerTurn": 12,
+        "exhaustionThreshold": 30,
+        "notes": "Estamina infinita en su plano, se reduce fuera de él."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Escritorio del Juicio Final",
+          "durability": "Infinita",
+          "effect": "Centro de mando burocrático donde firma sentencias y revisa el Ojo del Karma."
+        },
+        {
+          "name": "Libro de la Vida y la Muerte (Ojo del Karma)",
+          "durability": "Absoluta",
+          "effect": "Permite ver el historial completo y el destino de cualquier alma del Universo 7."
+        },
+        {
+          "name": "Tinta Mística",
+          "durability": "Variable",
+          "effect": "Usada para sellar decretos espirituales."
+        },
+        {
+          "name": "Maza del Juez Yemma",
+          "durability": "Divina",
+          "effect": "Sella el destino espiritual de cualquier alma golpeada."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga Saiyan hasta Janemba (Año 762-774)",
+        "timelineRestrictions": "Conoce la mecánica del alma hasta la saga de Buu y la anomalía de Janemba. No sabe de Super, Beerus ni del Tournament of Power.",
+        "forbiddenConcepts": [
+          "Super Saiyan God",
+          "Ultra Instinct",
+          "Beerus",
+          "Torneo del Poder",
+          "Multiverse Tournament",
+          "Whis",
+          "Zeno",
+          "Super Saiyan Blue"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": false,
+        "fusionMethods": []
+      },
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga Saiyan / Buu / Janemba",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "variant_of": null,
+      "character_family": null,
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "universe_number": null,
+      "members": null,
+      "parent_team_profile": null,
+      "team_affiliation": null,
+      "notes": "",
+      "legacy_data": "",
+      "powerScaling": {
+        "apexKi": 120000000,
+        "apexKiFormatted": "120.00 Millones de Ki",
+        "scouterKi": 120000000,
+        "scouterKiFormatted": "120.00 Millones de Ki",
+        "rank": "EMPERADOR GALÁCTICO / SUPER SAIYAN",
+        "isOverload": false,
+        "speedFactor": 1.35,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.1,
+        "featsStrengthFactor": 1.35,
+        "formulaExpression": "PL_Scouter = BaseEnergy(5-A) × Vel(1.35x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.35x) × Forma(1x) = 120.00 Millones de Ki"
+      },
+      "numericStats": {
+        "apexKi": 120000000,
+        "scouterKi": 120000000,
+        "powerLevel": 120000000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga Saiyan / Buu / Janemba",
+      "physicalTier": "5-A",
+      "haxTier": "5-A",
+      "sourceMedium": "manga",
+      "doesChangeTier": false,
+      "doesChangePowerKey": false
+    },
+    {
+      "id": "freezer-saga-namek-saga-namek-167",
+      "name": "Freezer (Dragon Ball Z — Saga de Namek)",
+      "alias": "El Emperador del Universo · El Tirano Galáctico",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga de Freezer / Namek (DBZ)",
+      "version": "100% de Poder / Todas las Formas",
+      "tier": "5-A",
+      "tierExact": "5-A",
+      "tierRank": "EMPERADOR GALÁCTICO / DESTRUCTOR ESTELAR",
+      "powerKey": "5-A",
+      "ap": "Nivel Estrella Enana en su 100% de Poder. Capaz de destruir el Planeta Vegeta con la punta de un dedo en 1ª Forma (530,000 unidades) y de perforar el núcleo de Namek provocando su colapso en 5 minutos en Forma Final.",
+      "range": "Sistema Solar Menor (Supernova).",
+      "speed": {
+        "combat": "FTL.",
+        "reaction": "FTL.",
+        "travel": "MFTL (Naves).",
+        "attack": "Rayos letales instantáneos."
+      },
+      "strength": "Clase Estrella Enana. Levantamiento: Clase Planetaria.",
+      "durability": "Nivel Estrella Enana. Capacidad increíble para sobrevivir desmembramientos, vacío del espacio, y la explosión de un planeta.",
+      "stamina": "Muy Alta en base; Drenaje Crítico en 100%.",
+      "battleIQ": "Confiado, cruel, sádico. Solo pelea en serio si su vida peligra o su orgullo es herido de gravedad.",
+      "haxTags": [
+        "Telequinesis Cósmica",
+        "Supernova Planetaria",
+        "Death Beam Perforante",
+        "Supervivencia al Vacío Espacial",
+        "Tsuibi Death Beam"
+      ],
+      "forms": [
+        {
+          "id": "freezer-1ra-forma",
+          "name": "Freezer 1ª Forma (Supresión en Cápsula / 530.000 Unidades)",
+          "apexKiMultiplier": 1,
+          "staminaDrain": 0,
+          "tier": "5-A",
+          "tierExact": "5-A",
+          "stats": "530.000 unidades canónicas. Forma de contención en cápsula flotante capaz de destruir el Planeta Vegeta con una Supernova en la yema del dedo.",
+          "activationCondition": "Forma suprimida natural de Freezer dentro de su cápsula y al llegar a Namek.",
+          "grantedTags": [
+            "Supresion_Ki",
+            "Cuerpo_Freezer_Raza",
+            "Telequinesis_Cosmica"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Death Beam",
+            "Supernova contenida"
+          ],
+          "limitations": "Suprime el 99% de su Ki real.",
+          "drawbacks": [
+            "Cualquier explosión de Ki real libera la supresión."
+          ],
+          "exitCondition": "Daño significativo, decisión voluntaria o provocación.",
+          "counterplay": "Provocarlo para que se transforme.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "freezer-2da-forma",
+          "name": "Freezer 2ª Forma (Gigante con Cuernos)",
+          "apexKiMultiplier": 2,
+          "staminaDrain": 10,
+          "tier": "5-A",
+          "tierExact": "5-A",
+          "stats": "Más de 1.000.000 de unidades canónicas. Físico colosal que atraviesa a Krilin y humilla a Vegeta.",
+          "activationCondition": "Liberación de la primera supresión tras la primera pelea seria.",
+          "grantedTags": [
+            "Fuerza_Colosal",
+            "Cuernos_Perforantes"
+          ],
+          "suppressedTags": [
+            "Supresion_Ki"
+          ],
+          "grantedAbilities": [
+            "Cornadas de Contención"
+          ],
+          "limitations": "Pierde agilidad por masa corporal.",
+          "drawbacks": [
+            "Velocidad de combate reducida."
+          ],
+          "exitCondition": "Decisión voluntaria o humillación.",
+          "counterplay": "Esquivar sus cargas y atacar los flancos.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "freezer-3ra-forma",
+          "name": "Freezer 3ª Forma (Forma Xenomorfa)",
+          "apexKiMultiplier": 4,
+          "staminaDrain": 20,
+          "tier": "High 5-A",
+          "tierExact": "High 5-A",
+          "stats": "Velocidad y ráfagas de rayos de ki cegadoras que superan la asimilación de Piccolo con Nail.",
+          "activationCondition": "Liberación de la segunda supresión tras sentirse acorralado por Piccolo.",
+          "grantedTags": [
+            "Rayo_Veloz",
+            "Craneo_Elongado"
+          ],
+          "suppressedTags": [
+            "Fuerza_Colosal"
+          ],
+          "grantedAbilities": [
+            "Empalamiento Craneal",
+            "Ráfagas de Ki"
+          ],
+          "limitations": "El cráneo elongado es un punto de agarre vulnerable.",
+          "drawbacks": [
+            "Sensibilidad al agarre craneal."
+          ],
+          "exitCondition": "Decisión voluntaria o necesidad de más poder.",
+          "counterplay": "Sujetar el cráneo y decapitar (técnica Goku/Gohan).",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "freezer-forma-final",
+          "name": "Freezer Forma Final (Forma Verdadera / 50% de Poder)",
+          "apexKiMultiplier": 120,
+          "staminaDrain": 30,
+          "tier": "Low 4-C",
+          "tierExact": "Low 4-C",
+          "stats": "60.000.000 de unidades al 50%. Cuerpo esbelto blanco y morado con reflejos letales que desvían el Kaio-ken x20 de Goku.",
+          "activationCondition": "Activación final tras destruir a Krilin y Dende, al sentir la muerte de Vegeta.",
+          "grantedTags": [
+            "Forma_Verdadera",
+            "Reflejos_Letales",
+            "Death_Saucer"
+          ],
+          "suppressedTags": [
+            "Craneo_Elongado",
+            "Cuernos_Perforantes"
+          ],
+          "grantedAbilities": [
+            "Death Beam",
+            "Tsuiseki Kienzan",
+            "Crazy Finger Beam",
+            "Nova Strike Concentrado"
+          ],
+          "limitations": "Aún conserva estamina de reserva.",
+          "drawbacks": [
+            "Si el rival lo supera, debe liberar el 100%."
+          ],
+          "exitCondition": "Daño crítico o decisión de usar el 100%.",
+          "counterplay": "Forzar el agotamiento o provocar liberación total.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "freezer-100-max-power",
+          "name": "Freezer 100% de Máximo Poder (Hipertrofia Muscular)",
+          "apexKiMultiplier": 240,
+          "staminaDrain": 65,
+          "tier": "4-C",
+          "tierExact": "4-C",
+          "stats": "120.000.000 de unidades canónicas al 100%. Musculatura hipertrofiada con desgaste progresivo acelerado de stamina contra Goku SSJ.",
+          "activationCondition": "Activado al ver a Goku transformarse en Super Saiyan y sentir que el 50% no es suficiente.",
+          "grantedTags": [
+            "Hipertrofia_Muscular",
+            "Poder_Maximo",
+            "Drenaje_Ki"
+          ],
+          "suppressedTags": [
+            "Agilidad_Forma_Final"
+          ],
+          "grantedAbilities": [
+            "Potenciación de todas las técnicas previas"
+          ],
+          "limitations": "Desgaste muscular extremo, drenaje de stamina crítico por turno.",
+          "drawbacks": [
+            "Si se mantiene, colapsará por agotamiento de Ki."
+          ],
+          "exitCondition": "Agotamiento de Ki, daño mortal o transformación imposible.",
+          "counterplay": "Combate de desgaste; forzar el tiempo límite.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "formOrState": "Freezer 1ª Forma (Supresión en Cápsula / 530.000 Unidades)",
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Coletazo Imperial",
+            "cost": 4,
+            "damageType": "contundente",
+            "desc": "Látigo de cola rápido diseñado para romper costillas o desequilibrar al rival."
+          },
+          {
+            "name": "Estocada de Cuernos",
+            "cost": 6,
+            "damageType": "cortante/perforante",
+            "desc": "Carga frontal apuntando directamente a zonas vitales."
+          },
+          {
+            "name": "Cornadas de Contención",
+            "cost": 5,
+            "desc": "Embestida frontal usando los cuernos de la primera o segunda forma."
+          },
+          {
+            "name": "Empalamiento Craneal de la 3ª Forma",
+            "cost": 7,
+            "damageType": "perforante",
+            "desc": "Embestida con la punta del cráneo elongado de la Forma Xenomorfa."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Death Beam",
+            "desc": "Rayo púrpura lanzado del dedo, tan rápido que Piccolo no lo pudo ver.",
+            "staminaCost": 15,
+            "chargeTime": "Instantáneo",
+            "damageType": "Energía/Perforante",
+            "counterplay": "Sentir la presión espiritual antes de disparar."
+          },
+          {
+            "name": "Tsuiseki Kienzan",
+            "desc": "Discos de Ki morado que persiguen térmicamente al enemigo, capaces de cortar incluso entidades más fuertes que él.",
+            "staminaCost": 22,
+            "chargeTime": "1 turno",
+            "damageType": "Energía/Cortante",
+            "counterplay": "Ataques ki contundentes pueden destruirlos si el usuario es muy superior."
+          },
+          {
+            "name": "Crazy Finger Beam",
+            "cost": 20,
+            "staminaCost": 20,
+            "chargeTime": "ráfaga",
+            "desc": "Múltiples Death Beams simultáneos en arco amplio.",
+            "counterplay": "Esquiva lateral con barrera."
+          },
+          {
+            "name": "Tsuibi Death Beam",
+            "cost": 25,
+            "staminaCost": 25,
+            "chargeTime": "medio segundo",
+            "desc": "Discos térmicos que persiguen al enemigo.",
+            "counterplay": "Atrapar con manos o contraataque físico."
+          },
+          {
+            "name": "Telequinesis Cósmica",
+            "cost": 20,
+            "staminaCost": 20,
+            "chargeTime": "1 turno",
+            "desc": "Inmoviliza rivales en el aire mediante presión de Ki.",
+            "counterplay": "Liberarse con aura mayor."
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Death Ball / Supernova",
+            "desc": "Esfera colosal de fuego capaz de destruir el núcleo de un planeta al instante o con retraso.",
+            "staminaCost": 50,
+            "chargeTime": "1 turno",
+            "damageType": "Energía/Masivo",
+            "counterplay": "Esquivar antes de la convergencia o atacar al usuario mientras carga."
+          },
+          {
+            "name": "Nova Strike Concentrado",
+            "desc": "Versión a distancia cero del Supernova, canalizada por las palmas unidas.",
+            "staminaCost": 45,
+            "chargeTime": "1 turno",
+            "hitCondition": "Toque directo sobre el objetivo.",
+            "counterplay": "Esquivar antes de la convergencia o atacar al usuario mientras carga."
+          }
+        ],
+        "passives": [
+          {
+            "name": "Sadismo Imperial",
+            "desc": "Juega con su comida; su AP aumenta mientras el enemigo esté asustado, pero si es herido de gravedad, pierde el control emocional.",
+            "cost": "Pasivo psicológico"
+          },
+          {
+            "name": "Fisiología de Changlong (Demondese Ancestral)",
+            "desc": "Inmunidad total a las condiciones hostiles del espacio exterior y resistencia biológica extrema a entornos de alta presión.",
+            "cost": "Permanente"
+          },
+          {
+            "name": "Supresión de Poder Multietapa",
+            "desc": "Capacidad de bloquear su poder real en múltiples estados evolutivos para conservar energía y contener su inmensa presión destructiva.",
+            "cost": "Pasivo biológico"
+          },
+          {
+            "name": "Rastreo Térmico Tsuibi",
+            "desc": "Los Death Saucers localizan y persiguen la firma de calor del objetivo.",
+            "cost": "Pasivo"
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Telequinesis Cósmica",
+            "desc": "Manipulación gravitacional y aérea de materia y energía."
+          },
+          {
+            "name": "Death Ball con Temporizador",
+            "desc": "Puede programar la Supernova para detonar minutos después (5 minutos en Namek)."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Arrogancia Extrema",
+            "counterTags": [
+              "Burlar_Orgullo",
+              "Ataque_Sorpresa_Psicologico"
+            ],
+            "desc": "Subestima crónicamente el potencial de crecimiento de razas inferiores como los Saiyans.",
+            "counterplay": "Provocar su ira para que gaste energía innecesariamente."
+          },
+          {
+            "name": "Inestabilidad Muscular al 100%",
+            "desc": "Su máxima forma desgasta su propia masa corporal y drena su estamina de forma drástica.",
+            "counterTags": [
+              "desgaste_por_tiempo",
+              "combate_de_desgaste"
+            ],
+            "counterplay": "Forzar el combate prolongado para que colapse."
+          },
+          {
+            "name": "Sensibilidad al Agarre Craneal",
+            "desc": "Su Forma 3ª tiene un cráneo alargado perfecto para ser sujetado y decapitado.",
+            "counterTags": [
+              "grab",
+              "throw"
+            ],
+            "counterplay": "Sujetar el cráneo y atacar la base."
+          }
+        ]
+      },
+      "synergies": [
+        {
+          "name": "Comando del Ejército de Freezer",
+          "partnerTags": [
+            "Zarbon",
+            "Dodoria",
+            "Ginyu",
+            "Cold"
+          ],
+          "effect": "Los soldados absorben el aggro inicial mientras Freezer carga su Rayo de la Muerte sin interrupción.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Linaje del Terror",
+          "partnerTags": [
+            "King Cold",
+            "Cooler"
+          ],
+          "effectName": "Linaje del Terror",
+          "description": "Incrementa el daño crítico de los ataques especiales un 15% al operar en equipo familiar.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "teamCombos": [
+        {
+          "name": "Supernova Binaria (Freezer + King Cold)",
+          "partners": [
+            "King Cold"
+          ],
+          "sequence": [
+            "Apertura: Freezer inmoviliza al rival con Telequinesis Cósmica (1 turno).",
+            "Canalización: King Cold aporta su propia Death Ball para fusionarla con la del hijo (1 turno).",
+            "Remate: Ejecución simultánea de Supernova binaria sobre el objetivo (1 turno)."
+          ],
+          "staminaCostPerParticipant": {
+            "Freezer": 30,
+            "King Cold": 35
+          },
+          "effect": "Daño catastrófico de nivel multi-estelar con anulación de regeneración.",
+          "partialFailureResult": "Si el rival rompe la telequinesis inicial, el combo se aborta y ambos sufren un contragolpe de retroceso de Ki.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "feats": [
+        "Sobrevivió a la explosión del Planeta Namek partido a la mitad y sin energía.",
+        "Humilló a Vegeta, Gohan, Krilin y Piccolo seguidos.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "psychology": "Cree genuinamente que es el ser más perfecto del universo, intolerante a cualquier tipo de rebelión, tratando a las vidas ajenas como basura descartable.",
+      "weaknesses": "Arrogancia ciega. Su forma del 100% quema Ki de forma insostenible en batallas largas.",
+      "haxResistances": {
+        "existenceErasure": 0,
+        "timeManipulation": 0,
+        "mindControl": 75,
+        "matterManipulation": 5,
+        "soulDamage": 30,
+        "powerNullification": 0
+      },
+      "combatAIPersonality": {
+        "aggression": 85,
+        "tacticalIQ": 70,
+        "mercyThreshold": 5,
+        "clutchFactor": 90,
+        "preferredEngagementRange": "mid_range",
+        "behavior": "Juega con su presa. Castiga con Sadismo Imperial. Si se siente acorralado, revela la siguiente forma."
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "Universal (fisiología Changlong lo hace inmune a Gs extremos)",
+        "favoredBiomes": [
+          "Vacío espacial",
+          "Superficies planetarias áridas",
+          "Arenas de torneo"
+        ],
+        "disfavoredBiomes": [
+          "Sala del Espíritu y Tiempo",
+          "Mundos con atmósfera densa y tóxica"
+        ]
+      },
+      "provenFeats": [
+        "Sobrevivió a la explosión del Planeta Namek partido a la mitad y sin energía.",
+        "Humilló a Vegeta, Gohan, Krilin y Piccolo seguidos.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "combatDialogue": {
+        "onBattleStart": "¡Inscríbelo en tu lápida: yo, Freezer, te envío al infierno!",
+        "onTransformation": "¡Contempla mi verdadera forma y tiembla, insecto!",
+        "onUltimateReady": "¡Esta Death Ball absorberá tu miserable existencia!",
+        "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+        "onVictory": "Tu derrota era inevitable. Inclínate ante tu emperador."
+      },
+      "staminaProfile": {
+        "maxStamina": 140,
+        "recoveryRatePerTurn": 8,
+        "exhaustionThreshold": 20,
+        "notes": "Estamina crítica al 100% de poder; debe regresar al 50% para evitar el colapso."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Silla Flotante Imperial",
+          "durability": "indestructible_base",
+          "effect": "Transporte personal con sensores y capacidad de flotar en atmósfera hostil."
+        },
+        {
+          "name": "Armadura de Bio-Control",
+          "durability": "low",
+          "effect": "Limitada supresión inicial; se rompe al liberar el 100%."
+        },
+        {
+          "name": "Cápsula de Contención Hilo Espacial",
+          "durability": "high",
+          "effect": "Bloquea su Ki real para mantener la 1ª Forma."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga de Freezer / Namek / Año 762",
+        "timelineRestrictions": "Freezer en Namek aún no conoce a Goku Super Saiyan 2/3, ni Beerus ni el estado Ultra Instinto. No sabe nada del Torneo del Poder ni del Freezer Dorado que será dentro de su propia línea temporal futura.",
+        "forbiddenConcepts": [
+          "Super Saiyan 2",
+          "Super Saiyan 3",
+          "Super Saiyan God",
+          "Ultra Instinct",
+          "Beerus",
+          "Whis",
+          "Torneo del Poder",
+          "Golden Freezer",
+          "Energia Hakai",
+          "Zeno"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": false,
+        "fusionMethods": []
+      },
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga de Namek",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "variant_of": null,
+      "character_family": "Freezer",
+      "source_confidence": "verified",
+      "legacy_status": "active"
+    },
+    {
+      "id": "gohan-ultimate-mystic-897",
+      "name": "Gohan Definitivo (Ultimate/Mystic)",
+      "alias": "El Guerrero Despertado por el Kaio-shin Anciano · El No-Fusionado Más Poderoso de Z",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga de Majin Buu",
+      "version": "Gohan Definitivo (Ultimate/Mystic)",
+      "tier": "3-A",
+      "tierExact": "3-A",
+      "tierRank": "Universal Menor",
+      "ap": "Nivel Universal Menor. Al liberar todo su potencial oculto con el ritual del Anciano Kaio-shin, su estado Definitivo sobrepasa holgadamente el poder del Super Saiyajin 3 de Goku y Super Gotenks SSJ3, dominando a Super Buu sin esfuerzo.",
+      "apCalculation": "≥ 1.0e44 Joules (Escala Universal Menor manifestada al disipar la Genki-Dama de Buu y dominar el ki universal).",
+      "range": "Planetario a Universal (mediante proyección de Ki y ondas expansivas masivas).",
+      "speed": {
+        "combat": "MFTL+",
+        "reaction": "MFTL+",
+        "travel": "MFTL+",
+        "attack": "Veloz (Ráfagas lumínicas a quemarropa)"
+      },
+      "strength": "Clase Sistema Solar (Base). Levantamiento: Clase Estelar. Su estado Definitivo le permite ejercer fuerza de Nivel Universal Menor.",
+      "durability": "Nivel Sistema Solar. A pesar de estar falto de entrenamiento, resistió la petrificación por instinto y aguantó golpes mágicos de Dabra y el asalto inicial de Majin Buu. Su estado místico escala su resistencia al nivel de su AP ofensivo.",
+      "stamina": "Moderada. Se cansa más rápido que en su juventud debido a la falta de entrenamiento marcial constante.",
+      "staminaProfile": {
+        "maxStamina": 130,
+        "recoveryRatePerTurn": 8,
+        "exhaustionThreshold": 25
+      },
+      "battleIQ": "Ha perdido instinto asesino y reflejos, cayendo a menudo en trucos sucios, pero retiene su brillantez académica y comprensión del Ki.",
+      "haxTags": [
+        "Saiyan",
+        "Híbrido Saiyan-Humano",
+        "Desbloqueo Místico",
+        "Voluntad Inquebrantable",
+        "Usuario de Ki",
+        "Potencial Absoluto"
+      ],
+      "haxTier": "3-A",
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Golpes Místicos de Precisión",
+            "cost": 4,
+            "damageType": "Contundente",
+            "desc": "Combate marcial de máxima precisión con lectura táctica avanzada."
+          },
+          {
+            "name": "Patada de Hacha Descendente",
+            "cost": 6,
+            "damageType": "Contundente",
+            "desc": "Movimiento contundente para romper guardias rígidas."
+          },
+          {
+            "name": "Golpe Místico Preciso",
+            "cost": 4,
+            "damageType": "Contundente/Energía",
+            "desc": "Golpes marciales imbuidos con ki latente liberado sin necesidad de transformarse."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Burst Rush / Asalto Furioso Místico",
+            "desc": "Secuencia fulminante de golpes de puño, rodillazos y patada de hacha que lanza al oponente contra el suelo, rematando con una ráfaga de Ki a quemarropa.",
+            "cost": 25,
+            "staminaDrain": 25,
+            "counterplay": "Contraataque durante el canalizado final del Ki (ventana de 2 segundos)."
+          },
+          {
+            "name": "Super Masenko",
+            "desc": "Versión madura y devastadora del Masenko con Ki blanco brillante.",
+            "cost": 20,
+            "staminaDrain": 20
+          },
+          {
+            "name": "Super Kamehameha Definitivo",
+            "desc": "Kamehameha ejecutado con el poder del Estado Místico, superando la potencia destructiva del SSJ3.",
+            "cost": 30,
+            "staminaDrain": 30
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "I'm Here to Kill You (Poder Místico Pleno)",
+            "desc": "Despliegue absoluto de Ki místico que anula la regeneración enemiga por sobrecarga de daño directo y castiga cualquier intento de contraataque.",
+            "cost": 45,
+            "staminaDrain": 45,
+            "conditions": "Requiere que el rival esté desorientado o haya fallado un movimiento previo."
+          }
+        ],
+        "passives": [
+          {
+            "name": "Potencial Místico Inagotable",
+            "desc": "Su Estado Definitivo mantiene su poder máximo activo de forma permanente sin sufrir la fatiga o pérdida de stamina del Super Saiyajin 3.",
+            "cost": "Pasivo permanente"
+          },
+          {
+            "name": "Zenkai Híbrido",
+            "desc": "Resiliencia superior y aumento de rendimiento tras sufrir heridas graves en combate.",
+            "cost": "Pasivo"
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Ausencia de Desgaste por Transformación",
+            "desc": "Al no requerir la mutación física del Super Saiyajin, su energía se conserva íntegra."
+          },
+          {
+            "name": "Liberación de Poder Total",
+            "desc": "Permite acceder al 100% del potencial de combate sin requerir transformación física ni desgaste por fases."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Exceso de Confianza Post-Despertar",
+            "desc": "Suele subestimar a rivales con habilidades de absorción o magia avanzada (como Super Buu).",
+            "counterTags": [
+              "Astucia",
+              "Magia Oscura"
+            ]
+          },
+          {
+            "name": "Falta de Entrenamiento Marcial",
+            "desc": "Reflejos oxidados; vulnerable a trucos sucios y agarrones callejeros.",
+            "counterTags": [
+              "Lucha Sucia",
+              "Combate Cuerpo a Cuerpo Brusco"
+            ]
+          }
+        ]
+      },
+      "forms": [
+        {
+          "id": "gohan-mystic-base",
+          "name": "Gohan (Estado Base / Ropa de los Kaio-shin)",
+          "apexKiMultiplier": 1,
+          "staminaDrain": 0,
+          "tier": "High 4-B",
+          "tierExact": "High 4-B",
+          "stats": "Gohan antes de desatar el ritual supremo de Rou Dai Kaio-shin.",
+          "grantedTags": [
+            "Saiyan",
+            "Híbrido",
+            "Base_Desentrenada"
+          ],
+          "activationCondition": "Estado por defecto al llegar al Mundo Kaioshin.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "gohan-ultimate",
+          "name": "Gohan Definitivo (Ultimate / Potencial Desatado)",
+          "apexKiMultiplier": 80,
+          "staminaDrain": 15,
+          "tier": "3-A",
+          "tierExact": "3-A",
+          "stats": "Poder que supera a un Super Saiyajin 3 sin gasto de energía ni transformación saiyajin. Apalea a Super Buu sin esfuerzo.",
+          "activationCondition": "Ritual del Anciano Kaio-shin (Potencial Místico Desatado).",
+          "grantedTags": [
+            "Potencial_Absoluto",
+            "Sin_Desgaste_Transformacion",
+            "Universal_Menor"
+          ],
+          "suppressedTags": [
+            "Necesidad_de_Super_Saiyan"
+          ],
+          "grantedAbilities": [
+            "I'm Here to Kill You",
+            "Super Kamehameha Definitivo"
+          ],
+          "limitations": [
+            "Falta de reflejos marciales actualizados (oxidado)."
+          ],
+          "drawbacks": [
+            "Drenaje de Ki si mantiene el despliegue máximo por horas."
+          ],
+          "exitCondition": "Requiere muerte o ritual inverso (no sale voluntariamente).",
+          "counterplay": "Ataques de magia dimensional o superioridad numérica con estamina infinita (Buu).",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "feats": [
+        "Luchó a la par contra Dabura a pesar de haber perdido poder.",
+        "Mantuvo a salvo a los Kaioshins temporalmente de Majin Buu.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas.",
+        "Superó en poder a Goku SSJ3 sin transformarse."
+      ],
+      "psychology": "Un joven noble, puro y ligeramente friki. Se siente obligado a ser un superhéroe y a estudiar, dividiendo su tiempo. Le falta la fiereza Saiyan pura de Goku o Vegeta.",
+      "weaknesses": "Falta de entrenamiento. Reflejos oxidados. Su naturaleza compasiva lo hace blanco fácil de villanos despiadados.",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Individual Canónico)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Al sobrevivir a daño crítico o quedar al borde de la muerte, el Saiyajin experimenta un aumento multiplicativo de su AP, velocidad y reservas de Ki.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Lazos de Maestro y Alumno",
+          "partnerTags": [
+            "Piccolo"
+          ],
+          "effect": "Piccolo intercepta ataques letales dirigidos a Gohan, y Gohan gana +25% de penetración de Ki con Masenko/Makankosappo.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Potencial Oculto por la Familia",
+          "partnerTags": [
+            "Goku",
+            "Goten",
+            "Videl",
+            "Pan"
+          ],
+          "effect": "Multiplica la generación de daño crítico cuando lucha para salvaguardar a sus seres queridos.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Despertar Místico (Ritual Kaio-shin)",
+          "partnerTags": [
+            "Anciano Kaio-shin",
+            "Shin"
+          ],
+          "effect": "Desbloquea el 100% del potencial latente sin transformación, eliminando el drenaje por fases.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "teamCombos": [
+        {
+          "id": "father_son_mystic_strike",
+          "partners": [
+            "Gohan Definitivo (Ultimate/Mystic)",
+            "Goku"
+          ],
+          "sequence": [
+            "Goku aplica presión táctica con Teletransportación instantánea.",
+            "Gohan aparece por la espalda canalizando su Ki Místico.",
+            "Impacto conjunto con doble onda de choque universal."
+          ],
+          "staminaCostPerParticipant": {
+            "Gohan": 35,
+            "Goku": 35
+          },
+          "effect": "Provoca daño masivo Nivel Universal y rompe cualquier barrera defensiva estándar.",
+          "partialFailureResult": "Si el paso 1 falla, el combo se disipa generando una apertura para el rival.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "transformativeMechanics": {
+        "canFuse": true,
+        "canAbsorb": false,
+        "fusionMethods": [
+          "Fusión Pothara (con Goku)"
+        ]
+      },
+      "haxResistances": {
+        "existenceErasure": 0,
+        "timeManipulation": 0,
+        "mindControl": 30,
+        "matterManipulation": 10,
+        "soulDamage": 25,
+        "powerNullification": 15
+      },
+      "combatAIPersonality": {
+        "aggression": 55,
+        "tacticalIQ": 90,
+        "mercyThreshold": 50,
+        "clutchFactor": 80,
+        "preferredEngagementRange": "close_quarters"
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "500G",
+        "favoredBiomes": [
+          "Mundo Kaioshin",
+          "Torneo del Otro Mundo"
+        ],
+        "disfavoredBiomes": [
+          "Interior de Majin Buu (Absorción)"
+        ]
+      },
+      "provenFeats": [
+        "Luchó a la par contra Dabura a pesar de haber perdido poder.",
+        "Mantuvo a salvo a los Kaioshins temporalmente de Majin Buu.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas.",
+        "Superó en poder a Goku SSJ3 sin transformarse."
+      ],
+      "combatDialogue": {
+        "onBattleStart": "¡No voy a permitir que dañes a nadie más!",
+        "onTransformation": "¡He despertado! ¡Todo mi poder ha sido liberado!",
+        "onUltimateReady": "¡Vine aquí para matarte! (I'm here to kill you).",
+        "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+        "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Espada Z",
+          "durability": "Legendaria",
+          "effect": "Hoja sagrada forjada por el Anciano Kaio-shin. Capaz de cortar a través de cualquier sustancia conocida, incluyendo a Majin Buu. Puede sellar dimensionalmente."
+        },
+        {
+          "name": "Uniforme de Piccolo (prestado)",
+          "durability": "Resistente",
+          "effect": "Túnica namekiana morada."
+        },
+        {
+          "name": "Uniforme de Gi del Kaio-shin",
+          "durability": "Alta",
+          "effect": "Otorga estética Kaio-shin y alineamiento místico con el ritual."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga de Majin Buu (Año 774)",
+        "timelineRestrictions": "No conoce a Beerus, al Ultra Instinto, ni eventos de DBSuper posteriores a su resurrección. Sí conoce al Anciano Kaio-shin y a Dabra.",
+        "forbiddenConcepts": [
+          "Ultra Instinto",
+          "Super Saiyan God",
+          "Beerus",
+          "Whis",
+          "Torneo del Poder"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga de Majin Buu",
+      "form_or_state": "Gohan Definitivo (Ultimate/Mystic)",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "variant_of": null,
+      "character_family": "Son Gohan",
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "universe_number": null,
+      "members": null,
+      "parent_team_profile": null,
+      "team_affiliation": null,
+      "notes": "",
+      "legacy_data": "",
+      "powerScaling": {
+        "apexKi": 80000000000,
+        "apexKiFormatted": "80.00 Mil Millones de Ki",
+        "scouterKi": 80000000000,
+        "scouterKiFormatted": "80.00 Mil Millones de Ki",
+        "rank": "AMENAZA CÓSMICA / CELL & BUU",
+        "isOverload": false,
+        "speedFactor": 2.8,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.25,
+        "featsStrengthFactor": 1.4,
+        "formulaExpression": "PL_Scouter = BaseEnergy(3-A) × Vel(2.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 80.00 Mil Millones de Ki | Oficial DB: 80.000.000.000 Unidades",
+        "powerKey": "80000000000"
+      },
+      "numericStats": {
+        "apexKi": 80000000000,
+        "scouterKi": 80000000000,
+        "powerLevel": 80000000000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga de Majin Buu",
+      "physicalTier": "3-A",
+      "sourceMedium": "manga",
+      "doesChangeTier": false,
+      "doesChangePowerKey": false
+    },
+    {
+      "id": "gohan-del-futuro-l-nea-temporal-futura-43",
+      "name": "Gohan del Futuro",
+      "alias": "El Último Guerrero Z",
+      "universe": "Dragon Ball Z",
+      "saga": "Un Futuro Diferente (Especial TV)",
+      "version": "Maestro Manco (Super Saiyan)",
+      "tier": "4-C",
+      "tierExact": "4-C",
+      "tierRank": "Estrella Enana a Estrella",
+      "ap": "Nivel Estrella Enana a Estrella (Bajo). El único superviviente de la masacre androide original. A pesar de perder un brazo y no tener gravedad de entrenamiento ni salas del tiempo, Gohan logró alcanzar y mantener el Super Saiyajin durante 13 años peleando un infierno constante. Puede erradicar ciudades y dañar gravemente a 17 o 18 en 1v1.",
+      "apCalculation": "≈ 2.4e29 Joules (Capaz de borrar ciudades enteras con un Masenko cargado).",
+      "range": "Planetario mediante Masenko.",
+      "speed": {
+        "combat": "FTL. Capaz de combatir simultáneamente contra dos Androides por cortos períodos.",
+        "reaction": "FTL. Extrema supervivencia.",
+        "travel": "FTL.",
+        "attack": "Ráfagas lumínicas."
+      },
+      "strength": "Clase Estrella Enana. Pese a faltarle un brazo, sus patadas y codazos sacuden a los androides. Levantamiento: Clase Planetaria.",
+      "durability": "Nivel Estrella Enana. Tiene una resistencia al dolor demencial. Pelea mutilado y sin semillas Senzu sin quejarse.",
+      "stamina": "Muy Alta, pero el daño crónico, la falta de descanso y el estrés reducen su rendimiento en batallas muy prolongadas.",
+      "staminaProfile": {
+        "maxStamina": 110,
+        "recoveryRatePerTurn": 6,
+        "exhaustionThreshold": 25
+      },
+      "battleIQ": "Veterano de Guerra Frío. Trata siempre de aislar a un enemigo, usa escombros, humo y emboscadas tácticas para compensar la desventaja numérica.",
+      "haxTags": [
+        "Determinación Inquebrantable",
+        "Bloqueo Asimétrico",
+        "Manipulación de Escudos Ki Básicos"
+      ],
+      "haxTier": "4-C",
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "name": "Codazo Unilateral",
+            "cost": 5,
+            "desc": "Codazos letales y patadas de barrido usando Ki para mantener el equilibrio."
+          },
+          {
+            "name": "Codazo Asimétrico",
+            "desc": "Golpe seco utilizando el impulso de rotación debido a la falta de su brazo izquierdo.",
+            "cost": 4
+          },
+          {
+            "name": "Barrido Táctico",
+            "desc": "Patada baja apoyada con ondas de Ki para desequilibrar al rival.",
+            "cost": 3
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Masenko Múltiple",
+            "desc": "Dispara desde la frente múltiples ráfagas mientras esquiva para alejar a oponentes dobles.",
+            "cost": 15,
+            "staminaDrain": 15
+          },
+          {
+            "name": "Escudo de Ki Defensivo",
+            "desc": "Crea una cúpula amarilla que resiste la lluvia incesante de rayos androides.",
+            "cost": 20,
+            "staminaDrain": 20
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Kamehameha Unilateral (One-Handed)",
+            "desc": "Carga un Kamehameha letal con su único brazo derecho impulsado por la desesperación de proteger el futuro.",
+            "cost": 50,
+            "staminaDrain": 50,
+            "conditions": "Canalización visible de 3 segundos; vulnerable a interrupción."
+          }
+        ],
+        "passives": [
+          {
+            "name": "Alma del Maestro",
+            "desc": "Su resistencia y voluntad aumentan críticamente si Trunks está en peligro, llegando a sacrificarse a sí mismo para salvarlo.",
+            "cost": "Pasivo continuo"
+          },
+          {
+            "name": "Determinación Inquebrantable",
+            "desc": "Resiste condiciones terminales sin ceder (mutilación, hambre, fatiga).",
+            "cost": 0
+          },
+          {
+            "name": "Resistencia al Dolor Crónico",
+            "desc": "Ignora penalizadores de dolor por heridas del estado base.",
+            "cost": "Pasivo continuo"
+          }
+        ],
+        "specialMechanics": [
+          {
+            "name": "Desventaja Anatómica",
+            "desc": "Incapacidad de realizar técnicas de dos manos, compensada con mayor velocidad de giro."
+          },
+          {
+            "name": "Combate con Extremidad Única",
+            "desc": "Compensa la falta de equilibrio lateral con un control superior de su centro de gravedad gravitacional."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Extremidad Faltante",
+            "desc": "Punto ciego notable en el lado izquierdo y menor estabilidad en giros aéreos.",
+            "counterTags": [
+              "Ataque por Flanco Ciego",
+              "Desgaste Numérico"
+            ]
+          },
+          {
+            "name": "Punto Ciego Izquierdo",
+            "desc": "Vulnerable a ataques furtivos que provengan de su lado mutilado.",
+            "counterTags": [
+              "Ataques de Flanco",
+              "Superioridad Numérica"
+            ]
+          }
+        ]
+      },
+      "forms": [
+        {
+          "id": "gohan-futuro-base",
+          "name": "Gohan del Futuro (Estado Base)",
+          "stats": "Nivel Planeta Grande. Superviviente solitario de la Tierra apocalíptica.",
+          "apexKiMultiplier": 1,
+          "tier": "4-C",
+          "tierExact": "4-C",
+          "multiplier": "1x",
+          "staminaDrain": 0,
+          "canonStatus": "source_backed",
+          "grantedTags": [
+            "Saiyan",
+            "Unilateral_Arm",
+            "Superviviente_Apocaliptico"
+          ],
+          "limitations": [
+            "Desequilibrio físico permanente."
+          ]
+        },
+        {
+          "id": "gohan-futuro-ssj",
+          "name": "Super Saiyan (Manco)",
+          "stats": "Nivel Estrella Enana. Determinación inquebrantable en inferioridad numérica frente a A-17 y A-18.",
+          "apexKiMultiplier": 50,
+          "tier": "High 4-C",
+          "tierExact": "High 4-C",
+          "staminaDrain": 15,
+          "canonStatus": "source_backed",
+          "activationCondition": "Activación pasiva tras 13 años de odio contenido, lo mantiene constantemente.",
+          "limitations": "Estado perpetuo lo desgasta emocionalmente, y físicamente usa más stamina al mantenerlo.",
+          "grantedTags": [
+            "SSJ_Permanente",
+            "Aura_Manca"
+          ],
+          "suppressedTags": [
+            "pacifist_empath"
+          ],
+          "grantedAbilities": [
+            "Masenko Múltiple",
+            "Kamehameha Unilateral"
+          ],
+          "exitCondition": "Muerte en combate frente a los Androides (no sale voluntariamente).",
+          "counterplay": "Ataques por el flanco izquierdo o desgaste numérico sostenido.",
+          "drawbacks": "Desequilibrio físico permanente por la extremidad faltante."
+        }
+      ],
+      "feats": [
+        "Sobrevivió en solitario 13 años contra androides inmortales con energía infinita.",
+        "Protegió a Trunks y lo noqueó para salvarle la vida, yendo a morir con honor frente a los androides.",
+        "Empujó al Androide 17 al 50% de su poder."
+      ],
+      "psychology": "Melancólico, maduro, paternal. Asume su muerte inminente sabiendo que su vida es solo el puente para que Trunks alcance la victoria final.",
+      "weaknesses": "Desequilibrio físico por la pérdida de la extremidad; siempre pierde al enfrentarse a dos enemigos con estamina infinita (Los Androides).",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Individual Canónico)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Al sobrevivir a daño crítico o quedar al borde de la muerte, el Saiyajin experimenta un aumento multiplicativo de su AP, velocidad y reservas de Ki.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Lazos de Maestro y Alumno",
+          "partnerTags": [
+            "Piccolo"
+          ],
+          "effect": "Piccolo intercepta ataques letales dirigidos a Gohan, y Gohan gana +25% de penetración de Ki con Masenko/Makankosappo.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Potencial Oculto por la Familia",
+          "partnerTags": [
+            "Goku",
+            "Goten",
+            "Videl",
+            "Pan"
+          ],
+          "effect": "Multiplica la generación de daño crítico cuando lucha para salvaguardar a sus seres queridos.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Lazos de Maestro y Alumno (Memoria)",
+          "partnerTags": [
+            "Piccolo"
+          ],
+          "effect": "Gohan del Futuro no tiene a Piccolo vivo. Sin embargo, el eco de sus enseñanzas le da +15% de puntería con Masenko y mejor lectura de ki.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Potencial Oculto por la Familia (Contraste)",
+          "partnerTags": [
+            "Goku",
+            "Goten",
+            "Videl",
+            "Pan"
+          ],
+          "effect": "Como su familia está muerta, este pasivo activa +50% de daño y resistencia cuando los recuerdos de su familia lo invocan en peligro crítico.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "teamCombos": [
+        {
+          "id": "gohan-future-trunks-volley",
+          "partners": [
+            "Trunks del Futuro"
+          ],
+          "sequence": [
+            "Gohan distrae a los enemigos con una lluvia de Masenkos frontales",
+            "Trunks se posiciona a espaldas del objetivo con espada cargada",
+            "Gohan ejecuta una patada de apoyo para empujar al rival directo al tajo de Trunks"
+          ],
+          "staminaCostPerParticipant": {
+            "Gohan": 30,
+            "Trunks": 25
+          },
+          "effect": "Corte crítico severo con daño penetrante masivo.",
+          "partialFailureResult": "Trunks es interceptado y Gohan recibe daño de retroceso.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "transformativeMechanics": {
+        "canFuse": false,
+        "canAbsorb": false,
+        "fusionMethods": []
+      },
+      "haxResistances": {
+        "existenceErasure": 0,
+        "timeManipulation": 10,
+        "mindControl": 40,
+        "matterManipulation": 30,
+        "soulDamage": 50,
+        "powerNullification": 25
+      },
+      "combatAIPersonality": {
+        "aggression": 60,
+        "tacticalIQ": 90,
+        "mercyThreshold": 15,
+        "clutchFactor": 85,
+        "preferredEngagementRange": "mid_range"
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": false,
+        "gravityResistance": "50G (límite terrestre de su entrenamiento)",
+        "favoredBiomes": [
+          "Tierra apocalíptica (escombros)",
+          "Zonas urbanas destruidas"
+        ],
+        "disfavoredBiomes": [
+          "Espacio exterior",
+          "Mundos con gravedad extrema",
+          "Otros planetas (sin Namek/usei ship)"
+        ]
+      },
+      "provenFeats": [
+        "Sobrevivió en solitario 13 años contra androides inmortales con energía infinita.",
+        "Protegió a Trunks y lo noqueó para salvarle la vida, yendo a morir con honor frente a los androides.",
+        "Empujó al Androide 17 al 50% de su poder."
+      ],
+      "combatDialogue": {
+        "onBattleStart": "¡No te preocupes, Trunks! ¡Maestro Piccolo, ahora me toca a mí protegerte a ti!",
+        "onTransformation": "¡Trunks, mira! ¡Aún tengo的力量 (poder)!",
+        "onUltimateReady": "¡Kamehameha... por nuestro futuro!",
+        "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+        "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Uniforme de Piccolo (Pantalón y Turbante)",
+          "durability": "60%",
+          "effect": "Vestimenta de batalla deteriorada."
+        },
+        {
+          "name": "Espada Z Rota (Estandarte)",
+          "durability": "0%",
+          "effect": "Simbólico, perdido en combate contra los androides."
+        },
+        {
+          "name": "Camisa de Combate desgarrada",
+          "durability": "Rota / Sin stats",
+          "effect": "Atuendo improvisado, sin propiedades especiales."
+        },
+        {
+          "name": "Espada rota de Trunks (prestada)",
+          "durability": "Desgastada",
+          "effect": "Arma blanca simple para supervivencia."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Especial TV 'El Futuro de Trunks' / Línea Temporal Alternativa (Año 780 divergente)",
+        "timelineRestrictions": "Gohan del Futuro NO sabe de Cell, Majin Buu, los dragones, ni las peleas de los Torneos. Solo conoce a Trunks, los Androides, la Tierra en ruinas y la muerte de su familia/amigos. Su muerte ocurre antes que cualquiera de esos eventos.",
+        "forbiddenConcepts": [
+          "Cell",
+          "Majin Buu",
+          "Dragones",
+          "Bills",
+          "Torneos de Poder",
+          "Ultra Instinto",
+          "Universo 7"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Un Futuro Diferente (Especial TV)",
+      "form_or_state": "Gohan del Futuro (Super Saiyan / Manco)",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "variant_of": null,
+      "character_family": "Son Gohan",
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "universe_number": null,
+      "members": null,
+      "parent_team_profile": null,
+      "team_affiliation": null,
+      "notes": "",
+      "legacy_data": "",
+      "powerScaling": {
+        "apexKi": 1420000000,
+        "apexKiFormatted": "1.42 Mil Millones de Ki",
+        "scouterKi": 1420000000,
+        "scouterKiFormatted": "1.42 Mil Millones de Ki",
+        "rank": "AMENAZA CÓSMICA / CELL & BUU",
+        "isOverload": false,
+        "speedFactor": 1.8,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.25,
+        "featsStrengthFactor": 1.4,
+        "formulaExpression": "PL_Scouter = BaseEnergy(4-C) × Vel(1.8x) × Def(1x) × Hax/IQ(1.25x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1.42 Mil Millones de Ki",
+        "powerKey": "1420000000"
+      },
+      "numericStats": {
+        "apexKi": 1420000000,
+        "scouterKi": 1420000000,
+        "powerLevel": 1420000000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Un Futuro Diferente (Especial TV)",
+      "physicalTier": "4-C",
+      "sourceMedium": "manga",
+      "doesChangeTier": false,
+      "doesChangePowerKey": false
+    },
+    {
+      "id": "gotenks-base-saga-buu-858",
+      "name": "Gotenks (Base a SSJ3)",
+      "alias": "El Héroe Definitivo de la Justicia",
+      "universe": "Dragon Ball Z",
+      "saga": "Saga de Buu",
+      "version": "Fusión Metamoru Prodigio",
+      "tier": "3-C",
+      "tierExact": "3-C",
+      "tierRank": "Multi-Sistema Solar",
+      "ap": "Nivel Multi-Sistema Solar (Escalado a 3-C en SSJ3). La fusión cómica pero inmensamente poderosa de Goten y Trunks. En SSJ3, su poder era suficiente para barrer el piso con Super Buu (temporalmente), siendo el mortal más fuerte de la Tierra después de Gohan Definitivo.",
+      "apCalculation": "≈ 4.2e35 Joules (Manifestado en SSJ3 con la ruptura de la barrera dimensional del RoSaT).",
+      "range": "Sistema Solar (Ataques Kamikaze Fantasmas).",
+      "speed": {
+        "combat": "MFTL+",
+        "reaction": "MFTL+",
+        "travel": "MFTL+ (Dio varias vueltas a la Tierra durmiendo la siesta en segundos).",
+        "attack": "Veloz."
+      },
+      "strength": "Clase Sistema Solar (Base). Levantamiento: Clase Estelar. En SSJ3, su fuerza de impacto escala a Multi-Sistema Solar.",
+      "durability": "Nivel Sistema Solar. En SSJ3 resiste los embates furiosos de Super Buu.",
+      "stamina": "Baja en SSJ3 (Drena la fusión a 5 minutos). Media en Base/SSJ.",
+      "staminaProfile": {
+        "maxStamina": 100,
+        "recoveryRatePerTurn": 8,
+        "exhaustionThreshold": 20
+      },
+      "battleIQ": "Infantil, arrogante y ridículo. Gasta tiempo haciendo poses, poniéndoles nombres largos a los golpes, y dejando que el enemigo se recupere solo por el espectáculo.",
+      "haxTags": [
+        "Fusión Metamoru",
+        "Magia Cómica (Creación de Fantasmas Vudú)",
+        "Atrapamiento de Voleibol",
+        "Vudú Kamikaze (Fantasmas explosivos con voluntad propia)"
+      ],
+      "haxTier": "3-C",
+      "arsenal": {
+        "basicAttacks": [
+          {
+            "id": "gotenks-basic-1",
+            "name": "Magnum Brain Chop",
+            "cost": 4,
+            "damage": "Contundente moderado",
+            "desc": "Golpe rápido en la nuca acompañado de una mueca burlona."
+          },
+          {
+            "id": "gotenks-basic-2",
+            "name": "Miracle Super Punch",
+            "cost": 6,
+            "damage": "Contundente alto",
+            "desc": "Puñetazo cargado con un brillo exagerado de ki infantil."
+          }
+        ],
+        "superAttacks": [
+          {
+            "name": "Ataque Kamikaze de los Súper Fantasmas (Super Ghost Kamikaze Attack)",
+            "desc": "Escupe de su boca fantasmas de Ki idénticos a él. Tienen voluntad propia y, si tocan cualquier cosa, explotan con daño de nivel estelar.",
+            "cost": 25,
+            "staminaDrain": 25,
+            "counterplay": "Evitar contacto con los fantasmas espectrales; dispersión de Ki."
+          },
+          {
+            "name": "Aros Galácticos (Galactic Donut)",
+            "desc": "Crea anillos de Ki que apresan al enemigo reduciéndolos a una pelota.",
+            "cost": 20,
+            "staminaDrain": 20,
+            "counterplay": "Romper los anillos de Ki antes de que se cierren; evasión lateral."
+          }
+        ],
+        "ultimateAttacks": [
+          {
+            "name": "Remate de Voleibol Ultra Buu",
+            "desc": "Encierra al enemigo en los Aros Galácticos, formando una pelota de voleibol con él, y lo remata contra el suelo en un cráter gigante (En colaboración con Piccolo).",
+            "cost": 45,
+            "staminaDrain": 45
+          },
+          {
+            "id": "gotenks-super-kamehameha",
+            "name": "Super Kamekameha (Doble Haz)",
+            "desc": "Carga y dispara dos haces de energía combinados desde cada mano.",
+            "cost": 35,
+            "staminaDrain": 35,
+            "counterplay": "Si el rival tiene la durabilidad suficiente para recibir el impacto, redirigir el contraataque a la zona de sombras."
+          }
+        ],
+        "passives": [
+          {
+            "name": "Sobre-confianza Cómica",
+            "desc": "Sus ataques más fuertes a veces fallan porque se muerde la lengua o se olvida el plan a mitad de la carga.",
+            "cost": "Debuff Cómico"
+          },
+          {
+            "name": "Voz Anunciante",
+            "desc": "Anuncia sus ataques con nombres ridículamente largos en medio del combate, lo que sirve como予告 de contraataque para el enemigo.",
+            "cost": "Canalización abierta"
+          },
+          {
+            "id": "gotenks-passive-fusion-drain",
+            "name": "Drenaje de Fusión Metamoru",
+            "desc": "El uso de transformaciones avanzadas reduce drásticamente el tiempo límite de 30 minutos de la fusión.",
+            "trigger": "Permanente en transformación"
+          }
+        ],
+        "specialMechanics": [
+          {
+            "id": "gotenks-special-fusion-clock",
+            "name": "Temporizador de Fusión",
+            "desc": "Reloj interno de 30 minutos (Base/SSJ) o 5 minutos (SSJ3). Al expirar, la fusión se rompe automáticamente."
+          },
+          {
+            "id": "gotenks-special-ghost-storage",
+            "name": "Almacenamiento de Fantasmas",
+            "desc": "Mantiene un banco interno de fantasmas creados que pueden ser detonados a distancia."
+          }
+        ],
+        "weaknesses": [
+          {
+            "name": "Arrogancia Infantil",
+            "desc": "Se confía en exceso, perdiendo el tiempo en monólogos y poses teatrales.",
+            "counterTags": [
+              "Provocación",
+              "Explotación de Ego"
+            ]
+          },
+          {
+            "name": "Límite de Tiempo Crítico",
+            "desc": "En SSJ3, la fusión se agota en apenas 5 minutos reales.",
+            "counterTags": [
+              "Desgaste",
+              "Aguante Temporal"
+            ]
+          },
+          {
+            "name": "Inmadurez Marcial",
+            "desc": "No sabe aprovechar sus ventajas técnicas; termina peleando como un niño en lugar de un Saiyan elite.",
+            "counterTags": [
+              "Superioridad Técnica",
+              "Evasión Paciente"
+            ]
+          }
+        ]
+      },
+      "forms": [
+        {
+          "id": "gotenks-base",
+          "name": "Gotenks (Estado Base)",
+          "stats": "Nivel Sistema Solar. Fusión Metamoru de Goten y Trunks.",
+          "apexKiMultiplier": 1,
+          "tier": "High 5-A",
+          "tierExact": "High 5-A",
+          "multiplier": "1x",
+          "activationCondition": "Fusión exitosa mediante la Danza Metamoru (Apretón de pulgares y contacto de antebrazos).",
+          "staminaDrain": 0,
+          "grantedTags": [
+            "Fusión Metamoru",
+            "Héroe de la Justicia (Mimetismo)",
+            "Magia Cómica"
+          ],
+          "limitations": [
+            "Tiempo límite estricto de 30 minutos (No entrenados)."
+          ],
+          "drawbacks": [
+            "Arrogancia infantil desmedida."
+          ],
+          "exitCondition": "Desintegración por temporizador o impacto severo (si la energía falla).",
+          "counterplay": "Aguantar 30 minutos o interrumpir la fusión por golpe de ki masivo en el momento exacto.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "gotenks-ssj",
+          "name": "Gotenks (Super Saiyan 1)",
+          "stats": "Nivel Sistema Solar+. Multiplicador canónico x50 sobre la base.",
+          "apexKiMultiplier": 50,
+          "tier": "4-B",
+          "tierExact": "4-B",
+          "activationCondition": "Activación del SSJ1 sobre la base de la fusión.",
+          "staminaDrain": 10,
+          "grantedTags": [
+            "SSJ1",
+            "Aura_Ki_Dorada"
+          ],
+          "limitations": [
+            "Reduce el tiempo de fusión a aprox. 15 minutos."
+          ],
+          "drawbacks": [
+            "Mayor consumo de energía vital."
+          ],
+          "exitCondition": "Agotamiento del temporizador de fusión.",
+          "counterplay": "Forzar al rival a pelear hasta que se agote el reloj interno.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "gotenks-ssj3",
+          "name": "Gotenks (Super Saiyan 3)",
+          "stats": "Nivel Multi-Sistema Solar. Poder descomunal capaz de abrir brechas dimensionales en la RoSaT.",
+          "apexKiMultiplier": 400,
+          "tier": "3-C",
+          "tierExact": "3-C",
+          "activationCondition": "Activación del SSJ3 sobre la base de SSJ (x400 base canónico).",
+          "staminaDrain": 20,
+          "grantedTags": [
+            "Cabello Extremo SSJ3",
+            "Drenaje de Tiempo de Fusión Severo",
+            "Ruptura Dimensional",
+            "Presión Espiritual Masiva"
+          ],
+          "limitations": [
+            "Drena el tiempo de fusión de 30 a 5 minutos."
+          ],
+          "drawbacks": [
+            "Fatiga extrema acumulada en la fusión.",
+            "Mayor descoordinación entre las dos almas."
+          ],
+          "exitCondition": "Colapso inmediato de la fusión por agotamiento.",
+          "counterplay": "Forzar al rival a pelear 5 minutos (Time-Out táctico).",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "feats": [
+        "Forzó a Super Buu a usar la magia dimensional para escapar del cuarto del tiempo.",
+        "Destrozó la barrera dimensional con un grito de SSJ3.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "psychology": "Un mocoso mimado, que cree que las batallas por la supervivencia del universo son un juego de superhéroes para lucirse.",
+      "weaknesses": "Límite de fusión de 30 minutos (5 mins en SSJ3). Arrogancia estúpida que le cuesta las victorias ganadas.",
+      "synergies": [
+        {
+          "name": "Sangre Saiyajin (Zenkai Individual Canónico)",
+          "partnerTags": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks",
+            "Broly",
+            "Goten"
+          ],
+          "effect": "Al sobrevivir a daño crítico o quedar al borde de la muerte, el Saiyajin experimenta un aumento multiplicativo de su AP, velocidad y reservas de Ki.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "name": "Dúo Dinámico Pre-Fusión",
+          "partnerTags": [
+            "Trunks"
+          ],
+          "effect": "Sincronización perfecta de Ki. Permite ejecutar la Danza de la Fusión en Gotenks instantáneamente.",
+          "canonStatus": "source_backed"
+        },
+        {
+          "id": "gotenks-syn-piccolo",
+          "name": "Estratega Piccolo + Ejecutor Gotenks",
+          "partnerTags": [
+            "Piccolo"
+          ],
+          "effect": "Piccolo diseña la trampa (Aros Galácticos) y Gotenks ejecuta el remate final, formando el 'Remate de Voleibol' definitivo.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "teamCombos": [
+        {
+          "id": "gotenks-piccolo-volleyball",
+          "partners": [
+            "Piccolo"
+          ],
+          "sequence": [
+            "Gotenks atrapa al objetivo con Aros Galácticos.",
+            "Piccolo canaliza energía de apoyo para comprimir y endurecer la trampa.",
+            "Gotenks ejecuta el Remate de Voleibol Ultra Buu contra el suelo."
+          ],
+          "staminaCostPerParticipant": {
+            "Gotenks": 40,
+            "Piccolo": 25
+          },
+          "effect": "Daño masivo contundente y aturdimiento total del enemigo durante 2 turnos.",
+          "partialFailureResult": "Si el enemigo rompe los aros a tiempo, Piccolo recibe el contraataque de retroceso de ki.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "transformativeMechanics": {
+        "canFuse": true,
+        "canAbsorb": false,
+        "fusionMethods": [
+          "Metamoru",
+          "Pothara"
+        ]
+      },
+      "haxResistances": {
+        "existenceErasure": 0,
+        "timeManipulation": 20,
+        "mindControl": 30,
+        "matterManipulation": 10,
+        "soulDamage": 50,
+        "powerNullification": 20
+      },
+      "combatAIPersonality": {
+        "aggression": 75,
+        "tacticalIQ": 15,
+        "mercyThreshold": 80,
+        "clutchFactor": 30,
+        "preferredEngagementRange": "adaptive"
+      },
+      "environmentalAffinity": {
+        "spaceSurvival": true,
+        "gravityResistance": "300G",
+        "favoredBiomes": [
+          "Habitación del Tiempo (RoSaT)",
+          "Cielo de la Tierra (Velocidad sin restricciones)",
+          "Campos abiertos (Espacio para nombres largos)"
+        ],
+        "disfavoredBiomes": [
+          "Mundo Maligno Interior (Poder del rival crece)",
+          "Espacios cerrados sin aire (Falta de oxígeno para la fusión)",
+          "Bajo el agua (No saben respirar líquido)"
+        ]
+      },
+      "provenFeats": [
+        "Forzó a Super Buu a usar la magia dimensional para escapar del cuarto del tiempo.",
+        "Destrozó la barrera dimensional con un grito de SSJ3.",
+        "Exhibió dominio de su arsenal y resistencia frente a técnicas enemigas."
+      ],
+      "combatDialogue": {
+        "onBattleStart": "¡Soy Gotenks, el héroe definitivo de la justicia! ¡Tiembla ante mi poder!",
+        "onTransformation": "¡Ahora soy un Super Saiyan! ...¡No espera, Super Saiyan 3!",
+        "onUltimateReady": "¡Atento al ataque Super Mega Definitivo de la Muerte Final Omega!",
+        "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+        "onVictory": "Fue una gran pelea. Entrena duro para la próxima."
+      },
+      "signatureEquipment": [
+        {
+          "name": "Pañuelo de Héroe (Accesorio)",
+          "durability": "low",
+          "effect": "Símbolo estético de su identidad como 'héroe'. Puede romperse si recibe un golpe fuerte."
+        }
+      ],
+      "knowledgeHorizon": {
+        "canonicalEra": "Saga de Buu / Año 774 (Fase final)",
+        "timelineRestrictions": "Gotenks es la combinación de las mentes de Goten y Trunks (7 años), por lo que su conocimiento está estrictamente limitado a la vida en la Tierra, los trucos de Goten (juegos) y las lecturas de historietas de Trunks. No tienen acceso a técnicas como el Mafuba (Sello de Mafudba), el Hakai, ni conocimientos de los Kaioshin o las destrucciones universales.",
+        "forbiddenConcepts": [
+          "Mafuba (Sello de la Olla)",
+          "Espada Z",
+          "Ultra Instinto",
+          "Super Saiyan 4",
+          "Dios de la Destrucción",
+          "Torneo de Poder"
+        ],
+        "crossVerseAwareness": "none"
+      },
+      "franchise": "Dragon Ball",
+      "continuity": "canon_main",
+      "era_or_saga": "Saga de Buu",
+      "form_or_state": "Gotenks (Estado Base)",
+      "profile_type": "individual",
+      "canon_status": "canon_main",
+      "variant_of": null,
+      "character_family": null,
+      "source_confidence": "verified",
+      "legacy_status": "active",
+      "universe_number": null,
+      "members": null,
+      "parent_team_profile": null,
+      "team_affiliation": null,
+      "notes": "",
+      "legacy_data": "",
+      "powerScaling": {
+        "apexKi": 44000000000,
+        "apexKiFormatted": "44.00 Mil Millones de Ki",
+        "scouterKi": 44000000000,
+        "scouterKiFormatted": "44.00 Mil Millones de Ki",
+        "rank": "AMENAZA CÓSMICA / CELL & BUU",
+        "isOverload": false,
+        "speedFactor": 3.5,
+        "durabilityFactor": 1,
+        "haxBiqFactor": 1.1,
+        "featsStrengthFactor": 1.7,
+        "formulaExpression": "PL_Scouter = BaseEnergy(4-B) × Vel(3.5x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.7x) × Forma(1x) = 44.00 Mil Millones de Ki | Oficial DB: 44.000.000.000 Unidades",
+        "powerKey": "44000000000"
+      },
+      "numericStats": {
+        "apexKi": 44000000000,
+        "scouterKi": 44000000000,
+        "powerLevel": 44000000000
+      },
+      "entityType": "fighter",
+      "sagaOrArc": "Saga de Buu",
+      "physicalTier": "3-C",
+      "sourceMedium": "manga",
+      "doesChangeTier": false,
+      "doesChangePowerKey": false
     }
   ],
   "integrationPatch": [
@@ -151049,6 +155566,249 @@
       "target": "burter-saga-namek-641",
       "field": "formsAudited",
       "reason": "Migración del array 'forms' (campo legacy) a 'formsAudited' con taxonomía completa de auditoría canónica APEX."
+    },
+    {
+      "op": "replace",
+      "target": "results[0].forms",
+      "value": [
+        {
+          "id": "chaos-dragon-ball-cl-sico-318-base-std",
+          "name": "Chaos (Chiaotzu) (Estado Base)",
+          "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico. Tez blanca, mejillas rojas, ropa de monje.",
+          "apexKiMultiplier": 1,
+          "tier": "5-C",
+          "tierExact": "5-C",
+          "multiplier": "1x",
+          "staminaDrain": 0,
+          "activationCondition": "Estado natural permanente del personaje.",
+          "grantedTags": [
+            "Humano_Psíquico",
+            "Levitación_Constante",
+            "Guerrero_Z"
+          ],
+          "suppressedTags": [],
+          "grantedAbilities": [
+            "Telequinesis Permanente",
+            "Dodonpa Psíquico",
+            "Parálisis Mental (Vudú Cósmico)"
+          ],
+          "limitations": "Parálisis solo funciona si el oponente tiene Ki igual o menor.",
+          "drawbacks": "Dolor de cabeza crónico al usar poderes mentales.",
+          "exitCondition": "N/A (estado base permanente).",
+          "counterplay": "Cegar sus ojos o elevar el Ki muy por encima del suyo para anular el Vudú.",
+          "canonStatus": "source_backed"
+        }
+      ],
+      "reason": "Eliminada forma duplicada 'Enano Psíquico' (id: chaos-base) que actuaba como segundo base espurio. Consolidada la Forma Base única en el índice 0."
+    },
+    {
+      "op": "replace",
+      "target": "results[1].arsenal.superAttacks",
+      "value": [
+        {
+          "name": "Ráfaga Desesperada",
+          "desc": "Lanza decenas de balas de ki cuando entra en pánico.",
+          "staminaCost": 18,
+          "damageType": "energético_múltiple",
+          "chargeTime": "Instantáneo",
+          "counterplay": "Barrido defensivo o evasión en arco."
+        },
+        {
+          "name": "Patada Táctica Namekiana",
+          "desc": "Patada con rotación que aprovecha el terreno de Namek para desequilibrar.",
+          "staminaCost": 20,
+          "chargeTime": "1 turno",
+          "damageType": "Contundente",
+          "counterplay": "Volar o esquivar antes del impacto.",
+          "grantedTags": [
+            "Combate_Aéreo"
+          ],
+          "suppressedTags": []
+        }
+      ],
+      "reason": "Eliminado duplicado 'Ráfaga Desesperada' y estandarizado 'Patada Táctica Namekiana'."
+    },
+    {
+      "op": "replace",
+      "target": "results[1].arsenal.ultimateAttacks",
+      "value": [
+        {
+          "name": "¡Mira, es Freezer! (Engaño + Cañón)",
+          "desc": "Grita señalando detrás del enemigo. Si el objetivo voltea, Cui le lanza un cañón energético rojo a quemarropa.",
+          "staminaCost": 25,
+          "damageType": "psíquico_físico",
+          "chargeTime": "Instantáneo",
+          "counterplay": "Conocimiento del personaje ignora el truco."
+        },
+        {
+          "name": "Cañón Final Cui",
+          "desc": "Concentra todo su ki en una esfera roja que dispara contra el enemigo con odio racial.",
+          "staminaCost": 45,
+          "chargeTime": "2 turnos",
+          "damageType": "Energético",
+          "counterplay": "Esquivar con diferencia de velocidad (Vegeta con 24k lo esquivó y mató).",
+          "grantedTags": [
+            "Último_Recurso"
+          ],
+          "suppressedTags": [],
+          "hitConditions": "El rival debe estar estático o ser impactado de lleno."
+        }
+      ],
+      "reason": "Fusionadas las técnicas '¡Mira, es Freezer!' y 'Cañón Final Cui' para eliminar duplicados y consolidar el arsenal."
+    },
+    {
+      "op": "replace",
+      "target": "results[1].arsenal.weaknesses",
+      "value": [
+        {
+          "name": "Pánico Táctico",
+          "desc": "Total pánico si pierde la superioridad numérica.",
+          "counterTags": [
+            "Pánico_Táctico",
+            "Dependencia_Scouter"
+          ]
+        },
+        {
+          "name": "Sin potencial Zenkai",
+          "desc": "No puede escalar su poder tras ser herido (no es Saiyajin).",
+          "counterTags": [
+            "Sin_Zenkai",
+            "Estancamiento_Poder"
+          ]
+        },
+        {
+          "name": "Arrogancia letal",
+          "desc": "Subestima rivales que ocultan su ki o usan engaños.",
+          "counterTags": [
+            "Engaño_Ki",
+            "Rival_Superior"
+          ]
+        },
+        {
+          "name": "Estancamiento de Poder",
+          "desc": "Poder estático; límite biológico racial.",
+          "counterTags": [
+            "Estancamiento_Poder",
+            "Límite_Biológico_Racial"
+          ]
+        }
+      ],
+      "reason": "Depuradas las debilidades duplicadas. Solo 4 debilidades canónicas únicas."
+    },
+    {
+      "op": "replace",
+      "target": "results[1].arsenal.basicAttacks",
+      "value": [
+        {
+          "name": "Golpe Arrogante",
+          "desc": "Golpe marcial directo con burla previa.",
+          "staminaCost": 4,
+          "damageType": "contundente",
+          "counterplay": "Bloquear con ki elevado o esquivar."
+        },
+        {
+          "name": "Ráfaga de Dedo",
+          "desc": "Disparos rápidos de energía concentrada desde el índice.",
+          "staminaCost": 6,
+          "damageType": "energético",
+          "counterplay": "Diferencia de velocidad para esquivar ráfagas múltiples."
+        }
+      ],
+      "reason": "Eliminados duplicados 'Golpes Arrogantes'."
+    },
+    {
+      "op": "replace",
+      "target": "results[1].teamCombos",
+      "value": [
+        {
+          "name": "Traición Coordenada (Cui + Dodoria)",
+          "partners": [
+            "Dodoria",
+            "Cui"
+          ],
+          "sequence": [
+            "Dodoria lanza un ataque de dispersión para cegar al enemigo.",
+            "Cui ejecuta '¡Mira, es Freezer!' para descolocar psicológicamente.",
+            "Ambos concentran un rayo de energía combinado a quemarropa."
+          ],
+          "staminaCostPerParticipant": {
+            "Cui": 15,
+            "Dodoria": 20
+          },
+          "effect": "Daño crítico masivo por sorpresa y quemaduras de energía.",
+          "partialFailureResult": "El ataque se desvía y Cui queda expuesto al contraataque.",
+          "canonStatus": "apex_custom"
+        }
+      ],
+      "reason": "Eliminados 3 teamCombos duplicados. Solo queda 1 combo canónico optimizado."
+    },
+    {
+      "op": "replace",
+      "target": "results[1].signatureEquipment",
+      "value": [
+        {
+          "name": "Scouter Freezer",
+          "durability": "Frágil (explota con subidas de ki)",
+          "effect": "Lectura de poder base enemigo (engañable con control de ki)."
+        },
+        {
+          "name": "Armadura de Combate Freezer",
+          "durability": "Media",
+          "effect": "Protección estándar del ejército de Freezer."
+        }
+      ],
+      "reason": "Eliminados duplicados 'Scouter (Modelo Estándar)' y 'Armadura de Combate de Freezer'."
+    },
+    {
+      "op": "replace",
+      "target": "results[2].forms",
+      "value": [
+        {
+          "id": "dabura-saga-buu-107-base-std",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "op": "audit_form_base",
+      "target": "gohan-ultimate-mystic-897",
+      "field": "forms[0]",
+      "status": "verified",
+      "note": "Forma Base conservada en el índice 0 (Gohan Estado Base / Ropa de los Kaio-shin)."
+    },
+    {
+      "op": "audit_form_transform",
+      "target": "gohan-ultimate-mystic-897",
+      "field": "forms[1]",
+      "status": "verified",
+      "note": "Gohan Definitivo (Ultimate) auditado como forma superior con apexKiMultiplier 80x (canónico para superar SSJ3)."
+    },
+    {
+      "op": "audit_hax_resistances",
+      "target": "gohan-ultimate-mystic-897",
+      "field": "haxResistances",
+      "status": "verified",
+      "note": "Resistencias calibradas para un Híbrido Saiyan-Humano en estado Ultimate (Tier 3-A)."
+    },
+    {
+      "op": "audit_form_base",
+      "target": "gohan-del-futuro-l-nea-temporal-futura-43",
+      "field": "forms[0]",
+      "status": "verified",
+      "note": "Forma Base (Gohan del Futuro) presente en índice 0 con multiplicador 1x."
+    },
+    {
+      "op": "audit_form_transform",
+      "target": "gohan-del-futuro-l-nea-temporal-futura-43",
+      "field": "forms[1]",
+      "status": "verified",
+      "note": "Super Saiyan (Manco) listado en índice 1. SSJ1 multiplier 50x verificado."
+    },
+    {
+      "op": "audit_equipment",
+      "target": "gohan-del-futuro-l-nea-temporal-futura-43",
+      "field": "signatureEquipment",
+      "status": "deduplicated"
     }
   ]
 }
