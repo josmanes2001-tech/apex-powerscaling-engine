@@ -14,18 +14,16 @@ git commit -m "feat: sync y despliegue"
 git push origin main
 
 echo.
+cd /d "%~dp0\..\.."
 echo [2/2] Desplegando a Vercel via CLI...
-set TOKEN=
-if exist ".env.local" (
-    for /f "tokens=1,2 delims==" %%a in (.env.local) do (
-        if "%%a"=="VERCEL_TOKEN" set TOKEN=%%b
-    )
-)
-if "%TOKEN%"=="" set TOKEN=%VERCEL_TOKEN%
-if "%TOKEN%"=="" (
-    npx vercel --prod --yes
-) else (
+set "TOKEN="
+for /f "delims=" %%i in ('node -e "const fs=require('fs'); if(fs.existsSync('.env.local')){ const m=fs.readFileSync('.env.local','utf8').match(/^VERCEL_TOKEN=(.*)$/m); if(m) console.log(m[1].trim()); }"') do set "TOKEN=%%i"
+if "%TOKEN%"=="" if not "%VERCEL_TOKEN%"=="" set "TOKEN=%VERCEL_TOKEN%"
+
+if not "%TOKEN%"=="" (
     npx vercel --prod --yes --token %TOKEN%
+) else (
+    npx vercel --prod --yes
 )
 
 echo.
