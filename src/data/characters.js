@@ -133,7 +133,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 96,
+        "burstKi": 134,
+        "durabilityKi": 96,
+        "sourceKi": null
       },
       {
         "id": "eighter-anger-mode",
@@ -155,7 +159,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "apex_custom",
         "drawbacks": "Calentamiento del reactor; si se prolonga, riesgo de cortocircuito.",
         "tier": "8-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 144,
+        "burstKi": 194,
+        "durabilityKi": 144,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -531,7 +540,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "9-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 15,
+        "burstKi": 21,
+        "durabilityKi": 15,
+        "sourceKi": 14,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -876,7 +890,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 137,
+        "burstKi": 192,
+        "durabilityKi": 137,
+        "sourceKi": 130,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -1359,7 +1378,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "9-C Físico",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 93,
+        "burstKi": 140,
+        "durabilityKi": 93,
+        "sourceKi": 88,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -1723,7 +1747,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 71,
+        "burstKi": 99,
+        "durabilityKi": 71,
+        "sourceKi": 67
       }
     ],
     "feats": [
@@ -2130,7 +2158,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "9-A",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 87,
+        "burstKi": 122,
+        "durabilityKi": 87,
+        "sourceKi": 82,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -2498,7 +2531,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 156,
+        "burstKi": 218,
+        "durabilityKi": 156,
+        "sourceKi": 148
       }
     ],
     "feats": [
@@ -2844,7 +2881,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 192,
+        "burstKi": 269,
+        "durabilityKi": 192,
+        "sourceKi": 182
       }
     ],
     "feats": [
@@ -3174,7 +3215,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Dependencia absoluta de la tecnología y de sus subordinados.",
         "exitCondition": "Ninguna",
         "tier": "9-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 59,
+        "burstKi": 89,
+        "durabilityKi": 59,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -3511,16 +3557,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de General Blue previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 121,
+        "burstKi": 182,
+        "durabilityKi": 121,
+        "sourceKi": 115,
+        "multiplier": "1x"
       },
       {
         "id": "general-blue",
         "name": "Oficial Red Ribbon",
         "stats": "Nivel Multi-Bloque. Uniforme militar nazi-inspirado pulcro, rubio, mirada penetrante.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 115,
+        "sourceKi": 115,
+        "burstKi": 155,
+        "durabilityKi": 115
       },
       {
         "id": "general-blue-state-rage",
@@ -3542,7 +3598,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "apex_custom",
         "drawbacks": "Pérdida de juicio táctico.",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 115,
+        "sourceKi": 115,
+        "burstKi": 155,
+        "durabilityKi": 115
       },
       {
         "id": "general-blue-rage",
@@ -3568,7 +3629,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "apex_custom",
         "drawbacks": "Pérdida de juicio táctico. Vulnerabilidad extrema a provocaciones sobre su uniforme.",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 115,
+        "sourceKi": 115,
+        "burstKi": 155,
+        "durabilityKi": 115
       }
     ],
     "feats": [
@@ -3895,7 +3961,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 31,
+        "burstKi": 43,
+        "durabilityKi": 31,
+        "sourceKi": 29
       }
     ],
     "feats": [
@@ -4230,16 +4300,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Jackie Chun previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 189,
+        "burstKi": 265,
+        "durabilityKi": 189,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "jackie-chun-max",
         "name": "Forma Máximo Poder",
         "stats": "Musculatura gigantesca. Pierde agilidad y evasión, pero su AP y Rango saltan a Nivel 5-C masivo de un golpe.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 255,
+        "burstKi": 344,
+        "durabilityKi": 255,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -4525,7 +4605,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "N/A",
         "counterplay": "Ataques de área donde su tamaño sea una desventaja obvia.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 385,
+        "burstKi": 539,
+        "durabilityKi": 385,
+        "sourceKi": null
       },
       {
         "id": "krilin-db-23torneo",
@@ -4535,7 +4619,7 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 5,
         "tier": "8-A",
         "tierExact": "8-A",
-        "multiplier": "2x",
+        "multiplier": "3x",
         "activationCondition": "Crecimiento físico y dominio del Ki tras 3 años de entrenamiento constante.",
         "grantedTags": [
           "Flight_Capable",
@@ -4554,7 +4638,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "N/A.",
         "counterplay": "Ataques de energía devastadores que destruyan el aérea antes de que pueda flanquear.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 1155,
+        "burstKi": 1559,
+        "durabilityKi": 1155,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -4885,7 +4973,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "10-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 28,
+        "burstKi": 39,
+        "durabilityKi": 28,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -5392,7 +5485,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Cooperación táctica obligatoria.",
         "exitCondition": "Ninguna",
         "tier": "9-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 131,
+        "burstKi": 197,
+        "durabilityKi": 131,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -5717,7 +5815,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 99,
+        "burstKi": 139,
+        "durabilityKi": 99,
+        "sourceKi": 94
       },
       {
         "id": "metallitron-overdrive",
@@ -5739,7 +5841,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "apex_custom",
         "drawbacks": "Riesgo de cortocircuito catastrófico y apagado inmediato.",
         "tier": "8-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 94,
+        "sourceKi": 94,
+        "burstKi": 127,
+        "durabilityKi": 94
       }
     ],
     "feats": [
@@ -6137,7 +6244,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 28,
+        "burstKi": 39,
+        "durabilityKi": 28,
+        "sourceKi": 26
       }
     ],
     "feats": [
@@ -6467,16 +6578,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "Forma Base canónica de Piccolo Jr. previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 385,
+        "burstKi": 539,
+        "durabilityKi": 385,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-jr-giant",
         "name": "Piccolo Gigante",
         "stats": "Incrementa masivamente su fuerza de agarre y rango, permitiendo aplastar a oponentes pequeños, pero volviéndose vulnerable a Hax internos.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 520,
+        "burstKi": 702,
+        "durabilityKi": 520,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -7014,7 +7135,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 9,
+        "burstKi": 13,
+        "durabilityKi": 9,
+        "sourceKi": 8
       }
     ],
     "feats": [
@@ -7377,7 +7502,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 273,
+        "burstKi": 410,
+        "durabilityKi": 273,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-daimaoh-joven",
@@ -7387,7 +7517,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 3,
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.2x",
+        "apexKi": 601,
+        "burstKi": 811,
+        "durabilityKi": 601,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -7774,7 +7909,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 231,
+        "burstKi": 323,
+        "durabilityKi": 231,
+        "sourceKi": 310,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -8256,7 +8396,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "10-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 25,
+        "burstKi": 35,
+        "durabilityKi": 25,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -8720,7 +8865,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 158,
+        "burstKi": 221,
+        "durabilityKi": 158,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -9296,7 +9446,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "370 unidades canónicas. Goku adulto entrenado por Kami-sama con 100 kg en ropa pesada.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 389,
+        "burstKi": 584,
+        "durabilityKi": 389,
+        "sourceKi": 370,
+        "multiplier": "1x"
       },
       {
         "id": "goku-23t-sinpeso",
@@ -9305,7 +9460,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "High 7-A",
         "stats": "480 unidades. Desembarazo de pesas con velocidad que esquiva el Super Kamehameha y anula los ataques de Piccolo Jr.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.3x",
+        "apexKi": 506,
+        "burstKi": 683,
+        "durabilityKi": 506,
+        "sourceKi": 481
       }
     ],
     "feats": [
@@ -9867,7 +10027,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "260 unidades tras beber el Choshinsui. Fuerza capaz de atravesar el torso del Rey Demonio Piccolo.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 273,
+        "burstKi": 382,
+        "durabilityKi": 273,
+        "sourceKi": 260,
+        "multiplier": "1x"
       },
       {
         "id": "goku-nino-oozaru",
@@ -9876,7 +10041,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 25,
         "tier": "7-A",
         "stats": "Multiplicador x10 instintivo de mono gigante destructor del castillo de Pilaf.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 2730,
+        "burstKi": 3686,
+        "durabilityKi": 2730,
+        "sourceKi": 2600
       }
     ],
     "feats": [
@@ -10433,7 +10603,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 162,
+        "burstKi": 243,
+        "durabilityKi": 162,
+        "sourceKi": 154
       }
     ],
     "feats": [
@@ -10899,7 +11073,11 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Humano estándar; sin acceso a ki masivo.",
         "drawbacks": "Fragilidad humana total.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 221,
+        "burstKi": 354,
+        "durabilityKi": 221,
+        "sourceKi": 210
       },
       {
         "id": "taopaipai-cyborg",
@@ -10930,7 +11108,11 @@ export const INITIAL_CHARACTERS = [
         "tier": "7-B+",
         "tierExact": "7-B+ (reconstrucción mecánica)",
         "multiplier": "1.5x",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 201,
+        "sourceKi": 201,
+        "burstKi": 271,
+        "durabilityKi": 201
       }
     ],
     "feats": [
@@ -11332,7 +11514,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 263,
+        "burstKi": 395,
+        "durabilityKi": 263,
+        "sourceKi": 250
       },
       {
         "id": "tenshinhan-db-clasico-shiyoken",
@@ -11358,7 +11544,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques concentrados en el centro del pecho o de área que cubran los 4 brazos simultáneamente.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.25x",
+        "apexKi": 329,
+        "burstKi": 444,
+        "durabilityKi": 329,
+        "sourceKi": 313
       },
       {
         "id": "tenshinhan-db-clasico-23torneo",
@@ -11382,7 +11573,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.45x",
+        "apexKi": 381,
+        "burstKi": 514,
+        "durabilityKi": 381,
+        "sourceKi": 363
       },
       {
         "id": "tenshinhan-db-clasico-kikoho-full",
@@ -11406,7 +11602,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 526,
+        "burstKi": 710,
+        "durabilityKi": 526,
+        "sourceKi": 500
       }
     ],
     "feats": [
@@ -11823,7 +12024,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 186,
+        "burstKi": 279,
+        "durabilityKi": 186,
+        "sourceKi": 177
       },
       {
         "id": "yamcha-db-21torneo",
@@ -11849,7 +12054,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Luchadores con transformaciones físicas (Oozaru) lo destruyen.",
         "canonStatus": "source_backed",
         "tier": "8-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 223,
+        "burstKi": 301,
+        "durabilityKi": 223,
+        "sourceKi": 212
       },
       {
         "id": "yamcha-db-23torneo",
@@ -11873,7 +12083,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Rival con lectura de Ki antiaérea anula la esfera.",
         "canonStatus": "source_backed",
         "tier": "8-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 279,
+        "burstKi": 377,
+        "durabilityKi": 279,
+        "sourceKi": 266
       }
     ],
     "feats": [
@@ -12230,7 +12445,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "High 5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7822500,
+        "burstKi": 11733750,
+        "durabilityKi": 7822500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -12621,7 +12840,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 493500000,
+        "burstKi": 740250000,
+        "durabilityKi": 493500000,
+        "sourceKi": 470000000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -12942,16 +13166,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica de Androide 17 previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 378000000,
+        "burstKi": 529200000,
+        "durabilityKi": 378000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "17-z",
         "name": "Cíborg Gemelo",
         "stats": "Nivel Estrella Enana. Ropa casual, pañuelo naranja, mirada confiada.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 510300000,
+        "burstKi": 688905000,
+        "durabilityKi": 510300000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -13305,16 +13539,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 378000000,
+        "burstKi": 529200000,
+        "durabilityKi": 378000000,
+        "sourceKi": null
       },
       {
         "id": "17-futuro",
         "name": "Asesino del Futuro",
         "stats": "Nivel Estrella Enana (Bajo). Vestimenta oscura y rota, mirada psicópata.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 510300000,
+        "burstKi": 688905000,
+        "durabilityKi": 510300000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -13654,7 +13897,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 367500000,
+        "burstKi": 514500000,
+        "durabilityKi": 367500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -14005,7 +14253,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 367500000,
+        "burstKi": 514500000,
+        "durabilityKi": 367500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -14352,7 +14604,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 105000000,
+        "burstKi": 147000000,
+        "durabilityKi": 105000000,
+        "sourceKi": 100000000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -14675,16 +14932,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 115500000,
+        "burstKi": 161700000,
+        "durabilityKi": 115500000,
+        "sourceKi": 110000000
       },
       {
         "id": "gero-base",
         "name": "Cíborg Dr. Gero",
         "stats": "Nivel Estrella Enana. Anciano robótico, bigote, cerebro expuesto bajo un domo de cristal.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 110000000,
+        "sourceKi": 110000000,
+        "burstKi": 148500000,
+        "durabilityKi": 110000000
       }
     ],
     "feats": [
@@ -15028,7 +15294,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3423,
+        "burstKi": 5135,
+        "durabilityKi": 3423,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -15366,7 +15637,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "Low 5-B",
         "stats": "43.000 unidades canónicas. Velocidad de desplazamiento cumbre entre las Fuerzas Ginyu.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 45150,
+        "burstKi": 63210,
+        "durabilityKi": 45150,
+        "sourceKi": 43000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -15681,22 +15957,32 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "5-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 126000,
+        "burstKi": 176400,
+        "durabilityKi": 126000,
+        "sourceKi": 120000,
+        "multiplier": "1x"
       },
       {
         "id": "ginyu-cuerpo-goku",
         "name": "Cuerpo de Goku (Intercambiado / 23.000 Unidades)",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 15,
         "tier": "5-C",
         "stats": "Incapaz de armonizar el alma con el cuerpo saiyajin de Goku, su Ki cae a solo 23.000 unidades.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 120000,
+        "sourceKi": 120000,
+        "burstKi": 162000,
+        "durabilityKi": 120000
       },
       {
         "id": "ginyu-goku-body",
         "name": "Cuerpo de Goku (Intercambiado)",
         "stats": "Nivel Planeta — Penalizado. Cuerpo de Goku controlado por Ginyu, pero sin saber canalizar su Ki correctamente. ~40-50% del poder real de Goku en ese momento.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 5,
         "activationCondition": "Cambio de cuerpo exitoso contra Goku en Namek.",
         "canonStatus": "source_backed",
@@ -15721,7 +16007,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Recuperación del cuerpo original o muerte del cuerpo actual.",
         "counterplay": "Provocarlo para que se sobrepase y destruya su propio cuerpo.",
         "tier": "5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 120000,
+        "sourceKi": 120000,
+        "burstKi": 162000,
+        "durabilityKi": 120000
       },
       {
         "id": "ginyu-cuerpo-original",
@@ -15730,7 +16021,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 10,
         "tier": "5-B",
         "stats": "120.000 unidades canónicas. El guerrero más poderoso del ejército regular de Freezer.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 120000,
+        "sourceKi": 120000,
+        "burstKi": 162000,
+        "durabilityKi": 120000
       }
     ],
     "feats": [
@@ -16083,16 +16379,21 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocarlo para que libere su Kamehameha y gaste energía.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1428000000,
+        "burstKi": 2142000000,
+        "durabilityKi": 1428000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "cell-imperfecto",
         "name": "Cell Imperfecto",
         "tier": "4-C",
         "tierExact": "4-C",
-        "sourceKi": 390000000,
+        "sourceKi": null,
         "stats": "Nivel Estrella Enana (Tier 4-C). Aspecto de insecto reptiliano, usa su cola para absorber biomasa y rivalizar con Piccolo y A-17.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 10,
         "activationCondition": "Eclosión tras absorber masa humana/androide.",
         "grantedTags": [
@@ -16112,7 +16413,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Absorción de A-17.",
         "counterplay": "Cortarle la cola.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1927800000,
+        "burstKi": 2602530000,
+        "durabilityKi": 1927800000
       },
       {
         "id": "cell-semi",
@@ -16142,14 +16447,17 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Absorción de A-18 (fusión forzada o combate).",
         "counterplay": "Atacantes rápidos como Vegeta pueden esquivarlo.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 940000000,
+        "burstKi": 1269000000,
+        "durabilityKi": 940000000
       },
       {
         "id": "cell-perfecto",
         "name": "Cell Perfecto",
         "tier": "4-B",
         "tierExact": "4-B",
-        "sourceKi": 3400000000,
+        "sourceKi": null,
         "stats": "Nivel Sistema Solar Menor (Tier 4-B). Tras absorber a 18. Cuerpo pulido e intocable para Vegeta y Trunks SSJ Dai Ni/San Dankai.",
         "apexKiMultiplier": 20,
         "multiplier": "20x",
@@ -16176,14 +16484,17 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Activación de Super Perfecto tras autodestrucción y regeneración.",
         "counterplay": "Provocarlo para que libere su Kamehameha y gaste energía.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 28560000000,
+        "burstKi": 38556000000,
+        "durabilityKi": 28560000000
       },
       {
         "id": "cell-super-perfecto",
         "name": "Cell Super Perfecto",
         "tier": "4-B",
         "tierExact": "4-B",
-        "sourceKi": 5500000000,
+        "sourceKi": null,
         "stats": "Nivel Sistema Solar (Tier 4-B). Zenkai tras sobrevivir a su autodestrucción. Aura dorada con relámpagos y Kamehameha Solar.",
         "apexKiMultiplier": 100,
         "multiplier": "100x",
@@ -16207,7 +16518,10 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Muerte por Kamehameha de Gohan SSJ2.",
         "counterplay": "Esquivar el Kamehameha Solar y atacar cuando se enfurece.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 142800000000,
+        "burstKi": 192780000000,
+        "durabilityKi": 142800000000
       }
     ],
     "feats": [
@@ -16582,7 +16896,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 383250000,
+        "burstKi": 536550000,
+        "durabilityKi": 383250000,
+        "sourceKi": 1700000000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -16923,16 +17242,25 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 693,
+        "burstKi": 970,
+        "durabilityKi": 693,
+        "sourceKi": null
       },
       {
         "id": "chaos-base",
         "name": "Enano Psíquico",
         "stats": "Nivel Montañas. Tez blanca, mejillas rojas, ropa de monje.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "5-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 936,
+        "burstKi": 1264,
+        "durabilityKi": 936,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -17321,7 +17649,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "5-C",
         "stats": "18.000 unidades canónicas. Rival histórico de Vegeta antes de llegar a la Tierra.",
         "canonStatus": "apex_custom",
-        "category": "base"
+        "category": "base",
+        "apexKi": 18900,
+        "burstKi": 28350,
+        "durabilityKi": 18900,
+        "sourceKi": 18000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -17716,16 +18049,25 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Muerte o liberación del sello Majin (solo posible con la muerte del Rey Demonio original).",
         "counterplay": "Evasión angular de la saliva y separación del Mago (Babidi).",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 775950000,
+        "burstKi": 1086330000,
+        "durabilityKi": 775950000,
+        "sourceKi": null
       },
       {
         "id": "dabura-base",
         "name": "Rey Demonio Majin",
         "stats": "Nivel Sistema Solar. Piel roja, cuernos, traje azul, símbolo 'M' en la frente.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1047532500,
+        "burstKi": 1414168875,
+        "durabilityKi": 1047532500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -18050,7 +18392,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-C",
         "stats": "Forma Base canónica de Dodoria previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 23100,
+        "burstKi": 32340,
+        "durabilityKi": 23100,
+        "sourceKi": 21000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -18437,7 +18784,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2520000,
+        "burstKi": 3780000,
+        "durabilityKi": 2520000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "enma-daioh-saga-saiyan-579-juicio",
@@ -18462,7 +18814,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Hax de manipulación de realidad que invalide el veredicto (Janemba).",
         "canonStatus": "apex_custom",
         "tier": "5-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.3x",
+        "apexKi": 3276000,
+        "burstKi": 4422600,
+        "durabilityKi": 3276000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -18913,7 +19270,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-A",
         "stats": "530.000 unidades canónicas. Forma de contención en cápsula flotante capaz de destruir el Planeta Vegeta con una Supernova en la yema del dedo.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 556500,
+        "burstKi": 834750,
+        "durabilityKi": 556500,
+        "sourceKi": 530000,
+        "multiplier": "1x"
       },
       {
         "id": "freezer-2da-forma",
@@ -18922,7 +19284,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 10,
         "tier": "5-A",
         "stats": "Más de 1.000.000 de unidades canónicas. Físico colosal que atraviesa a Krilin y humilla a Vegeta.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1113000,
+        "burstKi": 1502550,
+        "durabilityKi": 1113000,
+        "sourceKi": 1060000
       },
       {
         "id": "freezer-3ra-forma",
@@ -18931,7 +19298,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "High 5-A",
         "stats": "Velocidad y ráfagas de rayos de ki cegadoras que superan la asimilación de Piccolo con Nail.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4x",
+        "apexKi": 2226000,
+        "burstKi": 3005100,
+        "durabilityKi": 2226000,
+        "sourceKi": 2120000
       },
       {
         "id": "freezer-forma-final",
@@ -18940,7 +19312,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "Low 4-C",
         "stats": "60.000.000 de unidades al 50%. Cuerpo esbelto blanco y morado con reflejos letales que desvían el Kaio-ken x20 de Goku.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "120x",
+        "apexKi": 66780000,
+        "burstKi": 90153000,
+        "durabilityKi": 66780000,
+        "sourceKi": 63600000
       },
       {
         "id": "freezer-100-max-power",
@@ -18949,7 +19326,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "5-A",
         "stats": "120.000.000 de unidades canónicas al 100%. Musculatura hipertrofiada con desgaste progresivo acelerado de stamina contra Goku SSJ.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "120x",
+        "apexKi": 66780000,
+        "burstKi": 90153000,
+        "durabilityKi": 66780000,
+        "sourceKi": 63600000
       }
     ],
     "feats": [
@@ -19297,7 +19679,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Gohan antes de desatar el ritual supremo de Rou Dai Kaio-shin.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 84000000000,
+        "burstKi": 117600000000,
+        "durabilityKi": 84000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gohan-ultimate",
@@ -19306,7 +19693,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "High 4-B",
         "stats": "Poder que supera a un Super Saiyajin 3 sin gasto de energía ni transformación saiyajin. Apalea a Super Buu sin esfuerzo.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "800x",
+        "apexKi": 67200000000000,
+        "burstKi": 90720000000000,
+        "durabilityKi": 67200000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -19662,7 +20054,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 139650000,
+        "burstKi": 195510000,
+        "durabilityKi": 139650000,
+        "sourceKi": null
       },
       {
         "id": "gohan-futuro-ssj",
@@ -19688,7 +20084,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques por el flanco izquierdo o desgaste numérico sostenido.",
         "drawbacks": "Desequilibrio físico permanente por la extremidad faltante.",
         "tier": "High 4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 6982500000,
+        "burstKi": 9426375000,
+        "durabilityKi": 6982500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -20099,7 +20500,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Desintegración por temporizador o impacto severo (si la energía falla).",
         "counterplay": "Aguantar 30 minutos o interrumpir la fusión por golpe de ki masivo en el momento exacto.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 46200000000,
+        "burstKi": 69300000000,
+        "durabilityKi": 46200000000,
+        "sourceKi": null
       },
       {
         "id": "gotenks-ssj3",
@@ -20125,7 +20530,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar al rival a pelear 5 minutos (Time-Out táctico).",
         "canonStatus": "source_backed",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 18480000000000,
+        "burstKi": 24948000000000,
+        "durabilityKi": 18480000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -20455,7 +20865,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "5-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 173670,
+        "burstKi": 277872,
+        "durabilityKi": 173670,
+        "sourceKi": 1220,
+        "multiplier": "1x"
       },
       {
         "id": "guru-ultimate-blessing",
@@ -20471,7 +20886,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "exitCondition": "Muerte instantánea al finalizar la canalización",
         "tier": "5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1220,
+        "sourceKi": 1220,
+        "burstKi": 1647,
+        "durabilityKi": 1220
       }
     ],
     "feats": [
@@ -20831,7 +21251,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "10-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5,
+        "burstKi": 8,
+        "durabilityKi": 5,
+        "sourceKi": 5,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -21173,7 +21598,12 @@ export const INITIAL_CHARACTERS = [
         "suppressedTags": [],
         "drawbacks": [],
         "tier": "5-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 321300,
+        "burstKi": 449820,
+        "durabilityKi": 321300,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "guerreros-namek-barrera-sacrificio",
@@ -21194,7 +21624,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques sostenidos de ki de alto poder rompen la barrera.",
         "canonStatus": "apex_custom",
         "tier": "5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 449820,
+        "burstKi": 607257,
+        "durabilityKi": 449820,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -21555,7 +21990,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "5-C",
         "stats": "11.500 unidades canónicas. Capaz de congelar el tiempo conteniendo la respiración.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 12075,
+        "burstKi": 16905,
+        "durabilityKi": 12075,
+        "sourceKi": 11500,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -21894,7 +22334,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "Low 5-B",
         "stats": "44.000 unidades canónicas. Especialista en bombardeo energético de soporte con la Crusher Ball.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 46200,
+        "burstKi": 69300,
+        "durabilityKi": 46200,
+        "sourceKi": 44000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -22306,13 +22751,18 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "5-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 323400,
+        "burstKi": 517440,
+        "durabilityKi": 323400,
+        "sourceKi": 3600,
+        "multiplier": "1x"
       },
       {
         "id": "kaiosama-vivo",
         "name": "Kaio-sama (Vivo / Observación Cósmica)",
         "stats": "Tier 5-B | Deidad del cuadrante norte. Creador del Kaio-ken y la Genki-dama. Gravedad natural 10G en su planeta.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "5-B",
@@ -22334,13 +22784,18 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Vulnerable durante concentración; cualquier interrupción rompe sus técnicas.",
         "exitCondition": "Muerte (Saga Cell) o estado ascendido a Espíritu Divino.",
         "counterplay": "Interrupción física de la concentración; aislamiento del alumno.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3600,
+        "sourceKi": 3600,
+        "burstKi": 4860,
+        "durabilityKi": 3600
       },
       {
         "id": "kaiosama-muerto",
         "name": "Kaio-sama (Con Aureola / Tras la Explosión de Cell)",
         "stats": "Tier 5-B | Mantiene su rol divino en el Otro Mundo con aureola. Su autoridad persiste como espíritu.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "5-B",
@@ -22362,7 +22817,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Depende de la ubicación de Goku o los Z-Fighters para influir en el plano mortal.",
         "exitCondition": "Revivido por las Bolas de Dragón o Portal del Tiempo (no canon aquí).",
         "counterplay": "Aislamiento del plano espiritual; portal dimensional.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3600,
+        "sourceKi": 3600,
+        "burstKi": 4860,
+        "durabilityKi": 3600
       }
     ],
     "feats": [
@@ -22721,7 +23181,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 9114000,
+        "burstKi": 12759600,
+        "durabilityKi": 9114000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -23126,7 +23590,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "High 5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 33600000000,
+        "burstKi": 53760000000,
+        "durabilityKi": 33600000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -23507,7 +23975,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 141750000,
+        "burstKi": 198450000,
+        "durabilityKi": 141750000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -23880,7 +24353,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "5-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1859,
+        "burstKi": 2789,
+        "durabilityKi": 1859,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -24243,7 +24721,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5418,
+        "burstKi": 7585,
+        "durabilityKi": 5418,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "rengoku-final-stance",
@@ -24269,7 +24752,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar lateralmente el sprint usando la velocidad superior del demonio o interrumpirlo antes del impacto.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 8127,
+        "burstKi": 10971,
+        "durabilityKi": 8127,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -24679,16 +25167,26 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Manipulación psicológica interna.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "base"
+        "category": "base",
+        "apexKi": 100800000000,
+        "burstKi": 141120000000,
+        "durabilityKi": 100800000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "buuhan",
         "name": "Forma Buuhan",
         "stats": "Poder supremo de Z",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 136080000000,
+        "burstKi": 183708000000,
+        "durabilityKi": 136080000000,
+        "sourceKi": null
       },
       {
         "id": "buuhan-true",
@@ -24712,7 +25210,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Infiltración interna en el estómago de Buu.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.25x",
+        "apexKi": 126000000000,
+        "burstKi": 170100000000,
+        "durabilityKi": 126000000000,
+        "sourceKi": null
       },
       {
         "id": "absorption-active",
@@ -24736,7 +25239,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Rescate interno desde el estómago de Buu.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 141120000000,
+        "burstKi": 190512000000,
+        "durabilityKi": 141120000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -25088,7 +25596,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-C",
         "stats": "Inocencia infantil combinada con regeneración celular infinita y transmutación de seres vivos en golosinas.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 21000000000,
+        "burstKi": 31500000000,
+        "durabilityKi": 21000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "buu-evil",
@@ -25097,7 +25610,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "3-C",
         "stats": "Manifestación oscura del odio concentrado que supera y devora a Mr. Buu para transformarse en Super Buu.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 29400000000,
+        "burstKi": 39690000000,
+        "durabilityKi": 29400000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -25495,7 +26013,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Vegeta con su maldad y poder latente liberados por Babidi, igualando la base de Goku en el Más Allá.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 7875000000,
+        "burstKi": 11025000000,
+        "durabilityKi": 7875000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "majin-vegeta-ssj1",
@@ -25504,7 +26027,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "4-B",
         "stats": "Transformación intermedia potenciada por la marca Majin con aura dorada intensa.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 393750000000,
+        "burstKi": 531562500000,
+        "durabilityKi": 393750000000,
+        "sourceKi": null
       },
       {
         "id": "majin-vegeta-ssj2",
@@ -25513,7 +26041,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 25,
         "tier": "4-B",
         "stats": "Forma con rayos eléctricos y orgullo recuperado en su duelo a muerte contra Goku SSJ2.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 787500000000,
+        "burstKi": 1063125000000,
+        "durabilityKi": 787500000000,
+        "sourceKi": null
       },
       {
         "id": "majin-vegeta-final-explosion",
@@ -25522,7 +26055,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 100,
         "tier": "High 4-B",
         "stats": "Ataque supremo sacrificial donde Vegeta libera toda su fuerza vital para intentar pulverizar a Majin Buu.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "150x",
+        "apexKi": 1181250000000,
+        "burstKi": 1594687500000,
+        "durabilityKi": 1181250000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -25925,7 +26463,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Espadas imbuidas con Ki alto (Trunks) cortan sus aleaciones como papel.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 163800000,
+        "burstKi": 229320000,
+        "durabilityKi": 163800000,
+        "sourceKi": 156000000,
+        "multiplier": "1x"
       },
       {
         "id": "mecha-freezer-supernova",
@@ -25948,7 +26491,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Liberación total del ataque o interrupción por Trunks.",
         "counterplay": "Ataques relámpago (Trunks lo atravesó con la espada mientras cargaba).",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 156000000,
+        "sourceKi": 156000000,
+        "burstKi": 210600000,
+        "durabilityKi": 156000000
       }
     ],
     "feats": [
@@ -26270,7 +26818,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "Low 5-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 44100,
+        "burstKi": 61740,
+        "durabilityKi": 44100,
+        "sourceKi": 42000
       }
     ],
     "feats": [
@@ -26670,7 +27222,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "5-C",
         "stats": "Forma Base canónica estándar.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4200,
+        "burstKi": 5880,
+        "durabilityKi": 4200,
+        "sourceKi": 4000,
+        "multiplier": "1x"
       },
       {
         "id": "nappa-ohzaru-form",
@@ -26701,7 +27258,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Corte de la cola antes de la explosión ki global; uso de Mafuba imposible por su tamaño.",
         "canonStatus": "source_backed",
         "tier": "Low 5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 42000,
+        "burstKi": 56700,
+        "durabilityKi": 42000,
+        "sourceKi": 40000
       }
     ],
     "feats": [
@@ -27027,16 +27589,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-C",
         "stats": "Forma Base canónica de Piccolo (Final Saga Saiyan / vs Nappa) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3675,
+        "burstKi": 5145,
+        "durabilityKi": 3675,
+        "sourceKi": 3500,
+        "multiplier": "1x"
       },
       {
         "id": "supresion-pesada-nappa",
         "name": "Supresión Inicial (Ropa Pesada / 1.220 Unidades)",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "tier": "5-C",
         "stats": "1.220 unidades registradas en el scouter de Nappa.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4961,
+        "burstKi": 6697,
+        "durabilityKi": 4961,
+        "sourceKi": 4725
       },
       {
         "id": "pleno-poder-nappa",
@@ -27045,7 +27617,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "5-B",
         "stats": "3.500 unidades canónicas. Combate conjunto con Krilin y Gohan contra el gigante saiyajin.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.87x",
+        "apexKi": 10547,
+        "burstKi": 14238,
+        "durabilityKi": 10547,
+        "sourceKi": 10045
       },
       {
         "id": "makankosappo-nappa",
@@ -27054,7 +27631,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 40,
         "tier": "5-A",
         "stats": "4.200 unidades concentradas en la punta de los dedos.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.44x",
+        "apexKi": 12642,
+        "burstKi": 17067,
+        "durabilityKi": 12642,
+        "sourceKi": 12040
       },
       {
         "id": "sacrificio-gohan-nappa",
@@ -27063,7 +27645,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 100,
         "tier": "5-B",
         "stats": "Interposición de su cuerpo para proteger a Gohan del Bombardero Volcánico de Nappa.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.5x",
+        "apexKi": 12863,
+        "burstKi": 17365,
+        "durabilityKi": 12863,
+        "sourceKi": 12250
       }
     ],
     "arsenal": {
@@ -27632,26 +28219,40 @@ export const INITIAL_CHARACTERS = [
         "stats": "Ki contenido en 322 unidades por ropa de entrenamiento de alto peso. Velocidad y agilidad limitadas deliberadamente.",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1575,
+        "burstKi": 2205,
+        "durabilityKi": 1575,
+        "sourceKi": 1300,
+        "multiplier": "1x"
       },
       {
         "id": "sin-peso-raditz",
         "name": "Sin Ropa Pesada (408 Unidades / Plena Movilidad)",
-        "multiplier": "1.0x",
+        "multiplier": "1.35x",
         "tier": "Tier 6-A | Nivel Lunar",
         "stats": "Liberación de 408 unidades de combate. Máxima velocidad de desplazamiento y capacidad destructiva lunar.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 1300,
+        "sourceKi": 1300,
+        "burstKi": 1755,
+        "durabilityKi": 1300
       },
       {
         "id": "makankosappo-carga-raditz",
         "name": "Makankosappo a Plena Carga (1,480 Unidades)",
         "tier": "Tier 5-B | Nivel Planeta Pequeño",
         "stats": "Concentración de todo el ki del cuerpo en dos dedos (1,480 unidades). Capaz de perforar defensas que triplican su poder base.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1300,
+        "sourceKi": 1300,
+        "burstKi": 1755,
+        "durabilityKi": 1300
       }
     ],
     "arsenal": {
@@ -28301,7 +28902,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 378000000,
+        "burstKi": 529200000,
+        "durabilityKi": 378000000,
+        "sourceKi": null
       },
       {
         "id": "piccolo-fused-nail",
@@ -28327,7 +28932,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Antes de la fusión de Kami, es más débil que SSJ nivel estándar.",
         "canonStatus": "source_backed",
         "tier": "5-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.6x",
+        "apexKi": 604800000,
+        "burstKi": 816480000,
+        "durabilityKi": 604800000,
+        "sourceKi": null
       },
       {
         "id": "piccolo-super-namek",
@@ -28355,7 +28965,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Regeneración consume reservas masivas de Ki, desgastándolo en peleas extendidas.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 310,
+        "sourceKi": 310,
+        "burstKi": 419,
+        "durabilityKi": 310
       }
     ],
     "feats": [
@@ -28728,7 +29343,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1365000,
+        "burstKi": 1911000,
+        "durabilityKi": 1365000,
+        "sourceKi": null
       },
       {
         "id": "piccolo-nail-fusion",
@@ -28754,7 +29373,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Irreversible (Asimilación es permanente).",
         "counterplay": "Transformaciones múltiples (3ra forma de Freezer).",
         "tier": "5-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3x",
+        "apexKi": 4095000,
+        "burstKi": 5528250,
+        "durabilityKi": 4095000,
+        "sourceKi": null
       },
       {
         "id": "piccolo-kami-fusion",
@@ -28780,7 +29404,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Irreversible.",
         "counterplay": "Ataques preventivos que destruyan sus extremidades antes de la regeneración.",
         "tier": "High 5-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 13650000,
+        "burstKi": 18427500,
+        "durabilityKi": 13650000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -29106,7 +29735,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 249795,
+        "burstKi": 349713,
+        "durabilityKi": 249795,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -29590,7 +30224,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-C",
         "stats": "Forma Base canónica de Raditz previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1575,
+        "burstKi": 2363,
+        "durabilityKi": 1575,
+        "sourceKi": 1300,
+        "multiplier": "1x"
       },
       {
         "id": "raditz-ozaru",
@@ -29620,7 +30259,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Cola cortada o cuerpo de energía agotado.",
         "counterplay": "Corte de la cola, lo que lo devuelve a su estado base indefenso.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 1300,
+        "sourceKi": 1300,
+        "burstKi": 1755,
+        "durabilityKi": 1300
       },
       {
         "id": "raditz-ssj2",
@@ -29645,7 +30288,11 @@ export const INITIAL_CHARACTERS = [
         "tier": "4-B",
         "tierExact": "4-B",
         "multiplier": "100x",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 1300,
+        "sourceKi": 1300,
+        "burstKi": 1755,
+        "durabilityKi": 1300
       }
     ],
     "feats": [
@@ -29990,7 +30637,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "Low 5-B",
         "stats": "45.000 unidades canónicas. Resistencia casi invulnerable ante Vegeta y Gohan.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 47250,
+        "burstKi": 66150,
+        "durabilityKi": 47250,
+        "sourceKi": 45000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -30305,16 +30957,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica de Rey Cold previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 163800000,
+        "burstKi": 245700000,
+        "durabilityKi": 163800000,
+        "sourceKi": 156000000,
+        "multiplier": "1x"
       },
       {
         "id": "cold-segunda",
         "name": "Forma Estándar (Segunda Forma)",
         "stats": "Nivel Estrella Enana. Altísimo, cuernos curvados negros, capa real roja, armadura biológica blanca y morada.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3500000,
+        "sourceKi": 3500000,
+        "burstKi": 4725000,
+        "durabilityKi": 3500000
       }
     ],
     "feats": [
@@ -30630,7 +31292,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 44237,
+        "burstKi": 61932,
+        "durabilityKi": 44237,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -31027,7 +31694,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Muerte.",
         "counterplay": "Scatter Blast.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1260,
+        "burstKi": 1764,
+        "durabilityKi": 1260,
+        "sourceKi": 1200
       }
     ],
     "feats": [
@@ -31391,16 +32062,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "High 5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 12705000,
+        "burstKi": 17787000,
+        "durabilityKi": 12705000,
+        "sourceKi": null
       },
       {
         "id": "shin-base",
         "name": "Kaio-shin",
         "stats": "Nivel Estrella Enana. Pelo blanco en mohawk, túnica púrpura, pendientes Pothala amarillos.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 17151750,
+        "burstKi": 23154863,
+        "durabilityKi": 17151750,
+        "sourceKi": null
       },
       {
         "id": "kibitoshin",
@@ -31429,7 +32109,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques a la joya Pothala para desestabilizar la fusión.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5.5x",
+        "apexKi": 69877500,
+        "burstKi": 94334625,
+        "durabilityKi": 69877500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -31758,7 +32443,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "4-C",
         "stats": "Gohan tras salir de la Habitación del Tiempo, manteniendo calma y contención total antes del combate.",
         "tierExact": "4-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2940000000,
+        "burstKi": 4116000000,
+        "durabilityKi": 2940000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gohan-cell-ssj1",
@@ -31767,7 +32457,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 10,
         "tier": "4-B",
         "stats": "SSJ1 con consumo de ki eliminado casi por completo, combatiendo de igual a igual con Cell Perfecto.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 147000000000,
+        "burstKi": 198450000000,
+        "durabilityKi": 147000000000,
+        "sourceKi": null
       },
       {
         "id": "gohan-cell-ssj2",
@@ -31776,7 +32471,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 25,
         "tier": "High 4-B",
         "stats": "Despertar legendario tras la muerte del Androide 16. Chispas eléctricas y poder que humilla y desintegra a Cell con un Kamehameha Padre-Hijo.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 294000000000,
+        "burstKi": 396900000000,
+        "durabilityKi": 294000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -32117,7 +32817,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1155,
+        "burstKi": 1617,
+        "durabilityKi": 1155,
+        "sourceKi": null
       },
       {
         "id": "gohan-nino-ira",
@@ -32146,7 +32850,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar la ráfaga inicial. Esperar el colapso físico automático.",
         "canonStatus": "source_backed",
         "tier": "High 5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 57750,
+        "burstKi": 77963,
+        "durabilityKi": 57750,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -32537,7 +33246,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-C",
         "stats": "8.000+ unidades de combate tras entrenar con Kaio-sama.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 8400,
+        "burstKi": 13440,
+        "durabilityKi": 8400,
+        "sourceKi": 8000,
+        "multiplier": "1x"
       },
       {
         "id": "goku-saiyan-kk2",
@@ -32546,7 +33260,15 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 10,
         "tier": "5-C",
         "stats": "16.000 unidades. Duplica fuerza, velocidad y reflejos con un aura escarlata.",
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "2x",
+        "apexKi": 16800,
+        "burstKi": 22680,
+        "durabilityKi": 8400,
+        "sourceKi": 16000,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       },
       {
         "id": "goku-saiyan-kk3",
@@ -32555,7 +33277,15 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 25,
         "tier": "Low 5-B",
         "stats": "24.000 unidades. Supera a Vegeta Saga Saiyajin a costa de sobrecargar las fibras musculares.",
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "3x",
+        "apexKi": 25200,
+        "burstKi": 34020,
+        "durabilityKi": 8400,
+        "sourceKi": 24000,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       },
       {
         "id": "goku-saiyan-kk4",
@@ -32564,7 +33294,15 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 50,
         "tier": "5-B",
         "stats": "32.000 unidades. Potencia destructiva colosal capaz de repeler el ataque destructor de planetas de Vegeta.",
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "4x",
+        "apexKi": 33600,
+        "burstKi": 45360,
+        "durabilityKi": 8400,
+        "sourceKi": 32000,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       }
     ],
     "feats": [
@@ -33050,7 +33788,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "High 5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 78750000,
+        "burstKi": 110250000,
+        "durabilityKi": 78750000,
+        "sourceKi": null
       },
       {
         "id": "goku-buu-ssj1",
@@ -33078,7 +33820,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar los primeros golpes y contraatacar cuando la Stamina baje.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 3937500000,
+        "burstKi": 5315625000,
+        "durabilityKi": 3937500000,
+        "sourceKi": null
       },
       {
         "id": "goku-buu-ssj2",
@@ -33112,7 +33859,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Atacar la espalda cuando se confía en medio del combate (como Vegeta).",
         "canonStatus": "source_backed",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 7875000000,
+        "burstKi": 10631250000,
+        "durabilityKi": 7875000000,
+        "sourceKi": null
       },
       {
         "id": "goku-buu-ssj3",
@@ -33145,7 +33897,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar un combate prolongado (Super Buu absorbe a Gotenks y Piccolo).",
         "canonStatus": "source_backed",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 31500000000,
+        "burstKi": 42525000000,
+        "durabilityKi": 31500000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -33567,7 +34324,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "N/A",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "base"
+        "category": "base",
+        "apexKi": 78750000,
+        "burstKi": 118125000,
+        "durabilityKi": 78750000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ssj1",
@@ -33592,7 +34354,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "N/A.",
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 3937500000,
+        "burstKi": 5315625000,
+        "durabilityKi": 3937500000,
+        "sourceKi": null
       },
       {
         "id": "ssj2",
@@ -33616,7 +34383,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "N/A",
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 7875000000,
+        "burstKi": 10631250000,
+        "durabilityKi": 7875000000,
+        "sourceKi": null
       },
       {
         "id": "ssj3",
@@ -33644,7 +34416,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar mantenimiento prolongado para drenar tiempo de vida.",
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 31500000000,
+        "burstKi": 42525000000,
+        "durabilityKi": 31500000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -34041,7 +34818,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 305550000,
+        "burstKi": 427770000,
+        "durabilityKi": 305550000,
+        "sourceKi": null
       },
       {
         "id": "goku-cell-ssj1",
@@ -34069,7 +34850,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocar gasto de Stamina antes de aplicar Shunkanido.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 15277500000,
+        "burstKi": 20624625000,
+        "durabilityKi": 15277500000,
+        "sourceKi": null
       },
       {
         "id": "goku-cell-ssjfp",
@@ -34103,7 +34889,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Engañarlo emocionalmente (como hizo Cell con Gohan) para provocar un error táctico.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 15277500000,
+        "burstKi": 20624625000,
+        "durabilityKi": 15277500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -34483,7 +35274,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "Low 5-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 243495,
+        "burstKi": 340893,
+        "durabilityKi": 243495,
+        "sourceKi": null
       },
       {
         "id": "kaio-ken-x2",
@@ -34506,7 +35301,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar extensión de uso para quebrar el cuerpo.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 486990,
+        "burstKi": 657437,
+        "durabilityKi": 486990,
+        "sourceKi": null
       },
       {
         "id": "kaio-ken-x10",
@@ -34530,7 +35330,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar combate prolongado en x10.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 2434950,
+        "burstKi": 3287183,
+        "durabilityKi": 2434950,
+        "sourceKi": null
       },
       {
         "id": "kaio-ken-x20",
@@ -34555,7 +35360,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Cualquier ataque durante x20 lo derrumba.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "20x",
+        "apexKi": 4869900,
+        "burstKi": 6574365,
+        "durabilityKi": 4869900,
+        "sourceKi": null
       },
       {
         "id": "ssj1",
@@ -34584,7 +35394,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Espacio-tiempo antes de que domine la forma (no aplica, ya estable post-Namek).",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 12174750,
+        "burstKi": 16435913,
+        "durabilityKi": 12174750,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -35004,7 +35819,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "Low 5-B",
         "stats": "Poder tras curarse en la cápsula de regeneración médica tras la batalla con Ginyu.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3150000,
+        "burstKi": 4410000,
+        "durabilityKi": 3150000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "goku-namek-kk10",
@@ -35013,7 +35833,15 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 25,
         "tier": "5-B",
         "stats": "Aumento décuplo mantenido durante el intercambio cuerpo a cuerpo contra Freezer 50%.",
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "10x",
+        "apexKi": 31500000,
+        "burstKi": 42525000,
+        "durabilityKi": 3150000,
+        "sourceKi": null,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       },
       {
         "id": "goku-namek-kk20",
@@ -35022,7 +35850,15 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 60,
         "tier": "5-A",
         "stats": "Esfuerzo extremo que quema las reservas de Goku para igualar el 50% de Freezer con un Kamehameha frontal.",
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "20x",
+        "apexKi": 63000000,
+        "burstKi": 85050000,
+        "durabilityKi": 3150000,
+        "sourceKi": null,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       },
       {
         "id": "goku-namek-ssj",
@@ -35031,7 +35867,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "Low 4-C",
         "stats": "Despertar de la leyenda saiyajin por la furia de la muerte de Krilin. Multiplicador x50 indiscutible.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2000x",
+        "apexKi": 6300000000,
+        "burstKi": 8505000000,
+        "durabilityKi": 6300000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -35464,7 +36305,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Transformarse en Super Saiyajin.",
         "counterplay": "Ataques de presión rápida antes de que active la transformación.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 6772500,
+        "burstKi": 9481500,
+        "durabilityKi": 6772500,
+        "sourceKi": null
       },
       {
         "id": "goten-ssj",
@@ -35490,7 +36335,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Sacrificar el primer golpe para medir su nueva velocidad y aplicar contraataques físicos directos.",
         "canonStatus": "source_backed",
         "tier": "High 4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 338625000,
+        "burstKi": 457143750,
+        "durabilityKi": 338625000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -35814,16 +36664,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Spopovich previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1124,
+        "burstKi": 1574,
+        "durabilityKi": 1124,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "spopovich-majin",
         "name": "Sirviente Majin",
         "stats": "Nivel Multi-Estructura. Musculoso pálido, sin pelo, venas remarcadas y sello 'M'.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1517,
+        "burstKi": 2048,
+        "durabilityKi": 1517,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -36209,7 +37069,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-C",
         "stats": "Forma Base canónica de Super Buu previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 39900000000,
+        "burstKi": 63840000000,
+        "durabilityKi": 39900000000,
+        "sourceKi": 38000000000,
+        "multiplier": "1x"
       },
       {
         "id": "buuccolo",
@@ -36238,7 +37103,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Absorción de un Saiyajin o Piccolo siendo arrancado de su interior.",
         "counterplay": "Gohan SSJ2 en cólera.",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 38000000000,
+        "sourceKi": 38000000000,
+        "burstKi": 51300000000,
+        "durabilityKi": 38000000000
       },
       {
         "id": "buutenks",
@@ -36264,7 +37134,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Inestabilidad interna por la separación de la fusión; cualquier aliado dentro (Goku/Vegeta) podría liberarse.",
         "exitCondition": "Fin del temporizador Metamoru o extracción interna de los atrapados.",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 38000000000,
+        "sourceKi": 38000000000,
+        "burstKi": 51300000000,
+        "durabilityKi": 38000000000
       },
       {
         "id": "buuhan",
@@ -36292,7 +37167,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Subestimó absolutamente a Vegetto.",
         "exitCondition": "Absorción revertida por el portador del Potencial Despertado dentro (solo con fuerza interior pura o Vegetto).",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 38000000000,
+        "sourceKi": 38000000000,
+        "burstKi": 51300000000,
+        "durabilityKi": 38000000000
       }
     ],
     "feats": [
@@ -36713,7 +37593,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 221550000,
+        "burstKi": 310170000,
+        "durabilityKi": 221550000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -37126,7 +38010,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-C",
         "stats": "1.830 unidades oficiales. Supera con creces a un Saibaman y resiste los embates de Nappa.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1922,
+        "burstKi": 2691,
+        "durabilityKi": 1922,
+        "sourceKi": 1830,
+        "multiplier": "1x"
       },
       {
         "id": "tenshinhan-saiyan-kikoho-suicida",
@@ -37135,7 +38024,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 100,
         "tier": "Low 5-B",
         "stats": "Disparo con toda la energía vital restante que agrieta la armadura de Nappa a costa de su vida.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 3844,
+        "burstKi": 5189,
+        "durabilityKi": 3844,
+        "sourceKi": 3660
       }
     ],
     "feats": [
@@ -37587,7 +38481,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "High 5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 8200500,
+        "burstKi": 11480700,
+        "durabilityKi": 8200500,
+        "sourceKi": null
       },
       {
         "id": "trunks-nino-ssj",
@@ -37616,7 +38514,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar combate extendido para drenar la reserva limitada de ki del niño.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 410025000,
+        "burstKi": 553533750,
+        "durabilityKi": 410025000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -37988,7 +38891,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "High 5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 15225000,
+        "burstKi": 21315000,
+        "durabilityKi": 15225000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v3-ssj1",
@@ -37997,7 +38904,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "4-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 761250000,
+        "burstKi": 1027687500,
+        "durabilityKi": 761250000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v3-ssj-perfeccionado",
@@ -38006,7 +38918,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "4-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 761250000,
+        "burstKi": 1027687500,
+        "durabilityKi": 761250000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v3-ssj2",
@@ -38015,7 +38932,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "3-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 1522500000,
+        "burstKi": 2055375000,
+        "durabilityKi": 1522500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -38602,7 +39524,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 252000000,
+        "burstKi": 352800000,
+        "durabilityKi": 252000000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v1-ssj-basico",
@@ -38611,7 +39537,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "High 4-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 12600000000,
+        "burstKi": 17010000000,
+        "durabilityKi": 12600000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -38928,7 +39859,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 86625000,
+        "burstKi": 129937500,
+        "durabilityKi": 86625000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v2-ssj1",
@@ -38937,7 +39872,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "High 4-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 4331250000,
+        "burstKi": 5847187500,
+        "durabilityKi": 4331250000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v2-grado-2",
@@ -38946,7 +39886,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "High 4-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 4331250000,
+        "burstKi": 5847187500,
+        "durabilityKi": 4331250000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v2-grado-3",
@@ -38955,7 +39900,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 62.5,
         "tier": "High 4-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "62.5x",
+        "apexKi": 5414062500,
+        "burstKi": 7308984375,
+        "durabilityKi": 5414062500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -39277,7 +40227,11 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-A",
         "stats": "18.000 unidades oficiales del Daizenshuu. Élite saiyajin consumada con Galick Gun capaz de pulverizar la Tierra.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 18900,
+        "burstKi": 30240,
+        "durabilityKi": 18900,
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-saiyan-oozaru",
@@ -39287,7 +40241,11 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "High 5-A",
         "stats": "180.000 unidades oficiales (multiplicador x10). Transformación con control mental perfecto activada al mezclar su Ki con el oxígeno mediante una Luna Artificial.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 189000,
+        "burstKi": 255150,
+        "durabilityKi": 189000
       }
     ],
     "feats": [
@@ -39702,7 +40660,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 16769,
+        "burstKi": 25154,
+        "durabilityKi": 16769,
+        "sourceKi": 70000000
       },
       {
         "id": "vegeta-buu-ssj1",
@@ -39728,7 +40690,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocar vacilación emocional o agotar reservas.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 70000000,
+        "sourceKi": 70000000,
+        "burstKi": 94500000,
+        "durabilityKi": 70000000
       },
       {
         "id": "vegeta-buu-ssj2",
@@ -39754,7 +40721,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques prolongados que agoten su ki SSJ2 antes del remate.",
         "canonStatus": "source_backed",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 70000000,
+        "sourceKi": 70000000,
+        "burstKi": 94500000,
+        "durabilityKi": 70000000
       },
       {
         "id": "vegeta-buu-majin",
@@ -39782,7 +40754,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Aprovechar su obsesión con Goku para engañarlo.",
         "canonStatus": "source_backed",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 70000000,
+        "sourceKi": 70000000,
+        "burstKi": 94500000,
+        "durabilityKi": 70000000
       }
     ],
     "feats": [
@@ -40185,7 +41162,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-A",
         "stats": "Forma Base canónica de Vegeta (Saga Cell) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2058000000,
+        "burstKi": 2881200000,
+        "durabilityKi": 2058000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-cell-ssj-grade2",
@@ -40212,7 +41194,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar con Shunkan Idou y atacar la movilidad reducida.",
         "canonStatus": "source_backed",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 102900000000,
+        "burstKi": 138915000000,
+        "durabilityKi": 102900000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -40634,7 +41621,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica estándar.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 404250,
+        "burstKi": 606375,
+        "durabilityKi": 404250,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-namek-zenkai",
@@ -40659,7 +41651,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques de presión constante para impedir la curación.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 727650,
+        "burstKi": 982328,
+        "durabilityKi": 727650,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -41037,16 +42034,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "High 5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 29610000,
+        "burstKi": 41454000,
+        "durabilityKi": 29610000,
+        "sourceKi": null
       },
       {
         "id": "super-vegetto",
         "name": "Super Vegetto",
         "stats": "Nivel Multi-Galaxia. Super Saiyan puro, aura chispeante majestuosa. Inigualable.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 39973500,
+        "burstKi": 53964225,
+        "durabilityKi": 39973500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -41356,7 +42362,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 45,
+        "burstKi": 63,
+        "durabilityKi": 45,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -41662,7 +42672,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 196350000,
+        "burstKi": 274890000,
+        "durabilityKi": 196350000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -41922,7 +42937,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3748500,
+        "burstKi": 5247900,
+        "durabilityKi": 3748500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -42301,7 +43320,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1554,
+        "burstKi": 2176,
+        "durabilityKi": 1554,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -42641,7 +43664,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1985,
+        "burstKi": 2779,
+        "durabilityKi": 1985,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -43011,13 +44039,18 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-B",
         "stats": "Forma Base canónica de Zarbon previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 24150,
+        "burstKi": 33810,
+        "durabilityKi": 24150,
+        "sourceKi": 23000,
+        "multiplier": "1x"
       },
       {
         "id": "zarbon-hermoso",
         "name": "Forma Atractiva",
         "stats": "Nivel Planetario. Piel turquesa, pelo verde largo. Versión formalizada del Estado Base.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "activationCondition": "Estado natural de referencia.",
         "limitations": [],
@@ -43034,7 +44067,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "drawbacks": [],
         "tier": "5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 32603,
+        "burstKi": 44014,
+        "durabilityKi": 32603,
+        "sourceKi": 31050
       },
       {
         "id": "zarbon-monstruo",
@@ -43069,7 +44107,12 @@ export const INITIAL_CHARACTERS = [
           "Mayor superficie corporal vulnerable a ataques concentrados."
         ],
         "tier": "5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 48300,
+        "burstKi": 65205,
+        "durabilityKi": 48300,
+        "sourceKi": 46000
       }
     ],
     "feats": [
@@ -43469,7 +44512,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 871500000,
+        "burstKi": 1220100000,
+        "durabilityKi": 871500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -43728,7 +44776,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 367500000,
+        "burstKi": 514500000,
+        "durabilityKi": 367500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -44216,7 +45269,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 32351,
+        "burstKi": 45291,
+        "durabilityKi": 32351,
+        "sourceKi": null
       },
       {
         "id": "anilaza-overcharge",
@@ -44237,7 +45294,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Concentrar todo el daño en el núcleo; Barrera sostenida al interior de la Esfera Cuádruple.",
         "canonStatus": "apex_custom",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 45291,
+        "burstKi": 61143,
+        "durabilityKi": 45291,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -44581,7 +45643,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 20895000000,
+        "burstKi": 29253000000,
+        "durabilityKi": 20895000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -44893,7 +45960,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 41895000000,
+        "burstKi": 58653000000,
+        "durabilityKi": 41895000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "basil-buff",
@@ -44914,7 +45986,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar y ganar tiempo; atacar la zona superior vulnerable tras el bajón.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 104737500000,
+        "burstKi": 141395625000,
+        "durabilityKi": 104737500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -45243,7 +46320,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de Beerus previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 861000000000,
+        "burstKi": 1205400000000,
+        "durabilityKi": 861000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "beerus-hakaishin",
@@ -45272,7 +46354,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar el aura y atacar antes de que se active por completo, o atacar a Shin para desestabilizarlo.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 1291500000000,
+        "burstKi": 1743525000000,
+        "durabilityKi": 1291500000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -45593,7 +46680,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-B",
         "stats": "Forma Base canónica estándar.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 861000000000,
+        "burstKi": 1205400000000,
+        "durabilityKi": 861000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "beerus-completo",
@@ -45616,7 +46708,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Decisión voluntaria o intervención de un Ángel.",
         "counterplay": "Engañarlo para que use poder completo atrae la atención del Omni-Rey.",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 2152500000000,
+        "burstKi": 2905875000000,
+        "durabilityKi": 2152500000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -45947,7 +47044,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 45360000000,
+        "burstKi": 63504000000,
+        "durabilityKi": 45360000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "bergamo-gigante",
@@ -45968,7 +47070,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Vaciar la reserva acumulada con un ataque definitivo antes del lanzamiento.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 113400000000,
+        "burstKi": 153090000000,
+        "durabilityKi": 113400000000,
+        "sourceKi": null
       },
       {
         "id": "bergamo-overloaded",
@@ -45987,7 +47094,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Interrumpir el canalizador con ráfaga rápida antes del disparo.",
         "canonStatus": "apex_custom",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.5x",
+        "apexKi": 158760000000,
+        "burstKi": 214326000000,
+        "durabilityKi": 158760000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -46313,7 +47425,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "Low 2-C",
         "stats": "Granolah antes de despertar su ojo derecho completo, con precisión óptica para golpear puntos vitales de Ki.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 183750000000000,
+        "burstKi": 257250000000000,
+        "durabilityKi": 183750000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "granolah-eyes-awakened",
@@ -46322,7 +47439,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "2-C",
         "stats": "Ambos ojos despiertos tras el deseo a Toronbo que intercambió su esperanza de vida por ser el guerrero más fuerte del universo.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 459375000000000,
+        "burstKi": 620156250000000,
+        "durabilityKi": 459375000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -46618,7 +47740,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1197000000,
+        "burstKi": 1675800000,
+        "durabilityKi": 1197000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -46925,7 +48052,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "4-A",
         "tierExact": "4-A",
         "stats": "Poder latente monstruoso reprimido por descargas eléctricas en el planeta Vampa.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4315500000,
+        "burstKi": 6041700000,
+        "durabilityKi": 4315500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "broly-dbs-ikari",
@@ -46935,7 +48067,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "3-B",
         "tierExact": "3-B",
         "stats": "Aura verde y ojos amarillos canalizando la fuerza destructiva del Gran Mono sin perder velocidad.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 43155000000,
+        "burstKi": 58259250000,
+        "durabilityKi": 43155000000,
+        "sourceKi": null
       },
       {
         "id": "broly-dbs-ssj",
@@ -46944,7 +48081,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 40,
         "tier": "3-A",
         "stats": "Despertado tras el asesinato de su padre. Fuerza bruta que obliga a Goku y Vegeta a retirarse.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 215775000000,
+        "burstKi": 291296250000,
+        "durabilityKi": 215775000000,
+        "sourceKi": null
       },
       {
         "id": "broly-dbs-fp-ssj",
@@ -46953,7 +48095,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 60,
         "tier": "2-C",
         "stats": "Hipertrofia muscular y ki infinito que combate a la par con Gogeta SSJ Blue.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2000x",
+        "apexKi": 8631000000000,
+        "burstKi": 11651850000000,
+        "durabilityKi": 8631000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -47306,7 +48453,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Cabba previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 65940000000,
+        "burstKi": 92316000000,
+        "durabilityKi": 65940000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "cabba-ssj",
@@ -47335,7 +48487,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 3297000000000,
+        "burstKi": 4450950000000,
+        "durabilityKi": 3297000000000,
+        "sourceKi": null
       },
       {
         "id": "cabba-ssj1",
@@ -47344,7 +48501,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "High 3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 3297000000000,
+        "burstKi": 4450950000000,
+        "durabilityKi": 3297000000000,
+        "sourceKi": null
       },
       {
         "id": "cabba-ssj2",
@@ -47377,7 +48539,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar desgaste de stamina o atacar durante la transición emocional.",
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 6594000000000,
+        "burstKi": 8901900000000,
+        "durabilityKi": 6594000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -47682,7 +48849,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 11,
+        "burstKi": 15,
+        "durabilityKi": 11,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -47989,7 +49161,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "4-A",
         "stats": "Líder pandillera saiyajin con instinto marcial nato y reflejos sobresalientes.",
         "tierExact": "4-A",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3759000000,
+        "burstKi": 5262600000,
+        "durabilityKi": 3759000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "caulifla-ssj1",
@@ -47998,7 +49175,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "4-B",
         "stats": "Transformación dominada en segundos tras las indicaciones de Cabba.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 187950000000,
+        "burstKi": 253732500000,
+        "durabilityKi": 187950000000,
+        "sourceKi": null
       },
       {
         "id": "caulifla-ssj2",
@@ -48007,7 +49189,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 25,
         "tier": "4-A",
         "stats": "Alcanzado al salvar a Cabba del ataque de Kale en el Torneo del Poder.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 375900000000,
+        "burstKi": 507465000000,
+        "durabilityKi": 375900000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -48288,7 +49475,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7161,
+        "burstKi": 10025,
+        "durabilityKi": 7161,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -48741,7 +49933,12 @@ export const INITIAL_CHARACTERS = [
           "Fisiología Kaiju Extrema"
         ],
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 23100000000000,
+        "burstKi": 32340000000000,
+        "durabilityKi": 23100000000000,
+        "sourceKi": 22000000000000,
+        "multiplier": "1x"
       },
       {
         "id": "cell-max-perfecto-whatif",
@@ -48767,7 +49964,12 @@ export const INITIAL_CHARACTERS = [
           "Kamehameha Oscuro Perfecto"
         ],
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 22000000000000,
+        "sourceKi": 22000000000000,
+        "burstKi": 29700000000000,
+        "durabilityKi": 22000000000000
       }
     ],
     "feats": [
@@ -49103,13 +50305,18 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Combates de desgaste prolongado para forzar su fatiga.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 158550000000000,
+        "burstKi": 221970000000000,
+        "durabilityKi": 158550000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "champa-raging",
         "name": "Modo Furia por Comida",
         "stats": "Desata todo su potencial divino momentáneamente cuando algo le enfurece (generalmente relacionadas con comida o el Universo 7). Igual nivel de poder que su estado base, pero con mayor agresividad.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 25,
         "activationCondition": "Enojo extremo o desesperación por perder su comida.",
         "limitations": "Su obeso cuerpo se agota aún más rápido bajo el esfuerzo.",
@@ -49130,7 +50337,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Llevar el combate a un ritmo extenuante para que colapse por su propia grasa.",
         "canonStatus": "apex_custom",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 214042500000000,
+        "burstKi": 288957375000000,
+        "durabilityKi": 214042500000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -49430,7 +50642,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 166,
+        "burstKi": 232,
+        "durabilityKi": 166,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -49905,7 +51122,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Combatiente sónico capaz de aumentar su velocidad miles de veces en instantes.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 75075000000,
+        "burstKi": 105105000000,
+        "durabilityKi": 75075000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "dyspo-smls",
@@ -49914,7 +51136,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 35,
         "tier": "High 3-A",
         "stats": "Modo supremo de velocidad hiperdimensional que supera la percepción de Hit y Golden Freezer.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4x",
+        "apexKi": 300300000000,
+        "burstKi": 405405000000,
+        "durabilityKi": 300300000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -50207,7 +51434,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 187,
+        "burstKi": 262,
+        "durabilityKi": 187,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -50706,7 +51938,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma inicial tras 4 meses de entrenamiento con la que derrota a Gohan de un golpe.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1312500000,
+        "burstKi": 1968750000,
+        "durabilityKi": 1312500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "freezer-rof-final",
@@ -50715,7 +51952,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "3-A",
         "stats": "Forma auténtica que rivaliza con Goku Estado Más Allá de Dios.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 65625000000,
+        "burstKi": 88593750000,
+        "durabilityKi": 65625000000,
+        "sourceKi": null
       },
       {
         "id": "freezer-rof-golden",
@@ -50724,7 +51966,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 60,
         "tier": "Low 2-C",
         "stats": "Metamorfosis dorada con poder superior a Goku SSJ Blue, con severo desgaste por no acostumbrar el cuerpo.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "250x",
+        "apexKi": 328125000000,
+        "burstKi": 442968750000,
+        "durabilityKi": 328125000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -51093,13 +52340,18 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Freezer (Dragon Ball Super — Torneo del Poder) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 66570000000,
+        "burstKi": 93198000000,
+        "durabilityKi": 66570000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "freezer-top-primera-forma",
         "name": "1ª Forma (Supresión en el Infierno / Halo de Difunto)",
         "stats": "Tier 4-B | Nivel Sistema Solar. Forma de contención básica con halo de muerto.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "activationCondition": "Estado de ultratumba al ser revivido en el Infierno de la Tierra.",
@@ -51117,7 +52369,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Transformación a formas superiores.",
         "counterplay": "Ataques de luz o ki purificador.",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 89869500000,
+        "burstKi": 121323825000,
+        "durabilityKi": 89869500000,
+        "sourceKi": null
       },
       {
         "id": "freezer-top-segunda-forma",
@@ -51141,7 +52398,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Evolución a 3ª Forma.",
         "counterplay": "Esquivar las embestidas frontales.",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 166425000000,
+        "burstKi": 224673750000,
+        "durabilityKi": 166425000000,
+        "sourceKi": null
       },
       {
         "id": "freezer-top-golden-verdadero",
@@ -51169,7 +52431,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "counterplay": "Ataques de energía concentrada en su aura dorada antes de que la estabilice.",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4x",
+        "apexKi": 266280000000,
+        "burstKi": 359478000000,
+        "durabilityKi": 266280000000,
+        "sourceKi": null
       },
       {
         "id": "freezer-top-tercera-forma",
@@ -51191,7 +52458,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Reformulación a Forma Final.",
         "counterplay": "Agarre físico por los cuernos.",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 332850000000,
+        "burstKi": 449347500000,
+        "durabilityKi": 332850000000,
+        "sourceKi": null
       },
       {
         "id": "freezer-top-100-por-ciento",
@@ -51217,7 +52489,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Pérdida de velocidad si el combate es muy prolongado.",
         "counterplay": "Combates prolongados y desgaste por kiting.",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "120x",
+        "apexKi": 7988400000000,
+        "burstKi": 10784340000000,
+        "durabilityKi": 7988400000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -51560,16 +52837,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "Low 2-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 18900000000,
+        "burstKi": 26460000000,
+        "durabilityKi": 18900000000,
+        "sourceKi": null
       },
       {
         "id": "freezer-broly-golden",
         "name": "Golden Freezer (Resistencia Legendaria vs Broly)",
         "stats": "Tier 2-C | Nivel Multiversal Bajo. Sostuvo 1 hora de paliza contra Broly SSJ.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 25515000000,
+        "burstKi": 34445250000,
+        "durabilityKi": 25515000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -51849,25 +53135,39 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 24192,
+        "burstKi": 33869,
+        "durabilityKi": 24192,
+        "sourceKi": null
       },
       {
         "id": "frost-3",
         "name": "Forma Asalto (Tercera)",
         "stats": "Nivel Universal Bajo. Cuernos, brutal, la usa para someter planetas rebeldes en secreto.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 32659,
+        "burstKi": 44090,
+        "durabilityKi": 32659,
+        "sourceKi": null
       },
       {
         "id": "frost-final",
         "name": "Forma Final",
         "stats": "Nivel Universal Bajo. Aspecto liso de combate.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 32659,
+        "burstKi": 44090,
+        "durabilityKi": 32659,
+        "sourceKi": null
       },
       {
         "id": "frost-100",
@@ -51876,7 +53176,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1.5,
         "tier": "5-A",
         "staminaDrain": 15,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 36288,
+        "burstKi": 48989,
+        "durabilityKi": 36288,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -52187,7 +53492,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "Low 2-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 157500000000000,
+        "burstKi": 220500000000000,
+        "durabilityKi": 157500000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -52512,7 +53821,12 @@ export const INITIAL_CHARACTERS = [
           "Combo Relámpago Justiciero"
         ],
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 135450000000000,
+        "burstKi": 189630000000000,
+        "durabilityKi": 135450000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gamma-2-overdrive-300",
@@ -52538,7 +53852,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Ninguna. La forma culmina con la destrucción total del sujeto.",
         "canonStatus": "apex_custom",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 270900000000000,
+        "burstKi": 365715000000000,
+        "durabilityKi": 270900000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -52841,7 +54160,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 47985000000,
+        "burstKi": 67179000000,
+        "durabilityKi": 47985000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -53115,7 +54439,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 86520000000,
+        "burstKi": 121128000000,
+        "durabilityKi": 86520000000,
+        "sourceKi": null
       },
       {
         "id": "gas-anciano-evolucion-final",
@@ -53142,7 +54470,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Resistir la presión psicológica de ver a un cadáver pelear; aniquilación inmediata con Hakai o poder superior.",
         "canonStatus": "apex_custom",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3x",
+        "apexKi": 259560000000,
+        "burstKi": 350406000000,
+        "durabilityKi": 259560000000,
+        "sourceKi": null
       },
       {
         "id": "gas-anciano",
@@ -53170,7 +54503,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Separarlo de Elec, superarlo en base de poder (como Black Freezer), o drenar su tiempo de vida con presión constante.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 432600000000,
+        "burstKi": 584010000000,
+        "durabilityKi": 432600000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -53522,7 +54860,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 78330000000,
+        "burstKi": 133161000000,
+        "durabilityKi": 78330000000,
+        "sourceKi": null
       },
       {
         "id": "gogeta-ssj-dbs",
@@ -53531,7 +54873,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "2-B",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 3916500000000,
+        "burstKi": 5287275000000,
+        "durabilityKi": 3916500000000,
+        "sourceKi": null
       },
       {
         "id": "gogeta-blue-dbs",
@@ -53540,7 +54887,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 7700,
         "tier": "2-B",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "7700x",
+        "apexKi": 603141000000000,
+        "burstKi": 814240350000000,
+        "durabilityKi": 603141000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -53875,7 +55227,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "3-A",
         "stats": "Cuerpo de Son Goku poseído por Zamasu con Zenkais acelerados por daño en combate.",
         "tierExact": "3-A",
-        "category": "base"
+        "category": "base",
+        "apexKi": 98175000000,
+        "burstKi": 147262500000,
+        "durabilityKi": 98175000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "goku-black-ssj1",
@@ -53884,7 +55241,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "4-B",
         "stats": "Forma intermedia dorada utilizada en el manga de Toyotaro contra Vegeta.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 4908750000000,
+        "burstKi": 6626812500000,
+        "durabilityKi": 4908750000000,
+        "sourceKi": null
       },
       {
         "id": "goku-black-rose",
@@ -53893,7 +55255,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "Low 2-C",
         "stats": "El equivalente al Super Saiyan Blue cuando un dios verdadero habita un cuerpo saiyajin. Espada y guadaña de Ki.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 4908750000000,
+        "burstKi": 6626812500000,
+        "durabilityKi": 4908750000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -54226,7 +55593,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 43365000000000000000,
+        "burstKi": 60711000000000010000,
+        "durabilityKi": 43365000000000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -54560,7 +55932,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "Low 2-C",
         "stats": "Granolah antes de despertar su ojo derecho completo, con precisión óptica para golpear puntos vitales de Ki.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 129150000000000,
+        "burstKi": 180810000000000,
+        "durabilityKi": 129150000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "granolah-eyes-awakened",
@@ -54569,7 +55946,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "2-C",
         "stats": "Ambos ojos despiertos tras el deseo a Toronbo que intercambió su esperanza de vida por ser el guerrero más fuerte del universo.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 322875000000000,
+        "burstKi": 435881250000000,
+        "durabilityKi": 322875000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -54940,7 +56322,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Hit previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 81060000000,
+        "burstKi": 121590000000,
+        "durabilityKi": 81060000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hit-asesino",
@@ -54974,7 +56361,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Poder bruto masivo para romper el espacio-tiempo o velocidad que anticipe sus saltos.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 145908000000,
+        "burstKi": 196975800000,
+        "durabilityKi": 145908000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -55262,7 +56654,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2531,
+        "burstKi": 3543,
+        "durabilityKi": 2531,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -55501,7 +56898,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 257250000,
+        "burstKi": 360150000,
+        "durabilityKi": 257250000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -55787,7 +57189,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "Low 2-C",
         "stats": "Fuerza aplastante pasiva que detiene golpes con la mirada y supera a los Dioses de la Destrucción.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 14700000000000,
+        "burstKi": 20580000000000,
+        "durabilityKi": 14700000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "jiren-limit-breaker",
@@ -55796,7 +57203,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 45,
         "tier": "2-C",
         "stats": "Ruptura de sus propios límites ante Goku Ultra Instinto Dominado. Fuego cósmico desatado con todo su trauma superado.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 73500000000000,
+        "burstKi": 99225000000000,
+        "durabilityKi": 73500000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -56100,7 +57512,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 56175000000,
+        "burstKi": 78645000000,
+        "durabilityKi": 56175000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -56364,7 +57781,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Kale previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 65310000000,
+        "burstKi": 91434000000,
+        "durabilityKi": 65310000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "kale-lssj-controlled",
@@ -56373,7 +57795,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "High 3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 3265500000000,
+        "burstKi": 4408425000000,
+        "durabilityKi": 3265500000000,
+        "sourceKi": null
       },
       {
         "id": "kale-controlada",
@@ -56398,7 +57825,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Si Caulifla es dañada gravemente, riesgo de regresión al Berserker.",
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 3265500000000,
+        "burstKi": 4408425000000,
+        "durabilityKi": 3265500000000,
+        "sourceKi": null
       },
       {
         "id": "kale-lssj-berserk",
@@ -56407,7 +57839,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 3265500000000,
+        "burstKi": 4408425000000,
+        "durabilityKi": 3265500000000,
+        "sourceKi": null
       },
       {
         "id": "kale-berserk",
@@ -56436,7 +57873,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Kryptonita social: calmar a Caulifla, o aislar a Kale para que consuma su propia energía.",
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2000x",
+        "apexKi": 130620000000000,
+        "burstKi": 176337000000000,
+        "durabilityKi": 130620000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -56676,7 +58118,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 226800000,
+        "burstKi": 317520000,
+        "durabilityKi": 226800000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -56932,7 +58379,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Fusión de Caulifla y Kale con agilidad prodigiosa y ki desbordante.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1837500000,
+        "burstKi": 2572500000,
+        "durabilityKi": 1837500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "kefla-ssj1",
@@ -56941,7 +58393,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "3-A",
         "stats": "Poder que presiona a Goku SSJ God y obliga a activar el Super Saiyan Blue Kaio-ken.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 91875000000,
+        "burstKi": 124031250000,
+        "durabilityKi": 91875000000,
+        "sourceKi": null
       },
       {
         "id": "kefla-ssj2",
@@ -56950,7 +58407,17 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 40,
         "tier": "Low 2-C",
         "stats": "Tormenta de rayos letales que roza el cuerpo de Goku Ultra Instinto Señal.",
-        "category": "hax_mode"
+        "category": "hax_mode",
+        "multiplier": "100x",
+        "apexKi": 1837500000,
+        "burstKi": 2572500000,
+        "durabilityKi": 1837500000,
+        "sourceKi": null,
+        "doesNotIncrease": [
+          "apexKi",
+          "durabilityKi",
+          "liftingStrength"
+        ]
       }
     ],
     "feats": [
@@ -57229,16 +58696,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Koichiarator previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 52605000000,
+        "burstKi": 73647000000,
+        "durabilityKi": 52605000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "anilaza-fusion",
         "name": "Anilaza (Transformación Final Oculta)",
         "stats": "Si el Doctor Paparoni se fusiona también con Koichiarator, evolucionan a 'Anilaza' (Tier 2-C Multiversal Bajo), ganando ecolocación suprema y la fuerza para doblar el espacio.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 71016750000,
+        "burstKi": 95872612500,
+        "durabilityKi": 71016750000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -57511,7 +58988,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica estándar.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 228900000,
+        "burstKi": 320460000,
+        "durabilityKi": 228900000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "krilin-dbs-noego",
@@ -57538,7 +59020,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocaciones psicológicas, uso de Genki Dama mental (Dabura, Buu) o superiores divinos.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 343350000,
+        "burstKi": 463522500,
+        "durabilityKi": 343350000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -57966,7 +59453,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Hax de purificación, explotar su debilidad a combatientes ciegos.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "base"
+        "category": "base",
+        "apexKi": 49665000000,
+        "burstKi": 69531000000,
+        "durabilityKi": 49665000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -58281,7 +59773,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 109,
+        "burstKi": 153,
+        "durabilityKi": 109,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -58554,16 +60051,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "9-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 186,
+        "burstKi": 279,
+        "durabilityKi": 186,
+        "sourceKi": null
       },
       {
         "id": "mai-futuro",
         "name": "Mai del Futuro",
         "stats": "Nivel Humano / Muro. Gorro militar verde, gabardina verde oliva con parches de la resistencia, rifle de francotirador a la espalda.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 251,
+        "burstKi": 339,
+        "durabilityKi": 251,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -58859,7 +60365,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 45885000000,
+        "burstKi": 64239000000,
+        "durabilityKi": 45885000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -59083,7 +60594,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6804,
+        "burstKi": 9526,
+        "durabilityKi": 6804,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -59488,7 +61004,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1043700000000000,
+        "burstKi": 1565550000000000,
+        "durabilityKi": 1043700000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -59809,7 +61330,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5870,
+        "burstKi": 8218,
+        "durabilityKi": 5870,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -60179,13 +61704,18 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Aislamiento de fuentes de ki; ataques físicos concentrados.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 141750000000000,
+        "burstKi": 198450000000000,
+        "durabilityKi": 141750000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "moro-anciano",
         "name": "Moro Anciano (Sellado)",
         "stats": "Nivel Planeta Grande. Magia de absorción de energía vital planetaria; cuerpo sellado pero funcional.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "activationCondition": "Forma anterior a la rejuvenación; depende 100% de la magia para sostenerse.",
         "grantedTags": [
@@ -60206,7 +61736,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Aislarlo de fuentes de ki planetario.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 191362500000000,
+        "burstKi": 258339375000000,
+        "durabilityKi": 191362500000000,
+        "sourceKi": null
       },
       {
         "id": "moro-joven",
@@ -60232,7 +61767,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Concentrar ki divino antes de atacar.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 212625000000000,
+        "burstKi": 287043750000000,
+        "durabilityKi": 212625000000000,
+        "sourceKi": null
       },
       {
         "id": "moro-73",
@@ -60258,7 +61798,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Noquear a 7-3 antes de la copia completa; usar transformaciones desconocidas.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 255150000000000,
+        "burstKi": 344452500000000,
+        "durabilityKi": 255150000000000,
+        "sourceKi": null
       },
       {
         "id": "moro-angel",
@@ -60285,7 +61830,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Fisión de Espíritu de Uub; separar la tierra del cristal con precisión quirúrgica.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 354375000000000,
+        "burstKi": 478406250000000,
+        "durabilityKi": 354375000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -60576,7 +62126,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 67830000000,
+        "burstKi": 94962000000,
+        "durabilityKi": 67830000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -60814,7 +62369,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 259350000,
+        "burstKi": 363090000,
+        "durabilityKi": 259350000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -61103,7 +62663,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 840000000,
+        "burstKi": 1176000000,
+        "durabilityKi": 840000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -61445,7 +63010,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Pasivo permanente.",
         "counterplay": "Superar con velocidad superior antes de que cargue el Makankosappo combinado.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 12600000000,
+        "burstKi": 17640000000,
+        "durabilityKi": 12600000000,
+        "sourceKi": null
       },
       {
         "id": "piccolo-dbs-giant",
@@ -61471,7 +63040,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Atacar puntos de articulación antes de que consolide el tamaño completo.",
         "canonStatus": "apex_custom",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 18900000000,
+        "burstKi": 25515000000,
+        "durabilityKi": 18900000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -61803,16 +63377,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Piccolo (Super Hero) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 14700000000000,
+        "burstKi": 20580000000000,
+        "durabilityKi": 14700000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-potential-unleashed",
         "name": "Potential Unleashed",
         "stats": "Aumento liso de AP y Velocidad, igualando a oponentes Tier 3-A alto.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 19845000000000,
+        "burstKi": 26790750000000,
+        "durabilityKi": 19845000000000,
+        "sourceKi": null
       },
       {
         "id": "piccolo-orange",
@@ -61821,7 +63405,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 10000,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10000x",
+        "apexKi": 14000000000000,
+        "sourceKi": 14000000000000,
+        "burstKi": 18900000000000,
+        "durabilityKi": 14000000000000
       },
       {
         "id": "piccolo-giant-orange",
@@ -61830,7 +63419,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 10000,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10000x",
+        "apexKi": 14000000000000,
+        "sourceKi": 14000000000000,
+        "burstKi": 18900000000000,
+        "durabilityKi": 14000000000000
       }
     ],
     "feats": [
@@ -62095,7 +63689,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 66780000000,
+        "burstKi": 93492000000,
+        "durabilityKi": 66780000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -62415,7 +64014,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-B",
         "stats": "Líder del Escuadrón Doncella del Universo 2.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 549675,
+        "burstKi": 769545,
+        "durabilityKi": 549675,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ribrianne-transformation",
@@ -62424,7 +64028,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "4-B",
         "stats": "Aumento de masa y disparos de corazones de Ki que presionan a los Guerreros Z.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 2748375,
+        "burstKi": 3710306,
+        "durabilityKi": 2748375,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -62723,7 +64332,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 40425000000,
+        "burstKi": 56595000000,
+        "durabilityKi": 40425000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -62961,7 +64575,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 40950000000,
+        "burstKi": 57330000000,
+        "durabilityKi": 40950000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -63193,7 +64812,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 89250000000,
+        "burstKi": 124950000000,
+        "durabilityKi": 89250000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -63466,7 +65090,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5239500,
+        "burstKi": 7335300,
+        "durabilityKi": 5239500,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -63778,16 +65407,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Son Gohan (Dragon Ball Super — Resurrección de 'F' / Pre-Torneo) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1197000000,
+        "burstKi": 1675800000,
+        "durabilityKi": 1197000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "freezer-rof-1ra",
         "name": "Freezer 1ª Forma (Silla Espacial / Entrenado)",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma inicial tras 4 meses de entrenamiento con la que derrota a Gohan de un golpe.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1615950000,
+        "burstKi": 2181532500,
+        "durabilityKi": 1615950000,
+        "sourceKi": null
       },
       {
         "id": "freezer-rof-final",
@@ -63796,7 +65435,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "3-A",
         "stats": "Forma auténtica que rivaliza con Goku Estado Más Allá de Dios.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 59850000000,
+        "burstKi": 80797500000,
+        "durabilityKi": 59850000000,
+        "sourceKi": null
       },
       {
         "id": "freezer-rof-golden",
@@ -63805,7 +65449,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 60,
         "tier": "Low 2-C",
         "stats": "Metamorfosis dorada con poder superior a Goku SSJ Blue, con severo desgaste por no acostumbrar el cuerpo.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "250x",
+        "apexKi": 299250000000,
+        "burstKi": 403987500000,
+        "durabilityKi": 299250000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -64108,7 +65757,11 @@ export const INITIAL_CHARACTERS = [
           "Base_Piccolo_Training"
         ],
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 124950000000000,
+        "burstKi": 174930000000000,
+        "durabilityKi": 124950000000000,
+        "sourceKi": null
       },
       {
         "id": "gohan-super-ssj1",
@@ -64131,7 +65784,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Agotamiento de Ki o regreso a estado base voluntariamente.",
         "counterplay": "Atacar con superioridad numérica o agotar su Ki con evasión prolongada.",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 6247500000000000,
+        "burstKi": 8434125000000001,
+        "durabilityKi": 6247500000000000,
+        "sourceKi": null
       },
       {
         "id": "gohan-super-ssj2",
@@ -64155,7 +65813,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Pérdida de emoción focal o desmayo por agotamiento.",
         "counterplay": "Provocar distracción que rompa la concentración emocional.",
         "tier": "2-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 12495000000000000,
+        "burstKi": 16868250000000002,
+        "durabilityKi": 12495000000000000,
+        "sourceKi": null
       },
       {
         "id": "gohan-super-ultimate",
@@ -64180,7 +65843,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Permanente pero requiere re-despertar si se desincrona.",
         "counterplay": "Atributos físicos puros superiores.",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "800x",
+        "apexKi": 99960000000000000,
+        "burstKi": 134946000000000020,
+        "durabilityKi": 99960000000000000,
+        "sourceKi": null
       },
       {
         "id": "gohan-super-beast",
@@ -64209,7 +65877,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocar calma emocional o agotar su adrenalina.",
         "drawbacks": "Comportamiento arrogante y letal, subestima a oponentes caídos.",
         "tier": "1-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1000000x",
+        "apexKi": 124950000000000000000,
+        "burstKi": 168682500000000020000,
+        "durabilityKi": 124950000000000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -64540,7 +66213,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de Son Gohan (Super Hero) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 86625000000000,
+        "burstKi": 121275000000000,
+        "durabilityKi": 86625000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gohan-ultimate-sh",
@@ -64549,7 +66227,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 800,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "800x",
+        "apexKi": 69300000000000000,
+        "burstKi": 93555000000000000,
+        "durabilityKi": 69300000000000000,
+        "sourceKi": null
       },
       {
         "id": "gohan-beast",
@@ -64558,7 +66241,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1000000,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1000000x",
+        "apexKi": 86625000000000000000,
+        "burstKi": 116943750000000000000,
+        "durabilityKi": 86625000000000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -64947,7 +66635,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 27720000000,
+        "burstKi": 44352000000,
+        "durabilityKi": 27720000000,
+        "sourceKi": null
       },
       {
         "id": "goku-super-ssj1",
@@ -64971,7 +66663,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Consumo moderado de Ki por turno.",
         "canonStatus": "source_backed",
         "tier": "6-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 1386000000000,
+        "burstKi": 1871100000000,
+        "durabilityKi": 1386000000000,
+        "sourceKi": null
       },
       {
         "id": "goku-super-ssj2",
@@ -64996,7 +66693,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Tormenta eléctrica detectable.",
         "canonStatus": "source_backed",
         "tier": "5-A+",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 2772000000000,
+        "burstKi": 3742200000000,
+        "durabilityKi": 2772000000000,
+        "sourceKi": null
       },
       {
         "id": "goku-super-ssj3",
@@ -65019,7 +66721,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Agota la stamina a gran velocidad. En DBS reduce drásticamente su tiempo efectivo.",
         "canonStatus": "source_backed",
         "tier": "5-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 11088000000000,
+        "burstKi": 14968800000000,
+        "durabilityKi": 11088000000000,
+        "sourceKi": null
       },
       {
         "id": "goku-super-god",
@@ -65045,7 +66752,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Estética detectable.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "6400x",
+        "apexKi": 177408000000000,
+        "burstKi": 239500800000000,
+        "durabilityKi": 177408000000000,
+        "sourceKi": null
       },
       {
         "id": "goku-super-blue",
@@ -65071,7 +66783,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "No tiene regeneración pasiva como SSG.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "7700x",
+        "apexKi": 213444000000000,
+        "burstKi": 288149400000000,
+        "durabilityKi": 213444000000000,
+        "sourceKi": null
       },
       {
         "id": "goku-super-blue-kaioken",
@@ -65088,7 +66805,12 @@ export const INITIAL_CHARACTERS = [
         "grantedAbilities": [
           "Ataques físicos x20 Blue."
         ],
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "7700x",
+        "apexKi": 213444000000000,
+        "burstKi": 288149400000000,
+        "durabilityKi": 27720000000,
+        "sourceKi": null
       },
       {
         "id": "goku-super-ui-omen",
@@ -65111,7 +66833,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "No mantiene el estado por descontrol mental.",
         "canonStatus": "source_backed",
         "tier": "3-A+",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "12000x",
+        "apexKi": 332640000000000,
+        "burstKi": 449064000000000,
+        "durabilityKi": 332640000000000,
+        "sourceKi": null
       },
       {
         "id": "goku-super-ui-mastered",
@@ -65140,7 +66867,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Cuerpo y mente pagan el costo tras uso prolongado.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "60000x",
+        "apexKi": 1663200000000000,
+        "burstKi": 2245320000000000,
+        "durabilityKi": 1663200000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -65487,7 +67219,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Presión sostenida antes de que active cualquier transformación divina.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 12915000000000,
+        "burstKi": 18081000000000,
+        "durabilityKi": 12915000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ui-true",
@@ -65507,7 +67244,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Dejar que se desgaste por sí solo; cualquier ataque a un usuario estático lo derrotará.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 19372500000000,
+        "burstKi": 26152875000000,
+        "durabilityKi": 19372500000000,
+        "sourceKi": null
       },
       {
         "id": "ui-sign",
@@ -65536,7 +67278,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocar desgaste sostenido hasta que se desmorone; ataques emocionales que fragmenten aún más la mente.",
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "150000x",
+        "apexKi": 1937250000000000000,
+        "burstKi": 2615287500000000000,
+        "durabilityKi": 1937250000000000000,
+        "sourceKi": null
       },
       {
         "id": "ui-perfecto",
@@ -65562,7 +67309,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques de Soul Damage a gran escala o usuarios con percepción causal superior a su instinto.",
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "300000x",
+        "apexKi": 3874500000000000000,
+        "burstKi": 5230575000000000000,
+        "durabilityKi": 3874500000000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -65927,25 +67679,40 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 126000,
+        "burstKi": 176400,
+        "durabilityKi": 126000,
+        "sourceKi": 120000,
+        "multiplier": "1x"
       },
       {
         "id": "tagoma-post-tortura",
         "name": "Tagoma (Post-4 Meses de Tortura con Freezer)",
         "stats": "Tier 4-B a 4-A | Nivel Sistema Solar a Multi-Sistema Solar. Resistencia de acero impenetrable capaz de noquear a Piccolo y herir a Gohan base.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 170100,
+        "burstKi": 229635,
+        "durabilityKi": 170100,
+        "sourceKi": 162000
       },
       {
         "id": "tagoma-ginyu",
         "name": "Capitán Ginyu (Posesión del Cuerpo de Tagoma)",
         "stats": "Tier 4-A | Nivel Multi-Sistema Solar Alto. Ginyu libera todo el potencial dormido del cuerpo de Tagoma con poses especiales antes de ser embestido por Gotenks y desintegrado por Vegeta.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 120000,
+        "sourceKi": 120000,
+        "burstKi": 162000,
+        "durabilityKi": 120000
       }
     ],
     "feats": [
@@ -66274,7 +68041,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 89670000000000,
+        "burstKi": 125538000000000,
+        "durabilityKi": 89670000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -66662,7 +68433,11 @@ export const INITIAL_CHARACTERS = [
         ],
         "limitations": "Sin acceso a Hakai ni a energía divina.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 65205000000,
+        "burstKi": 91287000000,
+        "durabilityKi": 65205000000,
+        "sourceKi": null
       },
       {
         "id": "toppo-hakaishin",
@@ -66692,7 +68467,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Saturar su armadura con carga suicida de Ki (Final Explosion).",
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "15x",
+        "apexKi": 978075000000,
+        "burstKi": 1320401250000,
+        "durabilityKi": 978075000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -67011,7 +68791,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 19110000000,
+        "burstKi": 26754000000,
+        "durabilityKi": 19110000000,
+        "sourceKi": null
       },
       {
         "id": "trunks-anime-ssj1",
@@ -67020,7 +68804,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "High 3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 955500000000,
+        "burstKi": 1289925000000,
+        "durabilityKi": 955500000000,
+        "sourceKi": null
       },
       {
         "id": "trunks-anime-rage",
@@ -67029,7 +68818,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "High 3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 955500000000,
+        "burstKi": 1289925000000,
+        "durabilityKi": 955500000000,
+        "sourceKi": null
       },
       {
         "id": "trunks-anime-ssj2",
@@ -67038,7 +68832,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "Low 2-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 1911000000000,
+        "burstKi": 2579850000000,
+        "durabilityKi": 1911000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -67353,7 +69152,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 42525000000,
+        "burstKi": 59535000000,
+        "durabilityKi": 42525000000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v4-ssj1",
@@ -67362,7 +69165,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 2126250000000,
+        "burstKi": 2870437500000,
+        "durabilityKi": 2126250000000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v4-ssj2-manga",
@@ -67371,7 +69179,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "3-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 4252500000000,
+        "burstKi": 5740875000000,
+        "durabilityKi": 4252500000000,
+        "sourceKi": null
       },
       {
         "id": "trunks-v4-ssj2-potenciado",
@@ -67380,7 +69193,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 400,
         "tier": "High 3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 17010000000000,
+        "burstKi": 22963500000000,
+        "durabilityKi": 17010000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -67705,7 +69523,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 36404,
+        "burstKi": 58246,
+        "durabilityKi": 36404,
+        "sourceKi": null
       },
       {
         "id": "vados-base",
@@ -67734,7 +69556,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar la intervención letal para invocar la ley del Gran Sacerdote y borrarla.",
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 43685,
+        "burstKi": 58975,
+        "durabilityKi": 43685,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -68069,7 +69896,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 15540000000,
+        "burstKi": 21756000000,
+        "durabilityKi": 15540000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-super-ssj1",
@@ -68095,7 +69926,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ignorar; carece de daño relevante contra rivales Multiversales.",
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 777000000000,
+        "burstKi": 1048950000000,
+        "durabilityKi": 777000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-super-ssj2",
@@ -68123,7 +69959,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Cualquier usuario de Hakai o SSJ Blue lo aplasta.",
         "canonStatus": "source_backed",
         "tier": "2-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 1554000000000,
+        "burstKi": 2097900000000,
+        "durabilityKi": 1554000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-super-ssj3",
@@ -68151,7 +69992,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esperar el agotamiento natural.",
         "canonStatus": "apex_custom",
         "tier": "2-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 6216000000000,
+        "burstKi": 8391600000000,
+        "durabilityKi": 6216000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-super-ultra-ego",
@@ -68180,7 +70026,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques precisos al sistema nervioso central antes de que acumule suficiente daño para escalar.",
         "canonStatus": "source_backed",
         "tier": "1-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1500x",
+        "apexKi": 23310000000000,
+        "burstKi": 31468500000000,
+        "durabilityKi": 23310000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-super-god",
@@ -68208,7 +70059,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques prolongados hasta drenar el ki divino.",
         "canonStatus": "source_backed",
         "tier": "2-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "6400x",
+        "apexKi": 99456000000000,
+        "burstKi": 134265600000000,
+        "durabilityKi": 99456000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-super-blue",
@@ -68235,7 +70091,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Rival con Hakai puro o Ultra Instinto.",
         "canonStatus": "source_backed",
         "tier": "1-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "7700x",
+        "apexKi": 119658000000000,
+        "burstKi": 161538300000000,
+        "durabilityKi": 119658000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-super-blue-evo",
@@ -68263,7 +70124,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Presión constante hasta que colapse por fatiga.",
         "canonStatus": "source_backed",
         "tier": "2-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "77000x",
+        "apexKi": 1196580000000000,
+        "burstKi": 1615383000000000,
+        "durabilityKi": 1196580000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -68670,7 +70536,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de Vegeta (Ultra Ego / Destrucción) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 25200000000000,
+        "burstKi": 35280000000000,
+        "durabilityKi": 25200000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ultra-ego-base",
@@ -68694,7 +70565,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Fatiga crítica, colapso físico o interrupción mental.",
         "counterplay": "Daño extremo súbito que supere el procesamiento de escalado.",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "6x",
+        "apexKi": 151200000000000,
+        "burstKi": 204120000000000,
+        "durabilityKi": 151200000000000,
+        "sourceKi": null
       },
       {
         "id": "ultra-ego-escalado",
@@ -68718,7 +70594,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Colapso físico / agotamiento muscular total.",
         "counterplay": "Daño masivo súbito tipo 'one-shot' o acumulada más allá del límite antes de que consolide el escalado.",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "14x",
+        "apexKi": 352800000000000,
+        "burstKi": 476280000000000,
+        "durabilityKi": 352800000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -69065,7 +70946,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 105000000000,
+        "burstKi": 147000000000,
+        "durabilityKi": 105000000000,
+        "sourceKi": null
       },
       {
         "id": "vegetto-ssj-dbs",
@@ -69085,7 +70970,12 @@ export const INITIAL_CHARACTERS = [
           "Combo Relámpago Divino"
         ],
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 5250000000000,
+        "burstKi": 7087500000000,
+        "durabilityKi": 5250000000000,
+        "sourceKi": null
       },
       {
         "id": "vegetto-blue",
@@ -69108,7 +70998,12 @@ export const INITIAL_CHARACTERS = [
           "Final Kamehameha"
         ],
         "tier": "2-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "7700x",
+        "apexKi": 808500000000000,
+        "burstKi": 1091475000000000,
+        "durabilityKi": 808500000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -69454,7 +71349,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Manipulación de las reglas divinas, trampas dimensionales que desafíen el Ultra Instinto pasivo.",
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 52500000000000,
+        "burstKi": 73500000000000,
+        "durabilityKi": 52500000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -69778,7 +71678,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "3-A",
         "stats": "Inmortalidad absoluta otorgada por las Super Esferas del Dragón.",
         "tierExact": "3-A",
-        "category": "base"
+        "category": "base",
+        "apexKi": 59745000000,
+        "burstKi": 89617500000,
+        "durabilityKi": 59745000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "zamasu-merged",
@@ -69787,7 +71692,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 25,
         "tier": "Low 2-C",
         "stats": "Unión de Zamasu y Goku Black con el Anillo de Luz de la Justicia.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "12x",
+        "apexKi": 716940000000,
+        "burstKi": 967869000000,
+        "durabilityKi": 716940000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -70104,7 +72014,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "1-C",
         "stats": "Forma Base canónica de Zeno-Sama (Gran Zeno / Rey de Reyes) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 873600000000000000000,
+        "burstKi": 1.22304e+21,
+        "durabilityKi": 873600000000000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -70449,7 +72364,11 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Recarga lenta entre disparos elementales pesados.",
         "exitCondition": "Desarme o agotamiento de munición mágica.",
         "counterplay": "Reflejar proyectiles, esquivar con velocidad FTL+, destruir sus blasters.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2625000,
+        "burstKi": 3675000,
+        "durabilityKi": 2625000,
+        "sourceKi": 2500000
       }
     ],
     "feats": [
@@ -70790,7 +72709,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 577500000,
+        "burstKi": 808500000,
+        "durabilityKi": 577500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -71122,7 +73046,11 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Pierde consistencia si es separado del lodo primordial.",
         "exitCondition": "Evaporación total.",
         "counterplay": "Secado ambiental, calor radiante, Ki de amplio espectro.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2929500,
+        "burstKi": 4101300,
+        "durabilityKi": 2929500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -71439,7 +73367,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 359100000,
+        "burstKi": 502740000,
+        "durabilityKi": 359100000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -71794,7 +73726,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 289800000,
+        "burstKi": 405720000,
+        "durabilityKi": 289800000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -72124,7 +74060,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 11550000,
+        "burstKi": 16170000,
+        "durabilityKi": 11550000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -72477,7 +74418,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
         "tier": "7-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 7739,
+        "burstKi": 10835,
+        "durabilityKi": 7739,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "panzy-jetpack-overdrive",
@@ -72486,7 +74432,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1.6,
         "staminaDrain": 4,
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.6x",
+        "apexKi": 12382,
+        "burstKi": 16716,
+        "durabilityKi": 12382,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -72878,7 +74829,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 244,
+        "burstKi": 342,
+        "durabilityKi": 244,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "rey-gomah-tercer-ojo",
@@ -72888,7 +74844,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 6,
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.5x",
+        "apexKi": 854,
+        "burstKi": 1153,
+        "durabilityKi": 854,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -73237,7 +75198,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 138600000,
+        "burstKi": 207900000,
+        "durabilityKi": 138600000,
+        "sourceKi": null
       },
       {
         "id": "ssj1-adulto-daima",
@@ -73246,7 +75211,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "4-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 6930000000,
+        "burstKi": 9355500000,
+        "durabilityKi": 6930000000,
+        "sourceKi": null
       },
       {
         "id": "ssj2-adulto-daima",
@@ -73255,7 +75225,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "3-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 13860000000,
+        "burstKi": 18711000000,
+        "durabilityKi": 13860000000,
+        "sourceKi": null
       },
       {
         "id": "ssj3-adulto-daima",
@@ -73264,7 +75239,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 400,
         "tier": "3-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 55440000000,
+        "burstKi": 74844000000,
+        "durabilityKi": 55440000000,
+        "sourceKi": null
       },
       {
         "id": "ssj4-adulto-daima",
@@ -73273,7 +75253,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 4000,
         "tier": "4-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4000x",
+        "apexKi": 554400000000,
+        "burstKi": 748440000000,
+        "durabilityKi": 554400000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -73679,7 +75664,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1050000,
+        "burstKi": 1575000,
+        "durabilityKi": 1050000,
+        "sourceKi": null
       },
       {
         "id": "ssj1-daima",
@@ -73710,7 +75699,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Pérdida del enfoque emocional o gasto masivo de Ki.",
         "counterplay": "Combate prolongado para agotar el mantenimiento del aura SSJ1.",
         "canonStatus": "source_backed",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "50x",
+        "apexKi": 52500000,
+        "burstKi": 78750000,
+        "durabilityKi": 52500000,
+        "sourceKi": null
       },
       {
         "id": "ssj2-daima",
@@ -73740,7 +75734,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Calma mental o desmayo por agotamiento.",
         "counterplay": "Forzar la salida del estado mediante provocación o descargas masivas.",
         "canonStatus": "source_backed",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "100x",
+        "apexKi": 105000000,
+        "burstKi": 157500000,
+        "durabilityKi": 105000000,
+        "sourceKi": null
       },
       {
         "id": "ssj3-daima",
@@ -73771,7 +75770,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Agotamiento total de la stamina o cancelación voluntaria.",
         "counterplay": "Evasión y espera; el oponente se apagará solo si el combate se alarga.",
         "canonStatus": "source_backed",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "400x",
+        "apexKi": 420000000,
+        "burstKi": 630000000,
+        "durabilityKi": 420000000,
+        "sourceKi": null
       },
       {
         "id": "ssj4-daima-mini",
@@ -73802,7 +75806,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Pérdida del foco primigenio o intervención externa.",
         "counterplay": "Ataques que rompan el lazo emocional con la fase primigenia.",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4000x",
+        "apexKi": 4200000000,
+        "burstKi": 5670000000,
+        "durabilityKi": 4200000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -74152,7 +76161,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1050000,
+        "burstKi": 1470000,
+        "durabilityKi": 1050000,
+        "sourceKi": null
       },
       {
         "id": "goku-mini-ssj",
@@ -74166,7 +76179,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Mismo consumo que SSJ clásico.",
         "drawbacks": "Aún es pequeño físicamente, pero el aura compensa.",
         "exitCondition": "Fatiga.",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "50x",
+        "apexKi": 52500000,
+        "burstKi": 73500000,
+        "durabilityKi": 52500000,
+        "sourceKi": null
       },
       {
         "id": "goku-mini-ssj1",
@@ -74189,7 +76207,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": [],
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 52500000,
+        "burstKi": 70875000,
+        "durabilityKi": 52500000,
+        "sourceKi": null
       },
       {
         "id": "goku-mini-ssj2-daima",
@@ -74211,7 +76234,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": [],
         "canonStatus": "apex_custom",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 105000000,
+        "burstKi": 141750000,
+        "durabilityKi": 105000000,
+        "sourceKi": null
       },
       {
         "id": "goku-mini-ssj2",
@@ -74225,7 +76253,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "No confirmado en canon Daima; limitado a usos de crossover.",
         "drawbacks": "Estrés muscular en cuerpo infantil.",
         "exitCondition": "Cancelación.",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "100x",
+        "apexKi": 105000000,
+        "burstKi": 147000000,
+        "durabilityKi": 105000000,
+        "sourceKi": null
       },
       {
         "id": "goku-mini-ssj3-daima",
@@ -74249,7 +76282,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "apex_custom",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 420000000,
+        "burstKi": 567000000,
+        "durabilityKi": 420000000,
+        "sourceKi": null
       },
       {
         "id": "goku-mini-ssj3",
@@ -74262,7 +76300,12 @@ export const INITIAL_CHARACTERS = [
         "activationCondition": "Apex cross-verso (no canon Daima).",
         "limitations": "Drenaje extremo en cuerpo pequeño.",
         "exitCondition": "Agotamiento.",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "400x",
+        "apexKi": 420000000,
+        "burstKi": 588000000,
+        "durabilityKi": 420000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -74611,7 +76654,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 634200000,
+        "burstKi": 887880000,
+        "durabilityKi": 634200000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -74922,7 +76969,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 639450000,
+        "burstKi": 895230000,
+        "durabilityKi": 639450000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -75252,7 +77303,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1291500000,
+        "burstKi": 1808100000,
+        "durabilityKi": 1291500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -75605,16 +77660,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Tamagami Número 1 previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1113000000,
+        "burstKi": 1558200000,
+        "durabilityKi": 1113000000,
+        "sourceKi": 1060000000,
+        "multiplier": "1x"
       },
       {
         "id": "tamagami-1",
         "name": "Tamagami #1",
         "stats": "Nivel Sistema Solar. Gigante de armadura azul/dorada, casco con cuernos y espada ceremonial.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1060000000,
+        "sourceKi": 1060000000,
+        "burstKi": 1431000000,
+        "durabilityKi": 1060000000
       }
     ],
     "feats": [
@@ -75991,7 +78056,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1323000000,
+        "burstKi": 1984500000,
+        "durabilityKi": 1323000000,
+        "sourceKi": null
       },
       {
         "id": "ssj1-adulto-vegeta-daima",
@@ -76000,7 +78069,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "4-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 66150000000,
+        "burstKi": 89302500000,
+        "durabilityKi": 66150000000,
+        "sourceKi": null
       },
       {
         "id": "ssj2-adulto-vegeta-daima",
@@ -76009,7 +78083,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "3-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 132300000000,
+        "burstKi": 178605000000,
+        "durabilityKi": 132300000000,
+        "sourceKi": null
       },
       {
         "id": "ssj3-adulto-vegeta-daima",
@@ -76018,7 +78097,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 400,
         "tier": "3-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 529200000000,
+        "burstKi": 714420000000,
+        "durabilityKi": 529200000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -76418,7 +78502,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "4-B",
         "tierExact": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 945000,
+        "burstKi": 1417500,
+        "durabilityKi": 945000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ssj1-vegeta-daima",
@@ -76428,7 +78517,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 4,
         "tier": "4-B",
         "tierExact": "4-B",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "50x",
+        "apexKi": 47250000,
+        "burstKi": 70875000,
+        "durabilityKi": 47250000,
+        "sourceKi": null
       },
       {
         "id": "ssj2-vegeta-daima",
@@ -76438,7 +78532,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 7,
         "tier": "4-A",
         "tierExact": "4-A",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "100x",
+        "apexKi": 94500000,
+        "burstKi": 141750000,
+        "durabilityKi": 94500000,
+        "sourceKi": null
       },
       {
         "id": "ssj3-vegeta-daima",
@@ -76448,7 +78547,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "3-C",
         "tierExact": "3-C",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "400x",
+        "apexKi": 378000000,
+        "burstKi": 567000000,
+        "durabilityKi": 378000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -76822,16 +78926,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7843500000,
+        "burstKi": 10980900000,
+        "durabilityKi": 7843500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "baby-mutante",
         "name": "Baby Adolescente",
         "stats": "Nivel Galaxia. Tras absorber Ki, se vuelve más alto y arrogante.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 10588725000,
+        "burstKi": 14294778750,
+        "durabilityKi": 10588725000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -77131,7 +79245,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 515,
+        "burstKi": 721,
+        "durabilityKi": 515,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -77413,7 +79532,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 46200000000,
+        "burstKi": 64680000000,
+        "durabilityKi": 46200000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -77701,7 +79824,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1239000000,
+        "burstKi": 1734600000,
+        "durabilityKi": 1239000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -78003,7 +80131,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 65415000000,
+        "burstKi": 104664000000,
+        "durabilityKi": 65415000000,
+        "sourceKi": null
       },
       {
         "id": "metal-maximo",
@@ -78013,7 +80145,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 8,
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1500x",
+        "apexKi": 98122500000000,
+        "burstKi": 132465375000000,
+        "durabilityKi": 98122500000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -78352,7 +80489,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Fusión Metamor de Goku y Vegeta GT.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 82635000000,
+        "burstKi": 115689000000,
+        "durabilityKi": 82635000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gogeta-ssj1",
@@ -78361,7 +80503,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "Low 2-C",
         "stats": "Multiplicador x50.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 4131750000000,
+        "burstKi": 5577862500000,
+        "durabilityKi": 4131750000000,
+        "sourceKi": null
       },
       {
         "id": "gogeta-ssj4",
@@ -78370,7 +80517,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 45,
         "tier": "2-C",
         "stats": "Cúspide de GT con Big Bang Kamehameha x100 que humilla a Omega Shenron.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4000x",
+        "apexKi": 330540000000000,
+        "burstKi": 446229000000000,
+        "durabilityKi": 330540000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -78668,7 +80820,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1038450000,
+        "burstKi": 1453830000,
+        "durabilityKi": 1038450000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -78932,7 +81089,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 41895000000,
+        "burstKi": 58653000000,
+        "durabilityKi": 41895000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -79240,7 +81401,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica estándar.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 48930000000,
+        "burstKi": 73395000000,
+        "durabilityKi": 48930000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "nuova-true",
@@ -79266,7 +81432,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques contundentes que aprovechen la reducción de la defensa al perder la cáscara.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.2x",
+        "apexKi": 107646000000,
+        "burstKi": 145322100000,
+        "durabilityKi": 107646000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -79589,7 +81760,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 85470000000,
+        "burstKi": 119658000000,
+        "durabilityKi": 85470000000,
+        "sourceKi": null
       },
       {
         "id": "omega-karma-ball",
@@ -79614,7 +81789,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Contraataque positivo absoluto (Spirit Bomb universal) absorbiendo la corrupción.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.8x",
+        "apexKi": 239316000000,
+        "burstKi": 323076600000,
+        "durabilityKi": 239316000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -79916,7 +82096,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 138600000,
+        "burstKi": 194040000,
+        "durabilityKi": 138600000,
+        "sourceKi": null
       },
       {
         "id": "pan-gt-fury-rage",
@@ -79944,7 +82128,11 @@ export const INITIAL_CHARACTERS = [
         "tier": "Low 4-C",
         "tierExact": "Low 4-C",
         "multiplier": "1.5x",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 207900000,
+        "burstKi": 280665000,
+        "durabilityKi": 207900000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -80294,7 +82482,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 588000000,
+        "burstKi": 882000000,
+        "durabilityKi": 588000000,
+        "sourceKi": null
       },
       {
         "id": "goku-gt-ssj1",
@@ -80316,7 +82508,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": [],
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 29400000000,
+        "burstKi": 39690000000,
+        "durabilityKi": 29400000000,
+        "sourceKi": null
       },
       {
         "id": "goku-gt-ssj2",
@@ -80338,7 +82535,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": [],
         "canonStatus": "source_backed",
         "tier": "4-A+",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 58800000000,
+        "burstKi": 79380000000,
+        "durabilityKi": 58800000000,
+        "sourceKi": null
       },
       {
         "id": "goku-gt-ssj3",
@@ -80362,7 +82564,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 235200000000,
+        "burstKi": 317520000000,
+        "durabilityKi": 235200000000,
+        "sourceKi": null
       },
       {
         "id": "son-goku-saga-gt-dragon-ball-gt-281-ssj3-std",
@@ -80375,7 +82582,12 @@ export const INITIAL_CHARACTERS = [
         "activationCondition": "Despertar interno.",
         "limitations": "Drenaje ENORME.",
         "exitCondition": "Agotamiento.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 235200000000,
+        "burstKi": 317520000000,
+        "durabilityKi": 235200000000,
+        "sourceKi": null
       },
       {
         "id": "goku-gt-oozaru-golden",
@@ -80389,7 +82601,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Pérdida de control理智; destruye sin distinguir.",
         "drawbacks": "Bestia salvaje, ataca aliados.",
         "exitCondition": "Canalización interna para recuperar理智.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "500x",
+        "apexKi": 294000000000,
+        "burstKi": 396900000000,
+        "durabilityKi": 294000000000,
+        "sourceKi": null
       },
       {
         "id": "goku-gt-ssj4",
@@ -80419,7 +82636,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Si se quita el control vuelve a Ohzaru.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4000x",
+        "apexKi": 2352000000000,
+        "burstKi": 3175200000000,
+        "durabilityKi": 2352000000000,
+        "sourceKi": null
       },
       {
         "id": "goku-gt-ssj4-fullpower",
@@ -80444,7 +82666,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "3-A+",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4000x",
+        "apexKi": 2352000000000,
+        "burstKi": 3175200000000,
+        "durabilityKi": 2352000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -80833,16 +83060,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Super 17 previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 82110000000,
+        "burstKi": 114954000000,
+        "durabilityKi": 82110000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "super-17",
         "name": "Super Androide 17",
         "stats": "Nivel Universal. Altísimo, cabello largo negro suelto, mirada de Androide vacía.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 110848500000,
+        "burstKi": 149645475000,
+        "durabilityKi": 110848500000,
+        "sourceKi": null
       },
       {
         "id": "super-17-shocking-death-ball",
@@ -80867,7 +83104,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Teletransportarse detrás del usuario en el frame previo a la detonación; contra con Dragon Fist físico.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 205275000000,
+        "burstKi": 277121250000,
+        "durabilityKi": 205275000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -81207,25 +83449,39 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 24360000000,
+        "burstKi": 34104000000,
+        "durabilityKi": 24360000000,
+        "sourceKi": null
       },
       {
         "id": "baby-vegeta-super1",
         "name": "Super Baby 1",
         "stats": "Nivel Galáctico.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 32886000000,
+        "burstKi": 44396100000,
+        "durabilityKi": 32886000000,
+        "sourceKi": null
       },
       {
         "id": "baby-vegeta-super2",
         "name": "Super Baby 2",
         "stats": "Nivel Multi-Galáctico.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 32886000000,
+        "burstKi": 44396100000,
+        "durabilityKi": 32886000000,
+        "sourceKi": null
       },
       {
         "id": "baby-vegeta-oozaru",
@@ -81234,7 +83490,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 10,
         "tier": "3-A",
         "staminaDrain": 18,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 243600000000,
+        "burstKi": 328860000000,
+        "durabilityKi": 243600000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -81552,16 +83813,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 71505000000,
+        "burstKi": 100107000000,
+        "durabilityKi": 71505000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "omega-shenron",
         "name": "Omega Shenron",
         "stats": "Tras tragar las 6 esferas restantes. Todas sus estadísticas aumentan exponencialmente a Tier 2-C y asimila los elementos de los dragones menores.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 96531750000,
+        "burstKi": 130317862500,
+        "durabilityKi": 96531750000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -81822,7 +84093,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 577500000,
+        "burstKi": 808500000,
+        "durabilityKi": 577500000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-gt-ssj1",
@@ -81847,7 +84122,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar y esperar a que el SSJ4 se active.",
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 28875000000,
+        "burstKi": 38981250000,
+        "durabilityKi": 28875000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-gt-ssj2",
@@ -81874,7 +84154,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Cualquiera con SSJ3 o SSJ4.",
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 57750000000,
+        "burstKi": 77962500000,
+        "durabilityKi": 57750000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-saga-gt-dragon-ball-gt-851-ssj3-std",
@@ -81899,7 +84184,12 @@ export const INITIAL_CHARACTERS = [
           "Daño Extremo a Corto Plazo"
         ],
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 231000000000,
+        "burstKi": 311850000000,
+        "durabilityKi": 231000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-gt-ssj4",
@@ -81926,7 +84216,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Destrucción de la máquina de Rayos Blutz.",
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4000x",
+        "apexKi": 2310000000000,
+        "burstKi": 3118500000000,
+        "durabilityKi": 2310000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -82356,7 +84651,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 112350,
+        "burstKi": 168525,
+        "durabilityKi": 112350,
+        "sourceKi": null
       },
       {
         "id": "super-13",
@@ -82391,7 +84690,12 @@ export const INITIAL_CHARACTERS = [
         "formIndex": 1,
         "verification": "Transformación canónica posterior.",
         "tierExact": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "19x",
+        "apexKi": 2134650,
+        "burstKi": 2881778,
+        "durabilityKi": 2134650,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -82784,7 +85088,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 140700000,
+        "burstKi": 211050000,
+        "durabilityKi": 140700000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -83148,7 +85457,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 165900000,
+        "burstKi": 232260000,
+        "durabilityKi": 165900000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -83494,7 +85808,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 15572,
+        "burstKi": 21801,
+        "durabilityKi": 15572,
+        "sourceKi": null
       },
       {
         "id": "base-aquatic-overdrive",
@@ -83522,7 +85840,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques de energía térmica/ki que evaporen el agua; lucha en tierra antes de la inundación.",
         "canonStatus": "apex_custom",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 23358,
+        "burstKi": 31533,
+        "durabilityKi": 23358,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -83855,7 +86178,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 186900000,
+        "burstKi": 280350000,
+        "durabilityKi": 186900000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -84191,7 +86518,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Vulnerable a agua salada. Sin Gigantificación, su AP es Sistema Solar Menor bajo.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 169050000,
+        "burstKi": 236670000,
+        "durabilityKi": 169050000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "biobroly-gigante",
@@ -84210,7 +86542,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Inundación con agua de mar; congelación criogénica; evaporación con ki de calor extremo.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 422625000,
+        "burstKi": 570543750,
+        "durabilityKi": 422625000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -84543,13 +86880,18 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1001700000,
+        "burstKi": 1402380000,
+        "durabilityKi": 1001700000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "bojack-full",
         "name": "Forma Máxima (Full Power)",
         "stats": "Nivel Sistema Solar (4-B). Piel verde lima, pelo rojo alzado, musculatura hipertrofiada, camisa destrozada y aura de Ki oscuro verde.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 8,
         "tierExact": "4-B",
@@ -84575,7 +86917,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Voluntaria (salir del estado) o por daño crítico interno.",
         "counterplay": "Mantener distancia y hostigar con ataques perforantes de rango 4-A antes del cierre.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1352295000,
+        "burstKi": 1825598250,
+        "durabilityKi": 1352295000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -84952,7 +87299,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "4-C",
         "stats": "Contenido mentalmente por el dispositivo de Paragus.",
         "tierExact": "4-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 286650000,
+        "burstKi": 458640000,
+        "durabilityKi": 286650000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "broly-ssj-type-a",
@@ -84961,7 +87313,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "High 5-A",
         "stats": "Aura morada y cabello azul por la interferencia de la tiara.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 14332500000,
+        "burstKi": 19348875000,
+        "durabilityKi": 14332500000,
+        "sourceKi": null
       },
       {
         "id": "broly-lssj",
@@ -84970,7 +87327,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "4-B",
         "stats": "El Super Saiyajin Legendario con ki infinito desbordante y destrucción de la Galaxia del Sur.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2000x",
+        "apexKi": 573300000000,
+        "burstKi": 773955000000,
+        "durabilityKi": 573300000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -85315,7 +87677,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 211050000,
+        "burstKi": 295470000,
+        "durabilityKi": 211050000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -85643,12 +88009,17 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-B",
         "stats": "Forma Base canónica de Caterpy previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 234990,
+        "burstKi": 328986,
+        "durabilityKi": 234990,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "capullo-hibernacion",
         "name": "Capullo de Metamorfosis (1,200 Años)",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 10,
         "stats": "Forma defensiva absoluta. Capullo impenetrable con regeneración interna durante 12 siglos.",
         "activationCondition": "Activación voluntaria mediante Hilos de Seda del Capullo.",
@@ -85668,7 +88039,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ignorar la crisálida; el rival continúa el torneo sin Caterpy.",
         "canonStatus": "source_backed",
         "tier": "5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 317237,
+        "burstKi": 428270,
+        "durabilityKi": 317237,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -85977,7 +88353,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 278250000,
+        "burstKi": 389550000,
+        "durabilityKi": 278250000,
+        "sourceKi": null
       },
       {
         "id": "cooler-forma-final",
@@ -86007,7 +88387,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Agotamiento, destrucción solar directa o voluntad propia",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "20x",
+        "apexKi": 5565000000,
+        "burstKi": 7512750000,
+        "durabilityKi": 5565000000,
+        "sourceKi": null
       },
       {
         "formIndex": 0,
@@ -86039,7 +88424,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Exposición a fuente estelar directa.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "20x",
+        "apexKi": 5565000000,
+        "burstKi": 7512750000,
+        "durabilityKi": 5565000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -86364,13 +88754,18 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A Físico",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 604,
+        "burstKi": 846,
+        "durabilityKi": 604,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "dr-lychee-base",
         "name": "Modo Último Tsufuru Vivo",
         "stats": "Científico anciano de piel azulada, barba blanca larga, casco con visor rojo y túnica tsufuru. Sin la supercomputadora es apenas un anciano físico (5-C bajo); depende totalmente del soporte Hatchiyack.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "activationCondition": "Existencia pasiva por defecto.",
         "limitations": "Vulnerable a ataques físicos directos sin la barrera de Hatchiyack.",
@@ -86385,7 +88780,12 @@ export const INITIAL_CHARACTERS = [
           "Gas Destron"
         ],
         "tier": "9-A Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 815,
+        "burstKi": 1100,
+        "durabilityKi": 815,
+        "sourceKi": null
       },
       {
         "id": "dr-lychee-fantasma",
@@ -86411,7 +88811,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Sabotaje tecnológico del nodo central, ataques en red a la base de datos.",
         "canonStatus": "source_backed",
         "tier": "9-A Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1208,
+        "burstKi": 1631,
+        "durabilityKi": 1208,
+        "sourceKi": null
       },
       {
         "id": "dr-lychee-odin-maximus",
@@ -86428,7 +88833,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Destrucción de Hatchiyack antes de completar la activación.",
         "canonStatus": "source_backed",
         "tier": "9-A Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 1510,
+        "burstKi": 2039,
+        "durabilityKi": 1510,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -86734,16 +89144,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-B",
         "stats": "Forma Base canónica de Dr. Wheelo previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 208320,
+        "burstKi": 291648,
+        "durabilityKi": 208320,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "wheelo-robot",
         "name": "Fortaleza Robótica",
         "stats": "Nivel Planeta. Mech colosal blanco con cúpula de cristal y cerebro flotante.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 281232,
+        "burstKi": 379663,
+        "durabilityKi": 281232,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -87084,26 +89504,35 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 348390,
+        "burstKi": 487746,
+        "durabilityKi": 348390,
+        "sourceKi": null
       },
       {
         "id": "garlic-full",
         "name": "Forma Super Gigante",
         "stats": "Nivel Planeta. Músculos hiper-inflados, colmillos gigantes, aura oscura.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 470327,
+        "burstKi": 634941,
+        "durabilityKi": 470327,
+        "sourceKi": null
       },
       {
         "id": "garlic-jr-full",
         "name": "Garlic Jr. (Forma Super Gigante)",
         "stats": "Nivel Planeta. Músculos hiper-inflados, colmillos gigantes, aura oscura. Incrementa su fuerza física drásticamente.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "5-B",
         "tierExact": "5-B",
         "tierRank": "5-B",
-        "multiplier": "1x",
+        "multiplier": "1.35x",
         "activationCondition": "Activada por enfado o deseo de intimidar al rival.",
         "staminaDrain": 5,
         "grantedTags": [
@@ -87124,7 +89553,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Derrota severa o cambio a Forma Base.",
         "counterplay": "Empuje masivo hacia atrás para aprovechar la apertura del portal dimensional.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 470327,
+        "burstKi": 634941,
+        "durabilityKi": 470327,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -87434,7 +89867,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3759000000000,
+        "burstKi": 5262600000000,
+        "durabilityKi": 3759000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -87772,7 +90210,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Sin acumulación de daño recibido, su Revenger Cannon no alcanza su pico.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 867300000,
+        "burstKi": 1214220000,
+        "durabilityKi": 867300000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hatchiyack-definitivo",
@@ -87789,7 +90232,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Durante la carga del Revenger Cannon (15s), defensa cae a cero y queda inmóvil.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 1300950000,
+        "burstKi": 1756282500,
+        "durabilityKi": 1300950000,
+        "sourceKi": null
       },
       {
         "id": "hatchiyack-super",
@@ -87808,7 +90256,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques en los 15 segundos de carga del Cannon; dispersión de Saiyans del campo para reducir su buff.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1734600000,
+        "burstKi": 2341710000,
+        "durabilityKi": 1734600000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -88132,25 +90585,40 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Hirudegarn previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2163000000,
+        "burstKi": 3028200000,
+        "durabilityKi": 2163000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hirudegarn-mitad",
         "name": "Forma Mitad",
         "stats": "Nivel Sistema Solar. Esqueleto con insecto.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2920050000,
+        "burstKi": 3942067500,
+        "durabilityKi": 2920050000,
+        "sourceKi": null
       },
       {
         "id": "hirudegarn-perfecto",
         "name": "Bestia Alada",
         "stats": "Nivel Multi-Sistema Solar. Kaiju dorado/gris, con alas y caparazón demoníaco.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2920050000,
+        "burstKi": 3942067500,
+        "durabilityKi": 2920050000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -88477,7 +90945,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica estándar.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 157500000,
+        "burstKi": 252000000,
+        "durabilityKi": 157500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "kogu-transformado",
@@ -88510,7 +90983,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Atacar sus articulaciones hipertrofiadas con cortes de Ki a alta velocidad antes de que complete la transformación.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 283500000,
+        "burstKi": 382725000,
+        "durabilityKi": 283500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -88871,7 +91349,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica de Lord Slug previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 183750000,
+        "burstKi": 275625000,
+        "durabilityKi": 183750000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "slug-gigante",
@@ -88907,7 +91390,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Emplear silbatos tácticos o técnicas sónicas concentradas.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 367500000,
+        "burstKi": 496125000,
+        "durabilityKi": 367500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -89243,7 +91731,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Ninguna, es el estado natural.",
         "counterplay": "Esquivar los ataques lineales y castigar los flancos con velocidad superior.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 10175,
+        "burstKi": 14245,
+        "durabilityKi": 10175,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -89558,7 +92050,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 376950000,
+        "burstKi": 527730000,
+        "durabilityKi": 376950000,
+        "sourceKi": null
       },
       {
         "id": "meta-cooler-clone",
@@ -89588,7 +92084,12 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "drawbacks": [],
         "counterplay": "Ataques de saturación de red o de área.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 452340000,
+        "burstKi": 610659000,
+        "durabilityKi": 452340000,
+        "sourceKi": null
       },
       {
         "id": "cooler-core",
@@ -89621,7 +92122,12 @@ export const INITIAL_CHARACTERS = [
         "formIndex": 1,
         "verification": "Transformación canónica posterior.",
         "tierExact": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 753900000,
+        "burstKi": 1017765000,
+        "durabilityKi": 753900000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -89957,7 +92463,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 5702,
+        "burstKi": 7983,
+        "durabilityKi": 5702,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -90274,7 +92784,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 264075,
+        "burstKi": 369705,
+        "durabilityKi": 264075,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -90595,7 +93109,11 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1x",
         "staminaDrain": 0,
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 12789,
+        "burstKi": 17905,
+        "durabilityKi": 12789,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -90933,7 +93451,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 62076,
+        "burstKi": 86906,
+        "durabilityKi": 62076,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -91330,21 +93852,31 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Atacar antes de que se quite la ropa para mantenerlo en estado mermado.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1239000000,
+        "burstKi": 1858500000,
+        "durabilityKi": 1239000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "pikkon-max",
         "name": "Sin Pesas",
         "stats": "Nivel Sistema Solar. Cabeza verde descubierta, velocidad extrema.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1672650000,
+        "burstKi": 2258077500,
+        "durabilityKi": 1672650000,
+        "sourceKi": null
       },
       {
         "id": "pikkon-sin-pesas",
         "name": "Sin Pesas (Velocidad Máxima)",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "stats": "Nivel Sistema Solar sin restricción. Cabeza verde descubierta, velocidad y reflejos al máximo. Equiparable a Goku SSJ.",
         "activationCondition": "Retirada de la túnica y sombrero pesados.",
@@ -91367,7 +93899,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques de área que no requieran esquiva individual.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1672650000,
+        "burstKi": 2258077500,
+        "durabilityKi": 1672650000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -91656,7 +94193,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 276360,
+        "burstKi": 386904,
+        "durabilityKi": 276360,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -91874,7 +94415,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 25725000000,
+        "burstKi": 41160000000,
+        "durabilityKi": 25725000000,
+        "sourceKi": null
       },
       {
         "id": "goku-janemba-ssj2",
@@ -91883,7 +94428,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "Low 2-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 2572500000000,
+        "burstKi": 3472875000000,
+        "durabilityKi": 2572500000000,
+        "sourceKi": null
       },
       {
         "id": "goku-janemba-ssj3",
@@ -91892,7 +94442,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 400,
         "tier": "Low 2-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 10290000000000,
+        "burstKi": 13891500000000,
+        "durabilityKi": 10290000000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -92313,7 +94868,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2992500,
+        "burstKi": 4189500,
+        "durabilityKi": 2992500,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -92622,7 +95182,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 33915000000,
+        "burstKi": 47481000000,
+        "durabilityKi": 33915000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -92965,7 +95529,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3423,
+        "burstKi": 4792,
+        "durabilityKi": 3423,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -93304,7 +95872,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "Low 2-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 60480000000000,
+        "burstKi": 90720000000000,
+        "durabilityKi": 60480000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -93588,7 +96160,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2079000,
+        "burstKi": 2910600,
+        "durabilityKi": 2079000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -93900,7 +96476,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 192150000,
+        "burstKi": 288225000,
+        "durabilityKi": 192150000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -94209,7 +96790,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 320355,
+        "burstKi": 448497,
+        "durabilityKi": 320355,
+        "sourceKi": null
       },
       {
         "id": "bardock-zenkai-desatado",
@@ -94230,7 +96815,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Cuerpo empujado al borde del fallo biológico.",
         "canonStatus": "source_backed",
         "tier": "5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4x",
+        "apexKi": 1281420,
+        "burstKi": 1729917,
+        "durabilityKi": 1281420,
+        "sourceKi": null
       },
       {
         "id": "bardock-oozaru",
@@ -94256,7 +96846,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Cortar la cola con un ataque cortante de alta precisión antes de que se estabilice.",
         "canonStatus": "source_backed",
         "tier": "High 5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 3203550,
+        "burstKi": 4324793,
+        "durabilityKi": 3203550,
+        "sourceKi": null
       },
       {
         "id": "bardock-ssj",
@@ -94280,7 +96875,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Rigidez emocional post-transformación.",
         "canonStatus": "source_backed",
         "tier": "High 5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 16017750,
+        "burstKi": 21623963,
+        "durabilityKi": 16017750,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -94584,7 +97184,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "9-A Físico",
-        "category": "base"
+        "category": "base",
+        "apexKi": 261,
+        "burstKi": 418,
+        "durabilityKi": 261,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "dende-kami",
@@ -94599,7 +97204,12 @@ export const INITIAL_CHARACTERS = [
           "Su vida está atada a la Tierra (en menor medida que Kami original)"
         ],
         "tier": "9-A Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 310,
+        "sourceKi": 310,
+        "burstKi": 419,
+        "durabilityKi": 310
       },
       {
         "id": "dende_kami",
@@ -94626,7 +97236,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques directos rápidos o destrucción planetaria.",
         "canonStatus": "source_backed",
         "tier": "9-A Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 310,
+        "sourceKi": 310,
+        "burstKi": 419,
+        "durabilityKi": 310
       }
     ],
     "feats": [
@@ -94999,7 +97614,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 326,
+        "burstKi": 456,
+        "durabilityKi": 326,
+        "sourceKi": 310
       }
     ],
     "feats": [
@@ -95300,17 +97919,22 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "5-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 189,
+        "burstKi": 265,
+        "durabilityKi": 189,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "roshi-max",
         "name": "Maestro Roshi (Max Power)",
         "stats": "Nivel Lunar (5-C). Músculos hiper-inflados, rompe su camiseta. Uso para Kamehamehas destructivos. El multiplicador APEX-Ki es de x2.0 sobre su estado base normal.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "tier": "7-B",
         "tierExact": "5-C",
-        "multiplier": "2x",
+        "multiplier": "1.35x",
         "activationCondition": "Inyección de adrenalina, voluntad inquebrantable o uso de esteroides naturales en su cuerpo para inflar los músculos.",
         "grantedTags": [
           "Muscular_Overdrive"
@@ -95326,7 +97950,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Agotamiento físico absoluto, colapso cardiovascular o desinflado muscular.",
         "counterplay": "Dejar que gaste su energía vital en la hipertrofia para que sufra el paro cardíaco.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 255,
+        "burstKi": 344,
+        "durabilityKi": 255,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -95690,7 +98318,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 273,
+        "burstKi": 382,
+        "durabilityKi": 273,
+        "sourceKi": 1040
       }
     ],
     "feats": [
@@ -96024,7 +98656,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "9-B",
         "stats": "Forma Base canónica de Mr. Satán (Hercule) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 192,
+        "burstKi": 269,
+        "durabilityKi": 192,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -96423,26 +99060,41 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Barridos de ki, shuriken de Destructo, presión de un solo combatiente de élite.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4557,
+        "burstKi": 7291,
+        "durabilityKi": 4557,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "soldado-raso",
         "name": "Recluta",
         "stats": "Nivel Lunar (Máximo). Varias razas alienígenas con armadura blanca y Scouters.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 6152,
+        "burstKi": 8305,
+        "durabilityKi": 6152,
+        "sourceKi": null
       },
       {
         "id": "recluta",
         "name": "Recluta Estándar",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "stats": "Nivel Lunar (Máximo). Varias razas alienígenas con armadura blanca y Scouters.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 6152,
+        "burstKi": 8305,
+        "durabilityKi": 6152,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -96859,7 +99511,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "N/A (estado base).",
         "counterplay": "Manipulación mental y engaño, abuso de su ingenuidad táctica.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1186500000,
+        "burstKi": 1661100000,
+        "durabilityKi": 1186500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -97170,7 +99826,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2027,
+        "burstKi": 2838,
+        "durabilityKi": 2027,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -97493,7 +100154,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Androide #16 (Reconstruido, Universo 12) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 591150000,
+        "burstKi": 945840000,
+        "durabilityKi": 591150000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -97817,7 +100483,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 191100000,
+        "burstKi": 267540000,
+        "durabilityKi": 191100000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -98084,7 +100755,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 204750000,
+        "burstKi": 286650000,
+        "durabilityKi": 204750000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -98406,7 +101082,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Androides #17 y #18 (Continuidad Universo 14, Sin Oposición) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 973350000,
+        "burstKi": 1557360000,
+        "durabilityKi": 973350000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -98793,7 +101474,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 182700000000000,
+        "burstKi": 274050000000000,
+        "durabilityKi": 182700000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gag_serious_mode",
@@ -98823,7 +101509,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Convencer al narrador (metafísicamente imposible para personajes internos).",
         "canonStatus": "apex_custom",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 328860000000000,
+        "burstKi": 443961000000000,
+        "durabilityKi": 328860000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -99159,7 +101850,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 49340,
+        "burstKi": 74010,
+        "durabilityKi": 49340,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -99438,7 +102134,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 19866,
+        "burstKi": 27812,
+        "durabilityKi": 19866,
+        "sourceKi": null
       },
       {
         "id": "ssj1-bardock-u3",
@@ -99471,7 +102171,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques absolutamente al azar sin patrón, ilusiones múltiples para saturar el future sight, ataques mentales que bloqueen la lectura temporal.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 993300,
+        "burstKi": 1340955,
+        "durabilityKi": 993300,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -99830,7 +102535,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 228900000,
+        "burstKi": 320460000,
+        "durabilityKi": 228900000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -100180,7 +102890,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 849450000,
+        "burstKi": 1359120000,
+        "durabilityKi": 849450000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -100564,12 +103279,16 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base / Estado Inicial",
-        "multiplier": "1.0x",
+        "multiplier": "1x",
         "tier": "Tier 3-B | Nivel Multi-Galáctico",
         "stats": "Nivel Multi-Galáctico. Su forma Legendaria en el contexto de DBM escala con combatientes de tier superior al Broly clásico de las películas Toei.",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 18900000000,
+        "burstKi": 28350000000,
+        "durabilityKi": 18900000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -100872,7 +103591,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 18900000000,
+        "burstKi": 30240000000,
+        "durabilityKi": 18900000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "legendario_apex_overload",
@@ -100908,7 +103632,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Sellado dimensional, Vacío Absoluto, o destrucción del núcleo de ki antes de la fase de sobrecarga.",
         "canonStatus": "apex_custom",
         "tier": "3-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "8x",
+        "apexKi": 151200000000,
+        "burstKi": 204120000000,
+        "durabilityKi": 151200000000,
+        "sourceKi": null
       },
       {
         "id": "super_saiyan_legendario",
@@ -100944,7 +103673,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques coordinados de múltiples guerreros Tier 3 o superior para disipar la energía.",
         "canonStatus": "source_backed",
         "tier": "3-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2000x",
+        "apexKi": 37800000000000,
+        "burstKi": 51030000000000,
+        "durabilityKi": 37800000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -101261,7 +103995,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 126000,
+        "burstKi": 189000,
+        "durabilityKi": 126000,
+        "sourceKi": 120000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -101559,7 +104298,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 17661,
+        "burstKi": 24725,
+        "durabilityKi": 17661,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -101846,7 +104590,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 24539,
+        "burstKi": 34355,
+        "durabilityKi": 24539,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -102119,16 +104868,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 28245,
+        "burstKi": 39543,
+        "durabilityKi": 28245,
+        "sourceKi": null
       },
       {
         "id": "super-perfect-dbm",
         "name": "Cell Hiper Perfecto (Zenkais Acumulados)",
         "stats": "Tier 3-C | Nivel Galáctico. Rayos eléctricos continuos y núcleo móvil.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "3-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 38131,
+        "burstKi": 51477,
+        "durabilityKi": 38131,
+        "sourceKi": null
       },
       {
         "id": "apex-cell-u17",
@@ -102137,7 +104895,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 2,
         "tier": "3-C",
         "staminaDrain": 2,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 56490,
+        "burstKi": 76262,
+        "durabilityKi": 56490,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -102542,7 +105305,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-C",
         "stats": "Forma Base canónica de Cell Jr. (Compañero de Torneo, Universo 17) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 10258500000,
+        "burstKi": 16413600000,
+        "durabilityKi": 10258500000,
+        "sourceKi": 1700000000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -102910,12 +105678,16 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base / Estado Inicial",
-        "multiplier": "1.0x",
+        "multiplier": "1x",
         "tier": "Tier 4-B | Nivel Sistema Solar",
         "stats": "Nivel Sistema Solar. Al mantener su imperio intacto sin Guerreros Z, Cooler refinó su poder junto a Freezer y King Cold durante décadas.",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1042650000,
+        "burstKi": 1563975000,
+        "durabilityKi": 1042650000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -103218,7 +105990,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Dabra (Continuidad Universo 11, Éxito de Babidi) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1000650000,
+        "burstKi": 1400910000,
+        "durabilityKi": 1000650000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -103572,7 +106349,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 845250000,
+        "burstKi": 1267875000,
+        "durabilityKi": 845250000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -103949,7 +106731,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 24518,
+        "burstKi": 34325,
+        "durabilityKi": 24518,
+        "sourceKi": null
       },
       {
         "id": "ghost-broly-unleashed",
@@ -103958,7 +106744,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 2000,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2000x",
+        "apexKi": 49036000,
+        "burstKi": 66198600,
+        "durabilityKi": 49036000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -104302,7 +107093,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Apagado manual o agotamiento de batería.",
         "counterplay": "Ataques sostenidos para vaciar la batería de la armadura.",
         "canonStatus": "source_backed",
-        "category": "base"
+        "category": "base",
+        "apexKi": 772800000,
+        "burstKi": 1159200000,
+        "durabilityKi": 772800000,
+        "sourceKi": null
       },
       {
         "id": "ultra-overdrive",
@@ -104333,7 +107128,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Apagado manual o apagado de emergencia por sobrecalentamiento.",
         "counterplay": "Tácticas evasivas de desgaste para vaciar la batería en Overdrive.",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.3x",
+        "apexKi": 1004640000,
+        "burstKi": 1356264000,
+        "durabilityKi": 1004640000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -104693,7 +107493,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Freezer (Continuidad Universo 8, Forma Final Envejecida) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 134400000,
+        "burstKi": 215040000,
+        "durabilityKi": 134400000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -105033,7 +107838,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 12915000000,
+        "burstKi": 18081000000,
+        "durabilityKi": 12915000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -105394,7 +108204,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 14879,
+        "burstKi": 22319,
+        "durabilityKi": 14879,
+        "sourceKi": null
       },
       {
         "id": "fury-father-protector",
@@ -105416,7 +108230,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "El familiar es salvado o la emoción se disipa tras el combate.",
         "counterplay": "Amenazar al familiar para empujar a Gohan a furia incontrolable.",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "62.5x",
+        "apexKi": 929938,
+        "burstKi": 1255416,
+        "durabilityKi": 929938,
+        "sourceKi": null
       },
       {
         "id": "gohan-u16-mystic",
@@ -105425,7 +108244,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 800,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "800x",
+        "apexKi": 11903200,
+        "burstKi": 16069320,
+        "durabilityKi": 11903200,
+        "sourceKi": null
       },
       {
         "id": "mystic",
@@ -105453,7 +108277,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Descanso prolongado (8+ horas) o muerte por debajo del 5% HP.",
         "counterplay": "Provocar agotamiento sostenido por más de 5 minutos en estado místico para mermar la reserva.",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "800x",
+        "apexKi": 11903200,
+        "burstKi": 16069320,
+        "durabilityKi": 11903200,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -105881,7 +108710,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 281400000,
+        "burstKi": 422100000,
+        "durabilityKi": 281400000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -106277,7 +109111,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 25977,
+        "burstKi": 36368,
+        "durabilityKi": 25977,
+        "sourceKi": null
       },
       {
         "id": "ssj1-gotenks-adult",
@@ -106303,7 +109141,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Presión psicológica para inducir pánico en la sincronización.",
         "canonStatus": "source_backed",
         "tier": "3-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 1298850,
+        "burstKi": 1753448,
+        "durabilityKi": 1298850,
+        "sourceKi": null
       },
       {
         "id": "ssj2-gotenks-adult",
@@ -106329,7 +109172,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar el rayo principal y atacar antes de la sobrecarga bioeléctrica.",
         "canonStatus": "apex_custom",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 2597700,
+        "burstKi": 3506895,
+        "durabilityKi": 2597700,
+        "sourceKi": null
       },
       {
         "id": "ssj3-gotenks-adult",
@@ -106355,7 +109203,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques de presión sostenida; anulación de ki.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 10390800,
+        "burstKi": 14027580,
+        "durabilityKi": 10390800,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -106740,7 +109593,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-A",
         "stats": "Forma Base canónica de I'K'L previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1816500000,
+        "burstKi": 2724750000,
+        "durabilityKi": 1816500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -107025,7 +109883,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 31248,
+        "burstKi": 43747,
+        "durabilityKi": 31248,
+        "sourceKi": null
       },
       {
         "id": "golden-oozaru",
@@ -107034,7 +109896,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 10,
         "tier": "3-C",
         "staminaDrain": 18,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 312480,
+        "burstKi": 421848,
+        "durabilityKi": 312480,
+        "sourceKi": null
       },
       {
         "id": "ssj1-immortal",
@@ -107043,7 +109910,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "3-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 1562400,
+        "burstKi": 2109240,
+        "durabilityKi": 1562400,
+        "sourceKi": null
       },
       {
         "id": "ssj2-immortal",
@@ -107052,7 +109924,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "3-B",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 3124800,
+        "burstKi": 4218480,
+        "durabilityKi": 3124800,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -107373,7 +110250,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 205485,
+        "burstKi": 287679,
+        "durabilityKi": 205485,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -107681,7 +110563,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 289800000,
+        "burstKi": 434700000,
+        "durabilityKi": 289800000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -108095,7 +110982,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 325500000,
+        "burstKi": 488250000,
+        "durabilityKi": 325500000,
+        "sourceKi": 0.1,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -108465,7 +111357,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 8715,
+        "burstKi": 12201,
+        "durabilityKi": 8715,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -108745,7 +111642,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 23394,
+        "burstKi": 32752,
+        "durabilityKi": 23394,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -109009,7 +111911,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-A",
         "stats": "Forma Base canónica de Mahissu, Romanesco, Cargot, Caracoru y Lumaca (Guerreros del Universo 10) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 5166000,
+        "burstKi": 7749000,
+        "durabilityKi": 5166000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -109375,7 +112282,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-A",
         "stats": "Forma Base canónica de Majin Buu (Gordo, Continuidad Universo 11) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 21000000000,
+        "burstKi": 31500000000,
+        "durabilityKi": 21000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -109690,7 +112602,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 855750000,
+        "burstKi": 1198050000,
+        "durabilityKi": 855750000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -109995,7 +112912,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 44100,
+        "burstKi": 61740,
+        "durabilityKi": 44100,
+        "sourceKi": 42000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -110336,7 +113258,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4200,
+        "burstKi": 6300,
+        "durabilityKi": 4200,
+        "sourceKi": 4000,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -110642,7 +113569,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 279300000,
+        "burstKi": 418950000,
+        "durabilityKi": 279300000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "super_neko",
@@ -110673,7 +113605,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Tocar las orejas para interrumpir la transformación.",
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 13965000000,
+        "burstKi": 18852750000,
+        "durabilityKi": 13965000000,
+        "sourceKi": null
       },
       {
         "id": "neko_majin_z",
@@ -110702,7 +113639,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocar risa en el oponente o en el propio Neko Majin.",
         "canonStatus": "source_backed",
         "tier": "High 4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 111720000000,
+        "burstKi": 150822000000,
+        "durabilityKi": 111720000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -111055,7 +113997,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 20297,
+        "burstKi": 28416,
+        "durabilityKi": 20297,
+        "sourceKi": null
       },
       {
         "id": "ssj1-pan-u16",
@@ -111083,7 +114029,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Tácticas de evasión para enfriar la ira; eliminación rápida del blanco emocional.",
         "canonStatus": "source_backed",
         "tier": "High 4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 1014850,
+        "burstKi": 1370048,
+        "durabilityKi": 1014850,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -111450,7 +114401,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-C",
         "stats": "Forma Base canónica de Piccolo (Universo 16, Espectador Notable) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 308700000,
+        "burstKi": 493920000,
+        "durabilityKi": 308700000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "fused-with-nail-and-kami",
@@ -111466,7 +114422,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "counterplay": "Ataques sónicos o de alteración espiritual pueden desestabilizar el núcleo.",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 432180000,
+        "burstKi": 583443000,
+        "durabilityKi": 432180000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -111864,7 +114825,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1575,
+        "burstKi": 2205,
+        "durabilityKi": 1575,
+        "sourceKi": 1300
       },
       {
         "id": "mystic-raditz",
@@ -111898,7 +114863,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Aislamiento del Anciano Kaiōshin U9 antes del combate. Provocación psicológica sostenida para romper concentración.",
         "canonStatus": "apex_custom",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1300,
+        "sourceKi": 1300,
+        "burstKi": 1755,
+        "durabilityKi": 1300
       }
     ],
     "feats": [
@@ -112256,7 +115226,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 21567,
+        "burstKi": 30194,
+        "durabilityKi": 21567,
+        "sourceKi": 3500000
       },
       {
         "id": "cold-5ta",
@@ -112282,7 +115256,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar cargas frontales con vuelo MFTL.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 3500000,
+        "sourceKi": 3500000,
+        "burstKi": 4725000,
+        "durabilityKi": 3500000
       },
       {
         "id": "forma-original-cold",
@@ -112306,7 +115285,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques físicos directos antes de la transformación.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 3500000,
+        "sourceKi": 3500000,
+        "burstKi": 4725000,
+        "durabilityKi": 3500000
       },
       {
         "id": "cold-6ta",
@@ -112333,7 +115317,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Atacar los seis núcleos de energía simultáneamente.",
         "canonStatus": "apex_custom",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 3500000,
+        "sourceKi": 3500000,
+        "burstKi": 4725000,
+        "durabilityKi": 3500000
       }
     ],
     "feats": [
@@ -112704,7 +115693,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 273,
+        "burstKi": 410,
+        "durabilityKi": 273,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "piccolo-daimaoh-joven",
@@ -112714,7 +115708,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 3,
         "canonStatus": "source_backed",
         "tier": "4-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.2x",
+        "apexKi": 601,
+        "burstKi": 811,
+        "durabilityKi": 601,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -113095,7 +116094,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 212100000,
+        "burstKi": 296940000,
+        "durabilityKi": 212100000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -113470,7 +116474,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 15519,
+        "burstKi": 21727,
+        "durabilityKi": 15519,
+        "sourceKi": null
       },
       {
         "id": "ssj1-king-vegeta",
@@ -113479,7 +116487,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "4-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 775950,
+        "burstKi": 1047533,
+        "durabilityKi": 775950,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -113810,7 +116823,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2131500,
+        "burstKi": 2984100,
+        "durabilityKi": 2131500,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -114077,7 +117095,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 29642,
+        "burstKi": 41499,
+        "durabilityKi": 29642,
+        "sourceKi": null
       },
       {
         "id": "majin-bra-ssj2",
@@ -114108,7 +117130,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Magia de purificación, sellado anti-Majin o provocación que rompa el trance mental.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 44463,
+        "burstKi": 60025,
+        "durabilityKi": 44463,
+        "sourceKi": null
       },
       {
         "id": "ssj1",
@@ -114134,7 +117161,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Regeneración a nivel galáctico requiere daño sostenido.",
         "canonStatus": "source_backed",
         "tier": "3-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 1482100,
+        "burstKi": 2000835,
+        "durabilityKi": 1482100,
+        "sourceKi": null
       },
       {
         "id": "ssj2-uncontrolled",
@@ -114162,7 +117194,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocarla para que pierda aún más control y se agote.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 2964200,
+        "burstKi": 4001670,
+        "durabilityKi": 2964200,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -114501,7 +117538,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Goku del Universo 18 tras entrenar a Uub, con dominio de ki puro.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 890400000,
+        "burstKi": 1335600000,
+        "durabilityKi": 890400000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "goku-u18-kaio-ken",
@@ -114510,7 +117552,15 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 10,
         "tier": "4-B",
         "stats": "Ráfaga de aumento súbito.",
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "2x",
+        "apexKi": 1780800000,
+        "burstKi": 2404080000,
+        "durabilityKi": 890400000,
+        "sourceKi": null,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       },
       {
         "id": "goku-u18-ssj1",
@@ -114519,7 +117569,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 10,
         "tier": "4-B",
         "stats": "SSJ1 perfeccionado.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 44520000000,
+        "burstKi": 60102000000,
+        "durabilityKi": 44520000000,
+        "sourceKi": null
       },
       {
         "id": "goku-u18-ssj2",
@@ -114528,7 +117583,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "4-A",
         "stats": "SSJ2 con chispas continuas.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 89040000000,
+        "burstKi": 120204000000,
+        "durabilityKi": 89040000000,
+        "sourceKi": null
       },
       {
         "id": "goku-u18-ssj3",
@@ -114537,7 +117597,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 45,
         "tier": "3-C",
         "stats": "SSJ3 con desgaste altamente mitigado gracias a años de control en la Tierra.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 356160000000,
+        "burstKi": 480816000000,
+        "durabilityKi": 356160000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -114915,7 +117980,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de South Supreme Kai (Kaio-shin del Sur, Universo 1) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 48090000000,
+        "burstKi": 72135000000,
+        "durabilityKi": 48090000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -115303,7 +118373,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 253050000,
+        "burstKi": 404880000,
+        "durabilityKi": 253050000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -115592,7 +118667,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 271530,
+        "burstKi": 380142,
+        "durabilityKi": 271530,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -115882,7 +118962,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-A",
         "stats": "Forma Base canónica de Tenshinhan (Continuidad Universo 9, Maestro del Kikoho Definitivo) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 6142500,
+        "burstKi": 9828000,
+        "durabilityKi": 6142500,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -116219,7 +119304,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3927000,
+        "burstKi": 5497800,
+        "durabilityKi": 3927000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -116506,7 +119596,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 283500000,
+        "burstKi": 453600000,
+        "durabilityKi": 283500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -116820,7 +119915,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 249900000,
+        "burstKi": 349860000,
+        "durabilityKi": 249900000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -117122,7 +120222,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 812700000,
+        "burstKi": 1219050000,
+        "durabilityKi": 812700000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "super_saiyan",
@@ -117149,7 +120254,12 @@ export const INITIAL_CHARACTERS = [
           "Espada de la Esperanza"
         ],
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 40635000000,
+        "burstKi": 54857250000,
+        "durabilityKi": 40635000000,
+        "sourceKi": null
       },
       {
         "id": "super_saiyan_second_grade",
@@ -117174,7 +120284,12 @@ export const INITIAL_CHARACTERS = [
           "Corte Superior con Espada"
         ],
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 81270000000,
+        "burstKi": 109714500000,
+        "durabilityKi": 81270000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -117518,7 +120633,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 65730000000,
+        "burstKi": 92022000000,
+        "durabilityKi": 65730000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -117850,12 +120970,16 @@ export const INITIAL_CHARACTERS = [
       {
         "id": "base",
         "name": "Forma Base / Estado Inicial",
-        "multiplier": "1.0x",
+        "multiplier": "1x",
         "tier": "Tier 4-B | Nivel Sistema Solar",
         "stats": "Nivel Sistema Solar. Versión de una línea temporal alternativa donde el Imperio Saiyan sobrevivió y se desarrolló como monarca guerrero.",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 810600000,
+        "burstKi": 1215900000,
+        "durabilityKi": 810600000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -118173,7 +121297,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 15257,
+        "burstKi": 22886,
+        "durabilityKi": 15257,
+        "sourceKi": null
       },
       {
         "id": "ssj1-vegeta-u13",
@@ -118182,7 +121310,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "3-B",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 762850,
+        "burstKi": 1029848,
+        "durabilityKi": 762850,
+        "sourceKi": null
       },
       {
         "id": "ssj2-vegeta-u13",
@@ -118191,7 +121324,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 1525700,
+        "burstKi": 2059695,
+        "durabilityKi": 1525700,
+        "sourceKi": null
       },
       {
         "id": "ssj3-vegeta-u13",
@@ -118200,7 +121338,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 400,
         "tier": "3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 6102800,
+        "burstKi": 8238780,
+        "durabilityKi": 6102800,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -118535,7 +121678,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Vegeta en el Torneo Multiverso con calma y madurez de combate supremas.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 805350000,
+        "burstKi": 1127490000,
+        "durabilityKi": 805350000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "vegeta-u18-ssj1",
@@ -118544,7 +121692,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 10,
         "tier": "4-B",
         "stats": "SSJ1 perfeccionado.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 40267500000,
+        "burstKi": 54361125000,
+        "durabilityKi": 40267500000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-u18-ssj2",
@@ -118553,7 +121706,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "4-A",
         "stats": "SSJ2 con poder superior al de la saga de Buu.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 80535000000,
+        "burstKi": 108722250000,
+        "durabilityKi": 80535000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -118951,7 +122109,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 50862,
+        "burstKi": 71207,
+        "durabilityKi": 50862,
+        "sourceKi": null
       },
       {
         "id": "ssj1",
@@ -118979,7 +122141,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Rival debe aplicar presión constante para drenar la ventaja de Ki.",
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 2543100,
+        "burstKi": 3433185,
+        "durabilityKi": 2543100,
+        "sourceKi": null
       },
       {
         "id": "ssj2",
@@ -119005,7 +122172,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Rival con regeneración debe evitar daño de un solo golpe para extender el combate.",
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 5086200,
+        "burstKi": 6866370,
+        "durabilityKi": 5086200,
+        "sourceKi": null
       },
       {
         "id": "ssj3",
@@ -119034,7 +122206,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar el paso del tiempo para que el SSJ3 colapse por fatiga; ataques de erosión antes de la activación.",
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 20344800,
+        "burstKi": 27465480,
+        "durabilityKi": 20344800,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -119364,7 +122541,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7875,
+        "burstKi": 11813,
+        "durabilityKi": 7875,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -119674,7 +122856,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 195300000,
+        "burstKi": 273420000,
+        "durabilityKi": 195300000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -119957,7 +123144,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6909,
+        "burstKi": 9673,
+        "durabilityKi": 6909,
+        "sourceKi": null
       },
       {
         "id": "xxi-void-form",
@@ -119991,7 +123182,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques físicos MFTL+ con intención de dispersión antes del casteo. Sellado del espacio dimensional circundante.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.25x",
+        "apexKi": 8636,
+        "burstKi": 11659,
+        "durabilityKi": 8636,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -120320,7 +123516,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "5-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1554,
+        "burstKi": 2176,
+        "durabilityKi": 1554,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -120641,7 +123842,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "7-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 47954,
+        "burstKi": 67136,
+        "durabilityKi": 47954,
+        "sourceKi": null
       },
       {
         "id": "zen-buu-omnipresente",
@@ -120672,7 +123877,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Manipulación psicológica profunda; explotar su aburrimiento para que cometa errores; Hax existencial que ignora regeneración molecular.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 119885,
+        "burstKi": 161845,
+        "durabilityKi": 119885,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -120911,7 +124121,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-B",
         "stats": "Forma Base canónica estándar.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 741300000000000,
+        "burstKi": 1037820000000000,
+        "durabilityKi": 741300000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "amond-true",
@@ -120942,7 +124157,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques al núcleo central antes de la expansión del aura, o saturación con energía sagrada que anule la reescritura.",
         "canonStatus": "source_backed",
         "tier": "2-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "80x",
+        "apexKi": 59304000000000000,
+        "burstKi": 80060400000000000,
+        "durabilityKi": 59304000000000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -121243,7 +124463,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "5-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 449610,
+        "burstKi": 719376,
+        "durabilityKi": 449610,
+        "sourceKi": null
       },
       {
         "id": "bardock-brokoly-ssj2",
@@ -121252,7 +124476,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 100,
         "tier": "3-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 44961000,
+        "burstKi": 60697350,
+        "durabilityKi": 44961000,
+        "sourceKi": null
       },
       {
         "id": "bardock-brokoly-ssj3",
@@ -121261,7 +124490,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 400,
         "tier": "3-C",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 179844000,
+        "burstKi": 242789400,
+        "durabilityKi": 179844000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -121773,16 +125007,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 861000000000,
+        "burstKi": 1291500000000,
+        "durabilityKi": 861000000000,
+        "sourceKi": null
       },
       {
         "id": "beerus-kak-hakaishin",
         "name": "Beerus (Modo Hakaishin)",
         "stats": "Nivel Multiversal. Poder total para la guerra del U0.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "2-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1162350000000,
+        "burstKi": 1569172500000,
+        "durabilityKi": 1162350000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -122100,7 +125343,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Broly (Kakumei) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 54495000000,
+        "burstKi": 81742500000,
+        "durabilityKi": 54495000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "broly-kakumei-lssj",
@@ -122130,7 +125378,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Usar ilusiones o guerra psicológica para desorientarlo, o resistir hasta que el drenaje de stamina lo debilite.",
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2000x",
+        "apexKi": 108990000000000,
+        "burstKi": 147136500000000,
+        "durabilityKi": 108990000000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -122485,7 +125738,11 @@ export const INITIAL_CHARACTERS = [
           "Kamehameha Solar"
         ],
         "suppressedTags": [],
-        "category": "base"
+        "category": "base",
+        "apexKi": 3570000000,
+        "burstKi": 5712000000,
+        "durabilityKi": 3570000000,
+        "sourceKi": null
       },
       {
         "id": "cell-nh-hyper",
@@ -122507,7 +125764,12 @@ export const INITIAL_CHARACTERS = [
         "suppressedTags": [],
         "counterplay": "Ataques que traspasen el núcleo celular miniaturizado con energía espiritual.",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.6x",
+        "apexKi": 9282000000,
+        "burstKi": 12530700000,
+        "durabilityKi": 9282000000,
+        "sourceKi": null
       },
       {
         "id": "cell-nh-apex",
@@ -122526,7 +125788,12 @@ export const INITIAL_CHARACTERS = [
           "Autocrítica"
         ],
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.4x",
+        "apexKi": 12138000000,
+        "burstKi": 16386300000,
+        "durabilityKi": 12138000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -122993,7 +126260,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "3-A",
         "stats": "Forma Base canónica de Gohan (Heredero del U11) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 99225000000,
+        "burstKi": 138915000000,
+        "durabilityKi": 99225000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gohan-u11-beast-hakaishin",
@@ -123023,7 +126295,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Provocar desgaste emocional, dispersión de su motivación, o ataques de Ki Divino superior antes del Makankosappo.",
         "canonStatus": "apex_custom",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 4961250000000,
+        "burstKi": 6697687500000,
+        "durabilityKi": 4961250000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -123302,7 +126579,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Voluntaria al acceder al Estado Místico.",
         "counterplay": "Flanqueo por el lado izquierdo, agotamiento físico.",
         "canonStatus": "apex_custom",
-        "category": "base"
+        "category": "base",
+        "apexKi": 84000000000,
+        "burstKi": 126000000000,
+        "durabilityKi": 84000000000,
+        "sourceKi": null
       },
       {
         "id": "gohan-fw-mistico",
@@ -123312,7 +126593,7 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 2,
         "tier": "3-B",
         "tierExact": "3-B",
-        "multiplier": "50x sobre base",
+        "multiplier": "800x",
         "activationCondition": "Ritual de desbloqueo del Kaio-shin Anciano (canónico en línea What-If Brokoly350) + concentración emocional de Gohan.",
         "grantedTags": [
           "mystic_unlocked",
@@ -123335,7 +126616,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Solo mediante agotamiento total de stamina o daño incapacitante masivo.",
         "counterplay": "Ataques de área masivos, presión simultánea sobre Trunks.",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 67200000000000,
+        "burstKi": 90720000000000,
+        "durabilityKi": 67200000000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -123734,7 +127019,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6153000000,
+        "burstKi": 9229500000,
+        "durabilityKi": 6153000000,
+        "sourceKi": null
       },
       {
         "id": "goten-nh-adult-ssj1",
@@ -123760,7 +127049,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar drenaje antes del SSJ2.",
         "canonStatus": "source_backed",
         "tier": "3-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 307650000000,
+        "burstKi": 415327500000,
+        "durabilityKi": 307650000000,
+        "sourceKi": null
       },
       {
         "id": "goten-nh-adult-ssj2",
@@ -123788,7 +127082,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Psicoataques de calma o retirada temporal.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 615300000000,
+        "burstKi": 830655000000,
+        "durabilityKi": 615300000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -124181,7 +127480,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 550200000,
+        "burstKi": 825300000,
+        "durabilityKi": 550200000,
+        "sourceKi": null
       },
       {
         "id": "goten-nh-child-ssj1",
@@ -124190,7 +127493,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "4-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 27510000000,
+        "burstKi": 37138500000,
+        "durabilityKi": 27510000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -124510,7 +127818,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 8074500000,
+        "burstKi": 12919200000,
+        "durabilityKi": 8074500000,
+        "sourceKi": null
       },
       {
         "id": "gotenks-adulto-ssj1",
@@ -124528,7 +127840,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 403725000000,
+        "burstKi": 545028750000,
+        "durabilityKi": 403725000000,
+        "sourceKi": null
       },
       {
         "id": "gotenks-adulto-db-after-ssj2-std",
@@ -124546,7 +127863,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 807450000000,
+        "burstKi": 1090057500000,
+        "durabilityKi": 807450000000,
+        "sourceKi": null
       },
       {
         "id": "gotenks-adulto-ssj3",
@@ -124570,7 +127892,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 3229800000000,
+        "burstKi": 4360230000000,
+        "durabilityKi": 3229800000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -125104,7 +128431,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 10920000000,
+        "burstKi": 15288000000,
+        "durabilityKi": 10920000000,
+        "sourceKi": null
       },
       {
         "id": "kakarotto-ssj2",
@@ -125128,7 +128459,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Stamina < 30%.",
         "counterplay": "Contraataques que aprovechen el orgullo herido.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 1092000000000,
+        "burstKi": 1474200000000,
+        "durabilityKi": 1092000000000,
+        "sourceKi": null
       },
       {
         "id": "kakarotto-ssj3",
@@ -125156,7 +128492,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Stamina < 20%.",
         "counterplay": "Sacar ventaja del sadismo para forzar errores y retaliaciones.",
         "canonStatus": "source_backed",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 4368000000000,
+        "burstKi": 5896800000000,
+        "durabilityKi": 4368000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -125366,7 +128707,11 @@ export const INITIAL_CHARACTERS = [
         "suppressedTags": [
           "Kaio-ken Infinito"
         ],
-        "category": "base"
+        "category": "base",
+        "apexKi": 552300000,
+        "burstKi": 938910000,
+        "durabilityKi": 552300000,
+        "sourceKi": null
       },
       {
         "id": "krillin-nh-unleashed",
@@ -125390,7 +128735,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "exitCondition": "Fallo automático del condensador tras 3 turnos; Krilin colapsa 2 turnos.",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.45x",
+        "apexKi": 800835000,
+        "burstKi": 1081127250,
+        "durabilityKi": 800835000,
+        "sourceKi": null
       },
       {
         "id": "krillin-nh-kaioken",
@@ -125415,7 +128765,12 @@ export const INITIAL_CHARACTERS = [
           "Autoconservación"
         ],
         "tier": "4-A",
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "12x",
+        "apexKi": 6627600000,
+        "burstKi": 8947260000,
+        "durabilityKi": 552300000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -125802,7 +129157,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 165900000000,
+        "burstKi": 248850000000,
+        "durabilityKi": 165900000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -126142,7 +129501,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Voluntaria al activar Kaio-ken o Super Saiyan.",
         "counterplay": "Ataques combinados por múltiples oponentes.",
         "canonStatus": "apex_custom",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1575,
+        "burstKi": 2520,
+        "durabilityKi": 1575,
+        "sourceKi": 1300
       },
       {
         "id": "raditz-ssj1-brokoly",
@@ -126152,7 +129515,7 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 5,
         "tier": "4-A",
         "tierExact": "4-A",
-        "multiplier": "x50 sobre base",
+        "multiplier": "50x",
         "activationCondition": "Emociones puras detonadas (What-If) tras años de redención.",
         "grantedTags": [
           "super_saiyan_1",
@@ -126172,7 +129535,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Agotamiento de stamina o daño crítico.",
         "counterplay": "Hax temporal, presión simultánea.",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 1300,
+        "sourceKi": 1300,
+        "burstKi": 1755,
+        "durabilityKi": 1300
       },
       {
         "id": "raditz-ssj2-brokoly",
@@ -126182,7 +129549,7 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 8,
         "tier": "4-A",
         "tierExact": "4-A",
-        "multiplier": "x100 sobre base",
+        "multiplier": "100x",
         "activationCondition": "Furia contenida por años de disciplina + detonación emocional súbita.",
         "grantedTags": [
           "super_saiyan_2",
@@ -126202,7 +129569,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Caída de stamina o victoria.",
         "counterplay": "Ataques de distracción para romper su concentración.",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 1300,
+        "sourceKi": 1300,
+        "burstKi": 1755,
+        "durabilityKi": 1300
       }
     ],
     "synergies": [
@@ -126595,16 +129966,25 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1260,
+        "burstKi": 2016,
+        "durabilityKi": 1260,
+        "sourceKi": 1200
       },
       {
         "id": "saibaman-mutado",
         "name": "Saibaman Mutante (Absorción de Ki)",
         "stats": "Nivel Sistema Solar. Crecimiento muscular, piel endurecida y garras de ácido molecular.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1200,
+        "sourceKi": 1200,
+        "burstKi": 1620,
+        "durabilityKi": 1200
       }
     ],
     "synergies": [
@@ -126964,7 +130344,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 9366000000,
+        "burstKi": 14049000000,
+        "durabilityKi": 9366000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -127290,7 +130674,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 79170000000,
+        "burstKi": 110838000000,
+        "durabilityKi": 79170000000,
+        "sourceKi": null
       },
       {
         "id": "goku-kakumei-survivor",
@@ -127321,7 +130709,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Stamina < 20% o muerte.",
         "counterplay": "Ataques sónicos de sellado (Prisión de Hielo Cósmica regenerada).",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "20x",
+        "apexKi": 1583400000000,
+        "burstKi": 2137590000000,
+        "durabilityKi": 1583400000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -127647,7 +131040,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 26565000000,
+        "burstKi": 39847500000,
+        "durabilityKi": 26565000000,
+        "sourceKi": null
       },
       {
         "id": "baby-god-super2",
@@ -127656,7 +131053,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 2,
         "tier": "3-A",
         "staminaDrain": 2,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 53130000000,
+        "burstKi": 71725500000,
+        "durabilityKi": 53130000000,
+        "sourceKi": null
       },
       {
         "id": "baby-god-ssg",
@@ -127665,7 +131067,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 50,
         "tier": "High 3-A",
         "staminaDrain": 60,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 1328250000000,
+        "burstKi": 1793137500000,
+        "durabilityKi": 1328250000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -128131,16 +131538,20 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 44310000000,
+        "burstKi": 66465000000,
+        "durabilityKi": 44310000000,
+        "sourceKi": null
       },
       {
         "id": "baby-vegeta-god-base",
         "name": "Modo Baby Vegeta Infectado",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 0,
         "tier": "5-A",
         "tierExact": "5-A",
-        "multiplier": "1x",
+        "multiplier": "1.35x",
         "stats": "Forma inicial de combate con balance óptimo entre velocidad, resistencia física y arsenal característico tras la infección inicial de Baby.",
         "activationCondition": "Estado pasivo por defecto al poseer a Vegeta.",
         "grantedTags": [
@@ -128162,7 +131573,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Evolución a Baby God.",
         "counterplay": "Sacar al huésped del rango, cortar el contacto prolongado.",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 59818500000,
+        "burstKi": 80754975000,
+        "durabilityKi": 59818500000,
+        "sourceKi": null
       },
       {
         "id": "baby-vegeta-god",
@@ -128172,7 +131587,7 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 4,
         "tier": "3-A",
         "tierExact": "3-A",
-        "multiplier": "500x sobre base",
+        "multiplier": "6400x",
         "activationCondition": "Baby absorbe ki divino (What-If) o canaliza el odio Tsufuru acumulado + host con acceso a ki divino.",
         "grantedTags": [
           "god_ki_wielder",
@@ -128196,7 +131611,11 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Solo mediante fisión forzada del espíritu (purificación) o destrucción total del huésped.",
         "counterplay": "Purificadores espirituales, separación del parásito del huésped, sellado por Kaioshin.",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "apexKi": 283584000000000,
+        "burstKi": 382838400000000,
+        "durabilityKi": 283584000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -128454,7 +131873,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "4-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1323000000,
+        "burstKi": 1984500000,
+        "durabilityKi": 1323000000,
+        "sourceKi": null
       },
       {
         "id": "tenshinhan-nh-kikoho",
@@ -128476,7 +131899,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "8x",
+        "apexKi": 10584000000,
+        "burstKi": 14288400000,
+        "durabilityKi": 10584000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -128909,7 +132337,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-C",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 11760000000,
+        "burstKi": 18816000000,
+        "durabilityKi": 11760000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-after-ssj1-std",
@@ -128931,7 +132363,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "High 3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 588000000000,
+        "burstKi": 793800000000,
+        "durabilityKi": 588000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-after-ssj-kk20",
@@ -128955,7 +132392,15 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "50x",
+        "apexKi": 588000000000,
+        "burstKi": 793800000000,
+        "durabilityKi": 11760000000,
+        "sourceKi": null,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       },
       {
         "id": "vegeta-after-prince-destruct",
@@ -128979,7 +132424,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "apex_custom",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "100x",
+        "apexKi": 1176000000000,
+        "burstKi": 1587600000000,
+        "durabilityKi": 1176000000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-after-ssj3",
@@ -129003,7 +132453,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "Low 2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "400x",
+        "apexKi": 4704000000000,
+        "burstKi": 6350400000000,
+        "durabilityKi": 4704000000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -129466,7 +132921,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-A",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 73500000000,
+        "burstKi": 110250000000,
+        "durabilityKi": 73500000000,
+        "sourceKi": null
       },
       {
         "id": "vegeta-kakumei-supreme",
@@ -129494,7 +132953,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Muerte o colapso total.",
         "counterplay": "Contraataque con técnica de desvío de nivel divino antes de la acumulación.",
         "canonStatus": "apex_custom",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "25x",
+        "apexKi": 1837500000000,
+        "burstKi": 2480625000000,
+        "durabilityKi": 1837500000000,
+        "sourceKi": null
       }
     ],
     "synergies": [
@@ -129849,7 +133313,11 @@ export const INITIAL_CHARACTERS = [
         "tierExact": "3-B",
         "multiplier": "1x",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 23100000000,
+        "burstKi": 34650000000,
+        "durabilityKi": 23100000000,
+        "sourceKi": null
       },
       {
         "id": "veg-kk-10",
@@ -129858,7 +133326,15 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 10,
         "tier": "3-A",
         "staminaDrain": 18,
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "10x",
+        "apexKi": 231000000000,
+        "burstKi": 311850000000,
+        "durabilityKi": 23100000000,
+        "sourceKi": null,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       },
       {
         "id": "veg-kk-20",
@@ -129867,7 +133343,15 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 20,
         "tier": "3-A",
         "staminaDrain": 38,
-        "category": "state_amp"
+        "category": "state_amp",
+        "multiplier": "20x",
+        "apexKi": 462000000000,
+        "burstKi": 623700000000,
+        "durabilityKi": 23100000000,
+        "sourceKi": null,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       }
     ],
     "synergies": [
@@ -130340,7 +133824,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Limitado por el Pacto de Neutralidad Angelical.",
         "exitCondition": "Ninguna (estado perpetuo).",
         "tier": "2-A",
-        "category": "base"
+        "category": "base",
+        "apexKi": 52500000000000,
+        "burstKi": 73500000000000,
+        "durabilityKi": 52500000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -130614,7 +134103,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3024,
+        "burstKi": 4234,
+        "durabilityKi": 3024,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -130851,7 +134345,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1187,
+        "burstKi": 1662,
+        "durabilityKi": 1187,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -131086,16 +134585,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Choso previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2132,
+        "burstKi": 2985,
+        "durabilityKi": 2132,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "choso-flowing-red-scale",
         "name": "Escama Roja Fluyente: Apilar",
         "stats": "Acelera su flujo sanguíneo y ritmo cardíaco para potenciar masivamente su fuerza física, velocidad de reacción y agudeza visual.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2878,
+        "burstKi": 3885,
+        "durabilityKi": 2878,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -131338,7 +134847,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7245,
+        "burstKi": 10143,
+        "durabilityKi": 7245,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -131578,7 +135092,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 9009,
+        "burstKi": 12613,
+        "durabilityKi": 9009,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -131849,7 +135368,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "7-A"
+        "tier": "7-A",
+        "apexKi": 5200,
+        "burstKi": 7800,
+        "durabilityKi": 5200,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -132263,16 +135787,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 9912,
+        "burstKi": 13877,
+        "durabilityKi": 9912,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "kashimo-amber",
         "name": "Bestia Mítica Ámbar",
         "stats": "Transformación Terminal. Stats máximos de Tier 7-A, velocidad lumínica y manipulación de ondas electromagnéticas.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 13381,
+        "burstKi": 18064,
+        "durabilityKi": 13381,
+        "sourceKi": null
       },
       {
         "id": "mythical-beast-amber",
@@ -132302,7 +135836,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Sellar su descarga inicial con barreras absolutas; evitar combate prolongado hasta que la técnica se agote por sí sola.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.6x",
+        "apexKi": 15859,
+        "burstKi": 21410,
+        "durabilityKi": 15859,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -132601,7 +136140,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 322,
+        "burstKi": 451,
+        "durabilityKi": 322,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -132853,7 +136397,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4442,
+        "burstKi": 6219,
+        "durabilityKi": 4442,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -133081,7 +136630,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1680,
+        "burstKi": 2352,
+        "durabilityKi": 1680,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -133317,7 +136871,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6678,
+        "burstKi": 9349,
+        "durabilityKi": 6678,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -133618,7 +137177,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 252525,
+        "burstKi": 353535,
+        "durabilityKi": 252525,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "womb-profusion",
@@ -133644,7 +137208,17 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Evadir fuera del rango del dominio sin barrera; destruir la fuente de maldiciones acumuladas.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "hax_mode"
+        "category": "hax_mode",
+        "multiplier": "1.8x",
+        "apexKi": 252525,
+        "burstKi": 353535,
+        "durabilityKi": 252525,
+        "sourceKi": null,
+        "doesNotIncrease": [
+          "apexKi",
+          "durabilityKi",
+          "liftingStrength"
+        ]
       }
     ],
     "feats": [
@@ -133982,7 +137556,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7203,
+        "burstKi": 10084,
+        "durabilityKi": 7203,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -134290,7 +137869,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7697,
+        "burstKi": 11546,
+        "durabilityKi": 7697,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hakari-jackpot",
@@ -134318,7 +137902,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Burst Damage concentrado en el instante posterior al fin del Jackpot antes de reactivar Dominio.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 384850,
+        "burstKi": 519548,
+        "durabilityKi": 384850,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -134674,7 +138263,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2258,
+        "burstKi": 3161,
+        "durabilityKi": 2258,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -134941,7 +138535,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2300,
+        "burstKi": 3220,
+        "durabilityKi": 2300,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -135234,7 +138833,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7203,
+        "burstKi": 10084,
+        "durabilityKi": 7203,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "evolucion-final",
@@ -135267,7 +138871,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Black Flash reiterado con percepción del alma abierta.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 14406,
+        "burstKi": 19448,
+        "durabilityKi": 14406,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -135571,7 +139180,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 10679,
+        "burstKi": 14951,
+        "durabilityKi": 10679,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -135808,7 +139422,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 235,
+        "burstKi": 353,
+        "durabilityKi": 235,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -136117,7 +139736,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2531,
+        "burstKi": 3543,
+        "durabilityKi": 2531,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "maki-despierta",
@@ -136147,7 +139771,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques espaciales/conceptuales de amplio espectro, trampas que limiten su movilidad tridimensional.",
         "canonStatus": "source_backed",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 3797,
+        "burstKi": 5126,
+        "durabilityKi": 3797,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -136452,7 +140081,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Megumi Fushiguro previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2877,
+        "burstKi": 4028,
+        "durabilityKi": 2877,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "megumi-base",
@@ -136479,7 +140113,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Fuerza bruta que destruya los shikigamis antes de que se adapten.",
         "canonStatus": "source_backed",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 3452,
+        "burstKi": 4660,
+        "durabilityKi": 3452,
+        "sourceKi": null
       },
       {
         "id": "megumi-mahoraga",
@@ -136506,7 +140145,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Fuerza bruta superior que destruya a Mahoraga antes de que complete su adaptación.",
         "canonStatus": "source_backed",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 7193,
+        "burstKi": 9711,
+        "durabilityKi": 7193,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -136824,7 +140468,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2216,
+        "burstKi": 3102,
+        "durabilityKi": 2216,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -137100,7 +140749,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2846,
+        "burstKi": 3984,
+        "durabilityKi": 2846,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -137372,7 +141026,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1050,
+        "burstKi": 1470,
+        "durabilityKi": 1050,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -137687,7 +141346,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5019,
+        "burstKi": 8030,
+        "durabilityKi": 5019,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "overtime-mode",
@@ -137714,7 +141378,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Presión constante y daño sostenido antes de que active el modo.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 6776,
+        "burstKi": 9148,
+        "durabilityKi": 6776,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -137995,7 +141664,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3213,
+        "burstKi": 4498,
+        "durabilityKi": 3213,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -138274,7 +141948,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2100,
+        "burstKi": 2940,
+        "durabilityKi": 2100,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -138542,16 +142221,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Naoya Zenin (Maldición) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3780,
+        "burstKi": 5292,
+        "durabilityKi": 3780,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "naoya-curse-womb",
         "name": "Útero (Forma Gusano/Crisálida)",
         "stats": "Forma inicial de evolución en la colonia Sakurajima. Extremadamente veloz, pero AP inferior al Modo Maduro.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5103,
+        "burstKi": 6889,
+        "durabilityKi": 5103,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -138821,7 +142510,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3791,
+        "burstKi": 5687,
+        "durabilityKi": 3791,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -139199,7 +142893,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "7-A"
+        "tier": "7-A",
+        "apexKi": 4800,
+        "burstKi": 7200,
+        "durabilityKi": 4800,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -139529,7 +143228,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4746,
+        "burstKi": 6644,
+        "durabilityKi": 4746,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -139834,7 +143538,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "7-A"
+        "tier": "7-A",
+        "apexKi": 5200,
+        "burstKi": 7800,
+        "durabilityKi": 5200,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -140265,7 +143974,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4368,
+        "burstKi": 6552,
+        "durabilityKi": 4368,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "kenjaku-geto",
@@ -140293,7 +144007,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Emboscada a ultra-alta velocidad con corte absoluto antes de que active reversión.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.6x",
+        "apexKi": 6989,
+        "burstKi": 9435,
+        "durabilityKi": 6989,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -140582,7 +144301,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2604,
+        "burstKi": 3646,
+        "durabilityKi": 2604,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -140858,7 +144582,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2121,
+        "burstKi": 2969,
+        "durabilityKi": 2121,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -141171,16 +144900,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5639,
+        "burstKi": 7895,
+        "durabilityKi": 5639,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "carnage-mode",
         "name": "Modo Carnicería Desatada (Shibuya Invocado)",
         "stats": "Tier 7-A | Nivel Montaña. Instinto asesino puro con Nube Itinerante / Playful Cloud.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 7613,
+        "burstKi": 10278,
+        "durabilityKi": 7613,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -141532,7 +145271,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3780,
+        "burstKi": 5292,
+        "durabilityKi": 3780,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -141816,7 +145560,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4337,
+        "burstKi": 6072,
+        "durabilityKi": 4337,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -142129,7 +145878,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7928,
+        "burstKi": 11099,
+        "durabilityKi": 7928,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "black-flash-chain",
@@ -142161,7 +145915,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Rival con velocidad hipersónica+ que rompa la secuencia antes del segundo impacto.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 19820,
+        "burstKi": 26757,
+        "durabilityKi": 19820,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -142485,7 +146244,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7634,
+        "burstKi": 10688,
+        "durabilityKi": 7634,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -142799,7 +146563,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6657,
+        "burstKi": 9986,
+        "durabilityKi": 6657,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "full-rika-domain",
@@ -142808,7 +146577,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 2.5,
         "tier": "8-A",
         "staminaDrain": 15,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 16643,
+        "burstKi": 22468,
+        "durabilityKi": 16643,
+        "sourceKi": null
       },
       {
         "id": "yuta-rika-full-manifest",
@@ -142835,7 +146609,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Agotar los 5 minutos con evasión o forcing domain clashes que drenen la energía pasiva.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3x",
+        "apexKi": 19971,
+        "burstKi": 26961,
+        "durabilityKi": 19971,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -143191,7 +146970,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Maestro de Soryu con artes marciales mortales y velocidad que abruma a los Pilares.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4358,
+        "burstKi": 6101,
+        "durabilityKi": 4358,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "akaza-compass-needle",
@@ -143200,7 +146984,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "8-A",
         "stats": "Proyección de un copo de nieve bajo los pies que detecta todo impulso hostil y redirige golpes automáticamente.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 6101,
+        "burstKi": 8236,
+        "durabilityKi": 6101,
+        "sourceKi": null
       },
       {
         "id": "akaza-head-regen",
@@ -143209,7 +146998,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "High 8-A",
         "stats": "Superación de la decapitación de la espada Nichirin mediante apego a la fuerza.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 7844,
+        "burstKi": 10589,
+        "durabilityKi": 7844,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -143486,7 +147280,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 110,
+        "burstKi": 154,
+        "durabilityKi": 110,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -143806,7 +147605,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Doma previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 5397,
+        "burstKi": 7556,
+        "durabilityKi": 5397,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "bodhisattva-rime",
@@ -143832,7 +147636,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Destruir el Bodhisattva antes de que se forme con ataques térmicos o impacto físico concentrado.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 8096,
+        "burstKi": 10930,
+        "durabilityKi": 8096,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -144146,7 +147955,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2562,
+        "burstKi": 3587,
+        "durabilityKi": 2562,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -144412,7 +148226,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2625,
+        "burstKi": 3675,
+        "durabilityKi": 2625,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -144689,16 +148508,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Giyu Tomioka previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4589,
+        "burstKi": 6425,
+        "durabilityKi": 4589,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "giyu-marked",
         "name": "Marca de Cazador de Demonios",
         "stats": "Incrementa masivamente la velocidad de reacción y la temperatura corporal. Permite acceso limitado al Mundo Transparente y teñir la espada de rojo para anular regeneración demoníaca.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 6195,
+        "burstKi": 8363,
+        "durabilityKi": 6195,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -144957,16 +148786,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Gyokko previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2951,
+        "burstKi": 4131,
+        "durabilityKi": 2951,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gyokko-molt",
         "name": "Muda Final (Sireno/Escamas)",
         "stats": "Abandona las vasijas, aumenta durabilidad a Tier 7-B y gana Hax de Transmutación Melé a cambio de perder movilidad de teletransporte.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3984,
+        "burstKi": 5378,
+        "durabilityKi": 3984,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -145320,7 +149159,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5775,
+        "burstKi": 9240,
+        "durabilityKi": 5775,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gyomei-marked",
@@ -145348,7 +149192,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar combate prolongado a alta intensidad hasta que la Marca agote su ciclo vital.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 10395,
+        "burstKi": 14033,
+        "durabilityKi": 10395,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -145715,7 +149564,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5775,
+        "burstKi": 8085,
+        "durabilityKi": 5775,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -145981,16 +149835,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Hantengu previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2762,
+        "burstKi": 3867,
+        "durabilityKi": 2762,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hantengu-zohakuten",
         "name": "Zohakuten",
         "stats": "El proxy del Jefe. Tier 7-A con ataques omnidireccionales, mientras el jugador principal se esconde o huye.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3729,
+        "burstKi": 5034,
+        "durabilityKi": 3729,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -146281,7 +150145,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Inosuke Hashibira previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3486,
+        "burstKi": 5578,
+        "durabilityKi": 3486,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "inosuke-apex-fury",
@@ -146308,7 +150177,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esperar a que se agote; el usuario no puede bloquear nada durante el Frenesí.",
         "canonStatus": "apex_custom",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.75x",
+        "apexKi": 6101,
+        "burstKi": 8236,
+        "durabilityKi": 6101,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -146603,7 +150477,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3045,
+        "burstKi": 4263,
+        "durabilityKi": 3045,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -146898,7 +150777,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "10-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 9,
+        "burstKi": 13,
+        "durabilityKi": 9,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -147178,7 +151062,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2226,
+        "burstKi": 3116,
+        "durabilityKi": 2226,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -147444,7 +151333,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2384,
+        "burstKi": 3576,
+        "durabilityKi": 2384,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -147698,7 +151592,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2258,
+        "burstKi": 3161,
+        "durabilityKi": 2258,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -148020,25 +151919,40 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6195,
+        "burstKi": 8673,
+        "durabilityKi": 6195,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "extended-blade",
         "name": "Espada Larga Despertada + Regeneración de Cabeza",
         "stats": "Tier 7-B | Nivel Ciudad. Katana de tres hojas gigantesca e inmunidad a la decapitación.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 8363,
+        "burstKi": 11290,
+        "durabilityKi": 8363,
+        "sourceKi": null
       },
       {
         "id": "kokushibo-monster",
         "name": "Monstruo Desfigurado (Superación de la Muerte)",
         "stats": "Muta en un demonio con espadas por todo el cuerpo. AP máximo, pero su moral cae a 0 si ve su propio reflejo (Debilidad de Lore).",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 8363,
+        "burstKi": 11290,
+        "durabilityKi": 8363,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -148354,16 +152268,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Mitsuri Kanroji previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4284,
+        "burstKi": 5998,
+        "durabilityKi": 4284,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "mitsuri-marked",
         "name": "Marca de Cazador (Corazones Gemelos)",
         "stats": "Su fuerza muscular, ya colosal, se multiplica. Soporta pelear de frente con la forma final de Hantengu por horas, anulando todo avance del demonio.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5783,
+        "burstKi": 7807,
+        "durabilityKi": 5783,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -148634,16 +152558,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Muichiro Tokito previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 6216,
+        "burstKi": 8702,
+        "durabilityKi": 6216,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "muichiro-marked",
         "name": "Marca de Cazador (Niebla Carmesí)",
         "stats": "Estadísticas multiplicadas, Espada Roja que retarda la curación y capacidad de acceder al Mundo Transparente (breves segundos).",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 8392,
+        "burstKi": 11329,
+        "durabilityKi": 8392,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -148929,43 +152863,68 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Muzan Kibutsuji previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 5691,
+        "burstKi": 7967,
+        "durabilityKi": 5691,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "muzan-elegante",
         "name": "Disfraz Humano",
         "stats": "Nivel Multi-Bloque. Traje victoriano con sombrero blanco.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 7683,
+        "burstKi": 10372,
+        "durabilityKi": 7683,
+        "sourceKi": null
       },
       {
         "id": "muzan-combate",
         "name": "Forma de Combate Final",
         "stats": "Nivel Ciudad. Cabello blanco largo, bocas con colmillos en el torso y extremidades, látigos espinales.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 7683,
+        "burstKi": 10372,
+        "durabilityKi": 7683,
+        "sourceKi": null
       },
       {
         "id": "muzan-bebe",
         "name": "Armadura de Bebé Gigante",
         "stats": "Nivel Ciudad. Monstruosa masa de carne gigante para protegerse del sol.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 7683,
+        "burstKi": 10372,
+        "durabilityKi": 7683,
+        "sourceKi": null
       },
       {
         "id": "combat-final",
         "name": "Forma de Combate Final (Látigos de Espina)",
         "stats": "Tier 7-B | Nivel Ciudad. 8 látigos dorsales y bocas dérmicas de succión.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 7683,
+        "burstKi": 10372,
+        "durabilityKi": 7683,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -149291,7 +153250,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1659,
+        "burstKi": 2323,
+        "durabilityKi": 1659,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -149635,7 +153599,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5030,
+        "burstKi": 8551,
+        "durabilityKi": 5030,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "explosiva",
@@ -149663,7 +153632,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Barreras de energía espiritual densa o distancia extrema fuera del radio de explosión.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 9054,
+        "burstKi": 12223,
+        "durabilityKi": 9054,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -149993,16 +153967,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Obanai Iguro previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3581,
+        "burstKi": 5013,
+        "durabilityKi": 3581,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "obanai-marked",
         "name": "Marca de Cazador (Espada Roja)",
         "stats": "Aumento extremo de velocidad. Obanai aprendió a teñir su espada de rojo apretándola con fuerza bruta, anulando instantáneamente la regeneración, aunque el esfuerzo ahoga sus propios pulmones.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4834,
+        "burstKi": 6526,
+        "durabilityKi": 4834,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -150273,7 +154257,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2258,
+        "burstKi": 3161,
+        "durabilityKi": 2258,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -150533,7 +154522,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4022,
+        "burstKi": 5631,
+        "durabilityKi": 4022,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -150821,16 +154815,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Sanemi Shinazugawa previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4032,
+        "burstKi": 5645,
+        "durabilityKi": 4032,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "sanemi-marked",
         "name": "Marca de Cazador de Demonios",
         "stats": "Aumento crítico de fuerza, resistencia al dolor, agilidad y permite el choque de armas rojas para anular regeneración.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5443,
+        "burstKi": 7348,
+        "durabilityKi": 5443,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -151161,7 +155165,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "exitCondition": "Muerte autoinducida en combate",
         "tier": "7-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2006,
+        "burstKi": 2808,
+        "durabilityKi": 2006,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -151495,7 +155504,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Sin acceso a la Danza Solar ni al Mundo Transparente.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3875,
+        "burstKi": 5425,
+        "durabilityKi": 3875,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "tanjiro-solar",
@@ -151520,7 +155534,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Usar técnicas regenerativas de Luna Superior para sobrevivir al corte y contraatacar.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.6x",
+        "apexKi": 6200,
+        "burstKi": 8370,
+        "durabilityKi": 6200,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -151852,7 +155871,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4673,
+        "burstKi": 6542,
+        "durabilityKi": 4673,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -152152,34 +156176,54 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Yoriichi Tsugikuni previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3707,
+        "burstKi": 5190,
+        "durabilityKi": 3707,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "yoriichi-joven",
         "name": "Yoriichi (Pico Sengoku)",
         "stats": "Nivel Ciudad. Kimono rojo sobre túnica negra, pendientes Hanafuda, cabello negro largo atado.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5004,
+        "burstKi": 6755,
+        "durabilityKi": 5004,
+        "sourceKi": null
       },
       {
         "id": "yoriichi-anciano",
         "name": "Yoriichi Anciano (85 Años)",
         "stats": "Nivel Ciudad. Mismo poder letal; casi parte por la mitad a Kokushibo de un solo tajo antes de morir de pie por vejez.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5004,
+        "burstKi": 6755,
+        "durabilityKi": 5004,
+        "sourceKi": null
       },
       {
         "id": "thirteenth-form",
         "name": "Decimotercera Forma Solar en Cadena",
         "stats": "Tier 7-B+ | Nivel Ciudad+. Calcinación celular instantánea y velocidad de 1,500 cortes por segundo.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5004,
+        "burstKi": 6755,
+        "durabilityKi": 5004,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -152514,7 +156558,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Zenitsu Agatsuma previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3854,
+        "burstKi": 6166,
+        "durabilityKi": 3854,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "zenitsu-blind-thunder-mastery",
@@ -152542,7 +156591,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Barreras de ki en área, anticipación sónica de las trayectorias o teletransporte al detectar la distorsión espacial.",
         "canonStatus": "apex_custom",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 7708,
+        "burstKi": 10406,
+        "durabilityKi": 7708,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -152865,7 +156919,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Aki Hayakawa previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1806,
+        "burstKi": 2528,
+        "durabilityKi": 1806,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -153217,7 +157276,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2604,
+        "burstKi": 3646,
+        "durabilityKi": 2604,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -153475,16 +157539,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2006,
+        "burstKi": 2808,
+        "durabilityKi": 2006,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "yoru-control",
         "name": "Yoru (Demonio de la Guerra)",
         "stats": "AP y Velocidad aumentadas. Estilo de combate agresivo, acceso a reflejos sobrehumanos.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2708,
+        "burstKi": 3656,
+        "durabilityKi": 2708,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -153773,7 +157847,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2436,
+        "burstKi": 3410,
+        "durabilityKi": 2436,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -154042,7 +158121,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 374,
+        "burstKi": 524,
+        "durabilityKi": 374,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -154294,7 +158378,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 13808,
+        "burstKi": 19331,
+        "durabilityKi": 13808,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -154547,7 +158636,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 39008,
+        "burstKi": 54611,
+        "durabilityKi": 39008,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -154805,25 +158899,40 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3287,
+        "burstKi": 4602,
+        "durabilityKi": 3287,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "denji-motosierra",
         "name": "Híbrido Motosierra",
         "stats": "Nivel Edificio a Bloque de Ciudad. Regeneración con sangre.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4437,
+        "burstKi": 5990,
+        "durabilityKi": 4437,
+        "sourceKi": null
       },
       {
         "id": "denji-pochita",
         "name": "Héroe del Infierno (Pochita Verdadero)",
         "stats": "Nivel Ciudad a Continental. Borrado conceptual de demonios ingeridos.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4437,
+        "burstKi": 5990,
+        "durabilityKi": 4437,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -155141,7 +159250,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "Forma Base canónica de Fami (Chainsaw Man — Demonio del Hambre / Kiga) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 10301,
+        "burstKi": 14421,
+        "durabilityKi": 10301,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "fami-apex-hunger-warmonger",
@@ -155170,7 +159284,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Devoración del concepto por Pochita; el Hambre deja de existir.",
         "canonStatus": "apex_custom",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 20602,
+        "burstKi": 27813,
+        "durabilityKi": 20602,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -155468,7 +159587,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5292,
+        "burstKi": 7409,
+        "durabilityKi": 5292,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -155726,7 +159850,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1974,
+        "burstKi": 2764,
+        "durabilityKi": 1974,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -155987,25 +160116,40 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Katana Man previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3119,
+        "burstKi": 4367,
+        "durabilityKi": 3119,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "katana-human",
         "name": "Forma Humana (Yakuza)",
         "stats": "Luchador con pistola y artes marciales. Muy frágil.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4211,
+        "burstKi": 5685,
+        "durabilityKi": 4211,
+        "sourceKi": null
       },
       {
         "id": "katana-hybrid",
         "name": "Forma Híbrido (Katana Devil)",
         "stats": "Extracción de la katana de la mano. Aumenta AP y regeneración. Pierde raciocinio sutil.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4211,
+        "burstKi": 5685,
+        "durabilityKi": 4211,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -156311,7 +160455,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica estándar.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2468,
+        "burstKi": 3949,
+        "durabilityKi": 2468,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "devil-contract-light",
@@ -156338,7 +160487,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Tiempo cumplido o cancelación manual",
         "canonStatus": "source_backed",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 3702,
+        "burstKi": 4998,
+        "durabilityKi": 3702,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -156636,7 +160790,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 310,
+        "burstKi": 434,
+        "durabilityKi": 310,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -156923,7 +161082,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4925,
+        "burstKi": 6895,
+        "durabilityKi": 4925,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -157216,7 +161380,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2342,
+        "burstKi": 3279,
+        "durabilityKi": 2342,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -157507,7 +161676,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 10080,
+        "burstKi": 14112,
+        "durabilityKi": 10080,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -157785,7 +161959,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Power previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2037,
+        "burstKi": 2852,
+        "durabilityKi": 2037,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -158089,16 +162268,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3833,
+        "burstKi": 5366,
+        "durabilityKi": 3833,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "quanxi-crossbow",
         "name": "Demonio Ballesta",
         "stats": "Rango y AP amplificados drásticamente, atacando múltiples enemigos a lo largo del mapa en modo ametralladora.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5175,
+        "burstKi": 6986,
+        "durabilityKi": 5175,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -158423,7 +162612,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5429,
+        "burstKi": 7601,
+        "durabilityKi": 5429,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "reze-bomba",
@@ -158451,7 +162645,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Mantener distancia contra explosiones o redirigir hacia cuerpos de agua.",
         "canonStatus": "apex_custom",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 8144,
+        "burstKi": 10994,
+        "durabilityKi": 8144,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -158749,16 +162948,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Santa Claus previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 5093,
+        "burstKi": 7130,
+        "durabilityKi": 5093,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "santa-claus-human",
         "name": "Tolka / Anciano (Señuelo)",
         "stats": "Cuerpos falsos, sin poder real, útiles para engaño narrativo.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 6876,
+        "burstKi": 9283,
+        "durabilityKi": 6876,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -159000,16 +163209,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Violence Fiend previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2478,
+        "burstKi": 3469,
+        "durabilityKi": 2478,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "violence-unmasked",
         "name": "Galgali Sin Máscara",
         "stats": "Transformación Táctica. Pierde limitantes y gana daño 7-C/7-B por embestida, enfocado en purificar o mutilar a la amenaza antes de caer él mismo.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3345,
+        "burstKi": 4516,
+        "durabilityKi": 3345,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -159275,7 +163494,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1323,
+        "burstKi": 1852,
+        "durabilityKi": 1323,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -159544,7 +163768,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4284,
+        "burstKi": 5998,
+        "durabilityKi": 4284,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -159797,25 +164026,40 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Biscuit Krueger previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2573,
+        "burstKi": 3602,
+        "durabilityKi": 2573,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "biscuit-loli",
         "name": "Forma Infante (Disfraz)",
         "stats": "Cuerpo pequeño. Alta evasión, esconde su fuerza real. Combate engañoso.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3474,
+        "burstKi": 4690,
+        "durabilityKi": 3474,
+        "sourceKi": null
       },
       {
         "id": "biscuit-true",
         "name": "Forma Verdadera",
         "stats": "Masa muscular extrema (Tier 7-B alto). Pierde velocidad de evasión pero su AP de ataque físico directo es abrumadoramente superior.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3474,
+        "burstKi": 4690,
+        "durabilityKi": 3474,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -160099,7 +164343,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1848,
+        "burstKi": 2587,
+        "durabilityKi": 1848,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -160399,16 +164648,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4904,
+        "burstKi": 6866,
+        "durabilityKi": 4904,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "double-face",
         "name": "Modo Double Face (Marcador de Libro Activo)",
         "stats": "Tier 7-B+ | Nivel Ciudad+. Dos habilidades robadas activas a la vez con manos libres.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 6620,
+        "burstKi": 8937,
+        "durabilityKi": 6620,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -160702,7 +164961,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6363,
+        "burstKi": 8908,
+        "durabilityKi": 6363,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -160960,7 +165224,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2142,
+        "burstKi": 2999,
+        "durabilityKi": 2142,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -161320,7 +165589,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "Forma Base canónica de Ging Freecss previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 6815,
+        "burstKi": 10904,
+        "durabilityKi": 6815,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -161648,7 +165922,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4725,
+        "burstKi": 6615,
+        "durabilityKi": 4725,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -161983,7 +166262,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3339,
+        "burstKi": 4675,
+        "durabilityKi": 3339,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gon-adulto",
@@ -162020,7 +166304,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Supervivencia temporal hasta que la transformación colapse por sí sola (dejarlo sin enemigos o forzarlo a calmarse).",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 166950,
+        "burstKi": 225383,
+        "durabilityKi": 166950,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -162388,7 +166677,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Combatiente de élite con control absoluto de la goma Bungee y Textura Engañosa.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2751,
+        "burstKi": 4127,
+        "durabilityKi": 2751,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hisoka-post-mortem",
@@ -162397,7 +166691,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 10,
         "tier": "High 8-A",
         "stats": "Nen reforzado tras la muerte que reconstruye partes perdidas con goma y goma elástica autónoma.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.6x",
+        "apexKi": 4402,
+        "burstKi": 5943,
+        "durabilityKi": 4402,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -162767,16 +167066,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 652,
+        "burstKi": 913,
+        "durabilityKi": 652,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "illumi-gittarackur",
         "name": "Gittarackur (Disfraz)",
         "stats": "Su rostro está lleno de agujas, voz alterada. Su AP físico baja levemente pero gana 100% de inmunidad a identificación y radares mentales.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 880,
+        "burstKi": 1188,
+        "durabilityKi": 880,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -163086,7 +167395,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "Low 7-B",
         "stats": "Estado Base del presidente de la Asociación de Cazadores, maestro consumado del Shingen-ryu.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3234,
+        "burstKi": 4851,
+        "durabilityKi": 3234,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "netero-guanyin-100",
@@ -163095,7 +167409,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "7-A",
         "stats": "Materialización de una estatua de Buda gigante de 100 brazos con golpes hipersónicos que superan la velocidad del sonido.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.2x",
+        "apexKi": 7115,
+        "burstKi": 9605,
+        "durabilityKi": 7115,
+        "sourceKi": null
       },
       {
         "id": "netero-rosa-miniatura",
@@ -163104,7 +167423,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 100,
         "tier": "High 7-A",
         "stats": "Detonación suicida del artefacto de fisión implantado en su corazón al cesar sus latidos.",
-        "category": "degradation_state"
+        "category": "degradation_state",
+        "multiplier": "10x",
+        "apexKi": 32340,
+        "burstKi": 48510,
+        "durabilityKi": 32340,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -163445,7 +167769,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3098,
+        "burstKi": 4337,
+        "durabilityKi": 3098,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "godspeed-kanmuru",
@@ -163454,7 +167783,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1.5,
         "tier": "8-A",
         "staminaDrain": 8,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 4647,
+        "burstKi": 6273,
+        "durabilityKi": 4647,
+        "sourceKi": null
       },
       {
         "id": "killua-godspeed",
@@ -163463,7 +167797,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 2,
         "tier": "8-A",
         "staminaDrain": 15,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 6196,
+        "burstKi": 8365,
+        "durabilityKi": 6196,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -163744,7 +168083,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2678,
+        "burstKi": 3749,
+        "durabilityKi": 2678,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -164005,7 +168349,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2888,
+        "burstKi": 4043,
+        "durabilityKi": 2888,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -164278,7 +168627,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "10-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 10,
+        "burstKi": 14,
+        "durabilityKi": 10,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -164542,7 +168896,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 125,
+        "burstKi": 175,
+        "durabilityKi": 125,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -164889,7 +169248,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3906,
+        "burstKi": 5468,
+        "durabilityKi": 3906,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "emperor-time",
@@ -164918,7 +169282,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Combate de resistencia prolongado para forzar el colapso por consumo de vida.",
         "canonStatus": "source_backed",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 5859,
+        "burstKi": 7910,
+        "durabilityKi": 5859,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -165244,7 +169613,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 291,
+        "burstKi": 407,
+        "durabilityKi": 291,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -165529,7 +169903,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1838,
+        "burstKi": 2573,
+        "durabilityKi": 1838,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -165753,7 +170132,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 112,
+        "burstKi": 157,
+        "durabilityKi": 112,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -166040,16 +170424,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Menthuthuyoupi previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 5030,
+        "burstKi": 7042,
+        "durabilityKi": 5030,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "youpi-centaur",
         "name": "Centauro Controlado",
         "stats": "Aumenta la movilidad y el IQ Táctico al 100%, bajando su impulsividad irracional.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 6791,
+        "burstKi": 9168,
+        "durabilityKi": 6791,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -166319,16 +170713,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4746,
+        "burstKi": 6644,
+        "durabilityKi": 4746,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "youpi-centaur",
         "name": "Forma Centauro (Ira Dominada)",
         "stats": "Máximo pico táctico y destructivo, anulando el punto débil post-explosión.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 6407,
+        "burstKi": 8649,
+        "durabilityKi": 6407,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -166597,7 +171001,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "Estado Base al nacer con fuerza biológica suprema y aura Nen abrumadora.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 8148,
+        "burstKi": 11407,
+        "durabilityKi": 8148,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "meruem-post-rosa",
@@ -166606,7 +171015,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "High 7-A",
         "stats": "Metamorfosis tras absorber a Shaiapouf y Menthuthuyoupi, proyectando fotones capaces de rastrear y aniquilar a distancia.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4.5x",
+        "apexKi": 36666,
+        "burstKi": 49499,
+        "durabilityKi": 36666,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -166923,7 +171337,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3287,
+        "burstKi": 4602,
+        "durabilityKi": 3287,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -167367,7 +171786,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5922,
+        "burstKi": 10067,
+        "durabilityKi": 5922,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "base-fury",
@@ -167393,7 +171817,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Rival con inteligencia táctica superior la engaña en su estado emocional.",
         "canonStatus": "apex_custom",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 7995,
+        "burstKi": 10793,
+        "durabilityKi": 7995,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -167667,7 +172096,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2447,
+        "burstKi": 3426,
+        "durabilityKi": 2447,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -167936,7 +172370,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 461,
+        "burstKi": 645,
+        "durabilityKi": 461,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -168202,16 +172641,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-B",
         "stats": "Forma Base canónica de Palm Siberia previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1334,
+        "burstKi": 1868,
+        "durabilityKi": 1334,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "palm-human",
         "name": "Palm (Humana - Modo Oculto)",
         "stats": "Su fase inicial. Usa el Cuchillo y no tiene daño letal pero sirve como Espía Táctica global.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1801,
+        "burstKi": 2431,
+        "durabilityKi": 1801,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -168496,7 +172945,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 344,
+        "burstKi": 482,
+        "durabilityKi": 344,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -168741,7 +173195,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1859,
+        "burstKi": 2603,
+        "durabilityKi": 1859,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -169005,7 +173464,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4484,
+        "burstKi": 6278,
+        "durabilityKi": 4484,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -169274,16 +173738,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-C",
         "stats": "Forma Base canónica de Shalnark previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 335,
+        "burstKi": 503,
+        "durabilityKi": 335,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "shalnark-auto",
         "name": "Piloto Automático (Auto Mode)",
         "stats": "Aura densa, pelo erizado. AP escala a Tier 8-A/7-C. Gasta toda su reserva Nen en pocos ataques.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 452,
+        "burstKi": 610,
+        "durabilityKi": 452,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -169547,7 +174021,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 71,
+        "burstKi": 99,
+        "durabilityKi": 71,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -169787,7 +174266,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1344,
+        "burstKi": 1882,
+        "durabilityKi": 1344,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -170100,7 +174584,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Silva e Illumi Zoldyck previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3948,
+        "burstKi": 6317,
+        "durabilityKi": 3948,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -170424,7 +174913,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1974,
+        "burstKi": 2764,
+        "durabilityKi": 1974,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -170697,7 +175191,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3003,
+        "burstKi": 4204,
+        "durabilityKi": 3003,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -170972,16 +175471,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-B",
         "stats": "Forma Base canónica de Bruno Bucciarati previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4127,
+        "burstKi": 5778,
+        "durabilityKi": 4127,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "bucciarati-zombie",
         "name": "Alma en Descomposición",
         "stats": "Condición permanente de su versión tardía. Límite de HP temporal antes de que su alma abandone el cuerpo definitivamente.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5571,
+        "burstKi": 7521,
+        "durabilityKi": 5571,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -171263,7 +175772,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 304,
+        "burstKi": 426,
+        "durabilityKi": 304,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -171515,7 +176029,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 999,
+        "burstKi": 1399,
+        "durabilityKi": 999,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -171769,7 +176288,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1103,
+        "burstKi": 1544,
+        "durabilityKi": 1103,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -172057,13 +176581,18 @@ export const INITIAL_CHARACTERS = [
         "limitations": "5 segundos de Time Stop (reducido frente al pico).",
         "canonStatus": "source_backed",
         "tier": "8-C Físico",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1670,
+        "burstKi": 2338,
+        "durabilityKi": 1670,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "dio-high",
         "name": "Modo / Sangre de Joseph / 9s Parada Temporal",
         "stats": "Nivel Bloque de Ciudad. apexKiMultiplier: 1.0 (El Hax es manipulación, no aumento de energía pura). Stamina Drained.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 35,
         "activationCondition": "Beber la sangre de Joseph Joestar justo antes del enfrentamiento final.",
         "grantedTags": [
@@ -172084,7 +176613,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar el combate hacia el amanecer, uso de Hamon a alta concentración o luz solar concentrada.",
         "canonStatus": "source_backed",
         "tier": "8-C Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2255,
+        "burstKi": 3044,
+        "durabilityKi": 2255,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -172434,25 +176968,40 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C Físico",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2615,
+        "burstKi": 3661,
+        "durabilityKi": 2615,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "pucci-cmoon",
         "name": "C-Moon (Gravedad Reversa)",
         "stats": "Nivel Bloque de Ciudad. Manipulación gravitatoria e inversión biológica.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-C Físico",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3530,
+        "burstKi": 4766,
+        "durabilityKi": 3530,
+        "sourceKi": null
       },
       {
         "id": "pucci-mih",
         "name": "Made in Heaven (Velocidad Infinita)",
         "stats": "Nivel Universal / Velocidad Infinita. Aceleración temporal y reseteo cósmico.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-C Físico",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3530,
+        "burstKi": 4766,
+        "durabilityKi": 3530,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -172748,7 +177297,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7098,
+        "burstKi": 9937,
+        "durabilityKi": 7098,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -173021,7 +177575,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1292,
+        "burstKi": 1809,
+        "durabilityKi": 1292,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -173355,7 +177914,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C Físico",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 547,
+        "burstKi": 821,
+        "durabilityKi": 547,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -173669,7 +178233,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1365,
+        "burstKi": 1911,
+        "durabilityKi": 1365,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -173970,16 +178539,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C Físico",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2636,
+        "burstKi": 3954,
+        "durabilityKi": 2636,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "giorno-ger",
         "name": "Gold Experience Requiem",
         "stats": "Nivel Causal Trascendental. Stand estilizado con la flecha incrustada en la frente y ojos cósmicos.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-C Físico",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3559,
+        "burstKi": 4805,
+        "durabilityKi": 3559,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -174290,7 +178869,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 231,
+        "burstKi": 323,
+        "durabilityKi": 231,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -174565,7 +179149,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1953,
+        "burstKi": 2734,
+        "durabilityKi": 1953,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -174819,7 +179408,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 231,
+        "burstKi": 323,
+        "durabilityKi": 231,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -175133,7 +179727,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 385,
+        "burstKi": 539,
+        "durabilityKi": 385,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -175381,7 +179980,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3560,
+        "burstKi": 4984,
+        "durabilityKi": 3560,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -175717,7 +180321,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-C Físico",
         "stats": "Forma Base canónica de Johnny Joestar previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1428,
+        "burstKi": 1999,
+        "durabilityKi": 1428,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -176047,7 +180656,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3696,
+        "burstKi": 5174,
+        "durabilityKi": 3696,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -176326,7 +180940,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 332,
+        "burstKi": 465,
+        "durabilityKi": 332,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -176665,7 +181284,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2678,
+        "burstKi": 4553,
+        "durabilityKi": 2678,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -177081,7 +181705,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 431,
+        "burstKi": 733,
+        "durabilityKi": 431,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -177468,13 +182097,18 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Rango limitado a 2 metros. Sin manipulación temporal.",
         "canonStatus": "source_backed",
         "tier": "8-C Físico",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1439,
+        "burstKi": 2015,
+        "durabilityKi": 1439,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "jotaro-timestop",
         "name": "Modo / Star Platinum: The World",
         "stats": "Nivel Bloque de Ciudad / 5 Segundos de Detención Temporal Absoluta. apexKiMultiplier: 1.0 (El Time Stop es Hax, no un boost de fuerza pura).",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 30,
         "activationCondition": "Desencadenar 'The World' en estado crítico.",
         "grantedTags": [
@@ -177494,7 +182128,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Usar usuarios con Time Stop propio para igualar el tiempo, o atacar al usuario físico durante el post-golpe.",
         "canonStatus": "source_backed",
         "tier": "8-C Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1943,
+        "burstKi": 2623,
+        "durabilityKi": 1943,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -177837,7 +182476,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7655,
+        "burstKi": 10717,
+        "durabilityKi": 7655,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -178141,7 +182785,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C Físico",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 402,
+        "burstKi": 563,
+        "durabilityKi": 402,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -178438,16 +183087,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "9-B",
         "stats": "Forma Base canónica de Koichi Hirose previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 106,
+        "burstKi": 148,
+        "durabilityKi": 106,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "koichi-act-1-2",
         "name": "Echoes Act 1 / Act 2",
         "stats": "Hax de Onomatopeyas: Puede usar sonidos materializados (Quemadura de 'Sizzle', ráfagas de aire de 'Whoosh'). Mayor rango (50 metros) pero cero AP físico.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 143,
+        "burstKi": 193,
+        "durabilityKi": 143,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -178718,7 +183377,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2951,
+        "burstKi": 4131,
+        "durabilityKi": 2951,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -178971,7 +183635,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1229,
+        "burstKi": 1721,
+        "durabilityKi": 1229,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -179221,7 +183890,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1176,
+        "burstKi": 1646,
+        "durabilityKi": 1176,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -179488,7 +184162,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 151,
+        "burstKi": 211,
+        "durabilityKi": 151,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -179761,7 +184440,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 379,
+        "burstKi": 531,
+        "durabilityKi": 379,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -179971,7 +184655,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "8-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 668,
+        "burstKi": 1002,
+        "durabilityKi": 668,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "rocky-spin-infinite",
@@ -179987,7 +184676,17 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "apex_custom",
         "tier": "8-A",
-        "category": "hax_mode"
+        "category": "hax_mode",
+        "multiplier": "150x",
+        "apexKi": 668,
+        "burstKi": 1002,
+        "durabilityKi": 668,
+        "sourceKi": null,
+        "doesNotIncrease": [
+          "apexKi",
+          "durabilityKi",
+          "liftingStrength"
+        ]
       }
     ],
     "synergies": [
@@ -180372,7 +185071,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 137,
+        "burstKi": 192,
+        "durabilityKi": 137,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -180624,7 +185328,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 116,
+        "burstKi": 162,
+        "durabilityKi": 116,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -180868,7 +185577,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 383,
+        "burstKi": 536,
+        "durabilityKi": 383,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -181135,7 +185849,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 403,
+        "burstKi": 564,
+        "durabilityKi": 403,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -181416,7 +186135,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 10364,
+        "burstKi": 14510,
+        "durabilityKi": 10364,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -181697,7 +186421,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2898,
+        "burstKi": 4057,
+        "durabilityKi": 2898,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -181941,7 +186670,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 424,
+        "burstKi": 594,
+        "durabilityKi": 424,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -182221,7 +186955,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 992,
+        "burstKi": 1389,
+        "durabilityKi": 992,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -182474,7 +187213,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5313,
+        "burstKi": 7438,
+        "durabilityKi": 5313,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -182762,7 +187506,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6185,
+        "burstKi": 8659,
+        "durabilityKi": 6185,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "awakening-breath",
@@ -182795,7 +187544,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Prolongar combate más allá de su umbral de resistencia.",
         "canonStatus": "source_backed",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 12370,
+        "burstKi": 16700,
+        "durabilityKi": 12370,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -183092,25 +187846,40 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 10689,
+        "burstKi": 14965,
+        "durabilityKi": 10689,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "bs-golden",
         "name": "Golden Sperm",
         "stats": "Sacrifica 43 billones de células. Aumento masivo de AP (Tier High 6-A) e inmunidad física. Pierde capacidad de dividirse.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 14430,
+        "burstKi": 19481,
+        "durabilityKi": 14430,
+        "sourceKi": null
       },
       {
         "id": "bs-platinum",
         "name": "Platinum Sperm",
         "stats": "Sacrifica los 54 billones casi en su totalidad. Máxima velocidad (FTL) y AP (Tier 5-C). Daño cuerpo a cuerpo insano.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 14430,
+        "burstKi": 19481,
+        "durabilityKi": 14430,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -183405,7 +188174,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2751000000,
+        "burstKi": 3851400000,
+        "durabilityKi": 2751000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -183712,16 +188486,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Child Emperor previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2552,
+        "burstKi": 3828,
+        "durabilityKi": 2552,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "child-emperor-brave-giant",
         "name": "Modo Brave Giant",
         "stats": "Transformación a AP/Durabilidad Montaña con temporizador de muerte lenta (Stamina decae cada turno hasta el colapso).",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3445,
+        "burstKi": 4651,
+        "durabilityKi": 3445,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -184087,7 +188871,11 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": [
           "Pérdida de control si se lesiona el núcleo del pacto"
         ],
-        "category": "base"
+        "category": "base",
+        "apexKi": 3003000000,
+        "burstKi": 4504500000,
+        "durabilityKi": 3003000000,
+        "sourceKi": null
       },
       {
         "id": "cosmic-fear",
@@ -184118,7 +188906,12 @@ export const INITIAL_CHARACTERS = [
           "Aura daña aliados"
         ],
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 4504500000,
+        "burstKi": 6081075000,
+        "durabilityKi": 4504500000,
+        "sourceKi": null
       },
       {
         "id": "mode-saitama",
@@ -184147,7 +188940,12 @@ export const INITIAL_CHARACTERS = [
           "Tiempo de actividad limitado"
         ],
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 6006000000,
+        "burstKi": 8108100000,
+        "durabilityKi": 6006000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -184446,16 +189244,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "Forma Base canónica de Drive Knight previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 6195,
+        "burstKi": 8673,
+        "durabilityKi": 6195,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "drive-knight-chariot",
         "name": "Transformación Táctica: Carruaje",
         "stats": "Vehículo táctico o centauro. Máxima movilidad para combate de acoso en movimiento.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 8363,
+        "burstKi": 11290,
+        "durabilityKi": 8363,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -184742,7 +189550,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 14679,
+        "burstKi": 20551,
+        "durabilityKi": 14679,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -185001,7 +189814,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 8190,
+        "burstKi": 12285,
+        "durabilityKi": 8190,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -185267,7 +190085,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5565,
+        "burstKi": 7791,
+        "durabilityKi": 5565,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -185526,7 +190349,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2100,
+        "burstKi": 2940,
+        "durabilityKi": 2100,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -185781,7 +190609,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 8085,
+        "burstKi": 11319,
+        "durabilityKi": 8085,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -186052,7 +190885,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3339,
+        "burstKi": 4675,
+        "durabilityKi": 3339,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -186354,25 +191192,40 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-C",
         "stats": "Forma Base canónica de Garou (Humano / Cazador de Héroes) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2741,
+        "burstKi": 3837,
+        "durabilityKi": 2741,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "garou-human",
         "name": "Cazador de Héroes",
         "stats": "Agilidad y técnicas perfectas.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3700,
+        "burstKi": 4995,
+        "durabilityKi": 3700,
+        "sourceKi": null
       },
       {
         "id": "garou-half-monster",
         "name": "Forma Semi-Monstruo (Espiral)",
         "stats": "Adquiere armadura de tela ensangrentada y cabello rojo. Inmunidad al dolor, AP salta a 7-B y velocidad supera por completo al Clase S promedio.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3700,
+        "burstKi": 4995,
+        "durabilityKi": 3700,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -186644,7 +191497,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7455,
+        "burstKi": 10437,
+        "durabilityKi": 7455,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ten-seconds-mode",
@@ -186672,7 +191530,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Esquivar los primeros segundos del Cañón Dragón para forzar el colapso antes de tiempo.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "8x",
+        "apexKi": 59640,
+        "burstKi": 80514,
+        "durabilityKi": 59640,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -186979,7 +191842,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 8001,
+        "burstKi": 11201,
+        "durabilityKi": 8001,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -187234,7 +192102,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4893,
+        "burstKi": 6850,
+        "durabilityKi": 4893,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -187548,7 +192421,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "10-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 11,
+        "burstKi": 18,
+        "durabilityKi": 11,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -187883,25 +192761,40 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3748500,
+        "burstKi": 5247900,
+        "durabilityKi": 3748500,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "unsealed",
         "name": "Forma Liberada (Sin Armadura)",
         "stats": "Tier 5-B | Nivel Planetario. Piel brillante de energía y regeneración rápida.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5060475,
+        "burstKi": 6831641,
+        "durabilityKi": 5060475,
+        "sourceKi": null
       },
       {
         "id": "meteoric-burst",
         "name": "Meteoric Burst (Estallido Meteórico)",
         "stats": "Tier 5-A a 4-C | Nivel Planeta Grande / Estrella. Patada a la Luna y Cañón de Estrella Colapsante.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 5060475,
+        "burstKi": 6831641,
+        "durabilityKi": 5060475,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -188206,7 +193099,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2709,
+        "burstKi": 3793,
+        "durabilityKi": 2709,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -188468,7 +193366,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 7707,
+        "burstKi": 10790,
+        "durabilityKi": 7707,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -188714,7 +193617,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2384,
+        "burstKi": 3338,
+        "durabilityKi": 2384,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -189030,7 +193938,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2782500,
+        "burstKi": 4452000,
+        "durabilityKi": 2782500,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -189333,25 +194246,40 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "Forma Base canónica de Phoenix Man previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 7413,
+        "burstKi": 10378,
+        "durabilityKi": 7413,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "phoenix-penguin",
         "name": "Modo Pingüino Diamante",
         "stats": "Su fuego y plumas se vuelven hielo súper duro; pierde ataques ígneos, pero aumenta su durabilidad y desvía daño láser o eléctrico.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 10008,
+        "burstKi": 13511,
+        "durabilityKi": 10008,
+        "sourceKi": null
       },
       {
         "id": "phoenix-chick",
         "name": "Modo Pollito (Roto)",
         "stats": "Forma castigada. Cuando pierde la fe en el traje o el traje se rompe. Cero AP. Humanoide cobarde.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 10008,
+        "burstKi": 13511,
+        "durabilityKi": 10008,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -189629,7 +194557,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2016,
+        "burstKi": 2822,
+        "durabilityKi": 2016,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -189929,7 +194862,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4253,
+        "burstKi": 5954,
+        "durabilityKi": 4253,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -190186,7 +195124,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4158,
+        "burstKi": 5821,
+        "durabilityKi": 4158,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -190474,7 +195417,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "4-A"
+        "tier": "4-A",
+        "apexKi": 1500000000,
+        "burstKi": 2250000000,
+        "durabilityKi": 1500000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -190813,7 +195761,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6017,
+        "burstKi": 8424,
+        "durabilityKi": 6017,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -191079,7 +196032,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4841,
+        "burstKi": 6777,
+        "durabilityKi": 4841,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -191361,7 +196319,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4578,
+        "burstKi": 6409,
+        "durabilityKi": 4578,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -191637,7 +196600,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2226,
+        "burstKi": 3339,
+        "durabilityKi": 2226,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -191903,7 +196871,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1995,
+        "burstKi": 2793,
+        "durabilityKi": 1995,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -192181,7 +197154,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "High 6-A a 5-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 56900,
+        "burstKi": 79660,
+        "durabilityKi": 56900,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "serious-telekinesis",
@@ -192190,7 +197168,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 5,
         "tier": "7-A",
         "staminaDrain": 15,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 284500,
+        "burstKi": 384075,
+        "durabilityKi": 284500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -192486,7 +197469,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 8705,
+        "burstKi": 12187,
+        "durabilityKi": 8705,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -192751,7 +197739,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2321,
+        "burstKi": 3249,
+        "durabilityKi": 2321,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -193085,7 +198078,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "High 6-A",
         "stats": "Forma Base canónica de All For One previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 47345,
+        "burstKi": 75752,
+        "durabilityKi": 47345,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "base-peak-armor",
@@ -193115,7 +198113,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "exitCondition": "Cansancio extremo o victoria asegurada",
         "tier": "High 6-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 66283,
+        "burstKi": 89482,
+        "durabilityKi": 66283,
+        "sourceKi": null
       },
       {
         "id": "fusion-shigaraki",
@@ -193148,7 +198151,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "exitCondition": "Muerte del cuerpo huésped o separación forzada",
         "tier": "High 6-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 94690,
+        "burstKi": 127832,
+        "durabilityKi": 94690,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -193454,7 +198462,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "6-A"
+        "tier": "6-A",
+        "apexKi": 11500,
+        "burstKi": 16100,
+        "durabilityKi": 11500,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -193746,7 +198759,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1901,
+        "burstKi": 2661,
+        "durabilityKi": 1901,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -194018,7 +199036,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2636,
+        "burstKi": 3690,
+        "durabilityKi": 2636,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -194321,7 +199344,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "High 6-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 30923,
+        "burstKi": 43292,
+        "durabilityKi": 30923,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "base-max-cremation",
@@ -194347,7 +199375,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Curandero/regenerador que lo mantenga fuera del combate; frío extremo que neutralice su llama.",
         "canonStatus": "source_backed",
         "tier": "High 6-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.3x",
+        "apexKi": 40200,
+        "burstKi": 54270,
+        "durabilityKi": 40200,
+        "sourceKi": null
       },
       {
         "id": "apex-final-prominence",
@@ -194372,7 +199405,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Interrumpir antes de la detonación, congelarlo o evacuar el área objetivo.",
         "canonStatus": "source_backed",
         "tier": "High 6-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 46385,
+        "burstKi": 62620,
+        "durabilityKi": 46385,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -194671,7 +199709,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2541,
+        "burstKi": 3557,
+        "durabilityKi": 2541,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -194977,7 +200020,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 10700,
+        "burstKi": 14980,
+        "durabilityKi": 10700,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "prominence-overheat",
@@ -195005,7 +200053,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Atacarlo durante la fase de carga con冰/cold damage (ej. Fosfor de Shoto).",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4.5x",
+        "apexKi": 48150,
+        "burstKi": 65003,
+        "durabilityKi": 48150,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -195298,16 +200351,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Fat Gum previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2321,
+        "burstKi": 3249,
+        "durabilityKi": 2321,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "fatgum-slim",
         "name": "Taishiro (Forma Delgada)",
         "stats": "Post-uso de FCE. Pierde su barrera de grasa y peso, quedándose sin AP ni Defensa alta.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3133,
+        "burstKi": 4230,
+        "durabilityKi": 3133,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -195583,7 +200646,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2762,
+        "burstKi": 3867,
+        "durabilityKi": 2762,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -195872,7 +200940,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2079,
+        "burstKi": 2911,
+        "durabilityKi": 2079,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -196140,16 +201213,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-C",
         "stats": "Forma Base canónica de Gentle Criminal previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 377,
+        "burstKi": 528,
+        "durabilityKi": 377,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gentle-lover",
         "name": "Gentle (Lover Mode)",
         "stats": "Cuerpo envuelto en energía rosa, saltos a la velocidad del sonido, impactos de Nivel Bloque garantizados. Alta resistencia.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 509,
+        "burstKi": 687,
+        "durabilityKi": 509,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -196399,7 +201482,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3003,
+        "burstKi": 4204,
+        "durabilityKi": 3003,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -196742,7 +201830,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "High 6-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 34062,
+        "burstKi": 54499,
+        "durabilityKi": 34062,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -197046,7 +202139,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2531,
+        "burstKi": 3543,
+        "durabilityKi": 2531,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -197373,7 +202471,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "High 6-A a 5-C",
         "stats": "Forma Base canónica de Izuku Midoriya (Deku) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 57845,
+        "burstKi": 80983,
+        "durabilityKi": 57845,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gearshift-overdrive",
@@ -197404,7 +202507,12 @@ export const INITIAL_CHARACTERS = [
           "Pérdida permanente del Quirk si se fuerza"
         ],
         "tier": "High 6-A a 5-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 115690,
+        "burstKi": 156182,
+        "durabilityKi": 115690,
+        "sourceKi": null
       },
       {
         "id": "full-cowl-100",
@@ -197431,7 +202539,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Colapso óseo o decisión de salida.",
         "counterplay": "Evasión de alto nivel; ataques que destruyan las brasas antes de la concentración.",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 289225,
+        "burstKi": 390454,
+        "durabilityKi": 289225,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -197758,7 +202871,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2079,
+        "burstKi": 2911,
+        "durabilityKi": 2079,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -198062,25 +203180,40 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 10301,
+        "burstKi": 14421,
+        "durabilityKi": 10301,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "cluster-awakening",
         "name": "Despertar Cluster (Explosión Total)",
         "stats": "Tier 7-A a High 6-A | Nivel Montaña/Multicontinental. Velocidad subrelativista e impacto masivo.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 13906,
+        "burstKi": 18773,
+        "durabilityKi": 13906,
+        "sourceKi": null
       },
       {
         "id": "bakugo-full-body-cluster",
         "name": "Full-Body Cluster (Despertar Final)",
         "stats": "El sudor se filtra por todos sus poros. Expulsa micro-explosiones de todo su cuerpo para moverse como un rayo de luz naranja inesquivable, rivalizando con la velocidad del OFA 100%. Daño orgánico autoinfligido severo.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 13906,
+        "burstKi": 18773,
+        "durabilityKi": 13906,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -198376,7 +203509,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1575,
+        "burstKi": 2205,
+        "durabilityKi": 1575,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -198630,7 +203768,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "10-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 8,
+        "burstKi": 11,
+        "durabilityKi": 8,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -198917,7 +204060,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1365,
+        "burstKi": 1911,
+        "durabilityKi": 1365,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -199202,7 +204350,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2972,
+        "burstKi": 4161,
+        "durabilityKi": 2972,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -199465,7 +204618,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1953,
+        "burstKi": 2734,
+        "durabilityKi": 1953,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -199705,16 +204863,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Mt. Lady previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2342,
+        "burstKi": 3279,
+        "durabilityKi": 2342,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "mt-lady-giant",
         "name": "Modo Gigante",
         "stats": "Transformación única. Aumenta AP y Durabilidad al máximo, reduce a 0 el sigilo y la evasión minuciosa.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3162,
+        "burstKi": 4269,
+        "durabilityKi": 3162,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -199983,7 +205151,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2037,
+        "burstKi": 2852,
+        "durabilityKi": 2037,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -200208,7 +205381,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2205,
+        "burstKi": 3087,
+        "durabilityKi": 2205,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -200476,7 +205654,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 4851,
+        "burstKi": 6791,
+        "durabilityKi": 4851,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -200745,25 +205928,40 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Overhaul previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1880,
+        "burstKi": 2632,
+        "durabilityKi": 1880,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "overhaul-nemoto",
         "name": "Fusión con Shin Nemoto",
         "stats": "Gana brazos extra y ventajas tácticas (telepatía/forzar la verdad). Aumenta AP y movilidad.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2538,
+        "burstKi": 3426,
+        "durabilityKi": 2538,
+        "sourceKi": null
       },
       {
         "id": "overhaul-katsukame",
         "name": "Forma Monstruosa Final (Katsukame)",
         "stats": "Transformación titánica asimilando biomasa. Estadísticas físicas al nivel 7-B alto. Gana absorción de vitalidad.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2538,
+        "burstKi": 3426,
+        "durabilityKi": 2538,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -201033,7 +206231,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2027,
+        "burstKi": 2838,
+        "durabilityKi": 2027,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -201311,16 +206514,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Re-Destro previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3255,
+        "burstKi": 4557,
+        "durabilityKi": 3255,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "redestro-80",
         "name": "Stress Output: 80%",
         "stats": "Aumento de tamaño, AP nivel Ciudad.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4394,
+        "burstKi": 5932,
+        "durabilityKi": 4394,
+        "sourceKi": null
       },
       {
         "id": "redestro-100",
@@ -201329,7 +206542,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 2.5,
         "tier": "8-A",
         "staminaDrain": 15,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 8138,
+        "burstKi": 10986,
+        "durabilityKi": 8138,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -201700,7 +206918,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "High 6-A a 5-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 96863,
+        "burstKi": 145295,
+        "durabilityKi": 96863,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "awakened-decay",
@@ -201725,7 +206948,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Fatiga mental o intervención de AFO interno.",
         "counterplay": "Evasión a rango orbital; anticipar la cadena.",
         "tier": "High 6-A a 5-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.3x",
+        "apexKi": 125922,
+        "burstKi": 169995,
+        "durabilityKi": 125922,
+        "sourceKi": null
       },
       {
         "id": "apex-all-for-one",
@@ -201757,7 +206985,12 @@ export const INITIAL_CHARACTERS = [
           "Pérdida de identidad entre Tomura y All For One"
         ],
         "tier": "High 6-A a 5-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 193726,
+        "burstKi": 261530,
+        "durabilityKi": 193726,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -202089,7 +207322,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 512,
+        "burstKi": 717,
+        "durabilityKi": 512,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -202370,7 +207608,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 9881,
+        "burstKi": 13833,
+        "durabilityKi": 9881,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "phosphor-mode",
@@ -202399,7 +207642,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques sónicos o sísmicos que alteren su ritmo cardíaco; shock eléctrico directo al pecho.",
         "canonStatus": "source_backed",
         "tier": "7-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5.5x",
+        "apexKi": 54346,
+        "burstKi": 73367,
+        "durabilityKi": 54346,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -202709,7 +207957,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1124,
+        "burstKi": 1574,
+        "durabilityKi": 1124,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -202974,16 +208227,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Spinner previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2205,
+        "burstKi": 3087,
+        "durabilityKi": 2205,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "spinner-mutated",
         "name": "Monstruo de AFO",
         "stats": "Transformación final (Escamas/Tamaño). Baja evasión a 0, sube AP a 7-B. El HP no baja por dolor de golpes.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2977,
+        "burstKi": 4019,
+        "durabilityKi": 2977,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -203238,7 +208501,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 476,
+        "burstKi": 666,
+        "durabilityKi": 476,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -203499,7 +208767,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "High 6-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 38010,
+        "burstKi": 53214,
+        "durabilityKi": 38010,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -203763,7 +209036,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2142,
+        "burstKi": 2999,
+        "durabilityKi": 2142,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -204040,7 +209318,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2174,
+        "burstKi": 3044,
+        "durabilityKi": 2174,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -204330,7 +209613,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "8-A"
+        "tier": "8-A",
+        "apexKi": 850,
+        "burstKi": 1190,
+        "durabilityKi": 850,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ogre-back",
@@ -204341,7 +209629,12 @@ export const INITIAL_CHARACTERS = [
         "tier": "8-A",
         "drawbacks": [
           "Desgaste muscular extremo"
-        ]
+        ],
+        "multiplier": "1.4x",
+        "apexKi": 1190,
+        "burstKi": 1607,
+        "durabilityKi": 850,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -204657,7 +209950,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2499,
+        "burstKi": 3499,
+        "durabilityKi": 2499,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -204977,7 +210275,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-B",
         "stats": "Forma Base canónica de Doppo Orochi previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1617,
+        "burstKi": 2587,
+        "durabilityKi": 1617,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -205247,7 +210550,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1649,
+        "burstKi": 2309,
+        "durabilityKi": 1649,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -205497,7 +210805,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 403,
+        "burstKi": 564,
+        "durabilityKi": 403,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -205757,16 +211070,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-C",
         "stats": "Forma Base canónica de Gaia previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 352,
+        "burstKi": 493,
+        "durabilityKi": 352,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gaia-nomura",
         "name": "Nomura (Forma Civil Pasiva)",
         "stats": "El cuerpo sufre TID. Cuando es Nomura, es tímido, miedoso e inofensivo. Solo cuando es herido, Gaia toma el control con instinto asesino.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 475,
+        "burstKi": 641,
+        "durabilityKi": 475,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -206047,7 +211370,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 456,
+        "burstKi": 638,
+        "durabilityKi": 456,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -206352,16 +211680,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3171,
+        "burstKi": 4439,
+        "durabilityKi": 3171,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "goudou-master",
         "name": "Estilo Goudou Despertado (Mordida Letal)",
         "stats": "Tier 7-B | Nivel Ciudad. Dientes de titanio y mordidas que mutilan a campeones de sumo.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4281,
+        "burstKi": 5779,
+        "durabilityKi": 4281,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -206656,7 +211994,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1323,
+        "burstKi": 1852,
+        "durabilityKi": 1323,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -206926,7 +212269,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 455,
+        "burstKi": 637,
+        "durabilityKi": 455,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -207257,7 +212605,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2247,
+        "burstKi": 3595,
+        "durabilityKi": 2247,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -207532,7 +212885,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 302,
+        "burstKi": 423,
+        "durabilityKi": 302,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -207797,7 +213155,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 445,
+        "burstKi": 623,
+        "durabilityKi": 445,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -208052,7 +213415,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 328,
+        "burstKi": 459,
+        "durabilityKi": 328,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -208344,7 +213712,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Musashi Miyamoto (Reencarnado) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3024,
+        "burstKi": 4536,
+        "durabilityKi": 3024,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -208641,7 +214014,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2079,
+        "burstKi": 2911,
+        "durabilityKi": 2079,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -208929,16 +214307,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2888,
+        "burstKi": 4043,
+        "durabilityKi": 2888,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "predator-form",
         "name": "Forma Cuadrúpeda (Depredador Jurásico)",
         "stats": "Tier 7-B+ | Nivel Ciudad+. Aceleración bestial y mordidas letales.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3899,
+        "burstKi": 5264,
+        "durabilityKi": 3899,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -209287,7 +214675,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1197,
+        "burstKi": 1915,
+        "durabilityKi": 1197,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -209558,7 +214951,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 373,
+        "burstKi": 522,
+        "durabilityKi": 373,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -209821,7 +215219,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 334,
+        "burstKi": 468,
+        "durabilityKi": 334,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -210055,7 +215458,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 343,
+        "burstKi": 480,
+        "durabilityKi": 343,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -210312,7 +215720,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 446,
+        "burstKi": 624,
+        "durabilityKi": 446,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -210579,7 +215992,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1034,
+        "burstKi": 1448,
+        "durabilityKi": 1034,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -210846,7 +216264,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 547,
+        "burstKi": 766,
+        "durabilityKi": 547,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -211132,7 +216555,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "8-A"
+        "tier": "8-A",
+        "apexKi": 1100,
+        "burstKi": 1540,
+        "durabilityKi": 1100,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "yujiro-ogre-back",
@@ -211140,7 +216568,15 @@ export const INITIAL_CHARACTERS = [
         "category": "state_amp",
         "apexKiMultiplier": 1.35,
         "staminaDrain": 10,
-        "tier": "8-A"
+        "tier": "8-A",
+        "multiplier": "1.35x",
+        "apexKi": 1485,
+        "burstKi": 2005,
+        "durabilityKi": 1100,
+        "sourceKi": null,
+        "drawbacks": [
+          "Desgaste acelerado de stamina y tensión física"
+        ]
       }
     ],
     "feats": [
@@ -211496,7 +216932,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 68145000000,
+        "burstKi": 95403000000,
+        "durabilityKi": 68145000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "post-mortem-will",
@@ -211522,7 +216963,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques que destruyan la voluntad misma o maten a los hijos para doblegarlo.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 95403000000,
+        "burstKi": 128794050000,
+        "durabilityKi": 95403000000,
+        "sourceKi": null
       },
       {
         "id": "eyes-overdrive",
@@ -211548,7 +216994,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques múltiples simultáneos para saturar la capacidad de copia.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 136290000000,
+        "burstKi": 183991500000,
+        "durabilityKi": 136290000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -211817,7 +217268,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1048950000,
+        "burstKi": 1468530000,
+        "durabilityKi": 1048950000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -212141,7 +217597,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 14385000000,
+        "burstKi": 20139000000,
+        "durabilityKi": 14385000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "chaos-mode",
@@ -212168,7 +217629,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques previos al autosacrificio; un usuario de teletransportación puede explotar el 'tiempo de carga'.",
         "canonStatus": "source_backed",
         "tier": "3-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "8x",
+        "apexKi": 115080000000,
+        "burstKi": 155358000000,
+        "durabilityKi": 115080000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -212494,7 +217960,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 9166500000,
+        "burstKi": 12833100000,
+        "durabilityKi": 9166500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "nirvana-sword",
@@ -212521,7 +217992,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Anulación de la conexión Völundr; oscuridad absoluta que devore la luz antes del impacto.",
         "canonStatus": "source_backed",
         "tier": "3-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "15x",
+        "apexKi": 137497500000,
+        "burstKi": 185621625000,
+        "durabilityKi": 137497500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -212847,7 +218323,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1690500000,
+        "burstKi": 2366700000,
+        "durabilityKi": 1690500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ichor-desmos",
@@ -212871,7 +218352,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar combate prolongado para que la pérdida de sangre lo desgaste.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.5x",
+        "apexKi": 5916750000,
+        "burstKi": 7987612500,
+        "durabilityKi": 5916750000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -213175,7 +218661,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 929250000,
+        "burstKi": 1300950000,
+        "durabilityKi": 929250000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -213460,16 +218951,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Heracles previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1092000000,
+        "burstKi": 1528800000,
+        "durabilityKi": 1092000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "heracles-cerberus",
         "name": "Modo Cerbero",
         "stats": "Aumenta la fuerza base (AP pasa de 4-B al pico de 3-C). Añade penetración de armadura pero añade daño continuo autoinfligido (Tick damage).",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1474200000,
+        "burstKi": 1990170000,
+        "durabilityKi": 1474200000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -213808,7 +219309,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1010100000,
+        "burstKi": 1616160000,
+        "durabilityKi": 1010100000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "volundr-awakened",
@@ -213834,7 +219340,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Mantener distancia física para evitar que toque nuevos objetos.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.4x",
+        "apexKi": 1414140000,
+        "burstKi": 1909089000,
+        "durabilityKi": 1414140000,
+        "sourceKi": null
       },
       {
         "id": "apex-final-dear-god",
@@ -213859,7 +219370,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Contraataque frontal antes de la culminación del lanzamiento.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 1818180000,
+        "burstKi": 2454543000,
+        "durabilityKi": 1818180000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -214218,7 +219734,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 15225000000,
+        "burstKi": 21315000000,
+        "durabilityKi": 15225000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "manju-muso",
@@ -214250,7 +219771,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques de área absoluta, veneno, AOE masivo que no permita micro-esquivos.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4x",
+        "apexKi": 60900000000,
+        "burstKi": 82215000000,
+        "durabilityKi": 60900000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -214589,7 +220115,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 903000000,
+        "burstKi": 1264200000,
+        "durabilityKi": 903000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -214909,7 +220440,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1428000000,
+        "burstKi": 2284800000,
+        "durabilityKi": 1428000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -215231,7 +220767,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 937650000,
+        "burstKi": 1500240000,
+        "durabilityKi": 937650000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "volundr-shield-break",
@@ -215257,7 +220798,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Evasión total antes del golpe; Randgriz no anula evasión.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 1406475000,
+        "burstKi": 1898741250,
+        "durabilityKi": 1406475000,
+        "sourceKi": null
       },
       {
         "id": "apex-sky-eater",
@@ -215282,7 +220828,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Choque directo de igual o mayor output antes de la culminación.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1875300000,
+        "burstKi": 2531655000,
+        "durabilityKi": 1875300000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -215600,7 +221151,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1365000000,
+        "burstKi": 2047500000,
+        "durabilityKi": 1365000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "gematria-zone",
@@ -215627,7 +221183,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques de área amplia que colapsen el campo electromagnético.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.5x",
+        "apexKi": 4777500000,
+        "burstKi": 6449625000,
+        "durabilityKi": 4777500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -215930,7 +221491,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 967050000,
+        "burstKi": 1353870000,
+        "durabilityKi": 967050000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -216215,16 +221781,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Okita Souji previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 894600000,
+        "burstKi": 1341900000,
+        "durabilityKi": 894600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "okita-demon",
         "name": "Niño Demonio",
         "stats": "El corazón supera el límite. Pierde defensa y HP permanentemente en cada turno, pero gana el stat de velocidad de ataque más alto posible del juego para asestar golpes letales e inesquivables.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1207710000,
+        "burstKi": 1630408500,
+        "durabilityKi": 1207710000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -216509,7 +222085,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1176000000,
+        "burstKi": 1646400000,
+        "durabilityKi": 1176000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "40-day-flood",
@@ -216537,7 +222118,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Atacar el centro absoluto de la cúpula; ataques de agua/elementales para amplificar el torbellino.",
         "canonStatus": "source_backed",
         "tier": "4-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "50x",
+        "apexKi": 58800000000,
+        "burstKi": 79380000000,
+        "durabilityKi": 58800000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -216804,7 +222390,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1155000000,
+        "burstKi": 1617000000,
+        "durabilityKi": 1155000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -217105,16 +222696,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1785000000,
+        "burstKi": 2499000000,
+        "durabilityKi": 1785000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "qin-blindfold-off",
         "name": "Emperador sin Venda",
         "stats": "Acceso a las Balas de Aire para anular Hax enemigo. El jugador empieza a recibir daño pasivo en su propia barra de HP cada vez que lastima al rival.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2409750000,
+        "burstKi": 3253162500,
+        "durabilityKi": 2409750000,
+        "sourceKi": null
       },
       {
         "id": "sword-goujian",
@@ -217139,7 +222740,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques masivos en zonas de Qi desconocidas.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.5x",
+        "apexKi": 6247500000,
+        "burstKi": 8434125000,
+        "durabilityKi": 6247500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -217410,16 +223016,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Raiden Tameemon previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1417500000,
+        "burstKi": 1984500000,
+        "durabilityKi": 1417500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "raiden-unleashed",
         "name": "Cien Sellos Liberados",
         "stats": "Su fuerza muscular máxima. Incrementa AP enormemente, pero causa auto-daño (Tick Damage interno).",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1913625000,
+        "burstKi": 2583393750,
+        "durabilityKi": 1913625000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -217715,7 +223331,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1407000000,
+        "burstKi": 2110500000,
+        "durabilityKi": 1407000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "tandava-karma",
@@ -217750,7 +223371,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Sobrevivir el tiempo suficiente para que se consuma a sí mismo; contraataques a larga distancia aprovechan la rigidez rítmica.",
         "canonStatus": "source_backed",
         "tier": "4-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "4x",
+        "apexKi": 5628000000,
+        "burstKi": 7597800000,
+        "durabilityKi": 5628000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -218035,7 +223661,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1239000000,
+        "burstKi": 1734600000,
+        "durabilityKi": 1239000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -218299,7 +223930,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1060500000,
+        "burstKi": 1484700000,
+        "durabilityKi": 1060500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -218549,16 +224185,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Zerofuku previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 781200000,
+        "burstKi": 1093680000,
+        "durabilityKi": 781200000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hajun-descent",
         "name": "Rey Demonio del Sexto Cielo (Hajun)",
         "stats": "Hajun toma su cuerpo (Ventana narrativa final). Cambio drástico: AP 3-C consistente, invulnerabilidad del alma, pierde capacidad de crecer por miseria, pero gana daño perforante definitivo y calma brutal.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1054620000,
+        "burstKi": 1423737000,
+        "durabilityKi": 1054620000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -218854,7 +224500,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 73395000000,
+        "burstKi": 102753000000,
+        "durabilityKi": 73395000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "adamas",
@@ -218886,7 +224537,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar el paso del límite de tiempo (Stamina Break) o反击 golpes de tiempo cero con una entidad que exista fuera del tiempo.",
         "canonStatus": "source_backed",
         "tier": "3-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 183487500000,
+        "burstKi": 247708125000,
+        "durabilityKi": 183487500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -219205,7 +224861,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 102270000000000,
+        "burstKi": 143178000000000,
+        "durabilityKi": 102270000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -219484,16 +225145,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Agent Venom previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3381,
+        "burstKi": 4733,
+        "durabilityKi": 3381,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "agent-anti-venom",
         "name": "Agent Anti-Venom",
         "stats": "Cura venenos, demonios o enfermedades letales con toques mágicos purificadores, inmune a debilidades sónicas tradicionales.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4564,
+        "burstKi": 6161,
+        "durabilityKi": 4564,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -219767,25 +225438,40 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "9-B",
         "stats": "Forma Base canónica de Ant-Man / Giant-Man previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 161,
+        "burstKi": 225,
+        "durabilityKi": 161,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "antman-micro",
         "name": "Modo Ant-Man (Micro)",
         "stats": "Máxima evasión. Imposible de tarjetear con ataques convencionales. Daño crítico a puntos débiles.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 217,
+        "burstKi": 293,
+        "durabilityKi": 217,
+        "sourceKi": null
       },
       {
         "id": "antman-giant",
         "name": "Modo Giant-Man (Macro)",
         "stats": "Máxima potencia destructiva y defensa (HP sube a Tier 5). Velocidad de evasión se vuelve casi nula.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 217,
+        "burstKi": 293,
+        "durabilityKi": 217,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -220057,7 +225743,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2583,
+        "burstKi": 3616,
+        "durabilityKi": 2583,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -220322,7 +226013,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 211,
+        "burstKi": 295,
+        "durabilityKi": 211,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -220643,7 +226339,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5114,
+        "burstKi": 8182,
+        "durabilityKi": 5114,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -220947,7 +226648,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3801,
+        "burstKi": 5321,
+        "durabilityKi": 3801,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -221223,7 +226929,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 387,
+        "burstKi": 542,
+        "durabilityKi": 387,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -221473,7 +227184,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2258,
+        "burstKi": 3161,
+        "durabilityKi": 2258,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -221769,16 +227485,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Doctor Doom previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3633,
+        "burstKi": 5086,
+        "durabilityKi": 3633,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "god-emperor-doom",
         "name": "God Emperor Doom",
         "stats": "Con los poderes de los Beyonders (Secret Wars). Tier 1-B a 0. Manipula la realidad entera del Multiverso dictando las leyes de todo lo existente. (Requiere Lore Event para activar).",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4905,
+        "burstKi": 6622,
+        "durabilityKi": 4905,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -222057,7 +227783,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 182,
+        "burstKi": 255,
+        "durabilityKi": 182,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -222388,7 +228119,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-A",
         "stats": "Hechicero Supremo con el Ojo de Agamotto, Capa de Levitación y dominio de las artes místicas de Vishanti.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 28697,
+        "burstKi": 43046,
+        "durabilityKi": 28697,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "strange-astral",
@@ -222397,7 +228133,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "High 7-A",
         "stats": "Separación del plano físico para combatir amenazas conceptuales y manipular hechizos a velocidad del pensamiento.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 43046,
+        "burstKi": 58112,
+        "durabilityKi": 43046,
+        "sourceKi": null
       },
       {
         "id": "strange-dark-magic",
@@ -222406,7 +228147,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 45,
         "tier": "Low 2-C",
         "stats": "Uso de las ataduras de Cyttorak y magia negra para someter amenazas multiversales.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 71743,
+        "burstKi": 96853,
+        "durabilityKi": 71743,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -222714,7 +228460,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 340,
+        "burstKi": 476,
+        "durabilityKi": 340,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -223057,7 +228808,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "1-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1.2495e+21,
+        "burstKi": 1.8742500000000002e+21,
+        "durabilityKi": 1.2495e+21,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -223364,7 +229120,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 746550000000000,
+        "burstKi": 1045170000000000,
+        "durabilityKi": 746550000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -223646,16 +229407,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-B",
         "stats": "Forma Base canónica de Ghost Rider previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 211995,
+        "burstKi": 296793,
+        "durabilityKi": 211995,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ghost-rider-zarathos",
         "name": "Zarathos Desatado",
         "stats": "Blaze cede el control por completo. Pierde toda humanidad. AP salta a Nivel 2-C, el fuego infernal crece hasta devorar ciudades enteras y su durabilidad se vuelve cósmica divina.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 286193,
+        "burstKi": 386361,
+        "durabilityKi": 286193,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -223901,16 +229672,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Green Goblin previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3507,
+        "burstKi": 4910,
+        "durabilityKi": 3507,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "osborn-red-goblin",
         "name": "Red Goblin (Carnage Symbiote - Lore Variante)",
         "stats": "En sagas donde combina la Fórmula con el simbionte Carnage. Inmunidad a debilidades sónicas, AP y Resistencia saltan a 7-B. Insta-Kill Melé.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4734,
+        "burstKi": 6391,
+        "durabilityKi": 4734,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -224161,16 +229942,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "9-A",
         "stats": "Forma Base canónica de Hawkeye previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 208,
+        "burstKi": 291,
+        "durabilityKi": 208,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hawkeye-ronin",
         "name": "Ronin (Katana Mode)",
         "stats": "Abandona el arco y pasa a CQC (Cuerpo a Cuerpo Furtivo). Combate Ninja asesino; mayor velocidad de impacto letal físico pero pierde alcance zonal.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 281,
+        "burstKi": 379,
+        "durabilityKi": 281,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -224484,7 +230275,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "El gigante esmeralda cuya fuerza aumenta sin límite a medida que se enfurece más.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1701000000,
+        "burstKi": 2551500000,
+        "durabilityKi": 1701000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "hulk-immortal",
@@ -224493,7 +230289,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 20,
         "tier": "High 4-B",
         "stats": "Regeneración aberrante y fuerza alimentada por la Puerta Verde del One Below All.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 2551500000,
+        "burstKi": 3444525000,
+        "durabilityKi": 2551500000,
+        "sourceKi": null
       },
       {
         "id": "hulk-world-breaker",
@@ -224502,7 +230303,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 45,
         "tier": "4-A",
         "stats": "Radiación gamma cósmica emitida con cada paso capaz de resquebrajar placas tectónicas y mundos enteros.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3x",
+        "apexKi": 5103000000,
+        "burstKi": 6889050000,
+        "durabilityKi": 5103000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -224846,7 +230652,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Resistencia física de la armadura depende del impacto recibido.",
         "canonStatus": "source_backed",
         "tier": "7-A Físico",
-        "category": "base"
+        "category": "base",
+        "apexKi": 23352,
+        "burstKi": 32693,
+        "durabilityKi": 23352,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "ironman-enisarmor",
@@ -224866,7 +230677,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Requiere tiempo de carga solar antes del combate.",
         "canonStatus": "source_backed",
         "tier": "7-A Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 58380,
+        "burstKi": 78813,
+        "durabilityKi": 58380,
+        "sourceKi": null
       },
       {
         "id": "ironman-godbuster",
@@ -224886,7 +230702,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Tiempo de despliegue de 1 turno; vulnerable antes del ensamblaje completo.",
         "canonStatus": "source_backed",
         "tier": "7-A Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 116760,
+        "burstKi": 157626,
+        "durabilityKi": 116760,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -225267,16 +231088,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "1-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1.386e+21,
+        "burstKi": 1.9404000000000003e+21,
+        "durabilityKi": 1.386e+21,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "dark-phoenix",
         "name": "Dark Phoenix (fusión sin control)",
         "stats": "Tier 1-C; pico de poder absoluto, sin restricciones morales de la personalidad de Jean",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "1-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 1.8711e+21,
+        "burstKi": 2.525985e+21,
+        "durabilityKi": 1.8711e+21,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -225632,7 +231463,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "source_backed",
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6468,
+        "burstKi": 10349,
+        "durabilityKi": 6468,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -225929,7 +231765,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 92820000000000,
+        "burstKi": 139230000000000,
+        "durabilityKi": 92820000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -226205,7 +232046,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2069,
+        "burstKi": 2897,
+        "durabilityKi": 2069,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -226489,7 +232335,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1638000,
+        "burstKi": 2457000,
+        "durabilityKi": 1638000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -226800,7 +232651,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "1-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2.1525e+21,
+        "burstKi": 3.0135e+21,
+        "durabilityKi": 2.1525e+21,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -227079,16 +232935,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-C",
         "stats": "Forma Base canónica de Moon Knight previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 487,
+        "burstKi": 682,
+        "durabilityKi": 487,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "moon-knight-mr-knight",
         "name": "Mr. Knight",
         "stats": "Modo traje de gala. Abandona armas arrojadizas por boxeo limpio, CQC y brutalidad psicológica elegante. Gana Bonus de evasión/precisión.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 657,
+        "burstKi": 887,
+        "durabilityKi": 657,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -227361,7 +233227,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 289,
+        "burstKi": 405,
+        "durabilityKi": 289,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -227672,7 +233543,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "1-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 984900000000000000000,
+        "burstKi": 1.47735e+21,
+        "durabilityKi": 984900000000000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -228000,7 +233876,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2415,
+        "burstKi": 3381,
+        "durabilityKi": 2415,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -228287,7 +234168,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de Silver Surfer (Norrin Radd) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 154350000000000,
+        "burstKi": 216090000000000,
+        "durabilityKi": 154350000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "herald-prime",
@@ -228311,7 +234197,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar el agotamiento del tiempo; sobrevivir más allá del límite.",
         "canonStatus": "apex_custom",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 277830000000000,
+        "burstKi": 375070500000000,
+        "durabilityKi": 277830000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -228669,7 +234560,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "8-A"
+        "tier": "8-A",
+        "apexKi": 900,
+        "burstKi": 1260,
+        "durabilityKi": 900,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -229121,7 +235017,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Fuerza física bruta capaz de noquear a Hulk y Thor sin artefactos externos.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1911000000,
+        "burstKi": 3057600000,
+        "durabilityKi": 1911000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "thanos-gauntlet",
@@ -229130,7 +235031,17 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 30,
         "tier": "Low 2-C",
         "stats": "Control sobre el espacio, tiempo, mente, alma, realidad y poder del multiverso Marvel.",
-        "category": "hax_mode"
+        "category": "hax_mode",
+        "multiplier": "50x",
+        "apexKi": 1911000000,
+        "burstKi": 3057600000,
+        "durabilityKi": 1911000000,
+        "sourceKi": null,
+        "doesNotIncrease": [
+          "apexKi",
+          "durabilityKi",
+          "liftingStrength"
+        ]
       }
     ],
     "feats": [
@@ -229450,25 +235361,40 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de The Sentry (Robert Reynolds) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 161700000000000,
+        "burstKi": 226380000000000,
+        "durabilityKi": 161700000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "sentry-reprimido",
         "name": "Sentry (memoria suprimida)",
         "stats": "Tier 6-A; forma más común, con recuerdos y poder autolimitados psicológicamente",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 218295000000000,
+        "burstKi": 294698250000000,
+        "durabilityKi": 218295000000000,
+        "sourceKi": null
       },
       {
         "id": "sentry-completo",
         "name": "Sentry (poder completo desatado)",
         "stats": "Tier 2-C; forma teórica rara vez alcanzada de forma estable",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 218295000000000,
+        "burstKi": 294698250000000,
+        "durabilityKi": 218295000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -229785,7 +235711,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Limitado al potencial estándar de un Príncipe Asgardiano en pleno apogeo físico.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 145950000000000,
+        "burstKi": 204330000000000,
+        "durabilityKi": 145950000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "thor-king-physics",
@@ -229805,7 +235736,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Fatiga divina progresiva; uso prolongado puede envejecerlo drásticamente.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 291900000000000,
+        "burstKi": 394065000000000,
+        "durabilityKi": 291900000000000,
+        "sourceKi": null
       },
       {
         "id": "thor-warrior-madness",
@@ -229829,7 +235765,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Pérdida total del juicio táctico y vulnerabilidad a trampas mentales.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3x",
+        "apexKi": 437850000000000,
+        "burstKi": 591097500000000,
+        "durabilityKi": 437850000000000,
+        "sourceKi": null
       },
       {
         "id": "thor-rkt",
@@ -229850,7 +235791,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Ceguera total; canalización rúnica requiere concentración absoluta.",
         "canonStatus": "source_backed",
         "tier": "2-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "10x",
+        "apexKi": 1459500000000000,
+        "burstKi": 1970325000000000,
+        "durabilityKi": 1459500000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -230210,7 +236156,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 402150000,
+        "burstKi": 563010000,
+        "durabilityKi": 402150000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -230513,7 +236464,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3780,
+        "burstKi": 5292,
+        "durabilityKi": 3780,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -230796,7 +236752,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 27237,
+        "burstKi": 38132,
+        "durabilityKi": 27237,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -231064,16 +237025,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Wolverine previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3465,
+        "burstKi": 4851,
+        "durabilityKi": 3465,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "wolverine-berserker",
         "name": "Berserker Rage",
         "stats": "Aumenta la ofensiva y anula efectos de control mental o miedo; pierde capacidad de hacer equipo/sinergia táctica.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 4678,
+        "burstKi": 6315,
+        "durabilityKi": 4678,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -231367,7 +237338,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1785,
+        "burstKi": 2678,
+        "durabilityKi": 1785,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -231675,7 +237651,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "1-C",
         "stats": "Forma Base canónica estándar.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1.281e+21,
+        "burstKi": 1.7934000000000003e+21,
+        "durabilityKi": 1.281e+21,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "war-monitor",
@@ -231699,7 +237680,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Intervención directa de Presencia, Perpetua, o espectros equivalentes.",
         "canonStatus": "source_backed",
         "tier": "1-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 1.9215e+21,
+        "burstKi": 2.5940250000000004e+21,
+        "durabilityKi": 1.9215e+21,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -231987,7 +237973,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 294945,
+        "burstKi": 412923,
+        "durabilityKi": 294945,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -232276,7 +238267,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 454,
+        "burstKi": 636,
+        "durabilityKi": 454,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -232561,7 +238557,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "9-A Físico",
         "stats": "Forma Base canónica de Batman (Bruce Wayne) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 704,
+        "burstKi": 1056,
+        "durabilityKi": 704,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "batman-hellbat",
@@ -232589,7 +238590,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Saturar la armadura con daño cósmico continuo antes de que descargue todo su poder.",
         "canonStatus": "source_backed",
         "tier": "9-A Físico",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 3520,
+        "burstKi": 4752,
+        "durabilityKi": 3520,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -232920,7 +238926,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1344000000,
+        "burstKi": 1881600000,
+        "durabilityKi": 1344000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -233239,7 +239250,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "source_backed",
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 96915000000000,
+        "burstKi": 155064000000000,
+        "durabilityKi": 96915000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "brainiac-ship-amplified",
@@ -233266,7 +239282,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques orbitales preemptivos o tecnologías de jamming a escala galáctica.",
         "canonStatus": "apex_custom",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 145372500000000,
+        "burstKi": 196252875000000,
+        "durabilityKi": 145372500000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -233573,7 +239594,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 126,
+        "burstKi": 176,
+        "durabilityKi": 126,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -233835,7 +239861,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 6027,
+        "burstKi": 8438,
+        "durabilityKi": 6027,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -234249,7 +240280,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "3-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 30135000000,
+        "burstKi": 48216000000,
+        "durabilityKi": 30135000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "darkseid-true",
@@ -234283,7 +240319,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "source_backed",
         "canonicalReference": "Final Crisis #1-7 (2008) - Grant Morrison / Darkseid War (2015)",
         "tier": "3-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.5x",
+        "apexKi": 105472500000,
+        "burstKi": 142387875000,
+        "durabilityKi": 105472500000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -234594,16 +240635,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 136500000000000,
+        "burstKi": 191100000000000,
+        "durabilityKi": 136500000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "darkseid-true",
         "name": "Forma Verdadera (Dios Abstracto del Mal)",
         "stats": "Nivel Multiversal Alto / Outerversal. Su mera caída arrastra el continuo espacio-tiempo de la Creación.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 184275000000000,
+        "burstKi": 248771250000000,
+        "durabilityKi": 184275000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -234876,7 +240927,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2142,
+        "burstKi": 2999,
+        "durabilityKi": 2142,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -235150,7 +241206,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 132300000000000,
+        "burstKi": 185220000000000,
+        "durabilityKi": 132300000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -235503,7 +241564,12 @@ export const INITIAL_CHARACTERS = [
           "Inmunidad a la Magia"
         ],
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 92505000000000,
+        "burstKi": 138757500000000,
+        "durabilityKi": 92505000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "doomsday-hunter",
@@ -235526,7 +241592,12 @@ export const INITIAL_CHARACTERS = [
         "suppressedTags": [],
         "counterplay": "Manipulación Temporal Extrema: enviarlo al Fin del Tiempo donde la entropía supera la adaptación.",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.85x",
+        "apexKi": 171134250000000,
+        "burstKi": 231031237500000,
+        "durabilityKi": 171134250000000,
+        "sourceKi": null
       },
       {
         "id": "doomsday-radiant",
@@ -235545,7 +241616,12 @@ export const INITIAL_CHARACTERS = [
         "drawbacks": "Su propia aura comienza a consumirlo, reduciendo su HP un 5% por turno tras la activación.",
         "canonStatus": "apex_custom",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.1x",
+        "apexKi": 194260500000000,
+        "burstKi": 262251675000000,
+        "durabilityKi": 194260500000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -235930,7 +242006,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Manipulación conceptual, narrativa-metafísica, o entidades de tier igual o superior.",
         "canonStatus": "source_backed",
         "tier": "1-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1.071e+21,
+        "burstKi": 1.6065e+21,
+        "durabilityKi": 1.071e+21,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -236221,16 +242302,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Forma Base canónica de Etrigan the Demon previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 479850000,
+        "burstKi": 671790000,
+        "durabilityKi": 479850000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "jason-blood",
         "name": "Jason Blood (Humano Inmortal)",
         "stats": "Modo explorador/Hechicero clásico. Baja durabilidad y AP Nivel Bloque. Usa espadas y magia rúnica de Merlín. (Para activar a Etrigan usa el rimo: 'Gone, gone the form of man, Rise the demon Etrigan!').",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 647797500,
+        "burstKi": 874526625,
+        "durabilityKi": 647797500,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -236562,7 +242653,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "source_backed",
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 84945000000000,
+        "burstKi": 135912000000000,
+        "durabilityKi": 84945000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -236884,7 +242980,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2510,
+        "burstKi": 3514,
+        "durabilityKi": 2510,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -237212,7 +243313,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de Green Lantern (Hal Jordan) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 136500000000000,
+        "burstKi": 204750000000000,
+        "durabilityKi": 136500000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "green-lantern-emerald-armor",
@@ -237247,7 +243353,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Atacar a Hal antes de que consolide la armadura, o usar magia capaz de ignorar constructos.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 245700000000000,
+        "burstKi": 331695000000000,
+        "durabilityKi": 245700000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -237580,7 +243691,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 193,
+        "burstKi": 270,
+        "durabilityKi": 193,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -237929,7 +244045,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 368,
+        "burstKi": 589,
+        "durabilityKi": 368,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -238228,7 +244349,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "4-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1165500000,
+        "burstKi": 1631700000,
+        "durabilityKi": 1165500000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -238508,7 +244634,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Fuerza física comparable a Superman, visión marciana, telepatía planetaria y maleabilidad celular.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1344000000,
+        "burstKi": 1881600000,
+        "durabilityKi": 1344000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "martian-spectral",
@@ -238517,7 +244648,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "4-B",
         "stats": "Control de la densidad atómica para atravesar materia sólida y ataques físicos.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 1612800000,
+        "burstKi": 2177280000,
+        "durabilityKi": 1612800000,
+        "sourceKi": null
       },
       {
         "id": "martian-hyperdensity",
@@ -238526,7 +244662,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 35,
         "tier": "4-A",
         "stats": "Densificación molecular máxima con golpes que deforman titanio y asalto mental masivo.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 2688000000,
+        "burstKi": 3628800000,
+        "durabilityKi": 2688000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -238916,7 +245057,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Fuerza física comparable a Superman, visión marciana, telepatía planetaria y maleabilidad celular.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 946050000,
+        "burstKi": 1608285000,
+        "durabilityKi": 946050000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "martian-spectral",
@@ -238925,7 +245071,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 15,
         "tier": "4-B",
         "stats": "Control de la densidad atómica para atravesar materia sólida y ataques físicos.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.2x",
+        "apexKi": 1135260000,
+        "burstKi": 1532601000,
+        "durabilityKi": 1135260000,
+        "sourceKi": null
       },
       {
         "id": "martian-hyperdensity",
@@ -238934,7 +245085,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 35,
         "tier": "4-A",
         "stats": "Densificación molecular máxima con golpes que deforman titanio y asalto mental masivo.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1892100000,
+        "burstKi": 2554335000,
+        "durabilityKi": 1892100000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -239243,7 +245399,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1607,
+        "burstKi": 2250,
+        "durabilityKi": 1607,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -239566,16 +245727,26 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1722000,
+        "burstKi": 2410800,
+        "durabilityKi": 1722000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "raven-demon",
         "name": "Demoniaca (Trigon's Will)",
         "stats": "Poseída por sus instintos demoníacos. AP escala a Tier 2-C/2-B de destrucción cósmica, gana invulnerabilidad, pero ataca indiscriminadamente (Berserker) o es injugable si sucumbe.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2324700,
+        "burstKi": 3138345,
+        "durabilityKi": 2324700,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -239841,7 +246012,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2153,
+        "burstKi": 3014,
+        "durabilityKi": 2153,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -240119,7 +246295,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 192150000000000,
+        "burstKi": 269010000000000,
+        "durabilityKi": 192150000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -240372,16 +246553,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "9-B",
         "stats": "Forma Base canónica de Scarecrow previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 152,
+        "burstKi": 213,
+        "durabilityKi": 152,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "scarebeast",
         "name": "Scarebeast (Mutación de Pánico)",
         "stats": "Forma rara/Hax: Muta por la toxina en una bestia gigante que exhala gas. Gana Fuerza Bruta 8-B y regeneración.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 205,
+        "burstKi": 277,
+        "durabilityKi": 205,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -240741,7 +246932,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Eliminarlo antes de que pueda completar la vocalización.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 96285000000000,
+        "burstKi": 154056000000000,
+        "durabilityKi": 96285000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -241105,7 +247301,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Cortar el acceso a la Batería de Poder, generar estados sin miedo (raro en el universo DC).",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 132300000000000,
+        "burstKi": 198450000000000,
+        "durabilityKi": 132300000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -241428,7 +247629,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "1-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1.533e+21,
+        "burstKi": 2.1462000000000003e+21,
+        "durabilityKi": 1.533e+21,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -241739,7 +247945,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2152500,
+        "burstKi": 3013500,
+        "durabilityKi": 2152500,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -242035,7 +248246,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Potencial máximo limitado a la absorción solar actual.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "base"
+        "category": "base",
+        "apexKi": 165900000000000,
+        "burstKi": 248850000000000,
+        "durabilityKi": 165900000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "superman-blue-form",
@@ -242055,7 +248271,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Inestabilidad metabólica; el exceso de poder daña su organismo.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.8x",
+        "apexKi": 298620000000000,
+        "burstKi": 403137000000000,
+        "durabilityKi": 298620000000000,
+        "sourceKi": null
       },
       {
         "id": "superman-flashpoint",
@@ -242074,7 +248295,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Crea paradojas temporales; vulnerable al ataque desde líneas temporales fijas.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 414750000000000,
+        "burstKi": 559912500000000,
+        "durabilityKi": 414750000000000,
+        "sourceKi": null
       },
       {
         "id": "superman-sundipped",
@@ -242094,7 +248320,12 @@ export const INITIAL_CHARACTERS = [
         "limitations": "Pérdida progresiva de energía tras abandonar la fuente solar.",
         "canonStatus": "source_backed",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "5x",
+        "apexKi": 829500000000000,
+        "burstKi": 1119825000000000,
+        "durabilityKi": 829500000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -242446,7 +248677,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1134000000000000,
+        "burstKi": 1587600000000000,
+        "durabilityKi": 1134000000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -242742,16 +248978,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de The Batman Who Laughs previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2636,
+        "burstKi": 3690,
+        "durabilityKi": 2636,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "darkest-knight",
         "name": "The Darkest Knight",
         "stats": "Forma Final/Death Metal. Asimiló los poderes puros del Doctor Manhattan. AP salta a 1-C a Tier 0, controlando el espacio, el tiempo y volviéndose casi omnipotente (Borrando planetas apuntando el dedo).",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 3559,
+        "burstKi": 4805,
+        "durabilityKi": 3559,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -243089,7 +249335,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "2-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 212100000000000,
+        "burstKi": 318150000000000,
+        "durabilityKi": 212100000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "wally-flash-form",
@@ -243112,7 +249363,12 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "source_backed",
         "canonicalReference": "The Flash #91 (1994) - Terminal Velocity / The Flash #100 (1995)",
         "tier": "2-C",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 318150000000000,
+        "burstKi": 429502500000000,
+        "durabilityKi": 318150000000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -243562,7 +249818,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "4-B",
         "stats": "Bendición de los dioses olímpicos con lazo de la verdad, brazaletes de sumisión y espada mágica.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 844200000,
+        "burstKi": 1266300000,
+        "durabilityKi": 844200000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "wonder-woman-god-killer",
@@ -243571,7 +249832,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 25,
         "tier": "4-A",
         "stats": "Liberación de sus limitaciones al quitarse los brazaletes divinos.",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1688400000,
+        "burstKi": 2279340000,
+        "durabilityKi": 1688400000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -243901,7 +250167,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 285,
+        "burstKi": 399,
+        "durabilityKi": 285,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -244206,7 +250477,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "High 5-B",
         "stats": "Forma Base canónica de Allen the Alien (Poder Completo Post-Entrenamiento) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 1522500,
+        "burstKi": 2131500,
+        "durabilityKi": 1522500,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "max_muscular_output",
@@ -244221,7 +250497,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Forzar extensión temporal del combate para que colapse por agotamiento.",
         "canonStatus": "apex_custom",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 2283750,
+        "burstKi": 3083063,
+        "durabilityKi": 2283750,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -244554,7 +250835,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "2-C",
         "stats": "Forma Base canónica de Angstrom Levy previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 31500000000000,
+        "burstKi": 44100000000000,
+        "durabilityKi": 31500000000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -244880,7 +251166,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "5-A",
         "stats": "Forma Base canónica de Anissa previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 4851000,
+        "burstKi": 6791400,
+        "durabilityKi": 4851000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -245174,7 +251465,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -245471,7 +251767,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 26061,
+        "burstKi": 36485,
+        "durabilityKi": 26061,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -245765,7 +252066,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -246057,7 +252363,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 560700000000,
+        "burstKi": 784980000000,
+        "durabilityKi": 560700000000,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "battle-beast-berserker",
@@ -246085,7 +252396,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Sacrificios defensivos a distancia para drenar su stamina.",
         "canonStatus": "apex_custom",
         "tier": "5-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 841050000000,
+        "burstKi": 1135417500000,
+        "durabilityKi": 841050000000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -246365,7 +252681,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -246651,7 +252972,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 880635,
+        "burstKi": 1232889,
+        "durabilityKi": 880635,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -246943,7 +253269,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -247252,11 +253583,15 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Túnica Imperial de 500 Años",
         "stats": "Tier 5-A | Nivel Planeta Grande",
-        "multiplier": "1.0x",
+        "multiplier": "1x",
         "apexKiMultiplier": 1,
         "tier": "5-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -247558,7 +253893,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -247890,7 +254230,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-A"
+        "tier": "5-A",
+        "apexKi": 1800000,
+        "burstKi": 2700000,
+        "durabilityKi": 1800000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -248182,7 +254527,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-A"
+        "tier": "5-A",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -248422,7 +254772,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -248709,11 +255064,15 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Traje Azul y Negro",
         "stats": "Tier High 5-B | Nivel Planeta Grande",
-        "multiplier": "1.0x",
+        "multiplier": "1x",
         "apexKiMultiplier": 1,
         "tier": "High 5-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -249053,11 +255412,15 @@ export const INITIAL_CHARACTERS = [
         "id": "base",
         "name": "Ropa Casual / Entrenamiento",
         "stats": "Tier 8-A | Nivel Edificio Grande",
-        "multiplier": "1.0x",
+        "multiplier": "1x",
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -249402,7 +255765,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -249718,7 +256086,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -249998,7 +256371,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 900000,
+        "burstKi": 1260000,
+        "durabilityKi": 900000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -250300,7 +256678,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -250578,7 +256961,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -250905,7 +257293,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Robot / Rudolph Conners (Rus Livingston) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2321,
+        "burstKi": 3714,
+        "durabilityKi": 2321,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -251185,7 +257578,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -251461,7 +257859,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -251722,7 +258125,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -252028,7 +258436,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "6-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 31469,
+        "burstKi": 47204,
+        "durabilityKi": 31469,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -252321,7 +258734,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "5-B"
+        "tier": "5-B",
+        "apexKi": 600000,
+        "burstKi": 840000,
+        "durabilityKi": 600000,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -252593,13 +259011,18 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2027,
+        "burstKi": 2838,
+        "durabilityKi": 2027,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "a-train-mach-overdrive",
         "name": "Modo Velocidad Límite Sostenida",
         "stats": "Capacidad máxima tras el trasplante: Mantiene Mach 3 sin riesgo de falla cardíaca por tiempos prolongados.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "staminaDrain": 15,
         "activationCondition": "Post-trasplante de corazón de Blue Hawk.",
         "grantedTags": [
@@ -252617,7 +259040,12 @@ export const INITIAL_CHARACTERS = [
         "exitCondition": "Agotamiento físico normal.",
         "canonStatus": "source_backed",
         "tier": "8-A",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2736,
+        "burstKi": 3694,
+        "durabilityKi": 2736,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -252984,7 +259412,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 5901,
+        "burstKi": 8261,
+        "durabilityKi": 5901,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "butcher-tempv",
@@ -253001,7 +259434,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2.5x",
+        "apexKi": 14753,
+        "burstKi": 19917,
+        "durabilityKi": 14753,
+        "sourceKi": null
       },
       {
         "id": "butcher-tumor",
@@ -253017,7 +259455,12 @@ export const INITIAL_CHARACTERS = [
         ],
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "3.5x",
+        "apexKi": 20654,
+        "burstKi": 27883,
+        "durabilityKi": 20654,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -253349,7 +259792,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 5523,
+        "burstKi": 8285,
+        "durabilityKi": 5523,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -253689,7 +260137,12 @@ export const INITIAL_CHARACTERS = [
         "category": "base",
         "apexKiMultiplier": 1,
         "staminaDrain": 0,
-        "tier": "7-B"
+        "tier": "7-B",
+        "apexKi": 2800,
+        "burstKi": 3920,
+        "durabilityKi": 2800,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -253991,7 +260444,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 402,
+        "burstKi": 563,
+        "durabilityKi": 402,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -254274,7 +260732,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2331,
+        "burstKi": 3263,
+        "durabilityKi": 2331,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -254603,7 +261066,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 1995,
+        "burstKi": 2793,
+        "durabilityKi": 1995,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -254880,7 +261348,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-B",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 3749,
+        "burstKi": 5249,
+        "durabilityKi": 3749,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "soldierboy-russian-overload",
@@ -254906,7 +261379,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Aislamiento físico del portador o cancelación por Novichok.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.3x",
+        "apexKi": 4874,
+        "burstKi": 6580,
+        "durabilityKi": 4874,
+        "sourceKi": null
       },
       {
         "id": "soldierboy-canon-final",
@@ -254934,7 +261412,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques a distancia durante la ventana de carga de 5 segundos.",
         "canonStatus": "source_backed",
         "tier": "7-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 5624,
+        "burstKi": 7592,
+        "durabilityKi": 5624,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -255288,7 +261771,12 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "7-B",
         "stats": "Forma Base canónica de Starlight (Annie January) previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 3035,
+        "burstKi": 4856,
+        "durabilityKi": 3035,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -255596,7 +262084,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "7-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2510,
+        "burstKi": 3514,
+        "durabilityKi": 2510,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -255858,16 +262351,26 @@ export const INITIAL_CHARACTERS = [
         "staminaDrain": 0,
         "tier": "8-A",
         "stats": "Forma Base canónica de Tek Knight previo a cualquier transformación.",
-        "category": "base"
+        "category": "base",
+        "apexKi": 2163,
+        "burstKi": 3028,
+        "durabilityKi": 2163,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "tek-knight-no-suit",
         "name": "Robert Vernon (Civil/Interrogador)",
         "stats": "Sin armadura, su Durabilidad y AP físico caen a Tier 9-C (Humano), pero conserva 100% de la Hipersensibilidad táctica para predecir a los rivales y guiar a su equipo como soporte verbal.",
-        "apexKiMultiplier": 1,
+        "apexKiMultiplier": 1.35,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "1.35x",
+        "apexKi": 2920,
+        "burstKi": 3942,
+        "durabilityKi": 2920,
+        "sourceKi": null
       }
     ],
     "feats": [
@@ -256129,7 +262632,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 319,
+        "burstKi": 447,
+        "durabilityKi": 319,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -256382,7 +262890,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-C",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 302,
+        "burstKi": 423,
+        "durabilityKi": 302,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -256613,7 +263126,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "9-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 186,
+        "burstKi": 260,
+        "durabilityKi": 186,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -256910,7 +263428,12 @@ export const INITIAL_CHARACTERS = [
         "apexKiMultiplier": 1,
         "tier": "8-A",
         "staminaDrain": 0,
-        "category": "base"
+        "category": "base",
+        "apexKi": 2016,
+        "burstKi": 3226,
+        "durabilityKi": 2016,
+        "sourceKi": null,
+        "multiplier": "1x"
       }
     ],
     "feats": [
@@ -257141,7 +263664,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques psíquicos o saturación de cálculo cognitivo.",
         "canonStatus": "apex_custom",
         "tier": "9-B",
-        "category": "base"
+        "category": "base",
+        "apexKi": 712,
+        "burstKi": 997,
+        "durabilityKi": 712,
+        "sourceKi": null,
+        "multiplier": "1x"
       },
       {
         "id": "josh-nexo",
@@ -257170,7 +263698,12 @@ export const INITIAL_CHARACTERS = [
         "counterplay": "Ataques masivos que excedan la velocidad de cálculo probabilístico (potencia bruta > 2.0 multiplier).",
         "canonStatus": "apex_custom",
         "tier": "9-B",
-        "category": "transformation"
+        "category": "transformation",
+        "multiplier": "2x",
+        "apexKi": 1424,
+        "burstKi": 1922,
+        "durabilityKi": 1424,
+        "sourceKi": null
       }
     ],
     "synergies": [

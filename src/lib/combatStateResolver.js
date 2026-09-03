@@ -288,35 +288,22 @@ export function resolveCombatState(character, activeStateId = 'base', scenario =
   if (!isTrulyBase && stateObj) {
     let resolved = false;
 
-    // P1: explicit apexKiLog10
-    if (!resolved && validPositive(stateObj.apexKiLog10) && Number.isFinite(stateObj.apexKiLog10)) {
-      currentApexKiLog10 = stateObj.apexKiLog10;
-      const logDiff = currentApexKiLog10 - (baseApexKiLog10 ?? 0);
-      formMultiplier = Math.pow(10, logDiff);
-      if (!Number.isFinite(formMultiplier) || formMultiplier <= 0) formMultiplier = 1;
-      scalingMethod = 'explicit-apex-ki';
+    // P1: explicit apexKiMultiplier on state object
+    const explicitMult = stateObj.apexKiMultiplier ?? (typeof stateObj.multiplier === 'number' ? stateObj.multiplier : parseFloat(stateObj.multiplier)) ?? stateObj.powerMultiplier;
+    if (validPositive(explicitMult)) {
+      formMultiplier = explicitMult;
+      currentApexKiLog10 = baseApexKiLog10 !== null ? baseApexKiLog10 + Math.log10(formMultiplier) : null;
+      scalingMethod = 'explicit-multiplier';
       resolved = true;
     }
 
-    // P2: explicit apexKi (raw value)
+    // P2: explicit apexKi (raw value on stateObj)
     if (!resolved && validPositive(stateObj.apexKi)) {
-      currentApexKiLog10 = Math.log10(stateObj.apexKi);
-      const base = baseApexKiLog10 !== null ? Math.pow(10, baseApexKiLog10) : 1;
-      formMultiplier = stateObj.apexKi / base;
+      const baseKi = character.numericStats?.apexKi || character.apexKi || 1;
+      formMultiplier = stateObj.apexKi / baseKi;
       if (!Number.isFinite(formMultiplier) || formMultiplier <= 0) formMultiplier = 1;
       scalingMethod = 'explicit-apex-ki';
       resolved = true;
-    }
-
-    // P3: explicit apexKiMultiplier on state object
-    if (!resolved) {
-      const explicitMult = stateObj.apexKiMultiplier ?? stateObj.multiplier ?? stateObj.powerMultiplier;
-      if (validPositive(explicitMult)) {
-        formMultiplier = explicitMult;
-        currentApexKiLog10 = baseApexKiLog10 !== null ? baseApexKiLog10 + Math.log10(formMultiplier) : null;
-        scalingMethod = 'explicit-multiplier';
-        resolved = true;
-      }
     }
 
     // P4: Config alias lookup in formScalingConfig (picks the longest/most specific exact match)
@@ -492,13 +479,15 @@ export function resolveCombatState(character, activeStateId = 'base', scenario =
    
    if (isApexKiTranscendent) {
      apexKiRaw = null;
+   } else if (validPositive(stateObj?.apexKi)) {
+     apexKiRaw = stateObj.apexKi;
    } else if (isDB && validPositive(sourceKiCurrent)) {
      apexKiRaw = sourceKiCurrent;
    } else {
       // Prioridad 1: Si el personaje tiene numericStats auténticos ya calibrados y únicos
       const charKi = character.numericStats?.apexKi || character.numericStats?.powerLevel || character.numericStats?.scouterKi;
       if (validPositive(charKi)) {
-        apexKiRaw = charKi * (validPositive(formMultiplier) ? formMultiplier : 1.0);
+        apexKiRaw = Math.round(charKi * (validPositive(formMultiplier) ? formMultiplier : 1.0));
       } else {
         // Usar el desglose dinámico individualizado por estadísticas, hazañas, velocidad, durabilidad y Hax
         const bd = getPowerLevelFormulaBreakdown(character, activeStateId);

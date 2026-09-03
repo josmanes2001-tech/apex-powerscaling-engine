@@ -594,18 +594,26 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   let formMult = 1.0;
   let formLabel = 'Forma Base (x1.0)';
 
-  // Check multiplier string first (e.g. 50x, x50, x10, 1000000x, 2x, etc.)
-  const xMatch = (formMultiplierStr || '').match(/(?:x\s*([0-9\.]+)|([0-9\.]+)\s*x)/i);
-  if (xMatch) {
-    const val = parseFloat(xMatch[1] || xMatch[2]);
-    if (!isNaN(val) && val > 0) {
-      formMult = val;
-      formLabel = `Multiplicador (${val}x)`;
+  if (typeof activeForm.apexKiMultiplier === 'number' && activeForm.apexKiMultiplier > 0) {
+    formMult = activeForm.apexKiMultiplier;
+    formLabel = `${activeForm.name || 'Forma'} (${formMult}x)`;
+  } else if (typeof activeForm.multiplier === 'number' && activeForm.multiplier > 0) {
+    formMult = activeForm.multiplier;
+    formLabel = `${activeForm.name || 'Forma'} (${formMult}x)`;
+  } else {
+    // Check multiplier string first (e.g. 50x, x50, x10, 1000000x, 2x, etc.)
+    const xMatch = (formMultiplierStr || '').match(/(?:x\s*([0-9\.]+)|([0-9\.]+)\s*x)/i);
+    if (xMatch) {
+      const val = parseFloat(xMatch[1] || xMatch[2]);
+      if (!isNaN(val) && val > 0) {
+        formMult = val;
+        formLabel = `Multiplicador (${val}x)`;
+      }
     }
   }
 
   // If no explicit multiplier or default 1.0, detect from form name
-  if (formMult === 1.0) {
+  if (formMult === 1.0 && !formName.includes('base') && activeForm.id !== 'base') {
     if (formName.includes('beast') || formName.includes('bestia')) {
       formMult = 1000000;
       formLabel = 'Gohan Beast (x1,000,000)';
@@ -679,11 +687,15 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
     }
   }
 
-  // Si el personaje ya tiene un apexKi explícito definido en su ficha, respetarlo como fuente primaria
+  // Si la forma activa ya tiene un apexKi explícito definido, respetarlo como fuente primaria
   let finalVal = 0;
-  if (canonOverride && !canonOverride.calculatedOnly) {
+  if (typeof activeForm.apexKi === 'number' && activeForm.apexKi > 0) {
+    finalVal = activeForm.apexKi;
+  } else if (canonOverride && !canonOverride.calculatedOnly) {
     finalVal = canonOverride.base;
     if (formMult !== 1.0) finalVal = Math.round(finalVal * formMult);
+  } else if (typeof character.numericStats?.apexKi === 'number' && character.numericStats.apexKi > 0) {
+    finalVal = Math.round(character.numericStats.apexKi * formMult);
   } else if (typeof character.apexKi === 'number' && character.apexKi > 0) {
     finalVal = Math.round(character.apexKi * formMult);
   } else {
@@ -724,17 +736,25 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
   const apexPLNum = calculateApexPL(profile);
 
   // Determinar si hay sourceKi histórico oficial de Dragon Ball
-  let sourceKi = character.sourceKi || (canonOverride && !canonOverride.calculatedOnly ? canonOverride.base : null);
-  if (sourceKi && formMult !== 1.0) sourceKi = Math.round(sourceKi * formMult);
+  let sourceKi = activeForm.sourceKi || character.sourceKi || (canonOverride && !canonOverride.calculatedOnly ? canonOverride.base : null);
+  if (sourceKi && !activeForm.sourceKi && formMult !== 1.0) sourceKi = Math.round(sourceKi * formMult);
 
   const effectiveKi = sourceKi || finalVal;
   const scouter = formatScouterResult(effectiveKi, character.tier);
 
+  // Calcular burstKi y durabilityKi dinámicos para la forma activa
+  const formBurstKi = typeof activeForm.burstKi === 'number' && activeForm.burstKi > 0
+    ? activeForm.burstKi
+    : Math.round(effectiveKi * 1.35);
+  const formDurabilityKi = typeof activeForm.durabilityKi === 'number' && activeForm.durabilityKi > 0
+    ? activeForm.durabilityKi
+    : Math.round(effectiveKi * (durability.factor || 1.0));
+
   return {
     characterName: character.name,
     activeFormName: activeForm.name || 'Forma Base',
-    tier: character.tier,
-    tierExact: character.tierExact || character.tier,
+    tier: activeForm.tier || character.tier,
+    tierExact: activeForm.tierExact || character.tierExact || character.tier,
     apexPL: String(apexPLNum),
     apexKi: scouter.formatted,
     apexKiRaw: effectiveKi,
@@ -755,14 +775,14 @@ export function getPowerLevelFormulaBreakdown(character, activeFormId) {
     formattedKi: scouter.formatted,
     rank: scouter.rank,
     isOverload: scouter.isOverload,
-    burstKi: character.burstKi || Math.round(effectiveKi * 1.35),
-    durabilityKi: character.durabilityKi || Math.round(effectiveKi * (durability.factor || 1.0)),
+    burstKi: formBurstKi,
+    durabilityKi: formDurabilityKi,
     combatModifiers: {
       initiative: Number((speed.factor * 0.6 + 0.4).toFixed(2)),
       dodgeChance: Number((speed.factor * 0.4 + 0.6).toFixed(2)),
       hitChance: Number((haxBiq.factor * 0.5 + 0.5).toFixed(2))
     },
-    formulaExpression: `APEX-Ki = BaseEnergy(${character.tier}) × Consistencia × Forma(${formMult}x) = ${scouter.formatted}` + (sourceKi ? (` | Oficial DB: ${sourceKi.toLocaleString('es-ES')} Unidades`) : ''),
+    formulaExpression: `APEX-Ki = BaseEnergy(${activeForm.tier || character.tier}) × Forma(${formMult}x) = ${scouter.formatted}` + (sourceKi ? (` | Oficial DB: ${sourceKi.toLocaleString('es-ES')} Unidades`) : ''),
     closestDbComparison: closestDb ? (closestDb.name + ' (' + closestDb.base.toLocaleString() + ' Ki)') : 'Desconocido'
   };
 }
