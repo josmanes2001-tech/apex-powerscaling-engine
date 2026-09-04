@@ -1,4 +1,35 @@
 
+## 📜 ESPECIFICACIÓN CONSTITUCIONAL: ENRICHMENT DRAFTS (V22)
+1. **Baseline Oficial Inalterable**:
+   - `ROSTER_NIVELES_PODER_CORREGIDO_V22.json` es el baseline oficial y permanente.
+2. **Campos Protegidos Intocables (PROHIBIDO MODIFICAR)**:
+   - `id`
+   - `franchise`
+   - `universe`
+   - `saga`
+   - `baseTier`
+   - `baseKiNumeric`
+   - `forms` (nombres de formas, tiers, multiplicadores, kiNumeric, kiFormatted)
+   - `tiers`
+   - `multiplicadores`
+   - `changeLog`
+3. **Propósito Exclusivo del Roster**:
+   - Fuente única de identidad canónica y escala métrica de poder (patrón de oro).
+4. **Campos Permitidos para Mejoras Futuras**:
+   - Habilidades y técnicas (`arsenal`)
+   - Pasivas biológicas y marciales (`passives`)
+   - Hax, counters y resistencias (`haxTags`, `haxProfile`)
+   - Debilidades tácticas y fisiológicas (`weaknesses`)
+   - Artefactos y equipamiento (`signatureEquipment`, `artifacts`)
+   - Sinergias y combos de equipo (`synergies`, `teamCombos`)
+   - Estados y mecánicas de combate (`combatStatuses`, `transformativeMechanics`)
+   - Datos de simulación (`psychology`, `combatDialogue`, `environmentalAffinity`)
+5. **Aislamiento Estricto de Borradores**:
+   - Todo contenido nuevo debe guardarse como **enrichment draft** (en `src/data/enrichmentDrafts/` o `rosterEnrichmentPatches.json`).
+   - Ningún borrador altera el baseline V22 sin aprobación humana previa y control de versiones formal.
+
+---
+
 ## 🔒 PROTOCOLO DE GOBERNANZA Y CONGELACIÓN (V22)
 1. **V22 = Baseline Oficial Congelado**:
    - `ROSTER_NIVELES_PODER_CORREGIDO_V22.json` NO se edita in-place bajo ninguna circunstancia.
