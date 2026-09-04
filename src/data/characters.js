@@ -1,3 +1,6 @@
+// APEX Power Scaling Engine — Master Characters Roster
+// Refinado y enriquecido automáticamente con Estándar Dorado APEX
+
 export const INITIAL_CHARACTERS = [
   {
     "id": "androide-8-dragon-ball-cl-sico-704",
@@ -25103,444 +25106,6 @@ export const INITIAL_CHARACTERS = [
         "liftingStrength"
       ]
     }
-  },
-  {
-    "id": "kyojuro-rengoku-kimetsu",
-    "name": "Kyojuro Rengoku",
-    "alias": "El Pilar de la Llama / El Espíritu del Fuego",
-    "universe": "Demon Slayer (Kimetsu no Yaiba)",
-    "saga": "Arco del Tren Infinito",
-    "version": "Espada Nichirin Carmesí + Novena Postura Rengoku",
-    "tier": "7-B",
-    "ap": "Nivel Ciudad. Dominó la Respiración de la Llama de forma autodidacta a través de pergaminos antiguos. Su 'Novena Postura: Rengoku' concentra una llamarada de dragón de fuego que parte el suelo y casi decapita a la Luna Superior Tres Akaza.",
-    "range": "Cuerpo a cuerpo a decenas de metros (Ráfagas de fuego).",
-    "speed": {
-      "combat": "Hipersónico Masivo (Mach 15 - 35). Igualó la velocidad de combate de Akaza.",
-      "reaction": "Hipersónico Masivo.",
-      "travel": "Hipersónico.",
-      "attack": "Hipersónico Masivo."
-    },
-    "strength": "Clase Ciudad.. Levantamiento: Clase 50 a 100 (Sujetó los brazos de Akaza con su torso perforado impidiendo su escape).",
-    "durability": "Nivel Ciudad con respiración de enfoque total constante.",
-    "stamina": "Voluntad Inquebrantable Suprema (Luchó hasta el amanecer con el ojo destruido y costillas rotas).",
-    "battleIQ": "Genio Marcial y Espadachín Legendario.",
-    "haxTags": [
-      "Respiración de la Llama (9 Posturas de Combate)",
-      "Novena Postura: Rengoku (Dragón de Fuego Calcinador)",
-      "Tercera Postura: Meteoros de Fuego y Ondas de Choque",
-      "Corazón Ardiente Inmune al Desánimo"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Corte Carmesí de Flama",
-          "cost": 4,
-          "desc": "Estocada o tajo rápido con la katana Nichirin imbuida en su concentración total."
-        },
-        {
-          "name": "Estocada de Alta Temperatura",
-          "cost": 6,
-          "desc": "Ataque punzante directo al plexo solar diseñado para cauterizar y dañar órganos internos."
-        },
-        {
-          "name": "Estocada de Furia Ardiente",
-          "cost": 6,
-          "damageType": "Perforante / Fuego",
-          "desc": "Estocada directa al punto vital del oponente envuelta en brasas."
-        },
-        {
-          "name": "Tajo Ascendente de Brasas",
-          "cost": 5,
-          "damageType": "Cortante",
-          "desc": "Corte vertical imbuido en calor residual que empuja al rival hacia arriba."
-        },
-        {
-          "name": "Bloqueo con Empuñadura Invertida",
-          "cost": 3,
-          "damageType": "Defensivo",
-          "desc": "Posición defensiva diseñada para canalizar Respiración Constante."
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Respiración de la Llama: Quinta Postura - Tigre de Fuego",
-          "desc": "Desata un torrente de fuego con la forma de un tigre rugiente que choca contra técnicas a distancia.",
-          "cost": "Medio"
-        },
-        {
-          "name": "Cuarta Postura: Ola de Llamas Ondulantes",
-          "desc": "Gira su espada en un arco circular creando un escudo de fuego que disipa proyectiles.",
-          "cost": "Bajo"
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Novena Postura: Rengoku (Purgatorio)",
-          "desc": "Se abalanza en un sprint abrasador transformado en un dragón de fuego que talla un cañón en la tierra y decapita al rival.",
-          "cost": "Toda su fuerza vital"
-        }
-      ],
-      "passives": [
-        {
-          "name": "Enciende tu Corazón (Set Your Heart Ablaze)",
-          "desc": "Su espíritu ardiente protege a los inocentes y anula cualquier dolor físico o fatiga mental.",
-          "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Respiración Constante: Concentración Total",
-          "desc": "Mantiene la oxigenación y ritmo cardíaco en su pico óptimo biológico en todo momento.",
-          "cost": "Pasivo continuo"
-        }
-      ],
-      "specialMechanics": [
-        {
-          "name": "Concentración Total: Respiración Constante",
-          "desc": "Mantiene el flujo de oxígeno al 100% en todo momento, optimizando la presión sanguínea y el ritmo cardíaco para potenciar atributos físicos."
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Fisiología Humana Mortal",
-          "desc": "Carece de factores de regeneración celular avanzada o inmortalidad biológica.",
-          "counterTags": [
-            "Heridas Graves",
-            "Desangramiento",
-            "Agotamiento Celular"
-          ]
-        },
-        {
-          "name": "Agotamiento Respiratorio",
-          "desc": "Si se daña gravemente su caja torácica, no puede mantener la Respiración Constante.",
-          "counterTags": [
-            "Daño Torácico",
-            "Pulmones Dañados"
-          ]
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "base",
-        "name": "Estado Base (El Pilar de la Llama)",
-        "stats": "Tier 7-B | Nivel Ciudad. Nueve posturas de respiración de la llama y defensa absoluta.",
-        "apexKiMultiplier": 1,
-        "tier": "7-B",
-        "staminaDrain": 0,
-        "category": "base",
-        "apexKi": 5418,
-        "burstKi": 7585,
-        "durabilityKi": 5418,
-        "sourceKi": null,
-        "multiplier": "1x",
-        "kiFormatted": "5.42 Mil"
-      },
-      {
-        "id": "rengoku-final-stance",
-        "name": "Novena Postura: Rengoku (Activación Final)",
-        "stats": "Tier 7-B+ | Nivel Ciudad++. Potencia térmica destructiva de su ki convertida en dragón de fuego.",
-        "apexKiMultiplier": 1.5,
-        "staminaDrain": 50,
-        "activationCondition": "Activación al borde de la muerte o en el clímax del combate contra una Luna Superior.",
-        "grantedTags": [
-          "Fuego Calcinador Extremo",
-          "Ignora Regeneración Parcial",
-          "Desgaste Vital Total"
-        ],
-        "suppressedTags": [
-          "Reserva de Stamina Futura"
-        ],
-        "grantedAbilities": [
-          "Dragón de fuego que parte el suelo y decapita al rival."
-        ],
-        "limitations": "Requiere oxígeno puro y máxima concentración cardíaca.",
-        "drawbacks": "Consume toda su fuerza vital. Tras ejecutarla, Rengoku queda incapacitado por completo.",
-        "exitCondition": "Fallece o queda inconsciente por agotamiento celular al impactar.",
-        "counterplay": "Esquivar lateralmente el sprint usando la velocidad superior del demonio o interrumpirlo antes del impacto.",
-        "canonStatus": "source_backed",
-        "tier": "7-B",
-        "category": "transformation",
-        "multiplier": "1.5x",
-        "apexKi": 8127,
-        "burstKi": 10971,
-        "durabilityKi": 8127,
-        "sourceKi": null,
-        "kiFormatted": "8.13 Mil"
-      }
-    ],
-    "feats": [
-      "Protegió a los 200 pasajeros del Tren Infinito sin que muriera una sola persona.",
-      "Retuvo a la Luna Superior Tres Akaza con el pecho perforado hasta la salida del sol.",
-      "Inspiró la determinación de Tanjiro, Inosuke y Zenitsu para convertirse en cazadores supremos."
-    ],
-    "weaknesses": "Fisiología humana sin regeneración: No despertó la marca de cazador a tiempo para curar heridas mortales.",
-    "avatar": "https://image.pollinations.ai/prompt/Kyojuro%20Rengoku%20Demon%20Slayer,%20Flame%20Hashira,%20fiery%20eyes,%20flame%20haori,%20holding%20katana%20with%20flames,%20heroic%20smile,%20masterpiece%20anime?width=512&height=512&nologo=true",
-    "synergies": [
-      {
-        "name": "Espíritu de los Pilares",
-        "partnerTags": [
-          "Tengen Uzui",
-          "Giyu Tomioka",
-          "Sanemi Shinazugawa"
-        ],
-        "effect": "Incrementa la velocidad de ataque combinada en un 20% al luchar junto a otro Hashira.",
-        "canonStatus": "source_backed"
-      },
-      {
-        "name": "Rivalidad Eterna Saiyajin",
-        "partnerTags": [
-          "Vegeta"
-        ],
-        "effect": "Al luchar junto a Vegeta, aumenta la velocidad de combate un 20% por competencia mutua.",
-        "canonStatus": "source_backed"
-      },
-      {
-        "name": "Vínculo Padre e Hijo (Kamehameha)",
-        "partnerTags": [
-          "Gohan",
-          "Goten"
-        ],
-        "effect": "Permite desatar un Kamehameha Familiar de máxima potencia cuando la stamina del equipo baja del 30%.",
-        "canonStatus": "source_backed"
-      },
-      {
-        "name": "Sangre Saiyajin (Zenkai Individual Canónico)",
-        "partnerTags": [
-          "Goku",
-          "Vegeta",
-          "Gohan",
-          "Trunks",
-          "Broly",
-          "Goten"
-        ],
-        "effect": "Al sobrevivir a daño crítico o quedar al borde de la muerte, el Saiyajin experimenta un aumento multiplicativo de su AP, velocidad y reservas de Ki."
-      }
-    ],
-    "teamCombos": [
-      {
-        "id": "rengoku_tanjiro_flame_sun_flash",
-        "name": "Destello Carmesí Solar",
-        "partners": [
-          "Tanjiro Kamado"
-        ],
-        "sequence": [
-          "Kyojuro inmoviliza al rival con la Cuarta Postura creando un muro circular de fuego.",
-          "Tanjiro canaliza la respiración solar para solapar el calor con el filo.",
-          "Ambos ejecutan un tajo cruzado incinerador que decapita y desintegra el objetivo."
-        ],
-        "staminaCostPerParticipant": {
-          "Kyojuro Rengoku": 30,
-          "Tanjiro Kamado": 25
-        },
-        "effect": "Daño masivo de fuego sagrado que ignora el 50% de la durabilidad del rival y anula regeneraciones menores.",
-        "partialFailureResult": "Si el rival esquiva el paso final, Kyojuro sufre un contraataque directo debido a la sobreextensión.",
-        "canonStatus": "apex_custom"
-      },
-      {
-        "partners": [
-          "Tanjiro Kamado",
-          "Inosuke Hashibira"
-        ],
-        "sequence": [
-          "Inosuke genera una distracción táctica con sus espadas rugientes.",
-          "Tanjiro canaliza la Respiración del Sol para debilitar la postura defensiva del rival.",
-          "Kyojuro remata con la Novena Postura: Rengoku decapitando el objetivo."
-        ],
-        "staminaCostPerParticipant": {
-          "Kyojuro Rengoku": 40,
-          "Tanjiro Kamado": 30,
-          "Inosuke Hashibira": 25
-        },
-        "effect": "Daño crítico masivo capaz de atravesar defensas de nivel superior con un 95% de probabilidad de ejecución.",
-        "partialFailureResult": "Si falla un paso intermedio, Kyojuro absorbe el impacto residual perdiendo la mitad de su stamina actual.",
-        "canonStatus": "apex_custom"
-      },
-      {
-        "name": "Llama, Rugido y Sol",
-        "partners": [
-          "Tanjiro Kamado",
-          "Inosuke Hashibira"
-        ],
-        "sequence": [
-          "Inosuke genera una distracción táctica con sus espadas rugientes de Bestia.",
-          "Tanjiro canaliza la Respiración del Sol (Hinokami Kagura) para cegar y quemar la regeneración del rival.",
-          "Kyojuro remata con la Novena Postura: Rengoku decapitando al objetivo."
-        ],
-        "staminaCostPerParticipant": {
-          "Kyojuro Rengoku": 40,
-          "Tanjiro Kamado": 30,
-          "Inosuke Hashibira": 25
-        },
-        "effect": "Daño crítico masivo capaz de atravesar defensas de nivel superior con un 95% de probabilidad de ejecución.",
-        "partialFailureResult": "Si falla un paso intermedio, Kyojuro absorbe el impacto residual perdiendo la mitad de su stamina actual.",
-        "canonStatus": "apex_custom"
-      }
-    ],
-    "transformativeMechanics": {
-      "canFuse": true,
-      "canAbsorb": false,
-      "fusionMethods": [
-        "Metamoru",
-        "Pothara"
-      ]
-    },
-    "franchise": "Demon Slayer (Kimetsu no Yaiba)",
-    "continuity": "canon_main",
-    "era_or_saga": "Arco del Tren Infinito",
-    "form_or_state": "Estado Base (El Pilar de la Llama)",
-    "profile_type": "individual",
-    "canon_status": "canon_main",
-    "variant_of": null,
-    "character_family": null,
-    "source_confidence": "verified",
-    "legacy_status": "active",
-    "universe_number": null,
-    "members": null,
-    "parent_team_profile": null,
-    "team_affiliation": null,
-    "notes": "",
-    "psychology": "Combatiente disciplinado y enfocado en la consecución de sus objetivos tácticos.",
-    "legacy_data": "",
-    "powerScaling": {
-      "apexKi": 2400,
-      "apexKiFormatted": "1100 Unidades",
-      "scouterKi": 2400,
-      "scouterKiFormatted": "1100 Unidades",
-      "rank": "GUERRERO DE ALTO RANGO",
-      "isOverload": false,
-      "speedFactor": 1.25,
-      "durabilityFactor": 1,
-      "haxBiqFactor": 1.55,
-      "featsStrengthFactor": 1.4,
-      "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1100 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 5418,
-      "burstKi": 7585,
-      "durabilityKi": 5418,
-      "initiativeModifier": 1,
-      "dodgeModifier": 1,
-      "hitChanceModifier": 1,
-      "comboWindowModifier": 1
-    },
-    "entityType": "fighter",
-    "sagaOrArc": "Arco del Tren Infinito",
-    "physicalTier": "7-B",
-    "haxTier": "7-B",
-    "sourceMedium": "manga",
-    "haxResistances": {
-      "existenceErasure": 0,
-      "timeManipulation": 10,
-      "mindControl": 20,
-      "matterManipulation": 0,
-      "soulDamage": 10,
-      "powerNullification": 5
-    },
-    "combatAIPersonality": {
-      "aggression": 85,
-      "tacticalIQ": 80,
-      "mercyThreshold": 50,
-      "clutchFactor": 100,
-      "preferredEngagementRange": "close_quarters"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": false,
-      "gravityResistance": "10G",
-      "favoredBiomes": [
-        "Campos Abiertos Diurnos",
-        "Cielos Despejados"
-      ],
-      "disfavoredBiomes": [
-        "Cuevas Subterráneas",
-        "Tundras de Escarcha Perpetua"
-      ]
-    },
-    "provenFeats": {
-      "0": "Protegió a los 200 pasajeros del Tren Infinito.",
-      "1": "Retuvo a la Luna Superior Tres Akaza con el pecho perforado hasta el amanecer.",
-      "2": "Inspiró la determinación de Tanjiro, Inosuke y Zenitsu para convertirse en cazadores supremos."
-    },
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ],
-      "onBattleStart": "¡Ven a enfrentarme! ¡Protegeré a todos los presentes!",
-      "onTransformation": "¡Mi corazón arde con una llama brillante!",
-      "onUltimateReady": "¡Esta es la Novena Postura: Rengoku!",
-      "onLowHealth": "¡No permitiré que nadie muera aquí!",
-      "onVictory": "¡Una batalla espléndida! ¡Entrena con pasión!"
-    },
-    "staminaProfile": {
-      "maxStamina": 120,
-      "recoveryRatePerTurn": 10,
-      "exhaustionThreshold": 15
-    },
-    "signatureEquipment": [
-      {
-        "name": "Katana Nichirin Carmesí",
-        "durability": "Estándar (Requiere mantenimiento)",
-        "effect": "Espada imbuida en calor extremo que corta la carne demoníaca y resiste las regeneraciones estándar."
-      },
-      {
-        "name": "Haori de Llamas y Borlas Doradas",
-        "durability": "Simbólica",
-        "effect": "Indumentaria del Pilar de la Llama con el emblema del fuego crepitante."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Era Taishō / Arco del Tren Infinito",
-      "timelineRestrictions": "No tiene conocimiento del Mundo Transparente ni de marcas de cazador avanzadas.",
-      "forbiddenConcepts": [
-        "Mundo Transparente",
-        "Marca de Cazador Total",
-        "Caída de Muzan"
-      ],
-      "crossVerseAwareness": "none"
-    },
-    "burstKi": 7585,
-    "apexKiRange": [
-      4386,
-      6450
-    ],
-    "apexKi": 5418,
-    "durabilityKi": 5418,
-    "sourceType": "cross_verse_estimate",
-    "confidence": "medium",
-    "scaling": {
-      "baseTier": "7-B",
-      "apexMethod": "vs_battles_tier_anchor_with_feat_consistency",
-      "evidence": [
-        "Clasificación establecida en base a Attack Potency en 7-B.",
-        "Consistencia frente a personajes de nivel destructivo equiparable."
-      ],
-      "uncertaintyReasons": [],
-      "balanceNotes": "Equivalencia APEX basada en Attack Potency de 7-B y consistencia física sostenida."
-    },
-    "haxProfile": {
-      "effects": [],
-      "counterplay": [
-        "Fisiología Humana Mortal",
-        "Agotamiento Respiratorio"
-      ],
-      "doesNotIncrease": [
-        "apexKi",
-        "durabilityKi",
-        "liftingStrength"
-      ]
-    },
-    "changeLog": [
-      {
-        "patchId": "patch-0045",
-        "timestamp": "2026-09-04T00:39:00.877Z",
-        "rationale": "Corrección de universo y franquicia erróneos (figuraba en Dragon Ball Z; corregido a Demon Slayer)."
-      }
-    ],
-    "sourceKi": null
   },
   {
     "id": "buuhan-majin-901",
@@ -165707,6 +165272,444 @@ export const INITIAL_CHARACTERS = [
     }
   },
   {
+    "id": "kyojuro-rengoku-kimetsu",
+    "name": "Kyojuro Rengoku",
+    "alias": "El Pilar de la Llama / El Espíritu del Fuego",
+    "universe": "Demon Slayer (Kimetsu no Yaiba)",
+    "saga": "Arco del Tren Infinito",
+    "version": "Espada Nichirin Carmesí + Novena Postura Rengoku",
+    "tier": "7-B",
+    "ap": "Nivel Ciudad. Dominó la Respiración de la Llama de forma autodidacta a través de pergaminos antiguos. Su 'Novena Postura: Rengoku' concentra una llamarada de dragón de fuego que parte el suelo y casi decapita a la Luna Superior Tres Akaza.",
+    "range": "Cuerpo a cuerpo a decenas de metros (Ráfagas de fuego).",
+    "speed": {
+      "combat": "Hipersónico Masivo (Mach 15 - 35). Igualó la velocidad de combate de Akaza.",
+      "reaction": "Hipersónico Masivo.",
+      "travel": "Hipersónico.",
+      "attack": "Hipersónico Masivo."
+    },
+    "strength": "Clase Ciudad.. Levantamiento: Clase 50 a 100 (Sujetó los brazos de Akaza con su torso perforado impidiendo su escape).",
+    "durability": "Nivel Ciudad con respiración de enfoque total constante.",
+    "stamina": "Voluntad Inquebrantable Suprema (Luchó hasta el amanecer con el ojo destruido y costillas rotas).",
+    "battleIQ": "Genio Marcial y Espadachín Legendario.",
+    "haxTags": [
+      "Respiración de la Llama (9 Posturas de Combate)",
+      "Novena Postura: Rengoku (Dragón de Fuego Calcinador)",
+      "Tercera Postura: Meteoros de Fuego y Ondas de Choque",
+      "Corazón Ardiente Inmune al Desánimo"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Corte Carmesí de Flama",
+          "cost": 4,
+          "desc": "Estocada o tajo rápido con la katana Nichirin imbuida en su concentración total."
+        },
+        {
+          "name": "Estocada de Alta Temperatura",
+          "cost": 6,
+          "desc": "Ataque punzante directo al plexo solar diseñado para cauterizar y dañar órganos internos."
+        },
+        {
+          "name": "Estocada de Furia Ardiente",
+          "cost": 6,
+          "damageType": "Perforante / Fuego",
+          "desc": "Estocada directa al punto vital del oponente envuelta en brasas."
+        },
+        {
+          "name": "Tajo Ascendente de Brasas",
+          "cost": 5,
+          "damageType": "Cortante",
+          "desc": "Corte vertical imbuido en calor residual que empuja al rival hacia arriba."
+        },
+        {
+          "name": "Bloqueo con Empuñadura Invertida",
+          "cost": 3,
+          "damageType": "Defensivo",
+          "desc": "Posición defensiva diseñada para canalizar Respiración Constante."
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Respiración de la Llama: Quinta Postura - Tigre de Fuego",
+          "desc": "Desata un torrente de fuego con la forma de un tigre rugiente que choca contra técnicas a distancia.",
+          "cost": "Medio"
+        },
+        {
+          "name": "Cuarta Postura: Ola de Llamas Ondulantes",
+          "desc": "Gira su espada en un arco circular creando un escudo de fuego que disipa proyectiles.",
+          "cost": "Bajo"
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Novena Postura: Rengoku (Purgatorio)",
+          "desc": "Se abalanza en un sprint abrasador transformado en un dragón de fuego que talla un cañón en la tierra y decapita al rival.",
+          "cost": "Toda su fuerza vital"
+        }
+      ],
+      "passives": [
+        {
+          "name": "Enciende tu Corazón (Set Your Heart Ablaze)",
+          "desc": "Su espíritu ardiente protege a los inocentes y anula cualquier dolor físico o fatiga mental.",
+          "cost": "Pasivo continuo"
+        },
+        {
+          "name": "Respiración Constante: Concentración Total",
+          "desc": "Mantiene la oxigenación y ritmo cardíaco en su pico óptimo biológico en todo momento.",
+          "cost": "Pasivo continuo"
+        }
+      ],
+      "specialMechanics": [
+        {
+          "name": "Concentración Total: Respiración Constante",
+          "desc": "Mantiene el flujo de oxígeno al 100% en todo momento, optimizando la presión sanguínea y el ritmo cardíaco para potenciar atributos físicos."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Fisiología Humana Mortal",
+          "desc": "Carece de factores de regeneración celular avanzada o inmortalidad biológica.",
+          "counterTags": [
+            "Heridas Graves",
+            "Desangramiento",
+            "Agotamiento Celular"
+          ]
+        },
+        {
+          "name": "Agotamiento Respiratorio",
+          "desc": "Si se daña gravemente su caja torácica, no puede mantener la Respiración Constante.",
+          "counterTags": [
+            "Daño Torácico",
+            "Pulmones Dañados"
+          ]
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Estado Base (El Pilar de la Llama)",
+        "stats": "Tier 7-B | Nivel Ciudad. Nueve posturas de respiración de la llama y defensa absoluta.",
+        "apexKiMultiplier": 1,
+        "tier": "7-B",
+        "staminaDrain": 0,
+        "category": "base",
+        "apexKi": 5418,
+        "burstKi": 7585,
+        "durabilityKi": 5418,
+        "sourceKi": null,
+        "multiplier": "1x",
+        "kiFormatted": "5.42 Mil"
+      },
+      {
+        "id": "rengoku-final-stance",
+        "name": "Novena Postura: Rengoku (Activación Final)",
+        "stats": "Tier 7-B+ | Nivel Ciudad++. Potencia térmica destructiva de su ki convertida en dragón de fuego.",
+        "apexKiMultiplier": 1.5,
+        "staminaDrain": 50,
+        "activationCondition": "Activación al borde de la muerte o en el clímax del combate contra una Luna Superior.",
+        "grantedTags": [
+          "Fuego Calcinador Extremo",
+          "Ignora Regeneración Parcial",
+          "Desgaste Vital Total"
+        ],
+        "suppressedTags": [
+          "Reserva de Stamina Futura"
+        ],
+        "grantedAbilities": [
+          "Dragón de fuego que parte el suelo y decapita al rival."
+        ],
+        "limitations": "Requiere oxígeno puro y máxima concentración cardíaca.",
+        "drawbacks": "Consume toda su fuerza vital. Tras ejecutarla, Rengoku queda incapacitado por completo.",
+        "exitCondition": "Fallece o queda inconsciente por agotamiento celular al impactar.",
+        "counterplay": "Esquivar lateralmente el sprint usando la velocidad superior del demonio o interrumpirlo antes del impacto.",
+        "canonStatus": "source_backed",
+        "tier": "7-B",
+        "category": "transformation",
+        "multiplier": "1.5x",
+        "apexKi": 8127,
+        "burstKi": 10971,
+        "durabilityKi": 8127,
+        "sourceKi": null,
+        "kiFormatted": "8.13 Mil"
+      }
+    ],
+    "feats": [
+      "Protegió a los 200 pasajeros del Tren Infinito sin que muriera una sola persona.",
+      "Retuvo a la Luna Superior Tres Akaza con el pecho perforado hasta la salida del sol.",
+      "Inspiró la determinación de Tanjiro, Inosuke y Zenitsu para convertirse en cazadores supremos."
+    ],
+    "weaknesses": "Fisiología humana sin regeneración: No despertó la marca de cazador a tiempo para curar heridas mortales.",
+    "avatar": "https://image.pollinations.ai/prompt/Kyojuro%20Rengoku%20Demon%20Slayer,%20Flame%20Hashira,%20fiery%20eyes,%20flame%20haori,%20holding%20katana%20with%20flames,%20heroic%20smile,%20masterpiece%20anime?width=512&height=512&nologo=true",
+    "synergies": [
+      {
+        "name": "Espíritu de los Pilares",
+        "partnerTags": [
+          "Tengen Uzui",
+          "Giyu Tomioka",
+          "Sanemi Shinazugawa"
+        ],
+        "effect": "Incrementa la velocidad de ataque combinada en un 20% al luchar junto a otro Hashira.",
+        "canonStatus": "source_backed"
+      },
+      {
+        "name": "Rivalidad Eterna Saiyajin",
+        "partnerTags": [
+          "Vegeta"
+        ],
+        "effect": "Al luchar junto a Vegeta, aumenta la velocidad de combate un 20% por competencia mutua.",
+        "canonStatus": "source_backed"
+      },
+      {
+        "name": "Vínculo Padre e Hijo (Kamehameha)",
+        "partnerTags": [
+          "Gohan",
+          "Goten"
+        ],
+        "effect": "Permite desatar un Kamehameha Familiar de máxima potencia cuando la stamina del equipo baja del 30%.",
+        "canonStatus": "source_backed"
+      },
+      {
+        "name": "Sangre Saiyajin (Zenkai Individual Canónico)",
+        "partnerTags": [
+          "Goku",
+          "Vegeta",
+          "Gohan",
+          "Trunks",
+          "Broly",
+          "Goten"
+        ],
+        "effect": "Al sobrevivir a daño crítico o quedar al borde de la muerte, el Saiyajin experimenta un aumento multiplicativo de su AP, velocidad y reservas de Ki."
+      }
+    ],
+    "teamCombos": [
+      {
+        "id": "rengoku_tanjiro_flame_sun_flash",
+        "name": "Destello Carmesí Solar",
+        "partners": [
+          "Tanjiro Kamado"
+        ],
+        "sequence": [
+          "Kyojuro inmoviliza al rival con la Cuarta Postura creando un muro circular de fuego.",
+          "Tanjiro canaliza la respiración solar para solapar el calor con el filo.",
+          "Ambos ejecutan un tajo cruzado incinerador que decapita y desintegra el objetivo."
+        ],
+        "staminaCostPerParticipant": {
+          "Kyojuro Rengoku": 30,
+          "Tanjiro Kamado": 25
+        },
+        "effect": "Daño masivo de fuego sagrado que ignora el 50% de la durabilidad del rival y anula regeneraciones menores.",
+        "partialFailureResult": "Si el rival esquiva el paso final, Kyojuro sufre un contraataque directo debido a la sobreextensión.",
+        "canonStatus": "apex_custom"
+      },
+      {
+        "partners": [
+          "Tanjiro Kamado",
+          "Inosuke Hashibira"
+        ],
+        "sequence": [
+          "Inosuke genera una distracción táctica con sus espadas rugientes.",
+          "Tanjiro canaliza la Respiración del Sol para debilitar la postura defensiva del rival.",
+          "Kyojuro remata con la Novena Postura: Rengoku decapitando el objetivo."
+        ],
+        "staminaCostPerParticipant": {
+          "Kyojuro Rengoku": 40,
+          "Tanjiro Kamado": 30,
+          "Inosuke Hashibira": 25
+        },
+        "effect": "Daño crítico masivo capaz de atravesar defensas de nivel superior con un 95% de probabilidad de ejecución.",
+        "partialFailureResult": "Si falla un paso intermedio, Kyojuro absorbe el impacto residual perdiendo la mitad de su stamina actual.",
+        "canonStatus": "apex_custom"
+      },
+      {
+        "name": "Llama, Rugido y Sol",
+        "partners": [
+          "Tanjiro Kamado",
+          "Inosuke Hashibira"
+        ],
+        "sequence": [
+          "Inosuke genera una distracción táctica con sus espadas rugientes de Bestia.",
+          "Tanjiro canaliza la Respiración del Sol (Hinokami Kagura) para cegar y quemar la regeneración del rival.",
+          "Kyojuro remata con la Novena Postura: Rengoku decapitando al objetivo."
+        ],
+        "staminaCostPerParticipant": {
+          "Kyojuro Rengoku": 40,
+          "Tanjiro Kamado": 30,
+          "Inosuke Hashibira": 25
+        },
+        "effect": "Daño crítico masivo capaz de atravesar defensas de nivel superior con un 95% de probabilidad de ejecución.",
+        "partialFailureResult": "Si falla un paso intermedio, Kyojuro absorbe el impacto residual perdiendo la mitad de su stamina actual.",
+        "canonStatus": "apex_custom"
+      }
+    ],
+    "transformativeMechanics": {
+      "canFuse": true,
+      "canAbsorb": false,
+      "fusionMethods": [
+        "Metamoru",
+        "Pothara"
+      ]
+    },
+    "franchise": "Demon Slayer (Kimetsu no Yaiba)",
+    "continuity": "canon_main",
+    "era_or_saga": "Arco del Tren Infinito",
+    "form_or_state": "Estado Base (El Pilar de la Llama)",
+    "profile_type": "individual",
+    "canon_status": "canon_main",
+    "variant_of": null,
+    "character_family": null,
+    "source_confidence": "verified",
+    "legacy_status": "active",
+    "universe_number": null,
+    "members": null,
+    "parent_team_profile": null,
+    "team_affiliation": null,
+    "notes": "",
+    "psychology": "Combatiente disciplinado y enfocado en la consecución de sus objetivos tácticos.",
+    "legacy_data": "",
+    "powerScaling": {
+      "apexKi": 2400,
+      "apexKiFormatted": "1100 Unidades",
+      "scouterKi": 2400,
+      "scouterKiFormatted": "1100 Unidades",
+      "rank": "GUERRERO DE ALTO RANGO",
+      "isOverload": false,
+      "speedFactor": 1.25,
+      "durabilityFactor": 1,
+      "haxBiqFactor": 1.55,
+      "featsStrengthFactor": 1.4,
+      "formulaExpression": "PL_Scouter = BaseEnergy(7-B) × Vel(1.25x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.4x) × Forma(1x) = 1100 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 5418,
+      "burstKi": 7585,
+      "durabilityKi": 5418,
+      "initiativeModifier": 1,
+      "dodgeModifier": 1,
+      "hitChanceModifier": 1,
+      "comboWindowModifier": 1
+    },
+    "entityType": "fighter",
+    "sagaOrArc": "Arco del Tren Infinito",
+    "physicalTier": "7-B",
+    "haxTier": "7-B",
+    "sourceMedium": "manga",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 10,
+      "mindControl": 20,
+      "matterManipulation": 0,
+      "soulDamage": 10,
+      "powerNullification": 5
+    },
+    "combatAIPersonality": {
+      "aggression": 85,
+      "tacticalIQ": 80,
+      "mercyThreshold": 50,
+      "clutchFactor": 100,
+      "preferredEngagementRange": "close_quarters"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": false,
+      "gravityResistance": "10G",
+      "favoredBiomes": [
+        "Campos Abiertos Diurnos",
+        "Cielos Despejados"
+      ],
+      "disfavoredBiomes": [
+        "Cuevas Subterráneas",
+        "Tundras de Escarcha Perpetua"
+      ]
+    },
+    "provenFeats": {
+      "0": "Protegió a los 200 pasajeros del Tren Infinito.",
+      "1": "Retuvo a la Luna Superior Tres Akaza con el pecho perforado hasta el amanecer.",
+      "2": "Inspiró la determinación de Tanjiro, Inosuke y Zenitsu para convertirse en cazadores supremos."
+    },
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Ven a enfrentarme! ¡Protegeré a todos los presentes!",
+      "onTransformation": "¡Mi corazón arde con una llama brillante!",
+      "onUltimateReady": "¡Esta es la Novena Postura: Rengoku!",
+      "onLowHealth": "¡No permitiré que nadie muera aquí!",
+      "onVictory": "¡Una batalla espléndida! ¡Entrena con pasión!"
+    },
+    "staminaProfile": {
+      "maxStamina": 120,
+      "recoveryRatePerTurn": 10,
+      "exhaustionThreshold": 15
+    },
+    "signatureEquipment": [
+      {
+        "name": "Katana Nichirin Carmesí",
+        "durability": "Estándar (Requiere mantenimiento)",
+        "effect": "Espada imbuida en calor extremo que corta la carne demoníaca y resiste las regeneraciones estándar."
+      },
+      {
+        "name": "Haori de Llamas y Borlas Doradas",
+        "durability": "Simbólica",
+        "effect": "Indumentaria del Pilar de la Llama con el emblema del fuego crepitante."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Era Taishō / Arco del Tren Infinito",
+      "timelineRestrictions": "No tiene conocimiento del Mundo Transparente ni de marcas de cazador avanzadas.",
+      "forbiddenConcepts": [
+        "Mundo Transparente",
+        "Marca de Cazador Total",
+        "Caída de Muzan"
+      ],
+      "crossVerseAwareness": "none"
+    },
+    "burstKi": 7585,
+    "apexKiRange": [
+      4386,
+      6450
+    ],
+    "apexKi": 5418,
+    "durabilityKi": 5418,
+    "sourceType": "cross_verse_estimate",
+    "confidence": "medium",
+    "scaling": {
+      "baseTier": "7-B",
+      "apexMethod": "vs_battles_tier_anchor_with_feat_consistency",
+      "evidence": [
+        "Clasificación establecida en base a Attack Potency en 7-B.",
+        "Consistencia frente a personajes de nivel destructivo equiparable."
+      ],
+      "uncertaintyReasons": [],
+      "balanceNotes": "Equivalencia APEX basada en Attack Potency de 7-B y consistencia física sostenida."
+    },
+    "haxProfile": {
+      "effects": [],
+      "counterplay": [
+        "Fisiología Humana Mortal",
+        "Agotamiento Respiratorio"
+      ],
+      "doesNotIncrease": [
+        "apexKi",
+        "durabilityKi",
+        "liftingStrength"
+      ]
+    },
+    "changeLog": [
+      {
+        "patchId": "patch-0045",
+        "timestamp": "2026-09-04T00:39:00.877Z",
+        "rationale": "Corrección de universo y franquicia erróneos (figuraba en Dragon Ball Z; corregido a Demon Slayer)."
+      }
+    ],
+    "sourceKi": null
+  },
+  {
     "id": "mitsuri-kanroji-kny-sv",
     "name": "Mitsuri Kanroji",
     "alias": "Pilar del Amor",
@@ -248221,406 +248224,6 @@ export const INITIAL_CHARACTERS = [
     ]
   },
   {
-    "id": "lex-luthor",
-    "name": "Lex Luthor",
-    "alias": "El Genio Criminal Más Peligroso de la Tierra",
-    "universe": "DC Comics",
-    "saga": "Continuidad clásica",
-    "version": "Con su Armadura de Guerra Kryptonita completa y recursos de LexCorp disponibles",
-    "tier": "7-A",
-    "ap": "Sin poderes propios, su amenaza real es su genio científico e ingeniería, capaz de diseñar armadura de combate específicamente calibrada para neutralizar a Superman mediante radiación de Kryptonita integrada.",
-    "range": "Extendido, armamento tecnológico de su armadura de guerra.",
-    "speed": {
-      "combat": "Sobrehumano, potenciado enteramente por su armadura mecánica.",
-      "reaction": "Excelente, genio estratégico de primer nivel mundial.",
-      "attack": "Sobrehumano en armamento de la armadura.",
-      "travel": "Sobrehumano en vuelo mediante propulsión de la armadura."
-    },
-    "strength": "Class Building (potenciada por armadura).. Levantamiento: Class Building (potenciada por armadura).",
-    "durability": "Alta, blindaje avanzado de su armadura de combate.",
-    "stamina": "Alta, sostenida por sistemas de soporte de la armadura.",
-    "battleIQ": "Uno de los genios científicos y estrategas más brillantes de todo el universo DC, capaz de planificar contramedidas específicas contra prácticamente cualquier superhumano conocido.",
-    "haxTags": [
-      "Armadura de guerra con Kryptonita integrada (neutraliza específicamente a Superman)",
-      "Recursos corporativos ilimitados de LexCorp",
-      "Genio científico de nivel mundial (múltiples campos: genética, robótica, física)",
-      "Armadura con Kryptonita integrada",
-      "Recursos corporativos de LexCorp",
-      "Genio científico de nivel mundial",
-      "Contra-medidas específicas anti-Kryptonianas",
-      "EMP táctico",
-      "Armadura de guerra con Kryptonita integrada",
-      "Armadura de guerra con radiación integrada"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Puñetazo Hidráulico Blindado",
-          "cost": 5,
-          "desc": "Golpe cuerpo a cuerpo potenciado por los servomotores de la Armadura de Guerra."
-        },
-        {
-          "name": "Ráfaga de Micro-Misiles",
-          "cost": 7,
-          "desc": "Lanzamiento de proyectiles guiados desde los hombros de la armadura."
-        },
-        {
-          "name": "Puñetazo Mecanizado",
-          "desc": "Golpe directo impulsado por los servomotores hidráulicos de la Armadura de Guerra.",
-          "cost": 5
-        },
-        {
-          "name": "Ráfaga Láser de Muñeca",
-          "desc": "Disparos rápidos de energía concentrada desde los cañones integrados.",
-          "cost": 6
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Rayo de Kryptonita Concentrada",
-          "desc": "Descarga de radiación de Kryptonita capaz de debilitar críticamente a cualquier Kryptoniano expuesto.",
-          "cost": "25% de reserva de la armadura"
-        },
-        {
-          "name": "Campo de Pulso Electromagnético (EMP)",
-          "desc": "Emite una onda que deshabilita tecnología circundante y armamento enemigo no blindado.",
-          "cost": 20
-        },
-        {
-          "name": "Misiles Antianomalía",
-          "desc": "Salva de proyectiles guiados programados para rastrear firmas de energía sobrehumanas.",
-          "cost": "20% de reserva de la armadura",
-          "chargingTime": "Instantáneo",
-          "counterplay": "Maniobras evasivas a alta velocidad o contramedidas electrónicas de señuelo."
-        },
-        {
-          "name": "Rayo de Radiación Concentrada",
-          "desc": "Descarga de energía capaz de debilitar críticamente a cualquier objetivo expuesto.",
-          "cost": 25,
-          "counterplay": "Evasión lateral o absorción de energía."
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Técnica Suprema de Lex Luthor",
-          "desc": "Descarga máxima de poder destructivo.",
-          "cost": "Gasto alto de energía"
-        },
-        {
-          "name": "Sobrecarga del Reactor de Singularidad",
-          "desc": "Canaliza toda la energía remanente del núcleo de la armadura en un devastador haz láser frontal de impacto masivo.",
-          "cost": 40
-        },
-        {
-          "name": "Sobrecarga de Matriz de Guerra",
-          "desc": "Libera toda la energía acumulada del reactor de la armadura en una explosión esférica devastadora a corta distancia.",
-          "cost": "45% de reserva de la armadura",
-          "activationConditions": "Rango cuerpo a cuerpo contra el oponente.",
-          "counterplay": "Alejarse instantáneamente del radio de explosión mediante teletransporte o velocidad sónica."
-        }
-      ],
-      "passives": [
-        {
-          "name": "Genio Sin Límites",
-          "desc": "Su capacidad de diseño tecnológico y planificación estratégica supera a la mayoría de científicos del universo DC.",
-          "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Sistemas de Soporte Vital Adaptativos",
-          "desc": "La armadura compensa automáticamente el daño físico menor y filtra toxinas del aire.",
-          "cost": 2
-        },
-        {
-          "name": "Blindaje Reactivo",
-          "desc": "Los escudos de la armadura se reconfiguran automáticamente tras recibir daño cinemático.",
-          "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Recursos de LexCorp",
-          "desc": "Acceso a fondos ilimitados para reabastecer arsenal, reparar armadura y desplegar drones de soporte.",
-          "cost": "Externo a la armadura",
-          "type": "logistics_master"
-        }
-      ],
-      "specialMechanics": [
-        {
-          "name": "Sistema de Análisis Táctico LexCorp",
-          "desc": "Permite calcular debilidades estructurales o biológicas del enemigo tras 3 turnos de observación."
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Vulnerabilidad Humana Base",
-          "desc": "Si la armadura es destruida por completo, Lex queda expuesto como un humano sin capacidades físicas sobrehumanas.",
-          "counterTags": [
-            "destrucción de armadura",
-            "vulnerabilidad física"
-          ]
-        },
-        {
-          "name": "Ego Desmedido",
-          "desc": "Subestima a rivales que no considera intelectualmente a su altura, lo que puede cegarle ante tácticas poco ortodoxas.",
-          "counterTags": [
-            "arrogancia",
-            "improvisación"
-          ]
-        },
-        {
-          "name": "Dependencia de Recursos Externos",
-          "desc": "En aislamiento total sin acceso a LexCorp, su arsenal es finito.",
-          "counterTags": [
-            "aislamiento de recursos",
-            "bloqueo logístico"
-          ]
-        },
-        {
-          "point": "Vulnerabilidad Humana Base",
-          "desc": "Si la armadura es destruida por completo, Lex queda expuesto como un humano sin capacidades físicas sobrehumanas.",
-          "counterTags": [
-            "destrucción-de-armadura",
-            "vulnerabilidad-física"
-          ]
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "base",
-        "name": "Lex Luthor (Estado Base / Armadura de Guerra)",
-        "stats": "Tier 7-A | Nivel Montaña (con armadura de combate potenciada). Forma principal en combate.",
-        "apexKiMultiplier": 1,
-        "canonStatus": "source_backed",
-        "tier": "7-A",
-        "staminaDrain": 0,
-        "category": "base",
-        "apexKi": 6468,
-        "burstKi": 10349,
-        "durabilityKi": 6468,
-        "sourceKi": null,
-        "multiplier": "1x",
-        "kiFormatted": "6.47 Mil"
-      }
-    ],
-    "feats": [
-      "Diseñó personalmente una armadura de combate capaz de intercambiar golpes directos con Superman gracias a su integración de Kryptonita.",
-      "Ha manipulado política, economía y ciencia a escala global durante décadas como una de las mentes criminales más peligrosas de la Tierra.",
-      "Su rivalidad con Superman es tratada narrativamente como un choque fundamental entre genio humano y poder alienígena."
-    ],
-    "psychology": "Narcisista, cree genuinamente que su genio lo hace superior a cualquier superhumano; su odio hacia Superman es tanto personal como filosófico (ve la existencia de Superman como una afrenta al potencial humano).",
-    "weaknesses": "Sin su armadura y recursos tecnológicos, es un humano físicamente promedio; su ego y necesidad de reconocimiento a veces lo llevan a subestimar a oponentes que no considera 'dignos' de su atención.",
-    "franchise": "DC Comics",
-    "continuity": "canon_main",
-    "era_or_saga": "Continuidad clásica",
-    "form_or_state": "Lex Luthor (Estado Base)",
-    "profile_type": "individual",
-    "canon_status": "canon_main",
-    "variant_of": null,
-    "character_family": null,
-    "source_confidence": "verified",
-    "legacy_status": "active",
-    "universe_number": null,
-    "members": null,
-    "parent_team_profile": null,
-    "team_affiliation": null,
-    "notes": "",
-    "legacy_data": "",
-    "synergies": [
-      {
-        "partnerTags": [
-          "IA Avanzada",
-          "Brainiac"
-        ],
-        "effect": "Permite a Lex sincronizar los sistemas de puntería de su armadura con la red de procesamiento de Brainiac, aumentando la precisión crítica un 15%."
-      },
-      {
-        "name": "Poder de Asgard",
-        "partnerTags": [
-          "Loki",
-          "Odin",
-          "Captain America",
-          "Iron Man"
-        ],
-        "effect": "Canaliza rayos en las armas aliadas (como el escudo del Capitán o la armadura de Stark) para ataques amplificados.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "teamCombos": [
-      {
-        "partners": [
-          "Lex Luthor",
-          "Brainiac"
-        ],
-        "sequence": [
-          "Lex distrae al objetivo con una descarga masiva de misiles guiados y presión de fuego.",
-          "Brainiac aprovecha la apertura para atrapar al enemigo en un campo de contención.",
-          "Lex ejecuta un impacto directo con el rayo de Kryptonita concentrada a máxima potencia."
-        ],
-        "staminaCostPerParticipant": [
-          25,
-          20
-        ],
-        "effect": "Neutralización severa del oponente con daño radiactivo y contundente simultáneo.",
-        "partialFailureResult": "Si el paso 2 falla, el objetivo esquiva el campo y el ataque final de Lex impacta en el vacío.",
-        "canonStatus": "apex_custom"
-      }
-    ],
-    "powerScaling": {
-      "apexKi": 3800,
-      "apexKiFormatted": "1600 Unidades",
-      "scouterKi": 3800,
-      "scouterKiFormatted": "1600 Unidades",
-      "rank": "GUERRERO DE ALTO RANGO",
-      "isOverload": false,
-      "speedFactor": 1,
-      "durabilityFactor": 1,
-      "haxBiqFactor": 1.55,
-      "featsStrengthFactor": 1.25,
-      "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1600 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 6468,
-      "burstKi": 10349,
-      "durabilityKi": 6468,
-      "initiativeModifier": 1,
-      "dodgeModifier": 1,
-      "hitChanceModifier": 1,
-      "comboWindowModifier": 1
-    },
-    "entityType": "fighter",
-    "sagaOrArc": "Continuidad clásica",
-    "physicalTier": "7-A",
-    "haxTier": "7-A",
-    "sourceMedium": "comic",
-    "haxResistances": {
-      "existenceErasure": 5,
-      "timeManipulation": 15,
-      "mindControl": 40,
-      "matterManipulation": 10,
-      "soulDamage": 5,
-      "powerNullification": 30
-    },
-    "combatAIPersonality": {
-      "aggression": 55,
-      "tacticalIQ": 99,
-      "mercyThreshold": 20,
-      "clutchFactor": 75,
-      "preferredEngagementRange": "mid_range"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": false,
-      "gravityResistance": "20G",
-      "favoredBiomes": [
-        "laboratorios subterráneos",
-        "ciudades corporativas"
-      ],
-      "disfavoredBiomes": [
-        "espacio profundo",
-        "mundos alienígenas sin infraestructura"
-      ]
-    },
-    "provenFeats": {
-      "0": "Diseñó personalmente una armadura de combate capaz de intercambiar golpes directos con titanes gracias a su tecnología.",
-      "1": "Ha manipulado política, economía y ciencia a escala global durante décadas.",
-      "2": "Su rivalidad con Superman es tratada narrativamente como un choque fundamental entre genio humano y poder alienígena."
-    },
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ],
-      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
-      "onTransformation": "Sistemas al máximo rendimiento. Contempla la cúspide del intelecto.",
-      "onUltimateReady": "El cálculo es exacto. No hay escape.",
-      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
-      "onVictory": "La victoria pertenece a la mente superior."
-    },
-    "staminaProfile": {
-      "maxStamina": 120,
-      "recoveryRatePerTurn": 8,
-      "exhaustionThreshold": 15
-    },
-    "signatureEquipment": [
-      {
-        "name": "Armadura de Guerra con Kryptonita",
-        "durability": "Alta; resiste daño building-tier y radiación inversa",
-        "effect": "Provee Class Building en fuerza/durabilidad, vuelo, rayo de Kryptonita y arsenal de misiles."
-      },
-      {
-        "name": "Recursos de LexCorp",
-        "durability": "Externo; reabastecimiento continuo",
-        "effect": "Acceso a drones, vehículos, bases, sistemas de soporte logístico ilimitados."
-      },
-      {
-        "name": "Sistema de Análisis Táctico LexCorp",
-        "durability": "Interno a la armadura",
-        "effect": "Calcula debilidades estructurales/biológicas tras 3 turnos de observación."
-      },
-      {
-        "name": "Armadura de Guerra",
-        "durability": "Alta",
-        "effect": "Provee fuerza y durabilidad Tier 7-A, vuelo y arsenal tecnológico."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Continuidad clásica / Post-Crisis",
-      "timelineRestrictions": "Conoce los acontecimientos tecnológicos y científicos contemporáneos a su continuidad.",
-      "forbiddenConcepts": [
-        "Realidades multiversales absolutas externas",
-        "Entidades omnipotentes abstractas de otros universos"
-      ],
-      "crossVerseAwareness": "none"
-    },
-    "burstKi": 10349,
-    "apexKiRange": [
-      5236,
-      7700
-    ],
-    "apexKi": 6468,
-    "durabilityKi": 6468,
-    "sourceKi": null,
-    "sourceType": "cross_verse_estimate",
-    "confidence": "medium",
-    "scaling": {
-      "baseTier": "7-A",
-      "apexMethod": "vs_battles_tier_anchor_with_feat_consistency",
-      "evidence": [
-        "Clasificación establecida en base a Attack Potency en 7-A.",
-        "Consistencia frente a personajes de nivel destructivo equiparable."
-      ],
-      "uncertaintyReasons": [],
-      "balanceNotes": "Equivalencia APEX basada en Attack Potency de 7-A y consistencia física sostenida."
-    },
-    "haxProfile": {
-      "effects": [],
-      "counterplay": [
-        "Vulnerabilidad Humana Base",
-        "Ego Desmedido",
-        "Dependencia de Recursos Externos",
-        "[object Object]"
-      ],
-      "doesNotIncrease": [
-        "apexKi",
-        "durabilityKi",
-        "liftingStrength"
-      ]
-    },
-    "changeLog": [
-      {
-        "patchIds": [
-          "patch-0049",
-          "patch-0050"
-        ],
-        "timestamp": "2026-09-04T00:46:20.715Z",
-        "rationale": "Corrección de universo y franquicia erróneos (figuraba en Marvel Comics; corregido a DC Comics)."
-      }
-    ]
-  },
-  {
     "id": "loki",
     "name": "Loki Laufeyson",
     "alias": "El Dios del Engaño",
@@ -254472,341 +254075,6 @@ export const INITIAL_CHARACTERS = [
         "liftingStrength"
       ]
     }
-  },
-  {
-    "id": "yor-forger",
-    "name": "Yor Forger (Thorn Princess)",
-    "alias": "La Princesa Espina, Asesina de Élite",
-    "universe": "Spy x Family",
-    "saga": "Operación Strix",
-    "version": "Estado de combate completo como asesina de élite de la organización Garden",
-    "tier": "7-C",
-    "ap": "Considerada la asesina más letal y eficiente de su organización, con fuerza física y velocidad muy superiores a la de un humano promedio, capaz de eliminar múltiples objetivos armados en segundos sin ayuda.",
-    "range": "Cuerpo a cuerpo extendido, con cuchillos y armamento improvisado.",
-    "speed": {
-      "combat": "Sobrehumano extremo, muy superior al de Loid en velocidad pura de combate.",
-      "reaction": "Excepcional, reflejos de asesina de élite entrenados desde joven.",
-      "attack": "Sobrehumano en ataques con cuchillo y golpes cargados.",
-      "travel": "Sobrehumano en desplazamiento de combate."
-    },
-    "strength": "Class Building+ (una de las más altas entre humanos sin mutación de la ficción moderna).. Levantamiento: Class Building+ (una de las más altas entre humanos sin mutación de la ficción moderna).",
-    "durability": "Muy alta para una humana, resistente a heridas que incapacitarían a combatientes de élite convencionales.",
-    "stamina": "Muy alta, resistencia física de asesina profesional de máximo nivel.",
-    "battleIQ": "Instintiva y letal en combate directo, aunque socialmente torpe fuera de su rol de asesina; su capacidad de eliminar amenazas múltiples en segundos es su principal ventaja táctica.",
-    "haxTags": [
-      "Fuerza física sobrehumana (sin explicación biológica especial, atribuida a entrenamiento extremo)",
-      "Reflejos y precisión de asesina de élite",
-      "Doble vida encubierta (civil torpe vs asesina letal)",
-      "Fuerza física sobrehumana",
-      "Doble vida encubierta",
-      "Reflejos y precisión de élite"
-    ],
-    "arsenal": {
-      "basicAttacks": [
-        {
-          "name": "Corte de Estilete",
-          "cost": 5,
-          "damageType": "cortante",
-          "desc": "Ataque rápido con sus característicos estiletes, capaz de atravesar blindaje ligero."
-        },
-        {
-          "name": "Patada Devastadora",
-          "cost": 8,
-          "damageType": "contundente",
-          "desc": "Impacto con fuerza sobrehumana capaz de enviar a objetivos pesados a volar varios metros."
-        },
-        {
-          "name": "Tajo de Estilete",
-          "cost": 4,
-          "desc": "Ataque rápido y preciso con sus característicos estiletes mortales."
-        },
-        {
-          "name": "Impacto de Fuerza Bruta",
-          "cost": 6,
-          "desc": "Golpe con la palma o el puño capaz de romper costillas y enviar volando a objetivos acorazados."
-        }
-      ],
-      "superAttacks": [
-        {
-          "name": "Eliminación Múltiple Instantánea",
-          "desc": "Neutraliza a varios objetivos armados simultáneamente en un solo movimiento fluido de combate, técnica característica de su reputación como 'Princesa Espina'.",
-          "cost": "Sin coste de recurso, limitado por número de objetivos simultáneos"
-        },
-        {
-          "name": "Lanzamiento Balístico de Estilete",
-          "cost": 18,
-          "chargeTime": "0.5 turnos",
-          "counterplay": "Desviar el proyectil con armas de filo o cobertura pesada."
-        }
-      ],
-      "ultimateAttacks": [
-        {
-          "name": "Técnica Suprema de Yor Forger",
-          "desc": "Descarga máxima de poder destructivo.",
-          "cost": "Gasto alto de energía"
-        },
-        {
-          "name": "Juicio de la Princesa Espina",
-          "desc": "Yor desata una ráfaga devastadora de velocidad y fuerza sobrehumana, lanzando estiletes con precisión balística y rematando con un impacto físico capaz de destruir estructuras ligeras.",
-          "cost": "45 stamina",
-          "condition": "Requiere proximidad al objetivo o capacidad de cerrar distancias rápidamente.",
-          "counterplay": "Interponer barreras impenetrables de alta densidad o evadir mediante teletransportación/velocidad supersónica."
-        }
-      ],
-      "passives": [
-        {
-          "name": "Doble Vida (Civil vs Asesina)",
-          "desc": "Mantiene una fachada de torpeza social como empleada de oficina/esposa civil, ocultando por completo su verdadera identidad como asesina de élite.",
-          "cost": "Pasivo continuo"
-        },
-        {
-          "name": "Instinto Asesino",
-          "desc": "Aumenta la velocidad de reacción un 25% cuando su vida o la de su familia corre peligro inminente.",
-          "cost": 0
-        }
-      ],
-      "specialMechanics": [
-        {
-          "name": "Resistencia al Veneno y Dolor",
-          "desc": "Su fisiología ha sido endurecida mediante exposición y entrenamiento extremo, ignorando heridas menores que paralizarían a otros."
-        }
-      ],
-      "weaknesses": [
-        {
-          "name": "Ingenuidad Social",
-          "desc": "Fuera del combate, su extrema inocencia y tendencia a sobrepensar situaciones cotidianas pueden ser manipuladas psicológicamente.",
-          "counterTags": [
-            "engaño psicológico",
-            "confusión"
-          ]
-        },
-        {
-          "name": "Vulnerabilidad Familiar",
-          "desc": "Cualquier amenaza real hacia Loid o Anya provoca un estado de furia protectora que, aunque letal, puede volverla predecible en sus trayectorias de ataque.",
-          "counterTags": [
-            "ceguera táctica por ira",
-            "trampas basadas en rehenes"
-          ]
-        }
-      ]
-    },
-    "forms": [
-      {
-        "id": "base",
-        "name": "Yor Forger (Estado Base)",
-        "stats": "Tier 7-C | Nivel Pueblo. Forma principal en combate.",
-        "apexKiMultiplier": 1,
-        "tier": "7-C",
-        "staminaDrain": 0,
-        "category": "base",
-        "apexKi": 1785,
-        "burstKi": 2678,
-        "durabilityKi": 1785,
-        "sourceKi": null,
-        "multiplier": "1x",
-        "kiFormatted": "1.78 Mil"
-      }
-    ],
-    "feats": [
-      "Reconocida dentro de su organización como una de las asesinas más eficientes y letales de su generación, con la reputación de nunca fallar un objetivo.",
-      "Ha neutralizado a múltiples atacantes armados en segundos en varias ocasiones sin sufrir daño significativo.",
-      "Mantiene su identidad secreta de asesina completamente oculta de su propia familia (Loid y Anya) durante toda la operación."
-    ],
-    "psychology": "Fríamente eficiente y letal en combate, pero genuinamente torpe y cálida en su vida civil; su motivación como asesina proviene de proteger a su hermano menor, dándole una moralidad más compleja que la de una asesina común.",
-    "weaknesses": "Sin poderes sobrehumanos reales, su límite sigue siendo el de una humana extraordinariamente entrenada; su necesidad de mantener su doble vida en secreto de su propia familia genera tensión emocional que puede afectar su juicio en momentos críticos.",
-    "franchise": "Spy x Family",
-    "continuity": "canon_main",
-    "era_or_saga": "Operación Strix",
-    "form_or_state": "Yor Forger (Thorn Princess) (Estado Base)",
-    "profile_type": "individual",
-    "canon_status": "canon_main",
-    "variant_of": null,
-    "character_family": null,
-    "source_confidence": "verified",
-    "legacy_status": "active",
-    "universe_number": null,
-    "members": null,
-    "parent_team_profile": null,
-    "team_affiliation": null,
-    "notes": "",
-    "legacy_data": "",
-    "synergies": [
-      {
-        "partnerTags": [
-          "Espía"
-        ],
-        "effect": "Incremento del 15% en el daño crítico al combinar la distracción del espía con la letalidad directa de la asesina."
-      },
-      {
-        "name": "Poder de Asgard",
-        "partnerTags": [
-          "Loki",
-          "Odin",
-          "Captain America",
-          "Iron Man"
-        ],
-        "effect": "Canaliza rayos en las armas aliadas (como el escudo del Capitán o la armadura de Stark) para ataques amplificados.",
-        "canonStatus": "source_backed"
-      }
-    ],
-    "teamCombos": [
-      {
-        "partners": [
-          "Loid Forger (Twilight)"
-        ],
-        "sequence": [
-          "Loid distrae y debilita la guardia frontal del enemigo.",
-          "Loid bloquea las rutas de escape del oponente.",
-          "Yor ejecuta la Danza de Espinas para rematar el combate."
-        ],
-        "staminaCostPerParticipant": {
-          "Loid Forger": 25,
-          "Yor Forger": 35
-        },
-        "effect": "Neutralización instantánea de objetivos de nivel Tier 7-C y inferiores.",
-        "partialFailureResult": "Si el paso 1 falla, el combo se cancela y ambos participantes deben reiniciar las maniobras defensivas.",
-        "canonStatus": "apex_custom"
-      }
-    ],
-    "powerScaling": {
-      "apexKi": 358,
-      "apexKiFormatted": "358 Unidades",
-      "scouterKi": 358,
-      "scouterKiFormatted": "358 Unidades",
-      "rank": "RANGO TERRESTRE",
-      "isOverload": false,
-      "speedFactor": 1,
-      "durabilityFactor": 1,
-      "haxBiqFactor": 1.1,
-      "featsStrengthFactor": 1.25,
-      "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 358 Unidades"
-    },
-    "numericStats": {
-      "apexKi": 1785,
-      "burstKi": 2678,
-      "durabilityKi": 1785,
-      "initiativeModifier": 1,
-      "dodgeModifier": 1,
-      "hitChanceModifier": 1,
-      "comboWindowModifier": 1
-    },
-    "entityType": "fighter",
-    "sagaOrArc": "Operación Strix",
-    "physicalTier": "7-C",
-    "haxTier": "7-C",
-    "sourceMedium": "manga",
-    "haxResistances": {
-      "existenceErasure": 0,
-      "timeManipulation": 0,
-      "mindControl": 40,
-      "matterManipulation": 0,
-      "soulDamage": 0,
-      "powerNullification": 0
-    },
-    "combatAIPersonality": {
-      "aggression": 90,
-      "tacticalIQ": 75,
-      "mercyThreshold": 10,
-      "clutchFactor": 90,
-      "preferredEngagementRange": "close_quarters"
-    },
-    "environmentalAffinity": {
-      "spaceSurvival": false,
-      "gravityResistance": "1.5G",
-      "favoredBiomes": [
-        "Entornos Urbanos Nocturnos",
-        "Interiores"
-      ],
-      "disfavoredBiomes": [
-        "Espacio Profundo",
-        "Áreas Abiertas Sin Cobertura"
-      ]
-    },
-    "provenFeats": {
-      "0": "Reconocida como una de las asesinas más eficientes con la reputación de nunca fallar.",
-      "1": "Neutralizó a múltiples atacantes armados en segundos sin sufrir daño.",
-      "2": "Mantiene su identidad secreta completamente oculta de su familia."
-    },
-    "combatDialogue": {
-      "intro": [
-        "¡Comprobemos qué tan lejos llega tu poder!"
-      ],
-      "lowHealth": [
-        "Aún no he terminado... ¡Esto apenas comienza!"
-      ],
-      "victory": [
-        "Fue una gran pelea. Entrena duro para la próxima."
-      ],
-      "onBattleStart": "¡Por favor, no se lo tome a mal!",
-      "onTransformation": "Cumpliré con mi misión...",
-      "onUltimateReady": "Es hora de terminar con esto.",
-      "onLowHealth": "¡Anya y Loid me esperan en casa!",
-      "onVictory": "¿He... he ganado? Espero no haberos lastimado demasiado."
-    },
-    "staminaProfile": {
-      "maxStamina": 120,
-      "recoveryRatePerTurn": 10,
-      "exhaustionThreshold": 15
-    },
-    "signatureEquipment": [
-      {
-        "name": "Estiletes Gemelos",
-        "durability": "Alta (Acero Especial)",
-        "effect": "Permite ataques punzantes de precisión letal."
-      }
-    ],
-    "knowledgeHorizon": {
-      "canonicalEra": "Operación Strix / Era de Guerra Fría Ficticia",
-      "timelineRestrictions": "Desconoce tecnología o conceptos fuera de su universo realista de espionaje.",
-      "forbiddenConcepts": [
-        "Ki",
-        "Magia",
-        "Viajes Interdimensionales"
-      ],
-      "crossVerseAwareness": "none"
-    },
-    "burstKi": 2678,
-    "apexKiRange": [
-      1445,
-      2125
-    ],
-    "apexKi": 1785,
-    "durabilityKi": 1785,
-    "sourceKi": null,
-    "sourceType": "cross_verse_estimate",
-    "confidence": "medium",
-    "scaling": {
-      "baseTier": "7-C",
-      "apexMethod": "vs_battles_tier_anchor_with_feat_consistency",
-      "evidence": [
-        "Clasificación establecida en base a Attack Potency en 7-C.",
-        "Consistencia frente a personajes de nivel destructivo equiparable."
-      ],
-      "uncertaintyReasons": [],
-      "balanceNotes": "Equivalencia APEX basada en Attack Potency de 7-C y consistencia física sostenida."
-    },
-    "haxProfile": {
-      "effects": [],
-      "counterplay": [
-        "Ingenuidad Social",
-        "Vulnerabilidad Familiar"
-      ],
-      "doesNotIncrease": [
-        "apexKi",
-        "durabilityKi",
-        "liftingStrength"
-      ]
-    },
-    "changeLog": [
-      {
-        "patchIds": [
-          "patch-0051",
-          "patch-0052"
-        ],
-        "timestamp": "2026-09-04T00:46:20.718Z",
-        "rationale": "Corrección de universo y franquicia erróneos (figuraba en Marvel Comics; corregido a Spy x Family)."
-      }
-    ]
   },
   {
     "id": "anti-monitor",
@@ -261772,6 +261040,406 @@ export const INITIAL_CHARACTERS = [
         "liftingStrength"
       ]
     }
+  },
+  {
+    "id": "lex-luthor",
+    "name": "Lex Luthor",
+    "alias": "El Genio Criminal Más Peligroso de la Tierra",
+    "universe": "DC Comics",
+    "saga": "Continuidad clásica",
+    "version": "Con su Armadura de Guerra Kryptonita completa y recursos de LexCorp disponibles",
+    "tier": "7-A",
+    "ap": "Sin poderes propios, su amenaza real es su genio científico e ingeniería, capaz de diseñar armadura de combate específicamente calibrada para neutralizar a Superman mediante radiación de Kryptonita integrada.",
+    "range": "Extendido, armamento tecnológico de su armadura de guerra.",
+    "speed": {
+      "combat": "Sobrehumano, potenciado enteramente por su armadura mecánica.",
+      "reaction": "Excelente, genio estratégico de primer nivel mundial.",
+      "attack": "Sobrehumano en armamento de la armadura.",
+      "travel": "Sobrehumano en vuelo mediante propulsión de la armadura."
+    },
+    "strength": "Class Building (potenciada por armadura).. Levantamiento: Class Building (potenciada por armadura).",
+    "durability": "Alta, blindaje avanzado de su armadura de combate.",
+    "stamina": "Alta, sostenida por sistemas de soporte de la armadura.",
+    "battleIQ": "Uno de los genios científicos y estrategas más brillantes de todo el universo DC, capaz de planificar contramedidas específicas contra prácticamente cualquier superhumano conocido.",
+    "haxTags": [
+      "Armadura de guerra con Kryptonita integrada (neutraliza específicamente a Superman)",
+      "Recursos corporativos ilimitados de LexCorp",
+      "Genio científico de nivel mundial (múltiples campos: genética, robótica, física)",
+      "Armadura con Kryptonita integrada",
+      "Recursos corporativos de LexCorp",
+      "Genio científico de nivel mundial",
+      "Contra-medidas específicas anti-Kryptonianas",
+      "EMP táctico",
+      "Armadura de guerra con Kryptonita integrada",
+      "Armadura de guerra con radiación integrada"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Puñetazo Hidráulico Blindado",
+          "cost": 5,
+          "desc": "Golpe cuerpo a cuerpo potenciado por los servomotores de la Armadura de Guerra."
+        },
+        {
+          "name": "Ráfaga de Micro-Misiles",
+          "cost": 7,
+          "desc": "Lanzamiento de proyectiles guiados desde los hombros de la armadura."
+        },
+        {
+          "name": "Puñetazo Mecanizado",
+          "desc": "Golpe directo impulsado por los servomotores hidráulicos de la Armadura de Guerra.",
+          "cost": 5
+        },
+        {
+          "name": "Ráfaga Láser de Muñeca",
+          "desc": "Disparos rápidos de energía concentrada desde los cañones integrados.",
+          "cost": 6
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Rayo de Kryptonita Concentrada",
+          "desc": "Descarga de radiación de Kryptonita capaz de debilitar críticamente a cualquier Kryptoniano expuesto.",
+          "cost": "25% de reserva de la armadura"
+        },
+        {
+          "name": "Campo de Pulso Electromagnético (EMP)",
+          "desc": "Emite una onda que deshabilita tecnología circundante y armamento enemigo no blindado.",
+          "cost": 20
+        },
+        {
+          "name": "Misiles Antianomalía",
+          "desc": "Salva de proyectiles guiados programados para rastrear firmas de energía sobrehumanas.",
+          "cost": "20% de reserva de la armadura",
+          "chargingTime": "Instantáneo",
+          "counterplay": "Maniobras evasivas a alta velocidad o contramedidas electrónicas de señuelo."
+        },
+        {
+          "name": "Rayo de Radiación Concentrada",
+          "desc": "Descarga de energía capaz de debilitar críticamente a cualquier objetivo expuesto.",
+          "cost": 25,
+          "counterplay": "Evasión lateral o absorción de energía."
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Técnica Suprema de Lex Luthor",
+          "desc": "Descarga máxima de poder destructivo.",
+          "cost": "Gasto alto de energía"
+        },
+        {
+          "name": "Sobrecarga del Reactor de Singularidad",
+          "desc": "Canaliza toda la energía remanente del núcleo de la armadura en un devastador haz láser frontal de impacto masivo.",
+          "cost": 40
+        },
+        {
+          "name": "Sobrecarga de Matriz de Guerra",
+          "desc": "Libera toda la energía acumulada del reactor de la armadura en una explosión esférica devastadora a corta distancia.",
+          "cost": "45% de reserva de la armadura",
+          "activationConditions": "Rango cuerpo a cuerpo contra el oponente.",
+          "counterplay": "Alejarse instantáneamente del radio de explosión mediante teletransporte o velocidad sónica."
+        }
+      ],
+      "passives": [
+        {
+          "name": "Genio Sin Límites",
+          "desc": "Su capacidad de diseño tecnológico y planificación estratégica supera a la mayoría de científicos del universo DC.",
+          "cost": "Pasivo continuo"
+        },
+        {
+          "name": "Sistemas de Soporte Vital Adaptativos",
+          "desc": "La armadura compensa automáticamente el daño físico menor y filtra toxinas del aire.",
+          "cost": 2
+        },
+        {
+          "name": "Blindaje Reactivo",
+          "desc": "Los escudos de la armadura se reconfiguran automáticamente tras recibir daño cinemático.",
+          "cost": "Pasivo continuo"
+        },
+        {
+          "name": "Recursos de LexCorp",
+          "desc": "Acceso a fondos ilimitados para reabastecer arsenal, reparar armadura y desplegar drones de soporte.",
+          "cost": "Externo a la armadura",
+          "type": "logistics_master"
+        }
+      ],
+      "specialMechanics": [
+        {
+          "name": "Sistema de Análisis Táctico LexCorp",
+          "desc": "Permite calcular debilidades estructurales o biológicas del enemigo tras 3 turnos de observación."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Vulnerabilidad Humana Base",
+          "desc": "Si la armadura es destruida por completo, Lex queda expuesto como un humano sin capacidades físicas sobrehumanas.",
+          "counterTags": [
+            "destrucción de armadura",
+            "vulnerabilidad física"
+          ]
+        },
+        {
+          "name": "Ego Desmedido",
+          "desc": "Subestima a rivales que no considera intelectualmente a su altura, lo que puede cegarle ante tácticas poco ortodoxas.",
+          "counterTags": [
+            "arrogancia",
+            "improvisación"
+          ]
+        },
+        {
+          "name": "Dependencia de Recursos Externos",
+          "desc": "En aislamiento total sin acceso a LexCorp, su arsenal es finito.",
+          "counterTags": [
+            "aislamiento de recursos",
+            "bloqueo logístico"
+          ]
+        },
+        {
+          "point": "Vulnerabilidad Humana Base",
+          "desc": "Si la armadura es destruida por completo, Lex queda expuesto como un humano sin capacidades físicas sobrehumanas.",
+          "counterTags": [
+            "destrucción-de-armadura",
+            "vulnerabilidad-física"
+          ]
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Lex Luthor (Estado Base / Armadura de Guerra)",
+        "stats": "Tier 7-A | Nivel Montaña (con armadura de combate potenciada). Forma principal en combate.",
+        "apexKiMultiplier": 1,
+        "canonStatus": "source_backed",
+        "tier": "7-A",
+        "staminaDrain": 0,
+        "category": "base",
+        "apexKi": 6468,
+        "burstKi": 10349,
+        "durabilityKi": 6468,
+        "sourceKi": null,
+        "multiplier": "1x",
+        "kiFormatted": "6.47 Mil"
+      }
+    ],
+    "feats": [
+      "Diseñó personalmente una armadura de combate capaz de intercambiar golpes directos con Superman gracias a su integración de Kryptonita.",
+      "Ha manipulado política, economía y ciencia a escala global durante décadas como una de las mentes criminales más peligrosas de la Tierra.",
+      "Su rivalidad con Superman es tratada narrativamente como un choque fundamental entre genio humano y poder alienígena."
+    ],
+    "psychology": "Narcisista, cree genuinamente que su genio lo hace superior a cualquier superhumano; su odio hacia Superman es tanto personal como filosófico (ve la existencia de Superman como una afrenta al potencial humano).",
+    "weaknesses": "Sin su armadura y recursos tecnológicos, es un humano físicamente promedio; su ego y necesidad de reconocimiento a veces lo llevan a subestimar a oponentes que no considera 'dignos' de su atención.",
+    "franchise": "DC Comics",
+    "continuity": "canon_main",
+    "era_or_saga": "Continuidad clásica",
+    "form_or_state": "Lex Luthor (Estado Base)",
+    "profile_type": "individual",
+    "canon_status": "canon_main",
+    "variant_of": null,
+    "character_family": null,
+    "source_confidence": "verified",
+    "legacy_status": "active",
+    "universe_number": null,
+    "members": null,
+    "parent_team_profile": null,
+    "team_affiliation": null,
+    "notes": "",
+    "legacy_data": "",
+    "synergies": [
+      {
+        "partnerTags": [
+          "IA Avanzada",
+          "Brainiac"
+        ],
+        "effect": "Permite a Lex sincronizar los sistemas de puntería de su armadura con la red de procesamiento de Brainiac, aumentando la precisión crítica un 15%."
+      },
+      {
+        "name": "Poder de Asgard",
+        "partnerTags": [
+          "Loki",
+          "Odin",
+          "Captain America",
+          "Iron Man"
+        ],
+        "effect": "Canaliza rayos en las armas aliadas (como el escudo del Capitán o la armadura de Stark) para ataques amplificados.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "teamCombos": [
+      {
+        "partners": [
+          "Lex Luthor",
+          "Brainiac"
+        ],
+        "sequence": [
+          "Lex distrae al objetivo con una descarga masiva de misiles guiados y presión de fuego.",
+          "Brainiac aprovecha la apertura para atrapar al enemigo en un campo de contención.",
+          "Lex ejecuta un impacto directo con el rayo de Kryptonita concentrada a máxima potencia."
+        ],
+        "staminaCostPerParticipant": [
+          25,
+          20
+        ],
+        "effect": "Neutralización severa del oponente con daño radiactivo y contundente simultáneo.",
+        "partialFailureResult": "Si el paso 2 falla, el objetivo esquiva el campo y el ataque final de Lex impacta en el vacío.",
+        "canonStatus": "apex_custom"
+      }
+    ],
+    "powerScaling": {
+      "apexKi": 3800,
+      "apexKiFormatted": "1600 Unidades",
+      "scouterKi": 3800,
+      "scouterKiFormatted": "1600 Unidades",
+      "rank": "GUERRERO DE ALTO RANGO",
+      "isOverload": false,
+      "speedFactor": 1,
+      "durabilityFactor": 1,
+      "haxBiqFactor": 1.55,
+      "featsStrengthFactor": 1.25,
+      "formulaExpression": "PL_Scouter = BaseEnergy(7-A) × Vel(1x) × Def(1x) × Hax/IQ(1.55x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 1600 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 6468,
+      "burstKi": 10349,
+      "durabilityKi": 6468,
+      "initiativeModifier": 1,
+      "dodgeModifier": 1,
+      "hitChanceModifier": 1,
+      "comboWindowModifier": 1
+    },
+    "entityType": "fighter",
+    "sagaOrArc": "Continuidad clásica",
+    "physicalTier": "7-A",
+    "haxTier": "7-A",
+    "sourceMedium": "comic",
+    "haxResistances": {
+      "existenceErasure": 5,
+      "timeManipulation": 15,
+      "mindControl": 40,
+      "matterManipulation": 10,
+      "soulDamage": 5,
+      "powerNullification": 30
+    },
+    "combatAIPersonality": {
+      "aggression": 55,
+      "tacticalIQ": 99,
+      "mercyThreshold": 20,
+      "clutchFactor": 75,
+      "preferredEngagementRange": "mid_range"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": false,
+      "gravityResistance": "20G",
+      "favoredBiomes": [
+        "laboratorios subterráneos",
+        "ciudades corporativas"
+      ],
+      "disfavoredBiomes": [
+        "espacio profundo",
+        "mundos alienígenas sin infraestructura"
+      ]
+    },
+    "provenFeats": {
+      "0": "Diseñó personalmente una armadura de combate capaz de intercambiar golpes directos con titanes gracias a su tecnología.",
+      "1": "Ha manipulado política, economía y ciencia a escala global durante décadas.",
+      "2": "Su rivalidad con Superman es tratada narrativamente como un choque fundamental entre genio humano y poder alienígena."
+    },
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Comprobemos qué tan lejos llega tu poder!",
+      "onTransformation": "Sistemas al máximo rendimiento. Contempla la cúspide del intelecto.",
+      "onUltimateReady": "El cálculo es exacto. No hay escape.",
+      "onLowHealth": "Aún no he terminado... ¡Esto apenas comienza!",
+      "onVictory": "La victoria pertenece a la mente superior."
+    },
+    "staminaProfile": {
+      "maxStamina": 120,
+      "recoveryRatePerTurn": 8,
+      "exhaustionThreshold": 15
+    },
+    "signatureEquipment": [
+      {
+        "name": "Armadura de Guerra con Kryptonita",
+        "durability": "Alta; resiste daño building-tier y radiación inversa",
+        "effect": "Provee Class Building en fuerza/durabilidad, vuelo, rayo de Kryptonita y arsenal de misiles."
+      },
+      {
+        "name": "Recursos de LexCorp",
+        "durability": "Externo; reabastecimiento continuo",
+        "effect": "Acceso a drones, vehículos, bases, sistemas de soporte logístico ilimitados."
+      },
+      {
+        "name": "Sistema de Análisis Táctico LexCorp",
+        "durability": "Interno a la armadura",
+        "effect": "Calcula debilidades estructurales/biológicas tras 3 turnos de observación."
+      },
+      {
+        "name": "Armadura de Guerra",
+        "durability": "Alta",
+        "effect": "Provee fuerza y durabilidad Tier 7-A, vuelo y arsenal tecnológico."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Continuidad clásica / Post-Crisis",
+      "timelineRestrictions": "Conoce los acontecimientos tecnológicos y científicos contemporáneos a su continuidad.",
+      "forbiddenConcepts": [
+        "Realidades multiversales absolutas externas",
+        "Entidades omnipotentes abstractas de otros universos"
+      ],
+      "crossVerseAwareness": "none"
+    },
+    "burstKi": 10349,
+    "apexKiRange": [
+      5236,
+      7700
+    ],
+    "apexKi": 6468,
+    "durabilityKi": 6468,
+    "sourceKi": null,
+    "sourceType": "cross_verse_estimate",
+    "confidence": "medium",
+    "scaling": {
+      "baseTier": "7-A",
+      "apexMethod": "vs_battles_tier_anchor_with_feat_consistency",
+      "evidence": [
+        "Clasificación establecida en base a Attack Potency en 7-A.",
+        "Consistencia frente a personajes de nivel destructivo equiparable."
+      ],
+      "uncertaintyReasons": [],
+      "balanceNotes": "Equivalencia APEX basada en Attack Potency de 7-A y consistencia física sostenida."
+    },
+    "haxProfile": {
+      "effects": [],
+      "counterplay": [
+        "Vulnerabilidad Humana Base",
+        "Ego Desmedido",
+        "Dependencia de Recursos Externos",
+        "[object Object]"
+      ],
+      "doesNotIncrease": [
+        "apexKi",
+        "durabilityKi",
+        "liftingStrength"
+      ]
+    },
+    "changeLog": [
+      {
+        "patchIds": [
+          "patch-0049",
+          "patch-0050"
+        ],
+        "timestamp": "2026-09-04T00:46:20.715Z",
+        "rationale": "Corrección de universo y franquicia erróneos (figuraba en Marvel Comics; corregido a DC Comics)."
+      }
+    ]
   },
   {
     "id": "lobo-dc-rebirth",
@@ -281975,6 +281643,341 @@ export const INITIAL_CHARACTERS = [
         "liftingStrength"
       ]
     }
+  },
+  {
+    "id": "yor-forger",
+    "name": "Yor Forger (Thorn Princess)",
+    "alias": "La Princesa Espina, Asesina de Élite",
+    "universe": "Spy x Family",
+    "saga": "Operación Strix",
+    "version": "Estado de combate completo como asesina de élite de la organización Garden",
+    "tier": "7-C",
+    "ap": "Considerada la asesina más letal y eficiente de su organización, con fuerza física y velocidad muy superiores a la de un humano promedio, capaz de eliminar múltiples objetivos armados en segundos sin ayuda.",
+    "range": "Cuerpo a cuerpo extendido, con cuchillos y armamento improvisado.",
+    "speed": {
+      "combat": "Sobrehumano extremo, muy superior al de Loid en velocidad pura de combate.",
+      "reaction": "Excepcional, reflejos de asesina de élite entrenados desde joven.",
+      "attack": "Sobrehumano en ataques con cuchillo y golpes cargados.",
+      "travel": "Sobrehumano en desplazamiento de combate."
+    },
+    "strength": "Class Building+ (una de las más altas entre humanos sin mutación de la ficción moderna).. Levantamiento: Class Building+ (una de las más altas entre humanos sin mutación de la ficción moderna).",
+    "durability": "Muy alta para una humana, resistente a heridas que incapacitarían a combatientes de élite convencionales.",
+    "stamina": "Muy alta, resistencia física de asesina profesional de máximo nivel.",
+    "battleIQ": "Instintiva y letal en combate directo, aunque socialmente torpe fuera de su rol de asesina; su capacidad de eliminar amenazas múltiples en segundos es su principal ventaja táctica.",
+    "haxTags": [
+      "Fuerza física sobrehumana (sin explicación biológica especial, atribuida a entrenamiento extremo)",
+      "Reflejos y precisión de asesina de élite",
+      "Doble vida encubierta (civil torpe vs asesina letal)",
+      "Fuerza física sobrehumana",
+      "Doble vida encubierta",
+      "Reflejos y precisión de élite"
+    ],
+    "arsenal": {
+      "basicAttacks": [
+        {
+          "name": "Corte de Estilete",
+          "cost": 5,
+          "damageType": "cortante",
+          "desc": "Ataque rápido con sus característicos estiletes, capaz de atravesar blindaje ligero."
+        },
+        {
+          "name": "Patada Devastadora",
+          "cost": 8,
+          "damageType": "contundente",
+          "desc": "Impacto con fuerza sobrehumana capaz de enviar a objetivos pesados a volar varios metros."
+        },
+        {
+          "name": "Tajo de Estilete",
+          "cost": 4,
+          "desc": "Ataque rápido y preciso con sus característicos estiletes mortales."
+        },
+        {
+          "name": "Impacto de Fuerza Bruta",
+          "cost": 6,
+          "desc": "Golpe con la palma o el puño capaz de romper costillas y enviar volando a objetivos acorazados."
+        }
+      ],
+      "superAttacks": [
+        {
+          "name": "Eliminación Múltiple Instantánea",
+          "desc": "Neutraliza a varios objetivos armados simultáneamente en un solo movimiento fluido de combate, técnica característica de su reputación como 'Princesa Espina'.",
+          "cost": "Sin coste de recurso, limitado por número de objetivos simultáneos"
+        },
+        {
+          "name": "Lanzamiento Balístico de Estilete",
+          "cost": 18,
+          "chargeTime": "0.5 turnos",
+          "counterplay": "Desviar el proyectil con armas de filo o cobertura pesada."
+        }
+      ],
+      "ultimateAttacks": [
+        {
+          "name": "Técnica Suprema de Yor Forger",
+          "desc": "Descarga máxima de poder destructivo.",
+          "cost": "Gasto alto de energía"
+        },
+        {
+          "name": "Juicio de la Princesa Espina",
+          "desc": "Yor desata una ráfaga devastadora de velocidad y fuerza sobrehumana, lanzando estiletes con precisión balística y rematando con un impacto físico capaz de destruir estructuras ligeras.",
+          "cost": "45 stamina",
+          "condition": "Requiere proximidad al objetivo o capacidad de cerrar distancias rápidamente.",
+          "counterplay": "Interponer barreras impenetrables de alta densidad o evadir mediante teletransportación/velocidad supersónica."
+        }
+      ],
+      "passives": [
+        {
+          "name": "Doble Vida (Civil vs Asesina)",
+          "desc": "Mantiene una fachada de torpeza social como empleada de oficina/esposa civil, ocultando por completo su verdadera identidad como asesina de élite.",
+          "cost": "Pasivo continuo"
+        },
+        {
+          "name": "Instinto Asesino",
+          "desc": "Aumenta la velocidad de reacción un 25% cuando su vida o la de su familia corre peligro inminente.",
+          "cost": 0
+        }
+      ],
+      "specialMechanics": [
+        {
+          "name": "Resistencia al Veneno y Dolor",
+          "desc": "Su fisiología ha sido endurecida mediante exposición y entrenamiento extremo, ignorando heridas menores que paralizarían a otros."
+        }
+      ],
+      "weaknesses": [
+        {
+          "name": "Ingenuidad Social",
+          "desc": "Fuera del combate, su extrema inocencia y tendencia a sobrepensar situaciones cotidianas pueden ser manipuladas psicológicamente.",
+          "counterTags": [
+            "engaño psicológico",
+            "confusión"
+          ]
+        },
+        {
+          "name": "Vulnerabilidad Familiar",
+          "desc": "Cualquier amenaza real hacia Loid o Anya provoca un estado de furia protectora que, aunque letal, puede volverla predecible en sus trayectorias de ataque.",
+          "counterTags": [
+            "ceguera táctica por ira",
+            "trampas basadas en rehenes"
+          ]
+        }
+      ]
+    },
+    "forms": [
+      {
+        "id": "base",
+        "name": "Yor Forger (Estado Base)",
+        "stats": "Tier 7-C | Nivel Pueblo. Forma principal en combate.",
+        "apexKiMultiplier": 1,
+        "tier": "7-C",
+        "staminaDrain": 0,
+        "category": "base",
+        "apexKi": 1785,
+        "burstKi": 2678,
+        "durabilityKi": 1785,
+        "sourceKi": null,
+        "multiplier": "1x",
+        "kiFormatted": "1.78 Mil"
+      }
+    ],
+    "feats": [
+      "Reconocida dentro de su organización como una de las asesinas más eficientes y letales de su generación, con la reputación de nunca fallar un objetivo.",
+      "Ha neutralizado a múltiples atacantes armados en segundos en varias ocasiones sin sufrir daño significativo.",
+      "Mantiene su identidad secreta de asesina completamente oculta de su propia familia (Loid y Anya) durante toda la operación."
+    ],
+    "psychology": "Fríamente eficiente y letal en combate, pero genuinamente torpe y cálida en su vida civil; su motivación como asesina proviene de proteger a su hermano menor, dándole una moralidad más compleja que la de una asesina común.",
+    "weaknesses": "Sin poderes sobrehumanos reales, su límite sigue siendo el de una humana extraordinariamente entrenada; su necesidad de mantener su doble vida en secreto de su propia familia genera tensión emocional que puede afectar su juicio en momentos críticos.",
+    "franchise": "Spy x Family",
+    "continuity": "canon_main",
+    "era_or_saga": "Operación Strix",
+    "form_or_state": "Yor Forger (Thorn Princess) (Estado Base)",
+    "profile_type": "individual",
+    "canon_status": "canon_main",
+    "variant_of": null,
+    "character_family": null,
+    "source_confidence": "verified",
+    "legacy_status": "active",
+    "universe_number": null,
+    "members": null,
+    "parent_team_profile": null,
+    "team_affiliation": null,
+    "notes": "",
+    "legacy_data": "",
+    "synergies": [
+      {
+        "partnerTags": [
+          "Espía"
+        ],
+        "effect": "Incremento del 15% en el daño crítico al combinar la distracción del espía con la letalidad directa de la asesina."
+      },
+      {
+        "name": "Poder de Asgard",
+        "partnerTags": [
+          "Loki",
+          "Odin",
+          "Captain America",
+          "Iron Man"
+        ],
+        "effect": "Canaliza rayos en las armas aliadas (como el escudo del Capitán o la armadura de Stark) para ataques amplificados.",
+        "canonStatus": "source_backed"
+      }
+    ],
+    "teamCombos": [
+      {
+        "partners": [
+          "Loid Forger (Twilight)"
+        ],
+        "sequence": [
+          "Loid distrae y debilita la guardia frontal del enemigo.",
+          "Loid bloquea las rutas de escape del oponente.",
+          "Yor ejecuta la Danza de Espinas para rematar el combate."
+        ],
+        "staminaCostPerParticipant": {
+          "Loid Forger": 25,
+          "Yor Forger": 35
+        },
+        "effect": "Neutralización instantánea de objetivos de nivel Tier 7-C y inferiores.",
+        "partialFailureResult": "Si el paso 1 falla, el combo se cancela y ambos participantes deben reiniciar las maniobras defensivas.",
+        "canonStatus": "apex_custom"
+      }
+    ],
+    "powerScaling": {
+      "apexKi": 358,
+      "apexKiFormatted": "358 Unidades",
+      "scouterKi": 358,
+      "scouterKiFormatted": "358 Unidades",
+      "rank": "RANGO TERRESTRE",
+      "isOverload": false,
+      "speedFactor": 1,
+      "durabilityFactor": 1,
+      "haxBiqFactor": 1.1,
+      "featsStrengthFactor": 1.25,
+      "formulaExpression": "PL_Scouter = BaseEnergy(7-C) × Vel(1x) × Def(1x) × Hax/IQ(1.1x) × Hazañas/Fuerza(1.25x) × Forma(1x) = 358 Unidades"
+    },
+    "numericStats": {
+      "apexKi": 1785,
+      "burstKi": 2678,
+      "durabilityKi": 1785,
+      "initiativeModifier": 1,
+      "dodgeModifier": 1,
+      "hitChanceModifier": 1,
+      "comboWindowModifier": 1
+    },
+    "entityType": "fighter",
+    "sagaOrArc": "Operación Strix",
+    "physicalTier": "7-C",
+    "haxTier": "7-C",
+    "sourceMedium": "manga",
+    "haxResistances": {
+      "existenceErasure": 0,
+      "timeManipulation": 0,
+      "mindControl": 40,
+      "matterManipulation": 0,
+      "soulDamage": 0,
+      "powerNullification": 0
+    },
+    "combatAIPersonality": {
+      "aggression": 90,
+      "tacticalIQ": 75,
+      "mercyThreshold": 10,
+      "clutchFactor": 90,
+      "preferredEngagementRange": "close_quarters"
+    },
+    "environmentalAffinity": {
+      "spaceSurvival": false,
+      "gravityResistance": "1.5G",
+      "favoredBiomes": [
+        "Entornos Urbanos Nocturnos",
+        "Interiores"
+      ],
+      "disfavoredBiomes": [
+        "Espacio Profundo",
+        "Áreas Abiertas Sin Cobertura"
+      ]
+    },
+    "provenFeats": {
+      "0": "Reconocida como una de las asesinas más eficientes con la reputación de nunca fallar.",
+      "1": "Neutralizó a múltiples atacantes armados en segundos sin sufrir daño.",
+      "2": "Mantiene su identidad secreta completamente oculta de su familia."
+    },
+    "combatDialogue": {
+      "intro": [
+        "¡Comprobemos qué tan lejos llega tu poder!"
+      ],
+      "lowHealth": [
+        "Aún no he terminado... ¡Esto apenas comienza!"
+      ],
+      "victory": [
+        "Fue una gran pelea. Entrena duro para la próxima."
+      ],
+      "onBattleStart": "¡Por favor, no se lo tome a mal!",
+      "onTransformation": "Cumpliré con mi misión...",
+      "onUltimateReady": "Es hora de terminar con esto.",
+      "onLowHealth": "¡Anya y Loid me esperan en casa!",
+      "onVictory": "¿He... he ganado? Espero no haberos lastimado demasiado."
+    },
+    "staminaProfile": {
+      "maxStamina": 120,
+      "recoveryRatePerTurn": 10,
+      "exhaustionThreshold": 15
+    },
+    "signatureEquipment": [
+      {
+        "name": "Estiletes Gemelos",
+        "durability": "Alta (Acero Especial)",
+        "effect": "Permite ataques punzantes de precisión letal."
+      }
+    ],
+    "knowledgeHorizon": {
+      "canonicalEra": "Operación Strix / Era de Guerra Fría Ficticia",
+      "timelineRestrictions": "Desconoce tecnología o conceptos fuera de su universo realista de espionaje.",
+      "forbiddenConcepts": [
+        "Ki",
+        "Magia",
+        "Viajes Interdimensionales"
+      ],
+      "crossVerseAwareness": "none"
+    },
+    "burstKi": 2678,
+    "apexKiRange": [
+      1445,
+      2125
+    ],
+    "apexKi": 1785,
+    "durabilityKi": 1785,
+    "sourceKi": null,
+    "sourceType": "cross_verse_estimate",
+    "confidence": "medium",
+    "scaling": {
+      "baseTier": "7-C",
+      "apexMethod": "vs_battles_tier_anchor_with_feat_consistency",
+      "evidence": [
+        "Clasificación establecida en base a Attack Potency en 7-C.",
+        "Consistencia frente a personajes de nivel destructivo equiparable."
+      ],
+      "uncertaintyReasons": [],
+      "balanceNotes": "Equivalencia APEX basada en Attack Potency de 7-C y consistencia física sostenida."
+    },
+    "haxProfile": {
+      "effects": [],
+      "counterplay": [
+        "Ingenuidad Social",
+        "Vulnerabilidad Familiar"
+      ],
+      "doesNotIncrease": [
+        "apexKi",
+        "durabilityKi",
+        "liftingStrength"
+      ]
+    },
+    "changeLog": [
+      {
+        "patchIds": [
+          "patch-0051",
+          "patch-0052"
+        ],
+        "timestamp": "2026-09-04T00:46:20.718Z",
+        "rationale": "Corrección de universo y franquicia erróneos (figuraba en Marvel Comics; corregido a Spy x Family)."
+      }
+    ]
   },
   {
     "id": "josh-apex-oc",

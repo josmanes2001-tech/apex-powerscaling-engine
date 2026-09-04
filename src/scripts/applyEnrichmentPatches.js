@@ -70,6 +70,13 @@ async function main() {
       for (const res of results) {
         let target = charMap.get(res.id) || charMap.get((res.name || '').toLowerCase().trim());
         if (target) {
+          // ─── BLINDAJE V22: NO MODIFICAR FORMAS DE PERSONAJES OFICIALES V22 ───
+          const isV22Official = target.id && V22_MAP.has(target.id);
+          if (isV22Official) {
+            // Se prohíbe añadir, reemplazar o alterar forms en personajes de V22
+            res.formsAudited = [];
+          }
+          // ───────────────────────────────────────────────────────────────────
           // Merge Forms
           if (res.formsAudited && Array.isArray(res.formsAudited) && res.formsAudited.length > 0) {
             if (!Array.isArray(target.forms)) target.forms = [];
@@ -253,6 +260,18 @@ async function main() {
       for (const patch of patches) {
         let target = charMap.get(patch.characterId) || charMap.get((patch.characterName || '').toLowerCase().trim());
         if (!target) continue;
+
+        // ─── BLINDAJE INALTERABLE V22 (POWER SCALING CONGELADO) ───
+        const isV22Official = target.id && V22_MAP.has(target.id);
+        const normalizedPath = (patch.path || '').toLowerCase();
+        const PROTECTED_V22_KEYWORDS = ['tier', 'ki', 'multiplier', 'form', 'universe', 'franchise', 'id', 'powerschema'];
+        
+        if (isV22Official && PROTECTED_V22_KEYWORDS.some(kw => normalizedPath.includes(kw))) {
+          // Bloqueo absoluto de alteración de power scaling en fichas V22
+          continue;
+        }
+        // ─────────────────────────────────────────────────────────
+
 
         if (patch.op === 'add' || patch.op === 'append') {
           const pathParts = (patch.path || '').replace(/^\//, '').split('/');

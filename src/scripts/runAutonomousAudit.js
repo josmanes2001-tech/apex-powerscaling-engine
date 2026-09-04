@@ -17,6 +17,12 @@ const projectRoot = path.resolve(__dirname, '../../');
 const CHARACTERS_FILE = path.join(projectRoot, 'src/data/characters.js');
 const PROGRESS_FILE = path.join(projectRoot, 'src/data/auditProgress.json');
 const PATCHES_FILE = path.join(projectRoot, 'src/data/rosterEnrichmentPatches.json');
+const V22_FILE = path.join(projectRoot, 'src/data/ROSTER_NIVELES_PODER_CORREGIDO_V22.json');
+const V22_MAP = new Map();
+if (fs.existsSync(V22_FILE)) {
+  const v22Data = JSON.parse(fs.readFileSync(V22_FILE, 'utf8'));
+  v22Data.forEach(c => V22_MAP.set(c.id, c));
+}
 
 const BATCH_SIZE = 5;
 const MODEL = process.argv[2] || 'nvidia/nemotron-3.5-lightning:free';
@@ -190,6 +196,25 @@ async function run() {
         if (parsed.results || parsed.integrationPatch) {
           const patchCount = (parsed.integrationPatch || []).length;
           console.log(`  ✅ Lote completado con éxito. Operaciones emitidas: ${patchCount}`);
+
+          
+          // ─── FILTRO CONSTITUCIONAL V22: RECHAZAR ALTERACIONES DE POWER SCALING ───
+          if (parsed.integrationPatch && Array.isArray(parsed.integrationPatch)) {
+            const PROTECTED_V22_KEYWORDS = ['tier', 'ki', 'multiplier', 'form', 'universe', 'franchise', 'id', 'powerschema'];
+            parsed.integrationPatch = parsed.integrationPatch.filter(patch => {
+              const charId = patch.characterId;
+              if (charId && V22_MAP.has(charId)) {
+                const normalizedPath = (patch.path || '').toLowerCase();
+                const isProtected = PROTECTED_V22_KEYWORDS.some(kw => normalizedPath.includes(kw));
+                if (isProtected) {
+                  console.log(`  🛡️ [BLINDAJE V22] Parche descartado para '${charId}' en '${patch.path}' (Power Scaling congelado en V22).`);
+                  return false;
+                }
+              }
+              return true;
+            });
+          }
+          // ─────────────────────────────────────────────────────────────────────────
 
           if (parsed.integrationPatch && parsed.integrationPatch.length > 0) {
             allPatches.push(...parsed.integrationPatch);
