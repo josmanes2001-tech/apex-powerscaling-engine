@@ -1,3 +1,11 @@
+# 🛡️ CONSTITUCIÓN OFICIAL V22 — BASE INALTERABLE DE PODER (APEX POWER SCALING)
+El Roster oficial consolidado es **`ROSTER_NIVELES_PODER_CORREGIDO_V22.json`** (769 personajes con 68 parches auditados y aprobados).
+- Prohibición absoluta de mutar tiers, Ki, multiplicadores, forms, franchise, universe o IDs fijados en V22.
+- El archivo `APEX_NEEDS_REVIEW_BACKLOG_V22.json` rige únicamente como catálogo de advertencias y notas de calibración editorial.
+- En cualquier simulación o cálculo: si un personaje tiene entrada en el backlog, se conservan sus valores oficiales de V22 y se advierte la limitación sin inventar números.
+
+---
+
 # ⚡ APEX Power Scaling Engine — Constitución Canónica, Arquitectura & DevOps
 
 Este documento rige como la **Norma Suprema de Arquitectura, Lore Canónico y DevOps** para todos los agentes, desarrolladores y herramientas que operan en este repositorio.

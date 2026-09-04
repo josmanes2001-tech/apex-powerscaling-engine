@@ -3668,7 +3668,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 163.35000000000002,
         "sourceKi": 115,
-        "burstKi": 221,
+        "burstKi": 155,
         "durabilityKi": 163.35000000000002,
         "kiFormatted": "163,35 Unidades"
       },
@@ -6030,7 +6030,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.4x",
         "apexKi": 138.6,
         "sourceKi": 94,
-        "burstKi": 187,
+        "burstKi": 127,
         "durabilityKi": 138.6,
         "kiFormatted": "138,60 Unidades"
       }
@@ -11382,7 +11382,7 @@ export const INITIAL_CHARACTERS = [
         "category": "transformation",
         "apexKi": 331.5,
         "sourceKi": 201,
-        "burstKi": 448,
+        "burstKi": 271,
         "durabilityKi": 331.5,
         "kiFormatted": "331,50 Unidades"
       }
@@ -15300,7 +15300,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 155925000,
         "sourceKi": 110000000,
-        "burstKi": 210498750,
+        "burstKi": 148500000,
         "durabilityKi": 155925000,
         "kiFormatted": "155,93 Millones"
       }
@@ -16344,7 +16344,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 170100,
         "sourceKi": 120000,
-        "burstKi": 229635,
+        "burstKi": 162000,
         "durabilityKi": 170100,
         "kiFormatted": "170,10 Mil"
       },
@@ -16381,7 +16381,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 170100,
         "sourceKi": 120000,
-        "burstKi": 229635,
+        "burstKi": 162000,
         "durabilityKi": 170100,
         "kiFormatted": "170,10 Mil"
       },
@@ -16396,7 +16396,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.8x",
         "apexKi": 226800,
         "sourceKi": 120000,
-        "burstKi": 306180,
+        "burstKi": 162000,
         "durabilityKi": 226800,
         "kiFormatted": "226,80 Mil"
       }
@@ -16823,7 +16823,7 @@ export const INITIAL_CHARACTERS = [
         "canonStatus": "source_backed",
         "category": "transformation",
         "apexKi": 5712000000,
-        "burstKi": 7711200000,
+        "burstKi": 1269000000,
         "durabilityKi": 5712000000,
         "kiFormatted": "5,71 Mil Millones"
       },
@@ -21316,7 +21316,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "2x",
         "apexKi": 347340,
         "sourceKi": 1220,
-        "burstKi": 468909,
+        "burstKi": 1647,
         "durabilityKi": 347340,
         "kiFormatted": "347,34 Mil"
       }
@@ -23228,7 +23228,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 436590,
         "sourceKi": 3600,
-        "burstKi": 589397,
+        "burstKi": 4860,
         "durabilityKi": 436590,
         "kiFormatted": "436,59 Mil"
       },
@@ -23262,7 +23262,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 436590,
         "sourceKi": 3600,
-        "burstKi": 589397,
+        "burstKi": 4860,
         "durabilityKi": 436590,
         "kiFormatted": "436,59 Mil"
       }
@@ -25509,7 +25509,7 @@ export const INITIAL_CHARACTERS = [
     ],
     "apexKi": 5418,
     "durabilityKi": 5418,
-    "sourceType": "cross_verse_estimate",
+    "sourceType": "derived",
     "confidence": "medium",
     "scaling": {
       "baseTier": "7-B",
@@ -25539,8 +25539,7 @@ export const INITIAL_CHARACTERS = [
         "timestamp": "2026-09-04T00:39:00.877Z",
         "rationale": "Corrección de universo y franquicia erróneos (figuraba en Dragon Ball Z; corregido a Demon Slayer)."
       }
-    ],
-    "sourceKi": null
+    ]
   },
   {
     "id": "buuhan-majin-901",
@@ -27037,7 +27036,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.5x",
         "apexKi": 245700000,
         "sourceKi": 156000000,
-        "burstKi": 331695000,
+        "burstKi": 210600000,
         "durabilityKi": 245700000,
         "kiFormatted": "245,70 Millones"
       }
@@ -28798,7 +28797,7 @@ export const INITIAL_CHARACTERS = [
         "category": "transformation",
         "apexKi": 2126.25,
         "sourceKi": 1300,
-        "burstKi": 2870,
+        "burstKi": 1755,
         "durabilityKi": 2126.25,
         "tierExact": "6-A",
         "kiFormatted": "2,13 Mil"
@@ -28814,7 +28813,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 2126.25,
         "sourceKi": 1300,
-        "burstKi": 2870,
+        "burstKi": 1755,
         "durabilityKi": 2126.25,
         "tierExact": "5-B",
         "kiFormatted": "2,13 Mil"
@@ -29551,7 +29550,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "50x",
         "apexKi": 18900000000,
         "sourceKi": 310,
-        "burstKi": 25515000000,
+        "burstKi": 419,
         "durabilityKi": 18900000000,
         "kiFormatted": "18,90 Mil Millones"
       }
@@ -30861,7 +30860,7 @@ export const INITIAL_CHARACTERS = [
         "category": "transformation",
         "apexKi": 15750,
         "sourceKi": 1300,
-        "burstKi": 21263,
+        "burstKi": 1755,
         "durabilityKi": 15750,
         "kiFormatted": "15,75 Mil"
       },
@@ -30891,7 +30890,7 @@ export const INITIAL_CHARACTERS = [
         "category": "transformation",
         "apexKi": 157500,
         "sourceKi": 1300,
-        "burstKi": 212625,
+        "burstKi": 1755,
         "durabilityKi": 157500,
         "kiFormatted": "157,50 Mil"
       }
@@ -31594,7 +31593,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 221130000,
         "sourceKi": 3500000,
-        "burstKi": 298525500,
+        "burstKi": 4725000,
         "durabilityKi": 221130000,
         "kiFormatted": "221,13 Millones"
       }
@@ -37849,7 +37848,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "2x",
         "apexKi": 79800000000,
         "sourceKi": 38000000000,
-        "burstKi": 107730000000,
+        "burstKi": 51300000000,
         "durabilityKi": 79800000000,
         "kiFormatted": "79,80 Mil Millones"
       },
@@ -37883,7 +37882,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "2.5x",
         "apexKi": 99750000000,
         "sourceKi": 38000000000,
-        "burstKi": 134662500000,
+        "burstKi": 51300000000,
         "durabilityKi": 99750000000,
         "kiFormatted": "99,75 Mil Millones"
       }
@@ -43108,7 +43107,7 @@ export const INITIAL_CHARACTERS = [
         "category": "transformation",
         "multiplier": "50x",
         "apexKi": 1480500000,
-        "burstKi": 1998675000,
+        "burstKi": 53964225,
         "durabilityKi": 1480500000,
         "sourceKi": null,
         "kiFormatted": "1.48 Mil Millones"
@@ -51380,7 +51379,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "5x",
         "apexKi": 115500000000000,
         "sourceKi": 22000000000000,
-        "burstKi": 155925000000000,
+        "burstKi": 29700000000000,
         "durabilityKi": 115500000000000,
         "kiFormatted": "115,50 Billones"
       }
@@ -54746,8 +54745,7 @@ export const INITIAL_CHARACTERS = [
         "durabilityKi",
         "liftingStrength"
       ]
-    },
-    "cosmologyClass": "multiversal_macrocosm"
+    }
   },
   {
     "id": "frost-dragon-ball-super-662",
@@ -61387,7 +61385,7 @@ export const INITIAL_CHARACTERS = [
         "category": "hax_mode",
         "multiplier": "100x",
         "apexKi": 183750000000,
-        "burstKi": 248062500000,
+        "burstKi": 2572500000,
         "durabilityKi": 183750000000,
         "sourceKi": null,
         "doesNotIncrease": [
@@ -67613,7 +67611,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "10000x",
         "apexKi": 147000000000000000,
         "sourceKi": 14000000000000,
-        "burstKi": 198450000000000000,
+        "burstKi": 18900000000000,
         "durabilityKi": 147000000000000000,
         "kiFormatted": "147.000,00 Billones"
       },
@@ -67628,7 +67626,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "10000x",
         "apexKi": 147000000000000000,
         "sourceKi": 14000000000000,
-        "burstKi": 198450000000000000,
+        "burstKi": 18900000000000,
         "durabilityKi": 147000000000000000,
         "kiFormatted": "147.000,00 Billones"
       }
@@ -72186,7 +72184,7 @@ export const INITIAL_CHARACTERS = [
         "category": "state_amp",
         "multiplier": "154000x",
         "apexKi": 4268880000000000,
-        "burstKi": 5762988000000000,
+        "burstKi": 288149400000000,
         "durabilityKi": 4268880000000000,
         "sourceKi": null,
         "kiFormatted": "4.27 Trillones"
@@ -73114,7 +73112,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 170100,
         "sourceKi": 120000,
-        "burstKi": 229635,
+        "burstKi": 162000,
         "durabilityKi": 170100,
         "kiFormatted": "170,10 Mil"
       }
@@ -74015,8 +74013,7 @@ export const INITIAL_CHARACTERS = [
         "durabilityKi",
         "liftingStrength"
       ]
-    },
-    "cosmologyClass": "multiversal_macrocosm"
+    }
   },
   {
     "id": "toppo-dragon-ball-super-140",
@@ -83783,7 +83780,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 1502550000,
         "sourceKi": 1060000000,
-        "burstKi": 2028442500,
+        "burstKi": 1431000000,
         "durabilityKi": 1502550000,
         "kiFormatted": "1,50 Mil Millones"
       }
@@ -103318,8 +103315,7 @@ export const INITIAL_CHARACTERS = [
         "durabilityKi",
         "liftingStrength"
       ]
-    },
-    "cosmologyClass": "multiversal_macrocosm"
+    }
   },
   {
     "id": "vinegar-saga-garlic-jr-502",
@@ -140875,7 +140871,7 @@ export const INITIAL_CHARACTERS = [
         "category": "transformation",
         "apexKi": 78750,
         "sourceKi": 1300,
-        "burstKi": 106313,
+        "burstKi": 1755,
         "durabilityKi": 78750,
         "kiFormatted": "78,75 Mil"
       },
@@ -140910,7 +140906,7 @@ export const INITIAL_CHARACTERS = [
         "category": "transformation",
         "apexKi": 157500,
         "sourceKi": 1300,
-        "burstKi": 212625,
+        "burstKi": 1755,
         "durabilityKi": 157500,
         "kiFormatted": "157,50 Mil"
       }
@@ -141328,7 +141324,7 @@ export const INITIAL_CHARACTERS = [
         "multiplier": "1.35x",
         "apexKi": 1701,
         "sourceKi": 1200,
-        "burstKi": 2296,
+        "burstKi": 1620,
         "durabilityKi": 1701,
         "kiFormatted": "1,70 Mil"
       }
@@ -149982,7 +149978,7 @@ export const INITIAL_CHARACTERS = [
         "category": "hax_mode",
         "multiplier": "1.8x",
         "apexKi": 454545,
-        "burstKi": 613636,
+        "burstKi": 353535,
         "durabilityKi": 454545,
         "sourceKi": null,
         "doesNotIncrease": [
@@ -199526,7 +199522,7 @@ export const INITIAL_CHARACTERS = [
         "category": "hax_mode",
         "multiplier": "150x",
         "apexKi": 100200,
-        "burstKi": 135270,
+        "burstKi": 1002,
         "durabilityKi": 100200,
         "sourceKi": null,
         "doesNotIncrease": [
@@ -252236,7 +252232,7 @@ export const INITIAL_CHARACTERS = [
         "category": "hax_mode",
         "multiplier": "50x",
         "apexKi": 95550000000,
-        "burstKi": 128992500000,
+        "burstKi": 3057600000,
         "durabilityKi": 95550000000,
         "sourceKi": null,
         "doesNotIncrease": [

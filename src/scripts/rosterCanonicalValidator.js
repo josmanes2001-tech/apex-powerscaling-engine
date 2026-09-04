@@ -244,7 +244,7 @@ export function applyAutoCorrections(characters) {
       correctionsCount++;
     }
 
-    // 2. Normalizar forma base en índice 0
+    // 2. Normalizar forma base en índice 0 y derivados biométricos
     if (Array.isArray(c.forms) && c.forms.length > 0) {
       if (c.forms[0].category !== 'base') {
         const oldCat = c.forms[0].category;
@@ -253,6 +253,14 @@ export function applyAutoCorrections(characters) {
         diffs.push({ id: c.id, field: 'forms[0].category', old: oldCat, new: 'base' });
         correctionsCount++;
       }
+      c.forms.forEach((f, fIdx) => {
+        if (typeof f.apexKi === 'number' && (typeof f.burstKi !== 'number' || f.burstKi < f.apexKi)) {
+          const oldBurst = f.burstKi;
+          f.burstKi = Math.round(f.apexKi * 1.35);
+          diffs.push({ id: c.id, field: `forms[${fIdx}].burstKi`, old: oldBurst, new: f.burstKi });
+          correctionsCount++;
+        }
+      });
     }
 
     // 3. Normalizar burstKi

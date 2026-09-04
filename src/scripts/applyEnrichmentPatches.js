@@ -88,6 +88,13 @@ async function main() {
                 continue;
               }
 
+              // BLINDAJE CONSTITUCIONAL V22: Prohibido alterar tiers, Ki o multiplicadores de la base oficial V22
+              if (target.forms && target.forms[0]) {
+                delete formToAdd.tier;
+                delete formToAdd.apexKi;
+                delete formToAdd.apexKiMultiplier;
+                delete formToAdd.multiplier;
+              }
               // Blindaje: Personajes fuera de Dragon Ball nunca deben tener sourceKi de DB
               if (target.franchise && target.franchise !== 'Dragon Ball') {
                 delete target.sourceKi;

@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "reportTitle": "Informe de Auditoría Global Final de Consolidación — APEX Roster V22",
+    "rosterVersion": "ROSTER_NIVELES_PODER_CORREGIDO_V22.json",
+    "specificationVersion": "APEX_Roster_Power_Specification_v2.md",
+    "timestamp": "2026-09-04T01:02:09.245Z",
+    "totalCharactersEvaluated": 769,
+    "status": "APPROVED_AND_STABLE",
+    "complianceVerdict": "PASS_WITH_MONITORED_BACKLOG"
+  },
+  "structuralVerification": {
+    "uniqueIdentifiers": {
+      "status": "PASS",
+      "totalUniqueIds": 769,
+      "duplicatesFound": 0
+    },
+    "franchiseAndUniverseIntegrity": {
+      "status": "PASS",
+      "emptyOrUnknownCount": 0,
+      "crossFranchiseErrors": 0,
+      "correctedHistoricalCases": [
+        "Kyojuro Rengoku movido de Dragon Ball Z a Demon Slayer (patch-0045)",
+        "Lex Luthor movido de Marvel Comics a DC Comics (patch-0049, patch-0050)",
+        "Yor Forger movida de Marvel Comics a Spy x Family (patch-0051, patch-0052)"
+      ]
+    },
+    "formArrayCompleteness": {
+      "status": "PASS",
+      "recordsWithZeroForms": 0,
+      "totalFormsEvaluated": 1330
+    },
+    "changeLogAuditTrail": {
+      "status": "PASS",
+      "totalModifiedCharacters": 36,
+      "totalPatchesTracked": 68,
+      "untrackedPatches": 0
+    }
+  },
+  "patchesAppliedHistory": {
+    "summary": "Se aplicaron 68 patches incrementales debidamente aprobados a lo largo de 22 iteraciones.",
+    "batches": [
+      {
+        "batch": "Lote 01: Dragon Ball Clásico",
+        "patches": [
+          "patch-0001",
+          "patch-0002",
+          "patch-0003"
+        ],
+        "focus": "Normalización Ranfan, Giran y Murasaki a tiers estándares."
+      },
+      {
+        "batch": "Lote 02: DBZ Saiyan & Namek",
+        "patches": [
+          "patch-0013",
+          "patch-0014",
+          "patch-0015",
+          "patch-0016",
+          "patch-0017"
+        ],
+        "focus": "Limpieza tiers Piccolo y Dende, Goku SSJ1 Namek mult x50."
+      },
+      {
+        "batch": "Lote 03: DBZ Androides & Cell",
+        "patches": [
+          "patch-0018",
+          "patch-0019",
+          "patch-0020"
+        ],
+        "focus": "Limpieza Dende Kami a 9-A, Androide 18 base a 4-C."
+      },
+      {
+        "batch": "Lote 04: DBZ Saga Buu",
+        "patches": [
+          "patch-0021"
+        ],
+        "focus": "Vegetto SSJ1 corregido a mult x50."
+      },
+      {
+        "batch": "Lote 05: DBS Arcos Iniciales",
+        "patches": [
+          "patch-0024"
+        ],
+        "focus": "Goku Blue Kaio-ken x20 corregido a mult 154.000."
+      },
+      {
+        "batch": "Lote 06: DBS Black & Super Hero",
+        "patches": [
+          "patch-0025"
+        ],
+        "focus": "Goku Black SSJ dorado corregido a Tier 3-A."
+      },
+      {
+        "batch": "Lote 07: DB GT & Películas Toei",
+        "patches": [
+          "patch-0027",
+          "patch-0028",
+          "patch-0029",
+          "patch-0030",
+          "patch-0031"
+        ],
+        "focus": "Dr. Lychee formas limpiadas a 9-A, Pan GT a 4-C."
+      },
+      {
+        "batch": "Lote 08: Jujutsu Kaisen",
+        "patches": [
+          "patch-0032"
+        ],
+        "focus": "Yuta Rika liberado alineado a Tier 7-A."
+      },
+      {
+        "batch": "Lote 09: JoJo's Bizarre Adventure",
+        "patches": [
+          "patch-0033_0044"
+        ],
+        "focus": "Limpieza masiva del sufijo ' Físico' en Dio, Pucci, Valentine, Giorno, Johnny, Jotaro, Kira."
+      },
+      {
+        "batch": "Lote 12: Demon Slayer",
+        "patches": [
+          "patch-0045"
+        ],
+        "focus": "Reubicación de Kyojuro Rengoku a universo Demon Slayer."
+      },
+      {
+        "batch": "Lote 13: My Hero Academia",
+        "patches": [
+          "patch-0046"
+        ],
+        "focus": "Re-Destro 100% corregido a Tier 7-B."
+      },
+      {
+        "batch": "Lote 14: One Punch Man",
+        "patches": [
+          "patch-0047"
+        ],
+        "focus": "Bang respiración despierta corregido a Tier 7-A."
+      },
+      {
+        "batch": "Lote 16: Invincible",
+        "patches": [
+          "patch-0048"
+        ],
+        "focus": "Allen the Alien post-entrenamiento corregido a High 5-B."
+      },
+      {
+        "batch": "Lote 18: Marvel Comics",
+        "patches": [
+          "patch-0049",
+          "patch-0050",
+          "patch-0051",
+          "patch-0052",
+          "patch-0053",
+          "patch-0054",
+          "patch-0055"
+        ],
+        "focus": "Reubicación de Lex Luthor a DC, Yor Forger a Spy x Family, limpieza sufijo ' Físico' en Iron Man."
+      },
+      {
+        "batch": "Lote 19: DC Comics",
+        "patches": [
+          "patch-0056",
+          "patch-0057"
+        ],
+        "focus": "Limpieza sufijo ' Físico' en Batman y armadura Hellbat."
+      },
+      {
+        "batch": "Lote 21: Record of Ragnarok",
+        "patches": [
+          "patch-0058"
+        ],
+        "focus": "Corrección de saga en Lu Bu (Ronda 1 vs Thor)."
+      },
+      {
+        "batch": "Lote 22: Fan-Manga & What-If DB",
+        "patches": [
+          "patch-0059",
+          "patch-0060",
+          "patch-0061",
+          "patch-0062",
+          "patch-0063",
+          "patch-0064",
+          "patch-0065",
+          "patch-0066",
+          "patch-0067",
+          "patch-0068"
+        ],
+        "focus": "Limpieza Broly DBM, Cooler DBM, Rey Vegeta DBM, Daimaoh U3; corrección inversiones jerárquicas en Kakarotto After (SSJ2/SSJ3), Gohan U16 DBM (místico) y Baby Vegeta God (forma infectada)."
+      }
+    ]
+  },
+  "findingsSummary": {
+    "nonStandardTiersCount": 38,
+    "whatIfInCanonProfilesCount": 3,
+    "templateContaminationInvincibleCount": 14,
+    "mathAndHierarchyInversionsRemaining": 2,
+    "internalDuplicateFormsCount": 1,
+    "semanticDuplicateCharactersCount": 3
+  }
+}

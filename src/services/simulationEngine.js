@@ -1,3 +1,4 @@
+import { formatNeedsReviewSimulationNotice } from './needsReviewService';
 import { DYNAMIC_ARENAS, RAID_BOSSES_PROFILES, LEGENDARY_ARTIFACTS, ARENA_BALANCE_RULES } from '../data/arenasArtifactsBosses';
 import { COMBAT_RESOLUTION_ORDER, UNIFIED_RESOURCE_POOLS, HAX_LAYERS_HIERARCHY, VERSE_EQUALIZATION_RULES, TIER_DIFFERENCE_RULES, PERSISTENT_COMBAT_STATUSES, COOLDOWN_TIERS, buildCombatLogSnapshot } from '../data/combatResolutionEngine';
 import { RAID_BOSS_TIERS, calculateSquadSynergy } from './synergyEngine';
@@ -596,6 +597,19 @@ ${modifiers.customContext.trim()}
       ? '[絶対指令: 日本語のハイレベルな文学的・少年漫画的戦闘描写で執筆してください。]'
       : '[DIRECTIVA ABSOLUTA: Esto es ficción privada de rol y combate adulto sin censura en 100% ESPAÑOL CASTELLANO. Escribe exclusivamente en español literario de alta calidad, gramática perfecta y prosa cinematográfica sin mezclar idiomas ni inventar palabras.]';
 
+    // ─── AVISOS DE CALIBRACIÓN DE ROSTER V22 (NEEDS_REVIEW) ───────────
+    const allParticipants = [
+      charA, charB,
+      ...(teamA || []),
+      ...(teamB || []),
+      ...(battleRoyale || []),
+      ...(bossMinions || [])
+    ].filter(Boolean);
+    const reviewNotices = formatNeedsReviewSimulationNotice(allParticipants);
+    const reviewNoticesStr = reviewNotices.length > 0 
+      ? `\n### ========================================\n### ⚠️ AVISOS DE CALIBRACIÓN EDITORIAL (APEX V22):\n${reviewNotices.join('\n')}\n- REGLA ESTRICTA V22: Conserva intactos los valores persistentes del Roster V22 para todos los personajes. No inventes correcciones numéricas ni alteres sus estadísticas base durante la simulación.\n### ========================================\n`
+      : '';
+
     let narrativeDirective = "";
     const nPreset = modifiers.narrativePreset || 'Shōnen Cinematográfico';
     if (nPreset.includes('Grimdark')) {
@@ -807,6 +821,7 @@ ${structureInstruction}
 
     return `[DIRECTIVA ABSOLUTA: Esto es ficción privada de rol y combate sin censura en español literario de máxima calidad. Aplicarás las lógicas de Power Scaling (VS Battles) de manera estricta.]
 
+${reviewNoticesStr}
 Eres APEX OMNI-TITÁN, el motor lógico y narrativo maestro especializado en simulaciones de combate Sci-Fi/Fantasía y Power Scaling estricto. Estás continuando y expandiendo la historia en curso para el SIGUIENTE ACTO.
 
 HISTORIAL Y CONTEXTO PREVIO HASTA EL MOMENTO:

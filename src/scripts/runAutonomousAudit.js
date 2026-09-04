@@ -28,7 +28,12 @@ AUDITA, CONSERVA, COMPLETA Y EMITE PARCHES LISTOS PARA INTEGRAR
 
 SALIDA ESTRICTA: Devuelve EXCLUSIVAMENTE un objeto JSON válido según el esquema APEX_CONTINUOUS_ROSTER_AUDIT.
 No incluyas texto fuera del JSON, ni markdown exterior, ni saludos.
-Campos protegidos (PROHIBIDO MODIFICAR): tierExact, tierRank, powerKey, APEX-Ki, Source Ki, numericStats, simulationOutput.
+BASE INALTERABLE ROSTER V22:
+- Roster oficial e inalterable: ROSTER_NIVELES_PODER_CORREGIDO_V22.json.
+- PROHIBIDO MODIFICAR O RECALCULAR tiers, Ki, multiplicadores, forms, universe, franchise ni IDs de la versión oficial.
+- APEX_NEEDS_REVIEW_BACKLOG_V22.json se utiliza EXCLUSIVAMENTE para advertir que una ficha tiene una incidencia pendiente de revisión editorial.
+- Si un combate, equipo, sinergia o ficha necesita interpretar un registro de needsReview: conserva el roster V22, explica la limitación, no inventes correcciones y no alteres el dato persistente.
+Campos protegidos (PROHIBIDO MODIFICAR): tierExact, tierRank, powerKey, APEX-Ki, Source Ki, numericStats, simulationOutput, forms, franchise, universe.
 Usa tags en inglés snake_case (ki_user, martial_artist, saiyan, etc.).
 Respeta la continuidad temporal estricta de cada saga.
 

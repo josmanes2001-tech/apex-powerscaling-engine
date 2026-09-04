@@ -6,6 +6,7 @@ import {
   ChevronLeft, ChevronRight, Plus, Trash2, Edit3, Eye, FolderPlus, Tag, Layers, Star
 } from 'lucide-react';
 import { SimulationEngine } from '../services/simulationEngine';
+import { isCharacterInNeedsReview, getNeedsReviewWarningText } from '../services/needsReviewService';
 import { translateCharacterSheet } from '../services/translatorService';
 import { UNIVERSE_PRESETS } from '../services/franchiseHelper';
 import { SoundFX } from '../services/soundFx';
@@ -331,6 +332,20 @@ export default function CharacterModal({ character, onClose, onSave, isEditing =
                 <h2 className="text-base sm:text-lg font-bold text-white truncate font-cinzel">
                   {formData.name || 'Luchador Sin Nombre'}
                 </h2>
+                {isCharacterInNeedsReview(formData.id) && (
+                  <div className="mt-2 p-2.5 bg-amber-950/60 border border-amber-500/50 rounded-lg text-xs text-amber-200 flex items-start gap-2 shadow-md">
+                    <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-bold text-amber-300 font-cinzel uppercase mr-1">
+                        Calibración Editorial Pendiente (APEX V22):
+                      </span>
+                      <span>{getNeedsReviewWarningText(formData.id)}</span>
+                      <div className="mt-0.5 text-[10px] text-amber-400/80 italic">
+                        Valores oficiales congelados según V22 sin alteraciones especulativas.
+                      </div>
+                    </div>
+                  </div>
+                )}
                 <span className="px-2 py-0.5 rounded bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold text-[10px] font-mono shrink-0">
                   {formData.tier || 'Tier ?'}
                 </span>
