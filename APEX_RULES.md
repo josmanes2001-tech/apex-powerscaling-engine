@@ -1,3 +1,16 @@
+
+## 🔒 PROTOCOLO DE GOBERNANZA Y CONGELACIÓN (V22)
+1. **V22 = Baseline Oficial Congelado**:
+   - `ROSTER_NIVELES_PODER_CORREGIDO_V22.json` NO se edita in-place bajo ninguna circunstancia.
+   - NO se modifica por una IA automáticamente ni por procesos autónomos.
+   - NO se cambia por un enriquecimiento normal de habilidades, sinergias o lore.
+2. **Procedimiento Estricto de Modificación Futura**:
+   - Si en el futuro se aborda o corrige un caso del backlog (`APEX_NEEDS_REVIEW_BACKLOG_V22.json`):
+     - V22 se conserva intacto de forma permanente.
+     - Se crea una nueva versión incremental numerada (`V23`, etc.) o una rama de revisión aislada.
+     - NINGÚN cambio se integra al roster activo ni a producción sin la **aprobación humana explícita previa**.
+
+---
 # 🛡️ CONSTITUCIÓN OFICIAL V22 — BASE INALTERABLE DE PODER (APEX POWER SCALING)
 El Roster oficial consolidado es **`ROSTER_NIVELES_PODER_CORREGIDO_V22.json`** (769 personajes con 68 parches auditados y aprobados).
 - Prohibición absoluta de mutar tiers, Ki, multiplicadores, forms, franchise, universe o IDs fijados en V22.
